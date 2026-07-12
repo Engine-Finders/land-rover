@@ -81,7 +81,7 @@ export default async function ModelPage({ params }) {
       <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
         {JSON.stringify(data.meta, null, 2)}
       </pre>
-      <p>slug: {data.slug}</p>
+      <p>slug: {data.meta?.slug}</p>
       <ModelHero data={data.hero} />
       <OwnershipVerdict data={data.ownershipVerdict} />
       <AtAGlance data={data.atAGlance} />

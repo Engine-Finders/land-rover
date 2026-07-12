@@ -1,20 +1,16 @@
 import { notFound } from "next/navigation";
-import pages from "@/data/registery/generations/pages.json";
-import ModelHero from "@/components/generation/ModelHero";
-import EngineDatabase from "@/components/generation/EngineDatabase";
-import Overview from "@/components/generation/Overview";
-import BestWorstEngines from "@/components/generation/BestWorstEngines";
-import OwnershipEconomics from "@/components/generation/OwnershipEconomics";
-import CommonProblems from "@/components/generation/CommonProblems";
-import ReplacementCosts from "@/components/generation/ReplacementCosts";
-import CoreVariants from "@/components/generation/CoreVariants";
-import MarketIntelligence from "@/components/generation/MarketIntelligence";
-import FAQAccordion from "@/components/generation/FAQAccordion";
-import TrustCta from "@/components/generation/TrustCta";
+import pages from "@/data/registery/engines/pages.json";
+import EngineHero from "@/components/engine/EngineHero";
+import AtAGlance from "@/components/engine/AtAGlance";
+import VerdictRating from "@/components/engine/VerdictRating";
+import Compatibility from "@/components/engine/Compatibility";
+import CostGuide from "@/components/engine/CostGuide";
+import FAQAccordion from "@/components/engine/FAQAccordion";
+import TrustCta from "@/components/engine/TrustCta";
 
 async function getPageData(dataFile) {
   try {
-    const data = await import(`@/data/generations/${dataFile}.json`);
+    const data = await import(`@/data/engines/${dataFile}.json`);
     return data.default;
   } catch {
     return null;
@@ -36,6 +32,9 @@ export async function generateMetadata({ params }) {
   return {
     title: meta.title,
     description: meta.description,
+    alternates: meta.canonical
+      ? { canonical: meta.canonical }
+      : undefined,
     openGraph: meta.openGraph
       ? {
           title: meta.openGraph.title,
@@ -51,12 +50,13 @@ export async function generateMetadata({ params }) {
           card: meta.twitter.card,
           title: meta.twitter.title,
           description: meta.twitter.description,
+          images: meta.twitter.image ? [meta.twitter.image] : undefined,
         }
       : undefined,
   };
 }
 
-export default async function GenerationPage({ params }) {
+export default async function EnginePage({ params }) {
   const { slug } = await params;
   const entry = pages.find((page) => page.slug === slug);
   if (!entry) notFound();
@@ -78,15 +78,11 @@ export default async function GenerationPage({ params }) {
         {JSON.stringify(data.meta, null, 2)}
       </pre>
       <p>slug: {data.meta?.slug}</p>
-      <ModelHero data={data.hero} />
-      <EngineDatabase data={data.engineDatabase} />
-      <Overview data={data.overview} />
-      <BestWorstEngines data={data.bestWorstEngines} />
-      <OwnershipEconomics data={data.ownershipEconomics} />
-      <CommonProblems data={data.commonProblems} />
-      <ReplacementCosts data={data.replacementCosts} />
-      <CoreVariants data={data.coreVariants} />
-      <MarketIntelligence data={data.marketIntelligence} />
+      <EngineHero data={data.hero} />
+      <AtAGlance data={data.atAGlance} />
+      <VerdictRating data={data.verdictRating} />
+      <Compatibility data={data.compatibility} />
+      <CostGuide data={data.costGuide} />
       <FAQAccordion data={data.faq} />
       <TrustCta data={data.trustCta} />
     </main>

@@ -25,15 +25,22 @@
 - Route: `/variant/[slug]` → `src/app/variant/[slug]/page.js`
 - Same rules as models/generations.
 
+## Engines
+- JSON: `src/data/engines/<slug>.json`
+- Registry: `src/data/registery/engines/pages.json`
+- Components: `src/components/engine/`
+- Route: `/engine/[slug]` → `src/app/engine/[slug]/page.js`
+- Same rules as models/generations/variants.
+
 ## Page JSON shape
 ```json
 {
-  "meta": { "title": "...", "description": "...", "openGraph": {}, "twitter": {}, "jsonLd": {} },
-  "slug": "example-slug",
+  "meta": { "slug": "example-slug", "title": "...", "description": "...", "openGraph": {}, "twitter": {}, "jsonLd": {} },
   "hero": {},
   "sectionKey": {}
 }
 ```
+- `slug` lives inside `meta` (not top-level). Registry `pages.json` still lists slugs for routing.
 
 ## Workflow
 1. User sends content (+ slug).

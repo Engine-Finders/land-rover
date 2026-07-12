@@ -81,7 +81,7 @@ export default async function VariantPage({ params }) {
       <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
         {JSON.stringify(data.meta, null, 2)}
       </pre>
-      <p>slug: {data.slug}</p>
+      <p>slug: {data.meta?.slug}</p>
       <VariantHero data={data.hero} />
       <EraMap data={data.eraMap} />
       <ReplacementCosts data={data.replacementCosts} />

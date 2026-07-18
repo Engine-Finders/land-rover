@@ -1,16 +1,14 @@
 import Link from "next/link";
 
-const logoText = "BMW RELIABILITY GUIDE";
+const logoText = "LAND ROVER RELIABILITY GUIDE";
 const links = [
-  { label: "1 SERIES", href: "#" },
-  { label: "3 SERIES", href: "#" },
-  { label: "5 SERIES", href: "#" },
-  { label: "X3", href: "#" },
-  { label: "X5", href: "#" },
-  { label: "M CARS", href: "#" },
+  { label: "DEFENDER", href: "#" },
+  { label: "DISCOVERY", href: "#" },
+  { label: "RANGE ROVER", href: "#" },
+  { label: "EVOQUE", href: "#" },
+  { label: "VELAR", href: "#" },
   { label: "GUIDES", href: "#" },
   { label: "ABOUT", href: "#" },
-  { label: "FORUM", href: "#" },
 ];
 const cta = { label: "START YOUR RESEARCH", href: "#" };
 

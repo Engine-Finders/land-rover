@@ -1,10 +1,11 @@
 import Link from "next/link";
 
-const text = "© BMW Reliability Guide. All rights reserved.";
+const text = "© LandRoverEngine.uk. All rights reserved.";
 const links = [
   { label: "Home", href: "/" },
   { label: "About", href: "#" },
-  { label: "Forum", href: "#" },
+  { label: "Contact", href: "#" },
+  { label: "Privacy", href: "#" },
 ];
 
 export default function Footer() {

@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "slug": "land-rover-defender-v8",
+    "title": "Land Rover Defender V8 Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 71,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "Land Rover Defender V8 • 1983–1998 • 4 Engine Variants",
+    "h1": "Land Rover Defender V8 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover V8 specialists. Compare reconditioned, rebuilt and used Rover V8 3.5, 3.9 and 4.0 engines — supply & fit available nationwide for Classic Defender and 50th Anniversary models.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Defender V8 Engines — from £1,500 to £5,500 · Common codes: Rover V8 3.5/3.9/4.0",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Defender V8 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "Land Rover Defender V8 — Which Engine Does Your Classic Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Classic Defender",
+        "years": "1983–1985",
+        "engineCode": "Rover V8 3.5 (carburettor)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,500–£3,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Carburettor 3.5 — simple, durable, no electronics"
+      },
+      {
+        "generation": "Classic Defender",
+        "years": "1986–1994",
+        "engineCode": "Rover V8 3.9 (fuel-injected)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,000–£4,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "EFI 3.9 — more power, more complexity, same core reliability"
+      },
+      {
+        "generation": "Classic Defender",
+        "years": "1995–1997",
+        "engineCode": "Rover V8 4.0 (GEMS/Thor)",
+        "reliability": "★★★½☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,500–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Final 4.0 — more refined but electronics more complex"
+      },
+      {
+        "generation": "50th Anniversary",
+        "years": "1998",
+        "engineCode": "Rover V8 3.9/4.0",
+        "reliability": "★★★★☆ / ★★★½☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,000–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Limited run — same engines as late Classic"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Defender V8 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£3,000",
+        "fittedIndie": "£2,300–£4,100",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; non-daily or project vehicle"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,700–£6,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,500–£5,500",
+        "fittedIndie": "£4,700–£6,800",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — NLA from LR",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "Specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the final 4.0-era specification, the most common quote request today for Classic Defender V8s. Older generations: see the Era Map above for 3.5/3.9-specific pricing, which typically runs lower on the used market.",
+    "labourEstimate": "Fitting a Defender V8 engine typically takes 10–14 hours at £65–£95/hr (independent Land Rover specialist) or £110–£160/hr (London/SE specialist).",
+    "cta": {
+      "label": "→ Compare Defender V8 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Cylinder Liner Slippage / Porosity (4.0 V8)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Timing Chain Wear (All Rover V8s)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Carburettor / EFI System Issues (3.5 carb / 3.9 EFI)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, every Defender V8 era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Defender V8 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Defender V8 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Liner slippage (4.0)",
+          "repairable": "✅ Yes (with top-hat liners)",
+          "typicalCost": "£1,500–£2,500",
+          "whenItMakesSense": "Vehicle is a keeper — value justifies a one-time bottom-end rebuild"
+        },
+        {
+          "problem": "Timing chain wear (all)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Preventative — avoids valve/piston damage"
+        },
+        {
+          "problem": "Carb/EFI issues (3.5/3.9)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£600",
+          "whenItMakesSense": "Almost always worth fixing — these are simple systems to service"
+        },
+        {
+          "problem": "Crankshaft failure (rare)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£3,000–£5,000",
+          "whenItMakesSense": "Only if the vehicle has exceptional value (e.g., 50th Anniversary, NAS-spec)"
+        },
+        {
+          "problem": "Severe block porosity (4.0)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement required",
+          "whenItMakesSense": "Block replacement — often £3,000–£5,500 for a replacement long-block"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Defender V8? Check These First",
+      "buyIf": [
+        "* 3.5 or 3.9 carb/EFI with documented history — the simplest, most robust configurations",
+        "* 4.0 with top-hat liners already fitted — problem solved permanently",
+        "* Full service history with regular oil changes (the Rover V8 loves clean oil)",
+        "* A pre-1995 3.9 if you want the sweet spot of power and simplicity"
+      ],
+      "avoidIf": [
+        "* 4.0 with no liner history and evidence of coolant loss (liner risk still present)",
+        "* Any Rover V8 with oil cooler blocked or cooling system neglected (overheating kills these engines)",
+        "* Poor compression on any cylinder — the Rover V8 is forgiving but not invincible",
+        "* 50th Anniversary cars with 4.0 and no rebuild history — the scarcity premium doesn't fix the engineering"
+      ]
+    },
+    "closingVerdict": "The Rover V8 is one of the most straightforward engine families to own — if you buy the right era and maintain it properly. The 3.5 and 3.9 carburettor/EFI variants are rock-solid; the 4.0 introduced liner risk but a top-hat rebuild eliminates it permanently. In our view, a top-hatted 4.0 is the ultimate Defender V8 — but only if that work is already done.",
+    "cta": {
+      "label": "→ Compare Defender V8 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Defender V8 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any rattle on startup; monitor oil pressure after start",
+      "* Service History — Including which engine era (3.5 carb / 3.9 EFI / 4.0 GEMS/Thor)",
+      "* Coolant Check — Any sign of coolant loss; pressurisation; oil contamination (liner warning)",
+      "* Oil Pressure — Must hold steady at idle and rise cleanly with RPM; any warning light = investigate",
+      "* Carb/EFI System — 3.5: check choke operation; 3.9: check cold start and idle stability",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles? (Rover V8s can be thirsty)",
+      "* Exhaust Smoke — Blue smoke on start or over-run indicates valve seals; white smoke = coolant ingress",
+      "* MOT History — Check for emissions-related failures (EFI sensors can be intermittent)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "Rover V8 3.5 (carburettor)",
+        "years": "1983–1985",
+        "power": "136–140 bhp",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£1,500–£3,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "Rover V8 3.9 (EFI)",
+        "years": "1986–1994",
+        "power": "155–175 bhp (varies by state of tune)",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£2,000–£4,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "Rover V8 4.0 (GEMS/Thor)",
+        "years": "1995–1997",
+        "power": "181–190 bhp",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£2,500–£5,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (4.0 GEMS variant):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "3,948 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V8, 16-valve pushrod OHV"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "8.13:1 (GEMS) — 9.35:1 (Thor) [VERIFY]"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-point EFI (GEMS sequential / Thor distributor-less)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated — no forced induction (not to be confused with 3.9/4.0 V8s in P38A/D2 which share the same block architecture)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Defender V8 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Liner slippage on 4.0 V8 — approximately 60% of 4.0-era Defender V8 enquiries [PATTERN DATA — heritage volume]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "85,000 miles [PATTERN DATA — based on specialist workshop consensus]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,500 reconditioned (3.9/4.0 era), supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "Rover V8 3.9 EFI (sweet-spot configuration — most daily-driven Classics) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — owners prepare Classic Defenders for summer use and green-laning [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (25%), South East (18%), Midlands (15%) [PATTERN DATA — Land Rover heartland]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Defender V8 engine replacement cost in the UK?",
+        "answer": "A reconditioned Defender V8 engine typically costs £2,500–£5,500 supply only depending on era, with the late 4.0 sitting at £2,500–£5,500. Fitting adds £650–£1,300. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Defender V8 reliable?",
+        "answer": "That depends on which of the four engine configurations your Defender has. The 3.5 carburettor (1983–1985) is widely considered the most durable configuration — simple, no ECU, easy to fix. The 3.9 EFI (1986–1994) adds some complexity but retains the same core reliability. The late 4.0 (1995–1997) introduces liner-slippage risk — a well-documented issue — but can be permanently cured with top-hat liners. Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Defender V8?",
+        "answer": "Cylinder liner slippage on the 4.0 V8 (coolant loss, overheating), timing chain wear across all eras (rattling on startup), and carburettor/EFI system issues on 3.5/3.9 variants (age-related rubber perishing and electrical corrosion). The 4.0's liner risk is the most significant financial exposure."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Defender V8 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £10,000 Defender V8 with 4.0 engine, a £4,000 rebuild is 40% of the car's value — worth it. Against a tired £4,000 example, the same rebuild exceeds our 60% Land Rover threshold — get a scrap valuation first. For 3.5 and 3.9 examples, the simpler engine often makes repair more viable relative to vehicle value."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Defender V8 engine code?",
+        "answer": "Land Rover's VIN plate and engine block stamping. As a rule of thumb: pre-1986 is 3.5 carburettor, 1986–1994 is 3.9 EFI, 1995–1997 is 4.0 GEMS/Thor, and 1998 (50th Anniversary) is late 3.9 or 4.0. The engine code is stamped on the block's left-hand side near the dipstick."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 4.0 V8 liner issue, or does it need replacement?",
+        "answer": "Yes — if caught early. Top-hat liner installation (£1,500–£2,500) is a permanent cure for the classic Rover V8 liner-slip problem. If the block has already cracked or the liners have dropped significantly, replacement may be the only viable option (£2,500–£5,500 for a reconditioned long-block). At the first sign of coolant loss, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Defender V8 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Defender V8 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Defender V8 owners, as part of the Engine Finders network, across every engine era from the 3.5 carburettor to the 4.0 GEMS/Thor."
+      },
+      {
+        "title": "Compare Defender V8 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, with clear era-specific pricing for 3.5, 3.9 and 4.0 variants."
+      },
+      {
+        "title": "UK Engine Replacement Services for Defender V8",
+        "text": "supply-only or full supply & fit available nationwide, covering every Classic Defender V8 from 1983 to the 50th Anniversary, with specialists who know the Rover V8 inside out."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Defender V8 engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get your classic back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Land Rover Defender V8 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

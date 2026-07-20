@@ -1,0 +1,525 @@
+{
+  "meta": {
+    "slug": "discovery-sport-si4",
+    "title": "Si4 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 47,
+    "description": "Every Land Rover Discovery Sport Si4 engine — GTDi & 204PT. 2 eras, real UK costs & reliability. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 156,
+    "canonical": "https://landroverengine.uk/discovery-sport/si4/",
+    "openGraph": {
+      "title": "Si4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Discovery Sport Si4 engine — GTDi & 204PT. 2 eras, real UK costs & reliability. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/discovery-sport/si4/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-si4.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Si4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Discovery Sport Si4 engine — GTDi & 204PT. 2 eras, real UK costs & reliability.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-si4.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery Sport",
+              "item": "https://landroverengine.uk/discovery-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Discovery Sport L550",
+              "item": "https://landroverengine.uk/discovery-sport/l550/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Si4",
+              "item": "https://landroverengine.uk/discovery-sport/si4/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery Sport Si4 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L550 Si4 GTDi (2015–2017)",
+              "url": "https://landroverengine.uk/discovery-sport/l550/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "L550 Si4 204PT Ingenium (2017–2019)",
+              "url": "https://landroverengine.uk/discovery-sport/l550/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery Sport Si4 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Si4 GTDi (Ford 2.0 EcoBoost)",
+              "url": "https://landroverengine.uk/engines/gtdi/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "204PT (Ingenium 2.0)",
+              "url": "https://landroverengine.uk/engines/204pt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery Sport Si4 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 2.0 petrol Si4 engine typically costs £3,000–£5,000 supply only for the 204PT Ingenium, with the older GTDi running slightly lower. Fitting adds £1,100–£1,600. Use our calculator for a figure specific to your Discovery Sport."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Discovery Sport Si4 (petrol) engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends which engine your Si4 has. The GTDi (2015–2017) is a robust Ford-sourced unit but has coolant loss and carbon build-up watchpoints. The 204PT Ingenium (2017–2019) is generally more reliable with cooling system and water pump issues as the main concerns. Check the Era Map above for your specific car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Discovery Sport Si4 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Coolant loss and head gasket issues on the GTDi (2015–2017), water pump failure on the 204PT Ingenium (2017–2019), and carbon build-up on intake valves across both engines."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery Sport Si4 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. An L550 Discovery Sport is a £5,000–£18,000 vehicle — a £4,000 recon is 22–80% of the car's value. For lower-value examples (sub-£7,000), evaluate carefully against our 60% Land Rover scrap threshold. Well-maintained mid-to-high-value examples justify replacement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Discovery Sport Si4 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The Si4 badge covers two engines: GTDi (2015–2017) and 204PT (2017–2019). Tell us your registration date and we'll confirm which one you have for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent the carbon build-up on Si4 engines?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — periodic intake cleaning (walnut blasting) every 40,000–60,000 miles is the most effective prevention. Using premium fuel and occasional spirited driving to heat the intake valves can also help reduce carbon accumulation."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery Sport Si4 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "6500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery Sport Si4 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Discovery Sport Si4 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Si4 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery-sport/si4/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery Sport Si4 • 2015–2019 • GTDi / 204PT",
+    "h1": "Land Rover Discovery Sport Si4 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The Si4 badge covers two distinct petrol engines on the L550 Discovery Sport — the Ford-sourced GTDi (2015–2017) and the JLR Ingenium 204PT (2017–2019). Get quotes from trusted UK specialists today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Discovery Sport Si4 Engines — from £1,500 to £6,500 · GTDi / 204PT",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Discovery Sport Si4 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The DISCOVERY SPORT Si4 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Discovery Sport Si4 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£3,500",
+        "fittedIndie": "£2,500–£4,700",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£4,100–£6,300",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,200–£6,500",
+        "fittedIndie": "£5,300–£7,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£6,000–£9,000",
+        "fittedIndie": "£7,200–£10,400",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current 204PT Ingenium generation; older GTDi-era pricing runs lower — see the Era Map above.",
+    "labourEstimate": "Fitting a Discovery Sport Si4 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare Discovery Sport Si4 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Coolant Loss / Head Gasket Issues (GTDi, 2015–2017)",
+        "symptoms": "Gradual coolant loss with no visible leak, overheating, misfire on cold start, white smoke from exhaust.",
+        "typicalMileage": "50,000–90,000 miles",
+        "repairCost": "£800–£1,800 (head gasket) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only (if caught before overheating)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if coolant levels drop"
+        },
+        "recommendation": "The Ford-sourced GTDi engine has a known weakness for coolant loss, often due to head gasket failure or block porosity. If you notice the coolant level dropping with no visible external leak, have the cooling system pressure-tested immediately. Catching it early can save you from a full engine replacement.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Water Pump Failure (204PT Ingenium, 2017–2019)",
+        "symptoms": "Coolant leak from the front of the engine, whining noise from the belt area, overheating, low coolant warning.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£400–£800 (water pump replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The 204PT Ingenium petrol engine's water pump is a known weak point. If you hear a whining noise from the front of the engine or notice coolant loss, have the water pump inspected. Replacing it preventatively is far cheaper than the overheating damage it can cause.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/water-pump-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Carbon Build-up on Intake Valves (Both Engines)",
+        "symptoms": "Reduced power, rough idle, hesitation on acceleration, increased fuel consumption.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£300–£600 (walnut blasting / carbon cleaning) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Both the GTDi and 204PT are direct-injection petrol engines — this means carbon can build up on the intake valves over time. Periodic intake cleaning (walnut blasting) can restore performance. If you notice hesitation or poor throttle response, a carbon clean is often the solution.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/carbon-buildup/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, every Discovery Sport Si4 engine covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Discovery Sport Si4 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Discovery Sport Si4 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Coolant loss / head gasket (GTDi)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Catch it before overheating — pressure test immediately"
+        },
+        {
+          "problem": "Water pump failure (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Straightforward preventative maintenance"
+        },
+        {
+          "problem": "Carbon build-up (both engines)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Routine maintenance — improves performance and MPG"
+        },
+        {
+          "problem": "Timing chain stretch (GTDi)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Viable on lower-mileage examples; assess overall condition"
+        },
+        {
+          "problem": "Severe overheating damage",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Little left to salvage — replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Discovery Sport Si4? Check These First",
+      "buyIf": [
+        "* Documented coolant system maintenance on GTDi (2015–2017)",
+        "* Water pump replaced preventatively on 204PT (2017–2019)",
+        "* No signs of coolant loss or overheating",
+        "* Full service history with correct oil spec"
+      ],
+      "avoidIf": [
+        "* Coolant loss with no diagnosis on GTDi — walk away",
+        "* Whining noise from the front of the engine on 204PT — water pump may be failing",
+        "* Poor throttle response with no carbon-cleaning history — may indicate significant buildup",
+        "* Engine warning light with no diagnosis — potential sensor or injection issues"
+      ]
+    },
+    "closingVerdict": "The Si4 badge represents a significant shift for the Discovery Sport — moving from Ford-sourced GTDi power to JLR's own Ingenium petrol engine. The GTDi is generally reliable but sensitive to coolant system health; the 204PT is more robust but has water pump and cooling system watchpoints. Buy on documented maintenance history, and factor in a carbon clean if there's no record of one.",
+    "cta": {
+      "label": "→ Compare Discovery Sport Si4 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Discovery Sport Si4 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Coolant Level — Check for low coolant; GTDi head gasket issues and 204PT water pump failure are both common",
+      "* Cold Start — Listen for misfire or rough idle; carbon build-up can cause hesitation",
+      "* Service History — including which engine era (GTDi or 204PT) and confirmed maintenance",
+      "* Turbo Response — Test acceleration; any lag, hesitation, or loss of power?",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Water Pump Noise — Listen for whining from the front of the engine on 204PT",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "Si4 GTDi (Ford 2.0 EcoBoost)",
+        "years": "2015–2017",
+        "power": "240 PS (237 bhp) @ 5,500 rpm; 340 Nm @ 1,750–4,000 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "204PT (Ingenium 2.0)",
+        "years": "2017–2019",
+        "power": "240 PS (237 bhp) @ 5,500 rpm; 340 Nm @ 1,750–4,000 rpm",
+        "enquiries": "480 [EM-VERIFIED]",
+        "avgReconCost": "£3,000–£5,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204PT Ingenium 2.0):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,997 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single-turbo (twin-scroll)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Discovery Sport Si4 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Discovery Sport Si4 engine replacement cost in the UK?",
+        "answer": "A reconditioned 2.0 petrol Si4 engine typically costs £3,000–£5,000 supply only for the 204PT Ingenium, with the older GTDi running slightly lower. Fitting adds £1,100–£1,600. Use our calculator for a figure specific to your Discovery Sport."
+      },
+      {
+        "id": 2,
+        "question": "Is the Discovery Sport Si4 (petrol) engine reliable?",
+        "answer": "It depends which engine your Si4 has. The GTDi (2015–2017) is a robust Ford-sourced unit but has coolant loss and carbon build-up watchpoints. The 204PT Ingenium (2017–2019) is generally more reliable with cooling system and water pump issues as the main concerns. Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Discovery Sport Si4 engine?",
+        "answer": "Coolant loss and head gasket issues on the GTDi (2015–2017), water pump failure on the 204PT Ingenium (2017–2019), and carbon build-up on intake valves across both engines."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Discovery Sport Si4 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. An L550 Discovery Sport is a £5,000–£18,000 vehicle — a £4,000 recon is 22–80% of the car's value. For lower-value examples (sub-£7,000), evaluate carefully against our 60% Land Rover scrap threshold. Well-maintained mid-to-high-value examples justify replacement."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Discovery Sport Si4 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The Si4 badge covers two engines: GTDi (2015–2017) and 204PT (2017–2019). Tell us your registration date and we'll confirm which one you have for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent the carbon build-up on Si4 engines?",
+        "answer": "Yes — periodic intake cleaning (walnut blasting) every 40,000–60,000 miles is the most effective prevention. Using premium fuel and occasional spirited driving to heat the intake valves can also help reduce carbon accumulation."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Land Rover Discovery Sport Si4 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £1,500 for a used unit to £6,500 for a fully rebuilt petrol engine.",
+    "ctaButton": {
+      "label": "Explore Land Rover Discovery Sport Si4 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "slug": "land-rover-freelander-2-l359",
+    "title": "Land Rover Freelander 2 L359 Engines — The Complete UK Guide",
+    "titleCharCount": 60,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Land Rover Freelander 2 L359 • SUV • 2006–2014",
+    "h1": "Land Rover Freelander 2 L359 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the Freelander 2 L359 — from the 2.2-litre TD4 diesel to the 3.2-litre Si6 petrol six and the later Si4 turbo. Real UK costs, honest failure data, and the Ford-PSA diesel that made this one of Land Rover's most dependable powertrains. Backed by 144+ real UK L359 enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "144+ L359 Enquiries (2025) [EM-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "SUV"
+      },
+      {
+        "icon": "📖",
+        "label": "4 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore L359 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Land Rover Freelander 2 L359 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the Freelander 2 L359 specifically — including the TD4 diesel, the Si6 petrol six, and the later Si4 turbocharged petrol.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (L359)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "224DT (DW12BTED4)",
+        "family": "DW12",
+        "fuel": "Diesel",
+        "displacement": "2.2L",
+        "power": "150–190 PS (110–140 kW)",
+        "years": "2006–2014",
+        "variants": "TD4, SD4, eD4",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "144 (model-level) [EM-VERIFIED]",
+        "avgReconCost": "£2,000–£3,500 [EM-QUOTE]"
+      },
+      {
+        "engineCode": "306PN (B6324S)",
+        "family": "SI6",
+        "fuel": "Petrol",
+        "displacement": "3.2L",
+        "power": "233 PS (171 kW)",
+        "years": "2006–2010",
+        "variants": "Si6",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [EM-QUOTE]"
+      },
+      {
+        "engineCode": "204PT (GTDI)",
+        "family": "Ingenium",
+        "fuel": "Petrol",
+        "displacement": "2.0L",
+        "power": "240–241 PS (177 kW)",
+        "years": "2011–2014",
+        "variants": "Si4",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£5,000 [EM-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Land Rover Freelander 2 L359 — Overview",
+    "intro": "The Freelander 2 (codename L359) debuted in 2006 as the second generation of Land Rover's compact SUV. Built at Halewood, it was the first Land Rover not assembled at Solihull. The engine range initially comprised a 2.2-litre turbodiesel from the Ford-PSA DW12 family and a 3.2-litre straight-six petrol from Ford's SI6 series. A 2.0-litre turbocharged petrol (Si4) joined the range from 2011, and a frugal 2.2 eD4 two-wheel-drive variant arrived in 2010. The L359 is widely regarded as one of Land Rover's most reliable models.",
+    "keyFacts": "Platform: Ford EUCD / Land Rover • Predecessor: Freelander 1 (L314) • Successor: Discovery Sport (L550) • Sibling body styles in this generation: N/A — L359 is the sole body style.",
+    "marketIntelligenceLine": "The Freelander 2 L359 generated 144 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 2.2 TD4 diesel as these vehicles enter the high-mileage phase of their ownership cycle."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "224DT (DW12BTED4) — 2.2 TD4/SD4",
+        "quote": "Ford-PSA's DW12 is a proven workhorse — the same engine that powered countless Ford, Peugeot, and Citroën vehicles. EGR and DPF are the only real demands; the bottom end is genuinely durable.",
+        "whoItsFor": "buyers who want Land Rover reliability without the complexity of later Ingenium engines."
+      },
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "306PN (B6324S) — 3.2 Si6",
+        "quote": "Ford's SI6 straight-six is smooth, naturally aspirated, and free of turbo-related complications. High fuel consumption is the only real downside — mechanical reliability is excellent.",
+        "whoItsFor": "buyers who want six-cylinder refinement and don't mind the fuel bills."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "204PT (GTDI) — 2.0 Si4",
+        "quote": "The 2.0-litre turbo petrol is newer and more complex than the Si6, with known cooling system and timing chain concerns on early units. Warranty data confirms issues on 2.0GTDI engines in L359 and L538 vehicles.",
+        "whoItsFor": "buyers who want modern turbo petrol power and are prepared for specialist maintenance."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "204PT (GTDI) — 2.0 Si4",
+        "quote": "Chain and cooling system repairs can run into thousands; the 2.0GTDI is the most complex engine in the L359 range. Replacement costs are significantly higher than the diesel.",
+        "whoItsFor": "buyers with full service history and a specialist budget."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "224DT (DW12BTED4) — 2.2 TD4",
+        "quote": "The most common L359 engine by far, with cheap parts, nationwide specialist coverage, and a well-understood failure profile. A £2,000–£3,500 recon makes financial sense against a £2,500–£7,000 vehicle.",
+        "whoItsFor": "buyers who want the most cost-effective L359 ownership."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "306PN (B6324S) — 3.2 Si6",
+        "quote": "Petrol L359s are rare in the UK, but the Si6 is genuinely reliable — no DPF, no EGR, no turbo. Fuel consumption is the only compromise. A well-maintained Si6 is a future classic in waiting.",
+        "whoItsFor": "enthusiasts who value character over economy."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "Land Rover Freelander 2 L359 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "224DT (2.2 TD4/SD4)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "EGR cooler, DPF, injector seals",
+        "repairCostSpecialist": "£400–£1,200",
+        "replacementCostRecon": "£2,000–£3,500",
+        "ownershipVerdict": "Solid Choice — proven DW12 diesel; cheap to run"
+      },
+      {
+        "engine": "306PN (3.2 Si6)",
+        "typicalMileage": "100k+",
+        "commonMajorFailure": "Crankcase ventilation membrane",
+        "repairCostSpecialist": "£200–£500",
+        "replacementCostRecon": "£1,800–£3,200",
+        "ownershipVerdict": "Best Petrol — reliable but thirsty"
+      },
+      {
+        "engine": "204PT (2.0 Si4)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Cooling system, timing chain",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£3,000–£5,000",
+        "ownershipVerdict": "Watch Closely — newer, more complex"
+      }
+    ],
+    "economicsRule": {
+      "title": "The L359 rule",
+      "text": "A £2,000–£3,500 TD4 recon against a £2,500–£7,000 Freelander 2 sits at 29–140% of the car's value. On a sub-£3,000 high-mileage example, that brushes our 60% Land Rover threshold — we'll honestly tell you to walk away. Against a well-kept £5,000+ example, the same recon drops to a routine 40–70% — a repair decision, not a financial one. Value the car first."
+    },
+    "keyTakeaways": []
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "224DT DW12 EGR Cooler & DPF Clogging",
+        "affectedModels": "Freelander 2 2.2 TD4, SD4, eD4 (2006–2014).",
+        "typicalFailureMileage": "80,000–150,000 miles.",
+        "rootCause": "The DW12's EGR cooler can develop internal leaks, allowing coolant into the exhaust; DPF clogging is common in urban-use vehicles. Injector seal leaks (carbon buildup) are also a known pattern.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,200",
+            "specialist": "£400–£900",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,500–£4,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "At the first sign of EGR cooler leaks (coolant loss, white smoke) or DPF warning lights, get it inspected immediately — a £400–£900 preventative repair is cheaper than the £2,500–£4,000 replacement that follows if ignored. On an L359 worth under £3,000, this decision alone determines whether the car stays economically viable.",
+        "cta": {
+          "label": "Compare 224DT engine prices for your Freelander 2 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "306PN SI6 Crankcase Ventilation Membrane Failure",
+        "affectedModels": "Freelander 2 3.2 Si6 (2006–2010).",
+        "typicalFailureMileage": "80,000+ miles.",
+        "rootCause": "The crankcase ventilation membrane can rupture, causing a whistling noise under the bonnet. This is not catastrophic but can lead to oil consumption if ignored.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£400–£800",
+            "specialist": "£200–£500",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£2,500–£4,500",
+            "specialist": "£1,800–£3,200",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "The Si6 is a reliable engine — the crankcase membrane is its only common weakness. A £200–£500 fix is trivial against the engine's otherwise bulletproof reputation.",
+        "cta": {
+          "label": "Compare 306PN engine prices for your Freelander 2 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "204PT GTDI Cooling System & Timing Chain",
+        "affectedModels": "Freelander 2 2.0 Si4 (2011–2014).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The 2.0GTDI petrol engine has known cooling system issues and timing chain tensioner wear. Warranty data confirms issues on L359 vehicles fitted with 2.0GTDI engines.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,200–£2,200",
+            "specialist": "£800–£1,600",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,500–£7,000",
+            "specialist": "£3,500–£5,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If your L359 Si4 has no documented cooling system or chain history, treat it as a priority inspection — £800–£1,600 now is far cheaper than the £3,500+ replacement that follows a failure.",
+        "cta": {
+          "label": "Compare 204PT engine prices for your Freelander 2 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "L359 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "2.2 TD4/SD4/eD4",
+        "engineCode": "224DT (DW12BTED4)",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£2,000–£3,500",
+        "rebuiltSupply": "£3,000–£5,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "3.2 Si6",
+        "engineCode": "306PN (B6324S)",
+        "usedSupply": "£900–£1,800",
+        "reconditionedSupply": "£1,800–£3,200",
+        "rebuiltSupply": "£2,800–£4,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "2.0 Si4",
+        "engineCode": "204PT (GTDI)",
+        "usedSupply": "£1,500–£2,800",
+        "reconditionedSupply": "£3,000–£5,000",
+        "rebuiltSupply": "£4,200–£6,500",
+        "labourHours": "10–14 hrs"
+      }
+    ],
+    "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for all L359 engines due to transverse mounting and Halewood production access."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "2.2 eD4",
+      "2.2 TD4",
+      "2.2 SD4"
+    ],
+    "petrolVariants": [
+      "2.0 Si4",
+      "3.2 Si6"
+    ],
+    "scopeNote": "All variants listed are Freelander 2 L359 only. The eD4 is a two-wheel-drive variant introduced in 2010; TD4 and SD4 are all-wheel-drive."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

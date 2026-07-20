@@ -1,0 +1,416 @@
+{
+  "meta": {
+    "slug": "368dt",
+    "title": "Land Rover 368DT (3.6 TDV8) Engine — Reliability",
+    "description": "The 368DT is a torquey V8 diesel — but early timing chain and crankshaft issues are well-documented risks. Backed by 650+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+    "canonical": "https://landroverengine.uk/engines/368dt/",
+    "openGraph": {
+      "title": "Land Rover 368DT (3.6 TDV8) Engine — Reliability",
+      "description": "The 368DT is a torquey V8 diesel — but early timing chain and crankshaft issues are well-documented risks. Backed by 650+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/engines/368dt/",
+      "image": "https://landroverengine.uk/images/landrover/engines/368dt.jpg",
+      "siteName": "landroverengine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Land Rover 368DT (3.6 TDV8) Engine — Reliability",
+      "description": "The 368DT is a torquey V8 diesel — but early timing chain and crankshaft issues are well-documented risks. Backed by 650+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "image": "https://landroverengine.uk/images/landrover/engines/368dt.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://landroverengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "368DT (3.6 TDV8)",
+              "item": "https://landroverengine.uk/engines/368dt/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover models fitted with the 368DT (3.6 TDV8)",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Land Rover Range Rover L322 TDV8",
+              "url": "https://landroverengine.uk/models/range-rover-l322/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Land Rover Range Rover Sport L320 TDV8",
+              "url": "https://landroverengine.uk/models/range-rover-sport-l320/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a 368DT (3.6 TDV8) engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 368DT TDV8 typically costs £5,500–£8,000 supply only, varying by specification and rebuild quality. Used units can be found from £3,000–£5,000, but provenance is critical. Fitting adds £1,000–£2,000 depending on labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the 368DT (3.6 TDV8) a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 368DT has a poor reputation (3.0★). While it offers strong V8 torque and refinement, the early engines (2006–2009) are known for timing chain tensioner failure and, in more severe cases, crankshaft fracture. It is not the reliable 4.4 TDV8 (448DT) that replaced it."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common 368DT failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner failure is the most critical on early (2006–2009) engines — causing chain slack, timing drift, and catastrophic valve/piston interference. Turbo actuator failure and crankshaft fracture are also well-documented risks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover models use the 368DT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 368DT powered the Range Rover L322 TDV8 from 2006 to 2009 and the Range Rover Sport L320 TDV8 from 2006 to 2012."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the 368DT (3.6 TDV8) last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With meticulous maintenance and early timing chain tensioner replacement on pre‑2009 examples, 368DT engines can reach 150,000+ miles. However, many fail well before this due to the known issues. Later (2009+) examples are more durable but still require careful maintenance."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "landroverengine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Land Rover 368DT (3.6 TDV8) Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Land Rover"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover 368DT (3.6 TDV8) Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "10500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover 368DT (3.6 TDV8) UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Land Rover 368DT (3.6 TDV8), sourced from landroverengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Land Rover 368DT (3.6 TDV8) Engine — Reliability",
+          "url": "https://landroverengine.uk/engines/368dt/",
+          "author": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover • 368DT (3.6 TDV8) • Diesel • 3.6L V8 Turbo • 2006–2012",
+    "h1": "Land Rover 368DT (3.6 TDV8) Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The 368DT is a torquey V8 diesel — but early timing chain and crankshaft issues are well‑documented risks. Backed by 650+ real UK enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "650+ Enquiries"
+      },
+      {
+        "icon": "🔧",
+        "label": "2 Models Fitted"
+      },
+      {
+        "icon": "💯",
+        "label": "46/100 Engine Score"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Compare 368DT (3.6 TDV8) Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "368DT (3.6 TDV8)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Diesel"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "3.6L V8 Turbo"
+      },
+      {
+        "metric": "Power Range",
+        "value": "268–295 hp [THIRD-PARTY]"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2006–2012"
+      },
+      {
+        "metric": "Models Fitted (Land Rover only)",
+        "value": "2 (Range Rover L322, Range Rover Sport L320)"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Exclusive to Land Rover"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "46/100"
+      },
+      {
+        "metric": "SECTION 3 — VERDICT & RATING",
+        "value": "H2: 368DT (3.6 TDV8) — Our Verdict & Rating"
+      },
+      {
+        "metric": "Star rating: ★★★ out of 5",
+        "value": "Confidence: 84% confidence — based on 650+ real UK enquiries, specialist rebuild reports, and extensive owner‑forum data."
+      },
+      {
+        "metric": "Engine Score breakdown:",
+        "value": "Dimension"
+      },
+      {
+        "metric": "Score (of 20)",
+        "value": "How it's determined"
+      },
+      {
+        "metric": "Reliability",
+        "value": "12"
+      },
+      {
+        "metric": "Star rating (3.0★) × 4 = 12",
+        "value": "Repair Cost"
+      },
+      {
+        "metric": "8",
+        "value": "Midpoint of Reconditioned (Supply Only) range: £5,500–£8,000 → £6,750 midpoint → falls in £7,000–£9,999 bracket → 8"
+      },
+      {
+        "metric": "Repairability",
+        "value": "4"
+      },
+      {
+        "metric": "Crankshaft fracture often writes off the engine; small specialist pool for 3.6 unit; early units have multiple failure points",
+        "value": "Parts Supply"
+      },
+      {
+        "metric": "12",
+        "value": "368DT parts available but less common than 4.4 V8; some components are becoming harder to source"
+      },
+      {
+        "metric": "Replacement Economics",
+        "value": "10"
+      },
+      {
+        "metric": "Reconditioned cost (£6,750 midpoint) as % of lowest typical vehicle value (L322 ~£4,000–£8,000) = 84–169% → falls in 60–74% bracket → 8",
+        "value": "Total"
+      },
+      {
+        "metric": "46/100",
+        "value": "Sum of the five rows above"
+      },
+      {
+        "metric": "One-line verdict: The 368DT is a torquey V8 diesel — but early timing chain tensioner and crankshaft fracture risks are significant — avoid early examples or buy with proven history.",
+        "value": "Best For / Avoid If:"
+      },
+      {
+        "metric": "* Best for: L322 owners wanting V8 diesel torque and presence at a lower entry price than the 4.4.",
+        "value": "* Avoid if: you're looking at an early (pre‑2009) example with no timing chain history or any hint of crankshaft issues."
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "",
+    "confidence": "",
+    "scoreNote": "",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": []
+    },
+    "oneLineVerdict": "",
+    "bestFor": "",
+    "avoidIf": ""
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "Land Rover Range Rover",
+        "generation": "L322",
+        "variantBadge": "TDV8 (3.6)",
+        "years": "2006–2009"
+      },
+      {
+        "model": "Land Rover Range Rover Sport",
+        "generation": "L320",
+        "variantBadge": "TDV8 (3.6)",
+        "years": "2006–2012"
+      }
+    ],
+    "crossBrandNote": "Exclusive to Land Rover — no cross-brand fitment."
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£4,000–£6,500",
+        "warranty": "Varies by supplier"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£5,500–£8,000",
+        "fittedIndie": "£6,500–£9,500",
+        "warranty": "12 months typical"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£7,000–£10,500",
+        "fittedIndie": "£8,000–£12,000",
+        "warranty": "12–24 months typical"
+      }
+    ],
+    "labourEstimate": "Fitting a 368DT typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "sharedCostNote": "Omitted — engine is exclusive to Land Rover.",
+    "cta": {
+      "label": "→ Compare 368DT (3.6 TDV8) engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a 368DT (3.6 TDV8) engine replacement cost?",
+        "answer": "A reconditioned 368DT TDV8 typically costs £5,500–£8,000 supply only, varying by specification and rebuild quality. Used units can be found from £3,000–£5,000, but provenance is critical. Fitting adds £1,000–£2,000 depending on labour rates."
+      },
+      {
+        "id": 2,
+        "question": "Is the 368DT (3.6 TDV8) a reliable engine?",
+        "answer": "The 368DT has a poor reputation (3.0★). While it offers strong V8 torque and refinement, the early engines (2006–2009) are known for timing chain tensioner failure and, in more severe cases, crankshaft fracture. It is not the reliable 4.4 TDV8 (448DT) that replaced it."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common 368DT failure?",
+        "answer": "Timing chain tensioner failure is the most critical on early (2006–2009) engines — causing chain slack, timing drift, and catastrophic valve/piston interference. Turbo actuator failure is also common (typically sticky vanes). The most severe risk is crankshaft fracture, which can occur without warning and writes off the engine."
+      },
+      {
+        "id": 4,
+        "question": "Which Land Rover models use the 368DT?",
+        "answer": "The 368DT powered the Range Rover L322 TDV8 from 2006 to 2009 and the Range Rover Sport L320 TDV8 from 2006 to 2012."
+      },
+      {
+        "id": 5,
+        "question": "How long does the 368DT (3.6 TDV8) last?",
+        "answer": "With meticulous maintenance — regular oil changes with correct spec, early timing chain tensioner replacement on pre‑2009 examples, and attentive listening for cold‑start rattle — 368DT engines can reach 150,000+ miles. However, many fail well before this due to the known issues. Later (2009+) examples are more durable but still require careful maintenance."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real 368DT owners, as part of the Engine Finders network.",
+      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists — so you see the real market, not just one garage's quote.",
+      "UK Coverage: From Cornwall to the Highlands, our specialist network covers the whole UK with expert 368DT knowledge."
+    ],
+    "finalCta": "Find the best Land Rover 368DT (3.6 TDV8) engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover 368DT (3.6 TDV8) Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

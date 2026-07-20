@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "slug": "range-rover-42-sc",
+    "title": "4.2 Supercharged Engine Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Land Rover Range Rover 4.2 Supercharged (428PS) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your supercharged V8.",
+    "descriptionCharCount": 158,
+    "canonical": "https://landroverengine.uk/range-rover/42-sc/",
+    "openGraph": {
+      "title": "4.2 Supercharged Engine Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover 4.2 Supercharged (428PS) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your supercharged V8.",
+      "type": "website",
+      "url": "https://landroverengine.uk/range-rover/42-sc/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-42-sc.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "4.2 Supercharged Engine Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover 4.2 Supercharged (428PS) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-42-sc.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover",
+              "item": "https://landroverengine.uk/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4.2 Supercharged",
+              "item": "https://landroverengine.uk/range-rover/42-sc/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover 4.2 Supercharged Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover L322 (2005–2009) 428PS",
+              "url": "https://landroverengine.uk/range-rover/l322/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover 4.2 Supercharged Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "428PS (AJ-V8 4.2 SC)",
+              "url": "https://landroverengine.uk/engines/428ps/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover 4.2 Supercharged engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 4.2 Supercharged (428PS) engine typically costs £4,500–£9,000 supply only. Fitting adds £900–£2,500 depending on workshop location. Main dealer new engines are no longer available — specialist reconditioning is the route."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover 4.2 Supercharged engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the Jaguar-derived 4.2 SC is widely regarded as one of the most robust engines fitted to the L322. It's considered more reliable than both the BMW V8 that preceded it and the 5.0 SC that followed. The timing system is durable, and the main issues are age-related supercharger wear rather than catastrophic engine failure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Range Rover 4.2 Supercharged?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Supercharger coupler wear (clunking noise on cold start), supercharger bearing wear (rattling at idle), and timing chain tensioner wear at very high mileage (150,000+ miles). The engine is also sensitive to cooling system health — overheating can cause head gasket or liner issues."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover 4.2 Supercharged engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 60% Land Rover scrap threshold: if your Range Rover is worth £12,000 and a recon engine is £6,500 (54%), it's borderline — assess the rest of the vehicle carefully. If the vehicle is a tired £8,000 example, the same engine exceeds 60% — get a scrap valuation first. Enthusiasts and collectors often justify the spend due to the rarity of the supercharged V8."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Range Rover 4.2 Supercharged engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate and vehicle documentation. The 4.2 Supercharged uses the 428PS (AJ-V8) — a 4.2-litre supercharged V8 producing 390–400 bhp. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the supercharger coupler, or does the whole unit need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The coupler itself can be replaced (around £400–£800). A full supercharger rebuild (bearings, seals, coupler, oil) typically costs £800–£2,000 and is significantly cheaper than a complete supercharger replacement (£3,000–£5,000)."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover 4.2 Supercharged Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "10000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover 4.2 Supercharged UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the 4.2 Supercharged (428PS) engine in the Range Rover L322, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "4.2 Supercharged Engine Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover/42-sc/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover 4.2 Supercharged • 2005–2009 • 1 Engine Code",
+    "h1": "Land Rover Range Rover 4.2 Supercharged Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The L322's flagship petrol V8 — a 4.2-litre supercharged Jaguar-derived unit that defined the top of the Range Rover range. Get quotes from specialists who understand this rare and powerful engine, supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Range Rover 4.2 Supercharged Engines — from £2,500 to £9,000 · Common code: 428PS (AJ-V8)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Range Rover 4.2 Supercharged Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 4.2 SUPERCHARGED THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Range Rover L322",
+        "years": "2005–2009",
+        "engineCode": "428PS (AJ-V8 4.2 SC)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,500–£9,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "One engine throughout this badge's history — no era ambiguity."
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover 4.2 Supercharged Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,000",
+        "fittedIndie": "£3,500–£5,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; short-term ownership"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,500–£9,000",
+        "fittedIndie": "£5,500–£11,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,000–£10,000",
+        "fittedIndie": "£7,000–£12,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "No longer available — specialist reconditioning is the route"
+      }
+    ],
+    "figuresNote": "Figures above reflect the only engine generation this badge ever used — the 428PS (AJ-V8 4.2 SC). See the Era Map above for era-specific pricing.",
+    "labourEstimate": "Fitting a Range Rover 4.2 Supercharged engine typically takes 15–25 hours at £65–£95/hr (independent). The complex supercharger and V8 layout adds significant labour time compared to simpler engines.",
+    "cta": {
+      "label": "→ Compare Range Rover 4.2 Supercharged engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Supercharger Coupler Wear",
+        "symptoms": "Clunking, knocking or rattling noise from the engine bay on cold startup, which often disappears when warm. Reduced supercharger performance.",
+        "typicalMileage": "80,000–150,000 miles (age and mileage related).",
+        "repairCost": "£400–£800 (supercharger coupler replacement kit).",
+        "replacementCost": "N/A — repair only; if ignored, the coupler can fail completely.",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon."
+        },
+        "recommendation": "The Eaton M112 supercharger's drive coupler is a known wear item on the 4.2 SC. A cracked or worn coupler causes a characteristic clunking noise on cold start. The repair involves replacing the coupler (and often the snout bearings and seals as a kit), which is significantly cheaper than a full supercharger rebuild. If you hear any rattling or clunking from the supercharger area, have it inspected promptly.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/supercharger-coupler-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Supercharger Bearing Wear",
+        "symptoms": "Rattling noise at idle, whining or grinding from the supercharger, reduced boost pressure.",
+        "typicalMileage": "100,000–180,000 miles.",
+        "repairCost": "£800–£2,000 (supercharger bearing replacement or full rebuild).",
+        "replacementCost": "£3,000–£5,000 (complete supercharger replacement).",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon."
+        },
+        "recommendation": "The supercharger bearings can wear over time, particularly in high-mileage examples. Rattling at idle is the first indication that something is going wrong. A full supercharger rebuild (bearings, seals, coupler, oil) typically costs £800–£2,000 and restores the supercharger to like-new condition. Ignoring bearing wear can lead to catastrophic supercharger failure and potential engine damage from debris.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/supercharger-bearing-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timing Chain Tensioner Wear (High Mileage)",
+        "symptoms": "Ticking or rattling noise at low rpm, particularly on cold start.",
+        "typicalMileage": "150,000+ miles (much less common than on the 5.0 SC).",
+        "repairCost": "£1,500–£3,000 (chain, tensioner, and guide replacement).",
+        "replacementCost": "N/A — repair only; if the chain snaps, it's an interference engine — catastrophic failure.",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "at first sign of rattle, book inspection today."
+        },
+        "recommendation": "Unlike the later 5.0-litre AJ133 which has well-documented timing chain issues at low mileage, the 4.2 SC's timing system is considered durable. The 4.2-litre engines have revised primary and secondary timing chains, guides and tensioners and as such, there is little need to replace them. However, at very high mileage (170,000+ miles), tensioners and guides can show wear. If you hear any ticking or rattling, have the timing system inspected promptly. Regular oil changes with the correct specification are critical to timing chain longevity.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-chain-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, each with experience of the rare 4.2 Supercharged V8, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Range Rover 4.2 Supercharged Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Range Rover 4.2 Supercharged — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Supercharger coupler wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Simple, cost-effective fix — do it preventatively"
+        },
+        {
+          "problem": "Supercharger bearing wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Full rebuild restores performance — cheaper than replacement"
+        },
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes (if caught early)",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Preventative — catches fault before catastrophic failure"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Interference engine — piston-valve contact means little is left to repair"
+        },
+        {
+          "problem": "Cracked cylinder liner",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£2,000–£4,000",
+          "whenItMakesSense": "Viable if the rest of the vehicle is solid; often cheaper to fit a good used engine"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 4.2 Supercharged? Check These First",
+      "buyIf": [
+        "* No clunking or rattling from the supercharger on cold start",
+        "* Full service history with regular oil changes (every 10,000 miles or annually)",
+        "* ZF 6HP26 gearbox serviced every 60,000 miles",
+        "* No history of overheating — these engines need a healthy cooling system"
+      ],
+      "avoidIf": [
+        "* Clunking noise on cold start — supercharger coupler wear",
+        "* Rattling at idle — supercharger bearing wear",
+        "* Ticking or rattling from the engine — timing chain tensioner wear",
+        "* Overheating or coolant loss — potential head gasket or liner issue"
+      ]
+    },
+    "closingVerdict": "The 4.2 Supercharged is one of the most robust engines fitted to the L322 Range Rover. It's widely considered more reliable than both the BMW M62 V8 that preceded it and the 5.0 SC that followed. However, it's now a 15–20 year old engine, and supercharger wear is the primary concern. A £6,000 reconditioned engine on a Range Rover valued at £12,000 is 50% of the car's value — at the Land Rover scrap threshold. On a sub-£8,000 example, think carefully before committing. Enthusiasts often justify the spend due to the rarity and desirability of the supercharged V8.",
+    "cta": {
+      "label": "→ Compare Range Rover 4.2 Supercharged engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover 4.2 Supercharged (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for clunking or rattling (supercharger coupler wear)",
+      "* Supercharger Noise — Any whining, grinding, or rattling at idle?",
+      "* Service History — Regular oil changes using the correct 5W-30 or 5W-40 spec",
+      "* Gearbox Service — ZF 6HP26 serviced every 60,000 miles",
+      "* Cooling System — Check coolant level and condition — overheating kills these engines",
+      "* Oil Leaks — Check for oil leaks from valve cover gaskets and timing chain covers",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions failures and corrosion (rear arches, subframe)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "428PS (AJ-V8 4.2 SC)",
+        "years": "2005–2009",
+        "power": "390–400 bhp (291 kW)",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£9,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs:",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,197 cc (4.2L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V8, 32-valve DOHC"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "9.1:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-point fuel injection (MPFI)"
+        },
+        {
+          "label": "* Supercharger",
+          "value": "Eaton M112 Roots-type positive displacement"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Range Rover 4.2 Supercharged engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Supercharger coupler wear — rattling/clunking on cold start reported across many high-mileage 4.2 SC units 【PATTERN DATA】"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "120,000 miles (age-related) 【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,500 reconditioned, supply only 【PLACEHOLDER — confirm vs cost sheet】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "428PS (only code for this badge) 【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — owners recommissioning after winter 【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), South West (18%), Midlands (16%) 【PATTERN DATA】"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover 4.2 Supercharged engine replacement cost in the UK?",
+        "answer": "A reconditioned 4.2 Supercharged (428PS) engine typically costs £4,500–£9,000 supply only. Fitting adds £900–£2,500 depending on workshop location. Main dealer new engines are no longer available — specialist reconditioning is the route."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover 4.2 Supercharged engine reliable?",
+        "answer": "Yes — the Jaguar-derived 4.2 SC is widely regarded as one of the most robust engines fitted to the L322. It's considered more reliable than both the BMW V8 that preceded it and the 5.0 SC that followed. The timing system is durable, and the main issues are age-related supercharger wear (coupler and bearings) rather than catastrophic engine failure."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Range Rover 4.2 Supercharged?",
+        "answer": "Supercharger coupler wear (clunking noise on cold start), supercharger bearing wear (rattling at idle), and timing chain tensioner wear at very high mileage (150,000+ miles). The engine is also sensitive to cooling system health — overheating can cause head gasket or liner issues."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover 4.2 Supercharged engine, or should I scrap the car?",
+        "answer": "Apply the 60% Land Rover scrap threshold: if your Range Rover is worth £12,000 and a recon engine is £6,500 (54%), it's borderline — assess the rest of the vehicle carefully. If the vehicle is a tired £8,000 example, the same engine exceeds 60% — get a scrap valuation first. Enthusiasts and collectors often justify the spend due to the rarity of the supercharged V8."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Range Rover 4.2 Supercharged engine code?",
+        "answer": "The engine code is listed on the VIN plate and vehicle documentation. The 4.2 Supercharged uses the 428PS (AJ-V8) — a 4.2-litre supercharged V8 producing 390–400 bhp. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the supercharger coupler, or does the whole unit need replacement?",
+        "answer": "The coupler itself can be replaced (around £400–£800). A full supercharger rebuild (bearings, seals, coupler, oil) typically costs £800–£2,000 and is significantly cheaper than a complete supercharger replacement (£3,000–£5,000)."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Range Rover 4.2 Supercharged Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Range Rover 4.2 Supercharged Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Range Rover owners, with specialists who genuinely understand the Jaguar-derived AJ-V8 supercharged unit — a rarity in the Land Rover world."
+      },
+      {
+        "title": "Compare Range Rover 4.2 Supercharged Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, all from specialists experienced with this complex 4.2-litre supercharged V8."
+      },
+      {
+        "title": "UK Engine Replacement Services for 4.2 Supercharged",
+        "text": "supply-only or full supply & fit available nationwide, covering everything from supercharger rebuilds to full engine swaps on your L322 Range Rover."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover 4.2 Supercharged engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and keep your supercharged V8 Range Rover on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Land Rover Range Rover 4.2 Supercharged Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "slug": "discovery-sport-d150",
+    "title": "D150 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Land Rover Discovery Sport D150 MHEV — real UK costs, EGR & DPF insight, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://landroverengine.uk/discovery-sport/d150/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery Sport",
+              "item": "https://landroverengine.uk/discovery-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "D150",
+              "item": "https://landroverengine.uk/discovery-sport/d150/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery Sport D150 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Discovery Sport L550 D150 MHEV (2019–present)",
+              "url": "https://landroverengine.uk/discovery-sport/l550/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery Sport D150 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD MHEV (2.0 Ingenium Diesel)",
+              "url": "https://landroverengine.uk/engines/204dtd/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery Sport D150 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned D150 2.0-litre Ingenium diesel engine typically costs £3,500–£5,800 supply only. Used engines are available from £2,000–£3,500. Fitting adds £1,300–£2,000 depending on your location and workshop. Use our calculator for a figure specific to your Discovery Sport."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery Sport D150 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The D150 is powered by the post-2019 revised Ingenium diesel, which addressed the early timing chain tensioner failures seen on pre-2019 units. However, it still has known issues: EGR cooler leaks, DPF clogging (urban use), and occasional timing chain tensioner wear. The 48V MHEV system adds complexity but is generally reliable. Regular maintenance (12,000-mile oil changes with JLR-spec oil) is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Discovery Sport D150?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most frequently reported issues are EGR cooler leaks, DPF clogging (short urban journeys), and timing chain tensioner wear (reduced risk on post-2019 but still possible). The MHEV system's battery and electronics are generally reliable but add complexity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery Sport D150 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept £22,000 Discovery Sport, a £4,500 recon is 20% of the car's value — definitely worth it. Against a high-mileage £9,000 example, the same recon approaches our 60% Land Rover threshold — get a scrap valuation first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Discovery Sport D150 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The D150 carries the engine code 204DTD (also referred to as AJ20D4 or Ingenium D150 in some documentation). It's a 2.0-litre four-cylinder diesel with a 48V mild-hybrid system, used in the Discovery Sport L550 from 2019 onwards."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the timing chain tensioners, or does it need full engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A preventative timing chain tensioner replacement costs £800–£1,500. If ignored and the chain skips, timing is lost, valves contact pistons, and you're looking at a £3,500–£5,800 engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes are the single most effective preventative measure for the revised 2019+ tensioners."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery Sport D150 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "10500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery Sport D150 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Discovery Sport D150 2.0-litre Ingenium diesel engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "D150 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery-sport/d150/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery Sport D150 • 2019–present • 2.0 Ingenium Diesel MHEV",
+    "h1": "Land Rover Discovery Sport D150 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Discovery Sport specialists. Compare reconditioned, rebuilt and used 2.0-litre Ingenium diesel engines with MHEV — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Discovery Sport D150 Engines — from £2,000 to £7,000 · Code: 204DTD MHEV",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free D150 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The D150 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Discovery Sport L550 (facelift)",
+        "years": "2019–present",
+        "engineCode": "204DTD MHEV (2.0 Ingenium Diesel with mild hybrid)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£5,800 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "One engine throughout this badge's history — no era ambiguity."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Discovery Sport D150 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£3,100–£4,900",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £10,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£5,800",
+        "fittedIndie": "£4,800–£7,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,800–£7,000",
+        "fittedIndie": "£6,100–£8,400",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£7,500–£10,500",
+        "fittedIndie": "£8,800–£12,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the 204DTD MHEV Ingenium diesel. Used engines are available from approximately £2,000–£3,500, with reconditioned units ranging from £3,500–£5,800.",
+    "labourEstimate": "Fitting a Discovery Sport D150 engine typically takes 10–14 hours at £70–£100/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare D150 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "EGR Cooler Leaks",
+        "symptoms": "Coolant loss with no visible external leak, white exhaust smoke, occasional burning smell, engine management light.",
+        "typicalMileage": "40,000–80,000 miles.",
+        "repairCost": "£400–£800 [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "EGR cooler failure is a well-documented issue on the Ingenium diesel family, including the MHEV version. If you're experiencing unexplained coolant loss, have the EGR cooler inspected promptly. Ignoring it can lead to overheating and potential engine damage, though it doesn't typically progress to full engine replacement.",
+        "failureLink": {
+          "label": "Read the full EGR cooler failure guide",
+          "href": "/failures/egr-cooler-leak/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "DPF Clogging & Regeneration Issues",
+        "symptoms": "DPF warning light, reduced performance, increased fuel consumption, failed regeneration cycles.",
+        "typicalMileage": "40,000–80,000 miles (urban-driven vehicles)",
+        "repairCost": "£300–£800 (forced regeneration or DPF clean)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The Ingenium diesel's DPF is sensitive to short urban journeys. The MHEV system helps reduce engine load at low speeds but doesn't eliminate DPF clogging risk. If you predominantly drive in town, ensure the vehicle completes regular regeneration cycles — a motorway run at 2,000+ rpm for 20 minutes at least once a week is recommended.",
+        "failureLink": {
+          "label": "Read the full DPF failure guide",
+          "href": "/failures/dpf-clogging/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timing Chain Tensioner Wear (Post-2019 — Reduced Risk)",
+        "symptoms": "Rattling noise on cold start lasting 1–2 seconds, metallic ticking from the engine.",
+        "typicalMileage": "80,000–120,000 miles (post-2019 revised tensioners)",
+        "repairCost": "£800–£1,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "£3,500–£5,800 (if chain skips and valves contact pistons)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle lasting more than 2 seconds, book an inspection today"
+        },
+        "recommendation": "Land Rover revised the timing chain tensioner design in 2019, significantly reducing the failure rate seen on earlier Ingenium diesels. However, tensioner wear remains a possibility, especially if oil changes are neglected or the wrong oil specification is used. At the first sign of cold-start rattle lasting more than 2 seconds, get the chain and tensioners inspected immediately.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/timing-chain-wear/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every D150 MHEV era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free D150 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Discovery Sport D150 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "EGR cooler leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Straightforward fix; prevents overheating damage"
+        },
+        {
+          "problem": "DPF clogging",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Forced regeneration or DPF clean — less than replacement"
+        },
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Preventative — catches the fault before catastrophic failure"
+        },
+        {
+          "problem": "Injector failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Specialist repair available"
+        },
+        {
+          "problem": "Chain skip / valve contact",
+          "repairable": "❌ Usually No",
+          "typicalCost": "£3,500–£5,800",
+          "whenItMakesSense": "Typically requires full engine replacement or complete rebuild"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This D150? Check These First",
+      "buyIf": [
+        "* Post-2019 build (revised timing chain tensioners fitted from factory)",
+        "* Documented service history with 0W-30 or 5W-30 JLR-spec oil at 12,000-mile (or less) intervals",
+        "* Evidence of DPF-friendly driving — regular motorway runs",
+        "* No cold-start rattle — a quiet startup suggests healthy tensioners"
+      ],
+      "avoidIf": [
+        "* Pre-2019 build (unless timing chain tensioners have been replaced with revised parts)",
+        "* No proof of regular oil changes — the Ingenium diesel is unforgiving of neglect",
+        "* DPF warning light with no regeneration history",
+        "* Engine warning light with EGR or DPF codes and no diagnosis"
+      ]
+    },
+    "closingVerdict": "The D150 is the entry-point diesel for the post-facelift Discovery Sport, and the 2019 revisions made the Ingenium diesel meaningfully more reliable than its predecessor. But it's still a modern diesel with modern diesel problems — EGR coolers, DPFs, and timing chain tensioners all need attention. Buy on documented history, not on faith. A well-maintained D150 is a £20,000–£30,000 family SUV; a neglected one is a £4,000 engine replacement waiting to happen.",
+    "cta": {
+      "label": "→ Compare D150 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Discovery Sport D150 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattling or metallic ticking on startup (timing chain tensioner wear warning — post-2019 reduced but not eliminated)",
+      "* Service History — including the D150 MHEV era (2019–present) and confirmed oil-change intervals using JLR-spec 0W-30 or 5W-30 oil",
+      "* DPF Check — Check for DPF warning light or evidence of regeneration issues (urban-driven vehicles are high risk)",
+      "* Smoke Check — White smoke on startup can indicate EGR coolant leak",
+      "* Coolant Level — Any history of coolant loss without visible leaks? (EGR cooler warning)",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved EGR, DPF, or timing-related issues?",
+      "* MOT History — Check for emissions-related failures (DPF, EGR, or injector-related)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204DTD MHEV (2.0 Ingenium Diesel with mild hybrid)",
+        "years": "2019–present",
+        "power": "150 PS (110 kW) @ 3,500 rpm · 380 Nm @ 1,500–2,500 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£5,800 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204DTD MHEV):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,999 cc (2.0L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection (2000 bar)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single variable-geometry turbocharger (VGT) with 48V MHEV system"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare D150 engine prices for your Discovery Sport",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "EGR cooler leaks — well-documented on the Ingenium diesel family, post-2019 revised but still present"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "55,000–85,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,500–£5,800 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204DTD MHEV [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain tensioner wear and EGR issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (19%), South West (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Discovery Sport D150 engine replacement cost in the UK?",
+        "answer": "A reconditioned D150 2.0-litre Ingenium diesel engine typically costs £3,500–£5,800 supply only. Used engines are available from £2,000–£3,500. Fitting adds £1,300–£2,000 depending on your location and workshop. Use our calculator for a figure specific to your Discovery Sport."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Discovery Sport D150 engine reliable?",
+        "answer": "The D150 is powered by the post-2019 revised Ingenium diesel, which addressed the early timing chain tensioner failures seen on pre-2019 units. However, it still has known issues: EGR cooler leaks, DPF clogging (urban use), and occasional timing chain tensioner wear. The 48V MHEV system adds complexity but is generally reliable. Regular maintenance (12,000-mile oil changes with JLR-spec oil) is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Discovery Sport D150?",
+        "answer": "The most frequently reported issues are EGR cooler leaks, DPF clogging (short urban journeys), and timing chain tensioner wear (reduced risk on post-2019 but still possible). The MHEV system's battery and electronics are generally reliable but add complexity."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Discovery Sport D150 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £22,000 Discovery Sport, a £4,500 recon is 20% of the car's value — definitely worth it. Against a high-mileage £9,000 example, the same recon approaches our 60% Land Rover threshold — get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Discovery Sport D150 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The D150 carries the engine code 204DTD (also referred to as AJ20D4 or Ingenium D150 in some documentation). It's a 2.0-litre four-cylinder diesel with a 48V mild-hybrid system, used in the Discovery Sport L550 from 2019 onwards."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the timing chain tensioners, or does it need full engine replacement?",
+        "answer": "Yes — if caught early. A preventative timing chain tensioner replacement costs £800–£1,500. If ignored and the chain skips, timing is lost, valves contact pistons, and you're looking at a £3,500–£5,800 engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes are the single most effective preventative measure for the revised 2019+ tensioners."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Discovery Sport D150 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted D150 MHEV Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Discovery Sport owners, as part of the Engine Finders network, covering the entire 204DTD MHEV era from 2019 onwards."
+      },
+      {
+        "title": "Compare D150 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, across every post-facelift L550 that left the factory with this 2.0-litre Ingenium diesel."
+      },
+      {
+        "title": "UK Engine Replacement Services for D150",
+        "text": "supply-only or full supply & fit available nationwide, covering the full L550 facelift production run — and we're vetted across every era of this badge."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Discovery Sport D150 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your Discovery Sport back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Discovery Sport D150 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

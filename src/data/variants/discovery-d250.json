@@ -1,0 +1,553 @@
+{
+  "meta": {
+    "slug": "discovery-d250",
+    "title": "D250 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 55,
+    "description": "Every Discovery D250 engine — AJ20D6 3.0 straight-six diesel. Real UK costs, AdBlue & cooling system reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://landroverengine.uk/discovery/d250/",
+    "openGraph": {
+      "title": "D250 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Discovery D250 engine — AJ20D6 3.0 straight-six diesel. Real UK costs, AdBlue & cooling system reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/discovery/d250/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-d250.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "D250 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Discovery D250 engine — AJ20D6 3.0 straight-six diesel. Real UK costs, AdBlue & cooling system reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-d250.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery",
+              "item": "https://landroverengine.uk/discovery/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Discovery 5",
+              "item": "https://landroverengine.uk/discovery/discovery-5/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "D250",
+              "item": "https://landroverengine.uk/discovery/d250/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery D250 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Discovery 5 D250 (AJ20D6, 2021-present)",
+              "url": "https://landroverengine.uk/discovery/discovery-5/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery D250 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ20D6 (D250)",
+              "url": "https://landroverengine.uk/engines/aj20d6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery D250 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Discovery D250 (AJ20D6) engine typically costs £4,500–£7,000 supply only. Fitting adds £800–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery D250 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the AJ20D6 straight-six is a major reliability upgrade over the older V6 SDV6. It has no known crankshaft bearing failures. However, it is a modern Euro 6d diesel with complex emissions hardware. AdBlue system reliability (NOx sensors, injectors, crystallisation) is the primary area of concern."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Discovery D250?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AdBlue/SCR system failures (NOx sensors, crystallisation), cooling system leaks (plastic pipes), and DPF-related oil dilution (short urban journeys). All are manageable with proper maintenance and are not catastrophic mechanical failures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery D250 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a well-maintained Discovery 5 (values £25,000–£45,000+), a £5,500–£6,000 reconditioned engine is 15–25% of the vehicle's value — worth it for a solid car. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a D250 Discovery, given the high residual values of the L462 platform."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Discovery D250 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code AJ20D6 is listed on the VIN plate and vehicle documentation. The D250 badge was introduced with the 2021 Discovery facelift, so if your Discovery 5 is 2021 or newer and is the 3.0 diesel (not the 2.0-litre D200), it is the AJ20D6. Tell us your registration and we'll confirm for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AdBlue system, or does it require engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AdBlue/SCR system faults are always repairable without replacing the engine. Sensors, injectors, and heaters are all replaceable. Costs range from £400 for simple sensor swaps to £1,500 for more complex crystallisation or heater unit work. However, ignoring the countdown timer is risky — if it reaches zero, the ECU locks out engine start, requiring diagnostic intervention."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery D250 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery D250 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Discovery D250 AJ20D6 straight-six diesel engine, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "D250 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery/d250/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery D250 • 2021–present • AJ20D6 3.0 Diesel",
+    "h1": "Land Rover Discovery D250 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Discovery D250 specialists. Compare reconditioned, rebuilt and used AJ20D6 3.0 diesel engines — supply & fit available nationwide for this modern Discovery.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Discovery D250 Engines — from £2,500 to £7,000 · Engine code: AJ20D6 (2021–present)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Discovery D250 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The DISCOVERY D250 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Discovery 5 (L462)",
+        "years": "2021–present",
+        "engineCode": "AJ20D6 (3.0 I6 single-turbo)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,500–£7,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "2021+ straight-six Ingenium — no crankshaft bearing risk of old SDV6, but AdBlue/SCR system needs active maintenance"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Discovery D250 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,000",
+        "fittedIndie": "£3,400–£5,100",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor required"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,500–£7,000",
+        "fittedIndie": "£5,500–£8,300",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,000–£8,500",
+        "fittedIndie": "£7,200–£9,900",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; full factory-spec refresh"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,500–£14,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current Discovery D250 AJ20D6 generation. This badge was introduced in 2021, so no older-generation variance applies.",
+    "labourEstimate": "Fitting a D250 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). [PLACEHOLDER — confirm vs cost sheet]",
+    "cta": {
+      "label": "→ Compare Discovery D250 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "AdBlue / SCR System Failure",
+        "symptoms": "Engine warning light, countdown timer starting (e.g., \"Engine will not restart in 500 miles\"), poor fuel economy, NOx sensor errors, white crystallisation around the AdBlue injector.",
+        "typicalMileage": "30,000–80,000 miles",
+        "repairCost": "£400–£1,500 (sensor replacement, injector cleaning, or crystallisation removal) [PLACEHOLDER]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if AdBlue countdown appears"
+        },
+        "recommendation": "The AJ20D6's AdBlue (SCR) system is its most common failure point. AdBlue crystallisation in the injector or exhaust pipe, NOx sensor failures, and heater unit faults are all well-documented. Unlike the catastrophic V6 SDV6 bearing failure, these issues are repairable but can be expensive if left to escalate. If the countdown timer starts, do not ignore it — once it reaches zero, the engine will not restart. Regular AdBlue system service and using high-quality AdBlue (with a shelf-life check) reduces risk.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/adblue-scr-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cooling System Leaks",
+        "symptoms": "Coolant loss with no visible external leak, sweet smell, occasional low coolant warning, slight overheating under load.",
+        "typicalMileage": "40,000–100,000 miles",
+        "repairCost": "£300–£800 (hose or coolant pipe replacement) [PLACEHOLDER]",
+        "replacementCost": "N/A — repair only (unless coolant loss leads to overheating, which can cause head gasket damage)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon; monitor coolant levels weekly"
+        },
+        "recommendation": "The straight-six Ingenium engine has a complex cooling system with multiple plastic coolant pipes and connections. These can become brittle and develop micro-leaks over time. Some early D250s have had coolant pipe replacements under goodwill or warranty. If you smell coolant or the level drops regularly, have a pressure test done. Proactive replacement of known weak pipes (especially the coolant crossover pipe at the front of the engine) is cheaper than head gasket work.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "DPF Regeneration & Oil Dilution",
+        "symptoms": "Rising oil level on dipstick, diesel smell in oil, DPF warning light, frequent active regeneration cycles, reduced fuel economy.",
+        "typicalMileage": "Any mileage — urban-use pattern dependent",
+        "repairCost": "£150–£400 (oil change + forced regeneration) [PLACEHOLDER]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if oil level is rising"
+        },
+        "recommendation": "Like all modern diesels, the AJ20D6 relies on DPF regeneration to clear soot. Short urban journeys prevent passive regeneration, leading to active regen cycles that inject extra fuel, which can wash past the piston rings and dilute the engine oil. Rising oil levels are a serious warning sign — diluted oil loses its lubricity, increasing wear on bearings and the timing chain. For urban-based D250s, shorten oil change intervals to 6,000–8,000 miles and take regular longer runs to allow passive regen.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/dpf-oil-dilution/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Discovery diesel variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Discovery D250 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Discovery D250 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "AdBlue/SCR system fault",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,500",
+          "whenItMakesSense": "Sensors and injectors are replaceable; crystallisation is treatable"
+        },
+        {
+          "problem": "Cooling system leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Hose/pipe replacement is straightforward; catch it early"
+        },
+        {
+          "problem": "DPF-related oil dilution",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£400",
+          "whenItMakesSense": "Oil change + forced regen; revise service schedule if urban use"
+        },
+        {
+          "problem": "Timing chain failure (AJ20D6)",
+          "repairable": "⚠️ Rare",
+          "typicalCost": "£2,000–£4,000 (if it occurs)",
+          "whenItMakesSense": "Very rare on this engine; would require specialist work"
+        },
+        {
+          "problem": "Major bottom-end failure",
+          "repairable": "❌ Very rare",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "No known pattern; would be assessed on a case-by-case basis"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Discovery D250? Check These First",
+      "buyIf": [
+        "* Full service history with AdBlue top-ups recorded (proves system maintenance)",
+        "* Cooling system inspected and no coolant loss history",
+        "* Service intervals at 12,000 miles or less (JLR's 21,000-mile interval is too long)",
+        "* Motorway history — DPF will be in better condition than an urban-only car"
+      ],
+      "avoidIf": [
+        "* AdBlue countdown active with no proof of repair — this is a costly fix",
+        "* Coolant loss with no diagnosis — plastic pipes may be failing",
+        "* No AdBlue service history — crystallisation risk is higher",
+        "* Engine warning light with NOx sensor errors — often a system-wide SCR issue"
+      ]
+    },
+    "closingVerdict": "The Discovery D250's AJ20D6 is a major step forward from the older SDV6 V6 — the catastrophic crank-bearing failure is gone. Instead, you're dealing with modern diesel emissions complexity: AdBlue systems, DPF regens, and cooling system hoses. Buy on service history and AdBlue care, and this is a reliable mile-muncher. Neglect the emissions systems, and you'll face expensive sensor and injector repairs.",
+    "cta": {
+      "label": "→ Compare Discovery D250 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Discovery D250 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* AdBlue Service History — Has the system been serviced? Any NOx sensor or countdown repairs?",
+      "* Coolant Level — Check cold and hot; any loss indicates a potential leak in the cooling system",
+      "* Service History — Oil changes at 12,000-mile intervals (not the extended 21,000-mile JLR schedule)",
+      "* Cold Start — Any rattles? (AJ20D6 chain issues are rare, but check for peace of mind)",
+      "* Smoke Check — Excessive white or black smoke indicates injector or AdBlue issues",
+      "* Oil Level — Rising oil level means DPF/oil dilution problems",
+      "* DPF Health — Ask about regeneration frequency; urban cars will have more regens",
+      "* Engine Warning Light — Have codes been read? NOx sensor codes are the most common D250 fault"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ20D6 (D250)",
+        "years": "2021–present",
+        "power": "247 bhp @ 4,000 rpm · 420 lb·ft @ 1,250 rpm",
+        "enquiries": "— (pattern data; D250 and D300 share the same engine family) [PATTERN DATA]",
+        "avgReconCost": "£4,500–£7,000 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows exactly match Section 1B's Era Map — the same engine code, years, and generation coverage.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ20D6 D250):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,997cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection (2,500 bar)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single turbocharger with variable geometry (VGT) — D300 uses twin-turbo"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Discovery D250 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "AdBlue/SCR system faults — NOx sensors and crystallisation account for ~35% of D250-related enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "45,000–70,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,500 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ20D6 — D250 and D300 share this code; D250 is the most common Discovery 5 diesel variant [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts and DPF/AdBlue issues become more apparent [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), South West (16%), North West (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Discovery D250 engine replacement cost in the UK?",
+        "answer": "A reconditioned Discovery D250 (AJ20D6) engine typically costs £4,500–£7,000 supply only. Fitting adds £800–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Discovery D250 engine reliable?",
+        "answer": "Yes — the AJ20D6 straight-six is a major reliability upgrade over the older V6 SDV6. It has no known crankshaft bearing failures. However, it is a modern Euro 6d diesel with complex emissions hardware. AdBlue system reliability (NOx sensors, injectors, crystallisation) is the primary area of concern."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Discovery D250?",
+        "answer": "AdBlue/SCR system failures (NOx sensors, crystallisation), cooling system leaks (plastic pipes), and DPF-related oil dilution (short urban journeys). All are manageable with proper maintenance and are not catastrophic mechanical failures."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Discovery D250 engine, or should I scrap the car?",
+        "answer": "Against a well-maintained Discovery 5 (values £25,000–£45,000+), a £5,500–£6,000 reconditioned engine is 15–25% of the vehicle's value — worth it for a solid car. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a D250 Discovery, given the high residual values of the L462 platform."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Discovery D250 engine code?",
+        "answer": "The engine code AJ20D6 is listed on the VIN plate and vehicle documentation. The D250 badge was introduced with the 2021 Discovery facelift, so if your Discovery 5 is 2021 or newer and is the 3.0 diesel (not the 2.0-litre D200), it is the AJ20D6. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AdBlue system, or does it require engine replacement?",
+        "answer": "AdBlue/SCR system faults are always repairable without replacing the engine. Sensors, injectors, and heaters are all replaceable. Costs range from £400 for simple sensor swaps to £1,500 for more complex crystallisation or heater unit work. However, ignoring the countdown timer is risky — if it reaches zero, the ECU locks out engine start, requiring diagnostic intervention."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Discovery D250 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted D250 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Discovery owners, as part of the Engine Finders network, covering the modern AJ20D6 straight-six and every other Discovery diesel from the 300Tdi to the D300."
+      },
+      {
+        "title": "Compare Discovery D250 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. Our independent comparison service gives you the full market picture in minutes."
+      },
+      {
+        "title": "UK Engine Replacement Services for D250",
+        "text": "supply-only or full supply & fit available nationwide, covering the Discovery 5 D250 3.0-litre straight-six diesel, with 12 vetted Land Rover specialists at your fingertips."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Discovery D250 engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £2,500 for a used engine to £8,500 for a full rebuild, we have options for every budget.",
+    "ctaButton": {
+      "label": "Compare Land Rover Discovery D250 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

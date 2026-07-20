@@ -1,0 +1,530 @@
+{
+  "meta": {
+    "slug": "range-rover-sport-p400",
+    "title": "Range Rover Sport P400 Engine Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Land Rover Range Rover Sport P400 — AJ20P6 3.0‑litre Ingenium petrol. Real UK costs, cooling system facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://landroverengine.uk/range-rover-sport/p400/",
+    "openGraph": {
+      "title": "Range Rover Sport P400 Engine Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover Sport P400 — AJ20P6 3.0‑litre Ingenium petrol. Real UK costs, cooling system facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/range-rover-sport/p400/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/p400-sport.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Range Rover Sport P400 Engine Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover Sport P400 — AJ20P6 3.0‑litre Ingenium petrol. Real UK costs, cooling system facts, and specialist quotes.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/p400-sport.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Sport",
+              "item": "https://landroverengine.uk/range-rover-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P400",
+              "item": "https://landroverengine.uk/range-rover-sport/p400/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport P400 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover Sport L494 P400 (2019-2022)",
+              "url": "https://landroverengine.uk/range-rover-sport/l494/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Sport L461 P400 (2022-present)",
+              "url": "https://landroverengine.uk/range-rover-sport/l461/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport P400 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ20P6",
+              "url": "https://landroverengine.uk/engines/aj20p6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover Sport P400 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ20P6 engine typically costs £4,500–£7,500 supply only, with used units available from £2,500–£4,500. Fitting adds £2,000–£2,800 depending on the workshop. Use our calculator for a figure specific to your Range Rover Sport."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover Sport P400 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the AJ20P6 is considered significantly more reliable than its diesel counterparts. It has fewer chronic issues; the main concerns are cooling system components (water pump) and occasional timing chain tensioner wear. With good maintenance, these engines are dependable and capable of high mileage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Range Rover Sport P400?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system component failures (water pump, coolant pipes), timing chain tensioner wear (less common than on diesel Ingenium), and 48V mild-hybrid battery degradation. All are well-understood by JLR specialists and generally less severe than diesel Ingenium issues."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover Sport P400 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Range Rover Sport values remain strong — a well-kept L494 or L461 is often worth £25,000–£55,000+. A £4,500–£7,500 reconditioned engine is only 10–20% of the vehicle's value — well within the Land Rover 60% scrap threshold. Replacement is almost always worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Range Rover Sport P400 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is AJ20P6 — it's the only 3.0-litre petrol inline-six used in the Range Rover Sport P400. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production years: L494 (2019–2022) and L461 (2022–present)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AJ20P6 timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early, the tensioner and chain can be replaced preventatively (£1,500–£2,500). If the chain jumps and causes valve interference, a full engine replacement (£4,500+) is usually required. Act on any cold-start rattle."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Sport P400 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "10000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Sport P400 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Range Rover Sport P400 engines (AJ20P6), sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Range Rover Sport P400 Engine Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover-sport/p400/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover Sport P400 • 2019–present • 3.0-litre Ingenium Petrol MHEV",
+    "h1": "Land Rover Range Rover Sport P400 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The Range Rover Sport P400 packs a 3.0-litre turbocharged Ingenium petrol with mild-hybrid assistance — more refined than the diesels and with fewer chronic issues. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Range Rover Sport P400 Engines — from £2,500 to £10,000 · Code: AJ20P6",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free P400 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The P400 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover Sport P400 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£4,200–£6,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower‑mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£6,500–£9,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,500–£10,000",
+        "fittedIndie": "£8,500–£12,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£9,000–£12,500",
+        "fittedIndie": "£11,000–£15,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current Range Rover Sport P400 market. This badge spans two generations — see the Era Map above for generation‑specific pricing. The L461 typically commands a premium for lower‑mileage examples.",
+    "labourEstimate": "Fitting a Range Rover Sport P400 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare P400 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Cooling System Component Failures",
+        "symptoms": "Gradual coolant loss, dampness around the front of the engine, rising temperature gauge, occasional warning light, steam from bonnet",
+        "typicalMileage": "50,000–100,000 miles",
+        "repairCost": "£400–£1,000 (water pump, thermostat, or coolant pipe replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The AJ20P6's cooling system is its most common weak point. The water pump, thermostat housing, and coolant pipes are known to develop leaks, especially on higher‑mileage examples. Catching it early avoids overheating damage. Replace the water pump as a preventative measure at around 60,000–70,000 miles — it's a well‑understood job for any JLR specialist.",
+        "failureLink": {
+          "label": "Read the full coolant leak guide",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Timing Chain Tensioner Wear",
+        "symptoms": "Rattling noise on cold start lasting 1–3 seconds, occasional engine warning light if stretch alters cam timing",
+        "typicalMileage": "70,000–120,000 miles",
+        "repairCost": "£1,500–£2,500 (chain and tensioner replacement)",
+        "replacementCost": "£4,500–£7,500 (if chain jumps and causes valve interference)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Unlike the diesel Ingenium, the AJ20P6's timing chain issues are less catastrophic and less frequent, but they do occur. The tensioner can wear over time. A cold‑start rattle that lasts more than a second or two should be investigated promptly. Preventative replacement at around 80,000–100,000 miles is cheaper than a full engine rebuild.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/timing-chain-wear/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "48V Mild-Hybrid Battery System Issues",
+        "symptoms": "Reduced fuel economy, sluggish start-stop, warning lights, occasionally the car won't start",
+        "typicalMileage": "40,000–80,000 miles (battery degradation varies widely)",
+        "repairCost": "£800–£2,000 (48V battery replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The 48V mild-hybrid system on the AJ20P6 adds complexity. The battery can degrade over time, especially in vehicles used for short journeys. Symptoms include reduced fuel economy, sluggish start-stop, and warning lights. Replacement is a dealer or specialist job. It's worth noting that this is not a full hybrid — the 48V system is relatively straightforward compared to plug-in hybrids.",
+        "failureLink": {
+          "label": "Read the full hybrid battery failure guide",
+          "href": "/failures/hybrid-battery-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Range Rover Sport engine era covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free P400 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Range Rover Sport P400 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Water pump/coolant leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Straightforward replacement — catches before overheating"
+        },
+        {
+          "problem": "Timing chain tensioner wear (preventative)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£2,500",
+          "whenItMakesSense": "Cost‑effective on a well‑maintained example; cheaper than a full engine"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Valve/piston contact means rebuild or replace"
+        },
+        {
+          "problem": "48V mild-hybrid battery failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Viable on a cherished example; not a fundamental engine fault"
+        },
+        {
+          "problem": "Head gasket failure (overheating)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£2,000–£4,000",
+          "whenItMakesSense": "Viable on low‑mileage or cherished examples"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Range Rover Sport P400? Check These First",
+      "buyIf": [
+        "* Documented water pump replacement or coolant system service history",
+        "* No rattles on cold start — a quiet start-up suggests healthy timing chain tension",
+        "* Full service history with correct JLR‑spec oil (0W‑20 or 5W‑30)",
+        "* Post‑2021 build (later production has improved cooling system components)"
+      ],
+      "avoidIf": [
+        "* Evidence of repeated coolant top‑ups without a diagnosed leak",
+        "* Cold‑start rattle that lasts more than a couple of seconds",
+        "* Poor service history — these engines are sensitive to oil quality",
+        "* Any engine warning light without a clear diagnosis"
+      ]
+    },
+    "closingVerdict": "The AJ20P6 is a genuinely impressive engine — smooth, powerful, and without the major reliability pitfalls of the diesel Ingenium. Its primary weaknesses are cooling system components and, occasionally, timing chain tensioners. A well‑serviced P400 with a fresh water pump is a dependable long‑term proposition. The mild‑hybrid system adds complexity but is generally reliable. If you're buying, prioritise service history — these engines reward diligence and punish neglect.",
+    "cta": {
+      "label": "→ Compare P400 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover Sport P400 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Cold Start — Listen for rattles lasting more than 1–2 seconds (timing chain tensioner warning)",
+      "2. Service History — including which generation (L494 or L461) and evidence of oil changes",
+      "3. Coolant Level — Any signs of leaks around the water pump or coolant pipes?",
+      "4. 48V Battery Health — Any start‑stop issues or warning lights?",
+      "5. Oil Consumption — Does it use more than 0.5L per 1,000 miles?",
+      "6. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "7. Turbo Performance — Test acceleration; any hesitation or whistling? (turbo issues are rare but possible)",
+      "8. MOT History — Check for emissions‑related failures (catalyst, O2 sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ20P6",
+        "years": "2019–2022",
+        "power": "400 bhp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£4,500–£7,500 [EM-QUOTE]"
+      },
+      {
+        "engineCode": "AJ20P6",
+        "years": "2022–present",
+        "power": "400 bhp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£4,500–£7,500 [EM-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — one engine code across two generations, with revised ancillaries from 2022.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ20P6):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,996cc (3.0‑litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "Inline‑6"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection (common‑rail)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin‑scroll turbocharger with electric wastegate"
+        },
+        {
+          "label": "* 48V MHEV",
+          "value": "Integrated starter‑generator (ISG) with 48V battery"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare P400 engine prices for your Range Rover Sport",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover Sport P400 engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ20P6 engine typically costs £4,500–£7,500 supply only, with used units available from £2,500–£4,500. Fitting adds £2,000–£2,800 depending on the workshop. Use our calculator for a figure specific to your Range Rover Sport."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover Sport P400 engine reliable?",
+        "answer": "Yes — the AJ20P6 is considered significantly more reliable than its diesel counterparts. It has fewer chronic issues; the main concerns are cooling system components (water pump) and occasional timing chain tensioner wear. With good maintenance, these engines are dependable and capable of high mileage."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Range Rover Sport P400?",
+        "answer": "Cooling system component failures (water pump, coolant pipes), timing chain tensioner wear (less common than on diesel Ingenium), and 48V mild‑hybrid battery degradation. All are well‑understood by JLR specialists and generally less severe than diesel Ingenium issues."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover Sport P400 engine, or should I scrap the car?",
+        "answer": "Range Rover Sport values remain strong — a well-kept L494 or L461 is often worth £25,000–£55,000+. A £4,500–£7,500 reconditioned engine is only 10–20% of the vehicle's value — well within the Land Rover 60% scrap threshold. Replacement is almost always worthwhile."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Range Rover Sport P400 engine code?",
+        "answer": "The engine code is AJ20P6 — it's the only 3.0‑litre petrol inline‑six used in the Range Rover Sport P400. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production years: L494 (2019–2022) and L461 (2022–present)."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ20P6 timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early, the tensioner and chain can be replaced preventatively (£1,500–£2,500). If the chain jumps and causes valve interference, a full engine replacement (£4,500+) is usually required. Act on any cold‑start rattle."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted P400 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Range Rover Sport P400 owners, as part of the Engine Finders network, across both the L494 and L461 generations."
+      },
+      {
+        "title": "Compare P400 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the AJ20P6's cooling system, timing chain, and mild‑hybrid nuances."
+      },
+      {
+        "title": "UK Engine Replacement Services for Range Rover Sport P400",
+        "text": "supply‑only or full supply & fit available nationwide, covering every generation of this 3.0‑litre petrol with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover Sport P400 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and keep your Range Rover Sport performing at its best.",
+    "ctaButton": {
+      "label": "Compare Land Rover Range Rover Sport P400 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

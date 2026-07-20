@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "slug": "freelander-25-v6",
+    "title": "2.5 V6 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 55,
+    "description": "Land Rover Freelander 2.5 V6 — real UK costs, head gasket & cambelt insight, and honest reliability data for the Rover KV6. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/freelander/25-v6/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Freelander",
+              "item": "https://landroverengine.uk/freelander/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "2.5 V6",
+              "item": "https://landroverengine.uk/freelander/25-v6/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander 2.5 V6 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Freelander 1 (FL1) 2.5 V6 (2000–2006)",
+              "url": "https://landroverengine.uk/freelander/fl1/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander 2.5 V6 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Rover KV6 / 25K4F (2.5L V6)",
+              "url": "https://landroverengine.uk/engines/kv6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Freelander 2.5 V6 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 2.5 V6 engine typically costs £1,800–£2,800 supply only. Used engines are available from £500–£1,200. Fitting adds £1,000–£1,600 depending on your location and workshop. Main dealer new engines are no longer available — the KV6 has been out of production since 2006."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Freelander 2.5 V6 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2.5 KV6 is smooth and refined with a lovely V6 soundtrack, but it has a well-earned reputation for head gasket issues, thermostat housing leaks, and cambelt failures. The upper inlet manifold gasket ('V' gasket) is the most notorious weak point — it leaks coolant into the V of the engine, causing overheating. Regular maintenance and preventative replacement of the V-gasket and cambelt are essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Freelander 2.5 V6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most frequently reported issues are upper inlet manifold gasket failure ('V' gasket — coolant leaks into the V of the engine), thermostat housing leaks, and cambelt tensioner wear. The engine is an interference design — if the cambelt snaps, pistons and valves collide, destroying the engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Freelander 2.5 V6 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept £3,000 Freelander, a £2,300 recon is 77% of the car's value — exceeding our 60% Land Rover threshold for petrol engines. Against a tired £1,500 example, the same recon exceeds the threshold significantly — get a scrap valuation first. Well-maintained 2.5 V6 Freelanders are becoming rare, however."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Freelander 2.5 V6 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The 2.5 V6 carries the engine code KV6 (also referred to as 25K4F in Rover parts documentation). It's a 2.5-litre naturally aspirated V6 petrol engine used in the Freelander 1 (FL1) from 2000 to 2006."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the head gasket issues, or does it need full engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends. If caught early (the upper inlet manifold gasket), the fix is £600–£1,200 — well worth doing. If ignored and the engine has overheated severely, the head gasket itself may have failed, requiring an £800–£1,800 head gasket replacement. If the engine has overheated to the point of warped heads or cracked liners, a full engine replacement (£1,800–£3,200) is often more cost-effective. Prevention is the key — replace the V-gasket preventatively every 60,000 miles or whenever the cambelt is done."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Freelander 2.5 V6 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "500",
+            "highPrice": "3200",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Freelander 2.5 V6 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Freelander 2.5 V6 Rover KV6 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "2.5 V6 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/freelander/25-v6/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Freelander 2.5 V6 • 2000–2006 • Rover KV6 (25K4F)",
+    "h1": "Land Rover Freelander 2.5 V6 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Freelander specialists. Compare reconditioned, rebuilt and used 2.5-litre V6 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Freelander 2.5 V6 Engines — from £500 to £3,200 · Code: Rover KV6 / 25K4F",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Freelander 2.5 V6 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 2.5 V6 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Freelander 1 (FL1)",
+        "years": "2000–2006",
+        "engineCode": "Rover KV6 / 25K4F (2.5L V6)",
+        "reliability": "★★½☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,800–£3,200 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "One engine throughout this badge's history — no era ambiguity."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Freelander 2.5 V6 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£500–£1,200",
+        "fittedIndie": "£1,200–£2,200",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £1,500"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£1,800–£2,800",
+        "fittedIndie": "£2,800–£4,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£2,200–£3,200",
+        "fittedIndie": "£3,200–£4,400",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "No longer available from Land Rover"
+      }
+    ],
+    "figuresNote": "Figures above reflect the Rover KV6 2.5-litre V6 petrol engine. Used engines are available from approximately £500–£1,200, with reconditioned units ranging from £1,800–£2,800. Main dealer new engines are no longer available — the KV6 has been out of production since 2006.",
+    "labourEstimate": "Fitting a Freelander 2.5 V6 engine typically takes 12–16 hours at £70–£100/hr (independent) or £120–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 2.5 V6 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Head Gasket Failure (Upper Inlet Manifold Gasket)",
+        "symptoms": "Overheating, coolant loss, white smoke from exhaust, mayonnaise-like sludge in oil filler cap, engine running rough.",
+        "typicalMileage": "40,000–80,000 miles (or 5–8 years)",
+        "repairCost": "£600–£1,200 (upper manifold gasket replacement)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "stop driving if overheating"
+        },
+        "recommendation": "The KV6's \"V\" gasket (the upper inlet manifold gasket) is the single most notorious failure point on this engine. It leaks coolant into the V of the engine, causing overheating and eventually head gasket failure if ignored. The fix is well-understood — replace the upper manifold gasket and the thermostat housing at the same time, as they often fail together. Do not delay if you see coolant loss or overheating.",
+        "failureLink": {
+          "label": "Read the full head gasket failure guide",
+          "href": "/failures/head-gasket-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Thermostat Housing & Cooling System Leaks",
+        "symptoms": "Coolant loss with no visible external leak, overheating, sweet smell from the engine bay, heater not working properly.",
+        "typicalMileage": "30,000–60,000 miles (or 4–7 years)",
+        "repairCost": "£200–£500 (thermostat housing replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The KV6's plastic thermostat housing is another common weak point. It becomes brittle with age and can crack, leading to coolant loss. When it fails, the engine can overheat quickly, potentially leading to the head gasket failure described above. If you're experiencing unexplained coolant loss, have the thermostat housing and cooling system inspected promptly.",
+        "failureLink": {
+          "label": "Read the full coolant leak guide",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Cambelt Tensioner & Belt Failure",
+        "symptoms": "Rattling or squealing from the front of the engine, cambelt warning light (if fitted), sudden loss of power.",
+        "typicalMileage": "60,000–80,000 miles (or 5–7 years)",
+        "repairCost": "£300–£600 (cambelt + tensioner replacement)",
+        "replacementCost": "£1,800–£3,200 (if belt snaps — engine is an interference design)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear unusual noises from the belt area, stop driving"
+        },
+        "recommendation": "The KV6 is an interference engine — if the cambelt snaps, pistons and valves collide, resulting in catastrophic engine damage. Land Rover recommended cambelt replacement every 60,000 miles or 5 years. Many examples have not had this done, making them time bombs. If buying a 2.5 V6 Freelander, confirm cambelt history — and if it's due or unknown, budget £300–£600 to get it done immediately.",
+        "failureLink": {
+          "label": "Read the full cambelt failure guide",
+          "href": "/failures/cambelt-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, every 2.5 V6 era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Freelander 2.5 V6 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Freelander 2.5 V6 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Upper inlet manifold gasket leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Well-understood fix — caught early, engine survives"
+        },
+        {
+          "problem": "Thermostat housing leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£500",
+          "whenItMakesSense": "Straightforward fix; prevents overheating damage"
+        },
+        {
+          "problem": "Cambelt tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Preventative — far cheaper than a snapped belt"
+        },
+        {
+          "problem": "Head gasket failure (severe)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Labour-intensive; often more than the vehicle is worth"
+        },
+        {
+          "problem": "Cambelt snap (valve contact)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "£1,800–£3,200",
+          "whenItMakesSense": "Typically requires full engine replacement or complete rebuild"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 2.5 V6? Check These First",
+      "buyIf": [
+        "* Documented upper inlet manifold gasket replacement (or \"V\" gasket done)",
+        "* Cambelt and tensioner replaced within the last 40,000 miles or 4 years",
+        "* Cooling system service records (thermostat housing, water pump replaced)",
+        "* Full service history with evidence of coolant changes and regular maintenance"
+      ],
+      "avoidIf": [
+        "* No proof of cambelt replacement within the last 60,000 miles or 5 years",
+        "* Unexplained coolant loss with no cooling system service records",
+        "* Mayonnaise-like sludge in the oil filler cap (head gasket failure warning)",
+        "* Overheating history with no documented repair — walk away"
+      ]
+    },
+    "closingVerdict": "The 2.5 V6 is the most desirable petrol engine in the Freelander 1 — smooth, refined, and with a lovely V6 soundtrack. But it comes with a well-earned reputation for head gasket failures, thermostat housing leaks, and cambelt issues. These are not ifs — they're whens. Buy only with documented history of the \"V\" gasket replacement and cambelt service. A sorted 2.5 V6 Freelander is a £1,500–£3,000 classic; a neglected one is a £2,000 engine replacement waiting to happen.",
+    "cta": {
+      "label": "→ Compare 2.5 V6 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Freelander 2.5 V6 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Coolant Check — Any history of coolant loss or thermostat housing replacement? (KV6's Achilles heel)",
+      "* Oil Filler Cap — Check for mayonnaise-like sludge (head gasket failure warning)",
+      "* Cambelt History — Has the cambelt and tensioner been replaced within the last 60,000 miles or 5 years? (essential)",
+      "* Cold Start — Listen for rattling or squealing from the cambelt area",
+      "* Overheating — Any history of overheating? (often linked to V-gasket or thermostat housing failure)",
+      "* Smoke Check — White smoke on startup can indicate coolant ingress",
+      "* Engine Warning Light — Have codes been read? Any unresolved cooling system or misfire issues?",
+      "* MOT History — Check for emissions-related failures (cats, O2 sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "Rover KV6 / 25K4F (2.5L V6)",
+        "years": "2000–2006",
+        "power": "174 bhp (130 kW) @ 6,250 rpm · 177 lb-ft (240 Nm) @ 4,000 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (Rover KV6 / 25K4F):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,497 cc (2.5L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V6, 60° configuration, 4 valves per cylinder"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-point fuel injection (MPI)"
+        },
+        {
+          "label": "* Aspiration",
+          "value": "Naturally aspirated (no turbocharger)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 2.5 V6 engine prices for your Freelander",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Upper inlet manifold gasket (\"V\" gasket) failure — causes coolant loss, overheating, and eventual head gasket failure"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–100,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£1,800–£2,800 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "KV6 / 25K4F [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — overheating issues exposed in warm weather【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (17%), South East (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Freelander 2.5 V6 engine replacement cost in the UK?",
+        "answer": "A reconditioned 2.5 V6 engine typically costs £1,800–£2,800 supply only. Used engines are available from £500–£1,200. Fitting adds £1,000–£1,600 depending on your location and workshop. Main dealer new engines are no longer available — the KV6 has been out of production since 2006."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Freelander 2.5 V6 engine reliable?",
+        "answer": "The 2.5 KV6 is smooth and refined with a lovely V6 soundtrack, but it has a well-earned reputation for head gasket issues, thermostat housing leaks, and cambelt failures. The upper inlet manifold gasket (\"V\" gasket) is the most notorious weak point — it leaks coolant into the V of the engine, causing overheating. Regular maintenance and preventative replacement of the V-gasket and cambelt are essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Freelander 2.5 V6?",
+        "answer": "The most frequently reported issues are upper inlet manifold gasket failure (\"V\" gasket — coolant leaks into the V of the engine), thermostat housing leaks, and cambelt tensioner wear. The engine is an interference design — if the cambelt snaps, pistons and valves collide, destroying the engine."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Freelander 2.5 V6 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £3,000 Freelander, a £2,300 recon is 77% of the car's value — exceeding our 60% Land Rover threshold for petrol engines. Against a tired £1,500 example, the same recon exceeds the threshold significantly — get a scrap valuation first. Well-maintained 2.5 V6 Freelanders are becoming rare, however."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Freelander 2.5 V6 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The 2.5 V6 carries the engine code KV6 (also referred to as 25K4F in Rover parts documentation). It's a 2.5-litre naturally aspirated V6 petrol engine used in the Freelander 1 (FL1) from 2000 to 2006."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the head gasket issues, or does it need full engine replacement?",
+        "answer": "It depends. If caught early (the upper inlet manifold gasket), the fix is £600–£1,200 — well worth doing. If ignored and the engine has overheated severely, the head gasket itself may have failed, requiring an £800–£1,800 head gasket replacement. If the engine has overheated to the point of warped heads or cracked liners, a full engine replacement (£1,800–£3,200) is often more cost-effective. Prevention is the key — replace the V-gasket preventatively every 60,000 miles or whenever the cambelt is done."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Freelander 2.5 V6 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted 2.5 V6 Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Freelander owners, as part of the Engine Finders network, covering the entire KV6 era from 2000 to 2006."
+      },
+      {
+        "title": "Compare 2.5 V6 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, across every Freelander 1 that left the factory with this smooth V6."
+      },
+      {
+        "title": "UK Engine Replacement Services for 2.5 V6",
+        "text": "supply-only or full supply & fit available nationwide, covering the full FL1 production run — and we're vetted across every era of this badge."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Freelander 2.5 V6 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your Freelander back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Land Rover Freelander 2.5 V6 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

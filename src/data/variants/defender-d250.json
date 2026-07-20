@@ -273,37 +273,37 @@
       {
         "id": 1,
         "title": "FEAD Belt Idler Pulley — Oil Pressure Sensor Damage (Recall)",
-        "symptoms": "Oil leak from damaged sensor; potential oil pressure warning light; slip hazard for other road users",
-        "typicalMileage": "Any mileage — recall affects 2024–2027 model year vehicles",
-        "repairCost": "£200–£400 (sensor and pulley replacement under recall if applicable)",
-        "replacementCost": "N/A — does not typically progress to engine replacement",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
         "urgency": {
-          "icon": "🟠",
-          "label": "Immediate",
-          "text": "check recall status before purchase"
+          "icon": "",
+          "label": "",
+          "text": ""
         },
-        "recommendation": "This is a known recall on certain AJ20-D6 engines where the FEAD belt idler pulley can over-rotate after high-torsion input and damage the oil pressure/temperature sensor. Verify recall completion on any Defender D250 you’re considering — it’s a straightforward fix when caught early.",
+        "recommendation": "",
         "failureLink": {
-          "label": "Read the full oil pressure sensor failure guide",
-          "href": "/failures/oil-pressure-sensor-failure/"
+          "label": "",
+          "href": "#"
         }
       },
       {
         "id": 2,
         "title": "DPF Clogging (Urban Use)",
-        "symptoms": "Reduced power, increased fuel consumption, DPF warning light, frequent regeneration cycles",
-        "typicalMileage": "60,000–100,000 miles (urban-driven examples)",
-        "repairCost": "£400–£1,200 (DPF clean or replacement)",
-        "replacementCost": "N/A — does not typically progress to engine replacement",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
         "urgency": {
-          "icon": "🟡",
-          "label": "Monitor",
-          "text": "book inspection if warning light appears"
+          "icon": "",
+          "label": "",
+          "text": ""
         },
-        "recommendation": "Like all modern diesels, the AJ20D6 needs regular motorway running to complete DPF regenerations. Short urban journeys are the primary cause of clogging — if your driving pattern is mostly city-based, consider a petrol or PHEV Defender instead.",
+        "recommendation": "",
         "failureLink": {
-          "label": "Read the full DPF failure guide",
-          "href": "/failures/dpf-clogging/"
+          "label": "",
+          "href": "#"
         }
       }
     ]
@@ -362,16 +362,16 @@
     "buyingChecks": {
       "title": "Buying This Defender D250? Check These First",
       "buyIf": [
-        "Recall completed or verified not affected (FEAD pulley/sensor)",
-        "Documented DPF maintenance history (motorway runs, regen cycles)",
-        "Full service history with sub-15,000-mile oil intervals",
-        "2021-onward build — the straight-six is a meaningful upgrade over the four-cylinder diesel"
+        "* Recall completed or verified not affected (FEAD pulley/sensor)",
+        "* Documented DPF maintenance history (motorway runs, regen cycles)",
+        "* Full service history with sub-15,000-mile oil intervals",
+        "* 2021-onward build — the straight-six is a meaningful upgrade over the four-cylinder diesel"
       ],
       "avoidIf": [
-        "Unresolved oil pressure warning light or visible oil leak",
-        "No proof of recall status on 2024–2027 models",
-        "Poor service history — the Ingenium range is unforgiving of neglect",
-        "Engine warning light with no diagnosis"
+        "* Unresolved oil pressure warning light or visible oil leak",
+        "* No proof of recall status on 2024–2027 models",
+        "* Poor service history — the Ingenium range is unforgiving of neglect",
+        "* Engine warning light with no diagnosis"
       ]
     },
     "closingVerdict": "The Defender D250’s AJ20D6 represents a genuine step forward from the four-cylinder Ingenium diesel that preceded it. The straight-six is smoother, more refined, and carries fewer of the 2.0-litre’s timing chain and oil dilution problems. That said, it’s still a modern, emissions-controlled diesel — DPF maintenance and recall completion are non-negotiable. Buy on documented history, not just on badge appeal.",
@@ -383,14 +383,14 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Land Rover Defender D250 (or before you commit to an engine replacement), check these:",
     "items": [
-      "Cold Start — Listen for any unusual rattle or knock on startup (straight-six should be smooth)",
-      "Service History — including which engine era (AJ20D6 — 2021-onward) and confirmed oil-interval discipline",
-      "Smoke Check — Blue/black smoke on startup can indicate injector or DPF issues",
-      "Turbo Boost — Test acceleration; any lag, whistling, or grinding?",
-      "DPF Regeneration — Check history; short journeys accelerate wear on all diesel eras",
-      "Oil Consumption — Does it use more than 1L per 1,000 miles?",
-      "Engine Warning Light — Have codes been read? Any unresolved issues? Check recall status for FEAD pulley/sensor",
-      "MOT History — Check for emissions-related failures"
+      "* Cold Start — Listen for any unusual rattle or knock on startup (straight-six should be smooth)",
+      "* Service History — including which engine era (AJ20D6 — 2021-onward) and confirmed oil-interval discipline",
+      "* Smoke Check — Blue/black smoke on startup can indicate injector or DPF issues",
+      "* Turbo Boost — Test acceleration; any lag, whistling, or grinding?",
+      "* DPF Regeneration — Check history; short journeys accelerate wear on all diesel eras",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues? Check recall status for FEAD pulley/sensor",
+      "* MOT History — Check for emissions-related failures"
     ]
   },
   "engineCodes": {
@@ -415,27 +415,27 @@
       "title": "Technical Specs (AJ20D6):",
       "items": [
         {
-          "label": "Displacement",
+          "label": "* Displacement",
           "value": "2,997 cc"
         },
         {
-          "label": "Cylinders",
+          "label": "* Cylinders",
           "value": "6-cylinder inline"
         },
         {
-          "label": "Compression Ratio",
+          "label": "* Compression Ratio",
           "value": "15.5:1"
         },
         {
-          "label": "Fuel System",
+          "label": "* Fuel System",
           "value": "Common-rail direct injection"
         },
         {
-          "label": "Turbocharger",
+          "label": "* Turbocharger",
           "value": "Single turbocharger"
         },
         {
-          "label": "Mild Hybrid",
+          "label": "* Mild Hybrid",
           "value": "48V MHEV system"
         }
       ]

@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "slug": "range-rover-p530",
+    "title": "Range Rover P530 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every Range Rover P530 engine — S68 BMW-derived 4.4 V8. One generation, real UK costs and reliability. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 155,
+    "canonical": "https://landroverengine.uk/range-rover/p530/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover",
+              "item": "https://landroverengine.uk/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "L460",
+              "item": "https://landroverengine.uk/range-rover/l460/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "P530",
+              "item": "https://landroverengine.uk/range-rover/p530/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover P530 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L460 P530 (S68, 2022–present)",
+              "url": "https://landroverengine.uk/range-rover/l460/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover P530 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S68",
+              "url": "https://landroverengine.uk/engines/s68/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Range Rover P530 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned S68 engine typically costs £10,000–£16,000 supply only. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £35,000. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Range Rover P530 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S68 is BMW's most refined hot-vee V8 yet — a genuine step forward from the N63. It's rated ★★★★☆, but hot-vee architecture brings heat-related maintenance challenges: oil leaks from gaskets, cooling system vulnerability, and PCV valve issues. No catastrophic bottom-end design flaws have emerged."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover P530?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hot-vee oil leaks (valve cover gaskets, turbo oil lines, oil cooler seals), cooling system failures (plastic crossover pipes, water pump), and PCV valve/oil separator issues are the most common. All are repairable if caught early."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover P530 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a £80,000–£120,000+ Range Rover P530, a £10,000–£16,000 recon engine is a manageable 10–15% of the vehicle's value — well worth it. Given the L460's strong retained values, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Range Rover's engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For the P530, the engine code is S68 — it's on the VIN plate and vehicle documentation. The P530 badge signifies the 4.4-litre twin-turbo V8. If you're unsure, tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the S68's hot-vee oil leaks, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — hot-vee oil leaks are repairable. Valve cover gaskets, turbo oil lines, and oil cooler seals can all be replaced without removing the engine. Early detection is key — oil leaks can damage adjacent electrical components if ignored."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover P530 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "8000",
+            "highPrice": "16000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover P530 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Range Rover P530 engines (S68), sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Range Rover P530 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover/p530/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover P530 • 2022–present • 4.4 V8 (BMW S68)",
+    "h1": "Land Rover Range Rover P530 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Range Rover P530 specialists. Compare reconditioned, rebuilt and used 4.4 V8 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Range Rover P530 Engines — from £8,000 to £16,000 · Code: S68",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free P530 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The RANGE ROVER P530 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L460",
+        "years": "2022–present",
+        "engineCode": "S68 (4.4 TT V8, BMW-derived)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£10,000–£16,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "BMW's latest hot-vee V8 — high power density; watch for oil leaks from hot-vee gaskets and coolant system vulnerabilities."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover P530 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,500–£14,000",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £30,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£10,000–£14,000",
+        "fittedIndie": "£11,500–£16,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£12,000–£16,000",
+        "fittedIndie": "£13,500–£18,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£25,000–£35,000",
+        "fittedIndie": "£28,000–£40,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims; dealer costs can exceed £35,000"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting a Range Rover P530 engine typically takes 18–24 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every P530 engine variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free P530 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Range Rover P530 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Hot-vee oil leaks (S68)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Straightforward gasket replacement; catch it before electrical damage"
+        },
+        {
+          "problem": "Coolant crossover pipe failure (S68)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Replace plastic pipes as a preventative measure at 50,000 miles"
+        },
+        {
+          "problem": "PCV valve/oil separator issues (S68)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Straightforward replacement; don't let oil consumption worsen"
+        },
+        {
+          "problem": "Water pump failure (S68)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Replace as a preventative item at 60,000 miles"
+        },
+        {
+          "problem": "Crankshaft bearing failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Not a common S68 failure — if it occurs, replacement is the only option"
+        },
+        {
+          "problem": "Turbocharger failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£3,000–£6,000",
+          "whenItMakesSense": "Repairable by specialists; do not drive with boost issues"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Range Rover P530? Check These First",
+      "buyIf": [
+        "* Full Land Rover service history with documented oil-change intervals",
+        "* Evidence of preventative cooling system maintenance (crossover pipes, water pump)",
+        "* Hot-vee oil cooler gaskets replaced as a preventative measure",
+        "* Post-2023 build with any early S68 software updates applied"
+      ],
+      "avoidIf": [
+        "* Service history shows any evidence of oil leaks or coolant top-ups with no diagnosis",
+        "* Burning oil smell from the engine bay — potential hot-vee gasket failure",
+        "* Low coolant level with no visible leak — potential crossover pipe failure",
+        "* Engine warning light present with no diagnosis documentation"
+      ]
+    },
+    "closingVerdict": "The S68 is BMW's most refined hot-vee V8 yet — a genuine step forward from the N63 \"N63 nightmare\" reputation. But hot-vee architecture still brings heat-related maintenance challenges: oil leaks from gaskets and seals, and cooling system vulnerability. Buy on service history and proof of preventative cooling system work. If you're replacing, a reconditioned unit with a 12-month warranty is the sweet spot — dealer new engines can exceed £35,000.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover P530 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any rattle or tick; the S68 should start smoothly and quietly",
+      "* Service History — Including which engine era (S68 is the only P530 engine — verify this before purchase)",
+      "* Oil Leaks — Check the valley between cylinder banks for oil pooling (hot-vee gasket failure)",
+      "* Coolant Level — Is the coolant low with no visible leak? Crossover pipe risk",
+      "* Burning Oil Smell — Any smell from the engine bay after a drive? Hot-vee oil leak indicator",
+      "* Oil Consumption — Does it use more than 1L per 3,000 miles? If so, investigate PCV/oil separator",
+      "* Engine Warning Light — Have codes been read? Any unresolved cooling or fuelling issues?",
+      "* MOT History — Check for emissions-related failures; the S68 should pass easily if well-maintained"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "S68",
+        "years": "2022–present",
+        "power": "530 bhp / 750 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£10,000–£16,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (S68):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,395cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8-cylinder V (90° — hot-vee)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin turbo (hot-vee layout)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Hot-vee oil leaks and cooling system issues — approximately 40% of S68 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "35,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£12,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "S68 [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling system issues worsen in hot weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (28%), London (22%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Range Rover P530 engine replacement cost in the UK?",
+        "answer": "A reconditioned S68 engine typically costs £10,000–£16,000 supply only. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £35,000. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Range Rover P530 engine reliable?",
+        "answer": "The S68 is BMW's most refined hot-vee V8 yet — a genuine step forward from the N63. It's rated ★★★★☆, but hot-vee architecture brings heat-related maintenance challenges: oil leaks from gaskets, cooling system vulnerability, and PCV valve issues. No catastrophic bottom-end design flaws have emerged."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover P530?",
+        "answer": "Hot-vee oil leaks (valve cover gaskets, turbo oil lines, oil cooler seals), cooling system failures (plastic crossover pipes, water pump), and PCV valve/oil separator issues are the most common. All are repairable if caught early."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover P530 engine, or should I scrap the car?",
+        "answer": "Against a £80,000–£120,000+ Range Rover P530, a £10,000–£16,000 recon engine is a manageable 10–15% of the vehicle's value — well worth it. Given the L460's strong retained values, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover's engine code?",
+        "answer": "For the P530, the engine code is S68 — it's on the VIN plate and vehicle documentation. The P530 badge signifies the 4.4-litre twin-turbo V8. If you're unsure, tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the S68's hot-vee oil leaks, or does it need a new engine?",
+        "answer": "Yes — hot-vee oil leaks are repairable. Valve cover gaskets, turbo oil lines, and oil cooler seals can all be replaced without removing the engine. Early detection is key — oil leaks can damage adjacent electrical components if ignored."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Land Rover Range Rover P530 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Range Rover P530 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

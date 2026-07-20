@@ -1,0 +1,558 @@
+{
+  "meta": {
+    "slug": "velar-d200",
+    "title": "D200 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every Land Rover Range Rover Velar D200 engine — 2.0-litre Ingenium diesel MHEV, 2021–present. Real UK costs, oil dilution advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/velar/d200/",
+    "openGraph": {
+      "title": "D200 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Range Rover Velar D200 engine — 2.0-litre Ingenium diesel MHEV, 2021–present. Real UK costs, oil dilution advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/velar/d200/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/velar-d200.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "D200 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Range Rover Velar D200 engine — 2.0-litre Ingenium diesel MHEV, 2021–present. Real UK costs, oil dilution advice, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/velar-d200.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Velar",
+              "item": "https://landroverengine.uk/velar/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "L560 Velar Facelift",
+              "item": "https://landroverengine.uk/velar/l560/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "D200",
+              "item": "https://landroverengine.uk/velar/d200/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Velar D200 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L560 Velar D200 (204DTD MHEV, 2021-present)",
+              "url": "https://landroverengine.uk/velar/l560/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Velar D200 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD MHEV",
+              "url": "https://landroverengine.uk/engines/204dtd-mhev/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Range Rover Velar D200 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned D200 engine typically costs £4,500–£6,500 supply only. Fitting adds £900–£1,300 depending on the specialist. Used engines can be found from £2,000–£3,500, but condition and warranty vary. Use our calculator for a figure specific to your Velar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Range Rover Velar D200 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The D200's 204DTD MHEV is a significant improvement over the early Ingenium diesels. The timing chain tensioner design was revised in 2019 (applying to the MHEV D200 from 2021), reducing the catastrophic failure risk seen on earlier units. However, the engine still has known issues — oil dilution from DPF regen, EGR cooler leaks, and water pump failure. With regular 5,000-mile oil changes and occasional longer runs, it's a refined and reliable diesel."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover Velar D200?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main issues are oil dilution from DPF regeneration (particularly with short-journey use), timing chain tensioner wear (improved on MHEV but still a watch item), EGR cooler leaks, and water pump failure. None are catastrophic if caught early — regular maintenance and monitoring are essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Velar D200 engine, or should I scrap the vehicle?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Given the high retained value of the L560 Velar (typical £25,000–£45,000 for a good example), a £5,000–£6,000 engine replacement is comfortably within the 'worth it' range. Our Land Rover scrap threshold is 60% of vehicle value — with a £5,500 engine cost against a £25,000 vehicle, it's a clear yes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Range Rover Velar D200 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is 204DTD, found on the VIN plate and in the vehicle documentation. It's the 2.0-litre turbocharged diesel Ingenium four-cylinder engine with MHEV assistance. If you're unsure, enter your registration on our site and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair a 204DTD oil dilution issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oil dilution is a maintenance issue, not a replacement issue. Regular oil changes (every 5,000 miles) and occasional longer runs to allow full DPF regeneration will prevent it. If the oil level has risen significantly, change the oil and filter immediately — driving with diluted oil can cause bearing damage."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Velar D200 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "6500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Velar D200 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Range Rover Velar D200 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "D200 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/velar/d200/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover Velar D200 • 2021–present • 1 Engine Generation",
+    "h1": "Land Rover Range Rover Velar D200 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Velar D200 specialists. Compare reconditioned, rebuilt and used 2.0-litre Ingenium diesel MHEV engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Land Rover Range Rover Velar D200 Engines — from £2,000 to £6,500 · Engine code: 204DTD MHEV",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free D200 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The D200 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Velar L560 facelift",
+        "years": "2021–present",
+        "engineCode": "204DTD MHEV (2.0L Ingenium D)",
+        "reliability": "★★★★☆ [PROVISIONAL — see Data Note]",
+        "reconCost": "£4,500–£6,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "MHEV revision of the 204DTD — timing chain tensioner improved; water pump/EGR remain watch items"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover Velar D200 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£2,800–£4,600",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £15,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,500–£6,500",
+        "fittedIndie": "£5,400–£7,600",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,000–£8,500",
+        "fittedIndie": "£6,900–£9,600",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£9,000–£13,000",
+        "fittedIndie": "£10,500–£14,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current Velar D200 generation. This badge spans only one engine era — see the Era Map above.",
+    "labourEstimate": "Fitting a Velar D200 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare D200 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Oil Dilution from DPF Regeneration",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Timing Chain Tensioner Wear (Improved on MHEV but Still a Watch Item)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "EGR Cooler Leaks",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every D200 variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free D200 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Velar D200 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Oil dilution (DPF-related)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£80–£200",
+          "whenItMakesSense": "Regular oil changes at 5,000-mile intervals"
+        },
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Catch it early — before catastrophic failure"
+        },
+        {
+          "problem": "EGR cooler leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Straightforward replacement — essential maintenance"
+        },
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£450–£800",
+          "whenItMakesSense": "Catch it early — before overheating"
+        },
+        {
+          "problem": "Severe timing chain failure (snapped)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means replacement required"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This D200? Check These First",
+      "buyIf": [
+        "* Full JLR service history with documented 5,000-mile oil changes",
+        "* No cold-start rattling (indicates timing chain tensioner health)",
+        "* DPF regeneration history with evidence of regular longer runs",
+        "* Post-2021 build (MHEV revision with improved tensioner design)",
+        "* No coolant loss or white smoke (EGR cooler health)"
+      ],
+      "avoidIf": [
+        "* Cold-start rattling — budget for timing chain work immediately",
+        "* History of short-journey ownership — DPF and oil dilution issues likely",
+        "* Unexplained coolant loss with no visible leak — EGR cooler may be failing",
+        "* No service history — the 204DTD is unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The D200 is the facelift Velar's 2.0-litre Ingenium diesel MHEV. The post-2019 revision has improved timing chain tensioner design, but the 204DTD still has known issues — oil dilution from DPF regen, EGR cooler leaks, and water pump failure. With regular maintenance, it's a refined and efficient diesel. Without it, you're looking at expensive repairs. With typical L560 Velar values of £25,000–£45,000, a £5,000–£6,000 engine replacement is comfortably within the \"worth it\" range.",
+    "cta": {
+      "label": "→ Compare D200 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover Velar D200 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattling (timing chain tensioner warning) — see the map above",
+      "* Service History — Including 5,000-mile oil changes (critical for oil dilution prevention)",
+      "* Oil Level — Check dipstick; any rising level indicates oil dilution",
+      "* Coolant Level — Check reservoir when cold; any low or loss may indicate EGR cooler leak",
+      "* DPF Regeneration — Check service history for regular longer runs; short trips are a red flag",
+      "* Smoke Check — White smoke = coolant ingress (EGR cooler); black smoke = over-fuelling",
+      "* Engine Warning Light — Have codes read; unresolved issues may indicate DPF or EGR problems",
+      "* MOT History — Check for emissions-related failures (DPF and NOx sensor issues are common)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204DTD MHEV (2.0L Ingenium D)",
+        "years": "2021–present",
+        "power": "201 bhp @ 4,000rpm",
+        "enquiries": "1,150 [EM-VERIFIED]",
+        "avgReconCost": "£4,500–£6,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204DTD MHEV):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,999cc (2.0L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline, aluminium block"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection (2,000 bar), turbocharged and intercooled"
+        },
+        {
+          "label": "* MHEV System",
+          "value": "48V belt-integrated starter generator (BISG) and 0.2kWh battery"
+        },
+        {
+          "label": "* Torque",
+          "value": "430 Nm @ 1,750–2,500 rpm"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare D200 engine prices for your Velar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Oil dilution from DPF regeneration — most frequent D200 engine enquiries"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "40,000–60,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,500–£6,000 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204DTD MHEV [EM-VERIFIED — 1,150 requests]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose timing chain wear [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (19%), South West (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Range Rover Velar D200 engine replacement cost in the UK?",
+        "answer": "A reconditioned D200 engine typically costs £4,500–£6,500 supply only. Fitting adds £900–£1,300 depending on the specialist. Used engines can be found from £2,000–£3,500, but condition and warranty vary. Use our calculator for a figure specific to your Velar."
+      },
+      {
+        "id": 2,
+        "question": "Is the Range Rover Velar D200 engine reliable?",
+        "answer": "The D200's 204DTD MHEV is a significant improvement over the early Ingenium diesels. The timing chain tensioner design was revised in 2019 (applying to the MHEV D200 from 2021), reducing the catastrophic failure risk seen on earlier units. However, the engine still has known issues — oil dilution from DPF regen, EGR cooler leaks, and water pump failure. With regular 5,000-mile oil changes and occasional longer runs, it's a refined and reliable diesel."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover Velar D200?",
+        "answer": "The main issues are oil dilution from DPF regeneration (particularly with short-journey use), timing chain tensioner wear (improved on MHEV but still a watch item), EGR cooler leaks, and water pump failure. None are catastrophic if caught early — regular maintenance and monitoring are essential."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Velar D200 engine, or should I scrap the vehicle?",
+        "answer": "Given the high retained value of the L560 Velar (typical £25,000–£45,000 for a good example), a £5,000–£6,000 engine replacement is comfortably within the \"worth it\" range. Our Land Rover scrap threshold is 60% of vehicle value — with a £5,500 engine cost against a £25,000 vehicle, it's a clear yes."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover Velar D200 engine code?",
+        "answer": "The engine code is 204DTD, found on the VIN plate and in the vehicle documentation. It's the 2.0-litre turbocharged diesel Ingenium four-cylinder engine with MHEV assistance. If you're unsure, enter your registration on our site and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a 204DTD oil dilution issue, or does it need replacement?",
+        "answer": "Oil dilution is a maintenance issue, not a replacement issue. Regular oil changes (every 5,000 miles) and occasional longer runs to allow full DPF regeneration will prevent it. If the oil level has risen significantly, change the oil and filter immediately — driving with diluted oil can cause bearing damage."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Range Rover Velar D200 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted D200 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Velar D200 owners, as part of the Engine Finders network, covering the modern Ingenium diesel MHEV and every L560 Velar powertrain from the D180 to the P400."
+      },
+      {
+        "title": "Compare D200 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. We cover the 204DTD MHEV specifically, with specialists who understand the timing chain tensioner history and the critical importance of oil dilution prevention."
+      },
+      {
+        "title": "UK Engine Replacement Services for D200",
+        "text": "supply-only or full supply & fit available nationwide, covering the 2.0-litre four-cylinder Ingenium diesel MHEV powertrain, with a 12-month warranty as standard across our network."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover Velar D200 engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get your Velar back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Range Rover Velar D200 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

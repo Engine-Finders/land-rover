@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "slug": "land-rover-discovery-3-l319",
+    "title": "Land Rover Discovery 3 L319 Engines — The Complete UK Guide",
+    "titleCharCount": 59,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery 3 L319 • Off-Roader • 2004–2009",
+    "h1": "Land Rover Discovery 3 L319 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the Discovery 3 L319 — from the 2.7-litre TDV6 diesel to the 4.4-litre V8 petrol. Real UK costs and honest failure data for the crankshaft-bearing risk that defines this generation. Backed by 120+ real UK L319 enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "120+ L319 Enquiries (2025) [EM-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Off-Roader"
+      },
+      {
+        "icon": "📖",
+        "label": "3 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore L319 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Land Rover Discovery 3 L319 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the Discovery 3 L319 specifically — three engines, one defining diesel risk.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (L319)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "276DT (TDV6)",
+        "family": "276DT",
+        "fuel": "Diesel",
+        "displacement": "2.7L",
+        "power": "190 bhp (140 kW)",
+        "years": "2004–2009",
+        "variants": "TDV6",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£7,500 [EM-QUOTE]"
+      },
+      {
+        "engineCode": "406PN (Cologne V6)",
+        "family": "406PN",
+        "fuel": "Petrol",
+        "displacement": "4.0L",
+        "power": "218 bhp (160 kW)",
+        "years": "2005–2009",
+        "variants": "V6",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,500 [EM-QUOTE]"
+      },
+      {
+        "engineCode": "448PN (AJV8)",
+        "family": "448PN",
+        "fuel": "Petrol",
+        "displacement": "4.4L",
+        "power": "299 bhp (220 kW)",
+        "years": "2004–2009",
+        "variants": "V8",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£7,500 [EM-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "276DT TDV6: 95% confidence, derived from the EM_Proprietary_Data Known Failure Patterns table and Model Ownership Decision Table — crankshaft bearing failure is a well-documented catastrophic risk. 406PN V6 petrol and 448PN V8 petrol: 95% confidence, derived from workshop consensus and specialist sources — both are more robust than the TDV6 diesel. All ratings are [PROVISIONAL] pending dedicated Engine Pages for each family."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Land Rover Discovery 3 L319 — Overview",
+    "intro": "The L319 is the third-generation Discovery, launched in April 2005 as a ground-up redesign of the iconic off-roader. Built on an Integrated Body Frame (IBF) combining monocoque construction with a ladder-frame chassis, it introduced independent double-wishbone suspension and, on SE/HSE models, cross-linked air suspension. The engine line-up offered three choices: a 2.7-litre TDV6 diesel, a 4.0-litre Cologne V6 petrol, and a 4.4-litre AJ-V8 petrol — but the TDV6's crankshaft-bearing vulnerability defines this generation's ownership story.",
+    "keyFacts": "Platform: Land Rover L319 (Integrated Body Frame) • Predecessor: Discovery 2 (L318) • Successor: Discovery 4 (L319, 2009–2016) • Sibling body styles in this generation: L319 commercial van (2007–2009).",
+    "marketIntelligenceLine": "The L319 Discovery 3 generated 120+ real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 276DT TDV6 diesel as owners confront the crankshaft-bearing failure risk."
+  },
+  "bestWorstEngines": {
+    "items": []
+  },
+  "ownershipEconomics": {
+    "h2": "Land Rover Discovery 3 L319 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "276DT TDV6",
+        "typicalMileage": "80k–140k",
+        "commonMajorFailure": "Crankshaft bearing failure",
+        "repairCostSpecialist": "£5,500–£7,000 (bottom-end)",
+        "replacementCostRecon": "£5,000–£7,500",
+        "ownershipVerdict": "High Risk — catastrophic failure common; avoid without history."
+      },
+      {
+        "engine": "406PN V6",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Generally robust",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£2,500–£4,500",
+        "ownershipVerdict": "Safe Bet — simple, reliable V6."
+      },
+      {
+        "engine": "448PN V8",
+        "typicalMileage": "100k–200k",
+        "commonMajorFailure": "Generally robust",
+        "repairCostSpecialist": "£600–£1,500",
+        "replacementCostRecon": "£4,500–£7,500",
+        "ownershipVerdict": "Safe Bet — thirsty but durable."
+      }
+    ],
+    "economicsRule": {
+      "title": "The L319 rule",
+      "text": "A £5,000–£7,500 TDV6 recon against a £4,000–£14,000 Discovery 3 sits at 35–180% of the car's value【EM-QUOTE】. On a sub-£6,000 example, that brushes our 60% Land Rover scrap threshold — we'll honestly tell you to walk away. Against a well-kept £12,000+ example, the same recon drops to 40–60% — a repair decision, not a financial one. Value the car first."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which L319 Costs Least To Own?",
+        "answer": "406PN V6 petrol — simple Cologne V6, cheap parts, no catastrophic failure mode."
+      },
+      {
+        "question": "Which L319 Costs Most To Own?",
+        "answer": "276DT TDV6 — crankshaft bearing failure is a £5,000+ bill waiting to happen."
+      },
+      {
+        "question": "Which L319 Is Best Value?",
+        "answer": "448PN V8 petrol — thirsty but the most durable engine in the range."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "276DT TDV6 Crankshaft Bearing Failure",
+        "affectedModels": "Discovery 3 L319 2.7 TDV6 (2004–2009).",
+        "typicalFailureMileage": "80,000–140,000 miles.",
+        "rootCause": "The tin-aluminium coating on the crankshaft bearings fatigues over time, leading to bearing spin and catastrophic engine failure. Cold-start knock is the classic early warning sign. Oil pump housing failure can also occur, causing sudden oil pressure loss and rapid engine death.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,800–£3,500",
+            "specialist": "£1,200–£2,500",
+            "work": "Oil analysis, sump inspection, bearing replacement if caught early",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£7,000–£9,500",
+            "specialist": "£5,000–£7,500",
+            "work": "Full reconditioned engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "At the first sign of cold-start knock or low oil pressure, get the engine inspected immediately — a £1,200–£2,500 preventative bottom-end rebuild is dramatically cheaper than the £5,000–£7,500 replacement that follows if ignored. On an L319 worth under £6,000, this decision alone determines whether the car stays economically viable.",
+        "cta": {
+          "label": "Compare 276DT TDV6 engine prices for your Discovery 3 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "276DT TDV6 Oil Pump Housing Failure",
+        "affectedModels": "Discovery 3 L319 2.7 TDV6 (2004–2009).",
+        "typicalFailureMileage": "80,000–140,000 miles.",
+        "rootCause": "The oil pump housing casing can crack, dislodging the timing belt and causing sudden oil pressure loss. This often occurs without warning and can destroy the engine in seconds — it is considered a design weakness in the 276DT.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£2,800",
+            "specialist": "£900–£1,800",
+            "work": "Oil pump housing inspection and replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£7,000–£9,500",
+            "specialist": "£5,000–£7,500",
+            "work": "Full reconditioned engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the oil pump housing inspected during every major service — a £900–£1,800 preventative replacement is far cheaper than the £5,000+ engine replacement that follows a catastrophic failure. This is cheap insurance on an otherwise capable off-roader.",
+        "cta": {
+          "label": "Compare 276DT TDV6 engine prices for your Discovery 3 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "448PN AJ-V8 Coolant Crossover Pipe Leaks",
+        "affectedModels": "Discovery 3 L319 4.4 V8 (2004–2009).",
+        "typicalFailureMileage": "80,000–150,000 miles.",
+        "rootCause": "The plastic coolant crossover pipes at the front of the V8 engine become brittle with age and heat cycling, leading to coolant leaks and potential overheating. This is the most common failure on the otherwise robust AJ-V8.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,400",
+            "specialist": "£500–£900",
+            "work": "Coolant crossover pipe replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,000",
+            "specialist": "£4,000–£6,500",
+            "work": "Engine replacement if overheating caused head gasket failure",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace the coolant crossover pipes as preventative maintenance at 80,000 miles or 10 years — a £500–£900 specialist job is trivial against the £4,000+ engine replacement that follows an ignored coolant leak. This is the single most important maintenance item on the 4.4 V8.",
+        "cta": {
+          "label": "Compare 448PN V8 engine prices for your Discovery 3 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "L319 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "TDV6 (2.7 diesel)",
+        "engineCode": "276DT",
+        "usedSupply": "£2,800–£4,500",
+        "reconditionedSupply": "£5,000–£7,500",
+        "rebuiltSupply": "£6,500–£9,500",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "V6 (4.0 petrol)",
+        "engineCode": "406PN",
+        "usedSupply": "£1,200–£2,800",
+        "reconditionedSupply": "£2,500–£4,500",
+        "rebuiltSupply": "£4,000–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "V8 (4.4 petrol)",
+        "engineCode": "448PN",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,500",
+        "rebuiltSupply": "£6,000–£9,500",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — L319 Discovery 3 shares the same engine-bay access as the Discovery 4 (also L319), so costs are inherited directly per the Authority Model, with no divergence note required."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "TDV6"
+    ],
+    "petrolVariants": [
+      "V6",
+      "V8"
+    ],
+    "scopeNote": "All variants listed are Discovery 3 L319 only. Discovery 4 (also L319, 2009–2016) shares the same chassis code but received different engines including the 3.0 SDV6, 5.0 V8, and revised 2.7 TDV6 — those are covered on the Discovery 4 Generation Page. The L319 commercial van (2007–2009) shares the 2.7 TDV6 engine."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

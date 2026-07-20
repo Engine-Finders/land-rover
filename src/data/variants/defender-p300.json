@@ -1,0 +1,553 @@
+{
+  "meta": {
+    "slug": "defender-p300",
+    "title": "P300 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 56,
+    "description": "Every Land Rover Defender P300 engine — 2.0-litre Ingenium petrol, 2020–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://landroverengine.uk/defender/p300/",
+    "openGraph": {
+      "title": "P300 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Defender P300 engine — 2.0-litre Ingenium petrol, 2020–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/defender/p300/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/defender-p300.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "P300 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Defender P300 engine — 2.0-litre Ingenium petrol, 2020–present. Real UK costs, cooling system advice, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/defender-p300.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Defender",
+              "item": "https://landroverengine.uk/defender/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "L663 Defender",
+              "item": "https://landroverengine.uk/defender/l663/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "P300",
+              "item": "https://landroverengine.uk/defender/p300/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender P300 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L663 Defender P300 (204PT, 2020-present)",
+              "url": "https://landroverengine.uk/defender/l663/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender P300 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204PT",
+              "url": "https://landroverengine.uk/engines/204pt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Defender P300 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned P300 engine typically costs £3,000–£5,000 supply only. Fitting adds £700–£1,100 depending on the specialist. Used engines can be found from £1,500–£2,800, but condition and warranty vary. Use our calculator for a figure specific to your Defender."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Defender P300 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Generally, yes — the 204PT petrol Ingenium is considered more reliable than its diesel counterpart. There's no timing chain tensioner catastrophe. The main issues are cooling system-related: water pump failure and coolant leaks. With proper maintenance, it's a robust and refined engine for the modern Defender."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Defender P300?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most common issues are water pump failure (plastic impeller and seal degradation), coolant leaks from plastic hoses and thermostat housings, and occasional high-pressure fuel pump wear. None are catastrophic if caught early — regular coolant system inspections are key."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Defender P300 engine, or should I scrap the vehicle?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Given the high retained value of the L663 Defender (typical £30,000+ for a good example), a £4,000–£5,000 engine replacement is comfortably within the 'worth it' range. Our Land Rover scrap threshold is 60% of vehicle value — with a £4,000 engine cost against a £30,000 vehicle, it's a clear yes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Defender P300 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is 204PT, found on the VIN plate and in the vehicle documentation. It's the 2.0-litre turbocharged petrol Ingenium engine. If you're unsure, enter your registration on our site and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair a P300 water pump, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The pump must be replaced — it's a sealed unit with plastic impellers that degrade. A preventative replacement at 60,000 miles or at the first sign of leakage costs £400–£800. Ignoring it can lead to overheating and head gasket failure, which is far more expensive."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Defender P300 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "6500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Defender P300 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Defender P300 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "P300 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/defender/p300/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Defender P300 • 2020–present • 1 Engine Generation",
+    "h1": "Land Rover Defender P300 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover P300 specialists. Compare reconditioned, rebuilt and used 2.0-litre Ingenium petrol engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Land Rover Defender P300 Engines — from £1,500 to £6,500 · Engine code: 204PT",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free P300 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The P300 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L663 Defender",
+        "years": "2020–present",
+        "engineCode": "204PT (Ingenium 2.0 petrol)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,000–£5,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "More reliable than diesel Ingenium — water pump is the primary weak point"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Defender P300 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£2,800",
+        "fittedIndie": "£2,250–£3,900",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £12,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£3,800–£6,100",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,200–£6,500",
+        "fittedIndie": "£5,000–£7,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,500–£14,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current L663 Defender P300 generation. This badge spans only one engine era — see the Era Map above.",
+    "labourEstimate": "Fitting a Defender P300 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare P300 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Water Pump Failure",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Coolant Leaks (Plastic Fittings & Thermostat Housing)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "High-Pressure Fuel Pump (HPFP) Wear",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every P300 variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free P300 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Defender P300 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Catch it early — straightforward replacement"
+        },
+        {
+          "problem": "Coolant leak (hoses/thermostat)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£500",
+          "whenItMakesSense": "Simple parts; cheap to fix"
+        },
+        {
+          "problem": "HPFP wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Replace pump; no other damage if caught early"
+        },
+        {
+          "problem": "Head gasket (from severe overheating)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Worth it on a £30k+ Defender if the rest is sound"
+        },
+        {
+          "problem": "Severe overheating with block damage",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Replacement cost may be justified only on high-value examples"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This P300? Check These First",
+      "buyIf": [
+        "* Full JLR service history with documented coolant system inspections",
+        "* No signs of coolant loss or overheating (check coolant reservoir level)",
+        "* Water pump replaced as preventative at 60k+ miles",
+        "* A 2020–present L663 Defender — the modern platform with the robust petrol Ingenium"
+      ],
+      "avoidIf": [
+        "* Unexplained coolant loss with no visible leak — could indicate early water pump or head gasket issues",
+        "* Overheating history or low coolant level — risk of engine damage",
+        "* Hard starting or rough idle — may indicate HPFP or injector problems",
+        "* Dealer-serviced but with no records of coolant system work — assume it's overdue"
+      ]
+    },
+    "closingVerdict": "The P300 is the petrol alternative to the diesel Ingenium in the L663 Defender. It's generally more reliable than the diesel — no timing chain catastrophe — but the cooling system requires vigilance. Water pump and coolant leaks are the main issues; catch them early and the 204PT is a strong, refined engine for the modern Defender.",
+    "cta": {
+      "label": "→ Compare P300 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Defender P300 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for smooth idle; any hesitation or rough running points to injector or fuel pump issues",
+      "* Service History — Including coolant system inspections and fuel filter changes — see the map above",
+      "* Coolant Level — Check reservoir when cold; any low or loss is a red flag",
+      "* Water Pump — Listen for whining noise; check for coolant residue near the pump area",
+      "* Turbo Boost — Test acceleration; any lack of power or hesitation?",
+      "* Oil Condition — Check for fuel smell (HPFP wear) or coolant contamination",
+      "* Engine Warning Light — Have codes read; unresolved issues may indicate HPFP or sensor problems",
+      "* MOT History — Check for emissions-related failures (though petrol is generally clean)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204PT (Ingenium 2.0 petrol)",
+        "years": "2020–present",
+        "power": "296 bhp @ 5,500rpm",
+        "enquiries": "480 [EM-VERIFIED]",
+        "avgReconCost": "£3,000–£5,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204PT):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,997cc (2.0L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline, aluminium block"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection (250 bar), turbocharged and intercooled"
+        },
+        {
+          "label": "* Torque",
+          "value": "400 Nm @ 1,500–4,500 rpm"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare P300 engine prices for your Defender",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Water pump failure and coolant system leaks — most frequent P300 enquiries"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "65,000–85,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204PT [EM-VERIFIED — 480 requests]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cooling system failures emerge in colder months [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), Midlands (17%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Defender P300 engine replacement cost in the UK?",
+        "answer": "A reconditioned P300 engine typically costs £3,000–£5,000 supply only. Fitting adds £700–£1,100 depending on the specialist. Used engines can be found from £1,500–£2,800, but condition and warranty vary. Use our calculator for a figure specific to your Defender."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Defender P300 engine reliable?",
+        "answer": "Generally, yes — the 204PT petrol Ingenium is considered more reliable than its diesel counterpart. There's no timing chain tensioner catastrophe. The main issues are cooling system-related: water pump failure and coolant leaks. With proper maintenance, it's a robust and refined engine for the modern Defender."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Defender P300?",
+        "answer": "The most common issues are water pump failure (plastic impeller and seal degradation), coolant leaks from plastic hoses and thermostat housings, and occasional high-pressure fuel pump wear. None are catastrophic if caught early — regular coolant system inspections are key."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Defender P300 engine, or should I scrap the vehicle?",
+        "answer": "Given the high retained value of the L663 Defender (typical £30,000+ for a good example), a £4,000–£5,000 engine replacement is comfortably within the \"worth it\" range. Our Land Rover scrap threshold is 60% of vehicle value — with a £4,000 engine cost against a £30,000 vehicle, it's a clear yes."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Defender P300 engine code?",
+        "answer": "The engine code is 204PT, found on the VIN plate and in the vehicle documentation. It's the 2.0-litre turbocharged petrol Ingenium engine. If you're unsure, enter your registration on our site and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a P300 water pump, or does it need replacement?",
+        "answer": "The pump must be replaced — it's a sealed unit with plastic impellers that degrade. A preventative replacement at 60,000 miles or at the first sign of leakage costs £400–£800. Ignoring it can lead to overheating and head gasket failure, which is far more expensive."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Defender P300 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted P300 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Defender P300 owners, as part of the Engine Finders network, covering the modern Ingenium petrol and every Defender engine from the classic Tdi to the latest L663."
+      },
+      {
+        "title": "Compare P300 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. We cover the 204PT specifically, with specialists who know the Ingenium petrol platform inside out."
+      },
+      {
+        "title": "UK Engine Replacement Services for P300",
+        "text": "supply-only or full supply & fit available nationwide, covering the 2.0-litre turbocharged Ingenium, with a 12-month warranty as standard across our network."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Defender P300 engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get your Defender back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Defender P300 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

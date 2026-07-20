@@ -1,0 +1,506 @@
+{
+  "meta": {
+    "slug": "freelander-td4-fl1",
+    "title": "Td4 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 47,
+    "description": "Land Rover Freelander Td4 BMW M47R engine — real UK costs, injection pump & turbo advice. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://landroverengine.uk/freelander/td4-fl1/",
+    "openGraph": {
+      "title": "Td4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Freelander Td4 BMW M47R engine — real UK costs, injection pump & turbo advice. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/freelander/td4-fl1/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-td4-fl1.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Td4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Freelander Td4 BMW M47R engine — real UK costs, injection pump & turbo advice.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-td4-fl1.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Freelander",
+              "item": "https://landroverengine.uk/freelander/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Freelander FL1",
+              "item": "https://landroverengine.uk/freelander/fl1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Td4",
+              "item": "https://landroverengine.uk/freelander/td4-fl1/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander Td4 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "FL1 Td4 (BMW M47R, 2000–2006)",
+              "url": "https://landroverengine.uk/freelander/fl1/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander Td4 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW M47R",
+              "url": "https://landroverengine.uk/engines/m47r/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Freelander Td4 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M47R engine typically costs £1,800–£3,200 supply only, with fitting adding £900–£1,300. Use our calculator for a figure specific to your Freelander."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Freelander Td4 (BMW M47R) engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the M47R is widely regarded as one of the most reliable engines fitted to the Freelander. It's a BMW-sourced, chain-driven diesel with a robust design. The main watchpoints are the Bosch VP44 injection pump and the turbocharger — both are serviceable and well-understood."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Freelander Td4 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Injection pump wear (Bosch VP44), turbocharger failure (oil starvation), and PCV breather blockage. The engine itself is durable and capable of high mileage with proper maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Freelander Td4 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. An FL1 Freelander is a £1,000–£5,000 vehicle — a £2,500 recon is 50–250% of the car's value. For lower-value examples (sub-£2,500), replacement often exceeds our 60% Land Rover scrap threshold. Evaluate carefully — a well-maintained, low-mileage example may justify replacement; a tired one may not."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Freelander Td4 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The Td4 engine code is BMW M47R — a 2.0-litre 16-valve turbo-diesel. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent the injection pump failure on a Td4?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — regular fuel filter changes (every 20,000 miles) and using high-quality diesel can extend the VP44 pump's life. If you experience poor starting or loss of power, have the pump tested immediately — rebuilding it is far cheaper than replacing it."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Freelander Td4 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "800",
+            "highPrice": "3500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Freelander Td4 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Freelander Td4 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Td4 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/freelander/td4-fl1/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Freelander Td4 • 2000–2006 • BMW M47R",
+    "h1": "Land Rover Freelander Td4 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The BMW-sourced M47R 2.0-litre turbo-diesel powered the first-generation Freelander — a robust, chain-driven unit with a reputation for reliability. Get quotes from trusted UK specialists today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Freelander Td4 Engines — from £800 to £3,500 · BMW M47R",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Freelander Td4 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The FREELANDER Td4 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Freelander Td4 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£1,800",
+        "fittedIndie": "£1,500–£2,800",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £2,500"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£1,800–£3,200",
+        "fittedIndie": "£2,700–£4,300",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£2,500–£3,500",
+        "fittedIndie": "£3,500–£4,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — no longer available",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "Not available — reconditioned only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current M47R era.",
+    "labourEstimate": "Fitting a Freelander Td4 engine typically takes 8–12 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare Freelander Td4 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Injection Pump Failure (Bosch VP44)",
+        "symptoms": "Poor starting, rough idle, loss of power, engine stalling, inability to start when hot.",
+        "typicalMileage": "100,000–180,000 miles",
+        "repairCost": "£500–£1,200 (pump rebuild or replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The Bosch VP44 injection pump is the M47R's most significant weak point. It's an electronically-controlled rotary pump with a finite life — typically 100,000–180,000 miles. If you experience poor starting, loss of power, or stalling, have the pump checked immediately. A pump rebuild is far cheaper than the engine damage that can result from a complete failure.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/injection-pump-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Turbocharger Failure (Oil Starvation)",
+        "symptoms": "Loss of power, excessive smoke (blue/white), whistling or grinding noise from the turbo, engine warning light.",
+        "typicalMileage": "100,000–150,000 miles",
+        "repairCost": "£600–£1,500 (turbo rebuild or replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only (if caught before turbo disintegrates)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if turbo noise or smoke appears"
+        },
+        "recommendation": "The M47R's turbocharger is vulnerable to oil starvation, often due to blocked oil feed pipes or low oil pressure. Regular oil changes with the correct 5W30 BMW-spec oil are essential. If you hear a whistle or whine from the turbo, or see excessive smoke, have it inspected immediately.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/turbocharger-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Crankcase Breather Blockage (PCV)",
+        "symptoms": "Increased oil consumption, blue smoke, oil leaks from the engine, poor running.",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£100–£300 (breather replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The M47R's crankcase breather (PCV) can become blocked over time, leading to excessive crankcase pressure, oil leaks, and increased oil consumption. The breather filter is a service item — replacing it every 40,000–60,000 miles is cheap and effective prevention.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/pcv-breather-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Freelander Td4 engine covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Freelander Td4 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Freelander Td4 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Injection pump failure (VP44)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Straightforward rebuild or replacement"
+        },
+        {
+          "problem": "Turbocharger failure (oil starvation)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,500",
+          "whenItMakesSense": "Replace or rebuild — cheaper than collateral damage"
+        },
+        {
+          "problem": "PCV breather blockage",
+          "repairable": "✅ Yes",
+          "typicalCost": "£100–£300",
+          "whenItMakesSense": "Routine maintenance — do every 40,000–60,000 miles"
+        },
+        {
+          "problem": "Timing chain stretch",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,200–£2,000",
+          "whenItMakesSense": "Viable on lower-mileage examples; assess overall condition"
+        },
+        {
+          "problem": "Severe overheating damage",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Little left to salvage — replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Freelander Td4? Check These First",
+      "buyIf": [
+        "* Documented injection pump service history (or recent replacement)",
+        "* Turbocharger confirmed healthy with no smoke or noise",
+        "* PCV breather replaced within the last 40,000 miles",
+        "* Full service history with BMW-spec 5W30 oil"
+      ],
+      "avoidIf": [
+        "* Poor starting or rough idle with no injection pump history — walk away",
+        "* Blue or white smoke with no turbo history — may indicate turbo failure",
+        "* Engine oil pressure warning light — could indicate oil starvation",
+        "* Engine warning light with no diagnosis — potentially expensive electrical gremlins"
+      ]
+    },
+    "closingVerdict": "The M47R is one of the best engines fitted to the Freelander — a BMW-sourced, chain-driven diesel with a well-earned reputation for durability. The injection pump and turbo are the two watchpoints, but they're well-understood and serviceable. A well-maintained Td4 is a reliable, long-lived engine; a neglected one is a manageable repair bill, not a disaster.",
+    "cta": {
+      "label": "→ Compare Freelander Td4 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Freelander Td4 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for smooth starting; poor cold start can indicate injection pump wear",
+      "* Service History — including engine era (BMW M47R) and confirmed oil-change history",
+      "* Smoke Check — Blue or white smoke can indicate turbo issues; black smoke may indicate injector problems",
+      "* Turbo Health — Test acceleration; any whistle, whine, or power loss?",
+      "* Oil Pressure — Check the warning light; low pressure can cause turbo oil starvation",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "BMW M47R (2.0 16v turbo-diesel)",
+        "years": "2000–2006",
+        "power": "110 PS (109 bhp) @ 4,000 rpm; 240 Nm @ 2,000 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (BMW M47R):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,951 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "18.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Indirect injection (Bosch VP44 pump)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Garrett GT1749V variable-geometry turbo"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Freelander Td4 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Freelander Td4 engine replacement cost in the UK?",
+        "answer": "A reconditioned M47R engine typically costs £1,800–£3,200 supply only, with fitting adding £900–£1,300. Use our calculator for a figure specific to your Freelander."
+      },
+      {
+        "id": 2,
+        "question": "Is the Freelander Td4 (BMW M47R) engine reliable?",
+        "answer": "Yes — the M47R is widely regarded as one of the most reliable engines fitted to the Freelander. It's a BMW-sourced, chain-driven diesel with a robust design. The main watchpoints are the Bosch VP44 injection pump and the turbocharger — both are serviceable and well-understood."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Freelander Td4 engine?",
+        "answer": "Injection pump wear (Bosch VP44), turbocharger failure (oil starvation), and PCV breather blockage. The engine itself is durable and capable of high mileage with proper maintenance."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Freelander Td4 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. An FL1 Freelander is a £1,000–£5,000 vehicle — a £2,500 recon is 50–250% of the car's value. For lower-value examples (sub-£2,500), replacement often exceeds our 60% Land Rover scrap threshold. Evaluate carefully — a well-maintained, low-mileage example may justify replacement; a tired one may not."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Freelander Td4 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The Td4 engine code is BMW M47R — a 2.0-litre 16-valve turbo-diesel. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent the injection pump failure on a Td4?",
+        "answer": "Yes — regular fuel filter changes (every 20,000 miles) and using high-quality diesel can extend the VP44 pump's life. If you experience poor starting or loss of power, have the pump tested immediately — rebuilding it is far cheaper than replacing it."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Land Rover Freelander Td4 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £800 for a used unit to £3,500 for a fully rebuilt BMW‑sourced diesel.",
+    "ctaButton": {
+      "label": "Compare Land Rover Freelander Td4 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

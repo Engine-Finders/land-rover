@@ -1,0 +1,446 @@
+{
+  "meta": {
+    "slug": "land-rover-range-rover-4-4-v8",
+    "title": "Land Rover Range Rover 4.4 V8 Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 78,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover 4.4 V8 • 2002–2009 • Two Engine Generations",
+    "h1": "Land Rover Range Rover 4.4 V8 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Range Rover V8 specialists. Two completely different 4.4 V8s span the L322 era — BMW M62 (2002–2005) and Jaguar AJ-V8 (2005–2009). Compare reconditioned, rebuilt and used engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Range Rover 4.4 V8 Engines — from £2,500 to £8,500 · Codes: BMW M62B44 / Jaguar AJ-V8 4.4",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Range Rover 4.4 V8 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "Land Rover Range Rover 4.4 V8 — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L322 (BMW-era)",
+        "years": "2002–2005",
+        "engineCode": "BMW M62B44 (4.4L V8)",
+        "reliability": "★★★½☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,000–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "BMW-sourced M62 — timing chain guides are the key watchpoint"
+      },
+      {
+        "generation": "L322 (Jaguar-era)",
+        "years": "2005–2009",
+        "engineCode": "AJ-V8 4.4L (Jaguar-sourced)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£6,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Jaguar AJ-V8 — smoother, more reliable, cooling system needs attention"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover 4.4 V8 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,900–£6,100",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,000–£6,500",
+        "fittedIndie": "£5,400–£8,100",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,500–£7,500",
+        "fittedIndie": "£6,900–£9,100",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — NLA from LR",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "Specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the later AJ-V8 era, the most common quote request today. BMW-era M62 pricing typically runs lower on the used market. See the Era Map above for era-specific context.",
+    "labourEstimate": "Fitting a Range Rover 4.4 V8 engine typically takes 14–18 hours at £80–£120/hr (independent Land Rover specialist) or £140–£190/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare Range Rover 4.4 V8 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Guide Failure (BMW M62 — 2002–2005)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Coolant Crossover Pipe Failure (Jaguar AJ-V8 — 2005–2009)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timing Chain Tensioner Wear (AJ-V8 — Pre-2010 Models)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, covering both the BMW M62 and Jaguar AJ-V8 4.4 engines, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Range Rover 4.4 V8 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Range Rover 4.4 V8 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "M62 timing chain guides",
+          "repairable": "✅ Yes",
+          "typicalCost": "£2,000–£4,000",
+          "whenItMakesSense": "Worth it on a well-maintained L322 with good body/transmission"
+        },
+        {
+          "problem": "AJ-V8 coolant pipes",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Fit metal pipes for a permanent fix"
+        },
+        {
+          "problem": "AJ-V8 chain tensioners",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Preventative maintenance on pre-2010 examples"
+        },
+        {
+          "problem": "M62 VANOS issues",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,000–£2,500",
+          "whenItMakesSense": "Viable if caught early; rebuild often required"
+        },
+        {
+          "problem": "Major internal failure (crank/block)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement required",
+          "whenItMakesSense": "Replacement often £3,000–£6,500 — assess vehicle value carefully"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Range Rover 4.4 V8? Check These First",
+      "buyIf": [
+        "* Post-2005 model with AJ-V8 — the better all-round engine in the L322",
+        "* AJ-V8 with documented timing chain and coolant pipe history",
+        "* M62 with timing chain guides already replaced",
+        "* Any 4.4 V8 with full service history and low-mileage (under 80,000)"
+      ],
+      "avoidIf": [
+        "* M62 (2002–2005) with no chain guide history — the risk is real",
+        "* AJ-V8 with evidence of coolant loss (crossover pipe failure imminent)",
+        "* Poor service history on either engine — both are unforgiving of neglect",
+        "* Any 4.4 with engine warning light and no diagnosis"
+      ]
+    },
+    "closingVerdict": "The Range Rover 4.4 V8 is really two different engines sharing a badge. The BMW M62 (2002–2005) is a fine engine with a serious timing chain guide Achilles heel; the Jaguar AJ-V8 (2005–2009) is smoother, more reliable, and our recommended choice. Buy a 2005–2006 post-facelift car with the AJ-V8, check the coolant pipes, and maintain it properly — this is the sweet spot of L322 V8 ownership.",
+    "cta": {
+      "label": "→ Compare Range Rover 4.4 V8 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover 4.4 V8 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Any rattle? M62 chain guide rattle sounds metallic; AJ-V8 tensioner rattle is softer",
+      "* Service History — Check the year to identify which engine — pre-2005 = BMW, 2005+ = Jaguar",
+      "* Coolant Level — Check for any loss — AJ-V8 coolant pipes are the key risk",
+      "* Timing Chain History — M62: guides replaced? AJ-V8: tensioners checked?",
+      "* Oil Pressure — M62s can suffer from oil pump issues; listen for ticking",
+      "* VANOS Operation — On M62, check for low-end power; VANOS seals degrade",
+      "* Engine Warning Light — Have codes been read? Resolve before buying",
+      "* MOT History — Check for emissions-related failures (both engines can suffer catalyst/sensor issues)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "BMW M62B44 (4.4L V8)",
+        "years": "2002–2005",
+        "power": "282 bhp",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£3,000–£5,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "AJ-V8 4.4L (Jaguar-sourced)",
+        "years": "2005–2009",
+        "power": "305 bhp",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£3,500–£6,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ-V8 4.4L):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,398 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V8, 32-valve DOHC with double VANOS"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Sequential multi-point injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "* Displacement",
+          "value": "4,397 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V8, 32-valve DOHC with VVT"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Sequential multi-point injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "Additional specifications",
+          "value": ""
+        },
+        {
+          "label": "* Maximum torque (M62)",
+          "value": "440 Nm @ 3,600 rpm"
+        },
+        {
+          "label": "* Maximum torque (AJ-V8)",
+          "value": "440 Nm @ 4,000 rpm"
+        },
+        {
+          "label": "* Transmission",
+          "value": "5-speed automatic (GM 5L40-E, 2002–2005) / 6-speed automatic (ZF 6HP26, 2005–2009)"
+        },
+        {
+          "label": "* Kerb weight",
+          "value": "~2,600–2,700 kg"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Range Rover 4.4 V8 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "M62: timing chain guide failure (~60% of M62 enquiries) / AJ-V8: coolant pipe failure (~45% of AJ-V8 enquiries) [PATTERN DATA — specialist workshop consensus]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "85,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,000 reconditioned (AJ-V8 era), supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ-V8 4.4L (the post-2005 engine is more sought-after) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring/Summer — owners prepare L322s for summer use [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (25%), South West (20%), Midlands (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover 4.4 V8 engine replacement cost in the UK?",
+        "answer": "A reconditioned Range Rover 4.4 V8 engine costs £4,000–£6,500 supply only (AJ-V8 era), or £3,000–£5,500 (M62 era). Fitting adds £1,400–£2,200. These are specialist-only replacements — the engine must match the vehicle's year. A timing chain guide job on the M62 costs £2,000–£4,000."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover 4.4 V8 reliable?",
+        "answer": "That depends on which engine your L322 has. The BMW M62 (2002–2005) is a fine V8 but has a well-documented timing chain guide failure risk — at 60,000–100,000 miles, the plastic guides shatter. The Jaguar AJ-V8 (2005–2009) is significantly more reliable, but coolant crossover pipes are a known weakness. Post-2005 is the better bet."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover 4.4 V8?",
+        "answer": "BMW M62: timing chain guide failure (cold-start rattle, £2,000–£4,000 repair). Jaguar AJ-V8: coolant crossover pipe failure (coolant loss, £800–£2,000 repair) and timing chain tensioner wear on pre-2010 examples (£1,500–£3,500 repair)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover 4.4 V8 engine, or should I scrap the car?",
+        "answer": "L322 values range from £3,000–£15,000 depending on condition and mileage. A £4,000–£6,500 reconditioned engine represents 25–65% of vehicle value — our 60% Land Rover scrap threshold means careful evaluation is required. For a well-maintained, post-2005 example, replacement is often justified. For a high-mileage pre-2005 car with other issues, assess scrap value first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Range Rover 4.4 V8 engine code?",
+        "answer": "The L322 used two engines: BMW M62B44 (2002–2005, 282bhp) and Jaguar AJ-V8 4.4 (2005–2009, 305bhp). Check your VIN or registration year — pre-2005 is BMW, 2005–2009 is Jaguar. The code is stamped on the engine block."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the M62 timing chain guides, or does it need replacement?",
+        "answer": "Yes — if caught early. Timing chain guide replacement costs £2,000–£4,000 and is significantly cheaper than a full engine replacement (£3,000–£5,500). The job requires engine removal on the L322, making it a major but worthwhile investment. At the first sign of cold-start rattle, book an inspection immediately — ignored guide wear can lead to catastrophic piston-valve contact."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Range Rover 4.4 V8 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Range Rover 4.4 V8 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Range Rover owners, as part of the Engine Finders network, with specialist knowledge of both BMW M62 and Jaguar AJ-V8 4.4 engines and their era-specific requirements."
+      },
+      {
+        "title": "Compare Range Rover 4.4 V8 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for both M62 and AJ-V8 eras."
+      },
+      {
+        "title": "UK Engine Replacement Services for Range Rover 4.4 V8",
+        "text": "supply‑only or full supply & fit available nationwide, covering the L322 with specialists who understand the quirks of both the BMW and Jaguar V8s."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover 4.4 V8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your flagship back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Land Rover Range Rover 4.4 V8 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

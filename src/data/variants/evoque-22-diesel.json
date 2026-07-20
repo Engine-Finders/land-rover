@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "slug": "evoque-22-diesel",
+    "title": "Evoque 2.2 Diesel Engine Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Land Rover Range Rover Evoque 2.2 diesel – Ford Duratorq engine. Real UK costs, EGR cooler facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://landroverengine.uk/evoque/22-diesel/",
+    "openGraph": {
+      "title": "Evoque 2.2 Diesel Engine Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover Evoque 2.2 diesel – Ford Duratorq engine. Real UK costs, EGR cooler facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/evoque/22-diesel/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/22-diesel-evoque.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Evoque 2.2 Diesel Engine Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover Evoque 2.2 diesel – Ford Duratorq engine. Real UK costs, EGR cooler facts, and specialist quotes.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/22-diesel-evoque.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Evoque",
+              "item": "https://landroverengine.uk/evoque/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "2.2 Diesel",
+              "item": "https://landroverengine.uk/evoque/22-diesel/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Evoque 2.2 Diesel Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover Evoque L538 2.2 Diesel (2011-2015)",
+              "url": "https://landroverengine.uk/evoque/l538/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Evoque 2.2 Diesel Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "224DT",
+              "url": "https://landroverengine.uk/engines/224dt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover Evoque 2.2 diesel engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 224DT engine typically costs £2,000–£3,500 supply only, with used units available from £800–£1,800. Fitting adds £1,500–£2,200 depending on the workshop. Use our calculator for a figure specific to your Evoque."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover Evoque 2.2 diesel engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 224DT (Ford Duratorq) is a proven engine that's been used across Ford, Jaguar, and Land Rover models for years. Its weaknesses are well-understood (EGR cooler, turbo actuator, injector seals), and parts are widely available and affordable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Range Rover Evoque 2.2 diesel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "EGR cooler coolant leaks, turbo actuator failure causing power loss, and injector seal leaks (often causing diesel smell and rough running). All are repairable and well-understood by Ford and Land Rover specialists."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an Evoque 2.2 diesel engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Evoque values range from £6,000–£16,000 depending on condition and mileage. A £2,500–£3,500 reconditioned engine is only 15–30% of the vehicle's value — well within the Land Rover 60% scrap threshold. Replacement is almost always worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Range Rover Evoque 2.2 diesel engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is 224DT — it's the only 2.2-litre diesel used in the launch-era Evoque (2011–2015). You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production years were 2011–2015 only."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 224DT EGR cooler, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It needs replacement — the EGR cooler is not repairable. A replacement unit costs £500–£1,200 fitted. It's a well-understood job and far cheaper than letting a coolant leak cause overheating and potential head gasket failure."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Evoque 2.2 Diesel Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "800",
+            "highPrice": "5000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Evoque 2.2 Diesel UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Range Rover Evoque 2.2 diesel engines (224DT), sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Evoque 2.2 Diesel Engine Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/evoque/22-diesel/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover Evoque 2.2 Diesel • 2011–2015 • 2.2-litre Ford Duratorq Diesel",
+    "h1": "Land Rover Range Rover Evoque 2.2 Diesel Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The launch-era Evoque came with a proven Ford-sourced 2.2-litre Duratorq diesel — a robust engine that also powered the Freelander 2 and Discovery Sport. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Range Rover Evoque 2.2 Diesel Engines — from £800 to £5,000 · Code: 224DT",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 2.2 Diesel Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 2.2 DIESEL THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover Evoque 2.2 Diesel Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£1,800",
+        "fittedIndie": "£2,000–£3,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower‑mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£3,500–£5,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£4,500–£6,800",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — no longer available",
+        "fittedIndie": "N/A",
+        "warranty": "—",
+        "bestFor": "N/A — specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current Evoque 2.2 diesel market. This badge used one engine across a short production run — no era ambiguity.",
+    "labourEstimate": "Fitting an Evoque 2.2 diesel engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 2.2 diesel engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "EGR Cooler Leaks",
+        "symptoms": "Coolant loss with no visible external leak, white smoke from exhaust, occasional burning smell, engine warning light",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£500–£1,200 (EGR cooler replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The EGR cooler is a known weak point on the 224DT. Coolant leaks from the cooler can lead to overheating if not caught early. Replacement is straightforward and parts are readily available from Ford and Land Rover specialists. Check coolant levels regularly and investigate any unexplained drop. If left unchecked, coolant loss can lead to head gasket failure.",
+        "failureLink": {
+          "label": "Read the full EGR cooler failure guide",
+          "href": "/failures/egr-cooler-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Turbo Actuator Failure",
+        "symptoms": "Loss of power, hesitation on acceleration, engine warning light, occasional limp mode",
+        "typicalMileage": "70,000–120,000 miles",
+        "repairCost": "£400–£800 (turbo actuator replacement)",
+        "replacementCost": "£800–£1,800 (if actuator failure leads to turbo damage)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The turbo actuator (variable-geometry control) can stick or fail on higher-mileage 224DT engines. This results in reduced boost and performance. Sometimes the actuator can be cleaned or recalibrated; other times it needs replacement. Catch it early to avoid turbo damage. A JLR or Ford specialist can diagnose this quickly.",
+        "failureLink": {
+          "label": "Read the full turbo actuator failure guide",
+          "href": "/failures/turbo-actuator-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Injector Seal Leaks (Carbon Build-up)",
+        "symptoms": "Rough idle, diesel smell in the cabin, ticking noise from the engine, black smoke under acceleration",
+        "typicalMileage": "80,000–150,000 miles",
+        "repairCost": "£300–£800 (injector seal replacement and cleaning)",
+        "replacementCost": "£500–£1,500 per injector (if injector is damaged)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Injector seal leaks are common across Ford's Duratorq family. Diesel combustion gases can leak past the seals, causing carbon build-up and rough running. Replacement is a specialist job but well-understood. Regular injector service at around 80,000 miles can prevent more serious issues. If you smell diesel in the cabin or notice rough idle, get it checked.",
+        "failureLink": {
+          "label": "Read the full injector seal failure guide",
+          "href": "/failures/injector-seal-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Evoque engine era covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free 2.2 Diesel Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Evoque 2.2 Diesel — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "EGR cooler leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Straightforward replacement — prevents overheating"
+        },
+        {
+          "problem": "Turbo actuator failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Often repairable without replacing the whole turbo"
+        },
+        {
+          "problem": "Turbo failure (actuator-related)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Viable on a well-maintained example"
+        },
+        {
+          "problem": "Injector seal leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Simple seal replacement — cheaper than new injectors"
+        },
+        {
+          "problem": "Injector failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,500 per injector",
+          "whenItMakesSense": "Viable on a low-mileage example; if 3+ fail, evaluate"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Evoque 2.2 Diesel? Check These First",
+      "buyIf": [
+        "* Documented EGR cooler replacement — a common weak point, now sorted",
+        "* Full service history with correct oil spec (Ford WSS-M2C913-D or equivalent)",
+        "* Evidence of injector service or cleaning at around 80,000 miles",
+        "* A well-maintained example — the 224DT is robust when cared for"
+      ],
+      "avoidIf": [
+        "* Evidence of repeated coolant top-ups without a diagnosed leak (EGR cooler likely)",
+        "* Turbo actuator codes stored — this often means reduced performance and a repair bill",
+        "* Poor service history or evidence of neglected oil changes",
+        "* Any diesel smell in the cabin — likely injector seal leak, which can get worse"
+      ]
+    },
+    "closingVerdict": "The 224DT is a Ford-sourced engine that has proven itself across millions of miles in Transits, Mondeos, and Land Rovers. It's fundamentally robust with well-understood weaknesses. The EGR cooler and turbo actuator are the main concerns, but parts are cheap and widely available. On an Evoque, these engines are reaching 10+ years old now — if the EGR cooler has been done, the engine is a solid proposition.",
+    "cta": {
+      "label": "→ Compare 2.2 diesel engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover Evoque 2.2 diesel (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Coolant Level — Any unexplained loss? (EGR cooler warning sign)",
+      "2. Service History — including which engine era (the 2.2 Duratorq was only used 2011–2015)",
+      "3. Turbo Performance — Any loss of power or hesitation? (actuator warning)",
+      "4. Diesel Smell — Any smell in the cabin? (injector seal leak warning)",
+      "5. Cold Start — Does it start cleanly from cold? Any excessive smoke?",
+      "6. Oil Condition — Any signs of diesel dilution? (injector issues)",
+      "7. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "8. DPF History — Check for regeneration issues (short journeys accelerate DPF wear)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "224DT",
+        "years": "2011–2015",
+        "power": "150–190 bhp",
+        "enquiries": "350 [EM-VERIFIED]",
+        "avgReconCost": "£2,000–£3,500 [EM-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — one engine throughout this badge's production run.",
+    "technicalSpecs": {
+      "title": "Technical Specs (224DT):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,198cc (2.2‑litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4‑cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common‑rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single variable‑geometry turbocharger"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 2.2 diesel engine prices for your Evoque",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover Evoque 2.2 diesel engine replacement cost in the UK?",
+        "answer": "A reconditioned 224DT engine typically costs £2,000–£3,500 supply only, with used units available from £800–£1,800. Fitting adds £1,500–£2,200 depending on the workshop. Use our calculator for a figure specific to your Evoque."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover Evoque 2.2 diesel engine reliable?",
+        "answer": "Yes — the 224DT (Ford Duratorq) is a proven engine that's been used across Ford, Jaguar, and Land Rover models for years. Its weaknesses are well-understood (EGR cooler, turbo actuator, injector seals), and parts are widely available and affordable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Range Rover Evoque 2.2 diesel?",
+        "answer": "EGR cooler coolant leaks, turbo actuator failure causing power loss, and injector seal leaks (often causing diesel smell and rough running). All are repairable and well-understood by Ford and Land Rover specialists."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an Evoque 2.2 diesel engine, or should I scrap the car?",
+        "answer": "Evoque values range from £6,000–£16,000 depending on condition and mileage. A £2,500–£3,500 reconditioned engine is only 15–30% of the vehicle's value — well within the Land Rover 60% scrap threshold. Replacement is almost always worthwhile."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Range Rover Evoque 2.2 diesel engine code?",
+        "answer": "The engine code is 224DT — it's the only 2.2-litre diesel used in the launch-era Evoque (2011–2015). You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production years for this engine in the Evoque were 2011–2015 only."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 224DT EGR cooler, or does it need replacement?",
+        "answer": "It needs replacement — the EGR cooler is not repairable. A replacement unit costs £500–£1,200 fitted. It's a well-understood job and far cheaper than letting a coolant leak cause overheating and potential head gasket failure."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted 2.2 Diesel Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Evoque 2.2 diesel owners, as part of the Engine Finders network, across the launch-era Duratorq family."
+      },
+      {
+        "title": "Compare 2.2 Diesel Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the 224DT's EGR cooler and turbo actuator weaknesses."
+      },
+      {
+        "title": "UK Engine Replacement Services for Evoque 2.2 Diesel",
+        "text": "supply‑only or full supply & fit available nationwide, covering this proven Ford-sourced engine with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover Evoque 2.2 diesel engine replacement UK owners trust. Compare prices from trusted specialists on EnginesMarket today and keep your Evoque performing at its best.",
+    "ctaButton": {
+      "label": "Compare Land Rover Range Rover Evoque 2.2 Diesel Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

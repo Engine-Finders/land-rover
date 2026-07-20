@@ -1,0 +1,482 @@
+{
+  "meta": {
+    "slug": "ford-si4-pt204",
+    "title": "Land Rover PT204 (2.0 Si4 GTDi) Engine — Reliability",
+    "description": "The PT204 is JLR's modern 2.0 turbo petrol — punchy and efficient, but cooling system and timing chain issues need watching. Backed by 480+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+    "canonical": "https://landroverengine.uk/engines/ford-si4-pt204/",
+    "openGraph": {
+      "title": "Land Rover PT204 (2.0 Si4 GTDi) Engine — Reliability",
+      "description": "The PT204 is JLR's modern 2.0 turbo petrol — punchy and efficient, but cooling system and timing chain issues need watching. Backed by 480+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/engines/ford-si4-pt204/",
+      "image": "https://landroverengine.uk/images/landrover/engines/ford-si4-pt204.jpg",
+      "siteName": "landroverengine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Land Rover PT204 (2.0 Si4 GTDi) Engine — Reliability",
+      "description": "The PT204 is JLR's modern 2.0 turbo petrol — punchy and efficient, but cooling system and timing chain issues need watching. Backed by 480+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "image": "https://landroverengine.uk/images/landrover/engines/ford-si4-pt204.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://landroverengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "PT204 (2.0 Si4 GTDi)",
+              "item": "https://landroverengine.uk/engines/ford-si4-pt204/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover models fitted with the PT204 (2.0 Si4 GTDi)",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Land Rover Defender L663 P200/P300",
+              "url": "https://landroverengine.uk/models/defender/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Land Rover Discovery 5 L462 P200/P300",
+              "url": "https://landroverengine.uk/models/discovery-5/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Land Rover Discovery Sport L550 P200/P250",
+              "url": "https://landroverengine.uk/models/discovery-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Land Rover Evoque L538/L551 P200/P250",
+              "url": "https://landroverengine.uk/models/evoque/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Land Rover Range Rover L405 P300",
+              "url": "https://landroverengine.uk/models/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Land Rover Range Rover Sport L494 P300",
+              "url": "https://landroverengine.uk/models/range-rover-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Land Rover Range Rover Velar L560 P250/P300",
+              "url": "https://landroverengine.uk/models/velar/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a PT204 (2.0 Si4 GTDi) engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned PT204 typically costs £2,995–£3,650 supply only, varying by power output and specification. Used units can be found from £1,800–£2,800, but provenance is critical. Fitting adds £900–£1,500 depending on labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the PT204 (2.0 Si4 GTDi) a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The PT204 has a mixed reputation (3.5★). It offers strong performance and decent economy, but early examples (2017–2019) have reported cooling system issues, timing chain stretch, and phase regulator problems. Later revisions are more dependable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common PT204 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most common issues include cooling system leaks and charge air pipe tears (early examples), crankshaft pulley bolt issues causing oil pump problems, Ti-VCT phase regulator wear, and timing chain stretch requiring replacement around 93,000 miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover models use the PT204?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The PT204 powers the Defender, Discovery 5, Discovery Sport, Evoque, Range Rover, Range Rover Sport, and Velar — spanning 200–300 hp outputs across P200, P250, and P300 variants."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover PT204 the same as Jaguar's version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the PT204 is shared with Jaguar fitments (AJ200P / 204PT) in the XE, XF, F-Pace, and E-Pace. The engine is mechanically identical, though ECU calibrations and ancillaries differ by model."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "landroverengine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Land Rover PT204 (2.0 Si4 GTDi) Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Land Rover"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover PT204 (2.0 Si4 GTDi) Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover PT204 (2.0 Si4 GTDi) UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Land Rover PT204 (2.0 Si4 GTDi), sourced from landroverengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Land Rover PT204 (2.0 Si4 GTDi) Engine — Reliability",
+          "url": "https://landroverengine.uk/engines/ford-si4-pt204/",
+          "author": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover • PT204 (Si4 GTDi) • Petrol • 2.0L I4 Turbo • 2017–present",
+    "h1": "Land Rover PT204 (2.0 Si4 GTDi) Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The PT204 is JLR's modern 2.0‑litre turbo petrol — punchy and efficient, but cooling system and timing chain issues need watching. Backed by 480+ real UK enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "480+ Enquiries"
+      },
+      {
+        "icon": "🔧",
+        "label": "7 Models Fitted"
+      },
+      {
+        "icon": "💯",
+        "label": "70/100 Engine Score"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Compare PT204 (2.0 Si4 GTDi) Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "PT204 (2.0 Si4 GTDi / Ingenium Petrol)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Petrol"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "2.0L I4 Turbo"
+      },
+      {
+        "metric": "Power Range",
+        "value": "200–300 hp [THIRD-PARTY]"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2017–present"
+      },
+      {
+        "metric": "Models Fitted (Land Rover only)",
+        "value": "7 (Defender L663, Discovery 5, Discovery Sport, Evoque L538/L551, Range Rover L405, Range Rover Sport L494, Velar)"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Also fitted to Jaguar (AJ200P / 204PT in XE, XF, F‑Pace, E‑Pace)"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "70/100"
+      },
+      {
+        "metric": "SECTION 3 — VERDICT & RATING",
+        "value": "H2: PT204 (2.0 Si4 GTDi) — Our Verdict & Rating"
+      },
+      {
+        "metric": "Star rating: ★★★½ out of 5",
+        "value": "Confidence: 84% confidence — based on 480+ real UK enquiries, specialist workshop reports, and JLR service data."
+      },
+      {
+        "metric": "Engine Score breakdown:",
+        "value": "Dimension"
+      },
+      {
+        "metric": "Score (of 20)",
+        "value": "How it's determined"
+      },
+      {
+        "metric": "Reliability",
+        "value": "14"
+      },
+      {
+        "metric": "Star rating (3.5★) × 4 = 14",
+        "value": "Repair Cost"
+      },
+      {
+        "metric": "16",
+        "value": "Midpoint of Reconditioned (Supply Only) range: £2,995–£3,650 → £3,322 midpoint → falls in £3,000–£4,999 bracket → 16"
+      },
+      {
+        "metric": "Repairability",
+        "value": "12"
+      },
+      {
+        "metric": "Modern direct‑injection turbo with twin‑scroll charger; repairs require specialist diagnostic equipment",
+        "value": "Parts Supply"
+      },
+      {
+        "metric": "16",
+        "value": "Well‑supported via JLR and aftermarket; shared with Jaguar ensures strong availability"
+      },
+      {
+        "metric": "Replacement Economics",
+        "value": "12"
+      },
+      {
+        "metric": "Reconditioned cost (£3,322 midpoint) as % of lowest typical vehicle value (Discovery Sport / Evoque ~£8,000–£12,000) = 28–42% → falls in 45–59% bracket → 12",
+        "value": "Total"
+      },
+      {
+        "metric": "70/100",
+        "value": "Sum of the five rows above"
+      },
+      {
+        "metric": "One-line verdict: The PT204 is a punchy, efficient modern turbo petrol — cooling system and timing chain are the main watchpoints — buy with full service history and listen for rattles on cold start.",
+        "value": "Best For / Avoid If:"
+      },
+      {
+        "metric": "* Best for: drivers wanting modern turbo petrol performance with decent economy and low‑emission compliance.",
+        "value": "* Avoid if: you're looking at a pre‑2020 example with no documented cooling system or timing chain history."
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "",
+    "confidence": "",
+    "scoreNote": "",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": []
+    },
+    "oneLineVerdict": "",
+    "bestFor": "",
+    "avoidIf": ""
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "Land Rover Defender",
+        "generation": "L663",
+        "variantBadge": "P200 / P300 (PT204)",
+        "years": "2019–present"
+      },
+      {
+        "model": "Land Rover Discovery",
+        "generation": "Series 5 (L462)",
+        "variantBadge": "P200 / P300 (PT204)",
+        "years": "2017–present"
+      },
+      {
+        "model": "Land Rover Discovery Sport",
+        "generation": "L550",
+        "variantBadge": "P200 / P250 (PT204)",
+        "years": "2017–present"
+      },
+      {
+        "model": "Land Rover Evoque",
+        "generation": "L538",
+        "variantBadge": "Si4 (PT204)",
+        "years": "2017–2018"
+      },
+      {
+        "model": "Land Rover Evoque",
+        "generation": "L551",
+        "variantBadge": "P200 / P250 (PT204)",
+        "years": "2019–present"
+      },
+      {
+        "model": "Land Rover Range Rover",
+        "generation": "L405",
+        "variantBadge": "P300 (PT204)",
+        "years": "2018–present"
+      },
+      {
+        "model": "Land Rover Range Rover Sport",
+        "generation": "L494",
+        "variantBadge": "P300 (PT204)",
+        "years": "2018–present"
+      },
+      {
+        "model": "Land Rover Range Rover Velar",
+        "generation": "L560",
+        "variantBadge": "P250 / P300 (PT204)",
+        "years": "2017–present"
+      }
+    ],
+    "crossBrandNote": "Also powers the Jaguar XE, XF, F‑Pace and E‑Pace (as AJ200P / 204PT) → [Jaguar PT204 / AJ200P page]."
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£1,800–£2,800",
+        "fittedIndie": "£2,800–£4,000",
+        "warranty": "Varies by supplier"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£2,995–£3,650",
+        "fittedIndie": "£3,800–£4,800",
+        "warranty": "12 months typical"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£3,800–£5,500",
+        "fittedIndie": "£4,800–£6,800",
+        "warranty": "12–24 months typical"
+      }
+    ],
+    "labourEstimate": "Fitting a PT204 typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "sharedCostNote": "Parts cost is identical across Land Rover and Jaguar applications; labour time varies slightly by engine bay access and model‑specific subframe removal.",
+    "cta": {
+      "label": "→ Compare PT204 (2.0 Si4 GTDi) engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a PT204 (2.0 Si4 GTDi) engine replacement cost?",
+        "answer": "A reconditioned PT204 typically costs £2,995–£3,650 supply only, varying by power output and specification. Used units can be found from £1,800–£2,800, but provenance is critical. Fitting adds £900–£1,500 depending on labour rates."
+      },
+      {
+        "id": 2,
+        "question": "Is the PT204 (2.0 Si4 GTDi) a reliable engine?",
+        "answer": "The PT204 has a mixed reputation (3.5★). It offers strong performance and decent economy, but early examples (2017–2019) have reported cooling system issues, timing chain stretch, and phase regulator problems. Later revisions are more dependable."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common PT204 failure?",
+        "answer": "The most common issues include: cooling system leaks and charge air pipe tears (early examples), crankshaft pulley bolt issues causing oil pump problems, Ti‑VCT phase regulator wear, and timing chain stretch requiring replacement around 150,000 km (~93,000 miles). Turbo lag and high‑RPM noise are also reported."
+      },
+      {
+        "id": 4,
+        "question": "Which Land Rover models use the PT204?",
+        "answer": "The PT204 powers the Defender (L663), Discovery 5 (L462), Discovery Sport (L550), Evoque (L538/L551), Range Rover (L405), Range Rover Sport (L494), and Velar (L560) — spanning 200–300 hp outputs across P200, P250, and P300 variants."
+      },
+      {
+        "id": 5,
+        "question": "Is the Land Rover PT204 the same as Jaguar's version?",
+        "answer": "Yes — the PT204 is shared with Jaguar fitments (AJ200P / 204PT) in the XE, XF, F‑Pace, and E‑Pace. The engine is mechanically identical, though ECU calibrations and ancillaries differ by model."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real PT204 owners, as part of the Engine Finders network.",
+      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists — so you see the real market, not just one garage's quote.",
+      "UK Coverage: From Cornwall to the Highlands, our specialist network covers the whole UK with expert PT204 knowledge."
+    ],
+    "finalCta": "Find the best Land Rover PT204 (2.0 Si4 GTDi) engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover PT204 (2.0 Si4 GTDi) Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

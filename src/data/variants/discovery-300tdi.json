@@ -1,0 +1,553 @@
+{
+  "meta": {
+    "slug": "discovery-300tdi",
+    "title": "300Tdi Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 50,
+    "description": "Every Discovery 300Tdi engine — 2.5L mechanical turbo diesel. Real UK costs, timing belt and head gasket reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/discovery/300tdi/",
+    "openGraph": {
+      "title": "300Tdi Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Discovery 300Tdi engine — 2.5L mechanical turbo diesel. Real UK costs, timing belt and head gasket reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/discovery/300tdi/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-300tdi.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "300Tdi Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Discovery 300Tdi engine — 2.5L mechanical turbo diesel. Real UK costs, timing belt and head gasket reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-300tdi.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery",
+              "item": "https://landroverengine.uk/discovery/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Discovery 1",
+              "item": "https://landroverengine.uk/discovery/discovery-1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "300Tdi",
+              "item": "https://landroverengine.uk/discovery/300tdi/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 300Tdi Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Discovery 1 300Tdi (1994-1998)",
+              "url": "https://landroverengine.uk/discovery/discovery-1/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 300Tdi Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "300Tdi",
+              "url": "https://landroverengine.uk/engines/300tdi/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery 300Tdi engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 300Tdi engine typically costs £1,500–£2,500 supply only. Fitting adds £700–£1,300 at independent Land Rover specialist rates. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery 300Tdi engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 300Tdi is widely regarded as one of Land Rover's most durable diesel engines. Its mechanical injection, cast-iron block, and simple design make it capable of 200,000+ miles. However, it requires strict timing belt discipline (every 60k miles or 5 years) and careful cooling system maintenance to avoid head gasket issues."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Discovery 300Tdi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing belt failure (catastrophic if not replaced), head gasket failure (usually from overheating), and injection pump wear (hard starting, poor performance). All are well-documented and manageable with preventative maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery 300Tdi engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a well-preserved Discovery 1 (values £5,000–£15,000 for good examples), a £2,000 reconditioned engine is 20–40% of the vehicle's value — often worth it. For a tired example with extensive rot, the Land Rover scrap threshold of 60% means evaluating body and chassis condition before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Discovery 300Tdi engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is stamped on the cylinder block, near the injection pump on the left-hand side. The 300Tdi was only fitted to Discovery 1 models from 1994 to 1998 (and Defender to 1999), so if your Discovery 1 is in that range and is a diesel, it's almost certainly a 300Tdi (the earlier 200Tdi was used 1989–1994). Check your V5C or VIN plate for confirmation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 300Tdi timing belt without doing a full engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — preventative timing belt replacement is a routine service item costing £400–£700. It is not a repair, it's essential maintenance. If the belt snaps, you are usually looking at a replacement cylinder head or a full engine swap, so never delay this service."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery 300Tdi Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "800",
+            "highPrice": "3200",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery 300Tdi UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Discovery 300Tdi classic diesel engine, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "300Tdi Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery/300tdi/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery 300Tdi • 1994–1998 • 2.5 Turbo Diesel",
+    "h1": "Land Rover Discovery 300Tdi Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Discovery 300Tdi specialists. Compare reconditioned, rebuilt and used 300Tdi engines — supply & fit available nationwide for this classic Land Rover diesel.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Discovery 300Tdi Engines — from £800 to £2,500 · Engine code: 300Tdi (1994–1998)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Discovery 300Tdi Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The DISCOVERY 300Tdi THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Discovery 1",
+        "years": "1994–1998",
+        "engineCode": "300Tdi (2.5L mechanical turbo diesel)",
+        "reliability": "★★★★½ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,500–£2,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "The most refined version of the classic 2.5 diesel — mechanical injection, no electronics, but timing belt and head gasket need attention"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Discovery 300Tdi Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£1,500",
+        "fittedIndie": "£1,300–£2,100",
+        "warranty": "1–3 months",
+        "bestFor": "Budget priority; low-mileage donor required"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£1,500–£2,500",
+        "fittedIndie": "£2,200–£3,400",
+        "warranty": "12 months",
+        "bestFor": "Most owners — proven rebuild with new gaskets, bearings, timing belt"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£2,200–£3,200",
+        "fittedIndie": "£3,000–£4,200",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; full bottom-end and top-end refresh"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — unavailable",
+        "fittedIndie": "N/A",
+        "warranty": "—",
+        "bestFor": "Engine no longer produced new; reconditioned units are the standard"
+      }
+    ],
+    "figuresNote": "Figures above reflect the Discovery 1 300Tdi era. This engine was only fitted 1994–1998, so no newer-generation variance applies.",
+    "labourEstimate": "Fitting a 300Tdi engine typically takes 10–14 hours at £65–£90/hr (independent Land Rover specialist). [PLACEHOLDER — confirm vs cost sheet]",
+    "cta": {
+      "label": "→ Compare Discovery 300Tdi engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Belt Failure (Interference Engine)",
+        "symptoms": "Engine cuts out suddenly, no restart, loud bang from timing cover, bent valves — catastrophic if belt snaps.",
+        "typicalMileage": "60,000–80,000 miles or 5+ years (age-related)",
+        "repairCost": "£400–£700 (preventative belt and tensioner replacement) [PLACEHOLDER]",
+        "replacementCost": "£1,500–£2,500 (if belt snaps and valves/pistons collide) [PLACEHOLDER]",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if belt is overdue, stop driving and replace"
+        },
+        "recommendation": "The 300Tdi is an interference engine — if the timing belt breaks, pistons strike valves, often wrecking the cylinder head and sometimes the bottom end. Preventative belt replacement every 60,000 miles or 5 years (whichever comes first) is the single most important maintenance item. Many specialists recommend 48,000-mile intervals in heavy use. A £400–£700 belt change is peanuts compared to a £1,500+ engine replacement.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-belt-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cylinder Head Gasket Failure",
+        "symptoms": "Pressurised cooling system, coolant loss, mayo in oil, white smoke from exhaust, overheating, loss of power.",
+        "typicalMileage": "100,000–180,000 miles",
+        "repairCost": "£800–£1,500 (head gasket and skimming) [PLACEHOLDER]",
+        "replacementCost": "£1,500–£2,500 (if head is cracked beyond repair) [PLACEHOLDER]",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if coolant is disappearing or overheating"
+        },
+        "recommendation": "The 300Tdi's cylinder head is its second most common failure point. Overheating (often from a failed thermostat, water pump, or radiator blockage) can warp the head and blow the gasket. Regular coolant changes and a functioning cooling system are essential. If you notice coolant loss or pressurisation, get a compression test and sniff test done immediately — catching it early avoids head damage.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/head-gasket-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Injection Pump Wear (Bosch VE)",
+        "symptoms": "Hard starting (especially cold), rough idle, poor fuel economy, black smoke, loss of power, erratic engine speed.",
+        "typicalMileage": "120,000–200,000 miles",
+        "repairCost": "£400–£900 (pump rebuild with new seals and internals) [PLACEHOLDER]",
+        "replacementCost": "£1,000–£1,800 (exchange pump) [PLACEHOLDER]",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon; can leave you stranded"
+        },
+        "recommendation": "The mechanical Bosch VE injection pump is robust but the internal governor and advance mechanism can wear, especially if fuel filtration is poor. Regular fuel filter changes and using good-quality diesel (or adding a lubricity additive) prolongs pump life. If starting becomes difficult or idle is uneven, have the pump timing checked before it fails completely.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/injection-pump-wear/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Discovery engine variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Discovery 300Tdi Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Discovery 300Tdi — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing belt overdue (preventative)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£700",
+          "whenItMakesSense": "Routine maintenance — essential at 60k or 5-year intervals"
+        },
+        {
+          "problem": "Head gasket failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Viable if caught early and head isn't cracked"
+        },
+        {
+          "problem": "Injection pump wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£900",
+          "whenItMakesSense": "Rebuild is cost-effective; exchange pump also available"
+        },
+        {
+          "problem": "Snapped timing belt (bent valves)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,500–£2,500+",
+          "whenItMakesSense": "Often requires new head; evaluate against vehicle value"
+        },
+        {
+          "problem": "Cracked cylinder head",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,000–£2,000 (new/used head)",
+          "whenItMakesSense": "Viable if engine otherwise sound; rare 300Tdi heads are now getting scarce"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Discovery 300Tdi? Check These First",
+      "buyIf": [
+        "* Documented timing belt change within the last 40,000 miles or 3 years",
+        "* Cooling system in good order (recent water pump, thermostat, radiator)",
+        "* Full service history with regular oil changes (every 6,000 miles or yearly)",
+        "* No signs of coolant loss or pressurisation — cold and hot"
+      ],
+      "avoidIf": [
+        "* No proof of timing belt replacement — this is a dealbreaker",
+        "* Overheating history — warped head is common",
+        "* Milkshake in oil or coolant — head gasket failure",
+        "* Injection pump timing not recently checked — hard starting indicates wear"
+      ]
+    },
+    "closingVerdict": "The 300Tdi is one of Land Rover's most beloved diesel engines — simple, mechanical, and famously tough. But it is not invincible: timing belt and head gasket are the two critical failure points. A well-maintained 300Tdi Discovery will easily exceed 200,000 miles; a neglected one will break your heart (and your wallet). Buy on history, not on low mileage alone.",
+    "cta": {
+      "label": "→ Compare Discovery 300Tdi engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Discovery 300Tdi (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Timing Belt History — Proof of replacement within 60,000 miles or 5 years — non-negotiable",
+      "* Cold Start — Hard starting? That points to injection pump wear or timing",
+      "* Cooling System — Check for coolant loss, pressurisation, or overheating signs",
+      "* Smoke Check — Black smoke = overfuelling; white smoke = coolant in cylinders",
+      "* Oil Condition — Milky oil = head gasket; check dipstick and filler cap",
+      "* Fuel System — Fuel filter condition and lift pump operation (common failure)",
+      "* Test Drive — Any hesitation, misfire, or lack of power under load?",
+      "* MOT History — Look for emissions failures (often related to injection pump or injectors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "300Tdi",
+        "years": "1994–1998",
+        "power": "111 bhp @ 4,000 rpm · 195 lb·ft @ 1,800 rpm",
+        "enquiries": "— (classic engine, no verified volume)",
+        "avgReconCost": "£1,500–£2,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows exactly match Section 1B's Era Map — the same engine code, years, and generation coverage.",
+    "technicalSpecs": {
+      "title": "Technical Specs (300Tdi):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,495cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "19.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Mechanical rotary injection pump (Bosch VE)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Garrett T25 (wastegate-controlled)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Discovery 300Tdi engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing belt neglect — roughly 60% of 300Tdi enquiries cite belt-related concerns [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "120,000–150,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,000 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "300Tdi — classic-era demand is steady, especially for Discovery 1 [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring and autumn — classic Land Rover owners do pre-season prep [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (25%), Wales (18%), North East (12%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Discovery 300Tdi engine replacement cost in the UK?",
+        "answer": "A reconditioned 300Tdi engine typically costs £1,500–£2,500 supply only. Fitting adds £700–£1,300 at independent Land Rover specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Discovery 300Tdi engine reliable?",
+        "answer": "Yes — the 300Tdi is widely regarded as one of Land Rover's most durable diesel engines. Its mechanical injection, cast-iron block, and simple design make it capable of 200,000+ miles. However, it requires strict timing belt discipline (every 60k miles or 5 years) and careful cooling system maintenance to avoid head gasket issues."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Discovery 300Tdi?",
+        "answer": "Timing belt failure (catastrophic if not replaced), head gasket failure (usually from overheating), and injection pump wear (hard starting, poor performance). All are well-documented and manageable with preventative maintenance."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Discovery 300Tdi engine, or should I scrap the car?",
+        "answer": "Against a well-preserved Discovery 1 (values £5,000–£15,000 for good examples), a £2,000 reconditioned engine is 20–40% of the vehicle's value — often worth it. For a tired example with extensive rot, the Land Rover scrap threshold of 60% means evaluating body and chassis condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Discovery 300Tdi engine code?",
+        "answer": "The engine code is stamped on the cylinder block, near the injection pump on the left-hand side. The 300Tdi was only fitted to Discovery 1 models from 1994 to 1998 (and Defender to 1999), so if your Discovery 1 is in that range and is a diesel, it's almost certainly a 300Tdi (the earlier 200Tdi was used 1989–1994). Check your V5C or VIN plate for confirmation."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 300Tdi timing belt without doing a full engine replacement?",
+        "answer": "Yes — preventative timing belt replacement is a routine service item costing £400–£700. It is not a repair, it's essential maintenance. If the belt snaps, you are usually looking at a replacement cylinder head or a full engine swap, so never delay this service."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Discovery 300Tdi Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted 300Tdi Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Discovery owners, as part of the Engine Finders network, covering the classic 300Tdi and every other Discovery diesel from the 200Tdi to the modern D300."
+      },
+      {
+        "title": "Compare Discovery 300Tdi Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. Our independent comparison service gives you the full market picture in minutes."
+      },
+      {
+        "title": "UK Engine Replacement Services for 300Tdi",
+        "text": "supply-only or full supply & fit available nationwide, covering the Discovery 1 300Tdi 2.5-litre mechanical diesel, with 12 vetted Land Rover specialists at your fingertips."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Discovery 300Tdi engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £800 for a used engine to £3,200 for a full rebuild, we have options for every budget and every classic Discovery.",
+    "ctaButton": {
+      "label": "Compare Land Rover Discovery 300Tdi Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,567 @@
+{
+  "meta": {
+    "slug": "discovery-30-tdv6-sdv6",
+    "title": "Discovery 3.0 TDV6 / SDV6 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 62,
+    "description": "Every Land Rover Discovery 3.0 TDV6/SDV6 engine — the 306DT V6 diesel. Real UK costs, crankshaft failure advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://landroverengine.uk/discovery/30-tdv6-sdv6/",
+    "openGraph": {
+      "title": "Discovery 3.0 TDV6 / SDV6 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Discovery 3.0 TDV6/SDV6 engine — the 306DT V6 diesel. Real UK costs, crankshaft failure advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/discovery/30-tdv6-sdv6/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-30-tdv6.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Discovery 3.0 TDV6 / SDV6 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Discovery 3.0 TDV6/SDV6 engine — the 306DT V6 diesel. Real UK costs, crankshaft failure advice, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-30-tdv6.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery",
+              "item": "https://landroverengine.uk/discovery/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Discovery 4",
+              "item": "https://landroverengine.uk/discovery/d4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "3.0 TDV6 / SDV6",
+              "item": "https://landroverengine.uk/discovery/30-tdv6-sdv6/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 3.0 TDV6 / SDV6 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Discovery 3/4 3.0 TDV6/SDV6 (306DT, 2009–2016)",
+              "url": "https://landroverengine.uk/discovery/d4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery 5 3.0 SDV6 (306DT, 2017–present)",
+              "url": "https://landroverengine.uk/discovery/d5/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 3.0 TDV6 / SDV6 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "306DT (TDV6)",
+              "url": "https://landroverengine.uk/engines/306dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "306DT (SDV6)",
+              "url": "https://landroverengine.uk/engines/306dt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Discovery 3.0 TDV6 / SDV6 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 3.0 TDV6/SDV6 engine typically costs £4,250–£6,500 supply only. A fully fitted replacement from a specialist costs approximately £7,610 including VAT. Fitting adds £1,500–£2,500 depending on location and workshop rates. Main dealer new engines start from £10,000–£15,000+ supply only."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery 3.0 TDV6 / SDV6 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No — the 3.0 TDV6/SDV6 has a well-earned reputation for catastrophic crankshaft and bearing failure. The root cause is oil starvation triggered by failing injector copper washer seals, which pressurise the crankcase and reduce oil flow to the bearings. With meticulous maintenance and preventative injector seal replacement, some owners achieve high mileages — but the risk of sudden, unexpected failure remains."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Discovery 3.0 TDV6 / SDV6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main known issues are: (1) Crankshaft and bearing failure — the most devastating fault, often with no warning, (2) Injector copper washer seal failure — the root cause of oil starvation, and (3) EGR cooler coolant leaks — which can contaminate engine oil and accelerate bearing wear."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery 3.0 TDV6 / SDV6 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and condition. Against a well-kept £10,000–£25,000 Discovery 4 or 5, a £7,000–£8,000 recon is 30–80% of the car's value — often worth it given Discovery values have remained strong. However, if the chassis or body has significant corrosion, evaluate total restoration costs before committing to an engine replacement. For Discovery 3 examples under £6,000, a £7,000+ replacement may exceed our 60% Land Rover scrap threshold."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Discovery engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Discovery 3.0 TDV6/SDV6 uses the 306DT engine code. It's stamped on the cylinder block. The TDV6 is single-turbo (155kW/600Nm in D4); the SDV6 is twin-turbo (183kW/600Nm in D4, 228kW/700Nm in D5). Tell us your registration and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent the TDV6 / SDV6 crankshaft failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 10,000 miles or less with the correct JLR-spec oil, (2) Have injector copper washer seals inspected and replaced at 60,000–90,000 miles, (3) Regularly check the dipstick for diesel smell or rising oil level, and (4) Never ignore an oil pressure warning or rhythmic knocking. No amount of maintenance guarantees prevention, but these steps dramatically reduce the risk."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery 3.0 TDV6/SDV6 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery 3.0 TDV6/SDV6 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Discovery 3.0 TDV6/SDV6 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Discovery 3.0 TDV6 / SDV6 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery/30-tdv6-sdv6/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery 3.0 TDV6 / SDV6 • 2009–present • 1 Engine Generation (2 Power Levels)",
+    "h1": "Land Rover Discovery 3.0 TDV6 / SDV6 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Discovery specialists. The 3.0-litre V6 diesel (306DT) powers Discovery 3, 4 and 5 models — compare reconditioned, rebuilt and used TDV6 and SDV6 engines with supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Discovery 3.0 TDV6 / SDV6 Engines — from £1,500 to £8,500 · Engine code: 306DT",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Discovery Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "Land Rover Discovery 3.0 TDV6 / SDV6 — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "D3 / D4",
+        "years": "2009–2016",
+        "engineCode": "306DT (TDV6 / SDV6)",
+        "reliability": "★★☆☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,250–£8,500 [EM-QUOTE]",
+        "eraNote": "3.0-litre V6 diesel — notorious for crankshaft and bearing failure. SDV6 = twin-turbo, TDV6 = single-turbo"
+      },
+      {
+        "generation": "D5",
+        "years": "2017–present",
+        "engineCode": "306DT (SDV6)",
+        "reliability": "★★☆☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,250–£8,500 [EM-QUOTE]",
+        "eraNote": "Revised twin-turbo SDV6 with 306HP / 700Nm — same fundamental design, similar risk profile"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Discovery 3.0 TDV6 / SDV6 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£3,500",
+        "fittedIndie": "£2,500–£5,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £8,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,250–£6,500",
+        "fittedIndie": "£6,500–£8,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,500–£8,500",
+        "fittedIndie": "£8,000–£11,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£10,000–£15,000+",
+        "fittedIndie": "£12,000–£18,000+",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting a Discovery 3.0 TDV6/SDV6 engine typically takes 14–18 hours at £65–£95/hr (independent). The body is usually lifted from the chassis for full access to the drivetrain.",
+    "cta": {
+      "label": "→ Compare Discovery 3.0 TDV6/SDV6 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Crankshaft & Bearing Failure (Catastrophic)",
+        "symptoms": "Rhythmic knocking from lower engine block that worsens under load, oil pressure warning light flickering, sudden engine seizure with no warning",
+        "typicalMileage": "60,000–120,000 miles — can occur without warning",
+        "repairCost": "£1,500–£3,000 (early intervention — bearing replacement if caught immediately)",
+        "replacementCost": "£6,500–£11,000 (full engine replacement)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "stop driving immediately if you hear knocking or see the oil pressure warning"
+        },
+        "recommendation": "This is the single most devastating fault affecting the 3.0 TDV6/SDV6. The failure sequence is well understood: injector copper washer seals harden and fail (60k-90k miles), allowing combustion gases to leak into the rocker cover. This pressurises the crankcase, reduces oil pump efficiency, and starves the bearings of oil. Once the bearings spin or the crankshaft snaps, the engine is beyond economical repair. At the first sign of rhythmic knocking or an oil pressure warning, stop driving and arrange recovery to a specialist. A £1,500–£3,000 early intervention is dramatically cheaper than a £6,500–£11,000 engine replacement.",
+        "failureLink": {
+          "label": "Read the full crankshaft failure guide → /failures/tdv6-crankshaft-bearing-failure/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Injector Copper Washer Seal Failure (Root Cause)",
+        "symptoms": "Diesel smell in oil, rising oil level on dipstick, rough idle, misfires, loss of power",
+        "typicalMileage": "60,000–90,000 miles",
+        "repairCost": "£800–£1,500 (injector seals + rocker cover gasket)",
+        "replacementCost": "N/A — repair only (does not progress to engine replacement if addressed early)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if you smell diesel on the dipstick"
+        },
+        "recommendation": "This is the root cause of the catastrophic crankshaft failure. The copper washer seals harden over time, allowing combustion gases to escape into the rocker cover. This pressurises the crankcase, reducing oil flow to the bearings. Many owners don't realise there's a problem until the crank fails. Regularly checking the dipstick for a diesel smell and rising oil level is the simplest early warning. If caught early, replacing the injector seals is a manageable repair that can prevent a £6,000+ engine replacement.",
+        "failureLink": {
+          "label": "Read the full injector seal failure guide → /failures/injector-copper-washer-seal/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "EGR Cooler Coolant Leak",
+        "symptoms": "Coolant loss with no visible external leak, white exhaust smoke, occasional burning smell, engine overheating",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£300–£600 (EGR cooler replacement)",
+        "replacementCost": "N/A — repair only (does not typically progress to engine replacement if addressed)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "coolant contamination can accelerate bearing wear"
+        },
+        "recommendation": "The EGR cooler on the 3.0 TDV6/SDV6 can develop internal coolant leaks, allowing coolant to enter the exhaust system or, in worst cases, contaminate the engine oil. Coolant in the oil reduces its lubricating properties and accelerates bearing wear — compounding the existing risk of crankshaft failure. Book an inspection urgently if you notice coolant loss, white smoke, or any sign of coolant in the oil (milky residue on the dipstick or oil filler cap). A £300–£600 EGR cooler replacement is far cheaper than the £6,000+ engine replacement that follows if bearing damage occurs.",
+        "failureLink": {
+          "label": "Read the full EGR cooler failure guide",
+          "href": "/failures/egr-valve-cooler-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Discovery 3.0 TDV6/SDV6 engine covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Discovery Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Discovery 3.0 TDV6 / SDV6 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Injector copper washer seals",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Preventative — the cheapest fix that prevents catastrophic failure"
+        },
+        {
+          "problem": "EGR cooler coolant leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Straightforward fix if caught before coolant contaminates oil"
+        },
+        {
+          "problem": "Rhythmic knocking (early bearing wear)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Viable if caught immediately — but requires specialist assessment"
+        },
+        {
+          "problem": "Crankshaft snapped / bearings spun",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Full long engine replacement is the only reliable fix"
+        },
+        {
+          "problem": "Turbocharger failure",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Viable on lower-mileage examples; assess overall engine health"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Discovery? Check These First",
+      "buyIf": [
+        "* Full service history with 10,000-mile or less oil change intervals",
+        "* Evidence of recent injector seal replacement",
+        "* No history of oil pressure warnings or rhythmic knocking",
+        "* Extended warranty in place — this engine is high-risk"
+      ],
+      "avoidIf": [
+        "* Any history of oil pressure warnings — this is a warning sign",
+        "* Rhythmic knocking from the engine — stop and walk away",
+        "* Diesel smell on dipstick (suggests injector seal failure)",
+        "* No service history or extended oil change intervals — this engine is unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The 3.0 TDV6/SDV6 is one of Land Rover's most controversial engines — delivering excellent torque, refinement and towing capability, but carrying a well-earned reputation for catastrophic crankshaft failure. The failure sequence is now well understood: injector seals fail, oil pressure drops, bearings spin, crankshaft snaps. Buy with full service history and budget for preventative injector seal replacement. Without history? Walk away — the risk of a £7,000+ engine replacement is simply too high.",
+    "cta": {
+      "label": "→ Compare Discovery 3.0 TDV6/SDV6 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Discovery with the 3.0 TDV6 or SDV6 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for knocking or rattling that worsens with revs",
+      "* Oil Pressure Warning — Has it ever flickered? This is a critical warning sign",
+      "* Dipstick Check — Smell for diesel (injector seal failure); check for rising oil level",
+      "* Service History — Including 10,000-mile or less oil change intervals — non-negotiable",
+      "* Rhythmic Knocking — Stop immediately if you hear knocking from the lower block",
+      "* Coolant Level — Check for unexplained loss (EGR cooler leak)",
+      "* White Smoke — On startup or under load (EGR cooler or injector issues)",
+      "* Warranty Status — Extended warranty is highly recommended"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "306DT (TDV6)",
+        "years": "2009–2016",
+        "power": "211–245 bhp (155–183 kW) / 600 Nm",
+        "enquiries": "980 [EM-VERIFIED]",
+        "avgReconCost": "£4,250–£6,500 [EM-QUOTE]"
+      },
+      {
+        "engineCode": "306DT (SDV6)",
+        "years": "2009–present",
+        "power": "245–306 bhp (183–228 kW) / 600–700 Nm",
+        "enquiries": "980 [EM-VERIFIED]",
+        "avgReconCost": "£4,250–£6,500 [EM-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (306DT):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,993 cc (3.0L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder V6"
+        },
+        {
+          "label": "* Bore",
+          "value": "84.0 mm"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "TDV6 = single-turbo; SDV6 = twin-turbo sequential"
+        },
+        {
+          "label": "* Block",
+          "value": "Cast iron"
+        },
+        {
+          "label": "* Cylinder Head",
+          "value": "Aluminium 24-valve"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Discovery 3.0 TDV6/SDV6 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Discovery 3.0 TDV6 / SDV6 engine replacement cost in the UK?",
+        "answer": "A reconditioned 3.0 TDV6/SDV6 engine typically costs £4,250–£6,500 supply only. A fully fitted replacement from a specialist costs approximately £7,610 including VAT. Fitting adds £1,500–£2,500 depending on location and workshop rates. Main dealer new engines start from £10,000–£15,000+ supply only."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Discovery 3.0 TDV6 / SDV6 engine reliable?",
+        "answer": "No — the 3.0 TDV6/SDV6 has a well-earned reputation for catastrophic crankshaft and bearing failure. The root cause is oil starvation triggered by failing injector copper washer seals, which pressurise the crankcase and reduce oil flow to the bearings. With meticulous maintenance and preventative injector seal replacement, some owners achieve high mileages — but the risk of sudden, unexpected failure remains."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Discovery 3.0 TDV6 / SDV6?",
+        "answer": "The main known issues are: (1) Crankshaft and bearing failure — the most devastating fault, often with no warning, (2) Injector copper washer seal failure — the root cause of oil starvation, and (3) EGR cooler coolant leaks — which can contaminate engine oil and accelerate bearing wear."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Discovery 3.0 TDV6 / SDV6 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a well-kept £10,000–£25,000 Discovery 4 or 5, a £7,000–£8,000 recon is 30–80% of the car's value — often worth it given Discovery values have remained strong. However, if the chassis or body has significant corrosion, evaluate total restoration costs before committing to an engine replacement. For Discovery 3 examples under £6,000, a £7,000+ replacement may exceed our 60% Land Rover scrap threshold."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Discovery engine code?",
+        "answer": "The Discovery 3.0 TDV6/SDV6 uses the 306DT engine code. It's stamped on the cylinder block. The TDV6 is single-turbo (155kW/600Nm in D4); the SDV6 is twin-turbo (183kW/600Nm in D4, 228kW/700Nm in D5). Tell us your registration and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent the TDV6 / SDV6 crankshaft failure?",
+        "answer": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 10,000 miles or less with the correct JLR-spec oil, (2) Have injector copper washer seals inspected and replaced at 60,000–90,000 miles, (3) Regularly check the dipstick for diesel smell or rising oil level, and (4) Never ignore an oil pressure warning or rhythmic knocking. No amount of maintenance guarantees prevention, but these steps dramatically reduce the risk."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Discovery 3.0 TDV6 / SDV6 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Discovery 3.0 TDV6/SDV6 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Discovery owners, across both TDV6 and SDV6 variants, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare Discovery Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit to a single quote."
+      },
+      {
+        "title": "UK Engine Replacement Services for Discovery",
+        "text": "supply-only or full supply & fit available nationwide, covering every Discovery generation from D3 to D5 with the 3.0-litre V6 diesel."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Discovery 3.0 TDV6/SDV6 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £4,250 supply-only.",
+    "ctaButton": {
+      "label": "Compare Land Rover Discovery 3.0 TDV6/SDV6 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

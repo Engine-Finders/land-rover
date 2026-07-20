@@ -1,0 +1,580 @@
+{
+  "meta": {
+    "slug": "range-rover-vm-diesel",
+    "title": "VM Diesel Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 61,
+    "description": "Every Land Rover Range Rover VM Diesel engine — 2.4L and 2.5L four-cylinder turbo-diesels, 1986–1992. Real UK costs, head gasket advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/range-rover/vm-diesel/",
+    "openGraph": {
+      "title": "VM Diesel Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Range Rover VM Diesel engine — 2.4L and 2.5L four-cylinder turbo-diesels, 1986–1992. Real UK costs, head gasket advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/range-rover/vm-diesel/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-vm-diesel.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "VM Diesel Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Range Rover VM Diesel engine — 2.4L and 2.5L four-cylinder turbo-diesels, 1986–1992. Real UK costs, head gasket advice, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-vm-diesel.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover",
+              "item": "https://landroverengine.uk/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Range Rover Classic",
+              "item": "https://landroverengine.uk/range-rover/classic/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "VM Diesel",
+              "item": "https://landroverengine.uk/range-rover/vm-diesel/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover VM Diesel Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover Classic 2.4L VM (VM81A/11A, 1986-1990)",
+              "url": "https://landroverengine.uk/range-rover/classic/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Classic 2.5L VM (14L, 1989-1992)",
+              "url": "https://landroverengine.uk/range-rover/classic/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover VM Diesel Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "VM81A / 11A (2.4L)",
+              "url": "https://landroverengine.uk/engines/vm-diesel/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "14L (2.5L)",
+              "url": "https://landroverengine.uk/engines/vm-diesel/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Range Rover VM Diesel engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned VM diesel engine typically costs £3,200–£5,500 supply only, with the 2.5L variant at the higher end. Fitting adds £900–£1,300 depending on the specialist. Used engines can be found from £800–£1,500, but condition varies dramatically and parts are increasingly scarce."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Range Rover VM diesel engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The VM diesel is one of the most polarising engines ever fitted to a Range Rover. A well-maintained example with modern composite head gaskets and a perfect cooling system can be reliable and economical. A neglected one is a money pit. The individual-head design means head gasket failure is the main concern — but with obsessive maintenance, the VM has genuine charm and better torque than a Tdi."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover VM diesel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main issues are head gasket failure on the four individual cylinder heads (£1,500–£2,000 to fix properly), overheating from an inadequate cooling system, and parts scarcity — injectors, water pumps, and thermostats are increasingly expensive and hard to source. Many owners ultimately swap in a 200Tdi rather than keep a VM alive."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover VM diesel engine, or should I consider a Tdi swap?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Given the parts scarcity and high cost of VM-specific components, many owners choose to swap in a 200Tdi (£450–£800 for a used unit) rather than rebuild a VM. However, a well-maintained VM with modern head gaskets and a sorted cooling system can be reliable. Against a Classic Range Rover worth £8,000–£15,000, a £4,000–£5,000 replacement may be borderline — evaluate the vehicle's overall condition and your appetite for parts hunting."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Range Rover VM diesel engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2.4L VM engine carries codes VM81A or 11A. The 2.5L VM carries code 14L. The 2.4L was fitted from April 1986 to 1990; the 2.5L superseded it around 1989. Check the engine number stamped on the block."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair a VM diesel head gasket, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The gaskets must be replaced — and ALL FOUR must be done at once. Critically, the heads MUST be retorqued at 1,000 miles post-replacement — a step that is rarely done and a key reason for the VM's poor reputation. Use modern composite gaskets. A full head gasket job typically costs £1,500–£2,000."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover VM Diesel Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover VM Diesel UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Range Rover VM Diesel engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "VM Diesel Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover/vm-diesel/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover VM Diesel • 1986–1992 • 2 Engine Generations",
+    "h1": "Land Rover Range Rover VM Diesel Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Range Rover VM Diesel specialists. Compare reconditioned, rebuilt and used 2.4L and 2.5L four-cylinder turbo-diesel engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Land Rover Range Rover VM Diesel Engines — from £800 to £5,500 · Engine codes: VM81A/11A, 14L",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Range Rover VM Diesel Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The VM DIESEL THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Range Rover Classic (2.4L)",
+        "years": "1986–1990",
+        "engineCode": "VM81A / 11A",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,200–£4,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Four individual heads — cooling system is critical; head gaskets are the main liability"
+      },
+      {
+        "generation": "Range Rover Classic (2.5L)",
+        "years": "1989–1992",
+        "engineCode": "14L",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Bored-out 2.4L; same individual-head design; parts are increasingly scarce"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover VM Diesel Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£1,500",
+        "fittedIndie": "£1,400–£2,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; project vehicles"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,200–£5,500",
+        "fittedIndie": "£4,100–£6,600",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,500–£6,500",
+        "fittedIndie": "£5,400–£7,600",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "No longer available new"
+      }
+    ],
+    "figuresNote": "Figures above reflect current VM diesel replacement costs. The 2.5L variant typically sits at the higher end of the range. See the Era Map above for generation-specific pricing.",
+    "labourEstimate": "Fitting a Range Rover VM diesel engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (specialist).",
+    "cta": {
+      "label": "→ Compare VM Diesel engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Individual Cylinder Head Gasket Failure",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Overheating & Cooling System Inadequacy",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Parts Scarcity & High Costs",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, every VM Diesel variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Range Rover VM Diesel Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Range Rover VM Diesel — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Head gasket failure (all four heads)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£2,000",
+          "whenItMakesSense": "Essential maintenance on any VM — must use modern composite gaskets"
+        },
+        {
+          "problem": "Overheating / cooling system issues",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Radiator, water pump, thermostat — all must be in perfect condition"
+        },
+        {
+          "problem": "Cracked cylinder head(s)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£2,000–£4,000",
+          "whenItMakesSense": "Individual heads can be replaced, but parts are expensive and hard to source"
+        },
+        {
+          "problem": "Injection pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Specialist rebuild required — parts are increasingly scarce"
+        },
+        {
+          "problem": "Severe overheating with block damage",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Often more cost-effective to swap in a 200Tdi"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This VM Diesel? Check These First",
+      "buyIf": [
+        "* Head gaskets replaced with modern composite items and retorqued correctly",
+        "* Cooling system in perfect condition — new radiator, water pump, thermostat",
+        "* Temperature gauge stays below halfway even on hot days",
+        "* You're prepared for the parts hunt — or the engine has been meticulously maintained"
+      ],
+      "avoidIf": [
+        "* No record of head gasket work — assume it's overdue and budget £1,500–£2,000 immediately",
+        "* Any overheating history — the VM does not forgive cooling system neglect",
+        "* Hard starting or excessive smoke — injection pump or injector issues may be expensive to fix",
+        "* You're not prepared for parts scarcity — many owners ultimately swap in a 200Tdi"
+      ]
+    },
+    "closingVerdict": "The VM diesel is one of the most polarising engines ever fitted to a Range Rover. A well-maintained example with modern head gaskets and a perfect cooling system can be surprisingly reliable and economical. A neglected one is a money pit that will test your patience and your wallet. With parts becoming increasingly scarce, the smart money often goes on a 200Tdi swap. But if you're a purist willing to do the maintenance, the VM has genuine charm — and better torque than a Tdi.",
+    "cta": {
+      "label": "→ Compare VM Diesel engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover VM Diesel (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Head Gaskets — Confirm replacement with modern composite gaskets; ask for retorque proof at 1,000 miles",
+      "* Cooling System — Check radiator, water pump, thermostat, hoses — any weakness is a red flag",
+      "* Temperature Gauge — Should sit below halfway even on hot days; any creep is a warning",
+      "* Cold Start — Listen for smooth start; any hesitation or smoke points to injector or pump issues",
+      "* Coolant Level — Check reservoir when cold; any low or loss is a red flag — expansion tank sits low",
+      "* Service History — Including oil and filter changes, fuel filter, antifreeze strength — VM needs obsessive maintenance",
+      "* Parts Availability — Research parts costs before buying; injectors, water pumps are expensive and hard to source",
+      "* MOT History — Check for emissions-related failures and structural corrosion (Classic Range Rover chassis are known to rust)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "VM81A / 11A (2.4L VM)",
+        "years": "1986–1990",
+        "power": "106–112 bhp@4,000rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,200–£4,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "14L (2.5L VM)",
+        "years": "1989–1992",
+        "power": "119–121 bhp@4,000rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£5,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (2.5L VM):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,499cc (2.5L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline, four individual cylinder heads"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "21:1 (approximate — IDI diesel)"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Indirect injection (IDI) with Bosch injection pump, turbocharged and intercooled"
+        },
+        {
+          "label": "* Torque",
+          "value": "Approx. 230–250 Nm @ 2,000 rpm"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare VM Diesel engine prices for your Range Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Individual cylinder head gaskets — the VM's defining weakness"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "90,000–130,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000–£5,000 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "14L (2.5L VM) / VM81A (2.4L VM) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring/Summer — classic car season [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (18%), South East (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Range Rover VM Diesel engine replacement cost in the UK?",
+        "answer": "A reconditioned VM diesel engine typically costs £3,200–£5,500 supply only, with the 2.5L variant at the higher end. Fitting adds £900–£1,300 depending on the specialist. Used engines can be found from £800–£1,500, but condition varies dramatically and parts are increasingly scarce."
+      },
+      {
+        "id": 2,
+        "question": "Is the Range Rover VM diesel engine reliable?",
+        "answer": "The VM diesel is one of the most polarising engines ever fitted to a Range Rover. A well-maintained example with modern composite head gaskets and a perfect cooling system can be reliable and economical. A neglected one is a money pit. The individual-head design means head gasket failure is the main concern — but with obsessive maintenance, the VM has genuine charm and better torque than a Tdi."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover VM diesel?",
+        "answer": "The main issues are head gasket failure on the four individual cylinder heads (£1,500–£2,000 to fix properly), overheating from an inadequate cooling system, and parts scarcity — injectors, water pumps, and thermostats are increasingly expensive and hard to source. Many owners ultimately swap in a 200Tdi rather than keep a VM alive."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover VM diesel engine, or should I consider a Tdi swap?",
+        "answer": "Given the parts scarcity and high cost of VM-specific components, many owners choose to swap in a 200Tdi (£450–£800 for a used unit) rather than rebuild a VM. However, a well-maintained VM with modern head gaskets and a sorted cooling system can be reliable. Against a Classic Range Rover worth £8,000–£15,000, a £4,000–£5,000 replacement may be borderline — evaluate the vehicle's overall condition and your appetite for parts hunting."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover VM diesel engine code?",
+        "answer": "The 2.4L VM engine carries codes VM81A or 11A. The 2.5L VM carries code 14L. The 2.4L was fitted from April 1986 to 1990; the 2.5L superseded it around 1989. Check the engine number stamped on the block."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a VM diesel head gasket, or does it need replacement?",
+        "answer": "The gaskets must be replaced — and ALL FOUR must be done at once. Critically, the heads MUST be retorqued at 1,000 miles post-replacement — a step that is rarely done and a key reason for the VM's poor reputation. Use modern composite gaskets. A full head gasket job typically costs £1,500–£2,000."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Range Rover VM Diesel Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted VM Diesel Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Range Rover VM Diesel owners, as part of the Engine Finders network, covering both the 2.4L and 2.5L VM variants and every Classic Range Rover engine from the VM to the 200Tdi."
+      },
+      {
+        "title": "Compare VM Diesel Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. We cover the VM81A, 11A and 14L engine codes specifically, with specialists who understand the individual-head design and the critical importance of cooling system maintenance."
+      },
+      {
+        "title": "UK Engine Replacement Services for VM Diesel",
+        "text": "supply-only or full supply & fit available nationwide, covering the 2.4L and 2.5L four-cylinder turbo-diesels, with a 12-month warranty as standard across our network."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover VM Diesel engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get your Classic Range Rover back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Land Rover Range Rover VM Diesel Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

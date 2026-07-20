@@ -1,0 +1,553 @@
+{
+  "meta": {
+    "slug": "discovery-sport-d200",
+    "title": "Discovery Sport D200 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 59,
+    "description": "Every Discovery Sport D200 engine — 204DTD MHEV 2.0 diesel. Real UK costs, timing chain and MHEV system reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/discovery-sport/d200/",
+    "openGraph": {
+      "title": "Discovery Sport D200 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Discovery Sport D200 engine — 204DTD MHEV 2.0 diesel. Real UK costs, timing chain and MHEV system reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/discovery-sport/d200/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-d200.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Discovery Sport D200 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Discovery Sport D200 engine — 204DTD MHEV 2.0 diesel. Real UK costs, timing chain and MHEV system reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-d200.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery Sport",
+              "item": "https://landroverengine.uk/discovery-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "L550",
+              "item": "https://landroverengine.uk/discovery-sport/l550/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "D200",
+              "item": "https://landroverengine.uk/discovery-sport/d200/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery Sport D200 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Discovery Sport L550 D200 (204DTD MHEV, 2019-present)",
+              "url": "https://landroverengine.uk/discovery-sport/l550/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery Sport D200 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD MHEV (D200)",
+              "url": "https://landroverengine.uk/engines/204dtd/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery Sport D200 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Discovery Sport D200 (204DTD MHEV) engine typically costs £3,500–£5,800 supply only. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery Sport D200 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 204DTD in the D200 is the post-2019 revision of the Ingenium diesel, with improved timing chain tensioners. It is more reliable than the pre-facelift SD4, but the risk is not eliminated. The MHEV system adds BISG and 48V battery complexity, which are emerging as the new weak points on this engine family."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Discovery Sport D200?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner wear (reduced but not eliminated post-2019), BISG/MHEV system failure (stop-start and electrical issues), and oil dilution from DPF regeneration (urban-use risk). All three are manageable with proper maintenance and early detection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery Sport D200 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a well-kept Discovery Sport (values £15,000–£30,000+), a £4,500 reconditioned engine is 15–30% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is viable across most D200 values, given the Discovery Sport's strong residual values."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Discovery Sport D200 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code 204DTD is listed on the VIN plate and vehicle documentation. The D200 badge was introduced with the 2019 Discovery Sport facelift, so if your vehicle is a 2019+ L550 diesel, it is a 204DTD MHEV (unless it's a D150/D165/D180). Tell us your registration and we'll confirm for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the MHEV system, or does it require engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MHEV system faults (BISG, battery) are always repairable without replacing the engine. BISG replacement costs £500–£1,500; the 48V battery is £800–£2,000. However, the 48V system is complex and requires specialist diagnostic equipment. Do not ignore stop-start failures — they are the early warning sign of MHEV issues."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery Sport D200 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "7000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery Sport D200 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Discovery Sport D200 204DTD MHEV engine, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Discovery Sport D200 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery-sport/d200/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery Sport D200 • 2019–present • 204DTD MHEV 2.0 Diesel",
+    "h1": "Land Rover Discovery Sport D200 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Discovery Sport D200 specialists. Compare reconditioned, rebuilt and used 204DTD mild-hybrid diesel engines — supply & fit available nationwide for this modern Discovery Sport.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Discovery Sport D200 Engines — from £2,000 to £7,000 · Engine code: 204DTD MHEV (2019–present)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Discovery Sport D200 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The DISCOVERY SPORT D200 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Discovery Sport L550",
+        "years": "2019–present",
+        "engineCode": "204DTD MHEV (2.0 diesel + 48V belt-integrated starter-generator)",
+        "reliability": "★★★☆☆ [PROVISIONAL — see Data Note]",
+        "reconCost": "£3,500–£5,800 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Facelift-era Ingenium MHEV — post-2019 tensioner revisions reduce but don't eliminate chain risk; mild-hybrid system adds belt/BISG complexity"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Discovery Sport D200 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£2,650–£4,410",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor required"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£5,800",
+        "fittedIndie": "£4,500–£7,100",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,800–£7,000",
+        "fittedIndie": "£5,900–£8,300",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; full factory-spec refresh"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£7,500–£10,500",
+        "fittedIndie": "£9,000–£12,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current Discovery Sport D200 204DTD MHEV generation. This badge was introduced in 2019, so no older-generation variance applies.",
+    "labourEstimate": "Fitting a D200 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). [PLACEHOLDER — confirm vs cost sheet]",
+    "cta": {
+      "label": "→ Compare Discovery Sport D200 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Tensioner Wear (Post-2019 Reduced Risk)",
+        "symptoms": "Cold-start rattle lasting 1–10 seconds, engine warning light, loss of power, metallic noises from the front of the engine.",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£1,200–£2,500 (preventative chain replacement) [PLACEHOLDER]",
+        "replacementCost": "£3,500–£5,800 (catastrophic failure) [PLACEHOLDER]",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today"
+        },
+        "recommendation": "The post-2019 204DTD received revised timing chain tensioner guides to address the pre-facelift failure rate. This has significantly reduced, but not eliminated, the risk. The D200's MHEV system means the starter-generator is belt-driven, and any cold-start rattle should be investigated immediately. A £1,200–£2,500 preventative chain replacement is dramatically cheaper than a £3,500+ engine replacement.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/ingenium-timing-chain/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Belt-Integrated Starter-Generator (BISG) / MHEV System Failure",
+        "symptoms": "Stop-start not working, battery warning light, reduced power, engine not restarting after stop-start, 48V battery warning.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£500–£1,500 (BISG replacement) [PLACEHOLDER]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if stop-start system fails"
+        },
+        "recommendation": "The D200's 48V mild-hybrid system adds complexity. The belt-integrated starter-generator (BISG) and its belt drive can fail, often due to belt wear or bearing failure in the BISG unit itself. This is a relatively new failure pattern, but specialist workshops report increasing numbers of D200s with MHEV system faults. If the stop-start stops working or you get battery warnings, get the BISG and 48V system checked. Unlike the older SDV6's catastrophic mechanical failure, this is repairable but can be costly.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/mhev-bisg-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "DPF Regeneration & Oil Dilution",
+        "symptoms": "Rising oil level on dipstick, diesel smell in oil, DPF warning light, frequent active regeneration cycles, reduced fuel economy.",
+        "typicalMileage": "Any mileage — urban-use pattern dependent",
+        "repairCost": "£150–£400 (oil change + forced regeneration) [PLACEHOLDER]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if oil level is rising"
+        },
+        "recommendation": "Like all modern diesels, the 204DTD relies on DPF regeneration to clear soot. Short urban journeys prevent passive regeneration, leading to active regen cycles that inject extra fuel, which can wash past the piston rings and dilute the engine oil. Rising oil levels are a serious warning sign — diluted oil loses its lubricity, increasing wear on bearings and the timing chain. For urban-based Discovery Sports, shorten oil change intervals to 6,000–8,000 miles and take regular longer runs.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/dpf-oil-dilution/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Discovery Sport diesel variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Discovery Sport D200 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Discovery Sport D200 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Preventative — cheaper than catastrophic failure"
+        },
+        {
+          "problem": "BISG/MHEV system failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,500",
+          "whenItMakesSense": "BISG replacement is straightforward; catch it early"
+        },
+        {
+          "problem": "DPF-related oil dilution",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£400",
+          "whenItMakesSense": "Oil change + forced regen; revise service schedule"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        },
+        {
+          "problem": "48V battery failure",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Battery is replaceable but expensive; assess vehicle value"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Discovery Sport D200? Check These First",
+      "buyIf": [
+        "* Post-2019 build (revised chain tensioner design applied from factory)",
+        "* Full service history with oil changes at 8,000-mile intervals (not JLR's extended schedule)",
+        "* MHEV system inspected and functioning (check stop-start works)",
+        "* Motorway history — DPF will be in better condition than an urban-only car"
+      ],
+      "avoidIf": [
+        "* Cold-start rattle with no chain history — even post-2019, this is a red flag",
+        "* No proof of regular oil changes — oil dilution risk is real",
+        "* Stop-start not working with no diagnosis — MHEV system may be failing",
+        "* Service history gaps — the 204DTD is unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The Discovery Sport D200 is a sensible, efficient diesel for the popular compact SUV. The post-2019 timing chain revisions have made it more reliable than the pre-facelift SD4, but the risk is not eliminated. The MHEV system adds a layer of complexity — BISG and 48V battery failure are emerging as the new D200-specific weak points. Buy on history and maintain on a shortened schedule; this is a good engine, not a bulletproof one.",
+    "cta": {
+      "label": "→ Compare Discovery Sport D200 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Discovery Sport D200 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle lasting 1–10 seconds (timing chain warning, 204DTD)",
+      "* Service History — Including oil change intervals (8,000 miles recommended, not 12,000+)",
+      "* Stop-Start Function — Check it works; failure indicates MHEV/BISG issues",
+      "* Smoke Check — White smoke on startup can indicate EGR or injector issues",
+      "* DPF Health — Ask about regeneration frequency; urban cars will have more regens",
+      "* Oil Level — Rising oil level means DPF/oil dilution problems",
+      "* Engine Warning Light — Have codes been read? Chain, DPF, or NOx sensor codes are most common",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204DTD MHEV (D200)",
+        "years": "2019–present",
+        "power": "201 bhp @ 4,000 rpm · 317 lb·ft @ 1,250 rpm",
+        "enquiries": "1,150 (all 204DTD variants — JLR-wide) [EM-VERIFIED]",
+        "avgReconCost": "£3,500–£5,800 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows exactly match Section 1B's Era Map — the same engine code, years, and generation coverage.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204DTD MHEV):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,999cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection (2,500 bar)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single turbocharger with variable geometry (VGT) — D200 is single-turbo (D240 is twin-turbo)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Discovery Sport D200 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain tensioner wear — approximately 40% of D200/204DTD enquiries cite chain concerns [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–75,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204DTD (D200 variant) — 1,150 JLR-wide [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain wear on Ingenium diesels [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), London (17%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Discovery Sport D200 engine replacement cost in the UK?",
+        "answer": "A reconditioned Discovery Sport D200 (204DTD MHEV) engine typically costs £3,500–£5,800 supply only. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Discovery Sport D200 engine reliable?",
+        "answer": "The 204DTD in the D200 is the post-2019 revision of the Ingenium diesel, with improved timing chain tensioners. It is more reliable than the pre-facelift SD4, but the risk is not eliminated. The MHEV system adds BISG and 48V battery complexity, which are emerging as the new weak points on this engine family."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Discovery Sport D200?",
+        "answer": "Timing chain tensioner wear (reduced but not eliminated post-2019), BISG/MHEV system failure (stop-start and electrical issues), and oil dilution from DPF regeneration (urban-use risk). All three are manageable with proper maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Discovery Sport D200 engine, or should I scrap the car?",
+        "answer": "Against a well-kept Discovery Sport (values £15,000–£30,000+), a £4,500 reconditioned engine is 15–30% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is viable across most D200 values, given the Discovery Sport's strong residual values."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Discovery Sport D200 engine code?",
+        "answer": "The engine code 204DTD is listed on the VIN plate and vehicle documentation. The D200 badge was introduced with the 2019 Discovery Sport facelift, so if your vehicle is a 2019+ L550 diesel, it is a 204DTD MHEV (unless it's a D150/D165/D180). Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the MHEV system, or does it require engine replacement?",
+        "answer": "MHEV system faults (BISG, battery) are always repairable without replacing the engine. BISG replacement costs £500–£1,500; the 48V battery is £800–£2,000. However, the 48V system is complex and requires specialist diagnostic equipment. Do not ignore stop-start failures — they are the early warning sign of MHEV issues."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Discovery Sport D200 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted D200 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Discovery Sport owners, as part of the Engine Finders network, covering the 204DTD MHEV and every other Discovery Sport diesel from the 2.2 TD4 to the D180."
+      },
+      {
+        "title": "Compare Discovery Sport D200 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. Our independent comparison service gives you the full market picture in minutes."
+      },
+      {
+        "title": "UK Engine Replacement Services for D200",
+        "text": "supply-only or full supply & fit available nationwide, covering the Discovery Sport L550 D200 2.0-litre MHEV diesel, with 12 vetted Land Rover specialists at your fingertips."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Discovery Sport D200 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £2,000 for a used engine to £7,000 for a rebuilt unit, we have options for every budget.",
+    "ctaButton": {
+      "label": "Compare Land Rover Discovery Sport D200 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

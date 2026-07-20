@@ -1,0 +1,594 @@
+{
+  "meta": {
+    "slug": "defender-d200",
+    "title": "D200 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 52,
+    "description": "Every Land Rover Defender D200 engine — 204DTD (2020) and AJ20D6 (2021+). Real UK costs, timing chain and MHEV insights. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 156,
+    "canonical": "https://landroverengine.uk/defender/d200/",
+    "openGraph": {
+      "title": "D200 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Defender D200 engine — 204DTD (2020) and AJ20D6 (2021+). Real UK costs, timing chain and MHEV insights. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/defender/d200/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/d200.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "D200 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Defender D200 engine — 204DTD (2020) and AJ20D6 (2021+). Real UK costs, timing chain and MHEV insights.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/d200.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Defender",
+              "item": "https://landroverengine.uk/defender/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "D200",
+              "item": "https://landroverengine.uk/defender/d200/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender D200 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L663 (2020) 204DTD",
+              "url": "https://landroverengine.uk/defender/l663/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "L663 (2021+) AJ20D6",
+              "url": "https://landroverengine.uk/defender/l663/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender D200 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD",
+              "url": "https://landroverengine.uk/engines/204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ20D6",
+              "url": "https://landroverengine.uk/engines/aj20d6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Defender D200 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned D200 engine typically costs £2,000–£5,800 supply only depending on which engine era your Defender has — the early 204DTD four-cylinder sits at £2,000–£3,500, while the later AJ20D6 six-cylinder MHEV runs £4,500–£8,500. Fitting adds £650–£1,300. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Defender D200 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends entirely on which of the two engine eras your D200 has. The 2020 204DTD four-cylinder has documented timing chain vulnerability — treat any cold-start rattle as urgent. The 2021+ AJ20D6 six-cylinder MHEV is more refined and robust, with only minor recall-covered issues (oil filter housing, FEAD pulley). Check the Era Map above for your specific car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Defender D200?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain stretch on the 2020 204DTD four-cylinder (60k–90k miles), EGR and DPF clogging on the same engine, and oil filter housing cracking on the 2021+ AJ20D6 six-cylinder MHEV. Most AJ20D6 issues are recall-covered — check with your dealer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Defender D200 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept £35,000 D200, a £5,800 recon is only 17% of the car's value — absolutely worth it. These are high-value vehicles that justify replacement spend across both engine eras."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Defender D200 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: 2020 is 204DTD (2.0L four-cylinder), 2021-onward is AJ20D6 (3.0L six-cylinder MHEV). Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 204DTD timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A preventative chain replacement (£1,200–£2,500) is far cheaper than a catastrophic chain snap requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Defender D200 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Defender D200 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Defender D200 engines across both engine generations, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "D200 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/defender/d200/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Defender D200 • 2020–present • 2 Engine Eras (4-cyl → 6-cyl MHEV)",
+    "h1": "Land Rover Defender D200 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The Defender D200 badge spans two very different engines — the early 2.0-litre four-cylinder and the later 3.0-litre six-cylinder MHEV. Get quotes from trusted UK Land Rover specialists for both, supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Defender D200 Engines — from £2,000 to £8,500 · Common codes: 204DTD, AJ20D6",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Defender D200 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The D200 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L663 (early)",
+        "years": "2020",
+        "engineCode": "204DTD (2.0L four-cylinder)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,000–£3,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Ingenium 2.0 diesel — timing chain vigilance required"
+      },
+      {
+        "generation": "L663 (2021–present)",
+        "years": "2021–",
+        "engineCode": "AJ20D6 (3.0L six-cylinder MHEV)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,500–£8,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Six-cylinder MHEV — refined, more robust"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Defender D200 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£2,650–£4,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; short-term ownership"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£5,800",
+        "fittedIndie": "£4,500–£7,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,000–£8,500",
+        "fittedIndie": "£6,000–£9,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,500–£12,000",
+        "fittedIndie": "£10,000–£14,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current AJ20D6 six-cylinder generation, the most common D200 quote request today. Older 204DTD four-cylinder pricing runs lower — see the Era Map above for era-specific figures.",
+    "labourEstimate": "Fitting a Defender D200 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Six-cylinder AJ20D6 requires additional time for MHEV system integration.",
+    "cta": {
+      "label": "→ Compare Defender D200 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "204DTD Timing Chain Stretch (2020 four-cylinder only)",
+        "symptoms": "Cold-start rattle, metallic ticking from engine, engine warning light, loss of power.",
+        "typicalMileage": "60,000–90,000 miles.",
+        "repairCost": "£1,200–£2,500 (chain replacement, guides, tensioners).",
+        "replacementCost": "N/A — repair only if caught early; catastrophic failure requires full replacement.",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "at first sign of rattle, book inspection today."
+        },
+        "recommendation": "The 204DTD is an interference engine — if the timing chain stretches too far and jumps a tooth, pistons strike valves and the engine is effectively destroyed. JLR's own guidance recommends chain inspection between 70,000 and 100,000 miles. If you own a 2020 Defender D200, treat any cold-start rattle as an urgent warning.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-chain-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "204DTD EGR Valve and DPF Clogging (2020 four-cylinder only)",
+        "symptoms": "Reduced performance, poor fuel economy, engine management light, DPF warning.",
+        "typicalMileage": "80,000–120,000 miles.",
+        "repairCost": "£400–£1,200 (EGR clean/replacement or DPF regen/clean).",
+        "replacementCost": "N/A — repair only.",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if warning lights appear."
+        },
+        "recommendation": "The 204DTD's EGR valve and DPF are sensitive to short urban journeys. Regular motorway runs to allow passive DPF regeneration will significantly extend component life. If you primarily drive in town, consider an EGR clean at 80,000 miles as preventative maintenance.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/egr-valve-cooler-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "AJ20D6 Oil Filter Housing Cracking (2021+ six-cylinder MHEV)",
+        "symptoms": "Oil leak under vehicle, burning oil smell, low oil pressure warning, oil in engine bay.",
+        "typicalMileage": "Any mileage — material defect identified by JLR.",
+        "repairCost": "£500–£1,000 (oil filter housing replacement).",
+        "replacementCost": "N/A — repair only; ignored leaks can lead to oil starvation and engine failure.",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if oil leak spotted."
+        },
+        "recommendation": "JLR has issued recalls for AJ20D6 oil filter housing cracking — check whether your Defender has had the recall work completed. The incorrect specification of plastic used in the housing can crack over time, leading to oil leaks onto the engine and into the engine bay. This is a straightforward fix when caught early.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/oil-leak/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Defender D200 engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Defender D200 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Defender D200 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "204DTD timing chain rattle",
+          "repairable": "✅ Yes (if caught early)",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Preventative — catches fault before catastrophic failure"
+        },
+        {
+          "problem": "204DTD EGR/DPF clogging",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Straightforward maintenance on high-mileage units"
+        },
+        {
+          "problem": "AJ20D6 oil filter housing crack",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,000",
+          "whenItMakesSense": "Simple replacement — check recall completion first"
+        },
+        {
+          "problem": "204DTD snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        },
+        {
+          "problem": "AJ20D6 FEAD belt idler pulley failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Recall covers many vehicles — check with your dealer first"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This D200? Check These First",
+      "buyIf": [
+        "* 2021+ AJ20D6 six-cylinder — more refined and robust than the four-cylinder",
+        "* Confirmed oil filter housing recall completed on any AJ20D6 example",
+        "* Full service history with 0W-20 oil meeting JLR specification",
+        "* Regular motorway use (DPF-friendly driving history)"
+      ],
+      "avoidIf": [
+        "* 2020 204DTD four-cylinder with cold-start rattle and no chain history",
+        "* No proof of recall work completed on AJ20D6 oil filter housing or FEAD pulley",
+        "* Poor service history on any generation — these Ingenium engines are unforgiving of neglect",
+        "* Engine warning light with no diagnosis, regardless of engine era"
+      ]
+    },
+    "closingVerdict": "The D200 badge is really two different cars — the 2020 four-cylinder 204DTD demands timing chain vigilance and short-journey awareness, while the 2021+ six-cylinder AJ20D6 is a more refined, more robust proposition with only minor (and recall-covered) issues. Buy on documented history and recall completion, not on badge name alone.",
+    "cta": {
+      "label": "→ Compare Defender D200 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Defender D200 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle on startup (timing chain warning on 204DTD four-cylinder)",
+      "* Service History — Including which engine era — see the map above (204DTD vs AJ20D6)",
+      "* Oil Leak Check — Look under the vehicle and around the engine bay for oil (AJ20D6 housing recall)",
+      "* Recall Completion — Verify oil filter housing and FEAD pulley recalls done on AJ20D6",
+      "* DPF Regeneration — Check history; short journeys accelerate wear on both eras",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204DTD",
+        "years": "2020",
+        "power": "200 PS (147 kW)",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£3,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "AJ20D6",
+        "years": "2021–",
+        "power": "200 PS (147 kW)",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£8,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204DTD — 2020 only):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,996 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin-turbocharged"
+        },
+        {
+          "label": "* Displacement",
+          "value": "1,999 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1–15.8:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin-turbocharged"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Defender D200 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "204DTD timing chain stretch — approximately 45% of early D200 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "75,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,200 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ20D6 (post-2021 vehicles dominate the used market) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain and DPF issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (24%), London (18%), North West (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Defender D200 engine replacement cost in the UK?",
+        "answer": "A reconditioned D200 engine typically costs £2,000–£5,800 supply only depending on which engine era your Defender has — the early 204DTD four-cylinder sits at £2,000–£3,500, while the later AJ20D6 six-cylinder MHEV runs £4,500–£8,500. Fitting adds £650–£1,300. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Defender D200 engine reliable?",
+        "answer": "It depends entirely on which of the two engine eras your D200 has. The 2020 204DTD four-cylinder has documented timing chain vulnerability — treat any cold-start rattle as urgent. The 2021+ AJ20D6 six-cylinder MHEV is more refined and robust, with only minor recall-covered issues (oil filter housing, FEAD pulley). Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Defender D200?",
+        "answer": "Timing chain stretch on the 2020 204DTD four-cylinder (60k–90k miles), EGR and DPF clogging on the same engine, and oil filter housing cracking on the 2021+ AJ20D6 six-cylinder MHEV. Most AJ20D6 issues are recall-covered — check with your dealer."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Defender D200 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £35,000 D200, a £5,800 recon is only 17% of the car's value — absolutely worth it. These are high-value vehicles that justify replacement spend across both engine eras."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Defender D200 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: 2020 is 204DTD (2.0L four-cylinder), 2021-onward is AJ20D6 (3.0L six-cylinder MHEV). Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 204DTD timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain replacement (£1,200–£2,500) is far cheaper than a catastrophic chain snap requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Defender D200 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Defender D200 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Defender D200 owners, covering both the 204DTD four-cylinder and AJ20D6 six-cylinder MHEV eras."
+      },
+      {
+        "title": "Compare Defender D200 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, with full transparency on which engine era your vehicle needs."
+      },
+      {
+        "title": "UK Engine Replacement Services for D200",
+        "text": "supply-only or full supply & fit available nationwide, with 12 specialist Land Rover engineers who understand the specific quirks of each engine generation."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Defender D200 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Defender D200 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

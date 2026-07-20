@@ -406,16 +406,16 @@
     "buyingChecks": {
       "title": "Buying This Defender 2.5 Diesel? Check These First",
       "buyIf": [
-        "12J: Simple, robust, and under-stressed — the most reliable pre-Tdi diesel",
-        "Documented regular oil changes — both 12J and 19J depend on it",
-        "Known head history (19J) or pump history (12J)",
-        "A 19J with a recent cylinder head replacement (ideally with uprated bolts)"
+        "* 12J: Simple, robust, and under-stressed — the most reliable pre-Tdi diesel",
+        "* Documented regular oil changes — both 12J and 19J depend on it",
+        "* Known head history (19J) or pump history (12J)",
+        "* A 19J with a recent cylinder head replacement (ideally with uprated bolts)"
       ],
       "avoidIf": [
-        "19J with no documented head work — factoring in a head replacement is essential",
-        "Overheating history on either engine — these are low-tolerance cooling systems",
-        "High-mileage 19J showing any sign of pressurisation in the cooling system",
-        "Poor glow plug or starting performance on either engine — often indicates wider issues"
+        "* 19J with no documented head work — factoring in a head replacement is essential",
+        "* Overheating history on either engine — these are low-tolerance cooling systems",
+        "* High-mileage 19J showing any sign of pressurisation in the cooling system",
+        "* Poor glow plug or starting performance on either engine — often indicates wider issues"
       ]
     },
     "closingVerdict": "The Defender 2.5 diesel badge spans two very different engines — the naturally aspirated 12J and the turbocharged 19J. The 12J is the safer bet for long-term ownership: uncomplicated, slow, and famously reliable, albeit loud and low on power. The 19J offers a significant performance uplift but demands respect for its cylinder head weakness. Budget for a head replacement on any unproven 19J, and you'll be on the right side of the cost equation. See the Era Map above for your specific engine.",
@@ -427,14 +427,14 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Land Rover Defender with a 2.5 diesel engine (or before you commit to an engine replacement), check these:",
     "items": [
-      "Cold Start — Does it start cleanly? Glow plugs are often the first thing to fail",
-      "Service History — including which engine era (12J or 19J) — see the map above",
-      "Coolant Condition — Any oil in coolant or coolant loss? (crucial on 19J)",
-      "Turbo/Boost Check — 19J only: does it boost cleanly? Any whistling?",
-      "Head Gasket Signs — 19J only: check for pressurisation, mayo in oil cap",
-      "Oil Consumption — Does it use more than 1L per 1,000 miles?",
-      "Injection Pump Health — 12J only: any hard starting or smoke on acceleration?",
-      "MOT History — Check for emissions-related failures or structural rot (chassis, bulkhead)"
+      "1. Cold Start — Does it start cleanly? Glow plugs are often the first thing to fail",
+      "2. Service History — including which engine era (12J or 19J) — see the map above",
+      "3. Coolant Condition — Any oil in coolant or coolant loss? (crucial on 19J)",
+      "4. Turbo/Boost Check — 19J only: does it boost cleanly? Any whistling?",
+      "5. Head Gasket Signs — 19J only: check for pressurisation, mayo in oil cap",
+      "6. Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "7. Injection Pump Health — 12J only: any hard starting or smoke on acceleration?",
+      "8. MOT History — Check for emissions-related failures or structural rot (chassis, bulkhead)"
     ]
   },
   "engineCodes": {
@@ -466,23 +466,23 @@
       "title": "Technical Specs (12J and 19J overview):",
       "items": [
         {
-          "label": "Displacement",
+          "label": "* Displacement",
           "value": "2,495cc (both engines)"
         },
         {
-          "label": "Cylinders",
+          "label": "* Cylinders",
           "value": "4-cylinder inline"
         },
         {
-          "label": "Compression Ratio",
+          "label": "* Compression Ratio",
           "value": "21.0:1 (12J) / 20.0:1 (19J)"
         },
         {
-          "label": "Fuel System",
+          "label": "* Fuel System",
           "value": "Indirect injection (both, with CAV/Bosch pumps)"
         },
         {
-          "label": "Turbocharger",
+          "label": "* Turbocharger",
           "value": "N/A (12J) / Garrett T2 (19J)"
         }
       ]

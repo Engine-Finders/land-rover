@@ -1,0 +1,840 @@
+{
+  "meta": {
+    "slug": "discovery-l462",
+    "title": "L462 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 48,
+    "description": "Every Land Rover Discovery 5 L462 engine — from the 2.0 Ingenium diesel to the supercharged V6 and the SVX V8. Real UK costs, honest reliability data. Compare prices from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 154,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery",
+              "item": "https://landroverengine.uk/discovery/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Land Rover Discovery 5 L462",
+              "item": "https://landroverengine.uk/discovery/l462/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 5 L462 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD/204DTA Ingenium 2.0 Diesel",
+              "url": "https://landroverengine.uk/engines/204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "306DT AJD V6 Diesel",
+              "url": "https://landroverengine.uk/engines/306dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "PT204 Ingenium 2.0 Petrol",
+              "url": "https://landroverengine.uk/engines/pt204/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "AJ126 3.0 V6 Supercharged Petrol",
+              "url": "https://landroverengine.uk/engines/aj126/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "AJ133 5.0 V8 Supercharged Petrol",
+              "url": "https://landroverengine.uk/engines/aj133/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "PT306/306PS Ingenium 3.0 MHEV Petrol",
+              "url": "https://landroverengine.uk/engines/pt306/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 5 L462 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "TD4",
+              "url": "https://landroverengine.uk/discovery/l462/td4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "SD4",
+              "url": "https://landroverengine.uk/discovery/l462/sd4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "TD6",
+              "url": "https://landroverengine.uk/discovery/l462/td6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "SD6",
+              "url": "https://landroverengine.uk/discovery/l462/sd6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "P300",
+              "url": "https://landroverengine.uk/discovery/l462/p300/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "P360",
+              "url": "https://landroverengine.uk/discovery/l462/p360/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "P400",
+              "url": "https://landroverengine.uk/discovery/l462/p400/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Si6",
+              "url": "https://landroverengine.uk/discovery/l462/si6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "SVX",
+              "url": "https://landroverengine.uk/discovery/l462/svx/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery 5 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned L462 engine costs between £3,000 and £9,500 supply-only, depending on the engine — the 2.0 Ingenium diesel ranges £3,500–£5,800, while the 3.0 V6 diesel runs £6,500–£9,500. Fitting adds 10–20 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover Discovery 5 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The PT204 2.0-litre Ingenium petrol (P300) — it's simpler than the V6 and V8 petrols, with no supercharger cooling complexity, and more reliable than the diesel Ingenium which suffers from early timing-chain tensioner issues. Post-2019 diesel Ingenium units are improved."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Discovery 5?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner failure on pre-2019 2.0 Ingenium diesels, crankshaft bearing failure on the 3.0 V6 diesel (306DT), and water pump/coolant leaks on the 3.0 supercharged V6 petrol (AJ126). The newer mild-hybrid six-cylinder petrols (P360/P400) have too few miles to show major patterns."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery 5 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends heavily on the engine and model year. The 2.0 diesel Ingenium (pre-2019) carries the highest risk; post-2019 units are improved. The V6 diesel is known for catastrophic bearing failure if not maintained. Petrol options generally fare better, with the 2.0 P300 being the most dependable overall."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover Discovery 5 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 306DT 3.0 V6 diesel without a documented service history and a cold-start knock inspection. We consistently advise buyers to steer clear of early 2.0 Ingenium diesels (pre-2019) without evidence of timing-chain replacement. If you must have a diesel, choose a post-2019 2.0 SD4 with full service records."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my L462 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cold-start rattle (timing chain on diesel Ingenium), knocking on startup (V6 diesel bearing failure), persistent coolant loss or overheating (AJ126 petrol), or blue smoke and rough idle on any high-mileage unit are the key warning signs. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Land Rover Discovery 5 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 60% Land Rover scrap threshold. Against a well-kept £18,000 L462, a £6,500 306DT recon is 36% of the car's value — safe. Against a tired £10,000 early example, the same recon is 65% — borderline. For sub-£8,000 examples, we'd recommend walking away."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do Land Rover Discovery 5 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2.0 Ingenium diesel can exceed 150,000 miles if the timing chain is addressed proactively. The V6 diesel (306DT) is capable of 150,000+ miles but requires scrupulous oil changes (5,000-mile intervals) to avoid bearing failure. Petrol engines typically last 150,000+ with routine servicing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the L462 and other Discovery generations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The L462 is the current fifth-generation Discovery 5, built from 2016 onwards. It shares its aluminium D7u platform with the Range Rover and Range Rover Sport, offering significantly lighter weight and better on-road dynamics than the previous body-on-frame Discovery 4 (L319). There is only one body style for the Discovery 5 — the 5-door SUV."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Discovery 5 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate, vehicle documentation, and often on a sticker in the driver's door jamb. For 2.0 diesels, look for 204DTD (TD4) or 204DTA (SD4); for 3.0 diesel, 306DT (TD6/SD6); for petrols, PT204 (P300), AJ126 (Si6), AJ133 (SVX), or PT306/306PS (P360/P400). Tell us your variant and year, and we'll confirm."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery 5 L462 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "9500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery 5 L462 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Discovery 5 L462 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "L462 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery/l462/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-08",
+          "dateModified": "2026-07-08"
+        }
+      ]
+    }
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery 5 L462 • SUV • 2016–present",
+    "h1": "Land Rover Discovery 5 L462 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the Discovery 5 L462 — from the Ingenium 2.0-litre diesel four to the 3.0-litre supercharged V6 and the limited-run 5.0-litre SVX V8. Real UK costs, honest failure data, and the Ingenium timing-chain question that defines this generation's ownership experience. Backed by 292+ real UK Discovery 5 enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "292+ L462 Enquiries (2025) [EM-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "SUV"
+      },
+      {
+        "icon": "📖",
+        "label": "8 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore L462 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Land Rover Discovery 5 L462 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the Discovery 5 specifically — from launch in 2016 through the 2020 facelift and current mild-hybrid models.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (L462)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "204DTD",
+        "family": "Ingenium I4",
+        "fuel": "Diesel",
+        "displacement": "2.0L",
+        "power": "180 bhp",
+        "years": "2016–present",
+        "variants": "TD4",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "1,150 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£3,500–£5,800"
+      },
+      {
+        "engineCode": "204DTA",
+        "family": "Ingenium I4",
+        "fuel": "Diesel",
+        "displacement": "2.0L",
+        "power": "241 bhp",
+        "years": "2016–present",
+        "variants": "SD4",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "1,150 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£3,500–£5,800"
+      },
+      {
+        "engineCode": "306DT",
+        "family": "AJD V6",
+        "fuel": "Diesel",
+        "displacement": "3.0L",
+        "power": "211–306 bhp",
+        "years": "2016–present",
+        "variants": "TD6, SD6",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "980 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£6,500–£9,500"
+      },
+      {
+        "engineCode": "PT204",
+        "family": "Ingenium I4",
+        "fuel": "Petrol",
+        "displacement": "2.0L",
+        "power": "300 bhp",
+        "years": "2017–present",
+        "variants": "P300",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "480 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£3,000–£5,000"
+      },
+      {
+        "engineCode": "AJ126",
+        "family": "AJ126 V6",
+        "fuel": "Petrol, supercharged",
+        "displacement": "3.0L",
+        "power": "340 bhp",
+        "years": "2016–2020",
+        "variants": "Si6",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "560 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£4,500–£7,500"
+      },
+      {
+        "engineCode": "AJ133",
+        "family": "AJ133 V8",
+        "fuel": "Petrol, supercharged",
+        "displacement": "5.0L",
+        "power": "525–557 bhp",
+        "years": "Limited (SVX)",
+        "variants": "SVX",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "330 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£5,500–£9,000"
+      },
+      {
+        "engineCode": "PT306 (AJ20P6)",
+        "family": "Ingenium I6",
+        "fuel": "Petrol MHEV",
+        "displacement": "3.0L",
+        "power": "360 bhp",
+        "years": "2020–present",
+        "variants": "P360",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£7,500"
+      },
+      {
+        "engineCode": "306PS",
+        "family": "Ingenium I6",
+        "fuel": "Petrol MHEV",
+        "displacement": "3.0L",
+        "power": "400 bhp",
+        "years": "2020–present",
+        "variants": "P400",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "80 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£4,500–£7,500"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Land Rover Discovery 5 L462 — Overview",
+    "intro": "The Discovery 5 L462 is the fifth generation of Land Rover's family SUV, launched in December 2016. It abandoned the body-on-frame construction of the Discovery 3 and 4 for an aluminium unitary platform shared with the Range Rover L405 and Range Rover Sport L494, delivering a significantly lighter, more road-focused vehicle while retaining genuine off-road capability. The engine line-up spans 2.0-litre Ingenium four-cylinder diesels, a 3.0-litre V6 diesel, 2.0-litre and 3.0-litre petrol options, and a limited-run 5.0-litre supercharged V8 in the SVX. A 2020 facelift introduced mild-hybrid six-cylinder petrol engines (P360, P400).",
+    "keyFacts": "Platform: Aluminium D7u (shared with Range Rover L405, Range Rover Sport L494) • Predecessor: Discovery 4 (L319) • Successor: Current model — on sale • Sibling body styles: None — L462 is sole Discovery 5 body style",
+    "marketIntelligenceLine": "The Discovery 5 L462 generated real UK engine enquiries in 2025, with the Ingenium 2.0-litre diesel (204DTD/204DTA) accounting for the largest share of the 1,150 JLR-wide figure, followed by the 3.0-litre V6 diesel (306DT) at 980 enquiries."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "204DTA 2.0-litre Ingenium SD4 (241 bhp) — The higher-output Ingenium diesel delivers 241 bhp and 500 Nm of torque, making the L462 genuinely brisk despite its 2.2-tonne kerb weight. Later (post-2019) units benefit from revised timing-chain tensioners that address the pre-2019 failure risk.",
+        "quote": "",
+        "whoItsFor": "buyers who want diesel economy without the V6's fuel consumption."
+      },
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "PT204 2.0-litre Ingenium P300 — The 300 bhp four-cylinder petrol is the most reliable petrol in the L462 line-up. No turbocharger complexity beyond a single unit, no supercharger cooling system to manage, and a simpler overall architecture than the V6 and V8 options.",
+        "quote": "",
+        "whoItsFor": "buyers who want petrol reliability without the V6's fuel consumption."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "306DT 3.0-litre V6 Diesel — The AJD V6 diesel suffers from crankshaft bearing failure (tin-aluminium coating fatigue) at 80,000–140,000 miles, often preceded by cold-start knock. A bottom-end rebuild costs £5,500–£7,000; a full reconditioned replacement runs £6,500–£9,500.",
+        "quote": "",
+        "whoItsFor": "only buyers with full service history and a warranty."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "AJ133 5.0-litre Supercharged V8 (SVX) — The limited-run SVX V8 is the most expensive engine in the L462 line-up to replace, with reconditioned units costing £5,500–£9,000 supply-only. Timing-chain guide wear is the primary risk, similar to other Jaguar-Land Rover V8s.",
+        "quote": "",
+        "whoItsFor": "collectors and enthusiasts who accept the premium."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "204DTA 2.0-litre Ingenium SD4 — The 241 bhp diesel four offers the best balance of performance, economy, and running costs. Post-2019 units are significantly more reliable than the V6 diesel, and the recon cost is substantially lower than the 306DT.",
+        "quote": "",
+        "whoItsFor": "the majority of Discovery 5 buyers."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "PT306 (AJ20P6) 3.0-litre P360 MHEV — The mild-hybrid six-cylinder petrol, introduced with the 2020 facelift, delivers 360 bhp with significantly better fuel economy than the supercharged AJ126 it replaced. Too new for major failure patterns to have emerged.",
+        "quote": "",
+        "whoItsFor": "buyers who want six-cylinder petrol refinement without the AJ126's cooling-system concerns."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "Land Rover Discovery 5 L462 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "204DTD/204DTA",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Timing chain tensioner",
+        "repairCostSpecialist": "£1,200–£2,500",
+        "replacementCostRecon": "£3,500–£5,800",
+        "ownershipVerdict": "Risk vs Reward — pre-2019 units: budget for chain work"
+      },
+      {
+        "engine": "306DT",
+        "typicalMileage": "80k–140k",
+        "commonMajorFailure": "Crankshaft bearing failure",
+        "repairCostSpecialist": "£5,500–£7,000",
+        "replacementCostRecon": "£6,500–£9,500",
+        "ownershipVerdict": "Most Expensive — catastrophic if ignored"
+      },
+      {
+        "engine": "PT204",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Water pump",
+        "repairCostSpecialist": "£400–£800",
+        "replacementCostRecon": "£3,000–£5,000",
+        "ownershipVerdict": "Best Petrol — reliable, simple"
+      },
+      {
+        "engine": "AJ126",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Water pump, coolant leaks",
+        "repairCostSpecialist": "£600–£1,200",
+        "replacementCostRecon": "£4,500–£7,500",
+        "ownershipVerdict": "Solid Choice — cooling system is the watch-item"
+      },
+      {
+        "engine": "AJ133",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Timing chain guide wear",
+        "repairCostSpecialist": "£2,500–£4,500",
+        "replacementCostRecon": "£5,500–£9,000",
+        "ownershipVerdict": "Collector's Premium — SVX only"
+      },
+      {
+        "engine": "PT306/306PS",
+        "typicalMileage": "— (too new)",
+        "commonMajorFailure": "Cooling system (emerging)",
+        "repairCostSpecialist": "£300–£600",
+        "replacementCostRecon": "£4,500–£7,500",
+        "ownershipVerdict": "Too Early — no major pattern yet"
+      }
+    ],
+    "economicsRule": {
+      "title": "The L462 rule",
+      "text": "A £6,500–£9,500 306DT recon against a £10,000–£14,000 early Discovery 5 sits at 46–95% of the car's value. On a sub-£12,000 L462, that brushes our 60% Land Rover threshold — we'll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 36–53% — a repair decision, not a financial one. Value the car first."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which L462 Costs Least To Own?",
+        "answer": "PT204 2.0-litre petrol — cheapest recon, simplest architecture."
+      },
+      {
+        "question": "Which L462 Costs Most To Own?",
+        "answer": "306DT V6 diesel — crankshaft bearing failure is catastrophic and expensive."
+      },
+      {
+        "question": "Which L462 Is Best Value?",
+        "answer": "204DTA 2.0-litre SD4 diesel — best balance of performance, economy, and running costs."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Ingenium 2.0 Diesel Timing Chain Tensioner Failure",
+        "affectedModels": "L462 2.0-litre TD4 and SD4 (204DTD, 204DTA), particularly pre-2019 units.",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The timing chain tensioner on early Ingenium 2.0-litre diesel engines can fail, leading to chain stretch and, in catastrophic cases, engine destruction. Oil dilution from DPF regeneration accelerates tensioner wear.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,800–£3,000",
+            "specialist": "£1,200–£2,500",
+            "work": "Chain, tensioner, guides replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,500–£8,000",
+            "specialist": "£4,500–£6,500",
+            "work": "Full reconditioned engine",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any pre-2019 L462 diesel, have the timing chain inspected at 60,000 miles — a £1,200–£2,500 preventative repair is cheaper than the £4,500–£6,500 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare 204DTD/204DTA engine prices for your Discovery 5 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "306DT V6 Diesel Crankshaft Bearing Failure",
+        "affectedModels": "L462 3.0-litre TD6 and SD6 (306DT).",
+        "typicalFailureMileage": "80,000–140,000 miles.",
+        "rootCause": "The tin-aluminium coating on the crankshaft bearings fatigues over time, leading to bearing failure. Cold-start knock is the classic early warning; ignored, it causes catastrophic bottom-end failure.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£6,500–£8,500",
+            "specialist": "£5,500–£7,000",
+            "work": "Bottom-end bearing replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£8,500–£12,000",
+            "specialist": "£6,500–£9,500",
+            "work": "Full reconditioned engine",
+            "note": ""
+          }
+        ],
+        "recommendation": "If your L462 306DT exhibits cold-start knock, stop driving and have the bottom end inspected immediately — £5,500–£7,000 now is far cheaper than the £6,500–£9,500 replacement that follows a full failure.",
+        "cta": {
+          "label": "Compare 306DT engine prices for your Discovery 5 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "AJ126 3.0 V6 Supercharged Petrol Cooling System Failure",
+        "affectedModels": "L462 Si6 (2016–2020).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "Water pump failure and coolant leaks from crossover pipes are well-documented on the supercharged V6. The supercharger sits in the engine's 'V', making access to cooling components labour-intensive.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,600",
+            "specialist": "£600–£1,200",
+            "work": "Water pump, thermostat, coolant pipes",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£9,000",
+            "specialist": "£4,500–£7,500",
+            "work": "Full reconditioned engine",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any L462 Si6 approaching 60,000 miles, replace the water pump as preventative maintenance — £600–£1,200 now is cheaper than the £4,500+ engine replacement that follows an overheat.",
+        "cta": {
+          "label": "Compare AJ126 engine prices for your Discovery 5 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "L462 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "2.0 TD4/SD4",
+        "engineCode": "204DTD/204DTA",
+        "usedSupply": "£2,000–£3,500",
+        "reconditionedSupply": "£3,500–£5,800",
+        "rebuiltSupply": "£4,800–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "2.0 P300",
+        "engineCode": "PT204",
+        "usedSupply": "£1,500–£2,800",
+        "reconditionedSupply": "£3,000–£5,000",
+        "rebuiltSupply": "£4,200–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "3.0 TD6/SD6",
+        "engineCode": "306DT",
+        "usedSupply": "£3,500–£5,500",
+        "reconditionedSupply": "£6,500–£9,500",
+        "rebuiltSupply": "£7,500–£11,000",
+        "labourHours": "15–20 hrs"
+      },
+      {
+        "variant": "3.0 Si6",
+        "engineCode": "AJ126",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,500",
+        "rebuiltSupply": "£6,000–£9,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "5.0 SVX",
+        "engineCode": "AJ133",
+        "usedSupply": "£3,000–£5,500",
+        "reconditionedSupply": "£5,500–£9,000",
+        "rebuiltSupply": "£8,000–£12,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "3.0 P360/P400",
+        "engineCode": "PT306/306PS",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,500",
+        "rebuiltSupply": "£6,500–£10,000",
+        "labourHours": "12–16 hrs"
+      }
+    ],
+    "note": ""
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "D200",
+      "D250",
+      "D300",
+      "SD4",
+      "SD6",
+      "TD4",
+      "TD6"
+    ],
+    "petrolVariants": [
+      "P300",
+      "P360",
+      "P400",
+      "Si6",
+      "SVX"
+    ],
+    "scopeNote": "All variants listed are L462 Discovery 5 only. Engine fitment varies by year — the 2020 facelift introduced P360 and P400 mild-hybrid six-cylinder petrol units (PT306/306PS), while the SVX (AJ133 V8) was a limited-run model."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [
+      "1. 204DTD/204DTA 2.0 Ingenium Diesel (1,150 JLR-wide enquiries)",
+      "2. 306DT 3.0 V6 Diesel (980)",
+      "3. AJ126 3.0 V6 Supercharged Petrol (560)"
+    ],
+    "mostRequestedVariants": [
+      "1. TD4 (2.0 diesel)",
+      "2. SD4 (2.0 high-output diesel)",
+      "3. TD6 (3.0 V6 diesel)"
+    ],
+    "averageReplacementCost": "£1,500–£9,500 supply-only [EM-QUOTE]",
+    "mostCommonFailures": [
+      "1. Ingenium 2.0 diesel timing chain tensioner",
+      "2. 306DT V6 diesel crankshaft bearing failure",
+      "3. AJ126 V6 petrol cooling system leaks"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "Land Rover Discovery 5 TD4 (204DTD)",
+        "location": "Birmingham",
+        "issue": "Cold-start timing chain rattle",
+        "enquiries": "5 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Land Rover Discovery 5 TD6 (306DT)",
+        "location": "Manchester",
+        "issue": "Crankshaft knock on startup",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Land Rover Discovery 5 Si6 (AJ126)",
+        "location": "London",
+        "issue": "Coolant loss, overheating",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Discovery 5 engine replacement cost in the UK?",
+        "answer": "A reconditioned L462 engine costs between £3,000 and £9,500 supply-only [EM-QUOTE], depending on the engine — the 2.0 Ingenium diesel ranges £3,500–£5,800, while the 3.0 V6 diesel runs £6,500–£9,500. Fitting adds 10–20 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+      },
+      {
+        "id": 2,
+        "question": "Which Land Rover Discovery 5 engine is the most reliable?",
+        "answer": "The PT204 2.0-litre Ingenium petrol (P300) — it's simpler than the V6 and V8 petrols, with no supercharger cooling complexity, and more reliable than the diesel Ingenium which suffers from early timing-chain tensioner issues. Post-2019 diesel Ingenium units are improved."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Discovery 5?",
+        "answer": "Timing chain tensioner failure on pre-2019 2.0 Ingenium diesels, crankshaft bearing failure on the 3.0 V6 diesel (306DT), and water pump/coolant leaks on the 3.0 supercharged V6 petrol (AJ126). The newer mild-hybrid six-cylinder petrols (P360/P400) have too few miles to show major patterns."
+      },
+      {
+        "id": 4,
+        "question": "Is the Land Rover Discovery 5 reliable?",
+        "answer": "It depends heavily on the engine and model year. The 2.0 diesel Ingenium (pre-2019) carries the highest risk; post-2019 units are improved. The V6 diesel is known for catastrophic bearing failure if not maintained. Petrol options generally fare better, with the 2.0 P300 being the most dependable overall."
+      },
+      {
+        "id": 5,
+        "question": "Which Land Rover Discovery 5 engine should I avoid?",
+        "answer": "The 306DT 3.0 V6 diesel without a documented service history and a cold-start knock inspection. We consistently advise buyers to steer clear of early 2.0 Ingenium diesels (pre-2019) without evidence of timing-chain replacement. If you must have a diesel, choose a post-2019 2.0 SD4 with full service records."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my L462 engine needs replacing?",
+        "answer": "Cold-start rattle (timing chain on diesel Ingenium), knocking on startup (V6 diesel bearing failure), persistent coolant loss or overheating (AJ126 petrol), or blue smoke and rough idle on any high-mileage unit are the key warning signs. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Land Rover Discovery 5 engine, or should I scrap the car?",
+        "answer": "Apply the 60% Land Rover scrap threshold. Against a well-kept £18,000 L462, a £6,500 306DT recon is 36% of the car's value — safe. Against a tired £10,000 early example, the same recon is 65% — borderline. For sub-£8,000 examples, we'd recommend walking away."
+      },
+      {
+        "id": 8,
+        "question": "How long do Land Rover Discovery 5 engines last?",
+        "answer": "The 2.0 Ingenium diesel can exceed 150,000 miles if the timing chain is addressed proactively. The V6 diesel (306DT) is capable of 150,000+ miles but requires scrupulous oil changes (5,000-mile intervals) to avoid bearing failure. Petrol engines typically last 150,000+ with routine servicing."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the L462 and other Discovery generations?",
+        "answer": "The L462 is the current fifth-generation Discovery 5, built from 2016 onwards. It shares its aluminium D7u platform with the Range Rover and Range Rover Sport, offering significantly lighter weight and better on-road dynamics than the previous body-on-frame Discovery 4 (L319). There is only one body style for the Discovery 5 — the 5-door SUV."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Land Rover Discovery 5 engine code?",
+        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and often on a sticker in the driver's door jamb. For 2.0 diesels, look for 204DTD (TD4) or 204DTA (SD4); for 3.0 diesel, 306DT (TD6/SD6); for petrols, PT204 (P300), AJ126 (Si6), AJ133 (SVX), or PT306/306PS (P360/P400). Tell us your variant and year, and we'll confirm."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Discovery 5 L462 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted L462 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Discovery 5 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare L462 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for L462",
+        "text": "covering every variant from TD4 to SVX, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Discovery 5 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Discovery 5 L462 Engine Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

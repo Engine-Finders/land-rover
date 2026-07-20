@@ -1,0 +1,506 @@
+{
+  "meta": {
+    "slug": "evoque-p300e",
+    "title": "Evoque P300e Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 53,
+    "description": "Land Rover Range Rover Evoque P300e 1.5 Ingenium petrol hybrid — real UK costs, cooling & chain watchpoints. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/evoque/p300e/",
+    "openGraph": {
+      "title": "Evoque P300e Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover Evoque P300e 1.5 Ingenium petrol hybrid — real UK costs, cooling & chain watchpoints. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/evoque/p300e/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/evoque-p300e.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Evoque P300e Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover Evoque P300e 1.5 Ingenium petrol hybrid — real UK costs, cooling & chain watchpoints.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/evoque-p300e.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Evoque",
+              "item": "https://landroverengine.uk/evoque/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Evoque L551",
+              "item": "https://landroverengine.uk/evoque/l551/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "P300e",
+              "item": "https://landroverengine.uk/evoque/p300e/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Evoque P300e Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L551 P300e (AJ20P3 + e‑motor, 2020–present)",
+              "url": "https://landroverengine.uk/evoque/l551/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Evoque P300e Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ20P3 (1.5-litre 3-cyl Ingenium petrol) + e‑motor",
+              "url": "https://landroverengine.uk/engines/aj20p3/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Range Rover Evoque P300e engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ20P3 petrol engine typically costs £3,000–£5,000 supply only, with fitting adding £1,200–£1,700. Use our calculator for a figure specific to your Evoque."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Evoque P300e (AJ20P3) engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 1.5 Ingenium petrol is a modern, well‑engineered unit. It's generally reliable, but cooling system and timing chain tensioner wear are the main watchpoints. Regular oil changes (5,000–7,500 miles) and coolant system maintenance are key to longevity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Evoque P300e engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Water pump and thermostat failure, timing chain tensioner wear, and hybrid system integration issues (often software‑related). The engine itself is robust with proper maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an Evoque P300e engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. An L551 Evoque P300e is a £20,000–£40,000 vehicle — a £4,000 recon is 10–20% of the car's value, making replacement a clear decision. This is well within our 60% Land Rover scrap threshold. Hybrid battery health may also affect value, but the engine replacement alone is viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Evoque P300e engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The P300e engine code is AJ20P3 — a 1.5‑litre three‑cylinder Ingenium petrol. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent the timing chain issues on a P300e?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — regular oil changes with the correct JLR‑spec oil and shortened intervals (5,000–7,500 miles) are the most effective prevention. At the first sign of cold‑start rattle, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Evoque P300e Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "6500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Evoque P300e UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Range Rover Evoque P300e engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Evoque P300e Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/evoque/p300e/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover Evoque P300e • 2020–present • AJ20P3 + e‑motor",
+    "h1": "Land Rover Range Rover Evoque P300e Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The P300e combines a 1.5‑litre three‑cylinder Ingenium petrol engine (AJ20P3) with an electric motor for plug‑in hybrid efficiency. Get quotes from trusted UK specialists today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Evoque P300e Engines — from £1,500 to £6,500 · AJ20P3",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Evoque P300e Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The EVOQUE P300e THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover Evoque P300e Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£3,500",
+        "fittedIndie": "£2,500–£4,700",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£4,100–£6,300",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,200–£6,500",
+        "fittedIndie": "£5,300–£7,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£6,000–£9,000",
+        "fittedIndie": "£7,200–£10,400",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current AJ20P3 generation.",
+    "labourEstimate": "Fitting an Evoque P300e engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Hybrid system re‑commissioning adds extra time.",
+    "cta": {
+      "label": "→ Compare Evoque P300e engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Cooling System Integrity (Water Pump & Thermostat)",
+        "symptoms": "Slow warm-up, temperature fluctuations, coolant loss, heater not working properly, engine warning light.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£400–£900 (water pump and thermostat replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Like other Ingenium petrols, the AJ20P3's cooling system can suffer from water pump and thermostat failures. If you notice temperature fluctuations or coolant loss, have the system inspected. Replacing a failing water pump preventatively is far cheaper than the overheating damage it can cause. The hybrid system adds extra thermal load, so vigilance is key.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/water-pump-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Timing Chain Tensioner Wear",
+        "symptoms": "Rattling noise on cold start, metallic ticking from the front of the engine, engine warning light.",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£1,200–£2,500 (chain and tensioner replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only (if caught before catastrophic failure)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today"
+        },
+        "recommendation": "The 1.5 Ingenium shares the chain‑driven architecture of its larger siblings. Although less prone to chain issues than some earlier JLR units, tensioner wear can occur. Shorten oil change intervals to 5,000–7,500 miles and use the correct oil spec. At the first sign of cold‑start rattle, have the tensioners inspected — catching it early saves you a major repair bill.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-chain-tensioner-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Hybrid System Integration Issues (Not Engine‑Specific)",
+        "symptoms": "Reduced power, engine running constantly, warning lights, failure to switch to EV mode.",
+        "typicalMileage": "Any — depends on usage",
+        "repairCost": "Varies — often covered under warranty; out‑of‑warranty can be £500–£2,000+",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if warning lights appear"
+        },
+        "recommendation": "While not a direct engine failure, the PHEV system's integration can cause drivability issues. If the engine is running more than expected or EV mode is unavailable, have the hybrid system diagnostics run. Many issues are software‑related and can be resolved with updates, but hardware faults (e.g., battery cooling) need attention.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/hybrid-system-failure/ (Note: may need to create if not exists; for now use a placeholder or generic)"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Evoque P300e covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free Evoque P300e Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Evoque P300e — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Water pump/thermostat failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£900",
+          "whenItMakesSense": "Routine maintenance — do preventatively"
+        },
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Catch it early — before chain skips"
+        },
+        {
+          "problem": "Hybrid system software issues",
+          "repairable": "✅ Yes",
+          "typicalCost": "£100–£500",
+          "whenItMakesSense": "Dealership software update — often warranty"
+        },
+        {
+          "problem": "Hybrid battery cooling system fault",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£500–£2,000",
+          "whenItMakesSense": "Assess overall vehicle value before committing"
+        },
+        {
+          "problem": "Severe overheating / chain snap",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Little left to salvage — replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Evoque P300e? Check These First",
+      "buyIf": [
+        "* Documented cooling system maintenance (water pump, thermostat replaced)",
+        "* No cold‑start rattle — evidence of regular oil changes (5k–7.5k intervals)",
+        "* Full JLR service history with correct oil spec",
+        "* Hybrid system software up‑to‑date (dealer records)"
+      ],
+      "avoidIf": [
+        "* Cold‑start rattle with no timing chain history — walk away",
+        "* Temperature fluctuations with no cooling system history — potential overheating risk",
+        "* Hybrid warning lights with no diagnosis — could indicate complex system faults",
+        "* No service history — Ingenium engines are sensitive to neglect"
+      ]
+    },
+    "closingVerdict": "The AJ20P3 is a modern, efficient three‑cylinder petrol engine that performs well in the Evoque PHEV. It's generally robust, but cooling system and timing chain tensioner wear are the main watchpoints. With the added complexity of the hybrid system, buy on full service history and pay attention to software updates. A well‑maintained P300e is a reliable, efficient flagship hybrid.",
+    "cta": {
+      "label": "→ Compare Evoque P300e engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover Evoque P300e (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattling; timing chain tensioner wear is a concern",
+      "* Coolant Level — Check for unexplained loss; water pump or thermostat may be failing",
+      "* Service History — including engine era (AJ20P3) and confirmed oil‑change intervals (5k–7.5k)",
+      "* EV Mode Operation — Test EV mode; if unavailable, hybrid system may have issues",
+      "* Engine Running Behaviour — Does the engine run more than expected? Could indicate hybrid control issues",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved hybrid or engine faults?",
+      "* MOT History — Check for emissions‑related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ20P3 (1.5-litre 3-cyl Ingenium petrol) + e‑motor",
+        "years": "2020–present",
+        "power": "Engine: 200 PS @ 5,500 rpm; 280 Nm @ 1,600–4,000 rpm; Combined: 309 PS, 540 Nm",
+        "enquiries": "148 [EM-VERIFIED] (PHEV cohort)",
+        "avgReconCost": "£3,000–£5,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ20P3 1.5 Ingenium petrol):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,498 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "3-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single-turbo (twin-scroll) + electric motor for PHEV"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Evoque P300e engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Range Rover Evoque P300e engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ20P3 petrol engine typically costs £3,000–£5,000 supply only, with fitting adding £1,200–£1,700. Use our calculator for a figure specific to your Evoque."
+      },
+      {
+        "id": 2,
+        "question": "Is the Evoque P300e (AJ20P3) engine reliable?",
+        "answer": "Yes — the 1.5 Ingenium petrol is a modern, well‑engineered unit. It's generally reliable, but cooling system and timing chain tensioner wear are the main watchpoints. Regular oil changes (5,000–7,500 miles) and coolant system maintenance are key to longevity."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Evoque P300e engine?",
+        "answer": "Water pump and thermostat failure, timing chain tensioner wear, and hybrid system integration issues (often software‑related). The engine itself is robust with proper maintenance."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an Evoque P300e engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. An L551 Evoque P300e is a £20,000–£40,000 vehicle — a £4,000 recon is 10–20% of the car's value, making replacement a clear decision. This is well within our 60% Land Rover scrap threshold. Hybrid battery health may also affect value, but the engine replacement alone is viable."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Evoque P300e engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The P300e engine code is AJ20P3 — a 1.5‑litre three‑cylinder Ingenium petrol. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent the timing chain issues on a P300e?",
+        "answer": "Yes — regular oil changes with the correct JLR‑spec oil and shortened intervals (5,000–7,500 miles) are the most effective prevention. At the first sign of cold‑start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Land Rover Range Rover Evoque P300e engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £1,500 for a used unit to £6,500 for a fully rebuilt petrol hybrid engine.",
+    "ctaButton": {
+      "label": "Compare Land Rover Range Rover Evoque P300e Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

@@ -1,18 +1,86 @@
 [
   {
-    "slug": "bmw-3-series-e90",
-    "dataFile": "bmw-3-series-e90"
+    "slug": "defender-l316",
+    "dataFile": "defender-l316"
   },
   {
-    "slug": "bmw-1-series-e87",
-    "dataFile": "bmw-1-series-e87"
+    "slug": "defender-l663",
+    "dataFile": "defender-l663"
   },
   {
-    "slug": "bmw-2-series-active-tourer-f45",
-    "dataFile": "bmw-2-series-active-tourer-f45"
+    "slug": "discovery-4-l319",
+    "dataFile": "discovery-4-l319"
   },
   {
-    "slug": "bmw-1-series-f70",
-    "dataFile": "bmw-1-series-f70"
+    "slug": "discovery-d1",
+    "dataFile": "discovery-d1"
+  },
+  {
+    "slug": "discovery-d2",
+    "dataFile": "discovery-d2"
+  },
+  {
+    "slug": "discovery-l462",
+    "dataFile": "discovery-l462"
+  },
+  {
+    "slug": "discovery-sport-l550",
+    "dataFile": "discovery-sport-l550"
+  },
+  {
+    "slug": "freelander-l314",
+    "dataFile": "freelander-l314"
+  },
+  {
+    "slug": "land-rover-discovery-3-l319",
+    "dataFile": "land-rover-discovery-3-l319"
+  },
+  {
+    "slug": "land-rover-freelander-2-l359",
+    "dataFile": "land-rover-freelander-2-l359"
+  },
+  {
+    "slug": "land-rover-range-rover-l460",
+    "dataFile": "land-rover-range-rover-l460"
+  },
+  {
+    "slug": "range-rover-classic",
+    "dataFile": "range-rover-classic"
+  },
+  {
+    "slug": "range-rover-evoque-l538",
+    "dataFile": "range-rover-evoque-l538"
+  },
+  {
+    "slug": "range-rover-evoque-l551",
+    "dataFile": "range-rover-evoque-l551"
+  },
+  {
+    "slug": "range-rover-l322",
+    "dataFile": "range-rover-l322"
+  },
+  {
+    "slug": "range-rover-l405",
+    "dataFile": "range-rover-l405"
+  },
+  {
+    "slug": "range-rover-p38a",
+    "dataFile": "range-rover-p38a"
+  },
+  {
+    "slug": "range-rover-sport-l320",
+    "dataFile": "range-rover-sport-l320"
+  },
+  {
+    "slug": "range-rover-sport-l461",
+    "dataFile": "range-rover-sport-l461"
+  },
+  {
+    "slug": "range-rover-sport-l494",
+    "dataFile": "range-rover-sport-l494"
+  },
+  {
+    "slug": "range-rover-velar-l560",
+    "dataFile": "range-rover-velar-l560"
   }
 ]

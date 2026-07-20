@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "slug": "range-rover-44-tdv8",
+    "title": "Range Rover 4.4 TDV8 SDV8 Engine Replacement Cost UK",
+    "titleCharCount": 59,
+    "description": "Every Range Rover 4.4 V8 diesel engine — 448DT. L322 and L405 generations, real UK costs and reliability. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 156,
+    "canonical": "https://landroverengine.uk/range-rover/44-tdv8/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover",
+              "item": "https://landroverengine.uk/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4.4 TDV8",
+              "item": "https://landroverengine.uk/range-rover/44-tdv8/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover 4.4 TDV8 / SDV8 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L322 4.4 TDV8 (448DT, 2010–2012)",
+              "url": "https://landroverengine.uk/range-rover/l322/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "L405 4.4 SDV8 (448DT, 2012–2021)",
+              "url": "https://landroverengine.uk/range-rover/l405/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover 4.4 TDV8 / SDV8 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "448DT (4.4 TDV8)",
+              "url": "https://landroverengine.uk/engines/448dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "448DT (4.4 SDV8)",
+              "url": "https://landroverengine.uk/engines/448dt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Range Rover 4.4 TDV8 / SDV8 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 448DT engine typically costs £6,500–£10,500 supply only depending on generation (L322 vs L405). Fitting adds £1,100–£2,500. Main dealer new engines can exceed £24,000. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Range Rover 4.4 TDV8 / SDV8 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 448DT is widely considered the most reliable engine in the JLR diesel lineup — a genuine step up from the problematic 3.0 TDV6/SDV6. It's rated ★★★★☆, but has known maintenance items: oil cooler leaks, oil dilution on L405, and early L322 turbo oil drain pipe issues. No catastrophic bottom-end design flaws."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover 4.4 TDV8 / SDV8?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oil cooler leaks (all years), oil dilution from DPF regeneration (L405 SDV8), turbo oil drain pipe issues (early L322 2010–2012), drive belt tensioner failure, and brittle air intake pipes. Timing chain wear is occasionally reported on higher-mileage examples."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover 4.4 TDV8 / SDV8 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a £15,000–£30,000 L405, a £6,500–£10,500 recon engine is a significant but worthwhile investment given the Range Rover's strong retained value. For an L322 worth £5,000–£10,000, carefully assess the rest of the vehicle before committing. Replacement is almost always viable for well-maintained examples."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Range Rover's engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For the 4.4 TDV8/SDV8, the engine code is 448DT — it's on the VIN plate and vehicle documentation. The badge differs by generation: L322 (2010–2012) is badged '4.4 TDV8', while L405 (2012–2021) is badged '4.4 SDV8'. If you're unsure, tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 448DT's oil cooler, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the oil cooler leak is a straightforward repair costing £800–£1,500. The leak typically comes from gaskets and O-rings on the turbo oil feed pipe. If left too long, cross-contamination can cause premature wear, but the engine itself is not normally replaced for this issue alone."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover 4.4 TDV8 / SDV8 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4500",
+            "highPrice": "10500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover 4.4 TDV8 / SDV8 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Range Rover 4.4 V8 diesel engines (448DT), sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Range Rover 4.4 TDV8 SDV8 Engine Replacement Cost UK",
+          "url": "https://landroverengine.uk/range-rover/44-tdv8/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover 4.4 TDV8 / SDV8 • 2010–2021 • 4.4 448DT",
+    "h1": "Land Rover Range Rover 4.4 TDV8 / SDV8 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Range Rover 4.4 V8 diesel specialists. Compare reconditioned, rebuilt and used 448DT engines for L322 and L405 — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Range Rover 4.4 V8 Diesel Engines — from £4,500 to £10,500 · Code: 448DT",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 4.4 V8 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 4.4 TDV8 / SDV8 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L322",
+        "years": "2010–2012",
+        "engineCode": "448DT (4.4 TDV8)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£6,000–£9,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Early 4.4 TDV8 — watch for turbo oil drain pipe issues on 2010–2012 examples."
+      },
+      {
+        "generation": "L405",
+        "years": "2012–2021",
+        "engineCode": "448DT (4.4 SDV8)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£6,500–£10,500 [EM-QUOTE]",
+        "eraNote": "Refined SDV8 — oil dilution and oil cooler leaks are the main watchpoints."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover 4.4 TDV8 / SDV8 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£4,500–£6,500",
+        "fittedIndie": "£5,500–£7,800",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £10,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£6,500–£9,000",
+        "fittedIndie": "£7,600–£10,400",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£8,000–£10,500",
+        "fittedIndie": "£9,100–£12,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£18,000–£24,000",
+        "fittedIndie": "£20,000–£26,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims; dealer costs can exceed £24,000"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting a 4.4 V8 diesel engine typically takes 15–25 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every 4.4 V8 diesel variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free 4.4 V8 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Range Rover 4.4 TDV8 / SDV8 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Oil cooler leak (448DT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Straightforward gasket and O-ring replacement; catch it before cross-contamination"
+        },
+        {
+          "problem": "Oil dilution from DPF regen (448DT)",
+          "repairable": "⚠️ Depends",
+          "typicalCost": "£200–£350",
+          "whenItMakesSense": "If caught before bearing damage; if not, engine replacement required"
+        },
+        {
+          "problem": "Turbo oil drain pipe (early 448DT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Preventative — replace the pipe before it kills the turbo"
+        },
+        {
+          "problem": "Drive belt tensioner failure (448DT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£500",
+          "whenItMakesSense": "Simple replacement; don't let it throw the belt"
+        },
+        {
+          "problem": "Timing chain wear (448DT — occasional)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£2,000–£4,000",
+          "whenItMakesSense": "If caught early; chain replacement is a big job but far cheaper than a new engine"
+        },
+        {
+          "problem": "Crankshaft bearing failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Not a common 448DT failure; if it occurs, replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 4.4 TDV8 / SDV8? Check These First",
+      "buyIf": [
+        "* Full service history with documented oil changes — this engine is unforgiving of neglect",
+        "* L405 with proof of frequent oil changes (every 5,000–7,000 miles) to mitigate oil dilution",
+        "* Oil cooler gaskets replaced as a preventative measure",
+        "* L322 2010–2012 with evidence of turbo oil drain pipe work"
+      ],
+      "avoidIf": [
+        "* Service history shows only urban driving patterns (DPF and oil dilution risk)",
+        "* Oil level is visibly above the max mark on the dipstick — diesel contamination",
+        "* Any evidence of oil in coolant or coolant in oil — oil cooler failure",
+        "* Engine warning light present with no diagnosis documentation"
+      ]
+    },
+    "closingVerdict": "The 4.4 TDV8/SDV8 is widely considered the most reliable engine in the JLR diesel lineup — a genuine step up from the problematic 3.0 TDV6/SDV6. But it's a complex V8 diesel with known maintenance items: oil cooler leaks, oil dilution on the L405, and early L322 turbo oil drain pipe issues. Buy on service history and proof of preventative maintenance. If you're replacing, a reconditioned unit with a 12-month warranty is the sweet spot — dealer new engines can exceed £24,000.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover 4.4 TDV8 / SDV8 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any timing chain rattle or clatter; the 448DT should start smoothly",
+      "* Service History — Including which generation (L322 2010–2012 vs L405 2012–2021) — see the Era Map above",
+      "* Oil Level Check — Is the oil above the max mark? This indicates potential diesel contamination from oil dilution",
+      "* Coolant Condition — Is there oil in the coolant? Oil cooler leak indicator",
+      "* Oil Leaks — Check the valley between cylinder banks for oil pooling (oil cooler leak)",
+      "* Turbo Health — Any blue smoke, whine, or increased oil consumption? Turbo oil drain pipe issue on early cars",
+      "* DPF Regeneration — Has the vehicle had regular motorway runs? Short journeys accelerate DPF and oil dilution issues",
+      "* MOT History — Check for emissions-related failures; often point to DPF or EGR problems"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "448DT (TDV8)",
+        "years": "2010–2012",
+        "power": "313 bhp / 700 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£9,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "448DT (SDV8)",
+        "years": "2012–2021",
+        "power": "339 bhp / 740 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,500–£10,500 [EM-QUOTE]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (448DT):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,367cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8-cylinder V (90°)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.1:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin turbo (Garrett GT1549 + VTC)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Oil cooler leaks — approximately 45% of 448DT enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "85,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£8,000 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "448DT [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — oil cooler and DPF issues worsen in colder conditions [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (25%), Midlands (18%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Range Rover 4.4 TDV8 / SDV8 engine replacement cost in the UK?",
+        "answer": "A reconditioned 448DT engine typically costs £6,500–£10,500 supply only depending on generation (L322 vs L405). Fitting adds £1,100–£2,500. Main dealer new engines can exceed £24,000. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Range Rover 4.4 TDV8 / SDV8 engine reliable?",
+        "answer": "The 448DT is widely considered the most reliable engine in the JLR diesel lineup — a genuine step up from the problematic 3.0 TDV6/SDV6. It's rated ★★★★☆, but has known maintenance items: oil cooler leaks, oil dilution on L405, and early L322 turbo oil drain pipe issues. No catastrophic bottom-end design flaws."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover 4.4 TDV8 / SDV8?",
+        "answer": "Oil cooler leaks (all years), oil dilution from DPF regeneration (L405 SDV8), turbo oil drain pipe issues (early L322 2010–2012), drive belt tensioner failure, and brittle air intake pipes. Timing chain wear is occasionally reported on higher-mileage examples."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover 4.4 TDV8 / SDV8 engine, or should I scrap the car?",
+        "answer": "Against a £15,000–£30,000 L405, a £6,500–£10,500 recon engine is a significant but worthwhile investment given the Range Rover's strong retained value. For an L322 worth £5,000–£10,000, carefully assess the rest of the vehicle before committing. Replacement is almost always viable for well-maintained examples."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover's engine code?",
+        "answer": "For the 4.4 TDV8/SDV8, the engine code is 448DT — it's on the VIN plate and vehicle documentation. The badge differs by generation: L322 (2010–2012) is badged \"4.4 TDV8\", while L405 (2012–2021) is badged \"4.4 SDV8\". If you're unsure, tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 448DT's oil cooler, or does it need a new engine?",
+        "answer": "Yes — the oil cooler leak is a straightforward repair costing £800–£1,500. The leak typically comes from gaskets and O-rings on the turbo oil feed pipe. If left too long, cross-contamination can cause premature wear, but the engine itself is not normally replaced for this issue alone."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Land Rover Range Rover 4.4 TDV8 / SDV8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Range Rover 4.4 V8 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

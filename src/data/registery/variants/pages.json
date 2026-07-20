@@ -1,18 +1,462 @@
 [
   {
-    "slug": "bmw-320d",
-    "dataFile": "bmw-320d"
+    "slug": "defender-200tdi",
+    "dataFile": "defender-200tdi"
   },
   {
-    "slug": "defender-d250",
-    "dataFile": "defender-d250"
+    "slug": "defender-22-tdci",
+    "dataFile": "defender-22-tdci"
+  },
+  {
+    "slug": "defender-24-tdci",
+    "dataFile": "defender-24-tdci"
   },
   {
     "slug": "defender-25-diesel",
     "dataFile": "defender-25-diesel"
   },
   {
+    "slug": "defender-300tdi",
+    "dataFile": "defender-300tdi"
+  },
+  {
+    "slug": "defender-d200",
+    "dataFile": "defender-d200"
+  },
+  {
+    "slug": "defender-d240",
+    "dataFile": "defender-d240"
+  },
+  {
+    "slug": "defender-d250",
+    "dataFile": "defender-d250"
+  },
+  {
+    "slug": "defender-d250-2",
+    "dataFile": "defender-d250-2"
+  },
+  {
+    "slug": "defender-d300",
+    "dataFile": "defender-d300"
+  },
+  {
+    "slug": "defender-d350",
+    "dataFile": "defender-d350"
+  },
+  {
+    "slug": "defender-p300",
+    "dataFile": "defender-p300"
+  },
+  {
+    "slug": "defender-p400",
+    "dataFile": "defender-p400"
+  },
+  {
+    "slug": "defender-p400e",
+    "dataFile": "defender-p400e"
+  },
+  {
+    "slug": "defender-p500",
+    "dataFile": "defender-p500"
+  },
+  {
+    "slug": "defender-p525",
+    "dataFile": "defender-p525"
+  },
+  {
+    "slug": "defender-td5",
+    "dataFile": "defender-td5"
+  },
+  {
+    "slug": "discovery-200tdi",
+    "dataFile": "discovery-200tdi"
+  },
+  {
+    "slug": "discovery-27-tdv6",
+    "dataFile": "discovery-27-tdv6"
+  },
+  {
+    "slug": "discovery-30-tdv6-sdv6",
+    "dataFile": "discovery-30-tdv6-sdv6"
+  },
+  {
+    "slug": "discovery-300tdi",
+    "dataFile": "discovery-300tdi"
+  },
+  {
+    "slug": "discovery-44-v8",
+    "dataFile": "discovery-44-v8"
+  },
+  {
+    "slug": "discovery-d250",
+    "dataFile": "discovery-d250"
+  },
+  {
+    "slug": "discovery-d300",
+    "dataFile": "discovery-d300"
+  },
+  {
+    "slug": "discovery-mpi",
+    "dataFile": "discovery-mpi"
+  },
+  {
+    "slug": "discovery-p300",
+    "dataFile": "discovery-p300"
+  },
+  {
+    "slug": "discovery-p360",
+    "dataFile": "discovery-p360"
+  },
+  {
+    "slug": "discovery-rover-v8",
+    "dataFile": "discovery-rover-v8"
+  },
+  {
     "slug": "discovery-sd4",
     "dataFile": "discovery-sd4"
+  },
+  {
+    "slug": "discovery-sport-22-diesel",
+    "dataFile": "discovery-sport-22-diesel"
+  },
+  {
+    "slug": "discovery-sport-d150",
+    "dataFile": "discovery-sport-d150"
+  },
+  {
+    "slug": "discovery-sport-d180",
+    "dataFile": "discovery-sport-d180"
+  },
+  {
+    "slug": "discovery-sport-d200",
+    "dataFile": "discovery-sport-d200"
+  },
+  {
+    "slug": "discovery-sport-p200",
+    "dataFile": "discovery-sport-p200"
+  },
+  {
+    "slug": "discovery-sport-p250",
+    "dataFile": "discovery-sport-p250"
+  },
+  {
+    "slug": "discovery-sport-p300e",
+    "dataFile": "discovery-sport-p300e"
+  },
+  {
+    "slug": "discovery-sport-si4",
+    "dataFile": "discovery-sport-si4"
+  },
+  {
+    "slug": "discovery-sport-td4-sd4",
+    "dataFile": "discovery-sport-td4-sd4"
+  },
+  {
+    "slug": "discovery-td5",
+    "dataFile": "discovery-td5"
+  },
+  {
+    "slug": "discovery-td6",
+    "dataFile": "discovery-td6"
+  },
+  {
+    "slug": "evoque-22-diesel",
+    "dataFile": "evoque-22-diesel"
+  },
+  {
+    "slug": "evoque-d150",
+    "dataFile": "evoque-d150"
+  },
+  {
+    "slug": "evoque-d180",
+    "dataFile": "evoque-d180"
+  },
+  {
+    "slug": "evoque-d200",
+    "dataFile": "evoque-d200"
+  },
+  {
+    "slug": "evoque-d240",
+    "dataFile": "evoque-d240"
+  },
+  {
+    "slug": "evoque-p200",
+    "dataFile": "evoque-p200"
+  },
+  {
+    "slug": "evoque-p250",
+    "dataFile": "evoque-p250"
+  },
+  {
+    "slug": "evoque-p300",
+    "dataFile": "evoque-p300"
+  },
+  {
+    "slug": "evoque-p300e",
+    "dataFile": "evoque-p300e"
+  },
+  {
+    "slug": "evoque-si4",
+    "dataFile": "evoque-si4"
+  },
+  {
+    "slug": "evoque-td4-sd4",
+    "dataFile": "evoque-td4-sd4"
+  },
+  {
+    "slug": "freelander-18-petrol",
+    "dataFile": "freelander-18-petrol"
+  },
+  {
+    "slug": "freelander-20-di",
+    "dataFile": "freelander-20-di"
+  },
+  {
+    "slug": "freelander-25-v6",
+    "dataFile": "freelander-25-v6"
+  },
+  {
+    "slug": "freelander-32-i6",
+    "dataFile": "freelander-32-i6"
+  },
+  {
+    "slug": "freelander-si4",
+    "dataFile": "freelander-si4"
+  },
+  {
+    "slug": "freelander-td4-fl1",
+    "dataFile": "freelander-td4-fl1"
+  },
+  {
+    "slug": "land-rover-defender-octa",
+    "dataFile": "land-rover-defender-octa"
+  },
+  {
+    "slug": "land-rover-defender-v8",
+    "dataFile": "land-rover-defender-v8"
+  },
+  {
+    "slug": "land-rover-discovery-5-0-v8",
+    "dataFile": "land-rover-discovery-5-0-v8"
+  },
+  {
+    "slug": "land-rover-discovery-sport-d165",
+    "dataFile": "land-rover-discovery-sport-d165"
+  },
+  {
+    "slug": "land-rover-freelander-2-td4-sd4-ed4",
+    "dataFile": "land-rover-freelander-2-td4-sd4-ed4"
+  },
+  {
+    "slug": "land-rover-range-rover-4-4-v8",
+    "dataFile": "land-rover-range-rover-4-4-v8"
+  },
+  {
+    "slug": "land-rover-range-rover-evoque-d165",
+    "dataFile": "land-rover-range-rover-evoque-d165"
+  },
+  {
+    "slug": "land-rover-range-rover-p400",
+    "dataFile": "land-rover-range-rover-p400"
+  },
+  {
+    "slug": "land-rover-range-rover-sport-4-2-sc",
+    "dataFile": "land-rover-range-rover-sport-4-2-sc"
+  },
+  {
+    "slug": "land-rover-range-rover-sport-p440e",
+    "dataFile": "land-rover-range-rover-sport-p440e"
+  },
+  {
+    "slug": "land-rover-range-rover-velar-p300",
+    "dataFile": "land-rover-range-rover-velar-p300"
+  },
+  {
+    "slug": "range-rover-25-dse",
+    "dataFile": "range-rover-25-dse"
+  },
+  {
+    "slug": "range-rover-36-tdv8",
+    "dataFile": "range-rover-36-tdv8"
+  },
+  {
+    "slug": "range-rover-42-sc",
+    "dataFile": "range-rover-42-sc"
+  },
+  {
+    "slug": "range-rover-44-tdv8",
+    "dataFile": "range-rover-44-tdv8"
+  },
+  {
+    "slug": "range-rover-50-sc",
+    "dataFile": "range-rover-50-sc"
+  },
+  {
+    "slug": "range-rover-d300",
+    "dataFile": "range-rover-d300"
+  },
+  {
+    "slug": "range-rover-d350",
+    "dataFile": "range-rover-d350"
+  },
+  {
+    "slug": "range-rover-p38-v8",
+    "dataFile": "range-rover-p38-v8"
+  },
+  {
+    "slug": "range-rover-p400e",
+    "dataFile": "range-rover-p400e"
+  },
+  {
+    "slug": "range-rover-p440e",
+    "dataFile": "range-rover-p440e"
+  },
+  {
+    "slug": "range-rover-p510e",
+    "dataFile": "range-rover-p510e"
+  },
+  {
+    "slug": "range-rover-p530",
+    "dataFile": "range-rover-p530"
+  },
+  {
+    "slug": "range-rover-p615-sv",
+    "dataFile": "range-rover-p615-sv"
+  },
+  {
+    "slug": "range-rover-rover-v8-classic",
+    "dataFile": "range-rover-rover-v8-classic"
+  },
+  {
+    "slug": "range-rover-sdv6-hybrid",
+    "dataFile": "range-rover-sdv6-hybrid"
+  },
+  {
+    "slug": "range-rover-sport-27-tdv6",
+    "dataFile": "range-rover-sport-27-tdv6"
+  },
+  {
+    "slug": "range-rover-sport-30-sc",
+    "dataFile": "range-rover-sport-30-sc"
+  },
+  {
+    "slug": "range-rover-sport-36-tdv8",
+    "dataFile": "range-rover-sport-36-tdv8"
+  },
+  {
+    "slug": "range-rover-sport-44-sdv8",
+    "dataFile": "range-rover-sport-44-sdv8"
+  },
+  {
+    "slug": "range-rover-sport-44-v8",
+    "dataFile": "range-rover-sport-44-v8"
+  },
+  {
+    "slug": "range-rover-sport-50-sc",
+    "dataFile": "range-rover-sport-50-sc"
+  },
+  {
+    "slug": "range-rover-sport-d250",
+    "dataFile": "range-rover-sport-d250"
+  },
+  {
+    "slug": "range-rover-sport-d300",
+    "dataFile": "range-rover-sport-d300"
+  },
+  {
+    "slug": "range-rover-sport-d350",
+    "dataFile": "range-rover-sport-d350"
+  },
+  {
+    "slug": "range-rover-sport-p400",
+    "dataFile": "range-rover-sport-p400"
+  },
+  {
+    "slug": "range-rover-sport-p400e",
+    "dataFile": "range-rover-sport-p400e"
+  },
+  {
+    "slug": "range-rover-sport-p510e",
+    "dataFile": "range-rover-sport-p510e"
+  },
+  {
+    "slug": "range-rover-sport-p530",
+    "dataFile": "range-rover-sport-p530"
+  },
+  {
+    "slug": "range-rover-sport-sdv6-hybrid",
+    "dataFile": "range-rover-sport-sdv6-hybrid"
+  },
+  {
+    "slug": "range-rover-sport-sv",
+    "dataFile": "range-rover-sport-sv"
+  },
+  {
+    "slug": "range-rover-sport-svr",
+    "dataFile": "range-rover-sport-svr"
+  },
+  {
+    "slug": "range-rover-sport-tdv6-sdv6",
+    "dataFile": "range-rover-sport-tdv6-sdv6"
+  },
+  {
+    "slug": "range-rover-td6",
+    "dataFile": "range-rover-td6"
+  },
+  {
+    "slug": "range-rover-tdi",
+    "dataFile": "range-rover-tdi"
+  },
+  {
+    "slug": "range-rover-tdv6-sdv6",
+    "dataFile": "range-rover-tdv6-sdv6"
+  },
+  {
+    "slug": "range-rover-vm-diesel",
+    "dataFile": "range-rover-vm-diesel"
+  },
+  {
+    "slug": "velar-d180",
+    "dataFile": "velar-d180"
+  },
+  {
+    "slug": "velar-d200",
+    "dataFile": "velar-d200"
+  },
+  {
+    "slug": "velar-d240",
+    "dataFile": "velar-d240"
+  },
+  {
+    "slug": "velar-d275",
+    "dataFile": "velar-d275"
+  },
+  {
+    "slug": "velar-d300",
+    "dataFile": "velar-d300"
+  },
+  {
+    "slug": "velar-p250",
+    "dataFile": "velar-p250"
+  },
+  {
+    "slug": "velar-p340",
+    "dataFile": "velar-p340"
+  },
+  {
+    "slug": "velar-p380",
+    "dataFile": "velar-p380"
+  },
+  {
+    "slug": "velar-p400",
+    "dataFile": "velar-p400"
+  },
+  {
+    "slug": "velar-p400e",
+    "dataFile": "velar-p400e"
+  },
+  {
+    "slug": "velar-p550",
+    "dataFile": "velar-p550"
   }
 ]

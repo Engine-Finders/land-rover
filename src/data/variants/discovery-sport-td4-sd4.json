@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "slug": "discovery-sport-td4-sd4",
+    "title": "Discovery Sport TD4 / SD4 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 62,
+    "description": "Every Land Rover Discovery Sport TD4/SD4 engine — the 2.0-litre 204DTD Ingenium diesel. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://landroverengine.uk/discovery-sport/td4-sd4/",
+    "openGraph": {
+      "title": "Discovery Sport TD4 / SD4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Discovery Sport TD4/SD4 engine — the 2.0-litre 204DTD Ingenium diesel. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/discovery-sport/td4-sd4/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-td4.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Discovery Sport TD4 / SD4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Discovery Sport TD4/SD4 engine — the 2.0-litre 204DTD Ingenium diesel. Real UK costs, timing chain advice, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-td4.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery Sport",
+              "item": "https://landroverengine.uk/discovery-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "L550",
+              "item": "https://landroverengine.uk/discovery-sport/l550/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "TD4 / SD4",
+              "item": "https://landroverengine.uk/discovery-sport/td4-sd4/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery Sport TD4 / SD4 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L550 Discovery Sport TD4/SD4 (204DTD, 2015–2019)",
+              "url": "https://landroverengine.uk/discovery-sport/l550/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery Sport TD4 / SD4 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD (AJ20D4) — TD4",
+              "url": "https://landroverengine.uk/engines/204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "204DTA / 204DTD (AJ20D4) — SD4",
+              "url": "https://landroverengine.uk/engines/204dtd/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Discovery Sport TD4 / SD4 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 2.0 Ingenium diesel engine typically costs £2,800–£5,000 supply only. A fully fitted replacement from a specialist costs approximately £4,500–£6,500. Fitting adds £1,200–£2,000 depending on location and workshop rates. Main dealer new engines start from £7,000–£10,000+ supply only."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery Sport 2.0 TD4 / SD4 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No — the 2.0-litre Ingenium diesel has a poor reliability reputation. The most critical issue is timing chain stretch, which can occur as early as 40,000 miles. The root cause is oil dilution from incomplete DPF regenerations, which thins the engine oil and accelerates chain wear. This engine is fundamentally unforgiving of short urban journeys."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Discovery Sport TD4 / SD4?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main known issues are: (1) Timing chain stretch — the most critical and costly failure, (2) Oil dilution from DPF regeneration — the root cause of chain failure, (3) Piston cooling oil jet solenoid failure — caused by coolant leaks from the thermostat housing, and (4) Turbocharger failure — with siren-like whining as the key warning sign."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery Sport TD4 / SD4 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and condition. Against a well-kept £10,000–£18,000 Discovery Sport, a £4,500–£6,500 recon is 25–65% of the car's value — often worth it given Discovery Sport values have remained relatively strong. However, for higher-mileage or older examples under £7,000, evaluate whether the replacement cost exceeds our 60% Land Rover scrap threshold."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Discovery Sport engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2.0 Ingenium diesel uses the 204DTD (AJ20D4) engine code. TD4 variants produce 150–180PS (110–132kW) with 380–430Nm of torque; SD4 variants produce 240PS (177kW) with 500Nm of torque. The engine code is stamped on the cylinder block. Tell us your registration and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent timing chain failure on the 2.0 Ingenium diesel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 10,000 miles or less with the correct JLR-spec oil, (2) Avoid short urban journeys — regular motorway runs allow DPF regeneration to complete, (3) Regularly check the dipstick for rising oil level or diesel smell (oil dilution warning), and (4) Never ignore cold-start rattle — book an inspection immediately if you hear it. Even with perfect maintenance, premature chain stretch remains a risk."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery Sport TD4/SD4 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "6500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery Sport TD4/SD4 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Discovery Sport TD4/SD4 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Discovery Sport TD4 / SD4 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery-sport/td4-sd4/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery Sport TD4 / SD4 • 2015–2019 • 1 Engine Generation (2 Power Levels)",
+    "h1": "Land Rover Discovery Sport TD4 / SD4 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Discovery Sport specialists. The 2.0-litre Ingenium diesel (204DTD) powers pre-facelift L550 models — compare reconditioned, rebuilt and used TD4 and SD4 engines with supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Discovery Sport TD4 / SD4 Engines — from £1,500 to £6,500 · Engine code: 204DTD (AJ20D4)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Discovery Sport Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "Land Rover Discovery Sport TD4 / SD4 — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L550 (pre-facelift)",
+        "years": "2015–2019",
+        "engineCode": "204DTD (AJ20D4)",
+        "reliability": "★★☆☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,800–£5,000 [PLACEHOLDER]",
+        "eraNote": "2.0-litre four-cylinder Ingenium diesel — TD4 (150–180PS) or SD4 (240PS). Notorious for timing chain stretch and oil dilution"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Discovery Sport TD4 / SD4 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£3,000",
+        "fittedIndie": "£2,500–£4,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £8,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,800–£5,000",
+        "fittedIndie": "£4,500–£6,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,000–£6,500",
+        "fittedIndie": "£6,000–£8,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£7,000–£10,000+",
+        "fittedIndie": "£8,500–£12,000+",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting a Discovery Sport 2.0 diesel engine typically takes 10–14 hours at £65–£95/hr (independent). The transverse engine layout adds complexity compared to longitudinal installations.",
+    "cta": {
+      "label": "→ Compare Discovery Sport TD4 / SD4 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Stretch (Catastrophic)",
+        "symptoms": "Metallic rattling or knocking on cold start, engine misfires, check engine light, reduced power, rough running",
+        "typicalMileage": "40,000–60,000 miles — can occur as early as 40,000–60,000 km",
+        "repairCost": "£1,200–£2,500 (preventative chain, guides and tensioners)",
+        "replacementCost": "£4,500–£6,500 (full engine replacement)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattling on cold start, book an inspection immediately"
+        },
+        "recommendation": "This is the single most serious and costly issue affecting the 2.0 Ingenium diesel. The timing chain sits at the rear of the engine against the firewall, making access extremely difficult and labour-intensive. The root causes include inadequate tensioner design, poor-quality plastic guides that can break apart, and oil starvation from the Ingenium's oil pump design. At the first sign of cold-start rattle, book an inspection immediately — a £1,200–£2,500 preventative chain replacement is dramatically cheaper than a £4,500–£6,500 engine replacement. JLR themselves have advised chain replacement at 70,000–100,000 miles, but many specialists report failures starting much earlier.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide → /failures/ingenium-timing-chain/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Dilution from DPF Regeneration (Root Cause of Chain Failure)",
+        "symptoms": "Rising oil level on dipstick, diesel smell in oil, DPF warning light illuminating frequently, reduced fuel economy",
+        "typicalMileage": "Any mileage — short urban journeys accelerate the issue",
+        "repairCost": "£100–£300 (oil change + DPF regeneration)",
+        "replacementCost": "N/A — repair only (does not progress to engine replacement if addressed early)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if you notice rising oil level or diesel smell"
+        },
+        "recommendation": "Oil dilution from incomplete DPF regenerations is the root cause of many timing chain failures on the 2.0 Ingenium diesel. When the engine fails to complete a regeneration cycle (common on vehicles used for short urban trips), diesel fuel enters the engine oil, thinning it and reducing its lubricating properties. This accelerates timing chain wear and can lead to catastrophic failure. Regularly checking the dipstick for rising oil level or a diesel smell is the simplest early warning. If you primarily drive short urban journeys, factor in regular motorway runs to allow passive DPF regenerations.",
+        "failureLink": {
+          "label": "Read the full oil dilution guide",
+          "href": "/failures/oil-dilution-dpf/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Piston Cooling Oil Jet Solenoid Failure",
+        "symptoms": "Engine management light, reduced performance, potential engine damage if ignored",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£400–£800 (solenoid replacement + diagnostics)",
+        "replacementCost": "N/A — repair only (does not typically progress to engine replacement if addressed)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon if warning light appears"
+        },
+        "recommendation": "The 2.0 Ingenium diesel uses an electronically controlled solenoid to manage oil flow to the piston cooling jets, which regulate piston temperatures under load. The solenoid is prone to failure, mainly due to coolant leaking from the thermostat housing above onto the solenoid body and connector. If ignored, this can lead to increased piston wear and, in extreme cases, engine damage. A relatively straightforward repair if caught early.",
+        "failureLink": {
+          "label": "Read the full oil jet solenoid guide → /failures/piston-cooling-oil-jet-solenoid/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Turbocharger Failure",
+        "symptoms": "Loss of power, engine management light, siren-like whining or whistling noise from turbo, blue smoke from exhaust under acceleration",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£1,500–£3,000 (turbo replacement + engine flush)",
+        "replacementCost": "N/A — repair only (does not typically progress to engine replacement)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if you hear siren-like noise"
+        },
+        "recommendation": "Turbos on the 2.0 diesel Discovery Sport are known to fail. The main symptoms are loss of power, an engine management light, and a siren-like whining or whistling noise that gets progressively worse. If a failure is caused by an oil leak on the turbocharger itself and oil makes its way into the exhaust system, you may also notice blue smoke. Turbo replacement is often not as simple as swapping in a new unit — contamination in the oil delivery system can cause the new turbo to fail shortly after installation. Always ensure a full engine flush is performed when replacing a turbo.",
+        "failureLink": {
+          "label": "Read the full turbo failure guide",
+          "href": "/failures/turbo-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Discovery Sport TD4/SD4 engine covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Discovery Sport Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Discovery Sport TD4 / SD4 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain stretch (early detection)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Preventative — catches the fault before catastrophic failure"
+        },
+        {
+          "problem": "Timing chain snapped",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Full engine replacement is the only reliable fix"
+        },
+        {
+          "problem": "Oil dilution / DPF issues",
+          "repairable": "✅ Yes",
+          "typicalCost": "£100–£300",
+          "whenItMakesSense": "Regular oil changes and DPF regeneration cycles"
+        },
+        {
+          "problem": "Piston cooling oil jet solenoid",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Straightforward component replacement"
+        },
+        {
+          "problem": "Turbocharger failure",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Viable on lower-mileage examples; assess overall engine health"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Discovery Sport? Check These First",
+      "buyIf": [
+        "* Full service history with 10,000-mile or less oil change intervals",
+        "* Evidence of regular motorway use (DPF health)",
+        "* No cold-start rattle — this is the critical warning sign",
+        "* Extended warranty in place — this engine is high-risk"
+      ],
+      "avoidIf": [
+        "* Any cold-start rattle — walk away, this is a ticking time bomb",
+        "* Rising oil level or diesel smell on dipstick (oil dilution)",
+        "* DPF warning lights — suggests short-trip usage pattern",
+        "* No service history or extended oil change intervals — the Ingenium is unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The 2.0-litre Ingenium diesel in the pre-facelift Discovery Sport is one of the most problematic modern engines in the JLR lineup. Timing chain stretch at as little as 40,000 miles is a well-documented and costly failure. The root cause — oil dilution from incomplete DPF regenerations — is a design flaw that makes this engine fundamentally unforgiving of urban driving patterns. Buy with full service history, evidence of regular motorway use, and budget for preventative chain work. Without this? Walk away — the risk of a £5,000+ engine replacement is simply too high.",
+    "cta": {
+      "label": "→ Compare Discovery Sport TD4 / SD4 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Discovery Sport with the 2.0 TD4 or SD4 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattling or knocking (timing chain warning — this is critical)",
+      "* Dipstick Check — Smell for diesel (oil dilution); check for rising oil level",
+      "* DPF History — Ask about driving patterns; short urban journeys are a red flag",
+      "* Service History — Including 10,000-mile or less oil change intervals — non-negotiable",
+      "* Engine Management Light — Any warning lights? Have codes been read?",
+      "* Turbo Noise — Listen for siren-like whining or whistling under acceleration",
+      "* Smoke Check — Blue smoke (turbo) or white smoke (injector / DPF issues)",
+      "* Warranty Status — Extended warranty is strongly recommended"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204DTD (TD4)",
+        "years": "2015–2019",
+        "power": "150–180 PS (110–132 kW) / 380–430 Nm",
+        "enquiries": "1,150 [EM-VERIFIED]",
+        "avgReconCost": "£2,800–£5,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "204DTA / 204DTD (SD4)",
+        "years": "2015–2019",
+        "power": "240 PS (177 kW) / 500 Nm",
+        "enquiries": "1,150 [EM-VERIFIED]",
+        "avgReconCost": "£2,800–£5,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204DTD / AJ20D4):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,999 cc (2.0L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Bore",
+          "value": "87.5 mm"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single turbo (TD4) / Twin-turbo (SD4)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Discovery Sport TD4 / SD4 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Discovery Sport TD4 / SD4 engine replacement cost in the UK?",
+        "answer": "A reconditioned 2.0 Ingenium diesel engine typically costs £2,800–£5,000 supply only. A fully fitted replacement from a specialist costs approximately £4,500–£6,500. Fitting adds £1,200–£2,000 depending on location and workshop rates. Main dealer new engines start from £7,000–£10,000+ supply only."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Discovery Sport 2.0 TD4 / SD4 engine reliable?",
+        "answer": "No — the 2.0-litre Ingenium diesel has a poor reliability reputation. The most critical issue is timing chain stretch, which can occur as early as 40,000 miles. The root cause is oil dilution from incomplete DPF regenerations, which thins the engine oil and accelerates chain wear. This engine is fundamentally unforgiving of short urban journeys."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Discovery Sport TD4 / SD4?",
+        "answer": "The main known issues are: (1) Timing chain stretch — the most critical and costly failure, (2) Oil dilution from DPF regeneration — the root cause of chain failure, (3) Piston cooling oil jet solenoid failure — caused by coolant leaks from the thermostat housing, and (4) Turbocharger failure — with siren-like whining as the key warning sign."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Discovery Sport TD4 / SD4 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a well-kept £10,000–£18,000 Discovery Sport, a £4,500–£6,500 recon is 25–65% of the car's value — often worth it given Discovery Sport values have remained relatively strong. However, for higher-mileage or older examples under £7,000, evaluate whether the replacement cost exceeds our 60% Land Rover scrap threshold."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Discovery Sport engine code?",
+        "answer": "The 2.0 Ingenium diesel uses the 204DTD (AJ20D4) engine code. TD4 variants produce 150–180PS (110–132kW) with 380–430Nm of torque; SD4 variants produce 240PS (177kW) with 500Nm of torque. The engine code is stamped on the cylinder block. Tell us your registration and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent timing chain failure on the 2.0 Ingenium diesel?",
+        "answer": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 10,000 miles or less with the correct JLR-spec oil, (2) Avoid short urban journeys — regular motorway runs allow DPF regeneration to complete, (3) Regularly check the dipstick for rising oil level or diesel smell (oil dilution warning), and (4) Never ignore cold-start rattle — book an inspection immediately if you hear it. Even with perfect maintenance, premature chain stretch remains a risk."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Discovery Sport TD4 / SD4 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Discovery Sport TD4/SD4 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Discovery Sport owners, across both TD4 and SD4 variants of the 2.0 Ingenium diesel, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare Discovery Sport Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit to a single quote."
+      },
+      {
+        "title": "UK Engine Replacement Services for Discovery Sport",
+        "text": "supply-only or full supply & fit available nationwide, covering every pre-facelift L550 Discovery Sport with the 2.0-litre Ingenium diesel."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Discovery Sport TD4 / SD4 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £2,800 supply-only.",
+    "ctaButton": {
+      "label": "Compare Land Rover Discovery Sport TD4 / SD4 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

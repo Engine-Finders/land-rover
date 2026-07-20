@@ -1,0 +1,561 @@
+{
+  "meta": {
+    "slug": "range-rover-sport-d350",
+    "title": "D350 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 59,
+    "description": "Land Rover Range Rover Sport D350 3.0 Ingenium diesel — real UK costs, timing chain & oil leak insight, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://landroverengine.uk/range-rover-sport/d350/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Sport",
+              "item": "https://landroverengine.uk/range-rover-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "D350",
+              "item": "https://landroverengine.uk/range-rover-sport/d350/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport D350 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L494 Range Rover Sport D350 (2020–2022)",
+              "url": "https://landroverengine.uk/range-rover-sport/l494/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "L461 Range Rover Sport D350 (2022–present)",
+              "url": "https://landroverengine.uk/range-rover-sport/l461/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport D350 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ20D6 / DT306 (3.0L Ingenium I6 Twin-Turbo Diesel MHEV)",
+              "url": "https://landroverengine.uk/engines/aj20d6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover Sport D350 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned D350 3.0-litre Ingenium diesel engine typically costs £5,500–£8,500 supply only. Used engines are available from £3,500–£5,500. Fitting adds £1,300–£2,500 depending on your location and workshop. Use our calculator for a figure specific to your Range Rover Sport."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover Sport D350 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The D350 is powered by JLR's 3.0-litre Ingenium straight-six diesel — a meaningfully more robust engine than the troubled 2.0-litre diesel. However, it has known issues: front engine cover oil leaks (a known JLR warranty pattern), timing chain stretch (oil dilution from DPF regeneration is a contributing factor), DPF clogging (urban use), and EGR cooler failures. Regular maintenance (12,000-mile oil changes with 0W-30 JLR-spec oil) is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Range Rover Sport D350?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most frequently reported issues are front engine cover oil leaks (a known warranty pattern affecting Defenders, Discoveries and Range Rovers with the Ingenium engine), timing chain stretch (accelerated by oil dilution from DPF regeneration), DPF clogging (short urban journeys), and EGR cooler failures. The 3.0-litre is less prone to these issues than the 2.0-litre, but vigilance is still required."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover Sport D350 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept £60,000–£90,000 Range Rover Sport, a £7,000 recon is 8–12% of the car's value — definitely worth it. Against a high-mileage £35,000 example, the same recon approaches our 60% Land Rover threshold — get a scrap valuation first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Range Rover Sport D350 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The D350 carries the engine code AJ20D6 (also referred to as DT306 in some documentation). It's a 3.0-litre straight-six twin-turbo diesel with a 48V mild-hybrid system, used in the L494 (2020–2022) and L461 (2022–present) Range Rover Sport."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the timing chain, or does it need full engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A preventative timing chain and tensioner replacement costs £1,200–£2,500. Oil dilution from failed DPF regenerations is a key contributor to timing chain wear. If ignored and the chain snaps, the engine is an interference design — pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes using 0W-30 JLR-spec oil are the single most effective preventative measure."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Sport D350 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Sport D350 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Range Rover Sport D350 3.0-litre Ingenium diesel engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "D350 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover-sport/d350/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover Sport D350 • 2020–present • 3.0 Ingenium Twin-Turbo Diesel MHEV",
+    "h1": "Land Rover Range Rover Sport D350 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Range Rover Sport specialists. Compare reconditioned, rebuilt and used 3.0-litre Ingenium twin-turbo diesel engines with MHEV — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Range Rover Sport D350 Engines — from £4,000 to £10,500 · Code: AJ20D6 / DT306",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free D350 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The D350 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L494 Range Rover Sport",
+        "years": "2020–2022",
+        "engineCode": "AJ20D6 / DT306 (3.0L Ingenium I6 Twin-Turbo Diesel MHEV)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,500–£8,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Proven 3.0 Ingenium diesel; front-cover oil leaks a known pattern"
+      },
+      {
+        "generation": "L461 Range Rover Sport",
+        "years": "2022–present",
+        "engineCode": "AJ20D6 / DT306 (3.0L Ingenium I6 Twin-Turbo Diesel MHEV)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,500–£8,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Same engine hardware; modern L461 platform"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover Sport D350 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,500–£5,500",
+        "fittedIndie": "£4,800–£7,200",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£5,500–£8,500",
+        "fittedIndie": "£6,800–£10,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,500–£9,500",
+        "fittedIndie": "£7,800–£11,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£10,000–£14,000+",
+        "fittedIndie": "£11,500–£16,000+",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the AJ20D6 3.0-litre Ingenium diesel. Most Range Rover Sport engine replacements range between £4,500 and £12,000 depending on engine type and specification.",
+    "labourEstimate": "Fitting a Range Rover Sport D350 engine typically takes 15–25 hours at £70–£100/hr (independent) or £120–£180/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare D350 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Front Engine Cover Oil Leak",
+        "symptoms": "Oil spots on the garage floor, oil smell from the engine bay, low oil level warning, visible oil residue around the front of the engine.",
+        "typicalMileage": "15,000–30,000 miles (can occur on nearly new vehicles)",
+        "repairCost": "£800–£1,500 (front cover + crank seal replacement)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "This is a known JLR warranty issue affecting Defenders, Discoveries and Range Rovers with the Ingenium diesel. The remedy involves replacing the front engine cover and front crank seal. If your D350 is exhibiting oil leaks, have it inspected promptly — while not catastrophic if caught early, ignoring it can lead to low oil levels and potential engine damage. The repair, once done in a workshop rather than on the production line, is reportedly better than when it came out of the factory.",
+        "failureLink": {
+          "label": "Read the full oil leak guide",
+          "href": "/failures/oil-leak/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Timing Chain Stretch & Oil Dilution",
+        "symptoms": "Rattling noise on cold start, metallic ticking from the engine, engine warning light, DPF filling prematurely.",
+        "typicalMileage": "50,000–100,000 miles",
+        "repairCost": "£1,200–£2,500 (chain + tensioner replacement)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "£5,500–£9,500 (if chain skips and valves contact pistons)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today"
+        },
+        "recommendation": "Oil dilution from failed DPF regeneration is a key contributor to lubrication degradation in Ingenium engines, accelerating timing chain wear. Stretched timing chains can cause the DPF to fill prematurely, creating a cascade of failures. At the first sign of cold-start rattle, get the chain and tensioners inspected immediately. Regular oil changes using the correct 0W-30 spec oil are the single most effective preventative measure.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/timing-chain-wear/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "DPF Clogging & EGR Cooler Failures",
+        "symptoms": "DPF warning light, reduced performance, increased fuel consumption, failed regeneration cycles, white smoke from exhaust.",
+        "typicalMileage": "40,000–80,000 miles (urban-driven vehicles)",
+        "repairCost": "£300–£900 (forced regeneration, DPF clean, or EGR cooler replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The Ingenium diesel's DPF is sensitive to short urban journeys. Cracked EGR coolers can allow coolant to enter the combustion system. If you predominantly drive in town, ensure the vehicle completes regular regeneration cycles — a motorway run at 2,000+ rpm for 20 minutes at least once a week is recommended. The 3.0-litre is less prone to these issues than the 2.0-litre, but they remain a known pattern.",
+        "failureLink": {
+          "label": "Read the full DPF failure guide",
+          "href": "/failures/dpf-clogging/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every D350 era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free D350 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Range Rover Sport D350 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Front engine cover oil leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Warranty-covered on many examples; straightforward fix"
+        },
+        {
+          "problem": "Timing chain stretch",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Preventative — catches the fault before catastrophic failure"
+        },
+        {
+          "problem": "DPF clogging",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£900",
+          "whenItMakesSense": "Forced regeneration or DPF clean — less than replacement"
+        },
+        {
+          "problem": "EGR cooler failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Specialist repair available"
+        },
+        {
+          "problem": "Chain snap (valve contact)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "£5,500–£9,500",
+          "whenItMakesSense": "Typically requires full engine replacement or complete rebuild"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This D350? Check These First",
+      "buyIf": [
+        "* Documented front engine cover inspection or replacement (warranty work completed)",
+        "* Full service history with 0W-30 JLR-spec oil at 12,000-mile (or less) intervals",
+        "* Evidence of DPF-friendly driving — regular motorway runs",
+        "* No cold-start rattle — a quiet startup suggests healthy timing chain"
+      ],
+      "avoidIf": [
+        "* Oil leaks with no documented front cover repair history",
+        "* No proof of regular oil changes — the Ingenium diesel is unforgiving of neglect",
+        "* DPF warning light with no regeneration history",
+        "* Engine warning light with timing, EGR, or DPF codes and no diagnosis"
+      ]
+    },
+    "closingVerdict": "The D350 is the high-output diesel in the Range Rover Sport line-up, powered by JLR's 3.0-litre Ingenium straight-six. It's a meaningfully more robust engine than the troubled 2.0-litre diesel, but it's still a modern diesel with modern diesel problems — front-cover oil leaks, timing chain vigilance, and DPF/EGR maintenance are the price of entry. Buy on documented history, not on faith. A well-maintained D350 is a £60,000–£90,000 luxury SUV; a neglected one is a £7,000 engine replacement waiting to happen.",
+    "cta": {
+      "label": "→ Compare D350 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover Sport D350 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattling or metallic ticking on startup (timing chain wear warning)",
+      "* Service History — including the D350 era and confirmed oil-change intervals using 0W-30 JLR-spec oil",
+      "* Oil Leak Check — Any history of oil leaks? (front engine cover is a known weak point)",
+      "* DPF Check — Check for DPF warning light or evidence of regeneration issues (urban-driven vehicles are high risk)",
+      "* Smoke Check — White smoke on startup can indicate EGR coolant leak",
+      "* Oil Level — Check the dipstick; any evidence of oil dilution from failed DPF regenerations?",
+      "* Engine Warning Light — Have codes been read? Any unresolved timing, EGR, DPF, or injector issues?",
+      "* MOT History — Check for emissions-related failures (DPF, EGR, or injector-related)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ20D6 / DT306 (3.0L Ingenium I6 Twin-Turbo Diesel MHEV)",
+        "years": "2020–present",
+        "power": "350 PS (345 HP / 257 kW) @ 4,000 rpm · 700 Nm @ 1,500 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,500–£8,500 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ20D6 / DT306):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,997 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "Straight-6, 4 valves per cylinder"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin-turbocharged with 48V MHEV system"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare D350 engine prices for your Range Rover Sport",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Front engine cover oil leaks — known JLR warranty issue affecting Ingenium diesel vehicles"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "40,000–70,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,500–£8,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ20D6 / DT306 [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain wear【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), South West (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover Sport D350 engine replacement cost in the UK?",
+        "answer": "A reconditioned D350 3.0-litre Ingenium diesel engine typically costs £5,500–£8,500 supply only. Used engines are available from £3,500–£5,500. Fitting adds £1,300–£2,500 depending on your location and workshop. Use our calculator for a figure specific to your Range Rover Sport."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover Sport D350 engine reliable?",
+        "answer": "The D350 is powered by JLR's 3.0-litre Ingenium straight-six diesel — a meaningfully more robust engine than the troubled 2.0-litre diesel. However, it has known issues: front engine cover oil leaks (a known JLR warranty pattern), timing chain stretch (oil dilution from DPF regeneration is a contributing factor), DPF clogging (urban use), and EGR cooler failures. The Auto Express long-term test reported a few glitches but none major. Regular maintenance (12,000-mile oil changes with 0W-30 JLR-spec oil) is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Range Rover Sport D350?",
+        "answer": "The most frequently reported issues are front engine cover oil leaks (a known warranty pattern affecting Defenders, Discoveries and Range Rovers with the Ingenium engine), timing chain stretch (accelerated by oil dilution from DPF regeneration), DPF clogging (short urban journeys), and EGR cooler failures. The 3.0-litre is less prone to these issues than the 2.0-litre, but vigilance is still required."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover Sport D350 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £60,000–£90,000 Range Rover Sport, a £7,000 recon is 8–12% of the car's value — definitely worth it. Against a high-mileage £35,000 example, the same recon approaches our 60% Land Rover threshold — get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover Sport D350 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The D350 carries the engine code AJ20D6 (also referred to as DT306 in some documentation). It's a 3.0-litre straight-six twin-turbo diesel with a 48V mild-hybrid system, used in the L494 (2020–2022) and L461 (2022–present) Range Rover Sport."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the timing chain, or does it need full engine replacement?",
+        "answer": "Yes — if caught early. A preventative timing chain and tensioner replacement costs £1,200–£2,500. Oil dilution from failed DPF regenerations is a key contributor to timing chain wear. If ignored and the chain snaps, the engine is an interference design — pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes using 0W-30 JLR-spec oil are the single most effective preventative measure."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Range Rover Sport D350 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted D350 Ingenium Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Range Rover Sport owners, as part of the Engine Finders network, covering the entire AJ20D6 era from 2020 onwards across both L494 and L461 generations."
+      },
+      {
+        "title": "Compare D350 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, across every Range Rover Sport that left the factory with this 3.0-litre twin-turbo diesel."
+      },
+      {
+        "title": "UK Engine Replacement Services for D350",
+        "text": "supply-only or full supply & fit available nationwide, covering the full L494 and L461 production run — and we're vetted across every era of this badge."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover Sport D350 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your Range Rover Sport back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Range Rover Sport D350 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

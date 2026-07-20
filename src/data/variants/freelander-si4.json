@@ -1,0 +1,574 @@
+{
+  "meta": {
+    "slug": "freelander-si4",
+    "title": "Freelander Si4 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every Freelander Si4 engine — 204PT 2.0 GTDi turbo petrol. Real UK costs, turbo and oil consumption reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/freelander/si4/",
+    "openGraph": {
+      "title": "Freelander Si4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Freelander Si4 engine — 204PT 2.0 GTDi turbo petrol. Real UK costs, turbo and oil consumption reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/freelander/si4/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-si4.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Freelander Si4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Freelander Si4 engine — 204PT 2.0 GTDi turbo petrol. Real UK costs, turbo and oil consumption reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-si4.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Freelander",
+              "item": "https://landroverengine.uk/freelander/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Freelander 2",
+              "item": "https://landroverengine.uk/freelander/freelander-2/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Si4",
+              "item": "https://landroverengine.uk/freelander/si4/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander Si4 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Freelander 2 Si4 (204PT, 2012-2014)",
+              "url": "https://landroverengine.uk/freelander/freelander-2/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander Si4 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204PT (GTDi / Si4)",
+              "url": "https://landroverengine.uk/engines/204pt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Freelander Si4 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Freelander Si4 (204PT) engine typically costs £2,500–£4,000 supply only. Fitting adds £700–£1,300 at independent Land Rover specialist rates. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Freelander Si4 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Si4's 204PT is a strong performer but requires meticulous maintenance. It is sensitive to oil quality and change intervals — the key weaknesses are turbocharger overheating, oil consumption (piston ring / bore scoring), and timing chain stretch. Properly maintained examples can reach 200,000–250,000 km; neglected ones fail much earlier."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Freelander Si4?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Turbocharger failure (overheating and oil starvation), excessive oil consumption (piston ring and bore scoring issues), and timing chain stretch. All three are well-documented across the EcoBoost / GTDi engine family and are manageable with preventative maintenance and early detection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Freelander Si4 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a well-preserved Freelander 2 (values £4,000–£10,000 for good petrol examples), a £3,000–£4,000 reconditioned engine is 30–50% of the vehicle's value — often worth it for a solid example. For a tired example with extensive other issues, the Land Rover scrap threshold of 60% means evaluating the whole vehicle before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Freelander Si4 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate and vehicle documentation. The Si4 204PT was only fitted to Freelander 2 models from the 2012 facelift until the model was discontinued in 2014. If your Freelander is a 2012–2014 petrol, it is almost certainly the 204PT (the earlier 3.2-litre Si6 was used 2006–2012). Check your V5C or VIN plate for confirmation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the turbocharger, or does it require engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Turbocharger failure is almost always repairable without replacing the engine. A replacement or rebuilt turbo costs £800–£1,800 fitted. However, if the turbo has failed catastrophically and sent debris into the engine, a full engine replacement may be required. At the first sign of turbo noise or power loss, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Freelander Si4 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "5000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Freelander Si4 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Freelander Si4 204PT GTDi turbo petrol engine, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Freelander Si4 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/freelander/si4/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Freelander Si4 • 2012–2014 • 204PT 2.0 GTDi Turbo",
+    "h1": "Land Rover Freelander Si4 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Freelander Si4 specialists. Compare reconditioned, rebuilt and used 204PT 2.0 GTDi turbo petrol engines — supply & fit available nationwide for this capable compact SUV.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Freelander Si4 Engines — from £1,500 to £5,000 · Engine code: 204PT (2012–2014)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Freelander Si4 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The FREELANDER Si4 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Freelander 2 (L359)",
+        "years": "2012–2014",
+        "engineCode": "204PT (2.0 GTDi / Si4)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,500–£4,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Lightweight Ford-sourced EcoBoost turbo — strong performance but requires meticulous oil-change discipline to avoid piston ring and turbo issues"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Freelander Si4 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£2,800",
+        "fittedIndie": "£2,200–£3,700",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor required"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,500–£4,000",
+        "fittedIndie": "£3,400–£5,100",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,500–£5,000",
+        "fittedIndie": "£4,400–£6,200",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; full factory-spec refresh"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — unavailable",
+        "fittedIndie": "N/A",
+        "warranty": "—",
+        "bestFor": "Engine no longer produced new; reconditioned units are the standard"
+      }
+    ],
+    "figuresNote": "Figures above reflect the Freelander 2 L359 Si4 204PT era. This engine was only fitted 2012–2014, so no newer-generation variance applies.",
+    "labourEstimate": "Fitting a Freelander Si4 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). [PLACEHOLDER — confirm vs cost sheet]",
+    "cta": {
+      "label": "→ Compare Freelander Si4 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Turbocharger Overheating & Failure",
+        "symptoms": "Loss of power, excessive exhaust smoke, whistling or grinding from the turbo, oil burning smell, engine warning light.",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£800–£1,800 (turbo replacement or rebuild) [PLACEHOLDER]",
+        "replacementCost": "£2,500–£4,000 (if turbo failure leads to engine damage) [PLACEHOLDER]",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if power loss or unusual noises occur"
+        },
+        "recommendation": "The Si4's turbocharger runs hot and is sensitive to oil quality and cooling. Turbo failure can be catastrophic if debris enters the engine. The key prevention is using the correct fully synthetic oil and allowing the engine to idle briefly after hard driving to cool the turbo. Some specialist sources identify turbo overheating as one of the primary failure points on this engine. At the first sign of power loss or turbo noise, have it inspected immediately — a £800–£1,800 turbo replacement is far cheaper than a full engine swap.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/turbocharger-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Consumption & Piston Ring / Bore Scoring",
+        "symptoms": "Excessive oil consumption (1L per 1,000 miles or more), blue smoke from exhaust, rough idle, loss of compression.",
+        "typicalMileage": "70,000–120,000 miles",
+        "repairCost": "£2,000–£4,000 (piston ring replacement or engine rebuild) [PLACEHOLDER]",
+        "replacementCost": "£2,500–£4,000 (if scoring is severe) [PLACEHOLDER]",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon; monitor oil levels weekly"
+        },
+        "recommendation": "The 204PT / EcoBoost 2.0 is known for oil consumption issues, particularly if oil changes have been neglected. The piston rings can become clogged or fail, leading to bore scoring — a costly repair that often requires a full engine rebuild or replacement. The single most important preventative measure is frequent oil changes (every 8,000–10,000 miles at most, not JLR's extended intervals) using the correct grade and spec. If your Si4 is using more than 1L of oil per 1,000 miles, get a compression test and borescope inspection done before committing to any repair.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/piston-ring-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timing Chain Stretch (EcoBoost Family)",
+        "symptoms": "Rattle on cold start, engine warning light, reduced power, poor fuel economy, rough running.",
+        "typicalMileage": "80,000–120,000 miles",
+        "repairCost": "£800–£1,500 (timing chain and tensioner replacement) [PLACEHOLDER]",
+        "replacementCost": "£2,500–£4,000 (if chain snaps causing valve/piston contact) [PLACEHOLDER]",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if cold-start rattle appears"
+        },
+        "recommendation": "The Ford-sourced 2.0 EcoBoost family has a known weakness in the timing chain tensioner system. Chain stretch and tensioner failure can lead to rattling on cold start and, if ignored, catastrophic engine failure. This is less common on the Si4 than on some other EcoBoost applications, but it is still a recognised risk. Regular oil changes (using the correct spec) are the best prevention, as contaminated or degraded oil accelerates chain wear. If you hear a rattle on cold start that lasts more than a second or two, have the timing system inspected immediately.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-chain-stretch/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, every Freelander engine variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Freelander Si4 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Freelander Si4 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Turbocharger failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Replacement turbo is cost-effective if caught before debris enters engine"
+        },
+        {
+          "problem": "Oil consumption / piston rings",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£2,000–£4,000",
+          "whenItMakesSense": "Viable if bore scoring is minimal; borderline on high-mileage examples"
+        },
+        {
+          "problem": "Timing chain stretch",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Preventative replacement is cheaper than catastrophic failure"
+        },
+        {
+          "problem": "Major bore scoring",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Scoring often means a full engine replacement is the only viable option"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Freelander Si4? Check These First",
+      "buyIf": [
+        "* Full service history with oil changes every 8,000–10,000 miles (not extended intervals)",
+        "* No oil consumption issues — check dipstick regularly",
+        "* Turbo functioning correctly with no whistling or loss of power",
+        "* Cold start free from rattle (timing chain health indicator)"
+      ],
+      "avoidIf": [
+        "* No proof of regular oil changes — this engine is unforgiving of neglect",
+        "* Oil consumption of 1L per 1,000 miles or more — piston ring/bore issues likely",
+        "* Turbo noise or power loss — could be a sign of imminent failure",
+        "* Any engine warning light without diagnosis — the Si4 can hide expensive faults"
+      ]
+    },
+    "closingVerdict": "The Freelander Si4 is a rare and engaging petrol alternative to the ubiquitous diesel Freelanders. It offers strong performance and a more refined driving experience, but it demands respect: this is a high-strung turbo engine that punishes neglect. Buy on service history, change the oil frequently, and stay on top of turbo and timing chain health. A well-maintained Si4 can be a rewarding ownership proposition; a neglected one will be a money pit.",
+    "cta": {
+      "label": "→ Compare Freelander Si4 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Freelander Si4 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle lasting more than 1–2 seconds (timing chain warning)",
+      "* Service History — Oil changes every 8,000–10,000 miles are essential for this engine",
+      "* Oil Level — Check dipstick; excessive consumption indicates piston ring or bore issues",
+      "* Turbo Check — Any whistling, grinding, or power loss under load?",
+      "* Smoke Check — Blue smoke = oil burning; black smoke = overfuelling; white smoke = coolant",
+      "* Compression Test — Ask for results if available; indicates piston ring and valve health",
+      "* Engine Warning Light — Have codes been read? Turbo and timing chain codes are most common",
+      "* MOT History — Check for emissions failures (often related to turbo or fuelling issues)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204PT (GTDi / Si4)",
+        "years": "2012–2014",
+        "power": "240 PS (177 kW) @ 5,500 rpm · 340 Nm @ 3,200 rpm",
+        "enquiries": "— (classic engine, no verified volume) [PATTERN DATA]",
+        "avgReconCost": "£2,500–£4,000 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows exactly match Section 1B's Era Map — the same engine code, years, and generation coverage.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204PT / Si4 GTDi):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,999cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single turbocharger"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Freelander Si4 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Turbocharger failure and oil consumption — approximately 50% of Si4-related enquiries cite turbo or oil-related concerns [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–100,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,200 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204PT (Si4) — rare but enthusiast demand is steady [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring and autumn — classic Land Rover owners do pre-season prep [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), South West (18%), London (15%) [PATTERN DATA]"
+      },
+      {
+        "label": "SECTION 8 — FAQ",
+        "value": "1. How much does a Land Rover Freelander Si4 engine replacement cost in the UK?"
+      },
+      {
+        "label": "A reconditioned Freelander Si4 (204PT) engine typically costs £2,500–£4,000 supply only. Fitting adds £700–£1,300 at independent Land Rover specialist rates. Use our calculator for a figure specific to your vehicle.",
+        "value": "2. Is the Land Rover Freelander Si4 engine reliable?"
+      },
+      {
+        "label": "The Si4's 204PT is a strong performer but requires meticulous maintenance. It is sensitive to oil quality and change intervals — the key weaknesses are turbocharger overheating, oil consumption (piston ring / bore scoring), and timing chain stretch. Properly maintained examples can reach 200,000–250,000 km; neglected ones fail much earlier.",
+        "value": "3. What are the common problems with the Freelander Si4?"
+      },
+      {
+        "label": "Turbocharger failure (overheating and oil starvation), excessive oil consumption (piston ring and bore scoring issues), and timing chain stretch. All three are well-documented across the EcoBoost / GTDi engine family and are manageable with preventative maintenance and early detection.",
+        "value": "4. Is it worth replacing a Freelander Si4 engine, or should I scrap the car?"
+      },
+      {
+        "label": "Against a well-preserved Freelander 2 (values £4,000–£10,000 for good petrol examples), a £3,000–£4,000 reconditioned engine is 30–50% of the vehicle's value — often worth it for a solid example. For a tired example with extensive other issues, the Land Rover scrap threshold of 60% means evaluating the whole vehicle before committing.",
+        "value": "5. How do I find my Freelander Si4 engine code?"
+      },
+      {
+        "label": "The engine code is listed on the VIN plate and vehicle documentation. The Si4 204PT was only fitted to Freelander 2 models from the 2012 facelift until the model was discontinued in 2014. If your Freelander is a 2012–2014 petrol, it is almost certainly the 204PT (the earlier 3.2-litre Si6 was used 2006–2012). Check your V5C or VIN plate for confirmation.",
+        "value": "6. Can I repair the turbocharger, or does it require engine replacement?"
+      },
+      {
+        "label": "Turbocharger failure is almost always repairable without replacing the engine. A replacement or rebuilt turbo costs £800–£1,800 fitted. However, if the turbo has failed catastrophically and sent debris into the engine, a full engine replacement may be required. At the first sign of turbo noise or power loss, book an inspection immediately.",
+        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+      },
+      {
+        "label": "SECTION 9, META AND SCHEMA",
+        "value": "Section 9, the meta data, and the schema. This is a direct follow-up to my previous output which ended at \""
+      },
+      {
+        "label": "SECTION 9, META AND SCHEMA\".",
+        "value": "Looking at the user's scenario, they're clearly working through a series of Land Rover variant page generations. They've been asking for specific model/badge combos (Defender D240, Discovery 300Tdi, Discovery D250, Discovery Sport D200, and now Freelander Si4). Each time I generate Part 1, they ask for Part 2, following the two-prompt system outlined in the documents. Their identity is likely someone managing content production for the Land Rover engine site, possibly a content manager, SEO specialist, or project lead."
+      },
+      {
+        "label": "Their surface need is just \"complete the page,\" but their deeper need is consistency and adherence to the established template. They need this page to match the exact structure, tone, and data tagging rules defined in the AI Handover Document. They also need it to be publication-ready with all the technical SEO elements (meta tags, schema) that are crucial for search visibility and the site's knowledge graph.",
+        "value": "I need to follow the same pattern I used for the other Part 2 responses. This means:"
+      },
+      {
+        "label": "1. Start with Section 9 (Trust + Final CTA), using consultative mode because the Priority was Low. I can recycle the structure from the other Land Rover Part 2s but tailor the content for the Si4 specifically.",
+        "value": "2. Generate the meta title and description, keeping them within character limits."
+      },
+      {
+        "label": "3. Provide Open Graph and Twitter Card tags.",
+        "value": "4. Build the complete JSON-LD schema stack with all required blocks (BreadcrumbList, two ItemLists for Era Map and Engine Codes, FAQPage, Organization, Service with the correct price range, Dataset, WebPage). Conditional AggregateRating is omitted again."
+      },
+      {
+        "label": "5. Finish with the Production Note, which is critical for internal tracking and authority model confirmation. I need to state that the rating is \"NEWLY ASSIGNED\" based on 5 sources and that the price range sources from the Era Map.",
+        "value": "I should make sure all data tags ([PLACEHOLDER], [PATTERN DATA], [NEWLY ASSIGNED]) are correctly used. The Service schema's price range must span the full era map's costs (£1,500 to £5,000). The FAQ answers need to be consistent with the earlier section. The Production Note should mention the specific sources used for the new reliability rating."
+      }
+    ]
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Freelander Si4 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Si4 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Freelander owners, as part of the Engine Finders network, covering the 204PT turbo petrol and every other Freelander engine from the TD4 diesel to the 3.2 Si6."
+      },
+      {
+        "title": "Compare Freelander Si4 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. Our independent comparison service gives you the full market picture in minutes."
+      },
+      {
+        "title": "UK Engine Replacement Services for Si4",
+        "text": "supply-only or full supply & fit available nationwide, covering the Freelander 2 L359 Si4 2.0-litre turbo petrol, with 12 vetted Land Rover specialists at your fingertips."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Freelander Si4 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £1,500 for a used engine to £5,000 for a rebuilt unit, we have options for every budget and every Freelander.",
+    "ctaButton": {
+      "label": "Explore Land Rover Freelander Si4 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

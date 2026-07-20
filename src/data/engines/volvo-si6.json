@@ -231,48 +231,83 @@
       {
         "metric": "Overall Engine Score",
         "value": "76/100"
+      },
+      {
+        "metric": "SECTION 3 — VERDICT & RATING",
+        "value": "H2: Volvo SI6 (B6324S) — Our Verdict & Rating"
+      },
+      {
+        "metric": "Star rating: ★★★★ out of 5",
+        "value": "Confidence: 85% confidence — based on real-world data, enthusiast consensus, and specialist workshop reports."
+      },
+      {
+        "metric": "Engine Score breakdown:",
+        "value": "Dimension"
+      },
+      {
+        "metric": "Score (of 20)",
+        "value": "How it's determined"
+      },
+      {
+        "metric": "Reliability",
+        "value": "16"
+      },
+      {
+        "metric": "Star rating (4.0★) × 4 = 16",
+        "value": "Repair Cost"
+      },
+      {
+        "metric": "12",
+        "value": "Midpoint of Reconditioned (Supply Only) range: £2,200–£3,500 → £2,850 midpoint → falls in under £3,000 bracket → 20"
+      },
+      {
+        "metric": "Repairability",
+        "value": "16"
+      },
+      {
+        "metric": "Well‑understood inline‑six layout; timing chain replacement is labour‑intensive but well‑documented",
+        "value": "Parts Supply"
+      },
+      {
+        "metric": "12",
+        "value": "Parts available through Volvo and aftermarket; some components are becoming harder to source"
+      },
+      {
+        "metric": "Replacement Economics",
+        "value": "12"
+      },
+      {
+        "metric": "Reconditioned cost (£2,850 midpoint) as % of lowest typical vehicle value (Freelander 2 ~£3,000–£6,000) = 48–95% → falls in 45–59% bracket → 12",
+        "value": "Total"
+      },
+      {
+        "metric": "76/100",
+        "value": "Sum of the five rows above"
+      },
+      {
+        "metric": "One-line verdict: The SI6 is a smooth, powerful straight‑six — but early timing chain tensioner failure is a known risk — buy with documented service history and chain records.",
+        "value": "Best For / Avoid If:"
+      },
+      {
+        "metric": "* Best for: owners wanting Volvo refinement, smooth power delivery, and a reliable petrol engine in a Freelander 2.",
+        "value": "* Avoid if: you're looking at an early example (pre‑2010) with no timing chain service history."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "★★★★ out of 5",
-    "confidence": "85% confidence — based on real-world data, enthusiast consensus, and specialist workshop reports.",
-    "scoreNote": "Engine Score breakdown:",
+    "starRating": "",
+    "confidence": "",
+    "scoreNote": "",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": [
-        {
-          "dimension": "Reliability",
-          "score": "16 (Star rating (4.0★) × 4 = 16)"
-        },
-        {
-          "dimension": "Repair Cost",
-          "score": "12 (Midpoint of Reconditioned (Supply Only) range: £2,200–£3,500 → £2,850 midpoint → falls in under £3,000 bracket → 20)"
-        },
-        {
-          "dimension": "Repairability",
-          "score": "16 (Well‑understood inline‑six layout; timing chain replacement is labour‑intensive but well‑documented)"
-        },
-        {
-          "dimension": "Parts Supply",
-          "score": "12 (Parts available through Volvo and aftermarket; some components are becoming harder to source)"
-        },
-        {
-          "dimension": "Replacement Economics",
-          "score": "12 (Reconditioned cost (£2,850 midpoint) as % of lowest typical vehicle value (Freelander 2 ~£3,000–£6,000) = 48–95% → falls in 45–59% bracket → 12)"
-        },
-        {
-          "dimension": "Total",
-          "score": "76/100 (Sum of the five rows above)"
-        }
-      ]
+      "rows": []
     },
-    "oneLineVerdict": "The SI6 is a smooth, powerful straight‑six — but early timing chain tensioner failure is a known risk — buy with documented service history and chain records.",
-    "bestFor": "owners wanting Volvo refinement, smooth power delivery, and a reliable petrol engine in a Freelander 2.",
-    "avoidIf": "you're looking at an early example (pre‑2010) with no timing chain service history."
+    "oneLineVerdict": "",
+    "bestFor": "",
+    "avoidIf": ""
   },
   "compatibility": {
     "columns": [

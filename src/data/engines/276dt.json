@@ -1,0 +1,381 @@
+{
+  "meta": {
+    "slug": "276dt",
+    "title": "Land Rover 276DT (2.7 TDV6) Engine — Reliability & Cost",
+    "description": "The 276DT is a refined V6 diesel — but its oil pump housing is the Achilles' heel. Backed by 700+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+    "canonical": "https://landroverengine.uk/engines/276dt/",
+    "openGraph": {
+      "title": "Land Rover 276DT (2.7 TDV6) Engine — Reliability & Cost",
+      "description": "The 276DT is a refined V6 diesel — but its oil pump housing is the Achilles' heel. Backed by 700+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/engines/276dt/",
+      "image": "https://landroverengine.uk/images/landrover/engines/276dt.jpg",
+      "siteName": "landroverengine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Land Rover 276DT (2.7 TDV6) Engine — Reliability & Cost",
+      "description": "The 276DT is a refined V6 diesel — but its oil pump housing is the Achilles' heel. Backed by 700+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "image": "https://landroverengine.uk/images/landrover/engines/276dt.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://landroverengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "276DT (2.7 TDV6)",
+              "item": "https://landroverengine.uk/engines/276dt/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover models fitted with the 276DT (2.7 TDV6)",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Land Rover Discovery Series 3 (L319) TDV6",
+              "url": "https://landroverengine.uk/models/discovery-3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Land Rover Range Rover Sport L320 TDV6",
+              "url": "https://landroverengine.uk/models/range-rover-sport-l320/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a 276DT (2.7 TDV6) engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 276DT TDV6 typically costs £5,000–£7,500 supply only, varying by spec and rebuild quality. A used unit can be found from £2,800–£4,500, but history is critical. Fitting adds £900–£2,000 depending on labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the 276DT (2.7 TDV6) a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is a refined and capable V6 (3.5★) — but its reputation is compromised by the well-documented oil pump housing failure. This single point of weakness can cause sudden oil pressure loss and catastrophic bottom-end failure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common 276DT failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oil pump housing failure is the most serious — a weak point at the tensioner mount causes the pump to fail suddenly, killing oil pressure and destroying bearings. Cold start knock is the early warning sign. Other issues include turbo failure and EGR clogging."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover models use the 276DT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 276DT powered the Discovery 3 (L319) from 2004–2009 and the Range Rover Sport (L320) from 2005–2010."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover 276DT the same as Jaguar's version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 276DT is shared with Jaguar fitments in the XF (X250) and XJ (X351). The engine is mechanically identical, though ECU calibrations and ancillaries differ by model."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "landroverengine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Land Rover 276DT (2.7 TDV6) Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Land Rover"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover 276DT (2.7 TDV6) Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "9500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover 276DT (2.7 TDV6) UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Land Rover 276DT (2.7 TDV6), sourced from landroverengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Land Rover 276DT (2.7 TDV6) Engine — Reliability & Cost",
+          "url": "https://landroverengine.uk/engines/276dt/",
+          "author": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover • 276DT (2.7 TDV6) • Diesel • 2.7L V6 Turbo • 2004–2010",
+    "h1": "Land Rover 276DT (2.7 TDV6) Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The 276DT is Land Rover's first modern V6 diesel — smooth and torquey, but its oil pump is a single-point failure risk. Backed by 700+ real UK enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "700+ Enquiries"
+      },
+      {
+        "icon": "🔧",
+        "label": "2 Models Fitted"
+      },
+      {
+        "icon": "💯",
+        "label": "56/100 Engine Score"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Compare 276DT (2.7 TDV6) Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "276DT (2.7 TDV6)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Diesel"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "2.7L V6 Turbo"
+      },
+      {
+        "metric": "Power Range",
+        "value": "190–210 hp [THIRD-PARTY]"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2004–2010"
+      },
+      {
+        "metric": "Models Fitted (Land Rover only)",
+        "value": "2 (Discovery 3, Range Rover Sport L320)"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Also fitted to Jaguar (XF, XJ)"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "56/100"
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "★★★½ out of 5",
+    "confidence": "85% confidence — based on 700+ real UK enquiries, specialist rebuild reports, and owner‑forum data spanning 20 years of real-world use.",
+    "scoreNote": "Engine Score breakdown:",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (Star rating (3.5★) × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £5,000–£7,500 → £6,250 midpoint → falls in £5,000–£6,999 bracket → 8)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "8 (V6 layout and specialist requirements add cost; oil pump failure often kills the engine completely)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "12 (276DT parts available but less common than 306DT; some components shared with Ford/Jaguar)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "14 (Reconditioned cost (£6,250 midpoint) as % of lowest typical vehicle value (Discovery 3 ~£4,000–£7,000) = 89–156% — falls in 30–44% bracket → 14)"
+        },
+        {
+          "dimension": "Total",
+          "score": "56/100 (Sum of the five rows above)"
+        }
+      ]
+    },
+    "oneLineVerdict": "The 276DT is a refined early V6 diesel — but its oil pump housing is the Achilles' heel — buy only with documented oil pump history or factor in replacement cost.",
+    "bestFor": "",
+    "avoidIf": ""
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "Land Rover Discovery",
+        "generation": "Series 3 (L319)",
+        "variantBadge": "TDV6 (2.7)",
+        "years": "2004–2009"
+      },
+      {
+        "model": "Land Rover Range Rover Sport",
+        "generation": "L320",
+        "variantBadge": "TDV6 (2.7)",
+        "years": "2005–2010"
+      }
+    ],
+    "crossBrandNote": "Also powers the Jaguar XF (X250) and XJ (X351) → [Jaguar 276DT page]."
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£2,800–£4,500",
+        "fittedIndie": "£3,800–£5,900",
+        "warranty": "Varies by supplier"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£6,000–£9,000",
+        "warranty": "12 months typical"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£6,500–£9,500",
+        "fittedIndie": "£7,500–£11,000",
+        "warranty": "12–24 months typical"
+      }
+    ],
+    "labourEstimate": "Fitting a 276DT typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "sharedCostNote": "Parts cost is identical across Land Rover and Jaguar applications; labour time varies slightly by engine bay access and subframe design.",
+    "cta": {
+      "label": "→ Compare 276DT (2.7 TDV6) engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a 276DT (2.7 TDV6) engine replacement cost?",
+        "answer": "A reconditioned 276DT TDV6 typically costs £5,000–£7,500 supply only, varying by spec and rebuild quality. A used unit can be found from £2,800–£4,500, but history is critical. Fitting adds £900–£2,000 depending on labour rates."
+      },
+      {
+        "id": 2,
+        "question": "Is the 276DT (2.7 TDV6) a reliable engine?",
+        "answer": "It is a refined and capable V6 (3.5★) — but its reputation is compromised by the well‑documented oil pump housing failure. This single point of weakness can cause sudden oil pressure loss and catastrophic bottom‑end failure."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common 276DT failure?",
+        "answer": "Oil pump housing failure is the most serious — a weak point at the tensioner mount causes the pump to fail suddenly, killing oil pressure and destroying bearings. Cold start knock is the early warning sign. Other issues include turbo failure and EGR clogging."
+      },
+      {
+        "id": 4,
+        "question": "Which Land Rover models use the 276DT?",
+        "answer": "The 276DT powered the Discovery 3 (L319) from 2004–2009 and the Range Rover Sport (L320) from 2005–2010."
+      },
+      {
+        "id": 5,
+        "question": "Is the Land Rover 276DT the same as Jaguar's version?",
+        "answer": "Yes — the 276DT is shared with Jaguar fitments in the XF (X250) and XJ (X351). The engine is mechanically identical, though ECU calibrations and ancillaries differ by model."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real 276DT owners, as part of the Engine Finders network.",
+      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists — so you see the real market, not just one garage's quote.",
+      "UK Coverage: From Cornwall to the Highlands, our specialist network covers the whole UK with expert 276DT knowledge."
+    ],
+    "finalCta": "Find the best Land Rover 276DT (2.7 TDV6) engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover 276DT (2.7 TDV6) Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

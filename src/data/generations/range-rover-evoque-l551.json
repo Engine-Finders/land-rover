@@ -1,0 +1,782 @@
+{
+  "meta": {
+    "slug": "range-rover-evoque-l551",
+    "title": "L551 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every Range Rover Evoque L551 engine — D180, D150, P250, P300. Real UK costs, reliability data and common Ingenium failures. Get free quotes from 12 vetted specialists today.",
+    "descriptionCharCount": 159,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Evoque",
+              "item": "https://landroverengine.uk/range-rover-evoque/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Land Rover Range Rover Evoque L551",
+              "item": "https://landroverengine.uk/range-rover-evoque/l551/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Evoque L551 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "2.0 Ingenium Diesel (204DTD) Engine",
+              "url": "https://landroverengine.uk/engines/204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "2.0 Ingenium Diesel Twin-Turbo (204DTY) Engine",
+              "url": "https://landroverengine.uk/engines/204dty/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "2.0 Ingenium Petrol (PT204) Engine",
+              "url": "https://landroverengine.uk/engines/pt204/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "1.5 Ingenium Petrol (AJ150) Engine",
+              "url": "https://landroverengine.uk/engines/aj150/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Evoque L551 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover Evoque D150",
+              "url": "https://landroverengine.uk/range-rover-evoque/d150/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Evoque D180",
+              "url": "https://landroverengine.uk/range-rover-evoque/d180/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Range Rover Evoque D240",
+              "url": "https://landroverengine.uk/range-rover-evoque/d240/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Range Rover Evoque P200",
+              "url": "https://landroverengine.uk/range-rover-evoque/p200/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Range Rover Evoque P250",
+              "url": "https://landroverengine.uk/range-rover-evoque/p250/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Range Rover Evoque P300",
+              "url": "https://landroverengine.uk/range-rover-evoque/p300/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Range Rover Evoque P160",
+              "url": "https://landroverengine.uk/range-rover-evoque/p160/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover Evoque L551 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned L551 engine typically costs £3,000–£6,200 supply only, depending on engine — the D180 diesel sits at £3,500–£5,800, while the D240 twin-turbo runs £3,800–£6,200. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Range Rover Evoque L551 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P250 (2.0-litre petrol, 250 bhp) — the petrol Ingenium is generally more reliable than the diesel variant, with fewer catastrophic failures. The PT204 has known issues (turbo piping, oil pump) but these are manageable compared to the diesel's timing-chain risk."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover Evoque L551?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2.0-litre Ingenium diesel timing chain stretch (the defining L551 failure), turbocharger failure on diesel models, piston cooling oil jet solenoid failure, petrol turbo piping failure, and — on high-mileage cars — general Ingenium oil dilution issues from DPF regenerations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Range Rover Evoque L551 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends heavily on which engine you choose. The diesel variants (D150, D180, D240) carry significant timing-chain risk — we recommend checking chain history before purchase. The petrol variants (P200, P250, P300) are generally more reliable but still have documented turbo piping and oil pump issues. The P300e plug-in hybrid has its own separate reliability profile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Range Rover Evoque L551 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The D240 twin-turbo diesel (2019–2020) — it was discontinued for a reason. Twin-turbo complexity on top of the Ingenium diesel's timing-chain weakness makes it the highest-risk engine in the L551 range. Unless you have a warranty and are prepared for potential expensive repairs, avoid it."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my Evoque L551 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cold-start rattle (diesel models), loss of power, a 'Restricted Performance' message, blue smoke from the exhaust, or a siren-like whine under load are key warning signs. For petrol models, loss of power or a hissing noise under boost points to turbo piping failure. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover Evoque L551 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well‑kept £15,000 Evoque, a £4,000 diesel recon is ~27% of the car's value — safe. Against a sub‑£10,000 high-mileage example, the same recon brushes our 60% Land Rover threshold — walk away and consider a replacement vehicle. Value the whole car first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do Range Rover Evoque L551 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2.0-litre diesel's limiting factor is the timing chain — addressed proactively, it can reach 150,000+ miles. The petrol PT204 is similarly durable if the turbo piping and oil pump are maintained. The 1.5-litre three-cylinder is the newest engine in the range and has limited long-term data."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the Evoque L551 and the previous L538?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The L551 (2019–present) is the second-generation Evoque with a redesigned interior, improved refinement, and JLR's Ingenium engine family. The L538 (2011–2018) is the first generation with Ford-derived EcoBoost and PSA-derived diesel engines. The L551 is a more premium vehicle, but the Ingenium engines carry different risk profiles — see each generation's page for specifics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Range Rover Evoque L551 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in vehicle documentation; block stamping is visible on the cylinder block near the timing cover. Tell us your variant (D150, D180, D240, P200, P250, P300, P160 or P300e) and we'll identify it — 12 vetted Land Rover specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Evoque L551 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "6200",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Evoque L551 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Range Rover Evoque L551 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "L551 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover-evoque/l551/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-08",
+          "dateModified": "2026-07-08"
+        }
+      ]
+    }
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover Evoque L551 • SUV • 2019–Present",
+    "h1": "Land Rover Range Rover Evoque L551 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the second-generation Evoque L551 — from the 2.0-litre Ingenium diesel to the 300PS petrol MHEV. Real UK replacement costs, honest failure data, and the timing-chain risk that still haunts early Ingenium units. Backed by 349+ real UK L551 enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "349+ L551 Enquiries (2025) [EM-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "SUV"
+      },
+      {
+        "icon": "📖",
+        "label": "7 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore L551 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Land Rover Range Rover Evoque L551 Engine Codes — The Complete Database",
+    "subHeadline": "Every Ingenium petrol and diesel engine fitted to the second-generation Evoque L551 — from the D150 entry diesel to the P300 performance petrol.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (L551)"
+    ],
+    "engines": [
+      {
+        "engineCode": "Variants",
+        "family": "Reliability",
+        "fuel": "2025 Enquiries",
+        "displacement": "Avg. Recon Cost",
+        "power": "204DTD",
+        "years": "AJ200D / Ingenium D",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "Diesel, turbo",
+        "family": "2.0L",
+        "fuel": "150–180 bhp",
+        "displacement": "2019–present",
+        "power": "D150, D180",
+        "years": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "— (pattern data)",
+        "family": "£3,500–£5,800 [EM-QUOTE]",
+        "fuel": "204DTY",
+        "displacement": "AJ200D / Ingenium D (twin-turbo)",
+        "power": "Diesel, twin-turbo",
+        "years": "2.0L",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "240 bhp",
+        "family": "2019–2020",
+        "fuel": "D240",
+        "displacement": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "power": "— (pattern data)",
+        "years": "£3,800–£6,200 [EM-QUOTE]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "PT204",
+        "family": "AJ200P / Ingenium P",
+        "fuel": "Petrol, turbo",
+        "displacement": "2.0L",
+        "power": "200–300 bhp",
+        "years": "2019–present",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "P200, P250, P300",
+        "family": "★★★½☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "fuel": "— (pattern data)",
+        "displacement": "£3,500–£5,800 [EM-QUOTE]",
+        "power": "AJ150",
+        "years": "Ingenium I3",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "Petrol, turbo MHEV",
+        "family": "1.5L",
+        "fuel": "160 bhp",
+        "displacement": "2020–present",
+        "power": "P160 (FWD)",
+        "years": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All reliability ratings are [PROVISIONAL] — no dedicated Engine Page exists yet for any L551 engine family. Ratings are derived from specialist and owner consensus. The 2.0-litre Ingenium diesel (204DTD/204DTY) is widely considered the highest-risk unit due to timing-chain stretch and tensioner weakness. The petrol PT204 is generally more reliable but still suffers from turbo piping and oil pump issues. The 1.5-litre AJ150 three-cylinder is the newest and least-proven in this application."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Land Rover Range Rover Evoque L551 — Overview",
+    "intro": "The L551 is the second-generation Range Rover Evoque, launched in late 2018 and on sale from early 2019. It succeeded the hugely popular L538 (2011–2018) with a more premium interior, improved refinement, and a switch to JLR's all-new Ingenium engine family. All 2.0-litre petrol and diesel variants feature mild-hybrid technology (MHEV) with a belt-integrated starter generator and 48V battery, while a 1.5-litre three-cylinder petrol MHEV and a plug-in hybrid (PHEV) variant joined the range later.",
+    "keyFacts": "Platform: Land Rover D8 (steel monocoque, heavily revised from L538) • Predecessor: Range Rover Evoque L538 (2011–2018) • Successor: Currently in production (no successor announced) • Sibling body styles in this generation: Five-door SUV only (no convertible variant)",
+    "marketIntelligenceLine": "The L551 Evoque generated 349 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 2.0-litre Ingenium diesel (D150/D180) as these units exit warranty and timing-chain issues become a major concern."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "D180 (204DTD, 2.0-litre, 180 bhp)",
+        "quote": "The D180 is the sweet spot in the diesel range — strong torque (430 Nm), decent economy, and without the twin-turbo complexity of the discontinued D240. It's still an Ingenium diesel with timing-chain risks, but properly maintained it's the most sensible diesel choice.",
+        "whoItsFor": "Buyers who need diesel torque and economy without twin-turbo complexity."
+      },
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "P250 (PT204, 2.0-litre, 250 bhp)",
+        "quote": "The P250 delivers 183 kW (250 bhp) and 365 Nm of torque — enough performance without the P300's extra stress on the drivetrain. It's the best-balanced petrol in the range, with the PT204's known issues (turbo piping, oil pump) well-documented and manageable.",
+        "whoItsFor": "Buyers who want strong petrol performance with fewer worries than the diesel."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "D180 / D150 (204DTD, 2.0-litre diesel)",
+        "quote": "The 2.0-litre Ingenium diesel suffers from timing-chain stretch and tensioner weakness, typically between 60,000 and 100,000 miles. Oil dilution from incomplete DPF regenerations makes the problem worse. This is the defining risk of the L551 generation.",
+        "whoItsFor": "Buyers who understand the risk and have a warranty or budget for chain replacement."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "D240 (204DTY, 2.0-litre twin-turbo diesel)",
+        "quote": "The twin-turbo D240 adds another turbocharger and more complexity to an already risk-prone Ingenium diesel. Turbo failure on top of timing-chain failure makes this the most expensive L551 engine to repair. Discontinued after 2020 for good reason.",
+        "whoItsFor": "Buyers who want the most powerful diesel and are prepared for the highest repair bills."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "P200 (PT204, 2.0-litre, 200 bhp)",
+        "quote": "The entry-level petrol gives you 147 kW (200 bhp) and 340 Nm — plenty for daily driving. It shares the PT204's known issues but avoids the diesel's timing-chain catastrophe. Lower purchase price, lower running costs.",
+        "whoItsFor": "Buyers who want petrol reliability at the entry price point."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "P160 (AJ150, 1.5-litre three-cylinder MHEV)",
+        "quote": "The 1.5-litre three-cylinder is the only FWD L551 variant. It's the lightest, most efficient petrol option — but it's often overlooked by buyers who assume they need AWD. For urban use, it's a genuine alternative.",
+        "whoItsFor": "Urban buyers who don't need AWD and want the lowest running costs."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "Land Rover Range Rover Evoque L551 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "D150 / D180 (204DTD)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Timing chain stretch, turbo failure",
+        "repairCostSpecialist": "£1,200–£2,500",
+        "replacementCostRecon": "£3,500–£5,800",
+        "ownershipVerdict": "Risk vs Reward — the defining L551 failure risk"
+      },
+      {
+        "engine": "D240 (204DTY)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Timing chain, twin-turbo failure",
+        "repairCostSpecialist": "£1,500–£3,500",
+        "replacementCostRecon": "£3,800–£6,200",
+        "ownershipVerdict": "Most Expensive — twin-turbo complexity adds cost"
+      },
+      {
+        "engine": "P200 / P250 / P300 (PT204)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Turbo piping, oil pump, timing chain",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£3,500–£5,800",
+        "ownershipVerdict": "Solid Choice — petrol Ingenium more reliable than diesel"
+      },
+      {
+        "engine": "P160 (AJ150)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Limited data (newer engine)",
+        "repairCostSpecialist": "£600–£1,500",
+        "replacementCostRecon": "£3,000–£5,000",
+        "ownershipVerdict": "Best Value — simplest L551 engine, lowest running costs"
+      }
+    ],
+    "economicsRule": {
+      "title": "The L551 rule",
+      "text": "A £3,500–£5,800 diesel recon against a £10,000–£25,000 Evoque sits at 14–58% of the car's value — a repair decision, not a financial one. Against a sub-£10,000 high-mileage example, the same recon brushes our 60% Land Rover threshold — we'll honestly tell you to walk away. Value the car first, then the engine. Always check for timing-chain history on diesel models."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which L551 Costs Least To Own?",
+        "answer": "P200 petrol — simpler than diesel, cheaper to repair, no DPF."
+      },
+      {
+        "question": "Which L551 Costs Most To Own?",
+        "answer": "D240 twin-turbo diesel — two turbos, timing-chain risk, discontinued."
+      },
+      {
+        "question": "Which L551 Is Best Value?",
+        "answer": "D180 diesel (with chain history) — strong torque, good economy, most common variant."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "2.0 Ingenium Diesel Timing Chain Stretch",
+        "affectedModels": "Range Rover Evoque L551 D150, D180, D240 (204DTD / 204DTY, 2019–present).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The 2.0-litre Ingenium diesel suffers from timing-chain stretch and tensioner weakness. The chain's plastic guides can shed fragments into the oil system. Oil dilution from incomplete DPF regenerations thins the engine oil, reducing its ability to protect the chain and guides. Cold-start rattle is the classic early warning.",
+        "tieredCosts": [
+          {
+            "tier": "Dealer",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "At the first sign of cold-start rattle or a \"Restricted Performance\" message, have the timing chain inspected immediately. A £900–£1,600 preventative repair is dramatically cheaper than the £3,500+ replacement that follows if the chain snaps and destroys the engine.",
+        "cta": {
+          "label": "Compare 2.0 Ingenium diesel engine prices for your Evoque L551 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "2.0 Ingenium Diesel Turbocharger Failure",
+        "affectedModels": "Range Rover Evoque L551 D150, D180, D240 (204DTD / 204DTY).",
+        "typicalFailureMileage": "70,000–120,000 miles.",
+        "rootCause": "The turbocharger can fail due to oil contamination or oil starvation. Symptoms include loss of power, engine management light, a siren-like whine under load, and blue smoke from the exhaust (indicating oil leaking into the exhaust system). Contamination in the oil delivery system can cause a new turbo to fail shortly after installation.",
+        "tieredCosts": [
+          {
+            "tier": "Dealer",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you hear a siren-like whine or notice blue smoke, have the turbo and oil system inspected immediately. A £700–£1,200 turbo replacement is far cheaper than the £3,800+ replacement that follows if debris contaminates the engine.",
+        "cta": {
+          "label": "Compare turbo replacement prices for your Evoque L551 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "2.0 Ingenium Diesel Piston Cooling Oil Jet Solenoid Failure",
+        "affectedModels": "Range Rover Evoque L551 D150, D180, D240 (204DTD / 204DTY).",
+        "typicalFailureMileage": "50,000–90,000 miles.",
+        "rootCause": "The 2.0-litre diesel uses an electronically controlled solenoid to manage oil flow to the piston cooling jets. The solenoid is prone to failure, primarily due to coolant leaking from the thermostat housing above onto the solenoid body and connector.",
+        "tieredCosts": [
+          {
+            "tier": "Dealer",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the thermostat housing and solenoid inspected during routine servicing. A £350–£700 solenoid replacement is cheap insurance against the £3,500+ engine replacement that follows if pistons overheat and fail.",
+        "cta": {
+          "label": "Compare Ingenium diesel repairs for your Evoque L551 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "2.0 Ingenium Petrol (PT204) Turbo Piping Failure",
+        "affectedModels": "Range Rover Evoque L551 P200, P250, P300 (PT204, 2019–present).",
+        "typicalFailureMileage": "50,000–90,000 miles.",
+        "rootCause": "The PT204 petrol engine suffers from poor-quality turbocharger piping that can split or detach. This causes boost leaks, loss of power, and engine management lights. The oil pump can also malfunction, and timing chain issues have been reported.",
+        "tieredCosts": [
+          {
+            "tier": "Dealer",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you notice a loss of power or hear a hissing noise under acceleration, have the turbo piping inspected immediately. A £250–£500 pipe replacement is dramatically cheaper than the £3,500+ replacement that follows if the engine runs lean and suffers damage.",
+        "cta": {
+          "label": "Compare PT204 engine prices for your Evoque L551 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "L551 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "D150 / D180",
+        "engineCode": "204DTD",
+        "usedSupply": "£1,500–£3,200",
+        "reconditionedSupply": "£3,500–£5,800",
+        "rebuiltSupply": "£4,800–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "D240",
+        "engineCode": "204DTY",
+        "usedSupply": "£1,800–£3,500",
+        "reconditionedSupply": "£3,800–£6,200",
+        "rebuiltSupply": "£5,200–£7,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "P200 / P250 / P300",
+        "engineCode": "PT204",
+        "usedSupply": "£1,500–£3,200",
+        "reconditionedSupply": "£3,500–£5,800",
+        "rebuiltSupply": "£4,800–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "P160",
+        "engineCode": "AJ150",
+        "usedSupply": "£1,200–£2,800",
+        "reconditionedSupply": "£3,000–£5,000",
+        "rebuiltSupply": "£4,200–£6,500",
+        "labourHours": "8–12 hrs"
+      }
+    ],
+    "note": ""
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [],
+    "scopeNote": "All variants listed are L551 body code only — the second-generation Evoque produced from late 2018 onwards. The first-generation L538 (2011–2018) is covered on its own Generation Page."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [
+      "1. D180 (2.0-litre diesel, 180 bhp)",
+      "2. D150 (2.0-litre diesel, 150 bhp)",
+      "3. P250 (2.0-litre petrol, 250 bhp) — based on UK specialist enquiry patterns [PATTERN DATA]"
+    ],
+    "mostRequestedVariants": [
+      "1. Range Rover Evoque D180",
+      "2. Range Rover Evoque D150",
+      "3. Range Rover Evoque P250 — based on model-level request data [EM‑VERIFIED]"
+    ],
+    "averageReplacementCost": "£3,000–£6,200 reconditioned, supply only [EM‑QUOTE]",
+    "mostCommonFailures": [
+      "1. 2.0 Ingenium diesel timing chain stretch",
+      "2. 2.0 Ingenium diesel turbocharger failure",
+      "3. 2.0 Ingenium petrol turbo piping failure"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "Range Rover Evoque D180",
+        "location": "Bristol",
+        "issue": "Cold-start rattle, timing chain inspection",
+        "enquiries": "6 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Range Rover Evoque D150",
+        "location": "Manchester",
+        "issue": "Loss of power, turbo whine",
+        "enquiries": "4 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Range Rover Evoque P250",
+        "location": "London",
+        "issue": "Hissing noise under boost, pipe split",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover Evoque L551 engine replacement cost in the UK?",
+        "answer": "A reconditioned L551 engine typically costs £3,000–£6,200 supply only [EM‑QUOTE], depending on engine — the D180 diesel sits at £3,500–£5,800, while the D240 twin-turbo runs £3,800–£6,200. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which Range Rover Evoque L551 engine is the most reliable?",
+        "answer": "The P250 (2.0-litre petrol, 250 bhp) — the petrol Ingenium is generally more reliable than the diesel variant, with fewer catastrophic failures. The PT204 has known issues (turbo piping, oil pump) but these are manageable compared to the diesel's timing-chain risk."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover Evoque L551?",
+        "answer": "2.0-litre Ingenium diesel timing chain stretch (the defining L551 failure), turbocharger failure on diesel models, piston cooling oil jet solenoid failure, petrol turbo piping failure, and — on high-mileage cars — general Ingenium oil dilution issues from DPF regenerations."
+      },
+      {
+        "id": 4,
+        "question": "Is the Range Rover Evoque L551 reliable?",
+        "answer": "It depends heavily on which engine you choose. The diesel variants (D150, D180, D240) carry significant timing-chain risk — we recommend checking chain history before purchase. The petrol variants (P200, P250, P300) are generally more reliable but still have documented turbo piping and oil pump issues. The P300e plug-in hybrid has its own separate reliability profile."
+      },
+      {
+        "id": 5,
+        "question": "Which Range Rover Evoque L551 engine should I avoid?",
+        "answer": "The D240 twin-turbo diesel (2019–2020) — it was discontinued for a reason. Twin-turbo complexity on top of the Ingenium diesel's timing-chain weakness makes it the highest-risk engine in the L551 range. Unless you have a warranty and are prepared for potential expensive repairs, avoid it."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my Evoque L551 engine needs replacing?",
+        "answer": "Cold-start rattle (diesel models), loss of power, a \"Restricted Performance\" message, blue smoke from the exhaust, or a siren-like whine under load are key warning signs. For petrol models, loss of power or a hissing noise under boost points to turbo piping failure. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Range Rover Evoque L551 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well‑kept £15,000 Evoque, a £4,000 diesel recon is ~27% of the car's value — safe. Against a sub‑£10,000 high-mileage example, the same recon brushes our 60% Land Rover threshold — walk away and consider a replacement vehicle. Value the whole car first."
+      },
+      {
+        "id": 8,
+        "question": "How long do Range Rover Evoque L551 engines last?",
+        "answer": "The 2.0-litre diesel's limiting factor is the timing chain — addressed proactively, it can reach 150,000+ miles. The petrol PT204 is similarly durable if the turbo piping and oil pump are maintained. The 1.5-litre three-cylinder is the newest engine in the range and has limited long-term data."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the Evoque L551 and the previous L538?",
+        "answer": "The L551 (2019–present) is the second-generation Evoque with a redesigned interior, improved refinement, and JLR's Ingenium engine family. The L538 (2011–2018) is the first generation with Ford-derived EcoBoost and PSA-derived diesel engines. The L551 is a more premium vehicle, but the Ingenium engines carry different risk profiles — see each generation's page for specifics."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Range Rover Evoque L551 engine code?",
+        "answer": "Listed on the VIN plate and in vehicle documentation; block stamping is visible on the cylinder block near the timing cover. Tell us your variant (D150, D180, D240, P200, P250, P300, P160 or P300e) and we'll identify it — 12 vetted Land Rover specialists will confirm it for free."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Range Rover Evoque L551 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted L551 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real L551 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare L551 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for L551",
+        "text": "covering every variant from D150 to P300, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover Evoque L551 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Range Rover Evoque L551 Engine Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

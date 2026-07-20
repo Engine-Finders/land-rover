@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "slug": "freelander-18-petrol",
+    "title": "Freelander 1.8 Engine Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Land Rover Freelander 1.8 – classic K-series petrol. Real UK costs, head gasket facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://landroverengine.uk/freelander/18-petrol/",
+    "openGraph": {
+      "title": "Freelander 1.8 Engine Cost UK — Compare Quotes",
+      "description": "Land Rover Freelander 1.8 – classic K-series petrol. Real UK costs, head gasket facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/freelander/18-petrol/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/18-petrol.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Freelander 1.8 Engine Cost UK — Compare Quotes",
+      "description": "Land Rover Freelander 1.8 – classic K-series petrol. Real UK costs, head gasket facts, and specialist quotes.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/18-petrol.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Freelander",
+              "item": "https://landroverengine.uk/freelander/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "1.8",
+              "item": "https://landroverengine.uk/freelander/18-petrol/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander 1.8 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Freelander 1 1.8 (1998-2006)",
+              "url": "https://landroverengine.uk/freelander/fl1/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander 1.8 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "18K4F",
+              "url": "https://landroverengine.uk/engines/18k4f/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Freelander 1.8 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 18K4F engine typically costs £900–£1,800 supply only, with used units available from £400–£900. Fitting adds £700–£1,200 depending on the workshop. Use our calculator for a figure specific to your Freelander."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Freelander 1.8 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It can be — but only with the upgraded MLS head gasket and steel dowels fitted. The original elastomeric gasket and plastic dowels are a known design flaw. Once upgraded, the K-series is a durable, characterful engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Freelander 1.8?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Head gasket failure (the defining issue), water pump and thermostat failure, and inlet manifold gasket leaks. All are well-understood by Rover and Land Rover specialists. The head gasket upgrade is the single most important modification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Freelander 1.8 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Freelander 1 values range from £1,000–£3,500 depending on condition. A £900–£1,800 reconditioned engine can be 30–60% of the vehicle's value — apply the Land Rover 60% scrap threshold. If the chassis and body are good, replacement may be worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Freelander 1.8 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is 18K4F — it's the only 1.8-litre petrol used in the Freelander 1. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production years were 1998–2006."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the K-series head gasket, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the head gasket can be replaced. The critical point is to use the upgraded MLS (multi-layer steel) gasket and steel dowels, not the original elastomeric gasket and plastic dowels. A proper replacement costs £600–£1,200 and should last the life of the engine."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Freelander 1.8 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "400",
+            "highPrice": "3200",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Freelander 1.8 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Freelander 1.8 engines (18K4F), sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Freelander 1.8 Engine Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/freelander/18-petrol/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Freelander 1.8 • 1998–2006 • 1.8-litre K-series Petrol",
+    "h1": "Land Rover Freelander 1.8 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The Freelander 1.8 uses Rover's K-series petrol engine — a lightweight 1.8-litre unit with a well-known head gasket weakness. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Freelander 1.8 Engines — from £400 to £3,200 · Code: 18K4F",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 1.8 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 1.8 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Freelander 1.8 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£400–£900",
+        "fittedIndie": "£1,100–£1,800",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; project vehicles"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£900–£1,800",
+        "fittedIndie": "£1,800–£2,800",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£1,500–£3,200",
+        "fittedIndie": "£2,500–£4,200",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — no longer available",
+        "fittedIndie": "N/A",
+        "warranty": "—",
+        "bestFor": "N/A — specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current Freelander 1.8 market. This badge used one engine throughout its production run — no era ambiguity.",
+    "labourEstimate": "Fitting a Freelander 1.8 engine typically takes 7–10 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 1.8 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Head Gasket Failure (The Classic K-series Issue)",
+        "symptoms": "Coolant loss, overheating, \"mayo\" under the oil filler cap, white smoke from exhaust, pressurised cooling system, misfire on cold start",
+        "typicalMileage": "40,000–80,000 miles (often repeats every 40k–60k if not upgraded)",
+        "repairCost": "£600–£1,200 (head gasket replacement with upgraded gasket and steel dowels)",
+        "replacementCost": "£900–£1,800 (if overheating has caused warped head or cracked block)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "any overheating or coolant loss on a K-series requires immediate investigation"
+        },
+        "recommendation": "This is the defining issue of the K-series engine. The original elastomeric gasket and plastic dowels were a design flaw. The only permanent fix is to fit the upgraded MLS (multi-layer steel) head gasket and steel dowels. Any Freelander 1.8 should be assumed to need this work unless proven otherwise. Buy one that's already had the upgrade, or budget for it immediately. A £600–£1,200 preventative head gasket job is far cheaper than a full engine replacement.",
+        "failureLink": {
+          "label": "Read the full head gasket failure guide",
+          "href": "/failures/head-gasket-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Coolant System Failures (Water Pump and Thermostat)",
+        "symptoms": "Coolant loss, temperature gauge fluctuations, heater not working properly, steam from engine bay",
+        "typicalMileage": "50,000–100,000 miles",
+        "repairCost": "£250–£500 (water pump or thermostat replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The K-series cooling system is marginal even when healthy. Water pump failure or a stuck thermostat can quickly lead to overheating and head gasket failure. Replace the water pump and thermostat as a preventative measure when doing the head gasket, or at around 60,000 miles. Use only genuine or high-quality aftermarket parts — the cooling system on these engines is not forgiving of cheap components.",
+        "failureLink": {
+          "label": "Read the full cooling system failure guide",
+          "href": "/failures/cooling-system-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Inlet Manifold Gasket Leak (Oil and Coolant)",
+        "symptoms": "Rough idle, oil or coolant loss, engine warning light, occasional misfire",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£150–£300 (inlet manifold gasket replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The inlet manifold gasket on the K-series can fail, allowing oil or coolant to be drawn into the inlet. This causes rough running and can lead to more serious issues if left unchecked. Replacement is a straightforward job for any Rover or Land Rover specialist. It's often done at the same time as the head gasket.",
+        "failureLink": {
+          "label": "Read the full inlet manifold gasket failure guide",
+          "href": "/failures/inlet-manifold-gasket-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Freelander engine era covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free 1.8 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Freelander 1.8 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Head gasket failure (preventative)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "The single most important upgrade — fit MLS gasket and steel dowels"
+        },
+        {
+          "problem": "Head gasket failure (overheating)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£900–£1,800",
+          "whenItMakesSense": "Viable if the head isn't warped; otherwise replacement required"
+        },
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£250–£500",
+          "whenItMakesSense": "Simple replacement — do it alongside the head gasket"
+        },
+        {
+          "problem": "Inlet manifold gasket leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£300",
+          "whenItMakesSense": "Simple and cheap — well-understood repair"
+        },
+        {
+          "problem": "Cracked block (overheating)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "If the block has cracked, scrap or replace"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Freelander 1.8? Check These First",
+      "buyIf": [
+        "* Documented head gasket replacement with the upgraded MLS gasket and steel dowels — this is the single most critical check",
+        "* Cooling system service history — water pump, thermostat, and coolant flush performed",
+        "* Evidence of regular maintenance and coolant changes (the K-series is unforgiving of neglect)",
+        "* A well-maintained example where the previous owner understood the K-series needs"
+      ],
+      "avoidIf": [
+        "* No proof of head gasket upgrade — assume it needs doing immediately",
+        "* Any signs of overheating or \"mayo\" under the oil filler cap",
+        "* Poor service history or evidence of coolant neglect",
+        "* A tired example where the cost of a £600–£1,200 head gasket job exceeds the vehicle's value"
+      ]
+    },
+    "closingVerdict": "The K-series 1.8 is a lightweight, characterful engine that's let down by a well-known design flaw. With the upgraded MLS head gasket and steel dowels fitted, it can be perfectly reliable. Without it, you're buying a ticking time bomb. On a Freelander 1, the values are low (£1,000–£3,000) — a £600–£1,200 head gasket job is a significant proportion of the car's value, so buy one that's already had it done, or factor the cost into your purchase price.",
+    "cta": {
+      "label": "→ Compare 1.8 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Freelander 1.8 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Head Gasket History — Has the upgraded MLS gasket and steel dowels been fitted? (The single most critical check)",
+      "2. Coolant Condition — Any signs of \"mayo\" under the cap or in the expansion tank?",
+      "3. Temperature Gauge — Any fluctuations or overheating episodes in the history?",
+      "4. Cold Start — Does it start cleanly from cold? Any misfire or white smoke?",
+      "5. Oil Condition — Any signs of coolant contamination in the oil? (milky appearance)",
+      "6. Heater Performance — Does the heater blow hot air consistently? (airlock or cooling system issue)",
+      "7. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "8. Service History — Evidence of regular coolant changes (every 2–3 years recommended)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "18K4F",
+        "years": "1998–2006",
+        "power": "118 bhp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£900–£1,800 [EM-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — one engine throughout this badge's production run.",
+    "technicalSpecs": {
+      "title": "Technical Specs (18K4F):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,796cc (1.8‑litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4‑cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi‑point fuel injection (MPi)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 1.8 engine prices for your Freelander",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Freelander 1.8 engine replacement cost in the UK?",
+        "answer": "A reconditioned 18K4F engine typically costs £900–£1,800 supply only, with used units available from £400–£900. Fitting adds £700–£1,200 depending on the workshop. Use our calculator for a figure specific to your Freelander."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Freelander 1.8 engine reliable?",
+        "answer": "It can be — but only with the upgraded MLS head gasket and steel dowels fitted. The original elastomeric gasket and plastic dowels are a known design flaw. Once upgraded, the K-series is a durable, characterful engine."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Freelander 1.8?",
+        "answer": "Head gasket failure (the defining issue), water pump and thermostat failure, and inlet manifold gasket leaks. All are well-understood by Rover and Land Rover specialists. The head gasket upgrade is the single most important modification."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Freelander 1.8 engine, or should I scrap the car?",
+        "answer": "Freelander 1 values range from £1,000–£3,500 depending on condition. A £900–£1,800 reconditioned engine can be 30–60% of the vehicle's value — apply the Land Rover 60% scrap threshold. If the chassis and body are good and the car is cherished, replacement may be worthwhile. On a tired example, get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Freelander 1.8 engine code?",
+        "answer": "The engine code is 18K4F — it's the only 1.8-litre petrol used in the Freelander 1. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production years for this engine in the Freelander were 1998–2006."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the K-series head gasket, or does it need replacement?",
+        "answer": "Yes — the head gasket can be replaced. The critical point is to use the upgraded MLS (multi-layer steel) gasket and steel dowels, not the original elastomeric gasket and plastic dowels. A proper replacement costs £600–£1,200 and, if done correctly, should last the life of the engine."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted 1.8 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Freelander 1.8 owners, as part of the Engine Finders network, across the classic K-series era."
+      },
+      {
+        "title": "Compare 1.8 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the K-series head gasket and cooling system requirements."
+      },
+      {
+        "title": "UK Engine Replacement Services for Freelander 1.8",
+        "text": "supply‑only or full supply & fit available nationwide, covering this classic K-series engine with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Freelander 1.8 engine replacement UK owners trust. Compare prices from trusted specialists on EnginesMarket today and keep your Freelander on the road.",
+    "ctaButton": {
+      "label": "Compare Land Rover Freelander 1.8 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

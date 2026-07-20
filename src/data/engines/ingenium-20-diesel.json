@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "slug": "ingenium-20-diesel",
+    "title": "Land Rover Ingenium 2.0 Diesel Engine — Reliability & Cost",
+    "description": "The Ingenium 2.0 diesel is JLR's modern workhorse — pre-2019 timing chain tensioners are the defining risk. Backed by 1,500+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+    "canonical": "https://landroverengine.uk/engines/ingenium-20-diesel/",
+    "openGraph": {
+      "title": "Land Rover Ingenium 2.0 Diesel Engine — Reliability & Cost",
+      "description": "The Ingenium 2.0 diesel is JLR's modern workhorse — pre-2019 timing chain tensioners are the defining risk. Backed by 1,500+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/engines/ingenium-20-diesel/",
+      "image": "https://landroverengine.uk/images/landrover/engines/ingenium-20-diesel.jpg",
+      "siteName": "landroverengine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Land Rover Ingenium 2.0 Diesel Engine — Reliability & Cost",
+      "description": "The Ingenium 2.0 diesel is JLR's modern workhorse — pre-2019 timing chain tensioners are the defining risk. Backed by 1,500+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "image": "https://landroverengine.uk/images/landrover/engines/ingenium-20-diesel.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://landroverengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ingenium 2.0 Diesel (204DTD/224DT)",
+              "item": "https://landroverengine.uk/engines/ingenium-20-diesel/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover models fitted with the Ingenium 2.0 Diesel (204DTD/224DT)",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Land Rover Discovery Sport L550 D150/D180/D240",
+              "url": "https://landroverengine.uk/models/discovery-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Land Rover Evoque L551 D150/D180/D240",
+              "url": "https://landroverengine.uk/models/evoque/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Land Rover Velar L560 D180/D240",
+              "url": "https://landroverengine.uk/models/velar/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Land Rover Defender L663 D200/D240",
+              "url": "https://landroverengine.uk/models/defender/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does an Ingenium 2.0 diesel engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Ingenium 2.0 diesel typically costs £3,500–£5,800 supply only, varying by power output and specific sub-variant. Fitting adds £900–£1,700 depending on labour rates and vehicle model."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Ingenium 2.0 diesel a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is a capable and efficient modern diesel (3.5★), but its reputation is mixed due to pre-2019 timing chain tensioner failures and oil-dilution from DPF regens. Post-2019 revisions are significantly improved."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common Ingenium 2.0 diesel failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pre-2019 timing chain tensioner failure is the most critical — it can cause sudden chain stretch and catastrophic valve/piston interference. Other common issues include EGR cooler leaks and oil dilution from incomplete DPF regenerations on short-trip vehicles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover models use the Ingenium 2.0 diesel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) — spanning 150–240 hp outputs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Ingenium 2.0 diesel the same as Jaguar's version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 204DTD and 224DT engine codes are shared across both brands. The engine is mechanically identical between Land Rover and Jaguar fitments, though ECU calibrations and ancillaries differ by model."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "landroverengine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Land Rover Ingenium 2.0 Diesel Engine (204DTD/224DT)",
+          "brand": {
+            "@type": "Brand",
+            "name": "Land Rover"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Ingenium 2.0 Diesel Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "7000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Ingenium 2.0 Diesel (204DTD/224DT) UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Land Rover Ingenium 2.0 Diesel (204DTD/224DT), sourced from landroverengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Land Rover Ingenium 2.0 Diesel Engine — Reliability & Cost",
+          "url": "https://landroverengine.uk/engines/ingenium-20-diesel/",
+          "author": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover • Ingenium 2.0 D (204DTD/224DT) • Diesel • 2.0L I4 Turbo • 2015–present",
+    "h1": "Land Rover Ingenium 2.0 Diesel Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The Ingenium 2.0 diesel is JLR's modern four-cylinder workhorse — pre‑2019 timing chain tensioners are the defining risk. Backed by 1,500+ real UK enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "1,500+ Enquiries"
+      },
+      {
+        "icon": "🔧",
+        "label": "4 Models Fitted"
+      },
+      {
+        "icon": "💯",
+        "label": "66/100 Engine Score"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Compare Ingenium 2.0 Diesel Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "Ingenium 2.0 Diesel (204DTD / 224DT)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Diesel"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "2.0L I4 Turbo"
+      },
+      {
+        "metric": "Power Range",
+        "value": "150–240 hp [THIRD-PARTY]"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2015–present"
+      },
+      {
+        "metric": "Models Fitted (Land Rover only)",
+        "value": "4 (Discovery Sport, Evoque, Velar, Defender L663)"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Also fitted to Jaguar (XE, XF, F‑Pace, E‑Pace)"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "66/100"
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "★★★½ out of 5",
+    "confidence": "88% confidence — based on 1,500+ real UK enquiries, specialist rebuild reports, and JLR TSB documentation.",
+    "scoreNote": "Engine Score breakdown:",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (Star rating (3.5★) × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £3,500–£5,800 → £4,650 midpoint → falls in £3,000–£4,999 bracket → 16)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Pre‑2019 tensioner risk and DPF/oil‑dilution complexity add labour; post‑2019 improved but still a modern Euro‑6 diesel)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "12 (204DTD well‑supported via JLR and aftermarket; 224DT parts interchangeable; some delay for specific pre‑2019 tensioner components)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "12 (Reconditioned cost (£4,650 midpoint) as % of lowest typical vehicle value (Discovery Sport ~£8,000–£12,000) = 39–58% → falls in 45–59% bracket → 12)"
+        },
+        {
+          "dimension": "Total",
+          "score": "66/100 (Sum of the five rows above)"
+        }
+      ]
+    },
+    "oneLineVerdict": "The Ingenium 2.0 diesel is a strong, efficient modern unit — but pre‑2019 timing chain tensioners can fail without much warning — insist on full service history and post‑2019 hardware where possible.",
+    "bestFor": "",
+    "avoidIf": ""
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "Land Rover Discovery Sport",
+        "generation": "L550",
+        "variantBadge": "D150 / D180 / D240 (204DTD)",
+        "years": "2015–present"
+      },
+      {
+        "model": "Land Rover Evoque",
+        "generation": "L551",
+        "variantBadge": "D150 / D180 / D240 (204DTD)",
+        "years": "2019–present"
+      },
+      {
+        "model": "Land Rover Velar",
+        "generation": "L560",
+        "variantBadge": "D180 / D240 (204DTD)",
+        "years": "2017–present"
+      },
+      {
+        "model": "Land Rover Defender",
+        "generation": "L663",
+        "variantBadge": "D200 / D240 (204DTD)",
+        "years": "2020–present"
+      }
+    ],
+    "crossBrandNote": "Also powers the Jaguar XE, XF, F‑Pace and E‑Pace → [Jaguar Ingenium 2.0 Diesel page]."
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£2,900–£4,900",
+        "warranty": "Varies by supplier"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£3,500–£5,800",
+        "fittedIndie": "£4,500–£7,300",
+        "warranty": "12 months typical"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£4,800–£7,000",
+        "fittedIndie": "£5,800–£8,500",
+        "warranty": "12–24 months typical"
+      }
+    ],
+    "labourEstimate": "Fitting an Ingenium 2.0 diesel typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "sharedCostNote": "Parts cost is identical across Land Rover and Jaguar applications; labour time varies slightly by engine bay access and model‑specific subframe removal.",
+    "cta": {
+      "label": "→ Compare Ingenium 2.0 Diesel engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does an Ingenium 2.0 diesel engine replacement cost?",
+        "answer": "A reconditioned Ingenium 2.0 diesel typically costs £3,500–£5,800 supply only, varying by power output and specific sub‑variant. Fitting adds £900–£1,700 depending on labour rates and vehicle model."
+      },
+      {
+        "id": 2,
+        "question": "Is the Ingenium 2.0 diesel a reliable engine?",
+        "answer": "It is a capable and efficient modern diesel (3.5★), but its reputation is mixed due to pre‑2019 timing chain tensioner failures and oil‑dilution from DPF regens. Post‑2019 revisions are significantly improved."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common Ingenium 2.0 diesel failure?",
+        "answer": "Pre‑2019 timing chain tensioner failure is the most critical — it can cause sudden chain stretch and catastrophic valve/piston interference. Other common issues include EGR cooler leaks and oil dilution from incomplete DPF regenerations on short‑trip vehicles."
+      },
+      {
+        "id": 4,
+        "question": "Which Land Rover models use the Ingenium 2.0 diesel?",
+        "answer": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) — spanning 150–240 hp outputs."
+      },
+      {
+        "id": 5,
+        "question": "Is the Land Rover Ingenium 2.0 diesel the same as Jaguar's version?",
+        "answer": "Yes — the 204DTD and 224DT engine codes are shared across both brands. The engine is mechanically identical between Land Rover and Jaguar fitments, though ECU calibrations and ancillaries differ by model."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real Ingenium diesel owners, as part of the Engine Finders network.",
+      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists — so you see the real market, not just one garage's quote.",
+      "UK Coverage: From Cornwall to the Highlands, our specialist network covers the whole UK with expert Ingenium 2.0 diesel knowledge."
+    ],
+    "finalCta": "Find the best Land Rover Ingenium 2.0 diesel engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Ingenium 2.0 Diesel Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

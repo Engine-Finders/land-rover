@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "slug": "range-rover-sport-30-sc",
+    "title": "Range Rover Sport 3.0 SC V6 Engine Replacement Cost UK",
+    "titleCharCount": 59,
+    "description": "Every Range Rover Sport 3.0 SC V6 engine — AJ126. One generation, real UK costs and reliability. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 156,
+    "canonical": "https://landroverengine.uk/range-rover-sport/30-sc/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Sport",
+              "item": "https://landroverengine.uk/range-rover-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "L494",
+              "item": "https://landroverengine.uk/range-rover-sport/l494/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "3.0 SC V6",
+              "item": "https://landroverengine.uk/range-rover-sport/30-sc/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport 3.0 SC V6 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L494 3.0 SC V6 (AJ126, 2013–2021)",
+              "url": "https://landroverengine.uk/range-rover-sport/l494/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport 3.0 SC V6 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ126",
+              "url": "https://landroverengine.uk/engines/aj126/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Range Rover Sport 3.0 SC V6 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ126 engine typically costs £4,500–£7,500 supply only. Fitting adds £1,100–£1,900. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Range Rover Sport 3.0 SC V6 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ126 supercharged V6 is rated ★★★☆☆. It offers a rewarding driving experience but has well-documented issues: water pump and cooling system failures, timing chain tensioner wear (especially pre-2015), and supercharger coupler wear. Cooling system maintenance is the key to longevity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover Sport 3.0 SC V6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Water pump failure, coolant crossover pipe leaks, timing chain tensioner wear (pre-2015 units), and supercharger coupler wear are the most common issues. None typically lead to full engine replacement if caught early — preventative cooling system maintenance is the priority."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover Sport 3.0 SC V6 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a £15,000–£25,000 Range Rover Sport 3.0 SC V6, a £5,500 recon engine is a manageable 22–37% of the vehicle's value — worth it for a well-maintained example. Given the Range Rover Sport's strong retained values, replacement is usually viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Range Rover Sport's engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For the 3.0 SC V6, the engine code is AJ126 — it's on the VIN plate and vehicle documentation. The 3.0 SC badge signifies the 3.0-litre supercharged V6. If you're unsure, tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AJ126's water pump, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the water pump is a straightforward repair costing £600–£1,200. The AJ126's water pump and coolant crossover pipes are the most common service items on this engine; replacing them as a preventative measure at 60,000 miles is strongly recommended."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Sport 3.0 SC V6 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Sport 3.0 SC V6 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Range Rover Sport 3.0 SC V6 engines (AJ126), sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Range Rover Sport 3.0 SC V6 Engine Replacement Cost UK",
+          "url": "https://landroverengine.uk/range-rover-sport/30-sc/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover Sport 3.0 SC V6 • 2013–2021 • 3.0 AJ126",
+    "h1": "Land Rover Range Rover Sport 3.0 SC V6 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Range Rover Sport V6 specialists. Compare reconditioned, rebuilt and used AJ126 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Range Rover Sport 3.0 V6 Engines — from £2,500 to £7,500 · Code: AJ126",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Range Rover Sport 3.0 V6 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The RANGE ROVER SPORT 3.0 SC V6 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L494",
+        "years": "2013–2021",
+        "engineCode": "AJ126 (3.0 V6 Supercharged)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,500–£7,500 [EM-QUOTE]",
+        "eraNote": "Jaguar-Land Rover's supercharged V6 — cooling system and timing chain are the main watchpoints."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover Sport 3.0 SC V6 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,400–£5,700",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £10,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,500–£6,500",
+        "fittedIndie": "£5,600–£7,800",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,500–£7,500",
+        "fittedIndie": "£6,600–£8,900",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£10,000–£14,000",
+        "fittedIndie": "£12,000–£16,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting a Range Rover Sport 3.0 SC V6 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, every 3.0 SC V6 variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Range Rover Sport 3.0 V6 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Range Rover Sport 3.0 SC V6 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Water pump failure (AJ126)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Preventative — replace the pump and crossover pipes at 60,000 miles"
+        },
+        {
+          "problem": "Timing chain tensioner wear (AJ126 — pre-2015)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£2,000–£4,000",
+          "whenItMakesSense": "If caught early; don't drive with a rattling chain"
+        },
+        {
+          "problem": "Supercharger coupler wear (AJ126)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,000",
+          "whenItMakesSense": "Straightforward coupler replacement; don't let it damage the supercharger"
+        },
+        {
+          "problem": "Coolant crossover pipe leaks (AJ126)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Replace plastic pipes with upgraded metal or OE parts"
+        },
+        {
+          "problem": "Overheating damage from coolant loss",
+          "repairable": "⚠️ Depends",
+          "typicalCost": "£1,500–£5,000",
+          "whenItMakesSense": "If head gasket or block damage has occurred, replacement may be cheaper"
+        },
+        {
+          "problem": "Crankshaft bearing failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Not a common AJ126 failure; if it occurs, replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Range Rover Sport 3.0 SC V6? Check These First",
+      "buyIf": [
+        "* Full Land Rover service history with documented oil-change intervals",
+        "* Water pump and crossover pipes replaced as a preventative measure",
+        "* Post-2015 build with the revised timing chain tensioners",
+        "* Evidence of regular motorway driving (the supercharged V6 benefits from regular use)"
+      ],
+      "avoidIf": [
+        "* Pre-2015 unit with no timing chain history or cold-start rattle",
+        "* Service history shows repeated coolant top-ups with no diagnosis",
+        "* No record of water pump replacement on higher-mileage examples (60k+)",
+        "* Engine warning light present with no diagnosis documentation"
+      ]
+    },
+    "closingVerdict": "The AJ126 supercharged V6 offers a rewarding driving experience in the Range Rover Sport, but it's a more complex engine than the diesel alternatives. Cooling system maintenance and timing chain tensioner health (especially pre-2015) are the keys to longevity. Buy on service history and proof of preventative cooling system work. If you're replacing, a reconditioned unit with a 12-month warranty is the sweet spot.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover Sport 3.0 SC V6 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any rattle on startup (timing chain tensioner wear — especially pre-2015)",
+      "* Service History — Including which engine era (AJ126 is the only 3.0 SC V6 — verify this before purchase)",
+      "* Coolant Level — Is the coolant low with no visible leak? Potential water pump or crossover pipe issue",
+      "* Supercharger Noise — Any rattle from the front of the engine at idle? Supercharger coupler wear indicator",
+      "* Oil Leaks — Check the valley between cylinder banks for oil pooling (common on higher-mileage units)",
+      "* Oil Consumption — Does it use more than 1L per 5,000 miles? If so, investigate",
+      "* Engine Warning Light — Have codes been read? Any unresolved cooling, timing, or fuelling issues?",
+      "* MOT History — Check for emissions-related failures; the supercharged V6 should pass easily if well-maintained"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ126",
+        "years": "2013–2021",
+        "power": "335–340 bhp / 450 Nm",
+        "enquiries": "560 [EM-VERIFIED]",
+        "avgReconCost": "£4,500–£7,500 [EM-QUOTE]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ126):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,995cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder V (90°)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Supercharged (Eaton twin-vortices) — naturally aspirated base with supercharger"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system issues (water pump, crossover pipes) — approximately 45% of AJ126 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "72,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,500 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ126 [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling system issues worsen in hot weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (25%), Midlands (17%), London (16%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Range Rover Sport 3.0 SC V6 engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ126 engine typically costs £4,500–£7,500 supply only. Fitting adds £1,100–£1,900. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Range Rover Sport 3.0 SC V6 engine reliable?",
+        "answer": "The AJ126 supercharged V6 is rated ★★★☆☆. It offers a rewarding driving experience but has well-documented issues: water pump and cooling system failures, timing chain tensioner wear (especially pre-2015), and supercharger coupler wear. Cooling system maintenance is the key to longevity."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover Sport 3.0 SC V6?",
+        "answer": "Water pump failure, coolant crossover pipe leaks, timing chain tensioner wear (pre-2015 units), and supercharger coupler wear are the most common issues. None typically lead to full engine replacement if caught early — preventative cooling system maintenance is the priority."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover Sport 3.0 SC V6 engine, or should I scrap the car?",
+        "answer": "Against a £15,000–£25,000 Range Rover Sport 3.0 SC V6, a £5,500 recon engine is a manageable 22–37% of the vehicle's value — worth it for a well-maintained example. Given the Range Rover Sport's strong retained values, replacement is usually viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover Sport's engine code?",
+        "answer": "For the 3.0 SC V6, the engine code is AJ126 — it's on the VIN plate and vehicle documentation. The 3.0 SC badge signifies the 3.0-litre supercharged V6. If you're unsure, tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ126's water pump, or does it need a new engine?",
+        "answer": "Yes — the water pump is a straightforward repair costing £600–£1,200. The AJ126's water pump and coolant crossover pipes are the most common service items on this engine; replacing them as a preventative measure at 60,000 miles is strongly recommended."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Land Rover Range Rover Sport 3.0 SC V6 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Range Rover Sport 3.0 SC V6 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

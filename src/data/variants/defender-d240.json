@@ -1,0 +1,553 @@
+{
+  "meta": {
+    "slug": "defender-d240",
+    "title": "D240 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every Defender D240 engine — 204DTD 2.0 diesel. Real UK costs, timing chain reliability data, and honest advice. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 156,
+    "canonical": "https://landroverengine.uk/defender/d240/",
+    "openGraph": {
+      "title": "D240 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Defender D240 engine — 204DTD 2.0 diesel. Real UK costs, timing chain reliability data, and honest advice. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/defender/d240/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/defender-d240.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "D240 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Defender D240 engine — 204DTD 2.0 diesel. Real UK costs, timing chain reliability data, and honest advice.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/defender-d240.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Defender",
+              "item": "https://landroverengine.uk/defender/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "L663",
+              "item": "https://landroverengine.uk/defender/l663/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "D240",
+              "item": "https://landroverengine.uk/defender/d240/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender D240 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L663 Defender D240 (204DTD, 2020-2021)",
+              "url": "https://landroverengine.uk/defender/l663/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender D240 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD",
+              "url": "https://landroverengine.uk/engines/204dtd/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Defender D240 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Defender D240 (204DTD) engine typically costs £3,500–£5,800 supply only. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Defender D240 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 204DTD in the D240 is the single-turbo Ingenium diesel, a 2020–2021 short-run engine. It shares the pre-2019 timing chain tensioner risk profile that has defined the Ingenium D's reputation. Post-2019 revisions reduced failure rates but did not eliminate the risk entirely — buy on chain history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Defender D240?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner wear (the defining failure mode), oil dilution from DPF regeneration (urban-use risk), and EGR cooler failure (coolant leaks into the exhaust system). All three are well-documented across the 204DTD family."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Defender D240 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a well-kept £25,000 Defender D240, a £4,500 recon is 18% of the car's value — worth it. Against a higher-mileage example, the Land Rover scrap threshold of 60% means replacement remains viable across most D240 values, given the L663's strong residual values."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Defender D240 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code 204DTD is listed on the VIN plate and vehicle documentation. The D240 badge was only available 2020–2021 in the L663 Defender, so if your vehicle is a 2020 or early 2021 L663 diesel, it's almost certainly a 204DTD. Tell us your registration and we'll confirm for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 204DTD timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A preventative chain replacement (£1,200–£2,500) is far cheaper than a catastrophic chain snap (£3,500–£5,800 engine replacement). At the first sign of cold-start rattle, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Defender D240 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "7000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Defender D240 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Land Rover Defender D240 204DTD engine, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "D240 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/defender/d240/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Defender D240 • 2020–2021 • 204DTD 2.0 Diesel",
+    "h1": "Land Rover Defender D240 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Defender D240 specialists. Compare reconditioned, rebuilt and used 204DTD 2.0 diesel engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Defender D240 Engines — from £2,000 to £7,000 · Engine code: 204DTD (2020–2021)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Defender D240 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The DEFENDER D240 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L663",
+        "years": "2020–2021",
+        "engineCode": "204DTD (single-turbo)",
+        "reliability": "★★★☆☆ [PROVISIONAL — see Data Note]",
+        "reconCost": "£3,500–£5,800 [EM-QUOTE]",
+        "eraNote": "Short-run single-turbo Ingenium diesel — replaced by AJ20D6 in 2021"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Defender D240 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£2,650–£4,410",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; short-term ownership"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£5,800",
+        "fittedIndie": "£4,500–£7,100",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,800–£7,000",
+        "fittedIndie": "£5,900–£8,300",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£7,500–£11,000",
+        "fittedIndie": "£9,000–£13,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current L663 Defender D240 204DTD generation. This badge was only available 2020–2021, so no older-generation variance applies.",
+    "labourEstimate": "Fitting a Defender D240 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). [EM-QUOTE]",
+    "cta": {
+      "label": "→ Compare Defender D240 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Tensioner Failure (Pre-2019 Ingenium D)",
+        "symptoms": "Cold-start rattle, engine warning light, loss of power, metallic noises from the front of the engine.",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£1,200–£2,500 [EM-QUOTE]",
+        "replacementCost": "£3,500–£5,800 (catastrophic failure) [EM-QUOTE]",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today"
+        },
+        "recommendation": "The Ingenium D timing chain tensioner is the single biggest reliability concern on the 204DTD. While the L663 Defender's 2020–2021 production run benefited from post-2019 revisions, this risk is not eliminated — it is merely reduced. Any cold-start rattle from a D240 must be investigated immediately. A £1,200–£2,500 preventative chain replacement is dramatically cheaper than a £3,500+ engine replacement.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/ingenium-timing-chain/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Dilution From DPF Regeneration",
+        "symptoms": "Rising oil level on dipstick, diesel smell in oil, DPF warning light, reduced fuel economy.",
+        "typicalMileage": "Any mileage — urban-use pattern dependent",
+        "repairCost": "£150–£350 (oil change + forced regeneration) [EM-QUOTE]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if oil level is rising"
+        },
+        "recommendation": "The 204DTD's DPF regeneration cycle can push unburnt fuel past the piston rings into the sump, diluting the engine oil and reducing its lubricating properties. This is a particular risk on vehicles used primarily for short urban journeys. Regular oil changes (6,000-mile intervals rather than JLR's extended schedule) and occasional motorway runs are the most effective prevention. If the oil level is rising on the dipstick, book an oil change and DPF inspection immediately.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/ingenium-oil-dilution/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "EGR Cooler Failure",
+        "symptoms": "Coolant loss with no visible external leak, white exhaust smoke, occasional burning smell, engine warning light.",
+        "typicalMileage": "Any mileage",
+        "repairCost": "£500–£1,200 [EM-QUOTE]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if coolant is disappearing"
+        },
+        "recommendation": "EGR cooler failure is a known issue across the Ingenium diesel family, including the 204DTD in the L663 Defender. Coolant leaks into the exhaust system can lead to overheating and, if ignored, cylinder head damage. The EGR cooler itself is a replaceable component (£500–£1,200), and there have been JLR service actions covering certain VIN ranges. Check your vehicle's service history for any recall or goodwill work.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/egr-cooler-ingenium/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Defender engine variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Defender D240 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Defender D240 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Cold-start timing chain rattle (204DTD)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Preventative — catches the fault before it becomes catastrophic"
+        },
+        {
+          "problem": "Oil dilution from DPF regeneration",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£350",
+          "whenItMakesSense": "Routine maintenance; oil change + forced regen"
+        },
+        {
+          "problem": "EGR cooler coolant leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Straightforward fix if caught before overheating"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        },
+        {
+          "problem": "Injector failure",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£300–£800 per injector",
+          "whenItMakesSense": "Viable on individual injectors; all-four failure often prompts replacement evaluation"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Defender D240? Check These First",
+      "buyIf": [
+        "* Documented timing chain history (proof of tensioner inspection or replacement)",
+        "* Confirmed oil change intervals at 6,000 miles or less (not JLR's extended schedule)",
+        "* Full service history with specialist attention, not just main dealer stamps",
+        "* Urban-use history with regular motorway runs to clear the DPF"
+      ],
+      "avoidIf": [
+        "* Cold-start rattle with no chain history — this is the defining failure mode",
+        "* No proof of regular oil changes (oil dilution risk)",
+        "* Service history gaps or long intervals (12,000+ miles between oil changes)",
+        "* Engine warning light with no diagnosis — the 204DTD can hide expensive faults"
+      ]
+    },
+    "closingVerdict": "The Defender D240's 204DTD is a capable, torquey engine that suits the L663 platform well — but it belongs to the pre-2019 Ingenium family that earned a reputation for timing chain tensioner failures. Post-2019 revisions reduced but did not eliminate the risk. This badge's 2020–2021 production window means every D240 is affected by the same design era; buy on chain history, not on low mileage alone.",
+    "cta": {
+      "label": "→ Compare Defender D240 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Defender D240 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle lasting 1–30 seconds (timing chain warning, 204DTD)",
+      "* Service History — Including oil change intervals (6,000 miles recommended, not 12,000+)",
+      "* Smoke Check — White smoke on startup can indicate EGR coolant leak",
+      "* Turbo/Boost Check — Test acceleration; any lag, hesitation, or whistling?",
+      "* DPF Regeneration — Check history; short journeys accelerate wear on all diesel Ingenium units",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles? Rising oil level is equally concerning",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures (DPF, EGR, NOx sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204DTD (D240)",
+        "years": "2020–2021",
+        "power": "240 bhp",
+        "enquiries": "1,150 (all 204DTD variants — JLR-wide) [EM-VERIFIED]",
+        "avgReconCost": "£3,500–£5,800 [EM-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows exactly match Section 1B's Era Map — the same engine code, years, and generation coverage.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204DTD):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,999cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single-turbo with variable geometry (VGT)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Defender D240 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain tensioner wear — approximately 45% of 204DTD/D240 enquiries cite chain concerns [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "68,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204DTD (D240 variant) — 1,150 JLR-wide [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain wear on Ingenium diesels [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (21%), London (19%), North West (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Defender D240 engine replacement cost in the UK?",
+        "answer": "A reconditioned Defender D240 (204DTD) engine typically costs £3,500–£5,800 supply only. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Defender D240 engine reliable?",
+        "answer": "The 204DTD in the D240 is the single-turbo Ingenium diesel, a 2020–2021 short-run engine. It shares the pre-2019 timing chain tensioner risk profile that has defined the Ingenium D's reputation. Post-2019 revisions reduced failure rates but did not eliminate the risk entirely — buy on chain history."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Defender D240?",
+        "answer": "Timing chain tensioner wear (the defining failure mode), oil dilution from DPF regeneration (urban-use risk), and EGR cooler failure (coolant leaks into the exhaust system). All three are well-documented across the 204DTD family."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Defender D240 engine, or should I scrap the car?",
+        "answer": "Against a well-kept £25,000 Defender D240, a £4,500 recon is 18% of the car's value — worth it. Against a higher-mileage example, the Land Rover scrap threshold of 60% means replacement remains viable across most D240 values, given the L663's strong residual values."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Defender D240 engine code?",
+        "answer": "The engine code 204DTD is listed on the VIN plate and vehicle documentation. The D240 badge was only available 2020–2021 in the L663 Defender, so if your vehicle is a 2020 or early 2021 L663 diesel, it's almost certainly a 204DTD. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 204DTD timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain replacement (£1,200–£2,500) is far cheaper than a catastrophic chain snap (£3,500–£5,800 engine replacement). At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Defender D240 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted D240 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Defender owners, as part of the Engine Finders network, across every engine variant from the 204DTD to the latest D350 and P530."
+      },
+      {
+        "title": "Compare Defender D240 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. Our independent comparison service gives you the full market picture in minutes."
+      },
+      {
+        "title": "UK Engine Replacement Services for D240",
+        "text": "supply-only or full supply & fit available nationwide, covering the L663 Defender D240 2020–2021 204DTD, with 12 vetted Land Rover specialists at your fingertips."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Defender D240 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £2,000 for a used engine to £7,000 for a rebuilt unit, we have options for every budget.",
+    "ctaButton": {
+      "label": "Compare Land Rover Defender D240 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

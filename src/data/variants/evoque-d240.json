@@ -1,0 +1,485 @@
+{
+  "meta": {
+    "slug": "evoque-d240",
+    "title": "Evoque D240 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every Land Rover Evoque D240 engine — 204DTD 2.0 twin-turbo diesel. One generation, real UK costs and reliability. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://landroverengine.uk/evoque/d240/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Evoque",
+              "item": "https://landroverengine.uk/evoque/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "L551",
+              "item": "https://landroverengine.uk/evoque/l551/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "D240",
+              "item": "https://landroverengine.uk/evoque/d240/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Evoque D240 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L551 D240 (204DTD twin-turbo, 2019–2020)",
+              "url": "https://landroverengine.uk/evoque/l551/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Evoque D240 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD (twin-turbo)",
+              "url": "https://landroverengine.uk/engines/204dtd/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Evoque D240 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 204DTD twin-turbo engine typically costs £3,500–£5,800 supply only. Fitting adds £1,000–£1,500. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Evoque D240 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 204DTD in D240 form is rated ★★★☆☆ — the same known issues as the single-turbo 204DTD apply: timing chain tensioner failure (pre-2019 recall), oil dilution from DPF regeneration, and EGR cooler leaks. The twin-turbo configuration adds complexity. Short production run means fewer long-term data points."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Evoque D240?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner failure (pre-2019 units — verify recall completion), oil dilution from DPF regeneration, and EGR cooler/coolant system leaks are the most common issues. All are repairable if caught early — timing chain work is the most costly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an Evoque D240 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a £10,000–£18,000 Evoque D240, a £4,500 recon engine is a manageable 25–45% of the vehicle's value — worth it for a well-maintained example. Given the Evoque's strong retained values, replacement is usually viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Evoque's engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For the D240, the engine code is 204DTD — it's on the VIN plate and vehicle documentation. The D240 badge signifies the 2.0-litre twin-turbo diesel Ingenium. If you're unsure, tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 204DTD's timing chain, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early, a timing chain and tensioner replacement costing £1,200–£2,500 can save the engine. Verify recall completion on pre-2019 units. If the chain has already skipped or snapped, piston-valve contact usually requires a full engine replacement."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Evoque D240 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "6500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Evoque D240 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Evoque D240 engines (204DTD twin-turbo), sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Evoque D240 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/evoque/d240/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Evoque D240 • 2019–2020 • 2.0 204DTD",
+    "h1": "Land Rover Evoque D240 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Evoque D240 specialists. Compare reconditioned, rebuilt and used 204DTD engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Evoque D240 Engines — from £2,000 to £6,500 · Code: 204DTD",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Evoque D240 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The EVOQUE D240 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L551",
+        "years": "2019–2020",
+        "engineCode": "204DTD (2.0 Ingenium diesel — twin-turbo)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£5,800 [EM-QUOTE]",
+        "eraNote": "Short-run twin-turbo 2.0 diesel — same Ingenium D chain and oil dilution risks as the single-turbo; lower volume means fewer data points."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Evoque D240 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£2,800–£4,700",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £8,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£5,800",
+        "fittedIndie": "£4,500–£7,100",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,800–£6,500",
+        "fittedIndie": "£5,800–£7,800",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,500–£14,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an Evoque D240 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, every D240 variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Evoque D240 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Evoque D240 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain tensioner wear (204DTD)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "If caught early; verify recall completion on pre-2019 units"
+        },
+        {
+          "problem": "Oil dilution from DPF regen (204DTD)",
+          "repairable": "⚠️ Depends",
+          "typicalCost": "£200–£350",
+          "whenItMakesSense": "If caught before bearing damage; if not, engine replacement required"
+        },
+        {
+          "problem": "EGR cooler leak (204DTD)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Straightforward replacement if caught before overheating"
+        },
+        {
+          "problem": "Turbocharger failure (twin-turbo)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Repairable by specialists; do not drive with boost issues"
+        },
+        {
+          "problem": "Crankshaft bearing failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Not a common 204DTD failure if serviced properly; if it occurs, replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Evoque D240? Check These First",
+      "buyIf": [
+        "* Full Land Rover service history with documented oil-change intervals",
+        "* Timing chain tensioner recall work confirmed as completed (especially pre-2019)",
+        "* Evidence of frequent oil changes (every 5,000–7,000 miles) to mitigate oil dilution",
+        "* Regular motorway driving patterns (to clear the DPF)"
+      ],
+      "avoidIf": [
+        "* Service history shows only urban driving patterns (DPF and oil dilution risk)",
+        "* Oil level is visibly above the max mark on the dipstick — diesel contamination",
+        "* No record of timing chain tensioner recall work on pre-2019 units",
+        "* Engine warning light present with no diagnosis documentation"
+      ]
+    },
+    "closingVerdict": "The Evoque D240's 204DTD is a powerful twin-turbo diesel, but it shares the same well-documented Ingenium D issues as the single-turbo variants — timing chain tensioner failure and oil dilution from DPF regeneration. Buy on service history and proof of recall work. The short production run (2019–2020) means fewer data points, but if you're replacing, a reconditioned unit with a 12-month warranty is the sweet spot.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Evoque D240 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any rattle on startup (timing chain tensioner wear — verify recall completion)",
+      "* Service History — Including which engine era (204DTD is the only D240 engine — verify this before purchase)",
+      "* Oil Level Check — Is the oil above the max mark? This indicates potential diesel contamination from oil dilution",
+      "* Coolant Level — Is the coolant low with no visible leak? EGR cooler or coolant pipe risk",
+      "* DPF Regeneration — Has the vehicle had regular motorway runs? Short journeys accelerate DPF wear",
+      "* Oil Consumption — Does it use more than 1L per 5,000 miles? If so, investigate",
+      "* Engine Warning Light — Have codes been read? Any unresolved emissions or timing issues?",
+      "* MOT History — Check for emissions-related failures; often point to DPF or EGR problems"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204DTD (twin-turbo)",
+        "years": "2019–2020",
+        "power": "240 bhp / 500 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£5,800 [EM-QUOTE]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (204DTD — D240 tune):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,999cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection (2,000 bar)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin turbo — sequential (Garrett / BorgWarner)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain tensioner failure and oil dilution — approximately 55% of 204DTD enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "68,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204DTD [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose chain tensioner issues; DPF problems worsen [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), Midlands (18%), London (16%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Evoque D240 engine replacement cost in the UK?",
+        "answer": "A reconditioned 204DTD twin-turbo engine typically costs £3,500–£5,800 supply only. Fitting adds £1,000–£1,500. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Evoque D240 engine reliable?",
+        "answer": "The 204DTD in D240 form is rated ★★★☆☆ — the same known issues as the single-turbo 204DTD apply: timing chain tensioner failure (pre-2019 recall), oil dilution from DPF regeneration, and EGR cooler leaks. The twin-turbo configuration adds complexity. Short production run means fewer long-term data points."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Evoque D240?",
+        "answer": "Timing chain tensioner failure (pre-2019 units — verify recall completion), oil dilution from DPF regeneration, and EGR cooler/coolant system leaks are the most common issues. All are repairable if caught early — timing chain work is the most costly."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an Evoque D240 engine, or should I scrap the car?",
+        "answer": "Against a £10,000–£18,000 Evoque D240, a £4,500 recon engine is a manageable 25–45% of the vehicle's value — worth it for a well-maintained example. Given the Evoque's strong retained values, replacement is usually viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Evoque's engine code?",
+        "answer": "For the D240, the engine code is 204DTD — it's on the VIN plate and vehicle documentation. The D240 badge signifies the 2.0-litre twin-turbo diesel Ingenium. If you're unsure, tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 204DTD's timing chain, or does it need a new engine?",
+        "answer": "Yes — if caught early, a timing chain and tensioner replacement costing £1,200–£2,500 can save the engine. Verify recall completion on pre-2019 units. If the chain has already skipped or snapped, piston-valve contact usually requires a full engine replacement."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Land Rover Evoque D240 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Land Rover Evoque D240 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

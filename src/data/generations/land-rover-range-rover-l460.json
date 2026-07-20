@@ -1,0 +1,375 @@
+{
+  "meta": {
+    "slug": "land-rover-range-rover-l460",
+    "title": "Land Rover Range Rover L460 Engines — The Complete UK Guide",
+    "titleCharCount": 59,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover L460 • Full-Size Luxury SUV • 2022–present",
+    "h1": "Land Rover Range Rover L460 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the fifth-generation Range Rover L460 — from the 3.0-litre six-cylinder diesel to the BMW-sourced 4.4-litre twin-turbo V8, plus the 75-mile-range PHEVs that redefined luxury SUV efficiency. Real UK costs and honest reliability data for the most technologically advanced Range Rover ever built. Backed by 184+ real UK L460 enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "184+ L460 Enquiries (2025) [EM-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Full-Size Luxury SUV"
+      },
+      {
+        "icon": "📖",
+        "label": "6 Engine Families"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore L460 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Land Rover Range Rover L460 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the fifth-generation Range Rover L460 — diesels, petrols, mild hybrids, and plug-in hybrids with up to 75 miles of electric range.",
+    "columns": [],
+    "engines": [],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The BMW-sourced 4.4-litre V8 (P530/P615) is considered the most robust engine in the range — BMW's S68 V8 has a strong reliability reputation. The Ingenium I6 family (D300, D350, P400, P460e, P550e) is newer, with fewer long-term data points, but early indications suggest they are more reliable than older Ingenium four-cylinder units. The PHEV battery and electric motor systems add complexity but deliver up to 75 miles of electric range."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Land Rover Range Rover L460 — Overview",
+    "intro": "The L460 is the fifth generation of the Range Rover, launched in 2022 as a ground-up redesign on JLR's new MLA-Flex platform. It introduced mild-hybrid and plug-in hybrid powertrains across the range, with the BMW-sourced 4.4-litre twin-turbo V8 replacing the outgoing 5.0-litre supercharged V8. The PHEV variants — P460e and P550e — offer up to 75 miles of electric-only range, making the L460 the most efficient Range Rover ever built. A significant 2024 model-year update brought more powerful electric motors to the PHEVs and mild-hybrid electrification to the V8.",
+    "keyFacts": "Platform: JLR MLA-Flex (longitudinal, straight-six/V8) • Predecessor: L405 (fourth-generation Range Rover) • Successor: None (current generation) • Sibling body styles in this generation: Range Rover Sport L461 (2022–present).",
+    "marketIntelligenceLine": "The L460 Range Rover generated 184 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the Ingenium I6 diesel and petrol variants as the range reaches the used market."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "D350 (3.0-litre Ingenium I6, 345 bhp)",
+        "quote": "The most powerful of the two six-cylinder diesels, offering effortless torque and genuine refinement. Both D300 and D350 share the same robust Ingenium I6 architecture, but the D350's extra shove transforms the L460's on-road character.",
+        "whoItsFor": "buyers who want diesel economy without sacrificing performance."
+      },
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "P530 (BMW-sourced 4.4-litre V8, 523 bhp)",
+        "quote": "BMW's S68 twin-turbo V8 is a masterpiece — smooth, responsive, and with a 17% efficiency improvement over the outgoing 5.0-litre supercharged V8. Mild-hybrid assistance adds refinement. The P615 (607 bhp) is for SV buyers only.",
+        "whoItsFor": "buyers who want effortless V8 power with modern efficiency."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "P460e / P550e PHEV (3.0-litre Ingenium I6 + electric motor)",
+        "quote": "The most complex powertrain in the range — a turbocharged petrol engine, a 218 PS electric motor, and a 38.2 kWh battery pack. More components mean more potential failure points, though early reliability is promising.",
+        "whoItsFor": "buyers who prioritise electric range (up to 75 miles) over mechanical simplicity."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "P615 (BMW-sourced 4.4-litre V8, 607 bhp)",
+        "quote": "The most powerful engine ever fitted to a Range Rover — and the most expensive to replace. V8 complexity and BMW-sourced parts pricing mean a full replacement could exceed £15,000.",
+        "whoItsFor": "SV buyers with warranty cover and deep pockets."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "D300 (3.0-litre Ingenium I6 diesel, 296 bhp)",
+        "quote": "The entry-level diesel is anything but entry-level — smooth, refined, and 0-62 mph in 6.9 seconds. Lower running costs and proven Ingenium I6 architecture make this the smart buy.",
+        "whoItsFor": "buyers who want Range Rover luxury with sensible running costs."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "P400 (3.0-litre Ingenium I6 MHEV, 395 bhp)",
+        "quote": "The mild-hybrid petrol sits between the diesels and the V8 — and it's the sweet spot for many buyers. Quieter than the diesels, quicker than the D350 (0-62 mph in 5.9 seconds), and cheaper to run than the V8.",
+        "whoItsFor": "buyers who want petrol refinement without the V8's running costs."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "Land Rover Range Rover L460 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "D300 / D350",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "AdBlue system, DPF (urban use)",
+        "repairCostSpecialist": "£500–£1,500",
+        "replacementCostRecon": "£4,500–£8,000",
+        "ownershipVerdict": "Solid Choice — proven Ingenium I6 diesel."
+      },
+      {
+        "engine": "P400 MHEV",
+        "typicalMileage": "30k–70k",
+        "commonMajorFailure": "Cooling system, water pump",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£4,000–£6,500",
+        "ownershipVerdict": "Safe Bet — simpler than PHEV, robust."
+      },
+      {
+        "engine": "P460e / P550e",
+        "typicalMileage": "20k–50k",
+        "commonMajorFailure": "Battery degradation, electric motor",
+        "repairCostSpecialist": "£1,000–£3,000",
+        "replacementCostRecon": "£5,500–£9,500",
+        "ownershipVerdict": "Watch — complex; battery health is key."
+      },
+      {
+        "engine": "P530 / P615 V8",
+        "typicalMileage": "20k–50k",
+        "commonMajorFailure": "Oil cooler hose (recall H845), coolant leaks",
+        "repairCostSpecialist": "£800–£2,500",
+        "replacementCostRecon": "£9,000–£15,000",
+        "ownershipVerdict": "Premium Cost — BMW V8 excellence comes at a price."
+      }
+    ],
+    "economicsRule": {
+      "title": "The L460 rule",
+      "text": "A £4,500–£8,000 D300/D350 recon against a £55,000–£120,000 L460 sits at 6–15% of the car's value — well within our 60% Land Rover scrap threshold【EM-VERIFIED】. Even the most expensive P615 V8 replacement at £15,000 against a £55,000 L460 is 27% — a repair decision, not a financial one. The L460's high retained value means engine replacement is almost always viable."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which L460 Costs Least To Own?",
+        "answer": "D300 diesel — best fuel economy, lowest replacement cost."
+      },
+      {
+        "question": "Which L460 Costs Most To Own?",
+        "answer": "P615 V8 — highest replacement cost and running costs."
+      },
+      {
+        "question": "Which L460 Is Best Value?",
+        "answer": "P400 MHEV — petrol refinement without the PHEV's complexity or the V8's cost."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "2022–2023 L460 Camshaft Carrier Oil Gallery Issue (Recall N763)",
+        "affectedModels": "2022–2023 L460 Range Rover vehicles.",
+        "typicalFailureMileage": "Early production (2022–2023).",
+        "rootCause": "Due to a manufacturing issue, the camshaft carrier oil gallery may not have been drilled to specification. This could cause an external oil leak or oil to be discharged into the engine's air intake system. In the presence of an ignition source, the oil leak could result in a vehicle fire.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£0 (recall — free inspection)",
+            "specialist": "£500–£1,200 (if out of recall)",
+            "work": "Camshaft carrier inspection and replacement if incorrectly machined",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£7,000–£12,000",
+            "specialist": "£6,000–£10,000",
+            "work": "Full engine replacement if oil starvation caused damage",
+            "note": ""
+          }
+        ],
+        "recommendation": "Check your L460's VIN against recall N763 immediately — if affected, the inspection and replacement are free at any authorised Land Rover dealer. This is not a problem to ignore; oil leaks into the air intake system can lead to engine fires.",
+        "cta": {
+          "label": "Check your L460 for outstanding recalls →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "2023 L460 Engine Oil Cooler Hose Issue (Recall H845)",
+        "affectedModels": "2023 L460 Range Rover vehicles.",
+        "typicalFailureMileage": "Early production (2023).",
+        "rootCause": "Due to a manufacturing defect, the threaded nut securing the engine oil cooler hose may not have been tightened sufficiently. This could cause the cooler hose to become loose and detach, leading to engine oil leaking into the engine bay.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£0 (recall — free inspection)",
+            "specialist": "£300–£800 (if out of recall)",
+            "work": "Oil cooler hose inspection and replacement if loose",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£7,000–£12,000",
+            "specialist": "£6,000–£10,000",
+            "work": "Full engine replacement if oil starvation caused damage",
+            "note": ""
+          }
+        ],
+        "recommendation": "Check your L460's VIN against recall H845 — if affected, the inspection and replacement are free. An oil leak in the engine bay, in the presence of an ignition source, could result in a vehicle fire. This is a serious safety issue — don't delay.",
+        "cta": {
+          "label": "Check your L460 for outstanding recalls →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "L460 PHEV Battery Degradation & Electric Motor Issues",
+        "affectedModels": "L460 P460e, P550e PHEV variants (2022–present).",
+        "typicalFailureMileage": "30,000–80,000 miles (battery degradation).",
+        "rootCause": "The 38.2 kWh lithium-ion battery pack (31.8 kWh usable) will naturally degrade over time, reducing electric-only range. The 218 PS electric motor adds complexity to the powertrain.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£500–£1,500 (battery health check)",
+            "specialist": "£300–£800 (battery health check)",
+            "work": "Battery health check, software updates",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£8,000–£15,000 (battery replacement)",
+            "specialist": "£7,000–£12,000 (battery replacement)",
+            "work": "Full battery pack replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the PHEV battery health checked annually — a £300–£800 inspection is cheap insurance against an £8,000+ battery replacement. If you're buying a used L460 PHEV, get a battery health report before committing. The PHEV's 75-mile electric range is a major selling point — protect it.",
+        "cta": {
+          "label": "Compare L460 PHEV battery prices →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "L460 4.4 V8 Coolant System & Oil Cooler Leaks",
+        "affectedModels": "L460 P530, P615 V8 variants (2022–present).",
+        "typicalFailureMileage": "30,000–60,000 miles.",
+        "rootCause": "The BMW-sourced 4.4-litre V8 is a high-performance engine with complex cooling systems. Coolant leaks from hoses and fittings, and oil cooler issues (as per recall H845) are the most common problems.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£2,000",
+            "specialist": "£500–£1,500",
+            "work": "Coolant hose and oil cooler inspection/replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£12,000–£18,000",
+            "specialist": "£9,000–£15,000",
+            "work": "Full engine replacement if overheating caused damage",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the cooling system and oil cooler hoses inspected annually — a £500–£1,500 preventative check is far cheaper than the £9,000+ engine replacement that follows an ignored coolant or oil leak. This is the single most important maintenance item on the V8 L460.",
+        "cta": {
+          "label": "Compare L460 V8 engine prices →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "L460 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "D300 (3.0 diesel)",
+        "engineCode": "AJ20D6 / Ingenium I6",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,500",
+        "rebuiltSupply": "£6,000–£9,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "D350 (3.0 diesel)",
+        "engineCode": "AJ20D6 / Ingenium I6",
+        "usedSupply": "£2,800–£5,000",
+        "reconditionedSupply": "£4,800–£8,000",
+        "rebuiltSupply": "£6,500–£10,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "P400 (3.0 MHEV petrol)",
+        "engineCode": "PT306 / AJ20P6",
+        "usedSupply": "£2,200–£4,000",
+        "reconditionedSupply": "£4,000–£6,500",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "P460e (3.0 PHEV)",
+        "engineCode": "PT306 + electric motor",
+        "usedSupply": "£3,500–£6,000",
+        "reconditionedSupply": "£5,500–£8,500",
+        "rebuiltSupply": "£7,500–£11,000",
+        "labourHours": "16–20 hrs"
+      },
+      {
+        "variant": "P550e (3.0 PHEV)",
+        "engineCode": "PT306 + electric motor",
+        "usedSupply": "£4,000–£6,500",
+        "reconditionedSupply": "£6,000–£9,500",
+        "rebuiltSupply": "£8,000–£12,000",
+        "labourHours": "16–20 hrs"
+      },
+      {
+        "variant": "P530 / P615 (4.4 V8)",
+        "engineCode": "NC10 / BMW S68",
+        "usedSupply": "£5,000–£9,000",
+        "reconditionedSupply": "£9,000–£15,000",
+        "rebuiltSupply": "£12,000–£18,000",
+        "labourHours": "18–24 hrs"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — L460 is a new generation with no direct predecessor cost comparison. Costs are derived from Table A — Engine Replacement Economics, with PHEV and V8 costs marked [PLACEHOLDER] pending further verification."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "D300",
+      "D350"
+    ],
+    "petrolVariants": [
+      "P400",
+      "P460e",
+      "P550e",
+      "P530",
+      "P615"
+    ],
+    "scopeNote": "All variants listed are Range Rover L460 only. Range Rover Sport L461 (2022–present) shares the MLA-Flex platform and many of these engines but is covered on its own Generation Page. P460e and P550e are plug-in hybrid variants; P530 and P615 are V8 petrol variants (P615 exclusive to Range Rover SV)."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

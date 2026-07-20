@@ -1,0 +1,572 @@
+{
+  "meta": {
+    "slug": "freelander-32-i6",
+    "title": "3.2 i6 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 55,
+    "description": "Land Rover Freelander 3.2 i6 (SI6) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your rare petrol straight-six.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/freelander/32-i6/",
+    "openGraph": {
+      "title": "3.2 i6 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Freelander 3.2 i6 (SI6) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your rare petrol straight-six.",
+      "type": "website",
+      "url": "https://landroverengine.uk/freelander/32-i6/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-32-i6.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "3.2 i6 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Freelander 3.2 i6 (SI6) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-32-i6.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Freelander",
+              "item": "https://landroverengine.uk/freelander/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "3.2 i6",
+              "item": "https://landroverengine.uk/freelander/32-i6/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander 3.2 i6 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Freelander 2 (L359) 306PN",
+              "url": "https://landroverengine.uk/freelander/freelander-2/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander 3.2 i6 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "306PN (B6324S / SI6)",
+              "url": "https://landroverengine.uk/engines/306pn/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Freelander 3.2 i6 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 3.2 i6 (306PN) engine typically costs £2,200–£3,500 supply only. Fitting adds £800–£1,500 depending on workshop location. Main dealer new engines are no longer available — specialist reconditioning is the route."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Freelander 3.2 i6 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the Volvo-sourced SI6 is widely regarded as very reliable. It has no DPF or EGR system to fail, and its naturally aspirated design means fewer components to go wrong than a turbocharged engine. However, it's now an older engine, so age-related issues like alternator pulley wear, PCV diaphragm failure, and timing chain tensioner wear are common."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Freelander 3.2 i6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Alternator drive pulley failure (whining noise), PCV diaphragm failure (whistling noise, oil consumption), and timing chain tensioner wear (rattle on cold start). The engine also suffers from high fuel consumption — expect 25–27 MPG combined."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Freelander 3.2 i6 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 60% Land Rover scrap threshold: if your Freelander is worth £4,500 and a recon engine is £2,800 (62%), it's borderline — assess the rest of the vehicle carefully. If the vehicle is a tired £3,000 example, the same engine exceeds 60% — get a scrap valuation first. Collectors and enthusiasts often justify the spend due to the rarity of the petrol straight-six."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Freelander 3.2 i6 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate and vehicle documentation. The 3.2 i6 uses the 306PN, also known as the Volvo B6324S or SI6. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the alternator pulley, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The alternator pulley itself can be replaced (around £200–£400). It's a much cheaper fix than a full alternator replacement. If you hear any whining or screeching from the engine bay, have the alternator drive pulley inspected promptly."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Freelander 3.2 i6 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1200",
+            "highPrice": "4500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Freelander 3.2 i6 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the 3.2 i6 (306PN) engine in the Freelander 2, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "3.2 i6 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/freelander/32-i6/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Freelander 3.2 i6 • 2006–2014 • 1 Engine Code",
+    "h1": "Land Rover Freelander 3.2 i6 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The Freelander 2's smooth, powerful Volvo-sourced straight-six petrol — a rare and characterful alternative to the diesel. Get quotes from specialists who understand this transverse-mounted 3.2-litre unit, supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Freelander 3.2 i6 Engines — from £1,200 to £3,500 · Common code: 306PN (B6324S)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Freelander 3.2 i6 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 3.2 i6 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Freelander 2 / L359",
+        "years": "2006–2014",
+        "engineCode": "306PN (Volvo SI6 B6324S)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,200–£3,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "One engine throughout this badge's history — no era ambiguity."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Freelander 3.2 i6 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,200–£1,800",
+        "fittedIndie": "£1,800–£2,600",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; short-term ownership"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,200–£3,500",
+        "fittedIndie": "£3,000–£4,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,000–£4,500",
+        "fittedIndie": "£3,800–£5,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "No longer available — specialist reconditioning is the route"
+      }
+    ],
+    "figuresNote": "Figures above reflect the only engine generation this badge ever used — the 306PN (B6324S). See the Era Map above for era-specific pricing.",
+    "labourEstimate": "Fitting a Freelander 3.2 i6 engine typically takes 10–14 hours at £65–£95/hr (independent). The transverse-mounted layout makes access tighter than in longitudinal installations, so labour can be higher than on some other Land Rover models.",
+    "cta": {
+      "label": "→ Compare Freelander 3.2 i6 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Alternator Drive Pulley Failure",
+        "symptoms": "Whining or screeching noise from the engine bay, battery warning light, intermittent charging issues, rough idle.",
+        "typicalMileage": "80,000–150,000 miles (age and mileage related).",
+        "repairCost": "£200–£400 (alternator pulley replacement).",
+        "replacementCost": "N/A — repair only; if ignored, the pulley can seize and snap the belt.",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon."
+        },
+        "recommendation": "This is one of the most reported issues on the 3.2 i6. The alternator pulley develops play in its shaft, causing a whining noise. It's a straightforward fix, but if ignored, the pulley can fail completely, leaving you with a dead battery and potentially a snapped serpentine belt. If you hear any whining or screeching, have the alternator drive pulley inspected promptly.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/alternator-pulley-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "PCV / Crankcase Ventilation Diaphragm Failure",
+        "symptoms": "Whistling noise from under the bonnet, increased oil consumption, oil mist in the intake, crankcase fault codes.",
+        "typicalMileage": "60,000–120,000 miles.",
+        "repairCost": "£100–£250 (PCV diaphragm or oil separator replacement).",
+        "replacementCost": "N/A — repair only.",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon."
+        },
+        "recommendation": "The PCV diaphragm on the SI6 engine can split or fail, causing oil mist to be drawn into the intake, increased oil consumption, and a characteristic whistling noise. It's a relatively inexpensive part to replace, but if ignored, it can lead to oil contamination of the intake system and potential running issues.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/pcv-valve-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timing Chain Tensioner Wear",
+        "symptoms": "Rattling noise on cold start, metallic ticking, loss of power, engine warning light.",
+        "typicalMileage": "80,000–150,000 miles.",
+        "repairCost": "£1,500–£2,500 (chain, tensioner, and guide replacement).",
+        "replacementCost": "N/A — repair only; if the chain snaps, it's an interference engine — catastrophic failure.",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "at first sign of rattle, book inspection today."
+        },
+        "recommendation": "Like many chain-driven engines, the 3.2 i6's timing chain tensioners can wear over time. This can cause the chain to stretch or rattle, particularly on cold starts. If you hear any metallic rattle from the engine on startup, book an inspection immediately. While less common than on some other engines, a snapped chain would be catastrophic for this interference engine.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-chain-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "12 vetted Land Rover specialists, each with experience of the rare 3.2 i6 petrol unit, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Freelander 3.2 i6 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Freelander 3.2 i6 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Alternator pulley whine",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£400",
+          "whenItMakesSense": "Simple, cheap fix — do it preventatively"
+        },
+        {
+          "problem": "PCV diaphragm whistle",
+          "repairable": "✅ Yes",
+          "typicalCost": "£100–£250",
+          "whenItMakesSense": "Inexpensive repair that prevents oil consumption"
+        },
+        {
+          "problem": "Timing chain tensioner rattle",
+          "repairable": "✅ Yes (if caught early)",
+          "typicalCost": "£1,500–£2,500",
+          "whenItMakesSense": "Preventative — catches fault before catastrophic failure"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Interference engine — piston-valve contact means little is left to repair"
+        },
+        {
+          "problem": "Cracked cylinder head (overheating)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,000–£2,000",
+          "whenItMakesSense": "Viable if the rest of the vehicle is solid; often cheaper to fit a good used head"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 3.2 i6? Check These First",
+      "buyIf": [
+        "* No whining or screeching from the alternator pulley area",
+        "* No whistling or hissing from the engine (PCV diaphragm intact)",
+        "* Full service history with regular oil changes",
+        "* No history of overheating — this engine needs a healthy cooling system"
+      ],
+      "avoidIf": [
+        "* Whining noise from the engine bay — alternator pulley failure",
+        "* Whistling or hissing — PCV diaphragm likely split",
+        "* Rattling on cold start — timing chain tensioner wear",
+        "* Overheating or coolant loss — head gasket or cracked head risk"
+      ]
+    },
+    "closingVerdict": "The 3.2 i6 is one of the more reliable petrol engines Land Rover fitted to the Freelander, but it's now over a decade old. With no DPF or EGR to worry about, it offers a simpler ownership proposition than modern diesels. However, fuel consumption is high (around 25–27 MPG combined), and the tightly packed engine bay means some jobs take longer. A £2,800 reconditioned engine on a Freelander valued at £4,500 is 62% — at the Land Rover scrap threshold. On a sub-£3,500 example, think carefully before committing.",
+    "cta": {
+      "label": "→ Compare Freelander 3.2 i6 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Freelander 3.2 i6 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle on startup (timing chain tensioner wear)",
+      "* Service History — Regular oil changes using the correct 0W-30 or 5W-30 spec",
+      "* Alternator Pulley — Check for whining or screeching noise; any play in the pulley?",
+      "* Whistling Noise — Listen under bonnet — PCV diaphragm may be split",
+      "* Cooling System — Check coolant level and condition — overheating kills these engines",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles? Could be PCV or piston rings",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions failures (unlikely on a petrol) and corrosion"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "306PN (B6324S / SI6)",
+        "years": "2006–2014",
+        "power": "233 bhp (171 kW)",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,200–£3,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs:",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "3,192 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.8:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Electronic Fuel Injection (EFI)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated (no turbo)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Freelander 3.2 i6 engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Alternator drive pulley — whining noise reported across many high-mileage SI6 units 【PATTERN DATA】"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "110,000 miles (age-related) 【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,800 reconditioned, supply only 【PLACEHOLDER — confirm vs cost sheet】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "306PN (only code for this badge) 【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — owners recommissioning after winter 【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), South West (18%), Midlands (16%) 【PATTERN DATA】"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Freelander 3.2 i6 engine replacement cost in the UK?",
+        "answer": "A reconditioned 3.2 i6 (306PN) engine typically costs £2,200–£3,500 supply only. Fitting adds £800–£1,500 depending on workshop location. Main dealer new engines are no longer available — specialist reconditioning is the route."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Freelander 3.2 i6 engine reliable?",
+        "answer": "Yes — the Volvo-sourced SI6 is widely regarded as very reliable. It has no DPF or EGR system to fail, and its naturally aspirated design means fewer components to go wrong than a turbocharged engine. However, it's now an older engine, so age-related issues like alternator pulley wear, PCV diaphragm failure, and timing chain tensioner wear are common."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Freelander 3.2 i6?",
+        "answer": "Alternator drive pulley failure (whining noise), PCV diaphragm failure (whistling noise, oil consumption), and timing chain tensioner wear (rattle on cold start). The engine also suffers from high fuel consumption — expect 25–27 MPG combined."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Freelander 3.2 i6 engine, or should I scrap the car?",
+        "answer": "Apply the 60% Land Rover scrap threshold: if your Freelander is worth £4,500 and a recon engine is £2,800 (62%), it's borderline — assess the rest of the vehicle carefully. If the vehicle is a tired £3,000 example, the same engine exceeds 60% — get a scrap valuation first. Collectors and enthusiasts often justify the spend due to the rarity of the petrol straight-six."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Freelander 3.2 i6 engine code?",
+        "answer": "The engine code is listed on the VIN plate and vehicle documentation. The 3.2 i6 uses the 306PN, also known as the Volvo B6324S or SI6. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the alternator pulley, or does it need replacement?",
+        "answer": "The alternator pulley itself can be replaced (around £200–£400). It's a much cheaper fix than a full alternator replacement. If you hear any whining or screeching from the engine bay, have the alternator drive pulley inspected promptly."
+      },
+      {
+        "id": 1,
+        "question": "Section 9 with 3 trust points, final CTA paragraph, and a CTA button. The mode for this badge is Consultative (since priority was L), so the button copy should reflect that.",
+        "answer": ""
+      },
+      {
+        "id": 2,
+        "question": "Meta Title and Description, following the character limits.",
+        "answer": ""
+      },
+      {
+        "id": 3,
+        "question": "Open Graph and Twitter Card tags.",
+        "answer": ""
+      },
+      {
+        "id": 4,
+        "question": "The JSON-LD schema with all required blocks: BreadcrumbList, two ItemLists (Era Map and Engine Codes), FAQPage, Organization, Service (with price range spanning the Era Map), Dataset, and WebPage. AggregateRating is conditional and omitted here as there's no review data.",
+        "answer": ""
+      },
+      {
+        "id": 5,
+        "question": "The Production Note with all the required confirmations and source lists.",
+        "answer": "I need to ensure all the facts, engine codes, and the rating from Part 1 are carried over consistently into the schema and meta descriptions. The price range in the Service schema must span from the lowest used price to the highest rebuilt/main dealer price, just like I did for the D200, 200Tdi, and D180 pages. The user is probably preparing these for final publication or quality assurance. They need the complete package with SEO and structured data ready to go. My Part 2 response should be a polished, ready-to-implement completion of the page."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Freelander 3.2 i6 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Freelander 3.2 i6 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Freelander owners, with specialists who genuinely understand the Volvo-sourced SI6 straight-six — a rarity in the Land Rover world."
+      },
+      {
+        "title": "Compare Freelander 3.2 i6 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, all from specialists experienced with this transverse-mounted 3.2-litre petrol unit."
+      },
+      {
+        "title": "UK Engine Replacement Services for 3.2 i6",
+        "text": "supply-only or full supply & fit available nationwide, covering everything from alternator pulley replacement to full engine swaps on your Freelander 2."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Freelander 3.2 i6 engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and keep your rare straight-six Freelander on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Land Rover Freelander 3.2 i6 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

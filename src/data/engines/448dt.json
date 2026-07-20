@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "slug": "448dt",
+    "title": "Land Rover 448DT (4.4 SDV8) Engine — Reliability & Cost",
+    "description": "The 448DT is Land Rover's most durable modern V8 diesel — no catastrophic design flaws, but oil cooler leaks are common. Backed by 940+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+    "canonical": "https://landroverengine.uk/engines/448dt/",
+    "openGraph": {
+      "title": "Land Rover 448DT (4.4 SDV8) Engine — Reliability & Cost",
+      "description": "The 448DT is Land Rover's most durable modern V8 diesel — no catastrophic design flaws, but oil cooler leaks are common. Backed by 940+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/engines/448dt/",
+      "image": "https://landroverengine.uk/images/landrover/engines/448dt.jpg",
+      "siteName": "landroverengine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Land Rover 448DT (4.4 SDV8) Engine — Reliability & Cost",
+      "description": "The 448DT is Land Rover's most durable modern V8 diesel — no catastrophic design flaws, but oil cooler leaks are common. Backed by 940+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "image": "https://landroverengine.uk/images/landrover/engines/448dt.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://landroverengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "448DT (4.4 SDV8/TDV8)",
+              "item": "https://landroverengine.uk/engines/448dt/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover models fitted with the 448DT (4.4 SDV8/TDV8)",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Land Rover Range Rover L405 SDV8/TDV8",
+              "url": "https://landroverengine.uk/models/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Land Rover Range Rover Sport L494 SDV8",
+              "url": "https://landroverengine.uk/models/range-rover-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Land Rover Discovery 4 (L319) SDV8",
+              "url": "https://landroverengine.uk/models/discovery-4/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a 448DT (4.4 SDV8/TDV8) engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 448DT SDV8 typically costs £6,000–£9,000 supply only, varying by specification and rebuild quality. Used units can be found from £3,500–£6,000, but provenance is essential. Fitting adds £1,200–£2,500 depending on labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the 448DT (4.4 SDV8/TDV8) a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 448DT is widely regarded as the most durable of Land Rover's modern V8 diesels (4.0★). Its robust bottom-end design lacks the catastrophic failure modes of the smaller V6 units. The main watchpoints are oil cooler leaks and coolant crossover pipe corrosion."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common 448DT failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oil cooler leaks in the V of the engine and coolant crossover pipe failure are the most common issues — typically occurring at 100,000+ miles. Alternator failure is also reported due to oil contamination from cooler leaks. No catastrophic bottom-end design flaws are known."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover models use the 448DT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 448DT powers the Range Rover (L405) SDV8/TDV8 from 2012–2020, the Range Rover Sport (L494) SDV8 from 2013–2020, and the Discovery 4 (L319) SDV8 from 2014–2016."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover 448DT the same as Jaguar's version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 448DT is shared with Jaguar fitments in the XJ (X351) and XF (X260). The engine is mechanically identical, though ECU calibrations and ancillaries differ by model."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "landroverengine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Land Rover 448DT (4.4 SDV8/TDV8) Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Land Rover"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover 448DT (4.4 SDV8/TDV8) Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover 448DT (4.4 SDV8/TDV8) UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Land Rover 448DT (4.4 SDV8/TDV8), sourced from landroverengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Land Rover 448DT (4.4 SDV8) Engine — Reliability & Cost",
+          "url": "https://landroverengine.uk/engines/448dt/",
+          "author": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover • 448DT (4.4 SDV8/TDV8) • Diesel • 4.4L V8 Turbo • 2010–2020",
+    "h1": "Land Rover 448DT (4.4 SDV8/TDV8) Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The 448DT is Land Rover's most durable modern V8 diesel — no catastrophic bottom-end design flaws here. Backed by 940+ real UK enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "940+ Enquiries"
+      },
+      {
+        "icon": "🔧",
+        "label": "3 Models Fitted"
+      },
+      {
+        "icon": "💯",
+        "label": "68/100 Engine Score"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Compare 448DT (4.4 SDV8/TDV8) Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "448DT (4.4 SDV8/TDV8)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Diesel"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "4.4L V8 Turbo"
+      },
+      {
+        "metric": "Power Range",
+        "value": "313–339 hp [THIRD-PARTY]"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2010–2020"
+      },
+      {
+        "metric": "Models Fitted (Land Rover only)",
+        "value": "3 (Range Rover L405, Range Rover Sport L494, Discovery 4 L319)"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Also fitted to Jaguar (XJ, XF)"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "68/100"
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "★★★★ out of 5",
+    "confidence": "86% confidence — based on 940+ real UK enquiries, specialist rebuild reports, and owner‑forum data spanning a decade of real-world use.",
+    "scoreNote": "Engine Score breakdown:",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (Star rating (4.0★) × 4 = 16)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £6,000–£9,000 → £7,500 midpoint → falls in £7,000–£9,999 bracket → 8)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (V8 complexity and specialist requirement add cost, but no catastrophic design flaw; repairs are well‑understood)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "16 (Well‑supported via JLR and aftermarket; shared with Jaguar ensures strong parts availability)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "16 (Reconditioned cost (£7,500 midpoint) as % of lowest typical vehicle value (Range Rover L405 ~£18,000–£22,000) = 34–42% → falls in 30–44% bracket → 16)"
+        },
+        {
+          "dimension": "Total",
+          "score": "68/100 (Sum of the five rows above)"
+        }
+      ]
+    },
+    "oneLineVerdict": "The 448DT is Land Rover's most durable modern V8 diesel — oil cooler and coolant crossover pipe leaks are the main watchpoints — buy with full service history and check for coolant seepage.",
+    "bestFor": "",
+    "avoidIf": ""
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "Land Rover Range Rover",
+        "generation": "L405",
+        "variantBadge": "SDV8 / TDV8 (4.4)",
+        "years": "2012–2020"
+      },
+      {
+        "model": "Land Rover Range Rover Sport",
+        "generation": "L494",
+        "variantBadge": "SDV8 (4.4)",
+        "years": "2013–2020"
+      },
+      {
+        "model": "Land Rover Discovery",
+        "generation": "Series 4 (L319)",
+        "variantBadge": "SDV8 (4.4)",
+        "years": "2014–2016"
+      }
+    ],
+    "crossBrandNote": "Also powers the Jaguar XJ (X351) and XF (X260) → [Jaguar 448DT page]."
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£3,500–£6,000",
+        "fittedIndie": "£4,500–£7,500",
+        "warranty": "Varies by supplier"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£6,000–£9,000",
+        "fittedIndie": "£7,000–£10,500",
+        "warranty": "12 months typical"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,000–£13,500",
+        "warranty": "12–24 months typical"
+      }
+    ],
+    "labourEstimate": "Fitting a 448DT typically takes 18–24 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "sharedCostNote": "Parts cost is identical across Land Rover and Jaguar applications; labour time varies by engine bay access and subframe design.",
+    "cta": {
+      "label": "→ Compare 448DT (4.4 SDV8/TDV8) engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a 448DT (4.4 SDV8/TDV8) engine replacement cost?",
+        "answer": "A reconditioned 448DT SDV8 typically costs £6,000–£9,000 supply only, varying by specification and rebuild quality. Used units can be found from £3,500–£6,000, but provenance is essential. Fitting adds £1,200–£2,500 depending on labour rates."
+      },
+      {
+        "id": 2,
+        "question": "Is the 448DT (4.4 SDV8/TDV8) a reliable engine?",
+        "answer": "Yes — the 448DT is widely regarded as the most durable of Land Rover's modern V8 diesels (4.0★). Its robust bottom-end design lacks the catastrophic failure modes of the smaller V6 units. The main watchpoints are oil cooler leaks and coolant crossover pipe corrosion."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common 448DT failure?",
+        "answer": "Oil cooler leaks in the V of the engine and coolant crossover pipe failure are the most common issues — typically occurring at 100,000+ miles. Alternator failure is also reported due to oil contamination from cooler leaks. No catastrophic bottom-end design flaws are known."
+      },
+      {
+        "id": 4,
+        "question": "Which Land Rover models use the 448DT?",
+        "answer": "The 448DT powers the Range Rover (L405) SDV8/TDV8 from 2012–2020, the Range Rover Sport (L494) SDV8 from 2013–2020, and the Discovery 4 (L319) SDV8 from 2014–2016."
+      },
+      {
+        "id": 5,
+        "question": "Is the Land Rover 448DT the same as Jaguar's version?",
+        "answer": "Yes — the 448DT is shared with Jaguar fitments in the XJ (X351) and XF (X260). The engine is mechanically identical, though ECU calibrations and ancillaries differ by model."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real 448DT owners, as part of the Engine Finders network.",
+      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists — so you see the real market, not just one garage's quote.",
+      "UK Coverage: From Cornwall to the Highlands, our specialist network covers the whole UK with expert 448DT knowledge."
+    ],
+    "finalCta": "Find the best Land Rover 448DT (4.4 SDV8/TDV8) engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover 448DT (4.4 SDV8/TDV8) Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

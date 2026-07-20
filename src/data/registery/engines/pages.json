@@ -1,15 +1,87 @@
 [
   {
-    "slug": "aj133",
-    "dataFile": "aj133"
-  },
-  {
     "slug": "200-300tdi",
     "dataFile": "200-300tdi"
   },
   {
+    "slug": "276dt",
+    "dataFile": "276dt"
+  },
+  {
+    "slug": "306dt",
+    "dataFile": "306dt"
+  },
+  {
+    "slug": "368dt",
+    "dataFile": "368dt"
+  },
+  {
+    "slug": "448dt",
+    "dataFile": "448dt"
+  },
+  {
+    "slug": "aj-v8-42-44-sc",
+    "dataFile": "aj-v8-42-44-sc"
+  },
+  {
+    "slug": "aj133",
+    "dataFile": "aj133"
+  },
+  {
     "slug": "aj20d6",
     "dataFile": "aj20d6"
+  },
+  {
+    "slug": "aj20p6",
+    "dataFile": "aj20p6"
+  },
+  {
+    "slug": "ford-si4-pt204",
+    "dataFile": "ford-si4-pt204"
+  },
+  {
+    "slug": "ingenium-20-diesel",
+    "dataFile": "ingenium-20-diesel"
+  },
+  {
+    "slug": "ingenium-20-petrol",
+    "dataFile": "ingenium-20-petrol"
+  },
+  {
+    "slug": "k-series-18-23",
+    "dataFile": "k-series-18-23"
+  },
+  {
+    "slug": "m47",
+    "dataFile": "m47"
+  },
+  {
+    "slug": "m51",
+    "dataFile": "m51"
+  },
+  {
+    "slug": "m57-td6",
+    "dataFile": "m57-td6"
+  },
+  {
+    "slug": "m62",
+    "dataFile": "m62"
+  },
+  {
+    "slug": "n62",
+    "dataFile": "n62"
+  },
+  {
+    "slug": "p510",
+    "dataFile": "p510"
+  },
+  {
+    "slug": "psa-dw12-204dtd",
+    "dataFile": "psa-dw12-204dtd"
+  },
+  {
+    "slug": "td5",
+    "dataFile": "td5"
   },
   {
     "slug": "volvo-si6",

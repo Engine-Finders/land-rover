@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "slug": "discovery-td5",
+    "title": "TD5 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every Land Rover Discovery TD5 engine — 2.5-litre five-cylinder turbo-diesel, 1998–2004. Real UK costs, oil pump bolt advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/discovery/td5/",
+    "openGraph": {
+      "title": "TD5 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Discovery TD5 engine — 2.5-litre five-cylinder turbo-diesel, 1998–2004. Real UK costs, oil pump bolt advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/discovery/td5/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-td5.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "TD5 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Discovery TD5 engine — 2.5-litre five-cylinder turbo-diesel, 1998–2004. Real UK costs, oil pump bolt advice, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-td5.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery",
+              "item": "https://landroverengine.uk/discovery/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Discovery Series II",
+              "item": "https://landroverengine.uk/discovery/series-2/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "TD5",
+              "item": "https://landroverengine.uk/discovery/td5/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery TD5 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Discovery Series II TD5 (10P/15P, 1998-2004)",
+              "url": "https://landroverengine.uk/discovery/series-2/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery TD5 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "10P (early TD5)",
+              "url": "https://landroverengine.uk/engines/td5/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "15P (late TD5)",
+              "url": "https://landroverengine.uk/engines/td5/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery TD5 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned TD5 engine typically costs £3,600–£4,500 supply only. Fitting adds £900–£1,200 depending on the specialist. A full fitted replacement from a specialist workshop costs approximately £5,980 including VAT. Used engines can be found from £800–£1,400, but condition varies dramatically."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery TD5 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the TD5 is widely regarded as one of the most dependable Land Rover engines ever built. It has a strong cast-iron block, simple five-cylinder design, and no timing belt to worry about. Many have exceeded 200,000 miles with proper maintenance. The oil pump bolt on early 10P engines is its one critical vulnerability — address that and the TD5 is exceptionally durable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Discovery TD5?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main issues are the oil pump bolt working loose on early 10P engines (catastrophic if ignored), injector wiring harness oil contamination, cracked cylinder heads on early TD5s, and diesel dilution from leaking injector seals. All are well understood and repairable — the TD5 has no fundamental design flaws beyond the oil pump bolt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery TD5 engine, or should I scrap the vehicle?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the vehicle's condition. Against a well-maintained Discovery 2 worth £3,000–£8,000, a £4,500–£5,500 replacement may be 55–70% of the car's value — borderline but often worth it for a cherished example. With only 76 TD5 Discoveries still on UK roads, well-maintained examples are becoming collectable. For heavily corroded examples, get a scrap valuation first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Discovery TD5 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TD5 engines are identified by the prefix on the engine number: 10P (early, 1998–2002) or 15P (late, 2002–2004). The engine number is stamped on the block. Early 10P engines are the ones with the oil pump bolt vulnerability — confirm this has been addressed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the TD5 oil pump bolt, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The bolt must be replaced with a correctly torqued and thread-locked replacement — it's a known manufacturing issue on early 10P engines. A preventative replacement costs £200–£400. A failed bolt almost always destroys the bearings and crankshaft, requiring a £3,600–£5,500 engine replacement."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery TD5 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery TD5 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Discovery TD5 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "TD5 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery/td5/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery TD5 • 1998–2004 • 1 Engine Generation",
+    "h1": "Land Rover Discovery TD5 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover TD5 specialists. Compare reconditioned, rebuilt and used 2.5-litre five-cylinder turbo-diesel engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Land Rover Discovery TD5 Engines — from £800 to £5,500 · Engine codes: 10P, 15P",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free TD5 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The TD5 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Discovery Series II (L318)",
+        "years": "1998–2004",
+        "engineCode": "10P / 15P (TD5)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,600–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Cast-iron five-cylinder — oil pump bolt is the critical weak point"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Discovery TD5 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£1,400",
+        "fittedIndie": "£1,400–£2,400",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; project vehicles"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,600–£4,500",
+        "fittedIndie": "£4,500–£5,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,200–£5,500",
+        "fittedIndie": "£5,100–£6,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "No longer available new"
+      }
+    ],
+    "figuresNote": "Figures above reflect current TD5 replacement costs. This badge spans only one engine era — see the Era Map above.",
+    "labourEstimate": "Fitting a Discovery TD5 engine typically takes 10–12 hours at £65–£95/hr (independent) or £110–£160/hr (specialist).",
+    "cta": {
+      "label": "→ Compare TD5 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Oil Pump Bolt Failure (Early TD5s — 10P)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Injector Wiring Harness Oil Contamination",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Cracked Cylinder Head (Early TD5s)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every TD5 variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free TD5 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Discovery TD5 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Oil pump bolt (preventative)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£400",
+          "whenItMakesSense": "Essential maintenance on any 10P engine"
+        },
+        {
+          "problem": "Oil pump bolt failure (catastrophic)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Bearing and crank damage typically means replacement"
+        },
+        {
+          "problem": "Injector wiring harness contamination",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£350",
+          "whenItMakesSense": "Simple replacement; common DIY job"
+        },
+        {
+          "problem": "Cracked cylinder head",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£2,500",
+          "whenItMakesSense": "Worth it on a well-maintained Discovery"
+        },
+        {
+          "problem": "Diesel dilution from injector seals",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Injector seal replacement; catch it early"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This TD5? Check These First",
+      "buyIf": [
+        "* Oil pump bolt replaced (critical — confirm on any early 10P engine)",
+        "* Injector wiring harness checked and free of oil contamination",
+        "* No signs of overheating or coolant loss (head gasket/cylinder head health)",
+        "* Full service history with regular oil changes (TD5s are sensitive to oil quality)"
+      ],
+      "avoidIf": [
+        "* No record of oil pump bolt work on a 10P engine — assume it's overdue",
+        "* Oil in the red ECU plug — injector harness contamination is likely",
+        "* Overheating history or pressurised coolant system — head may be cracked",
+        "* Excessive black smoke or hard starting — injection pump or injector issues"
+      ]
+    },
+    "closingVerdict": "The TD5 is one of Land Rover's most respected engines — a 2.5-litre five-cylinder turbo-diesel with a cast-iron block and no timing belt to worry about. Its reputation is built on torque and durability, not refinement. The oil pump bolt on early engines is its one critical vulnerability — address that and the TD5 will outlast the chassis around it. With only 76 TD5 Discoveries still on UK roads, well-maintained examples are becoming increasingly collectable.",
+    "cta": {
+      "label": "→ Compare TD5 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Discovery TD5 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Oil Pump Bolt — Confirm replacement on any 10P engine (critical — ask for proof)",
+      "* Cold Start — Listen for smooth start; any hesitation or rough idle points to injector or harness issues",
+      "* ECU Connector — Check the red plug for oil contamination (injector harness warning)",
+      "* Coolant System — Check for pressurisation, oil in coolant, or coolant loss (head gasket/head crack warning)",
+      "* Smoke Check — Black smoke = over-fuelling; white smoke = coolant ingress; blue smoke = oil burning",
+      "* Turbo Boost — Test acceleration; any lack of power or excessive smoke?",
+      "* Service History — Including oil change intervals (TD5s are sensitive to oil quality) — see the map above",
+      "* MOT History — Check for emissions-related failures and structural corrosion (Discovery 2 chassis are known to rust)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "10P (early TD5)",
+        "years": "1998–2002",
+        "power": "136 bhp (101kW) @ 4,200rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,600–£5,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "15P (late TD5)",
+        "years": "2002–2004",
+        "power": "136 bhp (101kW) @ 4,200rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,600–£5,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (TD5):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,495cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "5-cylinder inline, cast iron block"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "19.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct-injection with Lucas Varity electronic unit injection"
+        },
+        {
+          "label": "* Torque",
+          "value": "300 Nm @ 1,950 rpm"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare TD5 engine prices for your Discovery",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Oil pump bolt (early 10P engines) — preventative replacement is essential"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "120,000–160,000 miles"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500–£5,500 fitted, reconditioned"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "10P / 15P (TD5) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring/Summer — project vehicle and off-road season [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (20%), Midlands (18%), South East (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Discovery TD5 engine replacement cost in the UK?",
+        "answer": "A reconditioned TD5 engine typically costs £3,600–£4,500 supply only. Fitting adds £900–£1,200 depending on the specialist. A full fitted replacement from a specialist workshop costs approximately £5,980 including VAT. Used engines can be found from £800–£1,400, but condition varies dramatically."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Discovery TD5 engine reliable?",
+        "answer": "Yes — the TD5 is widely regarded as one of the most dependable Land Rover engines ever built. It has a strong cast-iron block, simple five-cylinder design, and no timing belt to worry about. Many have exceeded 200,000 miles with proper maintenance. The oil pump bolt on early 10P engines is its one critical vulnerability — address that and the TD5 is exceptionally durable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Discovery TD5?",
+        "answer": "The main issues are the oil pump bolt working loose on early 10P engines (catastrophic if ignored), injector wiring harness oil contamination, cracked cylinder heads on early TD5s, and diesel dilution from leaking injector seals. All are well understood and repairable — the TD5 has no fundamental design flaws beyond the oil pump bolt."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Discovery TD5 engine, or should I scrap the vehicle?",
+        "answer": "Depends on the vehicle's condition. Against a well-maintained Discovery 2 worth £3,000–£8,000, a £4,500–£5,500 replacement may be 55–70% of the car's value — borderline but often worth it for a cherished example. With only 76 TD5 Discoveries still on UK roads, well-maintained examples are becoming collectable. For heavily corroded examples, get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Discovery TD5 engine code?",
+        "answer": "TD5 engines are identified by the prefix on the engine number: 10P (early, 1998–2002) or 15P (late, 2002–2004). The engine number is stamped on the block. Early 10P engines are the ones with the oil pump bolt vulnerability — confirm this has been addressed."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the TD5 oil pump bolt, or does it need replacement?",
+        "answer": "The bolt must be replaced with a correctly torqued and thread-locked replacement — it's a known manufacturing issue on early 10P engines. A preventative replacement costs £200–£400. A failed bolt almost always destroys the bearings and crankshaft, requiring a £3,600–£5,500 engine replacement."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Discovery TD5 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted TD5 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Discovery TD5 owners, as part of the Engine Finders network, covering the iconic five-cylinder turbo-diesel and every Discovery engine from the 200Tdi to the modern Ingenium."
+      },
+      {
+        "title": "Compare TD5 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. We cover the 10P and 15P TD5 variants specifically, with specialists who understand the oil pump bolt issue and every quirk of this five-cylinder legend."
+      },
+      {
+        "title": "UK Engine Replacement Services for TD5",
+        "text": "supply-only or full supply & fit available nationwide, covering the 2.5-litre five-cylinder turbo-diesel, with a 12-month warranty as standard across our network."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Discovery TD5 engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get your Discovery back on the trail with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Discovery TD5 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

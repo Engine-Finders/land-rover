@@ -1,0 +1,485 @@
+{
+  "meta": {
+    "slug": "discovery-d300",
+    "title": "Discovery D300 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every Land Rover Discovery D300 engine — AJ20D6. One generation, real UK costs and reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 155,
+    "canonical": "https://landroverengine.uk/discovery/d300/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery",
+              "item": "https://landroverengine.uk/discovery/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "D5",
+              "item": "https://landroverengine.uk/discovery/d5/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "D300",
+              "item": "https://landroverengine.uk/discovery/d300/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery D300 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "D5 D300 (AJ20D6, 2021–present)",
+              "url": "https://landroverengine.uk/discovery/d5/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery D300 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ20D6",
+              "url": "https://landroverengine.uk/engines/aj20d6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery D300 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ20D6 engine typically costs £5,000–£7,500 supply only, with the same engine used across the Discovery D5, Defender L663, and modern Range Rover / Range Rover Sport ranges. Fitting adds £1,100–£1,900. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Discovery D300 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ20D6 straight-six Ingenium diesel is JLR's most refined 3.0 diesel yet — a genuine step forward from the 306DT V6. It's rated ★★★★☆ based on current data, but as a modern Euro 6d engine, it demands the right servicing and driving patterns. AdBlue and DPF maintenance are the main areas requiring attention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Discovery D300?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "DPF/EGR clogging, AdBlue system failures (NOx sensors, AdBlue injector), and oil dilution from interrupted DPF regenerations are the most common issues. No catastrophic design flaws have emerged on the AJ20D6 to date."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery D300 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a £25,000+ Discovery D300, a £6,200 recon engine is a manageable 25% of the vehicle's value — worth it. Given the Discovery's strong retained value, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Discovery's engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For the D300, the engine code is AJ20D6 — it's on the VIN plate and vehicle documentation. The D300 badge signifies the 3.0-litre six-cylinder diesel. If you're unsure, tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AJ20D6's AdBlue system, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — most AdBlue system issues on the AJ20D6 are repairable. NOx sensors and the AdBlue injector are the usual culprits, with repairs typically costing £500–£1,500. If your countdown has started, do not ignore it — get it inspected immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery D300 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4500",
+            "highPrice": "8000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery D300 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Discovery D300 engines (AJ20D6), sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Discovery D300 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery/d300/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Discovery D300 • 2021–present • 3.0 AJ20D6",
+    "h1": "Land Rover Discovery D300 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Discovery D300 specialists. Compare reconditioned, rebuilt and used AJ20D6 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Discovery D300 Engines — from £4,500 to £8,000 · Code: AJ20D6",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free D300 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The DISCOVERY D300 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "D5 (facelift)",
+        "years": "2021–present",
+        "engineCode": "AJ20D6 (3.0 6-cylinder Ingenium diesel)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,500–£7,500 [EM-QUOTE]",
+        "eraNote": "The D300's sole engine — JLR's 3.0 straight-six Ingenium, replacing the 306DT V6 in the facelifted Discovery."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Discovery D300 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£4,500–£6,500",
+        "fittedIndie": "£5,400–£7,800",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £15,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£6,100–£8,900",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,000–£8,000",
+        "fittedIndie": "£7,100–£9,400",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£9,000–£13,000",
+        "fittedIndie": "£10,500–£15,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting a Discovery D300 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every D300 engine variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free D300 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Discovery D300 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "DPF/EGR clogging (AJ20D6)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Preventative — catches the issue before turbo/injector damage occurs"
+        },
+        {
+          "problem": "AdBlue system failure (AJ20D6)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,500",
+          "whenItMakesSense": "Straightforward sensor/pump replacement if caught early"
+        },
+        {
+          "problem": "Oil dilution from failed DPF regen",
+          "repairable": "⚠️ Depends",
+          "typicalCost": "£100–£300",
+          "whenItMakesSense": "If caught before bearing damage; if not, engine replacement required"
+        },
+        {
+          "problem": "Crankshaft bearing failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Not a common AJ20D6 failure; if it occurs, replacement is the only option"
+        },
+        {
+          "problem": "Turbocharger failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Repairable by specialists; do not drive with boost issues"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Discovery D300? Check These First",
+      "buyIf": [
+        "* Full Land Rover service history with documented oil-change intervals",
+        "* Evidence of regular motorway driving (to clear the DPF)",
+        "* AdBlue system health check passed within the last 12 months",
+        "* Post-2022 build with any early AdBlue software updates applied"
+      ],
+      "avoidIf": [
+        "* Service history shows only urban driving patterns (DPF risk)",
+        "* Oil level is visibly above the max mark on the dipstick",
+        "* No record of AdBlue system maintenance or sensor replacements",
+        "* Engine warning light present with no diagnosis documentation"
+      ]
+    },
+    "closingVerdict": "The Discovery D300's AJ20D6 is JLR's most refined 3.0 diesel yet — a genuine step forward from the 306DT V6. But it's a modern Euro 6d engine with the complexity that entails. Buy on service history and proof of motorway use, not on a clean MOT alone. If you're replacing, a reconditioned unit with a 12-month warranty is the sweet spot.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Discovery D300 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any unusual rattle or diesel knock; the AJ20D6 should start smoothly and quietly",
+      "* Service History — Including which engine era (AJ20D6 is the only D300 engine — verify this before purchase)",
+      "* Oil Level Check — Is the oil above the max mark? This indicates potential diesel contamination from interrupted DPF regens",
+      "* AdBlue System — Check the AdBlue countdown; any warnings? NOx sensors are a known weak point",
+      "* DPF Regeneration — Has the vehicle had regular motorway runs? Short journeys accelerate DPF wear on this engine",
+      "* Oil Consumption — Does it use more than 1L per 5,000 miles? If so, investigate",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues with the emissions system?",
+      "* MOT History — Check for emissions-related failures; repeated advisories on the DPF are a red flag"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ20D6",
+        "years": "2021–present",
+        "power": "300 bhp / 650 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£7,500 [EM-QUOTE]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ20D6):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,999cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline (straight-six)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection (2,500 bar)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin sequential turbo (MHI / Garrett)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "AdBlue system failures (NOx sensors, AdBlue pump) — approximately 35% of D300 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "58,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,200 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ20D6 [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — AdBlue and DPF issues worsen in colder conditions [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (24%), Midlands (18%), North West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Discovery D300 engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ20D6 engine typically costs £5,000–£7,500 supply only, with the same engine used across the Discovery D5, Defender L663, and modern Range Rover / Range Rover Sport ranges. Fitting adds £1,100–£1,900. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Discovery D300 engine reliable?",
+        "answer": "The AJ20D6 straight-six Ingenium diesel is JLR's most refined 3.0 diesel yet — a genuine step forward from the 306DT V6. It's rated ★★★★☆ based on current data, but as a modern Euro 6d engine, it demands the right servicing and driving patterns. AdBlue and DPF maintenance are the main areas requiring attention."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Discovery D300?",
+        "answer": "DPF/EGR clogging, AdBlue system failures (NOx sensors, AdBlue injector), and oil dilution from interrupted DPF regenerations are the most common issues. No catastrophic design flaws have emerged on the AJ20D6 to date."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Discovery D300 engine, or should I scrap the car?",
+        "answer": "Against a £25,000+ Discovery D300, a £6,200 recon engine is a manageable 25% of the vehicle's value — worth it. Given the Discovery's strong retained value, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Discovery's engine code?",
+        "answer": "For the D300, the engine code is AJ20D6 — it's on the VIN plate and vehicle documentation. The D300 badge signifies the 3.0-litre six-cylinder diesel. If you're unsure, tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ20D6's AdBlue system, or does it need replacement?",
+        "answer": "Yes — most AdBlue system issues on the AJ20D6 are repairable. NOx sensors and the AdBlue injector are the usual culprits, with repairs typically costing £500–£1,500. If your countdown has started, do not ignore it — get it inspected immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Land Rover Discovery D300 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Discovery D300 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

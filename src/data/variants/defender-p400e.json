@@ -1,0 +1,554 @@
+{
+  "meta": {
+    "slug": "defender-p400e",
+    "title": "Defender P400e Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every Land Rover Defender P400e powertrain — the 2.0-litre PT204 Ingenium petrol with 105kW e-motor. Real UK costs, coolant leak advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://landroverengine.uk/defender/p400e/",
+    "openGraph": {
+      "title": "Defender P400e Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Defender P400e powertrain — the 2.0-litre PT204 Ingenium petrol with 105kW e-motor. Real UK costs, coolant leak advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/defender/p400e/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/defender-p400e.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Defender P400e Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Defender P400e powertrain — the 2.0-litre PT204 Ingenium petrol with 105kW e-motor. Real UK costs, coolant leak advice, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/defender-p400e.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Defender",
+              "item": "https://landroverengine.uk/defender/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "L663",
+              "item": "https://landroverengine.uk/defender/l663/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "P400e",
+              "item": "https://landroverengine.uk/defender/p400e/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender P400e Powertrain Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "L663 Defender P400e (PT204 + 105kW e-motor, 2020–present)",
+              "url": "https://landroverengine.uk/defender/l663/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender P400e Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "PT204 (AJ200P)",
+              "url": "https://landroverengine.uk/engines/pt204/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Defender P400e engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Defender P400e (PT204) engine typically costs £3,000–£5,800 supply only. Fitting adds £1,200–£2,000 depending on location and workshop rates. Note that hybrid battery replacement is a separate cost — typically £6,000–£10,000+ from a main dealer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Defender P400e engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P400e uses the PT204 2.0-litre four-cylinder Ingenium petrol engine, paired with a 105kW electric motor. The engine itself is generally robust, but cooling system issues — charge air cooler leaks, turbo coolant hose failures, and water pump problems — are well-documented across the Ingenium petrol range. The hybrid system adds complexity; electric coolant pump failures have also been reported."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Defender P400e?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main known issues are: (1) Coolant leaks from the charge air cooler, turbo hoses, or water pump — the most frequently reported problem, (2) Electric coolant pump failure in the hybrid system, and (3) Rough idle or hesitation from the 2.0-litre petrol engine, particularly when cold or in hybrid mode."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Defender P400e engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and condition. Against a well-kept £45,000–£65,000 Defender P400e, a £4,000–£5,800 recon is around 10% of the car's value — worth it, particularly given Defender values have remained strong. However, if the hybrid battery also needs replacement (£6,000–£10,000+), evaluate total repair costs against the vehicle's value."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Defender P400e engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P400e uses the PT204 (also known as AJ200P) — a 2.0-litre four-cylinder Ingenium petrol engine. The engine number is stamped on the cylinder block. Tell us your registration and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the P400e coolant leak, or does it need engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — coolant leaks on the P400e are almost always repairable without engine replacement. Common fixes include charge air cooler replacement (£300–£800), turbo coolant hose repair (£200–£500), or water pump replacement (£400–£800). The key is catching the leak early — ignored coolant loss can lead to overheating and catastrophic engine damage."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Defender P400e Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "5800",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Defender P400e UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Defender P400e powertrains, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Defender P400e Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/defender/p400e/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Defender P400e • 2020–present • 1 Powertrain Generation",
+    "h1": "Land Rover Defender P400e Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Defender P400e specialists. The 2.0-litre Ingenium petrol plug-in hybrid pairs a four-cylinder engine with a 105kW electric motor — compare reconditioned, rebuilt and used units with supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Defender P400e Engines — from £1,500 to £5,800 · Engine code: PT204 (AJ200P)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free P400e Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "Land Rover Defender P400e — Which Powertrain Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "L663",
+        "years": "2020–present",
+        "engineCode": "PT204 (AJ200P) + 105kW e-motor",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,500–£5,800 [PLACEHOLDER]",
+        "eraNote": "2.0-litre four-cylinder Ingenium petrol with 19.2kWh battery — PHEV only, 110 body style"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Defender P400e Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£2,800",
+        "fittedIndie": "£2,500–£4,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£4,200–£6,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,200–£5,800",
+        "fittedIndie": "£5,500–£7,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,000–£12,000+",
+        "fittedIndie": "£9,500–£14,000+",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting a Defender P400e engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Hybrid system calibration adds additional labour.",
+    "cta": {
+      "label": "→ Compare Defender P400e engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Coolant Leak (Charge Air Cooler / Turbo Hoses)",
+        "symptoms": "Coolant level dropping with no visible external leak, coolant smell from engine bay, low coolant warning light",
+        "typicalMileage": "20,000–60,000 miles — can occur on low-mileage examples",
+        "repairCost": "£300–£800 (charge air cooler replacement or hose repair)",
+        "replacementCost": "N/A — repair only (does not progress to engine replacement if addressed)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if coolant level drops frequently"
+        },
+        "recommendation": "Coolant loss is the most frequently reported issue on the P400e's 2.0-litre Ingenium petrol engine. Common failure points include the charge air cooler (internal leak at high revs), turbocharger coolant feed O-ring, and water pump. The charge air cooler leak is particularly insidious — coolant burns off through the exhaust without visible external signs. If you're topping up coolant regularly, book a pressure test immediately. A £300–£800 repair is far cheaper than the overheating damage that follows if ignored.",
+        "failureLink": {
+          "label": "Read the full coolant leak guide → /failures/ingenium-coolant-leak/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Electric Coolant Pump Failure (Hybrid System)",
+        "symptoms": "Engine temperature rising rapidly, check engine light activation, sudden overheating warning",
+        "typicalMileage": "40,000–80,000 miles — reported on 2021 models",
+        "repairCost": "£80–£250 (cable connection repair) / £400–£800 (pump replacement)",
+        "replacementCost": "N/A — repair only (does not progress to engine replacement if addressed)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "overheating can cause catastrophic engine damage"
+        },
+        "recommendation": "The P400e's hybrid cooling system relies on an electric coolant pump that can fail due to a faulty cable connection. This is a known issue shared with the Range Rover Sport Hybrid. If you see a temperature warning, stop driving immediately — continued driving with an overheating 2.0-litre Ingenium engine can cause head gasket failure or worse. The repair is often straightforward (cable replacement) once diagnosed correctly.",
+        "failureLink": {
+          "label": "Read the full electric coolant pump guide → /failures/electric-coolant-pump/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Rough Idle / Hesitation (2.0-litre Petrol Engine)",
+        "symptoms": "Rough idle when stationary, hesitation or stuttering at low speed / light throttle, especially when the engine is cold",
+        "typicalMileage": "Any mileage — reported on low-mileage examples",
+        "repairCost": "£100–£500 (diagnosis + software update / sensor replacement)",
+        "replacementCost": "N/A — repair only (does not progress to engine replacement if addressed)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Multiple P400e owners have reported a rough idle and hesitation when the 2.0-litre engine is running, particularly when the hybrid battery is depleted or the engine is cold. Some describe it as \"almost like the timing is out\". This may be a characteristic of the four-cylinder Ingenium rather than a fault — but if it worsens or is accompanied by warning lights, get it checked. The P400e's 2.0-litre four-cylinder is notably less refined than the six-cylinder P400 petrol.",
+        "failureLink": {
+          "label": "Read the full rough idle guide → /failures/rough-idle-ingenium/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every Defender P400e powertrain covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Defender P400e Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Defender P400e — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Charge air cooler coolant leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Straightforward component replacement"
+        },
+        {
+          "problem": "Turbo coolant hose / O-ring leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£500",
+          "whenItMakesSense": "Common repair on Ingenium petrol engines"
+        },
+        {
+          "problem": "Electric coolant pump cable failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£80–£250",
+          "whenItMakesSense": "Simple electrical fix if caught early"
+        },
+        {
+          "problem": "Electric coolant pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Viable on any well-maintained example"
+        },
+        {
+          "problem": "Hybrid battery failure",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£6,000–£10,000+",
+          "whenItMakesSense": "Often warranty-covered; assess cost vs vehicle value"
+        },
+        {
+          "problem": "Timing chain failure (catastrophic)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Defender P400e? Check These First",
+      "buyIf": [
+        "* Full service history with JLR-approved oil and coolant specs",
+        "* Evidence of regular use (hybrid batteries degrade with extended inactivity)",
+        "* Coolant system pressure test passed with no leaks",
+        "* Remaining manufacturer warranty (5-year / unlimited miles from new)"
+      ],
+      "avoidIf": [
+        "* Coolant warning light or frequent top-ups without documented fix",
+        "* Check engine light with no diagnosis — hybrid systems are complex",
+        "* No history of the 2.0-litre Ingenium's known coolant issues being addressed",
+        "* Low mileage with long periods of inactivity (hybrid battery health risk)"
+      ]
+    },
+    "closingVerdict": "The Defender P400e is a sophisticated plug-in hybrid that pairs a 2.0-litre Ingenium petrol engine with a 105kW electric motor. It's the quickest Defender in the range (0-60 in 5.4 seconds) and offers up to 27–27 miles of electric-only range. However, the 2.0-litre Ingenium petrol engine has well-documented cooling system weaknesses — charge air cooler leaks, turbo coolant hose failures, and water pump issues. Buy with documented coolant system history, ideally with remaining manufacturer warranty, and you'll have a genuinely capable and rapid hybrid off-roader.",
+    "cta": {
+      "label": "→ Compare Defender P400e engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Defender P400e (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rough idle or hesitation when the engine first runs",
+      "* Coolant Level — Check for frequent top-ups; smell for coolant in the engine bay",
+      "* Service History — Including the 2.0-litre Ingenium petrol (PT204) and confirmed coolant system inspections",
+      "* Hybrid Battery Health — Check electric-only range matches claimed figures (27 miles)",
+      "* Coolant System Pressure Test — Ask for evidence of a recent pressure test",
+      "* Charging System — Test both AC wallbox and rapid charging functionality",
+      "* Warning Lights — Any check engine or hybrid system warnings? Have codes been read?",
+      "* Warranty Status — The 5-year / unlimited miles warranty is valuable — check remaining cover"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "PT204 (AJ200P) + 105kW e-motor",
+        "years": "2020–present",
+        "power": "398–404 bhp / 640 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£5,800 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (PT204 / AJ200P):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,997 cc (2.0L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll turbo"
+        },
+        {
+          "label": "* Electric Motor",
+          "value": "105 kW (141 bhp)"
+        },
+        {
+          "label": "* Battery",
+          "value": "19.2 kWh lithium-ion"
+        },
+        {
+          "label": "* Combined Power",
+          "value": "398–404 bhp"
+        },
+        {
+          "label": "* Combined Torque",
+          "value": "640 Nm"
+        },
+        {
+          "label": "* 0-60 mph",
+          "value": "5.4–5.6 seconds"
+        },
+        {
+          "label": "* Electric-only range",
+          "value": "27 miles (43 km)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Defender P400e engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Defender P400e engine replacement cost in the UK?",
+        "answer": "A reconditioned Defender P400e (PT204) engine typically costs £3,000–£5,800 supply only. Fitting adds £1,200–£2,000 depending on location and workshop rates. Note that hybrid battery replacement is a separate cost — typically £6,000–£10,000+ from a main dealer."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Defender P400e engine reliable?",
+        "answer": "The P400e uses the PT204 2.0-litre four-cylinder Ingenium petrol engine, paired with a 105kW electric motor. The engine itself is generally robust, but cooling system issues — charge air cooler leaks, turbo coolant hose failures, and water pump problems — are well-documented across the Ingenium petrol range. The hybrid system adds complexity; electric coolant pump failures have also been reported."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Defender P400e?",
+        "answer": "The main known issues are: (1) Coolant leaks from the charge air cooler, turbo hoses, or water pump — the most frequently reported problem, (2) Electric coolant pump failure in the hybrid system, and (3) Rough idle or hesitation from the 2.0-litre petrol engine, particularly when cold or in hybrid mode."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Defender P400e engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a well-kept £45,000–£65,000 Defender P400e, a £4,000–£5,800 recon is around 10% of the car's value — worth it, particularly given Defender values have remained strong. However, if the hybrid battery also needs replacement (£6,000–£10,000+), evaluate total repair costs against the vehicle's value."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Defender P400e engine code?",
+        "answer": "The P400e uses the PT204 (also known as AJ200P) — a 2.0-litre four-cylinder Ingenium petrol engine. The engine number is stamped on the cylinder block. Tell us your registration and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the P400e coolant leak, or does it need engine replacement?",
+        "answer": "Yes — coolant leaks on the P400e are almost always repairable without engine replacement. Common fixes include charge air cooler replacement (£300–£800), turbo coolant hose repair (£200–£500), or water pump replacement (£400–£800). The key is catching the leak early — ignored coolant loss can lead to overheating and catastrophic engine damage."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Defender P400e Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Defender P400e Powertrain Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Defender P400e owners, across the PT204 petrol Ingenium engine, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare Defender P400e Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit to a single quote."
+      },
+      {
+        "title": "UK Engine Replacement Services for Defender P400e",
+        "text": "supply-only or full supply & fit available nationwide, covering every Defender P400e since the L663's 2020 launch."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Defender P400e engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £3,000 supply-only.",
+    "ctaButton": {
+      "label": "Compare Land Rover Defender P400e Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

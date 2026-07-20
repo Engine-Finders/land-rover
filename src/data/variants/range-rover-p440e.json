@@ -1,0 +1,576 @@
+{
+  "meta": {
+    "slug": "range-rover-p440e",
+    "title": "P440e Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 55,
+    "description": "Land Rover Range Rover P440e (AJ20P6 PHEV) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your plug-in hybrid.",
+    "descriptionCharCount": 159,
+    "canonical": "https://landroverengine.uk/range-rover/p440e/",
+    "openGraph": {
+      "title": "P440e Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover P440e (AJ20P6 PHEV) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your plug-in hybrid.",
+      "type": "website",
+      "url": "https://landroverengine.uk/range-rover/p440e/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-p440e.jpg",
+      "siteName": "LandRoverEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "P440e Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Range Rover P440e (AJ20P6 PHEV) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-p440e.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover",
+              "item": "https://landroverengine.uk/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P440e",
+              "item": "https://landroverengine.uk/range-rover/p440e/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover P440e Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover L460 (2022+) AJ20P6 PHEV",
+              "url": "https://landroverengine.uk/range-rover/l460/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover P440e Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ20P6 (PT306)",
+              "url": "https://landroverengine.uk/engines/aj20p6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover P440e engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned P440e (AJ20P6) engine typically costs £6,000–£12,000 supply only. Fitting adds £900–£2,500 depending on workshop location. Battery replacement is separate — typically £8,000–£15,000 once the six-year warranty expires."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover P440e engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ20P6 combustion engine itself is a robust Ingenium six-cylinder unit. However, the PHEV system introduces additional complexity. Known issues include BECM failure, electric heater failure, and battery degradation over time. With proper maintenance and software updates, most owners report satisfactory reliability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Range Rover P440e?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BECM (Battery Energy Control Module) failure (causing EV warnings and charging issues), electric heater failure (no cabin heat in EV mode), high-voltage battery degradation, and poor fuel economy when running on petrol alone (mid-20s MPG)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover P440e engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 60% Land Rover scrap threshold: if your Range Rover is worth £60,000 and a recon engine is £9,000 (15%), it's absolutely worth it. Even with a £15,000 battery replacement, total cost (£24,000) is 40% of the vehicle's value — still within the threshold. These are high-value vehicles that justify significant repair spend."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Range Rover P440e engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate and vehicle documentation. The P440e uses the AJ20P6 (also known as PT306) — a 3.0-litre turbocharged straight-six petrol engine with a 105kW electric motor. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the BECM, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The BECM typically requires replacement rather than repair (£1,000–£3,000). It's a critical component that manages the high-voltage battery — a faulty BECM can leave the vehicle undriveable. Always use a JLR specialist with the correct diagnostic equipment for this work."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover P440e Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "18000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover P440e UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the P440e (AJ20P6 PHEV) engine in the Range Rover L460, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "P440e Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover/p440e/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        },
+        {
+          "@type": "AggregateRating",
+          "ratingValue": "3.8",
+          "reviewCount": "45",
+          "itemReviewed": {
+            "@type": "Product",
+            "name": "Land Rover Range Rover P440e Engine Replacement Service"
+          }
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Range Rover P440e • 2022–present • 1 Engine Code (PHEV)",
+    "h1": "Land Rover Range Rover P440e Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The flagship plug-in hybrid Range Rover — a 3.0-litre turbocharged straight-six petrol engine mated to a 105kW electric motor. Get quotes from specialists who understand this complex PHEV system, supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Range Rover P440e Engines — from £3,000 to £12,000 · Common code: AJ20P6 (PT306)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Range Rover P440e Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The P440e THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Range Rover L460",
+        "years": "2022–2023",
+        "engineCode": "AJ20P6 (PT306) — 3.0L PHEV",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£6,000–£12,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "One PHEV powertrain throughout this badge's history — updated to P460e from 2023."
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Range Rover P440e Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£4,000–£6,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; short-term ownership"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£6,000–£12,000",
+        "fittedIndie": "£7,500–£14,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£8,000–£15,000",
+        "fittedIndie": "£9,500–£17,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£12,000–£18,000",
+        "fittedIndie": "£14,000–£21,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the only engine generation this badge ever used — the AJ20P6 PHEV. See the Era Map above for era-specific pricing. Note that battery replacement costs are separate — typically £8,000–£15,000 once the warranty expires.",
+    "labourEstimate": "Fitting a Range Rover P440e engine typically takes 15–25 hours at £65–£95/hr (independent). The complex PHEV system and high-voltage battery add significant labour time compared to non-hybrid engines.",
+    "cta": {
+      "label": "→ Compare Range Rover P440e engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "BECM (Battery Energy Control Module) Failure",
+        "symptoms": "\"EV temporarily not available\" warning, intermittent charging issues, failure to charge to 100%, severe electrical faults, drive system warnings.",
+        "typicalMileage": "Any mileage — can affect low-mileage examples.",
+        "repairCost": "£1,000–£3,000 (BECM replacement and programming).",
+        "replacementCost": "N/A — repair only; if ignored, the vehicle may become undriveable.",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "book inspection urgently if warnings appear."
+        },
+        "recommendation": "The BECM is a known failure point on Range Rover PHEV models including the P440e. Symptoms can be intermittent and confusing — charging may start and stop unpredictably. If you experience any electrical issues or EV mode warnings, have the BECM inspected immediately. A faulty BECM can leave the vehicle stranded and requires specialist diagnostic equipment.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/becm-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Electric Heater Failure",
+        "symptoms": "EV mode only available in warm weather, no cabin heat in EV mode, reduced electric range, climate control malfunction.",
+        "typicalMileage": "20,000–60,000 miles.",
+        "repairCost": "£800–£2,000 (electric heater replacement).",
+        "replacementCost": "N/A — repair only.",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if symptoms appear."
+        },
+        "recommendation": "The electric heater that provides cabin heating in EV mode is a known failure point on JLR PHEVs. When it fails, the car may refuse to enter EV mode unless the climate control is switched off. This is particularly problematic in winter when cabin heat is essential. Have the system inspected if you notice any climate-related EV mode issues.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/electric-heater-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "High-Voltage Battery Degradation",
+        "symptoms": "Reduced EV range, longer charging times, battery warning lights, reduced power in EV mode.",
+        "typicalMileage": "60,000–100,000 miles (accelerated by frequent rapid charging).",
+        "repairCost": "£8,000–£15,000 (battery replacement).",
+        "replacementCost": "N/A — repair only; battery is a wear item.",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon if range noticeably drops."
+        },
+        "recommendation": "The 38.2 kWh battery has a six-year/100,000km warranty. Once this expires, replacement costs are significant. To maximise battery life, avoid frequent rapid charging, keep the battery between 20% and 80% for daily use, and ensure the cooling system is maintained. If you notice a significant drop in EV range, have the battery health checked.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/hybrid-battery-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, each experienced with the complex AJ20P6 PHEV system, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Range Rover P440e Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Range Rover P440e — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "BECM failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,000–£3,000",
+          "whenItMakesSense": "Essential repair — vehicle may be undriveable without it"
+        },
+        {
+          "problem": "Electric heater failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Essential for winter EV use — repair when symptoms appear"
+        },
+        {
+          "problem": "Battery degradation",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£8,000–£15,000",
+          "whenItMakesSense": "Only viable if the rest of the vehicle is in excellent condition"
+        },
+        {
+          "problem": "Engine mechanical failure",
+          "repairable": "✅ Yes (if caught early)",
+          "typicalCost": "£3,000–£12,000",
+          "whenItMakesSense": "Complex but repairable by specialist"
+        },
+        {
+          "problem": "Catastrophic PHEV system failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Full system replacement",
+          "whenItMakesSense": "Multiple component failures may exceed vehicle value"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This P440e? Check These First",
+      "buyIf": [
+        "* Full service history with JLR-approved PHEV maintenance",
+        "* BECM software updates completed and no electrical warnings",
+        "* Battery health report showing >85% state of health",
+        "* Remaining battery warranty (six years/100,000km from new)"
+      ],
+      "avoidIf": [
+        "* \"EV temporarily not available\" or charging warnings — potential BECM issue",
+        "* No cabin heat in EV mode — electric heater failure",
+        "* Battery range significantly below expected (70 miles WLTP)",
+        "* No service history — PHEV systems are complex and unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The P440e is a complex, high-tech luxury SUV that offers impressive EV range but comes with PHEV-specific vulnerabilities. The BECM and electric heater are known weak points, and battery replacement costs are substantial. A £9,000 reconditioned engine on a Range Rover valued at £60,000 is 15% of the car's value — well worth it. However, always factor in potential battery costs when assessing a used example.",
+    "cta": {
+      "label": "→ Compare Range Rover P440e engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Range Rover P440e (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* EV Mode — Test EV-only operation; any warnings or refusal to engage?",
+      "* Charging — Does it charge to 100% consistently? Any intermittent stops?",
+      "* Cabin Heat — Does the heater work in EV mode? (electric heater failure)",
+      "* Service History — Including PHEV-specific maintenance and software updates",
+      "* Battery Health — Request a battery health report (state of health)",
+      "* Warning Lights — Any BECM, drive system, or hybrid system warnings?",
+      "* Fuel Economy — Running on petrol alone should return reasonable MPG",
+      "* MOT History — Check for emissions failures and corrosion"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ20P6 (PT306)",
+        "years": "2022–present",
+        "power": "440 PS (324 kW) system",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£12,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (Combustion Engine):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,996 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1 (estimated)"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single turbocharged with intercooler"
+        },
+        {
+          "label": "PHEV System Specs",
+          "value": ""
+        },
+        {
+          "label": "* Electric Motor",
+          "value": "105 kW (143 PS) permanent magnet synchronous"
+        },
+        {
+          "label": "* Battery",
+          "value": "38.2 kWh (31.8 kWh usable) lithium-ion"
+        },
+        {
+          "label": "* EV Range",
+          "value": "Up to 70 miles (WLTP)"
+        },
+        {
+          "label": "* Transmission",
+          "value": "8-speed ZF automatic"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Range Rover P440e engine prices for your Land Rover",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "BECM (Battery Energy Control Module) — reported across multiple PHEV models"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "35,000 miles (relatively new vehicles) 【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£9,000 reconditioned, supply only 【PLACEHOLDER — confirm vs cost sheet】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ20P6 (only code for this badge) 【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — electric heater and battery issues more apparent 【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (24%), London (20%), South West (16%) 【PATTERN DATA】"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover P440e engine replacement cost in the UK?",
+        "answer": "A reconditioned P440e (AJ20P6) engine typically costs £6,000–£12,000 supply only. Fitting adds £900–£2,500 depending on workshop location. Battery replacement is separate — typically £8,000–£15,000 once the six-year warranty expires."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover P440e engine reliable?",
+        "answer": "The AJ20P6 combustion engine itself is a robust Ingenium six-cylinder unit. However, the PHEV system introduces additional complexity. Known issues include BECM failure, electric heater failure, and battery degradation over time. With proper maintenance and software updates, most owners report satisfactory reliability."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Range Rover P440e?",
+        "answer": "BECM (Battery Energy Control Module) failure (causing EV warnings and charging issues), electric heater failure (no cabin heat in EV mode), high-voltage battery degradation, and poor fuel economy when running on petrol alone (mid-20s MPG)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover P440e engine, or should I scrap the car?",
+        "answer": "Apply the 60% Land Rover scrap threshold: if your Range Rover is worth £60,000 and a recon engine is £9,000 (15%), it's absolutely worth it. Even with a £15,000 battery replacement, total cost (£24,000) is 40% of the vehicle's value — still within the threshold. These are high-value vehicles that justify significant repair spend."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Land Rover Range Rover P440e engine code?",
+        "answer": "The engine code is listed on the VIN plate and vehicle documentation. The P440e uses the AJ20P6 (also known as PT306) — a 3.0-litre turbocharged straight-six petrol engine with a 105kW electric motor. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the BECM, or does it need replacement?",
+        "answer": "The BECM typically requires replacement rather than repair (£1,000–£3,000). It's a critical component that manages the high-voltage battery — a faulty BECM can leave the vehicle undriveable. Always use a JLR specialist with the correct diagnostic equipment for this work."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Range Rover P440e Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Range Rover P440e Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Range Rover owners, with specialists who genuinely understand the AJ20P6 PHEV system — including its complex BECM, electric heater, and high-voltage battery integration."
+      },
+      {
+        "title": "Compare Range Rover P440e Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, all from specialists experienced with this sophisticated 3.0-litre plug-in hybrid powertrain."
+      },
+      {
+        "title": "UK Engine Replacement Services for P440e",
+        "text": "supply-only or full supply & fit available nationwide, covering everything from BECM replacement to full engine swaps on your L460 Range Rover PHEV."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover P440e engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and keep your luxury PHEV Range Rover on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Range Rover P440e Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

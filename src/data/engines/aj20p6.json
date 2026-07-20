@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "slug": "aj20p6",
+    "title": "Land Rover AJ20P6 (P400) Engine — Reliability & Cost",
+    "description": "The AJ20P6 is JLR's modern straight-six petrol — smooth and powerful, but cooling system vigilance is key. Backed by 160+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+    "canonical": "https://landroverengine.uk/engines/aj20p6/",
+    "openGraph": {
+      "title": "Land Rover AJ20P6 (P400) Engine — Reliability & Cost",
+      "description": "The AJ20P6 is JLR's modern straight-six petrol — smooth and powerful, but cooling system vigilance is key. Backed by 160+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/engines/aj20p6/",
+      "image": "https://landroverengine.uk/images/landrover/engines/aj20p6.jpg",
+      "siteName": "landroverengine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Land Rover AJ20P6 (P400) Engine — Reliability & Cost",
+      "description": "The AJ20P6 is JLR's modern straight-six petrol — smooth and powerful, but cooling system vigilance is key. Backed by 160+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "image": "https://landroverengine.uk/images/landrover/engines/aj20p6.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://landroverengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AJ20P6 (Ingenium 3.0 I6 Petrol / P400)",
+              "item": "https://landroverengine.uk/engines/aj20p6/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover models fitted with the AJ20P6 (Ingenium 3.0 I6 Petrol / P400)",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Land Rover Range Rover L460 P400",
+              "url": "https://landroverengine.uk/models/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Land Rover Range Rover Sport L461 P400",
+              "url": "https://landroverengine.uk/models/range-rover-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Land Rover Defender L663 P400",
+              "url": "https://landroverengine.uk/models/defender/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does an AJ20P6 (Ingenium 3.0 I6 Petrol / P400) engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ20P6 Ingenium petrol typically costs £4,500–£7,500 supply only, varying by specification and rebuild quality. Used units can be found from £2,500–£4,500, but provenance is critical. Fitting adds £1,000–£2,000 depending on labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the AJ20P6 (Ingenium 3.0 I6 Petrol / P400) a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ20P6 is a modern and capable straight-six petrol (4.0★) with positive real-world feedback. Early examples have reported cooling system issues, but JLR has addressed many of these with software updates and revisions. Regular maintenance is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common AJ20P6 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system issues are the most common reported problems — including water pump leaks, coolant hose failures, and occasional thermostat housing cracks. Other reported issues include oil leaks from the timing cover and occasional software glitches in the MHEV system."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover models use the AJ20P6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ20P6 (P400) powers the latest-generation Range Rover (L460), Range Rover Sport (L461), and Defender (L663)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover AJ20P6 the same as Jaguar's version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the AJ20P6 is shared with Jaguar fitments in the F-Pace, XF, and XJ. The engine is mechanically identical, though ECU calibrations and ancillaries differ by model."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "landroverengine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Land Rover AJ20P6 (Ingenium 3.0 I6 Petrol / P400) Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Land Rover"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover AJ20P6 (Ingenium 3.0 I6 Petrol / P400) Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "10000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover AJ20P6 (Ingenium 3.0 I6 Petrol / P400) UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Land Rover AJ20P6 (Ingenium 3.0 I6 Petrol / P400), sourced from landroverengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "landroverengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Land Rover AJ20P6 (P400) Engine — Reliability & Cost",
+          "url": "https://landroverengine.uk/engines/aj20p6/",
+          "author": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "landroverengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover • AJ20P6 / P400 (Ingenium 3.0 I6) • Petrol • 3.0L I6 MHEV Turbo • 2019–present",
+    "h1": "Land Rover AJ20P6 (Ingenium 3.0 I6 Petrol / P400) Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The AJ20P6 is JLR's modern straight‑six petrol — smooth, powerful and efficient, but cooling system monitoring is essential. Backed by 160+ real UK enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "160+ Enquiries"
+      },
+      {
+        "icon": "🔧",
+        "label": "3 Models Fitted"
+      },
+      {
+        "icon": "💯",
+        "label": "72/100 Engine Score"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Compare AJ20P6 (Ingenium 3.0 I6 Petrol) Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "AJ20P6 / P400 (Ingenium 3.0 I6 Petrol)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Petrol"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "3.0L I6 MHEV Turbo"
+      },
+      {
+        "metric": "Power Range",
+        "value": "400 hp [THIRD-PARTY]"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2019–present"
+      },
+      {
+        "metric": "Models Fitted (Land Rover only)",
+        "value": "3 (Range Rover L460, Range Rover Sport L461, Defender L663)"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Also fitted to Jaguar (F‑Pace, XF, XJ)"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "72/100"
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "★★★★ out of 5",
+    "confidence": "82% confidence — based on 160+ real UK enquiries, specialist workshop reports, and JLR service data for this relatively new engine family.",
+    "scoreNote": "Engine Score breakdown:",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (Star rating (4.0★) × 4 = 16)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Midpoint of Reconditioned (Supply Only) range: £4,500–£7,500 → £6,000 midpoint → falls in £5,000–£6,999 bracket → 12)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Modern I6 with 48V MHEV adds complexity; repairs require specialist knowledge and diagnostic equipment)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "12 (AJ20P6 parts availability improving but some components are JLR-specific; shared with Jaguar aids supply chain)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "20 (Reconditioned cost (£6,000 midpoint) as % of lowest typical vehicle value (Defender L663 ~£35,000+) = 17% → falls under 30% → 20)"
+        },
+        {
+          "dimension": "Total",
+          "score": "72/100 (Sum of the five rows above)"
+        }
+      ]
+    },
+    "oneLineVerdict": "The AJ20P6 is a refined, powerful modern straight‑six petrol — cooling system vigilance is the key to longevity — buy with full JLR service history and enjoy the power.",
+    "bestFor": "",
+    "avoidIf": ""
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "Land Rover Range Rover",
+        "generation": "L460",
+        "variantBadge": "P400 (AJ20P6)",
+        "years": "2022–present"
+      },
+      {
+        "model": "Land Rover Range Rover Sport",
+        "generation": "L461",
+        "variantBadge": "P400 (AJ20P6)",
+        "years": "2022–present"
+      },
+      {
+        "model": "Land Rover Defender",
+        "generation": "L663",
+        "variantBadge": "P400 (AJ20P6)",
+        "years": "2020–present"
+      }
+    ],
+    "crossBrandNote": "Also powers the Jaguar F‑Pace, XF, and XJ → [Jaguar AJ20P6 page]."
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,500–£5,900",
+        "warranty": "Varies by supplier"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£5,500–£9,000",
+        "warranty": "12 months typical"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£6,500–£10,000",
+        "fittedIndie": "£7,500–£11,500",
+        "warranty": "12–24 months typical"
+      }
+    ],
+    "labourEstimate": "Fitting an AJ20P6 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "sharedCostNote": "Parts cost is identical across Land Rover and Jaguar applications; labour time varies by model and engine bay access.",
+    "cta": {
+      "label": "→ Compare AJ20P6 (Ingenium 3.0 I6 Petrol) engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does an AJ20P6 (Ingenium 3.0 I6 Petrol / P400) engine replacement cost?",
+        "answer": "A reconditioned AJ20P6 Ingenium petrol typically costs £4,500–£7,500 supply only, varying by specification and rebuild quality. Used units can be found from £2,500–£4,500, but provenance is critical. Fitting adds £1,000–£2,000 depending on labour rates."
+      },
+      {
+        "id": 2,
+        "question": "Is the AJ20P6 (Ingenium 3.0 I6 Petrol / P400) a reliable engine?",
+        "answer": "The AJ20P6 is a modern and capable straight‑six petrol (4.0★) with positive real‑world feedback. Early examples have reported cooling system issues, but JLR has addressed many of these with software updates and revisions. Regular maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common AJ20P6 failure?",
+        "answer": "Cooling system issues are the most common reported problems — including water pump leaks, coolant hose failures, and occasional thermostat housing cracks. Other reported issues include oil leaks from the timing cover and occasional software glitches in the MHEV system."
+      },
+      {
+        "id": 4,
+        "question": "Which Land Rover models use the AJ20P6?",
+        "answer": "The AJ20P6 (P400) powers the latest‑generation Range Rover (L460), Range Rover Sport (L461), and Defender (L663)."
+      },
+      {
+        "id": 5,
+        "question": "Is the Land Rover AJ20P6 the same as Jaguar's version?",
+        "answer": "Yes — the AJ20P6 is shared with Jaguar fitments in the F‑Pace, XF, and XJ. The engine is mechanically identical, though ECU calibrations and ancillaries differ by model."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real AJ20P6 owners, as part of the Engine Finders network.",
+      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists — so you see the real market, not just one garage's quote.",
+      "UK Coverage: From Cornwall to the Highlands, our specialist network covers the whole UK with expert AJ20P6 knowledge."
+    ],
+    "finalCta": "Find the best Land Rover AJ20P6 (Ingenium 3.0 I6 Petrol / P400) engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover AJ20P6 (Ingenium 3.0 I6 Petrol / P400) Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

@@ -380,16 +380,16 @@
     "buyingChecks": {
       "title": "Buying This SD4? Check These First",
       "buyIf": [
-        "Full service history with oil changes every 8,000 miles or less",
-        "Timing chain replaced as preventative maintenance",
-        "Turbocharger inspected and confirmed healthy",
-        "No history of engine warning lights or DPF issues"
+        "* Full service history with oil changes every 8,000 miles or less",
+        "* Timing chain replaced as preventative maintenance",
+        "* Turbocharger inspected and confirmed healthy",
+        "* No history of engine warning lights or DPF issues"
       ],
       "avoidIf": [
-        "Cold-start rattle or ticking — indicates timing chain issues",
-        "Evidence of turbo failure (whistling, smoke, power loss)",
-        "Poor service history — these engines are unforgiving of neglect",
-        "Engine warning light with no diagnosis, regardless of mileage"
+        "* Cold-start rattle or ticking — indicates timing chain issues",
+        "* Evidence of turbo failure (whistling, smoke, power loss)",
+        "* Poor service history — these engines are unforgiving of neglect",
+        "* Engine warning light with no diagnosis, regardless of mileage"
       ]
     },
     "closingVerdict": "The 204DTD is a complex, high-performance engine that demands meticulous maintenance. With its known timing chain and turbocharger vulnerabilities, buying one without a documented service history is a significant risk. A £3,500 reconditioned engine on a Discovery 5 valued at £12,000 is 29% of the car's value — worth it. On a sub-£6,000 example, think carefully. The 60% Land Rover scrap threshold applies.",
@@ -401,14 +401,14 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Land Rover Discovery SD4 (or before you commit to an engine replacement), check these:",
     "items": [
-      "Cold Start — Listen for rattle or ticking on startup (timing chain warning)",
-      "Service History — Including oil changes every 8,000 miles (not the suggested 24,000)",
-      "Turbo Check — Test acceleration; any whistling, smoke, or power loss?",
-      "Smoke Check — Black smoke? (injector over-fuelling) / Blue smoke? (turbo oil leak)",
-      "DPF Regeneration — Check history; short journeys accelerate DPF clogging",
-      "Oil Level — Check for diesel contamination (oil dilution from DPF regen)",
-      "Engine Warning Light — Have codes been read? Any unresolved issues?",
-      "MOT History — Check for emissions-related failures"
+      "* Cold Start — Listen for rattle or ticking on startup (timing chain warning)",
+      "* Service History — Including oil changes every 8,000 miles (not the suggested 24,000)",
+      "* Turbo Check — Test acceleration; any whistling, smoke, or power loss?",
+      "* Smoke Check — Black smoke? (injector over-fuelling) / Blue smoke? (turbo oil leak)",
+      "* DPF Regeneration — Check history; short journeys accelerate DPF clogging",
+      "* Oil Level — Check for diesel contamination (oil dilution from DPF regen)",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
     ]
   },
   "engineCodes": {
@@ -433,23 +433,23 @@
       "title": "Technical Specs:",
       "items": [
         {
-          "label": "Displacement",
+          "label": "* Displacement",
           "value": "1,999 cc"
         },
         {
-          "label": "Cylinders",
+          "label": "* Cylinders",
           "value": "4-cylinder inline"
         },
         {
-          "label": "Compression Ratio",
+          "label": "* Compression Ratio",
           "value": "15.5:1–15.8:1"
         },
         {
-          "label": "Fuel System",
+          "label": "* Fuel System",
           "value": "Common-rail direct injection"
         },
         {
-          "label": "Turbocharger",
+          "label": "* Turbocharger",
           "value": "Twin-turbocharged"
         }
       ]

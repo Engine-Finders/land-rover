@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "slug": "velar-p250",
+    "title": "P250 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Land Rover Velar P250 2.0 Ingenium petrol — real UK costs, cooling system & timing chain insight, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://landroverengine.uk/velar/p250/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Velar",
+              "item": "https://landroverengine.uk/velar/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P250",
+              "item": "https://landroverengine.uk/velar/p250/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Velar P250 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Velar L560 P250 (2017–present)",
+              "url": "https://landroverengine.uk/velar/l560/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Velar P250 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204PT / AJ200P (2.0L Ingenium Petrol)",
+              "url": "https://landroverengine.uk/engines/204pt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Velar P250 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned P250 2.0-litre Ingenium petrol engine typically costs £3,000–£4,800 supply only. Used engines are available from £1,800–£3,200. Fitting adds £1,200–£1,800 depending on your location and workshop. Most Velar engine replacements range between £2,500 and £7,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Velar P250 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P250 is powered by JLR's petrol Ingenium — and unlike the diesel version, it's genuinely one of JLR's more reliable modern engines. It's smooth, refined, and significantly less prone to the EGR, DPF, and injector issues that plague the diesel. However, it has known issues: cooling system leaks (water pump), timing chain stretch (with extended oil intervals), and thermostat housing failure. The petrol Ingenium is considered the one to have."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Velar P250?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most frequently reported issues are cooling system leaks (water pump failure is a known pattern), thermostat housing failure (plastic housing becomes brittle), and timing chain stretch (particularly with neglected oil changes). The engine is far less problematic than the diesel Ingenium."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Velar P250 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept £30,000 Velar, a £4,000 recon is 13% of the car's value — definitely worth it. Against a high-mileage £12,000 example, the same recon approaches our 60% Land Rover threshold for petrol engines — get a scrap valuation first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Velar P250 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The P250 carries the engine code 204PT (also referred to as AJ200P in some documentation). It's a 2.0-litre four-cylinder turbo petrol engine used in the Velar L560 from 2017 onwards."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the timing chain, or does it need full engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A preventative timing chain and tensioner replacement costs £1,000–£2,000. If ignored and the chain snaps, the engine is an interference design — pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes using 0W-20 JLR-spec oil are the single most effective preventative measure."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Velar P250 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1800",
+            "highPrice": "9500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Velar P250 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Velar P250 2.0-litre Ingenium petrol engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "P250 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/velar/p250/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Land Rover Velar P250 • 2017–present • 2.0 Ingenium Petrol (204PT)",
+    "h1": "Land Rover Velar P250 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover Velar specialists. Compare reconditioned, rebuilt and used 2.0-litre Ingenium petrol engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 12 Specialists"
+    ],
+    "priceAnchor": "Velar P250 Engines — from £1,800 to £5,800 · Code: 204PT / AJ200P",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free P250 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The P250 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "Velar L560",
+        "years": "2017–present",
+        "engineCode": "204PT / AJ200P (2.0L Ingenium Petrol)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,000–£5,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "One engine throughout this badge's history — no era ambiguity."
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Land Rover Velar P250 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,800–£3,200",
+        "fittedIndie": "£2,800–£4,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £12,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,000–£4,800",
+        "fittedIndie": "£4,200–£6,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,800–£5,800",
+        "fittedIndie": "£5,000–£7,200",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£6,500–£9,500+",
+        "fittedIndie": "£7,800–£11,000+",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the 204PT 2.0-litre Ingenium petrol engine. Most Velar engine replacements range between £2,500 and £7,000 depending on engine type and specification.",
+    "labourEstimate": "Fitting a Velar P250 engine typically takes 12–16 hours at £70–£100/hr (independent) or £120–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare P250 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Cooling System Leaks (Water Pump)",
+        "symptoms": "Coolant loss with no visible external leak, overheating, sweet smell from the engine bay, heater not working properly.",
+        "typicalMileage": "40,000–80,000 miles (or 4–7 years)",
+        "repairCost": "£400–£800 (water pump replacement)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "Water pump failure is a known pattern on the petrol Ingenium engine. If you're experiencing unexplained coolant loss, have the water pump and cooling system inspected promptly. Ignoring it can lead to overheating and potential head gasket damage — though it doesn't typically progress to full engine replacement.",
+        "failureLink": {
+          "label": "Read the full coolant leak guide",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Timing Chain Stretch",
+        "symptoms": "Rattling noise on cold start, metallic ticking from the engine, engine warning light, reduced performance.",
+        "typicalMileage": "80,000–120,000 miles",
+        "repairCost": "£1,000–£2,000 (chain + tensioner replacement)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "£3,000–£5,800 (if chain skips and valves contact pistons)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today"
+        },
+        "recommendation": "While the petrol Ingenium is significantly more reliable than the diesel version, timing chain stretch remains a possibility — especially with extended oil change intervals. At the first sign of cold-start rattle, get the chain and tensioners inspected immediately. Regular oil changes using the correct 0W-20 spec oil are the single most effective preventative measure.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/timing-chain-wear/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Thermostat Housing Failure",
+        "symptoms": "Coolant loss, overheating, temperature gauge fluctuations, engine warning light.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£300–£600 (thermostat housing replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The plastic thermostat housing can become brittle with age and crack, leading to coolant loss. This is a common issue across the Ingenium engine family. If your P250 is experiencing temperature fluctuations or coolant loss, have the thermostat housing inspected. Replacing it preventatively when the water pump is done is recommended.",
+        "failureLink": {
+          "label": "Read the full thermostat failure guide",
+          "href": "/failures/thermostat-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Land Rover Specialist →",
+    "supportingLine": "12 vetted Land Rover specialists, every P250 era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free P250 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Velar P250 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Straightforward fix; prevents overheating damage"
+        },
+        {
+          "problem": "Timing chain stretch",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,000–£2,000",
+          "whenItMakesSense": "Preventative — catches the fault before catastrophic failure"
+        },
+        {
+          "problem": "Thermostat housing failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Specialist repair available"
+        },
+        {
+          "problem": "Cracked cylinder head (rare)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£2,000–£4,000",
+          "whenItMakesSense": "Labour-intensive; often more cost-effective to replace the engine"
+        },
+        {
+          "problem": "Chain snap (valve contact)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "£3,000–£5,800",
+          "whenItMakesSense": "Typically requires full engine replacement or complete rebuild"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This P250? Check These First",
+      "buyIf": [
+        "* Full service history with 0W-20 JLR-spec oil at 12,000-mile (or less) intervals",
+        "* Cooling system service records (water pump, thermostat housing replaced)",
+        "* No cold-start rattle — a quiet startup suggests healthy timing chain",
+        "* Evidence of regular maintenance — the petrol Ingenium rewards good care"
+      ],
+      "avoidIf": [
+        "* Cold-start rattle with no timing chain history",
+        "* Unexplained coolant loss with no cooling system service records",
+        "* Poor service history — the petrol Ingenium is reliable but still needs good oil",
+        "* Engine warning light with timing or cooling system codes and no diagnosis"
+      ]
+    },
+    "closingVerdict": "The P250 is powered by JLR's petrol Ingenium — and unlike the diesel version, it's genuinely one of JLR's more reliable modern engines. It's smooth, refined, and significantly less prone to the EGR, DPF, and injector issues that plague the diesel. But it's still a modern turbo engine with modern turbo-engine problems — water pumps, thermostat housings, and timing chains all need attention. Buy on documented history — a well-maintained P250 is a £25,000–£40,000 luxury SUV; a neglected one is a £4,000 repair bill waiting to happen.",
+    "cta": {
+      "label": "→ Compare P250 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Land Rover Velar P250 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattling or metallic ticking on startup (timing chain wear warning)",
+      "* Service History — including the P250 era and confirmed oil-change intervals using 0W-20 JLR-spec oil",
+      "* Coolant Check — Any history of coolant loss or water pump/thermostat housing replacement?",
+      "* Temperature Gauge — Any fluctuations or overheating? (cooling system warning)",
+      "* Smoke Check — White smoke on startup can indicate coolant ingress",
+      "* Oil Level — Check the dipstick; any evidence of oil consumption?",
+      "* Engine Warning Light — Have codes been read? Any unresolved timing or cooling system issues?",
+      "* MOT History — Check for emissions-related failures (cats, O2 sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204PT / AJ200P (2.0L Ingenium Petrol)",
+        "years": "2017–present",
+        "power": "250 PS (184 kW) @ 5,500 rpm · 365 Nm @ 1,300–4,500 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£5,000 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (204PT / AJ200P):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,997 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline, 4 valves per cylinder"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection (200 bar)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll turbocharger"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare P250 engine prices for your Velar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system leaks — water pump and thermostat housing are known weak points on the petrol Ingenium"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–80,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,000–£4,800 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204PT / AJ200P [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — overheating issues exposed in warm weather【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (19%), South West (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Velar P250 engine replacement cost in the UK?",
+        "answer": "A reconditioned P250 2.0-litre Ingenium petrol engine typically costs £3,000–£4,800 supply only. Used engines are available from £1,800–£3,200. Fitting adds £1,200–£1,800 depending on your location and workshop. Most Velar engine replacements range between £2,500 and £7,000."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Velar P250 engine reliable?",
+        "answer": "The P250 is powered by JLR's petrol Ingenium — and unlike the diesel version, it's genuinely one of JLR's more reliable modern engines. It's smooth, refined, and significantly less prone to the EGR, DPF, and injector issues that plague the diesel. However, it has known issues: cooling system leaks (water pump), timing chain stretch (with extended oil intervals), and thermostat housing failure. The petrol Ingenium is considered the one to have."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Velar P250?",
+        "answer": "The most frequently reported issues are cooling system leaks (water pump failure is a known pattern), thermostat housing failure (plastic housing becomes brittle), and timing chain stretch (particularly with neglected oil changes). The engine is far less problematic than the diesel Ingenium."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Velar P250 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £30,000 Velar, a £4,000 recon is 13% of the car's value — definitely worth it. Against a high-mileage £12,000 example, the same recon approaches our 60% Land Rover threshold for petrol engines — get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Velar P250 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The P250 carries the engine code 204PT (also referred to as AJ200P in some documentation). It's a 2.0-litre four-cylinder turbo petrol engine used in the Velar L560 from 2017 onwards."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the timing chain, or does it need full engine replacement?",
+        "answer": "Yes — if caught early. A preventative timing chain and tensioner replacement costs £1,000–£2,000. If ignored and the chain snaps, the engine is an interference design — pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes using 0W-20 JLR-spec oil are the single most effective preventative measure."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Land Rover Velar P250 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted P250 Ingenium Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Velar owners, as part of the Engine Finders network, covering the entire 204PT era from 2017 onwards."
+      },
+      {
+        "title": "Compare P250 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, across every L560 that left the factory with this refined 2.0-litre turbo petrol."
+      },
+      {
+        "title": "UK Engine Replacement Services for P250",
+        "text": "supply-only or full supply & fit available nationwide, covering the full L560 production run — and we're vetted across every era of this badge."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Velar P250 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your Velar back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Land Rover Velar P250 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

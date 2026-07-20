@@ -1,8 +1,8 @@
 {
-  "subHeadline": "The question every BMW owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap — based on real UK data, not estimates.",
+  "subHeadline": "The question every Land Rover owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap — based on real UK data, not estimates.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW ownership economics"
+    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=900&q=80",
+    "alt": "Land Rover ownership economics"
   },
   "matrix": {
     "columns": [
@@ -13,91 +13,91 @@
     ],
     "rows": [
       {
-        "model": "3 Series E90 (N47D20C)",
+        "model": "Discovery 4 SDV6",
         "image": {
-          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-          "alt": "3 Series E90"
+          "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=200&q=80",
+          "alt": "Discovery 4"
         },
-        "vehicleValue": "£2,500–£7,500 [THIRD-PARTY]",
-        "replacementCost": "£3,200–£5,500 [BMW-QUOTE]",
+        "vehicleValue": "£6,000–£18,000 [THIRD-PARTY]",
+        "replacementCost": "£6,500–£9,500 [EM-QUOTE]",
+        "verdict": {
+          "icon": "⚠️",
+          "text": "Watch — sub-£10k examples approach the threshold. Service history matters more than mileage.",
+          "type": "watch"
+        },
+        "href": "#"
+      },
+      {
+        "model": "Freelander 2 (204DTD)",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
+          "alt": "Freelander 2"
+        },
+        "vehicleValue": "£2,500–£7,000 [THIRD-PARTY]",
+        "replacementCost": "£3,500–£5,800 [EM-QUOTE]",
         "verdict": {
           "icon": "🔴",
-          "text": "Scrap threshold — recon cost frequently exceeds car value on sub-£4k examples. The 70% BMW threshold is live here.",
+          "text": "Scrap threshold — recon cost frequently exceeds car value on older examples.",
           "type": "scrap"
         },
         "href": "#"
       },
       {
-        "model": "3 Series F30 (B47D20A)",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-          "alt": "3 Series F30"
-        },
-        "vehicleValue": "£7,000–£20,000 [THIRD-PARTY]",
-        "replacementCost": "£2,800–£4,500 [BMW-QUOTE]",
-        "verdict": {
-          "icon": "✅",
-          "text": "Safe — replacement well within value. The B47 is the sensible daily choice.",
-          "type": "safe"
-        },
-        "href": "#"
-      },
-      {
-        "model": "3 Series G20 (B58B30)",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-          "alt": "3 Series G20"
-        },
-        "vehicleValue": "£18,000–£35,000 [THIRD-PARTY]",
-        "replacementCost": "£3,800–£6,000 [BMW-QUOTE]",
-        "verdict": {
-          "icon": "✅",
-          "text": "Safe — very safe across all variants. The safest 3 Series generation for engine reliability.",
-          "type": "safe"
-        },
-        "href": "#"
-      },
-      {
-        "model": "5 Series F10 (N57D30)",
+        "model": "Range Rover Sport L494",
         "image": {
           "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-          "alt": "5 Series F10"
+          "alt": "Range Rover Sport L494"
         },
-        "vehicleValue": "£5,000–£16,000 [THIRD-PARTY]",
-        "replacementCost": "£4,500–£7,000 [BMW-QUOTE]",
+        "vehicleValue": "£12,000–£55,000 [THIRD-PARTY]",
+        "replacementCost": "£5,000–£12,000 [EM-QUOTE]",
         "verdict": {
-          "icon": "⚠️",
-          "text": "Watch — sub-£8k examples approach the 70% threshold. Buy with documented service history.",
-          "type": "watch"
+          "icon": "✅",
+          "text": "Safe — replacement viable across most examples. Well within value even at upper recon cost.",
+          "type": "safe"
         },
         "href": "#"
       },
       {
-        "model": "X5 F15 (N63B44)",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-          "alt": "X5 F15"
-        },
-        "vehicleValue": "£10,000–£28,000 [THIRD-PARTY]",
-        "replacementCost": "£6,000–£10,000 [BMW-QUOTE]",
-        "verdict": {
-          "icon": "⚠️",
-          "text": "Watch — N63 recon can be 40–60% of vehicle value. The \"N63 nightmare\" is real.",
-          "type": "watch"
-        },
-        "href": "#"
-      },
-      {
-        "model": "F10 M5 (S63B44)",
+        "model": "Range Rover L405",
         "image": {
           "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-          "alt": "F10 M5"
+          "alt": "Range Rover L405"
         },
-        "vehicleValue": "£8,000–£22,000 [THIRD-PARTY]",
-        "replacementCost": "£9,000–£14,000 [BMW-QUOTE]",
+        "vehicleValue": "£14,000–£55,000 [THIRD-PARTY]",
+        "replacementCost": "£6,500–£12,000 [EM-QUOTE]",
+        "verdict": {
+          "icon": "✅",
+          "text": "Safe — well within value even at upper recon cost. The safest-to-buy generation.",
+          "type": "safe"
+        },
+        "href": "#"
+      },
+      {
+        "model": "Defender L663",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=200&q=80",
+          "alt": "Defender L663"
+        },
+        "vehicleValue": "£35,000–£90,000 [THIRD-PARTY]",
+        "replacementCost": "£3,500–£9,500 [EM-QUOTE]",
+        "verdict": {
+          "icon": "✅",
+          "text": "Safe — very safe across all variants. High host value means replacement is always viable.",
+          "type": "safe"
+        },
+        "href": "#"
+      },
+      {
+        "model": "Range Rover Sport L320 (368DT)",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
+          "alt": "Range Rover Sport L320"
+        },
+        "vehicleValue": "£5,000–£15,000 [THIRD-PARTY]",
+        "replacementCost": "£5,500–£8,000 [EM-QUOTE]",
         "verdict": {
           "icon": "⚠️",
-          "text": "Watch — M-division V8 recon frequently approaches or exceeds vehicle value on older examples. Buy only with full service history and a specialist PPI.",
+          "text": "Watch — older examples sit at 40–60% of vehicle value. Get a scrap valuation alongside any repair quote.",
           "type": "watch"
         },
         "href": "#"
@@ -105,39 +105,39 @@
     ]
   },
   "ruleOfThumb": {
-    "title": "The BMW Rule of Thumb",
-    "percent": "70%",
-    "percentLabel": "BMW THRESHOLD",
-    "text": "If reconditioned engine cost runs at 70% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote — don't decide on repair cost alone. This is our BMW-specific threshold, derived from analysing 826 3 Series enquiries in 2025 [BMW-VERIFIED] and the real cost-vs-value data behind them."
+    "title": "The Rule of Thumb",
+    "percent": "60%",
+    "percentLabel": "JLR THRESHOLD",
+    "text": "If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote — don't decide on repair cost alone."
   },
   "deeperLinks": [
     {
       "id": 1,
-      "label": "Is It Worth Replacing a 3 Series Engine? →",
-      "purpose": "Full breakdown of E90/F30/G20 ownership economics",
+      "label": "Is It Worth Replacing a Discovery 4 Engine? →",
+      "purpose": "Full breakdown of D4 ownership economics",
       "href": "#"
     },
     {
       "id": 2,
-      "label": "Is a BMW N47 Failure a Write-Off? →",
+      "label": "Is a TDV6 Failure a Write-Off? →",
       "purpose": "When repair makes sense vs when to walk away",
       "href": "#"
     },
     {
       "id": 3,
-      "label": "When Should You Scrap a BMW? →",
+      "label": "When Should You Scrap a Land Rover? →",
       "purpose": "The decision framework for older vehicles",
       "href": "#"
     },
     {
       "id": 4,
-      "label": "Most Expensive BMW Repairs →",
+      "label": "Most Expensive Land Rover Repairs →",
       "purpose": "The top 5 repairs and what they cost",
       "href": "#"
     },
     {
       "id": 5,
-      "label": "Cheapest BMWs to Own →",
+      "label": "Cheapest Land Rovers to Own →",
       "purpose": "Which models offer the best value for money",
       "href": "#"
     }

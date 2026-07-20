@@ -1,8 +1,8 @@
 {
   "subHeadline": "A permanent, categorised reference — not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW engine failure database"
+    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=900&q=80",
+    "alt": "Land Rover engine failure database"
   },
   "engineFailures": {
     "title": "Engine Failures",
@@ -11,72 +11,114 @@
     "rows": [
       {
         "id": 1,
-        "title": "N47 Timing Chain Failure",
-        "description": "The defining BMW diesel issue and our #1 enquiry driver. Cold-start rattle from the rear of the engine is the early warning; ignored, chain slip means full engine replacement. 1,450 enquiries in 2025 [BMW-VERIFIED]. £3,200–£5,500 recon [BMW-QUOTE].",
+        "title": "TDV6 Crankshaft Failure",
+        "description": "The 306DT's defining weak point — cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon. 980 enquiries in 2025 [EM-VERIFIED].",
         "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 2,
-        "title": "B58 Coolant Leaks",
-        "description": "The modern straight-six's primary weak point — expansion tank, water pump, and plastic fittings all degrade over time. Well-understood, non-catastrophic if caught early. 540 enquiries in 2025 [BMW-VERIFIED]. £400–£800 repair [BMW-QUOTE].",
+        "title": "276DT Oil Pump Housing Failure",
+        "description": "Often kills the engine outright before any other symptom appears. The 2.7 TDV6's single-point failure. 700 enquiries in 2025 [EM-VERIFIED].",
+        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 3,
+        "title": "Ingenium Timing Chain Failure",
+        "description": "Pre-2019 204DTD tensioner wear, significantly improved from 2019 onward. £1,200–£2,500 repair cost. 1,150 enquiries in 2025 [EM-VERIFIED].",
+        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 4,
+        "title": "508PS Oil Cooler & Dilution Issues",
+        "description": "The 4.4 SDV8's main (and comparatively minor) weak point — oil cooler leaks can lead to coolant ingestion. 620 enquiries in 2025 [EM-VERIFIED].",
+        "severity": { "icon": "🟠", "label": "Immediate", "type": "immediate" },
+        "link": { "label": "Read more →", "href": "#" }
+      }
+    ]
+  },
+  "suspensionFailures": {
+    "title": "Suspension Failures",
+    "icon": "🚙",
+    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "rows": [
+      {
+        "id": 1,
+        "title": "Air Suspension Compressor Failure",
+        "description": "The most common air suspension complaint across Range Rover and Discovery. Burnout presents a fire risk.",
+        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 2,
+        "title": "Height Sensor Faults",
+        "description": "Trigger warning lights and uneven ride height well before a full system failure. £200–£500 repair cost.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 3,
+        "title": "Valve Block & Air Spring Leaks",
+        "description": "Slow leaks that are often mistaken for compressor failure. £300–£800 repair cost.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
+        "link": { "label": "Read more →", "href": "#" }
+      }
+    ]
+  },
+  "drivetrainFailures": {
+    "title": "Drivetrain Failures",
+    "icon": "⚙️",
+    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "rows": [
+      {
+        "id": 1,
+        "title": "Transfer Box Faults",
+        "description": "Loss of drive or grinding noises on 4x4 engagement. ATC300/400 chain stretch is the most common cause.",
+        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 2,
+        "title": "Differential Wear",
+        "description": "Front and rear diff whine, most common on high-mileage Discovery and Defender. £800–£1,500 repair.",
         "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 3,
-        "title": "N57 Turbocharger & Timing Chain Wear",
-        "description": "Similar rear-chain complexity to N47, plus turbocharger failure at higher mileages. The 330d/530d workhorse has known weak points. 830 enquiries in 2025 [BMW-VERIFIED]. £1,200–£2,500 repair; £4,500–£7,000 recon [BMW-QUOTE].",
-        "severity": { "icon": "🟠", "label": "Immediate", "type": "immediate" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 4,
-        "title": "N63 Valve Stem Seals",
-        "description": "Hot-vee architecture causes heat-related seal failure at 60k–100k miles. Known as the \"N63 nightmare.\" 440 enquiries in 2025 [BMW-VERIFIED]. £3,000–£6,000 repair; £6,000–£10,000 recon [BMW-QUOTE].",
-        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 5,
-        "title": "S63 Timing Chain Tensioner",
-        "description": "High-performance M-division V8 with similar weaknesses to N63. Chain tensioner wear can lead to catastrophic failure. 410 enquiries in 2025 [BMW-VERIFIED]. Engine replacement often required at £9,000–£14,000 recon [BMW-QUOTE].",
-        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
+        "title": "Propshaft & UJ Failures",
+        "description": "Vibration under load, a common MOT advisory across the range. £200–£500 repair.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
         "link": { "label": "Read more →", "href": "#" }
       }
     ]
   },
-  "warningSigns": {
-    "title": "Common BMW Warning Signs",
+  "electricalFailures": {
+    "title": "Electrical Failures",
     "icon": "⚠️",
     "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
     "rows": [
       {
         "id": 1,
-        "title": "Cold-Start Rattle",
-        "description": "The N47's signature symptom — 1-2 seconds of chain noise on start-up. The earlier it's caught, the cheaper the fix. Ignored, it becomes a £3,200–£5,500 recon [BMW-QUOTE].",
-        "severity": { "icon": "🟠", "label": "Immediate", "type": "immediate" },
+        "title": "Terrain Response System Faults",
+        "description": "Sensor and module failures that disable off-road drive modes. Often linked to transfer case issues.",
+        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 2,
-        "title": "Loss of Power / Limp Mode",
-        "description": "Multiple causes — turbo failure, EGR clogging, DPF blockage, or HPFP failure on N54/N55. The N54's HPFP is the defining petrol issue.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
+        "title": "Infotainment & Software Glitches",
+        "description": "Particularly common on pre-2018 Touch Pro systems. Can be resolved with software updates.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 3,
-        "title": "Coolant Loss (No Visible Leak)",
-        "description": "B58/N63 expansion tank or water pump failure — can lead to overheating if ignored. The B58's most common failure, costing £400–£800 to repair [BMW-QUOTE].",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 4,
-        "title": "Blue Smoke on Start-Up",
-        "description": "N63 valve stem seal failure — oil seeping past seals into the combustion chamber. The telltale sign of the \"N63 nightmare.\"",
-        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
+        "title": "Battery Drain / Parasitic Drain",
+        "description": "Modules failing to sleep correctly — a frequent no-start complaint on stop-start models.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
         "link": { "label": "Read more →", "href": "#" }
       }
     ]

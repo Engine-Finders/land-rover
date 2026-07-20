@@ -60,7 +60,7 @@ export default function HomeSec9({ data }) {
         <div className="mb-3 flex items-start gap-3">
           <div className="min-w-0 flex-1">
             <h2 className="text-2xl font-bold text-black md:text-4xl">
-              The BMW Failure Database
+              The Land Rover &amp; Range Rover Failure Database
             </h2>
             <p className="text-sm text-gray-600">{data.subHeadline}</p>
           </div>
@@ -76,7 +76,9 @@ export default function HomeSec9({ data }) {
         </div>
 
         <FailureTable block={data.engineFailures} />
-        <FailureTable block={data.warningSigns} />
+        <FailureTable block={data.suspensionFailures} />
+        <FailureTable block={data.drivetrainFailures} />
+        <FailureTable block={data.electricalFailures} />
 
         <div className="border border-gray-200 p-2">
           <p className="mb-1 text-sm font-bold uppercase text-blue-700">

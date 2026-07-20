@@ -2,53 +2,33 @@
   "items": [
     {
       "id": 1,
-      "question": "How much does a BMW engine replacement cost in the UK?",
-      "answer": "It depends entirely on the engine. A reconditioned N47D20C (the 320d engine) runs £3,200–£5,500 supply-only [BMW-QUOTE], while a reconditioned S63B44 (M5/M6/X5M/X6M) runs £9,000–£14,000 [BMW-QUOTE]. Fitted costs add 10–24 labour hours depending on the engine. Use our diagnostic calculator above for a personalised figure."
+      "question": "Is it worth replacing a Land Rover engine?",
+      "answer": "It depends entirely on vehicle value versus replacement cost. A Range Rover Sport or Defender L663 will almost always justify replacement — the car is worth far more than the engine. A Freelander 2 or early Discovery Sport often won't; replacement cost can exceed what the car is worth outright. Use our diagnostic calculator above to get a personalised verdict."
     },
     {
       "id": 2,
-      "question": "Which BMW engine is the most reliable?",
-      "answer": "The B58B30 is the most dependable modern BMW engine in our dataset — just 540 enquiries in 2025, mostly due-diligence not failures [BMW-VERIFIED]. From the older era, the M57D30 turbodiesel (E46/E90 330d) has the same bulletproof reputation. Both share one thing: regular oil changes are non-negotiable."
+      "question": "Which Land Rover engine should I avoid?",
+      "answer": "The 2.7 TDV6 (276DT) and the 3.0 TDV6/SDV6 (306DT) carry the highest catastrophic-failure risk in the range — both can suffer bottom-end failures that leave little to rebuild. The 4.4 SDV8 and post-2019 Ingenium units are considerably more dependable. See our Engine Rankings for the full breakdown."
     },
     {
       "id": 3,
-      "question": "What is the most common BMW engine failure?",
-      "answer": "The N47 timing chain stretch is our #1 enquiry driver — 1,450 enquiries in 2025, with the F30 3 Series alone generating 380 [BMW-VERIFIED]. Cold-start rattle from the rear of the engine is the early warning; ignored, chain slip means a full engine replacement at £3,200–£5,500 recon [BMW-QUOTE]. The N57 and N63 are the next most common failure points."
+      "question": "Is the Ingenium engine reliable?",
+      "answer": "The petrol Ingenium (204PT) has a noticeably better reliability record than the diesel (204DTD), which suffered timing chain tensioner issues on pre-2019 builds. JLR revised the design from 2019 onward, and those engines carry meaningfully lower risk. Check our Ingenium Knowledge Centre for full details."
     },
     {
       "id": 4,
-      "question": "Is the BMW 3 Series reliable?",
-      "answer": "It depends entirely on the generation. The N47 era (E90/pre-2016 F30) has a reputation for timing chain issues — but a 2016+ F30 LCI with the B47 diesel is genuinely reliable. The G20 with the B58 is the safest 3 Series ever made. Use our model pages to check your specific generation."
+      "question": "Discovery 4 vs Discovery 5 — which is more reliable?",
+      "answer": "The Discovery 5 benefits from the revised, more dependable Ingenium engines and a lighter aluminium platform. The Discovery 4 is more readily available on the SDV6, which is powerful but carries real crankshaft bearing risk at higher mileages — service history matters more than the badge."
     },
     {
       "id": 5,
-      "question": "Which BMW engine should I avoid?",
-      "answer": "No engine outright — but a pre-2016 N47D20C without a documented timing-chain replacement is the one purchase we consistently advise against. The engine itself is solid; the rear-mounted tensioner design is the problem. The N63's hot-vee architecture is also a high-cost risk. A 2016+ B47 or any B58 has no such caveat."
+      "question": "How do I know if my Land Rover is worth repairing?",
+      "answer": "Compare your realistic vehicle value against the full replacement quote, not just the repair estimate. As a rule, if replacement cost sits above roughly 60% of what the car is worth, it's worth getting a scrap valuation before committing. Use our Ownership Decision Tool for a personalised assessment."
     },
     {
       "id": 6,
-      "question": "How do I know if my BMW timing chain is worn?",
-      "answer": "Cold-start rattle for 1–2 seconds is the classic early warning, sometimes with a chain-noise change under load. On the N47 and N57, listen for a metallic rattle from the rear of the engine on startup. On the B58, coolant loss from the expansion tank is the early signal. Caught early, it's a repair; ignored, it's a £3,200–£5,500 engine [BMW-QUOTE]. Use our diagnostic calculator for a personalised assessment."
-    },
-    {
-      "id": 7,
-      "question": "Is it worth replacing a BMW engine?",
-      "answer": "Depends entirely on the car's value. Against a £35,000 G20, a £5,000 B58 recon is just 14% of the car's value — ✅ safe. Against a £4,500 E90, a £4,000 N47 recon is 89% — ❌ walk away. Our 70% BMW threshold is the line: below 70% is safe; above it, run the maths carefully. Use our diagnostic calculator for your car."
-    },
-    {
-      "id": 8,
-      "question": "How long do BMW engines last?",
-      "answer": "A well-maintained BMW diesel (M57, N57, B47, B57) can exceed 200,000 miles. The B58 petrol is also proving durable — with proper servicing, 150,000+ miles is realistic. The N47's chain is the limiting factor, not the engine itself. The M54 and M57 are the high-mileage champions."
-    },
-    {
-      "id": 9,
-      "question": "Which BMW generation should I buy?",
-      "answer": "2016+ F30 LCI with the B47 diesel or B48 petrol. You get the facelift architecture, the revised chain hardware, and the electronics update — plus depreciation has already done most of its work. For petrol performance, a G20 M340i is the sweet spot. For classic appeal, a sorted E46 330i is the keep-forever BMW."
-    },
-    {
-      "id": 10,
-      "question": "How do I find my BMW engine code?",
-      "answer": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most N47/B47 units, and on the cylinder head on N52/B58 engines. Or tell us your model year and variant (320d, 330i, 340i) and we'll identify it — 20+ vetted specialists will confirm it for free."
+      "question": "Which is the safest Range Rover to buy used?",
+      "answer": "The L405 (2012–2021) offers the widest margin between typical resale value and replacement cost of any generation, which is why it tops our safest-to-buy ranking. The newer L460 is even safer on paper, but at a significantly higher entry price."
     }
   ]
 }

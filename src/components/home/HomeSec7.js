@@ -7,6 +7,7 @@ const verdictClass = {
   best: "text-blue-700",
   avoid: "text-red-700",
   solid: "text-blue-700",
+  monitor: "text-yellow-700",
 };
 
 export default function HomeSec7({ data }) {
@@ -17,7 +18,7 @@ export default function HomeSec7({ data }) {
         <div className="mb-2 flex items-start gap-3">
           <div className="min-w-0 flex-1">
             <h2 className="text-2xl font-bold text-black md:text-4xl">
-              BMW Engine Families — The Pillars
+              Land Rover &amp; Range Rover Engine Families
             </h2>
             <p className="text-sm text-gray-600">{data.subHeadline}</p>
           </div>

@@ -1,12 +1,12 @@
 {
-  "subHeadline": "Answer a few questions about your symptoms — we'll match you against 15+ known BMW failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+  "subHeadline": "Answer a few questions about your symptoms — we'll match you against 15+ known JLR failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW for diagnostic calculator"
+    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=900&q=80",
+    "alt": "Land Rover for diagnostic calculator"
   },
   "trustStrip": [
-    { "icon": "📊", "label": "Powered by 24,650+ real UK enquiries" },
-    { "icon": "🔧", "label": "20+ vetted BMW specialists" },
+    { "icon": "📊", "label": "Powered by 9,000+ real UK enquiries" },
+    { "icon": "🔧", "label": "20+ vetted JLR specialists" },
     { "icon": "📖", "label": "OEM part references included" },
     { "icon": "🏆", "label": "Part of Engine Finders" }
   ],
@@ -37,11 +37,11 @@
       { "icon": "⚙️", "label": "Engine Performance Issues", "href": "#" },
       { "icon": "🛢️", "label": "Oil Leaks & Consumption", "href": "#" },
       { "icon": "🌡️", "label": "Cooling System", "href": "#" },
-      { "icon": "⏱️", "label": "Timing Chain / VANOS", "href": "#" },
+      { "icon": "⏱️", "label": "Timing Chain / Tensioner", "href": "#" },
       { "icon": "💨", "label": "Turbocharger", "href": "#" },
       { "icon": "🔋", "label": "Battery / Electrical", "href": "#" },
-      { "icon": "⚡", "label": "Spark / Ignition", "href": "#" },
-      { "icon": "🌫️", "label": "Exhaust / Emissions", "href": "#" },
+      { "icon": "🚙", "label": "Air Suspension (EAS)", "href": "#" },
+      { "icon": "⚙️", "label": "Drivetrain / Transfer Box", "href": "#" },
       { "icon": "🔊", "label": "Noise / Vibration", "href": "#" },
       { "icon": "❓", "label": "Other / Not Sure", "href": "#" }
     ],
@@ -54,18 +54,18 @@
     "signals": [
       {
         "icon": "🛡️",
-        "title": "BMW-VERIFIED Data",
+        "title": "EM-VERIFIED Data",
         "text": "Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork."
       },
       {
         "icon": "⚙️",
-        "title": "BMW-Specific Knowledge",
-        "text": "We use exact BMW terminology (N47, B58, VANOS, Valvetronic) and OEM part numbers."
+        "title": "JLR-Specific Knowledge",
+        "text": "We use exact JLR terminology (EAS, Terrain Response, TDV6, SDV6, Ingenium) and OEM part numbers."
       },
       {
         "icon": "👥",
         "title": "Vetted Specialist Network",
-        "text": "Our recommendations route you to 20+ BMW specialists who work on these engines daily."
+        "text": "Our recommendations route you to 20+ JLR specialists who work on these vehicles daily."
       },
       {
         "icon": "🏆",
@@ -77,19 +77,60 @@
   "exampleResult": {
     "badge": "EXAMPLE RESULT",
     "title": "Likely Diagnosis",
-    "fault": "Oil Filter Housing Gasket Leak",
+    "fault": "TDV6 Crankshaft Bearing Failure",
     "likelihood": "High Likelihood",
-    "commonOn": "N47 / B47 engines",
-    "symptomsMatch": "Oil smell, low oil level, under-car drip",
-    "repairCost": "£180–£420",
-    "replaceCost": "£2,800–£4,500",
+    "commonOn": "306DT (3.0 TDV6/SDV6) engines",
+    "symptomsMatch": "Cold-start knock, metallic tapping, loss of oil pressure",
+    "repairCost": "£6,500–£9,500",
+    "replaceCost": "£12,000–£18,000 (Main Dealer)",
     "footer": "Based on verified UK enquiries"
   },
   "bottomCta": {
     "title": "Get your exact verdict",
-    "text": "Answer a few questions for a diagnosis matched to your BMW.",
+    "text": "Answer a few questions for a diagnosis matched to your Land Rover or Range Rover.",
     "buttonLabel": "START DIAGNOSIS",
     "href": "#",
     "trustLine": "100% Independent • No Sponsorship • Completely Unbiased"
+  },
+  "costTable": {
+    "title": "Typical UK Land Rover & Range Rover Replacement Costs",
+    "columns": ["FAILURE TYPE", "RECONDITIONED S&F", "REBUILT S&F", "USED S&F", "MAIN DEALER EST."],
+    "rows": [
+      {
+        "failure": "Ingenium Timing Chain",
+        "reconditioned": "£3,500–£5,800",
+        "rebuilt": "£2,800–£4,500",
+        "used": "£2,000–£3,500",
+        "dealer": "£6,000–£10,000"
+      },
+      {
+        "failure": "TDV6/SDV6 Crankshaft",
+        "reconditioned": "£6,500–£9,500",
+        "rebuilt": "£5,500–£7,000",
+        "used": "£3,500–£5,500",
+        "dealer": "£12,000–£18,000"
+      },
+      {
+        "failure": "TDV8 Timing Chain",
+        "reconditioned": "£5,500–£8,000",
+        "rebuilt": "£4,500–£6,500",
+        "used": "£3,000–£4,800",
+        "dealer": "£10,000–£15,000"
+      },
+      {
+        "failure": "4.4 V8 Oil Cooler",
+        "reconditioned": "£6,000–£9,000",
+        "rebuilt": "£5,000–£7,000",
+        "used": "£3,500–£5,500",
+        "dealer": "£12,000–£18,000"
+      },
+      {
+        "failure": "Duratorq Injector Seal",
+        "reconditioned": "£2,000–£3,500",
+        "rebuilt": "£1,500–£2,800",
+        "used": "£1,000–£2,000",
+        "dealer": "£4,000–£7,000"
+      }
+    ]
   }
 }

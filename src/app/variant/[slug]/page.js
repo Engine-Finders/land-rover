@@ -54,8 +54,9 @@ export async function generateMetadata({ params }) {
     alternates: meta.canonical
       ? { canonical: meta.canonical }
       : undefined,
-    openGraph: og ? { type: og.type || "website", openGraph: og
-      ? {`r`n          ...(og.type && { type: og.type }),
+    openGraph: og
+      ? {
+          ...(og.type && { type: og.type }),
           ...(og.title && { title: og.title }),
           ...(og.description && { description: og.description }),
           ...(og.url && { url: og.url }),

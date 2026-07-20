@@ -33,28 +33,42 @@ export async function generateMetadata({ params }) {
   if (!data?.meta) return {};
 
   const { meta } = data;
+
+  function stripEmpty(obj) {
+    if (!obj) return null;
+    const cleaned = {};
+    for (const [key, value] of Object.entries(obj)) {
+      if (value !== "" && value !== undefined && value !== null) {
+        cleaned[key] = value;
+      }
+    }
+    return Object.keys(cleaned).length > 0 ? cleaned : null;
+  }
+
+  const og = stripEmpty(meta.openGraph);
+  const tw = stripEmpty(meta.twitter);
+
   return {
-    title: meta.title,
-    description: meta.description,
+    title: meta.title || undefined,
+    description: meta.description || undefined,
     alternates: meta.canonical
       ? { canonical: meta.canonical }
       : undefined,
-    openGraph: meta.openGraph
-      ? {
-          title: meta.openGraph.title,
-          description: meta.openGraph.description,
-          type: meta.openGraph.type,
-          url: meta.openGraph.url,
-          images: meta.openGraph.image ? [meta.openGraph.image] : undefined,
-          siteName: meta.openGraph.siteName,
+    openGraph: og ? { type: og.type || "website", openGraph: og
+      ? {`r`n          ...(og.type && { type: og.type }),
+          ...(og.title && { title: og.title }),
+          ...(og.description && { description: og.description }),
+          ...(og.url && { url: og.url }),
+          ...(og.image && { images: [og.image] }),
+          ...(og.siteName && { siteName: og.siteName }),
         }
       : undefined,
-    twitter: meta.twitter
+    twitter: tw
       ? {
-          card: meta.twitter.card,
-          title: meta.twitter.title,
-          description: meta.twitter.description,
-          images: meta.twitter.image ? [meta.twitter.image] : undefined,
+          ...(tw.card && { card: tw.card }),
+          ...(tw.title && { title: tw.title }),
+          ...(tw.description && { description: tw.description }),
+          ...(tw.image && { images: [tw.image] }),
         }
       : undefined,
   };

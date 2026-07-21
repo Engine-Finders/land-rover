@@ -1,86 +1,127 @@
 [
   {
-    "slug": "defender-l316",
+    "parent": "defender",
+    "slug": "l316",
+    "type": "generations",
     "dataFile": "defender-l316"
   },
   {
-    "slug": "defender-l663",
+    "parent": "defender",
+    "slug": "l663",
+    "type": "generations",
     "dataFile": "defender-l663"
   },
   {
-    "slug": "discovery-4-l319",
+    "parent": "discovery-4",
+    "slug": "l319",
+    "type": "generations",
     "dataFile": "discovery-4-l319"
   },
   {
-    "slug": "discovery-d1",
+    "parent": "discovery",
+    "slug": "d1",
+    "type": "generations",
     "dataFile": "discovery-d1"
   },
   {
-    "slug": "discovery-d2",
+    "parent": "discovery",
+    "slug": "d2",
+    "type": "generations",
     "dataFile": "discovery-d2"
   },
   {
-    "slug": "discovery-l462",
+    "parent": "discovery",
+    "slug": "l462",
+    "type": "generations",
     "dataFile": "discovery-l462"
   },
   {
-    "slug": "discovery-sport-l550",
+    "parent": "discovery-sport",
+    "slug": "l550",
+    "type": "generations",
     "dataFile": "discovery-sport-l550"
   },
   {
-    "slug": "freelander-l314",
+    "parent": "freelander",
+    "slug": "l314",
+    "type": "generations",
     "dataFile": "freelander-l314"
   },
   {
-    "slug": "land-rover-discovery-3-l319",
+    "parent": "land-rover-discovery-3",
+    "slug": "l319",
+    "type": "generations",
     "dataFile": "land-rover-discovery-3-l319"
   },
   {
-    "slug": "land-rover-freelander-2-l359",
+    "parent": "land-rover-freelander-2",
+    "slug": "l359",
+    "type": "generations",
     "dataFile": "land-rover-freelander-2-l359"
   },
   {
-    "slug": "land-rover-range-rover-l460",
+    "parent": "land-rover-range-rover",
+    "slug": "l460",
+    "type": "generations",
     "dataFile": "land-rover-range-rover-l460"
   },
   {
     "slug": "range-rover-classic",
+    "type": "generations",
     "dataFile": "range-rover-classic"
   },
   {
-    "slug": "range-rover-evoque-l538",
+    "parent": "range-rover-evoque",
+    "slug": "l538",
+    "type": "generations",
     "dataFile": "range-rover-evoque-l538"
   },
   {
-    "slug": "range-rover-evoque-l551",
+    "parent": "range-rover-evoque",
+    "slug": "l551",
+    "type": "generations",
     "dataFile": "range-rover-evoque-l551"
   },
   {
-    "slug": "range-rover-l322",
+    "parent": "range-rover",
+    "slug": "l322",
+    "type": "generations",
     "dataFile": "range-rover-l322"
   },
   {
-    "slug": "range-rover-l405",
+    "parent": "range-rover",
+    "slug": "l405",
+    "type": "generations",
     "dataFile": "range-rover-l405"
   },
   {
-    "slug": "range-rover-p38a",
+    "parent": "range-rover",
+    "slug": "p38a",
+    "type": "generations",
     "dataFile": "range-rover-p38a"
   },
   {
-    "slug": "range-rover-sport-l320",
+    "parent": "range-rover-sport",
+    "slug": "l320",
+    "type": "generations",
     "dataFile": "range-rover-sport-l320"
   },
   {
-    "slug": "range-rover-sport-l461",
+    "parent": "range-rover-sport",
+    "slug": "l461",
+    "type": "generations",
     "dataFile": "range-rover-sport-l461"
   },
   {
-    "slug": "range-rover-sport-l494",
+    "parent": "range-rover-sport",
+    "slug": "l494",
+    "type": "generations",
     "dataFile": "range-rover-sport-l494"
   },
   {
-    "slug": "range-rover-velar-l560",
+    "parent": "range-rover-velar",
+    "slug": "l560",
+    "type": "generations",
     "dataFile": "range-rover-velar-l560"
   }
 ]

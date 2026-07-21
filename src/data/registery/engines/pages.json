@@ -1,90 +1,112 @@
 [
   {
     "slug": "200-300tdi",
+    "type": "engines",
     "dataFile": "200-300tdi"
   },
   {
     "slug": "276dt",
+    "type": "engines",
     "dataFile": "276dt"
   },
   {
     "slug": "306dt",
+    "type": "engines",
     "dataFile": "306dt"
   },
   {
     "slug": "368dt",
+    "type": "engines",
     "dataFile": "368dt"
   },
   {
     "slug": "448dt",
+    "type": "engines",
     "dataFile": "448dt"
   },
   {
     "slug": "aj-v8-42-44-sc",
+    "type": "engines",
     "dataFile": "aj-v8-42-44-sc"
   },
   {
     "slug": "aj133",
+    "type": "engines",
     "dataFile": "aj133"
   },
   {
     "slug": "aj20d6",
+    "type": "engines",
     "dataFile": "aj20d6"
   },
   {
     "slug": "aj20p6",
+    "type": "engines",
     "dataFile": "aj20p6"
   },
   {
     "slug": "ford-si4-pt204",
+    "type": "engines",
     "dataFile": "ford-si4-pt204"
   },
   {
     "slug": "ingenium-20-diesel",
+    "type": "engines",
     "dataFile": "ingenium-20-diesel"
   },
   {
     "slug": "ingenium-20-petrol",
+    "type": "engines",
     "dataFile": "ingenium-20-petrol"
   },
   {
     "slug": "k-series-18-23",
+    "type": "engines",
     "dataFile": "k-series-18-23"
   },
   {
     "slug": "m47",
+    "type": "engines",
     "dataFile": "m47"
   },
   {
     "slug": "m51",
+    "type": "engines",
     "dataFile": "m51"
   },
   {
     "slug": "m57-td6",
+    "type": "engines",
     "dataFile": "m57-td6"
   },
   {
     "slug": "m62",
+    "type": "engines",
     "dataFile": "m62"
   },
   {
     "slug": "n62",
+    "type": "engines",
     "dataFile": "n62"
   },
   {
     "slug": "p510",
+    "type": "engines",
     "dataFile": "p510"
   },
   {
     "slug": "psa-dw12-204dtd",
+    "type": "engines",
     "dataFile": "psa-dw12-204dtd"
   },
   {
     "slug": "td5",
+    "type": "engines",
     "dataFile": "td5"
   },
   {
     "slug": "volvo-si6",
+    "type": "engines",
     "dataFile": "volvo-si6"
   }
 ]

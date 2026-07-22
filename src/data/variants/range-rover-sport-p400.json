@@ -468,7 +468,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system component failures (water pump, coolant pipes) — the most frequently reported issue on the AJ20P6 [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–80,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500–£7,500 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ20P6 — the core 3.0‑litre Ingenium petrol [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — pre‑summer vehicle preparation [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), South West (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

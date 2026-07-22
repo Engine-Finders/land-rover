@@ -1,11 +1,265 @@
 {
   "meta": {
-    "slug": "land-rover-range-rover-l460",
-    "title": "Land Rover Range Rover L460 Engines — The Complete UK Guide",
-    "titleCharCount": 59,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "slug": "bmw-range-rover-l460",
+    "title": "L460 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every Land Rover Range Rover L460 engine — D300, D350, P400, P460e, P550e, P530, P615. Real UK costs, recall advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 159,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover",
+              "item": "https://landroverengine.uk/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Land Rover Range Rover L460",
+              "item": "https://landroverengine.uk/range-rover/l460/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover L460 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "D300 Ingenium I6 Diesel Engine",
+              "url": "https://landroverengine.uk/engines/aj20d6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "D350 Ingenium I6 Diesel Engine",
+              "url": "https://landroverengine.uk/engines/aj20d6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P400 Ingenium I6 MHEV Engine",
+              "url": "https://landroverengine.uk/engines/pt306/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "P460e Ingenium I6 PHEV Engine",
+              "url": "https://landroverengine.uk/engines/pt306-phev/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "P550e Ingenium I6 PHEV Engine",
+              "url": "https://landroverengine.uk/engines/pt306-phev/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "P530 / P615 BMW S68 V8 Engine",
+              "url": "https://landroverengine.uk/engines/s68/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover L460 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "D300",
+              "url": "https://landroverengine.uk/range-rover/l460/d300/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "D350",
+              "url": "https://landroverengine.uk/range-rover/l460/d350/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P400",
+              "url": "https://landroverengine.uk/range-rover/l460/p400/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "P460e",
+              "url": "https://landroverengine.uk/range-rover/l460/p460e/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "P550e",
+              "url": "https://landroverengine.uk/range-rover/l460/p550e/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "P530",
+              "url": "https://landroverengine.uk/range-rover/l460/p530/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "P615",
+              "url": "https://landroverengine.uk/range-rover/l460/p615/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover L460 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned L460 engine typically costs £4,000–£15,000 supply only [EM-QUOTE], depending on engine — the D300 diesel sits at £4,500–£7,500, while the P615 V8 can reach £15,000. Fitting adds £650–£1,500 depending on engine and specialist location. The L460's high retained value means replacement is almost always viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover Range Rover L460 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P530 BMW-sourced 4.4-litre V8 is considered the most robust engine in the range — BMW's S68 twin-turbo V8 has a strong reliability reputation, though it's also the most expensive to replace. The Ingenium I6 family is newer but early indications suggest they are more reliable than older Ingenium four-cylinder units [PROVISIONAL — pending dedicated Engine Page]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Range Rover L460?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Two major recalls affect early L460s: camshaft carrier oil gallery (recall N763, 2022–2023) and engine oil cooler hose (recall H845, 2023). Both can cause oil leaks and potential fire risks — check your VIN immediately. PHEV variants may experience battery degradation over time; the V8 can suffer coolant leaks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover L460 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Early reliability data is promising — the L460 is built on JLR's new MLA-Flex platform with significant engineering improvements over the L405. The BMW-sourced V8 is a proven design, and the Ingenium I6 family benefits from lessons learned on earlier Ingenium engines. However, the L460 is still a new generation with complex electronics — warranty cover is strongly recommended."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover Range Rover L460 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine is a hard avoid, but the P460e and P550e PHEV variants require careful consideration — the battery and electric motor add significant complexity, and battery degradation is a long-term risk. If you're buying used, get a battery health report before committing. The PHEV's 75-mile electric range is a major selling point, but it comes with potential £8,000+ battery replacement costs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my L460 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oil leaks (especially around the camshaft carrier or oil cooler hose) are the most common early warning signs — check for any visible oil in the engine bay. Coolant loss, rough running, or warning lights on any L460 engine are also key warning signs. Check your VIN against recalls N763 and H845 immediately — both are free to rectify."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover L460 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The L460's high retained value (£55,000–£120,000+) means engine replacement is almost always viable. A £15,000 V8 replacement against a £55,000 L460 is 27% of the car's value — well within our 60% Land Rover scrap threshold [EM-VERIFIED]. On a £55,000 L460, even the most expensive replacement is a repair decision, not a financial one."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do Land Rover Range Rover L460 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The BMW-sourced 4.4-litre V8 is a proven design that can exceed 150,000 miles with proper servicing. The Ingenium I6 diesels and petrols are newer, but early indications suggest 120,000+ miles is achievable. The PHEV battery is rated for approximately 1,500–2,000 charge cycles before significant degradation — equivalent to 100,000–150,000 miles of electric driving."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the L460 and L405 Range Rovers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The L460 (2022–present) is the fifth-generation Range Rover, built on JLR's MLA-Flex platform with mild-hybrid and plug-in hybrid powertrains across the range. The L405 (2012–2021) was the fourth-generation, with the 5.0-litre supercharged V8 as the flagship engine. The L460's BMW-sourced 4.4-litre V8 replaces the L405's 5.0-litre supercharged V8, with a 17% efficiency improvement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Range Rover L460 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (D300, D350, P400, P460e, P550e, P530, or P615) and we'll identify it — 12 vetted Land Rover specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover L460 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4000",
+            "highPrice": "15000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover L460 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Range Rover L460 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "L460 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover/l460/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-08",
+          "dateModified": "2026-07-08"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -353,23 +607,121 @@
     "scopeNote": "All variants listed are Range Rover L460 only. Range Rover Sport L461 (2022–present) shares the MLA-Flex platform and many of these engines but is covered on its own Generation Page. P460e and P550e are plug-in hybrid variants; P530 and P615 are V8 petrol variants (P615 exclusive to Range Rover SV)."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. D300/D350 (largest share of 184 enquiries)",
+      "2. P400",
+      "3. P530/P615 V8"
+    ],
+    "mostRequestedVariants": [
+      "1. D350",
+      "2. P400",
+      "3. P530"
+    ],
+    "averageReplacementCost": "£5,000 reconditioned, supply only [EM-QUOTE]",
+    "mostCommonFailures": [
+      "1. Camshaft carrier oil gallery (recall N763)",
+      "2. Oil cooler hose issue (recall H845)",
+      "3. PHEV battery degradation"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "Land Rover Range Rover L460 D350",
+        "location": "London",
+        "issue": "Pre-purchase inspection",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Land Rover Range Rover L460 P400",
+        "location": "Surrey",
+        "issue": "Coolant system check",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Land Rover Range Rover L460 P530",
+        "location": "Manchester",
+        "issue": "Oil cooler recall check",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover L460 engine replacement cost in the UK?",
+        "answer": "A reconditioned L460 engine typically costs £4,000–£15,000 supply only [EM-QUOTE], depending on engine — the D300 diesel sits at £4,500–£7,500, while the P615 V8 can reach £15,000. Fitting adds £650–£1,500 depending on engine and specialist location. The L460's high retained value means replacement is almost always viable."
+      },
+      {
+        "id": 2,
+        "question": "Which Land Rover Range Rover L460 engine is the most reliable?",
+        "answer": "The P530 BMW-sourced 4.4-litre V8 is considered the most robust engine in the range — BMW's S68 twin-turbo V8 has a strong reliability reputation, though it's also the most expensive to replace. The Ingenium I6 family (D300, D350, P400) is newer but early indications suggest they are more reliable than older Ingenium four-cylinder units [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Range Rover L460?",
+        "answer": "Two major recalls affect early L460s: camshaft carrier oil gallery (recall N763, 2022–2023) and engine oil cooler hose (recall H845, 2023). Both can cause oil leaks and potential fire risks — check your VIN immediately. PHEV variants (P460e, P550e) may experience battery degradation over time; the V8 can suffer coolant leaks."
+      },
+      {
+        "id": 4,
+        "question": "Is the Land Rover Range Rover L460 reliable?",
+        "answer": "Early reliability data is promising — the L460 is built on JLR's new MLA-Flex platform with significant engineering improvements over the L405. The BMW-sourced V8 is a proven design, and the Ingenium I6 family benefits from lessons learned on earlier Ingenium engines. However, the L460 is still a new generation with complex electronics — warranty cover is strongly recommended."
+      },
+      {
+        "id": 5,
+        "question": "Which Land Rover Range Rover L460 engine should I avoid?",
+        "answer": "No engine is a hard avoid, but the P460e and P550e PHEV variants require careful consideration — the battery and electric motor add significant complexity, and battery degradation is a long-term risk. If you're buying used, get a battery health report before committing. The PHEV's 75-mile electric range is a major selling point, but it comes with potential £8,000+ battery replacement costs."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my L460 engine needs replacing?",
+        "answer": "Oil leaks (especially around the camshaft carrier or oil cooler hose) are the most common early warning signs — check for any visible oil in the engine bay. Coolant loss, rough running, or warning lights on any L460 engine are also key warning signs. Check your VIN against recalls N763 and H845 immediately — both are free to rectify."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Range Rover L460 engine, or should I scrap the car?",
+        "answer": "The L460's high retained value (£55,000–£120,000+) means engine replacement is almost always viable. A £15,000 V8 replacement against a £55,000 L460 is 27% of the car's value — well within our 60% Land Rover scrap threshold [EM-VERIFIED]. On a £55,000 L460, even the most expensive replacement is a repair decision, not a financial one."
+      },
+      {
+        "id": 8,
+        "question": "How long do Land Rover Range Rover L460 engines last?",
+        "answer": "The BMW-sourced 4.4-litre V8 is a proven design that can exceed 150,000 miles with proper servicing. The Ingenium I6 diesels and petrols are newer, but early indications suggest 120,000+ miles is achievable. The PHEV battery is rated for approximately 1,500–2,000 charge cycles before significant degradation — equivalent to 100,000–150,000 miles of electric driving."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the L460 and L405 Range Rovers?",
+        "answer": "The L460 (2022–present) is the fifth-generation Range Rover, built on JLR's MLA-Flex platform with mild-hybrid and plug-in hybrid powertrains across the range. The L405 (2012–2021) was the fourth-generation, with the 5.0-litre supercharged V8 as the flagship engine. The L460's BMW-sourced 4.4-litre V8 replaces the L405's 5.0-litre supercharged V8, with a 17% efficiency improvement."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Land Rover Range Rover L460 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (D300, D350, P400, P460e, P550e, P530, or P615) and we'll identify it — 12 vetted Land Rover specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK Land Rover Range Rover L460 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted L460 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Range Rover L460 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare L460 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for L460",
+        "text": "covering every variant from D300 to P615 V8, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Range Rover L460 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare Land Rover Range Rover L460 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

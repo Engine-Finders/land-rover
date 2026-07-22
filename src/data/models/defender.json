@@ -241,21 +241,21 @@
     }
   },
   "hero": {
-    "tagPill": "Defender • 1990–Present • 2 Generations • 200Tdi, 300Tdi, TD5, TDCi, Ingenium",
-    "h1": "Defender Engines — The Complete UK Guide",
-    "subHeadline": "Every generation. Every engine code. Every known failure. Every replacement cost. From the 200Tdi that built the legend to the Ingenium engines powering the L663 — backed by 292+ real UK enquiries [EM-VERIFIED].",
+    "tagPill": "Velar • 2017–Present • 1 Generation (L560) • Ingenium, SDV6, PHEV",
+    "h1": "Velar Engines — The Complete UK Guide",
+    "subHeadline": "Every engine. Every known failure. Every replacement cost — including why \"D300\" means two different engines on this car. Backed by 275+ real UK Velar enquiries [EM-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
-        "label": "292+ L663 Enquiries (2025)"
+        "label": "275+ Enquiries (2025)"
       },
       {
         "icon": "🔧",
-        "label": "2 Generations Covered"
+        "label": "1 Generation, 8 Powertrains"
       },
       {
         "icon": "📖",
-        "label": "9 Engine Codes"
+        "label": "8 Engine Codes"
       },
       {
         "icon": "🏆",
@@ -263,131 +263,120 @@
       }
     ],
     "primaryCta": {
-      "label": "Explore Defender Engines →",
+      "label": "Explore Velar Engines →",
       "href": "#"
     }
   },
   "ownershipVerdict": {
-    "h2": "Defender — The Ownership Verdict",
+    "h2": "Velar — The Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
-        "ourCall": "★★★★☆ (4.4/5)"
+        "ourCall": "★★★½ (3.5/5)"
       },
       {
         "metric": "Replacement Economics",
-        "ourCall": "✅ Almost Always Worth Replacing — L663 host values of £35,000–£90,000 make even the most expensive engine replacement comfortably 'Safe' [EM-QUOTE]"
+        "ourCall": "✅ Usually Worth Replacing — £3,500–£9,500 recons [EM-QUOTE] against £18,000–£60,000 host values clear our 60% rule comfortably across the range"
       },
       {
         "metric": "Reliability",
-        "ourCall": "★★★★☆ — the best in the Land Rover range"
+        "ourCall": "★★★☆☆ — engine choice decides it: the petrols and post-2021 sixes are strong; the pre-2019 diesel four and V6-era D300 carry the known JLR caveats"
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "300Tdi (Classic) • D300 3.0 diesel (L663)"
+        "ourCall": "204PT P250/P300 • post-2021 AJ20D6 D300"
       },
       {
         "metric": "Highest-Risk Engine",
-        "ourCall": "2.4 TDCi 'Puma' (Classic, 2007–2011) • pre-2019-derived 204DTD units (early L663 D200/D240)"
+        "ourCall": "2017–2020 D300 (306DT V6) — crankshaft bearing • pre-2019 204DTD — timing chain"
       },
       {
         "metric": "Best Used Buy",
-        "ourCall": "Defender L663 D250 (2021+) — six-cylinder smoothness without early-build risk"
+        "ourCall": "2021+ facelift P400 or D300 — Ingenium sixes, Pivi Pro, no legacy engines"
       },
       {
-        "metric": "Best Classic Buy",
-        "ourCall": "300Tdi or well-documented TD5"
+        "metric": "The D300 Trap",
+        "ourCall": "\"D300\" = 306DT V6 (2017–2020, crank-bearing risk) OR AJ20D6 straight-six (2021+, clean record). Same badge, opposite stories — check the year before the price."
       },
       {
         "metric": "Average Engine Replacement",
-        "ourCall": "£4,200 reconditioned, supply only [EM-QUOTE]"
+        "ourCall": "£5,200 reconditioned, supply only [EM-QUOTE]"
       },
       {
         "metric": "Most Common Failure Enquiry",
-        "ourCall": "Ingenium timing chain wear (early 204DTD) • TD5 injector-loom oil migration"
+        "ourCall": "D300 bottom-end concern + 204DTD timing chain [EM-VERIFIED]"
       },
       {
         "metric": "Homepage Ranking",
-        "ourCall": "🏆 Safest Buy and Best Long-Term Keeper in our Land Rover Ownership Rankings"
+        "ourCall": "🎨 The Design Pick — bought on looks, owned on engine choice"
       }
     ],
-    "oneLineVerdict": "The Defender is the only Land Rover where engine replacement is financially safe at almost any spec — the question is never \"is it worth it?\", only \"which engine do I have and what does it cost?\""
+    "oneLineVerdict": "The Velar is the Range Rover people choose with their eyes — our job is to make sure the engine choice is made with the data, because under one body sit eight powertrains ranging from near-faultless to fully caveated."
   },
   "atAGlance": {
-    "h2": "Defender at a Glance",
+    "h2": "Velar at a Glance",
     "rows": [
       {
         "metric": "Generations",
-        "value": "2 (Classic L316, 1990–2016 • L663, 2020–present)"
+        "value": "1 (L560, 2017–present) — major facelift 2021"
       },
       {
         "metric": "Years Produced",
-        "value": "1990–2016, 2020–present (production gap 2016–2020)"
+        "value": "2017–present"
       },
       {
         "metric": "Engine Codes Tracked",
-        "value": "9"
+        "value": "8"
       },
       {
         "metric": "Fuel Types",
-        "value": "Diesel, Petrol, Plug-in Hybrid (P400e, L663)"
+        "value": "Diesel, Petrol, Mild-Hybrid (2021+), Plug-in Hybrid (2021+)"
       },
       {
         "metric": "Most Enquired Engine (2025)",
-        "value": "204DTD Ingenium diesel [EM-VERIFIED]"
+        "value": "D300 (both eras) [EM-VERIFIED]"
       },
       {
         "metric": "Most Reliable",
-        "value": "300Tdi (Classic) / D300 (L663)"
+        "value": "204PT petrol / AJ20D6 (2021+)"
       },
       {
         "metric": "Highest-Risk",
-        "value": "2.4 TDCi injectors & crank (Classic Puma)"
+        "value": "306DT-era D300 • pre-2019 204DTD"
       },
       {
         "metric": "Typical Replacement Cost",
-        "value": "£3,500–£9,500 reconditioned [EM-QUOTE]"
+        "value": "£3,000–£9,500 reconditioned [EM-QUOTE]"
       },
       {
-        "metric": "Typical L663 Host Value",
-        "value": "£35,000–£90,000 [EM-QUOTE]"
+        "metric": "Typical Host Value",
+        "value": "£18,000–£60,000"
       },
       {
         "metric": "Overall Rating",
-        "value": "★★★★☆ 4.4/5"
+        "value": "★★★½ 3.5/5"
       }
     ]
   },
   "generations": {
-    "h2": "Defender Generations — Classic or L663?",
-    "subHeadline": "Two Defenders, two completely different ownership propositions. Select yours to explore engines, problems, and costs.",
+    "h2": "Velar — One Generation, Eight Powertrains",
+    "subHeadline": "Every Velar is an L560. The decision that matters isn't which generation — it's which engine.",
     "cards": [
       {
-        "title": "Generation Cards (opinionated format per v2 spec)",
-        "badge": "",
-        "meta": "1990–2016 • 200Tdi, 300Tdi, TD5, 2.4/2.2 TDCi",
-        "rating": "⭐⭐⭐⭐☆",
-        "verdict": "Mechanically honest and endlessly rebuildable — buy on engine choice, not on year. 300Tdi for simplicity, TD5 for usability, approach the 2.4 TDCi Puma with a full injector history.",
+        "title": "Range Rover Velar (L560)",
+        "badge": "🔥 275 enquiries (2025) [EM-VERIFIED]",
+        "meta": "2017–present • 204DTD, 204PT, 306DT D300, AJ126 P380, AJ133 P550, AJ20D6, AJ20P6, P400e",
+        "rating": "⭐⭐⭐½",
+        "verdict": "Buy on the 2021 facelift line and the engine, in that order. Post-2021 cars swap every caveated engine for a clean one — the rare facelift that changed the mechanicals more than the face.",
         "cta": {
-          "label": "Explore the Classic →",
+          "label": "Explore the L560 →",
           "href": "#"
         }
       },
       {
-        "title": "Defender L663",
-        "badge": "🔥 Most Enquired — 292 enquiries (2025) [EM-VERIFIED]",
-        "meta": "2020–present • D200, D240, D250, D300, P300, P400, P400e, P525",
-        "rating": "⭐⭐⭐⭐½",
-        "verdict": "The safest ownership proposition in the entire JLR range. High residuals mean replacement is always economically viable; the six-cylinder diesels are proving genuinely robust. Prefer 2021+ builds.",
-        "cta": {
-          "label": "Explore the L663 →",
-          "href": "#"
-        }
-      },
-      {
-        "title": "The Classic vs L663 Question",
+        "title": "Which Velar Powertrain Is Right for You?",
         "badge": "",
-        "meta": "Unlike any other Land Rover, the Defender's two generations aren't an evolution — they're different vehicles sharing a name. The Classic is a body-on-frame working tool whose engines can be rebuilt indefinitely at reasonable cost. The L663 is an aluminium-monocoque luxury 4x4 whose engines are modular Ingenium units — replaced, not rebuilt at the roadside. Your repair-vs-replace maths, your specialist network, and your parts supply are completely different depending on which side of 2016 your Defender sits.",
+        "meta": "Pre-2021 Pick",
         "rating": "",
         "verdict": "",
         "cta": {
@@ -402,13 +391,13 @@
       "rows": []
     },
     "comparisonLink": {
-      "label": "Read the full comparison: Defender Classic vs L663 — The Honest Ownership Verdict →",
+      "label": "",
       "href": "#"
     }
   },
   "engineDatabase": {
-    "h2": "Defender Engine Codes — The Complete Database",
-    "subHeadline": "Every engine fitted to the UK Defender, with reliability ratings, real enquiry volumes, and replacement costs.",
+    "h2": "Velar Engine Codes — The Complete Database",
+    "subHeadline": "",
     "columns": [
       "Engine Code",
       "Family",
@@ -416,94 +405,33 @@
       "Disp.",
       "Power",
       "Years",
-      "Gen.",
       "Reliability",
       "2025 Enquiries",
       "Avg. Recon Cost"
     ],
     "engines": [
       {
-        "engineCode": "200Tdi",
-        "family": "Tdi",
-        "fuel": "Diesel",
-        "displacement": "2.5L",
-        "power": "107 bhp",
-        "years": "1990–1994",
-        "model": "Classic",
-        "reliability": "★★★★★",
-        "enquiries": "— (pattern data)",
-        "avgRebuildCost": "£2,500–£4,000 [EM-QUOTE]"
-      },
-      {
-        "engineCode": "300Tdi",
-        "family": "Tdi",
-        "fuel": "Diesel",
-        "displacement": "2.5L",
-        "power": "111 bhp",
-        "years": "1994–1998*",
-        "model": "Classic",
-        "reliability": "★★★★★",
-        "enquiries": "— (pattern data)",
-        "avgRebuildCost": "£2,800–£4,500 [EM-QUOTE]"
-      },
-      {
-        "engineCode": "TD5 (10P/15P)",
-        "family": "Td5",
-        "fuel": "Diesel",
-        "displacement": "2.5L",
-        "power": "122 bhp",
-        "years": "1998–2007",
-        "model": "Classic",
-        "reliability": "★★★★☆",
-        "enquiries": "— (pattern data)",
-        "avgRebuildCost": "£3,000–£5,000 [EM-QUOTE]"
-      },
-      {
-        "engineCode": "2.4 TDCi (Puma)",
-        "family": "Ford Duratorq",
-        "fuel": "Diesel",
-        "displacement": "2.4L",
-        "power": "122 bhp",
-        "years": "2007–2011",
-        "model": "Classic",
-        "reliability": "★★☆☆☆",
-        "enquiries": "— (pattern data)",
-        "avgRebuildCost": "£3,200–£5,500 [EM-QUOTE]"
-      },
-      {
-        "engineCode": "2.2 TDCi (Puma)",
-        "family": "Ford Duratorq",
-        "fuel": "Diesel",
-        "displacement": "2.2L",
-        "power": "122 bhp",
-        "years": "2012–2016",
-        "model": "Classic",
-        "reliability": "★★★☆☆",
-        "enquiries": "— (pattern data)",
-        "avgRebuildCost": "£3,200–£5,500 [EM-QUOTE]"
-      },
-      {
         "engineCode": "204DTD",
         "family": "Ingenium",
         "fuel": "Diesel",
         "displacement": "2.0L",
-        "power": "200–240 bhp",
-        "years": "2020–2021",
-        "model": "L663",
-        "reliability": "★★★☆☆",
-        "enquiries": "1,150 across JLR range [EM-VERIFIED]",
+        "power": "180–240 bhp",
+        "years": "2017–2020",
+        "model": "",
+        "reliability": "★★★☆☆ (pre-2019) / ★★★★☆ (2019+)",
+        "enquiries": "1,150 JLR-wide [EM-VERIFIED]",
         "avgRebuildCost": "£3,500–£5,800 [EM-QUOTE]"
       },
       {
-        "engineCode": "AJ20D6 (D250/D300)",
-        "family": "Ingenium 6",
+        "engineCode": "306DT (D300 V6)",
+        "family": "SDV6",
         "fuel": "Diesel",
         "displacement": "3.0L",
-        "power": "249–300 bhp",
-        "years": "2020–present",
-        "model": "L663",
-        "reliability": "★★★★☆",
-        "enquiries": "— (currently aggregated under 306DT in source data — split before citing)",
+        "power": "300 bhp",
+        "years": "2017–2020",
+        "model": "",
+        "reliability": "★★☆☆☆",
+        "enquiries": "120 Velar D300 cohort [EM-VERIFIED — spans both D300 engines; split at source]",
         "avgRebuildCost": "£6,500–£9,500 [EM-QUOTE]"
       },
       {
@@ -511,35 +439,83 @@
         "family": "Ingenium",
         "fuel": "Petrol",
         "displacement": "2.0L",
-        "power": "300 bhp",
-        "years": "2020–present",
-        "model": "L663",
+        "power": "250–300 bhp",
+        "years": "2017–present",
+        "model": "",
         "reliability": "★★★★☆",
-        "enquiries": "480 across JLR range [EM-VERIFIED]",
+        "enquiries": "480 JLR-wide [EM-VERIFIED]",
         "avgRebuildCost": "£3,000–£5,000 [EM-QUOTE]"
       },
       {
-        "engineCode": "AJ133 (P525)",
+        "engineCode": "AJ126 (P380)",
+        "family": "3.0 V6 SC",
+        "fuel": "Petrol",
+        "displacement": "3.0L",
+        "power": "380 bhp",
+        "years": "2017–2020",
+        "model": "",
+        "reliability": "★★★★☆",
+        "enquiries": "— (pattern data)",
+        "avgRebuildCost": "£4,500–£7,000 [PLACEHOLDER — confirm vs Table A]"
+      },
+      {
+        "engineCode": "AJ133 (P550 SVAD)",
         "family": "5.0 V8 SC",
         "fuel": "Petrol",
         "displacement": "5.0L",
-        "power": "525 bhp",
+        "power": "550 bhp",
+        "years": "2019–2020",
+        "model": "",
+        "reliability": "★★★½",
+        "enquiries": "— (pattern data — rare)",
+        "avgRebuildCost": "£8,000–£12,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "AJ20D6 (D300 i6)",
+        "family": "Ingenium 6",
+        "fuel": "Diesel MHEV",
+        "displacement": "3.0L",
+        "power": "300 bhp",
         "years": "2021–present",
-        "model": "L663",
+        "model": "",
         "reliability": "★★★★☆",
-        "enquiries": "—",
-        "avgRebuildCost": "£8,000–£12,000 [EM-QUOTE]"
+        "enquiries": "— (within D300 cohort — split at source)",
+        "avgRebuildCost": "£6,500–£9,500 [EM-QUOTE]"
+      },
+      {
+        "engineCode": "AJ20P6 (P400)",
+        "family": "Ingenium 6",
+        "fuel": "Petrol MHEV",
+        "displacement": "3.0L",
+        "power": "400 bhp",
+        "years": "2021–present",
+        "model": "",
+        "reliability": "★★★★☆",
+        "enquiries": "— (pattern data — young parc)",
+        "avgRebuildCost": "£6,000–£9,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "P400e (204PT + e-motor)",
+        "family": "Ingenium PHEV",
+        "fuel": "Petrol PHEV",
+        "displacement": "2.0L",
+        "power": "404 bhp (system)",
+        "years": "2021–present",
+        "model": "",
+        "reliability": "★★★★☆",
+        "enquiries": "— (pattern data — young parc)",
+        "avgRebuildCost": "£3,000–£5,000 [EM-QUOTE]"
       }
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "Confidence Score panel (per v2 spec — evidence-based ratings): How confident are these ratings? L663 Ingenium ratings: 92% confidence — based on 292 Defender-specific enquiries [EM-VERIFIED], cross-referenced against 1,150+ 204DTD enquiries across the JLR range, plus specialist rebuild reports. Classic engine ratings: Expert-knowledge tier — built on documented failure patterns and specialist interviews rather than proprietary volume data (per our data-integrity policy, we label rather than inflate). Data note (internal): Enquiry volumes from EM_Proprietary_Data_2025.txt [EM-VERIFIED]. Costs from Table A [EM-QUOTE]. Classic-era enquiry volumes not yet captured — flagged as pattern data, not EM-VERIFIED."
+      "text": "204DTD and 306DT ratings: 93% confidence — high-volume engines in our dataset [EM-VERIFIED] with 275 Velar-specific enquiries behind the model-level calls. AJ126, P550 and post-2021 sixes: Expert-knowledge / Provisional tier — smaller or younger parcs, rated on documented patterns and shared-architecture evidence. Data note (internal): Correction applied: the source sheet listed the Velar's engines as \"204DTD, 204PT, 306DT (D300)\" only — added the petrols it omitted (AJ126 P380, AJ133 P550 SVAutobiography Dynamic) and the full 2021+ facelift slate (AJ20D6, AJ20P6, P400e). Action needed: the 120 \"L560 D300\" enquiries [EM-VERIFIED] span two different engines (306DT to 2020, AJ20D6 from 2021) — split by registration year at source, because right now a clean engine and a caveated one share a single statistic."
     },
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common Defender Engine Problems",
-    "subHeadline": "The failures Defender owners actually report — with symptoms, costs, and urgency levels.",
+    "h2": "Common Velar Engine Problems",
+    "subHeadline": "",
     "columns": [
       "#",
       "Problem",
@@ -550,8 +526,8 @@
     "problems": [
       {
         "id": 1,
-        "issue": "2.4 TDCi Injector & Crankshaft Failure",
-        "description": "The Classic Puma's defining weakness. Injector seal failure washes bores with diesel; unchecked, it ends in bottom-end failure. £3,200–£5,500 recon [EM-QUOTE]. Affects 2007–2011 Classic.",
+        "issue": "D300 (306DT) Crankshaft Bearing Failure",
+        "description": "The pre-2021 D300 carries the same bottom-end risk as its Discovery 4 and Range Rover Sport siblings — cold-start knock is the warning. £6,500–£9,500 recon [EM-QUOTE]. 2017–2020 cars only.",
         "severity": {
           "icon": "🔴",
           "label": "Catastrophic",
@@ -564,22 +540,8 @@
       },
       {
         "id": 2,
-        "issue": "TD5 Injector Harness Oil Migration",
-        "description": "Oil wicks up the injector loom into the ECU connector — rough running, misfires, apparent 'ECU failure'. Cheap fix caught early; expensive misdiagnosis if not.",
-        "severity": {
-          "icon": "🟡",
-          "label": "Monitor",
-          "type": "monitor"
-        },
-        "link": {
-          "label": "Learn more →",
-          "href": "#"
-        }
-      },
-      {
-        "id": 3,
-        "issue": "TD5 Cylinder Head Cracking (early 10P)",
-        "description": "Pre-2002 10P heads can crack between valves — coolant loss and white smoke. Later 15P heads largely resolved it.",
+        "issue": "204DTD Timing Chain Tensioner Wear",
+        "description": "Pre-2019 Ingenium diesel chain wear — cold-start rattle is the tell. Improved from 2019. Affects early D180/D240.",
         "severity": {
           "icon": "🟠",
           "label": "Immediate",
@@ -591,9 +553,23 @@
         }
       },
       {
+        "id": 3,
+        "issue": "Ingenium Diesel Oil Dilution (DPF regen)",
+        "description": "The style-buy problem: Velars bought for the school run interrupt DPF regens, fuel dilutes the oil, wear accelerates. Urban drivers belong in the petrols or PHEV.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Learn more →",
+          "href": "#"
+        }
+      },
+      {
         "id": 4,
-        "issue": "204DTD Timing Chain Tensioner Wear",
-        "description": "The Ingenium diesel's known weak point, mostly on pre-2019-derived units. Cold-start rattle is the warning. Early L663 D200/D240 builds are the ones to check.",
+        "issue": "204DTD EGR Cooler Failure",
+        "description": "Coolant loss and rough running on higher-mileage Ingenium diesels — repairable if caught before overheating.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -606,8 +582,8 @@
       },
       {
         "id": 5,
-        "issue": "Ingenium Diesel Oil Dilution (DPF regen)",
-        "description": "Short-journey L663 diesels can suffer fuel-in-oil dilution from interrupted DPF regens — accelerates wear if oil changes are stretched.",
+        "issue": "AJ126 Supercharger & Cooling Wear",
+        "description": "The P380's supercharger nose and cooling-system age points — a specialist check item on any pre-facelift performance car.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -620,12 +596,12 @@
       },
       {
         "id": 6,
-        "issue": "300Tdi Timing Belt Failure",
-        "description": "The one thing that kills an otherwise immortal engine. Belt and tensioner every 60k miles or 5 years — no exceptions.",
+        "issue": "Electrical & Battery Drain Issues",
+        "description": "Not an engine failure, but the Velar's most common non-engine enquiry — parasitic drain and infotainment glitches on pre-Pivi cars, occasionally misread as engine faults.",
         "severity": {
-          "icon": "🟠",
-          "label": "Immediate",
-          "type": "immediate"
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
         },
         "link": {
           "label": "Learn more →",
@@ -652,51 +628,46 @@
       {
         "icon": "🟢",
         "label": "Low",
-        "text": "plan at next service Each card links to a dedicated failure page: symptoms, root cause, repair cost vs replacement cost, urgency, next steps."
+        "text": "plan at next service"
       }
     ]
   },
   "marketIntelligence": {
-    "h2": "Defender Market Intelligence — What 292 UK Owners Told Us in 2025",
+    "h2": "Velar Market Intelligence — What 275 UK Owners Told Us in 2025",
     "signals": [
       {
-        "signal": "Defender L663 enquiries",
-        "data": "292 [EM-VERIFIED]",
-        "demandTrend": "⬆ Rising — 4th most-enquired JLR model"
+        "signal": "Velar (L560) enquiries",
+        "data": "155 general + 120 D300-specific = 275 [EM-VERIFIED]",
+        "demandTrend": "⬆ Rising as the 2017–2018 parc exits warranty [PLACEHOLDER — YoY %]"
       },
       {
-        "signal": "Ingenium diesel enquiries (JLR-wide)",
-        "data": "1,150 (204DTD) [EM-VERIFIED]",
-        "demandTrend": "⬆ Rising sharply as early L663s exit warranty"
+        "signal": "D300 share of Velar enquiries",
+        "data": "44% of all Velar volume [EM-VERIFIED]",
+        "demandTrend": "⬆ Rising [PLACEHOLDER — YoY %]"
       },
       {
-        "signal": "3.0 diesel enquiries (JLR-wide)",
-        "data": "980 [EM-VERIFIED] — tracked as 306DT in source data; covers the Ford V6 era. AJ20D6 (L663) volume to be split out.",
-        "demandTrend": "➡ Stable"
-      },
-      {
-        "signal": "Classic Defender rebuild demand",
-        "data": "Pattern data",
-        "demandTrend": "➡ Stable — values keep rebuilds viable indefinitely"
+        "signal": "204DTD enquiries (JLR-wide)",
+        "data": "1,150 [EM-VERIFIED]",
+        "demandTrend": "⬆ Rising [PLACEHOLDER — YoY %]"
       }
     ],
     "insights": [
-      "Interesting insight: Defender L663 owners are disproportionately pre-purchase researchers — a notable share of our 2025 Defender enquiries were inspection and due-diligence requests rather than failure reports, the inverse of the Discovery 4 pattern. That's what a reputation for reliability looks like in enquiry data.",
-      "The L663 is the only JLR model in our data where enquiry volume is rising while failure-driven enquiries stay flat — demand is growing faster than problems are.",
-      "Early D200/D240 (2020–21 builds) generate the majority of L663 engine-concern enquiries; six-cylinder D250/D300 cars barely register. (Editorial synthesis of failure-pattern data — sense-check with JLR specialist before publishing, per homepage data-note policy.)"
+      "Interesting insight: Nearly half of all Velar engine enquiries name one variant — the D300 [EM-VERIFIED]. No other JLR model concentrates its engine anxiety on a single badge like this, and the badge covers two different engines. That confusion is the Velar engine market.",
+      "Velar enquiries skew later-mileage and diesel-heavy relative to the petrol-rich parc — consistent with the diesels doing the working miles while the petrols do the style miles. (Editorial synthesis — specialist sense-check before publishing.)",
+      "Post-2021 cars barely register in failure enquiries yet — early evidence the facelift's clean engine slate is holding. (Editorial synthesis.)"
     ],
-    "liveEnquiryFeedNote": "Live Enquiry Feed module embeds here — e.g. \"Defender L663 (D300 / AJ20D6) • Aberdeen • Pre-purchase inspection • 7 hours ago\" [EM-VERIFIED]. (Note: the source feed currently labels this entry \"306DT\" — correct the label at source.)"
+    "liveEnquiryFeedNote": "Live Enquiry Feed module embeds here."
   },
   "editorialPullQuote": {
-    "title": "",
-    "quote": ""
+    "title": "The One Thing We'd Tell Every Velar Buyer",
+    "quote": "If you buy one Velar based on this page, buy a 2021-or-later car — and remember that 'D300' means two different engines on this model. The one with the crankshaft question retired in 2020; make sure the listing you're reading knows that too."
   },
   "replacementCosts": {
-    "h2": "Defender Engine Replacement Costs — By Generation",
-    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines — supply only, with labour guidance.",
+    "h2": "Velar Engine Replacement Costs",
+    "subHeadline": "",
     "tables": [
       {
-        "title": "Defender Classic (L316) — 1990–2016",
+        "title": "Velar (L560) — 2017–2020 (pre-facelift)",
         "columns": [
           "Variant",
           "Engine Code",
@@ -707,52 +678,7 @@
         ],
         "rows": [
           {
-            "model": "200Tdi",
-            "engineCode": "200Tdi",
-            "usedSupply": "£1,200–£2,500",
-            "reconditionedSupply": "£2,500–£4,000",
-            "rebuiltSupply": "£3,500–£5,000",
-            "labourHours": "10–14 hrs"
-          },
-          {
-            "model": "300Tdi",
-            "engineCode": "300Tdi",
-            "usedSupply": "£1,500–£2,800",
-            "reconditionedSupply": "£2,800–£4,500",
-            "rebuiltSupply": "£3,800–£5,500",
-            "labourHours": "10–14 hrs"
-          },
-          {
-            "model": "TD5",
-            "engineCode": "TD5",
-            "usedSupply": "£1,800–£3,200",
-            "reconditionedSupply": "£3,000–£5,000",
-            "rebuiltSupply": "£4,200–£6,000",
-            "labourHours": "12–16 hrs"
-          },
-          {
-            "model": "2.4/2.2 TDCi",
-            "engineCode": "TDCi",
-            "usedSupply": "£2,000–£3,500",
-            "reconditionedSupply": "£3,200–£5,500",
-            "rebuiltSupply": "£4,500–£6,500",
-            "labourHours": "12–16 hrs"
-          }
-        ]
-      },
-      {
-        "title": "Defender L663 — 2020–present",
-        "columns": [
-          "Variant",
-          "Engine Code",
-          "Used (Supply)",
-          "Reconditioned (Supply)",
-          "Rebuilt (Supply)",
-          "Labour Hours"
-        ],
-        "rows": [
-          {
-            "model": "D200/D240",
+            "model": "D180/D240",
             "engineCode": "204DTD",
             "usedSupply": "£2,000–£3,500",
             "reconditionedSupply": "£3,500–£5,800",
@@ -760,15 +686,15 @@
             "labourHours": "10–14 hrs"
           },
           {
-            "model": "D250/D300",
-            "engineCode": "AJ20D6",
+            "model": "D300 (V6)",
+            "engineCode": "306DT",
             "usedSupply": "£3,500–£5,500",
             "reconditionedSupply": "£6,500–£9,500",
             "rebuiltSupply": "£7,500–£11,000",
             "labourHours": "15–20 hrs"
           },
           {
-            "model": "P300/P400",
+            "model": "P250/P300",
             "engineCode": "204PT",
             "usedSupply": "£1,500–£2,800",
             "reconditionedSupply": "£3,000–£5,000",
@@ -776,25 +702,86 @@
             "labourHours": "10–14 hrs"
           },
           {
-            "model": "P525 V8",
+            "model": "P380",
+            "engineCode": "AJ126",
+            "usedSupply": "£2,800–£4,500",
+            "reconditionedSupply": "£4,500–£7,000",
+            "rebuiltSupply": "£6,000–£8,500",
+            "labourHours": "14–18 hrs"
+          },
+          {
+            "model": "P550 SVAD",
             "engineCode": "AJ133",
             "usedSupply": "£3,500–£6,000",
             "reconditionedSupply": "£8,000–£12,000",
             "rebuiltSupply": "£10,000–£14,000",
-            "labourHours": "16–20 hrs"
+            "labourHours": "14–18 hrs"
+          }
+        ]
+      },
+      {
+        "title": "Velar (L560) — 2021–present (facelift)",
+        "columns": [
+          "Variant",
+          "Engine Code",
+          "Used (Supply)",
+          "Reconditioned (Supply)",
+          "Rebuilt (Supply)",
+          "Labour Hours"
+        ],
+        "rows": [
+          {
+            "model": "D200",
+            "engineCode": "204DTD MHEV",
+            "usedSupply": "£2,000–£3,500",
+            "reconditionedSupply": "£3,500–£5,800",
+            "rebuiltSupply": "£4,800–£7,000",
+            "labourHours": "10–14 hrs"
+          },
+          {
+            "model": "D300 (i6)",
+            "engineCode": "AJ20D6",
+            "usedSupply": "£3,500–£5,500",
+            "reconditionedSupply": "£6,500–£9,500",
+            "rebuiltSupply": "£7,500–£11,000",
+            "labourHours": "15–20 hrs"
+          },
+          {
+            "model": "P250",
+            "engineCode": "204PT",
+            "usedSupply": "£1,500–£2,800",
+            "reconditionedSupply": "£3,000–£5,000",
+            "rebuiltSupply": "£4,200–£6,500",
+            "labourHours": "10–14 hrs"
+          },
+          {
+            "model": "P400",
+            "engineCode": "AJ20P6",
+            "usedSupply": "£3,500–£6,000",
+            "reconditionedSupply": "£6,000–£9,000",
+            "rebuiltSupply": "£7,500–£11,000",
+            "labourHours": "15–20 hrs"
+          },
+          {
+            "model": "P400e",
+            "engineCode": "204PT + e-motor",
+            "usedSupply": "£1,800–£3,200",
+            "reconditionedSupply": "£3,000–£5,000",
+            "rebuiltSupply": "£4,200–£6,500",
+            "labourHours": "12–16 hrs (hybrid decommission adds time)"
           }
         ]
       }
     ],
-    "figuresNote": "Labour estimate: Fitting a Defender engine typically takes 10–20 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE]. The Defender rule: With L663 values of £35,000–£90,000, even a £9,500 recon engine sits far below our 60% scrap-threshold rule — replacement is ✅ Safe at any spec. Classic Defenders behave the same way for the opposite reason: values have risen so far that a £4,500 recon 300Tdi is trivial against a £15,000–£40,000 vehicle. The Defender is the one Land Rover we never recommend scrapping over an engine.",
-    "labourEstimate": "Fitting a Defender engine typically takes 10–20 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE]. The Defender rule: With L663 values of £35,000–£90,000, even a £9,500 recon engine sits far below our 60% scrap-threshold rule — replacement is ✅ Safe at any spec. Classic Defenders behave the same way for the opposite reason: values have risen so far that a £4,500 recon 300Tdi is trivial against a £15,000–£40,000 vehicle. The Defender is the one Land Rover we never recommend scrapping over an engine.",
+    "figuresNote": "204DTD, 306DT, 204PT, AJ20D6 figures [EM-QUOTE]; AJ126, AJ133 and AJ20P6 rows [PLACEHOLDER — confirm vs Table A].",
+    "labourEstimate": "10–20 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE]. The Velar rule: With values of £18,000–£60,000, replacement clears our 60% scrap-threshold rule across essentially the whole parc — ✅ Safe. The one pressure point is the earliest D180s heading toward £15,000: a worst-case £5,800 recon on a tired one is still comfortably inside the line, but a V6 D300 quote against a cheap early car is the maths to run before you commit.",
     "economicsBox": {
-      "title": "The Defender rule",
-      "text": "With L663 values of £35,000–£90,000, even a £9,500 recon engine sits far below our 60% scrap-threshold rule — replacement is ✅ Safe at any spec. Classic Defenders behave the same way for the opposite reason: values have risen so far that a £4,500 recon 300Tdi is trivial against a £15,000–£40,000 vehicle. The Defender is the one Land Rover we never recommend scrapping over an engine."
+      "title": "The Velar rule",
+      "text": "With values of £18,000–£60,000, replacement clears our 60% scrap-threshold rule across essentially the whole parc — ✅ Safe. The one pressure point is the earliest D180s heading toward £15,000: a worst-case £5,800 recon on a tired one is still comfortably inside the line, but a V6 D300 quote against a cheap early car is the maths to run before you commit."
     }
   },
   "engineEvolution": {
-    "h2": "How the Defender Engine Range Evolved — 1990 to Today",
+    "h2": "How the Velar Engine Range Evolved — 2017 to Today",
     "columns": [
       "Era",
       "Years",
@@ -802,10 +789,32 @@
       "Why Land Rover Changed",
       "Worth Knowing"
     ],
-    "eras": []
+    "eras": [
+      {
+        "era": "Launch era",
+        "years": "2017–2020",
+        "keyEngines": "204DTD, 204PT, 306DT D300, AJ126 P380",
+        "whyBmwChanged": "The Velar launched as the design flagship on borrowed engines — the Ingenium fours plus the ageing V6s from across the range",
+        "worthKnowing": "It inherited every engine's existing reputation on day one, good and bad"
+      },
+      {
+        "era": "SV moment",
+        "years": "2019–2020",
+        "keyEngines": "AJ133 P550",
+        "whyBmwChanged": "A short-run 5.0 V8 halo car — the SVAutobiography Dynamic",
+        "worthKnowing": "Rare, collectible, and a supercharger-history purchase"
+      },
+      {
+        "era": "Facelift era",
+        "years": "2021–present",
+        "keyEngines": "AJ20D6, AJ20P6, P400e, 204DTD MHEV",
+        "whyBmwChanged": "Electrification retired the V6s — the straight-sixes and PHEV arrived with Pivi Pro",
+        "worthKnowing": "The rare facelift where the biggest changes were under the bonnet: every caveated engine left the range at once"
+      }
+    ]
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy a Defender?",
+    "h2": "Who Should Buy a Velar?",
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -814,83 +823,137 @@
     "profiles": [
       {
         "buyerProfile": "Family Buyer",
-        "rating": "⭐⭐⭐⭐☆",
-        "verdict": "L663 110/130 only — genuinely practical, and the safest JLR to own long-term. Classic is a lifestyle choice, not family transport."
+        "rating": "⭐⭐⭐☆☆",
+        "verdict": "Five seats, no more — it's the style choice, not the space one. If you need seven, the Discovery costs the same used."
       },
       {
         "buyerProfile": "Daily Commuter",
-        "rating": "⭐⭐⭐☆☆",
-        "verdict": "L663 D250 is excellent; avoid diesel L663s on short urban runs (oil-dilution risk). Classic Defenders make hard work of commuting."
+        "rating": "⭐⭐⭐⭐☆",
+        "verdict": "The P250 is the honest commuter Velar; the P400e is the company-car sweet spot. Diesel commuting under 15 miles a day is DPF roulette."
       },
       {
         "buyerProfile": "Towing & Working Use",
-        "rating": "⭐⭐⭐⭐⭐",
-        "verdict": "Best in class. D300's 650Nm and 3,500kg capacity, or a 300Tdi that will tow forever at its own pace."
+        "rating": "⭐⭐⭐☆☆",
+        "verdict": "2,400–2,500kg braked on the sixes — capable, but this body was styled, not built, for the yard. D300 (either era) is the tow pick."
       },
       {
         "buyerProfile": "Budget Owner",
         "rating": "⭐⭐⭐☆☆",
-        "verdict": "Counter-intuitive: strong values mean repairs are always worth it, but nothing about a Defender is cheap. A tidy TD5 is the value sweet spot."
+        "verdict": "Early D180s are the affordable entry — budget a chain inspection before purchase and they're a sound buy. Cheap pre-2021 D300s: run the crank maths first."
       },
       {
-        "buyerProfile": "Investor / Keeper",
+        "buyerProfile": "Design-Led Buyer",
         "rating": "⭐⭐⭐⭐⭐",
-        "verdict": "Our Best Long-Term Keeper across the whole JLR range. Classic values rising; L663 residuals class-leading."
+        "verdict": "The reason this car exists. Buy the 2021+ facelift, pick the engine with the table above, and enjoy the best-looking Range Rover of its era with a clean mechanical conscience."
       }
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My Defender Engine — or Should I Replace It?",
-    "intro": "Cold-start rattle on an early L663? Injector fault on a Puma? Get a personalised repair-vs-replace verdict using real UK cost data — with Defender already pre-selected. Primary CTA (large, gold): Launch the Defender Diagnostic Calculator → /calculator/?model=defender",
-    "paths": []
+    "h2": "Can I Repair My Velar Engine — or Should I Replace It?",
+    "intro": "Cold-start knock on a D300? Chain rattle on an early D180? Get a personalised repair-vs-replace verdict using real UK cost data.",
+    "paths": [
+      {
+        "label": "Path 1 — Know your engine? Launch with Velar pre-selected",
+        "href": "/calculator/?model=velar"
+      },
+      {
+        "label": "Path 2 — Not sure which engine you have? We'll identify it first — especially important on the D300.",
+        "href": "/calculator/identify/?model=velar"
+      }
+    ]
   },
   "trustBlock": {
-    "h2": "Why Defender Owners Trust LandRoverEngine.uk",
+    "h2": "Why Velar Owners Trust RangeRoverEngines.uk",
     "signals": [
       {
         "icon": "📊",
         "title": "Built on Real Data",
-        "text": "Every cost range and enquiry volume comes from genuine 2025 UK enquiry data [EM-VERIFIED] — not manufacturer marketing, not forum guesswork."
+        "text": "275 Velar enquiries in 2025 [EM-VERIFIED], including the largest D300-specific dataset in the UK."
       },
       {
         "icon": "💚",
-        "title": "We Tell You When Not to Repair",
-        "text": "With the Defender, that's rare: it's the one Land Rover where replacement is almost always economically safe. When that changes for your case, we'll say so."
+        "title": "We Tell You Which D300 You Have",
+        "text": "Before anyone quotes you anything. Same badge, two engines, opposite risk profiles — we sort it in one question."
       },
       {
         "icon": "🔧",
-        "title": "Vetted JLR & Classic Defender Specialists",
-        "text": "Our network covers both worlds: Ingenium-era JLR specialists and traditional Tdi/TD5 rebuilders. Every one vetted, rated, and reviewed."
+        "title": "Vetted JLR Specialists",
+        "text": "From Ingenium chain assessment to V6 bottom-end diagnosis, every specialist in our network is vetted for the engine you actually have."
       },
       {
         "icon": "🏆",
         "title": "Part of Engine Finders",
         "text": "the UK's leading engine replacement marketplace."
-      },
-      {
-        "icon": "",
-        "title": "Final CTA block:",
-        "text": ""
-      },
-      {
-        "icon": "",
-        "title": "Not sure what's wrong with your Defender engine? Explore the generation guides, get a free diagnosis, or compare quotes from UK specialists.",
-        "text": ""
-      },
-      {
-        "icon": "",
-        "title": "Primary: Explore Defender Generations → • Secondary: Get a Diagnosis → • Tertiary: Compare Specialist Quotes →",
-        "text": ""
       }
     ]
   },
   "faq": {
-    "h2": "",
-    "items": []
+    "h2": "Velar Frequently Asked Questions",
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Velar engine replacement cost in the UK?",
+        "answer": "Reconditioned units run £3,000–£9,500 supply only depending on engine [EM-QUOTE] — the volume 204DTD at £3,500–£5,800, either D300 at £6,500–£9,500. Fitting adds £650–£1,900. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which Velar engine is the most reliable?",
+        "answer": "The 204PT petrol has the cleanest record in our data, with the post-2021 AJ20D6 and AJ20P6 sixes close behind on early evidence."
+      },
+      {
+        "id": 3,
+        "question": "Which Velar engine should I avoid?",
+        "answer": "A 2017–2020 D300 (306DT V6) without documented oil-interval history — it carries the same crankshaft-bearing risk as its Discovery and Range Rover Sport siblings. A pre-2019 D180 without a chain inspection is the other caveat."
+      },
+      {
+        "id": 4,
+        "question": "Is the Velar D300 reliable?",
+        "answer": "Which one? The 2021+ D300 (AJ20D6 straight-six) — yes, genuinely. The 2017–2020 D300 (306DT V6) — only with maintenance history, because of the bottom-end risk. Same badge, two engines. Full explainer →"
+      },
+      {
+        "id": 5,
+        "question": "Is it worth replacing a Velar engine?",
+        "answer": "Almost always — Velar values comfortably clear our 60% scrap-threshold rule against every recon cost in the range. The only maths worth running twice is a V6 D300 quote against the cheapest early cars. Use the Ownership Decision Tool for your car."
+      },
+      {
+        "id": 6,
+        "question": "Which Velar should I buy?",
+        "answer": "A 2021-or-later facelift — every caveated engine left the range at once, and Pivi Pro fixed the infotainment complaints in the same stroke. Use our powertrain chooser above to pick the engine for your miles."
+      },
+      {
+        "id": 7,
+        "question": "How do I find my Velar engine code?",
+        "answer": "On the VIN plate and vehicle documentation. On this model the year does most of the work: D300 before 2021 = 306DT V6; from 2021 = AJ20D6. Or tell us your variant and year and we'll identify it."
+      },
+      {
+        "id": 8,
+        "question": "Velar vs Range Rover Sport — which should I buy?",
+        "answer": "The Velar is the design pick; the Sport is the capability pick, with more towing, more engines and (used) more risk exposure via the SDV6. Same money buys a newer Velar or an older Sport — on engine risk alone, the newer Velar usually wins. Read the full head-to-head →"
+      }
+    ]
   },
   "closingActionCards": {
-    "h2": "Defender Frequently Asked Questions",
-    "cards": [],
+    "h2": "Ready to Make a Decision?",
+    "cards": [
+      {
+        "icon": "🔍",
+        "title": "Explore the L560 In Depth",
+        "text": "One generation, eight powertrains, honestly rated.",
+        "href": "/velar/l560/"
+      },
+      {
+        "icon": "🩺",
+        "title": "Diagnose My Velar",
+        "text": "Symptoms in, verdict out — and we'll confirm which D300 you have first.",
+        "href": "/calculator/?model=velar"
+      },
+      {
+        "icon": "🤝",
+        "title": "Compare UK Specialists",
+        "text": "Vetted JLR specialists, prices and warranties side-by-side.",
+        "href": "/quotes/?model=velar"
+      }
+    ],
     "footerNote": ""
   }
 }

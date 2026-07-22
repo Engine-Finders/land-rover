@@ -267,81 +267,46 @@
       {
         "metric": "Overall Engine Score",
         "value": "70/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: PT204 (2.0 Si4 GTDi) — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: ★★★½ out of 5",
-        "value": "Confidence: 84% confidence — based on 480+ real UK enquiries, specialist workshop reports, and JLR service data."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "14"
-      },
-      {
-        "metric": "Star rating (3.5★) × 4 = 14",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "16",
-        "value": "Midpoint of Reconditioned (Supply Only) range: £2,995–£3,650 → £3,322 midpoint → falls in £3,000–£4,999 bracket → 16"
-      },
-      {
-        "metric": "Repairability",
-        "value": "12"
-      },
-      {
-        "metric": "Modern direct‑injection turbo with twin‑scroll charger; repairs require specialist diagnostic equipment",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "16",
-        "value": "Well‑supported via JLR and aftermarket; shared with Jaguar ensures strong availability"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "12"
-      },
-      {
-        "metric": "Reconditioned cost (£3,322 midpoint) as % of lowest typical vehicle value (Discovery Sport / Evoque ~£8,000–£12,000) = 28–42% → falls in 45–59% bracket → 12",
-        "value": "Total"
-      },
-      {
-        "metric": "70/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: The PT204 is a punchy, efficient modern turbo petrol — cooling system and timing chain are the main watchpoints — buy with full service history and listen for rattles on cold start.",
-        "value": "Best For / Avoid If:"
-      },
-      {
-        "metric": "* Best for: drivers wanting modern turbo petrol performance with decent economy and low‑emission compliance.",
-        "value": "* Avoid if: you're looking at a pre‑2020 example with no documented cooling system or timing chain history."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "★★★½ out of 5",
+    "confidence": "84% confidence — based on 480+ real UK enquiries, specialist workshop reports, and JLR service data.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (Star rating (3.5★) × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £2,995–£3,650 → £3,322 midpoint → falls in £3,000–£4,999 bracket → 16)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Modern direct‑injection turbo with twin‑scroll charger; repairs require specialist diagnostic equipment)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "16 (Well‑supported via JLR and aftermarket; shared with Jaguar ensures strong availability)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "12 (Reconditioned cost (£3,322 midpoint) as % of lowest typical vehicle value (Discovery Sport / Evoque ~£8,000–£12,000) = 28–42% → falls in 45–59% bracket → 12)"
+        },
+        {
+          "dimension": "Total",
+          "score": "70/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
+    "oneLineVerdict": "The PT204 is a punchy, efficient modern turbo petrol — cooling system and timing chain are the main watchpoints — buy with full service history and listen for rattles on cold start.",
     "bestFor": "",
     "avoidIf": ""
   },

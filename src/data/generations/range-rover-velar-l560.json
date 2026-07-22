@@ -1,6 +1,6 @@
 {
   "meta": {
-    "slug": "range-rover-velar-l560",
+    "slug": "bmw-range-rover-velar-l560",
     "title": "L560 Engine Replacement Cost UK — Compare Quotes",
     "titleCharCount": 48,
     "description": "Every Range Rover Velar L560 engine — Ingenium diesel/petrol, D300, P400, SVAutobiography V8. Real UK costs and reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
@@ -673,23 +673,121 @@
     "scopeNote": "All variants listed are Velar L560 only. The P400 uses the later Ingenium-based 3.0 with mild hybrid (2020–present), while the P340/P380 use the earlier AJ126 V6 (2017–2020). The SVAutobiography uses the supercharged 5.0 AJ133 V8."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. 306DT D300 (120 enquiries [EM-VERIFIED])",
+      "2. 204DTD D240 (pattern data)",
+      "3. 204PT P300 (pattern data)"
+    ],
+    "mostRequestedVariants": [
+      "1. D300",
+      "2. D240",
+      "3. P300"
+    ],
+    "averageReplacementCost": "£4,500–£7,500 (reconditioned, supply only) [EM-QUOTE]",
+    "mostCommonFailures": [
+      "1. 204DTD Ingenium timing chain (pre-2019)",
+      "2. 306DT D300 crankshaft bearing",
+      "3. AJ126 V6 cooling system leaks"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "Range Rover Velar D300 (306DT)",
+        "location": "Manchester",
+        "issue": "Cold-start knock, oil analysis",
+        "enquiries": "4 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Range Rover Velar D240 (204DTD)",
+        "location": "Birmingham",
+        "issue": "Timing chain rattle on start-up",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Range Rover Velar P380 (AJ126)",
+        "location": "London",
+        "issue": "Coolant loss, suspected water pump",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Range Rover Velar L560 engine replacement cost in the UK?",
+        "answer": "A reconditioned Velar engine typically costs £3,000–£9,500 supply only [EM-QUOTE], depending on the engine — the four-cylinder Ingeniums sit at £3,000–£5,800, the D300 V6 diesel at £6,500–£9,500, and the SVAutobiography V8 at £5,500–£9,000. Fitting adds £650–£1,300. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which Velar L560 engine is the most reliable?",
+        "answer": "The 204PT P300 (Ingenium petrol) and the 306PS P400 (3.0 mild-hybrid petrol) are the most reliable options — both are free of the diesel timing chain issues and the pre-facelift AJ126 cooling problems. The P400 is the sweet spot: modern, efficient, and proven."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Velar L560?",
+        "answer": "Pre-2019 204DTD Ingenium diesels suffer from timing chain tensioner wear. The D300 V6 diesel (306DT) has a known crankshaft bearing risk — short oil intervals are critical. The AJ126 V6 petrol (pre-facelift P340/P380) suffers from water pump and cooling system leaks. The V8 is robust but expensive to service."
+      },
+      {
+        "id": 4,
+        "question": "Is the Range Rover Velar L560 reliable?",
+        "answer": "It depends on the engine and year. The petrol Ingeniums (204PT, 306PS) are the most reliable. The D300 V6 diesel is powerful but requires obsessive maintenance — 5,000-mile oil changes are essential. Pre-2019 four-cylinder diesels carry a timing chain risk that's well-documented. Post-2019 diesel Ingeniums are improved."
+      },
+      {
+        "id": 5,
+        "question": "Which Velar L560 engine should I avoid?",
+        "answer": "Pre-2019 204DTD diesel without documented timing chain tensioner replacement — it's the same risk as earlier Ingenium units. A neglected D300 without oil change history is also high-risk. The AJ126 V6 petrol is fine but check for cooling system leaks. Avoid any engine without full service history."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my Velar L560 engine needs replacing?",
+        "answer": "Cold-start rattle (Ingenium chain), cold-start knock (D300 bearing), persistent coolant loss (V6 petrol), or limp mode (sensor/injector faults) are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Velar L560 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £20,000 D300, a £6,500–£9,500 recon is 33–48% of the car's value — well within our 60% Land Rover threshold. Against a high-mileage £15,000 example, the same recon is 43–63% — borderline. For a P400 at £35,000, a £4,500–£7,500 recon is 13–21% — a straightforward repair decision. Value the car first; if it's a pre-2019 diesel without chain history, evaluate carefully."
+      },
+      {
+        "id": 8,
+        "question": "How long do Velar L560 engines last?",
+        "answer": "The 204PT and 306PS petrols can exceed 150,000 miles with proper servicing. The D300 is capable of high mileage but requires 5,000-mile oil changes to mitigate bearing risk — many specialists recommend treating 100,000 miles as a major service checkpoint. The AJ126 V6 petrol is robust but cooling system maintenance is critical."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the pre-facelift and facelift Velar L560?",
+        "answer": "Both share the L560 chassis code. The 2020 facelift introduced the mild-hybrid 3.0 P400 (306PS) to replace the AJ126 P340/P380 V6 petrol. The diesel range remained largely unchanged, though post-2019 units received improved timing chain tensioners. Costs and reliability differ accordingly — the P400 is the better petrol choice."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Velar L560 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For the diesel, look for 204DTD (2.0) or 306DT (3.0). For petrol, it's 204PT (2.0), AJ126 (3.0 pre-facelift), 306PS (3.0 facelift), or AJ133 (5.0 V8). Tell us your variant and registration year and we'll identify it — 12 vetted Land Rover specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK Range Rover Velar L560 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Velar Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Velar owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare Velar Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for Velar",
+        "text": "covering every variant from D180 to SVAutobiography, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Range Rover Velar L560 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare Range Rover Velar L560 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

@@ -492,7 +492,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Coolant system leaks (charge air cooler, turbo hoses, water pump) — reported across low and high-mileage P400e examples"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "25,000–50,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "PT204 (AJ200P) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring / Summer — PHEV owners prepare for overlanding season [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), London (18%), South West (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

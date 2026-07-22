@@ -1,6 +1,6 @@
 {
   "meta": {
-    "slug": "m51",
+    "slug": "bmw-m51",
     "title": "BMW M51 2.5 TDS Engine — Reliability",
     "description": "The BMW M51 is one of BMW's most robust six-cylinder diesels — a reliable workhorse, but watch the cooling system. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
     "canonical": "https://landroverengine.uk/engines/bmw-m51/",
@@ -231,81 +231,46 @@
       {
         "metric": "Overall Engine Score",
         "value": "80/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: BMW M51 2.5 TDS — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: ★★★★ out of 5",
-        "value": "Confidence: 84% confidence — based on 20+ years of real-world data, enthusiast consensus, and specialist workshop reports."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "16"
-      },
-      {
-        "metric": "Star rating (4.0★) × 4 = 16",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "16",
-        "value": "Midpoint of Reconditioned (Supply Only) range: £3,000–£5,500 → £4,250 midpoint → falls in £3,000–£4,999 bracket → 16"
-      },
-      {
-        "metric": "Repairability",
-        "value": "16"
-      },
-      {
-        "metric": "Well-understood inline-six layout; simpler than later common-rail diesels; parts widely available",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "16",
-        "value": "Good parts availability through BMW, Land Rover, and aftermarket channels"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "16"
-      },
-      {
-        "metric": "Reconditioned cost (£4,250 midpoint) as % of lowest typical vehicle value (P38A ~£2,000–£5,000) = 85–212% → falls in 30–44% bracket → 16",
-        "value": "Total"
-      },
-      {
-        "metric": "80/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: The M51 is a robust, reliable six‑cylinder diesel — cooling system neglect and injector pump wear are the main risks — buy with full service history and coolant records.",
-        "value": "Best For / Avoid If:"
-      },
-      {
-        "metric": "* Best for: owners wanting BMW six‑cylinder refinement and bulletproof mechanical reliability in a P38A.",
-        "value": "* Avoid if: you're looking at an example with no cooling system service history or signs of injector pump issues."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "★★★★ out of 5",
+    "confidence": "84% confidence — based on 20+ years of real-world data, enthusiast consensus, and specialist workshop reports.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (Star rating (4.0★) × 4 = 16)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £3,000–£5,500 → £4,250 midpoint → falls in £3,000–£4,999 bracket → 16)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "16 (Well-understood inline-six layout; simpler than later common-rail diesels; parts widely available)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "16 (Good parts availability through BMW, Land Rover, and aftermarket channels)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "16 (Reconditioned cost (£4,250 midpoint) as % of lowest typical vehicle value (P38A ~£2,000–£5,000) = 85–212% → falls in 30–44% bracket → 16)"
+        },
+        {
+          "dimension": "Total",
+          "score": "80/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
+    "oneLineVerdict": "The M51 is a robust, reliable six‑cylinder diesel — cooling system neglect and injector pump wear are the main risks — buy with full service history and coolant records.",
     "bestFor": "",
     "avoidIf": ""
   },

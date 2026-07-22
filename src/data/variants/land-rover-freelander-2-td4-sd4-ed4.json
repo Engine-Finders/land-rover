@@ -1,26 +1,182 @@
 {
   "meta": {
-    "slug": "land-rover-freelander-2-td4-sd4-ed4",
-    "title": "Land Rover Freelander 2 2.2 Diesel Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 83,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "freelander-22-td4",
+    "title": "Freelander 2 2.2 Diesel Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "The 224DT Duratorq — eD4, TD4 and SD4 power outputs explained. Real UK costs, common EGR and turbo issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://landroverengine.uk/freelander/22-td4/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Freelander 2 2.2 Diesel Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 224DT Duratorq — eD4, TD4 and SD4 power outputs explained. Real UK costs, common EGR and turbo issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/freelander/22-td4/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-22-td4.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Freelander 2 2.2 Diesel Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 224DT Duratorq — eD4, TD4 and SD4 power outputs explained. Real UK costs, common EGR and turbo issues, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-22-td4.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Freelander",
+              "item": "https://landroverengine.uk/freelander/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "2.2 TD4",
+              "item": "https://landroverengine.uk/freelander/22-td4/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander 2 2.2 Diesel Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Freelander 2 L359 (224DT Duratorq, 2006–2014)",
+              "url": "https://landroverengine.uk/freelander/22-td4/#224dt"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Freelander 2 2.2 Diesel Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "224DT 2.2L Duratorq Diesel",
+              "url": "https://landroverengine.uk/engines/224dt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Freelander 2 2.2 diesel engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Freelander 2 2.2 diesel engine (224DT) typically costs £2,000–£3,800 supply only. Fitting adds £1,200–£1,400. These are cost-effective replacements — the 224DT is a common engine with readily available parts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Freelander 2 2.2 diesel reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 224DT Duratorq is a robust Ford-sourced diesel. It's widely regarded as one of the more reliable modern Land Rover diesel engines, particularly when compared to the earlier M47 and the later Ingenium diesels. Regular oil changes (12,000 miles max) are essential. The TD4 (158bhp) is considered the sweet spot for reliability and performance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Freelander 2 2.2 diesel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "EGR cooler coolant leaks (£500–£1,200 repair), turbo actuator failure (particularly on SD4 models, £400–£1,000 repair), and timing chain tensioner wear at higher mileages (£600–£1,500 repair). The engine is otherwise durable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Freelander 2 2.2 diesel engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Freelander 2 values range from £2,000–£8,000 depending on condition and mileage. A £2,000–£3,800 reconditioned engine replacement represents 25–60% of vehicle value — our 60% Land Rover scrap threshold means careful evaluation is required. For a well-maintained, lower-mileage example, replacement is often justified. For a higher-mileage example with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Freelander 2 2.2 diesel engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Freelander 2 uses the 224DT engine code, regardless of whether your car is badged as eD4, TD4 or SD4. The differences are purely ECU tuning. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the turbo actuator issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — in many cases the actuator alone can be replaced (£400–£600) rather than the full turbo (£1,000–£2,000). The actuator's electronic position sensor fails on higher-mileage Duratorq engines. A specialist will need to recalibrate the new actuator using diagnostic equipment. At the first sign of power loss or boost issues, book an inspection."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Freelander 2 2.2 Diesel Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1200",
+            "highPrice": "8000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Freelander 2 2.2 Diesel UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Freelander 2 2.2 diesel engine, sourced from LandRoverEngine.uk's specialist marketplace activity for the 224DT Duratorq.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Freelander 2 2.2 Diesel Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/freelander/22-td4/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Land Rover Freelander 2 TD4/SD4/eD4 • 2006–2014 • 2.2L Duratorq Diesel",

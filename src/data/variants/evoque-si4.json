@@ -476,7 +476,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system issues — coolant loss on GTDi; water pump on 204PT [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "65,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204PT (Ingenium) [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling system issues exposed by warmer weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), South West (15%), London (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

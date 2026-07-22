@@ -383,7 +383,20 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Metric Data",
+        "value": "Most Common Failure Head gasket — accounts for ~40% of classic Discovery 200Tdi workshop visits [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage 120,000 miles (age‑related) [PATTERN DATA]",
+        "value": "Average Replacement Cost £1,700 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code 200Tdi (only code for this badge) [PATTERN DATA]",
+        "value": "Peak Enquiry Season Spring — owners recommissioning vehicles after winter [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

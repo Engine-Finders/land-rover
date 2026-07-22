@@ -457,7 +457,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Injector seal failure (\"Black Death\") — approximately 30% of M51 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "125,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,600 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M51 [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cooling system issues exposed by colder weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (18%), South East (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

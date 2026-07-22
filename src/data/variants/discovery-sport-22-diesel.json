@@ -451,7 +451,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "EGR cooler leaks — the most frequently reported issue on the 224DT [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "75,000–110,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,000–£3,500 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "224DT — the launch-era Discovery Sport diesel [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — pre‑holiday vehicle preparation [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), Midlands (16%), South West (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

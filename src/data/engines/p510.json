@@ -243,81 +243,46 @@
       {
         "metric": "Overall Engine Score",
         "value": "68/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: P510 (Ingenium 3.0 I6 Twin-Turbo) — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: ★★★★ out of 5",
-        "value": "Confidence: 78% confidence — based on limited real‑world data, specialist workshop reports, and JLR service information for this high‑output variant."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "16"
-      },
-      {
-        "metric": "Star rating (4.0★) × 4 = 16",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "12",
-        "value": "Midpoint of Reconditioned (Supply Only) range: £4,500–£7,500 → £6,000 midpoint → falls in £5,000–£6,999 bracket → 12"
-      },
-      {
-        "metric": "Repairability",
-        "value": "12"
-      },
-      {
-        "metric": "Modern twin‑turbo I6 with 48V MHEV adds complexity; repairs require specialist diagnostic equipment",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "12",
-        "value": "P510 parts availability improving but some components are JLR‑specific; shared with AJ20P6 aids supply"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "16"
-      },
-      {
-        "metric": "Reconditioned cost (£6,000 midpoint) as % of lowest typical vehicle value (Defender L663 ~£35,000+) = 17% → falls in 30–44% bracket → 16",
-        "value": "Total"
-      },
-      {
-        "metric": "68/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: The P510 is JLR's most powerful straight‑six petrol — immense performance with twin‑turbo urgency — but cooling system stress is a concern — buy with full JLR service history.",
-        "value": "Best For / Avoid If:"
-      },
-      {
-        "metric": "* Best for: enthusiasts wanting the ultimate Ingenium petrol experience with 510 PS and V8‑rivalling performance.",
-        "value": "* Avoid if: you're looking at an early example with no documented cooling system history or one that has been tracked without proper maintenance."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "★★★★ out of 5",
+    "confidence": "78% confidence — based on limited real‑world data, specialist workshop reports, and JLR service information for this high‑output variant.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (Star rating (4.0★) × 4 = 16)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Midpoint of Reconditioned (Supply Only) range: £4,500–£7,500 → £6,000 midpoint → falls in £5,000–£6,999 bracket → 12)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Modern twin‑turbo I6 with 48V MHEV adds complexity; repairs require specialist diagnostic equipment)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "12 (P510 parts availability improving but some components are JLR‑specific; shared with AJ20P6 aids supply)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "16 (Reconditioned cost (£6,000 midpoint) as % of lowest typical vehicle value (Defender L663 ~£35,000+) = 17% → falls in 30–44% bracket → 16)"
+        },
+        {
+          "dimension": "Total",
+          "score": "68/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
+    "oneLineVerdict": "The P510 is JLR's most powerful straight‑six petrol — immense performance with twin‑turbo urgency — but cooling system stress is a concern — buy with full JLR service history.",
     "bestFor": "",
     "avoidIf": ""
   },

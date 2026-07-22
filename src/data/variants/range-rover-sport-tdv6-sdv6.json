@@ -464,7 +464,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Crankshaft bearing failure — the defining risk of the 306DT [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "85,000–130,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,500–£9,500 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "306DT — the squeeze-zone flagship variant [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn — pre‑winter vehicle preparation [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), South West (18%), Midlands (16%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

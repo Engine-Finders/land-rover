@@ -1,6 +1,6 @@
 {
   "meta": {
-    "slug": "freelander-l314",
+    "slug": "bmw-freelander-l314",
     "title": "L314 Engine Replacement Cost UK — Compare Quotes",
     "titleCharCount": 49,
     "description": "Every Freelander 1 L314 engine — 1.8 K-Series, L-Series, TD4, KV6. Real UK costs & reliability data. Get quotes from 12 vetted Land Rover specialists.",
@@ -532,16 +532,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Freelander 1 engine replacement cost in the UK?",
+        "answer": "A reconditioned Freelander 1 engine typically costs £1,800–£5,500 supply only [EM-QUOTE], depending on the engine — the 1.8 K‑Series sits at £1,800–£3,500, the TD4 at £2,500–£4,500, and the V6 at £3,000–£5,500. Fitting adds £520–£1,040. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which Freelander 1 engine is the most reliable?",
+        "answer": "The BMW‑sourced M47R TD4 (2000–2006) — a chain‑drive diesel with a proven record of 150,000+ miles when properly serviced. It transformed the Freelander's reputation after the earlier L‑Series diesel and 1.8 K‑Series petrol proved less dependable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Freelander 1?",
+        "answer": "The 1.8 K‑Series petrol is notorious for head gasket failure — often multiple times. The TD4 suffers from injector faults and sensor issues if not maintained correctly. The L‑Series diesel's injection pump wears over time, and the KV6 V6 can have cooling system leaks. The clutch is also a known weak point across all engines."
+      },
+      {
+        "id": 4,
+        "question": "Is the Land Rover Freelander 1 reliable?",
+        "answer": "It depends heavily on the engine. The TD4 is the most reliable and the one most specialists recommend. The L‑Series diesel is trusty but underpowered. The 1.8 K‑Series is the least reliable due to its head gasket weakness — a problem so common that many owners have had it fail more than once. The V6 is rare and generally sound but thirsty."
+      },
+      {
+        "id": 5,
+        "question": "Which Freelander 1 engine should I avoid?",
+        "answer": "The 1.8 K‑Series petrol (18 K4F) — unless you have documented proof that the head gasket has been replaced recently with the updated Land Rover‑spec gasket and steel dowels, it's a ticking time bomb. A neglected example without history is the one purchase we consistently advise against."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my Freelander 1 engine needs replacing?",
+        "answer": "Overheating, mayonnaise‑like sludge in the coolant or oil (K‑Series), rough running or limp mode (TD4 injector faults), hard starting or loss of power (L‑Series pump wear), or persistent coolant loss (V6) are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Freelander 1 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well‑kept £4,000 TD4, a £2,500–£4,500 recon is 60–110% of the car's value — at the high end that brushes our 60% Land Rover threshold. Against a £2,000 K‑Series example, the same £1,800+ recon is 90%+ — walk away. Value the car first; if it's a 1.8 without head gasket history, scrap it."
+      },
+      {
+        "id": 8,
+        "question": "How long do Freelander 1 engines last?",
+        "answer": "The TD4 diesel can exceed 150,000 miles with proper servicing and regular oil changes. The L‑Series diesel is similarly durable but less refined. The 1.8 K‑Series is limited by its head gasket — addressed proactively, it can reach 100,000+ miles, but many fail much earlier. The KV6 V6 is robust but rare; longevity depends on cooling system maintenance."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the 3-door and 5-door Freelander 1?",
+        "answer": "Both share the same L314 chassis and engine options. The 3‑door (Softback/Hardback) is shorter and lighter; the 5‑door is the practical estate. No mechanical differences exist between them — costs and reliability are identical. The Freelander 2 (L359) succeeded this generation in 2006."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Freelander 1 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For the 1.8, it's 18 K4F; for the L‑Series diesel, 20 T2N; for the TD4, M47R or 204D3; for the V6, 25 K4F. Tell us your variant and registration year and we'll identify it — 12 vetted Land Rover specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK Freelander 1 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Freelander Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Freelander owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare Freelander Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for Freelander",
+        "text": "covering every variant from 1.8i to V6, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Freelander 1 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare Land Rover Freelander 1 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

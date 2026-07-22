@@ -1,11 +1,223 @@
 {
   "meta": {
-    "slug": "land-rover-discovery-3-l319",
-    "title": "Land Rover Discovery 3 L319 Engines — The Complete UK Guide",
+    "slug": "bmw-discovery-l319",
+    "title": "L319 Engine Replacement Cost UK — Compare Quotes",
     "titleCharCount": 59,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "description": "Every Land Rover Discovery 3 L319 engine — TDV6, V6, V8. Real UK costs, the TDV6 crankshaft risk explained, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 156,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery",
+              "item": "https://landroverengine.uk/discovery/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Land Rover Discovery 3 L319",
+              "item": "https://landroverengine.uk/discovery/l319/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 3 L319 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "276DT TDV6 Engine",
+              "url": "https://landroverengine.uk/engines/276dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "406PN V6 Engine",
+              "url": "https://landroverengine.uk/engines/406pn/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "448PN V8 Engine",
+              "url": "https://landroverengine.uk/engines/448pn/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 3 L319 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "TDV6",
+              "url": "https://landroverengine.uk/discovery/l319/tdv6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "V6",
+              "url": "https://landroverengine.uk/discovery/l319/v6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "V8",
+              "url": "https://landroverengine.uk/discovery/l319/v8/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery 3 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Discovery 3 engine typically costs £2,500–£7,500 supply only [EM-QUOTE], depending on engine — the 276DT TDV6 diesel sits at £5,000–£7,500, while the 4.0 V6 petrol is significantly cheaper at £2,500–£4,500. Fitting adds £650–£1,300 depending on engine and specialist location."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover Discovery 3 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 448PN 4.4 V8 petrol and the 406PN 4.0 V6 petrol are the most reliable options — both are naturally aspirated, simpler designs with no catastrophic failure modes. The 276DT TDV6 diesel carries this generation's defining risk: crankshaft-bearing failure is a well-documented £5,000+ bill waiting to happen [PROVISIONAL — pending dedicated Engine Page]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Land Rover Discovery 3?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Crankshaft-bearing failure and oil pump housing failure on the 276DT TDV6 diesel are the two most significant engine problems — both can destroy the engine without warning. The 448PN V8 petrol suffers from coolant crossover pipe leaks, which are cheap to prevent but expensive if ignored. The 406PN V6 is the most robust engine in the range."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery 3 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends entirely on which engine you choose. Petrol-powered L319s (4.0 V6 and 4.4 V8) are generally reliable, well-understood designs. The 2.7 TDV6 diesel, however, is high-risk — crankshaft-bearing failure and oil pump issues are common enough that we recommend avoiding the diesel unless you have documented proof of preventative work already completed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Land Rover Discovery 3 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 276DT 2.7 TDV6 diesel is the engine we consistently advise against — catastrophic crankshaft-bearing failure is a well-documented pattern, and a full engine replacement costs £5,000–£7,500 [EM-QUOTE], which frequently exceeds the value of an older Discovery 3. Without documented oil pump or crankshaft work, it's a gamble we wouldn't take."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my Discovery 3 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cold-start knock on the TDV6 diesel is the classic early warning of crankshaft-bearing failure — investigate immediately. Low oil pressure warning lights, rough running, or blue smoke from any engine are also key warning signs. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery 3 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £12,000 Discovery 3, a £5,000 TDV6 recon is 42% of the car's value — safe. Against a tired £5,000 example, the same recon is 100% — walk away. Our 60% Land Rover scrap threshold is the line: if replacement cost exceeds 60% of the car's value, evaluate scrap first [EM-VERIFIED]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do Land Rover Discovery 3 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 448PN V8 petrol can exceed 200,000 miles with proper servicing — its only major weakness is coolant crossover pipe leaks, which are preventable. The 406PN V6 is similarly durable. The 276DT TDV6 diesel is limited by its crankshaft-bearing design; addressed proactively with oil analysis and preventative bearing replacement, it can reach 140,000+ miles, but many fail earlier."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the Discovery 3 and Discovery 4?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Both share the L319 chassis code, but the Discovery 4 (2009–2016) received significant mechanical updates including the 3.0 SDV6 diesel, a revised 2.7 TDV6, a 5.0 V8 petrol, and a facelifted interior. Costs and reliability profiles differ — see the Discovery 4 Generation Page for specifics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Discovery 3 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block (visible from below on the TDV6, and from above on the V6/V8 petrols). Tell us your variant (TDV6, V6, or V8) and we'll identify it — 12 vetted Land Rover specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery 3 L319 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery 3 L319 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Land Rover Discovery 3 L319 engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "L319 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery/l319/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-08",
+          "dateModified": "2026-07-08"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -307,16 +519,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Discovery 3 engine replacement cost in the UK?",
+        "answer": "A reconditioned Discovery 3 engine typically costs £2,500–£7,500 supply only [EM-QUOTE], depending on engine — the 276DT TDV6 diesel sits at £5,000–£7,500, while the 4.0 V6 petrol is significantly cheaper at £2,500–£4,500. Fitting adds £650–£1,300 depending on engine and specialist location."
+      },
+      {
+        "id": 2,
+        "question": "Which Land Rover Discovery 3 engine is the most reliable?",
+        "answer": "The 448PN 4.4 V8 petrol and the 406PN 4.0 V6 petrol are the most reliable options — both are naturally aspirated, simpler designs with no catastrophic failure modes. The 276DT TDV6 diesel carries this generation's defining risk: crankshaft-bearing failure is a well-documented £5,000+ bill waiting to happen [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Land Rover Discovery 3?",
+        "answer": "Crankshaft-bearing failure and oil pump housing failure on the 276DT TDV6 diesel are the two most significant engine problems — both can destroy the engine without warning. The 448PN V8 petrol suffers from coolant crossover pipe leaks, which are cheap to prevent but expensive if ignored. The 406PN V6 is the most robust engine in the range."
+      },
+      {
+        "id": 4,
+        "question": "Is the Land Rover Discovery 3 reliable?",
+        "answer": "It depends entirely on which engine you choose. Petrol-powered L319s (4.0 V6 and 4.4 V8) are generally reliable, well-understood designs. The 2.7 TDV6 diesel, however, is high-risk — crankshaft-bearing failure and oil pump issues are common enough that we recommend avoiding the diesel unless you have documented proof of preventative work already completed."
+      },
+      {
+        "id": 5,
+        "question": "Which Land Rover Discovery 3 engine should I avoid?",
+        "answer": "The 276DT 2.7 TDV6 diesel is the engine we consistently advise against — catastrophic crankshaft-bearing failure is a well-documented pattern, and a full engine replacement costs £5,000–£7,500 [EM-QUOTE], which frequently exceeds the value of an older Discovery 3. Without documented oil pump or crankshaft work, it's a gamble we wouldn't take."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my Discovery 3 engine needs replacing?",
+        "answer": "Cold-start knock on the TDV6 diesel is the classic early warning of crankshaft-bearing failure — investigate immediately. Low oil pressure warning lights, rough running, or blue smoke from any engine are also key warning signs. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Discovery 3 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £12,000 Discovery 3, a £5,000 TDV6 recon is 42% of the car's value — safe. Against a tired £5,000 example, the same recon is 100% — walk away. Our 60% Land Rover scrap threshold is the line: if replacement cost exceeds 60% of the car's value, evaluate scrap first [EM-VERIFIED]."
+      },
+      {
+        "id": 8,
+        "question": "How long do Land Rover Discovery 3 engines last?",
+        "answer": "The 448PN V8 petrol can exceed 200,000 miles with proper servicing — its only major weakness is coolant crossover pipe leaks, which are preventable. The 406PN V6 is similarly durable. The 276DT TDV6 diesel is limited by its crankshaft-bearing design; addressed proactively with oil analysis and preventative bearing replacement, it can reach 140,000+ miles, but many fail earlier."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the Discovery 3 and Discovery 4?",
+        "answer": "Both share the L319 chassis code, but the Discovery 4 (2009–2016) received significant mechanical updates including the 3.0 SDV6 diesel, a revised 2.7 TDV6, a 5.0 V8 petrol, and a facelifted interior. Costs and reliability profiles differ — see the Discovery 4 Generation Page for specifics."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Land Rover Discovery 3 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block (visible from below on the TDV6, and from above on the V6/V8 petrols). Tell us your variant (TDV6, V6, or V8) and we'll identify it — 12 vetted Land Rover specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK Land Rover Discovery 3 L319 Owners Trust LandRoverEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted L319 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Discovery 3 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare Discovery 3 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for L319",
+        "text": "covering every variant from TDV6 to V8, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Land Rover Discovery 3 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare Land Rover Discovery 3 L319 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

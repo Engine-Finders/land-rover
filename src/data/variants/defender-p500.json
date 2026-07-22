@@ -457,7 +457,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain tensioner wear — the single most documented AJ133 issue [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "65,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£8,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "508PS (AJ133) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), London (18%), South West (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

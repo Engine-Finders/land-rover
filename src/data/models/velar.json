@@ -1,24 +1,238 @@
 {
   "meta": {
     "slug": "velar",
-    "title": "Velar Engines — The Complete UK Guide",
-    "titleCharCount": 37,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "Range Rover Velar Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 61,
+    "description": "Every Range Rover Velar engine — Ingenium to SDV6. 1 generation, real UK costs and reliability data. Compare prices from vetted JLR specialists today.",
+    "descriptionCharCount": 150,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Range Rover Velar Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Range Rover Velar engine — Ingenium to SDV6. 1 generation, real UK costs and reliability data. Compare prices from vetted JLR specialists today.",
+      "type": "website",
+      "url": "https://rangeroverengine.uk/velar/",
+      "image": "https://rangeroverengine.uk/images/velar-hero.jpg",
+      "siteName": "RangeRoverEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "Range Rover Velar Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Range Rover Velar engine — Ingenium to SDV6. 1 generation, real UK costs and reliability data. Compare prices from vetted JLR specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rangeroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Velar",
+              "item": "https://rangeroverengine.uk/velar/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Range Rover Velar Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover Velar L560 Pre-Facelift (2017–2020)",
+              "url": "https://rangeroverengine.uk/velar/l560/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Velar L560 Facelift (2021–present)",
+              "url": "https://rangeroverengine.uk/velar/l560/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Range Rover Velar Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD Ingenium Diesel",
+              "url": "https://rangeroverengine.uk/engines/204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "306DT SDV6 D300",
+              "url": "https://rangeroverengine.uk/engines/306dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "204PT Ingenium Petrol",
+              "url": "https://rangeroverengine.uk/engines/204pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "AJ126 P380 Supercharged V6",
+              "url": "https://rangeroverengine.uk/engines/aj126/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "AJ133 P550 SVAD V8",
+              "url": "https://rangeroverengine.uk/engines/aj133/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "AJ20D6 D300 Straight-Six",
+              "url": "https://rangeroverengine.uk/engines/aj20d6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "AJ20P6 P400 Ingenium 6",
+              "url": "https://rangeroverengine.uk/engines/aj20p6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "P400e Ingenium PHEV",
+              "url": "https://rangeroverengine.uk/engines/p400e/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Velar engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Reconditioned units run £3,000–£9,500 supply only depending on engine [EM-QUOTE] — the volume 204DTD at £3,500–£5,800, either D300 at £6,500–£9,500. Fitting adds £650–£1,900. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Velar engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 204PT petrol has the cleanest record in our data, with the post-2021 AJ20D6 and AJ20P6 sixes close behind on early evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Velar engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 2017–2020 D300 (306DT V6) without documented oil-interval history — it carries the same crankshaft-bearing risk as its Discovery and Range Rover Sport siblings. A pre-2019 D180 without a chain inspection is the other caveat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Velar D300 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Which one? The 2021+ D300 (AJ20D6 straight-six) — yes, genuinely. The 2017–2020 D300 (306DT V6) — only with maintenance history, because of the bottom-end risk. Same badge, two engines."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Velar engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Almost always — Velar values comfortably clear our 60% scrap-threshold rule against every recon cost in the range. The only maths worth running twice is a V6 D300 quote against the cheapest early cars. Use the Ownership Decision Tool for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Velar should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 2021-or-later facelift — every caveated engine left the range at once, and Pivi Pro fixed the infotainment complaints in the same stroke. Use our powertrain chooser above to pick the engine for your miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Velar engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "On the VIN plate and vehicle documentation. On this model the year does most of the work: D300 before 2021 = 306DT V6; from 2021 = AJ20D6. Or tell us your variant and year and we'll identify it."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Velar vs Range Rover Sport — which should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Velar is the design pick; the Sport is the capability pick, with more towing, more engines and (used) more risk exposure via the SDV6. Same money buys a newer Velar or an older Sport — on engine risk alone, the newer Velar usually wins."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "RangeRoverEngines.uk",
+          "url": "https://rangeroverengine.uk/",
+          "logo": "https://rangeroverengine.uk/images/rangeroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Range Rover Velar Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "RangeRoverEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "9500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Range Rover Velar UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Range Rover Velar engines, sourced from RangeRoverEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "RangeRoverEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Range Rover Velar Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://rangeroverengine.uk/velar/",
+          "author": {
+            "@type": "Organization",
+            "name": "RangeRoverEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "RangeRoverEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-10",
+          "dateModified": "2026-07-10"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Velar • 2017–Present • 1 Generation (L560) • Ingenium, SDV6, PHEV",

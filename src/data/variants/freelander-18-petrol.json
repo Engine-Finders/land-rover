@@ -451,7 +451,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Head gasket failure — the defining issue of the K-series engine [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–110,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£900–£1,800 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "18K4F — the classic K-series petrol [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling system problems more visible in warm weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (16%), Midlands (15%), South East (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

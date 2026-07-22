@@ -556,44 +556,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), South West (15%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Land Rover Range Rover Sport SVR engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned Range Rover Sport SVR (AJ133 5.0 SC V8) engine typically costs £5,500–£9,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the Land Rover Range Rover Sport SVR engine reliable?"
-      },
-      {
-        "label": "The AJ133 5.0-litre supercharged V8 is a phenomenal engine — it delivers epic performance and a glorious soundtrack. But it has three well-documented weak points: timing chain tensioner failure, plastic coolant pipe failure, and oil consumption. Properly maintained (frequent oil changes, aluminium coolant pipes fitted), it can be reliable; neglected, it becomes very expensive.",
-        "value": "3. What are the common problems with the Range Rover Sport SVR?"
-      },
-      {
-        "label": "Timing chain tensioner failure (cold-start rattle is the early warning), plastic coolant pipe failure in the \"V\" of the engine (Land Rover now offers aluminium replacements), excessive oil consumption (1L per 1,000 miles in some cases), and supercharger seal leaks. All are manageable with preventative maintenance and early detection.",
-        "value": "4. Is it worth replacing a Range Rover Sport SVR engine, or should I scrap the car?"
-      },
-      {
-        "label": "Against a well-maintained SVR (values £35,000–£70,000+ depending on year and mileage), a £6,000–£8,000 reconditioned engine is 10–25% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is almost always viable on an SVR, given the model's strong enthusiast following and residual values.",
-        "value": "5. How do I find my Range Rover Sport SVR engine code?"
-      },
-      {
-        "label": "The engine code AJ133 is listed on the VIN plate and vehicle documentation. The SVR was offered on the L494 from 2014–2022 (550PS 2014–2017, 575PS 2017–2022) and returned on the L461 in 2024 with a BMW-sourced 4.4TT V8. If your L494 is an SVR, it's the AJ133. Check your V5C or VIN plate for confirmation.",
-        "value": "6. Can I repair the timing chain, or does it require engine replacement?"
-      },
-      {
-        "label": "Timing chain tensioner failure is repairable without replacing the engine — if caught early. A preventative chain and tensioner replacement costs £1,200–£2,500. If the chain skips and valves meet pistons, a full engine replacement (£5,500–£9,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover Sport SVR engine replacement cost in the UK?",
+        "answer": "A reconditioned Range Rover Sport SVR (AJ133 5.0 SC V8) engine typically costs £5,500–£9,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover Sport SVR engine reliable?",
+        "answer": "The AJ133 5.0-litre supercharged V8 is a phenomenal engine — it delivers epic performance and a glorious soundtrack. But it has three well-documented weak points: timing chain tensioner failure, plastic coolant pipe failure, and oil consumption. Properly maintained (frequent oil changes, aluminium coolant pipes fitted), it can be reliable; neglected, it becomes very expensive."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover Sport SVR?",
+        "answer": "Timing chain tensioner failure (cold-start rattle is the early warning), plastic coolant pipe failure in the \"V\" of the engine (Land Rover now offers aluminium replacements), excessive oil consumption (1L per 1,000 miles in some cases), and supercharger seal leaks. All are manageable with preventative maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover Sport SVR engine, or should I scrap the car?",
+        "answer": "Against a well-maintained SVR (values £35,000–£70,000+ depending on year and mileage), a £6,000–£8,000 reconditioned engine is 10–25% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is almost always viable on an SVR, given the model's strong enthusiast following and residual values."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover Sport SVR engine code?",
+        "answer": "The engine code AJ133 is listed on the VIN plate and vehicle documentation. The SVR was offered on the L494 from 2014–2022 (550PS 2014–2017, 575PS 2017–2022) and returned on the L461 in 2024 with a BMW-sourced 4.4TT V8. If your L494 is an SVR, it's the AJ133. Check your V5C or VIN plate for confirmation."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the timing chain, or does it require engine replacement?",
+        "answer": "Timing chain tensioner failure is repairable without replacing the engine — if caught early. A preventative chain and tensioner replacement costs £1,200–£2,500. If the chain skips and valves meet pistons, a full engine replacement (£5,500–£9,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Land Rover Range Rover Sport SVR Owners Trust LandRoverEngine.uk",

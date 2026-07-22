@@ -494,7 +494,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing belt neglect — failure to replace at 48,000-mile intervals leads to catastrophic engine damage【PATTERN DATA】"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000–120,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,500 reconditioned, supply only【PLACEHOLDER】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "L-series (20T2N)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring / Summer — classic Freelander owners prepare for overlanding season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (16%), South East (15%), Wales (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

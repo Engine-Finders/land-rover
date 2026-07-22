@@ -7,18 +7,18 @@
     "descriptionCharCount": 159,
     "canonical": "https://landroverengine.uk/evoque/d150/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "D150 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Evoque D150 MHEV — real UK costs, EGR & DPF insight, and honest reliability data for the 2.0 Ingenium diesel. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/evoque/d150/",
+      "image": "https://landroverengine.uk/images/landrover/hero/evoque-d150.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "D150 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Evoque D150 MHEV — real UK costs, EGR & DPF insight, and honest reliability data for the 2.0 Ingenium diesel.",
+      "image": "https://landroverengine.uk/images/landrover/hero/evoque-d150.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "slug": "m57-td6",
+    "slug": "bmw-m57-td6",
     "title": "BMW M57 Td6 Engine — Reliability",
     "description": "The BMW M57 is one of the most celebrated diesel sixes ever built — smooth, torquey, and bombproof. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
     "canonical": "https://landroverengine.uk/engines/bmw-m57-td6/",
@@ -231,81 +231,46 @@
       {
         "metric": "Overall Engine Score",
         "value": "76/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: M57 Td6 — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: ★★★★ out of 5",
-        "value": "Confidence: 88% confidence — based on 20+ years of real-world data, enthusiast consensus, and specialist workshop reports."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "16"
-      },
-      {
-        "metric": "Star rating (4.0★) × 4 = 16",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "16",
-        "value": "Midpoint of Reconditioned (Supply Only) range: £1,500–£2,500 → £2,000 midpoint → falls in under £3,000 bracket → 20"
-      },
-      {
-        "metric": "Repairability",
-        "value": "16"
-      },
-      {
-        "metric": "Well-understood inline-six layout; parts widely available; BMW and Land Rover specialist networks both cover it",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "16",
-        "value": "Excellent parts availability through BMW, Land Rover, and aftermarket channels"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "12"
-      },
-      {
-        "metric": "Reconditioned cost (£2,000 midpoint) as % of lowest typical vehicle value (L322 ~£4,000–£6,000) = 33–50% → falls in 30–44% bracket → 16",
-        "value": "Total"
-      },
-      {
-        "metric": "76/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: The M57 is one of BMW's finest diesel sixes — robust, refined, and long-lived — but swirl flaps and turbo wear need attention — buy with full service history.",
-        "value": "Best For / Avoid If:"
-      },
-      {
-        "metric": "* Best for: high-mileage drivers wanting a smooth, torquey diesel with legendary durability.",
-        "value": "* Avoid if: you're looking at a neglected example with no service history or evidence of swirl flap issues."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "★★★★ out of 5",
+    "confidence": "88% confidence — based on 20+ years of real-world data, enthusiast consensus, and specialist workshop reports.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (Star rating (4.0★) × 4 = 16)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £1,500–£2,500 → £2,000 midpoint → falls in under £3,000 bracket → 20)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "16 (Well-understood inline-six layout; parts widely available; BMW and Land Rover specialist networks both cover it)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "16 (Excellent parts availability through BMW, Land Rover, and aftermarket channels)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "12 (Reconditioned cost (£2,000 midpoint) as % of lowest typical vehicle value (L322 ~£4,000–£6,000) = 33–50% → falls in 30–44% bracket → 16)"
+        },
+        {
+          "dimension": "Total",
+          "score": "76/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
+    "oneLineVerdict": "The M57 is one of BMW's finest diesel sixes — robust, refined, and long-lived — but swirl flaps and turbo wear need attention — buy with full service history.",
     "bestFor": "",
     "avoidIf": ""
   },

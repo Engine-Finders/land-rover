@@ -451,7 +451,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Water pump and cooling system leaks — the most frequently reported issue with the 204PT [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–80,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,000–£5,000 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204PT — the core petrol Ingenium across Evoque, Velar, Defender [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring – off‑road season and pre‑summer vehicle preparation [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), South West (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

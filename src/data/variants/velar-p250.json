@@ -7,18 +7,18 @@
     "descriptionCharCount": 158,
     "canonical": "https://landroverengine.uk/velar/p250/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "P250 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Velar P250 2.0 Ingenium petrol — real UK costs, cooling system & timing chain insight, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/velar/p250/",
+      "image": "https://landroverengine.uk/images/landrover/hero/velar-p250.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "P250 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Velar P250 2.0 Ingenium petrol — real UK costs, cooling system & timing chain insight, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/landrover/hero/velar-p250.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",

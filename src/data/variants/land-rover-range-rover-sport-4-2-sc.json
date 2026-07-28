@@ -1,26 +1,182 @@
 {
   "meta": {
-    "slug": "land-rover-range-rover-sport-4-2-sc",
-    "title": "Land Rover Range Rover Sport 4.2 Supercharged Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 94,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "range-rover-sport-42-sc",
+    "title": "Range Rover Sport 4.2 SC Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "The 390bhp supercharged AJ-V8 4.2 — common supercharger coupler and cooling issues, real UK costs, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://landroverengine.uk/range-rover-sport/42-sc/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Range Rover Sport 4.2 SC Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 390bhp supercharged AJ-V8 4.2 — common supercharger coupler and cooling issues, real UK costs, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/range-rover-sport/42-sc/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-42-sc.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Range Rover Sport 4.2 SC Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 390bhp supercharged AJ-V8 4.2 — common supercharger coupler and cooling issues, real UK costs, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-42-sc.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Sport",
+              "item": "https://landroverengine.uk/range-rover-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4.2 SC",
+              "item": "https://landroverengine.uk/range-rover-sport/42-sc/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport 4.2 SC Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover Sport L320 AJ-V8 4.2 SC (2005–2009)",
+              "url": "https://landroverengine.uk/range-rover-sport/42-sc/#aj-v8-42-sc"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport 4.2 SC Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ-V8 4.2 SC Supercharged V8",
+              "url": "https://landroverengine.uk/engines/aj-v8-42-sc/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover Sport 4.2 SC engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Range Rover Sport 4.2 SC engine costs £4,500–£7,500 supply only. Fitting adds £1,400–£2,200. These are specialist-only replacements — the supercharged AJ-V8 requires Land Rover/Jaguar specialist expertise. A supercharger coupler replacement costs £400–£800."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover Sport 4.2 SC reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 4.2 SC is a robust and characterful engine, but it has known weak points. The supercharger coupler wears (rattle at idle, £400–£800), the plastic coolant crossover pipes fail (coolant loss, £800–£2,000), and pre-2010 timing chain tensioners need monitoring (£1,500–£3,500). Regular maintenance and proactive replacement of the known weak points make it a reliable performance engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover Sport 4.2 SC?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Supercharger coupler wear (rattling at idle, £400–£800), plastic coolant crossover pipe failure (coolant loss, overheating, £800–£2,000), and timing chain tensioner wear on pre-2010 examples (£1,500–£3,500). The supercharger is generally durable if the coupler is maintained."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover Sport 4.2 SC engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Range Rover Sport L320 values range from £4,000–£15,000 depending on condition and mileage. A £4,500–£7,500 reconditioned engine represents 30–60% of vehicle value — our 60% Land Rover scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. For a higher-mileage example with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Range Rover Sport 4.2 SC engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Range Rover Sport L320 4.2 SC uses the AJ-V8 4.2 SC engine code — a supercharged 4.2-litre V8 producing 390bhp. This is the same engine used in the Jaguar XKR, XFR and other performance models. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the supercharger coupler issue, or does the supercharger need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — in many cases the coupler alone can be replaced (£400–£800) without needing a full supercharger rebuild (£1,500–£4,000). The coupler is a spring-loaded wear item; replacement restores smooth, quiet operation. At the first sign of rattle at idle, book an inspection — ignored coupler wear can damage the supercharger's internal bearings."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Sport 4.2 SC Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "9000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Sport 4.2 SC UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Range Rover Sport 4.2 SC engine, sourced from LandRoverEngine.uk's specialist marketplace activity for the AJ-V8 4.2 SC.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Range Rover Sport 4.2 SC Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover-sport/42-sc/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Land Rover Range Rover Sport 4.2 SC • 2005–2009 • 390bhp Supercharged V8",

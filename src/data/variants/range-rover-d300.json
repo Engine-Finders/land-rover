@@ -476,7 +476,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "EGR cooler coolant leak — particularly on L405-era cars [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "45,000–65,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ20D6 [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cooling and DPF issues exposed [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), London (18%), South West (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

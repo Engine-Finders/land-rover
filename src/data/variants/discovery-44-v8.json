@@ -7,18 +7,18 @@
     "descriptionCharCount": 158,
     "canonical": "https://landroverengine.uk/discovery/44-v8/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "4.4 V8 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Discovery 4.4 V8 — real UK costs, timing chain insight, and honest reliability data for the AJ-V8 4.4. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/discovery/44-v8/",
+      "image": "https://landroverengine.uk/images/landrover/hero/discovery-44-v8.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "4.4 V8 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Land Rover Discovery 4.4 V8 — real UK costs, timing chain insight, and honest reliability data for the AJ-V8 4.4.",
+      "image": "https://landroverengine.uk/images/landrover/hero/discovery-44-v8.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",

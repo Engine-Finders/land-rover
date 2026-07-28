@@ -1,26 +1,212 @@
 {
   "meta": {
-    "slug": "land-rover-defender-v8",
-    "title": "Land Rover Defender V8 Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 71,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "defender-v8",
+    "title": "V8 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 55,
+    "description": "Every Land Rover Defender V8 engine — 3.5 carb, 3.9 EFI, 4.0. Real UK costs, the liner-slip story explained by era, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 156,
+    "canonical": "https://landroverengine.uk/defender/v8/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "V8 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Defender V8 engine — 3.5 carb, 3.9 EFI, 4.0. Real UK costs, the liner-slip story explained by era, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/defender/v8/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/defender-v8.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "V8 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Land Rover Defender V8 engine — 3.5 carb, 3.9 EFI, 4.0. Real UK costs, the liner-slip story explained by era, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/defender-v8.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Defender",
+              "item": "https://landroverengine.uk/defender/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "V8",
+              "item": "https://landroverengine.uk/defender/v8/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender V8 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Defender V8 3.5 Carb (1983-1985)",
+              "url": "https://landroverengine.uk/defender/v8/#3-5-carb"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Defender V8 3.9 EFI (1986-1994)",
+              "url": "https://landroverengine.uk/defender/v8/#3-9-efi"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Defender V8 4.0 GEMS/Thor (1995-1997)",
+              "url": "https://landroverengine.uk/defender/v8/#4-0-gems"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Defender 50th Anniversary V8 (1998)",
+              "url": "https://landroverengine.uk/defender/v8/#50th-anniversary"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Defender V8 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Rover V8 3.5 (Carb)",
+              "url": "https://landroverengine.uk/engines/rover-v8-35/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Rover V8 3.9 (EFI)",
+              "url": "https://landroverengine.uk/engines/rover-v8-39/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Rover V8 4.0 (GEMS/Thor)",
+              "url": "https://landroverengine.uk/engines/rover-v8-40/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Defender V8 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Defender V8 engine typically costs £2,500–£5,500 supply only depending on era, with the late 4.0 sitting at £2,500–£5,500. Fitting adds £650–£1,300. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Defender V8 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "That depends on which of the four engine configurations your Defender has. The 3.5 carburettor (1983–1985) is widely considered the most durable configuration — simple, no ECU, easy to fix. The 3.9 EFI (1986–1994) adds some complexity but retains the same core reliability. The late 4.0 (1995–1997) introduces liner-slippage risk — a well-documented issue — but can be permanently cured with top-hat liners. Check the Era Map above for your specific car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Defender V8?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cylinder liner slippage on the 4.0 V8 (coolant loss, overheating), timing chain wear across all eras (rattling on startup), and carburettor/EFI system issues on 3.5/3.9 variants (age-related rubber perishing and electrical corrosion). The 4.0's liner risk is the most significant financial exposure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Defender V8 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept £10,000 Defender V8 with 4.0 engine, a £4,000 rebuild is 40% of the car's value — worth it. Against a tired £4,000 example, the same rebuild exceeds our 60% Land Rover threshold — get a scrap valuation first. For 3.5 and 3.9 examples, the simpler engine often makes repair more viable relative to vehicle value."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Defender V8 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Land Rover's VIN plate and engine block stamping. As a rule of thumb: pre-1986 is 3.5 carburettor, 1986–1994 is 3.9 EFI, 1995–1997 is 4.0 GEMS/Thor, and 1998 (50th Anniversary) is late 3.9 or 4.0. The engine code is stamped on the block's left-hand side near the dipstick."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 4.0 V8 liner issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. Top-hat liner installation (£1,500–£2,500) is a permanent cure for the classic Rover V8 liner-slip problem. If the block has already cracked or the liners have dropped significantly, replacement may be the only viable option (£2,500–£5,500 for a reconditioned long-block). At the first sign of coolant loss, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Defender V8 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Defender V8 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Defender V8 engines across all eras, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "V8 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/defender/v8/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Land Rover Defender V8 • 1983–1998 • 4 Engine Variants",

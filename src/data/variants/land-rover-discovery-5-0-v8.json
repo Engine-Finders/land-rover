@@ -1,26 +1,182 @@
 {
   "meta": {
-    "slug": "land-rover-discovery-5-0-v8",
-    "title": "Land Rover Discovery 5.0 V8 Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 76,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "discovery-50-v8",
+    "title": "Discovery 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 56,
+    "description": "The 375hp AJ133 5.0 V8 — common timing chain and cooling issues, real UK costs, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://landroverengine.uk/discovery/50-v8/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Discovery 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 375hp AJ133 5.0 V8 — common timing chain and cooling issues, real UK costs, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/discovery/50-v8/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-50-v8.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Discovery 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 375hp AJ133 5.0 V8 — common timing chain and cooling issues, real UK costs, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-50-v8.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Discovery",
+              "item": "https://landroverengine.uk/discovery/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "5.0 V8",
+              "item": "https://landroverengine.uk/discovery/50-v8/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 5.0 V8 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Discovery 4 (L319) AJ133 5.0 V8 (2010–2016)",
+              "url": "https://landroverengine.uk/discovery/50-v8/#aj133"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Discovery 5.0 V8 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ133 5.0L V8",
+              "url": "https://landroverengine.uk/engines/aj133/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Discovery 5.0 V8 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Discovery 5.0 V8 engine (AJ133) typically costs £6,000–£8,000 supply only. Fitting adds £1,400–£2,100. These are specialist-only replacements — the AJ133 requires Land Rover or Jaguar specialist expertise. A timing chain job alone costs £2,000–£4,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Discovery 5.0 V8 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ133 5.0 V8 is fundamentally robust and characterful, but early examples (2010–2012) are known for timing chain guide wear. The single most important factor is oil change frequency — 5,000–7,500 mile intervals are essential to prevent chain issues. JLR revised the guide design in 2015, so post-2015 cars are more reliable from new. The plastic coolant crossover pipes are also a known weakness."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Discovery 5.0 V8?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain guide wear on pre-2015 models (rattling on startup, £2,000–£4,000 repair), plastic coolant crossover pipe failure (coolant loss, overheating, £800–£2,000 repair), and carbon build-up on intake valves due to direct injection (rough idle, reduced power, £400–£800 for walnut blasting)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Discovery 5.0 V8 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Discovery 4 values range from £6,000–£18,000 depending on condition and mileage. A £7,000–£8,000 reconditioned engine replacement represents 40–60% of vehicle value on lower-value examples — our 60% Land Rover scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. For a higher-mileage example with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Discovery 5.0 V8 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Discovery 4 5.0 V8 uses a single engine code: AJ133 (sometimes listed as 508PN or LR-V8 Gen III). This is Jaguar Land Rover's third-generation AJ-V8, introduced in 2009. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the timing chain issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. Timing chain and guide replacement costs £2,000–£4,000 and is significantly cheaper than a full engine replacement (£5,000–£8,500). The job requires approximately 18.4 hours of labour, making it a major but worthwhile investment on a well-maintained Discovery. At the first sign of cold-start rattle, book an inspection immediately — ignored chain wear can lead to catastrophic failure."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Discovery 5.0 V8 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4000",
+            "highPrice": "16000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Discovery 5.0 V8 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Discovery 5.0 V8 engine, sourced from LandRoverEngine.uk's specialist marketplace activity for the AJ133.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Discovery 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/discovery/50-v8/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Land Rover Discovery 5.0 V8 • 2010–2016 • AJ133 5.0L V8",

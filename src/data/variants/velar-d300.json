@@ -496,7 +496,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "306DT: crankshaft bearing fatigue / AJ20D6: EGR cooler leak [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "85,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£7,500 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "306DT (980 enquiries) / AJ20D6 (growing) [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose bearing issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (19%), South West (16%), London (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

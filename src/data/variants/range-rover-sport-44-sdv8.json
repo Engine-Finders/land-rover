@@ -457,7 +457,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Oil cooler leaks — the most documented 448DT issue [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "85,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£7,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "448DT [EM-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — DPF and cooling issues exposed [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (19%), London (17%), South West (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

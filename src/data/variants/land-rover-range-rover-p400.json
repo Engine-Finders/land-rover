@@ -1,26 +1,188 @@
 {
   "meta": {
-    "slug": "land-rover-range-rover-p400",
-    "title": "Land Rover Range Rover P400 Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 76,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "range-rover-p400",
+    "title": "Range Rover P400 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "The 400PS 3.0L Ingenium MHEV — real UK costs, common ignition and 48V system issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://landroverengine.uk/range-rover/p400/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Range Rover P400 Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 400PS 3.0L Ingenium MHEV — real UK costs, common ignition and 48V system issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/range-rover/p400/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-p400.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Range Rover P400 Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 400PS 3.0L Ingenium MHEV — real UK costs, common ignition and 48V system issues, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-p400.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover",
+              "item": "https://landroverengine.uk/range-rover/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P400",
+              "item": "https://landroverengine.uk/range-rover/p400/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover P400 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover L405 P400 (2019–2021)",
+              "url": "https://landroverengine.uk/range-rover/p400/#l405"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover L460 P400 (2021–present)",
+              "url": "https://landroverengine.uk/range-rover/p400/#l460"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover P400 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ20P6 / PT306 3.0L Ingenium I6 MHEV",
+              "url": "https://landroverengine.uk/engines/aj20p6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover P400 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Range Rover P400 engine (AJ20P6 / PT306) typically costs £5,500–£8,500 supply only. Fitting adds £1,400–£2,200. These are specialist-only replacements — the Ingenium 3.0L I6 requires Land Rover specialist expertise. An ignition coil replacement costs £350–£600."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover P400 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P400's 3.0-litre Ingenium inline-six is JLR's most advanced petrol engine. It's significantly more refined than the earlier V6s and has proven generally reliable. The main wear items are ignition coils (every 40,000–80,000 miles) and the 48V mild-hybrid BISG module. Regular oil changes (12,000 miles max) are essential to prevent timing chain stretch."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover P400?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ignition coil failure (misfire, rough idle, £350–£600 repair), 48V mild-hybrid BISG module faults (battery warnings, £800–£2,500 repair), and timing chain stretch on higher-mileage or poorly maintained examples (£2,000–£4,500 repair). Direct injector coking also occurs — walnut blasting every 60,000 miles is recommended."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover P400 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Range Rover P400 values range from £45,000–£150,000 depending on year, condition and mileage. A £5,500–£8,500 reconditioned engine represents 5–20% of vehicle value — well within our 60% Land Rover scrap threshold. For most examples, replacement is financially viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Range Rover P400 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P400 uses the AJ20P6 (also known as PT306) engine code — JLR's 3.0-litre Ingenium inline-six with 48V mild-hybrid. This is shared across L405 (2019–2021) and L460 (2021–present) Range Rovers. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the ignition coil issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — coil replacement is straightforward. The most common cause of P400 misfires is failed ignition coils. Replace all six coils and spark plugs together (£350–£600) as they degrade at similar rates. Symptoms include rough idle, hesitation, and worse performance in damp conditions. At the first sign of misfire, book an inspection — ignored misfires can damage the catalytic converter."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover P400 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4000",
+            "highPrice": "16000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover P400 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Range Rover P400 engine, sourced from LandRoverEngine.uk's specialist marketplace activity for the AJ20P6 / PT306 Ingenium 3.0L MHEV.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Range Rover P400 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover/p400/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Land Rover Range Rover P400 • 2019–present • 3.0L Ingenium MHEV",

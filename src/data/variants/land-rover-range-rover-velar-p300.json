@@ -1,26 +1,188 @@
 {
   "meta": {
-    "slug": "land-rover-range-rover-velar-p300",
-    "title": "Land Rover Range Rover Velar P300 Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 82,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "velar-p300",
+    "title": "Velar P300 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "The 296bhp 2.0L Ingenium petrol — real UK costs, common water pump and cooling issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://landroverengine.uk/velar/p300/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Velar P300 Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 296bhp 2.0L Ingenium petrol — real UK costs, common water pump and cooling issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/velar/p300/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/velar-p300.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Velar P300 Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 296bhp 2.0L Ingenium petrol — real UK costs, common water pump and cooling issues, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/velar-p300.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Velar",
+              "item": "https://landroverengine.uk/velar/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P300",
+              "item": "https://landroverengine.uk/velar/p300/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Velar P300 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Velar L560 P300 (2017–2022)",
+              "url": "https://landroverengine.uk/velar/p300/#pre-facelift"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Velar L560 P300 (2023–present)",
+              "url": "https://landroverengine.uk/velar/p300/#facelift"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Velar P300 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204PT 2.0L Ingenium Petrol",
+              "url": "https://landroverengine.uk/engines/204pt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover Velar P300 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Range Rover Velar P300 engine (204PT) typically costs £4,000–£6,500 supply only. Fitting adds £1,200–£1,800. These are specialist-only replacements — the Ingenium 2.0L petrol requires Land Rover specialist expertise. A water pump replacement costs £400–£800."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover Velar P300 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 204PT petrol Ingenium is significantly more reliable than the diesel variant. The main concerns are water pump failure on pre-2020 models (£400–£800) and timing chain stretch on higher-mileage examples if oil changes are neglected (£1,500–£3,000). Regular oil changes (12,000 miles max) with the correct 0W-20 C5 spec are essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover Velar P300?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Water pump failure (coolant loss, whining noise, £400–£800), timing chain stretch on higher-mileage or poorly maintained examples (£1,500–£3,000), and cooling system leaks (hoses, thermostat housing, £300–£1,000). Direct injector coking also occurs — walnut blasting every 60,000 miles is recommended."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover Velar P300 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Range Rover Velar P300 values range from £18,000–£50,000 depending on year, condition and mileage. A £4,000–£6,500 reconditioned engine represents 10–35% of vehicle value — well within our 60% Land Rover scrap threshold. For most examples, replacement is financially viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Range Rover Velar P300 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P300 uses the 204PT engine code — JLR's 2.0-litre Ingenium four-cylinder petrol. This is the same engine as the P250 but with higher output tuning. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the water pump issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — water pump replacement (£400–£800) is a straightforward repair on the 204PT. The pre-2020 water pumps have a plastic impeller that can fail; the revised unit is more durable. At the first sign of whining noise from the front of the engine or coolant loss, book an inspection immediately — ignored water pump failure can lead to overheating and serious engine damage."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Velar P300 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "13000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Velar P300 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Range Rover Velar P300 engine, sourced from LandRoverEngine.uk's specialist marketplace activity for the 204PT 2.0L Ingenium petrol.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Velar P300 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/velar/p300/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Land Rover Range Rover Velar P300 • 2017–present • 2.0L Ingenium Petrol",

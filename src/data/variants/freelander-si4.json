@@ -490,64 +490,68 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), South West (18%), London (15%) [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Land Rover Freelander Si4 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned Freelander Si4 (204PT) engine typically costs £2,500–£4,000 supply only. Fitting adds £700–£1,300 at independent Land Rover specialist rates. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the Land Rover Freelander Si4 engine reliable?"
-      },
-      {
-        "label": "The Si4's 204PT is a strong performer but requires meticulous maintenance. It is sensitive to oil quality and change intervals — the key weaknesses are turbocharger overheating, oil consumption (piston ring / bore scoring), and timing chain stretch. Properly maintained examples can reach 200,000–250,000 km; neglected ones fail much earlier.",
-        "value": "3. What are the common problems with the Freelander Si4?"
-      },
-      {
-        "label": "Turbocharger failure (overheating and oil starvation), excessive oil consumption (piston ring and bore scoring issues), and timing chain stretch. All three are well-documented across the EcoBoost / GTDi engine family and are manageable with preventative maintenance and early detection.",
-        "value": "4. Is it worth replacing a Freelander Si4 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Against a well-preserved Freelander 2 (values £4,000–£10,000 for good petrol examples), a £3,000–£4,000 reconditioned engine is 30–50% of the vehicle's value — often worth it for a solid example. For a tired example with extensive other issues, the Land Rover scrap threshold of 60% means evaluating the whole vehicle before committing.",
-        "value": "5. How do I find my Freelander Si4 engine code?"
-      },
-      {
-        "label": "The engine code is listed on the VIN plate and vehicle documentation. The Si4 204PT was only fitted to Freelander 2 models from the 2012 facelift until the model was discontinued in 2014. If your Freelander is a 2012–2014 petrol, it is almost certainly the 204PT (the earlier 3.2-litre Si6 was used 2006–2012). Check your V5C or VIN plate for confirmation.",
-        "value": "6. Can I repair the turbocharger, or does it require engine replacement?"
-      },
-      {
-        "label": "Turbocharger failure is almost always repairable without replacing the engine. A replacement or rebuilt turbo costs £800–£1,800 fitted. However, if the turbo has failed catastrophically and sent debris into the engine, a full engine replacement may be required. At the first sign of turbo noise or power loss, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "Section 9, the meta data, and the schema. This is a direct follow-up to my previous output which ended at \""
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA\".",
-        "value": "Looking at the user's scenario, they're clearly working through a series of Land Rover variant page generations. They've been asking for specific model/badge combos (Defender D240, Discovery 300Tdi, Discovery D250, Discovery Sport D200, and now Freelander Si4). Each time I generate Part 1, they ask for Part 2, following the two-prompt system outlined in the documents. Their identity is likely someone managing content production for the Land Rover engine site, possibly a content manager, SEO specialist, or project lead."
-      },
-      {
-        "label": "Their surface need is just \"complete the page,\" but their deeper need is consistency and adherence to the established template. They need this page to match the exact structure, tone, and data tagging rules defined in the AI Handover Document. They also need it to be publication-ready with all the technical SEO elements (meta tags, schema) that are crucial for search visibility and the site's knowledge graph.",
-        "value": "I need to follow the same pattern I used for the other Part 2 responses. This means:"
-      },
-      {
-        "label": "1. Start with Section 9 (Trust + Final CTA), using consultative mode because the Priority was Low. I can recycle the structure from the other Land Rover Part 2s but tailor the content for the Si4 specifically.",
-        "value": "2. Generate the meta title and description, keeping them within character limits."
-      },
-      {
-        "label": "3. Provide Open Graph and Twitter Card tags.",
-        "value": "4. Build the complete JSON-LD schema stack with all required blocks (BreadcrumbList, two ItemLists for Era Map and Engine Codes, FAQPage, Organization, Service with the correct price range, Dataset, WebPage). Conditional AggregateRating is omitted again."
-      },
-      {
-        "label": "5. Finish with the Production Note, which is critical for internal tracking and authority model confirmation. I need to state that the rating is \"NEWLY ASSIGNED\" based on 5 sources and that the price range sources from the Era Map.",
-        "value": "I should make sure all data tags ([PLACEHOLDER], [PATTERN DATA], [NEWLY ASSIGNED]) are correctly used. The Service schema's price range must span the full era map's costs (£1,500 to £5,000). The FAQ answers need to be consistent with the earlier section. The Production Note should mention the specific sources used for the new reliability rating."
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Freelander Si4 engine replacement cost in the UK?",
+        "answer": "A reconditioned Freelander Si4 (204PT) engine typically costs £2,500–£4,000 supply only. Fitting adds £700–£1,300 at independent Land Rover specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Freelander Si4 engine reliable?",
+        "answer": "The Si4's 204PT is a strong performer but requires meticulous maintenance. It is sensitive to oil quality and change intervals — the key weaknesses are turbocharger overheating, oil consumption (piston ring / bore scoring), and timing chain stretch. Properly maintained examples can reach 200,000–250,000 km; neglected ones fail much earlier."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Freelander Si4?",
+        "answer": "Turbocharger failure (overheating and oil starvation), excessive oil consumption (piston ring and bore scoring issues), and timing chain stretch. All three are well-documented across the EcoBoost / GTDi engine family and are manageable with preventative maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Freelander Si4 engine, or should I scrap the car?",
+        "answer": "Against a well-preserved Freelander 2 (values £4,000–£10,000 for good petrol examples), a £3,000–£4,000 reconditioned engine is 30–50% of the vehicle's value — often worth it for a solid example. For a tired example with extensive other issues, the Land Rover scrap threshold of 60% means evaluating the whole vehicle before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Freelander Si4 engine code?",
+        "answer": "The engine code is listed on the VIN plate and vehicle documentation. The Si4 204PT was only fitted to Freelander 2 models from the 2012 facelift until the model was discontinued in 2014. If your Freelander is a 2012–2014 petrol, it is almost certainly the 204PT (the earlier 3.2-litre Si6 was used 2006–2012). Check your V5C or VIN plate for confirmation."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the turbocharger, or does it require engine replacement?",
+        "answer": "Turbocharger failure is almost always repairable without replacing the engine. A replacement or rebuilt turbo costs £800–£1,800 fitted. However, if the turbo has failed catastrophically and sent debris into the engine, a full engine replacement may be required. At the first sign of turbo noise or power loss, book an inspection immediately."
+      },
+      {
+        "id": 1,
+        "question": "Start with Section 9 (Trust + Final CTA), using consultative mode because the Priority was Low. I can recycle the structure from the other Land Rover Part 2s but tailor the content for the Si4 specifically.",
+        "answer": ""
+      },
+      {
+        "id": 2,
+        "question": "Generate the meta title and description, keeping them within character limits.",
+        "answer": ""
+      },
+      {
+        "id": 3,
+        "question": "Provide Open Graph and Twitter Card tags.",
+        "answer": ""
+      },
+      {
+        "id": 4,
+        "question": "Build the complete JSON-LD schema stack with all required blocks (BreadcrumbList, two ItemLists for Era Map and Engine Codes, FAQPage, Organization, Service with the correct price range, Dataset, WebPage). Conditional AggregateRating is omitted again.",
+        "answer": ""
+      },
+      {
+        "id": 5,
+        "question": "Finish with the Production Note, which is critical for internal tracking and authority model confirmation. I need to state that the rating is \"NEWLY ASSIGNED\" based on 5 sources and that the price range sources from the Era Map.",
+        "answer": "I should make sure all data tags ([PLACEHOLDER], [PATTERN DATA], [NEWLY ASSIGNED]) are correctly used. The Service schema's price range must span the full era map's costs (£1,500 to £5,000). The FAQ answers need to be consistent with the earlier section. The Production Note should mention the specific sources used for the new reliability rating. LAND ROVER FREELANDER Si4 — VARIANT PAGE (PART 2)"
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Land Rover Freelander Si4 Owners Trust LandRoverEngine.uk",

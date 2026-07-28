@@ -499,44 +499,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (23%), London (20%), South West (15%) [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Land Rover Range Rover P510e engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned Range Rover P510e (PT306 AJ20P6) engine typically costs £5,500–£8,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the Land Rover Range Rover P510e engine reliable?"
-      },
-      {
-        "label": "The PT306 straight-six Ingenium petrol engine is robust and proven — it has no known catastrophic mechanical failures. However, the P510e is a complex PHEV with a 38.2kWh battery, 105kW electric motor, and AdBlue emissions system. Reliability depends on maintaining the PHEV system as much as the engine itself.",
-        "value": "3. What are the common problems with the Range Rover P510e?"
-      },
-      {
-        "label": "PHEV battery and charging system issues (software glitches, timed charging failures), AdBlue/SCR system faults (crystallisation and sensor failures common on PHEVs), and cooling system complexity (three separate cooling circuits). All are manageable with proper maintenance and early detection.",
-        "value": "4. Is it worth replacing a Range Rover P510e engine, or should I scrap the car?"
-      },
-      {
-        "label": "Against a well-maintained L460 Range Rover (values £60,000–£120,000+), a £6,000–£8,000 reconditioned engine is 5–15% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a P510e, given the L460's strong residual values.",
-        "value": "5. How do I find my Range Rover P510e engine code?"
-      },
-      {
-        "label": "The engine code PT306 (AJ20P6) is listed on the VIN plate and vehicle documentation. The P510e badge was offered from the L460's launch in 2022 until the 2024 model year update (replaced by P550e). If your L460 is a 2022–2023 PHEV with the highest-output powertrain, it is the P510e. Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the PHEV battery, or does it require replacement?"
-      },
-      {
-        "label": "PHEV battery issues are often software-related and repairable without replacing the battery. Battery management system (BMS) recalibration and software updates cost £500–£2,000. However, if the battery cells have degraded significantly (range drop of 30%+), cell replacement or full battery replacement may be required — £5,000–£10,000+. Regular use and avoiding deep discharges are the best prevention.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover P510e engine replacement cost in the UK?",
+        "answer": "A reconditioned Range Rover P510e (PT306 AJ20P6) engine typically costs £5,500–£8,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover P510e engine reliable?",
+        "answer": "The PT306 straight-six Ingenium petrol engine is robust and proven — it has no known catastrophic mechanical failures. However, the P510e is a complex PHEV with a 38.2kWh battery, 105kW electric motor, and AdBlue emissions system. Reliability depends on maintaining the PHEV system as much as the engine itself."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover P510e?",
+        "answer": "PHEV battery and charging system issues (software glitches, timed charging failures), AdBlue/SCR system faults (crystallisation and sensor failures common on PHEVs), and cooling system complexity (three separate cooling circuits). All are manageable with proper maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover P510e engine, or should I scrap the car?",
+        "answer": "Against a well-maintained L460 Range Rover (values £60,000–£120,000+), a £6,000–£8,000 reconditioned engine is 5–15% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a P510e, given the L460's strong residual values."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover P510e engine code?",
+        "answer": "The engine code PT306 (AJ20P6) is listed on the VIN plate and vehicle documentation. The P510e badge was offered from the L460's launch in 2022 until the 2024 model year update (replaced by P550e). If your L460 is a 2022–2023 PHEV with the highest-output powertrain, it is the P510e. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the PHEV battery, or does it require replacement?",
+        "answer": "PHEV battery issues are often software-related and repairable without replacing the battery. Battery management system (BMS) recalibration and software updates cost £500–£2,000. However, if the battery cells have degraded significantly (range drop of 30%+), cell replacement or full battery replacement may be required — £5,000–£10,000+. Regular use and avoiding deep discharges are the best prevention."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Land Rover Range Rover P510e Owners Trust LandRoverEngine.uk",

@@ -489,7 +489,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Oil pump bolt loosening (10P engines) — can cause sudden catastrophic failure"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000–150,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,600 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "15P (post-2002) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring / Summer — classic Defender owners prepare for overlanding season [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (18%), South East (16%), Wales (12%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

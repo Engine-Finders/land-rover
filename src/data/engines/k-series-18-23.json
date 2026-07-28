@@ -231,81 +231,46 @@
       {
         "metric": "Overall Engine Score",
         "value": "48/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: K-Series 1.8/2.3 — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: ★★½ out of 5",
-        "value": "Confidence: 85% confidence — based on extensive real-world data, specialist workshop reports, and enthusiast community documentation spanning two decades."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "10"
-      },
-      {
-        "metric": "Star rating (2.5★) × 4 = 10",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "12",
-        "value": "Midpoint of Reconditioned (Supply Only) range: £900–£1,800 → £1,350 midpoint → falls in under £3,000 bracket → 20"
-      },
-      {
-        "metric": "Repairability",
-        "value": "8"
-      },
-      {
-        "metric": "Head gasket failure is well-understood but requires precision; K-Series specialists are essential for quality rebuilds",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "8",
-        "value": "Parts availability for K-Series is good but declining; some components are becoming harder to source"
-      },
-      {
-        "metric": "**Replacement Economics",
-        "value": "10"
-      },
-      {
-        "metric": "Reconditioned cost (£1,350 midpoint) as % of lowest typical vehicle value (Freelander 1 ~£1,500–£3,000) = 45–90% → falls in 45–59% bracket → 12",
-        "value": "Total"
-      },
-      {
-        "metric": "48/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: The K-Series is a lightweight, revvy petrol four — but its head gasket failure is legendary — buy only with documented head gasket history and correct coolant.",
-        "value": "Best For / Avoid If:"
-      },
-      {
-        "metric": "* Best for: owners wanting a lightweight petrol engine with good power-to-weight ratio and revvy character.",
-        "value": "* Avoid if: you're looking at an example with no head gasket history or evidence of overheating."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "★★½ out of 5",
+    "confidence": "85% confidence — based on extensive real-world data, specialist workshop reports, and enthusiast community documentation spanning two decades.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "10 (Star rating (2.5★) × 4 = 10)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Midpoint of Reconditioned (Supply Only) range: £900–£1,800 → £1,350 midpoint → falls in under £3,000 bracket → 20)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "8 (Head gasket failure is well-understood but requires precision; K-Series specialists are essential for quality rebuilds)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "8 (Parts availability for K-Series is good but declining; some components are becoming harder to source)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "10 (Reconditioned cost (£1,350 midpoint) as % of lowest typical vehicle value (Freelander 1 ~£1,500–£3,000) = 45–90% → falls in 45–59% bracket → 12)"
+        },
+        {
+          "dimension": "Total",
+          "score": "48/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
+    "oneLineVerdict": "The K-Series is a lightweight, revvy petrol four — but its head gasket failure is legendary — buy only with documented head gasket history and correct coolant.",
     "bestFor": "",
     "avoidIf": ""
   },

@@ -1,26 +1,182 @@
 {
   "meta": {
-    "slug": "land-rover-range-rover-sport-p440e",
-    "title": "Land Rover Range Rover Sport P440e Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 83,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "range-rover-sport-p440e",
+    "title": "Range Rover Sport P440e Powertrain Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "The 440PS PHEV — 3.0L Ingenium petrol + 105kW e-motor. Real UK costs, common battery and ignition issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://landroverengine.uk/range-rover-sport/p440e/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Range Rover Sport P440e Powertrain Cost UK — Compare Quotes",
+      "description": "The 440PS PHEV — 3.0L Ingenium petrol + 105kW e-motor. Real UK costs, common battery and ignition issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "type": "website",
+      "url": "https://landroverengine.uk/range-rover-sport/p440e/",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-p440e.jpg",
+      "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Range Rover Sport P440e Powertrain Cost UK — Compare Quotes",
+      "description": "The 440PS PHEV — 3.0L Ingenium petrol + 105kW e-motor. Real UK costs, common battery and ignition issues, and honest reliability data.",
+      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-p440e.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Sport",
+              "item": "https://landroverengine.uk/range-rover-sport/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P440e",
+              "item": "https://landroverengine.uk/range-rover-sport/p440e/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport P440e Powertrain Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover Sport L461 P440e (2022–present)",
+              "url": "https://landroverengine.uk/range-rover-sport/p440e/#aj20p6-e-motor"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Land Rover Range Rover Sport P440e Powertrain Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ20P6 + e-motor 3.0L I6 PHEV",
+              "url": "https://landroverengine.uk/engines/aj20p6-phev/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Land Rover Range Rover Sport P440e powertrain replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Range Rover Sport P440e powertrain (AJ20P6 + e-motor) typically costs £6,500–£10,000 supply only. Fitting adds £1,800–£2,500. Hybrid system work requires specialist training. Battery replacement is a separate cost — approximately £8,000–£12,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Land Rover Range Rover Sport P440e reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P440e combines the proven AJ20P6 3.0-litre Ingenium petrol engine with a 105kW electric motor. The combustion engine is well-developed and reliable, with ignition coils as the main wear item. The hybrid system adds complexity, but early owner reports indicate strong reliability. Battery health is the long-term question mark — all lithium-ion batteries degrade over time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Range Rover Sport P440e?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PHEV battery degradation (reduced electric range, £8,000–£12,000 replacement), ignition coil failure on the combustion engine (misfire, rough idle, £350–£600 repair), and hybrid system software issues (drive mode malfunctions, warning lights, £150–£500 software update)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover Sport P440e powertrain, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Range Rover Sport P440e values range from £60,000–£120,000 depending on year, condition and mileage. A £6,500–£10,000 reconditioned powertrain represents 5–15% of vehicle value — well within our 60% Land Rover scrap threshold. For most examples, replacement is financially viable. Battery replacement at £8,000–£12,000 is a separate consideration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Land Rover Range Rover Sport P440e engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P440e uses the AJ20P6 engine code — JLR's 3.0-litre Ingenium inline-six — combined with a 105kW electric motor. This is the same engine as the P400 but with additional hybrid hardware. The total system output is 440PS. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the battery degradation issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In many cases, individual battery modules can be replaced (£2,000–£4,000 per module) rather than the entire pack (£8,000–£12,000). A Land Rover specialist can perform a battery health check to determine which cells have degraded. At the first sign of significant range reduction, book a health check. Regular AC charging (rather than rapid DC charging) and avoiding deep discharges help preserve battery life."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Land Rover Range Rover Sport P440e Powertrain Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4500",
+            "highPrice": "20000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Land Rover Range Rover Sport P440e UK Powertrain Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Range Rover Sport P440e powertrain, sourced from LandRoverEngine.uk's specialist marketplace activity for the AJ20P6 PHEV.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Range Rover Sport P440e Powertrain Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/range-rover-sport/p440e/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Land Rover Range Rover Sport P440e • 2022–present • 3.0L PHEV",

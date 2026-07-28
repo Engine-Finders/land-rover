@@ -457,7 +457,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Injection pump wear (Bosch VP44) — approximately 30% of Td4 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "120,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M47R [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose injection pump issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (16%), South East (15%), North West (13%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

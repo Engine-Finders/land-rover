@@ -451,7 +451,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing belt wear — the single most critical maintenance item on the 300Tdi [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "120,000–150,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,800–£4,200 reconditioned, supply only [EM-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "300Tdi — the definitive Defender diesel [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — classic car season and off-road event preparation [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South West (18%), Midlands (16%), South East (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

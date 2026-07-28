@@ -512,7 +512,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Charge air cooler coolant leak — JLR investigating on Ingenium I4 2.0L petrol engines"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "30,000–60,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,500–£11,000 reconditioned【EM-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ20P6 (PT204)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring / Summer — PHEV owners prepare for travel season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), London (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

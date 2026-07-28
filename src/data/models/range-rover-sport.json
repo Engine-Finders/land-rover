@@ -1,24 +1,274 @@
 {
   "meta": {
     "slug": "range-rover-sport",
-    "title": "Range Rover Sport Engines — The Complete UK Guide",
-    "titleCharCount": 49,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "Range Rover Sport Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 61,
+    "description": "Every Range Rover Sport engine — TDV6 to SDV8. 3 generations, real UK costs and reliability data. Compare prices from vetted JLR specialists today.",
+    "descriptionCharCount": 147,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Range Rover Sport Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Range Rover Sport engine — TDV6 to SDV8. 3 generations, real UK costs and reliability data. Compare prices from vetted JLR specialists today.",
+      "type": "website",
+      "url": "https://rangeroverengine.uk/range-rover-sport/",
+      "image": "https://rangeroverengine.uk/images/range-rover-sport-hero.jpg",
+      "siteName": "RangeRoverEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "Range Rover Sport Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Range Rover Sport engine — TDV6 to SDV8. 3 generations, real UK costs and reliability data. Compare prices from vetted JLR specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rangeroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Sport",
+              "item": "https://rangeroverengine.uk/range-rover-sport/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Range Rover Sport Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Range Rover Sport L320 (2005–2013)",
+              "url": "https://rangeroverengine.uk/range-rover-sport/l320/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Range Rover Sport L494 (2013–2022)",
+              "url": "https://rangeroverengine.uk/range-rover-sport/l494/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Range Rover Sport L461 (2022–present)",
+              "url": "https://rangeroverengine.uk/range-rover-sport/l461/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Range Rover Sport Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "276DT TDV6 2.7 Diesel",
+              "url": "https://rangeroverengine.uk/engines/276dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "306DT TDV6/SDV6 3.0 Diesel",
+              "url": "https://rangeroverengine.uk/engines/306dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "368DT TDV8 3.6 Diesel",
+              "url": "https://rangeroverengine.uk/engines/368dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "448DT SDV8 4.4 Diesel",
+              "url": "https://rangeroverengine.uk/engines/448dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "4.2 SC / 4.4 AJ-V8 Petrol",
+              "url": "https://rangeroverengine.uk/engines/aj-v8/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "AJ133 5.0 V8 SC Petrol",
+              "url": "https://rangeroverengine.uk/engines/aj133/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "AJ126 3.0 V6 SC Petrol",
+              "url": "https://rangeroverengine.uk/engines/aj126/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "204PT P400e Ingenium PHEV",
+              "url": "https://rangeroverengine.uk/engines/204pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "AJ20P6 P400 Ingenium 6 Petrol",
+              "url": "https://rangeroverengine.uk/engines/aj20p6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "AJ20D6 D300/D350 Ingenium 6 Diesel",
+              "url": "https://rangeroverengine.uk/engines/aj20d6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "P440e/P510e Ingenium 6 PHEV",
+              "url": "https://rangeroverengine.uk/engines/p440e/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "P530 4.4 BMW-derived V8",
+              "url": "https://rangeroverengine.uk/engines/p530/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "SV P635 BMW-derived V8",
+              "url": "https://rangeroverengine.uk/engines/sv-p635/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Range Rover Sport engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Reconditioned units run £3,000–£16,000 supply only depending on generation and engine [EM-QUOTE] — the volume SDV6 sits at £6,500–£9,500, the SDV8 at £8,000–£12,000. Fitting adds £780–£2,100. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Range Rover Sport engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 4.4 SDV8 (448DT) — the lowest failure-enquiry rate of any big engine in our data. Among current engines, the AJ20D6 D300/D350 is proving similarly strong."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Range Rover Sport engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2.7 TDV6 (276DT) without oil-pump history and the 3.0 TDV6/SDV6 (306DT) without documented oil intervals. Both fail catastrophically; on L320 values, both usually total the car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Range Rover Sport SDV6 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It's the range's defining risk: crankshaft bearing failure at higher mileages, announced by cold-start knock. Sports show it earlier than Discoverys in our patterns — harder lives. Impeccable oil history changes the odds dramatically. Use our diagnostic calculator if yours is knocking."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Range Rover Sport engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Generation decides. L461: always ✅. L494: usually ✅, marginal on the cheapest early cars ⚠️. L320: frequently ❌ for a recon — a used engine or walking away is often the honest answer. Use the Ownership Decision Tool for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Range Rover Sport should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A late L494 SDV8 or 2021+ D350 for the sweet spot; an L461 D350 if buying nearly new; an L320 TDV8 only as an informed enthusiast purchase with a contingency fund."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Range Rover Sport engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "On the VIN plate and vehicle documentation; block stampings vary by engine family. Or tell us your variant and year (SDV6, SDV8, D350, P530) and we'll identify it."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Range Rover Sport vs Range Rover — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Same engines, different lives. The Sport is driven harder and our failure enquiries reflect it — same failure modes, earlier mileages. The full-size car costs more to buy and less per surprise. Buy on engine and history, not badge."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "RangeRoverEngines.uk",
+          "url": "https://rangeroverengine.uk/",
+          "logo": "https://rangeroverengine.uk/images/rangeroverengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Range Rover Sport Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "RangeRoverEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "16000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Range Rover Sport UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Range Rover Sport engines, sourced from RangeRoverEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "RangeRoverEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Range Rover Sport Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://rangeroverengine.uk/range-rover-sport/",
+          "author": {
+            "@type": "Organization",
+            "name": "RangeRoverEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "RangeRoverEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-10",
+          "dateModified": "2026-07-10"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Range Rover Sport • 2005–Present • 3 Generations • TDV6, SDV6, TDV8, SDV8, V8, Ingenium",

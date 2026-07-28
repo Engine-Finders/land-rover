@@ -1,6 +1,6 @@
 {
   "meta": {
-    "slug": "m47",
+    "slug": "bmw-m47",
     "title": "BMW M47 (Td4) Engine — Reliability & Cost",
     "description": "The BMW M47 is a refined, economical turbo diesel — one of the best of its era, but swirl flap failure is its Achilles' heel. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
     "canonical": "https://landroverengine.uk/engines/bmw-m47/",
@@ -231,81 +231,46 @@
       {
         "metric": "Overall Engine Score",
         "value": "74/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: BMW M47 (Td4) — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: ★★★★ out of 5",
-        "value": "Confidence: 86% confidence — based on 20+ years of real-world data, enthusiast consensus, and specialist workshop reports."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "16"
-      },
-      {
-        "metric": "Star rating (4.0★) × 4 = 16",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "20",
-        "value": "Midpoint of Reconditioned (Supply Only) range: £1,500–£2,500 → £2,000 midpoint → falls in under £3,000 bracket → 20"
-      },
-      {
-        "metric": "Repairability",
-        "value": "16"
-      },
-      {
-        "metric": "Well-understood inline-four layout; parts widely available; BMW and Land Rover specialist networks both cover it",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "16",
-        "value": "Excellent parts availability through BMW, Land Rover, and aftermarket channels"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "12"
-      },
-      {
-        "metric": "Reconditioned cost (£2,000 midpoint) as % of lowest typical vehicle value (Freelander 1 ~£2,000–£4,000) = 50–100% → falls in 45–59% bracket → 12",
-        "value": "Total"
-      },
-      {
-        "metric": "80/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: The M47 is a refined, economical diesel four — swirl flap failure is the main risk — buy with documented swirl flap history and regular oil changes.",
-        "value": "Best For / Avoid If:"
-      },
-      {
-        "metric": "* Best for: high-mileage drivers wanting BMW refinement and economy in a Freelander.",
-        "value": "* Avoid if: you're looking at an example with no swirl flap history or evidence of neglect."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "★★★★ out of 5",
+    "confidence": "86% confidence — based on 20+ years of real-world data, enthusiast consensus, and specialist workshop reports.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (Star rating (4.0★) × 4 = 16)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "20 (Midpoint of Reconditioned (Supply Only) range: £1,500–£2,500 → £2,000 midpoint → falls in under £3,000 bracket → 20)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "16 (Well-understood inline-four layout; parts widely available; BMW and Land Rover specialist networks both cover it)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "16 (Excellent parts availability through BMW, Land Rover, and aftermarket channels)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "12 (Reconditioned cost (£2,000 midpoint) as % of lowest typical vehicle value (Freelander 1 ~£2,000–£4,000) = 50–100% → falls in 45–59% bracket → 12)"
+        },
+        {
+          "dimension": "Total",
+          "score": "80/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
+    "oneLineVerdict": "The M47 is a refined, economical diesel four — swirl flap failure is the main risk — buy with documented swirl flap history and regular oil changes.",
     "bestFor": "",
     "avoidIf": ""
   },

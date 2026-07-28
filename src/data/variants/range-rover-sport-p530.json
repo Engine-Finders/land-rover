@@ -508,44 +508,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (23%), London (19%), South West (14%) [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Land Rover Range Rover Sport P530 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned Range Rover Sport P530 (S68B44B) engine typically costs £6,000–£10,000 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the Land Rover Range Rover Sport P530 engine reliable?"
-      },
-      {
-        "label": "The S68B44B is a BMW-sourced 4.4-litre twin-turbo V8 that delivers 530PS and 750Nm of torque. It's a sophisticated engine but has known weak points: the 'Hot V' design generates extreme heat that can cause coolant hoses to become brittle, and a recall was issued for a missing turbo oil drain pipe gasket. Properly maintained, it's a reliable engine; neglected, cooling system repairs can be expensive.",
-        "value": "3. What are the common problems with the Range Rover Sport P530?"
-      },
-      {
-        "label": "'Hot V' cooling system hose failure (heat causes hoses to become brittle), turbo oil drain pipe gasket failure (recall issue — potential fire risk), engine mount failure (causing vibration at idle), and MHEV starting system issues. All are manageable with proper maintenance and early detection.",
-        "value": "4. Is it worth replacing a Range Rover Sport P530 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Against a well-maintained L461 Range Rover Sport (values £50,000–£90,000+), a £7,000–£9,000 reconditioned engine is 10–18% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a P530, given the L461's strong residual values.",
-        "value": "5. How do I find my Range Rover Sport P530 engine code?"
-      },
-      {
-        "label": "The engine code S68B44B is listed on the VIN plate and vehicle documentation. The P530 badge was offered on the L461 Range Rover Sport from 2022 until the 2024 model year update (replaced by SV in some markets). If your L461 is a 2022–2024 petrol V8 (not the P400 straight-six), it is the S68B44B. Tell us your registration and we'll confirm for free.",
-        "value": "6. Has the Range Rover Sport P530 been recalled, and should I be concerned?"
-      },
-      {
-        "label": "Yes — a recall was issued for certain 2022 models due to a missing or incorrectly installed turbo oil drain pipe gasket. A missing or miss-fitted gasket may lead to an oil leak, which in contact with the exhaust manifold can result in a fire. Land Rover wasn't aware of any fires or injuries at the time, but it's essential to check your vehicle's recall status and ensure any necessary work has been completed.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover Sport P530 engine replacement cost in the UK?",
+        "answer": "A reconditioned Range Rover Sport P530 (S68B44B) engine typically costs £6,000–£10,000 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover Sport P530 engine reliable?",
+        "answer": "The S68B44B is a BMW-sourced 4.4-litre twin-turbo V8 that delivers 530PS and 750Nm of torque. It's a sophisticated engine but has known weak points: the 'Hot V' design generates extreme heat that can cause coolant hoses to become brittle, and a recall was issued for a missing turbo oil drain pipe gasket. Properly maintained, it's a reliable engine; neglected, cooling system repairs can be expensive."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover Sport P530?",
+        "answer": "'Hot V' cooling system hose failure (heat causes hoses to become brittle), turbo oil drain pipe gasket failure (recall issue — potential fire risk), engine mount failure (causing vibration at idle), and MHEV starting system issues. All are manageable with proper maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover Sport P530 engine, or should I scrap the car?",
+        "answer": "Against a well-maintained L461 Range Rover Sport (values £50,000–£90,000+), a £7,000–£9,000 reconditioned engine is 10–18% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a P530, given the L461's strong residual values."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover Sport P530 engine code?",
+        "answer": "The engine code S68B44B is listed on the VIN plate and vehicle documentation. The P530 badge was offered on the L461 Range Rover Sport from 2022 until the 2024 model year update (replaced by SV in some markets). If your L461 is a 2022–2024 petrol V8 (not the P400 straight-six), it is the S68B44B. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Has the Range Rover Sport P530 been recalled, and should I be concerned?",
+        "answer": "Yes — a recall was issued for certain 2022 models due to a missing or incorrectly installed turbo oil drain pipe gasket. A missing or miss-fitted gasket may lead to an oil leak, which in contact with the exhaust manifold can result in a fire. Land Rover wasn't aware of any fires or injuries at the time, but it's essential to check your vehicle's recall status and ensure any necessary work has been completed."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Land Rover Range Rover Sport P530 Owners Trust LandRoverEngine.uk",

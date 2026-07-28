@@ -517,44 +517,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), South West (18%), London (15%) [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Land Rover Range Rover 3.6 TDV8 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned Range Rover 3.6 TDV8 (368DT) engine typically costs £5,500–£9,000 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the Land Rover Range Rover 3.6 TDV8 engine reliable?"
-      },
-      {
-        "label": "The 368DT is a fundamentally robust V8 diesel with a CGI block capable of 350,000 km. However, age-related issues with rubber air pipes, plastic thermostat housings, exhaust manifold gaskets, and turbo vane mechanisms are well-documented. Properly maintained, it's a reliable and refined engine; neglected, it becomes very expensive.",
-        "value": "3. What are the common problems with the Range Rover 3.6 TDV8?"
-      },
-      {
-        "label": "Air pipe cracking and boost leaks (the most common issue), exhaust manifold gasket failure (labour-intensive to repair), turbocharger vane mechanism wear (variable geometry turbos), and thermostat housing cracking (can cause sudden coolant loss). All are manageable with preventative maintenance and early detection.",
-        "value": "4. Is it worth replacing a Range Rover 3.6 TDV8 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Against a well-maintained L322 or L320 (values £5,000–£20,000+), a £6,000–£8,000 reconditioned engine is 30–60% of the vehicle's value — often worth it for a solid example. The Land Rover scrap threshold of 60% means evaluating the whole vehicle (including body, chassis, and suspension condition) before committing.",
-        "value": "5. How do I find my Range Rover 3.6 TDV8 engine code?"
-      },
-      {
-        "label": "The engine code 368DT is listed on the VIN plate and vehicle documentation. The 3.6 TDV8 was fitted to L322 Range Rovers from late 2006 to 2010 and L320 Range Rover Sports from 2007 to 2010. If your vehicle is a 2006–2010 L322 or 2007–2010 L320 diesel V8, it's the 368DT (the later 4.4-litre TDV8 replaced it in 2010/2011). Check your V5C or VIN plate for confirmation.",
-        "value": "6. Can I repair the turbochargers, or do they require engine replacement?"
-      },
-      {
-        "label": "Turbocharger vane mechanism wear is usually repairable without replacing the engine. A turbo rebuild or replacement costs £1,500–£3,000. However, if a turbo has failed catastrophically and sent debris into the engine, a full engine replacement may be required. At the first sign of boost issues or turbo noise, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover 3.6 TDV8 engine replacement cost in the UK?",
+        "answer": "A reconditioned Range Rover 3.6 TDV8 (368DT) engine typically costs £5,500–£9,000 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover 3.6 TDV8 engine reliable?",
+        "answer": "The 368DT is a fundamentally robust V8 diesel with a CGI block capable of 350,000 km. However, age-related issues with rubber air pipes, plastic thermostat housings, exhaust manifold gaskets, and turbo vane mechanisms are well-documented. Properly maintained, it's a reliable and refined engine; neglected, it becomes very expensive."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Range Rover 3.6 TDV8?",
+        "answer": "Air pipe cracking and boost leaks (the most common issue), exhaust manifold gasket failure (labour-intensive to repair), turbocharger vane mechanism wear (variable geometry turbos), and thermostat housing cracking (can cause sudden coolant loss). All are manageable with preventative maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Range Rover 3.6 TDV8 engine, or should I scrap the car?",
+        "answer": "Against a well-maintained L322 or L320 (values £5,000–£20,000+), a £6,000–£8,000 reconditioned engine is 30–60% of the vehicle's value — often worth it for a solid example. The Land Rover scrap threshold of 60% means evaluating the whole vehicle (including body, chassis, and suspension condition) before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Range Rover 3.6 TDV8 engine code?",
+        "answer": "The engine code 368DT is listed on the VIN plate and vehicle documentation. The 3.6 TDV8 was fitted to L322 Range Rovers from late 2006 to 2010 and L320 Range Rover Sports from 2007 to 2010. If your vehicle is a 2006–2010 L322 or 2007–2010 L320 diesel V8, it's the 368DT (the later 4.4-litre TDV8 replaced it in 2010/2011). Check your V5C or VIN plate for confirmation."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the turbochargers, or do they require engine replacement?",
+        "answer": "Turbocharger vane mechanism wear is usually repairable without replacing the engine. A turbo rebuild or replacement costs £1,500–£3,000. However, if a turbo has failed catastrophically and sent debris into the engine, a full engine replacement may be required. At the first sign of boost issues or turbo noise, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Land Rover Range Rover 3.6 TDV8 Owners Trust LandRoverEngine.uk",

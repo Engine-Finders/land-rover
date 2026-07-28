@@ -509,44 +509,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), South West (15%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Land Rover Range Rover Velar P380 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned Velar P380 (AJ126) engine typically costs £5,500–£8,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the Land Rover Range Rover Velar P380 engine reliable?"
-      },
-      {
-        "label": "The AJ126 supercharged V6 delivers fantastic performance and a great soundtrack. However, it has known weak points: plastic coolant pipes that can fail catastrophically, timing chain tensioner wear, and water pump/thermostat failures. Properly maintained (frequent oil changes, proactive coolant pipe replacement), it can be a reliable engine; neglected, it becomes very expensive.",
-        "value": "3. What are the common problems with the Velar P380?"
-      },
-      {
-        "label": "Plastic coolant pipe and crossover pipe failure (the most critical issue), timing chain tensioner wear, water pump and thermostat housing failure, and supercharger coupler wear. All are manageable with preventative maintenance and early detection.",
-        "value": "4. Is it worth replacing a Velar P380 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Against a well-maintained Velar (values £25,000–£45,000+), a £6,000–£8,000 reconditioned engine is 15–25% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is almost always viable on a Velar, given the model's strong residual values.",
-        "value": "5. How do I find my Velar P380 engine code?"
-      },
-      {
-        "label": "The engine code AJ126 is listed on the VIN plate and vehicle documentation. The P380 badge was offered on the Velar from launch in 2017 until the 2020 model year update. If your Velar is a 2017–2020 petrol V6 (not the 2.0-litre four-cylinder or the later P400 straight-six), it is the AJ126. Tell us your registration and we'll confirm for free.",
-        "value": "6. Should I replace the coolant pipes proactively on my Velar P380?"
-      },
-      {
-        "label": "Many specialists recommend proactive replacement of the plastic coolant pipes at around 60,000 miles. The front crossover pipes and rear heater pipe are known failure points, and failure can be catastrophic. JLR has released updated designs, and aftermarket aluminium pipes are available. If your Velar hasn't had this work done, consider it essential preventative maintenance.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Land Rover Range Rover Velar P380 engine replacement cost in the UK?",
+        "answer": "A reconditioned Velar P380 (AJ126) engine typically costs £5,500–£8,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Land Rover Range Rover Velar P380 engine reliable?",
+        "answer": "The AJ126 supercharged V6 delivers fantastic performance and a great soundtrack. However, it has known weak points: plastic coolant pipes that can fail catastrophically, timing chain tensioner wear, and water pump/thermostat failures. Properly maintained (frequent oil changes, proactive coolant pipe replacement), it can be a reliable engine; neglected, it becomes very expensive."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Velar P380?",
+        "answer": "Plastic coolant pipe and crossover pipe failure (the most critical issue), timing chain tensioner wear, water pump and thermostat housing failure, and supercharger coupler wear. All are manageable with preventative maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Velar P380 engine, or should I scrap the car?",
+        "answer": "Against a well-maintained Velar (values £25,000–£45,000+), a £6,000–£8,000 reconditioned engine is 15–25% of the vehicle's value — worth it. The Land Rover scrap threshold of 60% means replacement is almost always viable on a Velar, given the model's strong residual values."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Velar P380 engine code?",
+        "answer": "The engine code AJ126 is listed on the VIN plate and vehicle documentation. The P380 badge was offered on the Velar from launch in 2017 until the 2020 model year update. If your Velar is a 2017–2020 petrol V6 (not the 2.0-litre four-cylinder or the later P400 straight-six), it is the AJ126. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Should I replace the coolant pipes proactively on my Velar P380?",
+        "answer": "Many specialists recommend proactive replacement of the plastic coolant pipes at around 60,000 miles. The front crossover pipes and rear heater pipe are known failure points, and failure can be catastrophic. JLR has released updated designs, and aftermarket aluminium pipes are available. If your Velar hasn't had this work done, consider it essential preventative maintenance."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Land Rover Range Rover Velar P380 Owners Trust LandRoverEngine.uk",

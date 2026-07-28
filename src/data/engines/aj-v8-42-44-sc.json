@@ -243,81 +243,46 @@
       {
         "metric": "Overall Engine Score",
         "value": "60/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: AJ-V8 4.2/4.4 Supercharged — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: ★★★½ out of 5",
-        "value": "Confidence: 84% confidence — based on real-world data, enthusiast consensus, and specialist workshop reports."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "14"
-      },
-      {
-        "metric": "Star rating (3.5★) × 4 = 14",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "8",
-        "value": "Midpoint of Reconditioned (Supply Only) range: £3,500–£5,500 → £4,500 midpoint → falls in £7,000–£9,999 bracket → 8"
-      },
-      {
-        "metric": "Repairability",
-        "value": "12"
-      },
-      {
-        "metric": "V8 complexity and supercharger add labour; timing chain and cooling system repairs are well‑understood but labour‑intensive",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "20",
-        "value": "Very well‑supported via JLR and aftermarket; shared with Jaguar ensures excellent availability"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "6"
-      },
-      {
-        "metric": "Reconditioned cost (£4,500 midpoint) as % of lowest typical vehicle value (L322 ~£4,000–£7,000) = 64–112% → falls in 60–74% bracket → 8",
-        "value": "Total"
-      },
-      {
-        "metric": "60/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: The AJ-V8 supercharged is a glorious, sonorous V8 — but pre‑2012 cooling system and chain guide issues are well‑documented — buy post‑2012 or with documented history.",
-        "value": "Best For / Avoid If:"
-      },
-      {
-        "metric": "* Best for: owners wanting supercharged V8 power, presence, and the unmistakable AJ‑V8 soundtrack.",
-        "value": "* Avoid if: you're looking at a pre‑2012 example with no coolant system or timing chain history."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "★★★½ out of 5",
+    "confidence": "84% confidence — based on real-world data, enthusiast consensus, and specialist workshop reports.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (Star rating (3.5★) × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £3,500–£5,500 → £4,500 midpoint → falls in £7,000–£9,999 bracket → 8)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (V8 complexity and supercharger add labour; timing chain and cooling system repairs are well‑understood but labour‑intensive)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "20 (Very well‑supported via JLR and aftermarket; shared with Jaguar ensures excellent availability)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "6 (Reconditioned cost (£4,500 midpoint) as % of lowest typical vehicle value (L322 ~£4,000–£7,000) = 64–112% → falls in 60–74% bracket → 8)"
+        },
+        {
+          "dimension": "Total",
+          "score": "60/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
+    "oneLineVerdict": "The AJ-V8 supercharged is a glorious, sonorous V8 — but pre‑2012 cooling system and chain guide issues are well‑documented — buy post‑2012 or with documented history.",
     "bestFor": "",
     "avoidIf": ""
   },

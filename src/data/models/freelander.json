@@ -18,7 +18,215 @@
       "title": "Freelander Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Freelander engine — K-series to Duratorq. 2 generations, real UK costs and reliability data. Compare prices from vetted JLR specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://landroverengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Freelander",
+              "item": "https://landroverengine.uk/freelander/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Freelander Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Freelander 1 (1997–2006)",
+              "url": "https://landroverengine.uk/freelander/fl1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Freelander 2 L359 (2006–2014)",
+              "url": "https://landroverengine.uk/freelander/l359/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Freelander Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "1.8 K-series Petrol",
+              "url": "https://landroverengine.uk/engines/k-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "2.0 Di L-series Diesel",
+              "url": "https://landroverengine.uk/engines/l-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Td4 M47R BMW Diesel",
+              "url": "https://landroverengine.uk/engines/td4-m47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "2.5 KV6 Petrol",
+              "url": "https://landroverengine.uk/engines/kv6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "224DT 2.2 Duratorq Diesel",
+              "url": "https://landroverengine.uk/engines/224dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "SI6 3.2 Volvo Petrol",
+              "url": "https://landroverengine.uk/engines/si6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Si4 GTDi Petrol",
+              "url": "https://landroverengine.uk/engines/si4-gtdi/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Freelander engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A used engine typically costs £400–£2,000 supply only; reconditioned units run £1,500–£4,500 depending on engine [PLACEHOLDER — confirm vs Table A]. Fitting adds £520–£1,300. On most Freelanders, the used route is the economically sensible one. Use our calculator for a personalised verdict."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Freelander engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2.2 TD4/SD4 (224DT) in the Freelander 2 — one of the most dependable engines Land Rover ever fitted. On the Freelander 1, the BMW-sourced Td4 is comfortably the pick."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Freelander engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 1.8 K-series petrol — unless the head gasket has already been done properly with a multi-layer-steel gasket, in which case the hard part is behind it. The 2.5 KV6 demands cambelt discipline that rarely survives banger-money ownership."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Freelander head gasket problem fixable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, permanently — a quality MLS gasket, revised oil rail and proper coolant bleeding resolve it for good. At £600–£1,200 it's the one big-ticket repair on a Freelander 1 that can still make sense. Prevention beats replacement on this engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Freelander engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Honestly: often not with a full recon. Most Freelanders fail our 60% scrap-threshold rule for reconditioned engines — but a good used 2.2 at £800–£2,000 in a solid late Freelander 2 is a sound decision. Use the Ownership Decision Tool for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Freelander should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 2011–2014 Freelander 2 SD4 with history — facelift car, strongest engine, last of the line. Among Freelander 1s, only the Td4 diesel, and only cheap."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Freelander engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "On the VIN plate and vehicle documentation; block stampings vary by engine family. Or tell us your variant and year (TD4, SD4, 1.8, KV6) and we'll identify it."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Freelander 2 vs Discovery Sport — should I upgrade?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Discovery Sport is the Freelander 2's direct successor — early ones even share the 2.2 engine. Upgrade for the extra seats and refinement; stay if your Freelander 2 is healthy, because a good one owes you nothing."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "LandRoverEngine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Freelander Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "400",
+            "highPrice": "4500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Freelander UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Freelander engines, sourced from LandRoverEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Freelander Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://landroverengine.uk/freelander/",
+          "author": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "LandRoverEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-10",
+          "dateModified": "2026-07-10"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Freelander • 1997–2014 • 2 Generations • K-series, Td4, Duratorq",

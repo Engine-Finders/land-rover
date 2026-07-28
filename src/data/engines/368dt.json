@@ -237,81 +237,46 @@
       {
         "metric": "Overall Engine Score",
         "value": "46/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: 368DT (3.6 TDV8) — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: ★★★ out of 5",
-        "value": "Confidence: 84% confidence — based on 650+ real UK enquiries, specialist rebuild reports, and extensive owner‑forum data."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "12"
-      },
-      {
-        "metric": "Star rating (3.0★) × 4 = 12",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "8",
-        "value": "Midpoint of Reconditioned (Supply Only) range: £5,500–£8,000 → £6,750 midpoint → falls in £7,000–£9,999 bracket → 8"
-      },
-      {
-        "metric": "Repairability",
-        "value": "4"
-      },
-      {
-        "metric": "Crankshaft fracture often writes off the engine; small specialist pool for 3.6 unit; early units have multiple failure points",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "12",
-        "value": "368DT parts available but less common than 4.4 V8; some components are becoming harder to source"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "10"
-      },
-      {
-        "metric": "Reconditioned cost (£6,750 midpoint) as % of lowest typical vehicle value (L322 ~£4,000–£8,000) = 84–169% → falls in 60–74% bracket → 8",
-        "value": "Total"
-      },
-      {
-        "metric": "46/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: The 368DT is a torquey V8 diesel — but early timing chain tensioner and crankshaft fracture risks are significant — avoid early examples or buy with proven history.",
-        "value": "Best For / Avoid If:"
-      },
-      {
-        "metric": "* Best for: L322 owners wanting V8 diesel torque and presence at a lower entry price than the 4.4.",
-        "value": "* Avoid if: you're looking at an early (pre‑2009) example with no timing chain history or any hint of crankshaft issues."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "★★★ out of 5",
+    "confidence": "84% confidence — based on 650+ real UK enquiries, specialist rebuild reports, and extensive owner‑forum data.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "12 (Star rating (3.0★) × 4 = 12)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £5,500–£8,000 → £6,750 midpoint → falls in £7,000–£9,999 bracket → 8)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "4 (Crankshaft fracture often writes off the engine; small specialist pool for 3.6 unit; early units have multiple failure points)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "12 (368DT parts available but less common than 4.4 V8; some components are becoming harder to source)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "10 (Reconditioned cost (£6,750 midpoint) as % of lowest typical vehicle value (L322 ~£4,000–£8,000) = 84–169% → falls in 60–74% bracket → 8)"
+        },
+        {
+          "dimension": "Total",
+          "score": "46/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
+    "oneLineVerdict": "The 368DT is a torquey V8 diesel — but early timing chain tensioner and crankshaft fracture risks are significant — avoid early examples or buy with proven history.",
     "bestFor": "",
     "avoidIf": ""
   },

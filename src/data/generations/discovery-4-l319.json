@@ -739,18 +739,45 @@
     ],
     "note": "No Generation variance from the Model Page’s baseline figures — L319 Discovery 4 shares identical engine-bay access with its Discovery 3 predecessor, so costs are inherited directly per the Authority Model, with no divergence note required. The 306DT cost band (£6,500–£9,500) is carried forward from the EM_Proprietary_Data Table A for “Land Rover 306DT TDV6/SDV6”."
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "TDV6",
-      "SDV6"
-    ],
-    "petrolVariants": [
-      "V8",
-      "SCV6",
-      "V6"
-    ],
-    "scopeNote": "All variants listed are Discovery 4 L319 SUV only. The 406PN (4.0 V6) was a Discovery 3 carryover fitted only to very early (2009) Discovery 4 examples. The 3.0-litre supercharged V6 (AJ126) replaced the 5.0 V8 from early 2014. The 2.7 TDV6 (276DT) and 3.0 SDV6 (306DT) ran throughout the entire 2009–2018 production run."
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "TDV6",
+      "url": "https://landroverengine.uk/discovery/27-tdv6"
+    },
+    {
+      "name": "SDV6",
+      "url": "https://landroverengine.uk/discovery/30-tdv6-sdv6"
+    },
+    {
+    "name": "TD6",
+    "url": "https://landroverengine.uk/discovery/td6"
   },
+  {
+    "name": "SD4",
+    "url": "https://landroverengine.uk/discovery/sd4"
+  }
+  ],
+  "petrolVariants": [
+    {
+      "name": "V8",
+      "url": "https://landroverengine.uk/discovery/5-0-v8"
+    },
+    {
+      "name": "SCV6",
+      "url": "#"
+    },
+    {
+      "name": "V6",
+      "url": "https://landroverengine.uk/discovery/si4"
+    },
+     {
+    "name": "Si4",
+    "url": "https://landroverengine.uk/discovery/si4"
+  }
+  ],
+  "scopeNote": "All variants listed are Discovery 4 L319 SUV only. The 406PN (4.0 V6) was a Discovery 3 carryover fitted only to very early (2009) Discovery 4 examples. The 3.0-litre supercharged V6 (AJ126) replaced the 5.0 V8 from early 2014. The 2.7 TDV6 (276DT) and 3.0 SDV6 (306DT) ran throughout the entire 2009–2018 production run."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 306DT SDV6 (980 JLR‑wide enquiries [EM‑VERIFIED])",

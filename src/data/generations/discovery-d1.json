@@ -585,20 +585,53 @@
     ],
     "note": "No Generation variance from the Model Page's baseline figures — Discovery 1 shares identical engine‑bay access across all body styles, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [EM-QUOTE] from Table A — Engine Replacement Economics."
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "200TDi",
-      "300TDi"
-    ],
-    "petrolVariants": [
-      "3.5 V8",
-      "3.5 V8i",
-      "3.9 V8i",
-      "4.0 V8i",
-      "2.0 MPi"
-    ],
-    "scopeNote": "All variants listed are Discovery 1 (D1) only — 3‑door, 5‑door and commercial variants share the same engine line‑up. Discovery 2 (L318) is covered on its own Generation Page."
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "200TDi",
+      "url": "https://landroverengine.uk/discovery/200tdi"
+    },
+    {
+      "name": "300TDi",
+      "url": "https://landroverengine.uk/discovery/300tdi"
+    },
+    {
+    "name": "300TDi",
+    "url": "https://landroverengine.uk/discovery/300tdi"
+  }
+  ],
+  "petrolVariants": [
+    {
+      "name": "3.5 V8",
+      "url": "https://landroverengine.uk/discovery/rover-v8"
+    },
+    {
+      "name": "3.5 V8i",
+      "url": "https://landroverengine.uk/discovery/rover-v8"
+    },
+    {
+      "name": "3.9 V8i",
+      "url": "https://landroverengine.uk/discovery/rover-v8"
+    },
+    {
+      "name": "4.0 V8i",
+      "url": "https://landroverengine.uk/discovery/rover-v8"
+    },
+    {
+      "name": "2.0 MPi",
+      "url": "https://landroverengine.uk/discovery/mpi"
+    },
+    {
+    "name": "MPI",
+    "url": "https://landroverengine.uk/discovery/mpi"
   },
+  {
+    "name": "Rover V8",
+    "url": "https://landroverengine.uk/discovery/rover-v8"
+  }
+  ],
+  "scopeNote": "All variants listed are Discovery 1 (D1) only — 3‑door, 5‑door and commercial variants share the same engine line‑up. Discovery 2 (L318) is covered on its own Generation Page."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

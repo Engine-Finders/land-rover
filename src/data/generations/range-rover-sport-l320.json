@@ -751,18 +751,37 @@
     ],
     "note": "No Generation variance from the Model Page's baseline figures — L320 Range Rover Sport shares its underpinnings with the Discovery 3/4 and engine-bay access is broadly similar, so costs are inherited directly per the Authority Model, with no divergence note required. The 508PS cost band (£9,000–£14,000) reflects the significantly higher cost of the supercharged 5.0 V8, carried forward from the EM_Proprietary_Data Table A for \"BMW S63B44\" — adjusted for Land Rover AJ133 SC compatibility."
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "TDV6",
-      "SDV6",
-      "TDV8"
-    ],
-    "petrolVariants": [
-      "V8",
-      "Supercharged"
-    ],
-    "scopeNote": "All variants listed are Range Rover Sport L320 SUV only. The 4.4 V8 (448PN/AJ41) was offered from launch in 2005 but was quietly dropped due to poor UK sales. The 3.0 TDV6 (155kW) was offered from the 2009 facelift until 2010, when it was upgraded to SDV6 (188kW) specification. The 3.6 TDV8 (368DT) ran throughout the entire 2006–2013 production period. The 5.0 V8 (508PN) and 5.0 Supercharged (508PS) replaced the 4.4 V8 and 4.2 Supercharged at the 2009 facelift."
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "TDV6",
+      "url": "https://landroverengine.uk/range-rover-sport/tdv6-sdv6"
+    },
+    {
+      "name": "SDV6",
+      "url": "https://landroverengine.uk/range-rover-sport/tdv6-sdv6"
+    },
+    {
+      "name": "TDV8",
+      "url": "https://landroverengine.uk/range-rover-sport/36-tdv8"
+    },
+    {
+    "name": "2.7 TDV6",
+    "url": "https://landroverengine.uk/range-rover-sport/27-tdv6"
+  }
+  ],
+  "petrolVariants": [
+    {
+      "name": "V8",
+      "url": "https://landroverengine.uk/range-rover-sport/44-v8"
+    },
+    {
+      "name": "Supercharged",
+      "url": "https://landroverengine.uk/range-rover-sport/42-sc"
+    }
+  ],
+  "scopeNote": "All variants listed are Range Rover Sport L320 SUV only. The 4.4 V8 (448PN/AJ41) was offered from launch in 2005 but was quietly dropped due to poor UK sales. The 3.0 TDV6 (155kW) was offered from the 2009 facelift until 2010, when it was upgraded to SDV6 (188kW) specification. The 3.6 TDV8 (368DT) ran throughout the entire 2006–2013 production period. The 5.0 V8 (508PN) and 5.0 Supercharged (508PS) replaced the 4.4 V8 and 4.2 Supercharged at the 2009 facelift."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 306DT SDV6 (980 JLR‑wide enquiries [EM‑VERIFIED])",

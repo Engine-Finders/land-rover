@@ -313,18 +313,37 @@
     ],
     "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for all L359 engines due to transverse mounting and Halewood production access."
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "2.2 eD4",
-      "2.2 TD4",
-      "2.2 SD4"
-    ],
-    "petrolVariants": [
-      "2.0 Si4",
-      "3.2 Si6"
-    ],
-    "scopeNote": "All variants listed are Freelander 2 L359 only. The eD4 is a two-wheel-drive variant introduced in 2010; TD4 and SD4 are all-wheel-drive."
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "2.2 eD4",
+      "url": "https://landroverengine.uk/freelander/td4-sd4-ed4"
+    },
+    {
+      "name": "2.2 TD4",
+      "url": "https://landroverengine.uk/freelander/td4-sd4-ed4"
+    },
+    {
+      "name": "2.2 SD4",
+      "url": "https://landroverengine.uk/freelander/td4-sd4-ed4"
+    }
+  ],
+  "petrolVariants": [
+    {
+      "name": "2.0 Si4",
+      "url": "https://landroverengine.uk/freelander/si4"
+    },
+    {
+      "name": "3.2 Si6",
+      "url": "https://landroverengine.uk/freelander/32-i6"
+    },
+     {
+    "name": "3.2 i6",
+    "url": "https://landroverengine.uk/freelander/32-i6"
+  }
+  ],
+  "scopeNote": "All variants listed are Freelander 2 L359 only. The eD4 is a two-wheel-drive variant introduced in 2010; TD4 and SD4 are all-wheel-drive."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

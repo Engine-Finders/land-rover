@@ -734,11 +734,29 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [],
-    "scopeNote": "All variants listed are first-generation Range Rover (1970–1996), retrospectively known as \"Classic\". Two-door models were produced from 1970 to 1981; four-door from 1981 onwards; LSE long-wheelbase from 1992 to 1996."
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "VM Diesel",
+      "url": "https://landroverengine.uk/range-rover/vm-diesel"
+    },
+    {
+      "name": "Tdi",
+      "url": "https://landroverengine.uk/range-rover/tdi"
+    },
+    {
+      "name": "2.5 DSE",
+      "url": "https://landroverengine.uk/range-rover/25-dse"
+    }
+  ],
+  "petrolVariants": [
+    {
+      "name": "Rover V8",
+      "url": "https://landroverengine.uk/range-rover/rover-v8-classic"
+    }
+  ],
+  "scopeNote": "All variants listed are first-generation Range Rover (1970–1996), retrospectively known as \"Classic\". Two-door models were produced from 1970 to 1981; four-door from 1981 onwards; LSE long-wheelbase from 1992 to 1996."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 3.9 V8 EFi (1989–1996)",

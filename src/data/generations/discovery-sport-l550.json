@@ -712,26 +712,77 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "D150",
-      "D165",
-      "D180",
-      "D200",
-      "D240",
-      "TD4 150",
-      "TD4 180",
-      "TD4 190"
-    ],
-    "petrolVariants": [
-      "P200",
-      "P250",
-      "P290",
-      "Si4 240",
-      "Si4 290"
-    ],
-    "scopeNote": "All variants listed are L550 only. The Range Rover Evoque (L538/L551), Velar (L560) and Discovery 5 (L462) share most of these engines but are covered on their own Generation Pages, since fitment and specific power outputs vary by model."
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "D150",
+      "url": "https://landroverengine.uk/discovery-sport/d150"
+    },
+    {
+      "name": "D165",
+      "url": "https://landroverengine.uk/discovery-sport/d165"
+    },
+    {
+      "name": "D180",
+      "url": "https://landroverengine.uk/discovery-sport/d180"
+    },
+    {
+      "name": "D200",
+      "url": "https://landroverengine.uk/discovery-sport/d200"
+    },
+    {
+      "name": "D240",
+      "url": "#"
+    },
+    {
+      "name": "TD4 150",
+      "url": "https://landroverengine.uk/discovery-sport/td4-sd4"
+    },
+    {
+      "name": "TD4 180",
+      "url": "https://landroverengine.uk/discovery-sport/td4-sd4"
+    },
+    {
+      "name": "TD4 190",
+      "url": "https://landroverengine.uk/discovery-sport/td4-sd4"
+    },
+     {
+    "name": "2.2 Diesel",
+    "url": "https://landroverengine.uk/discovery-sport/22-diesel"
+  }
+  ],
+  "petrolVariants": [
+    {
+      "name": "P200",
+      "url": "https://landroverengine.uk/discovery-sport/p200"
+    },
+    {
+      "name": "P250",
+      "url": "https://landroverengine.uk/discovery-sport/p250"
+    },
+    {
+      "name": "P290",
+      "url": "#"
+    },
+    {
+      "name": "Si4 240",
+      "url": "https://landroverengine.uk/discovery-sport/si4"
+    },
+    {
+      "name": "Si4 290",
+      "url": "https://landroverengine.uk/discovery-sport/si4"
+    },
+    {
+    "name": "Si4",
+    "url": "https://landroverengine.uk/discovery-sport/si4"
   },
+  {
+    "name": "P300e",
+    "url": "https://landroverengine.uk/discovery-sport/p300e"
+  }
+  ],
+  "scopeNote": "All variants listed are L550 only. The Range Rover Evoque (L538/L551), Velar (L560) and Discovery 5 (L462) share most of these engines but are covered on their own Generation Pages, since fitment and specific power outputs vary by model."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 204DTD (Ingenium 2.0 Diesel) – 1,150 platform-wide enquiries [EM-VERIFIED], the dominant L550 diesel",

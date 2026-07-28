@@ -509,21 +509,45 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "Di",
-      "XDi",
-      "XEDi",
-      "TD4"
-    ],
-    "petrolVariants": [
-      "1.8i",
-      "Xi",
-      "XEi",
-      "V6"
-    ],
-    "scopeNote": "All variants listed are Freelander 1 L314 only. The Freelander 2 (L359) shares the TD4 badge but uses a different 2.2‑litre Ford/PSA engine (224DT) and is covered on its own Generation Page."
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "Di",
+      "url": "https://landroverengine.uk/freelander/20-di"
+    },
+    {
+      "name": "XDi",
+      "url": "https://landroverengine.uk/freelander/20-di"
+    },
+    {
+      "name": "XEDi",
+      "url": "https://landroverengine.uk/freelander/20-di"
+    },
+    {
+      "name": "TD4",
+      "url": "https://landroverengine.uk/freelander/td4-fl1"
+    }
+  ],
+  "petrolVariants": [
+    {
+      "name": "1.8i",
+      "url": "https://landroverengine.uk/freelander/18-petrol"
+    },
+    {
+      "name": "Xi",
+      "url": "https://landroverengine.uk/freelander/18-petrol"
+    },
+    {
+      "name": "XEi",
+      "url": "https://landroverengine.uk/freelander/18-petrol"
+    },
+    {
+    "name": "2.5 V6",
+    "url": "https://landroverengine.uk/freelander/25-v6"
+  }
+  ],
+  "scopeNote": "All variants listed are Freelander 1 L314 only. The Freelander 2 (L359) shares the TD4 badge but uses a different 2.2‑litre Ford/PSA engine (224DT) and is covered on its own Generation Page."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

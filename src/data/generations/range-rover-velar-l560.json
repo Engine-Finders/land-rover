@@ -656,22 +656,61 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "D180",
-      "D240",
-      "D300"
-    ],
-    "petrolVariants": [
-      "P250",
-      "P300",
-      "P340",
-      "P380",
-      "P400",
-      "SVAutobiography"
-    ],
-    "scopeNote": "All variants listed are Velar L560 only. The P400 uses the later Ingenium-based 3.0 with mild hybrid (2020–present), while the P340/P380 use the earlier AJ126 V6 (2017–2020). The SVAutobiography uses the supercharged 5.0 AJ133 V8."
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "D180",
+      "url": "https://landroverengine.uk/velar/d180"
+    },
+    {
+      "name": "D240",
+      "url": "https://landroverengine.uk/velar/d240"
+    },
+    {
+      "name": "D300",
+      "url": "https://landroverengine.uk/velar/d300"
+    },
+    {
+    "name": "D200",
+    "url": "https://landroverengine.uk/velar/d200"
   },
+  {
+    "name": "D275",
+    "url": "https://landroverengine.uk/velar/d275"
+  }
+  ],
+  "petrolVariants": [
+    {
+      "name": "P250",
+      "url": "https://landroverengine.uk/velar/p250"
+    },
+    {
+      "name": "P300",
+      "url": "https://landroverengine.uk/velar/p300"
+    },
+    {
+      "name": "P340",
+      "url": "https://landroverengine.uk/velar/p340"
+    },
+    {
+      "name": "P380",
+      "url": "https://landroverengine.uk/velar/p380"
+    },
+    {
+      "name": "P400",
+      "url": "https://landroverengine.uk/velar/p400"
+    },
+    {
+    "name": "P400e",
+    "url": "https://landroverengine.uk/velar/p400e"
+  },
+    {
+      "name": "SVAutobiography",
+      "url": "https://landroverengine.uk/velar/p550"
+    }
+  ],
+  "scopeNote": "All variants listed are Velar L560 only. The P400 uses the later Ingenium-based 3.0 with mild hybrid (2020–present), while the P340/P380 use the earlier AJ126 V6 (2017–2020). The SVAutobiography uses the supercharged 5.0 AJ133 V8."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

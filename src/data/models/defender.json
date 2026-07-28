@@ -358,7 +358,7 @@
       }
     ]
   },
-  "generations": {
+"generations": {
     "h2": "Defender Generations — Classic or L663?",
     "subHeadline": "Two Defenders, two completely different ownership propositions. Select yours to explore engines, problems, and costs.",
     "cards": [
@@ -370,7 +370,7 @@
         "verdict": "Mechanically honest and endlessly rebuildable — buy on engine choice, not on year. 300Tdi for simplicity, TD5 for usability, approach the 2.4 TDCi Puma with a full injector history.",
         "cta": {
           "label": "Explore the Classic →",
-          "href": "#"
+          "href": "https://landroverengine.uk/defender/l316"
         }
       },
       {
@@ -381,7 +381,7 @@
         "verdict": "The safest ownership proposition in the entire JLR range. High residuals mean replacement is always economically viable; the six-cylinder diesels are proving genuinely robust. Prefer 2021+ builds.",
         "cta": {
           "label": "Explore the L663 →",
-          "href": "#"
+          "href": "https://landroverengine.uk/defender/l663"
         }
       },
       {

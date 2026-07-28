@@ -738,25 +738,65 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "D250",
-      "D300",
-      "SD4",
-      "SDV6",
-      "SDV8",
-      "TDV6"
-    ],
-    "petrolVariants": [
-      "P300",
-      "P400e",
-      "SCV6",
-      "Si4",
-      "SVR",
-      "V8 Supercharged"
-    ],
-    "scopeNote": "All variants listed are L494 Range Rover Sport only. Engine fitment varies by year — the 2016 update introduced the SD4 (204DTA) as the entry-level diesel; the 2018 facelift brought the P300 (PT204), P400e plug-in hybrid, and later the D300/D250 Ingenium six-cylinder diesels (AJ20D6/DT306). The SVR (508PS) was introduced in 2014 and continued through to the end of production."
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "D250",
+      "url": "https://landroverengine.uk/range-rover-sport/d250"
+    },
+    {
+      "name": "D300",
+      "url": "https://landroverengine.uk/range-rover-sport/d300"
+    },
+    {
+      "name": "SD4",
+      "url": "#"
+    },
+    {
+      "name": "SDV6",
+      "url": "https://landroverengine.uk/range-rover-sport/tdv6-sdv6"
+    },
+    {
+      "name": "SDV8",
+      "url": "https://landroverengine.uk/range-rover-sport/44-sdv8"
+    },
+    {
+      "name": "TDV6",
+      "url": "https://landroverengine.uk/range-rover-sport/tdv6-sdv6"
+    },
+      {
+    "name": "SDV6 Hybrid",
+    "url": "https://landroverengine.uk/range-rover-sport/sdv6-hybrid"
+  }
+  ],
+  "petrolVariants": [
+    {
+      "name": "P300",
+      "url": "#"
+    },
+    {
+      "name": "P400e",
+      "url": "https://landroverengine.uk/range-rover-sport/p400e"
+    },
+    {
+      "name": "SCV6",
+      "url": "https://landroverengine.uk/range-rover-sport/30-sc"
+    },
+    {
+      "name": "Si4",
+      "url": "#"
+    },
+    {
+      "name": "SVR",
+      "url": "https://landroverengine.uk/range-rover-sport/svr"
+    },
+    {
+      "name": "V8 Supercharged",
+      "url": "https://landroverengine.uk/range-rover-sport/50-sc"
+    }
+  ],
+  "scopeNote": "All variants listed are L494 Range Rover Sport only. Engine fitment varies by year — the 2016 update introduced the SD4 (204DTA) as the entry-level diesel; the 2018 facelift brought the P300 (PT204), P400e plug-in hybrid, and later the D300/D250 Ingenium six-cylinder diesels (AJ20D6/DT306). The SVR (508PS) was introduced in 2014 and continued through to the end of production."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 306DT 3.0 V6 Diesel (980 JLR-wide enquiries)",

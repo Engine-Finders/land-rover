@@ -138,54 +138,54 @@
       }
     ]
   },
-  "generations": {
-    "h2": "Range Rover Sport Generations — Find Your Vehicle",
-    "subHeadline": "Three generations, and the value curve decides as much as the engine does.",
-    "cards": [
-      {
-        "title": "Range Rover Sport L320",
-        "badge": "",
-        "meta": "2005–2013 • 2.7 TDV6 (276DT), 3.0 TDV6/SDV6 (306DT), 3.6 TDV8 (368DT), 4.2 SC / 4.4 AJ-V8, 5.0 SC (AJ133)",
-        "rating": "⭐⭐½",
-        "verdict": "Now the bargain-bin Range Rover — and the danger zone. Values have fallen to where one V6 diesel failure writes the car off. The TDV8 is the survivor's choice; any 2.7 without oil-pump history is a gamble, not a purchase.",
-        "cta": {
-          "label": "Explore the L320 →",
-          "href": "#"
-        }
-      },
-      {
-        "title": "Range Rover Sport L494",
-        "badge": "🔥 Most Enquired — 308 enquiries (2025) [EM-VERIFIED]",
-        "meta": "2013–2022 • 3.0 TDV6/SDV6 (306DT), 4.4 SDV8 (448DT), 3.0 SC V6 (AJ126), 5.0 SC (AJ133/SVR), P400e (204PT), P400 (AJ20P6), D300/D350 (AJ20D6, 2020+)",
-        "rating": "⭐⭐⭐⭐☆",
-        "verdict": "The definitive Sport — aluminium body, huge choice, real depreciation absorbed. Buy the SDV8 or a 2020+ D350 and it's excellent; buy a high-mileage SDV6 without oil-interval paperwork and you've bought the range's most common £9,500 phone call.",
-        "cta": {
-          "label": "Explore the L494 →",
-          "href": "#"
-        }
-      },
-      {
-        "title": "Range Rover Sport L461",
-        "badge": "",
-        "meta": "2022–present • D300/D350 (AJ20D6), P400 (AJ20P6), P440e/P510e PHEV, P530 V8 (BMW-derived), SV P635",
-        "rating": "⭐⭐⭐⭐☆",
-        "verdict": "The cleanest engine slate a Sport has ever had — no V6 diesel legacy, warranty cover, and values that make any engine bill economically trivial. Early-build electronics niggles, not engines, dominate its enquiries.",
-        "cta": {
-          "label": "Explore the L461 →",
-          "href": "#"
-        }
+ "generations": {
+  "h2": "Range Rover Sport Generations — Find Your Vehicle",
+  "subHeadline": "Three generations, and the value curve decides as much as the engine does.",
+  "cards": [
+    {
+      "title": "Range Rover Sport L320",
+      "badge": "",
+      "meta": "2005–2013 • 2.7 TDV6 (276DT), 3.0 TDV6/SDV6 (306DT), 3.6 TDV8 (368DT), 4.2 SC / 4.4 AJ-V8, 5.0 SC (AJ133)",
+      "rating": "⭐⭐½",
+      "verdict": "Now the bargain-bin Range Rover — and the danger zone. Values have fallen to where one V6 diesel failure writes the car off. The TDV8 is the survivor's choice; any 2.7 without oil-pump history is a gamble, not a purchase.",
+      "cta": {
+        "label": "Explore the L320 →",
+        "href": "https://landroverengine.uk/range-rover-sport/l320"
       }
-    ],
-    "rangeTable": {
-      "title": "",
-      "columns": [],
-      "rows": []
     },
-    "comparisonLink": {
-      "label": "",
-      "href": "#"
+    {
+      "title": "Range Rover Sport L494",
+      "badge": "🔥 Most Enquired — 308 enquiries (2025) [EM-VERIFIED]",
+      "meta": "2013–2022 • 3.0 TDV6/SDV6 (306DT), 4.4 SDV8 (448DT), 3.0 SC V6 (AJ126), 5.0 SC (AJ133/SVR), P400e (204PT), P400 (AJ20P6), D300/D350 (AJ20D6, 2020+)",
+      "rating": "⭐⭐⭐⭐☆",
+      "verdict": "The definitive Sport — aluminium body, huge choice, real depreciation absorbed. Buy the SDV8 or a 2020+ D350 and it's excellent; buy a high-mileage SDV6 without oil-interval paperwork and you've bought the range's most common £9,500 phone call.",
+      "cta": {
+        "label": "Explore the L494 →",
+        "href": "https://landroverengine.uk/range-rover-sport/l494"
+      }
+    },
+    {
+      "title": "Range Rover Sport L461",
+      "badge": "",
+      "meta": "2022–present • D300/D350 (AJ20D6), P400 (AJ20P6), P440e/P510e PHEV, P530 V8 (BMW-derived), SV P635",
+      "rating": "⭐⭐⭐⭐☆",
+      "verdict": "The cleanest engine slate a Sport has ever had — no V6 diesel legacy, warranty cover, and values that make any engine bill economically trivial. Early-build electronics niggles, not engines, dominate its enquiries.",
+      "cta": {
+        "label": "Explore the L461 →",
+        "href": "https://landroverengine.uk/range-rover-sport/l461"
+      }
     }
+  ],
+  "rangeTable": {
+    "title": "",
+    "columns": [],
+    "rows": []
   },
+  "comparisonLink": {
+    "label": "",
+    "href": "#"
+  }
+},
   "engineDatabase": {
     "h2": "Range Rover Sport Engine Codes — The Complete Database",
     "subHeadline": "",

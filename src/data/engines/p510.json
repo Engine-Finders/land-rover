@@ -3,12 +3,12 @@
     "slug": "p510",
     "title": "Land Rover P510 Engine — Reliability & Cost",
     "description": "The P510 is JLR's range-topping twin-turbo straight-six — immense power and refinement, but cooling system vigilance is essential. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/p510",
+    "canonical": "https://landroverengine.uk/engine/p510",
     "openGraph": {
       "title": "Land Rover P510 Engine — Reliability & Cost",
       "description": "The P510 is JLR's range-topping twin-turbo straight-six — immense power and refinement, but cooling system vigilance is essential. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/p510",
+      "url": "https://landroverengine.uk/engine/p510",
       "image": "https://landroverengine.uk/images/landrover/engines/p510.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines"
+              "item": "https://landroverengine.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "P510 (Ingenium 3.0 I6 Twin-Turbo)",
-              "item": "https://landroverengine.uk/engines/p510"
+              "item": "https://landroverengine.uk/engine/p510"
             }
           ]
         },
@@ -168,7 +168,7 @@
         {
           "@type": "WebPage",
           "name": "Land Rover P510 Engine — Reliability & Cost",
-          "url": "https://landroverengine.uk/engines/p510",
+          "url": "https://landroverengine.uk/engine/p510",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

@@ -3,12 +3,12 @@
     "slug": "306dt",
     "title": "Land Rover 306DT (3.0 TDV6) Engine — Specs, Reliability & Cost",
     "description": "The 306DT is a torquey V6 diesel — but crankshaft bearing failure is a well-documented catastrophic risk. Backed by 980+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/306dt",
+    "canonical": "https://landroverengine.uk/engine/306dt",
     "openGraph": {
       "title": "Land Rover 306DT (3.0 TDV6) Engine — Specs, Reliability & Cost",
       "description": "The 306DT is a torquey V6 diesel — but crankshaft bearing failure is a well-documented catastrophic risk. Backed by 980+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/306dt",
+      "url": "https://landroverengine.uk/engine/306dt",
       "image": "https://landroverengine.uk/images/landrover/engines/306dt.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines"
+              "item": "https://landroverengine.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "306DT (3.0 TDV6/SDV6)",
-              "item": "https://landroverengine.uk/engines/306dt"
+              "item": "https://landroverengine.uk/engine/306dt"
             }
           ]
         },
@@ -180,7 +180,7 @@
         {
           "@type": "WebPage",
           "name": "Land Rover 306DT (3.0 TDV6) Engine — Specs, Reliability & Cost",
-          "url": "https://landroverengine.uk/engines/306dt",
+          "url": "https://landroverengine.uk/engine/306dt",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

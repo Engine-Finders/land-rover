@@ -3,12 +3,12 @@
     "slug": "bmw-m57-td6",
     "title": "BMW M57 Td6 Engine — Reliability",
     "description": "The BMW M57 is one of the most celebrated diesel sixes ever built — smooth, torquey, and bombproof. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/bmw-m57-td6",
+    "canonical": "https://landroverengine.uk/engine/bmw-m57-td6",
     "openGraph": {
       "title": "BMW M57 Td6 Engine — Reliability",
       "description": "The BMW M57 is one of the most celebrated diesel sixes ever built — smooth, torquey, and bombproof. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/bmw-m57-td6",
+      "url": "https://landroverengine.uk/engine/bmw-m57-td6",
       "image": "https://landroverengine.uk/images/landrover/engines/bmw-m57-td6.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines"
+              "item": "https://landroverengine.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M57 Td6",
-              "item": "https://landroverengine.uk/engines/bmw-m57-td6"
+              "item": "https://landroverengine.uk/engine/bmw-m57-td6"
             }
           ]
         },
@@ -156,7 +156,7 @@
         {
           "@type": "WebPage",
           "name": "BMW M57 Td6 Engine — Reliability",
-          "url": "https://landroverengine.uk/engines/bmw-m57-td6",
+          "url": "https://landroverengine.uk/engine/bmw-m57-td6",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

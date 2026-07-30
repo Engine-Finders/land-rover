@@ -5,12 +5,12 @@
     "titleCharCount": 57,
     "description": "The 224DT Duratorq — eD4, TD4 and SD4 power outputs explained. Real UK costs, common EGR and turbo issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://landroverengine.uk/freelander/22-td4/",
+    "canonical": "https://landroverengine.uk/freelander/22-td4",
     "openGraph": {
       "title": "Freelander 2 2.2 Diesel Engine Replacement Cost UK — Compare Quotes",
       "description": "The 224DT Duratorq — eD4, TD4 and SD4 power outputs explained. Real UK costs, common EGR and turbo issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/freelander/22-td4/",
+      "url": "https://landroverengine.uk/freelander/22-td4",
       "image": "https://landroverengine.uk/images/land-rover/hero/freelander-22-td4.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Freelander",
-              "item": "https://landroverengine.uk/freelander/"
+              "item": "https://landroverengine.uk/freelander"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.2 TD4",
-              "item": "https://landroverengine.uk/freelander/22-td4/"
+              "item": "https://landroverengine.uk/freelander/22-td4"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "224DT 2.2L Duratorq Diesel",
-              "url": "https://landroverengine.uk/engines/224dt/"
+              "url": "https://landroverengine.uk/engines/224dt"
             }
           ]
         },
@@ -126,7 +126,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "Freelander 2 2.2 Diesel Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/freelander/22-td4/",
+          "url": "https://landroverengine.uk/freelander/22-td4",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

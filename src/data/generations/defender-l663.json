@@ -229,7 +229,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/defender/l663"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -657,73 +658,73 @@
     ],
     "note": ""
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "D200",
-      "url": "https://landroverengine.uk/defender/d200"
-    },
-    {
-      "name": "D240",
-      "url": "https://landroverengine.uk/defender/d240"
-    },
-    {
-      "name": "D250",
-      "url": "https://landroverengine.uk/defender/d250"
-    },
-    {
-    "name": "D250 2",
-    "url": "https://landroverengine.uk/defender/d250-2"
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "D200",
+        "url": "https://landroverengine.uk/defender/d200"
+      },
+      {
+        "name": "D240",
+        "url": "https://landroverengine.uk/defender/d240"
+      },
+      {
+        "name": "D250",
+        "url": "https://landroverengine.uk/defender/d250"
+      },
+      {
+        "name": "D250 2",
+        "url": "https://landroverengine.uk/defender/d250-2"
+      },
+      {
+        "name": "D300",
+        "url": "https://landroverengine.uk/defender/d300"
+      },
+      {
+        "name": "D350",
+        "url": "https://landroverengine.uk/defender/d350"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "P300",
+        "url": "https://landroverengine.uk/defender/p300"
+      },
+      {
+        "name": "P400",
+        "url": "https://landroverengine.uk/defender/p400"
+      },
+      {
+        "name": "P400e",
+        "url": "https://landroverengine.uk/defender/p400e"
+      },
+      {
+        "name": "P425",
+        "url": "https://landroverengine.uk/defender/v8"
+      },
+      {
+        "name": "P500",
+        "url": "https://landroverengine.uk/defender/p500"
+      },
+      {
+        "name": "P525",
+        "url": "https://landroverengine.uk/defender/p525"
+      },
+      {
+        "name": "P635 OCTA",
+        "url": "https://landroverengine.uk/defender/octa"
+      },
+      {
+        "name": "P400e",
+        "url": "https://landroverengine.uk/defender/p400e"
+      },
+      {
+        "name": "V8",
+        "url": "https://landroverengine.uk/defender/v8"
+      }
+    ],
+    "scopeNote": "All variants listed are L663-generation Defender only (2019–present). Body styles (90, 110, 130) share these engines but are covered on their own body-style pages where fitment and labour access vary."
   },
-    {
-      "name": "D300",
-      "url": "https://landroverengine.uk/defender/d300"
-    },
-    {
-      "name": "D350",
-      "url": "https://landroverengine.uk/defender/d350"
-    }
-  ],
-  "petrolVariants": [
-    {
-      "name": "P300",
-      "url": "https://landroverengine.uk/defender/p300"
-    },
-    {
-      "name": "P400",
-      "url": "https://landroverengine.uk/defender/p400"
-    },
-    {
-      "name": "P400e",
-      "url": "https://landroverengine.uk/defender/p400e"
-    },
-    {
-      "name": "P425",
-      "url": "https://landroverengine.uk/defender/v8"
-    },
-    {
-      "name": "P500",
-      "url": "https://landroverengine.uk/defender/p500"
-    },
-    {
-      "name": "P525",
-      "url": "https://landroverengine.uk/defender/p525"
-    },
-    {
-      "name": "P635 OCTA",
-      "url": "https://landroverengine.uk/defender/octa"
-    },
-  {
-    "name": "P400e",
-    "url": "https://landroverengine.uk/defender/p400e"
-  },
-  {
-    "name": "V8",
-    "url": "https://landroverengine.uk/defender/v8"
-  }
-  ],
-  "scopeNote": "All variants listed are L663-generation Defender only (2019–present). Body styles (90, 110, 130) share these engines but are covered on their own body-style pages where fitment and labour access vary."
-},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. AJ20D6 3.0 D300",

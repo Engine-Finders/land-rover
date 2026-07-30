@@ -5,12 +5,12 @@
     "titleCharCount": 57,
     "description": "Land Rover Discovery Sport D150 MHEV — real UK costs, EGR & DPF insight, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 157,
-    "canonical": "https://landroverengine.uk/discovery-sport/d150/",
+    "canonical": "https://landroverengine.uk/discovery-sport/d150",
     "openGraph": {
       "title": "D150 Engine Replacement Cost UK — Compare Quotes",
       "description": "Land Rover Discovery Sport D150 MHEV — real UK costs, EGR & DPF insight, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/discovery-sport/d150/",
+      "url": "https://landroverengine.uk/discovery-sport/d150",
       "image": "https://landroverengine.uk/images/landrover/hero/discovery-sport-d150.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Discovery Sport",
-              "item": "https://landroverengine.uk/discovery-sport/"
+              "item": "https://landroverengine.uk/discovery-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "D150",
-              "item": "https://landroverengine.uk/discovery-sport/d150/"
+              "item": "https://landroverengine.uk/discovery-sport/d150"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Discovery Sport L550 D150 MHEV (2019–present)",
-              "url": "https://landroverengine.uk/discovery-sport/l550/"
+              "url": "https://landroverengine.uk/discovery-sport/l550"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD MHEV (2.0 Ingenium Diesel)",
-              "url": "https://landroverengine.uk/engines/204dtd/"
+              "url": "https://landroverengine.uk/engines/204dtd"
             }
           ]
         },
@@ -126,7 +126,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "D150 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/discovery-sport/d150/",
+          "url": "https://landroverengine.uk/discovery-sport/d150",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

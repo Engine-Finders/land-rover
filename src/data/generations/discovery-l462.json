@@ -271,7 +271,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/discovery/l462"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -700,69 +701,69 @@
     ],
     "note": ""
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "D200",
-      "url": "#"
-    },
-    {
-      "name": "D250",
-      "url": "https://landroverengine.uk/discovery/d250"
-    },
-    {
-      "name": "D300",
-      "url": "https://landroverengine.uk/discovery/d300"
-    },
-    {
-      "name": "SD4",
-      "url": "https://landroverengine.uk/discovery/sd4"
-    },
-    {
-      "name": "SD6",
-      "url": "#"
-    },
-    {
-      "name": "TD4",
-      "url": "#"
-    },
-    {
-      "name": "TD6",
-      "url": "https://landroverengine.uk/discovery/td6"
-    }
-  ],
-  "petrolVariants": [
-    {
-      "name": "P300",
-      "url": "https://landroverengine.uk/discovery/p300"
-    },
-    {
-      "name": "P360",
-      "url": "https://landroverengine.uk/discovery/p360"
-    },
-    {
-      "name": "P400",
-      "url": "#"
-    },
-    {
-      "name": "Si6",
-      "url": "#"
-    },
-    {
-      "name": "SVX",
-      "url": "https://landroverengine.uk/discovery/5-0-v8"
-    },
-    {
-    "name": "P300",
-    "url": "https://landroverengine.uk/discovery/p300"
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "D200",
+        "url": "#"
+      },
+      {
+        "name": "D250",
+        "url": "https://landroverengine.uk/discovery/d250"
+      },
+      {
+        "name": "D300",
+        "url": "https://landroverengine.uk/discovery/d300"
+      },
+      {
+        "name": "SD4",
+        "url": "https://landroverengine.uk/discovery/sd4"
+      },
+      {
+        "name": "SD6",
+        "url": "#"
+      },
+      {
+        "name": "TD4",
+        "url": "#"
+      },
+      {
+        "name": "TD6",
+        "url": "https://landroverengine.uk/discovery/td6"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "P300",
+        "url": "https://landroverengine.uk/discovery/p300"
+      },
+      {
+        "name": "P360",
+        "url": "https://landroverengine.uk/discovery/p360"
+      },
+      {
+        "name": "P400",
+        "url": "#"
+      },
+      {
+        "name": "Si6",
+        "url": "#"
+      },
+      {
+        "name": "SVX",
+        "url": "https://landroverengine.uk/discovery/5-0-v8"
+      },
+      {
+        "name": "P300",
+        "url": "https://landroverengine.uk/discovery/p300"
+      },
+      {
+        "name": "P360",
+        "url": "https://landroverengine.uk/discovery/p360"
+      }
+    ],
+    "scopeNote": "All variants listed are L462 Discovery 5 only. Engine fitment varies by year — the 2020 facelift introduced P360 and P400 mild-hybrid six-cylinder petrol units (PT306/306PS), while the SVX (AJ133 V8) was a limited-run model."
   },
-  {
-    "name": "P360",
-    "url": "https://landroverengine.uk/discovery/p360"
-  }
-  ],
-  "scopeNote": "All variants listed are L462 Discovery 5 only. Engine fitment varies by year — the 2020 facelift introduced P360 and P400 mild-hybrid six-cylinder petrol units (PT306/306PS), while the SVX (AJ133 V8) was a limited-run model."
-},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 204DTD/204DTA 2.0 Ingenium Diesel (1,150 JLR-wide enquiries)",

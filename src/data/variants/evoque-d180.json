@@ -5,12 +5,12 @@
     "titleCharCount": 56,
     "description": "Land Rover Range Rover Evoque D180 (204DTD) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your twin-turbo diesel.",
     "descriptionCharCount": 159,
-    "canonical": "https://landroverengine.uk/evoque/d180/",
+    "canonical": "https://landroverengine.uk/evoque/d180",
     "openGraph": {
       "title": "Evoque D180 Engine Cost UK — Compare Quotes",
       "description": "Land Rover Range Rover Evoque D180 (204DTD) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your twin-turbo diesel.",
       "type": "website",
-      "url": "https://landroverengine.uk/evoque/d180/",
+      "url": "https://landroverengine.uk/evoque/d180",
       "image": "https://landroverengine.uk/images/land-rover/hero/evoque-d180.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Evoque",
-              "item": "https://landroverengine.uk/evoque/"
+              "item": "https://landroverengine.uk/evoque"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "D180",
-              "item": "https://landroverengine.uk/evoque/d180/"
+              "item": "https://landroverengine.uk/evoque/d180"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Range Rover Evoque L551 (2019–2020) 204DTD",
-              "url": "https://landroverengine.uk/evoque/l551/"
+              "url": "https://landroverengine.uk/evoque/l551"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD (AJ20D4)",
-              "url": "https://landroverengine.uk/engines/204dtd/"
+              "url": "https://landroverengine.uk/engines/204dtd"
             }
           ]
         },
@@ -126,7 +126,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "Evoque D180 Engine Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/evoque/d180/",
+          "url": "https://landroverengine.uk/evoque/d180",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

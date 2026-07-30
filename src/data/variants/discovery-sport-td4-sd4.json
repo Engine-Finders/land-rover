@@ -5,12 +5,12 @@
     "titleCharCount": 62,
     "description": "Every Land Rover Discovery Sport TD4/SD4 engine — the 2.0-litre 204DTD Ingenium diesel. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 157,
-    "canonical": "https://landroverengine.uk/discovery-sport/td4-sd4/",
+    "canonical": "https://landroverengine.uk/discovery-sport/td4-sd4",
     "openGraph": {
       "title": "Discovery Sport TD4 / SD4 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Land Rover Discovery Sport TD4/SD4 engine — the 2.0-litre 204DTD Ingenium diesel. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/discovery-sport/td4-sd4/",
+      "url": "https://landroverengine.uk/discovery-sport/td4-sd4",
       "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-td4.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Discovery Sport",
-              "item": "https://landroverengine.uk/discovery-sport/"
+              "item": "https://landroverengine.uk/discovery-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "L550",
-              "item": "https://landroverengine.uk/discovery-sport/l550/"
+              "item": "https://landroverengine.uk/discovery-sport/l550"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "TD4 / SD4",
-              "item": "https://landroverengine.uk/discovery-sport/td4-sd4/"
+              "item": "https://landroverengine.uk/discovery-sport/td4-sd4"
             }
           ]
         },
@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "L550 Discovery Sport TD4/SD4 (204DTD, 2015–2019)",
-              "url": "https://landroverengine.uk/discovery-sport/l550/"
+              "url": "https://landroverengine.uk/discovery-sport/l550"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD (AJ20D4) — TD4",
-              "url": "https://landroverengine.uk/engines/204dtd/"
+              "url": "https://landroverengine.uk/engines/204dtd"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "204DTA / 204DTD (AJ20D4) — SD4",
-              "url": "https://landroverengine.uk/engines/204dtd/"
+              "url": "https://landroverengine.uk/engines/204dtd"
             }
           ]
         },
@@ -138,7 +138,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "Discovery Sport TD4 / SD4 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/discovery-sport/td4-sd4/",
+          "url": "https://landroverengine.uk/discovery-sport/td4-sd4",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

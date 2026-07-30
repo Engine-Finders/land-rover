@@ -5,12 +5,12 @@
     "titleCharCount": 55,
     "description": "Land Rover Freelander 3.2 i6 (SI6) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your rare petrol straight-six.",
     "descriptionCharCount": 159,
-    "canonical": "https://landroverengine.uk/freelander/32-i6/",
+    "canonical": "https://landroverengine.uk/freelander/32-i6",
     "openGraph": {
       "title": "3.2 i6 Engine Replacement Cost UK — Compare Quotes",
       "description": "Land Rover Freelander 3.2 i6 (SI6) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your rare petrol straight-six.",
       "type": "website",
-      "url": "https://landroverengine.uk/freelander/32-i6/",
+      "url": "https://landroverengine.uk/freelander/32-i6",
       "image": "https://landroverengine.uk/images/land-rover/hero/freelander-32-i6.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Freelander",
-              "item": "https://landroverengine.uk/freelander/"
+              "item": "https://landroverengine.uk/freelander"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.2 i6",
-              "item": "https://landroverengine.uk/freelander/32-i6/"
+              "item": "https://landroverengine.uk/freelander/32-i6"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Freelander 2 (L359) 306PN",
-              "url": "https://landroverengine.uk/freelander/freelander-2/"
+              "url": "https://landroverengine.uk/freelander/freelander-2"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "306PN (B6324S / SI6)",
-              "url": "https://landroverengine.uk/engines/306pn/"
+              "url": "https://landroverengine.uk/engines/306pn"
             }
           ]
         },
@@ -126,7 +126,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "3.2 i6 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/freelander/32-i6/",
+          "url": "https://landroverengine.uk/freelander/32-i6",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

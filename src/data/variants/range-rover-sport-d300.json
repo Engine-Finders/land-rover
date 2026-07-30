@@ -5,12 +5,12 @@
     "titleCharCount": 55,
     "description": "Land Rover Range Rover Sport D300 3.0 Ingenium diesel — real UK costs, EGR cooler & cooling watchpoints. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://landroverengine.uk/range-rover-sport/d300/",
+    "canonical": "https://landroverengine.uk/range-rover-sport/d300",
     "openGraph": {
       "title": "Range Rover Sport D300 Engine Replacement Cost UK — Compare Quotes",
       "description": "Land Rover Range Rover Sport D300 3.0 Ingenium diesel — real UK costs, EGR cooler & cooling watchpoints. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/range-rover-sport/d300/",
+      "url": "https://landroverengine.uk/range-rover-sport/d300",
       "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-d300.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover Sport",
-              "item": "https://landroverengine.uk/range-rover-sport/"
+              "item": "https://landroverengine.uk/range-rover-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Range Rover Sport L494",
-              "item": "https://landroverengine.uk/range-rover-sport/l494/"
+              "item": "https://landroverengine.uk/range-rover-sport/l494"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "D300",
-              "item": "https://landroverengine.uk/range-rover-sport/d300/"
+              "item": "https://landroverengine.uk/range-rover-sport/d300"
             }
           ]
         },
@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "L494 D300 (AJ20D6, 2019–2020)",
-              "url": "https://landroverengine.uk/range-rover-sport/l494/"
+              "url": "https://landroverengine.uk/range-rover-sport/l494"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "L461 D300 (AJ20D6 revised, 2022–present)",
-              "url": "https://landroverengine.uk/range-rover-sport/l461/"
+              "url": "https://landroverengine.uk/range-rover-sport/l461"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ20D6 (3.0 inline-six diesel)",
-              "url": "https://landroverengine.uk/engines/aj20d6/"
+              "url": "https://landroverengine.uk/engines/aj20d6"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ20D6 (3.0 inline-six diesel, revised)",
-              "url": "https://landroverengine.uk/engines/aj20d6/"
+              "url": "https://landroverengine.uk/engines/aj20d6"
             }
           ]
         },
@@ -144,7 +144,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -181,7 +181,7 @@
         {
           "@type": "WebPage",
           "name": "Range Rover Sport D300 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/range-rover-sport/d300/",
+          "url": "https://landroverengine.uk/range-rover-sport/d300",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

@@ -241,7 +241,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/range-rover-sport/l461"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -666,41 +667,41 @@
     ],
     "note": ""
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "D300",
-      "url": "https://landroverengine.uk/range-rover-sport/d300"
-    },
-    {
-      "name": "D350",
-      "url": "https://landroverengine.uk/range-rover-sport/d350"
-    }
-  ],
-  "petrolVariants": [
-    {
-      "name": "P400",
-      "url": "https://landroverengine.uk/range-rover-sport/p400"
-    },
-    {
-      "name": "P530",
-      "url": "https://landroverengine.uk/range-rover-sport/p530"
-    },
-    {
-      "name": "P615",
-      "url": "https://landroverengine.uk/range-rover-sport/sv"
-    },
-     {
-    "name": "P440e",
-    "url": "https://landroverengine.uk/range-rover-sport/p440e"
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "D300",
+        "url": "https://landroverengine.uk/range-rover-sport/d300"
+      },
+      {
+        "name": "D350",
+        "url": "https://landroverengine.uk/range-rover-sport/d350"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "P400",
+        "url": "https://landroverengine.uk/range-rover-sport/p400"
+      },
+      {
+        "name": "P530",
+        "url": "https://landroverengine.uk/range-rover-sport/p530"
+      },
+      {
+        "name": "P615",
+        "url": "https://landroverengine.uk/range-rover-sport/sv"
+      },
+      {
+        "name": "P440e",
+        "url": "https://landroverengine.uk/range-rover-sport/p440e"
+      },
+      {
+        "name": "P510e",
+        "url": "https://landroverengine.uk/range-rover-sport/p510e"
+      }
+    ],
+    "scopeNote": "All variants listed are L461 only. The full‑size Range Rover L460 shares most of these engines but is covered on its own Generation Page, since fitment and power outputs may differ slightly."
   },
-  {
-    "name": "P510e",
-    "url": "https://landroverengine.uk/range-rover-sport/p510e"
-  }
-  ],
-  "scopeNote": "All variants listed are L461 only. The full‑size Range Rover L460 shares most of these engines but is covered on its own Generation Page, since fitment and power outputs may differ slightly."
-},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 306DT (Ingenium 3.0 Diesel) – 980 platform‑wide enquiries [EM‑VERIFIED], with D300 and D350 variants",

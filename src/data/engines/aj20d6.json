@@ -3,12 +3,12 @@
     "slug": "aj20d6",
     "title": "Land Rover AJ20D6 (Ingenium 3.0 I6 Diesel) Engine — Reliability",
     "description": "The AJ20D6 is JLR's modern straight-six diesel — smooth and powerful, but early examples have AdBlue and EGR issues. Backed by 810+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/aj20d6/",
+    "canonical": "https://landroverengine.uk/engines/aj20d6",
     "openGraph": {
       "title": "Land Rover AJ20D6 (Ingenium 3.0 I6 Diesel) Engine — Reliability",
       "description": "The AJ20D6 is JLR's modern straight-six diesel — smooth and powerful, but early examples have AdBlue and EGR issues. Backed by 810+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/aj20d6/",
+      "url": "https://landroverengine.uk/engines/aj20d6",
       "image": "https://landroverengine.uk/images/landrover/engines/aj20d6.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines/"
+              "item": "https://landroverengine.uk/engines"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ20D6 (Ingenium 3.0 I6 Diesel)",
-              "item": "https://landroverengine.uk/engines/aj20d6/"
+              "item": "https://landroverengine.uk/engines/aj20d6"
             }
           ]
         },
@@ -52,19 +52,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Land Rover Range Rover L460 D300/D350",
-              "url": "https://landroverengine.uk/models/range-rover/"
+              "url": "https://landroverengine.uk/models/range-rover"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Land Rover Range Rover Sport L461 D300/D350",
-              "url": "https://landroverengine.uk/models/range-rover-sport/"
+              "url": "https://landroverengine.uk/models/range-rover-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Land Rover Defender L663 D250/D300",
-              "url": "https://landroverengine.uk/models/defender/"
+              "url": "https://landroverengine.uk/models/defender"
             }
           ]
         },
@@ -116,7 +116,7 @@
         {
           "@type": "Organization",
           "name": "landroverengine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -168,7 +168,7 @@
         {
           "@type": "WebPage",
           "name": "Land Rover AJ20D6 (Ingenium 3.0 I6 Diesel) Engine — Reliability",
-          "url": "https://landroverengine.uk/engines/aj20d6/",
+          "url": "https://landroverengine.uk/engines/aj20d6",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

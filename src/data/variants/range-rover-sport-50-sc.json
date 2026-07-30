@@ -5,12 +5,12 @@
     "titleCharCount": 59,
     "description": "Land Rover Range Rover Sport 5.0 Supercharged (AJ133) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your V8.",
     "descriptionCharCount": 159,
-    "canonical": "https://landroverengine.uk/range-rover-sport/50-sc/",
+    "canonical": "https://landroverengine.uk/range-rover-sport/50-sc",
     "openGraph": {
       "title": "5.0 Supercharged Engine Cost UK — Compare Quotes",
       "description": "Land Rover Range Rover Sport 5.0 Supercharged (AJ133) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your V8.",
       "type": "website",
-      "url": "https://landroverengine.uk/range-rover-sport/50-sc/",
+      "url": "https://landroverengine.uk/range-rover-sport/50-sc",
       "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-50-sc.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover Sport",
-              "item": "https://landroverengine.uk/range-rover-sport/"
+              "item": "https://landroverengine.uk/range-rover-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "5.0 Supercharged",
-              "item": "https://landroverengine.uk/range-rover-sport/50-sc/"
+              "item": "https://landroverengine.uk/range-rover-sport/50-sc"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Range Rover Sport L320 (2009–2013) 508PS",
-              "url": "https://landroverengine.uk/range-rover-sport/l320/"
+              "url": "https://landroverengine.uk/range-rover-sport/l320"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover Sport L494 (2014–2022) 508PS",
-              "url": "https://landroverengine.uk/range-rover-sport/l494/"
+              "url": "https://landroverengine.uk/range-rover-sport/l494"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "508PS (AJ133)",
-              "url": "https://landroverengine.uk/engines/508ps/"
+              "url": "https://landroverengine.uk/engines/508ps"
             }
           ]
         },
@@ -132,7 +132,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "5.0 Supercharged Engine Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/range-rover-sport/50-sc/",
+          "url": "https://landroverengine.uk/range-rover-sport/50-sc",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

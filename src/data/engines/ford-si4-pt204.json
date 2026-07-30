@@ -3,12 +3,12 @@
     "slug": "ford-si4-pt204",
     "title": "Land Rover PT204 (2.0 Si4 GTDi) Engine — Reliability",
     "description": "The PT204 is JLR's modern 2.0 turbo petrol — punchy and efficient, but cooling system and timing chain issues need watching. Backed by 480+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/ford-si4-pt204/",
+    "canonical": "https://landroverengine.uk/engines/ford-si4-pt204",
     "openGraph": {
       "title": "Land Rover PT204 (2.0 Si4 GTDi) Engine — Reliability",
       "description": "The PT204 is JLR's modern 2.0 turbo petrol — punchy and efficient, but cooling system and timing chain issues need watching. Backed by 480+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/ford-si4-pt204/",
+      "url": "https://landroverengine.uk/engines/ford-si4-pt204",
       "image": "https://landroverengine.uk/images/landrover/engines/ford-si4-pt204.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines/"
+              "item": "https://landroverengine.uk/engines"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "PT204 (2.0 Si4 GTDi)",
-              "item": "https://landroverengine.uk/engines/ford-si4-pt204/"
+              "item": "https://landroverengine.uk/engines/ford-si4-pt204"
             }
           ]
         },
@@ -52,43 +52,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Land Rover Defender L663 P200/P300",
-              "url": "https://landroverengine.uk/models/defender/"
+              "url": "https://landroverengine.uk/models/defender"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Land Rover Discovery 5 L462 P200/P300",
-              "url": "https://landroverengine.uk/models/discovery-5/"
+              "url": "https://landroverengine.uk/models/discovery-5"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Land Rover Discovery Sport L550 P200/P250",
-              "url": "https://landroverengine.uk/models/discovery-sport/"
+              "url": "https://landroverengine.uk/models/discovery-sport"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Land Rover Evoque L538/L551 P200/P250",
-              "url": "https://landroverengine.uk/models/evoque/"
+              "url": "https://landroverengine.uk/models/evoque"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "Land Rover Range Rover L405 P300",
-              "url": "https://landroverengine.uk/models/range-rover/"
+              "url": "https://landroverengine.uk/models/range-rover"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "Land Rover Range Rover Sport L494 P300",
-              "url": "https://landroverengine.uk/models/range-rover-sport/"
+              "url": "https://landroverengine.uk/models/range-rover-sport"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "Land Rover Range Rover Velar L560 P250/P300",
-              "url": "https://landroverengine.uk/models/velar/"
+              "url": "https://landroverengine.uk/models/velar"
             }
           ]
         },
@@ -140,7 +140,7 @@
         {
           "@type": "Organization",
           "name": "landroverengine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -192,7 +192,7 @@
         {
           "@type": "WebPage",
           "name": "Land Rover PT204 (2.0 Si4 GTDi) Engine — Reliability",
-          "url": "https://landroverengine.uk/engines/ford-si4-pt204/",
+          "url": "https://landroverengine.uk/engines/ford-si4-pt204",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

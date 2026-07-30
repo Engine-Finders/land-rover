@@ -247,7 +247,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/range-rover-evoque/l551"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -656,49 +657,49 @@
     ],
     "note": ""
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "D150",
-      "url": "https://landroverengine.uk/evoque/d150"
-    },
-    {
-      "name": "D165",
-      "url": "https://landroverengine.uk/evoque/d165"
-    },
-    {
-      "name": "D180",
-      "url": "https://landroverengine.uk/evoque/d180"
-    },
-    {
-      "name": "D200",
-      "url": "https://landroverengine.uk/evoque/d200"
-    },
-    {
-      "name": "D240",
-      "url": "https://landroverengine.uk/evoque/d240"
-    }
-  ],
-  "petrolVariants": [
-    {
-      "name": "P200",
-      "url": "https://landroverengine.uk/evoque/p200"
-    },
-    {
-      "name": "P250",
-      "url": "https://landroverengine.uk/evoque/p250"
-    },
-    {
-      "name": "P300",
-      "url": "https://landroverengine.uk/evoque/p300"
-    },
-    {
-      "name": "P300e",
-      "url": "https://landroverengine.uk/evoque/p300e"
-    }
-  ],
-  "scopeNote": "All variants listed are L551 body code only — the second-generation Evoque produced from late 2018 onwards. The first-generation L538 (2011–2018) is covered on its own Generation Page."
-},
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "D150",
+        "url": "https://landroverengine.uk/evoque/d150"
+      },
+      {
+        "name": "D165",
+        "url": "https://landroverengine.uk/evoque/d165"
+      },
+      {
+        "name": "D180",
+        "url": "https://landroverengine.uk/evoque/d180"
+      },
+      {
+        "name": "D200",
+        "url": "https://landroverengine.uk/evoque/d200"
+      },
+      {
+        "name": "D240",
+        "url": "https://landroverengine.uk/evoque/d240"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "P200",
+        "url": "https://landroverengine.uk/evoque/p200"
+      },
+      {
+        "name": "P250",
+        "url": "https://landroverengine.uk/evoque/p250"
+      },
+      {
+        "name": "P300",
+        "url": "https://landroverengine.uk/evoque/p300"
+      },
+      {
+        "name": "P300e",
+        "url": "https://landroverengine.uk/evoque/p300e"
+      }
+    ],
+    "scopeNote": "All variants listed are L551 body code only — the second-generation Evoque produced from late 2018 onwards. The first-generation L538 (2011–2018) is covered on its own Generation Page."
+  },
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. D180 (2.0-litre diesel, 180 bhp)",

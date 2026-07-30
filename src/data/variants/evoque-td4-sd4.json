@@ -5,12 +5,12 @@
     "titleCharCount": 62,
     "description": "Every Land Rover Range Rover Evoque TD4/SD4 engine — the 2.0-litre 204DTD Ingenium diesel. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 12 vetted specialists today.",
     "descriptionCharCount": 157,
-    "canonical": "https://landroverengine.uk/evoque/td4-sd4/",
+    "canonical": "https://landroverengine.uk/evoque/td4-sd4",
     "openGraph": {
       "title": "Evoque TD4 / SD4 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Land Rover Range Rover Evoque TD4/SD4 engine — the 2.0-litre 204DTD Ingenium diesel. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/evoque/td4-sd4/",
+      "url": "https://landroverengine.uk/evoque/td4-sd4",
       "image": "https://landroverengine.uk/images/land-rover/hero/evoque-td4-sd4.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Evoque",
-              "item": "https://landroverengine.uk/evoque/"
+              "item": "https://landroverengine.uk/evoque"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "L538",
-              "item": "https://landroverengine.uk/evoque/l538/"
+              "item": "https://landroverengine.uk/evoque/l538"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "TD4 / SD4",
-              "item": "https://landroverengine.uk/evoque/td4-sd4/"
+              "item": "https://landroverengine.uk/evoque/td4-sd4"
             }
           ]
         },
@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "L538 Evoque TD4/SD4 (204DTD, 2015–2018)",
-              "url": "https://landroverengine.uk/evoque/l538/"
+              "url": "https://landroverengine.uk/evoque/l538"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD (AJ200D) — TD4",
-              "url": "https://landroverengine.uk/engines/204dtd/"
+              "url": "https://landroverengine.uk/engines/204dtd"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "204DTD (AJ200D) — SD4",
-              "url": "https://landroverengine.uk/engines/204dtd/"
+              "url": "https://landroverengine.uk/engines/204dtd"
             }
           ]
         },
@@ -138,7 +138,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "Evoque TD4 / SD4 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/evoque/td4-sd4/",
+          "url": "https://landroverengine.uk/evoque/td4-sd4",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

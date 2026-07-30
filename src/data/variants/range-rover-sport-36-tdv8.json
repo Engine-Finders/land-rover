@@ -5,12 +5,12 @@
     "titleCharCount": 62,
     "description": "Every Land Rover Range Rover Sport 3.6 TDV8 engine — the 368DT twin-turbo V8 diesel. Real UK costs, turbo and timing chain advice, and honest reliability data. Get free quotes from 12 vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://landroverengine.uk/range-rover-sport/36-tdv8/",
+    "canonical": "https://landroverengine.uk/range-rover-sport/36-tdv8",
     "openGraph": {
       "title": "Range Rover Sport 3.6 TDV8 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Land Rover Range Rover Sport 3.6 TDV8 engine — the 368DT twin-turbo V8 diesel. Real UK costs, turbo and timing chain advice, and honest reliability data. Get free quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/range-rover-sport/36-tdv8/",
+      "url": "https://landroverengine.uk/range-rover-sport/36-tdv8",
       "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-36-tdv8.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover Sport",
-              "item": "https://landroverengine.uk/range-rover-sport/"
+              "item": "https://landroverengine.uk/range-rover-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "L320",
-              "item": "https://landroverengine.uk/range-rover-sport/l320/"
+              "item": "https://landroverengine.uk/range-rover-sport/l320"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "3.6 TDV8",
-              "item": "https://landroverengine.uk/range-rover-sport/36-tdv8/"
+              "item": "https://landroverengine.uk/range-rover-sport/36-tdv8"
             }
           ]
         },
@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "L320 Range Rover Sport 3.6 TDV8 (368DT, 2006–2010)",
-              "url": "https://landroverengine.uk/range-rover-sport/l320/"
+              "url": "https://landroverengine.uk/range-rover-sport/l320"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "368DT (LION)",
-              "url": "https://landroverengine.uk/engines/368dt/"
+              "url": "https://landroverengine.uk/engines/368dt"
             }
           ]
         },
@@ -132,7 +132,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "Range Rover Sport 3.6 TDV8 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/range-rover-sport/36-tdv8/",
+          "url": "https://landroverengine.uk/range-rover-sport/36-tdv8",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

@@ -18,7 +18,8 @@
       "title": "",
       "description": ""
     },
-    "jsonLd": {}
+    "jsonLd": {},
+    "canonical": "https://landroverengine.uk/evoque"
   },
   "hero": {
     "tagPill": "Evoque • 2011–Present • 2 Generations • Ingenium, Duratorq, PHEV",

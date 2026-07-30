@@ -5,12 +5,12 @@
     "titleCharCount": 55,
     "description": "Every Land Rover Defender D250 engine — AJ20D6 3.0‑litre straight‑six diesel. Real UK costs, recall insight, and honest reliability data. Get free quotes from 12 vetted LR specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://landroverengine.uk/defender/d250/",
+    "canonical": "https://landroverengine.uk/defender/d250",
     "openGraph": {
       "title": "D250 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Land Rover Defender D250 engine — AJ20D6 3.0‑litre straight‑six diesel. Real UK costs, recall insight, and honest reliability data. Get free quotes from 12 vetted LR specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/defender/d250/",
+      "url": "https://landroverengine.uk/defender/d250",
       "image": "https://landroverengine.uk/images/land-rover/hero/d250.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Defender",
-              "item": "https://landroverengine.uk/defender/"
+              "item": "https://landroverengine.uk/defender"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "D250",
-              "item": "https://landroverengine.uk/defender/d250/"
+              "item": "https://landroverengine.uk/defender/d250"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "L663 Defender D250 (AJ20D6, 2021–present)",
-              "url": "https://landroverengine.uk/defender/l663/"
+              "url": "https://landroverengine.uk/defender/l663"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ20D6",
-              "url": "https://landroverengine.uk/engines/aj20d6/"
+              "url": "https://landroverengine.uk/engines/aj20d6"
             }
           ]
         },
@@ -126,7 +126,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "D250 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/defender/d250/",
+          "url": "https://landroverengine.uk/defender/d250",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

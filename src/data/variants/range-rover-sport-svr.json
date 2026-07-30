@@ -5,12 +5,12 @@
     "titleCharCount": 57,
     "description": "Every Range Rover Sport SVR engine — AJ133 5.0 SC V8. Real UK costs, timing chain, coolant pipe and oil consumption data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://landroverengine.uk/range-rover-sport/svr/",
+    "canonical": "https://landroverengine.uk/range-rover-sport/svr",
     "openGraph": {
       "title": "Range Rover Sport SVR Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Range Rover Sport SVR engine — AJ133 5.0 SC V8. Real UK costs, timing chain, coolant pipe and oil consumption data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/range-rover-sport/svr/",
+      "url": "https://landroverengine.uk/range-rover-sport/svr",
       "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-svr.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover Sport",
-              "item": "https://landroverengine.uk/range-rover-sport/"
+              "item": "https://landroverengine.uk/range-rover-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "SVR",
-              "item": "https://landroverengine.uk/range-rover-sport/svr/"
+              "item": "https://landroverengine.uk/range-rover-sport/svr"
             }
           ]
         },
@@ -54,19 +54,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Range Rover Sport L494 SVR (AJ133 5.0 SC V8, 550PS, 2014-2017)",
-              "url": "https://landroverengine.uk/range-rover-sport/l494/"
+              "url": "https://landroverengine.uk/range-rover-sport/l494"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover Sport L494 SVR (AJ133 5.0 SC V8, 575PS, 2017-2022)",
-              "url": "https://landroverengine.uk/range-rover-sport/l494/"
+              "url": "https://landroverengine.uk/range-rover-sport/l494"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Range Rover Sport L461 SVR (4.4TT V8, BMW-derived, 635PS, 2024-present)",
-              "url": "https://landroverengine.uk/range-rover-sport/l461/"
+              "url": "https://landroverengine.uk/range-rover-sport/l461"
             }
           ]
         },
@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 (5.0 SC V8, 550PS)",
-              "url": "https://landroverengine.uk/engines/aj133/"
+              "url": "https://landroverengine.uk/engines/aj133"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ133 (5.0 SC V8, 575PS)",
-              "url": "https://landroverengine.uk/engines/aj133/"
+              "url": "https://landroverengine.uk/engines/aj133"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "4.4TT V8 (BMW-derived)",
-              "url": "https://landroverengine.uk/engines/44tt-v8/"
+              "url": "https://landroverengine.uk/engines/44tt-v8"
             }
           ]
         },
@@ -150,7 +150,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -187,7 +187,7 @@
         {
           "@type": "WebPage",
           "name": "Range Rover Sport SVR Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/range-rover-sport/svr/",
+          "url": "https://landroverengine.uk/range-rover-sport/svr",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

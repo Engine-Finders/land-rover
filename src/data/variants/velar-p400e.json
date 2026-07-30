@@ -5,12 +5,12 @@
     "titleCharCount": 60,
     "description": "The Land Rover Range Rover Velar P400e (AJ200 PHEV) — 404 PS, 640 Nm, 33‑mile EV range. Real UK costs, recall advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://landroverengine.uk/velar/p400e/",
+    "canonical": "https://landroverengine.uk/velar/p400e",
     "openGraph": {
       "title": "Velar P400e Engine Replacement Cost UK — Compare Quotes",
       "description": "The Land Rover Range Rover Velar P400e (AJ200 PHEV) — 404 PS, 640 Nm, 33‑mile EV range. Real UK costs, recall advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/velar/p400e/",
+      "url": "https://landroverengine.uk/velar/p400e",
       "image": "https://landroverengine.uk/images/land-rover/hero/velar-p400e.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Velar",
-              "item": "https://landroverengine.uk/velar/"
+              "item": "https://landroverengine.uk/velar"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "L560",
-              "item": "https://landroverengine.uk/velar/l560/"
+              "item": "https://landroverengine.uk/velar/l560"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "P400e",
-              "item": "https://landroverengine.uk/velar/p400e/"
+              "item": "https://landroverengine.uk/velar/p400e"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ200 (PHEV)",
-              "url": "https://landroverengine.uk/engines/aj200-phev/"
+              "url": "https://landroverengine.uk/engines/aj200-phev"
             }
           ]
         },
@@ -132,7 +132,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "Velar P400e Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/velar/p400e/",
+          "url": "https://landroverengine.uk/velar/p400e",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

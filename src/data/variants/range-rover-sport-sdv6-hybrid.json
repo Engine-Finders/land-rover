@@ -5,12 +5,12 @@
     "titleCharCount": 60,
     "description": "The Land Rover Range Rover Sport SDV6 Hybrid (306DT + e‑motor) — 354 PS, 700 Nm, 45 mpg. Real UK costs, hybrid battery advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://landroverengine.uk/range-rover-sport/sdv6-hybrid/",
+    "canonical": "https://landroverengine.uk/range-rover-sport/sdv6-hybrid",
     "openGraph": {
       "title": "Range Rover Sport SDV6 Hybrid Engine Replacement Cost UK — Compare Quotes",
       "description": "The Land Rover Range Rover Sport SDV6 Hybrid (306DT + e‑motor) — 354 PS, 700 Nm, 45 mpg. Real UK costs, hybrid battery advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/range-rover-sport/sdv6-hybrid/",
+      "url": "https://landroverengine.uk/range-rover-sport/sdv6-hybrid",
       "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-sdv6-hybrid.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover Sport",
-              "item": "https://landroverengine.uk/range-rover-sport/"
+              "item": "https://landroverengine.uk/range-rover-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "L494",
-              "item": "https://landroverengine.uk/range-rover-sport/l494/"
+              "item": "https://landroverengine.uk/range-rover-sport/l494"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "SDV6 Hybrid",
-              "item": "https://landroverengine.uk/range-rover-sport/sdv6-hybrid/"
+              "item": "https://landroverengine.uk/range-rover-sport/sdv6-hybrid"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "306DT (Hybrid)",
-              "url": "https://landroverengine.uk/engines/306dt-hybrid/"
+              "url": "https://landroverengine.uk/engines/306dt-hybrid"
             }
           ]
         },
@@ -132,7 +132,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "Range Rover Sport SDV6 Hybrid Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/range-rover-sport/sdv6-hybrid/",
+          "url": "https://landroverengine.uk/range-rover-sport/sdv6-hybrid",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

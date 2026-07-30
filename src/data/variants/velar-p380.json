@@ -5,12 +5,12 @@
     "titleCharCount": 57,
     "description": "Every Velar P380 engine — AJ126 3.0 V6 supercharged. Real UK costs, coolant pipe and timing chain reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://landroverengine.uk/velar/p380/",
+    "canonical": "https://landroverengine.uk/velar/p380",
     "openGraph": {
       "title": "Velar P380 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Velar P380 engine — AJ126 3.0 V6 supercharged. Real UK costs, coolant pipe and timing chain reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/velar/p380/",
+      "url": "https://landroverengine.uk/velar/p380",
       "image": "https://landroverengine.uk/images/land-rover/hero/velar-p380.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Velar",
-              "item": "https://landroverengine.uk/velar/"
+              "item": "https://landroverengine.uk/velar"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "L560",
-              "item": "https://landroverengine.uk/velar/l560/"
+              "item": "https://landroverengine.uk/velar/l560"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "P380",
-              "item": "https://landroverengine.uk/velar/p380/"
+              "item": "https://landroverengine.uk/velar/p380"
             }
           ]
         },
@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Velar L560 P380 (AJ126, 2017-2020)",
-              "url": "https://landroverengine.uk/velar/l560/"
+              "url": "https://landroverengine.uk/velar/l560"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ126 (3.0 SC V6)",
-              "url": "https://landroverengine.uk/engines/aj126/"
+              "url": "https://landroverengine.uk/engines/aj126"
             }
           ]
         },
@@ -132,7 +132,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "Velar P380 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/velar/p380/",
+          "url": "https://landroverengine.uk/velar/p380",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

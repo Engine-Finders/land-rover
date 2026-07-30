@@ -5,12 +5,12 @@
     "titleCharCount": 61,
     "description": "Every Land Rover Range Rover Sport D250 engine — the 3.0-litre AJ20D6 Ingenium diesel with MHEV. Real UK costs, DPF and timing chain advice, and honest reliability data. Get free quotes from 12 vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://landroverengine.uk/range-rover-sport/d250/",
+    "canonical": "https://landroverengine.uk/range-rover-sport/d250",
     "openGraph": {
       "title": "Range Rover Sport D250 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Land Rover Range Rover Sport D250 engine — the 3.0-litre AJ20D6 Ingenium diesel with MHEV. Real UK costs, DPF and timing chain advice, and honest reliability data. Get free quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/range-rover-sport/d250/",
+      "url": "https://landroverengine.uk/range-rover-sport/d250",
       "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-d250.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover Sport",
-              "item": "https://landroverengine.uk/range-rover-sport/"
+              "item": "https://landroverengine.uk/range-rover-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "L494 / L461",
-              "item": "https://landroverengine.uk/range-rover-sport/l494-l461/"
+              "item": "https://landroverengine.uk/range-rover-sport/l494-l461"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "D250",
-              "item": "https://landroverengine.uk/range-rover-sport/d250/"
+              "item": "https://landroverengine.uk/range-rover-sport/d250"
             }
           ]
         },
@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "L494 Range Rover Sport D250 (AJ20D6, 2020–2022)",
-              "url": "https://landroverengine.uk/range-rover-sport/l494/"
+              "url": "https://landroverengine.uk/range-rover-sport/l494"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "L461 Range Rover Sport D250 (AJ20D6, 2022–present)",
-              "url": "https://landroverengine.uk/range-rover-sport/l461/"
+              "url": "https://landroverengine.uk/range-rover-sport/l461"
             }
           ]
         },
@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ20D6 (DT306)",
-              "url": "https://landroverengine.uk/engines/aj20d6/"
+              "url": "https://landroverengine.uk/engines/aj20d6"
             }
           ]
         },
@@ -138,7 +138,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "Range Rover Sport D250 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/range-rover-sport/d250/",
+          "url": "https://landroverengine.uk/range-rover-sport/d250",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

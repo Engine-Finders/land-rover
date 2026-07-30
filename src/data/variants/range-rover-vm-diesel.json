@@ -5,12 +5,12 @@
     "titleCharCount": 61,
     "description": "Every Land Rover Range Rover VM Diesel engine — 2.4L and 2.5L four-cylinder turbo-diesels, 1986–1992. Real UK costs, head gasket advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://landroverengine.uk/range-rover/vm-diesel/",
+    "canonical": "https://landroverengine.uk/range-rover/vm-diesel",
     "openGraph": {
       "title": "VM Diesel Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Land Rover Range Rover VM Diesel engine — 2.4L and 2.5L four-cylinder turbo-diesels, 1986–1992. Real UK costs, head gasket advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/range-rover/vm-diesel/",
+      "url": "https://landroverengine.uk/range-rover/vm-diesel",
       "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-vm-diesel.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover",
-              "item": "https://landroverengine.uk/range-rover/"
+              "item": "https://landroverengine.uk/range-rover"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "VM Diesel",
-              "item": "https://landroverengine.uk/range-rover/vm-diesel/"
+              "item": "https://landroverengine.uk/range-rover/vm-diesel"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "VM81A / 11A",
-              "url": "https://landroverengine.uk/engines/vm81a/"
+              "url": "https://landroverengine.uk/engines/vm81a"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "14L",
-              "url": "https://landroverengine.uk/engines/14l/"
+              "url": "https://landroverengine.uk/engines/14l"
             }
           ]
         },
@@ -138,7 +138,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "VM Diesel Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/range-rover/vm-diesel/",
+          "url": "https://landroverengine.uk/range-rover/vm-diesel",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

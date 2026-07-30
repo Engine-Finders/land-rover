@@ -259,7 +259,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/land-rover-range-rover/l460"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -592,41 +593,41 @@
     ],
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures — L460 is a new generation with no direct predecessor cost comparison. Costs are derived from Table A — Engine Replacement Economics, with PHEV and V8 costs marked [PLACEHOLDER] pending further verification."
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "D300",
-      "url": "https://landroverengine.uk/range-rover/d300"
-    },
-    {
-      "name": "D350",
-      "url": "https://landroverengine.uk/range-rover/d350"
-    }
-  ],
-  "petrolVariants": [
-    {
-      "name": "P400",
-      "url": "https://landroverengine.uk/range-rover/p400"
-    },
-    {
-      "name": "P460e",
-      "url": "https://landroverengine.uk/range-rover/p440e"
-    },
-    {
-      "name": "P550e",
-      "url": "https://landroverengine.uk/range-rover/p510e"
-    },
-    {
-      "name": "P530",
-      "url": "https://landroverengine.uk/range-rover/p530"
-    },
-    {
-      "name": "P615",
-      "url": "https://landroverengine.uk/range-rover/p615-sv"
-    }
-  ],
-  "scopeNote": "All variants listed are Range Rover L460 only. Range Rover Sport L461 (2022–present) shares the MLA-Flex platform and many of these engines but is covered on its own Generation Page. P460e and P550e are plug-in hybrid variants; P530 and P615 are V8 petrol variants (P615 exclusive to Range Rover SV)."
-},
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "D300",
+        "url": "https://landroverengine.uk/range-rover/d300"
+      },
+      {
+        "name": "D350",
+        "url": "https://landroverengine.uk/range-rover/d350"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "P400",
+        "url": "https://landroverengine.uk/range-rover/p400"
+      },
+      {
+        "name": "P460e",
+        "url": "https://landroverengine.uk/range-rover/p440e"
+      },
+      {
+        "name": "P550e",
+        "url": "https://landroverengine.uk/range-rover/p510e"
+      },
+      {
+        "name": "P530",
+        "url": "https://landroverengine.uk/range-rover/p530"
+      },
+      {
+        "name": "P615",
+        "url": "https://landroverengine.uk/range-rover/p615-sv"
+      }
+    ],
+    "scopeNote": "All variants listed are Range Rover L460 only. Range Rover Sport L461 (2022–present) shares the MLA-Flex platform and many of these engines but is covered on its own Generation Page. P460e and P550e are plug-in hybrid variants; P530 and P615 are V8 petrol variants (P615 exclusive to Range Rover SV)."
+  },
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. D300/D350 (largest share of 184 enquiries)",

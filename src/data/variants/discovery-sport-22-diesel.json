@@ -5,12 +5,12 @@
     "titleCharCount": 59,
     "description": "Land Rover Discovery Sport 2.2 diesel – Ford Duratorq engine. Real UK costs, EGR cooler facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://landroverengine.uk/discovery-sport/22-diesel/",
+    "canonical": "https://landroverengine.uk/discovery-sport/22-diesel",
     "openGraph": {
       "title": "Discovery Sport 2.2 Diesel Engine Cost — Compare Quotes",
       "description": "Land Rover Discovery Sport 2.2 diesel – Ford Duratorq engine. Real UK costs, EGR cooler facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/discovery-sport/22-diesel/",
+      "url": "https://landroverengine.uk/discovery-sport/22-diesel",
       "image": "https://landroverengine.uk/images/land-rover/hero/22-diesel.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Discovery Sport",
-              "item": "https://landroverengine.uk/discovery-sport/"
+              "item": "https://landroverengine.uk/discovery-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.2 Diesel",
-              "item": "https://landroverengine.uk/discovery-sport/22-diesel/"
+              "item": "https://landroverengine.uk/discovery-sport/22-diesel"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Discovery Sport L550 2.2 Diesel (2015-2016)",
-              "url": "https://landroverengine.uk/discovery-sport/l550/"
+              "url": "https://landroverengine.uk/discovery-sport/l550"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "224DT",
-              "url": "https://landroverengine.uk/engines/224dt/"
+              "url": "https://landroverengine.uk/engines/224dt"
             }
           ]
         },
@@ -126,7 +126,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "Discovery Sport 2.2 Diesel Engine Cost — Compare Quotes",
-          "url": "https://landroverengine.uk/discovery-sport/22-diesel/",
+          "url": "https://landroverengine.uk/discovery-sport/22-diesel",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

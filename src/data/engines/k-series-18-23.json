@@ -3,12 +3,12 @@
     "slug": "k-series-18-23",
     "title": "Land Rover K-Series 1.8/2.3 Engine — Reliability",
     "description": "The K-Series is Rover's lightweight petrol four — brilliant when right, but the head gasket is the defining weak point. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/k-series-18-23/",
+    "canonical": "https://landroverengine.uk/engines/k-series-18-23",
     "openGraph": {
       "title": "Land Rover K-Series 1.8/2.3 Engine — Reliability",
       "description": "The K-Series is Rover's lightweight petrol four — brilliant when right, but the head gasket is the defining weak point. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/k-series-18-23/",
+      "url": "https://landroverengine.uk/engines/k-series-18-23",
       "image": "https://landroverengine.uk/images/landrover/engines/k-series-18-23.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines/"
+              "item": "https://landroverengine.uk/engines"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "K-Series 1.8/2.3",
-              "item": "https://landroverengine.uk/engines/k-series-18-23/"
+              "item": "https://landroverengine.uk/engines/k-series-18-23"
             }
           ]
         },
@@ -52,7 +52,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Land Rover Freelander Series 1 (L314) 1.8 K-Series / 2.3 K-Series",
-              "url": "https://landroverengine.uk/models/freelander-1/"
+              "url": "https://landroverengine.uk/models/freelander-1"
             }
           ]
         },
@@ -104,7 +104,7 @@
         {
           "@type": "Organization",
           "name": "landroverengine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -156,7 +156,7 @@
         {
           "@type": "WebPage",
           "name": "Land Rover K-Series 1.8/2.3 Engine — Reliability",
-          "url": "https://landroverengine.uk/engines/k-series-18-23/",
+          "url": "https://landroverengine.uk/engines/k-series-18-23",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

@@ -3,12 +3,12 @@
     "slug": "aj20p6",
     "title": "Land Rover AJ20P6 (P400) Engine — Reliability & Cost",
     "description": "The AJ20P6 is JLR's modern straight-six petrol — smooth and powerful, but cooling system vigilance is key. Backed by 160+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/aj20p6/",
+    "canonical": "https://landroverengine.uk/engines/aj20p6",
     "openGraph": {
       "title": "Land Rover AJ20P6 (P400) Engine — Reliability & Cost",
       "description": "The AJ20P6 is JLR's modern straight-six petrol — smooth and powerful, but cooling system vigilance is key. Backed by 160+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/aj20p6/",
+      "url": "https://landroverengine.uk/engines/aj20p6",
       "image": "https://landroverengine.uk/images/landrover/engines/aj20p6.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines/"
+              "item": "https://landroverengine.uk/engines"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ20P6 (Ingenium 3.0 I6 Petrol / P400)",
-              "item": "https://landroverengine.uk/engines/aj20p6/"
+              "item": "https://landroverengine.uk/engines/aj20p6"
             }
           ]
         },
@@ -52,19 +52,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Land Rover Range Rover L460 P400",
-              "url": "https://landroverengine.uk/models/range-rover/"
+              "url": "https://landroverengine.uk/models/range-rover"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Land Rover Range Rover Sport L461 P400",
-              "url": "https://landroverengine.uk/models/range-rover-sport/"
+              "url": "https://landroverengine.uk/models/range-rover-sport"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Land Rover Defender L663 P400",
-              "url": "https://landroverengine.uk/models/defender/"
+              "url": "https://landroverengine.uk/models/defender"
             }
           ]
         },
@@ -116,7 +116,7 @@
         {
           "@type": "Organization",
           "name": "landroverengine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -168,7 +168,7 @@
         {
           "@type": "WebPage",
           "name": "Land Rover AJ20P6 (P400) Engine — Reliability & Cost",
-          "url": "https://landroverengine.uk/engines/aj20p6/",
+          "url": "https://landroverengine.uk/engines/aj20p6",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

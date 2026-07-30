@@ -206,7 +206,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/discovery/d2"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -497,37 +498,37 @@
     ],
     "note": "No Generation variance note required — no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [EM-QUOTE]."
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "Td5",
-      "url": "https://landroverengine.uk/discovery/td5"
-    },
-     {
-    "name": "TD5",
-    "url": "https://landroverengine.uk/discovery/td5"
-  }
-  ],
-  "petrolVariants": [
-    {
-      "name": "V8",
-      "url": "https://landroverengine.uk/discovery/rover-v8"
-    },
-    {
-      "name": "V8 ES",
-      "url": "https://landroverengine.uk/discovery/rover-v8"
-    },
-    {
-      "name": "V8 HSE",
-      "url": "https://landroverengine.uk/discovery/rover-v8"
-    },
-    {
-    "name": "TD5",
-    "url": "https://landroverengine.uk/discovery/td5"
-  }
-  ],
-  "scopeNote": "All variants listed are Discovery 2 / D2 / L318 only. The Discovery 3 (L319) is a separate generation with different engines and is covered on its own Generation Page."
-},
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "Td5",
+        "url": "https://landroverengine.uk/discovery/td5"
+      },
+      {
+        "name": "TD5",
+        "url": "https://landroverengine.uk/discovery/td5"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "V8",
+        "url": "https://landroverengine.uk/discovery/rover-v8"
+      },
+      {
+        "name": "V8 ES",
+        "url": "https://landroverengine.uk/discovery/rover-v8"
+      },
+      {
+        "name": "V8 HSE",
+        "url": "https://landroverengine.uk/discovery/rover-v8"
+      },
+      {
+        "name": "TD5",
+        "url": "https://landroverengine.uk/discovery/td5"
+      }
+    ],
+    "scopeNote": "All variants listed are Discovery 2 / D2 / L318 only. The Discovery 3 (L319) is a separate generation with different engines and is covered on its own Generation Page."
+  },
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

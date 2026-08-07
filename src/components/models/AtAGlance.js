@@ -3,7 +3,7 @@ export default function AtAGlance({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
       <table border="1" cellPadding="4" cellSpacing="0">
         <thead>
           <tr>
@@ -14,8 +14,8 @@ export default function AtAGlance({ data }) {
         <tbody>
           {data.rows?.map((row) => (
             <tr key={row.metric}>
-              <td>{row.metric}</td>
-              <td>{row.value}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.metric }} />
+              <td dangerouslySetInnerHTML={{ __html: row.value }} />
             </tr>
           ))}
         </tbody>

@@ -10,7 +10,7 @@ export default function MarketIntelligence({ data }) {
           <h3>Most requested engines</h3>
           <ul>
             {data.mostRequestedEngines.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
             ))}
           </ul>
         </>
@@ -21,14 +21,16 @@ export default function MarketIntelligence({ data }) {
           <h3>Most requested variants</h3>
           <ul>
             {data.mostRequestedVariants.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
             ))}
           </ul>
         </>
       )}
 
       {data.averageReplacementCost && (
-        <p>Average replacement cost: {data.averageReplacementCost}</p>
+        <p>
+          Average replacement cost: <span dangerouslySetInnerHTML={{ __html: data.averageReplacementCost }} />
+        </p>
       )}
 
       {data.mostCommonFailures?.length > 0 && (
@@ -36,7 +38,7 @@ export default function MarketIntelligence({ data }) {
           <h3>Most common failures</h3>
           <ul>
             {data.mostCommonFailures.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
             ))}
           </ul>
         </>
@@ -58,11 +60,11 @@ export default function MarketIntelligence({ data }) {
             <tbody>
               {data.liveFeed.map((row) => (
                 <tr key={`${row.vehicle}-${row.location}-${row.issue}`}>
-                  <td>{row.vehicle}</td>
-                  <td>{row.location}</td>
-                  <td>{row.issue}</td>
-                  <td>{row.enquiries}</td>
-                  <td>{row.updated}</td>
+                  <td dangerouslySetInnerHTML={{ __html: row.vehicle }} />
+                  <td dangerouslySetInnerHTML={{ __html: row.location }} />
+                  <td dangerouslySetInnerHTML={{ __html: row.issue }} />
+                  <td dangerouslySetInnerHTML={{ __html: row.enquiries }} />
+                  <td dangerouslySetInnerHTML={{ __html: row.updated }} />
                 </tr>
               ))}
             </tbody>

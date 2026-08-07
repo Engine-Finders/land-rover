@@ -277,7 +277,7 @@
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
-          "text": "any low oil pressure warning or bottom‑end knock on a 276DT requires immediate investigation"
+          "text": "any low oil pressure warning or bottom‑end knock on a <a href='https://landroverengine.uk/engine/276dt'>276DT</a> requires immediate investigation"
         },
         "recommendation": "This is the single biggest risk on the 2.7 TDV6. The oil pump housing has a weak tensioner mount that can fail, causing the oil pump to stop. The result is rapid bottom‑end destruction. Preventative replacement of the oil pump housing is the most important investment you can make in a 276DT-engined Discovery. If you hear cold‑start knock or see the oil pressure warning, stop driving immediately and have it recovered. A full engine replacement (£5,000+) is significantly more expensive than a preventative £1,500–£3,000 repair.",
         "failureLink": {

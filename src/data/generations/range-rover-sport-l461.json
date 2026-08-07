@@ -293,7 +293,7 @@
     ],
     "engines": [
       {
-        "engineCode": "306DT (AJ20D6)",
+        "engineCode": "306DT (<a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a>)",
         "family": "Ingenium D",
         "fuel": "Diesel",
         "displacement": "3.0L",
@@ -317,7 +317,7 @@
         "avgReconCost": "£6,500–£9,500 [EM-QUOTE]"
       },
       {
-        "engineCode": "306PS (AJ20P6)",
+        "engineCode": "306PS (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>)",
         "family": "Ingenium P",
         "fuel": "Petrol",
         "displacement": "3.0L",
@@ -479,7 +479,7 @@
     ],
     "economicsRule": {
       "title": "The L461 rule",
-      "text": "A £6,500–£9,500 306DT recon against a £55,000‑plus L461 sits at 12–17% of the car's value – a routine repair decision, not a financial disaster. Even the most expensive S63 replacement at £14,000 is under 30% of a typical £50,000+ example. The Land Rover 60% threshold is almost never triggered here – L461 values are high enough to absorb even the biggest engine bills. That said, always factor in the car's condition and mileage; a neglected example may not be worth the investment."
+      "text": "A £6,500–£9,500 <a href='https://landroverengine.uk/engine/306dt'>306DT</a> recon against a £55,000‑plus L461 sits at 12–17% of the car's value – a routine repair decision, not a financial disaster. Even the most expensive S63 replacement at £14,000 is under 30% of a typical £50,000+ example. The Land Rover 60% threshold is almost never triggered here – L461 values are high enough to absorb even the biggest engine bills. That said, always factor in the car's condition and mileage; a neglected example may not be worth the investment."
     },
     "keyTakeaways": [
       {

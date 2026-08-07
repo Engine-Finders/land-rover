@@ -9,7 +9,7 @@ export default function HomeSec12({ data }) {
             <h2 className="text-2xl font-bold text-black md:text-4xl">
               Why Land Rover Owners Trust This Site
             </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+            <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           </div>
           <div className="relative h-20 w-28 shrink-0 md:h-28 md:w-48">
             <Image
@@ -27,13 +27,14 @@ export default function HomeSec12({ data }) {
           {data.signals.map((item) => (
             <article key={item.id} className="border border-gray-200 p-2">
               <div className="mb-1 flex items-center gap-2">
-                <span className="bg-blue-700 px-1.5 py-0.5 text-xs font-semibold text-white">
-                  {item.id}
-                </span>
+                <span
+                  className="bg-blue-700 px-1.5 py-0.5 text-xs font-semibold text-white"
+                  dangerouslySetInnerHTML={{ __html: item.id }}
+                />
                 <span className="text-lg">{item.icon}</span>
               </div>
-              <h3 className="text-sm font-bold text-black">{item.title}</h3>
-              <p className="text-xs text-gray-600">{item.description}</p>
+              <h3 className="text-sm font-bold text-black" dangerouslySetInnerHTML={{ __html: item.title }} />
+              <p className="text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: item.description }} />
             </article>
           ))}
         </div>

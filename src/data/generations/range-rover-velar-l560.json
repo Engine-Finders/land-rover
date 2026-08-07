@@ -323,7 +323,7 @@
     ],
     "engines": [
       {
-        "engineCode": "204DTD",
+        "engineCode": "<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a>",
         "family": "Ingenium D",
         "fuel": "Diesel",
         "displacement": "2.0L (1999cc)",
@@ -409,7 +409,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "All ratings are provisional — no dedicated Engine Page exists for any Velar engine family. The 204PT (Ingenium petrol) and 306PS (V6 petrol) carry the strongest reliability reputations based on specialist consensus. The 306DT (D300) is known for crankshaft bearing risk, a pattern shared with the wider 3.0 V6 diesel family. The AJ133 V8 is robust but timing chain tensioner wear is a pre-2013 risk — Velar's later units are improved. The 204DTD (Ingenium diesel) carries pre-2019 tensioner risk."
+      "text": "All ratings are provisional — no dedicated Engine Page exists for any Velar engine family. The 204PT (Ingenium petrol) and 306PS (V6 petrol) carry the strongest reliability reputations based on specialist consensus. The <a href='https://landroverengine.uk/engine/306dt'>306DT</a> (D300) is known for crankshaft bearing risk, a pattern shared with the wider 3.0 V6 diesel family. The <a href='https://landroverengine.uk/engine/aj133'>AJ133</a> V8 is robust but timing chain tensioner wear is a pre-2013 risk — Velar's later units are improved. The 204DTD (Ingenium diesel) carries pre-2019 tensioner risk."
     },
     "dataCorrections": []
   },

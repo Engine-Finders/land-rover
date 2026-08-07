@@ -8,22 +8,24 @@ export default function Compatibility({ data }) {
         <thead>
           <tr>
             {data.columns?.map((col) => (
-              <th key={col}>{col}</th>
+              <th key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </tr>
         </thead>
         <tbody>
           {data.rows?.map((row) => (
             <tr key={`${row.model}-${row.generation}`}>
-              <td>{row.model}</td>
-              <td>{row.generation}</td>
-              <td>{row.variantBadge}</td>
-              <td>{row.years}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.model }} />
+              <td dangerouslySetInnerHTML={{ __html: row.generation }} />
+              <td dangerouslySetInnerHTML={{ __html: row.variantBadge }} />
+              <td dangerouslySetInnerHTML={{ __html: row.years }} />
             </tr>
           ))}
         </tbody>
       </table>
-      {data.crossBrandNote && <p>{data.crossBrandNote}</p>}
+      {data.crossBrandNote && (
+        <p dangerouslySetInnerHTML={{ __html: data.crossBrandNote }} />
+      )}
       <hr />
     </section>
   );

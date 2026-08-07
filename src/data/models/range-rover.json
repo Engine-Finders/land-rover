@@ -344,7 +344,7 @@
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "4.4 SDV8 (448DT) — the most dependable big diesel JLR made • BMW M57 Td6 (L322 era)"
+        "ourCall": "4.4 SDV8 (448DT) — the most dependable big diesel JLR made • BMW <a href='https://landroverengine.uk/engine/m57-td6'>M57</a> <a href='https://landroverengine.uk/engine/m57-td6'>Td6</a> (L322 era)"
       },
       {
         "metric": "Highest-Risk Engine",
@@ -356,7 +356,7 @@
       },
       {
         "metric": "Best Modern Buy",
-        "ourCall": "L460 D350 — the AJ20D6 six carries none of the old V6 legacy"
+        "ourCall": "L460 D350 — the <a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> six carries none of the old V6 legacy"
       },
       {
         "metric": "Average Engine Replacement",
@@ -447,7 +447,7 @@
       {
         "title": "Range Rover L322",
         "badge": "",
-        "meta": "2002–2012 • BMW M62 4.4, BMW M57 Td6, 4.4 AJ-V8, 4.2 SC, 3.6 TDV8 (368DT), 4.4 TDV8 (448DT), 5.0 (AJ133)",
+        "meta": "2002–2012 • BMW <a href='https://landroverengine.uk/engine/m62'>M62</a> 4.4, BMW M57 Td6, 4.4 AJ-V8, 4.2 SC, 3.6 TDV8 (<a href='https://landroverengine.uk/engine/368dt'>368DT</a>), 4.4 TDV8 (448DT), 5.0 (AJ133)",
         "rating": "⭐⭐⭐☆☆",
         "verdict": "The £8,000 Range Rover trap and the £20,000 Range Rover bargain are the same car with different histories. BMW-era engines are the sleeper choice; budget for the air suspension either way.",
         "cta": {
@@ -458,7 +458,7 @@
       {
         "title": "Range Rover L405",
         "badge": "🔥 Most Enquired — 284 enquiries (2025) [EM-VERIFIED]",
-        "meta": "2012–2021 • 3.0 TDV6/SDV6 (306DT), 4.4 SDV8 (448DT), 5.0 SC (508PS/AJ133), P400e (204PT), D300/D350 (AJ20D6, 2020+)",
+        "meta": "2012–2021 • 3.0 TDV6/SDV6 (306DT), 4.4 SDV8 (<a href='https://landroverengine.uk/engine/448dt'>448DT</a>), 5.0 SC (508PS/AJ133), P400e (204PT), D300/D350 (AJ20D6, 2020+)",
         "rating": "⭐⭐⭐⭐☆",
         "verdict": "The modern sweet spot — aluminium body, real depreciation absorbed, and the SDV8 at its peak. The TDV6's crank-bearing question is the one cloud: buy the V8 or buy the paperwork.",
         "cta": {
@@ -469,7 +469,7 @@
       {
         "title": "Range Rover L460",
         "badge": "",
-        "meta": "2022–present • D300/D350 (AJ20D6), P400 (AJ20P6), P440e/P510e PHEV, P530 4.4 V8 (BMW-derived)",
+        "meta": "2022–present • D300/D350 (AJ20D6), P400 (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>), P440e/P510e PHEV, P530 4.4 V8 (BMW-derived)",
         "rating": "⭐⭐⭐⭐☆",
         "verdict": "Early-build electronics gremlins made headlines; the engines themselves are proving strong. At these values, no engine bill will ever total the car — the safest replacement economics in the entire JLR range.",
         "cta": {
@@ -517,7 +517,7 @@
         "avgRebuildCost": "£3,000–£5,500 [PLACEHOLDER — confirm vs Table A]"
       },
       {
-        "engineCode": "200Tdi/300Tdi",
+        "engineCode": "<a href='https://landroverengine.uk/engine/200-300tdi'>200Tdi/300Tdi</a>",
         "family": "Tdi",
         "fuel": "Diesel",
         "displacement": "2.5L",
@@ -553,7 +553,7 @@
         "avgRebuildCost": "£3,000–£5,500 [PLACEHOLDER]"
       },
       {
-        "engineCode": "2.5 DSE (M51)",
+        "engineCode": "2.5 DSE (<a href='https://landroverengine.uk/engine/m51'>M51</a>)",
         "family": "BMW M51",
         "fuel": "Diesel",
         "displacement": "2.5L",
@@ -1199,7 +1199,7 @@
       {
         "id": 3,
         "question": "Which Range Rover engine should I avoid?",
-        "answer": "The 3.0 TDV6/SDV6 (306DT) without documented oil-interval history — its crankshaft-bearing failure leaves nothing to rebuild. The 3.6 TDV8 (368DT) needs its timing-chain history evidenced. Unrebuild P38 V8s carry liner risk priced into every listing."
+        "answer": "The 3.0 TDV6/SDV6 (<a href='https://landroverengine.uk/engine/306dt'>306DT</a>) without documented oil-interval history — its crankshaft-bearing failure leaves nothing to rebuild. The 3.6 TDV8 (368DT) needs its timing-chain history evidenced. Unrebuild P38 V8s carry liner risk priced into every listing."
       },
       {
         "id": 4,

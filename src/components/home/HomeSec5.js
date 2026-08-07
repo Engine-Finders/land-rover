@@ -11,7 +11,7 @@ export default function HomeSec5({ data }) {
             <h2 className="text-2xl font-bold text-black md:text-4xl">
               Comparison Hub — Head-to-Head Verdicts
             </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+            <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           </div>
           <div className="flex shrink-0 gap-1">
             {data.headerImages.map((img) => (
@@ -35,9 +35,10 @@ export default function HomeSec5({ data }) {
               key={item.id}
               className="relative border border-gray-200 p-2"
             >
-              <span className="absolute left-2 top-2 z-10 bg-blue-700 px-1.5 py-0.5 text-xs font-semibold text-white">
-                {item.id}
-              </span>
+              <span
+                className="absolute left-2 top-2 z-10 bg-blue-700 px-1.5 py-0.5 text-xs font-semibold text-white"
+                dangerouslySetInnerHTML={{ __html: item.id }}
+              />
 
               {/* Mobile: image on top | Desktop: image left of text */}
               <div className="flex flex-col gap-2 md:flex-row">
@@ -58,17 +59,17 @@ export default function HomeSec5({ data }) {
                         {i > 0 && (
                           <span className="font-semibold text-gray-400">vs</span>
                         )}
-                        <span>{label}</span>
+                        <span dangerouslySetInnerHTML={{ __html: label }} />
                       </span>
                     ))}
                   </div>
-                  <h3 className="text-sm font-bold text-black">{item.title}</h3>
-                  <p className="mb-1 text-xs text-gray-600">{item.preview}</p>
+                  <h3 className="text-sm font-bold text-black" dangerouslySetInnerHTML={{ __html: item.title }} />
+                  <p className="mb-1 text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: item.preview }} />
                   <Link
                     href={item.link.href}
                     className="text-xs font-semibold text-blue-700"
                   >
-                    {item.link.label}
+                    <span dangerouslySetInnerHTML={{ __html: item.link.label }} />
                   </Link>
                 </div>
               </div>
@@ -78,12 +79,12 @@ export default function HomeSec5({ data }) {
 
         {/* Mobile CTA */}
         <div className="mt-3 border border-blue-200 bg-blue-50 p-2 md:hidden">
-          <p className="mb-2 text-sm text-black">{data.bottomCta.text}</p>
+          <p className="mb-2 text-sm text-black" dangerouslySetInnerHTML={{ __html: data.bottomCta.text }} />
           <Link
             href={data.bottomCta.href}
             className="block bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white"
           >
-            {data.bottomCta.buttonLabel} →
+            <span dangerouslySetInnerHTML={{ __html: data.bottomCta.buttonLabel }} /> →
           </Link>
         </div>
       </div>

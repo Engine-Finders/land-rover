@@ -277,9 +277,9 @@
     }
   },
   "hero": {
-    "tagPill": "Discovery • 1989–Present • 5 Generations • Tdi, TD5, TDV6, SDV6, Ingenium",
+    "tagPill": "Discovery • 1989–Present • 5 Generations • Tdi, <a href='https://landroverengine.uk/engine/td5'>TD5</a>, TDV6, SDV6, Ingenium",
     "h1": "Discovery Engines — The Complete UK Guide",
-    "subHeadline": "Every generation. Every engine code. Every known failure. Every replacement cost. From the 200Tdi original to the Ingenium-six D300 — backed by 2,800+ real UK enquiries across Discovery-fitted engines [EM-VERIFIED].",
+    "subHeadline": "Every generation. Every engine code. Every known failure. Every replacement cost. From the <a href='https://landroverengine.uk/engine/200-300tdi'>200Tdi</a> original to the Ingenium-six D300 — backed by 2,800+ real UK enquiries across Discovery-fitted engines [EM-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -320,11 +320,11 @@
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "300Tdi (classic era) • AJ20D6 D300 (modern era)"
+        "ourCall": "300Tdi (classic era) • <a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> D300 (modern era)"
       },
       {
         "metric": "Highest-Risk Engine",
-        "ourCall": "2.7 TDV6 (276DT) — oil pump failure • 3.0 TDV6/SDV6 (306DT) — crankshaft bearing failure at high mileage"
+        "ourCall": "2.7 TDV6 (<a href='https://landroverengine.uk/engine/276dt'>276DT</a>) — oil pump failure • 3.0 TDV6/SDV6 (306DT) — crankshaft bearing failure at high mileage"
       },
       {
         "metric": "Best Used Buy",
@@ -370,7 +370,7 @@
       },
       {
         "metric": "Most Enquired Engine (2025)",
-        "value": "204DTD Ingenium diesel — 1,150 JLR-wide [EM-VERIFIED]"
+        "value": "<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a> Ingenium diesel — 1,150 JLR-wide [EM-VERIFIED]"
       },
       {
         "metric": "Most Reliable",
@@ -444,7 +444,7 @@
       {
         "title": "Discovery 5 (L462)",
         "badge": "",
-        "meta": "2017–present • 204DTD, 306DT TD6/SDV6 (2017–2020), AJ20D6 D250/D300 (2021+), 204PT",
+        "meta": "2017–present • 204DTD, 306DT <a href='https://landroverengine.uk/engine/m57-td6'>TD6</a>/SDV6 (2017–2020), AJ20D6 D250/D300 (2021+), 204PT",
         "rating": "⭐⭐⭐⭐☆",
         "verdict": "Safest modern choice and our Best Family Land Rover. Prefer 2021+ builds: the AJ20D6 six replaces both the old V6 and the early four-cylinder concerns in one move.",
         "cta": {
@@ -626,7 +626,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "276DT, 306DT and 204DTD ratings: 94% confidence — the three highest-volume engines in our entire dataset [EM-VERIFIED], cross-referenced with specialist rebuild reports. D1/D2-era and petrol V8 ratings: Expert-knowledge tier — documented failure patterns and specialist interviews, not proprietary volume data. Data note (internal): Enquiry volumes from EM_Proprietary_Data_2025.txt [EM-VERIFIED]; costs from Table A [EM-QUOTE]. Correction applied: the original Discovery strategy sheet listed 368DT (3.6 TDV8) and 508PS (4.4 SDV8) as Discovery engines — neither was ever fitted to a Discovery (they belong to Range Rover / Range Rover Sport per our own blueprint mapping). Removed. Correction applied: post-2021 D5 D250/D300 is the AJ20D6 Ingenium six, not the 306DT V6."
+      "text": "276DT, 306DT and 204DTD ratings: 94% confidence — the three highest-volume engines in our entire dataset [EM-VERIFIED], cross-referenced with specialist rebuild reports. D1/D2-era and petrol V8 ratings: Expert-knowledge tier — documented failure patterns and specialist interviews, not proprietary volume data. Data note (internal): Enquiry volumes from EM_Proprietary_Data_2025.txt [EM-VERIFIED]; costs from Table A [EM-QUOTE]. Correction applied: the original Discovery strategy sheet listed <a href='https://landroverengine.uk/engine/368dt'>368DT</a> (3.6 TDV8) and 508PS (4.4 SDV8) as Discovery engines — neither was ever fitted to a Discovery (they belong to Range Rover / Range Rover Sport per our own blueprint mapping). Removed. Correction applied: post-2021 D5 D250/D300 is the AJ20D6 Ingenium six, not the 306DT V6."
     },
     "dataCorrections": []
   },
@@ -997,7 +997,7 @@
         "years": "2004–2016",
         "keyEngines": "276DT, 306DT, AJ-V8, AJ133",
         "whyBmwChanged": "Ford ownership brought the jointly developed 'Lion' V6 diesels — huge refinement gains, new failure modes",
-        "worthKnowing": "The 276DT oil pump and 306DT crank bearing define this era's ownership risk"
+        "worthKnowing": "The 276DT oil pump and <a href='https://landroverengine.uk/engine/306dt'>306DT</a> crank bearing define this era's ownership risk"
       },
       {
         "era": "Ingenium era",

@@ -18,7 +18,7 @@ export default function HomeSec4({ data }) {
             <h2 className="text-2xl font-bold text-black md:text-4xl">
               Land Rover &amp; Range Rover Ownership Rankings
             </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+            <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           </div>
           <div className="relative h-20 w-28 shrink-0 md:h-28 md:w-48">
             <Image
@@ -36,7 +36,7 @@ export default function HomeSec4({ data }) {
           {/* Desktop header */}
           <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-[1.2fr_1fr_2fr_auto_auto] md:gap-2">
             {data.columns.map((col) => (
-              <span key={col}>{col}</span>
+              <span key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
             <span />
           </div>
@@ -52,23 +52,23 @@ export default function HomeSec4({ data }) {
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-700 text-xs text-white">
                   {row.icon}
                 </span>
-                <span className="text-sm font-semibold">{row.ranking}</span>
+                <span className="text-sm font-semibold" dangerouslySetInnerHTML={{ __html: row.ranking }} />
               </div>
 
               <p className="mb-1 text-sm font-semibold md:mb-0">
                 <span className="md:hidden text-xs font-normal text-gray-500">
                   Winner:{" "}
                 </span>
-                {row.winner}
+                <span dangerouslySetInnerHTML={{ __html: row.winner }} />
               </p>
 
-              <p className="mb-1 text-xs text-gray-600 md:mb-0">{row.why}</p>
+              <p className="mb-1 text-xs text-gray-600 md:mb-0" dangerouslySetInnerHTML={{ __html: row.why }} />
 
               <div className="flex items-center justify-between gap-2 md:contents">
                 <span
                   className={`inline-block shrink-0 rounded px-1.5 py-0.5 text-xs ${verdictClass[row.verdict.type] || "bg-gray-100"}`}
                 >
-                  {row.verdict.icon} {row.verdict.text}
+                  {row.verdict.icon} <span dangerouslySetInnerHTML={{ __html: row.verdict.text }} />
                 </span>
                 <span className="text-gray-400 md:justify-self-end">›</span>
               </div>
@@ -78,12 +78,10 @@ export default function HomeSec4({ data }) {
 
         {/* Quick Reference: Data Sources */}
         <div className="border border-gray-200">
-          <h3 className="border-b border-gray-200 bg-gray-50 px-2 py-1.5 text-sm font-bold text-black">
-            {data.dataSources.title}
-          </h3>
+          <h3 className="border-b border-gray-200 bg-gray-50 px-2 py-1.5 text-sm font-bold text-black" dangerouslySetInnerHTML={{ __html: data.dataSources.title }} />
           <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-2">
             {data.dataSources.columns.map((col) => (
-              <span key={col}>{col}</span>
+              <span key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </div>
           {data.dataSources.rows.map((row) => (
@@ -91,8 +89,8 @@ export default function HomeSec4({ data }) {
               key={row.claim}
               className="border-b border-gray-200 px-2 py-1.5 last:border-b-0 md:grid md:grid-cols-2 md:gap-2"
             >
-              <p className="text-sm font-semibold text-black">{row.claim}</p>
-              <p className="text-xs text-gray-600">{row.source}</p>
+              <p className="text-sm font-semibold text-black" dangerouslySetInnerHTML={{ __html: row.claim }} />
+              <p className="text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: row.source }} />
             </div>
           ))}
         </div>

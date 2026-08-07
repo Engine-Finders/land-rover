@@ -323,7 +323,7 @@
     ],
     "engines": [
       {
-        "engineCode": "204DTD",
+        "engineCode": "<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a>",
         "family": "Ingenium I4",
         "fuel": "Diesel",
         "displacement": "2.0L",
@@ -353,13 +353,13 @@
         "displacement": "3.0L",
         "power": "211–306 bhp",
         "years": "2016–present",
-        "variants": "TD6, SD6",
+        "variants": "<a href='https://landroverengine.uk/engine/m57-td6'>TD6</a>, SD6",
         "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
         "enquiries": "980 JLR-wide [EM-VERIFIED]",
         "avgReconCost": "£6,500–£9,500"
       },
       {
-        "engineCode": "PT204",
+        "engineCode": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>PT204</a>",
         "family": "Ingenium I4",
         "fuel": "Petrol",
         "displacement": "2.0L",
@@ -377,7 +377,7 @@
         "displacement": "3.0L",
         "power": "340 bhp",
         "years": "2016–2020",
-        "variants": "Si6",
+        "variants": "<a href='https://landroverengine.uk/engine/volvo-si6'>Si6</a>",
         "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
         "enquiries": "560 JLR-wide [EM-VERIFIED]",
         "avgReconCost": "£4,500–£7,500"
@@ -395,7 +395,7 @@
         "avgReconCost": "£5,500–£9,000"
       },
       {
-        "engineCode": "PT306 (AJ20P6)",
+        "engineCode": "PT306 (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>)",
         "family": "Ingenium I6",
         "fuel": "Petrol MHEV",
         "displacement": "3.0L",
@@ -429,7 +429,7 @@
     "h2": "Land Rover Discovery 5 L462 — Overview",
     "intro": "The Discovery 5 L462 is the fifth generation of Land Rover's family SUV, launched in December 2016. It abandoned the body-on-frame construction of the Discovery 3 and 4 for an aluminium unitary platform shared with the Range Rover L405 and Range Rover Sport L494, delivering a significantly lighter, more road-focused vehicle while retaining genuine off-road capability. The engine line-up spans 2.0-litre Ingenium four-cylinder diesels, a 3.0-litre V6 diesel, 2.0-litre and 3.0-litre petrol options, and a limited-run 5.0-litre supercharged V8 in the SVX. A 2020 facelift introduced mild-hybrid six-cylinder petrol engines (P360, P400).",
     "keyFacts": "Platform: Aluminium D7u (shared with Range Rover L405, Range Rover Sport L494) • Predecessor: Discovery 4 (L319) • Successor: Current model — on sale • Sibling body styles: None — L462 is sole Discovery 5 body style",
-    "marketIntelligenceLine": "The Discovery 5 L462 generated real UK engine enquiries in 2025, with the Ingenium 2.0-litre diesel (204DTD/204DTA) accounting for the largest share of the 1,150 JLR-wide figure, followed by the 3.0-litre V6 diesel (306DT) at 980 enquiries."
+    "marketIntelligenceLine": "The Discovery 5 L462 generated real UK engine enquiries in 2025, with the Ingenium 2.0-litre diesel (204DTD/204DTA) accounting for the largest share of the 1,150 JLR-wide figure, followed by the 3.0-litre V6 diesel (<a href='https://landroverengine.uk/engine/306dt'>306DT</a>) at 980 enquiries."
   },
   "bestWorstEngines": {
     "items": [
@@ -453,7 +453,7 @@
       },
       {
         "slot": "Most Expensive Failure",
-        "engine": "AJ133 5.0-litre Supercharged V8 (SVX) — The limited-run SVX V8 is the most expensive engine in the L462 line-up to replace, with reconditioned units costing £5,500–£9,000 supply-only. Timing-chain guide wear is the primary risk, similar to other Jaguar-Land Rover V8s.",
+        "engine": "<a href='https://landroverengine.uk/engine/aj133'>AJ133</a> 5.0-litre Supercharged V8 (SVX) — The limited-run SVX V8 is the most expensive engine in the L462 line-up to replace, with reconditioned units costing £5,500–£9,000 supply-only. Timing-chain guide wear is the primary risk, similar to other Jaguar-Land Rover V8s.",
         "quote": "",
         "whoItsFor": "collectors and enthusiasts who accept the premium."
       },
@@ -554,7 +554,7 @@
     "problems": [
       {
         "id": 1,
-        "title": "Ingenium 2.0 Diesel Timing Chain Tensioner Failure",
+        "title": "<a href='https://landroverengine.uk/engine/ingenium-20-diesel'>Ingenium 2.0 Diesel</a> Timing Chain Tensioner Failure",
         "affectedModels": "L462 2.0-litre TD4 and SD4 (204DTD, 204DTA), particularly pre-2019 units.",
         "typicalFailureMileage": "60,000–120,000 miles.",
         "rootCause": "The timing chain tensioner on early Ingenium 2.0-litre diesel engines can fail, leading to chain stretch and, in catastrophic cases, engine destruction. Oil dilution from DPF regeneration accelerates tensioner wear.",

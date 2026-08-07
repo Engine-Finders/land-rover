@@ -14,8 +14,8 @@ export default function AtAGlance({ data }) {
         <tbody>
           {data.rows?.map((row) => (
             <tr key={row.metric}>
-              <td>{row.metric}</td>
-              <td>{row.value}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.metric }} />
+              <td dangerouslySetInnerHTML={{ __html: row.value }} />
             </tr>
           ))}
         </tbody>

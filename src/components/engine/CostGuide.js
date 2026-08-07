@@ -8,26 +8,33 @@ export default function CostGuide({ data }) {
         <thead>
           <tr>
             {data.columns?.map((col) => (
-              <th key={col}>{col}</th>
+              <th key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </tr>
         </thead>
         <tbody>
           {data.rows?.map((row) => (
             <tr key={row.condition}>
-              <td>{row.condition}</td>
-              <td>{row.supplyOnly}</td>
-              <td>{row.fittedIndie}</td>
-              <td>{row.warranty}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.condition }} />
+              <td dangerouslySetInnerHTML={{ __html: row.supplyOnly }} />
+              <td dangerouslySetInnerHTML={{ __html: row.fittedIndie }} />
+              <td dangerouslySetInnerHTML={{ __html: row.warranty }} />
             </tr>
           ))}
         </tbody>
       </table>
-      {data.labourEstimate && <p>{data.labourEstimate}</p>}
-      {data.sharedCostNote && <p>{data.sharedCostNote}</p>}
+      {data.labourEstimate && (
+        <p dangerouslySetInnerHTML={{ __html: data.labourEstimate }} />
+      )}
+      {data.sharedCostNote && (
+        <p dangerouslySetInnerHTML={{ __html: data.sharedCostNote }} />
+      )}
       {data.cta && (
         <p>
-          <a href={data.cta.href}>{data.cta.label}</a>
+          <a
+            href={data.cta.href}
+            dangerouslySetInnerHTML={{ __html: data.cta.label }}
+          />
         </p>
       )}
       <hr />

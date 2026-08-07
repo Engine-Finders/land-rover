@@ -429,7 +429,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "306DT and 276DT: 95% confidence for volumes (980 and 700 JLR-wide [EM-VERIFIED]), reliability ratings inherited from the Model Page where one exists. 508PN AJ133: 90% confidence — 330 JLR-wide enquiries [EM-VERIFIED]; reliability rating inherited from Model Page. AJ126: 85% confidence — 560 JLR-wide enquiries [EM-VERIFIED]; reliability rating inherited from Model Page. 406PN: Expert-knowledge tier — low-volume Discovery 3 carryover, fitted only to very early L319 Discovery 4 examples, marked as pattern data."
+      "text": "<a href='https://landroverengine.uk/engine/306dt'>306DT</a> and <a href='https://landroverengine.uk/engine/276dt'>276DT</a>: 95% confidence for volumes (980 and 700 JLR-wide [EM-VERIFIED]), reliability ratings inherited from the Model Page where one exists. 508PN <a href='https://landroverengine.uk/engine/aj133'>AJ133</a>: 90% confidence — 330 JLR-wide enquiries [EM-VERIFIED]; reliability rating inherited from Model Page. AJ126: 85% confidence — 560 JLR-wide enquiries [EM-VERIFIED]; reliability rating inherited from Model Page. 406PN: Expert-knowledge tier — low-volume Discovery 3 carryover, fitted only to very early L319 Discovery 4 examples, marked as pattern data."
     },
     "dataCorrections": []
   },
@@ -750,7 +750,7 @@
       "url": "https://landroverengine.uk/discovery/30-tdv6-sdv6"
     },
     {
-    "name": "TD6",
+    "name": "<a href='https://landroverengine.uk/engine/m57-td6'>TD6</a>",
     "url": "https://landroverengine.uk/discovery/td6"
   },
   {
@@ -772,7 +772,7 @@
       "url": "https://landroverengine.uk/discovery/si4"
     },
      {
-    "name": "Si4",
+    "name": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a>",
     "url": "https://landroverengine.uk/discovery/si4"
   }
   ],

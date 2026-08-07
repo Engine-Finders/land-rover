@@ -16,7 +16,7 @@ export default function HomeSec10({ data }) {
             <h2 className="text-2xl font-bold text-black md:text-4xl">
               Land Rover &amp; Range Rover Market Intelligence
             </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+            <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           </div>
           <div className="relative h-20 w-28 shrink-0 md:h-28 md:w-48">
             <Image
@@ -37,7 +37,7 @@ export default function HomeSec10({ data }) {
               className="flex items-center gap-1 text-xs font-semibold text-black md:flex-1"
             >
               <span>{stat.icon}</span>
-              <span>{stat.label}</span>
+              <span dangerouslySetInnerHTML={{ __html: stat.label }} />
             </li>
           ))}
         </ul>
@@ -47,11 +47,11 @@ export default function HomeSec10({ data }) {
           {/* Engines */}
           <div className="border border-gray-200">
             <div className="border-b border-gray-200 bg-gray-50 px-2 py-1.5 text-sm font-bold text-blue-700">
-              {data.engines.icon} {data.engines.title}
+              {data.engines.icon} <span dangerouslySetInnerHTML={{ __html: data.engines.title }} />
             </div>
             <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-[auto_1fr_1fr_1fr] md:gap-1">
               {data.engines.columns.map((c) => (
-                <span key={c}>{c}</span>
+                <span key={c} dangerouslySetInnerHTML={{ __html: c }} />
               ))}
             </div>
             {data.engines.rows.map((row) => (
@@ -59,10 +59,10 @@ export default function HomeSec10({ data }) {
                 key={row.code}
                 className="border-b border-gray-200 px-2 py-1.5 text-xs last:border-b-0 md:grid md:grid-cols-[auto_1fr_1fr_1fr] md:gap-1"
               >
-                <span className="font-semibold">{row.rank}</span>
-                <span className="font-semibold">{row.code}</span>
-                <span className="text-gray-600">{row.label}</span>
-                <span className="text-blue-700">{row.enquiries}</span>
+                <span className="font-semibold" dangerouslySetInnerHTML={{ __html: row.rank }} />
+                <span className="font-semibold" dangerouslySetInnerHTML={{ __html: row.code }} />
+                <span className="text-gray-600" dangerouslySetInnerHTML={{ __html: row.label }} />
+                <span className="text-blue-700" dangerouslySetInnerHTML={{ __html: row.enquiries }} />
               </div>
             ))}
           </div>
@@ -70,11 +70,11 @@ export default function HomeSec10({ data }) {
           {/* Models */}
           <div className="border border-gray-200">
             <div className="border-b border-gray-200 bg-gray-50 px-2 py-1.5 text-sm font-bold text-blue-700">
-              {data.models.icon} {data.models.title}
+              {data.models.icon} <span dangerouslySetInnerHTML={{ __html: data.models.title }} />
             </div>
             <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-[auto_1fr_1fr] md:gap-1">
               {data.models.columns.map((c) => (
-                <span key={c}>{c}</span>
+                <span key={c} dangerouslySetInnerHTML={{ __html: c }} />
               ))}
             </div>
             {data.models.rows.map((row) => (
@@ -82,9 +82,9 @@ export default function HomeSec10({ data }) {
                 key={row.model}
                 className="border-b border-gray-200 px-2 py-1.5 text-xs last:border-b-0 md:grid md:grid-cols-[auto_1fr_1fr] md:gap-1"
               >
-                <span className="font-semibold">{row.rank}</span>
-                <span>{row.model}</span>
-                <span className="text-blue-700">{row.enquiries}</span>
+                <span className="font-semibold" dangerouslySetInnerHTML={{ __html: row.rank }} />
+                <span dangerouslySetInnerHTML={{ __html: row.model }} />
+                <span className="text-blue-700" dangerouslySetInnerHTML={{ __html: row.enquiries }} />
               </div>
             ))}
           </div>
@@ -92,11 +92,11 @@ export default function HomeSec10({ data }) {
           {/* Replacement costs */}
           <div className="border border-gray-200">
             <div className="border-b border-gray-200 bg-gray-50 px-2 py-1.5 text-sm font-bold text-blue-700">
-              {data.replacementCosts.icon} {data.replacementCosts.title}
+              {data.replacementCosts.icon} <span dangerouslySetInnerHTML={{ __html: data.replacementCosts.title }} />
             </div>
             <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-2 md:gap-1">
               {data.replacementCosts.columns.map((c) => (
-                <span key={c}>{c}</span>
+                <span key={c} dangerouslySetInnerHTML={{ __html: c }} />
               ))}
             </div>
             {data.replacementCosts.rows.map((row) => (
@@ -104,8 +104,8 @@ export default function HomeSec10({ data }) {
                 key={row.code}
                 className="border-b border-gray-200 px-2 py-1.5 text-xs last:border-b-0 md:grid md:grid-cols-2 md:gap-1"
               >
-                <span className="font-semibold">{row.code}</span>
-                <span className="text-blue-700">{row.cost}</span>
+                <span className="font-semibold" dangerouslySetInnerHTML={{ __html: row.code }} />
+                <span className="text-blue-700" dangerouslySetInnerHTML={{ __html: row.cost }} />
               </div>
             ))}
           </div>
@@ -113,11 +113,11 @@ export default function HomeSec10({ data }) {
           {/* Failures */}
           <div className="border border-gray-200">
             <div className="border-b border-gray-200 bg-gray-50 px-2 py-1.5 text-sm font-bold text-blue-700">
-              {data.failures.icon} {data.failures.title}
+              {data.failures.icon} <span dangerouslySetInnerHTML={{ __html: data.failures.title }} />
             </div>
             <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-[auto_1fr_auto] md:gap-1">
               {data.failures.columns.map((c) => (
-                <span key={c}>{c}</span>
+                <span key={c} dangerouslySetInnerHTML={{ __html: c }} />
               ))}
             </div>
             {data.failures.rows.map((row) => (
@@ -125,12 +125,12 @@ export default function HomeSec10({ data }) {
                 key={row.rank}
                 className="border-b border-gray-200 px-2 py-1.5 text-xs last:border-b-0 md:grid md:grid-cols-[auto_1fr_auto] md:items-center md:gap-1"
               >
-                <span className="font-semibold">{row.rank}</span>
-                <span>{row.failure}</span>
+                <span className="font-semibold" dangerouslySetInnerHTML={{ __html: row.rank }} />
+                <span dangerouslySetInnerHTML={{ __html: row.failure }} />
                 <span
                   className={`inline-block rounded px-1.5 py-0.5 ${riskClass[row.risk.type] || "bg-gray-100"}`}
                 >
-                  {row.risk.icon} {row.risk.label}
+                  {row.risk.icon} <span dangerouslySetInnerHTML={{ __html: row.risk.label }} />
                 </span>
               </div>
             ))}
@@ -139,15 +139,15 @@ export default function HomeSec10({ data }) {
           {/* Regional demand */}
           <div className="border border-gray-200">
             <div className="border-b border-gray-200 bg-gray-50 px-2 py-1.5 text-sm font-bold text-blue-700">
-              {data.regionalDemand.icon} {data.regionalDemand.title}
+              {data.regionalDemand.icon} <span dangerouslySetInnerHTML={{ __html: data.regionalDemand.title }} />
             </div>
             {data.regionalDemand.rows.map((row) => (
               <div
                 key={row.region}
                 className="flex justify-between border-b border-gray-200 px-2 py-1.5 text-xs last:border-b-0"
               >
-                <span className="font-semibold">{row.region}</span>
-                <span className="text-blue-700">{row.percentage}</span>
+                <span className="font-semibold" dangerouslySetInnerHTML={{ __html: row.region }} />
+                <span className="text-blue-700" dangerouslySetInnerHTML={{ __html: row.percentage }} />
               </div>
             ))}
           </div>
@@ -155,23 +155,23 @@ export default function HomeSec10({ data }) {
           {/* Live feed */}
           <div className="border border-gray-200">
             <div className="border-b border-gray-200 bg-gray-50 px-2 py-1.5 text-sm font-bold text-blue-700">
-              {data.liveFeed.icon} {data.liveFeed.title}
+              {data.liveFeed.icon} <span dangerouslySetInnerHTML={{ __html: data.liveFeed.title }} />
             </div>
             {data.liveFeed.rows.map((row) => (
               <div
                 key={`${row.vehicle}-${row.timestamp}`}
                 className="border-b border-gray-200 px-2 py-1.5 text-xs last:border-b-0"
               >
-                <p className="font-semibold">{row.vehicle}</p>
+                <p className="font-semibold" dangerouslySetInnerHTML={{ __html: row.vehicle }} />
                 <p className="text-gray-600">
-                  {row.location} · {row.issue} · {row.timestamp}
+                  <span dangerouslySetInnerHTML={{ __html: row.location }} /> · <span dangerouslySetInnerHTML={{ __html: row.issue }} /> · <span dangerouslySetInnerHTML={{ __html: row.timestamp }} />
                 </p>
               </div>
             ))}
           </div>
         </div>
 
-        <p className="text-center text-xs text-gray-500">{data.liveFeed.footer}</p>
+        <p className="text-center text-xs text-gray-500" dangerouslySetInnerHTML={{ __html: data.liveFeed.footer }} />
       </div>
     </section>
   );

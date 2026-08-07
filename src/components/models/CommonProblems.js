@@ -3,28 +3,36 @@ export default function CommonProblems({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
-      {data.subHeadline && <p>{data.subHeadline}</p>}
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
+      {data.subHeadline && <p dangerouslySetInnerHTML={{ __html: data.subHeadline }} />}
 
       <table border="1" cellPadding="4" cellSpacing="0">
         <thead>
           <tr>
             {data.columns?.map((col) => (
-              <th key={col}>{col}</th>
+              <th key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </tr>
         </thead>
         <tbody>
           {data.problems?.map((row) => (
             <tr key={row.id}>
-              <td>{row.id}</td>
-              <td>{row.issue}</td>
-              <td>{row.description}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.id }} />
+              <td dangerouslySetInnerHTML={{ __html: row.issue }} />
+              <td dangerouslySetInnerHTML={{ __html: row.description }} />
               <td>
-                {row.severity?.icon} {row.severity?.label}
+                {row.severity?.icon}{" "}
+                {row.severity?.label && (
+                  <span dangerouslySetInnerHTML={{ __html: row.severity.label }} />
+                )}
               </td>
               <td>
-                {row.link && <a href={row.link.href}>{row.link.label}</a>}
+                {row.link && (
+                  <a
+                    href={row.link.href}
+                    dangerouslySetInnerHTML={{ __html: row.link.label }}
+                  />
+                )}
               </td>
             </tr>
           ))}
@@ -37,7 +45,8 @@ export default function CommonProblems({ data }) {
           <ul>
             {data.urgencyKey.map((item) => (
               <li key={item.label}>
-                {item.icon} {item.label} — {item.text}
+                {item.icon} <span dangerouslySetInnerHTML={{ __html: item.label }} /> —{" "}
+                <span dangerouslySetInnerHTML={{ __html: item.text }} />
               </li>
             ))}
           </ul>

@@ -441,7 +441,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "306DT and 276DT: 95% confidence for volumes (980 and 700 JLR-wide [EM-VERIFIED]), reliability ratings inherited from the Model Page. 368DT: 90% confidence — 650 JLR-wide enquiries [EM-VERIFIED]; reliability rating inherited from Model Page. 508PN/508PS: 90% confidence — 330 JLR-wide enquiries for AJ133 family [EM-VERIFIED]; ratings inherited from Model Page. 448PN/AJ41: Expert-knowledge tier — very low-volume 4.4 V8 offered only in early L320 examples, quietly dropped due to poor UK sales; marked as pattern data."
+      "text": "<a href='https://landroverengine.uk/engine/306dt'>306DT</a> and <a href='https://landroverengine.uk/engine/276dt'>276DT</a>: 95% confidence for volumes (980 and 700 JLR-wide [EM-VERIFIED]), reliability ratings inherited from the Model Page. 368DT: 90% confidence — 650 JLR-wide enquiries [EM-VERIFIED]; reliability rating inherited from Model Page. 508PN/508PS: 90% confidence — 330 JLR-wide enquiries for <a href='https://landroverengine.uk/engine/aj133'>AJ133</a> family [EM-VERIFIED]; ratings inherited from Model Page. 448PN/AJ41: Expert-knowledge tier — very low-volume 4.4 V8 offered only in early L320 examples, quietly dropped due to poor UK sales; marked as pattern data."
     },
     "dataCorrections": []
   },
@@ -455,7 +455,7 @@
     "items": [
       {
         "slot": "Best Diesel Overall",
-        "engine": "368DT TDV8 (3.6-litre, 2006–2013)",
+        "engine": "<a href='https://landroverengine.uk/engine/368dt'>368DT</a> TDV8 (3.6-litre, 2006–2013)",
         "quote": "The 3.6 TDV8 is the L320's most refined and dependable diesel — smooth, torquey, and free of the crankshaft-bearing issues that define the SDV6. It's the engine that proved rapid performance and reasonable economy weren't mutually exclusive in a Range Rover Sport.",
         "whoItsFor": "buyers who want the definitive L320 diesel experience."
       },

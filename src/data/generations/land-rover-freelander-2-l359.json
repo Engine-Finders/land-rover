@@ -239,7 +239,7 @@
   "hero": {
     "tagPill": "Land Rover Freelander 2 L359 • SUV • 2006–2014",
     "h1": "Land Rover Freelander 2 L359 Engines — The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the Freelander 2 L359 — from the 2.2-litre TD4 diesel to the 3.2-litre Si6 petrol six and the later Si4 turbo. Real UK costs, honest failure data, and the Ford-PSA diesel that made this one of Land Rover's most dependable powertrains. Backed by 144+ real UK L359 enquiries in 2025 [EM-VERIFIED].",
+    "subHeadline": "Every engine fitted to the Freelander 2 L359 — from the 2.2-litre TD4 diesel to the 3.2-litre <a href='https://landroverengine.uk/engine/volvo-si6'>Si6</a> petrol six and the later <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> turbo. Real UK costs, honest failure data, and the Ford-PSA diesel that made this one of Land Rover's most dependable powertrains. Backed by 144+ real UK L359 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -282,7 +282,7 @@
     "engines": [
       {
         "engineCode": "224DT (DW12BTED4)",
-        "family": "DW12",
+        "family": "<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>DW12</a>",
         "fuel": "Diesel",
         "displacement": "2.2L",
         "power": "150–190 PS (110–140 kW)",
@@ -654,7 +654,7 @@
       {
         "id": 9,
         "question": "What is the difference between the Freelander 2 L359 and the earlier Freelander 1?",
-        "answer": "The Freelander 2 (L359, 2006–2014) is a completely different vehicle — larger, more refined, and built on the Ford EUCD platform. The earlier Freelander 1 (L314, 1997–2006) used Rover K‑series and BMW M47 engines; costs and problems differ significantly."
+        "answer": "The Freelander 2 (L359, 2006–2014) is a completely different vehicle — larger, more refined, and built on the Ford EUCD platform. The earlier Freelander 1 (L314, 1997–2006) used Rover K‑series and BMW <a href='https://landroverengine.uk/engine/m47'>M47</a> engines; costs and problems differ significantly."
       },
       {
         "id": 10,

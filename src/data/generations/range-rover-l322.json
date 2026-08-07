@@ -264,7 +264,7 @@
   "hero": {
     "tagPill": "Land Rover Range Rover L322 • 5‑Door SUV • 2002–2012",
     "h1": "Land Rover Range Rover L322 Engines — The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the third‑generation Range Rover — from the BMW‑sourced TD6 diesel and M62 V8 to the Jaguar‑derived 4.4, 4.2 supercharged and 5.0 V8s, plus the Ford‑built 3.6 and 4.4 TDV8 diesels. Real UK costs and honest reliability data for the Range Rover that defined an era. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
+    "subHeadline": "Every engine fitted to the third‑generation Range Rover — from the BMW‑sourced <a href='https://landroverengine.uk/engine/m57-td6'>TD6</a> diesel and <a href='https://landroverengine.uk/engine/m62'>M62</a> V8 to the Jaguar‑derived 4.4, 4.2 supercharged and 5.0 V8s, plus the Ford‑built 3.6 and 4.4 TDV8 diesels. Real UK costs and honest reliability data for the Range Rover that defined an era. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -307,7 +307,7 @@
     "engines": [
       {
         "engineCode": "M57D30 (306D1)",
-        "family": "BMW M57 TD6",
+        "family": "BMW <a href='https://landroverengine.uk/engine/m57-td6'>M57</a> TD6",
         "fuel": "Diesel, turbo I6",
         "displacement": "2.9L",
         "power": "177 bhp",
@@ -398,7 +398,7 @@
   },
   "overview": {
     "h2": "Land Rover Range Rover L322 — Overview",
-    "intro": "The L322 is the third‑generation Range Rover, produced from 2001 to 2012 — the first with a monocoque body, developed under BMW ownership. It set new standards for luxury SUVs, combining air suspension, full‑time four‑wheel drive and a spacious, premium interior. Under the bonnet, the L322 offered a remarkable variety of power units: BMW‑sourced TD6 diesel and M62 V8 petrol engines for the early years, Jaguar‑developed 4.4 and 4.2 supercharged V8s from the 2005 facelift, Ford‑built 3.6 and 4.4 TDV8 diesels from 2007 onward, and the 5.0‑litre AJ133 V8 for the final 2009–2012 models. This engine line‑up spans five distinct engineering lineages — BMW, Jaguar, and Ford — making the L322 one of the most mechanically diverse Range Rovers ever built.",
+    "intro": "The L322 is the third‑generation Range Rover, produced from 2001 to 2012 — the first with a monocoque body, developed under BMW ownership. It set new standards for luxury SUVs, combining air suspension, full‑time four‑wheel drive and a spacious, premium interior. Under the bonnet, the L322 offered a remarkable variety of power units: BMW‑sourced TD6 diesel and M62 V8 petrol engines for the early years, Jaguar‑developed 4.4 and 4.2 supercharged V8s from the 2005 facelift, Ford‑built 3.6 and 4.4 TDV8 diesels from 2007 onward, and the 5.0‑litre <a href='https://landroverengine.uk/engine/aj133'>AJ133</a> V8 for the final 2009–2012 models. This engine line‑up spans five distinct engineering lineages — BMW, Jaguar, and Ford — making the L322 one of the most mechanically diverse Range Rovers ever built.",
     "keyFacts": "Platform: Monocoque (first Range Rover with unibody construction) • Predecessor: P38A • Successor: L405 • Sibling body styles in this generation: None (L322 is 5‑door SUV only).",
     "marketIntelligenceLine": "The L322 generates consistent UK enquiries [PATTERN DATA], concentrated on 4.4 TDV8 diesel and supercharged V8 variants as these luxury SUVs enter collector and enthusiast territory."
   },
@@ -407,7 +407,7 @@
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "Most dependable: The 4.4 TDV8 (448DT) — Ford's final‑generation diesel V8 for the L322 — is widely considered the best all‑rounder, combining 313 bhp, strong torque, and reasonable reliability when maintained. The Jaguar 4.4 V8 (448PN) is the pick of the petrols, offering smooth, naturally aspirated power without the complexity of supercharging or the timing‑chain concerns of the 5.0. The 3.6 TDV8 (368DT) carries the highest risk — turbo failures and EGR issues are common. The 4.2 supercharged V8 is characterful but complex and expensive to maintain. Buyers should prioritise a well‑maintained 4.4 TDV8 or 4.4 V8 with documented service history.",
+        "quote": "Most dependable: The 4.4 TDV8 (<a href='https://landroverengine.uk/engine/448dt'>448DT</a>) — Ford's final‑generation diesel V8 for the L322 — is widely considered the best all‑rounder, combining 313 bhp, strong torque, and reasonable reliability when maintained. The Jaguar 4.4 V8 (448PN) is the pick of the petrols, offering smooth, naturally aspirated power without the complexity of supercharging or the timing‑chain concerns of the 5.0. The 3.6 TDV8 (<a href='https://landroverengine.uk/engine/368dt'>368DT</a>) carries the highest risk — turbo failures and EGR issues are common. The 4.2 supercharged V8 is characterful but complex and expensive to maintain. Buyers should prioritise a well‑maintained 4.4 TDV8 or 4.4 V8 with documented service history.",
         "whoItsFor": ""
       }
     ]

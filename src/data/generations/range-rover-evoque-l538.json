@@ -257,7 +257,7 @@
   "hero": {
     "tagPill": "Range Rover Evoque L538 • SUV • 2011–2018",
     "h1": "Range Rover Evoque L538 Engines — The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the first-generation Evoque L538 — from the 2.2-litre TD4 diesel to the 2.0-litre Si4 petrol and the later Ingenium diesel that arrived with the 2015 facelift. Real UK costs, honest failure data, and a style icon's engine story. Backed by 244+ real UK L538 enquiries in 2025 [EM-VERIFIED].",
+    "subHeadline": "Every engine fitted to the first-generation Evoque L538 — from the 2.2-litre TD4 diesel to the 2.0-litre <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> petrol and the later Ingenium diesel that arrived with the 2015 facelift. Real UK costs, honest failure data, and a style icon's engine story. Backed by 244+ real UK L538 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -284,7 +284,7 @@
   },
   "engineDatabase": {
     "h2": "Range Rover Evoque L538 Engine Codes — The Complete Database",
-    "subHeadline": "Every engine fitted to the Evoque L538 specifically — including the Ford-PSA DW12 diesel, the EcoBoost-derived Si4 petrol, and the later Ingenium diesel that arrived with the 2015 facelift.",
+    "subHeadline": "Every engine fitted to the Evoque L538 specifically — including the Ford-<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>PSA DW12</a> diesel, the EcoBoost-derived Si4 petrol, and the later Ingenium diesel that arrived with the 2015 facelift.",
     "columns": [
       "Engine Code",
       "Family",
@@ -311,7 +311,7 @@
         "avgReconCost": "£2,000–£3,500 [EM-QUOTE]"
       },
       {
-        "engineCode": "204DTD (AJ20D4)",
+        "engineCode": "<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a> (AJ20D4)",
         "family": "Ingenium",
         "fuel": "Diesel",
         "displacement": "2.0L",
@@ -347,7 +347,7 @@
         "avgReconCost": "£3,000–£5,000 [EM-QUOTE]"
       },
       {
-        "engineCode": "PT204 (AJ20P4)",
+        "engineCode": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>PT204</a> (AJ20P4)",
         "family": "Ingenium",
         "fuel": "Petrol",
         "displacement": "2.0L",

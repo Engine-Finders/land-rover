@@ -303,7 +303,7 @@
       {
         "engineCode": "— (pattern data)",
         "family": "£3,500–£5,800 [EM-QUOTE]",
-        "fuel": "AJ20D6 / DT306",
+        "fuel": "<a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> / DT306",
         "displacement": "3.0 Ingenium",
         "power": "Diesel, MHEV",
         "years": "3.0L (2997cc)",
@@ -325,7 +325,7 @@
         "avgReconCost": ""
       },
       {
-        "engineCode": "PT204 (AJ20P4)",
+        "engineCode": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>PT204</a> (AJ20P4)",
         "family": "2.0 Ingenium",
         "fuel": "Petrol",
         "displacement": "2.0L (1997cc)",
@@ -363,7 +363,7 @@
       {
         "engineCode": "— (pattern data)",
         "family": "£3,500–£5,800 [EM-QUOTE]",
-        "fuel": "PT306 (AJ20P6)",
+        "fuel": "PT306 (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>)",
         "displacement": "3.0 Ingenium",
         "power": "Petrol, MHEV",
         "years": "3.0L (2996cc)",
@@ -456,7 +456,7 @@
       {
         "slot": "Most Expensive Failure",
         "engine": "508PS 5.0 Supercharged V8",
-        "quote": "The supercharged AJ133 V8 is a complex, high-performance unit. When it fails — typically timing chain tensioner wear on pre-2013 design or supercharger coupler wear — repairs require specialist intervention and deep pockets",
+        "quote": "The supercharged <a href='https://landroverengine.uk/engine/aj133'>AJ133</a> V8 is a complex, high-performance unit. When it fails — typically timing chain tensioner wear on pre-2013 design or supercharger coupler wear — repairs require specialist intervention and deep pockets",
         "whoItsFor": "Buyers who can absorb five-figure repair bills."
       },
       {

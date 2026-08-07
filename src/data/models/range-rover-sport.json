@@ -314,11 +314,11 @@
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "4.4 SDV8 (448DT) • AJ20D6 D300/D350 (2020+)"
+        "ourCall": "4.4 SDV8 (448DT) • <a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> D300/D350 (2020+)"
       },
       {
         "metric": "Highest-Risk Engine",
-        "ourCall": "2.7 TDV6 (276DT) — oil pump (L320) • 3.0 TDV6/SDV6 (306DT) — crankshaft bearing (L320/L494)"
+        "ourCall": "2.7 TDV6 (<a href='https://landroverengine.uk/engine/276dt'>276DT</a>) — oil pump (L320) • 3.0 TDV6/SDV6 (306DT) — crankshaft bearing (L320/L494)"
       },
       {
         "metric": "Best Used Buy",
@@ -406,7 +406,7 @@
     {
       "title": "Range Rover Sport L494",
       "badge": "🔥 Most Enquired — 308 enquiries (2025) [EM-VERIFIED]",
-      "meta": "2013–2022 • 3.0 TDV6/SDV6 (306DT), 4.4 SDV8 (448DT), 3.0 SC V6 (AJ126), 5.0 SC (AJ133/SVR), P400e (204PT), P400 (AJ20P6), D300/D350 (AJ20D6, 2020+)",
+      "meta": "2013–2022 • 3.0 TDV6/SDV6 (306DT), 4.4 SDV8 (<a href='https://landroverengine.uk/engine/448dt'>448DT</a>), 3.0 SC V6 (AJ126), 5.0 SC (AJ133/SVR), P400e (204PT), P400 (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>), D300/D350 (AJ20D6, 2020+)",
       "rating": "⭐⭐⭐⭐☆",
       "verdict": "The definitive Sport — aluminium body, huge choice, real depreciation absorbed. Buy the SDV8 or a 2020+ D350 and it's excellent; buy a high-mileage SDV6 without oil-interval paperwork and you've bought the range's most common £9,500 phone call.",
       "cta": {
@@ -611,7 +611,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "276DT, 306DT, 368DT and 448DT ratings: 94% confidence — four of the highest-volume engines in our dataset [EM-VERIFIED], with the Sport contributing a disproportionate share of their failure enquiries. Petrol V8/V6 ratings: Expert-knowledge tier. L461 powertrains: Provisional — parc too young for volume data. Data note (internal): Same corrections as the Range Rover page, verify at source: (1) the 4.4 SDV8 is 448DT, not \"508PS\" (508PS is the 5.0 supercharged petrol) — the 620 enquiries logged against \"508PS\" are shown under 448DT pending verification; (2) AJ20D6 split applied for late-L494/L461 diesels. Addition: the source sheet omitted the L320's petrol V8s, the L494's AJ126 3.0 SC petrol, AJ20P6, and all L461 powertrains — added, marked pattern data/placeholder."
+      "text": "276DT, 306DT, <a href='https://landroverengine.uk/engine/368dt'>368DT</a> and 448DT ratings: 94% confidence — four of the highest-volume engines in our dataset [EM-VERIFIED], with the Sport contributing a disproportionate share of their failure enquiries. Petrol V8/V6 ratings: Expert-knowledge tier. L461 powertrains: Provisional — parc too young for volume data. Data note (internal): Same corrections as the Range Rover page, verify at source: (1) the 4.4 SDV8 is 448DT, not \"508PS\" (508PS is the 5.0 supercharged petrol) — the 620 enquiries logged against \"508PS\" are shown under 448DT pending verification; (2) AJ20D6 split applied for late-L494/L461 diesels. Addition: the source sheet omitted the L320's petrol V8s, the L494's AJ126 3.0 SC petrol, AJ20P6, and all L461 powertrains — added, marked pattern data/placeholder."
     },
     "dataCorrections": []
   },
@@ -962,7 +962,7 @@
         "years": "2013–2020",
         "keyEngines": "306DT, 448DT, AJ126, AJ133 SVR, 204PT",
         "whyBmwChanged": "The L494 shed 400kg+ with the full-size car's aluminium body — the SDV8 arrived and the SVR made it a genuine performance brand",
-        "worthKnowing": "Same 306DT, lighter car, harder driving: the crank-bearing maths didn't improve as much as the badge suggests"
+        "worthKnowing": "Same <a href='https://landroverengine.uk/engine/306dt'>306DT</a>, lighter car, harder driving: the crank-bearing maths didn't improve as much as the badge suggests"
       },
       {
         "era": "Ingenium transition",

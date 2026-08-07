@@ -239,7 +239,7 @@
   "hero": {
     "tagPill": "Land Rover Range Rover P38A • SUV • 1994–2002",
     "h1": "Land Rover Range Rover P38A Engines — The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the second-generation Range Rover P38A — from the Rover V8s to the BMW-sourced M51 turbodiesel. Real UK replacement costs, honest failure data, and the V8 liner-drop risk that defines this generation.",
+    "subHeadline": "Every engine fitted to the second-generation Range Rover P38A — from the Rover V8s to the BMW-sourced <a href='https://landroverengine.uk/engine/m51'>M51</a> turbodiesel. Real UK replacement costs, honest failure data, and the V8 liner-drop risk that defines this generation.",
     "trustStrip": [
       {
         "icon": "📊",

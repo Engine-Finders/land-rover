@@ -7,14 +7,19 @@ export default function TrustCta({ data }) {
       {data.trustPoints?.length > 0 && (
         <ul>
           {data.trustPoints.map((point) => (
-            <li key={point}>{point}</li>
+            <li key={point} dangerouslySetInnerHTML={{ __html: point }} />
           ))}
         </ul>
       )}
-      {data.finalCta && <p>{data.finalCta}</p>}
+      {data.finalCta && (
+        <p dangerouslySetInnerHTML={{ __html: data.finalCta }} />
+      )}
       {data.ctaButton && (
         <p>
-          <a href={data.ctaButton.href}>{data.ctaButton.label}</a>
+          <a
+            href={data.ctaButton.href}
+            dangerouslySetInnerHTML={{ __html: data.ctaButton.label }}
+          />
         </p>
       )}
       <hr />

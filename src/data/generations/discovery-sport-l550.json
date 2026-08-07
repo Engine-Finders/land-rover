@@ -341,13 +341,13 @@
         "displacement": "2.0L",
         "power": "240 PS (177 kW)",
         "years": "2014–2015 (early)",
-        "variants": "Si4 240",
+        "variants": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> 240",
         "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
         "enquiries": "— (pattern data)",
         "avgReconCost": "£1,800–£3,200 [EM-QUOTE]"
       },
       {
-        "engineCode": "204DTD (AJ20D4)",
+        "engineCode": "<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a> (AJ20D4)",
         "family": "Ingenium D",
         "fuel": "Diesel",
         "displacement": "2.0L",
@@ -785,8 +785,8 @@
 },
   "marketIntelligence": {
     "mostRequestedEngines": [
-      "1. 204DTD (Ingenium 2.0 Diesel) – 1,150 platform-wide enquiries [EM-VERIFIED], the dominant L550 diesel",
-      "2. 204PT (Ingenium 2.0 Petrol) – 480 platform-wide enquiries [EM-VERIFIED]",
+      "1. 204DTD (<a href='https://landroverengine.uk/engine/ingenium-20-diesel'>Ingenium 2.0 Diesel</a>) – 1,150 platform-wide enquiries [EM-VERIFIED], the dominant L550 diesel",
+      "2. 204PT (<a href='https://landroverengine.uk/engine/ingenium-20-petrol'>Ingenium 2.0 Petrol</a>) – 480 platform-wide enquiries [EM-VERIFIED]",
       "3. 224DT (Ford 2.2 Duratorq) – 350 platform-wide enquiries [EM-VERIFIED] (early L550 only)."
     ],
     "mostRequestedVariants": [

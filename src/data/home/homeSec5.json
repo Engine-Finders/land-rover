@@ -36,7 +36,7 @@
     {
       "id": 3,
       "title": "TDV6 vs SDV6",
-      "preview": "What's the real difference? Performance, reliability, and replacement costs compared side-by-side. Both share the 306DT crankshaft bearing risk — the difference is power delivery and host vehicle.",
+      "preview": "What's the real difference? Performance, reliability, and replacement costs compared side-by-side. Both share the <a href='https://landroverengine.uk/engine/306dt'>306DT</a> crankshaft bearing risk — the difference is power delivery and host vehicle.",
       "vsLabels": ["TDV6", "SDV6"],
       "image": {
         "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=600&q=80",

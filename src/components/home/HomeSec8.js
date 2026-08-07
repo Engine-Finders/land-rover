@@ -11,7 +11,7 @@ export default function HomeSec8({ data }) {
             <h2 className="text-2xl font-bold text-black md:text-4xl">
               Knowledge Centres
             </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+            <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           </div>
           <div className="relative h-20 w-28 shrink-0 md:h-28 md:w-48">
             <Image
@@ -32,9 +32,10 @@ export default function HomeSec8({ data }) {
               className="relative border border-gray-200 p-2"
             >
               <div className="mb-1 flex items-center gap-2">
-                <span className="bg-blue-700 px-1.5 py-0.5 text-xs font-semibold text-white">
-                  {item.id}
-                </span>
+                <span
+                  className="bg-blue-700 px-1.5 py-0.5 text-xs font-semibold text-white"
+                  dangerouslySetInnerHTML={{ __html: item.id }}
+                />
                 <span className="text-lg">{item.icon}</span>
               </div>
 
@@ -48,13 +49,13 @@ export default function HomeSec8({ data }) {
                 />
               </div>
 
-              <h3 className="text-sm font-bold text-black">{item.title}</h3>
-              <p className="mb-1 text-xs text-gray-600">{item.description}</p>
+              <h3 className="text-sm font-bold text-black" dangerouslySetInnerHTML={{ __html: item.title }} />
+              <p className="mb-1 text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: item.description }} />
               <Link
                 href={item.link.href}
                 className="text-xs font-semibold text-blue-700"
               >
-                {item.link.label}
+                <span dangerouslySetInnerHTML={{ __html: item.link.label }} />
               </Link>
             </article>
           ))}
@@ -62,8 +63,8 @@ export default function HomeSec8({ data }) {
 
         {/* Footer verification */}
         <div className="border border-blue-200 bg-blue-50 p-2">
-          <p className="text-sm font-bold text-black">{data.footer.title}</p>
-          <p className="text-xs text-gray-600">{data.footer.text}</p>
+          <p className="text-sm font-bold text-black" dangerouslySetInnerHTML={{ __html: data.footer.title }} />
+          <p className="text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: data.footer.text }} />
         </div>
       </div>
     </section>

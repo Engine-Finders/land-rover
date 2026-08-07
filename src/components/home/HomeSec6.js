@@ -17,7 +17,7 @@ export default function HomeSec6({ data }) {
             <h2 className="text-2xl font-bold text-black md:text-4xl">
               The Ownership Economics Centre
             </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+            <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           </div>
           <div className="relative h-20 w-28 shrink-0 md:h-28 md:w-48">
             <Image
@@ -40,7 +40,7 @@ export default function HomeSec6({ data }) {
 
             <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-[1.4fr_1fr_1fr_1.6fr_auto] md:gap-2">
               {data.matrix.columns.map((col) => (
-                <span key={col}>{col}</span>
+                <span key={col} dangerouslySetInnerHTML={{ __html: col }} />
               ))}
               <span />
             </div>
@@ -61,23 +61,23 @@ export default function HomeSec6({ data }) {
                       sizes="56px"
                     />
                   </div>
-                  <span className="text-sm font-semibold">{row.model}</span>
+                  <span className="text-sm font-semibold" dangerouslySetInnerHTML={{ __html: row.model }} />
                 </div>
 
                 <p className="mb-1 text-xs md:mb-0">
                   <span className="md:hidden text-gray-500">Value: </span>
-                  {row.vehicleValue}
+                  <span dangerouslySetInnerHTML={{ __html: row.vehicleValue }} />
                 </p>
 
                 <p className="mb-1 text-xs md:mb-0">
                   <span className="md:hidden text-gray-500">Recon: </span>
-                  {row.replacementCost}
+                  <span dangerouslySetInnerHTML={{ __html: row.replacementCost }} />
                 </p>
 
                 <p
                   className={`mb-1 text-xs md:mb-0 ${verdictClass[row.verdict.type] || ""}`}
                 >
-                  {row.verdict.icon} {row.verdict.text}
+                  {row.verdict.icon} <span dangerouslySetInnerHTML={{ __html: row.verdict.text }} />
                 </p>
 
                 <span className="hidden text-gray-400 md:block">›</span>
@@ -89,18 +89,12 @@ export default function HomeSec6({ data }) {
           <div className="flex w-full flex-col gap-2 md:w-72 md:shrink-0">
             <div className="flex items-start gap-2 border border-blue-200 bg-blue-50 p-2">
               <div className="min-w-0 flex-1">
-                <h3 className="text-sm font-bold uppercase text-blue-700">
-                  {data.ruleOfThumb.title}
-                </h3>
-                <p className="text-xs text-gray-700">{data.ruleOfThumb.text}</p>
+                <h3 className="text-sm font-bold uppercase text-blue-700" dangerouslySetInnerHTML={{ __html: data.ruleOfThumb.title }} />
+                <p className="text-xs text-gray-700" dangerouslySetInnerHTML={{ __html: data.ruleOfThumb.text }} />
               </div>
               <div className="shrink-0 text-center">
-                <p className="text-2xl font-bold text-blue-700">
-                  {data.ruleOfThumb.percent}
-                </p>
-                <p className="text-[10px] font-semibold text-blue-700">
-                  {data.ruleOfThumb.percentLabel}
-                </p>
+                <p className="text-2xl font-bold text-blue-700" dangerouslySetInnerHTML={{ __html: data.ruleOfThumb.percent }} />
+                <p className="text-[10px] font-semibold text-blue-700" dangerouslySetInnerHTML={{ __html: data.ruleOfThumb.percentLabel }} />
               </div>
             </div>
 
@@ -115,14 +109,13 @@ export default function HomeSec6({ data }) {
                       href={link.href}
                       className="flex items-start gap-2 px-2 py-1.5 text-black hover:bg-gray-50"
                     >
-                      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-700 text-xs text-white">
-                        {link.id}
-                      </span>
+                      <span
+                        className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-700 text-xs text-white"
+                        dangerouslySetInnerHTML={{ __html: link.id }}
+                      />
                       <div className="min-w-0 flex-1">
-                        <p className="text-sm font-semibold text-blue-700">
-                          {link.label}
-                        </p>
-                        <p className="text-xs text-gray-600">{link.purpose}</p>
+                        <p className="text-sm font-semibold text-blue-700" dangerouslySetInnerHTML={{ __html: link.label }} />
+                        <p className="text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: link.purpose }} />
                       </div>
                     </Link>
                   </li>

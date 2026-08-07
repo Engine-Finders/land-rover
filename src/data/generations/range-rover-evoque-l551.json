@@ -299,7 +299,7 @@
         "family": "Reliability",
         "fuel": "2025 Enquiries",
         "displacement": "Avg. Recon Cost",
-        "power": "204DTD",
+        "power": "<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a>",
         "years": "AJ200D / Ingenium D",
         "variants": "",
         "reliability": "",
@@ -343,7 +343,7 @@
         "avgReconCost": ""
       },
       {
-        "engineCode": "PT204",
+        "engineCode": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>PT204</a>",
         "family": "AJ200P / Ingenium P",
         "fuel": "Petrol, turbo",
         "displacement": "2.0L",

@@ -216,7 +216,7 @@
   "hero": {
     "tagPill": "Land Rover Discovery 2 D2 • SUV • 1998–2004",
     "h1": "Land Rover Discovery 2 D2 Engines — The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the Discovery 2 — from the five-cylinder Td5 turbo-diesel to the 4.0 and 4.6-litre Rover V8s. Real UK replacement costs, honest failure data, and the coolant and liner issues that define this generation's ownership story. Backed by real UK enquiry data [PATTERN DATA].",
+    "subHeadline": "Every engine fitted to the Discovery 2 — from the five-cylinder <a href='https://landroverengine.uk/engine/td5'>Td5</a> turbo-diesel to the 4.0 and 4.6-litre Rover V8s. Real UK replacement costs, honest failure data, and the coolant and liner issues that define this generation's ownership story. Backed by real UK enquiry data [PATTERN DATA].",
     "trustStrip": [
       {
         "icon": "📊",

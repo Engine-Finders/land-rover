@@ -353,7 +353,7 @@
         "avgReconCost": "£6,500–£9,500"
       },
       {
-        "engineCode": "AJ20D6 / DT306",
+        "engineCode": "<a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> / DT306",
         "family": "Ingenium I6",
         "fuel": "Diesel MHEV",
         "displacement": "3.0L",
@@ -377,13 +377,13 @@
         "avgReconCost": "£5,500–£8,500"
       },
       {
-        "engineCode": "PT204",
+        "engineCode": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>PT204</a>",
         "family": "Ingenium I4",
         "fuel": "Petrol",
         "displacement": "2.0L",
         "power": "300 bhp",
         "years": "2017–2022",
-        "variants": "P300, Si4",
+        "variants": "P300, <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a>",
         "reliability": "★★★★☆ [PROVISIONAL]",
         "enquiries": "480 JLR-wide [EM-VERIFIED]",
         "avgReconCost": "£3,000–£5,000"
@@ -414,7 +414,7 @@
       },
       {
         "engineCode": "508PS",
-        "family": "AJ133 V8",
+        "family": "<a href='https://landroverengine.uk/engine/aj133'>AJ133</a> V8",
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L",
         "power": "510–575 bhp",
@@ -435,13 +435,13 @@
     "h2": "Range Rover Sport L494 — Overview",
     "intro": "The Range Rover Sport L494 is the second generation of Land Rover's performance-oriented SUV, launched in 2013 as the successor to the L320. Built on the aluminium D7u platform shared with the Range Rover L405, the L494 offered significant weight savings and improved dynamics over its predecessor. The engine line-up expanded dramatically over its nine-year production run: early cars offered 3.0-litre V6 diesel, 3.0-litre supercharged V6 petrol, and 5.0-litre supercharged V8 petrol options; a 2016 update introduced the 2.0-litre Ingenium diesel four; the 2018 facelift brought the 2.0-litre Ingenium petrol (P300), the P400e plug-in hybrid, and later the 3.0-litre Ingenium six-cylinder diesel MHEV (D300). The range-topping SVR delivered 575 bhp from its supercharged 5.0-litre V8.",
     "keyFacts": "Platform: Aluminium D7u (shared with Range Rover L405) • Predecessor: Range Rover Sport L320 (2005–2013) • Successor: Range Rover Sport L461 (2022–present) • Sibling body styles: None — L494 is sole second-generation Range Rover Sport body style",
-    "marketIntelligenceLine": "The Range Rover Sport L494 generated 308+ real UK engine enquiries in 2025 [EM-VERIFIED], with the 3.0-litre V6 diesel (306DT) accounting for the largest share of JLR-wide enquiries (980), followed by the 5.0-litre supercharged V8 (508PS) at 620 enquiries."
+    "marketIntelligenceLine": "The Range Rover Sport L494 generated 308+ real UK engine enquiries in 2025 [EM-VERIFIED], with the 3.0-litre V6 diesel (<a href='https://landroverengine.uk/engine/306dt'>306DT</a>) accounting for the largest share of JLR-wide enquiries (980), followed by the 5.0-litre supercharged V8 (508PS) at 620 enquiries."
   },
   "bestWorstEngines": {
     "items": [
       {
         "slot": "Best Diesel Overall",
-        "engine": "448DT 4.4-litre SDV8 — The 4.4-litre V8 diesel (Ford-sourced) is the most robust diesel in the L494 line-up. No catastrophic bottom-end design flaw, no crankshaft bearing failure like the 306DT, and oil cooler leaks are the primary concern — a manageable repair rather than an engine-killer.",
+        "engine": "<a href='https://landroverengine.uk/engine/448dt'>448DT</a> 4.4-litre SDV8 — The 4.4-litre V8 diesel (Ford-sourced) is the most robust diesel in the L494 line-up. No catastrophic bottom-end design flaw, no crankshaft bearing failure like the 306DT, and oil cooler leaks are the primary concern — a manageable repair rather than an engine-killer.",
         "quote": "",
         "whoItsFor": "buyers who want effortless V8 torque without the V6 diesel's reliability anxiety."
       },
@@ -604,7 +604,7 @@
       },
       {
         "id": 2,
-        "title": "Ingenium 2.0 Diesel Timing Chain Tensioner Failure",
+        "title": "<a href='https://landroverengine.uk/engine/ingenium-20-diesel'>Ingenium 2.0 Diesel</a> Timing Chain Tensioner Failure",
         "affectedModels": "L494 2.0-litre SD4 (204DTA), particularly pre-2019 units.",
         "typicalFailureMileage": "60,000–120,000 miles.",
         "rootCause": "The timing chain tensioner on early Ingenium 2.0-litre diesel engines can fail, leading to chain stretch and, in catastrophic cases, engine destruction. Oil dilution from DPF regeneration accelerates tensioner wear.",

@@ -8,7 +8,10 @@ export default function MarketIntelligence({ data }) {
         <ul>
           {data.items.map((item) => (
             <li key={item.label}>
-              <strong>{item.label}:</strong> {item.value}
+              <strong>
+                <span dangerouslySetInnerHTML={{ __html: item.label }} />:
+              </strong>{" "}
+              <span dangerouslySetInnerHTML={{ __html: item.value }} />
             </li>
           ))}
         </ul>

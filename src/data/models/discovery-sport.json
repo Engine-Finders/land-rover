@@ -260,7 +260,7 @@
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "204PT Ingenium petrol and post-2019 204DTD diesels"
+        "ourCall": "204PT Ingenium petrol and post-2019 <a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a> diesels"
       },
       {
         "metric": "Highest-Risk Engine",
@@ -341,7 +341,7 @@
       {
         "title": "Discovery Sport (L550)",
         "badge": "🔥 Most Enquired Model — 362 enquiries (2025) [EM-VERIFIED]",
-        "meta": "2015–present • 224DT, 204DTD, Si4 GTDi, 204PT, P300e",
+        "meta": "2015–present • 224DT, 204DTD, <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> GTDi, 204PT, P300e",
         "rating": "⭐⭐⭐½",
         "verdict": "Buy on the facelift line, not the badge. 2019.5MY brought the revised architecture, mild-hybrid drivetrains and the improved chain hardware that changed this model's reliability story.",
         "cta": {

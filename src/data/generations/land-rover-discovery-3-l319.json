@@ -307,7 +307,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "276DT TDV6: 95% confidence, derived from the EM_Proprietary_Data Known Failure Patterns table and Model Ownership Decision Table — crankshaft bearing failure is a well-documented catastrophic risk. 406PN V6 petrol and 448PN V8 petrol: 95% confidence, derived from workshop consensus and specialist sources — both are more robust than the TDV6 diesel. All ratings are [PROVISIONAL] pending dedicated Engine Pages for each family."
+      "text": "<a href='https://landroverengine.uk/engine/276dt'>276DT</a> TDV6: 95% confidence, derived from the EM_Proprietary_Data Known Failure Patterns table and Model Ownership Decision Table — crankshaft bearing failure is a well-documented catastrophic risk. 406PN V6 petrol and 448PN V8 petrol: 95% confidence, derived from workshop consensus and specialist sources — both are more robust than the TDV6 diesel. All ratings are [PROVISIONAL] pending dedicated Engine Pages for each family."
     },
     "dataCorrections": []
   },

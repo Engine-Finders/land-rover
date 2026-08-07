@@ -20,7 +20,7 @@ export default function HomeSec7({ data }) {
             <h2 className="text-2xl font-bold text-black md:text-4xl">
               Land Rover &amp; Range Rover Engine Families
             </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+            <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           </div>
           <div className="relative h-20 w-28 shrink-0 md:h-28 md:w-48">
             <Image
@@ -41,7 +41,7 @@ export default function HomeSec7({ data }) {
               className="flex items-center gap-1 text-xs text-black md:flex-1"
             >
               <span>{item.icon}</span>
-              <span>{item.label}</span>
+              <span dangerouslySetInnerHTML={{ __html: item.label }} />
             </li>
           ))}
         </ul>
@@ -50,7 +50,7 @@ export default function HomeSec7({ data }) {
         <div className="mb-2 border border-gray-200">
           <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-[1fr_0.7fr_0.8fr_1.1fr_2fr_auto] md:gap-2">
             {data.columns.map((col) => (
-              <span key={col}>{col}</span>
+              <span key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
             <span />
           </div>
@@ -62,27 +62,27 @@ export default function HomeSec7({ data }) {
               className="block border-b border-gray-200 px-2 py-2 text-black last:border-b-0 hover:bg-gray-50 md:grid md:grid-cols-[1fr_0.7fr_0.8fr_1.1fr_2fr_auto] md:items-start md:gap-2"
             >
               <div className="mb-1 md:mb-0">
-                <p className="text-sm font-bold">{row.code}</p>
-                <p className="text-xs text-blue-700">{row.spec}</p>
+                <p className="text-sm font-bold" dangerouslySetInnerHTML={{ __html: row.code }} />
+                <p className="text-xs text-blue-700" dangerouslySetInnerHTML={{ __html: row.spec }} />
               </div>
 
               <p className="mb-1 text-xs md:mb-0">
-                {row.fuelIcon} {row.fuel}
+                {row.fuelIcon} <span dangerouslySetInnerHTML={{ __html: row.fuel }} />
               </p>
 
-              <p className="mb-1 text-xs text-gray-600 md:mb-0">{row.years}</p>
+              <p className="mb-1 text-xs text-gray-600 md:mb-0" dangerouslySetInnerHTML={{ __html: row.years }} />
 
               <div className="mb-1 md:mb-0">
-                <p className="text-sm font-semibold">{row.enquiries}</p>
-                <p className="text-xs text-blue-700">{row.sourceTag}</p>
+                <p className="text-sm font-semibold" dangerouslySetInnerHTML={{ __html: row.enquiries }} />
+                <p className="text-xs text-blue-700" dangerouslySetInnerHTML={{ __html: row.sourceTag }} />
               </div>
 
               <div className="flex items-start justify-between gap-2 md:contents">
                 <p className={`text-xs ${verdictClass[row.verdict.type] || ""}`}>
                   <span className="font-semibold">
-                    {row.verdict.icon} {row.verdict.label}
+                    {row.verdict.icon} <span dangerouslySetInnerHTML={{ __html: row.verdict.label }} />
                   </span>{" "}
-                  — {row.verdict.text}
+                  — <span dangerouslySetInnerHTML={{ __html: row.verdict.text }} />
                 </p>
                 <span className="text-gray-400 md:justify-self-end">›</span>
               </div>
@@ -97,8 +97,8 @@ export default function HomeSec7({ data }) {
         >
           <span className="text-lg">💡</span>
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-semibold">{data.legend.title}</p>
-            <p className="text-xs text-gray-600">{data.legend.text}</p>
+            <p className="text-sm font-semibold" dangerouslySetInnerHTML={{ __html: data.legend.title }} />
+            <p className="text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: data.legend.text }} />
           </div>
           <span className="text-gray-400">›</span>
         </Link>

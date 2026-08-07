@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Velar P400 • 2021–present • 3.0 AJ20P6",
+    "tagPill": "Land Rover Velar P400 • 2021–present • 3.0 <a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>",
     "h1": "Land Rover Velar P400 Engine Replacement — Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover Velar P400 specialists. Compare reconditioned, rebuilt and used AJ20P6 engines — supply & fit available nationwide.",
     "trustBadges": [
@@ -222,7 +222,7 @@
         "engineCode": "AJ20P6 (3.0 6-cylinder Ingenium petrol)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
         "reconCost": "£4,500–£7,000 [EM-QUOTE]",
-        "eraNote": "JLR's 3.0 straight-six Ingenium petrol — more reliable than the diesel AJ20D6; cooling system is the main watchpoint."
+        "eraNote": "JLR's 3.0 straight-six Ingenium petrol — more reliable than the diesel <a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a>; cooling system is the main watchpoint."
       }
     ],
     "sourceNote": "",

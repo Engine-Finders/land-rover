@@ -7,12 +7,15 @@ export default function FAQAccordion({ data }) {
       {data.items?.map((item) => (
         <div key={item.id}>
           <h3>
-            {item.id}. {item.question}
+            {item.id}.{" "}
+            <span dangerouslySetInnerHTML={{ __html: item.question }} />
           </h3>
-          <p>{item.answer}</p>
+          <p dangerouslySetInnerHTML={{ __html: item.answer }} />
         </div>
       ))}
-      {data.disclaimer && <p>{data.disclaimer}</p>}
+      {data.disclaimer && (
+        <p dangerouslySetInnerHTML={{ __html: data.disclaimer }} />
+      )}
       <hr />
     </section>
   );

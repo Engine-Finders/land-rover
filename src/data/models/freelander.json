@@ -272,7 +272,7 @@
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "2.2 TD4/SD4 (224DT) — Freelander 2 • Td4 BMW M47 — Freelander 1"
+        "ourCall": "2.2 TD4/SD4 (224DT) — Freelander 2 • Td4 BMW <a href='https://landroverengine.uk/engine/m47'>M47</a> — Freelander 1"
       },
       {
         "metric": "Highest-Risk Engine",
@@ -349,7 +349,7 @@
       {
         "title": "Freelander 1",
         "badge": "",
-        "meta": "1997–2006 • 1.8 K-series, 2.0 Di (L-series), Td4 (BMW M47), 2.5 KV6",
+        "meta": "1997–2006 • 1.8 K-series, 2.0 Di (L-series), Td4 (BMW <a href='https://landroverengine.uk/engine/m47'>M47</a>), 2.5 KV6",
         "rating": "⭐⭐½",
         "verdict": "Britain's best-selling 4x4 of its day, undone by the 1.8 petrol's head gasket. The BMW-engined Td4 diesel is the one to have — the rest are now labour-of-love territory.",
         "cta": {
@@ -360,7 +360,7 @@
       {
         "title": "Freelander 2 (L359)",
         "badge": "🔥 Most Enquired — 279 enquiries (2025) [EM-VERIFIED]",
-        "meta": "2006–2014 • 2.2 TD4/SD4 (224DT), 3.2 i6 (SI6), 2.0 Si4 GTDi",
+        "meta": "2006–2014 • 2.2 TD4/SD4 (224DT), 3.2 i6 (<a href='https://landroverengine.uk/engine/volvo-si6'>SI6</a>), 2.0 <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> GTDi",
         "rating": "⭐⭐⭐⭐☆",
         "verdict": "A quietly excellent car — the 2.2 diesel is one of the most dependable engines Land Rover ever fitted. The buying risk is the car's age and value, not the engine.",
         "cta": {
@@ -421,7 +421,7 @@
       },
       {
         "engineCode": "Td4 (M47R)",
-        "family": "BMW M47",
+        "family": "BMW <a href='https://landroverengine.uk/engine/m47'>M47</a>",
         "fuel": "Diesel",
         "displacement": "2.0L",
         "power": "110 bhp",
@@ -482,7 +482,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "224DT rating: 90% confidence — 279 model-level L359 enquiries [EM-VERIFIED] plus its long, well-documented service history across Freelander 2, Evoque L538 and early Discovery Sport. All Freelander 1 and petrol FL2 ratings: Expert-knowledge tier — the parc is old enough that documented failure patterns are extensive, but our proprietary volume data doesn't reach back that far. Data note (internal): Correction applied: the source data sheet listed \"2.0 Ingenium (204DTD — late L359)\" as a Freelander engine. The Freelander never received an Ingenium engine — L359 production ended in 2014 and the 204DTD launched in 2015 with the Discovery Sport/Evoque. Removed, and the missing genuine engines added: 1.8 K-series, L-series, BMW Td4 and KV6 (FL1); Volvo SI6 and Si4 GTDi petrols (FL2). If the source data contains \"204DTD Freelander\" enquiries, they are almost certainly misattributed Discovery Sport records — worth cleaning at source."
+      "text": "224DT rating: 90% confidence — 279 model-level L359 enquiries [EM-VERIFIED] plus its long, well-documented service history across Freelander 2, Evoque L538 and early Discovery Sport. All Freelander 1 and petrol FL2 ratings: Expert-knowledge tier — the parc is old enough that documented failure patterns are extensive, but our proprietary volume data doesn't reach back that far. Data note (internal): Correction applied: the source data sheet listed \"2.0 Ingenium (<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a> — late L359)\" as a Freelander engine. The Freelander never received an Ingenium engine — L359 production ended in 2014 and the 204DTD launched in 2015 with the Discovery Sport/Evoque. Removed, and the missing genuine engines added: 1.8 K-series, L-series, BMW Td4 and KV6 (FL1); Volvo SI6 and Si4 GTDi petrols (FL2). If the source data contains \"204DTD Freelander\" enquiries, they are almost certainly misattributed Discovery Sport records — worth cleaning at source."
     },
     "dataCorrections": []
   },

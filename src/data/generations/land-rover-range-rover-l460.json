@@ -543,7 +543,7 @@
     "rows": [
       {
         "variant": "D300 (3.0 diesel)",
-        "engineCode": "AJ20D6 / Ingenium I6",
+        "engineCode": "<a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> / Ingenium I6",
         "usedSupply": "£2,500–£4,500",
         "reconditionedSupply": "£4,500–£7,500",
         "rebuiltSupply": "£6,000–£9,000",
@@ -559,7 +559,7 @@
       },
       {
         "variant": "P400 (3.0 MHEV petrol)",
-        "engineCode": "PT306 / AJ20P6",
+        "engineCode": "PT306 / <a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>",
         "usedSupply": "£2,200–£4,000",
         "reconditionedSupply": "£4,000–£6,500",
         "rebuiltSupply": "£5,500–£8,500",

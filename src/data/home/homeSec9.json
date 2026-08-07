@@ -12,7 +12,7 @@
       {
         "id": 1,
         "title": "TDV6 Crankshaft Failure",
-        "description": "The 306DT's defining weak point — cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon. 980 enquiries in 2025 [EM-VERIFIED].",
+        "description": "The <a href='https://landroverengine.uk/engine/306dt'>306DT</a>'s defining weak point — cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon. 980 enquiries in 2025 [EM-VERIFIED].",
         "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
         "link": { "label": "Read more →", "href": "#" }
       },

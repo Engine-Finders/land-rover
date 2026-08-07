@@ -278,11 +278,11 @@
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "204PT P250/P300 • post-2021 AJ20D6 D300"
+        "ourCall": "204PT P250/P300 • post-2021 <a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> D300"
       },
       {
         "metric": "Highest-Risk Engine",
-        "ourCall": "2017–2020 D300 (306DT V6) — crankshaft bearing • pre-2019 204DTD — timing chain"
+        "ourCall": "2017–2020 D300 (306DT V6) — crankshaft bearing • pre-2019 <a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a> — timing chain"
       },
       {
         "metric": "Best Used Buy",
@@ -359,7 +359,7 @@
       {
         "title": "Range Rover Velar (L560)",
         "badge": "🔥 275 enquiries (2025) [EM-VERIFIED]",
-        "meta": "2017–present • 204DTD, 204PT, 306DT D300, AJ126 P380, AJ133 P550, AJ20D6, AJ20P6, P400e",
+        "meta": "2017–present • 204DTD, 204PT, 306DT D300, AJ126 P380, AJ133 P550, AJ20D6, <a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>, P400e",
         "rating": "⭐⭐⭐½",
         "verdict": "Buy on the 2021 facelift line and the engine, in that order. Post-2021 cars swap every caveated engine for a clean one — the rare facelift that changed the mechanicals more than the face.",
         "cta": {
@@ -520,7 +520,7 @@
     "problems": [
       {
         "id": 1,
-        "issue": "D300 (306DT) Crankshaft Bearing Failure",
+        "issue": "D300 (<a href='https://landroverengine.uk/engine/306dt'>306DT</a>) Crankshaft Bearing Failure",
         "description": "The pre-2021 D300 carries the same bottom-end risk as its Discovery 4 and Range Rover Sport siblings — cold-start knock is the warning. £6,500–£9,500 recon [EM-QUOTE]. 2017–2020 cars only.",
         "severity": {
           "icon": "🔴",

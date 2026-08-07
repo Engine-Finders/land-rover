@@ -7,28 +7,60 @@ export default function CommonProblems({ data }) {
       {data.problems?.map((problem) => (
         <div key={problem.id}>
           <h3>
-            {problem.id}. {problem.title}
+            {problem.id}.{" "}
+            <span dangerouslySetInnerHTML={{ __html: problem.title }} />
           </h3>
-          {problem.symptoms && <p>Symptoms: {problem.symptoms}</p>}
-          {problem.typicalMileage && (
-            <p>Typical mileage: {problem.typicalMileage}</p>
+          {problem.symptoms && (
+            <p>
+              Symptoms:{" "}
+              <span dangerouslySetInnerHTML={{ __html: problem.symptoms }} />
+            </p>
           )}
-          {problem.repairCost && <p>Repair cost: {problem.repairCost}</p>}
+          {problem.typicalMileage && (
+            <p>
+              Typical mileage:{" "}
+              <span
+                dangerouslySetInnerHTML={{ __html: problem.typicalMileage }}
+              />
+            </p>
+          )}
+          {problem.repairCost && (
+            <p>
+              Repair cost:{" "}
+              <span dangerouslySetInnerHTML={{ __html: problem.repairCost }} />
+            </p>
+          )}
           {problem.replacementCost && (
-            <p>Replacement cost: {problem.replacementCost}</p>
+            <p>
+              Replacement cost:{" "}
+              <span
+                dangerouslySetInnerHTML={{ __html: problem.replacementCost }}
+              />
+            </p>
           )}
           {problem.urgency && (
             <p>
-              Urgency: {problem.urgency.icon} {problem.urgency.label} —{" "}
-              {problem.urgency.text}
+              Urgency: {problem.urgency.icon}{" "}
+              <span
+                dangerouslySetInnerHTML={{ __html: problem.urgency.label }}
+              />{" "}
+              —{" "}
+              <span
+                dangerouslySetInnerHTML={{ __html: problem.urgency.text }}
+              />
             </p>
           )}
-          {problem.recommendation && <p>{problem.recommendation}</p>}
+          {problem.recommendation && (
+            <p dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
+          )}
           {problem.failureLink && (
             <p>
-              <a href={problem.failureLink.href}>
-                {problem.failureLink.label}
-              </a>
+              <a
+                href={problem.failureLink.href}
+                dangerouslySetInnerHTML={{
+                  __html: problem.failureLink.label,
+                }}
+              />
             </p>
           )}
         </div>

@@ -48,7 +48,7 @@ export default function CoreVariants({ data }) {
           <ul>
             {data.dieselVariants.map((v) => (
               <li key={v.url}>
-                <Link class="" href={v.url}>{v.name}</Link>
+                <Link class="" href={v.url} dangerouslySetInnerHTML={{ __html: v.name }} />
               </li>
             ))}
           </ul>
@@ -61,14 +61,14 @@ export default function CoreVariants({ data }) {
           <ul>
             {data.petrolVariants.map((v) => (
               <li key={v.url}>
-                <Link href={v.url}>{v.name}</Link>
+                <Link href={v.url} dangerouslySetInnerHTML={{ __html: v.name }} />
               </li>
             ))}
           </ul>
         </>
       )}
 
-      {data.scopeNote && <p>{data.scopeNote}</p>}
+      {data.scopeNote && <p dangerouslySetInnerHTML={{ __html: data.scopeNote }} />}
       <hr />
     </section>
   );

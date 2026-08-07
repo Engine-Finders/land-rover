@@ -213,7 +213,7 @@
       {
         "generation": "Freelander 2 / L359",
         "years": "2006–2014",
-        "engineCode": "306PN (Volvo SI6 B6324S)",
+        "engineCode": "306PN (Volvo <a href='https://landroverengine.uk/engine/volvo-si6'>SI6</a> B6324S)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
         "reconCost": "£2,200–£3,500 [PLACEHOLDER — confirm vs cost sheet]",
         "eraNote": "One engine throughout this badge's history — no era ambiguity."
@@ -542,7 +542,7 @@
       {
         "id": 5,
         "question": "The Production Note with all the required confirmations and source lists.",
-        "answer": "I need to ensure all the facts, engine codes, and the rating from Part 1 are carried over consistently into the schema and meta descriptions. The price range in the Service schema must span from the lowest used price to the highest rebuilt/main dealer price, just like I did for the D200, 200Tdi, and D180 pages. The user is probably preparing these for final publication or quality assurance. They need the complete package with SEO and structured data ready to go. My Part 2 response should be a polished, ready-to-implement completion of the page."
+        "answer": "I need to ensure all the facts, engine codes, and the rating from Part 1 are carried over consistently into the schema and meta descriptions. The price range in the Service schema must span from the lowest used price to the highest rebuilt/main dealer price, just like I did for the D200, <a href='https://landroverengine.uk/engine/200-300tdi'>200Tdi</a>, and D180 pages. The user is probably preparing these for final publication or quality assurance. They need the complete package with SEO and structured data ready to go. My Part 2 response should be a polished, ready-to-implement completion of the page."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."

@@ -29,25 +29,23 @@ function ModelRow({ item, desktop }) {
 
       {desktop ? (
         <>
-          <span className="w-24 shrink-0 text-sm font-semibold">{item.model}</span>
-          <span className="min-w-0 flex-1 truncate text-xs text-gray-600">
-            {item.generations}
-          </span>
+          <span className="w-24 shrink-0 text-sm font-semibold" dangerouslySetInnerHTML={{ __html: item.model }} />
+          <span className="min-w-0 flex-1 truncate text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: item.generations }} />
           <span
             className={`shrink-0 rounded px-1.5 py-0.5 text-xs ${verdictClass[item.verdict.type] || "bg-gray-100"}`}
           >
-            {item.verdict.icon} {item.verdict.text}
+            {item.verdict.icon} <span dangerouslySetInnerHTML={{ __html: item.verdict.text }} />
           </span>
         </>
       ) : (
         <>
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-semibold">{item.model}</p>
-            <p className="truncate text-xs text-gray-600">{item.generations}</p>
+            <p className="text-sm font-semibold" dangerouslySetInnerHTML={{ __html: item.model }} />
+            <p className="truncate text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: item.generations }} />
             <span
               className={`mt-0.5 inline-block rounded px-1.5 py-0.5 text-xs ${verdictClass[item.verdict.type] || "bg-gray-100"}`}
             >
-              {item.verdict.icon} {item.verdict.text}
+              {item.verdict.icon} <span dangerouslySetInnerHTML={{ __html: item.verdict.text }} />
             </span>
           </div>
         </>
@@ -62,9 +60,9 @@ function ColumnHeader({ columns }) {
   return (
     <div className="flex items-center gap-2 bg-blue-700 px-2 py-1 text-xs font-semibold text-white">
       <span className="w-14 shrink-0" />
-      <span className="w-24 shrink-0">{columns[0]}</span>
-      <span className="flex-1">{columns[1]}</span>
-      <span className="shrink-0">{columns[2]}</span>
+      <span className="w-24 shrink-0" dangerouslySetInnerHTML={{ __html: columns[0] }} />
+      <span className="flex-1" dangerouslySetInnerHTML={{ __html: columns[1] }} />
+      <span className="shrink-0" dangerouslySetInnerHTML={{ __html: columns[2] }} />
       <span className="w-3" />
     </div>
   );
@@ -84,7 +82,7 @@ export default function HomeSec2({ data }) {
             <h2 className="text-2xl font-bold text-black md:text-4xl">
               Find Your Vehicle
             </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+            <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           </div>
           <div className="relative h-20 w-28 shrink-0 md:h-28 md:w-48">
             <Image
@@ -114,9 +112,8 @@ export default function HomeSec2({ data }) {
                     ? "border-blue-700 bg-blue-700 text-white"
                     : "border-gray-300 bg-white text-black"
                 }`}
-              >
-                {filter.label}
-              </span>
+                dangerouslySetInnerHTML={{ __html: filter.label }}
+              />
             ))}
           </div>
         </div>
@@ -146,16 +143,16 @@ export default function HomeSec2({ data }) {
             href={data.viewAll.href}
             className="mb-2 block text-center text-sm text-blue-700"
           >
-            {data.viewAll.label} ({data.models.length}) ↓
+            <span dangerouslySetInnerHTML={{ __html: data.viewAll.label }} /> ({data.models.length}) ↓
           </Link>
           <div className="border border-blue-200 bg-blue-50 p-2">
-            <p className="text-sm font-semibold text-black">{data.cta.title}</p>
-            <p className="mb-2 text-xs text-gray-600">{data.cta.text}</p>
+            <p className="text-sm font-semibold text-black" dangerouslySetInnerHTML={{ __html: data.cta.title }} />
+            <p className="mb-2 text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: data.cta.text }} />
             <Link
               href={data.cta.href}
               className="block bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white"
             >
-              {data.cta.buttonLabel} →
+              <span dangerouslySetInnerHTML={{ __html: data.cta.buttonLabel }} /> →
             </Link>
           </div>
         </div>

@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Defender D240 • 2020–2021 • 204DTD 2.0 Diesel",
+    "tagPill": "Land Rover Defender D240 • 2020–2021 • <a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a> 2.0 Diesel",
     "h1": "Land Rover Defender D240 Engine Replacement — Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover Defender D240 specialists. Compare reconditioned, rebuilt and used 204DTD 2.0 diesel engines — supply & fit available nationwide.",
     "trustBadges": [
@@ -222,7 +222,7 @@
         "engineCode": "204DTD (single-turbo)",
         "reliability": "★★★☆☆ [PROVISIONAL — see Data Note]",
         "reconCost": "£3,500–£5,800 [EM-QUOTE]",
-        "eraNote": "Short-run single-turbo Ingenium diesel — replaced by AJ20D6 in 2021"
+        "eraNote": "Short-run single-turbo Ingenium diesel — replaced by <a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> in 2021"
       }
     ],
     "sourceNote": "",

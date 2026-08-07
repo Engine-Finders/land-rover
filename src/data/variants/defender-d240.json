@@ -5,12 +5,12 @@
     "titleCharCount": 54,
     "description": "Every Defender D240 engine — 204DTD 2.0 diesel. Real UK costs, timing chain reliability data, and honest advice. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 156,
-    "canonical": "https://landroverengine.uk/defender/d240/",
+    "canonical": "https://landroverengine.uk/defender/d240",
     "openGraph": {
       "title": "D240 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Defender D240 engine — 204DTD 2.0 diesel. Real UK costs, timing chain reliability data, and honest advice. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/defender/d240/",
+      "url": "https://landroverengine.uk/defender/d240",
       "image": "https://landroverengine.uk/images/land-rover/hero/defender-d240.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Defender",
-              "item": "https://landroverengine.uk/defender/"
+              "item": "https://landroverengine.uk/defender"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "L663",
-              "item": "https://landroverengine.uk/defender/l663/"
+              "item": "https://landroverengine.uk/defender/l663"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "D240",
-              "item": "https://landroverengine.uk/defender/d240/"
+              "item": "https://landroverengine.uk/defender/d240"
             }
           ]
         },
@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "L663 Defender D240 (204DTD, 2020-2021)",
-              "url": "https://landroverengine.uk/defender/l663/"
+              "url": "https://landroverengine.uk/defender/l663"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD",
-              "url": "https://landroverengine.uk/engines/204dtd/"
+              "url": "https://landroverengine.uk/engines/204dtd"
             }
           ]
         },
@@ -132,7 +132,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "D240 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/defender/d240/",
+          "url": "https://landroverengine.uk/defender/d240",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

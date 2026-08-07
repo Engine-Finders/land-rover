@@ -217,7 +217,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/land-rover-discovery-3/l319"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -501,25 +502,25 @@
     ],
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures — L319 Discovery 3 shares the same engine-bay access as the Discovery 4 (also L319), so costs are inherited directly per the Authority Model, with no divergence note required."
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "TDV6",
-      "url": "https://landroverengine.uk/discovery/27-tdv6"
-    }
-  ],
-  "petrolVariants": [
-    {
-      "name": "V6",
-      "url": "https://landroverengine.uk/discovery/si4"
-    },
-    {
-      "name": "V8",
-      "url": "https://landroverengine.uk/discovery/44-v8"
-    }
-  ],
-  "scopeNote": "All variants listed are Discovery 3 L319 only. Discovery 4 (also L319, 2009–2016) shares the same chassis code but received different engines including the 3.0 SDV6, 5.0 V8, and revised 2.7 TDV6 — those are covered on the Discovery 4 Generation Page. The L319 commercial van (2007–2009) shares the 2.7 TDV6 engine."
-},
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "TDV6",
+        "url": "https://landroverengine.uk/discovery/27-tdv6"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "V6",
+        "url": "https://landroverengine.uk/discovery/si4"
+      },
+      {
+        "name": "V8",
+        "url": "https://landroverengine.uk/discovery/44-v8"
+      }
+    ],
+    "scopeNote": "All variants listed are Discovery 3 L319 only. Discovery 4 (also L319, 2009–2016) shares the same chassis code but received different engines including the 3.0 SDV6, 5.0 V8, and revised 2.7 TDV6 — those are covered on the Discovery 4 Generation Page. The L319 commercial van (2007–2009) shares the 2.7 TDV6 engine."
+  },
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

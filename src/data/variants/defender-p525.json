@@ -5,12 +5,12 @@
     "titleCharCount": 58,
     "description": "Land Rover Defender P525 5.0L supercharged V8 — real UK costs, timing chain insight, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://landroverengine.uk/defender/p525/",
+    "canonical": "https://landroverengine.uk/defender/p525",
     "openGraph": {
       "title": "P525 Engine Replacement Cost UK — Compare Quotes",
       "description": "Land Rover Defender P525 5.0L supercharged V8 — real UK costs, timing chain insight, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/defender/p525/",
+      "url": "https://landroverengine.uk/defender/p525",
       "image": "https://landroverengine.uk/images/landrover/hero/defender-p525.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Defender",
-              "item": "https://landroverengine.uk/defender/"
+              "item": "https://landroverengine.uk/defender"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "P525",
-              "item": "https://landroverengine.uk/defender/p525/"
+              "item": "https://landroverengine.uk/defender/p525"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "L663 Defender P525 (2021–present)",
-              "url": "https://landroverengine.uk/defender/l663/"
+              "url": "https://landroverengine.uk/defender/l663"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 / 508PS (5.0L Supercharged V8)",
-              "url": "https://landroverengine.uk/engines/aj133/"
+              "url": "https://landroverengine.uk/engines/aj133"
             }
           ]
         },
@@ -126,7 +126,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "P525 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/defender/p525/",
+          "url": "https://landroverengine.uk/defender/p525",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

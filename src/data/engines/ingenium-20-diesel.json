@@ -3,12 +3,12 @@
     "slug": "ingenium-20-diesel",
     "title": "Land Rover Ingenium 2.0 Diesel Engine — Reliability & Cost",
     "description": "The Ingenium 2.0 diesel is JLR's modern workhorse — pre-2019 timing chain tensioners are the defining risk. Backed by 1,500+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/ingenium-20-diesel/",
+    "canonical": "https://landroverengine.uk/engine/ingenium-20-diesel",
     "openGraph": {
       "title": "Land Rover Ingenium 2.0 Diesel Engine — Reliability & Cost",
       "description": "The Ingenium 2.0 diesel is JLR's modern workhorse — pre-2019 timing chain tensioners are the defining risk. Backed by 1,500+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/ingenium-20-diesel/",
+      "url": "https://landroverengine.uk/engine/ingenium-20-diesel",
       "image": "https://landroverengine.uk/images/landrover/engines/ingenium-20-diesel.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines/"
+              "item": "https://landroverengine.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Ingenium 2.0 Diesel (204DTD/224DT)",
-              "item": "https://landroverengine.uk/engines/ingenium-20-diesel/"
+              "item": "https://landroverengine.uk/engine/ingenium-20-diesel"
             }
           ]
         },
@@ -52,25 +52,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Land Rover Discovery Sport L550 D150/D180/D240",
-              "url": "https://landroverengine.uk/models/discovery-sport/"
+              "url": "https://landroverengine.uk/models/discovery-sport"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Land Rover Evoque L551 D150/D180/D240",
-              "url": "https://landroverengine.uk/models/evoque/"
+              "url": "https://landroverengine.uk/models/evoque"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Land Rover Velar L560 D180/D240",
-              "url": "https://landroverengine.uk/models/velar/"
+              "url": "https://landroverengine.uk/models/velar"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Land Rover Defender L663 D200/D240",
-              "url": "https://landroverengine.uk/models/defender/"
+              "url": "https://landroverengine.uk/models/defender"
             }
           ]
         },
@@ -122,7 +122,7 @@
         {
           "@type": "Organization",
           "name": "landroverengine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -174,7 +174,7 @@
         {
           "@type": "WebPage",
           "name": "Land Rover Ingenium 2.0 Diesel Engine — Reliability & Cost",
-          "url": "https://landroverengine.uk/engines/ingenium-20-diesel/",
+          "url": "https://landroverengine.uk/engine/ingenium-20-diesel",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

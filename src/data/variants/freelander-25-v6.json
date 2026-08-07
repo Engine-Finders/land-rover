@@ -5,12 +5,12 @@
     "titleCharCount": 55,
     "description": "Land Rover Freelander 2.5 V6 — real UK costs, head gasket & cambelt insight, and honest reliability data for the Rover KV6. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://landroverengine.uk/freelander/25-v6/",
+    "canonical": "https://landroverengine.uk/freelander/25-v6",
     "openGraph": {
       "title": "2.5 V6 Engine Replacement Cost UK — Compare Quotes",
       "description": "Land Rover Freelander 2.5 V6 — real UK costs, head gasket & cambelt insight, and honest reliability data for the Rover KV6. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/freelander/25-v6/",
+      "url": "https://landroverengine.uk/freelander/25-v6",
       "image": "https://landroverengine.uk/images/landrover/hero/freelander-25-v6.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Freelander",
-              "item": "https://landroverengine.uk/freelander/"
+              "item": "https://landroverengine.uk/freelander"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.5 V6",
-              "item": "https://landroverengine.uk/freelander/25-v6/"
+              "item": "https://landroverengine.uk/freelander/25-v6"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Freelander 1 (FL1) 2.5 V6 (2000–2006)",
-              "url": "https://landroverengine.uk/freelander/fl1/"
+              "url": "https://landroverengine.uk/freelander/fl1"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Rover KV6 / 25K4F (2.5L V6)",
-              "url": "https://landroverengine.uk/engines/kv6/"
+              "url": "https://landroverengine.uk/engines/kv6"
             }
           ]
         },
@@ -126,7 +126,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "2.5 V6 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/freelander/25-v6/",
+          "url": "https://landroverengine.uk/freelander/25-v6",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

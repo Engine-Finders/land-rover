@@ -3,12 +3,12 @@
     "slug": "aj-v8-42-44-sc",
     "title": "Land Rover AJ-V8 4.2/4.4 SC Engine — Reliability",
     "description": "The AJ-V8 supercharged is a glorious V8 — sonorous and powerful, but pre-2012 cooling and chain issues need watching. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/aj-v8-42-44-sc/",
+    "canonical": "https://landroverengine.uk/engine/aj-v8-42-44-sc",
     "openGraph": {
       "title": "Land Rover AJ-V8 4.2/4.4 SC Engine — Reliability",
       "description": "The AJ-V8 supercharged is a glorious V8 — sonorous and powerful, but pre-2012 cooling and chain issues need watching. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/aj-v8-42-44-sc/",
+      "url": "https://landroverengine.uk/engine/aj-v8-42-44-sc",
       "image": "https://landroverengine.uk/images/landrover/engines/aj-v8-42-44-sc.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines/"
+              "item": "https://landroverengine.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ-V8 4.2/4.4 SC",
-              "item": "https://landroverengine.uk/engines/aj-v8-42-44-sc/"
+              "item": "https://landroverengine.uk/engine/aj-v8-42-44-sc"
             }
           ]
         },
@@ -52,19 +52,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Land Rover Range Rover L322 4.2 SC / 4.4 SC",
-              "url": "https://landroverengine.uk/models/range-rover-l322/"
+              "url": "https://landroverengine.uk/models/range-rover-l322"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Land Rover Range Rover Sport L320 4.2 SC",
-              "url": "https://landroverengine.uk/models/range-rover-sport-l320/"
+              "url": "https://landroverengine.uk/models/range-rover-sport-l320"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Land Rover Range Rover L405 4.4 SC (early)",
-              "url": "https://landroverengine.uk/models/range-rover/"
+              "url": "https://landroverengine.uk/models/range-rover"
             }
           ]
         },
@@ -116,7 +116,7 @@
         {
           "@type": "Organization",
           "name": "landroverengine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -168,7 +168,7 @@
         {
           "@type": "WebPage",
           "name": "Land Rover AJ-V8 4.2/4.4 SC Engine — Reliability",
-          "url": "https://landroverengine.uk/engines/aj-v8-42-44-sc/",
+          "url": "https://landroverengine.uk/engine/aj-v8-42-44-sc",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

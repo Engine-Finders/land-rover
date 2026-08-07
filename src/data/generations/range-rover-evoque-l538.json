@@ -247,7 +247,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/range-rover-evoque/l538"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -603,41 +604,41 @@
     ],
     "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for all L538 engines due to transverse mounting and Halewood production access."
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "2.2 eD4",
-      "url": "https://landroverengine.uk/evoque/td4-sd4"
-    },
-    {
-      "name": "2.2 TD4",
-      "url": "https://landroverengine.uk/evoque/td4-sd4"
-    },
-    {
-      "name": "2.2 SD4",
-      "url": "https://landroverengine.uk/evoque/td4-sd4"
-    },
-    {
-      "name": "2.0 TD4",
-      "url": "https://landroverengine.uk/evoque/td4-sd4"
-    },
-    {
-      "name": "2.0 SD4",
-      "url": "https://landroverengine.uk/evoque/td4-sd4"
-    },
-    {
-    "name": "2.2 Diesel",
-    "url": "https://landroverengine.uk/evoque/22-diesel"
-  }
-  ],
-  "petrolVariants": [
-    {
-      "name": "2.0 Si4",
-      "url": "https://landroverengine.uk/evoque/si4"
-    }
-  ],
-  "scopeNote": "All variants listed are first-generation Evoque L538 only. The eD4 is a two-wheel-drive variant introduced in 2012; TD4 and SD4 are all-wheel-drive. The 2.0-litre diesel and petrol variants arrived with the 2015 facelift. Cabriolet variants (2016–2018) share the same engine range."
-},
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "2.2 eD4",
+        "url": "https://landroverengine.uk/evoque/td4-sd4"
+      },
+      {
+        "name": "2.2 TD4",
+        "url": "https://landroverengine.uk/evoque/td4-sd4"
+      },
+      {
+        "name": "2.2 SD4",
+        "url": "https://landroverengine.uk/evoque/td4-sd4"
+      },
+      {
+        "name": "2.0 TD4",
+        "url": "https://landroverengine.uk/evoque/td4-sd4"
+      },
+      {
+        "name": "2.0 SD4",
+        "url": "https://landroverengine.uk/evoque/td4-sd4"
+      },
+      {
+        "name": "2.2 Diesel",
+        "url": "https://landroverengine.uk/evoque/22-diesel"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "2.0 Si4",
+        "url": "https://landroverengine.uk/evoque/si4"
+      }
+    ],
+    "scopeNote": "All variants listed are first-generation Evoque L538 only. The eD4 is a two-wheel-drive variant introduced in 2012; TD4 and SD4 are all-wheel-drive. The 2.0-litre diesel and petrol variants arrived with the 2015 facelift. Cabriolet variants (2016–2018) share the same engine range."
+  },
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 204PT 2.0 Si4 — 480 requests [EM-VERIFIED]",

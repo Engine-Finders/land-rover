@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(node scripts/fix-canonicals.mjs)",
+      "Shell(Remove-Item:*)",
+      "powershell",
+      "Shell(powershell -Command \"Get-ChildItem 'E:\\4 WEBS\\LR\\src\\data\\engines\\*.json' | ForEach-Object { (Get-Content $_.FullName -Raw) -replace 'landroverengine\\.uk/engines/', 'landroverengine.uk/engine/' | Set-Content $_.FullName -NoNewline }\")",
+      "Shell(node scripts/fix-engine-url.mjs)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

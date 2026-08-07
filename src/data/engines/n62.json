@@ -1,14 +1,14 @@
 {
   "meta": {
-    "slug": "bmw-n62",
+    "slug": "n62",
     "title": "BMW N62 4.4 V8 Engine — Reliability & Cost",
     "description": "The BMW N62 V8 is a smooth, advanced engine — but valve stem seals and coolant leaks are well-documented weaknesses. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
-    "canonical": "https://landroverengine.uk/engines/bmw-n62/",
+    "canonical": "https://landroverengine.uk/engine/n62",
     "openGraph": {
       "title": "BMW N62 4.4 V8 Engine — Reliability & Cost",
       "description": "The BMW N62 V8 is a smooth, advanced engine — but valve stem seals and coolant leaks are well-documented weaknesses. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/engines/bmw-n62/",
+      "url": "https://landroverengine.uk/engine/n62",
       "image": "https://landroverengine.uk/images/landrover/engines/bmw-n62.jpg",
       "siteName": "landroverengine.uk"
     },
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://landroverengine.uk/engines/"
+              "item": "https://landroverengine.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N62 4.4 V8",
-              "item": "https://landroverengine.uk/engines/bmw-n62/"
+              "item": "https://landroverengine.uk/engine/n62"
             }
           ]
         },
@@ -52,7 +52,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Land Rover Range Rover L322 V8",
-              "url": "https://landroverengine.uk/models/range-rover-l322/"
+              "url": "https://landroverengine.uk/models/range-rover-l322"
             }
           ]
         },
@@ -104,7 +104,7 @@
         {
           "@type": "Organization",
           "name": "landroverengine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -156,7 +156,7 @@
         {
           "@type": "WebPage",
           "name": "BMW N62 4.4 V8 Engine — Reliability & Cost",
-          "url": "https://landroverengine.uk/engines/bmw-n62/",
+          "url": "https://landroverengine.uk/engine/n62",
           "author": {
             "@type": "Organization",
             "name": "landroverengine.uk Editorial Team"

@@ -5,12 +5,12 @@
     "titleCharCount": 54,
     "description": "Land Rover Discovery 4.4 V8 — real UK costs, timing chain insight, and honest reliability data for the AJ-V8 4.4. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://landroverengine.uk/discovery/44-v8/",
+    "canonical": "https://landroverengine.uk/discovery/44-v8",
     "openGraph": {
       "title": "4.4 V8 Engine Replacement Cost UK — Compare Quotes",
       "description": "Land Rover Discovery 4.4 V8 — real UK costs, timing chain insight, and honest reliability data for the AJ-V8 4.4. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/discovery/44-v8/",
+      "url": "https://landroverengine.uk/discovery/44-v8",
       "image": "https://landroverengine.uk/images/landrover/hero/discovery-44-v8.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Discovery",
-              "item": "https://landroverengine.uk/discovery/"
+              "item": "https://landroverengine.uk/discovery"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "4.4 V8",
-              "item": "https://landroverengine.uk/discovery/44-v8/"
+              "item": "https://landroverengine.uk/discovery/44-v8"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Discovery 3 (L319) 4.4 V8 (2004–2009)",
-              "url": "https://landroverengine.uk/discovery/l319/"
+              "url": "https://landroverengine.uk/discovery/l319"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ-V8 4.4 / 448PN",
-              "url": "https://landroverengine.uk/engines/aj-v8-44/"
+              "url": "https://landroverengine.uk/engines/aj-v8-44"
             }
           ]
         },
@@ -126,7 +126,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "4.4 V8 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/discovery/44-v8/",
+          "url": "https://landroverengine.uk/discovery/44-v8",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

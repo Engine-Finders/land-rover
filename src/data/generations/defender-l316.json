@@ -241,7 +241,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/defender/l316"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -750,36 +751,36 @@
     ],
     "note": ""
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "200TDi",
-      "url": "https://landroverengine.uk/defender/200tdi"
-    },
-    {
-      "name": "300TDi",
-      "url": "https://landroverengine.uk/defender/300tdi"
-    },
-    {
-      "name": "Td5",
-      "url": "https://landroverengine.uk/defender/td5"
-    },
-    {
-      "name": "2.2 TDCi",
-      "url": "https://landroverengine.uk/defender/22-tdci"
-    },
-    {
-      "name": "2.4 TDCi",
-      "url": "https://landroverengine.uk/defender/24-tdci"
-    },
-    {
-    "name": "2.5 Diesel",
-    "url": "https://landroverengine.uk/defender/25-diesel"
-  }
-  ],
-  "petrolVariants": [],
-  "scopeNote": "All variants listed are L316 body code only — the original coil-spring Defender (90/110/130) produced from 1983 to 2016. The new L663 Defender (2019–present) is covered on its own Generation Page."
-},
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "200TDi",
+        "url": "https://landroverengine.uk/defender/200tdi"
+      },
+      {
+        "name": "300TDi",
+        "url": "https://landroverengine.uk/defender/300tdi"
+      },
+      {
+        "name": "Td5",
+        "url": "https://landroverengine.uk/defender/td5"
+      },
+      {
+        "name": "2.2 TDCi",
+        "url": "https://landroverengine.uk/defender/22-tdci"
+      },
+      {
+        "name": "2.4 TDCi",
+        "url": "https://landroverengine.uk/defender/24-tdci"
+      },
+      {
+        "name": "2.5 Diesel",
+        "url": "https://landroverengine.uk/defender/25-diesel"
+      }
+    ],
+    "petrolVariants": [],
+    "scopeNote": "All variants listed are L316 body code only — the original coil-spring Defender (90/110/130) produced from 1983 to 2016. The new L663 Defender (2019–present) is covered on its own Generation Page."
+  },
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. Td5 (5-cylinder, 1998–2006)",

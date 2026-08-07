@@ -229,7 +229,8 @@
           "dateModified": "2026-07-08"
         }
       ]
-    }
+    },
+    "canonical": "https://landroverengine.uk/range-rover/p38a"
   },
   "internalDeclarations": {
     "checkA": "",
@@ -543,29 +544,29 @@
     ],
     "note": ""
   },
-"coreVariants": {
-  "dieselVariants": [
-    {
-      "name": "2.5 TD",
-      "url": "https://landroverengine.uk/range-rover/25-dse"
-    },
-    {
-    "name": "TDi",
-    "url": "https://landroverengine.uk/range-rover/tdi"
-  }
-  ],
-  "petrolVariants": [
-    {
-      "name": "4.0 V8",
-      "url": "https://landroverengine.uk/range-rover/p38-v8"
-    },
-    {
-      "name": "4.6 V8",
-      "url": "https://landroverengine.uk/range-rover/p38-v8"
-    }
-  ],
-  "scopeNote": "All variants listed are P38A-generation Range Rover only (1994–2002). The P38A was only available as a 5-door SUV."
-},
+  "coreVariants": {
+    "dieselVariants": [
+      {
+        "name": "2.5 TD",
+        "url": "https://landroverengine.uk/range-rover/25-dse"
+      },
+      {
+        "name": "TDi",
+        "url": "https://landroverengine.uk/range-rover/tdi"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "4.0 V8",
+        "url": "https://landroverengine.uk/range-rover/p38-v8"
+      },
+      {
+        "name": "4.6 V8",
+        "url": "https://landroverengine.uk/range-rover/p38-v8"
+      }
+    ],
+    "scopeNote": "All variants listed are P38A-generation Range Rover only (1994–2002). The P38A was only available as a 5-door SUV."
+  },
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

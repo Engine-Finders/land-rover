@@ -5,12 +5,12 @@
     "titleCharCount": 58,
     "description": "Land Rover Range Rover Tdi – 200Tdi and 300Tdi mechanical diesels. Real UK costs, timing belt facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://landroverengine.uk/range-rover/tdi/",
+    "canonical": "https://landroverengine.uk/range-rover/tdi",
     "openGraph": {
       "title": "Range Rover Tdi Engine Cost UK — Compare Quotes",
       "description": "Land Rover Range Rover Tdi – 200Tdi and 300Tdi mechanical diesels. Real UK costs, timing belt facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
       "type": "website",
-      "url": "https://landroverengine.uk/range-rover/tdi/",
+      "url": "https://landroverengine.uk/range-rover/tdi",
       "image": "https://landroverengine.uk/images/land-rover/hero/tdi.jpg",
       "siteName": "LandRoverEngine.uk"
     },
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://landroverengine.uk/"
+              "item": "https://landroverengine.uk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover",
-              "item": "https://landroverengine.uk/range-rover/"
+              "item": "https://landroverengine.uk/range-rover"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Tdi",
-              "item": "https://landroverengine.uk/range-rover/tdi/"
+              "item": "https://landroverengine.uk/range-rover/tdi"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Range Rover Classic 200Tdi (1989-1994)",
-              "url": "https://landroverengine.uk/range-rover/classic/"
+              "url": "https://landroverengine.uk/range-rover/classic"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover Classic 300Tdi (1994-1996)",
-              "url": "https://landroverengine.uk/range-rover/classic/"
+              "url": "https://landroverengine.uk/range-rover/classic"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "200Tdi",
-              "url": "https://landroverengine.uk/engines/200tdi/"
+              "url": "https://landroverengine.uk/engines/200tdi"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "300Tdi",
-              "url": "https://landroverengine.uk/engines/300tdi/"
+              "url": "https://landroverengine.uk/engines/300tdi"
             }
           ]
         },
@@ -138,7 +138,7 @@
         {
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
-          "url": "https://landroverengine.uk/",
+          "url": "https://landroverengine.uk",
           "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "Range Rover Tdi Engine Cost UK — Compare Quotes",
-          "url": "https://landroverengine.uk/range-rover/tdi/",
+          "url": "https://landroverengine.uk/range-rover/tdi",
           "author": {
             "@type": "Organization",
             "name": "LandRoverEngine.uk Editorial Team"

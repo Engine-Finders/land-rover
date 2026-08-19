@@ -14,40 +14,227 @@
     "steps": [
       {
         "step": 1,
+        "icon": "clipboard",
         "title": "Tell us your symptoms",
         "text": "Select from common failure categories or use the shortcut grid if you already know the fault."
       },
       {
         "step": 2,
+        "icon": "car",
         "title": "Tell us about your vehicle",
         "text": "Age and estimated value help us calculate whether repair or replacement makes financial sense."
       },
       {
         "step": 3,
+        "icon": "shield",
         "title": "Get your diagnosis",
         "text": "We'll show you the likely fault, OEM part numbers, severity level, and a transparent cost breakdown."
       }
     ]
   },
   "calculator": {
-    "stepLabel": "STEP 1 OF 3",
-    "title": "Tell us your symptoms",
-    "instruction": "Select from common failure categories or use the shortcut grid if you already know the fault.",
-    "symptoms": [
-      { "icon": "⚙️", "label": "Engine Performance Issues", "href": "#" },
-      { "icon": "🛢️", "label": "Oil Leaks & Consumption", "href": "#" },
-      { "icon": "🌡️", "label": "Cooling System", "href": "#" },
-      { "icon": "⏱️", "label": "Timing Chain / Tensioner", "href": "#" },
-      { "icon": "💨", "label": "Turbocharger", "href": "#" },
-      { "icon": "🔋", "label": "Battery / Electrical", "href": "#" },
-      { "icon": "🚙", "label": "Air Suspension (EAS)", "href": "#" },
-      { "icon": "⚙️", "label": "Drivetrain / Transfer Box", "href": "#" },
-      { "icon": "🔊", "label": "Noise / Vibration", "href": "#" },
-      { "icon": "❓", "label": "Other / Not Sure", "href": "#" }
+    "stepLabels": ["Symptoms", "Vehicle", "Diagnosis"],
+    "steps": [
+      {
+        "id": 1,
+        "label": "STEP 1 OF 3",
+        "title": "Tell us your symptoms",
+        "instruction": "Select the category that best matches the fault. We'll map it to a known JLR failure pattern.",
+        "cta": "CONTINUE TO STEP 2"
+      },
+      {
+        "id": 2,
+        "label": "STEP 2 OF 3",
+        "title": "Tell us about your vehicle",
+        "instruction": "Age and estimated value decide whether repair or replacement is the financially smarter move.",
+        "cta": "CONTINUE TO STEP 3"
+      },
+      {
+        "id": 3,
+        "label": "STEP 3 OF 3",
+        "title": "Your diagnosis",
+        "instruction": "Likely fault, OEM references, severity, and a repair-vs-replace verdict based on the numbers you entered."
+      }
     ],
-    "cta": {
-      "label": "CONTINUE TO STEP 2",
-      "href": "#"
+    "valueSteps": [4000, 8000, 12000, 18000, 25000, 35000],
+    "ageOptions": [
+      { "id": "under5", "label": "Under 5 years" },
+      { "id": "5to10", "label": "5–10 years" },
+      { "id": "10to15", "label": "10–15 years" },
+      { "id": "over15", "label": "Over 15 years" }
+    ],
+    "symptoms": [
+      { "id": "engine", "icon": "⚙️", "label": "Engine Performance Issues" },
+      { "id": "oil", "icon": "🛢️", "label": "Oil Leaks & Consumption" },
+      { "id": "cooling", "icon": "🌡️", "label": "Cooling System" },
+      { "id": "timing", "icon": "⏱️", "label": "Timing Chain / Tensioner" },
+      { "id": "turbo", "icon": "💨", "label": "Turbocharger" },
+      { "id": "electrical", "icon": "🔋", "label": "Battery / Electrical" },
+      { "id": "eas", "icon": "🚙", "label": "Air Suspension (EAS)" },
+      { "id": "drivetrain", "icon": "⚙️", "label": "Drivetrain / Transfer Box" },
+      { "id": "noise", "icon": "🔊", "label": "Noise / Vibration" },
+      { "id": "other", "icon": "❓", "label": "Other / Not Sure" }
+    ],
+    "diagnoses": {
+      "engine": {
+        "severity": "catastrophic",
+        "fault": "TDV6 Crankshaft Bearing Failure",
+        "likelihood": "High Likelihood",
+        "commonOn": "306DT (3.0 TDV6/SDV6) engines",
+        "symptomsMatch": "Cold-start knock, metallic tapping, loss of oil pressure",
+        "summary": "Cold-start knock on a 306DT is the classic early warning. If oil pressure is already dropping, secondary damage is likely and replacement maths usually beats a bottom-end rebuild.",
+        "oemParts": [
+          { "label": "Crankshaft", "part": "LR041148 / LR073737" },
+          { "label": "Main bearings", "part": "LR004409" }
+        ],
+        "repairLow": 6500,
+        "repairHigh": 9500,
+        "replaceLow": 12000,
+        "replaceHigh": 18000
+      },
+      "oil": {
+        "severity": "immediate",
+        "fault": "508PS Oil Cooler & Dilution",
+        "likelihood": "High Likelihood",
+        "commonOn": "4.4 SDV8 (448DT) in Range Rover / Range Rover Sport",
+        "symptomsMatch": "Oil in coolant, mayonnaise on the cap, rising oil level",
+        "summary": "The 4.4 SDV8 oil cooler is the main weak point. Catch it before coolant ingestion and a cooler job is enough; leave it and you are into a full engine replacement.",
+        "oemParts": [
+          { "label": "Oil cooler", "part": "LR010882" },
+          { "label": "Cooler seals", "part": "LR013149" }
+        ],
+        "repairLow": 1800,
+        "repairHigh": 3200,
+        "replaceLow": 12000,
+        "replaceHigh": 18000
+      },
+      "cooling": {
+        "severity": "immediate",
+        "fault": "Coolant Loss / Head Gasket Risk",
+        "likelihood": "Medium Likelihood",
+        "commonOn": "TDV6, Ingenium diesel, and AJ126 petrol",
+        "symptomsMatch": "Overheating, heater blowing cold, unexplained coolant loss",
+        "summary": "JLR cooling faults range from a cheap thermostat housing to a head gasket. The value of the car decides whether you repair the cooling circuit or walk into a replacement quote.",
+        "oemParts": [
+          { "label": "Thermostat housing", "part": "LR073673" },
+          { "label": "Water pump", "part": "LR032079" }
+        ],
+        "repairLow": 450,
+        "repairHigh": 2800,
+        "replaceLow": 6500,
+        "replaceHigh": 12000
+      },
+      "timing": {
+        "severity": "monitor",
+        "fault": "Ingenium Timing Chain / Tensioner Wear",
+        "likelihood": "High Likelihood",
+        "commonOn": "Pre-2019 204DTD Ingenium diesel",
+        "symptomsMatch": "Rattle on cold start, check-engine light, rough idle",
+        "summary": "Pre-2019 Ingenium chain rattle is well documented and significantly improved from 2019. A chain kit at the right mileage is cheaper than waiting for a jumped chain and bent valves.",
+        "oemParts": [
+          { "label": "Timing chain kit", "part": "LR073593" },
+          { "label": "Tensioner", "part": "LR073594" }
+        ],
+        "repairLow": 1200,
+        "repairHigh": 2500,
+        "replaceLow": 3500,
+        "replaceHigh": 5800
+      },
+      "turbo": {
+        "severity": "monitor",
+        "fault": "Turbocharger Wear / Oil Feed Restriction",
+        "likelihood": "Medium Likelihood",
+        "commonOn": "TDV6, TDV8 and Ingenium diesels",
+        "symptomsMatch": "Whistle, boost loss, blue smoke, oily intercooler pipes",
+        "summary": "Turbo failures are often oil-feed or carbon related. A quality turbo and feed-pipe refresh is usually worth doing; only high-mileage low-value cars fail the replacement maths.",
+        "oemParts": [
+          { "label": "Turbocharger", "part": "LR011696" },
+          { "label": "Oil feed pipe", "part": "LR004313" }
+        ],
+        "repairLow": 900,
+        "repairHigh": 2200,
+        "replaceLow": 3500,
+        "replaceHigh": 6500
+      },
+      "electrical": {
+        "severity": "low",
+        "fault": "Battery / Charging / Body Control Fault",
+        "likelihood": "Medium Likelihood",
+        "commonOn": "All JLR models, especially EAS and Terrain Response cars",
+        "symptomsMatch": "Slow crank, warning lights, modules dropping offline",
+        "summary": "Most electrical 'engine' complaints start with a tired battery or a poor earth. Diagnose the charging circuit before quoting an engine — this is usually a repair, not a replacement.",
+        "oemParts": [
+          { "label": "AGM battery", "part": "LR117941" },
+          { "label": "Alternator", "part": "LR056992" }
+        ],
+        "repairLow": 180,
+        "repairHigh": 850,
+        "replaceLow": 3500,
+        "replaceHigh": 6500
+      },
+      "eas": {
+        "severity": "monitor",
+        "fault": "EAS Compressor / Valve Block Failure",
+        "likelihood": "High Likelihood",
+        "commonOn": "Range Rover L322/L405, Discovery 3/4, Range Rover Sport",
+        "symptomsMatch": "Car sitting low overnight, compressor running constantly, height faults",
+        "summary": "Air suspension is a known JLR cost centre. Compressors, valve blocks and leaks are repairable; only ignore it if the rest of the car is already past economic repair.",
+        "oemParts": [
+          { "label": "EAS compressor", "part": "LR045845" },
+          { "label": "Valve block", "part": "LR023964" }
+        ],
+        "repairLow": 450,
+        "repairHigh": 1400,
+        "replaceLow": 1800,
+        "replaceHigh": 3200
+      },
+      "drivetrain": {
+        "severity": "immediate",
+        "fault": "Transfer Box / Propshaft Wear",
+        "likelihood": "High Likelihood",
+        "commonOn": "Discovery 3/4 and Range Rover Sport with Terrain Response",
+        "symptomsMatch": "Clunk on take-off, 4WD warning, binding on tight lock",
+        "summary": "Transfer box actuator and viscous-coupling wear is common. A specialist rebuild is usually cheaper than a main-dealer box — run the value check before committing.",
+        "oemParts": [
+          { "label": "Transfer box", "part": "LR011273" },
+          { "label": "Actuator motor", "part": "LR011805" }
+        ],
+        "repairLow": 800,
+        "repairHigh": 2200,
+        "replaceLow": 2500,
+        "replaceHigh": 4500
+      },
+      "noise": {
+        "severity": "catastrophic",
+        "fault": "Cold-Start Knock / Bottom-End Noise",
+        "likelihood": "High Likelihood",
+        "commonOn": "306DT TDV6/SDV6 and 276DT 2.7 TDV6",
+        "symptomsMatch": "Metallic knock from cold, tapping that fades when warm, oil-pressure warning",
+        "summary": "A cold-start knock on these diesels is not a harmless injector tick. Treat it as a bottom-end warning and get an oil-pressure test before you spend on cosmetics.",
+        "oemParts": [
+          { "label": "Crankshaft", "part": "LR041148" },
+          { "label": "Oil pump", "part": "LR005411" }
+        ],
+        "repairLow": 6500,
+        "repairHigh": 9500,
+        "replaceLow": 12000,
+        "replaceHigh": 18000
+      },
+      "other": {
+        "severity": "monitor",
+        "fault": "Needs a Guided Inspection",
+        "likelihood": "Unknown — start with a specialist inspection",
+        "commonOn": "All Land Rover and Range Rover models",
+        "symptomsMatch": "Mixed or unclear symptoms, stored codes, intermittent faults",
+        "summary": "If the fault does not match a known pattern, do not guess. A JLR specialist inspection with live data is cheaper than replacing the wrong part — then come back with the codes.",
+        "oemParts": [
+          { "label": "Diagnostic session", "part": "Specialist live-data inspection" }
+        ],
+        "repairLow": 150,
+        "repairHigh": 400,
+        "replaceLow": 3500,
+        "replaceHigh": 9500
+      }
     }
   },
   "whyTrust": {
@@ -74,22 +261,10 @@
       }
     ]
   },
-  "exampleResult": {
-    "badge": "EXAMPLE RESULT",
-    "title": "Likely Diagnosis",
-    "fault": "TDV6 Crankshaft Bearing Failure",
-    "likelihood": "High Likelihood",
-    "commonOn": "306DT (3.0 TDV6/SDV6) engines",
-    "symptomsMatch": "Cold-start knock, metallic tapping, loss of oil pressure",
-    "repairCost": "£6,500–£9,500",
-    "replaceCost": "£12,000–£18,000 (Main Dealer)",
-    "footer": "Based on verified UK enquiries"
-  },
   "bottomCta": {
     "title": "Get your exact verdict",
     "text": "Answer a few questions for a diagnosis matched to your Land Rover or Range Rover.",
     "buttonLabel": "START DIAGNOSIS",
-    "href": "#",
     "trustLine": "100% Independent • No Sponsorship • Completely Unbiased"
   },
   "costTable": {

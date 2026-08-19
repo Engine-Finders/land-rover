@@ -1,0 +1,107 @@
+# ALL PAGE H1 + SECTION H2 HEADINGS
+# Purpose: reference for hardcoding headings in components later.
+# Dynamic text is shown with {placeholder}; concrete examples included where useful.
+
+============================================================
+PAGE 1 — HOMEPAGE
+H1:
+  The UK's Most Trusted Land Rover & Range Rover Ownership Guide
+
+H2 (by section, in render order):
+  HomeSec2:  Find Your Vehicle
+  HomeSec3:  Diagnose Your Land Rover or Range Rover Problem
+  HomeSec4:  Land Rover & Range Rover Ownership Rankings
+  HomeSec5:  Comparison Hub — Head-to-Head Verdicts
+  HomeSec6:  The Ownership Economics Centre
+  HomeSec7:  Land Rover & Range Rover Engine Families
+  HomeSec8:  Knowledge Centres
+  HomeSec9:  The Land Rover & Range Rover Failure Database
+  HomeSec10: Land Rover & Range Rover Market Intelligence
+  HomeSec11: Every Model. Every Generation. Honestly Rated.
+  HomeSec12: Why Land Rover Owners Trust This Site
+  HomeSec13: Frequently Asked Questions
+  HomeSec14: Not Sure Where to Start?
+  (HomeSec1 has H1 only — no H2)
+
+============================================================
+PAGE 2 — MODEL PAGES
+H1:
+  {Model} Engines — The Complete UK Guide
+  Examples:
+    Range Rover Engines — The Complete UK Guide
+    Range Rover Sport Engines — The Complete UK Guide
+    Discovery Engines — The Complete UK Guide
+    Freelander Engines — The Complete UK Guide
+    Evoque Engines — The Complete UK Guide
+    Velar Engines — The Complete UK Guide
+
+H2 (by section, in render order):
+  OwnershipVerdict:    {Model} — The Ownership Verdict
+  AtAGlance:           {Model} at a Glance
+  GenerationsGrid:     {Model} Generations — Find Your Vehicle   (varies per model)
+  EngineDatabase:      {Model} Engine Codes — The Complete Database
+  CommonProblems:      Common {Model} Engine Problems
+  MarketIntelligence:  {Model} Market Intelligence — What {N} UK Owners Told Us in 2025
+  EditorialPullQuote:  {Model}-specific pull-quote title          (from data.editorialPullQuote.title)
+  ReplacementCosts:    {Model} Engine Replacement Costs — By Generation  (varies per model)
+  EngineEvolution:     How the {Model} Engine Range Evolved — {years}
+  WhoShouldBuy:        Who Should Buy a {Model}?
+  CalculatorCTA:       Can I Repair My {Model} Engine — or Should I Replace It?
+  TrustBlock:          Why {Model} Owners Trust RangeRoverEngines.uk
+  FAQAccordion:        {Model} Frequently Asked Questions
+  ClosingActionCards:  Ready to Make a Decision?
+
+============================================================
+PAGE 3 — GENERATION PAGES
+H1:
+  {Generation} Engines — The Complete UK Guide
+  Examples:
+    Land Rover Range Rover L405 Engines — The Complete UK Guide
+    Range Rover Sport L494 Engines — The Complete UK Guide
+    Land Rover Defender L663 Engines — The Complete UK Guide
+
+H2 (by section, in render order):
+  EngineDatabase:      {Generation} Engine Codes — The Complete Database
+  Overview:            {Generation} — Overview
+  BestWorstEngines:    Best & Worst Engines                         (hardcoded)
+  OwnershipEconomics:  {Generation} — Ownership Economics
+  CommonProblems:      Common Problems                              (hardcoded)
+  ReplacementCosts:    {Generation} Engine Replacement Costs — By Engine and Condition
+  CoreVariants:        Core Variants                                (hardcoded)
+  MarketIntelligence:  Market Intelligence                          (hardcoded)
+  FAQAccordion:        FAQ                                          (hardcoded)
+  TrustCta:            Why UK {Generation} Owners Trust LandRoverEngine.uk
+
+============================================================
+PAGE 4 — VARIANT PAGES
+H1:
+  {Variant} Engine Replacement — Compare Prices & Get Quotes
+  Example:
+    Land Rover Defender D200 Engine Replacement — Compare Prices & Get Quotes
+
+H2 (by section, in render order):
+  EraMap:              {Variant} THROUGH TIME — Era Map              (from data.title)
+  ReplacementCosts:    {Variant} Engine Replacement Costs
+  CommonProblems:      Common Problems                              (hardcoded)
+  QuotesCta:           Ready to Compare? Get Matched With a Vetted Land Rover Specialist →  (from data.headline)
+  RepairBuyOrReplace:  {Variant} — Repair, Buy, or Replace?
+  BuyingChecklist:     Buying Checklist                             (hardcoded)
+  EngineCodes:         Engine Codes                                 (hardcoded)
+  MarketIntelligence:  Market Intelligence                          (hardcoded)
+  FAQAccordion:        FAQ                                          (hardcoded)
+  TrustCta:            Why UK {Variant} Owners Trust LandRoverEngine.uk
+
+============================================================
+PAGE 5 — ENGINE PAGES
+H1:
+  {Engine} — Specs, Reliability & Replacement Cost
+  Example:
+    Land Rover 306DT (3.0 TDV6/SDV6) Engine — Specs, Reliability & Replacement Cost
+
+H2 (by section, in render order):
+  AtAGlance:       At a Glance
+  VerdictRating:   Verdict & Rating
+  Compatibility:   Compatibility
+  CostGuide:       Cost Guide
+  FAQAccordion:    FAQ
+  TrustCta:        Why Owners Trust Us

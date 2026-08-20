@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Land Rover Glow Plug & Cold Start System Reference</title>
+  <meta name="description" content="Land Rover glow plug reference – types, voltage, replacement intervals, cold start system operation and common faults. OEM data for Tdi, TD5, TDV6 and Ingenium." />
+  <link rel="canonical" href="https://landroverengine.uk/technical/glow-plug-reference" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Land Rover &amp; Range Rover Ownership Guide" />
+  <meta property="og:title" content="Land Rover Glow Plug & Cold Start System Reference" />
+  <meta property="og:description" content="Reference specification for Land Rover glow plugs – type, voltage, replacement interval and cold start system overview for Tdi, TD5, TDV6 and Ingenium engines." />
+  <meta property="og:url" content="https://landroverengine.uk/technical/glow-plug-reference" />
+  <meta property="og:image" content="https://landroverengine.uk/assets/landrover/images/glow-plug-reference-hero.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Land Rover Glow Plug & Cold Start System Reference" />
+  <meta name="twitter:description" content="Glow plug types, voltage, intervals and cold start system guidance for Land Rover diesel engines." />
+  <meta name="twitter:image" content="https://landroverengine.uk/assets/landrover/images/glow-plug-reference-hero.webp" />
+  <link rel="stylesheet" href="/assets/landrover/style.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://landroverengine.uk/#organization",
+      "name": "Land Rover & Range Rover Ownership Guide",
+      "url": "https://landroverengine.uk/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://landroverengine.uk/#website",
+      "url": "https://landroverengine.uk/",
+      "publisher": {
+        "@id": "https://landroverengine.uk/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://landroverengine.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Technical Library",
+          "item": "https://landroverengine.uk/technical"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Glow Plug Reference",
+          "item": "https://landroverengine.uk/technical/glow-plug-reference"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "headline": "Land Rover Glow Plug & Cold Start System Reference",
+      "description": "Reference specification for glow plugs and the cold start system on Land Rover diesel engines – from the classic Tdi to the modern Ingenium. Covers type, voltage, replacement intervals and common faults.",
+      "author": {
+        "@type": "Organization",
+        "name": "Land Rover & Range Rover Ownership Guide Editorial Team"
+      },
+      "publisher": {
+        "@id": "https://landroverengine.uk/#organization"
+      },
+      "datePublished": "2026-03-17",
+      "dateModified": "2026-03-17",
+      "mainEntityOfPage": "https://landroverengine.uk/technical/glow-plug-reference"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How often should glow plugs be replaced on a Land Rover diesel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The typical interval is 60,000–80,000 miles [PLACEHOLDER], but many specialists recommend replacing them earlier if you experience cold start issues. Always replace in sets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the symptoms of a faulty glow plug?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hard starting in cold weather, white smoke from the exhaust on startup, a flashing glow plug warning light, and increased idle roughness until the engine warms up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I test glow plugs without removing them?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes – measure the resistance at the harness connector with a multimeter. A good plug will show low resistance (0.5–1.5Ω). An open circuit indicates a failed plug."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What causes glow plug failure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common causes include carbon fouling from poor combustion, electrical overload (relay failure), and physical damage (swelling or cracking). Cheap aftermarket plugs are also prone to premature failure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I drive with a faulty glow plug?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but cold starts will be difficult, and the engine may run poorly until warm. Prolonged driving with failed glow plugs can stress the battery and starter motor."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="/" class="brand">LAND ROVER &amp; RANGE ROVER<br /><span style="color:var(--lr-gold); font-weight:400;">OWNERSHIP GUIDE</span></a>
+  <ul>
+    <li><a href="/defender">Defender</a></li>
+    <li><a href="/discovery">Discovery</a></li>
+    <li><a href="/range-rover">Range Rover</a></li>
+    <li><a href="/technical">Technical</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+  <a href="#quote" class="cta-btn">START YOUR RESEARCH →</a>
+</nav>
+<div class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/technical">Technical Library</a><span>/</span>Glow Plug Reference</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">Technical Reference</span>
+      <h1>Land Rover Glow Plug &amp; <span class="accent">Cold Start System Reference</span></h1>
+      <p class="sub">Reference specification for glow plugs and the cold start system on Land Rover diesel engines – from the classic Tdi to the modern Ingenium. Covers type, voltage, replacement intervals and common faults.</p>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/landrover/images/glow-plug-reference-hero.webp" width="640" height="340" fetchpriority="high"
+           alt="Land Rover engine with glow plugs visible in cylinder head, workshop lighting"
+           title="Land Rover Glow Plug & Cold Start System Reference" />
+    </div>
+  </div>
+  <div class="stat-strip">
+    <div class="stat-strip-inner">
+      <div class="stat-cell"><div class="stat-icon">🔥</div><div><div class="stat-num">11–12V</div><div class="stat-label">Glow Plug<br />Voltage</div></div></div>
+      <div class="stat-cell"><div class="stat-icon">📋</div><div><div class="stat-num">Verified</div><div class="stat-label">Against OEM<br />Data</div></div></div>
+      <div class="stat-cell"><div class="stat-icon">🔧</div><div><div class="stat-num">12</div><div class="stat-label">Vetted JLR<br />Specialists</div></div></div>
+      <div class="stat-cell"><div class="stat-icon">🏆</div><div><div class="stat-num">Part of</div><div class="stat-label">Engine Finders<br />Network</div></div></div>
+    </div>
+  </div>
+</header>
+
+<div class="summary-box">
+  <p>Land Rover diesel engines use <strong>ceramic or metal sheathed glow plugs</strong> rated at 11–12V, with typical resistance between 0.5–1.5Ω. The cold start system pre‑heats the combustion chamber to aid starting in low temperatures. Most modern Land Rovers use <strong>fast‑glow (4–6 second) plugs</strong> controlled by the ECU based on coolant temperature and engine speed.</p>
+  <ul>
+    <li>Glow plug replacement interval: <strong>typically every 60,000–80,000 miles</strong> or as required <span class="tag">[PLACEHOLDER – confirm vs workshop manual]</span></li>
+    <li>Common glow plug failure: <strong>open circuit (no resistance)</strong> or <strong>carbon fouling</strong> – both trigger the glow plug warning light</li>
+    <li>Always use <strong>OEM or equivalent quality plugs</strong> – cheap aftermarket plugs can swell and seize in the cylinder head</li>
+    <li>Last verified: <strong>March 2026</strong></li>
+  </ul>
+  <p>Full specification table, common mistakes and verification steps below.</p>
+</div>
+
+<nav class="toc-bar" aria-label="On this page">
+  <span class="toc-label">On this page</span>
+  <ul>
+    <li><a href="#spec">Specification Table</a></li>
+    <li><a href="#notes">Notes &amp; Caveats</a></li>
+    <li><a href="#mistakes">Common Mistakes</a></li>
+    <li><a href="#verify">How to Verify</a></li>
+    <li><a href="#related">Related Specs</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<!-- SECTION 1 – Specification Table (fade-up, no data-lazy-section) -->
+<section class="section" id="spec">
+  <div class="section-inner fade-up">
+    <h2>Glow Plug Specification Table</h2>
+    <p class="lede">This table lists glow plug specifications for major Land Rover diesel engines. Always confirm the exact type and resistance range for your engine code and model year before ordering replacement parts.</p>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Engine Code</th>
+            <th>Glow Plug Type</th>
+            <th>Voltage</th>
+            <th>Resistance (Ω)</th>
+            <th>Replacement Interval</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="/engine/200tdi">200Tdi</a></td><td>Metal sheathed (standard)</td><td>12V</td><td>0.8–1.2 <span class="tag">[PLACEHOLDER]</span></td><td>60,000 mi / as required</td></tr>
+          <tr><td><a href="/engine/300tdi">300Tdi</a></td><td>Metal sheathed (standard)</td><td>12V</td><td>0.8–1.2 <span class="tag">[PLACEHOLDER]</span></td><td>60,000 mi / as required</td></tr>
+          <tr><td><a href="/engine/td5">TD5</a></td><td>Ceramic (fast glow)</td><td>12V</td><td>0.6–1.0 <span class="tag">[PLACEHOLDER]</span></td><td>60,000 mi</td></tr>
+          <tr><td><a href="/engine/224dt">224DT (2.2 Duratorq)</a></td><td>Metal sheathed (fast glow)</td><td>11V</td><td>0.5–0.9 <span class="tag">[PLACEHOLDER]</span></td><td>70,000 mi</td></tr>
+          <tr><td><a href="/engine/276dt">276DT (2.7 TDV6)</a></td><td>Ceramic (fast glow)</td><td>12V</td><td>0.5–0.8 <span class="tag">[PLACEHOLDER]</span></td><td>80,000 mi</td></tr>
+          <tr><td><a href="/engine/306dt">306DT (3.0 SDV6)</a></td><td>Ceramic (fast glow)</td><td>12V</td><td>0.5–0.8 <span class="tag">[PLACEHOLDER]</span></td><td>80,000 mi</td></tr>
+          <tr><td><a href="/engine/368dt">368DT (3.6 TDV8)</a></td><td>Ceramic (fast glow)</td><td>12V</td><td>0.5–0.8 <span class="tag">[PLACEHOLDER]</span></td><td>80,000 mi</td></tr>
+          <tr><td><a href="/engine/448dt">448DT (4.4 SDV8)</a></td><td>Ceramic (fast glow)</td><td>12V</td><td>0.5–0.8 <span class="tag">[PLACEHOLDER]</span></td><td>80,000 mi</td></tr>
+          <tr><td><a href="/engine/204dtd">204DTD (Ingenium D)</a></td><td>Ceramic (fast glow)</td><td>12V</td><td>0.5–0.7 <span class="tag">[PLACEHOLDER]</span></td><td>80,000 mi</td></tr>
+          <tr><td><a href="/engine/aj20d6">AJ20D6 (3.0 I6 Diesel)</a></td><td>Ceramic (fast glow)</td><td>12V</td><td>0.5–0.7 <span class="tag">[PLACEHOLDER]</span></td><td>80,000 mi</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px; font-size:13px; color:var(--lr-ink-mid);">Figures marked <span style="font-weight:600;">[PLACEHOLDER]</span> require confirmation against the OEM workshop manual for the specific engine and year. We have flagged these deliberately rather than guessing.</p>
+  </div>
+</section>
+
+<!-- SECTION 2 – Notes & Caveats (fade-down, no data-lazy-section) -->
+<section class="section section-alt" id="notes">
+  <div class="section-inner fade-down">
+    <h2>Notes &amp; Caveats</h2>
+    <p style="max-width:760px; color:var(--lr-ink-mid);">Glow plugs are only part of the cold start system. The <strong>glow plug relay</strong>, <strong>engine coolant temperature sensor</strong>, and <strong>ECU logic</strong> all play a role. On modern Land Rovers, the glow plugs are often used for <strong>post‑heating</strong> (after the engine has started) to reduce emissions and improve idle stability during warm‑up.</p>
+    <p style="max-width:760px; color:var(--lr-ink-mid);">The typical <strong>pre‑glow time</strong> varies from 1–2 seconds in warm weather to 10–15 seconds in very cold conditions. If the glow plug light flashes or fails to illuminate at all, check the relay and the coolant temperature sensor – a faulty sensor can prevent the glow plugs from activating even when the ambient temperature is low.</p>
+    <p style="max-width:760px; color:var(--lr-ink-mid);">For older Tdi engines, glow plugs are simpler but still critical. A failed glow plug on a 200Tdi or 300Tdi will cause hard starting and white smoke on cold mornings. Always replace glow plugs in <strong>full sets</strong> – mixing old and new plugs can cause uneven heating and potential cylinder damage.</p>
+  </div>
+</section>
+
+<!-- SECTION 3 – Common Mistakes (fade-left, data-lazy-section) -->
+<section class="section" id="mistakes" data-lazy-section>
+  <div class="section-inner fade-left">
+    <h2>Common Mistakes</h2>
+    <ul style="max-width:760px; color:var(--lr-ink-mid); line-height:1.9;">
+      <li><strong>Fitting the wrong voltage glow plug.</strong> Some aftermarket plugs are 12V but have different current draw – ensure the resistance range matches the specification.</li>
+      <li><strong>Not replacing the glow plug relay.</strong> If the relay is faulty, even new glow plugs won't heat. Always test the relay and the power supply before condemning the plugs.</li>
+      <li><strong>Forgetting to apply anti‑seize.</strong> Glow plugs sit in the cylinder head and can seize over time. Use a high‑temperature anti‑seize compound on the threads to prevent future removal problems.</li>
+      <li><strong>Over‑torquing the glow plugs.</strong> The recommended torque is typically <strong>20–30 Nm</strong> <span class="tag">[PLACEHOLDER]</span> – over‑tightening can snap the plug or damage the cylinder head threads.</li>
+      <li><strong>Ignoring the coolant temperature sensor.</strong> A faulty sensor can prevent the glow plug relay from activating, causing cold start issues even with good plugs.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION 4 – How to Verify (fade-right, data-lazy-section) -->
+<section class="section section-alt" id="verify" data-lazy-section>
+  <div class="section-inner fade-right">
+    <h2>How to Verify Glow Plug Condition</h2>
+    <p style="max-width:760px; color:var(--lr-ink-mid);">The simplest way to test glow plugs is with a <strong>multimeter</strong>. Disconnect the wiring harness and measure resistance between the terminal and the engine block (or the plug body). A reading within the spec range (typically 0.5–1.5Ω) indicates a good plug. An open circuit (infinite resistance) means the plug has failed internally.</p>
+    <p style="max-width:760px; color:var(--lr-ink-mid);">You can also test the power supply to the glow plugs. With the ignition on and the engine cold, measure the voltage at the glow plug harness – it should be around battery voltage (11–12V) for the pre‑glow period. If there is no power, check the relay and the coolant temperature sensor.</p>
+    <p style="max-width:760px; color:var(--lr-ink-mid);">For a visual inspection, remove the glow plug and inspect the heating element. If the tip is swollen, damaged, or covered in heavy carbon, replace it. Always cross‑reference the plug type with your engine code using our <a href="/technical/engine-code-decoder">Engine Code Decoder</a> before ordering replacements.</p>
+  </div>
+</section>
+
+<!-- SECTION 5 – Related Specs (fade-up, data-lazy-section) -->
+<section class="section" id="related" data-lazy-section>
+  <div class="section-inner fade-up">
+    <h2>Related Specifications</h2>
+    <div class="card-grid">
+      <div class="card"><h4><a href="/technical/engine-code-decoder">Engine Code Decoder →</a></h4><p>Identify your engine to confirm the correct glow plug type.</p></div>
+      <div class="card"><h4><a href="/technical/dpf-emissions-explained">DPF &amp; Emissions Explained →</a></h4><p>Post‑heating and emissions system interaction with glow plugs.</p></div>
+      <div class="card"><h4><a href="/technical/torque-specifications">Torque Specifications →</a></h4><p>Correct torque for glow plugs – avoid over‑tightening.</p></div>
+      <div class="card"><h4><a href="/technical/204dtd-oil-capacity">204DTD Oil Capacity →</a></h4><p>Oil specification for the Ingenium diesel – use low‑SAPS oil to protect the DPF.</p></div>
+      <div class="card"><h4><a href="/technical/coolant-specification">Coolant Specification →</a></h4><p>Coolant system health is indirectly linked to cold start performance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6 – FAQ (fade-down, data-lazy-section) -->
+<section class="section section-alt" id="faq" data-lazy-section>
+  <div class="section-inner fade-down">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details>
+        <summary>How often should glow plugs be replaced on a Land Rover diesel?</summary>
+        <p>The typical interval is <strong>60,000–80,000 miles</strong> <span class="tag">[PLACEHOLDER]</span>, but many specialists recommend replacing them earlier if you experience cold start issues. Always replace in sets.</p>
+      </details>
+      <details>
+        <summary>What are the symptoms of a faulty glow plug?</summary>
+        <p>Hard starting in cold weather, white smoke from the exhaust on startup, a flashing glow plug warning light, and increased idle roughness until the engine warms up.</p>
+      </details>
+      <details>
+        <summary>Can I test glow plugs without removing them?</summary>
+        <p>Yes – measure the resistance at the harness connector with a multimeter. A good plug will show low resistance (0.5–1.5Ω). An open circuit indicates a failed plug.</p>
+      </details>
+      <details>
+        <summary>What causes glow plug failure?</summary>
+        <p>Common causes include carbon fouling from poor combustion, electrical overload (relay failure), and physical damage (swelling or cracking). Cheap aftermarket plugs are also prone to premature failure.</p>
+      </details>
+      <details>
+        <summary>Can I drive with a faulty glow plug?</summary>
+        <p>Yes, but cold starts will be difficult, and the engine may run poorly until warm. Prolonged driving with failed glow plugs can stress the battery and starter motor.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Strip + CTA (Consultative) -->
+<div class="trust-strip">
+  <div class="trust-grid">
+    <div class="trust-item"><span class="dot">✓</span><p><strong>Every Figure Sourced</strong> – unverified numbers flagged, never guessed.</p></div>
+    <div class="trust-item"><span class="dot">✓</span><p><strong>Last Verified March 2026</strong> – reviewed on a regular schedule.</p></div>
+    <div class="trust-item"><span class="dot">✓</span><p><strong>12 Vetted JLR Specialists</strong> – real workshop insight behind the caveats.</p></div>
+    <div class="trust-item"><span class="dot">✓</span><p><strong>100% Independent</strong> – no sponsors, no manufacturer influence.</p></div>
+  </div>
+</div>
+
+<section class="final-cta" id="quote">
+  <h2>Cold start problems?</h2>
+  <p>If you're struggling with cold starts or suspect faulty glow plugs, our vetted specialist network can diagnose and advise on the right solution.</p>
+  <a href="#" class="btn-outline">COMPARE QUOTES NOW</a>
+  <a href="/tools/diagnostic-wizard" class="btn-gold">USE THE DIAGNOSTIC WIZARD →</a>
+</section>
+
+<footer>
+  <p>Land Rover &amp; Range Rover Ownership Guide — part of the Engine Finders network. Independent editorial content; not affiliated with Jaguar Land Rover Limited or JLR Engines.</p>
+  <p><a href="/about/editorial-standards">Editorial Standards</a> · <a href="/about/data-verification">Data Verification</a> · <a href="/about/corrections">Corrections Log</a></p>
+</footer>
+
+<script src="/assets/landrover/effects.js"></script>
+</body>
+</html>

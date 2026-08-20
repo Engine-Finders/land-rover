@@ -60,7 +60,7 @@ export const footerColumns = [
 ];
 
 export const footerLegal = {
-  copyright: "© 2026 Jaguar Reliability Guide, part of the Engine Finders network.",
+  copyright: "© 2026 Land Rover Reliability Guide, part of the Engine Finders network.",
   disclaimer: "Independent editorial content; not affiliated with Jaguar Land Rover.",
   links: [],
 };

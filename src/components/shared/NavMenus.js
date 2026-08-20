@@ -47,7 +47,7 @@ function ModelFlyout({ item, openLeft, onNavigate }) {
 
   return (
     <div
-      className={`absolute top-0 z-[70] max-h-[min(70vh,32rem)] w-[min(92vw,28rem)] overflow-y-auto rounded border border-[var(--color-border)] bg-[var(--color-surface)] p-3 shadow-[0_12px_28px_var(--color-shadow)] ${
+      className={`absolute top-full z-[70] max-h-[min(70vh,32rem)] w-[min(92vw,28rem)] overflow-y-auto rounded border border-[var(--color-border)] bg-[var(--color-surface)] p-3 shadow-[0_12px_28px_var(--color-shadow)] ${
         openLeft ? "right-full mr-1" : "left-full ml-1"
       }`}
     >
@@ -147,8 +147,26 @@ function ModelsPanel({ menu, activeModelHref, setActiveModelHref, onNavigate }) 
 
 const COLUMN_PREVIEW_COUNT = 10;
 
+function columnsGridClass(count) {
+  if (count <= 1) return "grid-cols-1";
+  if (count === 2) return "sm:grid-cols-2";
+  if (count === 3) return "sm:grid-cols-2 lg:grid-cols-3";
+  return "sm:grid-cols-2 lg:grid-cols-4";
+}
+
+function panelWidthClass(menu) {
+  if (menu.kind === "models") return "w-[min(96vw,72rem)]";
+
+  const count = menu.groups?.length || 1;
+  if (count <= 1) return "w-max max-w-[min(96vw,22rem)]";
+  if (count === 2) return "w-[min(96vw,36rem)]";
+  if (count === 3) return "w-[min(96vw,52rem)]";
+  return "w-[min(96vw,72rem)]";
+}
+
 function ColumnsPanel({ menu, onNavigate }) {
   const [expandedTitles, setExpandedTitles] = useState(() => new Set());
+  const groupCount = menu.groups?.length || 0;
 
   function toggleColumn(title) {
     setExpandedTitles((prev) => {
@@ -161,7 +179,7 @@ function ColumnsPanel({ menu, onNavigate }) {
 
   return (
     <>
-      <div className={`grid gap-4 ${menu.groups.length >= 4 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-2 lg:grid-cols-3"}`}>
+      <div className={`grid gap-4 ${columnsGridClass(groupCount)}`}>
         {menu.groups.map((group) => {
           const links = group.links || [];
           const isExpanded = expandedTitles.has(group.title);
@@ -275,7 +293,7 @@ export function DesktopNavMenus() {
           id={panelId}
           role="region"
           aria-label={openMenu.label}
-          className={`absolute left-1/2 top-full z-50 mt-3 w-[min(96vw,72rem)] -translate-x-1/2 border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_16px_40px_var(--color-shadow)] ${
+          className={`absolute left-1/2 top-full z-50 mt-3 -translate-x-1/2 border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_16px_40px_var(--color-shadow)] ${panelWidthClass(openMenu)} ${
             openMenu.kind === "models" ? "overflow-visible" : "max-h-[70vh] overflow-y-auto"
           }`}
         >

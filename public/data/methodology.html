@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Data Methodology — How the Land Rover Engine Failure Index Is Built</title>
+<meta name="description" content="Full transparency on our Land Rover engine data methodology: sample size, sources, limitations, and how we build our reliability reports.">
+<link rel="canonical" href="https://landroverengine.uk/data/methodology">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Land Rover & Range Rover Ownership Guide">
+<meta property="og:title" content="Our Data Methodology — How the Land Rover Engine Failure Index Is Built">
+<meta property="og:description" content="Full transparency on our Land Rover engine data methodology: sample size, sources, limitations, and how we build our reliability reports.">
+<meta property="og:url" content="https://landroverengine.uk/data/methodology">
+<meta property="og:image" content="https://landroverengine.uk/assets/landrover/images/methodology-hero.webp">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Data Methodology — How the Land Rover Engine Failure Index Is Built">
+<meta name="twitter:description" content="Full transparency on our Land Rover engine data methodology: sample size, sources, limitations, and how we build our reliability reports.">
+<meta name="twitter:image" content="https://landroverengine.uk/assets/landrover/images/methodology-hero.webp">
+
+<link rel="stylesheet" href="/assets/landrover/style.css">
+
+<!-- Stage 1: no schema, no images – image src placeholders used -->
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://landroverengine.uk/#organization",
+      "name": "Land Rover & Range Rover Ownership Guide",
+      "url": "https://landroverengine.uk/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://landroverengine.uk/#website",
+      "url": "https://landroverengine.uk/",
+      "publisher": {
+        "@id": "https://landroverengine.uk/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://landroverengine.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Data & Research",
+          "item": "https://landroverengine.uk/data"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Data Methodology",
+          "item": "https://landroverengine.uk/data/methodology"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "Land Rover Engine Failure Index Dataset 2025",
+      "description": "24,650 real UK enquiry records from EnginesMarket.co.uk and EngineFinders.co.uk, including 4,935 Land Rover-specific engine replacement requests. Full-year 2025 data used for all Land Rover engine reliability reports published on this site.",
+      "creator": {
+        "@id": "https://landroverengine.uk/#organization"
+      },
+      "temporalCoverage": "2025-01-01/2025-12-31",
+      "spatialCoverage": "GB",
+      "variableMeasured": [
+        "Engine enquiry volume by code",
+        "Model enquiry volume by chassis",
+        "Typical failure mileage range",
+        "Reconditioned replacement cost",
+        "Used replacement cost",
+        "Rebuilt replacement cost",
+        "Repair-to-value flag"
+      ],
+      "license": "https://landroverengine.uk/about/editorial-standards",
+      "datePublished": "2026-02-20",
+      "dateModified": "2026-02-20"
+    },
+    {
+      "@type": "Article",
+      "headline": "Our Data Methodology — How the Land Rover Engine Failure Index Is Built",
+      "description": "Full transparency on our Land Rover engine data methodology: sample size, sources, limitations, and how we build our reliability reports.",
+      "author": {
+        "@type": "Organization",
+        "name": "Land Rover & Range Rover Ownership Guide Editorial Team"
+      },
+      "publisher": {
+        "@id": "https://landroverengine.uk/#organization"
+      },
+      "datePublished": "2026-02-20",
+      "dateModified": "2026-02-20",
+      "mainEntityOfPage": "https://landroverengine.uk/data/methodology"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where does your data come from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our primary data comes from internal CRM systems at EnginesMarket.co.uk and EngineFinders.co.uk – the two platforms through which UK owners and workshops request replacement engines. We combine this with mechanic interviews, customer surveys, and manufacturer TSBs for validation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many enquiries are in your dataset?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "24,650 unique quote requests across all brands in 2025, of which 4,935 relate specifically to Land Rover and Range Rover engines. These are all real UK enquiries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a high enquiry count mean an engine is unreliable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily – enquiry volume reflects vehicle parc size, age, and audience bias. It is not a failure rate. We pair enquiry data with our Known Failure Patterns research to give a fuller picture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often do you update your data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Annually, each February, covering the prior full calendar year. This is our first published edition and establishes the baseline every future report will be measured against."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do the data badges mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "[EM‑VERIFIED] means an exact count from our CRM. [EM‑QUOTE] means a pricing range from actual supplier quotes. [PATTERN DATA] means an expert-knowledge claim with no proprietary volume. The full badge legend is on this page."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="/" class="brand">LAND ROVER &amp; RANGE ROVER<br><span style="color:var(--lr-gold); font-weight:400;">OWNERSHIP GUIDE</span></a>
+  <ul><li><a href="/defender">Defender</a></li><li><a href="/discovery">Discovery</a></li><li><a href="/range-rover">Range Rover</a></li><li><a href="/data">Data</a></li><li><a href="/about">About</a></li></ul>
+  <a href="#quote" class="cta-btn">START YOUR RESEARCH →</a>
+</nav>
+
+<div class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/data">Data &amp; Research</a><span>/</span>Data Methodology</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">Data Methodology · 2026 Edition</span>
+      <h1>Our Data Methodology — How the Land Rover Engine Failure Index <span class="accent">Is Built</span></h1>
+      <p class="sub">Full transparency on our data sources, sample size, limitations, and how we turn real UK enquiry data into the Land Rover engine reliability reports you read on this site.</p>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/landrover/images/methodology-hero.webp" width="640" height="340" fetchpriority="high"
+           alt="Data methodology hero image showing a data analysis workflow"
+           title="Our Data Methodology — How the Land Rover Engine Failure Index Is Built">
+    </div>
+  </div>
+  <div class="stat-strip">
+    <div class="stat-strip-inner">
+      <div class="stat-cell"><div class="stat-icon">📊</div><div><div class="stat-num">24,650</div><div class="stat-label">Total Enquiries<br>All Brands, 2025</div></div></div>
+      <div class="stat-cell"><div class="stat-icon">🗂️</div><div><div class="stat-num">4,935</div><div class="stat-label">Land Rover<br>Enquiries</div></div></div>
+      <div class="stat-cell"><div class="stat-icon">📅</div><div><div class="stat-num">Jan–Dec</div><div class="stat-label">Full Year<br>2025</div></div></div>
+      <div class="stat-cell"><div class="stat-icon">🏆</div><div><div class="stat-num">Part of</div><div class="stat-label">Engine Finders<br>Network</div></div></div>
+    </div>
+  </div>
+</header>
+
+<div class="summary-box">
+  <p>Our engine data is built from <strong>24,650 real UK enquiry records</strong> from EnginesMarket.co.uk and EngineFinders.co.uk across all brands, of which <strong>4,935</strong> relate specifically to Land Rover and Range Rover engines. The dataset covers the full calendar year 2025 and is refreshed annually.</p>
+  <ul>
+    <li><strong>Source:</strong> Internal CRM quote-request data from two proprietary platforms <span class="tag">[EM‑VERIFIED]</span></li>
+    <li><strong>What counts as an enquiry:</strong> one unique customer quote request for a specific engine code or vehicle</li>
+    <li><strong>Key limitation:</strong> our data over-represents engines that fail – it is not a random sample of all Land Rovers on UK roads</li>
+    <li>Full methodology, badges, and citation rules set out below</li>
+  </ul>
+  <p>This page is our public commitment to transparency – we want you to understand exactly what our data can and cannot tell you.</p>
+</div>
+
+<nav class="toc-bar" aria-label="On this page">
+  <span class="toc-label">On this page</span>
+  <ul>
+    <li><a href="#source">Data Source</a></li>
+    <li><a href="#sample">Sample &amp; Scope</a></li>
+    <li><a href="#badges">Data Badges</a></li>
+    <li><a href="#limitations">Limitations</a></li>
+    <li><a href="#refresh">Refresh Cycle</a></li>
+    <li><a href="#cite">How to Cite</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<section class="section" id="source">
+  <div class="section-inner fade-up">
+    <h2>Data Source</h2>
+    <p class="lede">Where our numbers come from – and who we partner with to collect them.</p>
+    <div class="methodology-callout">
+      <p><strong>Primary source:</strong> Internal CRM quote-request data from <strong>EnginesMarket.co.uk</strong> and <strong>EngineFinders.co.uk</strong>, combined. These are the two platforms through which UK vehicle owners and workshops request replacement engines. Every record is a unique customer quote request specifying a particular engine code or vehicle.</p>
+      <p><strong>Period:</strong> Full calendar year 2025 – January 1st to December 31st, inclusive.</p>
+      <p><strong>Total records:</strong> 24,650 unique quote requests across all brands we cover (Land Rover, Jaguar, BMW, Mercedes-Benz, Ford, Vauxhall, Audi, VW, Toyota, Honda, Nissan, Renault, Peugeot, Citroën, Hyundai, Kia and others).</p>
+      <p><strong>Land Rover-specific records:</strong> 4,935 of the 24,650 relate specifically to Land Rover and Range Rover engines. This is the dataset behind every Land Rover engine report on this site.</p>
+      <p><strong>Trust and independence:</strong> This site is part of the Engine Finders network. We are independent editorial publishers – no manufacturer sponsors our research, and we do not accept payment for favourable coverage. Our data is proprietary to our own platforms and is not shared with or influenced by Jaguar Land Rover Limited, JLR Engines, or any third-party commercial partner.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="sample">
+  <div class="section-inner fade-down">
+    <h2>Sample &amp; Scope</h2>
+    <p class="lede">What counts as a failure, what counts as an enquiry, and what we include.</p>
+    <div style="max-width:760px; color:var(--lr-ink-mid);">
+      <h3 style="margin-top:0;">What counts as an "enquiry"</h3>
+      <p>A unique customer quote request specifying a particular engine code or vehicle. If the same customer requests a quote for the same engine multiple times, we count it once. If a workshop requests a quote on behalf of a customer, that also counts as one enquiry.</p>
+
+      <h3>What counts as a "failure" for our reports</h3>
+      <p>We define a failure as an engine that has been reported to us as requiring replacement or significant rebuild. This includes catastrophic mechanical failure (crankshaft bearing, timing chain, oil pump), as well as non-catastrophic but expensive-to-repair issues (EGR cooler failure, oil dilution, injector failure).</p>
+
+      <h3>What we exclude</h3>
+      <ul style="margin-left:1.5rem;">
+        <li>Enquiries for non-engine components (gearbox, transfer box, suspension)</li>
+        <li>Maintenance enquiries (oil changes, service bookings)</li>
+        <li>Duplicate requests from the same customer for the same engine</li>
+        <li>Requests that do not specify a valid engine code or vehicle model</li>
+      </ul>
+
+      <h3>Geographic scope</h3>
+      <p>All data is UK-specific. Our platforms operate nationally across England, Scotland, Wales and Northern Ireland.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="badges" data-lazy-section>
+  <div class="section-inner fade-left">
+    <h2>Data Badges – Our Trust Mark System</h2>
+    <p class="lede">Every number on this site carries a badge. Here's what they all mean.</p>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Badge</th><th>Meaning</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td><span class="tag">[EM‑VERIFIED]</span></td><td>Exact count or percentage from our internal CRM – enquiry volumes, model requests, condition split</td><td>24,650 quote requests, Jan–Dec 2025</td></tr>
+          <tr><td><span class="tag">[EM‑QUOTE]</span></td><td>Pricing ranges derived from actual supplier quotes sent through our CRM, cross-checked with marketplaces</td><td>Supplier quotes + interviews</td></tr>
+          <tr><td><span class="tag">[EM‑SURVEY]</span></td><td>Post-sale customer survey results (satisfaction rates, decision outcomes)</td><td>100+ surveys, 3–6 months after replacement</td></tr>
+          <tr><td><span class="tag">[EM‑INTERVIEW]</span></td><td>Direct statements from mechanics, workshop owners, or supplier managers</td><td>Hundreds of conversations, 2024–2025</td></tr>
+          <tr><td><span class="tag">[THIRD‑PARTY]</span></td><td>External data from Auto Trader, Parkers, manufacturer TSBs, etc.</td><td>Named source + date</td></tr>
+          <tr><td><span class="tag">[PATTERN DATA]</span></td><td>Documented expert-knowledge-tier claim – no proprietary volume behind it</td><td>Workshop consensus / industry knowledge</td></tr>
+          <tr><td><span class="tag">[INDUSTRY ESTIMATE]</span></td><td>Informed estimate where no proprietary or third-party data exists</td><td>Workshop consensus / market observation</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px; font-size:13px; color:var(--lr-ink-mid);">A number with no badge should not appear on this site – it is a build error. We are committed to sourcing every number we publish.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="limitations" data-lazy-section>
+  <div class="section-inner fade-right">
+    <h2>Limitations – What Our Data Cannot Tell You</h2>
+    <p class="lede">We believe in stating limitations as clearly as we state findings. This is what our data can't do.</p>
+    <div style="max-width:760px; color:var(--lr-ink-mid);">
+      <p><strong>Our dataset is not a random sample.</strong> It reflects people who contacted us about a replacement engine. This naturally over-represents engines that fail and under-represents ones that don't. An engine with a high enquiry count may be more failure-prone, or it may simply be more common in the vehicle parc, or it may be an older engine reaching typical replacement age.</p>
+
+      <p><strong>We do not claim failure rates against the total vehicle population.</strong> We only claim enquiry share within our own dataset. When we say "the 204DTD generated 1,150 enquiries in 2025," we mean exactly that – not that 1,150 out of all 204DTD engines on UK roads have failed.</p>
+
+      <p><strong>Mileage-at-failure ranges are indicative.</strong> Our Known Failure Patterns table gives typical mileage ranges based on customer reports and mechanic interviews. These are not precise statistical distributions – they are qualitative guidance bands.</p>
+
+      <p><strong>Costs are indicative and vary.</strong> Our pricing bands are based on supplier quotes and specialist interviews. They are not guaranteed prices – actual costs depend on region, workshop, vehicle condition, and market conditions.</p>
+
+      <p><strong>Our data does not cover every single Land Rover failure in the UK.</strong> We process a significant volume, but we are not the only source of engine replacements. We estimate our coverage based on our platform volumes and specialist network, but we do not claim to represent the entire UK market.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="refresh" data-lazy-section>
+  <div class="section-inner fade-up">
+    <h2>Refresh Cycle &amp; Publication Standards</h2>
+    <p class="lede">How often we update, and what happens if we get something wrong.</p>
+    <div style="max-width:760px; color:var(--lr-ink-mid);">
+      <p><strong>Annual refresh:</strong> We publish a full update each February, covering the prior full calendar year. This is our first published edition (2026), establishing the baseline every future report will be measured against.</p>
+
+      <p><strong>Figures are locked at time of publication.</strong> We do not silently revise published numbers. If an error is discovered, we log it on our <a href="/about/corrections">public corrections page</a> with the date of correction and the reason. The original figure remains visible with a correction notice – we never erase history.</p>
+
+      <p><strong>Image generation:</strong> All infographics on this site are generated from the same data and are not updated independently. If the data is corrected, the infographic is re-published with a new version timestamp.</p>
+
+      <p><strong>Editorial independence:</strong> Our data is proprietary to Engines Market and Engine Finders. No manufacturer or commercial partner has editorial control over our reports. We state this plainly on every page.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="cite" data-lazy-section>
+  <div class="section-inner fade-down">
+    <h2>How to Cite Our Data</h2>
+    <p class="lede">We encourage journalists, researchers, and forum users to reference our data – with clear attribution.</p>
+    <div class="cite-box">
+      <span class="label">Suggested citation</span>
+      "Our Data Methodology – How the Land Rover Engine Failure Index Is Built," Land Rover &amp; Range Rover Ownership Guide, published February 2026, landroverengine.uk/data/methodology
+    </div>
+    <p style="margin-top:16px; font-size:13.5px; color:var(--lr-ink-mid);">For press enquiries or the full underlying dataset, contact us via our <a href="/about">About</a> page. We're happy to provide additional context or breakdowns for journalists working on a related story.</p>
+  </div>
+</section>
+
+<section class="section" id="faq" data-lazy-section>
+  <div class="section-inner fade-left">
+    <h2>Frequently Asked Questions</h2>
+    <details class="faq-item" open><summary>Where does your data come from?</summary><p>Our primary data comes from internal CRM systems at EnginesMarket.co.uk and EngineFinders.co.uk – the two platforms through which UK owners and workshops request replacement engines. We combine this with mechanic interviews, customer surveys, and manufacturer TSBs for validation.</p></details>
+    <details class="faq-item"><summary>How many enquiries are in your dataset?</summary><p>24,650 unique quote requests across all brands in 2025, of which 4,935 relate specifically to Land Rover and Range Rover engines. These are all real UK enquiries.</p></details>
+    <details class="faq-item"><summary>Does a high enquiry count mean an engine is unreliable?</summary><p>Not necessarily – enquiry volume reflects vehicle parc size, age, and audience bias. It is not a failure rate. We pair enquiry data with our Known Failure Patterns research to give a fuller picture.</p></details>
+    <details class="faq-item"><summary>How often do you update your data?</summary><p>Annually, each February, covering the prior full calendar year. This is our first published edition and establishes the baseline every future report will be measured against.</p></details>
+    <details class="faq-item"><summary>What do the data badges mean?</summary><p>[EM‑VERIFIED] means an exact count from our CRM. [EM‑QUOTE] means a pricing range from actual supplier quotes. [PATTERN DATA] means an expert-knowledge claim with no proprietary volume. The full badge legend is on this page.</p></details>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="trust-grid">
+    <div class="trust-item"><span class="dot">✓</span><p><strong>24,650 Real Enquiries</strong>The full dataset across all brands behind every figure.</p></div>
+    <div class="trust-item"><span class="dot">✓</span><p><strong>Limitations Disclosed</strong>We state plainly what this data can and cannot tell you.</p></div>
+    <div class="trust-item"><span class="dot">✓</span><p><strong>Annual Publication</strong>Refreshed every February – this is our founding baseline year.</p></div>
+    <div class="trust-item"><span class="dot">✓</span><p><strong>100% Independent</strong>No sponsors, no manufacturer influence.</p></div>
+  </div>
+</div>
+
+<section class="final-cta" id="quote">
+  <h2>Explore Our Data Reports</h2>
+  <p>See the Land Rover engine data in action – failure indices, lifespan reports, and owner decision data.</p>
+  <a href="/data/engine-failure-index-2026" class="btn-gold">VIEW THE FAILURE INDEX →</a>
+  <a href="/data" class="btn-outline">BROWSE ALL DATA REPORTS</a>
+</section>
+
+<footer>
+  <p>Land Rover &amp; Range Rover Ownership Guide — part of the Engine Finders network. Independent editorial content; not affiliated with Jaguar Land Rover Limited or JLR Engines.</p>
+  <p><a href="/about/editorial-standards">Editorial Standards</a> · <a href="/about/data-verification">Data Verification</a> · <a href="/about/corrections">Corrections Log</a></p>
+</footer>
+
+<script src="/assets/landrover/effects.js"></script>
+</body>
+</html>

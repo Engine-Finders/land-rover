@@ -2,106 +2,159 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { HomeIcon } from "@/components/home/homeIcons";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
 
-const iconPaths = {
-  link: <path d="M10 13a5 5 0 0 0 7.1 0l1.4-1.4a5 5 0 0 0-7.1-7.1l-.8.8M14 11a5 5 0 0 0-7.1 0l-1.4 1.4a5 5 0 0 0 7.1 7.1l.8-.8" />,
-  wrench: <path d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />,
-  trophy: <path d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />,
-  arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
-};
-
-function cleanText(value = "") {
-  return value
-    .replaceAll("â€”", "-")
-    .replaceAll("â€“", "-")
-    .replaceAll("â†’", "")
-    .replaceAll("â›“ï¸", "")
-    .replaceAll("ðŸ”§", "")
-    .replaceAll("ðŸ†", "")
-    .trim();
-}
-
-function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
+function ArrowIcon({ className = "h-4 w-4" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
-      {iconPaths[name] || iconPaths.link}
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 12h14m-6-6 6 6-6 6" />
     </svg>
   );
 }
 
-function iconName(item) {
-  const title = item.title.toLowerCase();
-  if (title.includes("m54") || title.includes("n63") || title.includes("s63")) return "trophy";
-  if (title.includes("b58") || title.includes("b57") || title.includes("n57")) return "wrench";
-  return "link";
-}
-
 function CentreCard({ item, isDark }) {
   return (
-    <article className={`relative overflow-hidden rounded-md border shadow-[0_14px_34px_rgba(10,26,43,0.08)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
-      <span className={`absolute left-0 top-0 z-20 flex h-9 w-9 items-center justify-center rounded-br-md text-[1.05rem] font-bold text-white md:h-8 md:w-8 md:text-[0.9rem] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
+    <Link
+      href={item.href || "#"}
+      className={`group flex min-h-[5.5rem] overflow-hidden rounded-xl border shadow-[0_10px_28px_var(--color-shadow)] transition hover:border-[var(--color-primary)] ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[var(--color-border)] bg-white"
+      }`}
+    >
+      <span
+        className={`flex w-14 shrink-0 items-center justify-center text-[1.15rem] font-bold tracking-[0.04em] md:w-16 md:text-[1.25rem] ${
+          isDark ? "bg-[var(--color-chrome)] text-[var(--color-accent)]" : "bg-[#0d1c18] text-[var(--color-accent)]"
+        }`}
+      >
         {item.id}
       </span>
 
-      <div className="relative h-38 md:h-30">
-        <Image src={item.image.src} alt={item.image.alt} fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 25vw" />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-surface-raised)_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
-      </div>
+      <span className="flex min-w-0 flex-1 items-center gap-3 px-3 py-3 md:gap-4 md:px-4 md:py-3.5">
+        <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-16 md:w-16">
+          <HomeIcon name={item.icon} size={72} className="h-12 w-12 md:h-14 md:w-14" />
+        </span>
 
-      <span className={`absolute left-6 top-14 z-20 flex h-18 w-18 items-center justify-center rounded-full md:left-12 md:top-3 md:h-12 md:w-12 ${isDark ? "bg-[var(--color-chrome)] text-[var(--color-text)]" : "bg-[#eef5ff] text-[var(--color-primary)]"} border ${isDark ? "border-[var(--color-border)]" : "border-[#b8d4ff]"}`}>
-        <Icon name={iconName(item)} className="h-9 w-9 md:h-6 md:w-6" />
+        <span className="min-w-0 flex-1">
+          <span className={`block text-[0.95rem] font-bold leading-tight md:text-[1.05rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+            {item.title}
+          </span>
+          <span className={`mt-1 block text-[0.74rem] leading-[1.35] md:text-[0.8rem] ${isDark ? "text-white/68" : "text-[var(--color-text-muted)]"}`}>
+            {item.description}
+          </span>
+        </span>
+
+        <span
+          className={`hidden shrink-0 items-center gap-2 border-l pl-4 text-[0.86rem] font-semibold text-[var(--color-primary)] sm:inline-flex ${
+            isDark ? "border-white/12" : "border-[var(--color-border)]"
+          }`}
+        >
+          Explore
+          <span
+            className={`flex h-8 w-8 items-center justify-center rounded-full border ${
+              isDark ? "border-white/20" : "border-[var(--color-border)]"
+            }`}
+          >
+            <ArrowIcon className="h-3.5 w-3.5" />
+          </span>
+        </span>
+
+        <span className="inline-flex shrink-0 text-[var(--color-primary)] sm:hidden">
+          <ArrowIcon className="h-4 w-4" />
+        </span>
       </span>
+    </Link>
+  );
+}
 
-      <div className="p-5 pt-2 md:p-4 md:pt-2">
-        <h3 className={`text-[1.32rem] font-bold leading-tight md:text-[1.1rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</h3>
-        <p className={`mt-4 text-[0.9rem] leading-[1.55] md:mt-3 md:text-[0.82rem] ${isDark ? "text-white/78" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: cleanText(item.description) }} />
-        <Link href={item.link.href} className="mt-6 flex items-center justify-end gap-3 text-[0.95rem] font-bold text-[var(--color-primary)] md:mt-4 md:text-[0.82rem]">
-          <span>{cleanText(item.link.label)}</span>
-          <Icon name="arrow" className="h-5 w-5" />
-        </Link>
-      </div>
-    </article>
+function DataNote({ note, isDark }) {
+  if (!note) return null;
+
+  return (
+    <div
+      className={`mt-6 flex items-start gap-3 overflow-hidden rounded-md border px-4 py-4 md:mt-7 md:items-center md:gap-4 md:px-5 ${
+        isDark ? "border-white/10 bg-[rgba(16,28,24,0.92)]" : "border-transparent bg-[var(--color-primary)]"
+      }`}
+    >
+      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/25 bg-white/10">
+        <HomeIcon name={note.icon || "realData"} size={36} tone="silver" className="h-8 w-8" />
+      </span>
+      <p className="text-[0.82rem] leading-[1.45] text-white md:text-[0.9rem]">
+        <strong className="text-[var(--color-accent)]">{note.title}</strong>{" "}
+        <span className="text-white/90">{note.text}</span>
+      </p>
+    </div>
   );
 }
 
 export default function HomeSec8({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const centres = data.centres || [];
+  const headerImage = data.headerImage?.src || "/sec2-bg.webp";
 
   return (
-    <section className={`relative overflow-hidden px-3 py-7 md:py-8 ${isDark ? "bg-[#0d1c18]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 h-[520px] md:h-[330px]">
-        <Image src={data.headerImage.src} alt={data.headerImage.alt} fill className="object-cover object-[82%_center]" sizes="100vw" />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(13,28,24,0.98)_0%,rgba(13,28,24,0.82)_40%,rgba(13,28,24,0.22)_78%)]" : "absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.99)_0%,rgba(255,255,255,0.9)_43%,rgba(255,255,255,0.32)_78%)]"} />
-        <div className="absolute right-0 top-0 h-full w-12 -skew-x-[32deg] bg-[rgba(21,129,255,0.34)] md:w-10" />
-        <div className="absolute right-[2.5rem] top-0 h-full w-4 -skew-x-[32deg] bg-[rgba(21,129,255,0.52)] md:right-[38%]" />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(0deg,#0d1c18_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(0deg,white_0%,transparent_100%)]"} />
+    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-9 ${isDark ? "bg-[#0d1c18]" : "bg-[var(--color-page)]"}`}>
+      <div className="absolute inset-x-0 top-0 h-[240px] md:h-[300px]">
+        <Image
+          src={headerImage}
+          alt={data.headerImage?.alt || ""}
+          fill
+          className="object-cover object-[78%_center] md:object-[75%_center]"
+          sizes="100vw"
+        />
+        <div
+          className={
+            isDark
+              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(13,28,24,0.78)_0%,rgba(13,28,24,0.62)_40%,rgba(13,28,24,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(13,28,24,0.96)_0%,rgba(13,28,24,0.72)_42%,rgba(13,28,24,0.2)_80%)]"
+              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(248,247,242,0.72)_0%,rgba(248,247,242,0.48)_40%,rgba(248,247,242,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.82)_44%,rgba(248,247,242,0.12)_80%)]"
+          }
+        />
+        <div
+          className={`pointer-events-none absolute inset-0 md:hidden ${
+            isDark
+              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(13,28,24,0.95)_0%,rgba(13,28,24,0.7)_42%,transparent_72%)]"
+              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.82)_42%,transparent_72%)]"
+          }`}
+        />
       </div>
 
       <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[680px] pt-4 md:pt-8">
-          <h2 className={`text-[2.75rem] font-bold leading-[1.04] tracking-normal md:text-[3.25rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Knowledge Centres</h2>
-          <div className="mt-5">
-            <MStripe />
+        <div className="relative max-w-[720px] text-left">
+          <div
+            className={`pointer-events-none absolute -inset-x-2 -top-3 bottom-0 rounded-lg md:hidden ${
+              isDark
+                ? "bg-[linear-gradient(90deg,rgba(13,28,24,0.88)_0%,rgba(13,28,24,0.55)_70%,transparent_100%)]"
+                : "bg-[linear-gradient(90deg,rgba(248,247,242,0.92)_0%,rgba(248,247,242,0.62)_70%,transparent_100%)]"
+            }`}
+          />
+          <div className="relative z-10">
+            <HeadingEyebrow text={data.eyebrow || "SECTION 06"} />
+            <h2
+              className={`mt-3 text-[2.2rem] font-medium leading-[1.08] tracking-normal md:text-[3.1rem] ${
+                isDark ? "text-white" : "text-[var(--color-text)]"
+              }`}
+            >
+              Knowledge Centres
+            </h2>
+            <p
+              className={`mt-4 max-w-[640px] text-[0.9rem] leading-[1.5] md:text-[1.02rem] ${
+                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
+              }`}
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
           </div>
-          <p className={`mt-6 max-w-[610px] whitespace-pre-line text-[0.9rem] leading-[1.6] md:text-[1rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline).replace(". Every guide", ".\n\nEvery guide") }} />
         </div>
 
-        <div className="mt-10 grid gap-4 md:mt-8 md:grid-cols-4 md:gap-4">
-          {data.centres.map((item) => (
+        <div className="mt-6 grid gap-3 md:mt-8 md:grid-cols-2 md:gap-4">
+          {centres.map((item) => (
             <CentreCard key={item.id} item={item} isDark={isDark} />
           ))}
         </div>
 
-        <div className="mt-8 hidden h-3 items-center md:flex">
-          <span className="h-full flex-[1.3] -skew-x-[28deg] bg-[var(--color-primary)]" />
-          <span className="h-full flex-[1.15] -skew-x-[28deg] bg-[var(--color-chrome)]" />
-          <span className="h-full flex-[1.6] -skew-x-[28deg] bg-[#8a6fa2]" />
-          <span className="h-full flex-[1.2] -skew-x-[28deg] bg-[var(--color-accent-red)]" />
-          <span className="h-full flex-[0.35] -skew-x-[28deg] bg-[linear-gradient(90deg,#ed1c24_0%,rgba(237,28,36,0)_100%)]" />
-        </div>
+        <DataNote note={data.dataNote} isDark={isDark} />
       </div>
     </section>
   );

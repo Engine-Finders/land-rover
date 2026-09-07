@@ -50,6 +50,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1,
+h2,
+.font-lora {
+  font-family: var(--font-lora), "Lora", Georgia, "Times New Roman", serif;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
 body,
 header,
 main,
@@ -81,9 +92,9 @@ a {
   }
 }
 
-/* Keep underlines only in Find Your Vehicle (homeSec2) */
+/* Find Your Vehicle links stay clean (no underlines) */
 .find-your-vehicle a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Accent spans inside headings loaded from JSON */

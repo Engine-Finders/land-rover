@@ -1,34 +1,109 @@
 {
+  "eyebrow": "DIAGNOSTIC CALCULATOR",
   "subHeadline": "Answer a few questions about your symptoms — we'll match you against 15+ known JLR failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=900&q=80",
-    "alt": "Land Rover for diagnostic calculator"
+    "src": "/sec2-bg.webp",
+    "alt": "Land Rover diagnostic calculator background"
   },
   "trustStrip": [
-    { "icon": "📊", "label": "Powered by 9,000+ real UK enquiries" },
-    { "icon": "🔧", "label": "20+ vetted JLR specialists" },
-    { "icon": "📖", "label": "OEM part references included" },
-    { "icon": "🏆", "label": "Part of Engine Finders" }
+    { "icon": "realEnquiries", "label": "Powered by 9,000+ real UK enquiries" },
+    { "icon": "vettedSpecialists", "label": "20+ vetted JLR specialists" },
+    { "icon": "oemReferences", "label": "OEM part references included" },
+    { "icon": "engineFinders", "label": "Part of Engine Finders" }
   ],
   "howItWorks": {
+    "title": "How It Works",
+    "ctaLabel": "START DIAGNOSIS",
     "steps": [
       {
         "step": 1,
-        "icon": "clipboard",
+        "icon": "symptoms",
         "title": "Tell us your symptoms",
         "text": "Select from common failure categories or use the shortcut grid if you already know the fault."
       },
       {
         "step": 2,
-        "icon": "car",
+        "icon": "vehicle",
         "title": "Tell us about your vehicle",
         "text": "Age and estimated value help us calculate whether repair or replacement makes financial sense."
       },
       {
         "step": 3,
-        "icon": "shield",
+        "icon": "calculator",
         "title": "Get your diagnosis",
         "text": "We'll show you the likely fault, OEM part numbers, severity level, and a transparent cost breakdown."
+      }
+    ]
+  },
+  "whyTrust": {
+    "title": "Why Trust This Diagnosis?",
+    "signals": [
+      {
+        "icon": "realData",
+        "title": "EM-VERIFIED Data",
+        "text": "Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork."
+      },
+      {
+        "icon": "specificKnowledge",
+        "title": "JLR-Specific Knowledge",
+        "text": "We use exact JLR terminology (EAS, Terrain Response, TDV6, SDV6, Ingenium) and OEM part numbers."
+      },
+      {
+        "icon": "vettedSpecialists",
+        "title": "Vetted Specialist Network",
+        "text": "Our recommendations route you to 20+ JLR specialists who work on these vehicles daily."
+      },
+      {
+        "icon": "scale",
+        "title": "Honest Verdict System",
+        "text": "We tell you when replacement isn't worth it — not every site does that."
+      }
+    ]
+  },
+  "costTable": {
+    "title": "Typical UK Land Rover & Range Rover Replacement Costs",
+    "columns": ["Failure Type", "Reconditioned S&F", "Rebuilt S&F", "Used S&F", "Main Dealer Est."],
+    "legend": [
+      { "key": "reconditioned", "label": "Reconditioned S&F", "tone": "green" },
+      { "key": "rebuilt", "label": "Rebuilt S&F", "tone": "blue" },
+      { "key": "used", "label": "Used S&F", "tone": "gold" },
+      { "key": "dealer", "label": "Main Dealer Est.", "tone": "red" }
+    ],
+    "rows": [
+      {
+        "failure": "Ingenium Timing Chain",
+        "reconditioned": "£3,500–£5,800",
+        "rebuilt": "£2,800–£4,500",
+        "used": "£2,000–£3,500",
+        "dealer": "£6,000–£10,000"
+      },
+      {
+        "failure": "TDV6/SDV6 Crankshaft",
+        "reconditioned": "£6,500–£9,500",
+        "rebuilt": "£5,500–£7,000",
+        "used": "£3,500–£5,500",
+        "dealer": "£12,000–£18,000"
+      },
+      {
+        "failure": "TDV8 Timing Chain",
+        "reconditioned": "£5,500–£8,000",
+        "rebuilt": "£4,500–£6,500",
+        "used": "£3,000–£4,800",
+        "dealer": "£10,000–£15,000"
+      },
+      {
+        "failure": "4.4 V8 Oil Cooler",
+        "reconditioned": "£6,000–£9,000",
+        "rebuilt": "£5,000–£7,000",
+        "used": "£3,500–£5,500",
+        "dealer": "£12,000–£18,000"
+      },
+      {
+        "failure": "Duratorq Injector Seal",
+        "reconditioned": "£2,000–£3,500",
+        "rebuilt": "£1,500–£2,800",
+        "used": "£1,000–£2,000",
+        "dealer": "£4,000–£7,000"
       }
     ]
   },
@@ -64,16 +139,16 @@
       { "id": "over15", "label": "Over 15 years" }
     ],
     "symptoms": [
-      { "id": "engine", "icon": "⚙️", "label": "Engine Performance Issues" },
-      { "id": "oil", "icon": "🛢️", "label": "Oil Leaks & Consumption" },
-      { "id": "cooling", "icon": "🌡️", "label": "Cooling System" },
-      { "id": "timing", "icon": "⏱️", "label": "Timing Chain / Tensioner" },
-      { "id": "turbo", "icon": "💨", "label": "Turbocharger" },
-      { "id": "electrical", "icon": "🔋", "label": "Battery / Electrical" },
-      { "id": "eas", "icon": "🚙", "label": "Air Suspension (EAS)" },
-      { "id": "drivetrain", "icon": "⚙️", "label": "Drivetrain / Transfer Box" },
-      { "id": "noise", "icon": "🔊", "label": "Noise / Vibration" },
-      { "id": "other", "icon": "❓", "label": "Other / Not Sure" }
+      { "id": "engine", "icon": "engine", "label": "Engine Performance Issues" },
+      { "id": "oil", "icon": "repairVsReplace", "label": "Oil Leaks & Consumption" },
+      { "id": "cooling", "icon": "check", "label": "Cooling System" },
+      { "id": "timing", "icon": "calculator", "label": "Timing Chain / Tensioner" },
+      { "id": "turbo", "icon": "highDemand", "label": "Turbocharger" },
+      { "id": "electrical", "icon": "checkValue", "label": "Battery / Electrical" },
+      { "id": "eas", "icon": "vehicle", "label": "Air Suspension (EAS)" },
+      { "id": "drivetrain", "icon": "engine", "label": "Drivetrain / Transfer Box" },
+      { "id": "noise", "icon": "symptoms", "label": "Noise / Vibration" },
+      { "id": "other", "icon": "independent", "label": "Other / Not Sure" }
     ],
     "diagnoses": {
       "engine": {
@@ -236,76 +311,5 @@
         "replaceHigh": 9500
       }
     }
-  },
-  "whyTrust": {
-    "signals": [
-      {
-        "icon": "🛡️",
-        "title": "EM-VERIFIED Data",
-        "text": "Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork."
-      },
-      {
-        "icon": "⚙️",
-        "title": "JLR-Specific Knowledge",
-        "text": "We use exact JLR terminology (EAS, Terrain Response, TDV6, SDV6, Ingenium) and OEM part numbers."
-      },
-      {
-        "icon": "👥",
-        "title": "Vetted Specialist Network",
-        "text": "Our recommendations route you to 20+ JLR specialists who work on these vehicles daily."
-      },
-      {
-        "icon": "🏆",
-        "title": "Honest Verdict System",
-        "text": "We tell you when replacement isn't worth it — not every site does that."
-      }
-    ]
-  },
-  "bottomCta": {
-    "title": "Get your exact verdict",
-    "text": "Answer a few questions for a diagnosis matched to your Land Rover or Range Rover.",
-    "buttonLabel": "START DIAGNOSIS",
-    "trustLine": "100% Independent • No Sponsorship • Completely Unbiased"
-  },
-  "costTable": {
-    "title": "Typical UK Land Rover & Range Rover Replacement Costs",
-    "columns": ["FAILURE TYPE", "RECONDITIONED S&F", "REBUILT S&F", "USED S&F", "MAIN DEALER EST."],
-    "rows": [
-      {
-        "failure": "Ingenium Timing Chain",
-        "reconditioned": "£3,500–£5,800",
-        "rebuilt": "£2,800–£4,500",
-        "used": "£2,000–£3,500",
-        "dealer": "£6,000–£10,000"
-      },
-      {
-        "failure": "TDV6/SDV6 Crankshaft",
-        "reconditioned": "£6,500–£9,500",
-        "rebuilt": "£5,500–£7,000",
-        "used": "£3,500–£5,500",
-        "dealer": "£12,000–£18,000"
-      },
-      {
-        "failure": "TDV8 Timing Chain",
-        "reconditioned": "£5,500–£8,000",
-        "rebuilt": "£4,500–£6,500",
-        "used": "£3,000–£4,800",
-        "dealer": "£10,000–£15,000"
-      },
-      {
-        "failure": "4.4 V8 Oil Cooler",
-        "reconditioned": "£6,000–£9,000",
-        "rebuilt": "£5,000–£7,000",
-        "used": "£3,500–£5,500",
-        "dealer": "£12,000–£18,000"
-      },
-      {
-        "failure": "Duratorq Injector Seal",
-        "reconditioned": "£2,000–£3,500",
-        "rebuilt": "£1,500–£2,800",
-        "used": "£1,000–£2,000",
-        "dealer": "£4,000–£7,000"
-      }
-    ]
   }
 }

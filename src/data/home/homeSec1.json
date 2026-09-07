@@ -1,17 +1,71 @@
 {
+  "eyebrow": "THE UK'S MOST AUTHORITATIVE GUIDE",
   "subHeadline": "Reliability rankings, real failure data, honest repair-vs-replace economics — for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.",
-  "trustStrip": [
-    { "icon": "📊", "label": "9,000+ Real Enquiries" },
-    { "icon": "🔧", "label": "20+ Vetted JLR Specialists" },
-    { "icon": "📖", "label": "Every Generation, Honestly Rated" },
-    { "icon": "🏆", "label": "Part of Engine Finders" }
-  ],
   "cta": {
     "label": "START YOUR RESEARCH",
-    "href": "#"
+    "href": "/quote"
+  },
+  "independentBadge": {
+    "icon": "check",
+    "lines": ["100% Independent.", "No sponsors. No bias."]
+  },
+  "trustStrip": [
+    {
+      "icon": "realEnquiries",
+      "value": "9,000+",
+      "text": "Real Enquiries From UK Owners",
+      "mobileText": "Real Enquiries"
+    },
+    {
+      "icon": "vettedSpecialists",
+      "value": "20+",
+      "text": "Vetted JLR Specialists",
+      "mobileText": "Vetted JLR Specialists"
+    },
+    {
+      "icon": "generationRated",
+      "value": "Every",
+      "text": "Generation, Honestly Rated",
+      "mobileText": "Generation, Honestly Rated"
+    },
+    {
+      "icon": "engineFinders",
+      "value": "Part of",
+      "text": "Engine Finders Trusted Network",
+      "mobileText": "Engine Finders"
+    }
+  ],
+  "bridge": {
+    "eyebrow": "WHY THOUSANDS OF OWNERS TRUST US",
+    "badges": [
+      {
+        "icon": "genuineFailureData",
+        "title": "Genuine Failure Data",
+        "text": "From thousands of UK Land Rover owners.",
+        "mobileText": "Genuine failure data from thousands of UK owners."
+      },
+      {
+        "icon": "repairVsReplace",
+        "title": "Honest Repair vs Replace Economics",
+        "text": "Clear, data-backed guidance so you make the right call.",
+        "mobileText": "Honest repair vs replace economics."
+      },
+      {
+        "icon": "expertVerified",
+        "title": "Expertly Verified by 20+ Vetted JLR Specialists",
+        "text": "All content reviewed by proven Land Rover engine experts.",
+        "mobileText": "Expertly verified by 20+ vetted JLR specialists."
+      },
+      {
+        "icon": "independent",
+        "title": "100% Independent",
+        "text": "No sponsors. No manufacturer influence. Just unbiased advice focused on what's best for you.",
+        "mobileText": "100% independent. No sponsors. No bias."
+      }
+    ]
   },
   "image": {
-    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=1200&q=80",
+    "src": "/hero-day.webp",
     "alt": "Land Rover Defender"
   }
 }

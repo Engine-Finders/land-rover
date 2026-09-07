@@ -2,201 +2,247 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import { HomeIcon } from "@/components/home/homeIcons";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 
-const iconPaths = [
-  <path key="chart" d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-  <path key="tool" d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />,
-  <path key="book" d="M4 6.5A2.5 2.5 0 0 1 6.5 4H11v16H6.5A2.5 2.5 0 0 0 4 22V6.5Zm16 0A2.5 2.5 0 0 0 17.5 4H13v16h4.5A2.5 2.5 0 0 1 20 22V6.5Z" />,
-  <path key="trophy" d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />,
-];
-
-function StatIcon({ index }) {
+function ArrowIcon({ className = "h-4 w-4" }) {
   return (
-    <span className="flex h-10 w-10 shrink-0 items-center justify-center text-[var(--color-primary)] md:h-auto md:w-auto md:bg-transparent md:text-[var(--color-primary)]">
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
-        {iconPaths[index] || iconPaths[0]}
-      </svg>
-    </span>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 12h14m-6-6 6 6-6 6" />
+    </svg>
   );
 }
 
-function splitStat(label) {
-  const [first, ...rest] = label.split(" ");
-  const hasMetric = /[0-9+]/.test(first);
+function TrustStrip({ items, isDark }) {
+  // Mobile strip sits on the dark hero wash — keep a dark glass shell there.
+  const shell = isDark
+    ? "border-white/14 bg-[rgba(16,28,24,0.55)]"
+    : "border-white/18 bg-[rgba(12,22,18,0.55)] md:border-[var(--color-glass-border)] md:bg-[var(--color-surface-glass)]";
+  const cellBorder = isDark
+    ? "border-white/12"
+    : "border-white/14 md:border-[var(--color-border)]";
+  const valueClass = isDark
+    ? "text-white"
+    : "text-white md:text-[var(--color-text)]";
+  const textClass = isDark
+    ? "text-white/78"
+    : "text-white/82 md:text-[var(--color-text-muted)]";
 
-  return {
-    value: hasMetric ? first : "",
-    text: hasMetric ? rest.join(" ") : label,
-  };
-}
-
-function TrustLabel({ label }) {
-  if (label === "Every Generation, Honestly Rated") {
-    return (
-      <>
-        <span className="block">Every Generation,</span>
-        <span className="block">Honestly</span>
-        <span className="block">Rated</span>
-      </>
-    );
-  }
-
-  if (label === "Part of Engine Finders") {
-    return (
-      <>
-        <span className="block">Part of Engine</span>
-        <span className="block">Finders</span>
-      </>
-    );
-  }
-
-  return label;
-}
-
-function HeroTitle({ html }) {
   return (
-    <h1
-      className="max-w-[660px] text-[32px] font-bold leading-[0.95] tracking-normal text-white md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] md:text-[var(--color-text)] lg:text-[4rem]"
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+    <ul
+      className={`grid grid-cols-4 overflow-hidden rounded-2xl border shadow-[0_14px_34px_var(--color-shadow)] backdrop-blur-xl ${shell}`}
+    >
+      {items.map((item) => (
+        <li
+          key={`${item.value}-${item.text}`}
+          className={`flex flex-col items-center gap-1.5 border-r px-1.5 py-3.5 text-center last:border-r-0 md:flex-row md:items-start md:gap-3 md:px-4 md:py-5 md:text-left ${cellBorder}`}
+        >
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center md:mt-0.5 md:h-14 md:w-14">
+            {/* Mobile: always Silver icons (day + night). Desktop: theme auto. */}
+            <HomeIcon name={item.icon} size={56} tone="silver" className="h-10 w-10 md:hidden" />
+            <HomeIcon
+              name={item.icon}
+              size={64}
+              tone={isDark ? "silver" : "black"}
+              className="hidden h-14 w-14 md:block"
+            />
+          </span>
+          <span className="min-w-0">
+            {item.value ? (
+              <strong className={`block text-[0.72rem] font-bold leading-tight md:text-[1.1rem] ${valueClass}`}>
+                {item.value}
+              </strong>
+            ) : null}
+            <span className={`mt-0.5 block text-[0.58rem] leading-[1.2] md:hidden ${textClass}`}>
+              {item.mobileText || item.text}
+            </span>
+            <span className={`mt-0.5 hidden text-[0.84rem] leading-[1.28] md:block ${textClass}`}>
+              {item.text}
+            </span>
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function BridgeEyebrow({ text }) {
+  if (!text) return null;
+
+  return (
+    <div className="flex w-full items-center gap-3">
+      <span className="h-px min-w-0 flex-1 bg-[var(--color-accent)]" />
+      <p className="shrink-0 text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)] md:text-[0.72rem]">
+        {text}
+      </p>
+      <span className="h-px min-w-0 flex-1 bg-[var(--color-accent)]" />
+    </div>
+  );
+}
+
+function BridgeSection({ bridge, isDark }) {
+  if (!bridge?.badges?.length) return null;
+
+  return (
+    <div className={`relative ${isDark ? "bg-[#0d1c18]" : "bg-[var(--color-page)]"}`}>
+      <div
+        className={`pointer-events-none absolute inset-0 opacity-[0.16] ${
+          isDark
+            ? "bg-[radial-gradient(circle_at_20%_20%,rgba(180,134,63,0.18),transparent_40%),radial-gradient(circle_at_80%_60%,rgba(105,181,138,0.12),transparent_45%)]"
+            : "bg-[radial-gradient(circle_at_18%_20%,rgba(23,95,70,0.08),transparent_42%),radial-gradient(circle_at_82%_70%,rgba(180,134,63,0.1),transparent_46%)]"
+        }`}
+      />
+
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-8 pt-5 md:px-8 md:pb-10 md:pt-5">
+        <div className="md:hidden">
+          <h2
+            className={`text-center text-[1.7rem] font-medium leading-[1.15] ${
+              isDark ? "text-white" : "text-[var(--color-text)]"
+            }`}
+          >
+            Why Thousands of Owners <span className="text-[var(--color-primary)]">Trust Us</span>
+          </h2>
+
+          <ul className="mt-5 grid grid-cols-2 gap-3">
+            {bridge.badges.map((badge) => (
+              <li
+                key={badge.title}
+                className={`flex items-start gap-2.5 rounded-xl border p-3 ${
+                  isDark ? "border-white/12 bg-[rgba(16,28,24,0.72)]" : "border-[var(--color-border)] bg-white/80"
+                }`}
+              >
+                <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center">
+                  <HomeIcon name={badge.icon} size={44} tone={isDark ? "silver" : "black"} className="h-10 w-10" />
+                </span>
+                <p className={`text-[0.72rem] leading-[1.3] font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                  {badge.mobileText || `${badge.title}. ${badge.text}`}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="hidden md:block">
+          <BridgeEyebrow text={bridge.eyebrow} />
+          <h2
+            className={`mt-3 text-center text-[2.5rem] font-medium leading-[1.15] tracking-normal ${
+              isDark ? "text-white" : "text-[var(--color-text)]"
+            }`}
+          >
+            Real Data. Real Experts. <span className="text-[var(--color-primary)]">Real Trust.</span>
+          </h2>
+
+          <ul className="mt-6 grid gap-6 lg:grid-cols-4 lg:gap-7">
+            {bridge.badges.map((badge) => (
+              <li key={badge.title} className="flex flex-col items-center px-2 text-center">
+                <span
+                  className={`flex h-16 w-16 items-center justify-center rounded-full border ${
+                    isDark ? "border-[rgba(180,134,63,0.45)] bg-[rgba(20,39,33,0.7)]" : "border-[rgba(180,134,63,0.45)] bg-white/70"
+                  }`}
+                >
+                  <HomeIcon name={badge.icon} size={48} tone={isDark ? "silver" : "black"} className="h-12 w-12" />
+                </span>
+                <p className={`mt-4 text-[1rem] font-bold leading-[1.25] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                  {badge.title}
+                </p>
+                <p className={`mt-2 text-[0.86rem] leading-[1.4] ${isDark ? "text-white/72" : "text-[var(--color-text-muted)]"}`}>
+                  {badge.text}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 }
 
 export default function HomeSec1({ data }) {
   const { theme } = useTheme();
-  const heroImageSrc = theme === "dark" ? "/Hero-dark.webp" : "/hero-day.webp";
   const isDark = theme === "dark";
+  const heroImageSrc = isDark ? "/Hero-dark.webp" : "/hero-day.webp";
+  const ctaHref = data.cta?.href && data.cta.href !== "#" ? data.cta.href : "/quote";
+  const trustStrip = data.trustStrip || [];
+  const badge = data.independentBadge;
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[620px]">
-      <div className="absolute inset-0 md:hidden">
-        <Image
-          src={heroImageSrc}
-          alt=""
-          fill
-          className="object-cover object-[62%_center]"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,28,24,0.94)_0%,rgba(13,28,24,0.84)_34%,rgba(13,28,24,0.36)_68%,rgba(13,28,24,0.94)_100%)]" />
-      </div>
-
-      <div className="absolute inset-0 hidden md:block">
-        <Image
-          src={heroImageSrc}
-          alt=""
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_35%,transparent_72%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_28%)]" />
-      </div>
-
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-8 md:min-h-[620px] md:justify-center md:px-0 md:py-8">
-        <div className="relative flex w-full max-w-[720px] flex-col gap-3 md:-ml-6 md:mt-0 md:gap-4">
-          <HeroTitle html="The UK&apos;s Most Trusted Land Rover &amp; Range Rover Ownership Guide" />
-
-          <MStripe />
-
-          <div className="h-0.5 w-18 bg-[var(--color-primary)] md:hidden" />
-
-          <p
-            className="max-w-[620px] text-[0.88rem] leading-[1.42] text-white/88 md:text-[1.08rem] md:leading-[1.42] md:text-[var(--color-text-muted)]"
-            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+    <section className="relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
+      {/* Hero + trust bridge (same section) */}
+      <div className="relative md:min-h-[640px]">
+        <div className="absolute inset-0">
+          <Image
+            src={heroImageSrc}
+            alt={data.image?.alt || ""}
+            fill
+            className="object-cover object-[62%_center] md:object-center"
+            sizes="100vw"
+            priority
           />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,16,14,0.9)_0%,rgba(8,16,14,0.72)_45%,rgba(8,16,14,0.55)_72%,rgba(8,16,14,0.9)_100%)] md:hidden" />
+          <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_38%,transparent_74%)] md:block" />
+          <div className="absolute inset-0 hidden bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_22%)] md:block" />
+        </div>
 
-          <div className="relative mt-1 h-[310px] md:hidden" />
+        <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-8 pt-7 md:min-h-[640px] md:justify-center md:px-8 md:pb-6 md:pt-12">
+          <div className="relative flex w-full flex-col items-stretch gap-4 text-left md:max-w-[720px] md:items-start md:gap-5">
+            <HeadingEyebrow text={data.eyebrow} />
 
-          <ul
-            className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_14px_32px_rgba(10,26,43,0.12)] backdrop-blur-xl md:max-w-[700px] md:rounded-lg md:border-[var(--color-border)] md:bg-[var(--color-surface-glass)] md:shadow-[0_10px_30px_var(--color-shadow)] md:grid-cols-4 ${
-              isDark
-                ? "border-white/10 bg-[rgba(11,17,24,0.44)] shadow-black/30"
-                : "border-[var(--color-border)] bg-[rgba(255,255,255,0.4)] shadow-[var(--color-shadow)]"
-            }`}
-          >
-            {data.trustStrip.map((item, index) => {
-              const stat = splitStat(item.label);
+            <h1
+              className="max-w-[34rem] text-[1.85rem] font-medium leading-[1.12] tracking-normal text-white md:max-w-[700px] md:text-[3rem] md:leading-[1.05] md:text-[var(--color-text)]"
+            >
+              The UK&apos;s Most Trusted Land Rover &amp; Range Rover{" "}
+              <span className="text-[var(--color-primary)]">Ownership Guide</span>
+            </h1>
 
-              return (
-                <li
-                  key={item.label}
-                  className={`flex flex-col items-center justify-start gap-2 border-r px-1.5 py-3.5 text-center last:border-r-0 md:gap-2 md:border-b-0 md:border-r md:border-[var(--color-border)] md:px-3 md:py-3 md:last:border-r-0 ${
-                    isDark ? "border-white/10" : "border-[var(--color-border)]"
-                  }`}
-                >
-                  <span className="flex h-10 w-10 items-center justify-center md:h-auto md:w-auto md:rounded-none md:border-0 md:bg-transparent">
-                    <StatIcon index={index} />
-                  </span>
-                  <span className={`text-[0.95rem] leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"} md:text-[var(--color-text)]`}>
-                    {stat.value && <strong className="block text-[0.86rem] font-bold leading-none md:inline md:text-[1.25rem]">{stat.value}</strong>}
-                    <span
-                      className={`mt-1.5 block text-[10px] uppercase leading-[1.3] tracking-normal ${
-                        isDark ? "text-white/78" : "text-[var(--color-text-muted)]"
-                      } md:mt-0 md:max-w-none md:text-[0.9rem] md:font-normal md:leading-[1.25] md:text-[var(--color-text-muted)] md:normal-case`}
-                    >
-                      <TrustLabel label={stat.text} />
-                    </span>
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
+            <p
+              className="max-w-[34rem] text-[0.86rem] leading-[1.5] text-white/88 md:max-w-[620px] md:text-[1.05rem] md:text-[var(--color-text-muted)]"
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
 
-          <Link
-            href="/quote"
-            className={`btn-cta rounded-[1.15rem] border p-4 shadow-lg md:hidden ${
-              isDark
-                ? "border-[var(--color-border-strong)] bg-[var(--color-primary)] text-white shadow-black/30"
-                : "border-[var(--color-border-strong)] bg-[var(--color-primary)] text-white shadow-[var(--color-shadow)]"
-            }`}
-          >
-            <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)]">
-                  <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-                  </svg>
-                </div>
-              <div className="min-w-0 flex-1">
-                <p className="text-[0.86rem] font-semibold tracking-[0.06em]">{data.cta.label}</p>
-                <p className="mt-1 text-[0.7rem] leading-[1.25] text-white/82">
-                  UNBIASED. DATA-DRIVEN. TRUSTED BY THOUSANDS.
-                </p>
-              </div>
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/12 bg-[rgba(3,14,31,0.4)]">
-                <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14m-6-6 6 6-6 6" />
-                </svg>
-              </span>
+            <div className="mt-[30vh] w-[min(100%,26rem)] self-center md:hidden">
+              <TrustStrip items={trustStrip} isDark={isDark} />
             </div>
-          </Link>
 
-          <Link
-            href="/quote"
-            className="btn-cta hidden w-full items-center justify-between rounded-[1.25rem] border border-[var(--color-border-strong)] bg-[var(--color-primary)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
-          >
-            <span className="text-left">
-              <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal">{data.cta.label}</span>
-            </span>
-            <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-[rgba(3,14,31,0.55)] md:h-auto md:w-auto md:rounded-none md:border-0 md:bg-transparent">
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14m-6-6 6 6-6 6" />
-              </svg>
-            </span>
-          </Link>
+            <div className="mt-1 flex w-full flex-col items-center gap-4 self-center sm:flex-row sm:items-center md:w-auto md:self-start md:justify-start">
+              <Link
+                href={ctaHref}
+                className="btn-cta inline-flex min-h-12 w-full max-w-[26rem] items-center justify-center gap-3 rounded-xl bg-[var(--color-primary)] px-6 py-3.5 text-[0.86rem] font-bold tracking-[0.06em] text-white shadow-[0_12px_28px_var(--color-shadow)] md:w-fit md:rounded-md md:tracking-[0.04em]"
+              >
+                <span>{data.cta?.label || "START YOUR RESEARCH"}</span>
+                <ArrowIcon className="h-4 w-4" />
+              </Link>
 
-          <div className="flex items-center justify-center gap-3 text-[10px] text-white/62 md:hidden">
-            <span>100% INDEPENDENT</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-white/35" />
-            <span>NO SPONSORSHIP</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-white/35" />
-            <span>COMPLETELY UNBIASED</span>
+              {badge ? (
+                <div className="hidden items-center gap-3 md:flex">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+                    <HomeIcon
+                      name={badge.icon || "check"}
+                      size={48}
+                      tone={isDark ? "silver" : "black"}
+                      className="h-11 w-11"
+                    />
+                  </span>
+                  <p className={`text-[0.82rem] leading-[1.35] ${isDark ? "text-white/82" : "text-[var(--color-text-muted)]"}`}>
+                    {(badge.lines || []).map((line) => (
+                      <span key={line} className="block">
+                        {line}
+                      </span>
+                    ))}
+                  </p>
+                </div>
+              ) : null}
+            </div>
+          </div>
+
+          {/* Desktop trust strip — 54rem so copy wraps to ~2 lines */}
+          <div className="mt-8 hidden w-[min(100%,54rem)] md:block">
+            <TrustStrip items={trustStrip} isDark={isDark} />
           </div>
         </div>
       </div>
+
+      <BridgeSection bridge={data.bridge} isDark={isDark} />
     </section>
   );
 }

@@ -2,170 +2,186 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { HomeIcon } from "@/components/home/homeIcons";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
 
-const severityConfig = {
-  catastrophic: { dot: "bg-[#ff2b2b]", text: "text-[#07113a]" },
-  immediate: { dot: "bg-[#ff8a00]", text: "text-[#07113a]" },
-  monitor: { dot: "bg-[#ffd400]", text: "text-[#07113a]" },
-  low: { dot: "bg-[#25a844]", text: "text-[#07113a]" },
+const severityStyles = {
+  catastrophic: {
+    badge: "border-[#f0b8bc] bg-[#fff0f1] text-[#c42430]",
+    darkBadge: "border-[rgba(238,124,130,0.4)] bg-[rgba(238,124,130,0.14)] text-[#ff9aa0]",
+    dot: "bg-[#df232a]",
+  },
+  immediate: {
+    badge: "border-[#f5d0a8] bg-[#fff6ea] text-[#d97810]",
+    darkBadge: "border-[rgba(224,137,58,0.4)] bg-[rgba(224,137,58,0.14)] text-[#ffba6c]",
+    dot: "bg-[#e0893a]",
+  },
+  monitor: {
+    badge: "border-[#ecd7a7] bg-[#fff9ea] text-[#9c6a00]",
+    darkBadge: "border-[rgba(222,177,65,0.4)] bg-[rgba(222,177,65,0.14)] text-[#ffd473]",
+    dot: "bg-[#d4aa68]",
+  },
+  low: {
+    badge: "border-[#cce7d7] bg-[#eefaf3] text-[#17824f]",
+    darkBadge: "border-[rgba(123,195,154,0.4)] bg-[rgba(123,195,154,0.14)] text-[#7bc39a]",
+    dot: "bg-[#2f805c]",
+  },
 };
 
-const iconPaths = {
-  gear: (
-    <>
-      <path d="M12 8.4a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Z" />
-      <path d="m19.4 15.1.1 2.2-2.2 2.2-2.2-.9-1.3.5-.9 2.1H9.8l-.9-2.1-1.3-.5-2.2.9-2.2-2.2.1-2.2-.6-1.2-2-1v-3.1l2-1 .6-1.2-.1-2.2 2.2-2.2 2.2.9 1.3-.5.9-2.1h3.1l.9 2.1 1.3.5 2.2-.9 2.2 2.2-.1 2.2.6 1.2 2 1v3.1l-2 1-.6 1.2Z" />
-    </>
-  ),
-  warning: (
-    <>
-      <path d="M12 7.5v5.4" />
-      <path d="M12 16.5h.01" />
-      <path d="M10.2 4.8 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.8 4.8a2.1 2.1 0 0 0-3.6 0Z" />
-    </>
-  ),
-  arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
-};
+function SeverityBadge({ severity, isDark }) {
+  const tone = severityStyles[severity?.type] || severityStyles.monitor;
 
-function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
   return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className={className}
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={strokeWidth}
+    <span
+      className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.04em] ${
+        isDark ? tone.darkBadge : tone.badge
+      }`}
     >
-      {iconPaths[name] || iconPaths.gear}
-    </svg>
-  );
-}
-
-function Severity({ severity }) {
-  const config = severityConfig[severity.type] || severityConfig.monitor;
-
-  return (
-    <span className={`inline-flex items-center gap-2 text-[0.86rem] leading-none md:gap-3 md:text-[0.95rem] ${config.text}`}>
-      <span className={`h-4 w-4 shrink-0 rounded-full ${config.dot}`} />
-      <span>{severity.label}</span>
+      <span className={`h-2 w-2 shrink-0 rounded-full ${tone.dot}`} />
+      {severity?.label}
     </span>
   );
 }
 
-function SectionIcon({ icon, isDark }) {
+function CategoryHeading({ category, isDark }) {
   return (
-    <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded text-white md:h-9 md:w-11 ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-      <Icon name={icon} className="h-7 w-7 md:h-5 md:w-5" strokeWidth={2.3} />
-    </span>
-  );
-}
-
-function TableHeader({ block, isDark }) {
-  return (
-    <div className={`flex items-center border-b ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
-      <SectionIcon icon={block.icon} isDark={isDark} />
-      <h3 className={`px-4 py-3 text-[1.15rem] font-bold uppercase text-[var(--color-primary)] md:py-2 md:text-[1rem] ${isDark ? "md:text-white" : "md:text-[#071827]"}`}>
-        {block.title}
+    <div className="mb-3 flex items-center gap-3">
+      <span
+        className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full md:rounded-md ${
+          isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"
+        }`}
+      >
+        <HomeIcon name={category.icon} size={28} tone="silver" className="h-6 w-6" />
+      </span>
+      <h3 className={`shrink-0 text-[0.92rem] font-bold uppercase tracking-[0.06em] ${isDark ? "text-white" : "text-[var(--color-primary)]"}`}>
+        {category.title}
       </h3>
+      <span className={`h-px min-w-0 flex-1 ${isDark ? "bg-[var(--color-border)]" : "bg-[var(--color-border)]"}`} />
     </div>
   );
 }
 
-function DesktopRows({ block, isDark }) {
+function MobileRow({ item, isDark }) {
   return (
-    <div className="hidden md:block">
-      <div className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b text-[0.72rem] font-bold uppercase ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] text-white/88" : "border-[#dfe5ed] bg-[#fbfcfe] text-[#071827]"}`}>
-        {block.columns.map((column) => (
-          <span key={column} className={`border-r px-6 py-2 last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e5e9ef]"}`}>
-            {column}
-          </span>
+    <Link
+      href={item.href || "#"}
+      className={`grid grid-cols-[56px_26px_minmax(0,1fr)_auto] items-center gap-2 border-b py-2 last:border-b-0 ${
+        isDark ? "border-[var(--color-border)]" : "border-[var(--color-border)]"
+      }`}
+    >
+      <span className="relative h-11 w-14 overflow-hidden rounded">
+        <Image src={item.image?.src || "/engine.webp"} alt={item.image?.alt || ""} fill className="object-cover" sizes="56px" />
+      </span>
+
+      <span
+        className={`flex h-6 w-6 items-center justify-center rounded-full text-[0.64rem] font-bold ${
+          isDark ? "bg-white/10 text-white/70" : "bg-[var(--color-page-soft)] text-[var(--color-text-soft)]"
+        }`}
+      >
+        {item.id}
+      </span>
+
+      <span className="min-w-0">
+        <span className={`block text-[0.86rem] font-bold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+          {item.title}
+        </span>
+        <span className={`mt-0.5 block text-[0.7rem] leading-[1.3] ${isDark ? "text-white/68" : "text-[var(--color-text-muted)]"}`}>
+          {item.description}
+        </span>
+      </span>
+
+      <span className="flex shrink-0 flex-col items-end gap-1">
+        <SeverityBadge severity={item.severity} isDark={isDark} />
+        <span className="text-[0.68rem] font-semibold text-[var(--color-primary)]">Read more →</span>
+      </span>
+    </Link>
+  );
+}
+
+function DesktopCard({ item, isDark }) {
+  return (
+    <Link
+      href={item.href || "#"}
+      className={`relative flex h-full flex-col rounded-xl border p-3.5 shadow-[0_10px_28px_var(--color-shadow)] transition hover:border-[var(--color-primary)] ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[var(--color-border)] bg-white"
+      }`}
+    >
+      <span
+        className={`absolute left-3 top-3 z-10 rounded px-1.5 py-0.5 text-[0.68rem] font-bold ${
+          isDark ? "bg-white/10 text-white/70" : "bg-[var(--color-page-soft)] text-[var(--color-text-soft)]"
+        }`}
+      >
+        {item.id}
+      </span>
+
+      <div className="flex items-start gap-3 pt-1">
+        <span className="relative mt-5 h-16 w-[4.5rem] shrink-0 overflow-hidden rounded">
+          <Image src={item.image?.src || "/engine.webp"} alt={item.image?.alt || ""} fill className="object-cover" sizes="72px" />
+        </span>
+        <div className="min-w-0 pt-5">
+          <h4 className={`text-[0.95rem] font-bold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+            {item.title}
+          </h4>
+          <p className={`mt-1.5 text-[0.74rem] leading-[1.4] ${isDark ? "text-white/68" : "text-[var(--color-text-muted)]"}`}>
+            {item.description}
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-auto flex items-center justify-between gap-3 pt-4">
+        <SeverityBadge severity={item.severity} isDark={isDark} />
+        <span className="text-[0.78rem] font-semibold text-[var(--color-primary)]">Read more →</span>
+      </div>
+    </Link>
+  );
+}
+
+function CategoryBlock({ category, isDark }) {
+  const items = category.items || [];
+
+  return (
+    <section>
+      <CategoryHeading category={category} isDark={isDark} />
+
+      <div className="md:hidden">
+        {items.map((item) => (
+          <MobileRow key={`${category.id}-${item.id}`} item={item} isDark={isDark} />
         ))}
       </div>
 
-      {block.rows.map((row) => (
-        <div
-          key={row.id}
-          className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b last:border-b-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e5e9ef]"}`}
-        >
-          <div className={`border-r px-6 py-4 text-[1.55rem] font-bold leading-none text-[var(--color-primary)] ${isDark ? "border-[var(--color-border)]" : "border-[#e5e9ef]"}`}>
-            {row.id}
-          </div>
-          <div
-            className={`border-r px-6 py-4 text-[1rem] font-bold leading-tight ${isDark ? "border-[var(--color-border)] text-white" : "border-[#e5e9ef] text-[#071827]"}`}
-            dangerouslySetInnerHTML={{ __html: row.title }}
-          />
-          <p className={`border-r px-6 py-3 text-[0.82rem] leading-[1.25] ${isDark ? "border-[var(--color-border)] text-white/76" : "border-[#e5e9ef] text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
-          <div className={`border-r px-6 py-4 ${isDark ? "border-[var(--color-border)]" : "border-[#e5e9ef]"}`}>
-            <Severity severity={row.severity} />
-          </div>
-          <Link href={row.link.href} className="flex items-center gap-3 px-6 py-4 text-[0.9rem] font-medium text-[var(--color-primary)]">
-            {row.link.label}
-            <Icon name="arrow" className="h-4 w-4" />
-          </Link>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function MobileRows({ block, isDark }) {
-  return (
-    <div className="md:hidden">
-      {block.rows.map((row) => (
-        <div key={row.id} className={`border-b px-4 py-4 last:border-b-0 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
-          <div className="flex items-start gap-3">
-            <span className="w-8 shrink-0 text-[1.65rem] font-bold leading-none text-[var(--color-primary)]">
-              {row.id}
-            </span>
-            <div className="min-w-0 flex-1">
-              <h4 className={`text-[1.05rem] font-bold leading-tight ${isDark ? "text-white" : "text-[#07113a]"}`} dangerouslySetInnerHTML={{ __html: row.title }} />
-              <div className="mt-2">
-                <Severity severity={row.severity} />
-              </div>
-            </div>
-          </div>
-          <p className={`mt-3 text-[0.86rem] leading-[1.48] ${isDark ? "text-white/78" : "text-[#07113a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
-          <Link href={row.link.href} className="mt-4 inline-flex items-center gap-3 text-[0.95rem] font-bold text-[var(--color-primary)]">
-            {row.link.label}
-            <Icon name="arrow" className="h-5 w-5" />
-          </Link>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function FailureTable({ block, isDark }) {
-  if (!block) return null;
-
-  return (
-    <div className={`border-y md:overflow-hidden md:rounded-md md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
-      <TableHeader block={block} isDark={isDark} />
-      <DesktopRows block={block} isDark={isDark} />
-      <MobileRows block={block} isDark={isDark} />
-    </div>
-  );
-}
-
-function UrgencyKey({ items, isDark }) {
-  return (
-    <div className={`border-y px-4 py-4 md:rounded-md md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-8">
-        <p className={`text-[0.9rem] font-bold uppercase md:mr-2 ${isDark ? "text-white" : "text-[#071827]"}`}>Urgency Key:</p>
-        {(items || []).map((item) => (
-          <div key={item.label} className={`flex items-center gap-3 text-[0.88rem] ${isDark ? "text-white/84" : "text-[#071827]"}`}>
-            <span className={`h-4 w-4 shrink-0 rounded-full ${(severityConfig[item.type] || severityConfig.monitor).dot}`} />
-            <span>
-              <strong>{item.label}</strong> - <span dangerouslySetInnerHTML={{ __html: item.text }} />
-            </span>
-          </div>
+      <div className="hidden gap-4 md:grid md:grid-cols-2 xl:grid-cols-4">
+        {items.map((item) => (
+          <DesktopCard key={`${category.id}-${item.id}`} item={item} isDark={isDark} />
         ))}
       </div>
+    </section>
+  );
+}
+
+function DataNote({ note, isDark }) {
+  if (!note) return null;
+
+  return (
+    <div
+      className={`mt-2 flex items-start gap-3 rounded-md border px-4 py-4 md:items-center md:gap-4 md:px-5 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[var(--color-border)] bg-[var(--color-page-soft)]"
+      }`}
+    >
+      <span
+        className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${
+          isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"
+        }`}
+      >
+        <HomeIcon name={note.icon || "realData"} size={28} tone="silver" className="h-6 w-6" />
+      </span>
+      <p className={`text-[0.8rem] leading-[1.45] md:text-[0.88rem] ${isDark ? "text-white/82" : "text-[var(--color-text-muted)]"}`}>
+        <strong className={isDark ? "text-white" : "text-[var(--color-text)]"}>{note.title}</strong> {note.text}
+      </p>
     </div>
   );
 }
@@ -173,36 +189,33 @@ function UrgencyKey({ items, isDark }) {
 export default function HomeSec9({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const categories = data.categories || [];
 
   return (
-    <section className={`relative overflow-hidden px-4 py-8 md:px-6 md:py-8 ${isDark ? "bg-[#0d1c18]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 h-[390px] md:h-[295px]">
-        <Image
-          src={data.headerImage.src}
-          alt={data.headerImage.alt}
-          fill
-          className="object-cover object-[88%_top] md:object-[82%_center]"
-          sizes="100vw"
-        />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(115deg,#0d1c18_0%,rgba(13,28,24,0.98)_42%,rgba(13,28,24,0.72)_66%,rgba(13,28,24,0.18)_100%)] md:bg-[linear-gradient(90deg,#0d1c18_0%,rgba(13,28,24,0.95)_38%,rgba(13,28,24,0.45)_70%,rgba(13,28,24,0.2)_100%)]" : "absolute inset-0 bg-[linear-gradient(115deg,white_0%,rgba(255,255,255,0.98)_42%,rgba(255,255,255,0.68)_66%,rgba(255,255,255,0.18)_100%)] md:bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.96)_38%,rgba(255,255,255,0.45)_70%,rgba(255,255,255,0.2)_100%)]"} />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,#0d1c18_0%,rgba(13,28,24,0)_100%)]" : "absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
-      </div>
-
+    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-9 ${isDark ? "bg-[#0d1c18]" : "bg-[var(--color-page)]"}`}>
       <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[740px] pt-3 md:pt-6">
-          <h2 className={`text-[2.9rem] font-bold leading-[1.03] tracking-normal md:text-[3.45rem] ${isDark ? "text-white" : "text-[#07113a] md:text-black"}`}>The Land Rover &amp; Range Rover Failure Database</h2>
-          <div className="mt-4">
-            <MStripe />
-          </div>
-          <p className={`mt-5 max-w-[665px] text-[0.92rem] leading-[1.55] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#07113a] md:text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
+        <div className="mx-auto max-w-[780px] text-center">
+          <HeadingEyebrow text={data.eyebrow || "FAILURE DATABASE"} align="center" />
+          <h2
+            className={`mt-3 text-[2rem] font-medium leading-[1.12] tracking-normal md:text-[3rem] ${
+              isDark ? "text-white" : "text-[var(--color-text)]"
+            }`}
+          >
+            The Land Rover &amp; Range Rover <span className="text-[var(--color-primary)]">Failure Database</span>
+          </h2>
+          <p
+            className={`mx-auto mt-4 max-w-[640px] text-[0.9rem] leading-[1.5] md:text-[1.02rem] ${
+              isDark ? "text-white/78" : "text-[var(--color-text-muted)]"
+            }`}
+            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+          />
         </div>
 
-        <div className="mt-8 -mx-4 grid gap-4 md:mx-0 md:mt-5">
-          <FailureTable block={data.engineFailures} isDark={isDark} />
-          <FailureTable block={data.suspensionFailures} isDark={isDark} />
-          <FailureTable block={data.drivetrainFailures} isDark={isDark} />
-          <FailureTable block={data.electricalFailures} isDark={isDark} />
-          <UrgencyKey items={data.urgencyKey} isDark={isDark} />
+        <div className="mt-7 grid gap-6 md:mt-9 md:gap-8">
+          {categories.map((category) => (
+            <CategoryBlock key={category.id} category={category} isDark={isDark} />
+          ))}
+          <DataNote note={data.dataNote} isDark={isDark} />
         </div>
       </div>
     </section>

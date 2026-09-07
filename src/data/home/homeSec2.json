@@ -1,106 +1,143 @@
 {
+  "eyebrow": "FIND YOUR VEHICLE",
   "subHeadline": "Choose your model to explore reliability, common faults and real running costs.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=900&q=80",
-    "alt": "Land Rover Defender"
+    "src": "/sec2-bg.webp",
+    "alt": "Find your Land Rover or Range Rover"
   },
-  "searchPlaceholder": "Search model...",
-  "filters": [
-    { "label": "ALL MODELS", "value": "all" },
-    { "label": "LAND ROVER", "value": "landrover" },
-    { "label": "RANGE ROVER", "value": "rangerover" }
-  ],
-  "columns": ["MODEL", "GENERATIONS", "VERDICT"],
-  "models": [
+  "brands": [
     {
-      "model": "Defender",
-      "generations": "2 Generations (Classic, L663)",
-      "verdict": { "icon": "🏆", "text": "Safest Buy", "type": "trophy" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=200&q=80",
-        "alt": "Land Rover Defender"
-      },
-      "href": "https://landroverengine.uk/defender"
+      "id": "landrover",
+      "title": "LAND ROVER",
+      "logo": "/land-rover-logo.png",
+      "models": [
+        {
+          "model": "Defender",
+          "generations": "2 Generations",
+          "verdict": {
+            "icon": "safestBuy",
+            "text": "Safest Buy",
+            "tone": "gold"
+          },
+          "image": {
+            "src": "/right.webp",
+            "alt": "Land Rover Defender"
+          },
+          "href": "/defender"
+        },
+        {
+          "model": "Discovery",
+          "generations": "5 Generations",
+          "verdict": {
+            "icon": "bestFamily",
+            "text": "Best Family",
+            "tone": "green"
+          },
+          "image": {
+            "src": "/right.webp",
+            "alt": "Land Rover Discovery"
+          },
+          "href": "/discovery"
+        },
+        {
+          "model": "Discovery Sport",
+          "generations": "1 Generation",
+          "verdict": {
+            "icon": "mostEnquired",
+            "text": "Most Enquired",
+            "tone": "orange"
+          },
+          "image": {
+            "src": "/right.webp",
+            "alt": "Discovery Sport"
+          },
+          "href": "/discovery-sport"
+        },
+        {
+          "model": "Freelander",
+          "generations": "2 Generations",
+          "verdict": {
+            "icon": "checkValue",
+            "text": "Check Value",
+            "tone": "orange"
+          },
+          "image": {
+            "src": "/right.webp",
+            "alt": "Land Rover Freelander"
+          },
+          "href": "/freelander"
+        }
+      ]
     },
     {
-      "model": "Discovery",
-      "generations": "5 Generations (D1, D2, D3, D4, D5)",
-      "verdict": { "icon": "👨‍👩‍👧‍👦", "text": "Best Family", "type": "success" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "Land Rover Discovery"
-      },
-      "href": "https://landroverengine.uk/discovery"
-    },
-    {
-      "model": "Discovery Sport",
-      "generations": "1 Generation (L550)",
-      "verdict": { "icon": "🔥", "text": "Most Enquired", "type": "fire" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "Discovery Sport"
-      },
-      "href": "https://landroverengine.uk/discovery-sport"
-    },
-    {
-      "model": "Freelander",
-      "generations": "2 Generations (Freelander, L359)",
-      "verdict": { "icon": "⚠️", "text": "Check Value", "type": "warning" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "Land Rover Freelander"
-      },
-      "href": "https://landroverengine.uk/freelander"
-    },
-    {
-      "model": "Range Rover",
-      "generations": "3 Generations (L322, L405, L460)",
-      "verdict": { "icon": "👑", "text": "Flagship Choice", "type": "crown" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=200&q=80",
-        "alt": "Range Rover"
-      },
-      "href": "https://landroverengine.uk/range-rover"
-    },
-    {
-      "model": "Range Rover Sport",
-      "generations": "3 Generations (L320, L494, L461)",
-      "verdict": { "icon": "🚀", "text": "High Demand", "type": "fire" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "Range Rover Sport"
-      },
-      "href": "https://landroverengine.uk/range-rover-sport"
-    },
-    {
-      "model": "Velar",
-      "generations": "1 Generation (L560)",
-      "verdict": { "icon": "💎", "text": "Premium Style", "type": "diamond" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "Range Rover Velar"
-      },
-      "href": "https://landroverengine.uk/velar"
-    },
-    {
-      "model": "Evoque",
-      "generations": "2 Generations (L538, L551)",
-      "verdict": { "icon": "🔥", "text": "Best-Seller", "type": "fire" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "Range Rover Evoque"
-      },
-      "href": "https://landroverengine.uk/range-rover-evoque"
+      "id": "rangerover",
+      "title": "RANGE ROVER",
+      "spacedTitle": true,
+      "models": [
+        {
+          "model": "Range Rover",
+          "generations": "3 Generations",
+          "verdict": {
+            "icon": "flagshipChoice",
+            "text": "Flagship Choice",
+            "tone": "gold"
+          },
+          "image": {
+            "src": "/right.webp",
+            "alt": "Range Rover"
+          },
+          "href": "/range-rover"
+        },
+        {
+          "model": "Range Rover Sport",
+          "generations": "3 Generations",
+          "verdict": {
+            "icon": "highDemand",
+            "text": "High Demand",
+            "tone": "green"
+          },
+          "image": {
+            "src": "/right.webp",
+            "alt": "Range Rover Sport"
+          },
+          "href": "/range-rover-sport"
+        },
+        {
+          "model": "Velar",
+          "generations": "1 Generation",
+          "verdict": {
+            "icon": "premiumStyle",
+            "text": "Premium Style",
+            "tone": "green"
+          },
+          "image": {
+            "src": "/right.webp",
+            "alt": "Range Rover Velar"
+          },
+          "href": "/velar"
+        },
+        {
+          "model": "Evoque",
+          "generations": "2 Generations",
+          "verdict": {
+            "icon": "bestSeller",
+            "text": "Best-Seller",
+            "tone": "orange"
+          },
+          "image": {
+            "src": "/right.webp",
+            "alt": "Range Rover Evoque"
+          },
+          "href": "/range-rover-evoque"
+        }
+      ]
     }
   ],
-  "viewAll": {
-    "label": "View all models",
-    "href": "#"
-  },
   "cta": {
-    "title": "Not sure which Land Rover or Range Rover to buy?",
-    "text": "Start with our research tools — rankings, faults and real running costs.",
-    "buttonLabel": "START YOUR RESEARCH",
-    "href": "#"
+    "title": "Not sure which model is right for you?",
+    "text": "We'll help you identify your Land Rover or Range Rover and show you the most important reliability data.",
+    "buttonLabel": "IDENTIFY MY VEHICLE",
+    "href": "/quote",
+    "icon": "check"
   }
 }

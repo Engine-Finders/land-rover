@@ -1,86 +1,64 @@
 {
+  "eyebrow": "SECTION 07",
   "subHeadline": "The comparisons Land Rover buyers actually want — generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
-  "headerImages": [
-    {
-      "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=500&q=80",
-      "alt": "Land Rover Defender"
-    },
-    {
-      "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=500&q=80",
-      "alt": "Range Rover"
-    }
-  ],
+  "headerImage": {
+    "src": "/sec2-bg.webp",
+    "alt": "Comparison hub background"
+  },
+  "columns": ["#", "COMPARISON", "VERDICT PREVIEW", "LINK"],
   "comparisons": [
     {
-      "id": 1,
+      "id": "01",
       "title": "Discovery 4 vs Discovery 5",
       "preview": "Which generation to buy — the verdict on reliability, running costs, and long-term value. The Discovery 5 benefits from revised Ingenium engines; the Discovery 4 needs proven oil-interval history.",
-      "vsLabels": ["Discovery 4", "Discovery 5"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=600&q=80",
-        "alt": "Discovery 4 vs Discovery 5"
-      },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "icon": "scale",
+      "image": { "src": "/engine.webp", "alt": "Discovery 4 vs Discovery 5" },
+      "href": "#"
     },
     {
-      "id": 2,
+      "id": "02",
       "title": "L405 vs L460 Range Rover",
       "preview": "Is the extra outlay worth it? We compare ownership costs, reliability, and resale value. The L405 offers the widest value-to-cost margin; the L460 is safer but at a higher entry price.",
-      "vsLabels": ["L405", "L460"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80",
-        "alt": "L405 vs L460 Range Rover"
-      },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "icon": "flagshipChoice",
+      "image": { "src": "/engine.webp", "alt": "L405 vs L460 Range Rover" },
+      "href": "#"
     },
     {
-      "id": 3,
+      "id": "03",
       "title": "TDV6 vs SDV6",
-      "preview": "What's the real difference? Performance, reliability, and replacement costs compared side-by-side. Both share the <a href='https://landroverengine.uk/engine/306dt'>306DT</a> crankshaft bearing risk — the difference is power delivery and host vehicle.",
-      "vsLabels": ["TDV6", "SDV6"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=600&q=80",
-        "alt": "TDV6 vs SDV6"
-      },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "preview": "What's the real difference? Performance, reliability, and replacement costs compared side-by-side. Both share the 306DT crankshaft bearing risk — the difference is power delivery and host vehicle.",
+      "icon": "expertVerified",
+      "image": { "src": "/engine.webp", "alt": "TDV6 vs SDV6" },
+      "href": "#"
     },
     {
-      "id": 4,
+      "id": "04",
       "title": "Ingenium vs TDV6",
       "preview": "Which should you buy? We compare fuel economy, reliability, and long-term ownership costs. The post-2019 Ingenium is the safer bet; the TDV6 delivers more power but carries real bearing risk.",
-      "vsLabels": ["Ingenium", "TDV6"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=600&q=80",
-        "alt": "Ingenium vs TDV6"
-      },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "icon": "checkValue",
+      "image": { "src": "/engine.webp", "alt": "Ingenium vs TDV6" },
+      "href": "#"
     },
     {
-      "id": 5,
+      "id": "05",
       "title": "Defender vs Discovery",
       "preview": "The practical ownership comparison — space, capability, running costs, and everyday usability. The Defender holds value better; the Discovery offers more seats and family practicality.",
-      "vsLabels": ["Defender", "Discovery"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=600&q=80",
-        "alt": "Defender vs Discovery"
-      },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "icon": "terrainResponse",
+      "image": { "src": "/engine.webp", "alt": "Defender vs Discovery" },
+      "href": "#"
     },
     {
-      "id": 6,
+      "id": "06",
       "title": "Range Rover Sport vs Discovery",
       "preview": "Ownership costs compared — which SUV offers better value for money over 3-5 years? Both share engines and platforms; choose based on refinement versus family practicality.",
-      "vsLabels": ["Range Rover Sport", "Discovery"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80",
-        "alt": "Range Rover Sport vs Discovery"
-      },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "icon": "calculator",
+      "image": { "src": "/engine.webp", "alt": "Range Rover Sport vs Discovery" },
+      "href": "#"
     }
   ],
-  "bottomCta": {
-    "text": "Not sure which is right for you? Use our diagnostic tool to get a personalised verdict in minutes.",
-    "buttonLabel": "Start Your Diagnosis",
-    "href": "#"
+  "dataNote": {
+    "icon": "realData",
+    "title": "DATA NOTE:",
+    "text": "Comparison verdicts synthesise generation reliability patterns, replacement-cost bands and real UK enquiry volume. They are ownership guidance — always inspect the specific vehicle before buying."
   }
 }

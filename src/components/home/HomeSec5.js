@@ -2,145 +2,217 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { HomeIcon } from "@/components/home/homeIcons";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
 
-const iconPaths = {
-  check: <path d="m5 12 4 4L19 6" />,
-  x: <path d="M8 8l8 8M16 8l-8 8" />,
-  alert: <path d="M12 8v5m0 4h.01M12 3 2 21h20L12 3Z" />,
-  dot: <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" />,
-  car: <path d="M5 13 7 7h10l2 6M4 13h16v6H4v-6Zm2 0V9m12 4V9M7 17h.01M17 17h.01" />,
-  drop: <path d="M12 3s7 7.1 7 12a7 7 0 0 1-14 0c0-4.9 7-12 7-12Z" />,
-};
-
-const toneClasses = {
-  safe: "bg-[#25b85a] text-white",
-  avoid: "bg-[#ed1c24] text-white",
-  info: "bg-[var(--color-primary)] text-white",
-  default: "text-current",
-};
-
-function Icon({ name, className = "h-5 w-5" }) {
-  if (!name) return null;
-
+function MobileCard({ item, isDark }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      {iconPaths[name] || iconPaths.dot}
-    </svg>
+    <Link
+      href={item.href || "#"}
+      className={`flex items-start gap-3 rounded-xl border p-3 shadow-[0_10px_24px_var(--color-shadow)] ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[var(--color-border)] bg-white"
+      }`}
+    >
+      <span
+        className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-[0.72rem] font-bold text-white ${
+          isDark ? "bg-[var(--color-chrome)]" : "bg-[#0d1c18]"
+        }`}
+      >
+        {item.id}
+      </span>
+
+      <span className="relative h-14 w-[4.25rem] shrink-0 overflow-hidden rounded-md">
+        <Image src={item.image?.src || "/engine.webp"} alt={item.image?.alt || ""} fill className="object-cover" sizes="68px" />
+      </span>
+
+      <span className="min-w-0 flex-1">
+        <span className={`block text-[0.95rem] font-bold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+          {item.title}
+        </span>
+        <span className={`mt-1 block text-[0.74rem] leading-[1.35] ${isDark ? "text-white/68" : "text-[var(--color-text-muted)]"}`}>
+          {item.preview}
+        </span>
+        <span
+          className={`mt-2.5 flex items-center justify-end border-t pt-2 text-[0.78rem] font-semibold text-[var(--color-primary)] ${
+            isDark ? "border-white/12" : "border-[var(--color-border)]"
+          }`}
+        >
+          Read the verdict →
+        </span>
+      </span>
+    </Link>
   );
 }
 
-function ArrowIcon() {
+function DesktopTable({ columns, comparisons, isDark }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
-}
+    <div
+      className={`mt-6 hidden overflow-hidden rounded-md border shadow-[0_14px_36px_var(--color-shadow)] md:block ${
+        isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[var(--color-border)] bg-white"
+      }`}
+    >
+      <div
+        className={`grid grid-cols-[56px_minmax(220px,1.1fr)_minmax(280px,1.6fr)_minmax(140px,0.7fr)] gap-3 px-4 py-3 text-[0.72rem] font-bold uppercase tracking-[0.06em] text-white ${
+          isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"
+        }`}
+      >
+        <span>{columns[0]}</span>
+        <span>{columns[1]}</span>
+        <span>{columns[2]}</span>
+        <span className="text-right">{columns[3]}</span>
+      </div>
 
-function NumberBadge({ id, isDark }) {
-  return (
-    <span className={`absolute left-0 top-0 z-20 flex h-12 w-12 items-center justify-center rounded-br-xl rounded-tl-xl text-[1.35rem] font-bold text-white md:h-10 md:w-10 md:text-[1.2rem] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-      {id}
-    </span>
-  );
-}
+      {comparisons.map((item, index) => (
+        <div
+          key={item.id}
+          className={`relative grid grid-cols-[56px_minmax(220px,1.1fr)_minmax(280px,1.6fr)_minmax(140px,0.7fr)] items-center gap-3 border-b px-4 py-3 last:border-b-0 ${
+            isDark
+              ? `border-[var(--color-border)] text-white ${index % 2 ? "bg-white/[0.03]" : ""}`
+              : `border-[var(--color-border)] text-[var(--color-text)] ${index % 2 ? "bg-[var(--color-page-soft)]" : "bg-white"}`
+          }`}
+        >
+          <Link href={item.href || "#"} className="absolute inset-0 z-0" aria-label={item.title}>
+            <span className="sr-only">{item.title}</span>
+          </Link>
 
-function OptionRow({ options, isDark }) {
-  return (
-    <div className={`flex items-center justify-center gap-4 border-t px-3 py-3 md:gap-5 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
-      {options.map((option, index) => (
-        <div key={`${option.label}-${index}`} className="flex min-w-0 items-center gap-2">
-          {index > 0 ? <span className={`mr-2 text-[0.8rem] font-bold ${isDark ? "text-white/78" : "text-[#071827]"}`}>vs</span> : null}
-          {option.icon ? (
-            <span className={`flex h-5 w-5 shrink-0 items-center justify-center rounded ${toneClasses[option.tone] || toneClasses.default}`}>
-              <Icon name={option.icon} className="h-4 w-4" />
+          <span className="relative z-10 pointer-events-none">
+            <span
+              className={`flex h-8 w-8 items-center justify-center rounded-full text-[0.72rem] font-bold text-white ${
+                isDark ? "bg-[var(--color-chrome)]" : "bg-[#0d1c18]"
+              }`}
+            >
+              {item.id}
             </span>
-          ) : null}
-          <span className={`text-[0.98rem] font-bold leading-tight md:text-[1.05rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{option.label}</span>
-          {option.note ? <span className={`hidden text-[0.65rem] leading-tight lg:block ${isDark ? "text-white/74" : "text-[#27384a]"}`}>{option.note}</span> : null}
+          </span>
+
+          <div className="relative z-10 pointer-events-none flex items-center gap-3">
+            <span className="relative h-12 w-[4.5rem] shrink-0 overflow-hidden rounded-md">
+              <Image src={item.image?.src || "/engine.webp"} alt={item.image?.alt || ""} fill className="object-cover" sizes="72px" />
+            </span>
+            <p className="text-[0.95rem] font-bold leading-tight">{item.title}</p>
+          </div>
+
+          <div className="relative z-10 pointer-events-none flex items-start gap-3">
+            <span
+              className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
+                isDark ? "bg-white/10" : "bg-[var(--color-page-soft)]"
+              }`}
+            >
+              <HomeIcon name={item.icon || "scale"} size={28} className="h-5 w-5" />
+            </span>
+            <p className={`text-[0.8rem] leading-[1.4] ${isDark ? "text-white/72" : "text-[var(--color-text-muted)]"}`}>
+              {item.preview}
+            </p>
+          </div>
+
+          <span className="relative z-10 pointer-events-none text-right text-[0.82rem] font-semibold text-[var(--color-primary)]">
+            Read the verdict →
+          </span>
         </div>
       ))}
     </div>
   );
 }
 
-function ComparisonCard({ item, isDark }) {
-  const options =
-    item.options ||
-    (item.vsLabels || []).map((label) => ({ label }));
+function DataNote({ note, isDark }) {
+  if (!note) return null;
 
   return (
-    <article
-      className={`relative overflow-hidden rounded-md border shadow-[0_12px_32px_rgba(10,26,43,0.08)] ${
-        isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"
+    <div
+      className={`mt-5 flex items-start gap-3 rounded-md border px-4 py-4 md:mt-6 md:items-center md:gap-4 md:px-5 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[var(--color-border)] bg-[var(--color-page-soft)]"
       }`}
     >
-      <NumberBadge id={item.id} isDark={isDark} />
-      <div className="grid md:grid-cols-[minmax(260px,0.98fr)_minmax(280px,1fr)]">
-        <div className={`min-w-0 border-b md:border-b-0 md:border-r ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
-          <div className="relative h-40 md:h-36">
-            <Image src={item.image.src} alt={item.image.alt} fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 360px" />
-            <div className={isDark ? "absolute inset-0 bg-[rgba(13,28,24,0.14)]" : "absolute inset-0 bg-[rgba(255,255,255,0.1)]"} />
-          </div>
-          <OptionRow options={options} isDark={isDark} />
-        </div>
-
-        <div className="flex min-w-0 flex-col p-4 md:p-5">
-          <h3 className={`text-[1.35rem] font-bold leading-tight md:text-[1.25rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</h3>
-          <p className={`mt-4 text-[0.81rem] leading-[1.5] md:mt-3 md:text-[0.9rem] ${isDark ? "text-white/78" : "text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: item.preview }} />
-          <Link href={item.link.href} className="mt-5 flex items-center justify-end gap-3 text-[0.95rem] font-semibold text-[var(--color-primary)] md:mt-auto md:text-[0.9rem]">
-            <span>{item.link.label}</span>
-            <ArrowIcon />
-          </Link>
-        </div>
-      </div>
-    </article>
+      <span
+        className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${
+          isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"
+        }`}
+      >
+        <HomeIcon name={note.icon || "realData"} size={28} tone="silver" className="h-6 w-6" />
+      </span>
+      <p className={`text-[0.8rem] leading-[1.45] md:text-[0.88rem] ${isDark ? "text-white/82" : "text-[var(--color-text-muted)]"}`}>
+        <strong className={isDark ? "text-white" : "text-[var(--color-text)]"}>{note.title}</strong> {note.text}
+      </p>
+    </div>
   );
 }
 
 export default function HomeSec5({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const fallbackImage =
-    data.headerImages?.[0] ||
-    data.headerImage || {
-      src: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
-      alt: "Jaguar comparisons",
-    };
-  const heroImage =
-    (isDark ? data.heroImages?.dark : data.heroImages?.light) || fallbackImage;
+  const comparisons = data.comparisons || [];
+  const columns = data.columns || ["#", "COMPARISON", "VERDICT PREVIEW", "LINK"];
+  const headerImage = data.headerImage?.src || "/sec2-bg.webp";
 
   return (
-    <section className={`relative overflow-hidden px-3 py-7 md:py-8 ${isDark ? "bg-[#0d1c18]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 hidden h-[330px] md:block">
-        <Image src={heroImage.src} alt={heroImage.alt} fill className="object-cover object-[82%_center]" sizes="100vw" />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(13,28,24,0.96)_0%,rgba(13,28,24,0.8)_38%,rgba(13,28,24,0.24)_76%)]" : "absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.9)_42%,rgba(255,255,255,0.08)_78%)]"} />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,#0d1c18_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,white_0%,transparent_100%)]"} />
+    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-8 ${isDark ? "bg-[#0d1c18]" : "bg-[var(--color-page)]"}`}>
+      <div className="absolute inset-x-0 top-0 h-[240px] md:h-[300px]">
+        <Image
+          src={headerImage}
+          alt={data.headerImage?.alt || ""}
+          fill
+          className="object-cover object-[78%_center] md:object-[75%_center]"
+          sizes="100vw"
+        />
+        <div
+          className={
+            isDark
+              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(13,28,24,0.78)_0%,rgba(13,28,24,0.62)_40%,rgba(13,28,24,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(13,28,24,0.96)_0%,rgba(13,28,24,0.72)_42%,rgba(13,28,24,0.2)_80%)]"
+              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(248,247,242,0.72)_0%,rgba(248,247,242,0.48)_40%,rgba(248,247,242,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.82)_44%,rgba(248,247,242,0.12)_80%)]"
+          }
+        />
+        <div
+          className={`pointer-events-none absolute inset-0 md:hidden ${
+            isDark
+              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(13,28,24,0.95)_0%,rgba(13,28,24,0.7)_42%,transparent_72%)]"
+              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.82)_42%,transparent_72%)]"
+          }`}
+        />
       </div>
 
       <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[720px] pt-1 md:pt-9">
-          <h2 className={`text-[2.1rem] font-bold leading-[1.03] tracking-normal md:text-[3.3rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Comparison Hub — Head-to-Head Verdicts</h2>
-          <div className="mt-4">
-            <MStripe />
+        <div className="relative max-w-[720px] text-left">
+          <div
+            className={`pointer-events-none absolute -inset-x-2 -top-3 bottom-0 rounded-lg md:hidden ${
+              isDark
+                ? "bg-[linear-gradient(90deg,rgba(13,28,24,0.88)_0%,rgba(13,28,24,0.55)_70%,transparent_100%)]"
+                : "bg-[linear-gradient(90deg,rgba(248,247,242,0.92)_0%,rgba(248,247,242,0.62)_70%,transparent_100%)]"
+            }`}
+          />
+          <div className="relative z-10">
+            <HeadingEyebrow text={data.eyebrow || "SECTION 07"} />
+            <h2
+              className={`mt-3 text-[2.1rem] font-medium leading-[1.08] tracking-normal md:text-[3.1rem] ${
+                isDark ? "text-white" : "text-[var(--color-text)]"
+              }`}
+            >
+              Comparison Hub – Head-to-Head <span className="text-[var(--color-primary)]">Verdicts</span>
+            </h2>
+            <p
+              className={`mt-4 max-w-[640px] text-[0.9rem] leading-[1.45] md:text-[1.02rem] ${
+                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
+              }`}
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
           </div>
-          <p className={`mt-4 max-w-[690px] text-[0.85rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/82" : "text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         </div>
 
-        <div className="mt-7 grid gap-4 md:grid-cols-2 md:gap-4">
-          {data.comparisons.map((item) => (
-            <ComparisonCard key={item.id} item={item} isDark={isDark} />
+        <DesktopTable columns={columns} comparisons={comparisons} isDark={isDark} />
+
+        <ul className="mt-5 grid gap-3 md:hidden">
+          {comparisons.map((item) => (
+            <li key={item.id}>
+              <MobileCard item={item} isDark={isDark} />
+            </li>
           ))}
-        </div>
+        </ul>
 
-        <div className="mt-7 hidden h-3 items-center md:flex">
-          <span className="h-full flex-[1.1] -skew-x-[28deg] bg-[var(--color-primary)]" />
-          <span className="h-full flex-[1.25] -skew-x-[28deg] bg-[var(--color-chrome)]" />
-          <span className="h-full flex-[1.8] -skew-x-[28deg] bg-[var(--color-accent-red)]" />
-          <span className="h-full flex-[1.5] -skew-x-[28deg] bg-[linear-gradient(90deg,#ed1c24_0%,rgba(237,28,36,0)_100%)]" />
-        </div>
+        <DataNote note={data.dataNote} isDark={isDark} />
       </div>
     </section>
   );

@@ -1,88 +1,128 @@
 {
+  "eyebrow": "SECTION 04",
   "subHeadline": "The verdicts people actually want before they read a single spec sheet — the calls we'd make for a friend, backed by real UK enquiry and failure data.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=900&q=80",
-    "alt": "Land Rover Defender"
+    "src": "/sec2-bg.webp",
+    "alt": "Land Rover ownership rankings"
   },
   "columns": ["RANKING", "WINNER", "WHY", "VERDICT"],
   "rankings": [
     {
+      "rank": 1,
       "ranking": "Most Reliable Engine",
-      "icon": "⚙️",
       "winner": "4.4 SDV8 (508PS)",
       "why": "Highest replacement cost in the range, but by far the lowest failure rate — oil cooler wear aside, largely trouble-free.",
-      "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
+      "verdict": {
+        "icon": "flagshipChoice",
+        "label": "BEST",
+        "sublabel": "Top Performer",
+        "type": "best"
+      },
+      "image": { "src": "/right.webp", "alt": "4.4 SDV8 engine" },
       "href": "#"
     },
     {
+      "rank": 2,
       "ranking": "Most Reliable Model",
-      "icon": "🚗",
       "winner": "Discovery 5",
       "why": "Revised post-2019 Ingenium engines and a lighter aluminium platform give it the strongest all-round ownership profile.",
-      "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
+      "verdict": {
+        "icon": "flagshipChoice",
+        "label": "BEST",
+        "sublabel": "Top Performer",
+        "type": "best"
+      },
+      "image": { "src": "/right.webp", "alt": "Discovery 5" },
       "href": "#"
     },
     {
+      "rank": 3,
       "ranking": "Best Used Buy",
-      "icon": "🏷️",
       "winner": "Discovery 4 (SDV6)",
       "why": "Genuinely capable when the oil-interval history is proven — the discipline matters more than the mileage.",
-      "verdict": { "icon": "✅", "text": "Safe", "type": "safe" },
+      "verdict": {
+        "icon": "safestBuy",
+        "label": "SAFE",
+        "sublabel": "Good Choice",
+        "type": "safe"
+      },
+      "image": { "src": "/right.webp", "alt": "Discovery 4" },
       "href": "#"
     },
     {
+      "rank": 4,
       "ranking": "Most Expensive Failure",
-      "icon": "💥",
       "winner": "306DT (TDV6/SDV6) Crank Failure",
       "why": "Catastrophic bearing failure, £6,500–£9,500 full recon, and largely unrepairable once it starts.",
-      "verdict": { "icon": "🔴", "text": "Avoid", "type": "avoid" },
+      "verdict": {
+        "icon": "check",
+        "label": "AVOID",
+        "sublabel": "High Risk",
+        "type": "avoid"
+      },
+      "image": { "src": "/right.webp", "alt": "TDV6 crank failure" },
       "href": "#"
     },
     {
+      "rank": 5,
       "ranking": "Safest Range Rover to Buy",
-      "icon": "🛡️",
       "winner": "L405 (2012–2021)",
       "why": "Typical values of £14,000–£55,000 against £6,500–£12,000 recon cost — comfortably safe across almost every example.",
-      "verdict": { "icon": "✅", "text": "Safe", "type": "safe" },
+      "verdict": {
+        "icon": "safestBuy",
+        "label": "SAFE",
+        "sublabel": "Good Choice",
+        "type": "safe"
+      },
+      "image": { "src": "/right.webp", "alt": "Range Rover L405" },
       "href": "#"
     },
     {
+      "rank": 6,
       "ranking": "Highest Risk Purchase",
-      "icon": "⚠️",
       "winner": "Early Evoque L538 (pre-2019, 204DTD)",
       "why": "Timing chain tensioner risk sits on an ageing, lower-value host — the combination that flags 'Watch' most often.",
-      "verdict": { "icon": "⚠️", "text": "Watch", "type": "watch" },
+      "verdict": {
+        "icon": "check",
+        "label": "WATCH",
+        "sublabel": "Proceed Carefully",
+        "type": "watch"
+      },
+      "image": { "src": "/right.webp", "alt": "Range Rover Evoque" },
       "href": "#"
     },
     {
+      "rank": 7,
       "ranking": "Best Family Land Rover",
-      "icon": "👨‍👩‍👧‍👦",
       "winner": "Discovery 5",
       "why": "Seven seats, the more dependable revised Ingenium range, and the best-supported specialist network.",
-      "verdict": { "icon": "👨‍👩‍👧‍👦", "text": "Best", "type": "best" },
+      "verdict": {
+        "icon": "bestFamily",
+        "label": "BEST",
+        "sublabel": "Family Choice",
+        "type": "family"
+      },
+      "image": { "src": "/right.webp", "alt": "Discovery 5 family" },
       "href": "#"
     },
     {
+      "rank": 8,
       "ranking": "Best Long-Term Keeper",
-      "icon": "⏳",
       "winner": "Defender L663",
       "why": "High host value across both engines fitted means replacement is comfortably 'Safe' at almost any spec.",
-      "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
+      "verdict": {
+        "icon": "flagshipChoice",
+        "label": "BEST",
+        "sublabel": "Long-Term Choice",
+        "type": "best"
+      },
+      "image": { "src": "/right.webp", "alt": "Defender L663" },
       "href": "#"
     }
   ],
-  "dataSources": {
-    "title": "Data Note",
-    "columns": ["Source", "Note"],
-    "rows": [
-      {
-        "claim": "Enquiry volume & replacement costs",
-        "source": "EM_Proprietary_Data_2025.txt — Enquiry and cost data [EM-VERIFIED]"
-      },
-      {
-        "claim": "Most Reliable Model / Best Family / Engine-Model pairings",
-        "source": "Editorial synthesis of failure-pattern data — worth a JLR specialist sense-check before publishing"
-      }
-    ]
+  "dataNote": {
+    "icon": "realData",
+    "title": "Data Note:",
+    "text": "Rankings synthesise 2025 UK enquiry volume, replacement-cost bands and known JLR failure patterns. They are ownership guidance — not a substitute for a specialist inspection of the specific vehicle."
   }
 }

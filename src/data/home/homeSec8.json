@@ -1,101 +1,71 @@
 {
+  "eyebrow": "SECTION 06",
   "subHeadline": "Deep, permanent reference hubs for the engines and systems Land Rover owners research most — not blog posts, not one-off articles. Every guide is built on real UK enquiry data and JLR-specific expertise.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=900&q=80",
-    "alt": "Land Rover engine knowledge"
+    "src": "/sec2-bg.webp",
+    "alt": "Knowledge centres background"
   },
   "centres": [
     {
-      "id": 1,
+      "id": "01",
       "title": "TDV6 Knowledge Centre",
-      "icon": "🔧",
+      "icon": "expertVerified",
       "description": "Every variant, every failure, every generation it was fitted to — the 2.7 and 3.0 TDV6/SDV6 complete guide.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
-        "alt": "TDV6 Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "href": "#"
     },
     {
-      "id": 2,
+      "id": "02",
       "title": "SDV6 Knowledge Centre",
-      "icon": "🔧",
+      "icon": "engine",
       "description": "The 3.0 V6 diesel's full ownership profile — performance, reliability, and known issues.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-        "alt": "SDV6 Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "href": "#"
     },
     {
-      "id": 3,
+      "id": "03",
       "title": "Ingenium Knowledge Centre",
-      "icon": "⛓️",
+      "icon": "ingenium",
       "description": "Petrol vs diesel reliability, pre- and post-2019 changes, and what to look for when buying.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
-        "alt": "Ingenium Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "href": "#"
     },
     {
-      "id": 4,
+      "id": "04",
       "title": "SDV8 Knowledge Centre",
-      "icon": "🏆",
+      "icon": "flagshipChoice",
       "description": "The 4.4 V8 diesel's reliability record and running costs — the most durable engine in the range.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-        "alt": "SDV8 Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "href": "#"
     },
     {
-      "id": 5,
+      "id": "05",
       "title": "Air Suspension Knowledge Centre",
-      "icon": "🚙",
+      "icon": "airSuspension",
       "description": "Common faults, compressor failure, replacement costs, and how to diagnose EAS issues.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
-        "alt": "Air Suspension Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "href": "#"
     },
     {
-      "id": 6,
+      "id": "06",
       "title": "Terrain Response Systems",
-      "icon": "🚜",
+      "icon": "terrainResponse",
       "description": "What goes wrong, what it costs to fix, and how to maintain JLR's advanced 4x4 system.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-        "alt": "Terrain Response Systems"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "href": "#"
     },
     {
-      "id": 7,
+      "id": "07",
       "title": "ZF Gearbox Problems",
-      "icon": "⚙️",
+      "icon": "gearbox",
       "description": "The 8-speed automatic's known issues across JLR's range — mechatronic, torque converter, and more.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
-        "alt": "ZF Gearbox Problems"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "href": "#"
     },
     {
-      "id": 8,
+      "id": "08",
       "title": "Transfer Box & Differential Problems",
-      "icon": "🔄",
+      "icon": "drivetrain",
       "description": "4x4 system faults by model and generation — ATC300/400 chain stretch, diff whine, and UJ failures.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-        "alt": "Transfer Box & Differential Problems"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "href": "#"
     }
   ],
-  "footer": {
-    "title": "100% Data-Verified. Built for Land Rover & Range Rover Owners.",
-    "text": "Every knowledge centre is built on real UK enquiry data and JLR-specific expertise."
+  "dataNote": {
+    "icon": "realData",
+    "title": "DATA NOTE",
+    "text": "Knowledge centre content is synthesised from real UK enquiry patterns and documented JLR failure modes. Entries marked [EM-VERIFIED] draw on proprietary enquiry, mileage and cost data."
   }
 }

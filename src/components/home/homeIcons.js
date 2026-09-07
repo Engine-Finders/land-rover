@@ -45,6 +45,20 @@ export const HOME_ICON_FILES = {
   terrainResponse: "Terrain response Icon-01.png",
   gearbox: "Gearbox problem  Icon-01.png",
   knowledgeCentre: "Knowledge centre icon-01.png",
+  database: "Database Icon-01.png",
+  bestUsedBuy: "Best Used buy icon-01.png",
+  bestLongTerm: "Best Long term Icon-01.png",
+  topChoice: "Top choice-01.png",
+  expensiveFailure: "Expensive failure icon-01.png",
+  checkWatch: "Check Watch-01.png",
+  note: "Note Icon-01.png",
+  faq: "Faq Icon-01.png",
+  liveFeed: "Live Feed icon-01.png",
+  trend: "Trend icon-01.png",
+  getGuidance: "Get Guidance Icon-01.png",
+  phone: "Phone Icon-01.png",
+  callSpecialist: "Call a specialist Icon-01.png",
+  quote: "Quote Icon-01.png",
 };
 
 function iconSrc(filename) {

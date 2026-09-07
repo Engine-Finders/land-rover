@@ -1,34 +1,49 @@
 {
-  "items": [
+  "eyebrow": "FINAL CTA",
+  "subHeadline": "Free, expert guidance. Real data. Honest advice.",
+  "headerImage": {
+    "src": "/right.webp",
+    "alt": "Range Rover in the mountains"
+  },
+  "stats": [
     {
-      "id": 1,
-      "question": "Is it worth replacing a Land Rover engine?",
-      "answer": "It depends entirely on vehicle value versus replacement cost. A Range Rover Sport or Defender L663 will almost always justify replacement — the car is worth far more than the engine. A Freelander 2 or early Discovery Sport often won't; replacement cost can exceed what the car is worth outright. Use our diagnostic calculator above to get a personalised verdict."
+      "icon": "trend",
+      "value": "24,650+",
+      "label": "UK enquiries analysed"
     },
     {
-      "id": 2,
-      "question": "Which Land Rover engine should I avoid?",
-      "answer": "The 2.7 TDV6 (<a href='https://landroverengine.uk/engine/276dt'>276DT</a>) and the 3.0 TDV6/SDV6 (<a href='https://landroverengine.uk/engine/306dt'>306DT</a>) carry the highest catastrophic-failure risk in the range — both can suffer bottom-end failures that leave little to rebuild. The 4.4 SDV8 and post-2019 Ingenium units are considerably more dependable. See our Engine Rankings for the full breakdown."
+      "icon": "engine",
+      "value": "50+",
+      "label": "engine codes tracked"
     },
     {
-      "id": 3,
-      "question": "Is the Ingenium engine reliable?",
-      "answer": "The petrol Ingenium (204PT) has a noticeably better reliability record than the diesel (204DTD), which suffered timing chain tensioner issues on pre-2019 builds. JLR revised the design from 2019 onward, and those engines carry meaningfully lower risk. Check our Ingenium Knowledge Centre for full details."
+      "icon": "quote",
+      "value": "Real quotes,",
+      "label": "real costs"
     },
     {
-      "id": 4,
-      "question": "Discovery 4 vs Discovery 5 — which is more reliable?",
-      "answer": "The Discovery 5 benefits from the revised, more dependable Ingenium engines and a lighter aluminium platform. The Discovery 4 is more readily available on the SDV6, which is powerful but carries real crankshaft bearing risk at higher mileages — service history matters more than the badge."
-    },
-    {
-      "id": 5,
-      "question": "How do I know if my Land Rover is worth repairing?",
-      "answer": "Compare your realistic vehicle value against the full replacement quote, not just the repair estimate. As a rule, if replacement cost sits above roughly 60% of what the car is worth, it's worth getting a scrap valuation before committing. Use our Ownership Decision Tool for a personalised assessment."
-    },
-    {
-      "id": 6,
-      "question": "Which is the safest Range Rover to buy used?",
-      "answer": "The L405 (2012–2021) offers the widest margin between typical resale value and replacement cost of any generation, which is why it tops our safest-to-buy ranking. The newer L460 is even safer on paper, but at a significantly higher entry price."
+      "icon": "independent",
+      "value": "Independent &",
+      "label": "unbiased"
     }
-  ]
+  ],
+  "primaryCta": {
+    "icon": "getGuidance",
+    "eyebrow": "GET YOUR FREE GUIDANCE",
+    "title": "Ask a Land Rover engine specialist",
+    "href": "/quote"
+  },
+  "secondaryCta": {
+    "icon": "phone",
+    "eyebrow": "CALL A SPECIALIST",
+    "title": "Speak to a Land Rover expert now",
+    "href": "tel:+440000000000"
+  },
+  "review": {
+    "brand": "Trustpilot",
+    "score": "4.8 out of 5",
+    "reviews": "from 1200+ reviews",
+    "stars": 5,
+    "quote": "Trusted by thousands of Land Rover owners across the UK."
+  }
 }

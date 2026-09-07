@@ -1,33 +1,65 @@
 {
-  "subHeadline": "Built on real data, verified by specialists, and completely independent — no sponsors, no bias, just honest advice.",
-  "headerImage": {
-    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=900&q=80",
-    "alt": "Land Rover trust"
-  },
+  "eyebrow": "TRUST",
+  "subHeadline": "Built on real data, verified by specialists, and written for owners. We don't sell cars. We don't guess. We give you the truth so you can make the right decision.",
   "signals": [
     {
-      "id": 1,
-      "icon": "📊",
+      "id": "01",
+      "icon": "realData",
       "title": "Built on Real Data",
       "description": "Every reliability rating and cost range comes from genuine UK quote and enquiry data — not manufacturer marketing, not forum guesswork."
     },
     {
-      "id": 2,
-      "icon": "💚",
+      "id": "02",
+      "icon": "scale",
       "title": "We Tell You When Not to Repair",
       "description": "Where replacement cost exceeds what the car is worth, we say so. That's the difference between a knowledge base and a sales page."
     },
     {
-      "id": 3,
-      "icon": "🔧",
+      "id": "03",
+      "icon": "vettedSpecialists",
       "title": "Vetted JLR Specialists",
       "description": "Every specialist in our network is vetted specifically for Land Rover and Range Rover work — not generalists who happen to take on JLR jobs."
     },
     {
-      "id": 4,
-      "icon": "🏆",
+      "id": "04",
+      "icon": "engineFinders",
       "title": "Part of Engine Finders",
-      "description": "LandRoverEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+      "description": "LandRoverEngine.uk is part of the Engine Finders family — research depth of an independent authority with a vetted route to action when you need one."
+    },
+    {
+      "id": "05",
+      "icon": "liveFeed",
+      "title": "Updated Monthly",
+      "description": "Enquiry volumes, cost ranges, and market insights are refreshed monthly from live UK data — not a static guide that goes stale."
+    },
+    {
+      "id": "06",
+      "icon": "independent",
+      "title": "Independent Advice",
+      "description": "No manufacturer sponsors. No dealer bias. Just honest guidance built for Land Rover and Range Rover owners making real decisions."
     }
-  ]
+  ],
+  "commitment": {
+    "eyebrow": "OUR COMMITMENT",
+    "icon": "expertVerified",
+    "title": "The truth about Land Rover ownership — even when it's not what you want to hear.",
+    "text": "We built this site because owners deserve straight answers. When a repair makes sense, we'll say so. When it doesn't, we'll say that too — backed by real enquiry data, not sales pressure.",
+    "signature": "Joe Miller",
+    "signatureRole": "EnginesMarket UK Team",
+    "image": {
+      "src": "/right.webp",
+      "alt": "Land Rover Defender in the mountains"
+    }
+  },
+  "dataNote": {
+    "icon": "expertVerified",
+    "title": "Data Note:",
+    "text": "All enquiry volumes and market insights are from EM_Proprietary_Data_2025.txt (updated monthly).",
+    "verified": "[EM-VERIFIED]",
+    "stats": [
+      { "label": "9,000+ enquiries" },
+      { "label": "15+ engine codes" },
+      { "label": "Live UK market data" }
+    ]
+  }
 }

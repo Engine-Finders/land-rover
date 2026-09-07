@@ -11,7 +11,6 @@ import HomeSec10 from "@/components/home/HomeSec10";
 import HomeSec11 from "@/components/home/HomeSec11";
 import HomeSec12 from "@/components/home/HomeSec12";
 import HomeSec13 from "@/components/home/HomeSec13";
-import HomeSec14 from "@/components/home/HomeSec14";
 import homeSec1Data from "@/data/home/homeSec1.json";
 import homeSec2Data from "@/data/home/homeSec2.json";
 import homeSec3Data from "@/data/home/homeSec3.json";
@@ -25,7 +24,6 @@ import homeSec10Data from "@/data/home/homeSec10.json";
 import homeSec11Data from "@/data/home/homeSec11.json";
 import homeSec12Data from "@/data/home/homeSec12.json";
 import homeSec13Data from "@/data/home/homeSec13.json";
-import homeSec14Data from "@/data/home/homeSec14.json";
 
 export default function Home() {
   return (
@@ -40,12 +38,12 @@ export default function Home() {
       <HomeSec5 data={homeSec5Data} />
 
       <HomeSec6 data={homeSec6Data} />
-      <HomeSec7 data={homeSec7Data} />
       <HomeSec10 data={homeSec10Data} />
+
+      {/* <HomeSec7 data={homeSec7Data} /> */}
       <HomeSec11 data={homeSec11Data} />
       <HomeSec12 data={homeSec12Data} />
       <HomeSec13 data={homeSec13Data} />
-      <HomeSec14 data={homeSec14Data} />
     </main>
   );
 }

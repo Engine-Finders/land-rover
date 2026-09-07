@@ -1,89 +1,74 @@
 {
+  "eyebrow": "SECTION 09",
   "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate — 9,000+ real enquiries, 15+ engine codes tracked, and live market insights updated monthly.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=900&q=80",
-    "alt": "Land Rover market intelligence"
+    "src": "/sec2-bg.webp",
+    "alt": "Market intelligence background"
   },
-  "stats": [
-    { "icon": "👥", "label": "9,000+ Real UK Enquiries in 2025" },
-    { "icon": "⚙️", "label": "15+ Engine Codes Tracked" },
-    { "icon": "🔄", "label": "Updated Monthly" }
-  ],
   "engines": {
-    "title": "Most-Enquired Engines (2025)",
-    "icon": "⚙️",
-    "columns": ["RANK", "ENGINE CODE", "LABEL", "ENQUIRIES"],
+    "title": "MOST-ENQUIRED ENGINES (2025)",
+    "icon": "engine",
+    "footerLabel": "View all engines →",
+    "footerHref": "#",
     "rows": [
-      { "rank": 1, "code": "204DTD", "label": "Ingenium Diesel", "enquiries": "1,150 [EM-VERIFIED]" },
-      { "rank": 2, "code": "306DT", "label": "TDV6/SDV6 3.0", "enquiries": "980 [EM-VERIFIED]" },
-      { "rank": 3, "code": "276DT", "label": "2.7 TDV6", "enquiries": "700 [EM-VERIFIED]" },
-      { "rank": 4, "code": "368DT", "label": "3.6 TDV8", "enquiries": "650 [EM-VERIFIED]" },
-      { "rank": 5, "code": "508PS", "label": "4.4 SDV8", "enquiries": "620 [EM-VERIFIED]" },
-      { "rank": 6, "code": "204PT", "label": "Ingenium Petrol", "enquiries": "480 [EM-VERIFIED]" }
+      { "rank": 1, "code": "204DTD", "label": "Ingenium Diesel", "enquiries": "1,150", "pct": 100 },
+      { "rank": 2, "code": "306DT", "label": "TDV6/SDV6 3.0", "enquiries": "980", "pct": 85 },
+      { "rank": 3, "code": "276DT", "label": "2.7 TDV6", "enquiries": "700", "pct": 61 },
+      { "rank": 4, "code": "368DT", "label": "3.6 TDV8", "enquiries": "650", "pct": 57 },
+      { "rank": 5, "code": "508PS", "label": "4.4 SDV8", "enquiries": "620", "pct": 54 },
+      { "rank": 6, "code": "204PT", "label": "Ingenium Petrol", "enquiries": "480", "pct": 42 }
     ]
   },
   "models": {
-    "title": "Most-Enquired Models (2025)",
-    "icon": "🚗",
-    "columns": ["RANK", "MODEL", "ENQUIRIES"],
+    "title": "MOST-ENQUIRED MODELS (2025)",
+    "icon": "vehicle",
+    "footerLabel": "View all models →",
+    "footerHref": "#",
     "rows": [
-      { "rank": 1, "model": "Discovery Sport L550", "enquiries": "362 [EM-VERIFIED]" },
-      { "rank": 2, "model": "Range Rover Evoque L551", "enquiries": "349 [EM-VERIFIED]" },
-      { "rank": 3, "model": "Range Rover Sport L494", "enquiries": "308 [EM-VERIFIED]" },
-      { "rank": 4, "model": "Defender L663", "enquiries": "292 [EM-VERIFIED]" },
-      { "rank": 5, "model": "Range Rover L405", "enquiries": "284 [EM-VERIFIED]" },
-      { "rank": 6, "model": "Range Rover Evoque L538", "enquiries": "244 [EM-VERIFIED]" }
+      { "rank": 1, "model": "Discovery Sport L550", "enquiries": "362" },
+      { "rank": 2, "model": "Range Rover Evoque L551", "enquiries": "349" },
+      { "rank": 3, "model": "Range Rover Sport L494", "enquiries": "308" },
+      { "rank": 4, "model": "Defender L663", "enquiries": "292" },
+      { "rank": 5, "model": "Range Rover L405", "enquiries": "284" },
+      { "rank": 6, "model": "Range Rover Evoque L538", "enquiries": "244" }
     ]
   },
   "replacementCosts": {
-    "title": "Replacement Cost Index (Reconditioned, Supply-Only)",
-    "icon": "£",
-    "columns": ["ENGINE CODE", "COST RANGE"],
+    "title": "REPLACEMENT COST INDEX",
+    "subtitle": "RECONDITIONED, SUPPLY-ONLY",
+    "icon": "checkValue",
     "rows": [
-      { "code": "204DTD", "cost": "£3,500–£5,800" },
-      { "code": "306DT TDV6/SDV6", "cost": "£6,500–£9,500" },
-      { "code": "276DT", "cost": "£5,000–£7,500" },
-      { "code": "368DT", "cost": "£5,500–£8,000" },
-      { "code": "508PS", "cost": "£8,000–£12,000" }
+      { "code": "204DTD", "label": "Ingenium Diesel", "cost": "£3,500 – £5,800" },
+      { "code": "306DT", "label": "TDV6/SDV6", "cost": "£6,500 – £9,500" },
+      { "code": "276DT", "label": "2.7 TDV6", "cost": "£5,000 – £7,500" },
+      { "code": "368DT", "label": "3.6 TDV8", "cost": "£5,500 – £8,000" },
+      { "code": "508PS", "label": "4.4 SDV8", "cost": "£8,000 – £12,000" }
     ]
   },
   "failures": {
-    "title": "Highest-Risk Failures",
-    "icon": "⚠️",
-    "columns": ["RANK", "FAILURE", "RISK LEVEL"],
+    "title": "HIGHEST-RISK FAILURES",
+    "icon": "symptoms",
     "rows": [
       {
-        "rank": 1,
         "failure": "306DT Crankshaft Bearing Failure",
-        "risk": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" }
+        "note": "Cold-start knock is the early warning — often catastrophic once pressure drops.",
+        "risk": { "label": "CATASTROPHIC", "type": "catastrophic" }
       },
       {
-        "rank": 2,
         "failure": "276DT Oil Pump Housing Failure",
-        "risk": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" }
+        "note": "Can kill the engine outright before other symptoms appear.",
+        "risk": { "label": "CATASTROPHIC", "type": "catastrophic" }
       },
       {
-        "rank": 3,
         "failure": "204DTD Pre-2019 Timing Chain Tensioner Wear",
-        "risk": { "icon": "🟡", "label": "Monitor", "type": "monitor" }
+        "note": "Improved from 2019 — still worth monitoring on early Ingenium diesels.",
+        "risk": { "label": "MONITOR", "type": "monitor" }
       }
     ]
   },
-  "regionalDemand": {
-    "title": "Regional Demand",
-    "icon": "🌐",
-    "columns": ["REGION", "PERCENTAGE"],
-    "rows": [
-      { "region": "South East", "percentage": "24% [EM-VERIFIED]" },
-      { "region": "London", "percentage": "18% [EM-VERIFIED]" },
-      { "region": "North West", "percentage": "14% [EM-VERIFIED]" },
-      { "region": "Midlands", "percentage": "12% [EM-VERIFIED]" }
-    ]
-  },
   "liveFeed": {
-    "title": "Live Enquiry Feed",
-    "icon": "📡",
-    "columns": ["VEHICLE", "LOCATION", "ISSUE", "TIMESTAMP"],
+    "title": "LIVE ENQUIRY FEED",
+    "icon": "realEnquiries",
     "rows": [
       {
         "vehicle": "Discovery 4 (SDV6)",
@@ -109,7 +94,32 @@
         "issue": "Air suspension compressor failure",
         "timestamp": "12 hours ago"
       }
-    ],
-    "footer": "Updated monthly from EM_Proprietary_Data_2025.txt"
+    ]
+  },
+  "insights": {
+    "title": "MARKET INSIGHTS",
+    "icon": "calculator",
+    "items": [
+      {
+        "tone": "green",
+        "title": "Enquiry trend",
+        "text": "Ingenium diesel and TDV6 enquiries remain the two highest volumes in 2025 — demand is concentrated on the engines owners fear most."
+      },
+      {
+        "tone": "orange",
+        "title": "Cost pressure",
+        "text": "Reconditioned supply-only bands for key JLR engines have edged up; high host-value models still clear the replacement maths more easily."
+      }
+    ]
+  },
+  "dataNote": {
+    "icon": "realData",
+    "title": "DATA NOTE:",
+    "text": "All data in this section comes from real UK enquiries via EnginesMarket.",
+    "stats": [
+      { "label": "Enquiry volumes", "value": "9,000+" },
+      { "label": "Engine codes tracked", "value": "15+" },
+      { "label": "Last updated", "value": "May 2025" }
+    ]
   }
 }

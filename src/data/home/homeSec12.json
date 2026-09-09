@@ -1,5 +1,5 @@
 {
-  "eyebrow": "TRUST",
+  "eyebrow": "TRUST & FAQ",
   "subHeadline": "Built on real data, verified by specialists, and written for owners. We don't sell cars. We don't guess. We give you the truth so you can make the right decision.",
   "signals": [
     {
@@ -49,6 +49,46 @@
     "image": {
       "src": "/right.webp",
       "alt": "Land Rover Defender in the mountains"
+    }
+  },
+  "faq": {
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "icon": "faq",
+    "viewAllLabel": "View all FAQs →",
+    "viewAllHref": "#",
+    "items": [
+      {
+        "question": "Where does your data come from?",
+        "answer": "All enquiry volumes and market insights come from real UK enquiries via EnginesMarket — updated monthly and marked [EM-VERIFIED] where applicable."
+      },
+      {
+        "question": "How are your replacement cost ranges calculated?",
+        "answer": "Ranges are drawn from real reconditioned and supply-only quotes across the EnginesMarket network, not manufacturer list prices or forum averages."
+      },
+      {
+        "question": "Do you sell engines or parts?",
+        "answer": "No. This site is an independent ownership guide. When you need action, we can point you to vetted specialists — we don't push products."
+      },
+      {
+        "question": "Are your guides model and engine specific?",
+        "answer": "Yes. Guides are organised by model, generation and engine code so the advice matches the vehicle you actually own or are considering."
+      },
+      {
+        "question": "How often is the information updated?",
+        "answer": "Enquiry volumes, cost ranges and market insights are refreshed monthly from live UK data."
+      }
+    ]
+  },
+  "cta": {
+    "icon": "expertVerified",
+    "title": "Still not sure what's right for your Land Rover?",
+    "text": "Get specialist advice tailored to your model, engine and budget.",
+    "buttonLabel": "GET FREE EXPERT ADVICE →",
+    "buttonHref": "/quote",
+    "note": "No obligation. 100% confidential.",
+    "image": {
+      "src": "/right.webp",
+      "alt": "Land Rover models"
     }
   },
   "dataNote": {

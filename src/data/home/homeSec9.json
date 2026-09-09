@@ -1,6 +1,6 @@
 {
   "eyebrow": "FAILURE DATABASE",
-  "subHeadline": "A permanent, categorised reference — not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
+  "subHeadline": "A permanent, categorised reference — not symptom-chasing blog posts.<br class=\"hidden md:inline\" /> Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
   "categories": [
     {
       "id": "engine",

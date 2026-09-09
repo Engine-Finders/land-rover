@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+
 import { HomeIcon } from "@/components/home/homeIcons";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 
@@ -71,12 +73,25 @@ function BridgeEyebrow({ text }) {
   if (!text) return null;
 
   return (
-    <div className="flex w-full items-center gap-3">
-      <span className="h-px min-w-0 flex-1 bg-[var(--color-accent)]" />
-      <p className="shrink-0 text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)] md:text-[0.72rem]">
-        {text}
-      </p>
-      <span className="h-px min-w-0 flex-1 bg-[var(--color-accent)]" />
+    <p className="text-center text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)] md:text-[0.72rem]">
+      {text}
+    </p>
+  );
+}
+
+function BridgeHeading({ isDark }) {
+  return (
+    <div className="mt-3 flex w-full items-center justify-center gap-3 md:gap-5">
+      <span className="hidden h-px w-14 shrink-0 bg-[var(--color-accent)] sm:block md:w-24 lg:w-32" aria-hidden="true" />
+      <h2
+        className={`max-w-[18rem] text-center text-[1.55rem] font-medium leading-[1.15] tracking-normal sm:max-w-none md:text-[2.5rem] ${
+          isDark ? "text-white" : "text-[var(--color-text)]"
+        }`}
+      >
+        Real Data. Real Experts.{" "}
+        <span className={isDark ? "text-[var(--color-accent)]" : "text-[var(--color-primary)]"}>Real Trust.</span>
+      </h2>
+      <span className="hidden h-px w-14 shrink-0 bg-[var(--color-accent)] sm:block md:w-24 lg:w-32" aria-hidden="true" />
     </div>
   );
 }
@@ -85,89 +100,78 @@ function BridgeSection({ bridge, isDark }) {
   if (!bridge?.badges?.length) return null;
 
   return (
-    <div className={`relative ${isDark ? "bg-[#0d1c18]" : "bg-[var(--color-page)]"}`}>
+    <div className={`relative ${sectionBgClass("page")}`}>
       <div
-        className={`pointer-events-none absolute inset-0 opacity-[0.16] ${
+        className={`pointer-events-none absolute inset-0 opacity-[0.14] ${
           isDark
             ? "bg-[radial-gradient(circle_at_20%_20%,rgba(180,134,63,0.18),transparent_40%),radial-gradient(circle_at_80%_60%,rgba(105,181,138,0.12),transparent_45%)]"
             : "bg-[radial-gradient(circle_at_18%_20%,rgba(23,95,70,0.08),transparent_42%),radial-gradient(circle_at_82%_70%,rgba(180,134,63,0.1),transparent_46%)]"
         }`}
       />
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-8 pt-5 md:px-8 md:pb-10 md:pt-5">
-        <div className="md:hidden">
-          <h2
-            className={`text-center text-[1.7rem] font-medium leading-[1.15] ${
-              isDark ? "text-white" : "text-[var(--color-text)]"
-            }`}
-          >
-            Why Thousands of Owners <span className="text-[var(--color-primary)]">Trust Us</span>
-          </h2>
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-8 pt-5 md:px-8 md:pb-10 md:pt-6">
+        <BridgeEyebrow text={bridge.eyebrow} />
+        <BridgeHeading isDark={isDark} />
 
-          <ul className="mt-5 grid grid-cols-2 gap-3">
-            {bridge.badges.map((badge) => (
-              <li
-                key={badge.title}
-                className={`flex items-start gap-2.5 rounded-xl border p-3 ${
-                  isDark ? "border-white/12 bg-[rgba(16,28,24,0.72)]" : "border-[var(--color-border)] bg-white/80"
+        <ul className="mt-6 grid grid-cols-2 gap-0 lg:grid-cols-4">
+          {bridge.badges.map((badge, index) => (
+            <li
+              key={badge.title}
+              className={`flex flex-col items-center px-3 py-5 text-center md:px-5 md:py-2 ${
+                index % 2 === 1
+                  ? isDark
+                    ? "border-l border-white/12"
+                    : "border-l border-[var(--color-border)]"
+                  : ""
+              } ${
+                index >= 2
+                  ? isDark
+                    ? "border-t border-white/12 lg:border-t-0"
+                    : "border-t border-[var(--color-border)] lg:border-t-0"
+                  : ""
+              } ${
+                index > 0
+                  ? isDark
+                    ? "lg:border-l lg:border-white/12"
+                    : "lg:border-l lg:border-[var(--color-border)]"
+                  : ""
+              }`}
+            >
+              <span
+                className={`flex h-14 w-14 items-center justify-center rounded-full border md:h-16 md:w-16 ${
+                  isDark
+                    ? "border-[rgba(180,134,63,0.45)] bg-[rgba(20,39,33,0.7)]"
+                    : "border-[rgba(23,95,70,0.35)] bg-white/80"
                 }`}
               >
-                <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center">
-                  <HomeIcon name={badge.icon} size={44} tone={isDark ? "silver" : "black"} className="h-10 w-10" />
-                </span>
-                <p className={`text-[0.72rem] leading-[1.3] font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                  {badge.mobileText || `${badge.title}. ${badge.text}`}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="hidden md:block">
-          <BridgeEyebrow text={bridge.eyebrow} />
-          <h2
-            className={`mt-3 text-center text-[2.5rem] font-medium leading-[1.15] tracking-normal ${
-              isDark ? "text-white" : "text-[var(--color-text)]"
-            }`}
-          >
-            Real Data. Real Experts. <span className="text-[var(--color-primary)]">Real Trust.</span>
-          </h2>
-
-          <ul className="mt-6 grid gap-6 lg:grid-cols-4 lg:gap-7">
-            {bridge.badges.map((badge) => (
-              <li key={badge.title} className="flex flex-col items-center px-2 text-center">
-                <span
-                  className={`flex h-16 w-16 items-center justify-center rounded-full border ${
-                    isDark ? "border-[rgba(180,134,63,0.45)] bg-[rgba(20,39,33,0.7)]" : "border-[rgba(180,134,63,0.45)] bg-white/70"
-                  }`}
-                >
-                  <HomeIcon name={badge.icon} size={48} tone={isDark ? "silver" : "black"} className="h-12 w-12" />
-                </span>
-                <p className={`mt-4 text-[1rem] font-bold leading-[1.25] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                  {badge.title}
-                </p>
-                <p className={`mt-2 text-[0.86rem] leading-[1.4] ${isDark ? "text-white/72" : "text-[var(--color-text-muted)]"}`}>
-                  {badge.text}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
+                <HomeIcon name={badge.icon} size={48} tone={isDark ? "silver" : "black"} className="h-10 w-10 md:h-12 md:w-12" />
+              </span>
+              <p className={`mt-4 text-[0.92rem] font-bold leading-[1.25] md:text-[1rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                {badge.title}
+              </p>
+              <p className={`mt-2 max-w-[240px] text-[0.8rem] leading-[1.4] md:text-[0.86rem] ${isDark ? "text-white/72" : "text-[var(--color-text-muted)]"}`}>
+                {badge.text}
+              </p>
+              <span className="mt-4 block h-px w-10 bg-[var(--color-accent)]" aria-hidden="true" />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
 }
 
-export default function HomeSec1({ data }) {
+export default function HomeSec1({ data, band = "page" }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const heroImageSrc = isDark ? "/Hero-dark.webp" : "/hero-day.webp";
   const ctaHref = data.cta?.href && data.cta.href !== "#" ? data.cta.href : "/quote";
   const trustStrip = data.trustStrip || [];
   const badge = data.independentBadge;
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
+    <section className={`relative overflow-hidden ${sectionBgClass(band)} text-[var(--color-text)]`} style={{ "--section-fade": rgb }}>
       {/* Hero + trust bridge (same section) */}
       <div className="relative md:min-h-[640px]">
         <div className="absolute inset-0">

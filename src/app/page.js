@@ -28,22 +28,22 @@ import homeSec13Data from "@/data/home/homeSec13.json";
 export default function Home() {
   return (
     <main>
-      <HomeSec1 data={homeSec1Data} />
-      <HomeSec2 data={homeSec2Data} />
-      <HomeSec3 data={homeSec3Data} />
-      <HomeSec4 data={homeSec4Data} />
-      <HomeSec9 data={homeSec9Data} />
-      <HomeSec8 data={homeSec8Data} />
+      <HomeSec1 data={homeSec1Data} band="page" />
+      <HomeSec2 data={homeSec2Data} band="soft" />
+      <HomeSec3 data={homeSec3Data} band="page" />
+      <HomeSec4 data={homeSec4Data} band="soft" />
+      <HomeSec9 data={homeSec9Data} band="page" />
+      <HomeSec8 data={homeSec8Data} band="soft" />
 
-      <HomeSec5 data={homeSec5Data} />
+      <HomeSec5 data={homeSec5Data} band="page" />
 
-      <HomeSec6 data={homeSec6Data} />
-      <HomeSec10 data={homeSec10Data} />
+      <HomeSec6 data={homeSec6Data} band="soft" />
+      <HomeSec10 data={homeSec10Data} band="page" />
 
       {/* <HomeSec7 data={homeSec7Data} /> */}
-      <HomeSec11 data={homeSec11Data} />
-      <HomeSec12 data={homeSec12Data} />
-      <HomeSec13 data={homeSec13Data} />
+      <HomeSec11 data={homeSec11Data} band="soft" />
+      <HomeSec12 data={homeSec12Data} band="page" />
+      <HomeSec13 data={homeSec13Data} band="soft" />
     </main>
   );
 }

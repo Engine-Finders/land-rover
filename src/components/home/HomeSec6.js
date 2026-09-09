@@ -5,6 +5,8 @@ import Link from "next/link";
 import { HomeIcon } from "@/components/home/homeIcons";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+
 
 const verdictTone = {
   watch: {
@@ -255,13 +257,14 @@ function DataNote({ note, isDark }) {
   );
 }
 
-export default function HomeSec6({ data }) {
+export default function HomeSec6({ data, band = "page" }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const headerImage = data.headerImage?.src || "/sec2-bg.webp";
 
   return (
-    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-8 ${isDark ? "bg-[#0d1c18]" : "bg-[var(--color-page)]"}`}>
+    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-8 ${sectionBgClass(band)}`} style={{ "--section-fade": rgb }}>
       <div className="absolute inset-x-0 top-0 h-[240px] md:h-[300px]">
         <Image
           src={headerImage}
@@ -273,15 +276,15 @@ export default function HomeSec6({ data }) {
         <div
           className={
             isDark
-              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(13,28,24,0.78)_0%,rgba(13,28,24,0.62)_40%,rgba(13,28,24,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(13,28,24,0.96)_0%,rgba(13,28,24,0.72)_42%,rgba(13,28,24,0.2)_80%)]"
-              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(248,247,242,0.72)_0%,rgba(248,247,242,0.48)_40%,rgba(248,247,242,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.82)_44%,rgba(248,247,242,0.12)_80%)]"
+              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.62)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
+              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.72)_0%,rgba(var(--section-fade),0.48)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
           }
         />
         <div
           className={`pointer-events-none absolute inset-0 md:hidden ${
             isDark
-              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(13,28,24,0.95)_0%,rgba(13,28,24,0.7)_42%,transparent_72%)]"
-              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.82)_42%,transparent_72%)]"
+              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.7)_42%,transparent_72%)]"
+              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_42%,transparent_72%)]"
           }`}
         />
       </div>
@@ -289,10 +292,10 @@ export default function HomeSec6({ data }) {
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="relative max-w-[720px] text-left">
           <div
-            className={`pointer-events-none absolute -inset-x-2 -top-3 bottom-0 rounded-lg md:hidden ${
+            className={`pointer-events-none absolute -inset-x-2 -top-3 -bottom-4 md:hidden ${
               isDark
-                ? "bg-[linear-gradient(90deg,rgba(13,28,24,0.88)_0%,rgba(13,28,24,0.55)_70%,transparent_100%)]"
-                : "bg-[linear-gradient(90deg,rgba(248,247,242,0.92)_0%,rgba(248,247,242,0.62)_70%,transparent_100%)]"
+                ? "bg-[linear-gradient(180deg,rgba(var(--section-fade),0.9)_0%,rgba(var(--section-fade),0.55)_55%,transparent_100%)]"
+                : "bg-[linear-gradient(180deg,rgba(var(--section-fade),0.94)_0%,rgba(var(--section-fade),0.6)_55%,transparent_100%)]"
             }`}
           />
           <div className="relative z-10">
@@ -313,7 +316,7 @@ export default function HomeSec6({ data }) {
           </div>
         </div>
 
-        <div className="mt-6 grid gap-4 lg:mt-8 lg:grid-cols-[minmax(0,1.55fr)_minmax(280px,0.85fr)] lg:items-start lg:gap-5">
+        <div className="mt-6 grid gap-4 lg:mt-8 lg:grid-cols-[minmax(0,1.95fr)_minmax(250px,0.78fr)] lg:items-start lg:gap-5">
           <MatrixPanel matrix={data.matrix} isDark={isDark} />
           <div className="grid gap-4">
             <RuleOfThumb rule={data.ruleOfThumb} isDark={isDark} />

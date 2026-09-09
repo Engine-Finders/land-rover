@@ -5,6 +5,8 @@ import Link from "next/link";
 import { HomeIcon } from "@/components/home/homeIcons";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+
 
 function ArrowIcon({ className = "h-5 w-5" }) {
   return (
@@ -169,27 +171,28 @@ function TrustBar({ review, isDark }) {
   );
 }
 
-export default function HomeSec13({ data }) {
+export default function HomeSec13({ data, band = "page" }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const headerImage = data.headerImage?.src || "/right.webp";
   const stats = data.stats || [];
 
   return (
-    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-8 ${isDark ? "bg-[#0d1c18]" : "bg-[var(--color-page)]"}`}>
-      <div className="absolute inset-x-0 top-0 h-[240px] md:h-[320px]">
+    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-8 ${sectionBgClass(band)}`} style={{ "--section-fade": rgb }}>
+      <div className="absolute inset-x-0 top-0 hidden h-[320px] md:block">
         <Image
           src={headerImage}
           alt={data.headerImage?.alt || ""}
           fill
-          className="object-cover object-[78%_center] md:object-[72%_center]"
+          className="object-cover object-[72%_center]"
           sizes="100vw"
         />
         <div
           className={
             isDark
-              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(13,28,24,0.78)_0%,rgba(13,28,24,0.62)_40%,rgba(13,28,24,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(13,28,24,0.97)_0%,rgba(13,28,24,0.78)_44%,rgba(13,28,24,0.18)_82%)]"
-              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(248,247,242,0.72)_0%,rgba(248,247,242,0.48)_40%,rgba(248,247,242,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(248,247,242,0.98)_0%,rgba(248,247,242,0.84)_44%,rgba(248,247,242,0.12)_82%)]"
+              ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.78)_44%,rgba(var(--section-fade),0.18)_82%)]"
+              : "absolute inset-0 bg-[linear-gradient(90deg,rgba(var(--section-fade),0.98)_0%,rgba(var(--section-fade),0.84)_44%,rgba(var(--section-fade),0.12)_82%)]"
           }
         />
       </div>

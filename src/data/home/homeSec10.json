@@ -98,22 +98,24 @@
   },
   "insights": {
     "title": "MARKET INSIGHTS",
-    "icon": "calculator",
+    "icon": "trend",
     "items": [
       {
         "tone": "green",
+        "icon": "trend",
         "title": "Enquiry trend",
-        "text": "Ingenium diesel and TDV6 enquiries remain the two highest volumes in 2025 — demand is concentrated on the engines owners fear most."
+        "text": "Engine enquiries for 204DTD are up 12% vs. last quarter. Timing chain concerns driving pre-purchase inspections."
       },
       {
         "tone": "orange",
+        "icon": "checkValue",
         "title": "Cost pressure",
-        "text": "Reconditioned supply-only bands for key JLR engines have edged up; high host-value models still clear the replacement maths more easily."
+        "text": "Average reconditioned engine costs have increased 8% in 2025 due to core availability."
       }
     ]
   },
   "dataNote": {
-    "icon": "realData",
+    "icon": "database",
     "title": "DATA NOTE:",
     "text": "All data in this section comes from real UK enquiries via EnginesMarket.",
     "stats": [

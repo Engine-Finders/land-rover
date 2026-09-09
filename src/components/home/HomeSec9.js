@@ -5,6 +5,8 @@ import Link from "next/link";
 import { HomeIcon } from "@/components/home/homeIcons";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+
 
 const severityStyles = {
   catastrophic: {
@@ -186,13 +188,14 @@ function DataNote({ note, isDark }) {
   );
 }
 
-export default function HomeSec9({ data }) {
+export default function HomeSec9({ data, band = "page" }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const categories = data.categories || [];
 
   return (
-    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-9 ${isDark ? "bg-[#0d1c18]" : "bg-[var(--color-page)]"}`}>
+    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-9 ${sectionBgClass(band)}`} style={{ "--section-fade": rgb }}>
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="mx-auto max-w-[780px] text-center">
           <HeadingEyebrow text={data.eyebrow || "FAILURE DATABASE"} align="center" />
@@ -204,7 +207,7 @@ export default function HomeSec9({ data }) {
             The Land Rover &amp; Range Rover <span className="text-[var(--color-primary)]">Failure Database</span>
           </h2>
           <p
-            className={`mx-auto mt-4 max-w-[640px] text-[0.9rem] leading-[1.5] md:text-[1.02rem] ${
+            className={`mx-auto mt-4 max-w-[640px] text-[0.9rem] leading-[1.5] md:max-w-[52rem] md:text-[1.02rem] md:leading-[1.45] ${
               isDark ? "text-white/78" : "text-[var(--color-text-muted)]"
             }`}
             dangerouslySetInnerHTML={{ __html: data.subHeadline }}

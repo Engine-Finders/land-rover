@@ -5,6 +5,8 @@ import Link from "next/link";
 import { HomeIcon } from "@/components/home/homeIcons";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+
 
 const toneText = {
   gold: "text-[var(--color-accent)]",
@@ -72,30 +74,29 @@ function ModelRow({ item, isDark }) {
   return (
     <Link
       href={item.href || "#"}
-      className={`grid grid-cols-[64px_minmax(0,1fr)_auto_18px] items-center gap-3 border-b px-3 py-3 last:border-b-0 md:grid-cols-[72px_minmax(0,1.1fr)_minmax(130px,0.9fr)_20px] md:gap-4 md:px-4 md:py-3.5 ${
+      className={`flex items-center gap-3 rounded-lg px-3 py-3 md:gap-4 md:px-4 md:py-3.5 ${
         isDark
-          ? "border-white/10 text-white hover:bg-white/5"
-          : "border-[var(--color-border)] text-[var(--color-text)] hover:bg-[var(--color-page-soft)]"
+          ? "bg-white/[0.04] text-white hover:bg-white/[0.07]"
+          : "bg-[var(--color-page-soft)] text-[var(--color-text)] hover:bg-[#eceae4]"
       }`}
     >
-      <div className="relative h-11 w-16 overflow-hidden rounded md:h-12 md:w-[4.5rem]">
+      <div className="relative h-11 w-16 shrink-0 overflow-hidden rounded md:h-12 md:w-[4.5rem]">
         <Image src={item.image.src} alt={item.image.alt} fill className="object-cover" sizes="80px" />
       </div>
 
-      <div className="min-w-0">
+      <div className="min-w-0 flex-1">
         <p className="font-lora text-[1rem] font-medium leading-tight md:text-[1.15rem]">{item.model}</p>
         <p className={`mt-0.5 text-[0.72rem] md:text-[0.8rem] ${isDark ? "text-white/65" : "text-[var(--color-text-muted)]"}`}>
           {item.generations}
         </p>
       </div>
 
-      <div className="justify-self-end md:justify-self-start">
+      <div className="flex shrink-0 items-center gap-2 md:gap-3">
         <VerdictBadge verdict={item.verdict} />
+        <span className={isDark ? "text-white/55" : "text-[var(--color-text-soft)]"}>
+          <ChevronIcon className="h-4 w-4 md:h-5 md:w-5" />
+        </span>
       </div>
-
-      <span className={`justify-self-end ${isDark ? "text-white/55" : "text-[var(--color-text-soft)]"}`}>
-        <ChevronIcon className="h-4 w-4 md:h-5 md:w-5" />
-      </span>
     </Link>
   );
 }
@@ -110,7 +111,7 @@ function BrandColumn({ brand, isDark }) {
       }`}
     >
       <BrandHeader brand={brand} isDark={isDark} />
-      <div>
+      <div className="flex flex-col gap-2 p-2.5 md:gap-2.5 md:p-3">
         {(brand.models || []).map((item) => (
           <ModelRow key={item.model} item={item} isDark={isDark} />
         ))}
@@ -124,74 +125,79 @@ function IdentifyCta({ cta, isDark }) {
 
   return (
     <div
-      className={`mt-5 overflow-hidden rounded-xl border md:mt-6 ${
+      className={`relative mt-5 overflow-hidden rounded-xl border md:mt-6 ${
         isDark ? "border-white/10 bg-[rgba(16,28,24,0.92)]" : "border-transparent bg-[var(--color-primary)]"
       }`}
     >
-      <div className="relative flex flex-col gap-4 p-4 md:flex-row md:items-center md:justify-between md:gap-6 md:px-6 md:py-5">
-        <div className="absolute inset-y-0 right-0 hidden w-[38%] md:block">
-          <Image
-            src="/Section-2-Bg-light.webp"
-            alt=""
-            fill
-            className="object-cover object-right opacity-45 mix-blend-luminosity"
-            sizes="40vw"
-          />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-primary)_0%,rgba(23,95,70,0.55)_55%,transparent_100%)]" />
-        </div>
+      <div className="absolute inset-y-0 right-0 hidden w-[34%] md:block">
+        <Image
+          src="/Section-2-Bg-light.webp"
+          alt=""
+          fill
+          className="object-cover object-right opacity-50 mix-blend-luminosity"
+          sizes="34vw"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-primary)_0%,rgba(23,95,70,0.55)_50%,transparent_100%)]" />
+      </div>
 
-        <div className="relative z-10 flex items-start gap-3 md:max-w-[52%] md:items-center md:gap-4">
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/25 bg-white/10">
+      <div className="relative z-10 grid gap-4 p-4 md:grid-cols-[minmax(0,1.35fr)_auto_minmax(220px,0.85fr)_minmax(0,0.9fr)] md:items-center md:gap-0 md:px-6 md:py-5">
+        <div className="flex items-start gap-3 md:items-center md:gap-4 md:pr-6">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/25 bg-white/10 md:h-14 md:w-14">
             <HomeIcon name={cta.icon || "check"} size={36} tone="silver" className="h-8 w-8" />
           </span>
-          <div>
-            <p className="font-lora text-[1.05rem] font-medium leading-tight text-white md:text-[1.2rem]">
-              {cta.title}
-            </p>
+          <div className="min-w-0 text-left">
+            <p className="font-lora text-[1.05rem] font-medium leading-tight text-white md:text-[1.2rem]">{cta.title}</p>
             <p className="mt-1 text-[0.78rem] leading-[1.4] text-white/82 md:text-[0.88rem]">{cta.text}</p>
           </div>
         </div>
 
-        <Link
-          href={cta.href || "/quote"}
-          className="btn-cta relative z-10 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-accent)] px-5 py-3 text-[0.82rem] font-bold tracking-[0.06em] text-white md:w-auto md:min-w-[240px]"
-        >
-          <span>{cta.buttonLabel}</span>
-          <ArrowIcon className="h-4 w-4" />
-        </Link>
+        <div className="hidden h-16 w-px bg-white/25 md:block" aria-hidden="true" />
+
+        <div className="flex justify-start md:justify-center md:px-6">
+          <Link
+            href={cta.href || "/quote"}
+            className="btn-cta inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-accent)] px-5 py-3 text-[0.82rem] font-bold tracking-[0.06em] text-white md:w-auto md:min-w-[220px]"
+          >
+            <span>{cta.buttonLabel}</span>
+            <ArrowIcon className="h-4 w-4" />
+          </Link>
+        </div>
+
+        <div className="hidden md:block" aria-hidden="true" />
       </div>
     </div>
   );
 }
 
-export default function HomeSec2({ data }) {
+export default function HomeSec2({ data, band = "page" }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const sectionBg = "/sec2-bg.webp";
   const brands = data.brands || [];
 
   return (
-    <section className="find-your-vehicle relative overflow-hidden bg-[var(--color-page)] px-3 py-6 md:px-6 md:py-8">
+    <section className={`find-your-vehicle relative overflow-hidden ${sectionBgClass(band)} px-3 py-6 md:px-6 md:py-8`} style={{ "--section-fade": rgb }}>
       <div className="absolute inset-0">
         <Image src={sectionBg} alt="" fill className="object-cover object-[top_right]" sizes="100vw" />
         <div
           className={`absolute inset-0 ${
             isDark
-              ? "bg-[linear-gradient(180deg,rgba(13,28,24,0.94)_0%,rgba(13,28,24,0.88)_40%,rgba(13,28,24,0.94)_100%)]"
-              : "bg-[linear-gradient(180deg,rgba(248,247,242,0.96)_0%,rgba(248,247,242,0.9)_40%,rgba(248,247,242,0.94)_100%)]"
+              ? "bg-[linear-gradient(180deg,rgba(var(--section-fade),0.94)_0%,rgba(var(--section-fade),0.88)_40%,rgba(var(--section-fade),0.94)_100%)]"
+              : "bg-[linear-gradient(180deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.9)_40%,rgba(var(--section-fade),0.94)_100%)]"
           }`}
         />
       </div>
 
       <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[640px]">
-          <HeadingEyebrow text={data.eyebrow || "FIND YOUR VEHICLE"} />
+        <div className="max-w-[640px] text-left">
+          <HeadingEyebrow text={data.eyebrow || "SECTION 02"} />
           <h2
             className={`mt-3 text-[2.35rem] font-medium leading-[1.05] tracking-normal md:text-[3.2rem] ${
               isDark ? "text-white" : "text-[var(--color-text)]"
             }`}
           >
-            Find Your <span className="text-[var(--color-primary)]">Vehicle</span>
+            Find Your <span className={isDark ? "text-[var(--color-accent)]" : "text-[var(--color-primary)]"}>Vehicle</span>
           </h2>
           <p
             className={`mt-3 max-w-[520px] text-[0.9rem] leading-[1.45] md:text-[1.05rem] ${

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { HomeIcon } from "@/components/home/homeIcons";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+
 
 const verdictTone = {
   best: {
@@ -45,14 +47,6 @@ function ordinal(n) {
   }
 }
 
-function ChevronIcon({ className = "h-5 w-5" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="m9 6 6 6-6 6" />
-    </svg>
-  );
-}
-
 function WarningIcon({ className = "h-4 w-4" }) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -91,7 +85,7 @@ function DesktopTable({ columns, rankings, isDark }) {
       }`}
     >
       <div
-        className={`grid grid-cols-[minmax(200px,1.1fr)_minmax(180px,0.95fr)_minmax(280px,1.6fr)_minmax(140px,0.7fr)_28px] gap-3 px-5 py-3 text-[0.72rem] font-bold uppercase tracking-[0.06em] text-white ${
+        className={`grid grid-cols-[minmax(200px,1.1fr)_minmax(180px,0.95fr)_minmax(280px,1.6fr)_minmax(140px,0.7fr)] gap-3 px-5 py-3 text-[0.72rem] font-bold uppercase tracking-[0.06em] text-white ${
           isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"
         }`}
       >
@@ -99,13 +93,12 @@ function DesktopTable({ columns, rankings, isDark }) {
         <span>{columns[1]}</span>
         <span>{columns[2]}</span>
         <span>{columns[3]}</span>
-        <span />
       </div>
 
       {rankings.map((row, index) => (
         <div
           key={row.ranking}
-          className={`relative grid grid-cols-[minmax(200px,1.1fr)_minmax(180px,0.95fr)_minmax(280px,1.6fr)_minmax(140px,0.7fr)_28px] items-center gap-3 border-b px-5 py-3.5 last:border-b-0 ${
+          className={`relative grid grid-cols-[minmax(200px,1.1fr)_minmax(180px,0.95fr)_minmax(280px,1.6fr)_minmax(140px,0.7fr)] items-center gap-3 border-b px-5 py-3.5 last:border-b-0 ${
             isDark
               ? `border-[var(--color-border)] text-white ${index % 2 ? "bg-white/[0.03]" : ""}`
               : `border-[var(--color-border)] text-[var(--color-text)] ${index % 2 ? "bg-[var(--color-page-soft)]" : "bg-white"}`
@@ -117,18 +110,9 @@ function DesktopTable({ columns, rankings, isDark }) {
             </Link>
           ) : null}
 
-          <div className="relative z-10 pointer-events-none flex items-center gap-3">
-            <span
-              className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[0.72rem] font-bold text-white ${
-                isDark ? "bg-[var(--color-chrome)]" : "bg-[#0d1c18]"
-              }`}
-            >
-              {row.rank}
-            </span>
-            <div>
-              <p className="text-[0.68rem] font-bold uppercase tracking-[0.04em] opacity-70">{ordinal(row.rank)}</p>
-              <p className="text-[0.9rem] font-bold leading-tight">{row.ranking}</p>
-            </div>
+          <div className="relative z-10 pointer-events-none">
+            <p className="text-[0.68rem] font-bold uppercase tracking-[0.04em] opacity-70">{ordinal(row.rank)}</p>
+            <p className="text-[0.9rem] font-bold leading-tight">{row.ranking}</p>
           </div>
 
           <div className="relative z-10 pointer-events-none flex items-center gap-3">
@@ -145,10 +129,6 @@ function DesktopTable({ columns, rankings, isDark }) {
           <div className="relative z-10 pointer-events-none">
             <VerdictBadge verdict={row.verdict} isDark={isDark} />
           </div>
-
-          <span className={`relative z-10 pointer-events-none ${isDark ? "text-white/50" : "text-[var(--color-text-soft)]"}`}>
-            <ChevronIcon />
-          </span>
         </div>
       ))}
     </div>
@@ -168,20 +148,13 @@ function MobileCards({ rankings, isDark }) {
                 : "border-[var(--color-border)] bg-white text-[var(--color-text)]"
             }`}
           >
-            <span
-              className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[0.75rem] font-bold text-white ${
-                isDark ? "bg-[var(--color-chrome)]" : "bg-[#0d1c18]"
-              }`}
-            >
-              {row.rank}
-            </span>
-
             <span className="relative h-12 w-14 shrink-0 overflow-hidden rounded">
               <Image src={row.image?.src || "/right.webp"} alt={row.image?.alt || ""} fill className="object-cover" sizes="56px" />
             </span>
 
             <span className="min-w-0 flex-1">
-              <span className="block text-[0.72rem] font-bold leading-tight">{row.ranking}</span>
+              <span className="block text-[0.62rem] font-bold uppercase tracking-[0.04em] opacity-70">{ordinal(row.rank)}</span>
+              <span className="mt-0.5 block text-[0.72rem] font-bold leading-tight">{row.ranking}</span>
               <span className="font-lora mt-0.5 block text-[0.92rem] font-medium leading-tight text-[var(--color-primary)]">
                 {row.winner}
               </span>
@@ -224,30 +197,31 @@ function DataNote({ note, isDark }) {
   );
 }
 
-export default function HomeSec4({ data }) {
+export default function HomeSec4({ data, band = "page" }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const rankings = data.rankings || [];
   const columns = data.columns || ["RANKING", "WINNER", "WHY", "VERDICT"];
   const headerImage = data.headerImage?.src || "/sec2-bg.webp";
 
   return (
-    <section className={`relative overflow-hidden px-3 py-6 md:px-6 md:py-8 ${isDark ? "bg-[#0d1c18]" : "bg-[var(--color-page)]"}`}>
+    <section className={`relative overflow-hidden px-3 py-6 md:px-6 md:py-8 ${sectionBgClass(band)}`} style={{ "--section-fade": rgb }}>
       <div className="absolute inset-x-0 top-0 h-[260px] md:h-[320px]">
         <Image src={headerImage} alt={data.headerImage?.alt || ""} fill className="object-cover object-[78%_center] md:object-[75%_center]" sizes="100vw" />
         <div
           className={
             isDark
-              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(13,28,24,0.78)_0%,rgba(13,28,24,0.62)_40%,rgba(13,28,24,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(13,28,24,0.96)_0%,rgba(13,28,24,0.72)_42%,rgba(13,28,24,0.2)_80%)]"
-              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(248,247,242,0.72)_0%,rgba(248,247,242,0.48)_40%,rgba(248,247,242,0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.82)_44%,rgba(248,247,242,0.12)_80%)]"
+              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.62)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
+              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.72)_0%,rgba(var(--section-fade),0.48)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
           }
         />
         {/* Mobile smoke behind header copy */}
         <div
           className={`pointer-events-none absolute inset-0 md:hidden ${
             isDark
-              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(13,28,24,0.95)_0%,rgba(13,28,24,0.7)_42%,transparent_72%)]"
-              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.82)_42%,transparent_72%)]"
+              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.7)_42%,transparent_72%)]"
+              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_42%,transparent_72%)]"
           }`}
         />
       </div>
@@ -255,10 +229,10 @@ export default function HomeSec4({ data }) {
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="relative max-w-[720px] text-left">
           <div
-            className={`pointer-events-none absolute -inset-x-2 -top-3 bottom-0 rounded-lg md:hidden ${
+            className={`pointer-events-none absolute -inset-x-2 -top-3 -bottom-4 md:hidden ${
               isDark
-                ? "bg-[linear-gradient(90deg,rgba(13,28,24,0.88)_0%,rgba(13,28,24,0.55)_70%,transparent_100%)]"
-                : "bg-[linear-gradient(90deg,rgba(248,247,242,0.92)_0%,rgba(248,247,242,0.62)_70%,transparent_100%)]"
+                ? "bg-[linear-gradient(180deg,rgba(var(--section-fade),0.9)_0%,rgba(var(--section-fade),0.55)_55%,transparent_100%)]"
+                : "bg-[linear-gradient(180deg,rgba(var(--section-fade),0.94)_0%,rgba(var(--section-fade),0.6)_55%,transparent_100%)]"
             }`}
           />
           <div className="relative z-10">

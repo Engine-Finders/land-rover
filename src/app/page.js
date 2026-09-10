@@ -25,6 +25,42 @@ import homeSec11Data from "@/data/home/homeSec11.json";
 import homeSec12Data from "@/data/home/homeSec12.json";
 import homeSec13Data from "@/data/home/homeSec13.json";
 
+const HOME_TITLE = "The UK's Most Trusted Land Rover & Range Rover Ownership Guide";
+const HOME_DESCRIPTION =
+  "Reliability rankings, real failure data, honest repair-vs-replace economics — for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.";
+const HOME_URL = "https://landroverengine.uk";
+const HOME_IMAGE = "https://landroverengine.uk/hero-day.webp";
+
+export const metadata = {
+  title: {
+    absolute: HOME_TITLE,
+  },
+  description: HOME_DESCRIPTION,
+  alternates: {
+    canonical: HOME_URL,
+  },
+  openGraph: {
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    type: "website",
+    url: HOME_URL,
+    siteName: "Land Rover & Range Rover Ownership Guide",
+    locale: "en_GB",
+    images: [
+      {
+        url: HOME_IMAGE,
+        alt: "Land Rover & Range Rover Ownership Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    images: [HOME_IMAGE],
+  },
+};
+
 export default function Home() {
   return (
     <main>

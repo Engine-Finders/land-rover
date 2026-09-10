@@ -2,8 +2,11 @@ import { Suspense } from "react";
 import QuoteForm from "@/components/shared/QuoteForm";
 
 export const metadata = {
-  title: "Get a Quote | BMW Reliability Guide",
-  description: "Request free BMW engine guidance and a quote.",
+  title: "Get a Quote",
+  description: "Request free Land Rover & Range Rover engine guidance and compare quotes from vetted JLR specialists.",
+  alternates: {
+    canonical: "https://landroverengine.uk/quote",
+  },
 };
 
 export default function QuotePage() {

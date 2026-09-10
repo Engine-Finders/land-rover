@@ -13,9 +13,22 @@ const lora = Lora({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://bmwengines.uk/"),
-  title: "BMW Reliability Guide",
-  description: "The UK's Most Trusted BMW Ownership Guide",
+  metadataBase: new URL("https://landroverengine.uk"),
+  title: {
+    default: "The UK's Most Trusted Land Rover & Range Rover Ownership Guide",
+    template: "%s | Land Rover & Range Rover Ownership Guide",
+  },
+  description:
+    "Reliability rankings, real failure data, honest repair-vs-replace economics — for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.",
+  applicationName: "Land Rover & Range Rover Ownership Guide",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

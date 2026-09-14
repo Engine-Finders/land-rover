@@ -1,5 +1,6 @@
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionDescription } from "@/components/models/sectionTypography";
 
 const iconPaths = {
@@ -54,17 +55,19 @@ function SignalIcon({ item }) {
   );
 }
 
-export default function TrustBlock({ data }) {
+export default function TrustBlock({ data, band = "page" }) {
   if (!data) return null;
 
   const title = splitTitle(data.h2);
   const signals = data.signals || [];
 
   return (
-    <section className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-5">
+    <section className={`px-3 py-6 md:px-6 md:py-7 ${sectionBgClass(band)}`}>
+      <div className="mx-auto w-full max-w-8xl overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-5">
       <div className="grid gap-4 lg:grid-cols-[minmax(0,0.92fr)_minmax(420px,1fr)] lg:items-center">
         <div>
-          <h2 className="max-w-[650px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
+          <HeadingEyebrow text="TRUST & PROOF" />
+          <h2 className="mt-3 max-w-[650px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
             <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>
@@ -73,9 +76,6 @@ export default function TrustBlock({ data }) {
               </>
             ) : null}
           </h2>
-          <div className="mt-2.5">
-            <MStripe />
-          </div>
 
           <div className="mt-4">
             {signals.map((item) => (
@@ -118,6 +118,7 @@ export default function TrustBlock({ data }) {
           </div>
           <Image src="/model/Section 2-bg.webp" alt="" fill className="relative z-10 object-contain object-right-bottom" sizes="(min-width: 1024px) 48vw, 100vw" />
         </div>
+      </div>
       </div>
     </section>
   );

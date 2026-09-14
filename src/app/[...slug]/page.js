@@ -171,38 +171,27 @@ export default async function CatchAllPage({ params }) {
 
   if (type === "models") {
     return (
-      <main
-        style={{
-          padding: "8px 4px",
-          width: "100%",
-          maxWidth: "88rem",
-          margin: "0 auto",
-          lineHeight: 1.5,
-          display: "flex",
-          flexDirection: "column",
-          
-        }}
-      >
+      <main className="flex w-full flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
           />
         )}
-        <ModelHero data={data.hero} />
-        <OwnershipVerdict data={data.ownershipVerdict} />
-        <AtAGlance data={data.atAGlance} />
-        <GenerationsGrid data={data.generations} />
-        <EngineDatabase data={data.engineDatabase} />
-        <CommonProblems data={data.commonProblems} />
-        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote} />
-        <ReplacementCosts data={data.replacementCosts} />
-        <EngineEvolution data={data.engineEvolution} />
-        <WhoShouldBuy data={data.whoShouldBuy} />
-        <CalculatorCTA data={data.calculatorCta} />
-        <TrustBlock data={data.trustBlock} />
-        <FAQAccordion data={data.faq} />
-        <ClosingActionCards data={data.closingActionCards} />
+        <ModelHero data={data.hero} band="page" />
+        <OwnershipVerdict data={data.ownershipVerdict} band="soft" />
+        <AtAGlance data={data.atAGlance} band="page" />
+        <GenerationsGrid data={data.generations} band="soft" />
+        <EngineDatabase data={data.engineDatabase} band="page" />
+        <CommonProblems data={data.commonProblems} band="soft" />
+        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote} band="page" />
+        <ReplacementCosts data={data.replacementCosts} band="soft" />
+        <EngineEvolution data={data.engineEvolution} band="page" />
+        <WhoShouldBuy data={data.whoShouldBuy} band="soft" />
+        <CalculatorCTA data={data.calculatorCta} band="page" />
+        <TrustBlock data={data.trustBlock} band="soft" />
+        <FAQAccordion data={data.faq} band="page" />
+        <ClosingActionCards data={data.closingActionCards} band="soft" />
       </main>
     );
   }

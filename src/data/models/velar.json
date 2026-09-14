@@ -241,19 +241,19 @@
     "subHeadline": "Every engine. Every known failure. Every replacement cost — including why \"D300\" means two different engines on this car. Backed by 275+ real UK Velar enquiries [EM-VERIFIED].",
     "trustStrip": [
       {
-        "icon": "📊",
-        "label": "275+ Enquiries (2025)"
+        "icon": "realEnquiries",
+        "label": "275+ Enquiries (2025) [EM-VERIFIED] — #1 Most-Enquired Velar Model"
       },
       {
-        "icon": "🔧",
+        "icon": "repairVsReplace",
         "label": "1 Generation, 8 Powertrains"
       },
       {
-        "icon": "📖",
+        "icon": "knowledgeCentre",
         "label": "8 Engine Codes"
       },
       {
-        "icon": "🏆",
+        "icon": "engineFinders",
         "label": "Part of Engine Finders"
       }
     ],

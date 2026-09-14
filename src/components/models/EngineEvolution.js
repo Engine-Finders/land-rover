@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const carImages = [
@@ -108,7 +109,7 @@ function EngineBadges({ engines }) {
 function DesktopTable({ eras, columns }) {
   return (
       <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)] md:block">
-      <div className="grid grid-cols-[19%_10%_26%_22%_23%] bg-[var(--color-primary-strong)] text-[14px] font-bold text-white md:text-[15px]">
+      <div className="grid grid-cols-[19%_10%_26%_22%_23%] bg-[var(--color-chrome)] text-[14px] font-bold text-white md:text-[15px]">
         {(columns || []).map((column) => (
           <div key={column} className="border-r border-white/20 px-4 py-2.5 last:border-r-0 md:px-5 md:py-3">
             {column}
@@ -204,23 +205,22 @@ function MobileAccordion({ eras }) {
   );
 }
 
-export default function EngineEvolution({ data }) {
+export default function EngineEvolution({ data, band = "page" }) {
   if (!data) return null;
 
   const title = splitTitle(data.h2);
   const eras = data.eras || [];
 
   return (
-    <section className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
+    <section className={`${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6`}>
+      <div className="mx-auto w-full max-w-8xl">
       <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_600px] md:items-start">
         <div>
-        <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
+        <HeadingEyebrow text="ENGINE EVOLUTION" />
+            <h2 className="mt-3 max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
             <span dangerouslySetInnerHTML={{ __html: title.main }} />
             {title.accent ? <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
           </h2>
-          <div className="mt-3">
-            <MStripe />
-          </div>
           <p className={`mt-3 max-w-[660px] ${sectionDescription} text-[var(--color-text-muted)]`}>
             From the original M10 to today&apos;s advanced B-series, explore how engineering, emissions and performance shaped every generation of 3 Series engines.
           </p>
@@ -239,8 +239,9 @@ export default function EngineEvolution({ data }) {
         </span>
         <p>
           All engine reliability insights and failure patterns are based on 826+ verified enquiries in 2025. Data covers the UK market.{" "}
-          <span className="text-[var(--color-primary)]">[BMW-VERIFIED]</span>
+          <span className="text-[var(--color-primary)]">[EM-VERIFIED]</span>
         </p>
+      </div>
       </div>
     </section>
   );

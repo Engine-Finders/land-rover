@@ -1,19 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
 import { sectionBody, sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const metricStyles = {
-  "Overall Ownership Rating": { color: "#1d6fff", icon: "star" },
+  "Overall Ownership Rating": { color: "var(--color-primary)", icon: "star" },
   "Replacement Economics": { color: "#f59e0b", icon: "scale" },
   Reliability: { color: "#4caf50", icon: "shield" },
   "Most Reliable Engine": { color: "#d99013", icon: "trophy" },
   "Highest-Risk Engine": { color: "#e34b4b", icon: "alert" },
-  "Best Used Buy": { color: "#1d6fff", icon: "cart" },
+  "Best Used Buy": { color: "var(--color-primary)", icon: "cart" },
   "Best Petrol Buy": { color: "#69b548", icon: "fuel" },
-  "Average Engine Replacement": { color: "#2b85ff", icon: "pound" },
+  "Average Engine Replacement": { color: "var(--color-primary)", icon: "pound" },
   "Most Common Failure Enquiry": { color: "#8b5cf6", icon: "chart" },
   "BMW Ranking": { color: "#d99013", icon: "crown" },
 };
@@ -98,7 +99,7 @@ function MetricIcon({ metric }) {
 
   return (
     <span
-      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border bg-[var(--color-primary-soft)]"
+      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border bg-[var(--color-primary-soft)]"
       style={{ color: style.color, borderColor: `${style.color}55` }}
     >
       <svg aria-hidden="true" viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="2">
@@ -110,7 +111,7 @@ function MetricIcon({ metric }) {
 
 function StatIcon({ iconKey }) {
   return (
-    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
+    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
       <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2">
         {statIcons[iconKey] || statIcons.chart}
       </svg>
@@ -122,20 +123,20 @@ function VerdictTable({ metrics, isDark }) {
   return (
     <div
       className={`overflow-hidden rounded-md border shadow-[0_14px_36px_var(--color-shadow)] backdrop-blur ${
-        isDark ? "border-white/20 bg-[rgba(2,13,25,0.74)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
+        isDark ? "border-white/20 bg-[rgba(13,28,24,0.74)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
       }`}
     >
-      <div className={`grid grid-cols-[40%_60%] border-b border-[var(--color-border)] px-3 py-2 font-semibold md:grid-cols-[42%_58%] md:px-3 md:py-2.5 ${sectionTableText} text-[13px]`}>
+      <div className={`grid grid-cols-[38%_62%] bg-[var(--color-chrome)] px-2.5 py-2 font-semibold text-white md:grid-cols-[40%_60%] md:px-3 md:py-2 ${sectionTableText} text-[12px] md:text-[13px]`}>
         <span>Verdict Metric</span>
         <span>Our Call</span>
       </div>
       {metrics.map((row) => (
-        <div key={row.metric} className="grid grid-cols-[40%_60%] border-b border-[var(--color-border)] last:border-b-0 md:grid-cols-[42%_58%]">
-          <div className="flex items-center gap-2 border-r border-[var(--color-border)] px-3 py-2 md:px-3 md:py-2.5">
+        <div key={row.metric} className="grid grid-cols-[38%_62%] border-b border-[var(--color-border)] last:border-b-0 md:grid-cols-[40%_60%]">
+          <div className="flex items-center gap-1.5 border-r border-[var(--color-border)] px-2 py-1.5 md:gap-2 md:px-2.5 md:py-2">
             <MetricIcon metric={row.metric} />
-            <span className={`font-medium leading-[1.25] ${sectionTableText} text-[13px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.metric) }} />
+            <span className={`font-medium leading-[1.2] ${sectionTableText} text-[12px] md:text-[13px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.metric) }} />
           </div>
-          <p className={`px-3 py-2 text-[var(--color-text-muted)] md:px-3 md:py-2.5 ${sectionTableText} text-[13px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.ourCall) }} />
+          <p className={`px-2 py-1.5 text-[var(--color-text-muted)] md:px-2.5 md:py-2 ${sectionTableText} text-[12px] leading-[1.35] md:text-[13px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.ourCall) }} />
         </div>
       ))}
     </div>
@@ -146,10 +147,10 @@ function OneLineVerdict({ text, isDark }) {
   return (
     <div
       className={`flex gap-4 rounded-md border p-4 shadow-[0_14px_36px_var(--color-shadow)] backdrop-blur md:items-center md:p-5 ${
-        isDark ? "border-white/20 bg-[rgba(2,13,25,0.72)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)]"
+        isDark ? "border-white/20 bg-[rgba(13,28,24,0.72)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)]"
       }`}
     >
-      <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)] md:h-20 md:w-20">
+      <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)] md:h-16 md:w-16">
         <svg aria-hidden="true" viewBox="0 0 24 24" className="h-10 w-10 md:h-12 md:w-12" fill="none" stroke="currentColor" strokeWidth="2">
           {statIcons.shield}
         </svg>
@@ -163,7 +164,7 @@ function OneLineVerdict({ text, isDark }) {
   );
 }
 
-export default function OwnershipVerdict({ data }) {
+export default function OwnershipVerdict({ data, band = "page" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -172,11 +173,12 @@ export default function OwnershipVerdict({ data }) {
   const stats = data.summaryStats || [];
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)] py-7 text-[var(--color-text)] md:py-9">
+    <section className={`relative overflow-hidden ${sectionBgClass(band)} px-3 py-7 text-[var(--color-text)] md:px-6 md:py-9`}>
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="grid gap-6 lg:grid-cols-[0.7fr_1fr] lg:items-start">
           <div>
-            <h2 className={`max-w-[640px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+            <HeadingEyebrow text="OWNERSHIP VERDICT" />
+            <h2 className={`mt-3 max-w-[640px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
               <span dangerouslySetInnerHTML={{ __html: title.before }} />
               {title.accent ? (
                 <>
@@ -185,9 +187,6 @@ export default function OwnershipVerdict({ data }) {
                 </>
               ) : null}
             </h2>
-            <div className="mt-3">
-              <MStripe />
-            </div>
             <div className="relative mt-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[rgba(255,255,255,0.18)] shadow-[0_10px_24px_var(--color-shadow)] md:mt-5 md:h-[260px]">
               <Image
                 src="/model/Section 2-bg.webp"
@@ -199,7 +198,7 @@ export default function OwnershipVerdict({ data }) {
               <div
                 className={`absolute inset-0 ${
                   isDark
-                    ? "bg-[linear-gradient(180deg,rgba(2,13,25,0.05)_0%,rgba(2,13,25,0.35)_100%)]"
+                    ? "bg-[linear-gradient(180deg,rgba(13,28,24,0.05)_0%,rgba(13,28,24,0.35)_100%)]"
                     : "bg-[linear-gradient(180deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.18)_100%)]"
                 }`}
               />
@@ -225,11 +224,11 @@ export default function OwnershipVerdict({ data }) {
         {stats.length > 0 ? (
           <ul
             className={`mt-5 hidden grid-cols-5 overflow-hidden rounded-md border shadow-[0_14px_36px_var(--color-shadow)] backdrop-blur md:grid ${
-              isDark ? "border-white/14 bg-[rgba(2,13,25,0.74)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)]"
+              isDark ? "border-white/14 bg-[rgba(13,28,24,0.74)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)]"
             }`}
           >
             {stats.map((stat) => (
-              <li key={`${stat.value}-${stat.label}`} className="flex items-center gap-4 border-r border-[var(--color-border)] px-7 py-5 last:border-r-0">
+              <li key={`${stat.value}-${stat.label}`} className="flex items-center gap-3 border-r border-[var(--color-border)] px-5 py-4 last:border-r-0">
                 <StatIcon iconKey={stat.iconKey} />
                 <p className={`text-[var(--color-text)] ${sectionTableText}`}>
                   {stat.value ? <strong className="mr-1 text-[1.45rem] leading-none text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: stat.value }} /> : null}

@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
 import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
@@ -160,113 +161,167 @@ function GenerationImage({ code, large = false }) {
     );
   }
 
-function GenerationCard({ card, index, featured = false, onToggle }) {
+function ClampedDescription({ html, open, className = "" }) {
+  if (!html) return null;
+
+  return (
+    <p
+      className={`w-full min-w-0 overflow-hidden text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)] md:text-[13px] ${
+        open ? "" : "line-clamp-3 max-h-[calc(1.35em*3)]"
+      } ${className}`}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  );
+}
+
+function DesktopGenerationCard({ card, index, open = false, onToggle }) {
   const title = splitCardTitle(card.title);
   const meta = splitMeta(card.meta);
+  const badge = cleanText(card.badge);
+  const verdict = cleanText(card.verdict);
+  const engines = meta.engines;
   const label = cleanText(card.cta?.label || `Explore ${title.code}`);
   const href = card.cta?.href || "#";
+  const hasCta = Boolean(card.cta?.label && href && href !== "#");
 
   return (
     <article
       className={`rounded-md border bg-[var(--color-surface-raised)] p-3 text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
-        featured ? "border-[rgba(7,95,216,0.7)] md:col-span-2" : "border-[var(--color-border)]"
+        open ? "border-[var(--color-primary)]" : "border-[var(--color-border)]"
       }`}
     >
-      <button
-        type="button"
-        onClick={onToggle}
-        className={`flex w-full items-start gap-3 text-left ${onToggle ? "" : "pointer-events-none"}`}
-      >
+      <button type="button" onClick={onToggle} className="flex w-full items-start gap-3 text-left">
         <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white shadow-sm">
           {index + 1}
         </span>
         <div className="min-w-0 flex-1">
           <p className={`${sectionTableText} font-semibold`} dangerouslySetInnerHTML={{ __html: title.series }} />
-          <h3 className="mt-0.5"><GenerationCode><span dangerouslySetInnerHTML={{ __html: title.code }} /></GenerationCode></h3>
-          <p className="mt-2 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
-            <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />
-          </p>
-          {meta.engines ? <p className="text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">• <span dangerouslySetInnerHTML={{ __html: meta.engines }} /></p> : null}
+          <h3 className="mt-0.5">
+            <GenerationCode>
+              <span dangerouslySetInnerHTML={{ __html: title.code }} />
+            </GenerationCode>
+          </h3>
         </div>
-        <span className="text-[var(--color-primary)]">
-          <ChevronIcon open={featured} />
+        <span className="shrink-0 text-[var(--color-text-muted)]">
+          <ChevronIcon open={open} />
         </span>
       </button>
 
-      <div className={featured ? "mt-2" : "mt-4"}>
-        <GenerationImage code={title.code} large={featured} />
+      <div className="mt-4">
+        <GenerationImage code={title.code} />
       </div>
 
-      {featured ? (
-        <Link
-          href={href}
-          className="mt-4 flex min-h-10 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.7)] px-3 text-center text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
-        >
-          <span>{label.replace(/\s*\u2192\s*$/, "")}</span>
-          <ArrowIcon />
-        </Link>
-      ) : null}
-
-      <div className={featured ? "mt-4" : "mt-5"}>
-        <Rating value={card.rating} compact={!featured} />
-      </div>
-
-      {featured && card.verdict ? (
-        <div className="mt-4 text-[15px] leading-[1.45]">
-          <p className="font-bold">Our Verdict:</p>
-          <p className="mt-1" dangerouslySetInnerHTML={{ __html: cleanText(card.verdict) }} />
-        </div>
-      ) : null}
-
-      {!featured && (
-        <Link
-          href={href}
-          className="mt-3 hidden min-h-9 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.45)] px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] md:flex"
-        >
-          <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
-          <ArrowIcon />
-        </Link>
-      )}
-
-      {!featured && card.verdict ? (
-        <div className="mt-4 hidden text-[15px] leading-[1.45] md:block">
-          <p className="font-bold">Our Verdict:</p>
-          <p className="mt-1" dangerouslySetInnerHTML={{ __html: cleanText(card.verdict) }} />
+      {open ? (
+        <div className="mt-4">
+          {badge ? (
+            <p className="text-[13px] font-bold leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: badge }} />
+          ) : null}
+          {meta.years ? (
+            <p className="mt-2 text-[13px] leading-[1.35] text-[var(--color-text-muted)] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />
+          ) : null}
+          {engines ? <ClampedDescription html={`• ${engines}`} open className="mt-2" /> : null}
+          {card.rating ? (
+            <div className="mt-5">
+              <Rating value={card.rating} compact />
+            </div>
+          ) : null}
+          {hasCta ? (
+            <Link
+              href={href}
+              className="mt-3 flex min-h-9 items-center justify-center gap-3 rounded-md border border-[var(--color-primary)]/50 px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
+            >
+              <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
+              <ArrowIcon />
+            </Link>
+          ) : null}
+          {verdict ? (
+            <div className="mt-4 text-[15px] leading-[1.45]">
+              <p className="font-bold">Our Verdict:</p>
+              <p className="mt-1" dangerouslySetInnerHTML={{ __html: verdict }} />
+            </div>
+          ) : null}
         </div>
       ) : null}
     </article>
   );
 }
 
-function MobileGenerationRow({ card, index, onToggle }) {
+function MobileGenerationCard({ card, index, open = false, onToggle }) {
   const title = splitCardTitle(card.title);
   const meta = splitMeta(card.meta);
   const badge = cleanText(card.badge);
+  const verdict = cleanText(card.verdict);
+  const engines = meta.engines;
+  const label = cleanText(card.cta?.label || `Explore ${title.code}`);
+  const href = card.cta?.href || "#";
+  const hasCta = Boolean(card.cta?.label && href && href !== "#");
 
   return (
-    <button
-      type="button"
-      onClick={onToggle}
-      className="flex min-h-[86px] w-full items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 text-left text-[var(--color-text)]"
+    <article
+      className={`rounded-md border bg-[var(--color-surface-raised)] text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
+        open ? "border-[var(--color-primary)]" : "border-[var(--color-border)]"
+      }`}
     >
-      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white shadow-sm">
-        {index + 1}
-      </span>
-      <div className="min-w-0 flex-1">
-        <p className={`${sectionTableText} font-semibold`} dangerouslySetInnerHTML={{ __html: title.series }} />
-        <h3 className="mt-0.5"><GenerationCode><span dangerouslySetInnerHTML={{ __html: title.code }} /></GenerationCode></h3>
-        {badge ? <p className="mt-1 text-[13px] font-bold leading-[1.35]" dangerouslySetInnerHTML={{ __html: badge }} /> : null}
-        <p className="mt-1 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
-          <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} /> <span className="px-1">•</span> <span dangerouslySetInnerHTML={{ __html: meta.engines }} />
-        </p>
-      </div>
-      <div className="w-[112px] shrink-0">
-        <GenerationImage code={title.code} />
-      </div>
-      <span className="shrink-0 text-[var(--color-primary)]">
-        <ChevronIcon />
-      </span>
-    </button>
+      <button type="button" onClick={onToggle} className="flex w-full items-center gap-3 p-3 text-left">
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white shadow-sm">
+          {index + 1}
+        </span>
+
+        <div className="min-w-0 flex-1">
+          {title.series ? (
+            <p className={`${sectionTableText} font-semibold`} dangerouslySetInnerHTML={{ __html: title.series }} />
+          ) : null}
+          <h3 className={title.series ? "mt-0.5" : undefined}>
+            <GenerationCode>
+              <span dangerouslySetInnerHTML={{ __html: title.code || cleanText(card.title) }} />
+            </GenerationCode>
+          </h3>
+        </div>
+
+        <div className="w-[88px] shrink-0">
+          <GenerationImage code={title.code || "default"} />
+        </div>
+
+        <span className="shrink-0 text-[var(--color-text-muted)]">
+          <ChevronIcon open={open} />
+        </span>
+      </button>
+
+      {open ? (
+        <div className="border-t border-[var(--color-border)] px-3 pb-3 pt-2">
+          {meta.years ? (
+            <p className="text-[13px] font-bold leading-[1.3]" dangerouslySetInnerHTML={{ __html: `(${meta.years.replace(/^\(|\)$/g, "")})` }} />
+          ) : null}
+          {badge ? (
+            <p className="mt-1 text-[12px] font-bold leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: badge }} />
+          ) : null}
+          {engines ? <ClampedDescription html={engines} open className="mt-1" /> : null}
+
+          {card.rating ? (
+            <div className="mt-3">
+              <Rating value={card.rating} compact />
+            </div>
+          ) : null}
+
+          {hasCta ? (
+            <Link
+              href={href}
+              className="mt-3 flex min-h-10 items-center justify-center gap-3 rounded-md border border-[var(--color-primary)] px-3 text-center text-[16px] font-bold text-[var(--color-primary)]"
+            >
+              <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
+              <ArrowIcon />
+            </Link>
+          ) : null}
+
+          {verdict ? (
+            <div className="mt-3 text-[15px] leading-[1.45]">
+              <p className="font-bold">Our Verdict:</p>
+              <p className="mt-1" dangerouslySetInnerHTML={{ __html: verdict }} />
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+    </article>
   );
 }
 
@@ -333,9 +388,9 @@ function ComparisonTable({ rangeTable }) {
   );
 }
 
-export default function GenerationsGrid({ data }) {
+export default function GenerationsGrid({ data, band = "page" }) {
   const { theme } = useTheme();
-  const [openMobileIndex, setOpenMobileIndex] = useState(-1);
+  const [openIndex, setOpenIndex] = useState(-1);
   const [desktopSlide, setDesktopSlide] = useState(0);
   if (!data) return null;
 
@@ -347,10 +402,14 @@ export default function GenerationsGrid({ data }) {
     desktopSlides.push(cards.slice(index, index + 4));
   }
 
+  const toggleCard = (index) => setOpenIndex((prev) => (prev === index ? -1 : index));
+
   return (
-    <section data-theme-mode={theme} className="bg-[var(--color-page)] py-5 text-[var(--color-text)] md:py-6">
+    <section data-theme-mode={theme} className={`${sectionBgClass(band)} px-3 py-5 text-[var(--color-text)] md:px-6 md:py-6`}>
+      <div className="mx-auto w-full max-w-8xl">
       <div>
-      <h2 className="max-w-[640px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
+      <HeadingEyebrow text="GENERATIONS" />
+            <h2 className="mt-3 max-w-[640px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
           <span dangerouslySetInnerHTML={{ __html: title.main }} />
           {title.accent ? (
             <>
@@ -359,9 +418,6 @@ export default function GenerationsGrid({ data }) {
             </>
           ) : null}
         </h2>
-        <div className="mt-3">
-          <MStripe />
-        </div>
         {data.subHeadline ? (
           <p className={`mt-3 max-w-[640px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
         ) : null}
@@ -375,13 +431,18 @@ export default function GenerationsGrid({ data }) {
           >
             {desktopSlides.map((slide, slideIndex) => (
               <div key={slideIndex} className="grid w-full shrink-0 grid-cols-4 gap-3">
-                {slide.map((card, cardIndex) => (
-                  <GenerationCard
-                    key={card.title}
-                    card={card}
-                    index={slideIndex * 4 + cardIndex}
-                  />
-                ))}
+                {slide.map((card, cardIndex) => {
+                  const index = slideIndex * 4 + cardIndex;
+                  return (
+                    <DesktopGenerationCard
+                      key={card.title || index}
+                      card={card}
+                      index={index}
+                      open={openIndex === index}
+                      onToggle={() => toggleCard(index)}
+                    />
+                  );
+                })}
               </div>
             ))}
           </div>
@@ -406,22 +467,13 @@ export default function GenerationsGrid({ data }) {
 
       <div className="mt-5 space-y-2 md:hidden">
         {cards.map((card, index) => (
-          openMobileIndex === index ? (
-            <GenerationCard
-              key={card.title}
-              card={card}
-              index={index}
-              featured
-              onToggle={() => setOpenMobileIndex(openMobileIndex === index ? -1 : index)}
-            />
-          ) : (
-            <MobileGenerationRow
-              key={card.title}
-              card={card}
-              index={index}
-              onToggle={() => setOpenMobileIndex(index)}
-            />
-          )
+          <MobileGenerationCard
+            key={card.title || index}
+            card={card}
+            index={index}
+            open={openIndex === index}
+            onToggle={() => toggleCard(index)}
+          />
         ))}
       </div>
 
@@ -443,6 +495,7 @@ export default function GenerationsGrid({ data }) {
           <ArrowIcon />
         </p>
       ) : null}
+      </div>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionBody, sectionButton, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 function cleanText(text = "") {
@@ -63,7 +64,7 @@ function FaqItem({ item, index }) {
   );
 }
 
-export default function FAQAccordion({ data }) {
+export default function FAQAccordion({ data, band = "page" }) {
   if (!data) return null;
 
   const title = splitTitle(data.h2);
@@ -72,8 +73,10 @@ export default function FAQAccordion({ data }) {
   const columns = [items.slice(0, midpoint), items.slice(midpoint)];
 
   return (
-    <section className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-6">
-      <h2 className={`max-w-[980px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+    <section className={`px-3 py-6 md:px-6 md:py-7 ${sectionBgClass(band)}`}>
+      <div className="mx-auto w-full max-w-8xl rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-6">
+      <HeadingEyebrow text="FAQ" />
+      <h2 className={`mt-3 max-w-[980px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
         <span dangerouslySetInnerHTML={{ __html: title.before }} />
         {title.accent ? (
           <>
@@ -82,9 +85,6 @@ export default function FAQAccordion({ data }) {
           </>
         ) : null}
       </h2>
-      <div className="mt-3">
-        <MStripe />
-      </div>
 
       <div className="mt-5 grid gap-3 lg:grid-cols-2 lg:gap-x-6">
         {columns.map((column, columnIndex) => (
@@ -104,7 +104,7 @@ export default function FAQAccordion({ data }) {
           <div>
             <h3 className="text-[18px] font-bold leading-tight text-[var(--color-text)] md:text-[20px]">Need a head-to-head comparison?</h3>
             <p className={`mt-1 max-w-[620px] text-[var(--color-text-muted)] ${sectionBody} md:text-[16px]`}>
-              Read our in-depth BMW 3 Series vs 5 Series reliability guide.
+              Read our in-depth Land Rover &amp; Range Rover reliability comparisons.
             </p>
           </div>
         </div>
@@ -112,6 +112,7 @@ export default function FAQAccordion({ data }) {
           Read the Full Head-to-Head
           <Icon className="h-6 w-6" />
         </Link>
+      </div>
       </div>
     </section>
   );

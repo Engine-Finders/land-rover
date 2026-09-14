@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
 import { sectionDescription } from "@/components/models/sectionTypography";
 
@@ -225,9 +226,9 @@ function DesktopTable({ engines }) {
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
       <table className="w-full border-collapse text-left text-[13px] text-[var(--color-text)]">
         <thead>
-          <tr className="bg-[var(--color-page-soft)]">
+          <tr className="bg-[var(--color-chrome)] text-white">
             {["Engine Code", "Family", "Fuel", "Disp.", "Power", "Years", "Gen.", "Reliability", "2025 Enquiries", "Avg. Recon Cost"].map((column) => (
-              <th key={column} className="border-b border-r border-[var(--color-border)] px-3 py-3 text-center text-[13px] font-bold last:border-r-0">
+              <th key={column} className="border-b border-r border-white/15 px-2.5 py-2 text-center text-[13px] font-bold last:border-r-0">
                 {column}
               </th>
             ))}
@@ -236,16 +237,16 @@ function DesktopTable({ engines }) {
         <tbody>
           {engines.slice(0, 10).map((row) => (
             <tr key={row.engineCode}>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 font-bold" dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.family) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.displacement) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.power) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.years) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.model) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"><Rating value={row.reliability} /></td>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.enquiries) }} />
-              <td className="border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanCost(row.avgRebuildCost) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-2.5 py-2 font-bold" dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-2.5 py-2 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.family) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-2.5 py-2 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-2.5 py-2 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.displacement) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-2.5 py-2 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.power) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-2.5 py-2 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.years) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-2.5 py-2 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.model) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-2.5 py-2 text-center"><Rating value={row.reliability} /></td>
+              <td className="border-r border-t border-[var(--color-border)] px-2.5 py-2 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.enquiries) }} />
+              <td className="border-t border-[var(--color-border)] px-2.5 py-2 text-center" dangerouslySetInnerHTML={{ __html: cleanCost(row.avgRebuildCost) }} />
             </tr>
           ))}
         </tbody>
@@ -302,7 +303,7 @@ function MobileControls({ filters, options, onChange, onReset }) {
 function MobileTable({ engines }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px]">
-      <div className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] bg-[var(--color-primary)] px-3 py-3 text-[15px] font-bold uppercase text-white">
+      <div className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] bg-[var(--color-chrome)] px-2.5 py-2 text-[15px] font-bold uppercase text-white">
         <span>Engine Code</span>
         <span>Fuel</span>
         <span>2025 Enquiries</span>
@@ -336,7 +337,7 @@ function MobileTable({ engines }) {
             data-code={cleanText(row.engineCode)}
             data-family={cleanText(row.family)}
             hidden={index >= 9}
-            className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] items-center border-t border-[var(--color-border)] px-3 py-3"
+            className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] items-center border-t border-[var(--color-border)] px-2.5 py-2"
           >
             <span className="font-bold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }} />
             <span className="flex items-center gap-2">
@@ -361,7 +362,7 @@ function MobileTable({ engines }) {
   );
 }
 
-export default function EngineDatabase({ data }) {
+export default function EngineDatabase({ data, band = "page" }) {
   const { theme } = useTheme();
   const [filters, setFilters] = useState(defaultFilters);
   const engines = useMemo(() => data?.engines || [], [data]);
@@ -410,11 +411,13 @@ export default function EngineDatabase({ data }) {
   }
 
   return (
-    <section id="engine-database" data-engine-database data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
+    <section id="engine-database" data-engine-database data-theme-mode={theme} className={`${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6`}>
+      <div className="mx-auto w-full max-w-8xl">
       <div className="hidden md:block">
         <div>
           <div>
-            <h2 className="max-w-[650px] text-[27px] font-bold tracking-normal md:text-[39px]">
+            <HeadingEyebrow text="ENGINE DATABASE" />
+            <h2 className="mt-3 max-w-[650px] text-[27px] font-bold tracking-normal md:text-[39px]">
               <span dangerouslySetInnerHTML={{ __html: title.main }} />
               {title.accent ? (
                 <>
@@ -423,9 +426,6 @@ export default function EngineDatabase({ data }) {
                 </>
               ) : null}
             </h2>
-            <div className="mt-2">
-              <MStripe />
-            </div>
             {data.subHeadline ? <p className="mt-2 max-w-[610px] text-[14px] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} /> : null}
           </div>
 
@@ -459,14 +459,12 @@ export default function EngineDatabase({ data }) {
       </div>
 
       <div className="md:hidden">
-        <h2 className="text-[2rem] font-bold leading-[1.08] tracking-normal">
+        <HeadingEyebrow text="ENGINE DATABASE" />
+        <h2 className="mt-3 text-[2rem] font-bold leading-[1.08] tracking-normal">
           <span dangerouslySetInnerHTML={{ __html: shortTitle(data.h2).replace("Engine Codes - The Database", "Engine Codes -") }} />
           <br />
           <span className="text-[var(--color-primary)]">The Database</span>
         </h2>
-        <div className="mt-3">
-          <MStripe />
-        </div>
         <p className={`mt-4 ${sectionDescription} text-[var(--color-text-muted)]`}>
           The complete database of BMW 3 Series engine codes with real UK enquiry data, fitted models, and replacement cost insights.
         </p>
@@ -502,6 +500,7 @@ export default function EngineDatabase({ data }) {
             <p className="flex gap-4"><span className="text-[var(--color-primary)]">{statIcon("file")}</span><span><strong>Engine codes:</strong><br />Cross-referenced from your existing data</span></p>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

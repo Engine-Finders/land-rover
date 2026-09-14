@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
 import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
@@ -126,8 +127,8 @@ function UrgencyKey({ items }) {
 
   return (
     <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_8px_22px_var(--color-shadow)]">
-      <div className="grid gap-4 md:grid-cols-[1fr_repeat(4,1.2fr)] md:items-start">
-        <h3 className="text-[15px] font-bold uppercase text-[var(--color-text)]">Urgency Key</h3>
+      <div className="grid gap-4 md:grid-cols-[1fr_repeat(4,1.2fr)] md:items-center">
+        <h3 className="text-center text-[15px] font-bold uppercase text-[var(--color-text)]">Urgency Key</h3>
         {items.map((item) => {
           const label = cleanText(item.label);
           const type = label.toLowerCase();
@@ -148,22 +149,21 @@ function UrgencyKey({ items }) {
   );
 }
 
-export default function CommonProblems({ data }) {
+export default function CommonProblems({ data, band = "page" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const title = splitTitle(data.h2);
 
   return (
-    <section data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
+    <section data-theme-mode={theme} className={`${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6`}>
+      <div className="mx-auto w-full max-w-8xl">
       <div>
-        <h2 className={`max-w-[860px] ${sectionH2} tracking-normal`}>
+        <HeadingEyebrow text="COMMON PROBLEMS" />
+            <h2 className={`mt-3 max-w-[860px] ${sectionH2} tracking-normal`}>
           <span dangerouslySetInnerHTML={{ __html: title.main }} />
           {title.accent ? <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
         </h2>
-        <div className="mt-2">
-          <MStripe />
-        </div>
         {data.subHeadline ? (
           <p className="mt-3 max-w-[620px] text-[14px] leading-[1.45] text-[var(--color-text-muted)] md:text-[16px]">
             {cleanText(data.subHeadline)}
@@ -179,6 +179,7 @@ export default function CommonProblems({ data }) {
 
       <div className="mt-4">
         <UrgencyKey items={data.urgencyKey} />
+      </div>
       </div>
     </section>
   );

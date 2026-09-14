@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const signalIconPaths = [
@@ -132,7 +133,7 @@ function RichText({ value, strongFirst = false }) {
 function SignalTable({ rows }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)]">
-      <div className="grid grid-cols-[34%_30%_36%] bg-[var(--color-primary-strong)] text-[12px] font-bold text-white md:grid-cols-[32%_33%_35%] md:text-[14px]">
+      <div className="grid grid-cols-[34%_30%_36%] bg-[var(--color-chrome)] text-[12px] font-bold text-white md:grid-cols-[32%_33%_35%] md:text-[14px]">
         <div className="px-2 py-2 md:px-5 md:py-3">Signal</div>
         <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">2025 Data</div>
         <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">Demand Trend</div>
@@ -198,23 +199,28 @@ function LiveFeed({ note }) {
   const displayNote = /module embeds here/i.test(note) ? "Real-time enquiry activity across the UK." : cleanText(note);
 
   return (
-    <aside className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_10px_30px_var(--color-shadow)] md:p-5">
-      <div className="flex items-center justify-between gap-4">
-        <h3 className="text-[16px] font-bold text-[var(--color-text)] md:text-[17px]">Live Enquiry Feed</h3>
+    <aside className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 shadow-[0_10px_30px_var(--color-shadow)] md:p-3.5">
+      <div className="flex items-center justify-between gap-3">
+        <h3 className="text-[16px] font-bold leading-[1.15] text-[var(--color-text)] md:text-[17px]">
+          Live Enquiry
+          <span className="hidden md:inline"><br /></span>
+          <span className="md:hidden"> </span>
+          Feed
+        </h3>
         <span className="inline-flex items-center gap-2 text-[13px] text-[var(--color-text-muted)]">
           <span className="h-2 w-2 rounded-full bg-[var(--color-primary)]" />
           Live
         </span>
       </div>
-      <svg aria-hidden="true" viewBox="0 0 260 90" className="mt-5 h-20 w-full text-[var(--color-primary)]" fill="none">
+      <svg aria-hidden="true" viewBox="0 0 260 90" className="mt-3 h-16 w-full text-[var(--color-primary)]" fill="none">
         <path d="M4 56c16 24 25-8 39 8s23-50 43-24 25 4 38-9 22-8 33 6 19-3 27-12 16 14 28 1 19 12 44-1" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
         <path d="M4 56c16 24 25-8 39 8s23-50 43-24 25 4 38-9 22-8 33 6 19-3 27-12 16 14 28 1 19 12 44-1" stroke="currentColor" strokeWidth="12" strokeOpacity=".12" strokeLinecap="round" />
         {[43, 86, 157, 212, 256].map((x, index) => (
           <circle key={x} cx={x} cy={[64, 40, 37, 26, 25][index]} r="4" fill="var(--color-surface)" stroke="currentColor" strokeWidth="3" />
         ))}
       </svg>
-      <p className="mt-3 text-[14px] leading-[1.35] text-[var(--color-text-muted)]">{displayNote}</p>
-      <Link href="#" className="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-primary)] px-5 py-3 text-[15px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
+      <p className="mt-2 text-[14px] leading-[1.35] text-[var(--color-text-muted)]">{displayNote}</p>
+      <Link href="#" className="mt-3 inline-flex min-h-10 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-primary)] px-4 py-2 text-[15px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
         View Live Feed
         <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M5 12h14m-6-6 6 6-6 6" />
@@ -247,17 +253,18 @@ function PullQuote({ data }) {
   );
 }
 
-export default function MarketIntelligence({ data, quoteData }) {
+export default function MarketIntelligence({ data, band = "page", quoteData }) {
   if (!data) return null;
 
   const title = splitTitle(data.h2);
 
   return (
-    <section className="relative overflow-hidden py-5 text-[var(--color-text)] md:py-6">
-      <div className="relative">
+    <section className={`relative overflow-hidden px-3 py-5 md:px-6 md:py-6 ${sectionBgClass(band)} text-[var(--color-text)]`}>
+      <div className="relative mx-auto w-full max-w-8xl">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="max-w-[960px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
+            <HeadingEyebrow text="MARKET INTELLIGENCE" />
+            <h2 className="mt-3 max-w-[960px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
               <span dangerouslySetInnerHTML={{ __html: title.before }} />
               {title.accent ? (
                 <>
@@ -267,16 +274,13 @@ export default function MarketIntelligence({ data, quoteData }) {
               ) : null}
               {title.after}
             </h2>
-            <div className="mt-2">
-              <MStripe />
-            </div>
           </div>
           <div className="flex min-w-[210px] items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_8px_22px_var(--color-shadow)] md:p-5">
             <CircleIcon>{<path d="M16 11a4 4 0 0 1-8 0m11 8a7 7 0 0 0-14 0m15-11a3 3 0 1 1-2.8-3M4 8a3 3 0 1 0 2.8-3" />}</CircleIcon>
             <div>
               <p className="text-[24px] font-bold leading-none text-[var(--color-text)] md:text-[34px]" dangerouslySetInnerHTML={{ __html: metricFromTitle(data.h2) }} />
               <p className="mt-2 text-[13px] leading-[1.45] text-[var(--color-text-muted)] md:text-[14px]">Total Enquiries in 2025</p>
-              <p className="mt-1 text-[13px] font-medium text-[var(--color-primary)] md:text-[14px]">[BMW-VERIFIED]</p>
+              <p className="mt-1 text-[13px] font-medium text-[var(--color-primary)] md:text-[14px]">[EM-VERIFIED]</p>
             </div>
           </div>
         </div>

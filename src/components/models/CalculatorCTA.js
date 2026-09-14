@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionBody, sectionButton, sectionDescription } from "@/components/models/sectionTypography";
 
 const iconPaths = {
@@ -219,7 +220,7 @@ function SmartDecision() {
   );
 }
 
-export default function CalculatorCTA({ data }) {
+export default function CalculatorCTA({ data, band = "page" }) {
   if (!data) return null;
 
   const title = splitTitle(data.h2);
@@ -228,8 +229,8 @@ export default function CalculatorCTA({ data }) {
   const paths = data.paths || [];
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-8">
-      <div className="relative overflow-hidden rounded-md bg-[var(--color-surface-raised)]">
+    <section className={`relative overflow-hidden ${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6 md:py-8`}>
+      <div className="relative mx-auto w-full max-w-8xl overflow-hidden rounded-md bg-[var(--color-surface-raised)]">
         <Image
           src="/model/Hero-bg-image.webp"
           alt=""
@@ -254,7 +255,8 @@ export default function CalculatorCTA({ data }) {
         />
         <div className="relative z-10 px-4 py-5 lg:px-6 lg:py-6">
           <div className="max-w-[820px]">
-            <h2 className="max-w-[820px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
+            <HeadingEyebrow text="DIAGNOSTIC CALCULATOR" />
+            <h2 className="mt-3 max-w-[820px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
               <span dangerouslySetInnerHTML={{ __html: title.before }} />
               {title.accent ? (
                 <>
@@ -263,9 +265,6 @@ export default function CalculatorCTA({ data }) {
                 </>
               ) : null}
             </h2>
-            <div className="mt-3">
-              <MStripe />
-            </div>
             {data.intro ? (
               <div className={`mt-3 max-w-[700px] text-[var(--color-text-muted)] ${sectionDescription}`}>
                 <p dangerouslySetInnerHTML={{ __html: intro.first }} />

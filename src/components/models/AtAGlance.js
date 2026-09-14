@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
 import { sectionBody, sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
@@ -49,7 +50,7 @@ function badgeParts(value = "") {
   const parts = [];
   let text = cleanText(value);
 
-  for (const token of ["[BMW-VERIFIED]", "[BMW-QUOTE]"]) {
+  for (const token of ["[EM-VERIFIED]", "[EM-QUOTE]", "[BMW-VERIFIED]", "[BMW-QUOTE]"]) {
     if (text.includes(token)) {
       text = text.replace(token, "").trim();
       parts.push(token.replace("[", "").replace("]", ""));
@@ -102,11 +103,11 @@ function ValueWithBadges({ value }) {
 function DesktopTable({ rows, isDark }) {
   return (
     <div
-      className={`hidden overflow-hidden rounded-md border shadow-[0_14px_36px_var(--color-shadow)] backdrop-blur md:block ${
-        isDark ? "border-white/16 bg-[rgba(2,13,25,0.72)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
+      className={`hidden w-full overflow-hidden rounded-md border shadow-[0_14px_36px_var(--color-shadow)] backdrop-blur md:block ${
+        isDark ? "border-white/16 bg-[rgba(13,28,24,0.72)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
       }`}
     >
-      <div className={`grid grid-cols-[68px_0.95fr_1.7fr] border-b border-[var(--color-border)] px-5 py-3 font-semibold text-[var(--color-text)] md:grid-cols-[72px_0.95fr_1.7fr] md:px-5 md:py-3 ${sectionTableText}`}>
+      <div className={`grid grid-cols-[68px_0.95fr_1.7fr] bg-[var(--color-chrome)] px-5 py-3 text-[13px] font-semibold text-white md:grid-cols-[72px_0.95fr_1.7fr] md:px-5 md:py-3 ${sectionTableText}`}>
         <span />
         <span>Metric</span>
         <span>Value</span>
@@ -144,7 +145,7 @@ function MobileCards({ rows, isDark }) {
   return (
     <ul
       className={`grid grid-cols-2 overflow-hidden rounded-md border shadow-[0_14px_36px_var(--color-shadow)] backdrop-blur md:hidden ${
-        isDark ? "border-white/16 bg-[rgba(2,13,25,0.76)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.88)]"
+        isDark ? "border-white/16 bg-[rgba(13,28,24,0.76)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.88)]"
       }`}
     >
       {withoutRating.map((row) => (
@@ -162,7 +163,7 @@ function RatingCard({ row }) {
   if (!row) return null;
 
   return (
-    <div className="mt-5 flex items-center gap-5 rounded-md bg-[#020d25] p-5 text-white md:hidden">
+    <div className="mt-5 flex items-center gap-5 rounded-md bg-[#0d1c18] p-5 text-white md:hidden">
       <span className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full border border-[rgba(29,111,255,0.4)] bg-[rgba(29,111,255,0.12)] text-[var(--color-primary)]">
         <svg aria-hidden="true" viewBox="0 0 24 24" className="h-12 w-12" fill="none" stroke="currentColor" strokeWidth="2">
           {iconPaths["Overall Rating"]}
@@ -180,7 +181,7 @@ function RatingCard({ row }) {
   );
 }
 
-export default function AtAGlance({ data }) {
+export default function AtAGlance({ data, band = "page" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -190,7 +191,7 @@ export default function AtAGlance({ data }) {
   const ratingRow = rows.find((row) => row.metric === "Overall Rating");
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`relative overflow-hidden ${sectionBgClass(band)} px-3 py-8 text-[var(--color-text)] md:px-6 md:py-10`}>
       <div className="absolute inset-0">
         <Image
           src="/model/Section 3-bg.webp"
@@ -202,16 +203,17 @@ export default function AtAGlance({ data }) {
         <div
           className={`absolute inset-0 ${
             isDark
-              ? "bg-[linear-gradient(90deg,rgba(2,7,11,0.97)_0%,rgba(2,7,11,0.82)_46%,rgba(2,7,11,0.5)_100%)]"
+              ? "bg-[linear-gradient(90deg,rgba(13,28,24,0.97)_0%,rgba(13,28,24,0.82)_46%,rgba(13,28,24,0.5)_100%)]"
               : "bg-[linear-gradient(90deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.78)_44%,rgba(255,255,255,0.38)_100%)]"
           }`}
         />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
+      <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[510px]">
-          <h2 className={`font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+          <HeadingEyebrow text="AT A GLANCE" />
+            <h2 className={`mt-3 font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
             <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>
@@ -220,9 +222,6 @@ export default function AtAGlance({ data }) {
               </>
             ) : null}
           </h2>
-          <div className="mt-3">
-            <MStripe />
-          </div>
           <p className={`mt-5 max-w-[430px] text-[var(--color-text-muted)] ${sectionDescription}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         </div>
 

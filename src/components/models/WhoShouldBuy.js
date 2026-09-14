@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionBody, sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const buyerImages = [
@@ -172,7 +173,7 @@ function BuyerRow({ row, index }) {
   );
 }
 
-export default function WhoShouldBuy({ data }) {
+export default function WhoShouldBuy({ data, band = "page" }) {
   if (!data) return null;
 
   const title = splitTitle(data.h2);
@@ -180,10 +181,12 @@ export default function WhoShouldBuy({ data }) {
   const profiles = data.profiles || [];
 
   return (
-    <section className="bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-8">
+    <section className={`${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6 md:py-8`}>
+      <div className="mx-auto w-full max-w-8xl">
       <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,0.92fr)_minmax(520px,1fr)] lg:items-start">
         <div>
-          <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
+          <HeadingEyebrow text="WHO SHOULD BUY" />
+            <h2 className="mt-3 max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
             <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>
@@ -192,9 +195,6 @@ export default function WhoShouldBuy({ data }) {
               </>
             ) : null}
           </h2>
-          <div className="mt-3">
-            <MStripe />
-          </div>
           <p className={`mt-3 max-w-[620px] text-[var(--color-text-muted)] ${sectionDescription}`}>
             Different buyers, different priorities. Here is our verdict on who the <span dangerouslySetInnerHTML={{ __html: modelName }} /> is perfect for - and who should think twice.
           </p>
@@ -204,7 +204,7 @@ export default function WhoShouldBuy({ data }) {
       </div>
 
       <div className="mt-6 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_12px_32px_var(--color-shadow)]">
-        <div className="hidden grid-cols-[40%_18%_42%] bg-[var(--color-primary-strong)] text-[14px] font-bold text-white lg:grid">
+        <div className="hidden grid-cols-[40%_18%_42%] bg-[var(--color-chrome)] text-[14px] font-bold text-white lg:grid">
           {(data.columns || ["Buyer Profile", "Rating", "Our Verdict"]).map((column, index) => (
             <div key={column} className={`px-3 py-2.5 ${index > 0 ? "border-l border-white/20" : ""}`}>
               {column}
@@ -237,6 +237,7 @@ export default function WhoShouldBuy({ data }) {
             <path d="M5 12h14m-6-6 6 6-6 6" />
           </svg>
         </Link>
+      </div>
       </div>
     </section>
   );

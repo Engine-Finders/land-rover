@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const carImages = {
@@ -176,7 +177,7 @@ function CostTable({ table }) {
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
       <table className="w-full border-collapse text-left text-[14px] text-[var(--color-text)] md:text-[15px]">
         <thead>
-          <tr className="bg-[var(--color-primary-strong)] text-white">
+          <tr className="bg-[var(--color-chrome)] text-white">
             {columns.map((column) => (
               <th key={column} className="border-r border-white/20 px-2 py-2 text-left font-bold last:border-r-0 md:px-4 md:py-2">
                 {column}
@@ -313,7 +314,7 @@ function Notes({ parts }) {
   );
 }
 
-export default function ReplacementCosts({ data }) {
+export default function ReplacementCosts({ data, band = "page" }) {
   const tables = useMemo(() => normalizeTables(data?.tables || []), [data]);
   if (!data) return null;
 
@@ -321,11 +322,13 @@ export default function ReplacementCosts({ data }) {
   const notes = splitFiguresNote(data.figuresNote || data.labourEstimate);
 
   return (
-    <section className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
-      <div className="flex flex-col gap-5 md:grid md:grid-cols-[minmax(0,1fr)_560px] md:items-start">
-        <div>
-          <h2 className={`max-w-[620px] ${sectionH2} tracking-normal`}>
-            <span dangerouslySetInnerHTML={{ __html: title.main }} />
+    <section className={`${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6`}>
+      <div className="mx-auto w-full max-w-8xl">
+      <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between md:gap-6">
+        <div className="min-w-0 flex-1">
+          <HeadingEyebrow text="REPLACEMENT COSTS" />
+          <h2 className={`mt-3 ${sectionH2} tracking-normal md:text-[34px] lg:text-[42px]`}>
+            <span className="md:whitespace-nowrap" dangerouslySetInnerHTML={{ __html: title.main }} />
             {title.accent ? (
               <>
                 <br />
@@ -333,13 +336,12 @@ export default function ReplacementCosts({ data }) {
               </>
             ) : null}
           </h2>
-          <div className="mt-3">
-            <MStripe />
-          </div>
-          {data.subHeadline ? <p className={`mt-3 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`}>{cleanText(data.subHeadline)}</p> : null}
+          {data.subHeadline ? (
+            <p className={`mt-3 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`}>{cleanText(data.subHeadline)}</p>
+          ) : null}
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden w-full max-w-[480px] shrink-0 md:block lg:max-w-[560px]">
           <TrustStrip />
         </div>
 
@@ -373,6 +375,7 @@ export default function ReplacementCosts({ data }) {
       <p className="mt-5 text-center text-[15px] text-[var(--color-text-soft)] md:hidden">
         All prices in GBP (£) &nbsp; • &nbsp; Supply only &nbsp; • &nbsp; Subject to availability and condition
       </p>
+      </div>
     </section>
   );
 }

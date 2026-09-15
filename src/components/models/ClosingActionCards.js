@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+import { useTheme } from "@/components/shared/themeProvider";
 import { sectionBody, sectionButton, sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
 
 const cardThemes = [
@@ -173,37 +176,46 @@ function ActionCard({ card, index }) {
 }
 
 export default function ClosingActionCards({ data, band = "page" }) {
+  const { theme } = useTheme();
   if (!data) return null;
 
+  const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const title = splitTitle(data.h2);
 
   return (
-    <section className={`relative overflow-hidden ${sectionBgClass(band)} px-3 pt-2 text-[var(--color-text)] md:px-6`}>
-      <div className="relative mx-auto w-full max-w-8xl overflow-hidden rounded-md bg-[var(--color-surface-raised)]">
+    <section
+      className={`relative overflow-hidden ${sectionBgClass(band)} px-3 pt-2 pb-6 text-[var(--color-text)] md:px-6 md:pb-8`}
+      style={{ "--section-fade": rgb }}
+    >
+      <div className="absolute inset-x-0 top-0 h-[220px] md:h-[280px]">
         <Image
-          src="/model/Hero-bg-image.webp"
+          src="/sec2-bg.webp"
           alt=""
           fill
-          className="hidden object-cover object-center md:block"
+          className="object-cover object-[78%_center] md:object-[75%_center]"
           sizes="100vw"
         />
         <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(90deg, var(--color-page) 0%, var(--color-hero-fade) 34%, var(--color-hero-overlay) 54%, rgba(255,255,255,0.12) 74%, rgba(255,255,255,0) 100%)",
-          }}
+          className={
+            isDark
+              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.62)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
+              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.72)_0%,rgba(var(--section-fade),0.48)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
+          }
         />
         <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(circle at 56% 50%, var(--color-hero-overlay) 0%, rgba(255,255,255,0.18) 25%, rgba(255,255,255,0) 60%)",
-          }}
+          className={`pointer-events-none absolute inset-0 md:hidden ${
+            isDark
+              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.7)_42%,transparent_72%)]"
+              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_42%,transparent_72%)]"
+          }`}
         />
-        <div className="relative z-10 max-w-[620px] px-4 py-4 md:px-6 md:py-6">
+      </div>
+
+      <div className="relative mx-auto w-full max-w-8xl">
+        <div className="relative max-w-[620px]">
           <HeadingEyebrow text="NEXT STEPS" />
-            <h2 className="mt-3 max-w-[570px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
+          <h2 className="mt-3 max-w-[570px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
             <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>
@@ -212,20 +224,18 @@ export default function ClosingActionCards({ data, band = "page" }) {
               </>
             ) : null}
           </h2>
-          <div className="mt-4">
-          </div>
           <p className={`mt-4 max-w-[500px] text-[var(--color-text)] ${sectionDescription} md:text-[17px]`}>
             Everything you need to choose with confidence.
             <br />
             Data. Honesty. Specialists. All in one place.
           </p>
         </div>
-      </div>
 
-      <div className="grid gap-4 md:grid-cols-3">
-        {(data.cards || []).map((card, index) => (
-          <ActionCard key={card.title || card.href} card={card} index={index} />
-        ))}
+        <div className="mt-5 grid gap-4 md:grid-cols-3">
+          {(data.cards || []).map((card, index) => (
+            <ActionCard key={card.title || card.href} card={card} index={index} />
+          ))}
+        </div>
       </div>
     </section>
   );

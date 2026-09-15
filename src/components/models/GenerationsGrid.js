@@ -7,7 +7,7 @@ import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
 import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
-const defaultCarImage = "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80";
+const defaultCarImage = "/right.webp";
 
 const carImages = {
   E21: defaultCarImage,

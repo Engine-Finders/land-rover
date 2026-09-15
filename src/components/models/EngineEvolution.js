@@ -5,13 +5,15 @@ import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
+const carImage = "/right.webp";
+
 const carImages = [
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=560&q=85",
-  "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=560&q=85",
-  "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=560&q=85",
-  "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=560&q=85",
-  "https://images.unsplash.com/photo-1617814076668-cccd5e772c97?auto=format&fit=crop&w=560&q=85",
-  "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&w=560&q=85",
+  carImage,
+  carImage,
+  carImage,
+  carImage,
+  carImage,
+  carImage,
 ];
 
 const statItems = [
@@ -93,14 +95,9 @@ function EngineBadges({ engines }) {
   const items = engineList(engines);
 
   return (
-    <div className="flex flex-wrap justify-center gap-4">
+    <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
       {items.map((engine) => (
-        <div key={engine} className="flex min-w-[68px] flex-col items-center">
-          <span className="flex h-14 w-16 items-center justify-center rounded-md bg-[var(--color-page-soft)] text-[var(--color-primary)] md:h-16 md:w-20">
-            <Icon type="engine" className="h-8 w-8" />
-          </span>
-          <strong className="mt-1 text-[15px] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: engine }} />
-        </div>
+        <strong key={engine} className="text-[15px] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: engine }} />
       ))}
     </div>
   );
@@ -131,7 +128,7 @@ function DesktopTable({ eras, columns }) {
                   </>
                 ) : null}
               </h3>
-              <img src={carImages[index] || carImages[0]} alt="" className="mt-2 h-[66px] w-full object-cover object-center md:h-[78px]" loading="lazy" />
+              <img src={carImages[index] || carImages[0]} alt="" className="mt-2 h-[52px] w-full object-cover object-center md:h-[62px]" loading="lazy" />
             </div>
             <div className={`flex items-center justify-center border-r border-[var(--color-border)] px-3 py-3.5 ${sectionTableText} font-bold md:px-4 md:py-4`}>{cleanText(era.years)}</div>
             <div className="flex items-center justify-center border-r border-[var(--color-border)] px-3 py-3.5 md:px-4 md:py-4">
@@ -163,7 +160,7 @@ function MobileAccordion({ eras }) {
         return (
           <article key={era.era} className={`rounded-md border bg-[var(--color-surface-raised)] ${open ? "border-[var(--color-primary)]" : "border-[var(--color-border)]"}`}>
             <button type="button" onClick={() => setOpenIndex(open ? -1 : index)} className="flex w-full items-center gap-4 p-4 text-left">
-              <img src={carImages[index] || carImages[0]} alt="" className="h-[60px] w-[94px] shrink-0 object-cover object-center md:h-[72px] md:w-[110px]" loading="lazy" />
+              <img src={carImages[index] || carImages[0]} alt="" className="h-[50px] w-[80px] shrink-0 object-cover object-center md:h-[60px] md:w-[94px]" loading="lazy" />
               <span className="min-w-0 flex-1">
                 <strong className="block text-[18px] leading-tight text-[var(--color-primary)] md:text-[20px]">{title.lead}{title.detail ? ` - ${title.detail}` : ""}</strong>
                 <span className={`mt-1 block ${sectionTableText} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.years) }} />

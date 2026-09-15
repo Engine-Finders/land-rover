@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+import { useTheme } from "@/components/shared/themeProvider";
 import { sectionBody, sectionButton, sectionDescription } from "@/components/models/sectionTypography";
 
 const iconPaths = {
@@ -100,8 +103,8 @@ function Icon({ name, className = "h-8 w-8", stroke = 2 }) {
 
 function CircleIcon({ name, large = false, className = "" }) {
   return (
-    <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)] ${large ? "h-28 w-28 md:h-36 md:w-36" : "h-12 w-12"} ${className}`}>
-      <Icon name={name} className={large ? "h-16 w-16 md:h-20 md:w-20" : "h-7 w-7"} />
+    <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)] ${large ? "h-20 w-20 md:h-24 md:w-24" : "h-12 w-12"} ${className}`}>
+      <Icon name={name} className={large ? "h-10 w-10 md:h-12 md:w-12" : "h-7 w-7"} />
     </span>
   );
 }
@@ -145,14 +148,14 @@ function PrimaryPath({ path, modelName }) {
       </div>
 
       <Link href={path?.href || "/#calculator-example"} className={`btn-cta mt-3.5 flex min-h-12 items-center justify-between gap-2.5 rounded-md bg-[var(--color-primary)] px-3.5 py-2.5 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton}`}>
-        <span className="flex min-w-0 items-center gap-2.5">
-          <Icon name="calculator" className="h-8 w-8 shrink-0" />
+        <span className="flex min-w-0 items-center gap-2.5 text-white">
+          <Icon name="calculator" className="h-7 w-7 shrink-0 text-white" />
           <span className="min-w-0">
             <span className="block leading-tight">Launch Diagnostic Calculator</span>
-            <span className="mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px]"><span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected</span>
+            <span className="mt-0.5 block text-[12px] font-normal leading-tight text-white/90 md:text-[13px]"><span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected</span>
           </span>
         </span>
-        <ArrowIcon className="h-5 w-5 shrink-0" />
+        <ArrowIcon className="h-5 w-5 shrink-0 text-white" />
       </Link>
 
       <ul className="mt-4 grid grid-cols-3 gap-2.5">
@@ -182,15 +185,15 @@ function SecondaryPath({ path }) {
         <CircleIcon name="documentSearch" large className="order-1 md:order-2" />
       </div>
 
-      <Link href={path?.href || "/#calculator-example"} className={`mt-3.5 flex min-h-12 items-center justify-between gap-2.5 rounded-md px-3.5 py-2.5 font-bold text-[var(--color-primary)] ${sectionButton}`}>
+      <Link href={path?.href || "/#calculator-example"} className={`mt-3.5 flex min-h-12 items-center justify-between gap-2.5 rounded-md border border-[var(--color-primary)] px-3.5 py-2.5 font-bold text-[var(--color-primary)] ${sectionButton}`}>
         <span className="flex min-w-0 items-center gap-2.5">
-          <Icon name="engineQuestion" className="h-8 w-8 shrink-0" />
+          <Icon name="engineQuestion" className="h-7 w-7 shrink-0 text-[var(--color-primary)]" />
           <span className="min-w-0">
             <span className="block leading-tight">Identify My Engine First</span>
             <span className="mt-0.5 block text-[12px] font-normal leading-tight text-[var(--color-text-muted)] md:text-[13px]">Then launch the diagnostic calculator</span>
           </span>
         </span>
-        <ArrowIcon className="h-5 w-5 shrink-0" />
+        <ArrowIcon className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
       </Link>
 
       <div className="mt-4 flex gap-3 rounded-md bg-[var(--color-page-soft)] p-3.5">
@@ -221,85 +224,92 @@ function SmartDecision() {
 }
 
 export default function CalculatorCTA({ data, band = "page" }) {
+  const { theme } = useTheme();
   if (!data) return null;
 
+  const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const title = splitTitle(data.h2);
   const intro = introParts(data.intro);
   const modelName = modelNameFromTitle(data.h2);
   const paths = data.paths || [];
 
   return (
-    <section className={`relative overflow-hidden ${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6 md:py-8`}>
-      <div className="relative mx-auto w-full max-w-8xl overflow-hidden rounded-md bg-[var(--color-surface-raised)]">
+    <section
+      className={`relative overflow-hidden ${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6 md:py-8`}
+      style={{ "--section-fade": rgb }}
+    >
+      <div className="absolute inset-x-0 top-0 h-[220px] md:h-[280px]">
         <Image
-          src="/model/Hero-bg-image.webp"
+          src="/sec2-bg.webp"
           alt=""
           fill
-          className="object-cover object-center"
+          className="object-cover object-[78%_center] md:object-[75%_center]"
           sizes="100vw"
           priority={false}
         />
         <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(90deg, var(--color-hero-fade) 0%, var(--color-hero-fade) 32%, var(--color-hero-overlay) 52%, rgba(255,255,255,0.18) 68%, rgba(255,255,255,0) 86%)",
-          }}
+          className={
+            isDark
+              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.62)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
+              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.72)_0%,rgba(var(--section-fade),0.48)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
+          }
         />
         <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(circle at 58% 50%, var(--color-hero-overlay) 0%, rgba(255,255,255,0.22) 24%, rgba(255,255,255,0) 58%)",
-          }}
+          className={`pointer-events-none absolute inset-0 md:hidden ${
+            isDark
+              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.7)_42%,transparent_72%)]"
+              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_42%,transparent_72%)]"
+          }`}
         />
-        <div className="relative z-10 px-4 py-5 lg:px-6 lg:py-6">
-          <div className="max-w-[820px]">
-            <HeadingEyebrow text="DIAGNOSTIC CALCULATOR" />
-            <h2 className="mt-3 max-w-[820px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-              <span dangerouslySetInnerHTML={{ __html: title.before }} />
-              {title.accent ? (
-                <>
-                  {" "}
-                  <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-                </>
-              ) : null}
-            </h2>
-            {data.intro ? (
-              <div className={`mt-3 max-w-[700px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-                <p dangerouslySetInnerHTML={{ __html: intro.first }} />
-                {intro.second ? <p className="mt-1.5" dangerouslySetInnerHTML={{ __html: intro.second }} /> : null}
-              </div>
+      </div>
+
+      <div className="relative mx-auto w-full max-w-8xl">
+        <div className="relative max-w-[820px]">
+          <HeadingEyebrow text="DIAGNOSTIC CALCULATOR" />
+          <h2 className="mt-3 max-w-[820px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
+            <span dangerouslySetInnerHTML={{ __html: title.before }} />
+            {title.accent ? (
+              <>
+                {" "}
+                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
+              </>
             ) : null}
-          </div>
+          </h2>
+          {data.intro ? (
+            <div className={`mt-3 max-w-[700px] text-[var(--color-text-muted)] ${sectionDescription}`}>
+              <p dangerouslySetInnerHTML={{ __html: intro.first }} />
+              {intro.second ? <p className="mt-1.5" dangerouslySetInnerHTML={{ __html: intro.second }} /> : null}
+            </div>
+          ) : null}
         </div>
-      </div>
 
-      <div className="mt-4 lg:hidden">
-        <SmartDecision />
-      </div>
-
-      <div className="mt-5 grid gap-4 lg:grid-cols-2">
-        <PrimaryPath path={paths[0]} modelName={modelName} />
-        <SecondaryPath path={paths[1]} />
-      </div>
-
-      <div className="mt-5 flex flex-col gap-4 rounded-md bg-[var(--color-chrome)] p-4 text-white shadow-[0_12px_32px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
-        <div className="flex gap-4">
-            <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-white">
-            <Icon name="target" className="h-10 w-10" />
-          </span>
-          <div className="max-w-[700px]">
-            <h3 className="text-[20px] font-bold leading-tight md:text-[22px]">Stop guessing. Get the right answer.</h3>
-            <p className={`mt-2 text-white/90 ${sectionDescription}`}>
-              Our calculator compares real repair and replacement costs against your car&apos;s value - so you know the financially smarter move.
-            </p>
-          </div>
+        <div className="mt-4 lg:hidden">
+          <SmartDecision />
         </div>
-        <Link href={paths[0]?.href || "/#calculator-example"} className={`btn-cta inline-flex min-h-14 shrink-0 items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3.5 font-bold text-white md:min-w-[360px] ${sectionButton}`}>
-          Start Your Verdict Now
-          <ArrowIcon className="h-6 w-6" />
-        </Link>
+
+        <div className="mt-5 grid gap-4 lg:grid-cols-2">
+          <PrimaryPath path={paths[0]} modelName={modelName} />
+          <SecondaryPath path={paths[1]} />
+        </div>
+
+        <div className="mt-5 flex flex-col gap-4 rounded-md bg-[var(--color-chrome)] p-4 text-white shadow-[0_12px_32px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
+          <div className="flex gap-4">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white/15 text-white md:h-16 md:w-16">
+              <Icon name="target" className="h-8 w-8 md:h-9 md:w-9" />
+            </span>
+            <div className="max-w-[700px]">
+              <h3 className="text-[20px] font-bold leading-tight md:text-[22px]">Stop guessing. Get the right answer.</h3>
+              <p className={`mt-2 text-white/90 ${sectionDescription}`}>
+                Our calculator compares real repair and replacement costs against your car&apos;s value - so you know the financially smarter move.
+              </p>
+            </div>
+          </div>
+          <Link href={paths[0]?.href || "/#calculator-example"} className={`btn-cta inline-flex min-h-14 shrink-0 items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-5 py-3.5 font-bold text-white md:min-w-[360px] ${sectionButton}`}>
+            <span className="text-white">Start Your Verdict Now</span>
+            <ArrowIcon className="h-5 w-5 text-white" />
+          </Link>
+        </div>
       </div>
     </section>
   );

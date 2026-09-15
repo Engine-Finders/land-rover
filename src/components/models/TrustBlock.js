@@ -1,14 +1,8 @@
 import Image from "next/image";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { HomeIcon } from "@/components/home/homeIcons";
 import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionDescription } from "@/components/models/sectionTypography";
-
-const iconPaths = {
-  data: <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-  heart: <path d="M12 21s-7-4.5-9.2-9.1C1.2 8.6 3.3 5 6.8 5c2 0 3.5 1.1 4.2 2.5C11.7 6.1 13.2 5 15.2 5c3.5 0 5.6 3.6 4 6.9C19 16.5 12 21 12 21Z" />,
-  wrench: <path d="m14.7 6.3 3-3a5 5 0 0 1-6.4 6.4l-6.8 6.8a2.1 2.1 0 0 0 3 3l6.8-6.8a5 5 0 0 1 6.4-6.4l-3 3" />,
-  shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm0 5 1.1 2.2 2.4.3-1.7 1.7.4 2.4-2.2-1.1-2.2 1.1.4-2.4-1.7-1.7 2.4-.3L12 8Z" />,
-};
 
 function cleanText(text = "") {
   return text
@@ -34,23 +28,21 @@ function splitTitle(title = "") {
   };
 }
 
-function iconKey(item = {}) {
+function signalIconName(item = {}) {
   const value = `${item.icon || ""} ${item.title || ""}`.toLowerCase();
-  if (value.includes("heart") || value.includes("not to repair") || value.includes("💚")) return "heart";
-  if (value.includes("wrench") || value.includes("specialist") || value.includes("🔧")) return "wrench";
-  if (value.includes("part of") || value.includes("trophy") || value.includes("🏆")) return "shield";
-  return "data";
+  if (value.includes("heart") || value.includes("💚") || value.includes("tell you") || value.includes("not to repair")) return "genuineFailureData";
+  if (value.includes("wrench") || value.includes("specialist") || value.includes("🔧")) return "vettedSpecialists";
+  if (value.includes("part of") || value.includes("trophy") || value.includes("🏆") || value.includes("engine finders")) return "engineFinders";
+  // graph / chart / real data
+  return "realData";
 }
 
 function SignalIcon({ item }) {
-  const key = iconKey(item);
-  const isHeart = key === "heart";
+  const name = signalIconName(item);
 
   return (
-    <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md bg-[var(--color-page-soft)] md:h-16 md:w-16 ${isHeart ? "text-[#36b96d]" : "text-[var(--color-primary)]"}`}>
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8 md:h-9 md:w-9" fill={isHeart ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        {iconPaths[key]}
-      </svg>
+    <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-md bg-[var(--color-page-soft)] md:h-16 md:w-16">
+      <HomeIcon name={name} size={44} className="h-10 w-10 md:h-11 md:w-11" />
     </span>
   );
 }

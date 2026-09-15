@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
 import { sectionBody, sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
@@ -186,34 +186,44 @@ export default function AtAGlance({ data, band = "page" }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const title = splitTitle(data.h2);
   const rows = data.rows || [];
   const ratingRow = rows.find((row) => row.metric === "Overall Rating");
 
   return (
-    <section className={`relative overflow-hidden ${sectionBgClass(band)} px-3 py-8 text-[var(--color-text)] md:px-6 md:py-10`}>
-      <div className="absolute inset-0">
+    <section
+      className={`relative overflow-hidden ${sectionBgClass(band)} px-3 py-8 text-[var(--color-text)] md:px-6 md:py-10`}
+      style={{ "--section-fade": rgb }}
+    >
+      <div className="absolute inset-x-0 top-0 h-[220px] md:h-[280px]">
         <Image
-          src="/model/Section 3-bg.webp"
+          src="/sec2-bg.webp"
           alt=""
           fill
-          className="object-cover object-[64%_top] md:object-center"
+          className="object-cover object-[78%_center] md:object-[75%_center]"
           sizes="100vw"
         />
         <div
-          className={`absolute inset-0 ${
+          className={
             isDark
-              ? "bg-[linear-gradient(90deg,rgba(13,28,24,0.97)_0%,rgba(13,28,24,0.82)_46%,rgba(13,28,24,0.5)_100%)]"
-              : "bg-[linear-gradient(90deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.78)_44%,rgba(255,255,255,0.38)_100%)]"
+              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.62)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
+              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.72)_0%,rgba(var(--section-fade),0.48)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
+          }
+        />
+        <div
+          className={`pointer-events-none absolute inset-0 md:hidden ${
+            isDark
+              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.7)_42%,transparent_72%)]"
+              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_42%,transparent_72%)]"
           }`}
         />
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
       </div>
 
       <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[510px]">
+        <div className="relative max-w-[510px]">
           <HeadingEyebrow text="AT A GLANCE" />
-            <h2 className={`mt-3 font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+          <h2 className={`mt-3 font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
             <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>

@@ -144,7 +144,7 @@ function BuyerRow({ row, index }) {
   return (
     <article className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_26px_var(--color-shadow)] md:rounded-none md:border-0 md:border-t md:shadow-none lg:grid-cols-[40%_18%_42%]">
       <div className="grid grid-cols-[31%_69%] md:grid-cols-[300px_1fr] lg:border-r lg:border-[var(--color-border)]">
-        <div className="relative min-h-[150px] md:min-h-[124px]">
+        <div className="relative min-h-[130px] md:min-h-[108px]">
           <Image
             src={buyerImages[index % buyerImages.length]}
             alt=""
@@ -153,22 +153,22 @@ function BuyerRow({ row, index }) {
             sizes="(min-width: 1024px) 300px, (min-width: 768px) 300px, 31vw"
           />
         </div>
-        <div className="flex min-w-0 items-center gap-3 px-3 py-3.5 md:px-5 md:py-4">
+        <div className="flex min-w-0 items-center gap-2.5 px-2.5 py-2.5 md:px-4 md:py-3">
           <CircleIcon>{profileIcons[iconKey]}</CircleIcon>
           <div className="min-w-0">
             <h3 className="text-[16px] font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]" dangerouslySetInnerHTML={{ __html: cleanText(row.buyerProfile) }} />
-            <div className="mt-3 lg:hidden">
+            <div className="mt-2 lg:hidden">
               <Stars rating={row.rating} />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="hidden items-center justify-center border-r border-[var(--color-border)] px-3 py-3 lg:flex">
+      <div className="hidden items-center justify-center border-r border-[var(--color-border)] px-2.5 py-2 lg:flex">
         <Stars rating={row.rating} />
       </div>
 
-      <p className={`border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-text)] md:px-4 md:py-3 lg:border-t-0 ${sectionTableText} md:text-[14px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.verdict) }} />
+      <p className={`border-t border-[var(--color-border)] px-2.5 py-2.5 text-[var(--color-text)] md:px-3.5 md:py-2.5 lg:border-t-0 ${sectionTableText} md:text-[14px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.verdict) }} />
     </article>
   );
 }
@@ -206,7 +206,7 @@ export default function WhoShouldBuy({ data, band = "page" }) {
       <div className="mt-6 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_12px_32px_var(--color-shadow)]">
         <div className="hidden grid-cols-[40%_18%_42%] bg-[var(--color-chrome)] text-[14px] font-bold text-white lg:grid">
           {(data.columns || ["Buyer Profile", "Rating", "Our Verdict"]).map((column, index) => (
-            <div key={column} className={`px-3 py-2.5 ${index > 0 ? "border-l border-white/20" : ""}`}>
+            <div key={column} className={`px-2.5 py-2 ${index > 0 ? "border-l border-white/20" : ""}`}>
               {column}
             </div>
           ))}

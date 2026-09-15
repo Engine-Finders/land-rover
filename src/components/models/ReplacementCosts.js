@@ -6,11 +6,11 @@ import { sectionBgClass } from "@/components/home/sectionBand";
 import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const carImages = {
-  classic: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=760&q=85",
-  e46: "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=760&q=85",
-  e90: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=760&q=85",
-  f30: "https://images.unsplash.com/photo-1617814076668-cccd5e772c97?auto=format&fit=crop&w=760&q=85",
-  g20: "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&w=760&q=85",
+  classic: "/right.webp",
+  e46: "/right.webp",
+  e90: "/right.webp",
+  f30: "/right.webp",
+  g20: "/right.webp",
 };
 
 const f30Fallback = {
@@ -281,22 +281,22 @@ function Notes({ parts }) {
     <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
       <div className="grid gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 md:grid-cols-2">
         <div className="flex flex-col gap-3 border-[var(--color-border)] md:border-r md:pr-6">
-          <div className="flex items-start gap-4">
+          <div className="flex items-center gap-3">
             <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="note" className="h-12 w-12" />
+              <Icon type="note" className="h-6 w-6" />
             </span>
             <h3 className="font-bold text-[var(--color-primary)]">Important Notes</h3>
           </div>
-          <p className="pl-16 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.important }} />
+          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.important }} />
         </div>
         <div className="flex flex-col gap-3">
-          <div className="flex items-start gap-4">
+          <div className="flex items-center gap-3">
             <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="info" className="h-10 w-10" />
+              <Icon type="info" className="h-6 w-6" />
             </span>
             <h3 className="font-bold text-[var(--color-primary)]">Labour Estimate</h3>
           </div>
-          <p className="pl-14 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.labour }} />
+          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.labour }} />
         </div>
       </div>
 

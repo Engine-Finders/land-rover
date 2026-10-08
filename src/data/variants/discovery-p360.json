@@ -1,14 +1,14 @@
 {
   "meta": {
     "slug": "discovery-p360",
-    "title": "P360 Engine Replacement Cost UK — Compare Quotes",
+    "title": "P360 Engine Replacement Cost UK - Compare Quotes",
     "titleCharCount": 56,
-    "description": "Every Land Rover Discovery P360 engine — 3.0-litre Ingenium six-cylinder petrol, 2021–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "description": "Every Land Rover Discovery P360 engine - 3.0-litre Ingenium six-cylinder petrol, 2021–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 159,
     "canonical": "https://landroverengine.uk/discovery/p360",
     "openGraph": {
-      "title": "P360 Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every Land Rover Discovery P360 engine — 3.0-litre Ingenium six-cylinder petrol, 2021–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "title": "P360 Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every Land Rover Discovery P360 engine - 3.0-litre Ingenium six-cylinder petrol, 2021–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/discovery/p360",
       "image": "https://landroverengine.uk/images/land-rover/hero/discovery-p360.jpg",
@@ -16,26 +16,26 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "P360 Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every Land Rover Discovery P360 engine — 3.0-litre Ingenium six-cylinder petrol, 2021–present. Real UK costs, cooling system advice, and honest reliability data.",
+      "title": "P360 Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every Land Rover Discovery P360 engine - 3.0-litre Ingenium six-cylinder petrol, 2021–present. Real UK costs, cooling system advice, and honest reliability data.",
       "image": "https://landroverengine.uk/images/land-rover/hero/discovery-p360.jpg"
     },
     "jsonLd": {}
   },
   "hero": {
     "tagPill": "Land Rover Discovery P360 • 2021–present • 1 Engine Generation",
-    "h1": "Land Rover Discovery P360 Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Land Rover P360 specialists. Compare reconditioned, rebuilt and used 3.0-litre Ingenium six-cylinder petrol engines — supply & fit available nationwide.",
+    "h1": "Land Rover Discovery P360 Engine Replacement - Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover P360 specialists. Compare reconditioned, rebuilt and used 3.0-litre Ingenium six-cylinder petrol engines - supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
       "🚚 Nationwide Delivery",
       "👥 12 Specialists"
     ],
-    "priceAnchor": "Land Rover Discovery P360 Engines — from £2,500 to £7,500 · Engine code: <a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>",
+    "priceAnchor": "Land Rover Discovery P360 Engines - from £2,500 to £7,500 · Engine code: <a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>",
     "registrationInput": {
       "flag": "🇬🇧 GB",
-      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Discovery P360 Engine Options →",
         "href": "#"
@@ -44,7 +44,7 @@
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
   },
   "eraMap": {
-    "title": "The P360 THROUGH TIME — Era Map",
+    "title": "The P360 THROUGH TIME - Era Map",
     "columns": [
       "Generation",
       "Years",
@@ -58,9 +58,9 @@
         "generation": "Discovery 5 (L462) facelift",
         "years": "2021–present",
         "engineCode": "AJ20P6 (3.0L Ingenium petrol)",
-        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£4,500–£7,500 [PLACEHOLDER — confirm vs cost sheet]",
-        "eraNote": "Modern six-cylinder petrol — cooling system requires vigilance"
+        "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£4,500–£7,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "eraNote": "Modern six-cylinder petrol - cooling system requires vigilance"
       }
     ],
     "sourceNote": "",
@@ -88,7 +88,7 @@
         "supplyOnly": "£4,500–£7,500",
         "fittedIndie": "£5,400–£8,600",
         "warranty": "12–24 months",
-        "bestFor": "Most owners — best cost/warranty balance"
+        "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
@@ -105,7 +105,7 @@
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the current Discovery 5 P360 generation. This badge spans only one engine era — see the Era Map above.",
+    "figuresNote": "Figures above reflect the current Discovery 5 P360 generation. This badge spans only one engine era - see the Era Map above.",
     "labourEstimate": "Fitting a Discovery P360 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare P360 engine prices from UK specialists",
@@ -179,7 +179,7 @@
     }
   },
   "repairBuyOrReplace": {
-    "h2": "Discovery P360 — Repair, Buy, or Replace?",
+    "h2": "Discovery P360 - Repair, Buy, or Replace?",
     "canItBeRepaired": {
       "title": "Can It Be Repaired?",
       "columns": [
@@ -193,7 +193,7 @@
           "problem": "Water pump failure",
           "repairable": "✅ Yes",
           "typicalCost": "£500–£900",
-          "whenItMakesSense": "Catch it early — straightforward replacement"
+          "whenItMakesSense": "Catch it early - straightforward replacement"
         },
         {
           "problem": "Coolant leak (hoses/thermostat)",
@@ -227,16 +227,16 @@
         "* Full JLR service history with documented coolant system inspections",
         "* No signs of coolant loss or overheating (check coolant reservoir level)",
         "* Water pump replaced as preventative at 50k+ miles",
-        "* A 2021-onward Discovery 5 facelift — the most refined petrol Discovery to date"
+        "* A 2021-onward Discovery 5 facelift - the most refined petrol Discovery to date"
       ],
       "avoidIf": [
-        "* Unexplained coolant loss with no visible leak — could indicate early water pump or head gasket issues",
-        "* Overheating history or low coolant level — risk of engine damage",
-        "* Hard starting or rough idle — may indicate HPFP or injector problems",
-        "* Poor service history on a modern, high-technology engine — assume it's overdue"
+        "* Unexplained coolant loss with no visible leak - could indicate early water pump or head gasket issues",
+        "* Overheating history or low coolant level - risk of engine damage",
+        "* Hard starting or rough idle - may indicate HPFP or injector problems",
+        "* Poor service history on a modern, high-technology engine - assume it's overdue"
       ]
     },
-    "closingVerdict": "The P360 is the 3.0-litre six-cylinder petrol option in the facelift Discovery 5 — a refined, powerful alternative to the diesel Ingenium. It's generally more reliable than the diesel, with no timing chain catastrophe, but the cooling system requires vigilance. Water pump and coolant leaks are the main issues; catch them early and the AJ20P6 is a strong, smooth engine for the modern Discovery.",
+    "closingVerdict": "The P360 is the 3.0-litre six-cylinder petrol option in the facelift Discovery 5 - a refined, powerful alternative to the diesel Ingenium. It's generally more reliable than the diesel, with no timing chain catastrophe, but the cooling system requires vigilance. Water pump and coolant leaks are the main issues; catch them early and the AJ20P6 is a strong, smooth engine for the modern Discovery.",
     "cta": {
       "label": "→ Compare P360 engine prices before you buy",
       "href": "#"
@@ -245,14 +245,14 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Land Rover Discovery P360 (or before you commit to an engine replacement), check these:",
     "items": [
-      "* Cold Start — Listen for smooth idle; any hesitation or rough running points to injector or fuel pump issues",
-      "* Service History — Including coolant system inspections and fuel filter changes — see the map above",
-      "* Coolant Level — Check reservoir when cold; any low or loss is a red flag",
-      "* Water Pump — Listen for whining noise; check for coolant residue near the pump area",
-      "* Turbo Boost — Test acceleration; any lack of power or hesitation?",
-      "* Oil Condition — Check for fuel smell (HPFP wear) or coolant contamination",
-      "* Engine Warning Light — Have codes read; unresolved issues may indicate HPFP or sensor problems",
-      "* MOT History — Check for emissions-related failures (petrol is generally clean)"
+      "* Cold Start - Listen for smooth idle; any hesitation or rough running points to injector or fuel pump issues",
+      "* Service History - Including coolant system inspections and fuel filter changes - see the map above",
+      "* Coolant Level - Check reservoir when cold; any low or loss is a red flag",
+      "* Water Pump - Listen for whining noise; check for coolant residue near the pump area",
+      "* Turbo Boost - Test acceleration; any lack of power or hesitation?",
+      "* Oil Condition - Check for fuel smell (HPFP wear) or coolant contamination",
+      "* Engine Warning Light - Have codes read; unresolved issues may indicate HPFP or sensor problems",
+      "* MOT History - Check for emissions-related failures (petrol is generally clean)"
     ]
   },
   "engineCodes": {
@@ -307,7 +307,7 @@
     "items": [
       {
         "label": "Most Common Failure",
-        "value": "Water pump and coolant system leaks — most frequent P360 enquiries"
+        "value": "Water pump and coolant system leaks - most frequent P360 enquiries"
       },
       {
         "label": "Average Enquiry Mileage",
@@ -319,11 +319,11 @@
       },
       {
         "label": "Most Requested Engine Code",
-        "value": "AJ20P6 [EM-VERIFIED — 80 requests]"
+        "value": "AJ20P6 [EM-VERIFIED - 80 requests]"
       },
       {
         "label": "Peak Enquiry Season",
-        "value": "Autumn/Winter — cooling system failures emerge in colder months [PATTERN DATA]"
+        "value": "Autumn/Winter - cooling system failures emerge in colder months [PATTERN DATA]"
       },
       {
         "label": "Regional Demand",
@@ -341,17 +341,17 @@
       {
         "id": 2,
         "question": "Is the Land Rover Discovery P360 engine reliable?",
-        "answer": "Generally, yes — the AJ20P6 petrol Ingenium is considered more reliable than its diesel counterpart. There's no timing chain tensioner catastrophe. The main issues are cooling system-related: water pump failure and coolant leaks. With proper maintenance, it's a refined and robust engine for the modern Discovery."
+        "answer": "Generally, yes - the AJ20P6 petrol Ingenium is considered more reliable than its diesel counterpart. There's no timing chain tensioner catastrophe. The main issues are cooling system-related: water pump failure and coolant leaks. With proper maintenance, it's a refined and robust engine for the modern Discovery."
       },
       {
         "id": 3,
         "question": "What are the common problems with the Land Rover Discovery P360?",
-        "answer": "The most common issues are water pump failure (plastic impeller and seal degradation), coolant leaks from plastic hoses and thermostat housings, and occasional high-pressure fuel pump and injector wear at higher mileages. None are catastrophic if caught early — regular coolant system inspections are key."
+        "answer": "The most common issues are water pump failure (plastic impeller and seal degradation), coolant leaks from plastic hoses and thermostat housings, and occasional high-pressure fuel pump and injector wear at higher mileages. None are catastrophic if caught early - regular coolant system inspections are key."
       },
       {
         "id": 4,
         "question": "Is it worth replacing a Discovery P360 engine, or should I scrap the vehicle?",
-        "answer": "Given the high retained value of the Discovery 5 facelift (typical £25,000+ for a good example), a £6,000–£7,000 engine replacement is comfortably within the \"worth it\" range. Our Land Rover scrap threshold is 60% of vehicle value — with a £6,500 engine cost against a £25,000 vehicle, it's a clear yes."
+        "answer": "Given the high retained value of the Discovery 5 facelift (typical £25,000+ for a good example), a £6,000–£7,000 engine replacement is comfortably within the \"worth it\" range. Our Land Rover scrap threshold is 60% of vehicle value - with a £6,500 engine cost against a £25,000 vehicle, it's a clear yes."
       },
       {
         "id": 5,
@@ -361,10 +361,10 @@
       {
         "id": 6,
         "question": "Can I repair a P360 water pump, or does it need replacement?",
-        "answer": "The pump must be replaced — it's a sealed unit with plastic impellers that degrade. A preventative replacement at 50,000 miles or at the first sign of leakage costs £500–£900. Ignoring it can lead to overheating and head gasket failure, which is far more expensive."
+        "answer": "The pump must be replaced - it's a sealed unit with plastic impellers that degrade. A preventative replacement at 50,000 miles or at the first sign of leakage costs £500–£900. Ignoring it can lead to overheating and head gasket failure, which is far more expensive."
       }
     ],
-    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Land Rover Discovery P360 Owners Trust LandRoverEngine.uk",

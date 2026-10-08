@@ -124,14 +124,17 @@ function CircleIcon({ children }) {
 
 function ProofStrip() {
   return (
-    <ul className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] lg:grid lg:grid-cols-4">
+    <ul className="hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] lg:grid lg:grid-cols-4">
       {proofItems.map((item) => (
-        <li key={item.title} className="flex flex-col items-center justify-start border-r border-[var(--color-border)] px-5 py-3.5 text-center last:border-r-0">
-          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-9 w-9 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth="1.9">
+        <li
+          key={item.title}
+          className="flex flex-col items-center justify-start border-r border-[var(--color-border)]/55 px-2.5 py-2 text-center last:border-r-0"
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth="1.9">
             {item.icon}
           </svg>
-          <strong className="mt-1.5 text-[14px] leading-tight text-[var(--color-text)]">{item.title}</strong>
-          <span className="mt-0.5 text-[13px] leading-[1.25] text-[var(--color-text-muted)]">{item.text}</span>
+          <strong className="mt-1 text-[12px] leading-tight text-[var(--color-text)] md:text-[13px]">{item.title}</strong>
+          <span className="mt-0.5 text-[11px] leading-[1.25] text-[var(--color-text-muted)] md:text-[12px]">{item.text}</span>
         </li>
       ))}
     </ul>
@@ -142,8 +145,8 @@ function BuyerRow({ row, index }) {
   const iconKey = profileIconKey(row.buyerProfile);
 
   return (
-    <article className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_26px_var(--color-shadow)] md:rounded-none md:border-0 md:border-t md:shadow-none lg:grid-cols-[40%_18%_42%]">
-      <div className="grid grid-cols-[31%_69%] md:grid-cols-[300px_1fr] lg:border-r lg:border-[var(--color-border)]">
+    <article className="grid overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] shadow-[0_10px_26px_var(--color-shadow)] md:rounded-none md:border-0 md:border-t md:border-[var(--color-border)]/55 md:shadow-none lg:grid-cols-[40%_18%_42%]">
+      <div className="grid grid-cols-[31%_69%] md:grid-cols-[300px_1fr] lg:border-r lg:border-[var(--color-border)]/55">
         <div className="relative min-h-[130px] md:min-h-[108px]">
           <Image
             src={buyerImages[index % buyerImages.length]}
@@ -156,7 +159,7 @@ function BuyerRow({ row, index }) {
         <div className="flex min-w-0 items-center gap-2.5 px-2.5 py-2.5 md:px-4 md:py-3">
           <CircleIcon>{profileIcons[iconKey]}</CircleIcon>
           <div className="min-w-0">
-            <h3 className="text-[16px] font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]" dangerouslySetInnerHTML={{ __html: cleanText(row.buyerProfile) }} />
+            <h3 className="font-lora text-[16px] font-medium leading-[1.12] text-[var(--color-text)] md:text-[18px]" dangerouslySetInnerHTML={{ __html: cleanText(row.buyerProfile) }} />
             <div className="mt-2 lg:hidden">
               <Stars rating={row.rating} />
             </div>
@@ -164,11 +167,11 @@ function BuyerRow({ row, index }) {
         </div>
       </div>
 
-      <div className="hidden items-center justify-center border-r border-[var(--color-border)] px-2.5 py-2 lg:flex">
+      <div className="hidden items-center justify-center border-r border-[var(--color-border)]/55 px-2.5 py-2 lg:flex">
         <Stars rating={row.rating} />
       </div>
 
-      <p className={`border-t border-[var(--color-border)] px-2.5 py-2.5 text-[var(--color-text)] md:px-3.5 md:py-2.5 lg:border-t-0 ${sectionTableText} md:text-[14px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.verdict) }} />
+      <p className={`border-t border-[var(--color-border)]/55 px-2.5 py-2.5 text-[var(--color-text)] md:px-3.5 md:py-2.5 lg:border-t-0 ${sectionTableText} md:text-[14px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.verdict) }} />
     </article>
   );
 }
@@ -183,7 +186,7 @@ export default function WhoShouldBuy({ data, band = "page" }) {
   return (
     <section className={`${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6 md:py-8`}>
       <div className="mx-auto w-full max-w-8xl">
-      <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,0.92fr)_minmax(520px,1fr)] lg:items-start">
+      <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,480px)] lg:items-start">
         <div>
           <HeadingEyebrow text="WHO SHOULD BUY" />
             <h2 className="mt-3 max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
@@ -203,10 +206,10 @@ export default function WhoShouldBuy({ data, band = "page" }) {
         <ProofStrip />
       </div>
 
-      <div className="mt-6 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_12px_32px_var(--color-shadow)]">
+      <div className="mt-6 overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] shadow-[0_12px_32px_var(--color-shadow)]">
         <div className="hidden grid-cols-[40%_18%_42%] bg-[var(--color-chrome)] text-[14px] font-bold text-white lg:grid">
           {(data.columns || ["Buyer Profile", "Rating", "Our Verdict"]).map((column, index) => (
-            <div key={column} className={`px-2.5 py-2 ${index > 0 ? "border-l border-white/20" : ""}`}>
+            <div key={column} className={`px-2.5 py-2 text-center ${index > 0 ? "border-l border-white/18" : ""}`}>
               {column}
             </div>
           ))}
@@ -219,7 +222,7 @@ export default function WhoShouldBuy({ data, band = "page" }) {
         </div>
       </div>
 
-      <div className="mt-5 flex flex-col gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-page-soft)] p-4 shadow-[0_8px_24px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
+      <div className="mt-5 flex flex-col gap-4 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-page-soft)] p-4 shadow-[0_8px_24px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
         <div className="flex gap-3.5">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-[20px] font-bold italic leading-none text-white">
             i
@@ -230,7 +233,7 @@ export default function WhoShouldBuy({ data, band = "page" }) {
         </div>
         <Link
           href="#engine-database"
-          className="inline-flex min-h-12 shrink-0 items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3 text-[16px] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_36px_rgba(0,0,0,0.24)] md:min-w-[260px]"
+          className="inline-flex min-h-12 shrink-0 items-center justify-center gap-4 rounded-[8px] bg-[var(--color-primary)] px-5 py-3 text-[16px] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_36px_rgba(0,0,0,0.24)] md:min-w-[260px]"
         >
           Explore <span dangerouslySetInnerHTML={{ __html: modelName }} /> Engines
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">

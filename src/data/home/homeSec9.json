@@ -1,6 +1,6 @@
 {
   "eyebrow": "FAILURE DATABASE",
-  "subHeadline": "A permanent, categorised reference — not symptom-chasing blog posts.<br class=\"hidden md:inline\" /> Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
+  "subHeadline": "A permanent, categorised reference - not symptom-chasing blog posts.<br class=\"hidden md:inline\" /> Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
   "categories": [
     {
       "id": "engine",
@@ -10,7 +10,7 @@
         {
           "id": "01",
           "title": "TDV6 Crankshaft Failure",
-          "description": "The 306DT's defining weak point — cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon.",
+          "description": "The 306DT's defining weak point - cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon.",
           "severity": { "label": "Catastrophic", "type": "catastrophic" },
           "image": { "src": "/engine.webp", "alt": "TDV6 crankshaft failure" },
           "href": "#"
@@ -34,7 +34,7 @@
         {
           "id": "04",
           "title": "508PS Oil Cooler & Dilution Issues",
-          "description": "The 4.4 SDV8's main (and comparatively minor) weak point — oil cooler leaks can lead to coolant ingestion.",
+          "description": "The 4.4 SDV8's main (and comparatively minor) weak point - oil cooler leaks can lead to coolant ingestion.",
           "severity": { "label": "Immediate", "type": "immediate" },
           "image": { "src": "/engine.webp", "alt": "508PS oil cooler issues" },
           "href": "#"
@@ -127,7 +127,7 @@
         {
           "id": "03",
           "title": "Battery Drain / Parasitic Drain",
-          "description": "Modules failing to sleep correctly — a frequent no-start complaint on stop-start models.",
+          "description": "Modules failing to sleep correctly - a frequent no-start complaint on stop-start models.",
           "severity": { "label": "Low", "type": "low" },
           "image": { "src": "/engine.webp", "alt": "Battery parasitic drain" },
           "href": "#"

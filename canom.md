@@ -1,4 +1,4 @@
-# Canonical URL Setup — LandRoverEngine.uk
+# Canonical URL Setup - LandRoverEngine.uk
 
 Every page auto-generates `<link rel="canonical">` from its JSON data file with zero per-page manual work.
 
@@ -24,7 +24,7 @@ Every data JSON has a `meta.canonical` field with an absolute URL:
 }
 ```
 
-Each `generateMetadata()` reads `meta.canonical` and passes it to `alternates.canonical`. No fallback auto-generation — the JSON is the source of truth.
+Each `generateMetadata()` reads `meta.canonical` and passes it to `alternates.canonical`. No fallback auto-generation - the JSON is the source of truth.
 
 ### Catch-all route (`src/app/[...slug]/page.js`):
 
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }) {
 
 ### Engine route (`src/app/engine/[slug]/page.js`):
 
-Same pattern — reads `meta.canonical` from `src/data/engines/{dataFile}.json`.
+Same pattern - reads `meta.canonical` from `src/data/engines/{dataFile}.json`.
 
 ### Home page (`src/app/page.js`):
 
@@ -77,4 +77,4 @@ It iterates them and constructs absolute URLs matching the route structure:
 /engine/200-300tdi, …      → priority 0.8  (engines, /engine/{slug})
 ```
 
-Next.js auto-serves this at `https://landroverengine.uk/sitemap.xml` — no manual XML needed.
+Next.js auto-serves this at `https://landroverengine.uk/sitemap.xml` - no manual XML needed.

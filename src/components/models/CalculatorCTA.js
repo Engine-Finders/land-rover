@@ -60,7 +60,7 @@ function modelNameFromTitle(title = "") {
 
 function splitTitle(title = "") {
   const clean = cleanText(title);
-  const markers = ["or Should I Replace It?", "— or Should I Replace It?", "- or Should I Replace It?"];
+  const markers = ["or Should I Replace It?", "- or Should I Replace It?", "- or Should I Replace It?"];
   const marker = markers.find((item) => clean.includes(item));
 
   if (!marker) {
@@ -68,7 +68,7 @@ function splitTitle(title = "") {
   }
 
   return {
-    before: clean.slice(0, clean.indexOf(marker)).replace(/[—-]\s*$/, "").trim(),
+    before: clean.slice(0, clean.indexOf(marker)).replace(/[--]\s*$/, "").trim(),
     accent: "or Should I Replace It?",
   };
 }
@@ -137,7 +137,7 @@ function PrimaryPath({ path, modelName }) {
       <span className="inline-flex rounded bg-[var(--color-primary)] px-2 py-1 text-[12px] font-bold uppercase leading-none text-white md:px-2.5 md:py-1 md:text-[13px]">Path 1</span>
       <div className="mt-3.5 grid grid-cols-[auto_1fr] items-center gap-3.5 md:grid-cols-[1fr_auto] md:items-start">
         <div className="order-2 md:order-1">
-          <h3 className="text-[30px] font-bold leading-[1.06] text-[var(--color-text)] md:text-[42px]">
+          <h3 className="font-lora text-[30px] font-medium leading-[1.06] text-[var(--color-text)] md:text-[42px]">
             <span className="text-[var(--color-primary)]">Know</span> your engine?
           </h3>
           <p className={`mt-2 max-w-[420px] text-[var(--color-text-muted)] ${sectionDescription}`}>
@@ -147,18 +147,20 @@ function PrimaryPath({ path, modelName }) {
         <CircleIcon name="engineSearch" large className="order-1 md:order-2" />
       </div>
 
-      <Link href={path?.href || "/#calculator-example"} className={`btn-cta mt-3.5 flex min-h-12 items-center justify-between gap-2.5 rounded-md bg-[var(--color-primary)] px-3.5 py-2.5 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton}`}>
+      <Link href={path?.href || "/#calculator-example"} className={`btn-cta mt-3 md:mt-13 flex min-h-12 items-center justify-between gap-2.5 rounded-md bg-[var(--color-primary)] px-3.5 py-2.5 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton}`}>
         <span className="flex min-w-0 items-center gap-2.5 text-white">
           <Icon name="calculator" className="h-7 w-7 shrink-0 text-white" />
           <span className="min-w-0">
             <span className="block leading-tight">Launch Diagnostic Calculator</span>
-            <span className="mt-0.5 block text-[12px] font-normal leading-tight text-white/90 md:text-[13px]"><span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected</span>
+            <span className="mt-1 block text-[13px] font-normal leading-tight text-white/90 md:text-[14px]">
+              <span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected
+            </span>
           </span>
         </span>
-        <ArrowIcon className="h-5 w-5 shrink-0 text-white" />
+        <ArrowIcon className="h-6 w-6 shrink-0 text-white" />
       </Link>
 
-      <ul className="mt-4 grid grid-cols-3 gap-2.5">
+      <ul className="mt-4 grid w-fit max-w-full grid-cols-3 gap-2.5">
         <Feature icon="check" title={`${modelName} pre-selected`} text="All generations covered" />
         <Feature icon="chart" title="Real UK cost data" text="Used, recon & rebuilt" />
         <Feature icon="shield" title="Instant verdict" text="Repair vs replace" />
@@ -177,7 +179,7 @@ function SecondaryPath({ path }) {
       <span className="inline-flex rounded bg-[var(--color-primary)] px-2 py-1 text-[12px] font-bold uppercase leading-none text-white md:px-2.5 md:py-1 md:text-[13px]">Path 2</span>
       <div className="mt-3.5 grid grid-cols-[auto_1fr] items-center gap-3.5 md:grid-cols-[1fr_auto] md:items-start">
         <div className="order-2 md:order-1">
-          <h3 className="max-w-[420px] text-[30px] font-bold leading-[1.06] text-[var(--color-text)] md:text-[42px]">
+          <h3 className="font-lora max-w-[420px] text-[30px] font-medium leading-[1.06] text-[var(--color-text)] md:text-[42px]">
             <span className="text-[var(--color-primary)]">Not sure</span> which engine you have?
           </h3>
           <p className={`mt-2 text-[var(--color-text-muted)] ${sectionDescription}`}>We&apos;ll identify it first.</p>
@@ -185,18 +187,23 @@ function SecondaryPath({ path }) {
         <CircleIcon name="documentSearch" large className="order-1 md:order-2" />
       </div>
 
-      <Link href={path?.href || "/#calculator-example"} className={`mt-3.5 flex min-h-12 items-center justify-between gap-2.5 rounded-md border border-[var(--color-primary)] px-3.5 py-2.5 font-bold text-[var(--color-primary)] ${sectionButton}`}>
-        <span className="flex min-w-0 items-center gap-2.5">
-          <Icon name="engineQuestion" className="h-7 w-7 shrink-0 text-[var(--color-primary)]" />
+      <Link
+        href={path?.href || "/#calculator-example"}
+        className="mt-8 flex min-h-14 items-center justify-between gap-3 rounded-md border border-[var(--color-primary)] px-4 py-3.5 text-[17px] font-bold text-[var(--color-primary)] md:min-h-[60px] md:text-[18px]"
+      >
+        <span className="flex min-w-0 items-center gap-3">
+          <Icon name="engineQuestion" className="h-8 w-8 shrink-0 text-[var(--color-primary)]" />
           <span className="min-w-0">
             <span className="block leading-tight">Identify My Engine First</span>
-            <span className="mt-0.5 block text-[12px] font-normal leading-tight text-[var(--color-text-muted)] md:text-[13px]">Then launch the diagnostic calculator</span>
+            <span className="mt-1 block text-[13px] font-normal leading-tight text-[var(--color-text-muted)] md:text-[14px]">
+              Then launch the diagnostic calculator
+            </span>
           </span>
         </span>
-        <ArrowIcon className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
+        <ArrowIcon className="h-6 w-6 shrink-0 text-[var(--color-primary)]" />
       </Link>
 
-      <div className="mt-4 flex gap-3 rounded-md bg-[var(--color-page-soft)] p-3.5">
+      <div className="mt-4 inline-flex max-w-full gap-3 rounded-md bg-[var(--color-page-soft)] p-3.5">
         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
           <Icon name="info" className="h-5 w-5" />
         </span>

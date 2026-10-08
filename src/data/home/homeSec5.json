@@ -1,6 +1,6 @@
 {
   "eyebrow": "SECTION 07",
-  "subHeadline": "The comparisons Land Rover buyers actually want — generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
+  "subHeadline": "The comparisons Land Rover buyers actually want - generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
   "headerImage": {
     "src": "/sec2-bg.webp",
     "alt": "Comparison hub background"
@@ -10,7 +10,7 @@
     {
       "id": "01",
       "title": "Discovery 4 vs Discovery 5",
-      "preview": "Which generation to buy — the verdict on reliability, running costs, and long-term value. The Discovery 5 benefits from revised Ingenium engines; the Discovery 4 needs proven oil-interval history.",
+      "preview": "Which generation to buy - the verdict on reliability, running costs, and long-term value. The Discovery 5 benefits from revised Ingenium engines; the Discovery 4 needs proven oil-interval history.",
       "icon": "scale",
       "image": { "src": "/engine.webp", "alt": "Discovery 4 vs Discovery 5" },
       "href": "#"
@@ -26,7 +26,7 @@
     {
       "id": "03",
       "title": "TDV6 vs SDV6",
-      "preview": "What's the real difference? Performance, reliability, and replacement costs compared side-by-side. Both share the 306DT crankshaft bearing risk — the difference is power delivery and host vehicle.",
+      "preview": "What's the real difference? Performance, reliability, and replacement costs compared side-by-side. Both share the 306DT crankshaft bearing risk - the difference is power delivery and host vehicle.",
       "icon": "expertVerified",
       "image": { "src": "/engine.webp", "alt": "TDV6 vs SDV6" },
       "href": "#"
@@ -42,7 +42,7 @@
     {
       "id": "05",
       "title": "Defender vs Discovery",
-      "preview": "The practical ownership comparison — space, capability, running costs, and everyday usability. The Defender holds value better; the Discovery offers more seats and family practicality.",
+      "preview": "The practical ownership comparison - space, capability, running costs, and everyday usability. The Defender holds value better; the Discovery offers more seats and family practicality.",
       "icon": "terrainResponse",
       "image": { "src": "/engine.webp", "alt": "Defender vs Discovery" },
       "href": "#"
@@ -50,7 +50,7 @@
     {
       "id": "06",
       "title": "Range Rover Sport vs Discovery",
-      "preview": "Ownership costs compared — which SUV offers better value for money over 3-5 years? Both share engines and platforms; choose based on refinement versus family practicality.",
+      "preview": "Ownership costs compared - which SUV offers better value for money over 3-5 years? Both share engines and platforms; choose based on refinement versus family practicality.",
       "icon": "calculator",
       "image": { "src": "/engine.webp", "alt": "Range Rover Sport vs Discovery" },
       "href": "#"
@@ -59,6 +59,6 @@
   "dataNote": {
     "icon": "realData",
     "title": "DATA NOTE:",
-    "text": "Comparison verdicts synthesise generation reliability patterns, replacement-cost bands and real UK enquiry volume. They are ownership guidance — always inspect the specific vehicle before buying."
+    "text": "Comparison verdicts synthesise generation reliability patterns, replacement-cost bands and real UK enquiry volume. They are ownership guidance - always inspect the specific vehicle before buying."
   }
 }

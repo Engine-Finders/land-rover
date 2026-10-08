@@ -1,6 +1,6 @@
 {
   "eyebrow": "SECTION 09",
-  "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate — 9,000+ real enquiries, 15+ engine codes tracked, and live market insights updated monthly.",
+  "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate - 9,000+ real enquiries, 15+ engine codes tracked, and live market insights updated monthly.",
   "headerImage": {
     "src": "/sec2-bg.webp",
     "alt": "Market intelligence background"
@@ -51,7 +51,7 @@
     "rows": [
       {
         "failure": "306DT Crankshaft Bearing Failure",
-        "note": "Cold-start knock is the early warning — often catastrophic once pressure drops.",
+        "note": "Cold-start knock is the early warning - often catastrophic once pressure drops.",
         "risk": { "label": "CATASTROPHIC", "type": "catastrophic" }
       },
       {
@@ -61,7 +61,7 @@
       },
       {
         "failure": "204DTD Pre-2019 Timing Chain Tensioner Wear",
-        "note": "Improved from 2019 — still worth monitoring on early Ingenium diesels.",
+        "note": "Improved from 2019 - still worth monitoring on early Ingenium diesels.",
         "risk": { "label": "MONITOR", "type": "monitor" }
       }
     ]

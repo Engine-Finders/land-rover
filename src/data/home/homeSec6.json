@@ -1,6 +1,6 @@
 {
   "eyebrow": "SECTION 08",
-  "subHeadline": "The question every Land Rover owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap — based on real UK data, not estimates.",
+  "subHeadline": "The question every Land Rover owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap - based on real UK data, not estimates.",
   "headerImage": {
     "src": "/sec2-bg.webp",
     "alt": "Ownership economics background"
@@ -44,7 +44,7 @@
         "replacementCost": "£5,000 – £12,000",
         "verdict": {
           "label": "SAFE",
-          "text": "Replacement viable across most examples — well within value even at upper recon cost.",
+          "text": "Replacement viable across most examples - well within value even at upper recon cost.",
           "type": "safe"
         },
         "href": "#"
@@ -95,7 +95,7 @@
     "icon": "scale",
     "percent": "60%",
     "percentLabel": "JLR THRESHOLD",
-    "text": "If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote — don't decide on repair cost alone."
+    "text": "If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote - don't decide on repair cost alone."
   },
   "deeperLinks": {
     "title": "DEEPER ANALYSIS LINKS",
@@ -131,6 +131,6 @@
   "dataNote": {
     "icon": "realData",
     "title": "DATA NOTE:",
-    "text": "Vehicle values draw on live UK market pricing. Replacement costs are [EM-QUOTE] recon bands. Verdict flags apply the 60% rule against typical host values — always confirm with a specialist inspection of the specific car."
+    "text": "Vehicle values draw on live UK market pricing. Replacement costs are [EM-QUOTE] recon bands. Verdict flags apply the 60% rule against typical host values - always confirm with a specialist inspection of the specific car."
   }
 }

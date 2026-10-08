@@ -1,6 +1,6 @@
 {
   "eyebrow": "DIAGNOSTIC CALCULATOR",
-  "subHeadline": "Answer a few questions about your symptoms — we'll match you against 15+ known JLR failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+  "subHeadline": "Answer a few questions about your symptoms - we'll match you against 15+ known JLR failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
   "headerImage": {
     "src": "/sec2-bg.webp",
     "alt": "Land Rover diagnostic calculator background"
@@ -41,7 +41,7 @@
       {
         "icon": "realData",
         "title": "EM-VERIFIED Data",
-        "text": "Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork."
+        "text": "Every cost range and enquiry volume comes from real 2025 UK data - not estimates or guesswork."
       },
       {
         "icon": "specificKnowledge",
@@ -56,7 +56,7 @@
       {
         "icon": "scale",
         "title": "Honest Verdict System",
-        "text": "We tell you when replacement isn't worth it — not every site does that."
+        "text": "We tell you when replacement isn't worth it - not every site does that."
       }
     ]
   },
@@ -237,7 +237,7 @@
         "likelihood": "Medium Likelihood",
         "commonOn": "All JLR models, especially EAS and Terrain Response cars",
         "symptomsMatch": "Slow crank, warning lights, modules dropping offline",
-        "summary": "Most electrical 'engine' complaints start with a tired battery or a poor earth. Diagnose the charging circuit before quoting an engine — this is usually a repair, not a replacement.",
+        "summary": "Most electrical 'engine' complaints start with a tired battery or a poor earth. Diagnose the charging circuit before quoting an engine - this is usually a repair, not a replacement.",
         "oemParts": [
           { "label": "AGM battery", "part": "LR117941" },
           { "label": "Alternator", "part": "LR056992" }
@@ -269,7 +269,7 @@
         "likelihood": "High Likelihood",
         "commonOn": "Discovery 3/4 and Range Rover Sport with Terrain Response",
         "symptomsMatch": "Clunk on take-off, 4WD warning, binding on tight lock",
-        "summary": "Transfer box actuator and viscous-coupling wear is common. A specialist rebuild is usually cheaper than a main-dealer box — run the value check before committing.",
+        "summary": "Transfer box actuator and viscous-coupling wear is common. A specialist rebuild is usually cheaper than a main-dealer box - run the value check before committing.",
         "oemParts": [
           { "label": "Transfer box", "part": "LR011273" },
           { "label": "Actuator motor", "part": "LR011805" }
@@ -298,10 +298,10 @@
       "other": {
         "severity": "monitor",
         "fault": "Needs a Guided Inspection",
-        "likelihood": "Unknown — start with a specialist inspection",
+        "likelihood": "Unknown - start with a specialist inspection",
         "commonOn": "All Land Rover and Range Rover models",
         "symptomsMatch": "Mixed or unclear symptoms, stored codes, intermittent faults",
-        "summary": "If the fault does not match a known pattern, do not guess. A JLR specialist inspection with live data is cheaper than replacing the wrong part — then come back with the codes.",
+        "summary": "If the fault does not match a known pattern, do not guess. A JLR specialist inspection with live data is cheaper than replacing the wrong part - then come back with the codes.",
         "oemParts": [
           { "label": "Diagnostic session", "part": "Specialist live-data inspection" }
         ],

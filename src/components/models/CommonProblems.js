@@ -102,7 +102,7 @@ function ProblemCard({ problem, index }) {
       <div className="flex min-w-0 flex-col p-2.5 md:p-4">
       <div className="flex items-start justify-between gap-4">
   <h3
-    className="text-[13px] font-bold leading-[1.12] text-[var(--color-text)] md:text-[16px]"
+    className="font-lora text-[13px] font-medium leading-[1.12] text-[var(--color-text)] md:text-[16px]"
     dangerouslySetInnerHTML={{ __html: cleanText(problem.issue) }}
   />
   <div className="hidden shrink-0 md:block">

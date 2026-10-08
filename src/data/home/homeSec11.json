@@ -1,6 +1,6 @@
 {
   "eyebrow": "SECTION 10",
-  "subHeadline": "Not a navigation grid — a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers the six questions that actually matter: best generation, worst generation, most reliable engine, highest risk, best used buy, and whether the numbers make financial sense.",
+  "subHeadline": "Not a navigation grid - a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers the six questions that actually matter: best generation, worst generation, most reliable engine, highest risk, best used buy, and whether the numbers make financial sense.",
   "headerImage": {
     "src": "/right.webp",
     "alt": "Land Rover and Range Rover models"
@@ -91,7 +91,7 @@
       {
         "icon": "safestBuy",
         "title": "MOST RELIABLE ENGINE ACROSS THE RANGE",
-        "text": "The 4.4 SDV8 — high replacement cost, but a genuinely low failure rate."
+        "text": "The 4.4 SDV8 - high replacement cost, but a genuinely low failure rate."
       },
       {
         "icon": "expensiveFailure",

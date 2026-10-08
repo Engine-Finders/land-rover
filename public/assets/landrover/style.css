@@ -1,5 +1,5 @@
 /* ============================================================
-   LAND ROVER / RANGE ROVER — SHARED BRAND STYLESHEET
+   LAND ROVER / RANGE ROVER - SHARED BRAND STYLESHEET
    Per IBS JLR Master AI Handover 4.0, Part 3.1
    Loaded once, referenced by every page on landroverengine.uk
    ============================================================ */
@@ -224,7 +224,7 @@ table { border-collapse: collapse; width: 100%; }
 .section h2 { font-size: 32px; margin-bottom: 18px; }
 .section .lede { font-size: 17px; color: var(--lr-ink-mid); max-width: 760px; margin-bottom: 32px; }
 
-/* ---------- SCROLL REVEAL — directional fade-in (v2, Handover 5.2) ---------- */
+/* ---------- SCROLL REVEAL - directional fade-in (v2, Handover 5.2) ---------- */
 .fade-up, .fade-down, .fade-left, .fade-right {
   opacity: 0;
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -402,7 +402,7 @@ footer { background: var(--lr-green-900); color: var(--lr-on-dark-mid); padding:
 footer a { color: var(--lr-on-dark-mid); }
 
 /* ============================================================
-   EXTENSIONS — added for Model, Fitment, Data, Tool, Technical,
+   EXTENSIONS - added for Model, Fitment, Data, Tool, Technical,
    Case Study page types. Appended, never replaces the above.
    ============================================================ */
 

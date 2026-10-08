@@ -3,7 +3,7 @@ import { LEAD_SOURCE } from "@/app/api/lead/constants";
 import { CRM_LEAD_FIELDS } from "@/app/api/lead/crm";
 
 // Hardcoded email settings (API key only comes from env)
-const TO_EMAIL = "enginefinders7@gmail.com";
+const TO_EMAIL = "ef2crm@gmail.com";
 const FROM_EMAIL = "LandRoverEngine.uk <noreply@landroverengine.uk>";
 
 function escapeHtml(value) {

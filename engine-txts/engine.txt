@@ -1,8 +1,8 @@
-LAND ROVER & RANGE ROVER HOMEPAGE — CONTENT ONLY
+LAND ROVER & RANGE ROVER HOMEPAGE - CONTENT ONLY
 
 SECTION 1: HERO
 H1: The UK's Most Trusted Land Rover & Range Rover Ownership Guide
-Sub-headline: Reliability rankings, real failure data, honest repair-vs-replace economics — for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.
+Sub-headline: Reliability rankings, real failure data, honest repair-vs-replace economics - for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.
 Trust Strip: 📊 9,000+ Real Enquiries • 🔧 20+ Vetted JLR Specialists • 📖 Every Generation, Honestly Rated • 🏆 Part of Engine Finders
 Primary CTA: START YOUR RESEARCH →
 
@@ -55,13 +55,13 @@ Evoque
 
 SECTION 3: DIAGNOSTIC CALCULATOR
 H2: Diagnose Your Land Rover or Range Rover Problem
-Sub-headline: Answer a few questions about your symptoms — we'll match you against 15+ known JLR failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.
+Sub-headline: Answer a few questions about your symptoms - we'll match you against 15+ known JLR failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.
 Trust Strip (above calculator): 📊 Powered by 9,000+ real UK enquiries • 🔧 20+ vetted JLR specialists • 📖 OEM part references included • 🏆 Part of Engine Finders
 
 H3: How It Works
-Tell us your symptoms — Select from common failure categories or use the shortcut grid if you already know the fault.
-Tell us about your vehicle — Age and estimated value help us calculate whether repair or replacement makes financial sense.
-Get your diagnosis — We'll show you the likely fault, OEM part numbers, severity level, and a transparent cost breakdown.
+Tell us your symptoms - Select from common failure categories or use the shortcut grid if you already know the fault.
+Tell us about your vehicle - Age and estimated value help us calculate whether repair or replacement makes financial sense.
+Get your diagnosis - We'll show you the likely fault, OEM part numbers, severity level, and a transparent cost breakdown.
 
 H3: Typical UK Land Rover & Range Rover Replacement Costs
 [Static SEO table rendered from COST_TABLE data]
@@ -101,18 +101,18 @@ H3: Why Trust This Diagnosis?
 Trust Signal
 What It Means
 EM-VERIFIED Data
-Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork.
+Every cost range and enquiry volume comes from real 2025 UK data - not estimates or guesswork.
 JLR-Specific Knowledge
 We use exact JLR terminology (EAS, Terrain Response, TDV6, SDV6, Ingenium) and OEM part numbers.
 Vetted Specialist Network
 Our recommendations route you to 20+ JLR specialists who work on these vehicles daily.
 Honest Verdict System
-We tell you when replacement isn't worth it — not every site does that.
+We tell you when replacement isn't worth it - not every site does that.
 
 
 SECTION 4: OWNERSHIP RANKINGS
 H2: Land Rover & Range Rover Ownership Rankings
-Sub-headline: The verdicts people actually want before they read a single spec sheet — the calls we'd make for a friend, backed by real UK enquiry and failure data.
+Sub-headline: The verdicts people actually want before they read a single spec sheet - the calls we'd make for a friend, backed by real UK enquiry and failure data.
 
 Ranking
 Winner
@@ -120,7 +120,7 @@ Why
 Verdict
 Most Reliable Engine
 4.4 SDV8 (508PS)
-Highest replacement cost in the range, but by far the lowest failure rate — oil cooler wear aside, largely trouble-free.
+Highest replacement cost in the range, but by far the lowest failure rate - oil cooler wear aside, largely trouble-free.
 🏆 Best
 Most Reliable Model
 Discovery 5
@@ -128,7 +128,7 @@ Revised post-2019 Ingenium engines and a lighter aluminium platform give it the 
 🏆 Best
 Best Used Buy
 Discovery 4 (SDV6)
-Genuinely capable when the oil-interval history is proven — the discipline matters more than the mileage.
+Genuinely capable when the oil-interval history is proven - the discipline matters more than the mileage.
 ✅ Safe
 Most Expensive Failure
 306DT (TDV6/SDV6) Crank Failure
@@ -136,11 +136,11 @@ Catastrophic bearing failure, £6,500–£9,500 full recon, and largely unrepair
 🔴 Avoid
 Safest Range Rover to Buy
 L405 (2012–2021)
-Typical values of £14,000–£55,000 against £6,500–£12,000 recon cost — comfortably safe across almost every example.
+Typical values of £14,000–£55,000 against £6,500–£12,000 recon cost - comfortably safe across almost every example.
 ✅ Safe
 Highest Risk Purchase
 Early Evoque L538 (pre-2019, 204DTD)
-Timing chain tensioner risk sits on an ageing, lower-value host — the combination that flags 'Watch' most often.
+Timing chain tensioner risk sits on an ageing, lower-value host - the combination that flags 'Watch' most often.
 ⚠️ Watch
 Best Family Land Rover
 Discovery 5
@@ -151,11 +151,11 @@ Defender L663
 High host value across both engines fitted means replacement is comfortably 'Safe' at almost any spec.
 🏆 Best
 
-Data Note: Entries drawing directly on enquiry volume, replacement cost, and R-to-V flag data are marked as verified in the source file. "Most Reliable Model," "Best Family Land Rover," and the specific engine/model pairings are our editorial synthesis of the failure-pattern data — worth a JLR specialist sense-check before publishing.
+Data Note: Entries drawing directly on enquiry volume, replacement cost, and R-to-V flag data are marked as verified in the source file. "Most Reliable Model," "Best Family Land Rover," and the specific engine/model pairings are our editorial synthesis of the failure-pattern data - worth a JLR specialist sense-check before publishing.
 
 SECTION 5: FAILURE DATABASE
 H2: The Land Rover & Range Rover Failure Database
-Sub-headline: A permanent, categorised reference — not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.
+Sub-headline: A permanent, categorised reference - not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.
 
 🔧 Engine Failures
 Card
@@ -165,7 +165,7 @@ Severity
 Link
 1
 TDV6 Crankshaft Failure
-The 306DT's defining weak point — cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon.
+The 306DT's defining weak point - cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon.
 🔴 Catastrophic
 Read more →
 2
@@ -180,7 +180,7 @@ Pre-2019 204DTD tensioner wear, significantly improved from 2019 onward. £1,200
 Read more →
 4
 508PS Oil Cooler & Dilution Issues
-The 4.4 SDV8's main (and comparatively minor) weak point — oil cooler leaks can lead to coolant ingestion.
+The 4.4 SDV8's main (and comparatively minor) weak point - oil cooler leaks can lead to coolant ingestion.
 🟠 Immediate
 Read more →
 
@@ -249,7 +249,7 @@ Particularly common on pre-2018 Touch Pro systems. Can be resolved with software
 Read more →
 3
 Battery Drain / Parasitic Drain
-Modules failing to sleep correctly — a frequent no-start complaint on stop-start models.
+Modules failing to sleep correctly - a frequent no-start complaint on stop-start models.
 🟢 Low
 Read more →
 
@@ -257,7 +257,7 @@ Data Note: Engine Failures are backed by [EM-VERIFIED] enquiry, mileage, and cos
 
 SECTION 6: KNOWLEDGE CENTRES
 H2: Knowledge Centres
-Sub-headline: Deep, permanent reference hubs for the engines and systems Land Rover owners research most — not blog posts, not one-off articles. Every guide is built on real UK enquiry data and JLR-specific expertise.
+Sub-headline: Deep, permanent reference hubs for the engines and systems Land Rover owners research most - not blog posts, not one-off articles. Every guide is built on real UK enquiry data and JLR-specific expertise.
 
 #
 Tile
@@ -267,12 +267,12 @@ Link
 1
 TDV6 Knowledge Centre
 🔧
-Every variant, every failure, every generation it was fitted to — the 2.7 and 3.0 TDV6/SDV6 complete guide.
+Every variant, every failure, every generation it was fitted to - the 2.7 and 3.0 TDV6/SDV6 complete guide.
 Explore →
 2
 SDV6 Knowledge Centre
 🔧
-The 3.0 V6 diesel's full ownership profile — performance, reliability, and known issues.
+The 3.0 V6 diesel's full ownership profile - performance, reliability, and known issues.
 Explore →
 3
 Ingenium Knowledge Centre
@@ -282,7 +282,7 @@ Explore →
 4
 SDV8 Knowledge Centre
 🏆
-The 4.4 V8 diesel's reliability record and running costs — the most durable engine in the range.
+The 4.4 V8 diesel's reliability record and running costs - the most durable engine in the range.
 Explore →
 5
 Air Suspension Knowledge Centre
@@ -297,19 +297,19 @@ Explore →
 7
 ZF Gearbox Problems
 ⚙️
-The 8-speed automatic's known issues across JLR's range — mechatronic, torque converter, and more.
+The 8-speed automatic's known issues across JLR's range - mechatronic, torque converter, and more.
 Explore →
 8
 Transfer Box & Differential Problems
 🔄
-4x4 system faults by model and generation — ATC300/400 chain stretch, diff whine, and UJ failures.
+4x4 system faults by model and generation - ATC300/400 chain stretch, diff whine, and UJ failures.
 Explore →
 
 Data Note: TDV6, SDV6, Ingenium, and SDV8 Knowledge Centres are backed by [EM-VERIFIED] enquiry data. Air Suspension, Terrain Response, ZF Gearbox, and Transfer Box content is built on documented patterns and specialist interviews.
 
 SECTION 7: COMPARISON HUB
-H2: Comparison Hub — Head-to-Head Verdicts
-Sub-headline: The comparisons Land Rover buyers actually want — generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.
+H2: Comparison Hub - Head-to-Head Verdicts
+Sub-headline: The comparisons Land Rover buyers actually want - generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.
 
 #
 Comparison
@@ -317,7 +317,7 @@ Verdict Preview
 Link
 1
 Discovery 4 vs Discovery 5
-Which generation to buy — the verdict on reliability, running costs, and long-term value.
+Which generation to buy - the verdict on reliability, running costs, and long-term value.
 Read the verdict →
 2
 L405 vs L460 Range Rover
@@ -333,18 +333,18 @@ Which should you buy? We compare fuel economy, reliability, and long-term owners
 Read the verdict →
 5
 Defender vs Discovery
-The practical ownership comparison — space, capability, running costs, and everyday usability.
+The practical ownership comparison - space, capability, running costs, and everyday usability.
 Read the verdict →
 6
 Range Rover Sport vs Discovery
-Ownership costs compared — which SUV offers better value for money over 3-5 years?
+Ownership costs compared - which SUV offers better value for money over 3-5 years?
 Read the verdict →
 
 Data Note: All comparison pages pull from [EM-VERIFIED] enquiry data, replacement cost tables, and ownership decision indices. Each comparison includes a clear winner and an honest breakdown of pros and cons.
 
 SECTION 8: OWNERSHIP ECONOMICS CENTRE
 H2: The Ownership Economics Centre
-Sub-headline: The question every Land Rover owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap — based on real UK data, not estimates.
+Sub-headline: The question every Land Rover owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap - based on real UK data, not estimates.
 
 The Decision Matrix
 Model & Engine
@@ -354,31 +354,31 @@ Verdict
 Discovery 4 SDV6
 £6,000–£18,000
 £6,500–£9,500
-⚠️ Watch — sub-£10k examples approach the threshold
+⚠️ Watch - sub-£10k examples approach the threshold
 Freelander 2 (204DTD)
 £2,500–£7,000
 £3,500–£5,800
-🔴 Scrap threshold — recon cost frequently exceeds car value
+🔴 Scrap threshold - recon cost frequently exceeds car value
 Range Rover Sport L494
 £12,000–£55,000
 £5,000–£12,000
-✅ Safe — replacement viable across most examples
+✅ Safe - replacement viable across most examples
 Range Rover L405
 £14,000–£55,000
 £6,500–£12,000
-✅ Safe — well within value even at upper recon cost
+✅ Safe - well within value even at upper recon cost
 Defender L663
 £35,000–£90,000
 £3,500–£9,500
-✅ Safe — very safe across all variants
+✅ Safe - very safe across all variants
 Range Rover Sport L320 (368DT)
 £5,000–£15,000
 £5,500–£8,000
-⚠️ Watch — older examples sit at 40–60% of vehicle value
+⚠️ Watch - older examples sit at 40–60% of vehicle value
 
 
 The Rule of Thumb
-If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote — don't decide on repair cost alone.
+If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote - don't decide on repair cost alone.
 
 Deeper Analysis Links
 #
@@ -400,11 +400,11 @@ The top 5 repairs and what they cost
 Cheapest Land Rovers to Own →
 Which models offer the best value for money
 
-Data Note: Vehicle value bands from AutoTrader, Motors.co.uk 2024–2025 [THIRD-PARTY]. Replacement costs from Table A — Engine Replacement Economics [EM-QUOTE]. Verdict flags derived from the R-to-V flag system.
+Data Note: Vehicle value bands from AutoTrader, Motors.co.uk 2024–2025 [THIRD-PARTY]. Replacement costs from Table A - Engine Replacement Economics [EM-QUOTE]. Verdict flags derived from the R-to-V flag system.
 
 SECTION 9: MARKET INTELLIGENCE
 H2: Land Rover & Range Rover Market Intelligence
-Sub-headline: Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate — 9,000+ real enquiries, 15+ engine codes tracked, and live market insights updated monthly.
+Sub-headline: Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate - 9,000+ real enquiries, 15+ engine codes tracked, and live market insights updated monthly.
 
 Most-Enquired Engines (2025)
 Rank
@@ -517,7 +517,7 @@ Data Note: Live feed updated monthly from EM_Proprietary_Data_2025.txt. All enqu
 
 SECTION 10: EVERY MODEL
 H2: Every Model. Every Generation. Honestly Rated.
-Sub-headline: Not a navigation grid — a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers six questions: which generation is best, which engines to avoid, which engines are most reliable, what replacement actually costs, what fails most often, and whether ownership still makes financial sense.
+Sub-headline: Not a navigation grid - a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers six questions: which generation is best, which engines to avoid, which engines are most reliable, what replacement actually costs, what fails most often, and whether ownership still makes financial sense.
 
 COLUMN 1: LAND ROVER
 Model
@@ -555,16 +555,16 @@ Evoque
 🔥 Best-Seller
 
 
-Example Verdict — Land Rover Discovery
+Example Verdict - Land Rover Discovery
 Best generation: Discovery 5, for build quality and the revised post-2019 Ingenium.
 Worst generation: Discovery 3/4 on the 2.7 TDV6, where oil pump failure can take the engine out with little warning.
-Most reliable engine across the range: The 4.4 SDV8 — high replacement cost, but a genuinely low failure rate.
+Most reliable engine across the range: The 4.4 SDV8 - high replacement cost, but a genuinely low failure rate.
 Highest risk: The 3.0 TDV6/SDV6's crankshaft bearing failure, which is largely unrepairable once it starts.
-Best used buy: A Discovery 4 SDV6 with full service history and proven oil-interval discipline — anything without that history is a gamble.
+Best used buy: A Discovery 4 SDV6 with full service history and proven oil-interval discipline - anything without that history is a gamble.
 
 SECTION 11: TRUST + FAQ
 H2: Why Land Rover Owners Trust This Site
-Sub-headline: Built on real data, verified by specialists, and completely independent — no sponsors, no bias, just honest advice.
+Sub-headline: Built on real data, verified by specialists, and completely independent - no sponsors, no bias, just honest advice.
 
 Trust Columns
 #
@@ -574,7 +574,7 @@ Description
 1
 📊
 Built on Real Data
-Every reliability rating and cost range comes from genuine UK quote and enquiry data — not manufacturer marketing, not forum guesswork.
+Every reliability rating and cost range comes from genuine UK quote and enquiry data - not manufacturer marketing, not forum guesswork.
 2
 💚
 We Tell You When Not to Repair
@@ -582,25 +582,25 @@ Where replacement cost exceeds what the car is worth, we say so. That's the diff
 3
 🔧
 Vetted JLR Specialists
-Every specialist in our network is vetted specifically for Land Rover and Range Rover work — not generalists who happen to take on JLR jobs.
+Every specialist in our network is vetted specifically for Land Rover and Range Rover work - not generalists who happen to take on JLR jobs.
 4
 🏆
 Part of Engine Finders
-LandRoverEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one.
+LandRoverEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace - giving you the research depth of an independent authority with a vetted route to action when you need one.
 
 
 Frequently Asked Questions
 Q1: Is it worth replacing a Land Rover engine?
-It depends entirely on vehicle value versus replacement cost. A Range Rover Sport or Defender L663 will almost always justify replacement — the car is worth far more than the engine. A Freelander 2 or early Discovery Sport often won't; replacement cost can exceed what the car is worth outright. Use our diagnostic calculator above to get a personalised verdict.
+It depends entirely on vehicle value versus replacement cost. A Range Rover Sport or Defender L663 will almost always justify replacement - the car is worth far more than the engine. A Freelander 2 or early Discovery Sport often won't; replacement cost can exceed what the car is worth outright. Use our diagnostic calculator above to get a personalised verdict.
 
 Q2: Which Land Rover engine should I avoid?
-The 2.7 TDV6 (276DT) and the 3.0 TDV6/SDV6 (306DT) carry the highest catastrophic-failure risk in the range — both can suffer bottom-end failures that leave little to rebuild. The 4.4 SDV8 and post-2019 Ingenium units are considerably more dependable. See our Engine Rankings for the full breakdown.
+The 2.7 TDV6 (276DT) and the 3.0 TDV6/SDV6 (306DT) carry the highest catastrophic-failure risk in the range - both can suffer bottom-end failures that leave little to rebuild. The 4.4 SDV8 and post-2019 Ingenium units are considerably more dependable. See our Engine Rankings for the full breakdown.
 
 Q3: Is the Ingenium engine reliable?
 The petrol Ingenium (204PT) has a noticeably better reliability record than the diesel (204DTD), which suffered timing chain tensioner issues on pre-2019 builds. JLR revised the design from 2019 onward, and those engines carry meaningfully lower risk. Check our Ingenium Knowledge Centre for full details.
 
-Q4: Discovery 4 vs Discovery 5 — which is more reliable?
-The Discovery 5 benefits from the revised, more dependable Ingenium engines and a lighter aluminium platform. The Discovery 4 is more readily available on the SDV6, which is powerful but carries real crankshaft bearing risk at higher mileages — service history matters more than the badge. Read our full comparison here.
+Q4: Discovery 4 vs Discovery 5 - which is more reliable?
+The Discovery 5 benefits from the revised, more dependable Ingenium engines and a lighter aluminium platform. The Discovery 4 is more readily available on the SDV6, which is powerful but carries real crankshaft bearing risk at higher mileages - service history matters more than the badge. Read our full comparison here.
 
 Q5: How do I know if my Land Rover is worth repairing?
 Compare your realistic vehicle value against the full replacement quote, not just the repair estimate. As a rule, if replacement cost sits above roughly 60% of what the car is worth, it's worth getting a scrap valuation before committing. Use our Ownership Decision Tool for a personalised assessment.
@@ -671,7 +671,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
       "@type": "WebPage",
       "@id": "https://landroverengine.uk/#webpage",
       "url": "https://landroverengine.uk/",
-      "name": "Land Rover & Range Rover Engines UK — The Complete Ownership Guide",
+      "name": "Land Rover & Range Rover Engines UK - The Complete Ownership Guide",
       "description": "The UK's Most Trusted Land Rover Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every Defender, Discovery, Range Rover and more. Powered by 9,000+ real UK enquiries.",
       "isPartOf": {
         "@id": "https://landroverengine.uk/#website"
@@ -697,7 +697,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://landroverengine.uk/images/landrover-homepage-hero.jpg",
-        "caption": "Land Rover & Range Rover Engines UK — Complete Ownership Guide",
+        "caption": "Land Rover & Range Rover Engines UK - Complete Ownership Guide",
         "width": 1200,
         "height": 630
       }
@@ -706,7 +706,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
       "@type": "WebApplication",
       "@id": "https://landroverengine.uk/#diagnostic-calculator",
       "name": "Land Rover & Range Rover Diagnostic Calculator",
-      "description": "Answer a few questions about your Land Rover or Range Rover symptoms — we'll match you against 15+ known JLR failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+      "description": "Answer a few questions about your Land Rover or Range Rover symptoms - we'll match you against 15+ known JLR failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
       "url": "https://landroverengine.uk/#diagnostic-calculator",
       "applicationCategory": "Automotive Diagnostic Tool",
       "operatingSystem": "All",
@@ -877,7 +877,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
             "itemOffered": {
               "@type": "Product",
               "name": "448DT / 4.4 SDV8 Reconditioned Engine",
-              "description": "4.4L V8 diesel. 320 UK enquiries in 2025. No catastrophic design flaws — V8 complexity adds hours.",
+              "description": "4.4L V8 diesel. 320 UK enquiries in 2025. No catastrophic design flaws - V8 complexity adds hours.",
               "sku": "LR-448DT-RECON",
               "brand": { "@type": "Brand", "name": "Land Rover" }
             },
@@ -972,7 +972,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Product",
             "name": "508PS (4.4 SDV8)",
-            "description": "4.4L V8 diesel. 620 enquiries in 2025. The most durable engine in the range — low failure rate.",
+            "description": "4.4L V8 diesel. 620 enquiries in 2025. The most durable engine in the range - low failure rate.",
             "sku": "LR-508PS",
             "brand": { "@type": "Brand", "name": "Land Rover" }
           }
@@ -1016,7 +1016,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
       "@type": "ItemList",
       "@id": "https://landroverengine.uk/#ownership-rankings",
       "name": "Land Rover & Range Rover Ownership Rankings",
-      "description": "The verdicts owners actually want — backed by real UK enquiry and failure data.",
+      "description": "The verdicts owners actually want - backed by real UK enquiry and failure data.",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -1024,7 +1024,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Most Reliable Engine",
-            "description": "4.4 SDV8 (508PS) — highest replacement cost but by far the lowest failure rate; oil cooler wear aside, largely trouble-free."
+            "description": "4.4 SDV8 (508PS) - highest replacement cost but by far the lowest failure rate; oil cooler wear aside, largely trouble-free."
           }
         },
         {
@@ -1033,7 +1033,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Most Reliable Model",
-            "description": "Discovery 5 — revised post-2019 Ingenium engines and a lighter aluminium platform give it the strongest all-round ownership profile."
+            "description": "Discovery 5 - revised post-2019 Ingenium engines and a lighter aluminium platform give it the strongest all-round ownership profile."
           }
         },
         {
@@ -1042,7 +1042,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Best Used Buy",
-            "description": "Discovery 4 (SDV6) — genuinely capable when the oil-interval history is proven; discipline matters more than mileage."
+            "description": "Discovery 4 (SDV6) - genuinely capable when the oil-interval history is proven; discipline matters more than mileage."
           }
         },
         {
@@ -1051,7 +1051,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Most Expensive Failure",
-            "description": "306DT (TDV6/SDV6) Crank Failure — catastrophic bearing failure, £6,500–£9,500 full recon, largely unrepairable once it starts."
+            "description": "306DT (TDV6/SDV6) Crank Failure - catastrophic bearing failure, £6,500–£9,500 full recon, largely unrepairable once it starts."
           }
         },
         {
@@ -1060,7 +1060,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Safest Range Rover to Buy",
-            "description": "L405 (2012–2021) — typical values £14,000–£55,000 against £6,500–£12,000 recon cost; comfortably safe across almost every example."
+            "description": "L405 (2012–2021) - typical values £14,000–£55,000 against £6,500–£12,000 recon cost; comfortably safe across almost every example."
           }
         },
         {
@@ -1069,7 +1069,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Highest Risk Purchase",
-            "description": "Early Evoque L538 (pre-2019, 204DTD) — timing chain tensioner risk sits on an ageing, lower-value host."
+            "description": "Early Evoque L538 (pre-2019, 204DTD) - timing chain tensioner risk sits on an ageing, lower-value host."
           }
         },
         {
@@ -1078,7 +1078,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Best Family Land Rover",
-            "description": "Discovery 5 — seven seats, the more dependable revised Ingenium range, and the best-supported specialist network."
+            "description": "Discovery 5 - seven seats, the more dependable revised Ingenium range, and the best-supported specialist network."
           }
         },
         {
@@ -1087,7 +1087,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Best Long-Term Keeper",
-            "description": "Defender L663 — high host value across both engines fitted means replacement is comfortably 'Safe' at almost any spec."
+            "description": "Defender L663 - high host value across both engines fitted means replacement is comfortably 'Safe' at almost any spec."
           }
         }
       ]
@@ -1122,7 +1122,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Ingenium Timing Chain Failure (Pre-2019)",
-            "description": "204DTD tensioner wear — significantly improved from 2019 onward. £1,200–£2,500 repair cost."
+            "description": "204DTD tensioner wear - significantly improved from 2019 onward. £1,200–£2,500 repair cost."
           }
         },
         {
@@ -1131,7 +1131,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "508PS Oil Cooler & Dilution Issues",
-            "description": "The 4.4 SDV8's main (and comparatively minor) weak point — oil cooler leaks can lead to coolant ingestion."
+            "description": "The 4.4 SDV8's main (and comparatively minor) weak point - oil cooler leaks can lead to coolant ingestion."
           }
         },
         {
@@ -1158,7 +1158,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "ZF 8-Speed Gearbox Faults",
-            "description": "Mechatronic unit and torque converter issues — the most common ZF failure across the JLR range."
+            "description": "Mechatronic unit and torque converter issues - the most common ZF failure across the JLR range."
           }
         },
         {
@@ -1167,7 +1167,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Terrain Response System Faults",
-            "description": "Sensor and module failures that disable off-road drive modes — often linked to transfer case issues."
+            "description": "Sensor and module failures that disable off-road drive modes - often linked to transfer case issues."
           }
         }
       ]
@@ -1184,7 +1184,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "TDV6 Knowledge Centre",
-            "description": "Every variant, every failure, every generation it was fitted to — the 2.7 and 3.0 TDV6/SDV6 complete guide."
+            "description": "Every variant, every failure, every generation it was fitted to - the 2.7 and 3.0 TDV6/SDV6 complete guide."
           }
         },
         {
@@ -1193,7 +1193,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "SDV6 Knowledge Centre",
-            "description": "The 3.0 V6 diesel's full ownership profile — performance, reliability, and known issues."
+            "description": "The 3.0 V6 diesel's full ownership profile - performance, reliability, and known issues."
           }
         },
         {
@@ -1211,7 +1211,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "SDV8 Knowledge Centre",
-            "description": "The 4.4 V8 diesel's reliability record and running costs — the most durable engine in the range."
+            "description": "The 4.4 V8 diesel's reliability record and running costs - the most durable engine in the range."
           }
         },
         {
@@ -1238,7 +1238,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "ZF Gearbox Problems",
-            "description": "The 8-speed automatic's known issues across the JLR range — mechatronic, torque converter, and more."
+            "description": "The 8-speed automatic's known issues across the JLR range - mechatronic, torque converter, and more."
           }
         },
         {
@@ -1247,7 +1247,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Transfer Box & Differential Problems",
-            "description": "4x4 system faults by model and generation — ATC300/400 chain stretch, diff whine, and UJ failures."
+            "description": "4x4 system faults by model and generation - ATC300/400 chain stretch, diff whine, and UJ failures."
           }
         }
       ]
@@ -1275,7 +1275,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "name": "Is it worth replacing a Land Rover engine?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It depends entirely on vehicle value versus replacement cost. A Range Rover Sport or Defender L663 will almost always justify replacement — the car is worth far more than the engine. A Freelander 2 or early Discovery Sport often won't; replacement cost can exceed what the car is worth outright. Use our diagnostic calculator above to get a personalised verdict."
+            "text": "It depends entirely on vehicle value versus replacement cost. A Range Rover Sport or Defender L663 will almost always justify replacement - the car is worth far more than the engine. A Freelander 2 or early Discovery Sport often won't; replacement cost can exceed what the car is worth outright. Use our diagnostic calculator above to get a personalised verdict."
           }
         },
         {
@@ -1283,7 +1283,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "name": "Which Land Rover engine should I avoid?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The 2.7 TDV6 (276DT) and the 3.0 TDV6/SDV6 (306DT) carry the highest catastrophic-failure risk in the range — both can suffer bottom-end failures that leave little to rebuild. The 4.4 SDV8 and post-2019 Ingenium units are considerably more dependable. See our Engine Rankings for the full breakdown."
+            "text": "The 2.7 TDV6 (276DT) and the 3.0 TDV6/SDV6 (306DT) carry the highest catastrophic-failure risk in the range - both can suffer bottom-end failures that leave little to rebuild. The 4.4 SDV8 and post-2019 Ingenium units are considerably more dependable. See our Engine Rankings for the full breakdown."
           }
         },
         {
@@ -1296,10 +1296,10 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
         },
         {
           "@type": "Question",
-          "name": "Discovery 4 vs Discovery 5 — which is more reliable?",
+          "name": "Discovery 4 vs Discovery 5 - which is more reliable?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Discovery 5 benefits from the revised, more dependable Ingenium engines and a lighter aluminium platform. The Discovery 4 is more readily available on the SDV6, which is powerful but carries real crankshaft bearing risk at higher mileages — service history matters more than the badge. Read our full comparison here."
+            "text": "The Discovery 5 benefits from the revised, more dependable Ingenium engines and a lighter aluminium platform. The Discovery 4 is more readily available on the SDV6, which is powerful but carries real crankshaft bearing risk at higher mileages - service history matters more than the badge. Read our full comparison here."
           }
         },
         {

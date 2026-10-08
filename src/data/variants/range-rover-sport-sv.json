@@ -3,7 +3,7 @@
     "slug": "range-rover-sport-sv",
     "title": "Range Rover Sport SV (P635) Engine Replacement Cost UK",
     "titleCharCount": 56,
-    "description": "Every Range Rover Sport SV engine — S68 4.4 V8 at 635 bhp. One generation, real UK costs and reliability. Get free quotes from 12 vetted Land Rover specialists today.",
+    "description": "Every Range Rover Sport SV engine - S68 4.4 V8 at 635 bhp. One generation, real UK costs and reliability. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 157,
     "canonical": "https://landroverengine.uk/range-rover-sport/sv",
     "openGraph": {
@@ -71,7 +71,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "S68 (SV tune — 635 bhp)",
+              "name": "S68 (SV tune - 635 bhp)",
               "url": "https://landroverengine.uk/engines/s68-sv"
             }
           ]
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Range Rover Sport SV engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Against a £100,000–£140,000+ Range Rover Sport SV, a £14,000–£18,000 recon engine is a manageable 10–15% of the vehicle's value — well worth it. Given the Sport SV's strong retained values and limited production numbers, replacement is almost always viable."
+                "text": "Against a £100,000–£140,000+ Range Rover Sport SV, a £14,000–£18,000 recon engine is a manageable 10–15% of the vehicle's value - well worth it. Given the Sport SV's strong retained values and limited production numbers, replacement is almost always viable."
               }
             },
             {
@@ -116,7 +116,7 @@
               "name": "How do I find my Range Rover Sport's engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "For the SV (P635), the engine code is S68 — it's on the VIN plate and vehicle documentation. The SV badge signifies the 635 bhp twin-turbo V8. If you're unsure, tell us your registration date and we'll confirm it for free."
+                "text": "For the SV (P635), the engine code is S68 - it's on the VIN plate and vehicle documentation. The SV badge signifies the 635 bhp twin-turbo V8. If you're unsure, tell us your registration date and we'll confirm it for free."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair the S68's hot-vee oil leaks, or does it need a new engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes — hot-vee oil leaks are repairable. Valve cover gaskets, turbo oil lines, and oil cooler seals can all be replaced without removing the engine. Early detection is critical — the SV's extreme heat output means oil leaks can damage adjacent electrical components quickly if ignored."
+                "text": "Yes - hot-vee oil leaks are repairable. Valve cover gaskets, turbo oil lines, and oil cooler seals can all be replaced without removing the engine. Early detection is critical - the SV's extreme heat output means oil leaks can damage adjacent electrical components quickly if ignored."
               }
             }
           ]
@@ -186,18 +186,18 @@
   },
   "hero": {
     "tagPill": "Land Rover Range Rover Sport SV • 2024–present • 4.4 V8 (BMW S68)",
-    "h1": "Land Rover Range Rover Sport SV (P635) Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Range Rover Sport SV specialists. Compare reconditioned, rebuilt and used 4.4 V8 engines for the flagship performance SUV — supply & fit available nationwide.",
+    "h1": "Land Rover Range Rover Sport SV (P635) Engine Replacement - Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Range Rover Sport SV specialists. Compare reconditioned, rebuilt and used 4.4 V8 engines for the flagship performance SUV - supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
       "🚚 Nationwide Delivery",
       "👥 12 Specialists"
     ],
-    "priceAnchor": "Range Rover Sport SV Engines — from £10,000 to £20,000 · Code: S68 (635 bhp)",
+    "priceAnchor": "Range Rover Sport SV Engines - from £10,000 to £20,000 · Code: S68 (635 bhp)",
     "registrationInput": {
       "flag": "🇬🇧 GB",
-      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Range Rover Sport SV Engine Options →",
         "href": "#"
@@ -206,7 +206,7 @@
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
   },
   "eraMap": {
-    "title": "The RANGE ROVER SPORT SV (P635) THROUGH TIME — Era Map",
+    "title": "The RANGE ROVER SPORT SV (P635) THROUGH TIME - Era Map",
     "columns": [
       "Generation",
       "Years",
@@ -219,10 +219,10 @@
       {
         "generation": "L461",
         "years": "2024–present",
-        "engineCode": "S68 (4.4 TT V8, BMW-derived — 635 bhp SV tune)",
-        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£12,000–£20,000 [PLACEHOLDER — confirm vs cost sheet]",
-        "eraNote": "BMW's most powerful production V8 — 635 bhp hot-vee; watch for oil leaks, cooling system vulnerability and high maintenance costs."
+        "engineCode": "S68 (4.4 TT V8, BMW-derived - 635 bhp SV tune)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£12,000–£20,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "eraNote": "BMW's most powerful production V8 - 635 bhp hot-vee; watch for oil leaks, cooling system vulnerability and high maintenance costs."
       }
     ],
     "sourceNote": "",
@@ -250,7 +250,7 @@
         "supplyOnly": "£14,000–£18,000",
         "fittedIndie": "£15,500–£20,500",
         "warranty": "12–24 months",
-        "bestFor": "Most owners — best cost/warranty balance"
+        "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
@@ -286,7 +286,7 @@
     }
   },
   "repairBuyOrReplace": {
-    "h2": "Range Rover Sport SV (P635) — Repair, Buy, or Replace?",
+    "h2": "Range Rover Sport SV (P635) - Repair, Buy, or Replace?",
     "canItBeRepaired": {
       "title": "Can It Be Repaired?",
       "columns": [
@@ -297,25 +297,25 @@
       ],
       "rows": [
         {
-          "problem": "Hot-vee oil leaks (S68 — SV)",
+          "problem": "Hot-vee oil leaks (S68 - SV)",
           "repairable": "✅ Yes",
           "typicalCost": "£2,000–£4,500",
-          "whenItMakesSense": "Essential maintenance — SV runs hotter; catch it before electrical damage"
+          "whenItMakesSense": "Essential maintenance - SV runs hotter; catch it before electrical damage"
         },
         {
-          "problem": "Coolant crossover pipe failure (S68 — SV)",
+          "problem": "Coolant crossover pipe failure (S68 - SV)",
           "repairable": "✅ Yes",
           "typicalCost": "£600–£1,500",
           "whenItMakesSense": "Replace plastic pipes as a preventative measure at 40,000 miles"
         },
         {
-          "problem": "PCV valve/oil separator issues (S68 — SV)",
+          "problem": "PCV valve/oil separator issues (S68 - SV)",
           "repairable": "✅ Yes",
           "typicalCost": "£500–£1,000",
           "whenItMakesSense": "Straightforward replacement; don't let oil consumption worsen"
         },
         {
-          "problem": "Water pump failure (S68 — SV)",
+          "problem": "Water pump failure (S68 - SV)",
           "repairable": "✅ Yes",
           "typicalCost": "£800–£1,500",
           "whenItMakesSense": "Replace as a preventative item at 50,000 miles"
@@ -324,7 +324,7 @@
           "problem": "Crankshaft bearing failure",
           "repairable": "❌ Usually No",
           "typicalCost": "Engine replacement",
-          "whenItMakesSense": "Not a common S68 failure — if it occurs, replacement is the only option"
+          "whenItMakesSense": "Not a common S68 failure - if it occurs, replacement is the only option"
         },
         {
           "problem": "Turbocharger failure",
@@ -344,13 +344,13 @@
       ],
       "avoidIf": [
         "* Service history shows any evidence of oil leaks or coolant top-ups with no diagnosis",
-        "* Burning oil smell from the engine bay — potential hot-vee gasket failure",
-        "* Low coolant level with no visible leak — potential crossover pipe failure",
+        "* Burning oil smell from the engine bay - potential hot-vee gasket failure",
+        "* Low coolant level with no visible leak - potential crossover pipe failure",
         "* Engine warning light present with no diagnosis documentation",
-        "* No record of specialist SV maintenance — this is not a standard V8"
+        "* No record of specialist SV maintenance - this is not a standard V8"
       ]
     },
-    "closingVerdict": "The Range Rover Sport SV's S68 V8 is a masterpiece of engineering — 635 bhp in a luxury SUV. But it's a high-strung performance engine with extreme cooling and oil demands. Buy on service history and proof of preventative cooling system work. If you're replacing, a reconditioned unit with a 12-month warranty is the only sensible option — dealer new engines can exceed £40,000.",
+    "closingVerdict": "The Range Rover Sport SV's S68 V8 is a masterpiece of engineering - 635 bhp in a luxury SUV. But it's a high-strung performance engine with extreme cooling and oil demands. Buy on service history and proof of preventative cooling system work. If you're replacing, a reconditioned unit with a 12-month warranty is the only sensible option - dealer new engines can exceed £40,000.",
     "cta": {
       "label": "",
       "href": "#"
@@ -359,14 +359,14 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Land Rover Range Rover Sport SV (or before you commit to an engine replacement), check these:",
     "items": [
-      "* Cold Start — Listen for any rattle or tick; the S68 should start smoothly and quietly",
-      "* Service History — Including which engine era (S68 SV tune is the only SV engine — verify this before purchase)",
-      "* Oil Leaks — Check the valley between cylinder banks for oil pooling (hot-vee gasket failure)",
-      "* Coolant Level — Is the coolant low with no visible leak? Crossover pipe risk",
-      "* Burning Oil Smell — Any smell from the engine bay after a drive? Hot-vee oil leak indicator",
-      "* Oil Consumption — Does it use more than 1L per 2,000 miles? If so, investigate PCV/oil separator",
-      "* Engine Warning Light — Have codes been read? Any unresolved cooling or fuelling issues?",
-      "* MOT History — Check for emissions-related failures; the S68 should pass easily if well-maintained"
+      "* Cold Start - Listen for any rattle or tick; the S68 should start smoothly and quietly",
+      "* Service History - Including which engine era (S68 SV tune is the only SV engine - verify this before purchase)",
+      "* Oil Leaks - Check the valley between cylinder banks for oil pooling (hot-vee gasket failure)",
+      "* Coolant Level - Is the coolant low with no visible leak? Crossover pipe risk",
+      "* Burning Oil Smell - Any smell from the engine bay after a drive? Hot-vee oil leak indicator",
+      "* Oil Consumption - Does it use more than 1L per 2,000 miles? If so, investigate PCV/oil separator",
+      "* Engine Warning Light - Have codes been read? Any unresolved cooling or fuelling issues?",
+      "* MOT History - Check for emissions-related failures; the S68 should pass easily if well-maintained"
     ]
   },
   "engineCodes": {
@@ -382,13 +382,13 @@
         "engineCode": "S68 (SV tune)",
         "years": "2024–present",
         "power": "635 bhp / 750 Nm",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgReconCost": "£12,000–£20,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "",
     "technicalSpecs": {
-      "title": "Technical Specs (S68 — SV):",
+      "title": "Technical Specs (S68 - SV):",
       "items": [
         {
           "label": "* Displacement",
@@ -396,7 +396,7 @@
         },
         {
           "label": "* Cylinders",
-          "value": "8-cylinder V (90° — hot-vee)"
+          "value": "8-cylinder V (90° - hot-vee)"
         },
         {
           "label": "* Compression Ratio",
@@ -408,7 +408,7 @@
         },
         {
           "label": "* Turbocharger",
-          "value": "Twin turbo (hot-vee layout) — 635 bhp output"
+          "value": "Twin turbo (hot-vee layout) - 635 bhp output"
         }
       ]
     },
@@ -421,7 +421,7 @@
     "items": [
       {
         "label": "Most Common Failure",
-        "value": "Hot-vee oil leaks and cooling system issues — approximately 45% of S68 SV enquiries [PATTERN DATA]"
+        "value": "Hot-vee oil leaks and cooling system issues - approximately 45% of S68 SV enquiries [PATTERN DATA]"
       },
       {
         "label": "Average Enquiry Mileage",
@@ -429,7 +429,7 @@
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£16,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+        "value": "£16,000 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "label": "Most Requested Engine Code",
@@ -437,7 +437,7 @@
       },
       {
         "label": "Peak Enquiry Season",
-        "value": "Summer — cooling system issues worsen in hot weather [PATTERN DATA]"
+        "value": "Summer - cooling system issues worsen in hot weather [PATTERN DATA]"
       },
       {
         "label": "Regional Demand",
@@ -465,20 +465,20 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Range Rover Sport SV engine, or should I scrap the car?",
-        "answer": "Against a £100,000–£140,000+ Range Rover Sport SV, a £14,000–£18,000 recon engine is a manageable 10–15% of the vehicle's value — well worth it. Given the Sport SV's strong retained values and limited production numbers, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+        "answer": "Against a £100,000–£140,000+ Range Rover Sport SV, a £14,000–£18,000 recon engine is a manageable 10–15% of the vehicle's value - well worth it. Given the Sport SV's strong retained values and limited production numbers, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
       },
       {
         "id": 5,
         "question": "How do I find my Range Rover Sport's engine code?",
-        "answer": "For the SV (P635), the engine code is S68 — it's on the VIN plate and vehicle documentation. The SV badge signifies the 635 bhp twin-turbo V8. If you're unsure, tell us your registration date and we'll confirm it for free."
+        "answer": "For the SV (P635), the engine code is S68 - it's on the VIN plate and vehicle documentation. The SV badge signifies the 635 bhp twin-turbo V8. If you're unsure, tell us your registration date and we'll confirm it for free."
       },
       {
         "id": 6,
         "question": "Can I repair the S68's hot-vee oil leaks, or does it need a new engine?",
-        "answer": "Yes — hot-vee oil leaks are repairable. Valve cover gaskets, turbo oil lines, and oil cooler seals can all be replaced without removing the engine. Early detection is critical — the SV's extreme heat output means oil leaks can damage adjacent electrical components quickly if ignored."
+        "answer": "Yes - hot-vee oil leaks are repairable. Valve cover gaskets, turbo oil lines, and oil cooler seals can all be replaced without removing the engine. Early detection is critical - the SV's extreme heat output means oil leaks can damage adjacent electrical components quickly if ignored."
       }
     ],
-    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

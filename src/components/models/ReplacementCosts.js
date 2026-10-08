@@ -142,26 +142,60 @@ function normalizeTables(tables = []) {
   return output;
 }
 
-function splitFiguresNote(note = "") {
-  const clean = cleanText(note);
-  const [labour = "", rule = ""] = clean.split(" The 3 Series rule ");
-  return {
-    important: "N47D20C, B47D20A, N57D30, B58B30 figures [BMW-QUOTE]; older engines [PLACEHOLDER - confirm vs cost sheet].",
-    labour: labour.replace(/^Labour estimate:\s*/i, ""),
-    rule: rule ? `The 3 Series rule ${rule}` : "",
-  };
+function isUsableRuleTitle(title = "") {
+  const clean = cleanText(title);
+  if (!clean || clean.length < 8) return false;
+  if (/labour estimate|cost sheet|placeholder/i.test(clean)) return false;
+  return /^the\s+.+\srule/i.test(clean);
+}
+
+function buildNotes(data = {}) {
+  const important = cleanText(data.figuresNote || "");
+  let labour = cleanText(data.labourEstimate || "").replace(/^Labour estimate:\s*/i, "");
+  let ruleTitle = cleanText(data.economicsBox?.title || "");
+  let ruleText = cleanText(data.economicsBox?.text || "");
+
+  if (!isUsableRuleTitle(ruleTitle)) {
+    ruleTitle = "";
+    // Garbled title usually means the box was corrupted — prefer embedded labour rule.
+    if (/labour estimate|cost sheet/i.test(cleanText(data.economicsBox?.title || ""))) {
+      ruleText = "";
+    }
+  }
+
+  // Some models append the rule onto labourEstimate; peel it off when economicsBox is empty/incomplete.
+  const embedded = labour.match(/^(.*?)\s+(The\s+.+?\srule(?:\s*[-—–:]\s*|\s+)[\s\S]+)$/i);
+  if (embedded) {
+    labour = embedded[1].replace(/\.\s*$/, ".") || embedded[1];
+    if (!ruleText || !ruleTitle) {
+      const parts = embedded[2].match(/^(The\s+.+?\srule(?:\s*[-—–][^.]*?)?)(?:\s*[:]\s*|\s+)([\s\S]*)$/i);
+      if (parts) {
+        if (!ruleTitle) ruleTitle = parts[1];
+        if (!ruleText) ruleText = parts[2];
+      } else if (!ruleText) {
+        ruleText = embedded[2];
+      }
+    }
+  }
+
+  if (!ruleTitle && ruleText) ruleTitle = "Ownership rule";
+
+  return { important, labour, ruleTitle, ruleText };
 }
 
 function TrustStrip() {
   return (
-    <div className="grid grid-cols-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)]">
+    <div className="grid grid-cols-4 overflow-hidden rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)]">
       {trustItems.map((item) => (
-        <div key={item.title} className="flex flex-col items-center justify-center border-r border-[var(--color-border)] px-1.5 py-3 text-center last:border-r-0 md:px-4 md:py-3.5">
+        <div
+          key={item.title}
+          className="flex flex-col items-center justify-center border-r border-[var(--color-border)]/55 px-1 py-2 text-center last:border-r-0 md:px-2.5 md:py-2"
+        >
           <span className="text-[var(--color-primary)]">
-            <Icon type={item.icon} className="h-8 w-8 md:h-9 md:w-9" />
+            <Icon type={item.icon} className="h-6 w-6 md:h-7 md:w-7" />
           </span>
-          <strong className="mt-1.5 text-[13px] leading-[1.1] text-[var(--color-text)] md:text-[15px]">{item.title}</strong>
-          <span className="mt-0.5 text-[12px] leading-[1.1] text-[var(--color-text-muted)] md:text-[13px]">{item.text}</span>
+          <strong className="mt-1 text-[12px] leading-[1.1] text-[var(--color-text)] md:text-[13px]">{item.title}</strong>
+          <span className="mt-0.5 text-[11px] leading-[1.1] text-[var(--color-text-muted)] md:text-[12px]">{item.text}</span>
         </div>
       ))}
     </div>
@@ -174,12 +208,12 @@ function CostTable({ table }) {
   const columns = table.columns || [];
 
   return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
+    <div className="overflow-hidden rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface)]">
       <table className="w-full border-collapse text-left text-[14px] text-[var(--color-text)] md:text-[15px]">
         <thead>
           <tr className="bg-[var(--color-chrome)] text-white">
             {columns.map((column) => (
-              <th key={column} className="border-r border-white/20 px-2 py-2 text-left font-bold last:border-r-0 md:px-4 md:py-2">
+              <th key={column} className="border-r border-white/18 px-2 py-2 text-left font-bold last:border-r-0 md:px-4 md:py-2">
                 {column}
               </th>
             ))}
@@ -188,12 +222,12 @@ function CostTable({ table }) {
         <tbody>
           {(table.rows || []).map((row) => (
             <tr key={`${row.model}-${row.engineCode}`}>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 font-bold md:px-4 md:py-2">{cleanText(row.model)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 md:px-4 md:py-2">{cleanText(row.engineCode)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.usedSupply)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.reconditionedSupply)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.rebuiltSupply)}</td>
-              <td className="border-t border-[var(--color-border)] px-2 py-2 text-center md:px-4 md:py-2">{cleanText(row.labourHours)}</td>
+              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 font-bold md:px-4 md:py-2">{cleanText(row.model)}</td>
+              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 md:px-4 md:py-2">{cleanText(row.engineCode)}</td>
+              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.usedSupply)}</td>
+              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.reconditionedSupply)}</td>
+              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.rebuiltSupply)}</td>
+              <td className="border-t border-[var(--color-border)]/55 px-2 py-2 text-center md:px-4 md:py-2">{cleanText(row.labourHours)}</td>
             </tr>
           ))}
         </tbody>
@@ -208,9 +242,9 @@ function DesktopGenerationRow({ table }) {
 
   return (
     <div className="grid gap-0 md:grid-cols-[260px_minmax(0,1fr)]">
-      <div className="border border-r-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 md:rounded-l-md md:p-4">
-        <h3 className="text-[17px] font-bold leading-[1.08] text-[var(--color-primary)] md:text-[19px]">{label}</h3>
-        <p className={`mt-1 ${sectionTableText}`}>{years}</p>
+      <div className="border border-r-0 border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] p-3.5 md:rounded-l-md md:p-4">
+        <h3 className="font-lora text-[17px] font-medium leading-[1.08] text-[var(--color-primary)] md:text-[19px]">{label}</h3>
+        <p className={`mt-1 font-lora font-medium ${sectionTableText}`}>{years}</p>
         <div className="mt-2 h-[82px] overflow-hidden rounded-md md:h-[96px]">
           <img src={carImages[key]} alt="" className="h-full w-full object-cover object-center" loading="lazy" />
         </div>
@@ -230,7 +264,7 @@ function MobileTabs({ tables }) {
 
   return (
     <div className="md:hidden">
-      <div className="overflow-hidden rounded-t-md border border-[var(--color-border)] bg-[var(--color-surface)]">
+      <div className="overflow-hidden rounded-t-md border border-[var(--color-border)]/75 bg-[var(--color-surface)]">
         <div className="flex overflow-x-auto">
           {tables.map((table, index) => {
             const label = tableLabel(table.title);
@@ -241,20 +275,20 @@ function MobileTabs({ tables }) {
                 key={table.title}
                 type="button"
                 onClick={() => setActiveIndex(index)}
-                className={`min-w-[150px] border-r border-[var(--color-border)] px-3 py-3.5 text-center last:border-r-0 transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${
+                className={`min-w-[150px] border-r border-[var(--color-border)]/55 px-3 py-3.5 text-center last:border-r-0 transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${
                   selected ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-surface)] text-[var(--color-text)]"
                 }`}
               >
-                <span className="block text-[0.95rem] font-bold leading-tight">{label.label}</span>
-                <span className="mt-1 block text-[14px] leading-tight">{label.years}</span>
+                <span className="font-lora block text-[0.95rem] font-medium leading-tight">{label.label}</span>
+                <span className="font-lora mt-1 block text-[14px] font-medium leading-tight">{label.years}</span>
               </button>
             );
           })}
         </div>
       </div>
 
-      <article className="rounded-b-md border border-t-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4">
-        <h3 className="text-[35px] font-bold leading-tight text-[var(--color-text)] md:text-[50px]">
+      <article className="rounded-b-md border border-t-0 border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] p-4">
+        <h3 className="font-lora text-[35px] font-medium leading-tight text-[var(--color-text)] md:text-[50px]">
           <span dangerouslySetInnerHTML={{ __html: active.label }} /> <span className="text-[var(--color-primary)]">(<span dangerouslySetInnerHTML={{ __html: active.years }} />)</span>
         </h3>
         <div className="mt-3 h-[190px]">
@@ -277,17 +311,19 @@ function MobileTabs({ tables }) {
 }
 
 function Notes({ parts }) {
+  const hasRule = Boolean(parts.ruleTitle || parts.ruleText);
+
   return (
     <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
-      <div className="grid gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 md:grid-cols-2">
-        <div className="flex flex-col gap-3 border-[var(--color-border)] md:border-r md:pr-6">
+      <div className="grid gap-4 rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] p-5 md:grid-cols-2">
+        <div className="flex flex-col gap-3 border-[var(--color-border)]/55 md:border-r md:pr-6">
           <div className="flex items-center gap-3">
             <span className="shrink-0 text-[var(--color-primary)]">
               <Icon type="note" className="h-6 w-6" />
             </span>
             <h3 className="font-bold text-[var(--color-primary)]">Important Notes</h3>
           </div>
-          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.important }} />
+          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.important || "—" }} />
         </div>
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-3">
@@ -296,20 +332,27 @@ function Notes({ parts }) {
             </span>
             <h3 className="font-bold text-[var(--color-primary)]">Labour Estimate</h3>
           </div>
-          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.labour }} />
+          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.labour || "—" }} />
         </div>
       </div>
 
-      <div className="inline-flex w-fit max-w-[620px] flex-row gap-4 self-start rounded-md border border-[var(--color-border-strong)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] md:p-5">
-        <span className="hidden shrink-0 text-[var(--color-primary)] md:block">
-          <Icon type="crown" className="h-12 w-12 md:h-16 md:w-16" />
-        </span>
-        <div className="max-w-[540px]">
-          <h3 className="text-[24px] font-bold leading-[1.12] text-[var(--color-primary)] md:text-[30px]">The 3 Series rule - generation is everything:</h3>
-          <p className="mt-2 text-[14px] leading-[1.5] md:text-[15px]" dangerouslySetInnerHTML={{ __html: parts.rule.replace(/^The 3 Series rule - generation is everything:\s*/i, "") }} />
-          <p className="mt-2 font-bold">Value the car first; the engine decision follows.</p>
+      {hasRule ? (
+        <div className="inline-flex w-fit max-w-[620px] flex-row gap-4 self-start rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] md:p-5">
+          <span className="hidden shrink-0 text-[var(--color-primary)] md:block">
+            <Icon type="crown" className="h-12 w-12 md:h-16 md:w-16" />
+          </span>
+          <div className="max-w-[540px]">
+            <h3 className="font-lora text-[24px] font-medium leading-[1.12] text-[var(--color-primary)] md:text-[30px]">
+              {parts.ruleTitle}
+              {parts.ruleTitle && !/[:—–-]\s*$/.test(parts.ruleTitle) ? ":" : ""}
+            </h3>
+            {parts.ruleText ? (
+              <p className="mt-2 text-[14px] leading-[1.5] md:text-[15px]" dangerouslySetInnerHTML={{ __html: parts.ruleText }} />
+            ) : null}
+            <p className="mt-2 font-bold">Value the car first; the engine decision follows.</p>
+          </div>
         </div>
-      </div>
+      ) : null}
     </div>
   );
 }
@@ -319,7 +362,7 @@ export default function ReplacementCosts({ data, band = "page" }) {
   if (!data) return null;
 
   const title = splitTitle(data.h2);
-  const notes = splitFiguresNote(data.figuresNote || data.labourEstimate);
+  const notes = buildNotes(data);
 
   return (
     <section className={`${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6`}>
@@ -341,7 +384,7 @@ export default function ReplacementCosts({ data, band = "page" }) {
           ) : null}
         </div>
 
-        <div className="hidden w-full max-w-[480px] shrink-0 md:block lg:max-w-[560px]">
+        <div className="hidden w-full max-w-[420px] shrink-0 md:block lg:max-w-[480px]">
           <TrustStrip />
         </div>
 

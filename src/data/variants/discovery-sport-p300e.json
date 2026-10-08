@@ -1,14 +1,14 @@
 {
   "meta": {
     "slug": "discovery-sport-p300e",
-    "title": "P300e Engine Replacement Cost UK — Compare Quotes",
+    "title": "P300e Engine Replacement Cost UK - Compare Quotes",
     "titleCharCount": 59,
-    "description": "Every Land Rover Discovery Sport P300e engine — 1.5-litre Ingenium PHEV, 2020–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+    "description": "Every Land Rover Discovery Sport P300e engine - 1.5-litre Ingenium PHEV, 2020–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 159,
     "canonical": "https://landroverengine.uk/discovery-sport/p300e",
     "openGraph": {
-      "title": "P300e Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every Land Rover Discovery Sport P300e engine — 1.5-litre Ingenium PHEV, 2020–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
+      "title": "P300e Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every Land Rover Discovery Sport P300e engine - 1.5-litre Ingenium PHEV, 2020–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/discovery-sport/p300e",
       "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-p300e.jpg",
@@ -16,26 +16,26 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "P300e Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every Land Rover Discovery Sport P300e engine — 1.5-litre Ingenium PHEV, 2020–present. Real UK costs, cooling system advice, and honest reliability data.",
+      "title": "P300e Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every Land Rover Discovery Sport P300e engine - 1.5-litre Ingenium PHEV, 2020–present. Real UK costs, cooling system advice, and honest reliability data.",
       "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-p300e.jpg"
     },
     "jsonLd": {}
   },
   "hero": {
     "tagPill": "Land Rover Discovery Sport P300e • 2020–present • 1 Engine Generation",
-    "h1": "Land Rover Discovery Sport P300e Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Land Rover P300e specialists. Compare reconditioned, rebuilt and used 1.5-litre Ingenium petrol PHEV engines — supply & fit available nationwide.",
+    "h1": "Land Rover Discovery Sport P300e Engine Replacement - Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover P300e specialists. Compare reconditioned, rebuilt and used 1.5-litre Ingenium petrol PHEV engines - supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
       "🚚 Nationwide Delivery",
       "👥 12 Specialists"
     ],
-    "priceAnchor": "Land Rover Discovery Sport P300e Engines — from £2,000 to £6,500 · Engine code: AJ20P3 + e-motor",
+    "priceAnchor": "Land Rover Discovery Sport P300e Engines - from £2,000 to £6,500 · Engine code: AJ20P3 + e-motor",
     "registrationInput": {
       "flag": "🇬🇧 GB",
-      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free P300e Engine Quotes Now →",
         "href": "#"
@@ -44,7 +44,7 @@
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
   },
   "eraMap": {
-    "title": "The P300e THROUGH TIME — Era Map",
+    "title": "The P300e THROUGH TIME - Era Map",
     "columns": [
       "Generation",
       "Years",
@@ -58,9 +58,9 @@
         "generation": "Discovery Sport L550 facelift",
         "years": "2020–present",
         "engineCode": "AJ20P3 + e-motor (PHEV)",
-        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£4,500–£6,500 [PLACEHOLDER — confirm vs cost sheet]",
-        "eraNote": "Petrol PHEV — petrol engine more reliable than diesel; battery degradation is the long-term watch"
+        "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£4,500–£6,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "eraNote": "Petrol PHEV - petrol engine more reliable than diesel; battery degradation is the long-term watch"
       }
     ],
     "sourceNote": "",
@@ -88,7 +88,7 @@
         "supplyOnly": "£4,500–£6,500",
         "fittedIndie": "£5,400–£7,600",
         "warranty": "12–24 months",
-        "bestFor": "Most owners — best cost/warranty balance"
+        "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
@@ -105,7 +105,7 @@
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the current Discovery Sport P300e generation. This badge spans only one engine era — see the Era Map above.",
+    "figuresNote": "Figures above reflect the current Discovery Sport P300e generation. This badge spans only one engine era - see the Era Map above.",
     "labourEstimate": "Fitting a Discovery Sport P300e engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare P300e engine prices from UK specialists",
@@ -179,7 +179,7 @@
     }
   },
   "repairBuyOrReplace": {
-    "h2": "Discovery Sport P300e — Repair, Buy, or Replace?",
+    "h2": "Discovery Sport P300e - Repair, Buy, or Replace?",
     "canItBeRepaired": {
       "title": "Can It Be Repaired?",
       "columns": [
@@ -193,7 +193,7 @@
           "problem": "Water pump failure",
           "repairable": "✅ Yes",
           "typicalCost": "£450–£800",
-          "whenItMakesSense": "Catch it early — straightforward replacement"
+          "whenItMakesSense": "Catch it early - straightforward replacement"
         },
         {
           "problem": "Coolant leak (hoses/thermostat)",
@@ -233,16 +233,16 @@
         "* Full JLR service history with documented coolant system inspections",
         "* Battery health check showing >85% state of health (or 8-year warranty still active)",
         "* No signs of coolant loss or overheating (check coolant reservoir level)",
-        "* A 2020-onward Discovery Sport facelift — the most refined PHEV Discovery Sport to date"
+        "* A 2020-onward Discovery Sport facelift - the most refined PHEV Discovery Sport to date"
       ],
       "avoidIf": [
-        "* Unexplained coolant loss with no visible leak — could indicate early water pump or head gasket issues",
-        "* Overheating history or low coolant level — risk of engine damage",
+        "* Unexplained coolant loss with no visible leak - could indicate early water pump or head gasket issues",
+        "* Overheating history or low coolant level - risk of engine damage",
         "* Significantly reduced electric range (indicates battery degradation)",
-        "* No battery health certificate or warranty transfer — assume battery is compromised"
+        "* No battery health certificate or warranty transfer - assume battery is compromised"
       ]
     },
-    "closingVerdict": "The P300e is the plug-in hybrid Discovery Sport facelift — a 1.5-litre three-cylinder petrol paired with an electric motor for a combined 296 bhp. The petrol engine is generally more reliable than the diesel Ingenium, with no timing chain catastrophe. The real long-term question is battery health — monitor it closely and ensure the 8-year warranty is transferable. With regular charging and careful thermal management, the P300e is a refined, efficient choice for the modern Discovery Sport owner.",
+    "closingVerdict": "The P300e is the plug-in hybrid Discovery Sport facelift - a 1.5-litre three-cylinder petrol paired with an electric motor for a combined 296 bhp. The petrol engine is generally more reliable than the diesel Ingenium, with no timing chain catastrophe. The real long-term question is battery health - monitor it closely and ensure the 8-year warranty is transferable. With regular charging and careful thermal management, the P300e is a refined, efficient choice for the modern Discovery Sport owner.",
     "cta": {
       "label": "→ Compare P300e engine prices before you buy",
       "href": "#"
@@ -251,14 +251,14 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Land Rover Discovery Sport P300e (or before you commit to an engine replacement), check these:",
     "items": [
-      "* Cold Start — Listen for smooth idle; any hesitation or rough running points to injector or fuel pump issues",
-      "* Service History — Including coolant system inspections and hybrid service records — see the map above",
-      "* Coolant Level — Check reservoir when cold; any low or loss is a red flag",
-      "* Water Pump — Listen for whining noise; check for coolant residue near the pump area",
-      "* Electric Range — Compare displayed range against official figures; any major drop indicates battery degradation",
-      "* Charging System — Test both AC and DC charging; any errors or slow charging may indicate faults",
-      "* Battery Health — Request a battery health certificate (8-year warranty should guarantee 70% capacity)",
-      "* MOT History — Check for emissions-related failures (PHEV is generally clean)"
+      "* Cold Start - Listen for smooth idle; any hesitation or rough running points to injector or fuel pump issues",
+      "* Service History - Including coolant system inspections and hybrid service records - see the map above",
+      "* Coolant Level - Check reservoir when cold; any low or loss is a red flag",
+      "* Water Pump - Listen for whining noise; check for coolant residue near the pump area",
+      "* Electric Range - Compare displayed range against official figures; any major drop indicates battery degradation",
+      "* Charging System - Test both AC and DC charging; any errors or slow charging may indicate faults",
+      "* Battery Health - Request a battery health certificate (8-year warranty should guarantee 70% capacity)",
+      "* MOT History - Check for emissions-related failures (PHEV is generally clean)"
     ]
   },
   "engineCodes": {
@@ -321,7 +321,7 @@
     "items": [
       {
         "label": "Most Common Failure",
-        "value": "Water pump and coolant system leaks — most frequent P300e engine enquiries"
+        "value": "Water pump and coolant system leaks - most frequent P300e engine enquiries"
       },
       {
         "label": "Average Enquiry Mileage",
@@ -333,11 +333,11 @@
       },
       {
         "label": "Most Requested Engine Code",
-        "value": "AJ20P3 [EM-VERIFIED — 148 requests]"
+        "value": "AJ20P3 [EM-VERIFIED - 148 requests]"
       },
       {
         "label": "Peak Enquiry Season",
-        "value": "Autumn/Winter — cooling system failures emerge in colder months [PATTERN DATA]"
+        "value": "Autumn/Winter - cooling system failures emerge in colder months [PATTERN DATA]"
       },
       {
         "label": "Regional Demand",
@@ -355,17 +355,17 @@
       {
         "id": 2,
         "question": "Is the Land Rover Discovery Sport P300e engine reliable?",
-        "answer": "Generally, yes — the AJ20P3 petrol three-cylinder Ingenium is considered more reliable than its diesel counterpart. There's no timing chain tensioner catastrophe. The main issues are cooling system-related: water pump failure and coolant leaks. The long-term question is battery health — monitor it closely. With proper maintenance, it's a refined and efficient PHEV powertrain."
+        "answer": "Generally, yes - the AJ20P3 petrol three-cylinder Ingenium is considered more reliable than its diesel counterpart. There's no timing chain tensioner catastrophe. The main issues are cooling system-related: water pump failure and coolant leaks. The long-term question is battery health - monitor it closely. With proper maintenance, it's a refined and efficient PHEV powertrain."
       },
       {
         "id": 3,
         "question": "What are the common problems with the Land Rover Discovery Sport P300e?",
-        "answer": "The most common issues are water pump failure (plastic impeller and seal degradation), coolant leaks from plastic hoses and thermostat housings, PHEV battery degradation over time, and occasional charging system faults. None are catastrophic if caught early — regular coolant system inspections and battery health checks are key."
+        "answer": "The most common issues are water pump failure (plastic impeller and seal degradation), coolant leaks from plastic hoses and thermostat housings, PHEV battery degradation over time, and occasional charging system faults. None are catastrophic if caught early - regular coolant system inspections and battery health checks are key."
       },
       {
         "id": 4,
         "question": "Is it worth replacing a Discovery Sport P300e engine, or should I scrap the vehicle?",
-        "answer": "Given the high retained value of the Discovery Sport P300e (typical £20,000+ for a good example), a £5,000–£6,000 engine replacement is comfortably within the \"worth it\" range. Our Land Rover scrap threshold is 60% of vehicle value — with a £5,500 engine cost against a £20,000 vehicle, it's a clear yes. However, factor in battery health if the vehicle is out of its 8-year warranty."
+        "answer": "Given the high retained value of the Discovery Sport P300e (typical £20,000+ for a good example), a £5,000–£6,000 engine replacement is comfortably within the \"worth it\" range. Our Land Rover scrap threshold is 60% of vehicle value - with a £5,500 engine cost against a £20,000 vehicle, it's a clear yes. However, factor in battery health if the vehicle is out of its 8-year warranty."
       },
       {
         "id": 5,
@@ -375,10 +375,10 @@
       {
         "id": 6,
         "question": "Can I repair a P300e water pump, or does it need replacement?",
-        "answer": "The pump must be replaced — it's a sealed unit with plastic impellers that degrade. A preventative replacement at 40,000 miles or at the first sign of leakage costs £450–£800. Ignoring it can lead to overheating and head gasket failure, which is far more expensive."
+        "answer": "The pump must be replaced - it's a sealed unit with plastic impellers that degrade. A preventative replacement at 40,000 miles or at the first sign of leakage costs £450–£800. Ignoring it can lead to overheating and head gasket failure, which is far more expensive."
       }
     ],
-    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Land Rover Discovery Sport P300e Owners Trust LandRoverEngine.uk",

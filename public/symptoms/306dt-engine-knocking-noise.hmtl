@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>306DT Engine Knocking Noise — Diagnosis & Cost</title>
-    <meta name="description" content="306DT knocking noise on Land Rover — from timing chain to crankshaft bearing. Real cost data, diagnosis, and the repair-or-replace verdict.">
+    <title>306DT Engine Knocking Noise - Diagnosis & Cost</title>
+    <meta name="description" content="306DT knocking noise on Land Rover - from timing chain to crankshaft bearing. Real cost data, diagnosis, and the repair-or-replace verdict.">
     <link rel="canonical" href="https://landroverengines.uk/symptoms/306dt-engine-knocking-noise">
 
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Land Rover Engine Guide">
-    <meta property="og:title" content="306DT Engine Knocking Noise — Diagnosis & Cost">
-    <meta property="og:description" content="306DT knocking noise on Land Rover — from timing chain to crankshaft bearing. Real cost data, diagnosis, and the repair-or-replace verdict.">
+    <meta property="og:title" content="306DT Engine Knocking Noise - Diagnosis & Cost">
+    <meta property="og:description" content="306DT knocking noise on Land Rover - from timing chain to crankshaft bearing. Real cost data, diagnosis, and the repair-or-replace verdict.">
     <meta property="og:url" content="https://landroverengines.uk/symptoms/306dt-engine-knocking-noise">
     <meta property="og:image" content="https://landroverengines.uk/assets/landrover/images/306dt-engine-knocking-noise-hero.webp">
     <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="306DT Engine Knocking Noise — Diagnosis & Cost">
-    <meta name="twitter:description" content="306DT knocking noise on Land Rover — from timing chain to crankshaft bearing. Real cost data, diagnosis, and the repair-or-replace verdict.">
+    <meta name="twitter:title" content="306DT Engine Knocking Noise - Diagnosis & Cost">
+    <meta name="twitter:description" content="306DT knocking noise on Land Rover - from timing chain to crankshaft bearing. Real cost data, diagnosis, and the repair-or-replace verdict.">
     <meta name="twitter:image" content="https://landroverengines.uk/assets/landrover/images/306dt-engine-knocking-noise-hero.webp">
 
     <link rel="stylesheet" href="/assets/landrover/style.css">
@@ -78,8 +78,8 @@
     },
     {
       "@type": "TechArticle",
-      "headline": "306DT Engine Knocking Noise — Diagnosis & Cost",
-      "description": "306DT knocking noise on Land Rover — from timing chain to crankshaft bearing. Real cost data, diagnosis, and the repair-or-replace verdict.",
+      "headline": "306DT Engine Knocking Noise - Diagnosis & Cost",
+      "description": "306DT knocking noise on Land Rover - from timing chain to crankshaft bearing. Real cost data, diagnosis, and the repair-or-replace verdict.",
       "author": {
         "@type": "Organization",
         "name": "Land Rover Engine Guide Editorial Team"
@@ -169,7 +169,7 @@
         <div class="hero-image">
             <img src="/assets/landrover/images/306dt-engine-knocking-noise-hero.webp" width="640" height="340" fetchpriority="high"
                  alt="306DT TDV6 engine bay showing knocking noise diagnosis"
-                 title="306DT Engine Knocking Noise — Diagnosis & Cost">
+                 title="306DT Engine Knocking Noise - Diagnosis & Cost">
         </div>
     </div>
     <div class="stat-strip">
@@ -181,7 +181,7 @@
 </header>
 
 <div class="summary-box">
-    <p>On the 306DT specifically, a knocking noise is often the first sign of a failing bottom end — most commonly a failing crankshaft bearing, a worn timing chain tensioner, or a failing injector. It is a serious issue that, if ignored, can lead to catastrophic engine failure. The 306DT has a known design weakness in its crankshaft bearings, and this noise is your early warning.</p>
+    <p>On the 306DT specifically, a knocking noise is often the first sign of a failing bottom end - most commonly a failing crankshaft bearing, a worn timing chain tensioner, or a failing injector. It is a serious issue that, if ignored, can lead to catastrophic engine failure. The 306DT has a known design weakness in its crankshaft bearings, and this noise is your early warning.</p>
     <ul>
         <li>Risk concentrated between <strong>80,000 and 140,000 miles</strong>, with poor service history as a major contributor <span class="tag">[PATTERN DATA]</span></li>
         <li>Full mechanism and symptom progression on the dedicated <a href="/failures/306dt-crankshaft-bearing">306DT Crankshaft Bearing Failure page</a></li>
@@ -207,14 +207,14 @@
 <section class="section" id="specific">
     <div class="section-inner fade-up">
         <h2>What This Engine Specifically Does</h2>
-        <p style="max-width:760px; color:var(--lr-ink-mid);">Where our general <a href="/symptoms/engine-knocking-noise">engine knocking noise guide</a> covers several possible causes across the whole Land Rover range, on the 306DT the picture narrows considerably. This engine's dominant failure signature is a rhythmic, metallic knock that becomes more audible under load or acceleration. It is distinct from the high‑pitched rattle of a timing chain and the diesel clatter of a normal 306DT at idle. On the 306DT, a knocking noise almost always points to a bottom‑end problem — most commonly a failing crankshaft bearing, but also a worn timing chain tensioner or a failing injector. The 306DT is known for crankshaft bearing failure, and this noise is the canary in the coal mine.</p>
+        <p style="max-width:760px; color:var(--lr-ink-mid);">Where our general <a href="/symptoms/engine-knocking-noise">engine knocking noise guide</a> covers several possible causes across the whole Land Rover range, on the 306DT the picture narrows considerably. This engine's dominant failure signature is a rhythmic, metallic knock that becomes more audible under load or acceleration. It is distinct from the high‑pitched rattle of a timing chain and the diesel clatter of a normal 306DT at idle. On the 306DT, a knocking noise almost always points to a bottom‑end problem - most commonly a failing crankshaft bearing, but also a worn timing chain tensioner or a failing injector. The 306DT is known for crankshaft bearing failure, and this noise is the canary in the coal mine.</p>
     </div>
 </section>
 
 <section class="section section-alt" id="why">
     <div class="section-inner fade-down">
         <h2>Why This Engine In Particular</h2>
-        <p style="max-width:760px; color:var(--lr-ink-mid);">The 306DT's crankshaft bearing design uses a tin‑aluminium coating that can fatigue over time, especially under heavy loads and with extended oil change intervals. When the bearing wears, the clearance between the crankshaft journal and the bearing increases, allowing the crankshaft to move and create a knocking sound. This is a design characteristic of this particular engine family. The same symptom on, say, a <a href="/engine/224dt">224DT Duratorq</a> would point to a very different set of causes — often fuel injector or EGR issues. On the 306DT, a knocking noise must be treated as a potential bearing failure until proven otherwise.</p>
+        <p style="max-width:760px; color:var(--lr-ink-mid);">The 306DT's crankshaft bearing design uses a tin‑aluminium coating that can fatigue over time, especially under heavy loads and with extended oil change intervals. When the bearing wears, the clearance between the crankshaft journal and the bearing increases, allowing the crankshaft to move and create a knocking sound. This is a design characteristic of this particular engine family. The same symptom on, say, a <a href="/engine/224dt">224DT Duratorq</a> would point to a very different set of causes - often fuel injector or EGR issues. On the 306DT, a knocking noise must be treated as a potential bearing failure until proven otherwise.</p>
         <p style="max-width:760px; color:var(--lr-ink-mid); margin-top:16px;">The 306DT is also known for timing chain tensioner wear, which can cause a different kind of knocking or rattling, especially on cold start. However, a rhythmic, metallic knock that gets louder with load is almost always the bearings.</p>
     </div>
 </section>
@@ -222,7 +222,7 @@
 <section class="section" id="confirm" data-lazy-section>
     <div class="section-inner fade-left">
         <h2>How to Confirm It's This, Not Something Else</h2>
-        <p style="max-width:760px; color:var(--lr-ink-mid);">Before assuming the worst, rule out cheaper alternatives. Check the oil level and condition — low oil or dirty oil can cause timing chain tensioner rattle. Listen carefully to the noise: a timing chain rattle is usually a higher‑pitched, metallic rattle that is most noticeable on cold start. A knocking noise from a failing bearing is a deeper, rhythmic thud that gets louder with engine load. If the knock is accompanied by a loss of oil pressure, metal particles in the oil, or a flashing oil warning light, stop the engine immediately. A specialist will perform an oil pressure test, a sump inspection for metal particles, and if necessary, a bearing inspection. Do not ignore a knocking noise on a 306DT; it will only get worse and can lead to a catastrophic engine failure.</p>
+        <p style="max-width:760px; color:var(--lr-ink-mid);">Before assuming the worst, rule out cheaper alternatives. Check the oil level and condition - low oil or dirty oil can cause timing chain tensioner rattle. Listen carefully to the noise: a timing chain rattle is usually a higher‑pitched, metallic rattle that is most noticeable on cold start. A knocking noise from a failing bearing is a deeper, rhythmic thud that gets louder with engine load. If the knock is accompanied by a loss of oil pressure, metal particles in the oil, or a flashing oil warning light, stop the engine immediately. A specialist will perform an oil pressure test, a sump inspection for metal particles, and if necessary, a bearing inspection. Do not ignore a knocking noise on a 306DT; it will only get worse and can lead to a catastrophic engine failure.</p>
     </div>
 </section>
 
@@ -264,7 +264,7 @@
 <section class="section" id="verdict" data-lazy-section>
     <div class="section-inner fade-down">
         <h2>Verdict</h2>
-        <p style="max-width:760px; color:var(--lr-ink-mid);"><strong>Stop driving and get it diagnosed by a specialist as soon as you hear a knocking noise on a 306DT.</strong> This is not a noise to ignore. If it's a timing chain tensioner, a repair may cost £1,500–£2,500 and save the engine. If it's a failing bearing, catching it early may allow a bottom‑end rebuild rather than a full engine replacement. If the engine has already failed, you are looking at £6,500–£9,500 for a reconditioned engine. Replacement flags ✅ Safe against our 60% threshold on higher‑value L405/RRS examples, but ⚠️ Watch on older L319/L320 sub‑£10k hosts — full reasoning on the <a href="/economics/repair-replace-scrap-framework">Decision Framework</a>.</p>
+        <p style="max-width:760px; color:var(--lr-ink-mid);"><strong>Stop driving and get it diagnosed by a specialist as soon as you hear a knocking noise on a 306DT.</strong> This is not a noise to ignore. If it's a timing chain tensioner, a repair may cost £1,500–£2,500 and save the engine. If it's a failing bearing, catching it early may allow a bottom‑end rebuild rather than a full engine replacement. If the engine has already failed, you are looking at £6,500–£9,500 for a reconditioned engine. Replacement flags ✅ Safe against our 60% threshold on higher‑value L405/RRS examples, but ⚠️ Watch on older L319/L320 sub‑£10k hosts - full reasoning on the <a href="/economics/repair-replace-scrap-framework">Decision Framework</a>.</p>
     </div>
 </section>
 
@@ -292,7 +292,7 @@
 
 <div class="trust-strip">
     <div class="trust-grid">
-        <div class="trust-item"><span class="dot">✓</span><p><strong>Engine-Specific Data</strong>Not a generic symptom page — this one's built around the 306DT alone.</p></div>
+        <div class="trust-item"><span class="dot">✓</span><p><strong>Engine-Specific Data</strong>Not a generic symptom page - this one's built around the 306DT alone.</p></div>
         <div class="trust-item"><span class="dot">✓</span><p><strong>Inherited Reliability Rating</strong>Verdict matches the canonical rating on the 306DT Knowledge Centre.</p></div>
         <div class="trust-item"><span class="dot">✓</span><p><strong>12 Vetted Land Rover Specialists</strong>Every route ends with someone who diagnoses these daily.</p></div>
         <div class="trust-item"><span class="dot">✓</span><p><strong>100% Independent</strong>No sponsors, no manufacturer influence.</p></div>
@@ -307,7 +307,7 @@
 </section>
 
 <footer>
-    <p>Land Rover Engine Guide — part of the Engine Finders network. Independent editorial content; not affiliated with Jaguar Land Rover Limited.</p>
+    <p>Land Rover Engine Guide - part of the Engine Finders network. Independent editorial content; not affiliated with Jaguar Land Rover Limited.</p>
     <p><a href="/about/editorial-standards">Editorial Standards</a> · <a href="/about/data-verification">Data Verification</a> · <a href="/about/corrections">Corrections Log</a></p>
 </footer>
 

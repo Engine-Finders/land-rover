@@ -13,7 +13,6 @@ const cardThemes = [
     border: "border-blue-200",
     bg: "bg-[linear-gradient(135deg,#f7fbff_0%,#eef6ff_100%)]",
     image: "/model/Hero-bg-image.webp",
-    imageClass: "object-cover object-[68%_70%]",
     cta: "Explore Now",
     icon: "search",
   },
@@ -22,7 +21,6 @@ const cardThemes = [
     border: "border-emerald-200",
     bg: "bg-[linear-gradient(135deg,#f8fffb_0%,#eefaf5_100%)]",
     image: "/e90/engine.webp",
-    imageClass: "object-contain object-right-bottom",
     cta: "Start Diagnosis",
     icon: "stethoscope",
   },
@@ -107,7 +105,7 @@ function UkMapArt({ accent }) {
   ];
 
   return (
-    <svg aria-hidden="true" viewBox="0 0 180 220" className="absolute bottom-3 right-3 h-[82%] w-[48%] opacity-80 md:right-8 md:w-[44%]">
+    <svg aria-hidden="true" viewBox="0 0 180 220" className="pointer-events-none absolute right-0 top-0 h-[58%] w-[48%] opacity-80 md:w-[44%]">
       <path
         d="M80 10 65 24l9 15-18 12 10 17-16 13 20 13-11 20 22 8-16 28 28 8 10 31 24-17 25 13-2-31 20-11-19-21 10-28-20-16 4-28-28-1-10-28-27 8Z"
         fill="#ead9bd"
@@ -123,13 +121,28 @@ function UkMapArt({ accent }) {
   );
 }
 
+function titlePartsFromCard(title = "") {
+  const clean = cleanText(title);
+
+  let match = clean.match(/^(Explore(?:\s+the)?)\s+(.+)$/i);
+  if (match) {
+    const trail = match[2].match(/^(.+?)\s+(In Depth|Generations)$/i);
+    if (trail) return { before: match[1], accent: trail[1], after: trail[2] };
+    return { before: match[1], accent: match[2], after: "" };
+  }
+
+  match = clean.match(/^(Diagnose)\s+(.+)$/i);
+  if (match) return { before: match[1], accent: match[2], after: "" };
+
+  match = clean.match(/^(Compare)\s+(.+)$/i);
+  if (match) return { before: match[1], accent: match[2], after: "" };
+
+  return { before: clean, accent: "", after: "" };
+}
+
 function ActionCard({ card, index }) {
   const theme = cardThemes[index] || cardThemes[0];
-  const titleParts = [
-    { before: "Explore", accent: "3 Series", after: "Generations" },
-    { before: "Diagnose", accent: "My 3 Series", after: "" },
-    { before: "Compare", accent: "UK Specialists", after: "" },
-  ][index] || { before: cleanText(card.title), accent: "", after: "" };
+  const titleParts = titlePartsFromCard(card.title);
 
   return (
     <Link
@@ -137,19 +150,21 @@ function ActionCard({ card, index }) {
       className={`group relative min-h-[250px] overflow-hidden rounded-md border ${theme.border} ${theme.bg} p-4 shadow-[0_10px_28px_rgba(10,26,43,0.10)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(10,26,43,0.16)] md:min-h-[270px] md:p-5 lg:min-h-[270px]`}
       style={{ "--card-accent": theme.accent }}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_34%,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.08)_56%,transparent_100%)]" />
+      <div className="pointer-events-none absolute right-0 top-0 h-[52%] w-[52%] bg-[radial-gradient(circle_at_70%_30%,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.2)_55%,transparent_100%)] md:h-[58%] md:w-[48%]" />
       {theme.image ? (
-        <Image
-          src={theme.image}
-          alt=""
-          fill
-          className={`opacity-45 mix-blend-multiply ${theme.imageClass}`}
-          sizes="(min-width: 1024px) 31vw, 100vw"
-        />
+        <div className="pointer-events-none absolute right-0 top-0 h-[48%] w-[48%] md:h-[54%] md:w-[44%]">
+          <Image
+            src={theme.image}
+            alt=""
+            fill
+            className="object-contain object-right-top opacity-50 mix-blend-multiply"
+            sizes="(min-width: 1024px) 15vw, 40vw"
+          />
+        </div>
       ) : (
         <UkMapArt accent={theme.accent} />
       )}
-      <div className="relative z-10 flex h-full max-w-[70%] flex-col items-start md:max-w-[74%] lg:max-w-[78%]">
+      <div className="relative z-10 flex h-full max-w-[74%] flex-col items-start md:max-w-[78%]">
         <span className="flex h-16 w-16 items-center justify-center rounded-md bg-white/86 text-[var(--card-accent)] shadow-[0_12px_26px_rgba(10,26,43,0.10)] md:h-20 md:w-20">
           <CardIcon name={theme.icon} />
         </span>

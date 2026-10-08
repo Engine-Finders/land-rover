@@ -132,11 +132,11 @@ function RichText({ value, strongFirst = false }) {
 
 function SignalTable({ rows }) {
   return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)]">
+    <div className="overflow-hidden rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)]">
       <div className="grid grid-cols-[34%_30%_36%] bg-[var(--color-chrome)] text-[12px] font-bold text-white md:grid-cols-[32%_33%_35%] md:text-[14px]">
         <div className="px-2 py-2 md:px-5 md:py-3">Signal</div>
-        <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">2025 Data</div>
-        <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">Demand Trend</div>
+        <div className="border-l border-white/18 px-2 py-2 md:px-3 md:py-2">2025 Data</div>
+        <div className="border-l border-white/18 px-2 py-2 md:px-3 md:py-2">Demand Trend</div>
       </div>
 
       {rows.map((row, index) => {
@@ -144,15 +144,15 @@ function SignalTable({ rows }) {
         const isEngine = row.signal?.includes("(");
 
         return (
-          <div key={`${row.signal}-${index}`} className="grid grid-cols-[34%_30%_36%] border-t border-[var(--color-border)] text-[var(--color-text)] md:grid-cols-[32%_33%_35%]">
+          <div key={`${row.signal}-${index}`} className="grid grid-cols-[34%_30%_36%] border-t border-[var(--color-border)]/55 text-[var(--color-text)] md:grid-cols-[32%_33%_35%]">
             <div className="flex min-w-0 items-center gap-2 px-2 py-3 md:gap-4 md:px-3 md:py-3">
               <CircleIcon small>{signalIconPaths[isEngine ? 1 : 0]}</CircleIcon>
               <p className="min-w-0 break-words text-[12px] font-bold leading-[1.25] md:text-[15px]" dangerouslySetInnerHTML={{ __html: cleanText(row.signal) }} />
             </div>
-            <div className="border-l border-[var(--color-border)] px-2 py-3 text-[12px] leading-[1.35] md:px-3 md:text-[15px]">
+            <div className="border-l border-[var(--color-border)]/55 px-2 py-3 text-[12px] leading-[1.35] md:px-3 md:text-[15px]">
               <RichText value={row.data} />
             </div>
-            <div className="flex min-w-0 items-start gap-2 border-l border-[var(--color-border)] px-2 py-3 text-[12px] leading-[1.35] md:items-center md:gap-4 md:px-3 md:text-[15px]">
+            <div className="flex min-w-0 items-start gap-2 border-l border-[var(--color-border)]/55 px-2 py-3 text-[12px] leading-[1.35] md:items-center md:gap-4 md:px-3 md:text-[15px]">
               <TrendIcon trend={trend.trend} />
               <p className="min-w-0 break-words hyphens-auto whitespace-normal">
                 <strong className="font-bold text-[var(--color-text)]">{trend.label.split(" ")[0]}</strong>
@@ -171,7 +171,7 @@ function InsightsPanel({ insights }) {
   if (!insights?.length) return null;
 
   return (
-    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 shadow-[0_10px_30px_var(--color-shadow)] md:col-span-3 md:p-3.5">
+    <div className="rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] p-3 shadow-[0_10px_30px_var(--color-shadow)] md:col-span-3 md:p-3.5">
       <div className="mb-4 flex items-center gap-3 text-[var(--color-primary)]">
         <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.4">
           <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />
@@ -181,7 +181,10 @@ function InsightsPanel({ insights }) {
 
       <div className="grid gap-3 md:grid-cols-3 md:gap-0">
         {insights.map((insight, index) => (
-          <article key={insight} className="flex gap-3 border-[var(--color-border)] md:border-l md:px-3 md:first:border-l-0 md:first:pl-0 md:last:pr-0">
+          <article
+            key={insight}
+            className="flex gap-3 border-[var(--color-border)]/55 md:border-l md:px-3 md:first:border-l-0 md:first:pl-0 md:last:pr-0"
+          >
             <CircleIcon>{insightIconPaths[index] || insightIconPaths[0]}</CircleIcon>
             <p className="text-[13px] leading-[1.42] text-[var(--color-text)] md:text-[14px]">
               <RichText value={insight} strongFirst />
@@ -233,23 +236,35 @@ function LiveFeed({ note }) {
 function PullQuote({ data }) {
   if (!data) return null;
 
-    return (
-      <div className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] md:grid-cols-[minmax(0,1.46fr)_minmax(290px,0.7fr)]">
-        <div className="p-3 md:p-3.5">
-          <div className="flex">
-            <div>
-              <p className="text-[11px] font-bold uppercase text-[var(--color-primary)] md:text-[12px]">Editorial Pull-Quote</p>
-              <h3 className="mt-1.5 max-w-[560px] text-[22px] font-bold leading-[1.1] text-[var(--color-text)] md:text-[31px]" dangerouslySetInnerHTML={{ __html: cleanText(data.title) }} />
-              <blockquote className="mt-2 max-w-[760px] text-[12px] leading-[1.45] text-[var(--color-text)] md:text-[13px]">
-                &ldquo;<span dangerouslySetInnerHTML={{ __html: cleanText(data.quote) }} />&rdquo;
-              </blockquote>
-            </div>
+  return (
+    <div className="grid overflow-hidden rounded-md border border-[var(--color-border)]/55 bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] md:grid-cols-[minmax(0,1.46fr)_minmax(290px,0.7fr)]">
+      <div className="relative z-[1] p-3 md:p-3.5 md:pr-10">
+        <div className="flex">
+          <div>
+            <p className="text-[11px] font-bold uppercase text-[var(--color-primary)] md:text-[12px]">Editorial Pull-Quote</p>
+            <h3
+              className="mt-1.5 max-w-[560px] text-[22px] font-bold leading-[1.1] text-[var(--color-text)] md:text-[31px]"
+              dangerouslySetInnerHTML={{ __html: cleanText(data.title) }}
+            />
+            <blockquote className="mt-2 max-w-[760px] text-[12px] leading-[1.45] text-[var(--color-text)] md:text-[13px]">
+              &ldquo;<span dangerouslySetInnerHTML={{ __html: cleanText(data.quote) }} />&rdquo;
+            </blockquote>
           </div>
         </div>
-        <div className="relative min-h-[140px] md:min-h-full">
-          <Image src="/model/Hero-bg-image.webp" alt="" fill className="object-cover object-center" sizes="(min-width: 768px) 35vw, 100vw" />
+      </div>
+      <div className="relative min-h-[140px] md:min-h-full md:-ml-8">
+        {/* Diagonal image edge on desktop; soft top cut on mobile when stacked */}
+        <div className="absolute inset-0 overflow-hidden [clip-path:polygon(0_10%,100%_0,100%_100%,0_100%)] md:[clip-path:polygon(16%_0,100%_0,100%_100%,0_100%)]">
+          <Image
+            src="/model/Hero-bg-image.webp"
+            alt=""
+            fill
+            className="object-cover object-center"
+            sizes="(min-width: 768px) 35vw, 100vw"
+          />
         </div>
       </div>
+    </div>
   );
 }
 

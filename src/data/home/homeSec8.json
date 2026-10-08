@@ -1,6 +1,6 @@
 {
   "eyebrow": "SECTION 06",
-  "subHeadline": "Deep, permanent reference hubs for the engines and systems Land Rover owners research most — not blog posts, not one-off articles. Every guide is built on real UK enquiry data and JLR-specific expertise.",
+  "subHeadline": "Deep, permanent reference hubs for the engines and systems Land Rover owners research most - not blog posts, not one-off articles. Every guide is built on real UK enquiry data and JLR-specific expertise.",
   "headerImage": {
     "src": "/sec2-bg.webp",
     "alt": "Knowledge centres background"
@@ -10,14 +10,14 @@
       "id": "01",
       "title": "TDV6 Knowledge Centre",
       "icon": "expertVerified",
-      "description": "Every variant, every failure, every generation it was fitted to — the 2.7 and 3.0 TDV6/SDV6 complete guide.",
+      "description": "Every variant, every failure, every generation it was fitted to - the 2.7 and 3.0 TDV6/SDV6 complete guide.",
       "href": "#"
     },
     {
       "id": "02",
       "title": "SDV6 Knowledge Centre",
       "icon": "engine",
-      "description": "The 3.0 V6 diesel's full ownership profile — performance, reliability, and known issues.",
+      "description": "The 3.0 V6 diesel's full ownership profile - performance, reliability, and known issues.",
       "href": "#"
     },
     {
@@ -31,7 +31,7 @@
       "id": "04",
       "title": "SDV8 Knowledge Centre",
       "icon": "flagshipChoice",
-      "description": "The 4.4 V8 diesel's reliability record and running costs — the most durable engine in the range.",
+      "description": "The 4.4 V8 diesel's reliability record and running costs - the most durable engine in the range.",
       "href": "#"
     },
     {
@@ -52,14 +52,14 @@
       "id": "07",
       "title": "ZF Gearbox Problems",
       "icon": "gearbox",
-      "description": "The 8-speed automatic's known issues across JLR's range — mechatronic, torque converter, and more.",
+      "description": "The 8-speed automatic's known issues across JLR's range - mechatronic, torque converter, and more.",
       "href": "#"
     },
     {
       "id": "08",
       "title": "Transfer Box & Differential Problems",
       "icon": "drivetrain",
-      "description": "4x4 system faults by model and generation — ATC300/400 chain stretch, diff whine, and UJ failures.",
+      "description": "4x4 system faults by model and generation - ATC300/400 chain stretch, diff whine, and UJ failures.",
       "href": "#"
     }
   ],

@@ -58,8 +58,8 @@ function splitTagPill(tagPill = "") {
 }
 
 function splitStat(label = "") {
-  const [main, ...detailParts] = label.split(/\s*[—–]\s*/);
-  const detail = detailParts.join(" — ").trim();
+  const [main, ...detailParts] = label.split(/\s*[-–]\s*/);
+  const detail = detailParts.join(" - ").trim();
   const match = main.match(/^(\d+\+?)\s+(.+)$/);
 
   if (match) {

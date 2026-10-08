@@ -71,9 +71,9 @@ export default function TrustBlock({ data, band = "page" }) {
 
           <div className="mt-4">
             {signals.map((item) => (
-              <article key={item.title} className="flex gap-3.5 border-b border-[var(--color-border)] py-3.5 first:pt-0 last:border-b-0 last:pb-0 md:gap-4 md:py-3.5">
+              <article key={item.title} className="flex items-center gap-3.5 border-b border-[var(--color-border)] py-3.5 first:pt-0 last:border-b-0 last:pb-0 md:gap-4 md:py-3.5">
                 <SignalIcon item={item} />
-                <p className="text-[var(--color-text)] text-[15px] leading-[1.42] md:text-[16px]">
+                <p className="text-[15px] leading-[1.42] text-[var(--color-text)] md:text-[16px]">
                   <strong className="font-bold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: cleanText(item.title) }} />
                   {" - "}
                   <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />

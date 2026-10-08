@@ -1,9 +1,9 @@
 {
   "meta": {
     "slug": "discovery-rover-v8",
-    "title": "Discovery V8 Engine Replacement Cost UK — Compare Quotes",
+    "title": "Discovery V8 Engine Replacement Cost UK - Compare Quotes",
     "titleCharCount": 55,
-    "description": "Every Land Rover Discovery V8 engine — 3.5, 3.9 and 4.0. D1 and D2 generations, real UK costs and reliability. Get free quotes from 12 vetted Land Rover specialists today.",
+    "description": "Every Land Rover Discovery V8 engine - 3.5, 3.9 and 4.0. D1 and D2 generations, real UK costs and reliability. Get free quotes from 12 vetted Land Rover specialists today.",
     "descriptionCharCount": 151,
     "canonical": "https://landroverengine.uk/discovery/rover-v8",
     "openGraph": {
@@ -180,7 +180,7 @@
         },
         {
           "@type": "WebPage",
-          "name": "Discovery V8 Engine Replacement Cost UK — Compare Quotes",
+          "name": "Discovery V8 Engine Replacement Cost UK - Compare Quotes",
           "url": "https://landroverengine.uk/discovery/rover-v8",
           "author": {
             "@type": "Organization",
@@ -198,18 +198,18 @@
   },
   "hero": {
     "tagPill": "Land Rover Discovery Rover V8 • 1989–2004 • 3.5 / 3.9 / 4.0",
-    "h1": "Land Rover Discovery Rover V8 Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Land Rover V8 specialists. Compare reconditioned, rebuilt and used Rover V8 engines for D1 and D2 Discoveries — supply & fit available nationwide.",
+    "h1": "Land Rover Discovery Rover V8 Engine Replacement - Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Land Rover V8 specialists. Compare reconditioned, rebuilt and used Rover V8 engines for D1 and D2 Discoveries - supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
       "🚚 Nationwide Delivery",
       "👥 12 Specialists"
     ],
-    "priceAnchor": "Discovery V8 Engines — from £800 to £4,000 · Common codes: 3.5, 3.9, 4.0",
+    "priceAnchor": "Discovery V8 Engines - from £800 to £4,000 · Common codes: 3.5, 3.9, 4.0",
     "registrationInput": {
       "flag": "🇬🇧 GB",
-      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Discovery V8 Engine Options →",
         "href": "#"
@@ -218,7 +218,7 @@
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
   },
   "eraMap": {
-    "title": "The DISCOVERY ROVER V8 THROUGH TIME — Era Map",
+    "title": "The DISCOVERY ROVER V8 THROUGH TIME - Era Map",
     "columns": [
       "Generation",
       "Years",
@@ -232,16 +232,16 @@
         "generation": "D1",
         "years": "1989–1998",
         "engineCode": "3.5 V8 / 3.9 V8 (Rover V8)",
-        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£800–£2,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£800–£2,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "The classic 3.5 and 3.9 – robust but watch for liner slip and head gaskets on the 3.9."
       },
       {
         "generation": "D2",
         "years": "1998–2004",
         "engineCode": "4.0 V8 (Rover V8)",
-        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£1,200–£4,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£1,200–£4,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "The 4.0 is prone to liner failure and top‑end oil starvation – buy with a known service history."
       }
     ],
@@ -270,7 +270,7 @@
         "supplyOnly": "£1,800–£3,500",
         "fittedIndie": "£2,400–£4,500",
         "warranty": "12 months",
-        "bestFor": "Most owners — best value for the 3.5/3.9"
+        "bestFor": "Most owners - best value for the 3.5/3.9"
       },
       {
         "engineType": "Rebuilt Engine",
@@ -283,7 +283,7 @@
         "engineType": "Main Dealer New",
         "supplyOnly": "N/A (NLA)",
         "fittedIndie": "N/A",
-        "warranty": "—",
+        "warranty": "-",
         "bestFor": "No longer available from Land Rover"
       }
     ],
@@ -306,7 +306,7 @@
     }
   },
   "repairBuyOrReplace": {
-    "h2": "Discovery Rover V8 — Repair, Buy, or Replace?",
+    "h2": "Discovery Rover V8 - Repair, Buy, or Replace?",
     "canItBeRepaired": {
       "title": "Can It Be Repaired?",
       "columns": [
@@ -326,7 +326,7 @@
           "problem": "Oil pump failure (4.0)",
           "repairable": "✅ Yes",
           "typicalCost": "£400–£800",
-          "whenItMakesSense": "Preventative — replace the pump and pick‑up before seizure"
+          "whenItMakesSense": "Preventative - replace the pump and pick‑up before seizure"
         },
         {
           "problem": "Head gasket failure (3.9/4.0)",
@@ -351,10 +351,10 @@
     "buyingChecks": {
       "title": "Buying This Discovery V8? Check These First",
       "buyIf": [
-        "* Full service history with documented oil changes — the 4.0 is unforgiving of neglect",
+        "* Full service history with documented oil changes - the 4.0 is unforgiving of neglect",
         "* Proven cylinder liner work (top‑hat liners fitted) on a 4.0 or 3.9",
         "* Oil pressure gauge reading at least 2.5 bar when hot at 2,000 rpm",
-        "* A 3.5‑litre car — the most robust of the three displacements"
+        "* A 3.5‑litre car - the most robust of the three displacements"
       ],
       "avoidIf": [
         "* 4.0 with no record of liner work or oil pump replacement",
@@ -372,14 +372,14 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Land Rover Discovery Rover V8 (or before you commit to an engine replacement), check these:",
     "items": [
-      "* Cold Start — Listen for any rattle or tick from the top end (timing chain or oil starvation)",
-      "* Service History — Including which engine displacement (3.5/3.9/4.0) — see the Era Map above",
-      "* Coolant Level — Is the coolant low with no visible leak? Liner slip or head gasket risk",
-      "* Oil Pressure — Check the gauge: does it drop below 1 bar when hot at idle?",
-      "* Exhaust Smoke — White smoke indicates coolant burning; blue smoke is oil consumption",
-      "* Oil Consumption — Rover V8s do use some oil, but more than 1L per 1,000 miles is a red flag",
-      "* Engine Warning Light — Have codes been read? Any unresolved misfire or lambda issues?",
-      "* MOT History — Check for emissions failures; often point to fuelling or ignition problems"
+      "* Cold Start - Listen for any rattle or tick from the top end (timing chain or oil starvation)",
+      "* Service History - Including which engine displacement (3.5/3.9/4.0) - see the Era Map above",
+      "* Coolant Level - Is the coolant low with no visible leak? Liner slip or head gasket risk",
+      "* Oil Pressure - Check the gauge: does it drop below 1 bar when hot at idle?",
+      "* Exhaust Smoke - White smoke indicates coolant burning; blue smoke is oil consumption",
+      "* Oil Consumption - Rover V8s do use some oil, but more than 1L per 1,000 miles is a red flag",
+      "* Engine Warning Light - Have codes been read? Any unresolved misfire or lambda issues?",
+      "* MOT History - Check for emissions failures; often point to fuelling or ignition problems"
     ]
   },
   "engineCodes": {
@@ -395,21 +395,21 @@
         "engineCode": "3.5 V8 (Rover)",
         "years": "1989–1998",
         "power": "135–145 bhp",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgReconCost": "£1,500–£2,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "3.9 V8 (Rover)",
         "years": "1989–1998",
         "power": "156–170 bhp",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgReconCost": "£1,800–£3,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "4.0 V8 (Rover)",
         "years": "1998–2004",
         "power": "182–188 bhp",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgReconCost": "£2,500–£4,000 [PLACEHOLDER]"
       }
     ],
@@ -448,7 +448,7 @@
     "items": [
       {
         "label": "Most Common Failure",
-        "value": "Cylinder liner slippage on the 4.0 and 3.9 — approximately 55% of V8 enquiries [PATTERN DATA]"
+        "value": "Cylinder liner slippage on the 4.0 and 3.9 - approximately 55% of V8 enquiries [PATTERN DATA]"
       },
       {
         "label": "Average Enquiry Mileage",
@@ -456,7 +456,7 @@
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£2,200 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+        "value": "£2,200 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "label": "Most Requested Engine Code",
@@ -464,7 +464,7 @@
       },
       {
         "label": "Peak Enquiry Season",
-        "value": "Spring — owners preparing for summer off‑road use [PATTERN DATA]"
+        "value": "Spring - owners preparing for summer off‑road use [PATTERN DATA]"
       },
       {
         "label": "Regional Demand",
@@ -505,12 +505,12 @@
         "answer": "If caught early, a top‑hat liner installation can save the block, costing £1,500–£3,000. If the liner has dropped and cracked the block, a replacement engine is the only realistic fix."
       }
     ],
-    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",
     "trustPoints": [],
-    "finalCta": "Find the best Land Rover Discovery V8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today — whether you're restoring a classic D1 or keeping a D2 on the road.",
+    "finalCta": "Find the best Land Rover Discovery V8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today - whether you're restoring a classic D1 or keeping a D2 on the road.",
     "ctaButton": {
       "label": "Explore Land Rover Discovery V8 Engine Quotes →",
       "href": "#"

@@ -211,37 +211,35 @@ function DesktopGenerationCard({ card, index, open = false, onToggle }) {
         <GenerationImage code={title.code} />
       </div>
 
-      {open ? (
-        <div className="mt-4">
-          {badge ? (
-            <p className="text-[13px] font-bold leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: badge }} />
-          ) : null}
-          {meta.years ? (
-            <p className="mt-2 text-[13px] leading-[1.35] text-[var(--color-text-muted)] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />
-          ) : null}
-          {engines ? <ClampedDescription html={`• ${engines}`} open className="mt-2" /> : null}
-          {card.rating ? (
-            <div className="mt-5">
-              <Rating value={card.rating} compact />
-            </div>
-          ) : null}
-          {hasCta ? (
-            <Link
-              href={href}
-              className="mt-3 flex min-h-9 items-center justify-center gap-3 rounded-md border border-[var(--color-primary)]/50 px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
-            >
-              <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
-              <ArrowIcon />
-            </Link>
-          ) : null}
-          {verdict ? (
-            <div className="mt-4 text-[15px] leading-[1.45]">
-              <p className="font-bold">Our Verdict:</p>
-              <p className="mt-1" dangerouslySetInnerHTML={{ __html: verdict }} />
-            </div>
-          ) : null}
-        </div>
-      ) : null}
+      <div className="mt-4">
+        {badge ? (
+          <p className="text-[13px] font-bold leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: badge }} />
+        ) : null}
+        {meta.years ? (
+          <p className="mt-2 text-[13px] leading-[1.35] text-[var(--color-text-muted)] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />
+        ) : null}
+        {engines ? <ClampedDescription html={`• ${engines}`} open className="mt-2" /> : null}
+        {card.rating ? (
+          <div className="mt-5">
+            <Rating value={card.rating} compact />
+          </div>
+        ) : null}
+        {hasCta ? (
+          <Link
+            href={href}
+            className="mt-3 flex min-h-9 items-center justify-center gap-3 rounded-md border border-[var(--color-primary)]/50 px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
+          >
+            <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
+            <ArrowIcon />
+          </Link>
+        ) : null}
+        {open && verdict ? (
+          <div className="mt-4 text-[15px] leading-[1.45]">
+            <p className="font-bold">Our Verdict:</p>
+            <p className="mt-1" dangerouslySetInnerHTML={{ __html: verdict }} />
+          </div>
+        ) : null}
+      </div>
     </article>
   );
 }
@@ -287,40 +285,38 @@ function MobileGenerationCard({ card, index, open = false, onToggle }) {
         </span>
       </button>
 
-      {open ? (
-        <div className="border-t border-[var(--color-border)] px-3 pb-3 pt-2">
-          {meta.years ? (
-            <p className="text-[13px] font-bold leading-[1.3]" dangerouslySetInnerHTML={{ __html: `(${meta.years.replace(/^\(|\)$/g, "")})` }} />
-          ) : null}
-          {badge ? (
-            <p className="mt-1 text-[12px] font-bold leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: badge }} />
-          ) : null}
-          {engines ? <ClampedDescription html={engines} open className="mt-1" /> : null}
+      <div className="border-t border-[var(--color-border)] px-3 pb-3 pt-2">
+        {meta.years ? (
+          <p className="text-[13px] font-bold leading-[1.3]" dangerouslySetInnerHTML={{ __html: `(${meta.years.replace(/^\(|\)$/g, "")})` }} />
+        ) : null}
+        {badge ? (
+          <p className="mt-1 text-[12px] font-bold leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: badge }} />
+        ) : null}
+        {engines ? <ClampedDescription html={engines} open className="mt-1" /> : null}
 
-          {card.rating ? (
-            <div className="mt-3">
-              <Rating value={card.rating} compact />
-            </div>
-          ) : null}
+        {card.rating ? (
+          <div className="mt-3">
+            <Rating value={card.rating} compact />
+          </div>
+        ) : null}
 
-          {hasCta ? (
-            <Link
-              href={href}
-              className="mt-3 flex min-h-10 items-center justify-center gap-3 rounded-md border border-[var(--color-primary)] px-3 text-center text-[16px] font-bold text-[var(--color-primary)]"
-            >
-              <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
-              <ArrowIcon />
-            </Link>
-          ) : null}
+        {hasCta ? (
+          <Link
+            href={href}
+            className="mt-3 flex min-h-10 items-center justify-center gap-3 rounded-md border border-[var(--color-primary)] px-3 text-center text-[16px] font-bold text-[var(--color-primary)]"
+          >
+            <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
+            <ArrowIcon />
+          </Link>
+        ) : null}
 
-          {verdict ? (
-            <div className="mt-3 text-[15px] leading-[1.45]">
-              <p className="font-bold">Our Verdict:</p>
-              <p className="mt-1" dangerouslySetInnerHTML={{ __html: verdict }} />
-            </div>
-          ) : null}
-        </div>
-      ) : null}
+        {open && verdict ? (
+          <div className="mt-3 text-[15px] leading-[1.45]">
+            <p className="font-bold">Our Verdict:</p>
+            <p className="mt-1" dangerouslySetInnerHTML={{ __html: verdict }} />
+          </div>
+        ) : null}
+      </div>
     </article>
   );
 }

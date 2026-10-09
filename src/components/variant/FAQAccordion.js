@@ -1,24 +1,33 @@
 "use client";
 
 import { useState } from "react";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "../generation/GenIcons";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { HomeIcon } from "@/components/home/homeIcons";
+import { sectionBgClass } from "@/components/home/sectionBand";
+
+function PlusIcon({ className = "h-5 w-5" }) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
+      <path d="M12 5v14M5 12h14" />
+    </svg>
+  );
+}
 
 function FAQItem({ item, isOpen, onToggle }) {
   return (
-    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
+    <div className="rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)]">
       <button
         type="button"
         onClick={onToggle}
         aria-expanded={isOpen}
         className="flex w-full items-center gap-4 px-5 py-4 text-left"
       >
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary-soft)] text-[0.85rem] font-bold text-[var(--color-primary)]">
-          {item.id}
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary-soft)]">
+          <HomeIcon name="faq" size={28} className="h-7 w-7" />
         </span>
         <span className="flex-1 text-[0.92rem] font-semibold leading-snug text-[var(--color-text)]">{item.question}</span>
         <span className={`shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-45" : ""}`}>
-          <GenIcon name="plus" className="h-5 w-5" />
+          <PlusIcon className="h-5 w-5" />
         </span>
       </button>
       {isOpen ? (
@@ -28,7 +37,7 @@ function FAQItem({ item, isOpen, onToggle }) {
   );
 }
 
-export default function FAQAccordion({ data }) {
+export default function FAQAccordion({ data, band = "soft" }) {
   const [openId, setOpenId] = useState(null);
   if (!data) return null;
 
@@ -38,14 +47,12 @@ export default function FAQAccordion({ data }) {
   const right = items.slice(mid);
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">
+        <HeadingEyebrow text="FAQ" />
+        <h2 className="mt-3 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">
           FAQ
         </h2>
-        <div className="mt-3">
-          <MStripe />
-        </div>
 
         <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-x-5">
           <div className="flex flex-col gap-3">

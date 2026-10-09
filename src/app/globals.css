@@ -122,3 +122,23 @@ a {
 [data-theme="dark"] .btn-cta:hover {
   color: #ffffff;
 }
+
+/* Infinite horizontal ticker (variant hero, etc.) */
+@keyframes ticker-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-marquee {
+  display: flex;
+  width: max-content;
+  animation: ticker-marquee 28s linear infinite;
+}
+
+.ticker-marquee:hover {
+  animation-play-state: paused;
+}

@@ -59,6 +59,7 @@ export const HOME_ICON_FILES = {
   phone: "Phone Icon-01.png",
   callSpecialist: "Call a specialist Icon-01.png",
   quote: "Quote Icon-01.png",
+  ukDelivery: "Uk wide delivery Icon-01.png",
 };
 
 function iconSrc(filename) {

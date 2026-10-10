@@ -5,10 +5,17 @@ import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { HomeIcon } from "@/components/home/homeIcons";
 import { sectionBgClass } from "@/components/home/sectionBand";
 
-function PlusIcon({ className = "h-5 w-5" }) {
+function ChevronIcon({ open = false, className = "h-5 w-5" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d="M12 5v14M5 12h14" />
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className={`${className} transition-transform ${open ? "rotate-180" : ""}`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+    >
+      <path d="m6 9 6 6 6-6" />
     </svg>
   );
 }
@@ -23,12 +30,10 @@ function FAQItem({ item, isOpen, onToggle }) {
         className="flex w-full items-center gap-4 px-5 py-4 text-left"
       >
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary-soft)]">
-          <HomeIcon name="faq" size={28} className="h-7 w-7" />
+          <HomeIcon name="faq" size={36} className="h-9 w-9" />
         </span>
         <span className="flex-1 text-[0.92rem] font-semibold leading-snug text-[var(--color-text)]">{item.question}</span>
-        <span className={`shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-45" : ""}`}>
-          <PlusIcon className="h-5 w-5" />
-        </span>
+        <ChevronIcon open={isOpen} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
       </button>
       {isOpen ? (
         <p className="px-5 pb-4 pl-[60px] text-[0.85rem] leading-[1.55] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />

@@ -13,11 +13,6 @@ const URGENCY_TONE = {
   "🟡": { light: "text-[#a3860f] bg-[#fffbe6]", dark: "text-[#e6c94d] bg-[rgba(214,180,20,0.15)]" },
 };
 
-function shortTitle(title = "") {
-  const beforeParen = title.split(" (")[0];
-  return beforeParen.replace(/^N47 Rear |^BMW /, "");
-}
-
 function ArrowIcon({ className = "h-4 w-4" }) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -26,10 +21,79 @@ function ArrowIcon({ className = "h-4 w-4" }) {
   );
 }
 
-function ProblemDetail({ problem, index, isDark }) {
-  const accent = ACCENT_BY_INDEX[index % ACCENT_BY_INDEX.length];
+function ChevronIcon({ open = false, className = "h-5 w-5" }) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={`${className} transition-transform ${open ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2.5">
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  );
+}
+
+function ProblemBody({ problem, isDark }) {
   const urgencyTone = URGENCY_TONE[problem.urgency?.icon] || URGENCY_TONE["🟠"];
   const urgencyClass = isDark ? urgencyTone.dark : urgencyTone.light;
+
+  return (
+    <div className="flex flex-col gap-2.5 text-[0.8rem] leading-[1.4]">
+      {problem.symptoms ? (
+        <p className="flex items-start gap-2 text-[var(--color-text-muted)]">
+          <HomeIcon name="symptoms" size={28} className="mt-0.5 h-7 w-7 shrink-0" />
+          <span>
+            <span className="font-semibold text-[var(--color-text)]">Symptoms: </span>
+            <span dangerouslySetInnerHTML={{ __html: problem.symptoms }} />
+          </span>
+        </p>
+      ) : null}
+      {problem.typicalMileage ? (
+        <p className="flex items-start gap-2 text-[var(--color-text-muted)]">
+          <HomeIcon name="checkWatch" size={28} className="mt-0.5 h-7 w-7 shrink-0" />
+          <span>
+            <span className="font-semibold text-[var(--color-text)]">Typical mileage: </span>
+            {problem.typicalMileage}
+          </span>
+        </p>
+      ) : null}
+      {problem.repairCost ? (
+        <p className="flex items-start gap-2 text-[var(--color-text-muted)]">
+          <HomeIcon name="vettedSpecialists" size={28} className="mt-0.5 h-7 w-7 shrink-0" />
+          <span>
+            <span className="font-semibold text-[var(--color-text)]">Repair cost: </span>
+            {problem.repairCost}
+          </span>
+        </p>
+      ) : null}
+      {problem.replacementCost ? (
+        <p className="flex items-start gap-2 text-[var(--color-text-muted)]">
+          <HomeIcon name="engine" size={28} className="mt-0.5 h-7 w-7 shrink-0" />
+          <span>
+            <span className="font-semibold text-[var(--color-text)]">Replacement cost: </span>
+            {problem.replacementCost}
+          </span>
+        </p>
+      ) : null}
+      {problem.urgency ? (
+        <span className={`inline-flex w-fit items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.72rem] font-semibold ${urgencyClass}`}>
+          {problem.urgency.icon} {problem.urgency.label} - <span dangerouslySetInnerHTML={{ __html: problem.urgency.text }} />
+        </span>
+      ) : null}
+      {problem.recommendation ? (
+        <div className="border-t border-[var(--color-border)]/55 pt-2.5 text-[0.8rem] leading-[1.45]">
+          <p className="font-semibold text-[var(--color-text)]">Our recommendation:</p>
+          <p className="mt-1 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
+        </div>
+      ) : null}
+      {problem.failureLink?.href ? (
+        <a href={problem.failureLink.href} className="mt-1 flex items-center gap-1.5 text-[0.78rem] font-semibold text-[var(--color-primary)] no-underline">
+          {problem.failureLink.label || "Learn more"}
+          <ArrowIcon className="h-3.5 w-3.5 shrink-0" />
+        </a>
+      ) : null}
+    </div>
+  );
+}
+
+function ProblemDetail({ problem, index, isDark }) {
+  const accent = ACCENT_BY_INDEX[index % ACCENT_BY_INDEX.length];
 
   return (
     <div className="glass-panel flex h-full flex-col gap-3 overflow-hidden rounded-[8px] p-4" style={{ borderLeft: `4px solid ${accent}` }}>
@@ -39,63 +103,34 @@ function ProblemDetail({ problem, index, isDark }) {
           {index + 1}. {problem.title}
         </h3>
       </div>
+      <ProblemBody problem={problem} isDark={isDark} />
+    </div>
+  );
+}
 
-      <div className="flex flex-col gap-2.5 text-[0.8rem] leading-[1.4]">
-        {problem.symptoms ? (
-          <p className="flex items-start gap-2 text-[var(--color-text-muted)]">
-            <HomeIcon name="symptoms" size={28} className="mt-0.5 h-7 w-7 shrink-0" />
-            <span>
-              <span className="font-semibold text-[var(--color-text)]">Symptoms: </span>
-              <span dangerouslySetInnerHTML={{ __html: problem.symptoms }} />
-            </span>
-          </p>
-        ) : null}
-        {problem.typicalMileage ? (
-          <p className="flex items-start gap-2 text-[var(--color-text-muted)]">
-            <HomeIcon name="checkWatch" size={28} className="mt-0.5 h-7 w-7 shrink-0" />
-            <span>
-              <span className="font-semibold text-[var(--color-text)]">Typical mileage: </span>
-              {problem.typicalMileage}
-            </span>
-          </p>
-        ) : null}
-        {problem.repairCost ? (
-          <p className="flex items-start gap-2 text-[var(--color-text-muted)]">
-            <HomeIcon name="vettedSpecialists" size={28} className="mt-0.5 h-7 w-7 shrink-0" />
-            <span>
-              <span className="font-semibold text-[var(--color-text)]">Repair cost: </span>
-              {problem.repairCost}
-            </span>
-          </p>
-        ) : null}
-        {problem.replacementCost ? (
-          <p className="flex items-start gap-2 text-[var(--color-text-muted)]">
-            <HomeIcon name="engine" size={28} className="mt-0.5 h-7 w-7 shrink-0" />
-            <span>
-              <span className="font-semibold text-[var(--color-text)]">Replacement cost: </span>
-              {problem.replacementCost}
-            </span>
-          </p>
-        ) : null}
-        {problem.urgency ? (
-          <span className={`inline-flex w-fit items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.72rem] font-semibold ${urgencyClass}`}>
-            {problem.urgency.icon} {problem.urgency.label} - <span dangerouslySetInnerHTML={{ __html: problem.urgency.text }} />
-          </span>
-        ) : null}
-      </div>
+function ProblemAccordion({ problem, index, isOpen, onToggle, isDark }) {
+  const accent = ACCENT_BY_INDEX[index % ACCENT_BY_INDEX.length];
 
-      {problem.recommendation ? (
-        <div className="border-t border-[var(--color-border)]/55 pt-2.5 text-[0.8rem] leading-[1.45]">
-          <p className="font-semibold text-[var(--color-text)]">Our recommendation:</p>
-          <p className="mt-1 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
+  return (
+    <div
+      className={`overflow-hidden rounded-[8px] border bg-[var(--color-surface)] shadow-sm ${
+        isOpen ? "border-2 border-[var(--color-primary)]" : "border-[var(--color-border)]/75"
+      }`}
+      style={{ borderLeft: `4px solid ${accent}` }}
+    >
+      <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full items-center justify-between gap-3 p-4 text-left">
+        <div className="flex min-w-0 items-center gap-3">
+          <HomeIcon name="expensiveFailure" size={36} className="h-9 w-9 shrink-0" />
+          <h3 className="font-lora min-w-0 text-[0.92rem] font-medium leading-tight text-[var(--color-text)]">
+            {index + 1}. {problem.title}
+          </h3>
         </div>
-      ) : null}
-
-      {problem.failureLink?.href ? (
-        <a href={problem.failureLink.href} className="mt-auto flex items-center gap-1.5 text-[0.78rem] font-semibold text-[var(--color-primary)] no-underline">
-          {problem.failureLink.label || "Learn more"}
-          <ArrowIcon className="h-3.5 w-3.5 shrink-0" />
-        </a>
+        <ChevronIcon open={isOpen} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
+      </button>
+      {isOpen ? (
+        <div className="border-t border-[var(--color-border)]/55 px-4 pb-4 pt-3">
+          <ProblemBody problem={problem} isDark={isDark} />
+        </div>
       ) : null}
     </div>
   );
@@ -103,49 +138,34 @@ function ProblemDetail({ problem, index, isDark }) {
 
 export default function CommonProblems({ data, band = "soft" }) {
   const { theme } = useTheme();
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(null);
   if (!data) return null;
 
   const isDark = theme === "dark";
   const problems = data.problems || [];
 
   return (
-    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
+    <section className={`w-full py-6 text-[var(--color-text)] md:py-8 ${sectionBgClass(band)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <HeadingEyebrow text="COMMON PROBLEMS" />
-        <h2 className="mt-3 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">
+        <h2 className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">
           {data.h2 || "Common Problems"}
         </h2>
 
-        <div className="mt-6 flex gap-2 overflow-x-auto rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-1.5 md:hidden">
-          {problems.map((problem, index) => {
-            const accent = ACCENT_BY_INDEX[index % ACCENT_BY_INDEX.length];
-            const isActive = activeIndex === index;
-            return (
-              <button
-                key={problem.id}
-                type="button"
-                onClick={() => setActiveIndex(index)}
-                className="flex flex-1 shrink-0 items-center gap-2 rounded-[8px] px-2.5 py-2 text-[0.76rem] font-semibold"
-                style={
-                  isActive
-                    ? { color: accent, boxShadow: `inset 0 -2px 0 ${accent}` }
-                    : { color: "var(--color-text-muted)" }
-                }
-              >
-                <HomeIcon name="expensiveFailure" size={24} className="h-6 w-6 shrink-0" />
-                <span className="truncate">{shortTitle(problem.title)}</span>
-              </button>
-            );
-          })}
-        </div>
-        <div className="mt-3 md:hidden">
-          {problems[activeIndex] ? (
-            <ProblemDetail problem={problems[activeIndex]} index={activeIndex} isDark={isDark} />
-          ) : null}
+        <div className="mt-4 flex flex-col gap-3 md:hidden">
+          {problems.map((problem, index) => (
+            <ProblemAccordion
+              key={problem.id}
+              problem={problem}
+              index={index}
+              isOpen={openIndex === index}
+              onToggle={() => setOpenIndex(openIndex === index ? null : index)}
+              isDark={isDark}
+            />
+          ))}
         </div>
 
-        <div className="mt-6 hidden gap-4 md:grid md:grid-cols-3">
+        <div className="mt-4 hidden gap-4 md:grid md:grid-cols-3">
           {problems.map((problem, index) => (
             <ProblemDetail key={problem.id} problem={problem} index={index} isDark={isDark} />
           ))}

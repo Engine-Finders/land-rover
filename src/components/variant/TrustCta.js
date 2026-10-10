@@ -41,43 +41,70 @@ export default function TrustCta({ data, band = "page" }) {
         {data.trustPoints?.length > 0 ? (
           <ul className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
             {data.trustPoints.map((point, index) => (
-              <li key={point.title} className="flex items-start gap-4 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-5 shadow-sm">
-                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
-                  <HomeIcon name={POINT_ICONS[index % POINT_ICONS.length]} size={40} className="h-10 w-10" />
-                </span>
-                <div className="min-w-0">
-                  <p className="text-[1.02rem] font-bold leading-snug text-[var(--color-text)]">{point.title}</p>
-                  <p className="mt-2.5 text-[0.85rem] leading-relaxed text-[var(--color-text-muted)] md:text-[0.9rem]" dangerouslySetInnerHTML={{ __html: point.text }} />
+              <li key={point.title} className="flex flex-col rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-5 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
+                    <HomeIcon name={POINT_ICONS[index % POINT_ICONS.length]} size={48} className="h-12 w-12" />
+                  </span>
+                  <p className="min-w-0 text-[1.02rem] font-bold leading-snug text-[var(--color-text)]">{point.title}</p>
                 </div>
+                <p
+                  className="mt-3 w-full text-[0.85rem] leading-relaxed text-[var(--color-text-muted)] md:text-[0.9rem]"
+                  dangerouslySetInnerHTML={{ __html: point.text }}
+                />
               </li>
             ))}
           </ul>
         ) : null}
 
         {data.finalCta || data.ctaButton ? (
-          <div className="relative mt-6 overflow-hidden rounded-[8px] border border-[var(--color-border)]/75">
-            <div className="absolute inset-0">
-              <Image src={image} alt="" fill className="object-cover" sizes="100vw" />
-            </div>
-
-            <div className="relative flex w-full flex-col items-center gap-4 p-5 text-center md:min-h-[200px] md:flex-row md:justify-center md:p-8">
-              <div className="flex max-w-[520px] flex-col items-center gap-3">
+          <>
+            {/* Mobile: plain surface card (no photo) */}
+            <div className="relative mt-6 overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-5 md:hidden">
+              <div className="flex w-full flex-col gap-3">
                 {data.finalCta ? (
-                  <p className={`text-[1rem] font-bold leading-[1.4] md:text-[1.2rem] ${headingClass}`} dangerouslySetInnerHTML={{ __html: data.finalCta }} />
+                  <p
+                    className="text-[0.95rem] font-bold leading-[1.4] text-[var(--color-text)]"
+                    dangerouslySetInnerHTML={{ __html: data.finalCta }}
+                  />
                 ) : null}
                 {data.ctaButton ? (
                   <a
                     href="/quote"
-                    className="btn-cta flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[8px] bg-[#189454] px-4 py-2.5 text-center text-[0.74rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-auto md:px-6 md:py-3 md:text-[0.8rem]"
+                    className="btn-cta flex w-full items-center justify-center gap-2 rounded-[8px] bg-[#189454] px-4 py-3 text-center text-[0.78rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
                   >
                     <HomeIcon name="quote" size={28} className="h-7 w-7 shrink-0" />
-                    {data.ctaButton.label.replace(/\s*→\s*$/, "")}
+                    <span className="min-w-0 text-balance">{data.ctaButton.label.replace(/\s*→\s*$/, "")}</span>
                     <ArrowIcon className="h-4 w-4 shrink-0" />
                   </a>
                 ) : null}
               </div>
             </div>
-          </div>
+
+            {/* Desktop: original photo CTA */}
+            <div className="relative mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 md:block">
+              <div className="absolute inset-0">
+                <Image src={image} alt="" fill className="object-cover" sizes="100vw" />
+              </div>
+              <div className="relative flex w-full min-h-[200px] flex-row items-center justify-center p-8 text-center">
+                <div className="flex max-w-[520px] flex-col items-center gap-3">
+                  {data.finalCta ? (
+                    <p className={`text-[1.2rem] font-bold leading-[1.4] ${headingClass}`} dangerouslySetInnerHTML={{ __html: data.finalCta }} />
+                  ) : null}
+                  {data.ctaButton ? (
+                    <a
+                      href="/quote"
+                      className="btn-cta flex w-auto shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[8px] bg-[#189454] px-6 py-3 text-center text-[0.8rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
+                    >
+                      <HomeIcon name="quote" size={36} className="h-9 w-9 shrink-0" />
+                      {data.ctaButton.label.replace(/\s*→\s*$/, "")}
+                      <ArrowIcon className="h-4 w-4 shrink-0" />
+                    </a>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+          </>
         ) : null}
 
         <div className="mt-6 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-4">
@@ -95,7 +122,7 @@ export default function TrustCta({ data, band = "page" }) {
                         <span aria-hidden="true" className="mx-3 my-1 w-px shrink-0 self-center bg-[var(--color-border)]/55" style={{ height: "70%" }} />
                       ) : null}
                       <div className="flex flex-1 items-center gap-2.5">
-                        <HomeIcon name={item.icon} size={32} className="h-8 w-8 shrink-0" />
+                        <HomeIcon name={item.icon} size={40} className="h-10 w-10 shrink-0" />
                         <div className="min-w-0">
                           <p className="text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
                           <p className="text-[0.7rem] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
@@ -115,7 +142,7 @@ export default function TrustCta({ data, band = "page" }) {
                   <span aria-hidden="true" className="mx-3 my-1 w-px shrink-0 self-center bg-[var(--color-border)]/55" style={{ height: "70%" }} />
                 ) : null}
                 <div className="flex items-center gap-2.5">
-                  <HomeIcon name={item.icon} size={32} className="h-8 w-8 shrink-0" />
+                  <HomeIcon name={item.icon} size={40} className="h-10 w-10 shrink-0" />
                   <div className="min-w-0">
                     <p className="text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
                     <p className="text-[0.7rem] leading-tight text-[var(--color-text-muted)]">{item.text}</p>

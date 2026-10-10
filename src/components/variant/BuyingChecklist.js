@@ -33,7 +33,7 @@ function TrustCard({ className = "", isDark }) {
   return (
     <div className={`flex w-full max-w-[360px] items-center gap-3 rounded-[8px] border ${cardBorder} ${cardBg} p-3.5 shadow-sm backdrop-blur ${className}`}>
       <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
-        <HomeIcon name="safestBuy" size={36} className="h-9 w-9" />
+        <HomeIcon name="safestBuy" size={44} className="h-11 w-11" />
       </span>
       <div className="min-w-0">
         <p className={`text-[0.92rem] font-bold leading-tight ${titleClass}`}>Buy smart. Drive with confidence.</p>
@@ -100,7 +100,7 @@ export default function BuyingChecklist({ data, band = "page" }) {
                     <span className="absolute left-3 top-3 flex h-6 w-6 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary)] text-[0.7rem] font-bold text-white">
                       {index + 1}
                     </span>
-                    <HomeIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} size={40} className="mt-2 h-10 w-10" />
+                    <HomeIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} size={48} className="mt-2 h-12 w-12" />
                     <p className="text-[0.92rem] font-bold leading-tight text-[var(--color-text)]">{label}</p>
                     {text ? <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]">{text}</p> : null}
                   </div>

@@ -54,28 +54,28 @@ function DetailCard({ row }) {
         <p className="truncate text-[1rem] font-bold text-[var(--color-text)]">{row.engineCode}</p>
         <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[var(--color-border)]/55 pb-2.5">
           <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-            <HomeIcon name="checkWatch" size={24} className="h-6 w-6 shrink-0" />
+            <HomeIcon name="checkWatch" size={32} className="h-8 w-8 shrink-0" />
             Years
           </span>
           <span className="font-semibold text-[var(--color-text)]">{row.years}</span>
         </div>
         <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[var(--color-border)]/55 pb-2.5">
           <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-            <HomeIcon name="engine" size={24} className="h-6 w-6 shrink-0" />
+            <HomeIcon name="engine" size={32} className="h-8 w-8 shrink-0" />
             Power
           </span>
           <span className="font-semibold text-[var(--color-text)]">{row.power}</span>
         </div>
         <div className="flex items-start justify-between gap-3 border-b border-[var(--color-border)]/55 pb-2.5">
           <span className="flex shrink-0 items-center gap-1.5 text-[var(--color-text-muted)]">
-            <HomeIcon name="trend" size={24} className="h-6 w-6 shrink-0" />
+            <HomeIcon name="trend" size={32} className="h-8 w-8 shrink-0" />
             2025 Enquiries
           </span>
           <span className="min-w-0 flex-1 text-right font-semibold text-[var(--color-text)]">{row.enquiries}</span>
         </div>
         <div className="flex items-start justify-between gap-3">
           <span className="flex shrink-0 items-center gap-1.5 text-[var(--color-text-muted)]">
-            <HomeIcon name="checkValue" size={24} className="h-6 w-6 shrink-0" />
+            <HomeIcon name="checkValue" size={32} className="h-8 w-8 shrink-0" />
             Avg. Recon Cost
           </span>
           <span className="min-w-0 flex-1 text-right font-semibold text-[var(--color-primary)]">{row.avgReconCost}</span>
@@ -113,7 +113,7 @@ export default function EngineCodes({ data, band = "soft" }) {
             className={`grid grid-cols-[1fr_1fr] gap-3 px-4 py-3 ${index > 0 ? "border-t border-[var(--color-border)]/55" : ""}`}
           >
             <span className="flex items-center gap-2 border-r border-[var(--color-border)]/55 pr-3 text-[0.78rem] text-[var(--color-text-muted)]">
-              <HomeIcon name={SPEC_ICONS[index % SPEC_ICONS.length]} size={28} className="h-7 w-7 shrink-0" />
+              <HomeIcon name={SPEC_ICONS[index % SPEC_ICONS.length]} size={36} className="h-9 w-9 shrink-0" />
               {item.label.replace(/^\*\s*/, "")}
             </span>
             <span className="text-[0.8rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.value }} />
@@ -135,7 +135,7 @@ export default function EngineCodes({ data, band = "soft" }) {
 
       <div className="relative z-10 flex items-center gap-4">
         <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/30 bg-[var(--color-primary-soft)] shadow-lg">
-          <HomeIcon name="quote" size={36} className="h-9 w-9" />
+          <HomeIcon name="quote" size={44} className="h-11 w-11" />
         </span>
         <div className="min-w-0">
           <p className="text-[0.95rem] font-bold leading-tight">{data.cta.label}</p>

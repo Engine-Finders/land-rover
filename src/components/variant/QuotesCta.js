@@ -64,7 +64,7 @@ export default function QuotesCta({ data, band = "page" }) {
                   href="/quote"
                   className="btn-cta mt-1 flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[8px] bg-[#189454] px-4 py-2.5 text-center text-[0.76rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-fit md:px-6 md:py-3.5 md:text-[0.85rem]"
                 >
-                  <HomeIcon name="quote" size={28} className="h-7 w-7 shrink-0" />
+                  <HomeIcon name="quote" size={36} className="h-9 w-9 shrink-0" />
                   {data.button.label.replace(/\s*→\s*$/, "")}
                   <ArrowIcon className="h-4 w-4 shrink-0" />
                 </a>

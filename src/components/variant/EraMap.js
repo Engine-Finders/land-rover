@@ -113,7 +113,7 @@ function MobileCard({ row, isOpen, onToggle }) {
 
 export default function EraMap({ data, band = "soft" }) {
   const { theme } = useTheme();
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(null);
   if (!data) return null;
 
   const isDark = theme === "dark";
@@ -123,13 +123,13 @@ export default function EraMap({ data, band = "soft" }) {
   const rows = data.rows || [];
 
   return (
-    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
+    <section className={`w-full py-6 text-[var(--color-text)] md:py-8 ${sectionBgClass(band)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+        <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
           <div>
             <HeadingEyebrow text="ERA MAP" />
-            <h2 className="mt-3 font-lora text-[1.6rem] font-medium leading-[1.1] tracking-normal md:text-[2.4rem]">{data.title}</h2>
-            <p className="mt-3 max-w-[520px] text-[0.82rem] leading-[1.45] text-[var(--color-text-muted)] md:text-[0.9rem]">
+            <h2 className="mt-2 font-lora text-[1.6rem] font-medium leading-[1.1] tracking-normal md:text-[2.4rem]">{data.title}</h2>
+            <p className="mt-1.5 max-w-[520px] text-[0.82rem] leading-[1.45] text-[var(--color-text-muted)] md:text-[0.9rem]">
               Four generations. Four eras. One guide to reliability, costs and what really matters.
             </p>
           </div>
@@ -137,7 +137,7 @@ export default function EraMap({ data, band = "soft" }) {
 
         {rows.length > 0 ? (
           <>
-            <div className="mt-6 flex flex-col gap-3 md:hidden">
+            <div className="mt-4 flex flex-col gap-3 md:hidden">
               {rows.map((row, index) => (
                 <MobileCard
                   key={row.generation}
@@ -148,7 +148,7 @@ export default function EraMap({ data, band = "soft" }) {
               ))}
             </div>
 
-            <div className="mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
+            <div className="mt-4 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
               <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold text-white`}>
                 {data.columns?.map((col) => (
                   <span key={col} className={`flex items-center justify-center px-3 text-center border-r ${headerDivider} last:border-r-0`}>
@@ -165,7 +165,7 @@ export default function EraMap({ data, band = "soft" }) {
           </>
         ) : null}
 
-        <div className="mt-6 flex flex-col items-start gap-6 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-card)] p-6 shadow-lg lg:flex-row lg:items-center lg:justify-between md:p-8">
+        <div className="mt-4 flex flex-col items-start gap-6 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-card)] p-6 shadow-lg lg:flex-row lg:items-center lg:justify-between md:p-8">
           <div className="flex items-start gap-4 lg:max-w-[45%] lg:items-center">
             <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)]/20 bg-[var(--color-primary-soft)]">
               <HomeIcon name="safestBuy" size={40} className="h-10 w-10" />

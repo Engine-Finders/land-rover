@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { HomeIcon } from "@/components/home/homeIcons";
 import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
@@ -156,8 +156,8 @@ export default function VariantHero({ data, band = "page" }) {
               key={badge}
               className={`flex flex-col items-center gap-1 px-0.5 ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
             >
-              <HomeIcon name={icon} size={32} className="h-8 w-8 shrink-0" />
-              <span className={`text-[0.58rem] leading-tight ${badgeTextClass}`}>{label}</span>
+              <HomeIcon name={icon} size={44} className="h-11 w-11 shrink-0" />
+              <span className={`text-[0.62rem] leading-tight ${badgeTextClass}`}>{label}</span>
             </div>
           );
         })}
@@ -211,7 +211,7 @@ export default function VariantHero({ data, band = "page" }) {
 
   const mobileEngineSummaryCard = data.priceAnchor ? (
     <div className={`mt-1.5 flex w-full items-center gap-3 rounded-[8px] border ${cardBorderClass} ${cardBgClass} p-2.5 backdrop-blur-sm md:hidden`}>
-      <HomeIcon name="quote" size={28} className="h-7 w-7 shrink-0" />
+      <HomeIcon name="quote" size={36} className="h-9 w-9 shrink-0" />
       <div className="flex min-w-0 flex-col gap-0.5">
         <span className={`text-[0.74rem] font-semibold ${headingClass}`} dangerouslySetInnerHTML={{ __html: price.headline }} />
         {price.note ? <span className={`text-[0.7rem] ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: price.note }} /> : null}
@@ -273,7 +273,7 @@ export default function VariantHero({ data, band = "page" }) {
         <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:px-8 md:pb-6 md:pt-8">
           <div className="flex w-full max-w-[640px] flex-col gap-1.5 md:gap-2">
             <span className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-[8px] border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-2.5 md:py-1.5 md:text-[0.78rem] ${tagPillClass}`}>
-              <HomeIcon name="vehicle" size={22} className="h-5.5 w-5.5 shrink-0" />
+              <HomeIcon name="vehicle" size={28} className="h-7 w-7 shrink-0 md:h-5.5 md:w-5.5" />
               <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
               {pill.body ? (
                 <>
@@ -289,14 +289,18 @@ export default function VariantHero({ data, band = "page" }) {
               ) : null}
             </span>
 
-            <h1 className={`font-lora text-[32px] font-medium leading-[0.95] tracking-normal md:text-[50px] md:leading-[1.08] ${headingClass}`}>
+            <HeadingEyebrow text="ENGINE GUIDE" />
+
+            <h1 className={`mt-2 font-lora text-[32px] font-medium leading-[0.95] tracking-normal md:text-[50px] md:leading-[1.08] ${headingClass}`}>
               <HeroHeadline h1={data.h1} />
             </h1>
 
-            <MStripe />
-
             <p
-              className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[560px] md:text-[17px] md:leading-[1.45] ${bodyTextClass}`}
+              className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[560px] md:text-[17px] md:leading-[1.45] ${
+                isDark
+                  ? "text-white/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)] md:text-white/85 md:[text-shadow:none]"
+                  : "text-black/90 [text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)] md:text-[var(--color-text-muted)] md:[text-shadow:none]"
+              }`}
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
             />
           </div>

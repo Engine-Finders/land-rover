@@ -104,7 +104,7 @@ function AccordionRow({ row, icon, isOpen, onToggle }) {
 
 export default function ReplacementCosts({ data, band = "page" }) {
   const { theme } = useTheme();
-  const [openIndex, setOpenIndex] = useState(1);
+  const [openIndex, setOpenIndex] = useState(null);
   if (!data) return null;
 
   const isDark = theme === "dark";
@@ -113,12 +113,12 @@ export default function ReplacementCosts({ data, band = "page" }) {
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
 
   return (
-    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
+    <section className={`w-full py-6 text-[var(--color-text)] md:py-8 ${sectionBgClass(band)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <HeadingEyebrow text="REPLACEMENT COSTS" />
-        <h2 className="mt-3 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">{data.h2}</h2>
+        <h2 className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">{data.h2}</h2>
 
-        <div className="mt-6 flex flex-col gap-3 md:hidden">
+        <div className="mt-4 flex flex-col gap-3 md:hidden">
           {data.rows?.map((row, index) => (
             <AccordionRow
               key={row.engineType}
@@ -130,7 +130,7 @@ export default function ReplacementCosts({ data, band = "page" }) {
           ))}
         </div>
 
-        <div className="mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
+        <div className="mt-4 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
           <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-3 text-[0.82rem] font-semibold text-white`}>
             {data.columns?.map((col, index) => (
               <span key={col} className={`px-2 text-center ${index > 0 ? `border-l ${headerDivider}` : ""}`}>
@@ -146,7 +146,7 @@ export default function ReplacementCosts({ data, band = "page" }) {
         </div>
 
         {data.figuresNote ? (
-          <div className="glass-panel mt-6 flex gap-3 rounded-[8px] p-4">
+          <div className="glass-panel mt-4 flex gap-3 rounded-[8px] p-4">
             <HomeIcon name="note" size={36} className="mt-0.5 h-9 w-9 shrink-0" />
             <p className="text-[0.82rem] leading-[1.5] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: data.figuresNote }} />
           </div>

@@ -194,7 +194,7 @@ export default function MarketIntelligence({ data, band = "page" }) {
                       <div key={item.label} className="glass-panel flex flex-col gap-2 rounded-[8px] p-4">
                         <div className="flex items-center gap-3">
                           <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
-                            <HomeIcon name="trend" size={36} className="h-9 w-9" />
+                            <HomeIcon name="trend" size={44} className="h-11 w-11" />
                           </span>
                           <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">{item.label}</p>
                         </div>
@@ -215,7 +215,7 @@ export default function MarketIntelligence({ data, band = "page" }) {
                     <div key={item.label} className="flex flex-col justify-between rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-5 shadow-sm">
                       <div className="flex items-center gap-3">
                         <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
-                          <HomeIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} size={36} className="h-9 w-9" />
+                          <HomeIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} size={44} className="h-11 w-11" />
                         </span>
                         <div className="flex min-w-0 flex-col gap-0.5">
                           <p className="text-[0.7rem] font-medium text-[var(--color-text-soft)]">{item.label}</p>

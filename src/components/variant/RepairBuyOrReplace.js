@@ -77,7 +77,7 @@ function CheckList({ title, items, icon, tone, toneBorder, toneBg }) {
   return (
     <div className={`flex h-full flex-1 flex-col rounded-[8px] border ${toneBorder} ${toneBg}`}>
       <p className={`flex items-center gap-2 border-b ${toneBorder} p-4 py-2.5 text-[0.82rem] font-semibold uppercase tracking-wide ${tone}`}>
-        <HomeIcon name={icon} size={28} className="h-7 w-7" />
+        <HomeIcon name={icon} size={36} className="h-9 w-9" />
         {title}
       </p>
       <ul className="flex flex-1 flex-col">
@@ -88,7 +88,7 @@ function CheckList({ title, items, icon, tone, toneBorder, toneBg }) {
               index > 0 ? `border-t ${toneBorder}` : ""
             }`}
           >
-            <HomeIcon name={icon} size={24} className={`mt-0.5 h-6 w-6 shrink-0 ${tone}`} />
+            <HomeIcon name={icon} size={32} className={`mt-0.5 h-8 w-8 shrink-0 ${tone}`} />
             <span dangerouslySetInnerHTML={{ __html: item.replace(/^\*\s*/, "") }} />
           </li>
         ))}
@@ -111,6 +111,8 @@ export default function RepairBuyOrReplace({ data, band = "soft" }) {
 
   return (
     <section className={`w-full text-[var(--color-text)] ${sectionBgClass(band)}`}>
+      {/* Mobile-only top spacer so this section doesn't sit flush under Compare Quotes */}
+      <div className="h-8 md:hidden" aria-hidden="true" />
       <div className="relative w-full overflow-hidden md:hidden">
         <div className="relative h-[220px] w-full bg-[var(--color-page)]">
           <Image src={imageMobile} alt="" fill className="object-contain" sizes="100vw" priority />
@@ -152,7 +154,7 @@ export default function RepairBuyOrReplace({ data, band = "soft" }) {
           {data.canItBeRepaired ? (
             <div className="rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-4 shadow-lg md:border-0 md:bg-transparent md:p-0 md:shadow-none">
               <p className="flex items-center gap-2 text-[0.95rem] font-bold uppercase tracking-wide text-[var(--color-text)]">
-                <HomeIcon name="repairVsReplace" size={36} className="h-9 w-9 text-[var(--color-primary)]" />
+                <HomeIcon name="repairVsReplace" size={44} className="h-11 w-11 text-[var(--color-primary)]" />
                 {data.canItBeRepaired.title}
               </p>
               <div className="mt-3 overflow-x-auto rounded-[8px] border border-[var(--color-border)]/75 shadow-[0_14px_40px_var(--color-shadow)]">
@@ -185,7 +187,7 @@ export default function RepairBuyOrReplace({ data, band = "soft" }) {
           {data.buyingChecks ? (
             <div className="flex h-full flex-col rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-4 shadow-lg md:border-0 md:bg-transparent md:p-0 md:shadow-none">
               <p className="flex items-center gap-2 text-[0.95rem] font-bold uppercase tracking-wide text-[var(--color-text)]">
-                <HomeIcon name="bestUsedBuy" size={36} className="h-9 w-9 text-[var(--color-primary)]" />
+                <HomeIcon name="bestUsedBuy" size={44} className="h-11 w-11 text-[var(--color-primary)]" />
                 {data.buyingChecks.title}
               </p>
               <div className="mt-3 grid flex-1 grid-cols-1 gap-4 md:grid-cols-2">
@@ -212,14 +214,14 @@ export default function RepairBuyOrReplace({ data, band = "soft" }) {
 
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           {data.closingVerdict ? (
-            <div className="glass-panel flex gap-3 rounded-[8px] p-4">
-              <span className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
-                <HomeIcon name="expertVerified" size={36} className="h-9 w-9" />
-              </span>
-              <div className="min-w-0 flex-1">
+            <div className="glass-panel flex flex-col rounded-[8px] p-4">
+              <div className="flex items-center gap-3">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
+                  <HomeIcon name="expertVerified" size={44} className="h-11 w-11" />
+                </span>
                 <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">Closing Verdict</p>
-                <p className="mt-1 text-[0.85rem] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: data.closingVerdict }} />
               </div>
+              <p className="mt-3 w-full text-[0.85rem] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: data.closingVerdict }} />
             </div>
           ) : null}
 
@@ -235,7 +237,7 @@ export default function RepairBuyOrReplace({ data, band = "soft" }) {
 
               <div className="relative z-10 flex items-start gap-3">
                 <span className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
-                  <HomeIcon name="checkValue" size={36} className="h-9 w-9" />
+                  <HomeIcon name="checkValue" size={44} className="h-11 w-11" />
                 </span>
                 <p className="text-[0.9rem] font-semibold leading-[1.4] text-[var(--color-text)]">
                   <span className="block">Don&apos;t guess.</span>
@@ -265,7 +267,7 @@ export default function RepairBuyOrReplace({ data, band = "soft" }) {
               <div className="flex min-w-0 flex-1 flex-col gap-3">
                 <div className="flex items-center gap-2.5">
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
-                    <HomeIcon name="quote" size={36} className="h-9 w-9" />
+                    <HomeIcon name="quote" size={44} className="h-11 w-11" />
                   </span>
                   <h3 className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">Don&apos;t Guess. Compare.</h3>
                 </div>
@@ -294,7 +296,7 @@ export default function RepairBuyOrReplace({ data, band = "soft" }) {
                   <span aria-hidden="true" className="mx-1.5 my-1 w-px shrink-0 self-center bg-[var(--color-border)]/55" style={{ height: "70%" }} />
                 ) : null}
                 <div className="flex w-full flex-col items-center gap-1 text-center">
-                  <HomeIcon name={item.icon} size={28} className="h-7 w-7 shrink-0" />
+                  <HomeIcon name={item.icon} size={36} className="h-9 w-9 shrink-0" />
                   <span className="text-[0.56rem] font-semibold leading-tight text-[var(--color-text)]">{item.label}</span>
                 </div>
               </div>

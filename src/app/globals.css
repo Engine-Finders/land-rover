@@ -123,7 +123,7 @@ a {
   color: #ffffff;
 }
 
-/* Infinite horizontal ticker (variant hero, etc.) */
+/* Infinite horizontal ticker (variant hero, etc.) — seamless loop, no seam gap */
 @keyframes ticker-marquee {
   from {
     transform: translateX(0);
@@ -136,9 +136,8 @@ a {
 .ticker-marquee {
   display: flex;
   width: max-content;
+  flex-wrap: nowrap;
+  gap: 0;
   animation: ticker-marquee 28s linear infinite;
-}
-
-.ticker-marquee:hover {
-  animation-play-state: paused;
+  will-change: transform;
 }

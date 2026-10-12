@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { HomeIcon } from "@/components/home/homeIcons";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
-import GenIcon from "./GenIcons";
 
-const factIcons = ["car", "arrow", "arrow", "car"];
+const factIcons = ["vehicle", "getGuidance", "expertVerified", "engine"];
 const factIconCircled = [false, true, true, false];
 
 // Highlight numeric figures and [TAG] markers inline within a sentence.
@@ -43,7 +44,7 @@ function parseKeyFacts(keyFacts) {
     });
 }
 
-export default function Overview({ data }) {
+export default function Overview({ data, band = "page" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -72,11 +73,11 @@ export default function Overview({ data }) {
     <div className="flex min-w-0 flex-1 items-start gap-2 px-1">
       {factIconCircled[index % factIconCircled.length] ? (
         <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
-          <GenIcon name={factIcons[index % factIcons.length]} className="h-3 w-3" />
+          <HomeIcon name={factIcons[index % factIcons.length]} size={18} className="h-[18px] w-[18px]" />
         </span>
       ) : (
         <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-          <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
+          <HomeIcon name={factIcons[index % factIcons.length]} size={32} className="h-8 w-8" />
         </span>
       )}
       <div className="min-w-0 flex-1">
@@ -134,11 +135,11 @@ export default function Overview({ data }) {
           >
             {factIconCircled[index % factIconCircled.length] ? (
               <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
-                <GenIcon name={factIcons[index % factIcons.length]} className="h-3 w-3" />
+                <HomeIcon name={factIcons[index % factIcons.length]} size={18} className="h-[18px] w-[18px]" />
               </span>
             ) : (
               <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-                <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
+                <HomeIcon name={factIcons[index % factIcons.length]} size={32} className="h-8 w-8" />
               </span>
             )}
             <div className="min-w-0 flex-1">
@@ -154,7 +155,7 @@ export default function Overview({ data }) {
   const marketIntelligenceBlockMobile = data.marketIntelligenceLine ? (
     <div className="glass-panel relative mt-2.5 flex items-center gap-3 rounded-lg p-3.5">
       <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-        <GenIcon name="target" className="h-5.5 w-5.5" />
+        <HomeIcon name="trend" size={28} className="h-7 w-7" />
       </span>
       <div className="min-w-0 flex-1">
         <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
@@ -170,7 +171,7 @@ export default function Overview({ data }) {
   const marketIntelligenceBlockDesktop = data.marketIntelligenceLine ? (
     <div className="glass-panel relative mt-2.5 flex items-start gap-3 rounded-lg p-3.5">
       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-        <GenIcon name="target" className="h-4.5 w-4.5" />
+        <HomeIcon name="trend" size={24} className="h-6 w-6" />
       </span>
       <div className="min-w-0 flex-1">
         <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
@@ -186,7 +187,7 @@ export default function Overview({ data }) {
   const mobileImage = isDark ? "/e90/overview_mobile_dark.webp" : "/e90/overview_mobile_light.webp";
 
   return (
-    <section className={`w-full bg-[var(--color-page)] ${headingClass}`}>
+    <section className={`w-full ${sectionBgClass(band)} ${headingClass}`}>
       {/* MOBILE: hero image up top in normal flow, content stacked below it (not overlaid) */}
       <div className="md:hidden">
         <div className="relative -mb-px h-[260px] w-full overflow-hidden">
@@ -206,21 +207,15 @@ export default function Overview({ data }) {
             }`}
           />
           {/* Solid strip guarantees full opacity at the very edge — no sub-pixel seam from the gradient's asymptotic stop */}
-          <div className="absolute inset-x-0 bottom-0 h-3 bg-[var(--color-page)]" />
+          <div className={`absolute inset-x-0 bottom-0 h-3 ${sectionBgClass(band)}`} />
         </div>
 
         <div className="px-4 pb-7 pt-5">
-          <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-            Overview
-          </p>
+          <HeadingEyebrow text="OVERVIEW" />
           <h2
-            className="mt-1.5 text-[2.15rem] font-bold leading-[1.1] tracking-normal"
+            className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal"
             dangerouslySetInnerHTML={{ __html: data.h2 }}
           />
-
-          <div className="mt-2.5">
-            <MStripe />
-          </div>
 
           {introParts.length > 0 ? (
             <div className={`mt-4 flex flex-col gap-3 text-[0.9rem] leading-[1.5] ${bodyTextClass}`}>
@@ -264,14 +259,11 @@ export default function Overview({ data }) {
             <div aria-hidden="true" />
 
             <div className="flex flex-col justify-center pl-8">
+              <HeadingEyebrow text="OVERVIEW" />
               <h2
-                className="text-[3rem] font-bold leading-[1.1] tracking-normal"
+                className="mt-2 font-lora text-[3rem] font-medium leading-[1.1] tracking-normal"
                 dangerouslySetInnerHTML={{ __html: data.h2 }}
               />
-
-              <div className="mt-2.5">
-                <MStripe />
-              </div>
 
               {introParts.length > 0 ? (
                 <div className={`mt-4 flex flex-col gap-3 text-[1.05rem] leading-[1.55] ${bodyTextClass}`}>

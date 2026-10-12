@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { HomeIcon } from "@/components/home/homeIcons";
 import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
@@ -65,26 +64,35 @@ function ArrowIcon({ className = "h-4 w-4" }) {
 }
 
 function TickerTrack({ items, isDark, bodyTextClass, compact = false }) {
-  const row = (
-    <>
-      {items.map((item, index) => (
-        <span key={`${item}-${index}`} className="flex shrink-0 items-center gap-1.5 px-3">
+  // Repeat enough times so one half always fills the viewport — no empty seam on loop.
+  const repeats = Math.max(6, Math.ceil(18 / Math.max(items.length, 1)));
+  const half = Array.from({ length: repeats }, () => items).flat();
+  // Scale duration with repeats so speed matches the old single-cycle ~28s pace.
+  const durationSec = repeats * 28;
+
+  const renderHalf = (keyPrefix) =>
+    half.map((item, index) => {
+      const origIndex = index % items.length;
+      return (
+        <span key={`${keyPrefix}-${index}`} className="flex shrink-0 items-center gap-1.5 px-3">
           <span
-            className={`h-2 w-2 shrink-0 rounded-full ${index === 0 ? "bg-[#189454]" : isDark ? "bg-white/40" : "bg-[var(--color-border-strong)]"}`}
+            className={`h-2 w-2 shrink-0 rounded-full ${origIndex === 0 ? "bg-[#189454]" : isDark ? "bg-white/40" : "bg-[var(--color-border-strong)]"}`}
             aria-hidden="true"
           />
           {item}
         </span>
-      ))}
-    </>
-  );
+      );
+    });
 
   return (
     <div className="overflow-hidden">
-      <div className={`ticker-marquee items-center ${compact ? "text-[0.65rem]" : "text-[0.72rem] md:text-[0.8rem]"} ${bodyTextClass}`}>
-        <div className="flex items-center">{row}</div>
-        <div className="flex items-center" aria-hidden="true">
-          {row}
+      <div
+        className={`ticker-marquee ${compact ? "text-[0.65rem]" : "text-[0.72rem] md:text-[0.8rem]"} ${bodyTextClass}`}
+        style={{ animationDuration: `${durationSec}s` }}
+      >
+        <div className="flex shrink-0 items-center">{renderHalf("a")}</div>
+        <div className="flex shrink-0 items-center" aria-hidden="true">
+          {renderHalf("b")}
         </div>
       </div>
     </div>
@@ -237,8 +245,8 @@ export default function VariantHero({ data, band = "page" }) {
       <section
         className={`relative overflow-hidden text-[var(--color-text)] ${sectionBgClass(band)} ${headingClass}`}
       >
-        {/* Image sits on the right only (like model/generation heroes) — not a full-bleed viewport crop */}
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-full md:w-[58%]">
+        {/* Full-bleed hero image — left fades to page bg, right stays visible */}
+        <div className="pointer-events-none absolute inset-0">
           <Image
             src={heroImageMobile}
             alt=""
@@ -251,20 +259,20 @@ export default function VariantHero({ data, band = "page" }) {
             src={heroImage}
             alt=""
             fill
-            className="hidden object-cover object-[62%_center] md:block"
-            sizes="58vw"
+            className="hidden object-cover object-[72%_center] md:block"
+            sizes="100vw"
             priority
           />
           {isDark ? (
             <>
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,28,24,0.94)_0%,rgba(13,28,24,0.55)_42%,rgba(13,28,24,0.92)_100%)] md:hidden" />
-              <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(13,28,24,1)_0%,rgba(13,28,24,0.82)_28%,rgba(13,28,24,0.2)_68%,rgba(13,28,24,0.05)_100%)] md:block" />
+              <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(13,28,24,1)_0%,rgba(13,28,24,0.92)_28%,rgba(13,28,24,0.45)_52%,rgba(13,28,24,0.08)_78%,transparent_100%)] md:block" />
               <div className="absolute inset-x-0 bottom-0 hidden h-40 bg-[linear-gradient(0deg,rgba(13,28,24,1)_0%,transparent_100%)] md:block" />
             </>
           ) : (
             <>
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.72)_36%,rgba(248,247,242,0.2)_62%,rgba(248,247,242,0.85)_100%)] md:hidden" />
-              <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(248,247,242,0.92)_22%,rgba(248,247,242,0.35)_55%,rgba(248,247,242,0)_100%)] md:block" />
+              <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(248,247,242,0.96)_26%,rgba(248,247,242,0.55)_48%,rgba(248,247,242,0.12)_72%,transparent_100%)] md:block" />
               <div className="absolute inset-x-0 bottom-0 hidden h-40 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] md:block" />
             </>
           )}
@@ -288,8 +296,6 @@ export default function VariantHero({ data, band = "page" }) {
                 </>
               ) : null}
             </span>
-
-            <HeadingEyebrow text="ENGINE GUIDE" />
 
             <h1 className={`mt-2 font-lora text-[32px] font-medium leading-[0.95] tracking-normal md:text-[50px] md:leading-[1.08] ${headingClass}`}>
               <HeroHeadline h1={data.h1} />

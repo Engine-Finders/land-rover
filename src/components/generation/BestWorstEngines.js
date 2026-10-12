@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "./GenIcons";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { HomeIcon } from "@/components/home/homeIcons";
+import { sectionBgClass } from "@/components/home/sectionBand";
 
 const typeStyles = {
   success: {
@@ -14,35 +15,35 @@ const typeStyles = {
     dark: "text-[#67d99a] bg-[rgba(24,148,84,0.16)]",
   },
   trophy: {
-    icon: "gauge",
+    icon: "checkWatch",
     color: "var(--color-primary)",
     accent: "border-b-[var(--color-primary)]",
     light: "text-[var(--color-primary)] bg-[var(--color-primary-soft)]",
     dark: "text-[var(--color-text)] bg-[rgba(36,132,255,0.16)]",
   },
   danger: {
-    icon: "warning",
+    icon: "expensiveFailure",
     color: "#e03232",
     accent: "border-b-[#e03232]",
     light: "text-[#db2e2e] bg-[#fff0f0]",
     dark: "text-[#ff8b90] bg-[rgba(255,45,53,0.15)]",
   },
   fire: {
-    icon: "dollar",
+    icon: "checkValue",
     color: "#da7a12",
     accent: "border-b-[#da7a12]",
     light: "text-[#da7a12] bg-[#fff5ea]",
     dark: "text-[#ffb66a] bg-[rgba(218,122,18,0.15)]",
   },
   diamond: {
-    icon: "diamond",
+    icon: "flagshipChoice",
     color: "#189454",
     accent: "border-b-[#189454]",
     light: "text-[#13884a] bg-[#eafaf0]",
     dark: "text-[#67d99a] bg-[rgba(24,148,84,0.16)]",
   },
   crown: {
-    icon: "shield",
+    icon: "safestBuy",
     color: "var(--color-primary)",
     accent: "border-b-[var(--color-primary)]",
     light: "text-[var(--color-primary)] bg-[var(--color-primary-soft)]",
@@ -56,12 +57,12 @@ function MobileCard({ item, isDark }) {
 
   return (
     <div
-      className="flex gap-3 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-3"
+      className="flex gap-3 overflow-hidden rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-3"
       style={{ borderLeft: `4px solid ${style.color}` }}
     >
       <div className="flex w-20 shrink-0 flex-col items-center gap-1.5">
         <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${badgeClass}`}>
-          <GenIcon name={style.icon} className="h-3.5 w-3.5" />
+          <HomeIcon name={style.icon} size={22} className="h-[22px] w-[22px]" />
         </span>
         <div className="relative h-28 w-20 shrink-0 overflow-hidden">
           <Image src="/e90/engine.webp" alt={`${item.engine} engine`} fill className="object-contain" sizes="80px" />
@@ -85,7 +86,7 @@ function MobileCard({ item, isDark }) {
           <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} />
         </p>
         {item.modelWideNote ? (
-          <p className="rounded-md bg-[var(--color-page-soft)] p-1.5 text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
+          <p className="rounded-[8px] bg-[var(--color-page-soft)] p-1.5 text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
         ) : null}
       </div>
     </div>
@@ -97,10 +98,10 @@ function Card({ item, isDark }) {
   const badgeClass = isDark ? style.dark : style.light;
 
   return (
-    <div className={`hidden h-full flex-col gap-2 overflow-hidden rounded-md border border-b-4 border-[var(--color-border)] bg-[var(--color-surface)] p-3 sm:flex ${style.accent}`}>
+    <div className={`hidden h-full flex-col gap-2 overflow-hidden rounded-[8px] border border-b-4 border-[var(--color-border)] bg-[var(--color-surface)] p-3 sm:flex ${style.accent}`}>
       <div className="flex items-center gap-2">
         <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${badgeClass}`}>
-          <GenIcon name={style.icon} className="h-3.5 w-3.5" />
+          <HomeIcon name={style.icon} size={22} className="h-[22px] w-[22px]" />
         </span>
         <p className={`flex-1 text-[0.76rem] font-semibold leading-tight ${badgeClass.split(" ")[0]}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
       </div>
@@ -124,7 +125,7 @@ function Card({ item, isDark }) {
           <span className="font-semibold">Who it&apos;s for:</span> <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} />
         </p>
         {item.modelWideNote ? (
-          <p className="mt-1.5 rounded-md bg-[var(--color-page-soft)] p-1.5 text-[0.7rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
+          <p className="mt-1.5 rounded-[8px] bg-[var(--color-page-soft)] p-1.5 text-[0.7rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
         ) : null}
       </div>
     </div>
@@ -136,11 +137,11 @@ function OverlookedCard({ item, isDark }) {
   const badgeClass = isDark ? style.dark : style.light;
 
   return (
-    <div className={`overflow-hidden rounded-md border border-b-4 border-[var(--color-border)] bg-[var(--color-surface)] ${style.accent}`}>
+    <div className={`overflow-hidden rounded-[8px] border border-b-4 border-[var(--color-border)] bg-[var(--color-surface)] ${style.accent}`}>
       <div className="grid grid-cols-1 md:grid-cols-[0.85fr_1.7fr_1fr] md:divide-x md:divide-[var(--color-border)]">
         <div className="flex items-start gap-3 p-5">
           <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${badgeClass}`}>
-            <GenIcon name={style.icon} className="h-5 w-5" />
+            <HomeIcon name={style.icon} size={28} className="h-7 w-7" />
           </span>
           <div>
             <p className={`text-[0.82rem] font-semibold ${badgeClass.split(" ")[0]}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
@@ -164,7 +165,7 @@ function OverlookedCard({ item, isDark }) {
   );
 }
 
-export default function BestWorstEngines({ data }) {
+export default function BestWorstEngines({ data, band = "soft" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -174,14 +175,12 @@ export default function BestWorstEngines({ data }) {
   const wideItems = items.filter((item) => item.fullWidth);
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full py-6 text-[var(--color-text)] md:py-8 ${sectionBgClass(band)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
+        <HeadingEyebrow text="BEST & WORST" />
+        <h2 className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
           {data.h2 || "Best & Worst Engines"}
         </h2>
-        <div className="mt-3">
-          <MStripe />
-        </div>
 
         <div className="mt-6 flex flex-col gap-3 sm:hidden">
           {mainItems.map((item) => (

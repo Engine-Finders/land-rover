@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
-import GenIcon from "./GenIcons";
+import { HomeIcon } from "@/components/home/homeIcons";
+import { sectionBgClass } from "@/components/home/sectionBand";
 
-function VariantPanel({ title, icon, variants, tone, isDark }) {
+function VariantPanel({ title, variants, tone, isDark }) {
   if (!variants?.length) return null;
   const isDiesel = tone === "diesel";
   const labelToneClass = isDiesel ? "text-[var(--color-primary)]" : "text-[#189454]";
@@ -15,12 +16,12 @@ function VariantPanel({ title, icon, variants, tone, isDark }) {
   const separatorClass = isDark ? "text-white/50" : "text-[var(--color-text-soft)]";
 
   return (
-    <div className="glass-panel flex items-stretch overflow-hidden rounded-md">
+    <div className="glass-panel flex items-stretch overflow-hidden rounded-[8px]">
       <span
         className={`flex w-16 shrink-0 items-center justify-center text-white ${blockToneClass}`}
         style={{ clipPath: "polygon(0 0, 100% 0, 60% 100%, 0 100%)" }}
       >
-        <GenIcon name={icon} className="h-7 w-7" />
+        <HomeIcon name="engine" size={40} className="h-10 w-10" />
       </span>
       <div className="min-w-0 flex-1 py-4 pl-3 pr-4">
         <p className={`text-[0.76rem] font-semibold uppercase tracking-wide ${labelToneClass}`}>
@@ -47,7 +48,7 @@ function VariantPanel({ title, icon, variants, tone, isDark }) {
   );
 }
 
-export default function CoreVariants({ data }) {
+export default function CoreVariants({ data, band = "soft" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -58,9 +59,9 @@ export default function CoreVariants({ data }) {
   const scopeNoteStrongClass = isDark ? "text-white" : "text-[var(--color-text)]";
 
   const scopeNoteBlock = data.scopeNote ? (
-    <div className="glass-panel flex gap-3 rounded-md p-4">
+    <div className="glass-panel flex gap-3 rounded-[8px] p-4">
       <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-        <GenIcon name="info" className="h-5 w-5" />
+        <HomeIcon name="note" size={28} className="h-7 w-7" />
       </span>
       <p className={`text-[0.82rem] leading-[1.5] ${scopeNoteTextClass}`}>
         <span className={`font-semibold ${scopeNoteStrongClass}`}>Scope note: </span>
@@ -73,14 +74,12 @@ export default function CoreVariants({ data }) {
     <div className="mt-2 grid grid-cols-1 gap-4 sm:grid-cols-2">
       <VariantPanel
         title="Diesel Variants"
-        icon="drum"
         variants={data.dieselVariants}
         tone="diesel"
         isDark={isDark}
       />
       <VariantPanel
         title="Petrol Variants"
-        icon="drum"
         variants={data.petrolVariants}
         tone="petrol"
         isDark={isDark}
@@ -89,18 +88,12 @@ export default function CoreVariants({ data }) {
   );
 
   return (
-    <section className="w-full bg-[var(--color-page)]">
-      {/* MOBILE: no background image — plain page background, content stacks in normal flow */}
+    <section className={`w-full ${sectionBgClass(band)}`}>
       <div className="px-4 py-8 text-[var(--color-text)] md:hidden">
-        <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-          {data.subheading || "Core Variants"}
-        </p>
-        <h2 className="mt-1.5 text-[2.15rem] font-bold leading-[1.1] tracking-normal">
+        <HeadingEyebrow text="CORE VARIANTS" />
+        <h2 className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal">
           {data.h2 || "Core Variants"}
         </h2>
-        <div className="mt-2.5">
-          <MStripe />
-        </div>
 
         <div className="mt-4 flex flex-col gap-4">
           {variantPanels}
@@ -108,7 +101,6 @@ export default function CoreVariants({ data }) {
         </div>
       </div>
 
-      {/* DESKTOP: full-bleed background image with content overlaid on top */}
       <div
         className={`relative hidden overflow-hidden md:block md:h-[380px] lg:h-[400px] ${headingClass}`}
       >
@@ -136,12 +128,10 @@ export default function CoreVariants({ data }) {
         <div className="relative mx-auto flex h-full w-full max-w-8xl flex-col justify-start px-8 py-5">
           <div className="flex w-full max-w-[640px] flex-col gap-4">
             <div>
-              <h2 className={`text-[3rem] font-bold leading-[1.1] tracking-normal ${headingClass}`}>
+              <HeadingEyebrow text="CORE VARIANTS" />
+              <h2 className={`mt-2 font-lora text-[3rem] font-medium leading-[1.1] tracking-normal ${headingClass}`}>
                 {data.h2 || "Core Variants"}
               </h2>
-              <div className="mt-3">
-                <MStripe />
-              </div>
             </div>
 
             {variantPanels}

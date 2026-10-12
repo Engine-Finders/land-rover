@@ -3,8 +3,46 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "./GenIcons";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { HomeIcon } from "@/components/home/homeIcons";
+import { sectionBgClass } from "@/components/home/sectionBand";
+
+const GEN_TO_HOME = {
+  warning: "expensiveFailure",
+  wrench: "repairVsReplace",
+  car: "vehicle",
+  gauge: "trend",
+  chart: "trend",
+  shield: "safestBuy",
+  clock: "checkWatch",
+  tag: "quote",
+  engine: "engine",
+  refresh: "checkWatch",
+  dollar: "checkValue",
+  pin: "ukDelivery",
+  drum: "engine",
+  info: "note",
+};
+
+function toHomeIcon(name) {
+  return GEN_TO_HOME[name] || "note";
+}
+
+function ChevronDownIcon({ className = "h-4 w-4" }) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  );
+}
+
+function ChevronIcon({ className = "h-4 w-4" }) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="m9 6 6 6-6 6" />
+    </svg>
+  );
+}
 
 function TieredCostTable({ tiers, isDark }) {
   if (!tiers?.length) return null;
@@ -12,7 +50,7 @@ function TieredCostTable({ tiers, isDark }) {
   const specialistClass = isDark ? "text-[#67d99a]" : "text-[#13884a]";
 
   return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)]">
+    <div className="overflow-hidden rounded-[8px] border border-[var(--color-border)]">
       {tiers.map((tier) => {
         const isCatastrophic = tier.tier.toLowerCase().includes("catastrophic");
         const toneClass = isCatastrophic ? "text-[#db2e2e]" : "text-[var(--color-primary)]";
@@ -21,7 +59,11 @@ function TieredCostTable({ tiers, isDark }) {
           <div key={tier.tier} className="border-b border-[var(--color-border)] last:border-b-0">
             <div className="grid grid-cols-[1.6fr_1fr_1fr] items-stretch">
               <div className="flex items-center gap-1.5 border-b border-r border-[var(--color-border)]">
-                <GenIcon name={isCatastrophic ? "warning" : "wrench"} className="h-3.5 w-3.5 shrink-0" />
+                <HomeIcon
+                  name={isCatastrophic ? "expensiveFailure" : "repairVsReplace"}
+                  size={18}
+                  className="h-[18px] w-[18px] shrink-0"
+                />
                 <p className={`text-[0.62rem] uppercase tracking-wide ${toneClass}`} dangerouslySetInnerHTML={{ __html: tier.tier }} />
               </div>
               <div className="flex items-center justify-center border-b border-r border-[var(--color-border)]">
@@ -65,7 +107,7 @@ function RiskBadge({ riskLevel }) {
 
   return (
     <span className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2 py-0.5 text-[0.7rem] font-semibold ${toneClass}`}>
-      <GenIcon name="warning" className="h-3 w-3" />
+      <HomeIcon name="expensiveFailure" size={16} className="h-4 w-4" />
       {riskLevel}
     </span>
   );
@@ -73,7 +115,7 @@ function RiskBadge({ riskLevel }) {
 
 function AccordionCard({ problem, isDark, isOpen, onToggle }) {
   return (
-    <div className="glass-panel overflow-hidden rounded-md">
+    <div className="glass-panel overflow-hidden rounded-[8px]">
       <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full gap-3 py-3 pr-3 text-left">
         <span className="relative h-20 w-20 shrink-0 overflow-hidden">
           <Image src="/e90/section6.webp" alt={problem.title} fill className="object-cover object-[center_20%] scale-125" sizes="80px" />
@@ -82,24 +124,23 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-2">
             <div className="flex min-w-0 items-center gap-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.7rem] font-bold text-white">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary)] text-[0.7rem] font-bold text-white">
                 {String(problem.id).padStart(2, "0")}
               </span>
               <p className="min-w-0 text-[0.88rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: problem.title }} />
             </div>
-            <GenIcon
-              name="chevronDown"
+            <ChevronDownIcon
               className={`h-4 w-4 shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`}
             />
           </div>
 
           <div className="mt-2 grid grid-cols-2 divide-x divide-[var(--color-border)] text-[0.7rem]">
             <div className="flex items-start gap-1.5 pr-2">
-              <GenIcon name="car" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+              <HomeIcon name="vehicle" size={18} className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[var(--color-primary)]" />
               <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
             </div>
             <div className="flex items-start gap-1.5 pl-2">
-              <GenIcon name="gauge" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+              <HomeIcon name="trend" size={18} className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[var(--color-primary)]" />
               <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
             </div>
           </div>
@@ -123,7 +164,7 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
           {problem.recommendation ? (
             <div className="border-b border-[var(--color-border)] px-4 py-3">
               <p className="flex items-center gap-1.5 text-[0.76rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-                <GenIcon name="shield" className="h-3.5 w-3.5" />
+                <HomeIcon name="safestBuy" size={20} className="h-5 w-5" />
                 Our Recommendation
               </p>
               <p className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
@@ -134,10 +175,10 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
             <div className="px-4 py-4">
               <a
                 href="/quote"
-                className="btn-cta flex h-11 w-full items-center rounded-md bg-[var(--color-primary)] px-4 text-white"
+                className="btn-cta flex h-11 w-full items-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-4 text-white"
               >
                 <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
-                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
+                <HomeIcon name="quote" size={32} className="h-8 w-8 shrink-0" />
               </a>
             </div>
           ) : null}
@@ -151,13 +192,12 @@ function ProblemCard({ problem, isDark }) {
   const { code, name } = splitTitle(problem.title);
 
   return (
-    <div className="glass-panel flex h-full flex-col overflow-hidden rounded-md">
-      {/* Header: id badge + title left, image cropped to the card's top-right corner */}
+    <div className="glass-panel flex h-full flex-col overflow-hidden rounded-[8px]">
       <div className="relative min-h-[140px] px-4 pb-3 pt-4">
         <div className="relative z-10 flex max-w-[62%] flex-col gap-2.5">
           <div>
             <div className="flex items-center gap-2">
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary)] text-[0.8rem] font-bold text-white">
                 {String(problem.id).padStart(2, "0")}
               </span>
               <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: code }} />
@@ -166,38 +206,36 @@ function ProblemCard({ problem, isDark }) {
           </div>
           <div className="text-[0.8rem]">
             <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
-              <GenIcon name="clock" className="h-3.5 w-3.5" />
+              <HomeIcon name="checkWatch" size={20} className="h-5 w-5" />
               Affected models:
             </p>
             <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
           </div>
         </div>
-        <div className="absolute right-0 top-0 h-full w-[42%] overflow-hidden rounded-bl-md">
+        <div className="absolute right-0 top-0 h-full w-[42%] overflow-hidden rounded-bl-[8px]">
           <div className="relative h-full min-h-[128px] w-full">
             <Image src="/e90/section6.webp" alt={problem.title} fill className="object-cover" sizes="180px" />
           </div>
         </div>
       </div>
 
-      {/* Info list */}
       <div className="flex flex-col gap-2.5 px-4 py-3 text-[0.8rem]">
         <div>
           <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
-            <GenIcon name="clock" className="h-3.5 w-3.5" />
+            <HomeIcon name="checkWatch" size={20} className="h-5 w-5" />
             Typical failure mileage:
           </p>
           <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
         </div>
         <div>
           <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
-            <GenIcon name="wrench" className="h-3.5 w-3.5" />
+            <HomeIcon name="repairVsReplace" size={20} className="h-5 w-5" />
             Root cause:
           </p>
           <p className="mt-0.5 leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.rootCause }} />
         </div>
       </div>
 
-      {/* Tiered cost table */}
       <div className="border-t border-[var(--color-border)] px-4 py-3">
         <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">
           Tiered Cost Table
@@ -208,7 +246,7 @@ function ProblemCard({ problem, isDark }) {
       {problem.recommendation ? (
         <div className="border-t border-[var(--color-border)] px-4 py-3">
           <p className="flex items-center gap-1.5 text-[0.76rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-            <GenIcon name="shield" className="h-3.5 w-3.5" />
+            <HomeIcon name="safestBuy" size={20} className="h-5 w-5" />
             Our Recommendation
           </p>
           <p className="mt-1 w-full text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
@@ -219,10 +257,10 @@ function ProblemCard({ problem, isDark }) {
         <div className="mt-auto border-t border-[var(--color-border)] px-4 py-4">
           <a
             href="/quote"
-            className="flex h-11 w-full items-center rounded-md bg-[var(--color-primary)] px-4 text-white"
+            className="flex h-11 w-full items-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-4 text-white"
           >
             <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
-            <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
+            <HomeIcon name="quote" size={32} className="h-8 w-8 shrink-0" />
           </a>
         </div>
       ) : null}
@@ -230,7 +268,7 @@ function ProblemCard({ problem, isDark }) {
   );
 }
 
-export default function CommonProblems({ data }) {
+export default function CommonProblems({ data, band = "soft" }) {
   const { theme } = useTheme();
   const [openId, setOpenId] = useState(null);
   if (!data) return null;
@@ -238,15 +276,13 @@ export default function CommonProblems({ data }) {
   const isDark = theme === "dark";
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
+        <HeadingEyebrow text="COMMON PROBLEMS" />
         <h2
-          className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]"
+          className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]"
           dangerouslySetInnerHTML={{ __html: data.h2 || "Common Problems" }}
         />
-        <div className="mt-3">
-          <MStripe />
-        </div>
         {data.subHeadline ? (
           <p
             className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]"
@@ -254,7 +290,6 @@ export default function CommonProblems({ data }) {
           />
         ) : null}
 
-        {/* Mobile: accordion — one card open at a time */}
         <div className="mt-6 flex flex-col gap-3 md:hidden">
           {data.problems?.map((problem) => (
             <AccordionCard
@@ -267,7 +302,6 @@ export default function CommonProblems({ data }) {
           ))}
         </div>
 
-        {/* Desktop: full grid, all cards visible */}
         <div className="mt-6 hidden gap-4 md:grid md:grid-cols-2 lg:grid-cols-4">
           {data.problems?.map((problem) => (
             <ProblemCard key={problem.id} problem={problem} isDark={isDark} />
@@ -275,10 +309,10 @@ export default function CommonProblems({ data }) {
         </div>
 
         {data.trustStrip?.length > 0 || data.footerNote ? (
-          <div className={`mt-6 overflow-hidden rounded-md border ${isDark ? "border-white/10 bg-black" : "border-[var(--color-border)] bg-[var(--color-table-surface)]"}`}>
+          <div className={`mt-6 overflow-hidden rounded-[8px] border ${isDark ? "border-white/10 bg-black" : "border-[var(--color-border)] bg-[var(--color-table-surface)]"}`}>
             <div className={`flex items-center gap-3 border-b px-4 py-3.5 ${isDark ? "border-white/10" : "border-[var(--color-border)]"}`}>
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                <GenIcon name="shield" className="h-5 w-5" />
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                <HomeIcon name="safestBuy" size={36} className="h-9 w-9" />
               </span>
               <p className={`text-[1rem] font-bold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
                 How confident are these ratings?
@@ -290,8 +324,8 @@ export default function CommonProblems({ data }) {
                 key={item.title}
                 className={`flex items-center gap-3 px-4 py-3.5 ${index > 0 ? `border-t ${isDark ? "border-white/10" : "border-[var(--color-border)]"}` : ""}`}
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <GenIcon name={item.icon} className="h-4.5 w-4.5" />
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
+                  <HomeIcon name={toHomeIcon(item.icon)} size={36} className="h-9 w-9" />
                 </span>
                 <div className="min-w-0 flex-1">
                   <p
@@ -303,14 +337,14 @@ export default function CommonProblems({ data }) {
                     dangerouslySetInnerHTML={{ __html: item.text }}
                   />
                 </div>
-                <GenIcon name="chevron" className="h-4 w-4 shrink-0 text-[var(--color-text-soft)]" />
+                <ChevronIcon className="h-4 w-4 shrink-0 text-[var(--color-text-soft)]" />
               </div>
             ))}
 
             {data.footerNote ? (
               <div className={`flex items-center gap-3 border-t px-4 py-3.5 ${isDark ? "border-white/10" : "border-[var(--color-border)]"}`}>
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <GenIcon name="tag" className="h-4.5 w-4.5" />
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
+                  <HomeIcon name="quote" size={36} className="h-9 w-9" />
                 </span>
                 <div className="min-w-0 flex-1">
                   <p className="text-[0.85rem] font-semibold text-[var(--color-primary)]">Data Note</p>

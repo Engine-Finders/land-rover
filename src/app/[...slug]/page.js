@@ -205,17 +205,17 @@ export default async function CatchAllPage({ params }) {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
           />
         )}
-        <GenHero data={data.hero} />
-        <GenEngineDatabase data={data.engineDatabase} />
-        <Overview data={data.overview} />
-        <BestWorstEngines data={data.bestWorstEngines} />
-        <OwnershipEconomics data={data.ownershipEconomics} />
-        <GenProblems data={data.commonProblems} />
-        <GenReplacementCosts data={data.replacementCosts} />
-        <CoreVariants data={data.coreVariants} parentSlug={entry.parent} />
-        <GenMarketIntelligence data={data.marketIntelligence} />
-        <GenFAQAccordion data={data.faq} />
-        <GenTrustCta data={data.trustCta} />
+        <GenHero data={data.hero} band="page" />
+        <GenEngineDatabase data={data.engineDatabase} band="soft" />
+        <Overview data={data.overview} band="page" />
+        <BestWorstEngines data={data.bestWorstEngines} band="soft" />
+        <OwnershipEconomics data={data.ownershipEconomics} band="page" />
+        <GenProblems data={data.commonProblems} band="soft" />
+        <GenReplacementCosts data={data.replacementCosts} band="page" />
+        <CoreVariants data={data.coreVariants} parentSlug={entry.parent} band="soft" />
+        <GenMarketIntelligence data={data.marketIntelligence} band="page" />
+        <GenFAQAccordion data={data.faq} band="soft" />
+        <GenTrustCta data={data.trustCta} band="page" />
       </main>
     );
   }

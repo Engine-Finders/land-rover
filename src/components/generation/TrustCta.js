@@ -1,148 +1,179 @@
 "use client";
 
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import GenIcon from "./GenIcons";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { HomeIcon } from "@/components/home/homeIcons";
+import { sectionBgClass } from "@/components/home/sectionBand";
 
-const pointIcons = ["shield", "scale", "wrench"];
+const POINT_ICONS = ["safestBuy", "scale", "ukDelivery"];
 
-function TitleWithAccent({ title = "" }) {
-  const markerIndex = title.indexOf(".uk");
-  if (markerIndex === -1) return <span dangerouslySetInnerHTML={{ __html: title }} />;
+const TICKER_ITEMS = [
+  { icon: "quote", title: "100% Free", text: "No hidden fees" },
+  { icon: "check", title: "No Obligation", text: "Get quotes with zero pressure" },
+  { icon: "users", title: "UK Specialists", text: "20+ vetted experts" },
+  { icon: "safestBuy", title: "12-Month Warranty", text: "As standard" },
+  { icon: "ukDelivery", title: "Nationwide Delivery", text: "Supply & fit available" },
+];
 
+function ArrowIcon({ className = "h-4 w-4" }) {
   return (
-    <>
-      <span dangerouslySetInnerHTML={{ __html: title.slice(0, markerIndex) }} />
-      <span className="text-[var(--color-primary)]">.uk</span>
-    </>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
+      <path d="M5 12h14m-6-6 6 6-6 6" />
+    </svg>
   );
 }
 
-export default function TrustCta({ data }) {
+export default function TrustCta({ data, band = "page" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/e90/section11_dark.webp" : "/e90/section11_light.webp";
-  const mobileImage = isDark ? "/e90/section11_mobile_dark.webp" : "/e90/section11_mobile_light.webp";
+  const image = isDark ? "/320d/trust_dark.webp" : "/320d/trust_light.webp";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
-  const bodyTextClass = isDark ? "text-white/75" : "text-[var(--color-text-muted)]";
-  const pointPanelClass = "glass-panel md:border-0 md:bg-transparent md:backdrop-blur-none";
-  const ctaPanelClass = "glass-panel";
-  const finalCtaTextClass = isDark ? "text-white/90" : "text-[var(--color-text)]";
-
-  const trustPointsList = (
-    <ul className="mt-6 flex flex-col gap-4">
-      {data.trustPoints?.map((point, index) => (
-        <li key={point.title} className={`flex items-start gap-3 rounded-md p-3 md:p-0 ${pointPanelClass}`}>
-          <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-transparent text-[var(--color-primary)]">
-            <GenIcon name={point.icon || pointIcons[index % pointIcons.length]} className="h-4.5 w-4.5" />
-          </span>
-          <div className="min-w-0 flex-1">
-            <p className={`text-[0.95rem] font-semibold ${headingClass}`} dangerouslySetInnerHTML={{ __html: point.title }} />
-            <p className={`text-[0.83rem] leading-[1.45] ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: point.text }} />
-          </div>
-        </li>
-      ))}
-    </ul>
-  );
-
-  const finalCtaBlock = data.finalCta || data.ctaButton ? (
-    <div className={`mt-6 flex w-full flex-col items-start gap-4 rounded-md p-5 md:mt-auto md:flex-row md:items-center md:justify-between ${ctaPanelClass}`}>
-      {data.finalCta ? (
-        <div className="flex items-start gap-3">
-          <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
-            <GenIcon name="badge" className="h-4.5 w-4.5" />
-          </span>
-          <p className={`text-[0.88rem] leading-[1.45] ${finalCtaTextClass}`} dangerouslySetInnerHTML={{ __html: data.finalCta }} />
-        </div>
-      ) : null}
-      {data.ctaButton ? (
-        <a
-          href="/quote"
-          className="btn-cta flex w-full shrink-0 items-center justify-center gap-2 text-center rounded-md bg-[var(--color-primary)] px-5 py-3 text-[0.8rem] font-bold uppercase tracking-wide text-white shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex md:w-auto md:whitespace-nowrap"
-        >
-          <span dangerouslySetInnerHTML={{ __html: data.ctaButton.label.replace(/\s*→\s*$/, "") }} />
-          <GenIcon name="chevron" className="h-4 w-4" />
-        </a>
-      ) : null}
-    </div>
-  ) : null;
 
   return (
-    <section className="w-full bg-[var(--color-page)] text-[var(--color-text)]">
-      {/* MOBILE: hero image up top in normal flow, seamlessly fading into the page background, content stacked below it */}
-      <div className="py-8 md:hidden">
-        <div className="relative -mb-px h-[260px] w-full overflow-hidden">
-          <Image
-            src={mobileImage}
-            alt="BMW 3 Series E90 rear three-quarter view"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-          <div
-            className={`absolute inset-0 ${
-              isDark
-                ? "bg-[linear-gradient(180deg,transparent_40%,rgba(2,7,17,0.75)_75%,rgba(2,7,17,1)_97%)]"
-                : "bg-[linear-gradient(180deg,transparent_40%,rgba(255,255,255,0.75)_75%,rgba(255,255,255,1)_97%)]"
-            }`}
-          />
-          {/* Solid strip guarantees full opacity at the very edge — no sub-pixel seam from the gradient's asymptotic stop */}
-          <div className="absolute inset-x-0 bottom-0 h-3 bg-[var(--color-page)]" />
-        </div>
+    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
+      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
+        <HeadingEyebrow text="TRUST & PROOF" />
+        <h2
+          className="mt-3 max-w-[720px] font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]"
+          dangerouslySetInnerHTML={{ __html: data.h2 }}
+        />
 
-        <div className="px-4 pt-5">
-          <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal">
-            <TitleWithAccent title={data.h2} />
-          </h2>
-          <div className="mt-3">
-            <MStripe />
-          </div>
+        {data.trustPoints?.length > 0 ? (
+          <ul className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {data.trustPoints.map((point, index) => (
+              <li
+                key={point.title}
+                className="flex flex-col rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-5 shadow-sm"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
+                    <HomeIcon name={POINT_ICONS[index % POINT_ICONS.length]} size={48} className="h-12 w-12" />
+                  </span>
+                  <p
+                    className="min-w-0 text-[1.02rem] font-bold leading-snug text-[var(--color-text)]"
+                    dangerouslySetInnerHTML={{ __html: point.title }}
+                  />
+                </div>
+                <p
+                  className="mt-3 w-full text-[0.85rem] leading-relaxed text-[var(--color-text-muted)] md:text-[0.9rem]"
+                  dangerouslySetInnerHTML={{ __html: point.text }}
+                />
+              </li>
+            ))}
+          </ul>
+        ) : null}
 
-          {trustPointsList}
-          {finalCtaBlock}
-        </div>
-      </div>
-
-      {/* DESKTOP: full-bleed background image with content overlaid on top */}
-      <div className="relative hidden w-full overflow-hidden md:block md:h-[420px] lg:h-[560px]">
-        <div className="absolute inset-0">
-          <Image
-            src={image}
-            alt="BMW 3 Series E90 rear three-quarter view"
-            fill
-            className="object-cover object-center"
-            sizes="100vw"
-          />
-          {isDark ? (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,17,0.9)_0%,rgba(2,7,17,0.55)_38%,transparent_75%)]" />
-              <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(2,7,17,0.65)_0%,transparent_28%)]" />
-            </>
-          ) : (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.6)_38%,transparent_75%)]" />
-              <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(255,255,255,0.7)_0%,transparent_28%)]" />
-            </>
-          )}
-        </div>
-
-        <div className={`relative mx-auto flex h-full w-full max-w-8xl flex-col justify-start px-8 py-5 ${headingClass}`}>
-          <div className="w-full max-w-[640px] md:max-w-[460px]">
-            <h2 className={`text-[3rem] font-bold leading-[1.1] tracking-normal ${headingClass}`}>
-              <TitleWithAccent title={data.h2} />
-            </h2>
-            <div className="mt-3">
-              <MStripe />
+        {data.finalCta || data.ctaButton ? (
+          <>
+            {/* Mobile: plain surface card (no photo) */}
+            <div className="relative mt-6 overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-5 md:hidden">
+              <div className="flex w-full flex-col gap-3">
+                {data.finalCta ? (
+                  <p
+                    className="text-[0.95rem] font-bold leading-[1.4] text-[var(--color-text)]"
+                    dangerouslySetInnerHTML={{ __html: data.finalCta }}
+                  />
+                ) : null}
+                {data.ctaButton ? (
+                  <a
+                    href="/quote"
+                    className="btn-cta flex w-full items-center justify-center gap-2 rounded-[8px] bg-[#189454] px-4 py-3 text-center text-[0.78rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
+                  >
+                    <HomeIcon name="quote" size={28} className="h-7 w-7 shrink-0" />
+                    <span
+                      className="min-w-0 text-balance"
+                      dangerouslySetInnerHTML={{ __html: data.ctaButton.label.replace(/\s*→\s*$/, "") }}
+                    />
+                    <ArrowIcon className="h-4 w-4 shrink-0" />
+                  </a>
+                ) : null}
+              </div>
             </div>
 
-            {trustPointsList}
+            {/* Desktop: photo CTA */}
+            <div className="relative mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 md:block">
+              <div className="absolute inset-0">
+                <Image src={image} alt="" fill className="object-cover" sizes="100vw" />
+              </div>
+              <div className="relative flex w-full min-h-[200px] flex-row items-center justify-center p-8 text-center">
+                <div className="flex max-w-[520px] flex-col items-center gap-3">
+                  {data.finalCta ? (
+                    <p
+                      className={`text-[1.2rem] font-bold leading-[1.4] ${headingClass}`}
+                      dangerouslySetInnerHTML={{ __html: data.finalCta }}
+                    />
+                  ) : null}
+                  {data.ctaButton ? (
+                    <a
+                      href="/quote"
+                      className="btn-cta flex w-auto shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[8px] bg-[#189454] px-6 py-3 text-center text-[0.8rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
+                    >
+                      <HomeIcon name="quote" size={36} className="h-9 w-9 shrink-0" />
+                      <span dangerouslySetInnerHTML={{ __html: data.ctaButton.label.replace(/\s*→\s*$/, "") }} />
+                      <ArrowIcon className="h-4 w-4 shrink-0" />
+                    </a>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+          </>
+        ) : null}
+
+        <div className="mt-6 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-4">
+          <div className="flex flex-col lg:hidden">
+            {Array.from({ length: Math.ceil(TICKER_ITEMS.length / 2) }, (_, row) => {
+              const pair = TICKER_ITEMS.slice(row * 2, row * 2 + 2);
+              return (
+                <div
+                  key={row}
+                  className={`flex items-stretch py-2.5 first:pt-0 last:pb-0 ${row > 0 ? "border-t border-[var(--color-border)]/55" : ""}`}
+                >
+                  {pair.map((item, i) => (
+                    <div key={item.title} className="flex flex-1 items-stretch">
+                      {i > 0 ? (
+                        <span
+                          aria-hidden="true"
+                          className="mx-3 my-1 w-px shrink-0 self-center bg-[var(--color-border)]/55"
+                          style={{ height: "70%" }}
+                        />
+                      ) : null}
+                      <div className="flex flex-1 items-center gap-2.5">
+                        <HomeIcon name={item.icon} size={40} className="h-10 w-10 shrink-0" />
+                        <div className="min-w-0">
+                          <p className="text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
+                          <p className="text-[0.7rem] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
           </div>
 
-          {finalCtaBlock}
+          <div className="hidden lg:flex lg:items-stretch">
+            {TICKER_ITEMS.map((item, index) => (
+              <div key={item.title} className="flex flex-1 items-stretch">
+                {index > 0 ? (
+                  <span
+                    aria-hidden="true"
+                    className="mx-3 my-1 w-px shrink-0 self-center bg-[var(--color-border)]/55"
+                    style={{ height: "70%" }}
+                  />
+                ) : null}
+                <div className="flex items-center gap-2.5">
+                  <HomeIcon name={item.icon} size={40} className="h-10 w-10 shrink-0" />
+                  <div className="min-w-0">
+                    <p className="text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
+                    <p className="text-[0.7rem] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

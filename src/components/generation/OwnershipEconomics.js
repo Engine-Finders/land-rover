@@ -4,7 +4,11 @@ import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+
+const HEADER_IMAGE = "/sec2-bg.webp";
+const mobileTitleShadow =
+  "[text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)]";
 
 const verdictStyles = {
   warning: { icon: "expensiveFailure", light: "text-[#d97517]", dark: "text-[#ffb05a]" },
@@ -84,55 +88,57 @@ export default function OwnershipEconomics({ data, band = "page" }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
-  const headerImage = isDark ? "/e90/engine_replacement_dark.webp" : "/e90/engine_replacement_light.webp";
-  const headerImageMobile = isDark ? "/e90/engine_replacement_mobile_dark.webp" : "/e90/engine_replacement_mobile_light.webp";
-  const headerHeadingClass = isDark ? "text-white" : "text-[var(--color-text)]";
 
   return (
-    <section className={`w-full py-6 text-[var(--color-text)] md:py-8 ${sectionBgClass(band)}`}>
+    <section
+      className={`relative text-[var(--color-text)] ${sectionBgClass(band)}`}
+      style={{ "--section-fade": rgb }}
+    >
+      {/* Image sizes to heading block — headings only */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 hidden md:block">
-          <Image src={headerImage} alt="" fill className="object-cover" sizes="100vw" priority />
-          {isDark ? (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,17,0.9)_0%,rgba(2,7,11,0.72)_32%,transparent_60%)]" />
-              <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(2,7,17,0.65)_0%,transparent_100%)]" />
-            </>
-          ) : (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.72)_32%,transparent_60%)]" />
-              <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(255,255,255,0.65)_0%,transparent_100%)]" />
-            </>
-          )}
-        </div>
-
-        <div className="relative -mb-px h-[200px] w-full overflow-hidden md:hidden">
-          <Image src={headerImageMobile} alt="" fill className="object-cover" sizes="100vw" priority />
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src={HEADER_IMAGE}
+            alt=""
+            fill
+            className="object-cover object-[78%_center] md:object-[75%_center]"
+            sizes="100vw"
+            priority
+          />
           <div
-            className={`absolute inset-0 ${
+            className={
               isDark
-                ? "bg-[linear-gradient(180deg,transparent_55%,rgba(2,7,17,1)_97%)]"
-                : "bg-[linear-gradient(180deg,transparent_55%,rgba(255,255,255,1)_97%)]"
+                ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.55)_50%,rgba(var(--section-fade),0.98)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
+                : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.55)_0%,rgba(var(--section-fade),0.32)_45%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
+            }
+          />
+          <div
+            className={`absolute inset-0 md:hidden ${
+              isDark
+                ? "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.65)_45%,transparent_75%)]"
+                : "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.88)_0%,rgba(var(--section-fade),0.5)_45%,transparent_75%)]"
             }`}
           />
-          {/* Solid strip guarantees full opacity at the very edge — no sub-pixel seam from the gradient's asymptotic stop */}
-          <div className={`absolute inset-x-0 bottom-0 h-3 ${sectionBgClass(band)}`} />
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-10">
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 pt-6 md:px-8 md:pb-10 md:pt-8">
           <HeadingEyebrow text="OWNERSHIP ECONOMICS" />
           <h2
-            className={`mt-2 max-w-[720px] font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${headerHeadingClass}`}
+            className={`mt-2 max-w-[720px] font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${
+              isDark
+                ? "text-white md:text-[var(--color-text)]"
+                : `text-black md:text-[var(--color-text)] ${mobileTitleShadow} md:[text-shadow:none]`
+            }`}
             dangerouslySetInnerHTML={{ __html: data.h2 }}
           />
         </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-6 md:px-8 md:pb-8">
         <div className="mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
           <div className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] gap-px ${headerBg} px-5 py-3 text-[0.82rem] font-semibold text-white`}>
             {data.columns?.map((col, index) => (
@@ -169,11 +175,12 @@ export default function OwnershipEconomics({ data, band = "page" }) {
 
         <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-[0.85fr_1.15fr]">
           {data.economicsRule ? (
-            <div className="flex items-center gap-4 rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-3.5">
-              <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                <HomeIcon name="scale" size={44} className="h-11 w-11" />
-              </span>
-              <div className="min-w-0 flex-1">
+            <>
+              {/* Mobile: floated icon — title beside it, description wraps under the icon */}
+              <div className="rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-3.5 md:hidden">
+                <span className="mr-3 flex h-14 w-14 float-left items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                  <HomeIcon name="scale" size={36} className="h-9 w-9" />
+                </span>
                 <p
                   className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]"
                   dangerouslySetInnerHTML={{ __html: data.economicsRule.title }}
@@ -188,8 +195,32 @@ export default function OwnershipEconomics({ data, band = "page" }) {
                     dangerouslySetInnerHTML={{ __html: data.economicsRule.highlight }}
                   />
                 ) : null}
+                <div className="clear-both" />
               </div>
-            </div>
+
+              {/* Desktop: icon beside copy, vertically centered */}
+              <div className="hidden items-center gap-4 rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-3.5 md:flex">
+                <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                  <HomeIcon name="scale" size={44} className="h-11 w-11" />
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p
+                    className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]"
+                    dangerouslySetInnerHTML={{ __html: data.economicsRule.title }}
+                  />
+                  <p
+                    className="mt-2 text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
+                    dangerouslySetInnerHTML={{ __html: data.economicsRule.text }}
+                  />
+                  {data.economicsRule.highlight ? (
+                    <p
+                      className="mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]"
+                      dangerouslySetInnerHTML={{ __html: data.economicsRule.highlight }}
+                    />
+                  ) : null}
+                </div>
+              </div>
+            </>
           ) : null}
 
           {data.keyTakeaways?.length > 0 ? (

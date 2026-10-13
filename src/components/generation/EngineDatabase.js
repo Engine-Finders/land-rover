@@ -3,9 +3,13 @@
 import Image from "next/image";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenBadge from "./GenBadge";
+
+const HEADER_IMAGE = "/sec2-bg.webp";
+const mobileTitleShadow =
+  "[text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)]";
 
 const CONFIDENCE_ICON_MAP = {
   shield: "safestBuy",
@@ -27,25 +31,17 @@ const CONFIDENCE_ICON_MAP = {
   refresh: "repairVsReplace",
 };
 
-function ChevronIcon({ className = "h-3.5 w-3.5" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="m9 6 6 6-6 6" />
-    </svg>
-  );
-}
-
 function confidenceHomeIcon(name) {
   return CONFIDENCE_ICON_MAP[name] || name;
 }
 
 const DESKTOP_COLS = "grid-cols-[0.95fr_0.6fr_1.05fr_0.8fr_0.9fr_1.15fr_1fr_1.05fr_1fr_1.05fr]";
-const MOBILE_COLS = "grid-cols-[100px_70px_90px_110px_120px_110px_130px]";
+const MOBILE_COLS = "grid-cols-[100px_88px_90px_110px_120px_110px_130px]";
 const MOBILE_HEADERS = ["Engine Code", "Fuel", "Power", "Years", "Reliability", "Enquiries", "Avg. Recon Cost"];
 
-function FuelIcon({ fuel = "" }) {
+function FuelIcon({ fuel = "", className = "h-6 w-6", size = 24 }) {
   const iconName = fuel.toLowerCase().includes("diesel") ? "engine" : "vehicle";
-  return <HomeIcon name={iconName} size={24} className="h-6 w-6 shrink-0" />;
+  return <HomeIcon name={iconName} size={size} className={`${className} shrink-0`} />;
 }
 
 function Stars({ value = "", className = "text-[1rem]" }) {
@@ -106,9 +102,9 @@ function MobileRow({ engine, isDark }) {
         <span className="block font-semibold" dangerouslySetInnerHTML={{ __html: engine.engineCode }} />
         <span className={`block text-[0.62rem] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
       </span>
-      <span className={`flex items-center gap-1 px-1.5 ${mutedText} border-r ${cellDivider}`}>
-        <FuelIcon fuel={engine.fuel} />
-        <span dangerouslySetInnerHTML={{ __html: engine.fuel }} />
+      <span className={`flex min-w-0 items-center gap-1 px-1.5 ${mutedText} border-r ${cellDivider}`}>
+        <FuelIcon fuel={engine.fuel} size={16} className="h-4 w-4" />
+        <span className="min-w-0 truncate" dangerouslySetInnerHTML={{ __html: engine.fuel }} />
       </span>
       <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.power }} />
       <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.years }} />
@@ -117,10 +113,7 @@ function MobileRow({ engine, isDark }) {
         <GenBadge tag={engine.reliabilityTag} isDark={isDark} />
       </span>
       <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.enquiries }} />
-      <span className="flex items-center gap-1 px-1.5 font-semibold">
-        <span dangerouslySetInnerHTML={{ __html: engine.avgReconCost }} />
-        <ChevronIcon className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-      </span>
+      <span className="px-1.5 font-semibold" dangerouslySetInnerHTML={{ __html: engine.avgReconCost }} />
     </div>
   );
 }
@@ -130,6 +123,7 @@ export default function EngineDatabase({ data, band = "soft" }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
 
   // Theme-aware header styling — light uses primary blue, dark uses deep navy
   const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
@@ -137,31 +131,59 @@ export default function EngineDatabase({ data, band = "soft" }) {
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
 
   return (
-    <section className={`w-full py-6 text-[var(--color-text)] md:py-8 ${sectionBgClass(band)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="relative">
-          <span className="pointer-events-none absolute inset-y-0 right-0 hidden w-14 sm:block md:w-auto">
-            <Image
-              src="/e90/stripe.webp"
-              alt=""
-              width={220}
-              height={220}
-              className="h-full w-auto object-contain object-right"
-            />
-          </span>
-
-          <HeadingEyebrow text="ENGINE DATABASE" />
-          <h2
-            className="mt-2 max-w-[760px] font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]"
-            dangerouslySetInnerHTML={{ __html: data.h2 }}
+    <section
+      className={`relative text-[var(--color-text)] ${sectionBgClass(band)}`}
+      style={{ "--section-fade": rgb }}
+    >
+      {/* Image sizes to the heading block — no fixed height leak */}
+      <div className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src={HEADER_IMAGE}
+            alt=""
+            fill
+            className="object-cover object-[78%_center] md:object-[75%_center]"
+            sizes="100vw"
+            priority
           />
-          {data.subHeadline ? (
-            <p
-              className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]"
-              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-            />
-          ) : null}
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.55)_50%,rgba(var(--section-fade),0.98)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
+                : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.55)_0%,rgba(var(--section-fade),0.32)_45%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
+            }
+          />
+          <div
+            className={`absolute inset-0 md:hidden ${
+              isDark
+                ? "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.65)_45%,transparent_75%)]"
+                : "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.88)_0%,rgba(var(--section-fade),0.5)_45%,transparent_75%)]"
+            }`}
+          />
         </div>
+
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 pt-6 md:px-8 md:pb-10 md:pt-8">
+          <div className="max-w-[760px]">
+            <HeadingEyebrow text="ENGINE DATABASE" />
+            <h2
+              className={`mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${
+                isDark
+                  ? "text-white md:text-[var(--color-text)]"
+                  : `text-black md:text-[var(--color-text)] ${mobileTitleShadow} md:[text-shadow:none]`
+              }`}
+              dangerouslySetInnerHTML={{ __html: data.h2 }}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-6 md:px-8 md:pb-8">
+        {data.subHeadline ? (
+          <p
+            className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]"
+            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+          />
+        ) : null}
 
         <div className="mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
           <div className={`grid ${DESKTOP_COLS} gap-px rounded-t-[8px] ${headerBg} px-4 py-2 text-[0.72rem] font-semibold leading-[1.2] text-white`}>
@@ -170,29 +192,29 @@ export default function EngineDatabase({ data, band = "soft" }) {
             ))}
           </div>
           <div className={bodyWrapperBg}>
-            {data.engines?.map((engine) => (
-              <DesktopRow key={engine.engineCode} engine={engine} isDark={isDark} />
+            {data.engines?.map((engine, index) => (
+              <DesktopRow key={`${engine.engineCode}-${index}`} engine={engine} isDark={isDark} />
             ))}
           </div>
         </div>
 
-        <div className="mt-6 overflow-x-auto rounded-[8px] border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
-          <div className="min-w-[730px]">
+        <div className="relative mt-6 overflow-x-auto rounded-[8px] border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
+          <div className="min-w-[748px]">
             <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2 text-[0.68rem] font-semibold leading-[1.2] text-white`}>
               {MOBILE_HEADERS.map((col) => (
-                <span key={col} className={`border-r px-1.5 ${headerDivider} last:border-r-0`}>{col}</span>
+                <span key={col} className={`min-w-0 border-r px-1.5 ${headerDivider} last:border-r-0`}>{col}</span>
               ))}
             </div>
             <div className={bodyWrapperBg}>
-              {data.engines?.map((engine) => (
-                <MobileRow key={engine.engineCode} engine={engine} isDark={isDark} />
+              {data.engines?.map((engine, index) => (
+                <MobileRow key={`${engine.engineCode}-${index}`} engine={engine} isDark={isDark} />
               ))}
             </div>
           </div>
         </div>
 
         {data.confidenceScore?.items?.length > 0 ? (
-          <div className="mt-6 grid grid-cols-1 items-center gap-5 rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 md:grid-cols-[72px_1fr_1fr_1fr_1.4fr] md:items-start md:gap-0 md:divide-x md:divide-[var(--color-border)]">
+          <div className="relative mt-6 grid grid-cols-1 items-center gap-5 rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 md:grid-cols-[72px_1fr_1fr_1fr_1.4fr] md:items-start md:gap-0 md:divide-x md:divide-[var(--color-border)]">
             {/* Column 1: Shield icon */}
             <div className="flex items-start justify-start md:pr-4">
               <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary)] text-white">

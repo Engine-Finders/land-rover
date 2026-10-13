@@ -300,6 +300,14 @@ export default function VariantHero({ data, band = "page" }) {
             <h1 className={`mt-2 font-lora text-[32px] font-medium leading-[0.95] tracking-normal md:text-[50px] md:leading-[1.08] ${headingClass}`}>
               <HeroHeadline h1={data.h1} />
             </h1>
+            <span
+              className="mt-2 block h-px w-[7.5rem] md:w-[9rem]"
+              style={{
+                background:
+                  "linear-gradient(to right, var(--color-accent) 0 38%, var(--color-border) 38% 100%)",
+              }}
+              aria-hidden="true"
+            />
 
             <p
               className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[560px] md:text-[17px] md:leading-[1.45] ${

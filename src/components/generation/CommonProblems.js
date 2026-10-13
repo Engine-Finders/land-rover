@@ -276,7 +276,7 @@ export default function CommonProblems({ data, band = "soft" }) {
   const isDark = theme === "dark";
 
   return (
-    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
+    <section className={`w-full pt-8 pb-4 text-[var(--color-text)] md:pt-10 md:pb-5 ${sectionBgClass(band)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <HeadingEyebrow text="COMMON PROBLEMS" />
         <h2

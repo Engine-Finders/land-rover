@@ -33,8 +33,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`h-full ${lora.variable}`}>
-      <body className="min-h-full bg-[var(--color-page)] text-[var(--color-text)] antialiased">
+    <html lang="en" className={`h-full ${lora.variable}`} suppressHydrationWarning>
+      <body className="min-h-full bg-[var(--color-page)] text-[var(--color-text)] antialiased" suppressHydrationWarning>
         <ThemeProvider>
           <div className="flex min-h-screen flex-col bg-[var(--color-page)] text-[var(--color-text)]">
             <Navbar />

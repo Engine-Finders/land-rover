@@ -56,7 +56,7 @@ function RankedList({ items }) {
   return (
     <ol className="flex flex-col gap-1">
       {items?.map((item, index) => (
-        <li key={item} className="flex gap-1.5 text-[0.74rem] leading-[1.3] text-[var(--color-text)]">
+        <li key={`${index}-${item}`} className="flex gap-1.5 text-[0.74rem] leading-[1.3] text-[var(--color-text)]">
           <span className="font-semibold text-[var(--color-primary)]">{index + 1}.</span>
           <span dangerouslySetInnerHTML={{ __html: item }} />
         </li>

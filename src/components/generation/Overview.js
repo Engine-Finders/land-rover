@@ -3,13 +3,16 @@
 import Image from "next/image";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
+
+const HEADER_IMAGE = "/sec2-bg.webp";
+const mobileTitleShadow =
+  "[text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)]";
 
 const factIcons = ["vehicle", "getGuidance", "expertVerified", "engine"];
 const factIconCircled = [false, true, true, false];
 
-// Highlight numeric figures and [TAG] markers inline within a sentence.
 function HighlightedLine({ text = "" }) {
   const parts = text.split(/(\[[^\]]+\]|\b\d[\d,.]*\b)/g).filter(Boolean);
   return parts.map((part, i) => {
@@ -49,17 +52,15 @@ export default function Overview({ data, band = "page" }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/e90/overview_dark - Copy.webp" : "/e90/overview_light.webp";
+  const rgb = sectionRgb(band, isDark);
   const keyFacts = parseKeyFacts(data.keyFacts);
 
-  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
   const cardDividerClass = isDark ? "border-white/15" : "border-[var(--color-border)]";
   const factLabelClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const factValueClass = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
   const marketLineClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
 
-  // Split the intro into up-to-two paragraphs by sentence boundary
   const introParts = data.intro
     ? (() => {
         const text = data.intro.trim();
@@ -70,29 +71,33 @@ export default function Overview({ data, band = "page" }) {
     : [];
 
   const factItem = (fact, index) => (
-    <div className="flex min-w-0 flex-1 items-start gap-2 px-1">
-      {factIconCircled[index % factIconCircled.length] ? (
-        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
-          <HomeIcon name={factIcons[index % factIcons.length]} size={18} className="h-[18px] w-[18px]" />
-        </span>
-      ) : (
-        <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-          <HomeIcon name={factIcons[index % factIcons.length]} size={32} className="h-8 w-8" />
-        </span>
-      )}
-      <div className="min-w-0 flex-1">
-        <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
-        <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
+    <div className="flex min-w-0 flex-1 flex-col gap-1 px-1">
+      <div className="flex items-center gap-2">
+        {factIconCircled[index % factIconCircled.length] ? (
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
+            <HomeIcon name={factIcons[index % factIcons.length]} size={18} className="h-[18px] w-[18px]" />
+          </span>
+        ) : (
+          <span className="shrink-0 text-[var(--color-primary)]">
+            <HomeIcon name={factIcons[index % factIcons.length]} size={28} className="h-7 w-7" />
+          </span>
+        )}
+        <p className={`min-w-0 text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
       </div>
+      {fact.value ? (
+        <p className={`w-full text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
+      ) : null}
     </div>
   );
 
-  const keyFactsBlockMobile = keyFacts.length > 0 ? (
-    <div className="glass-panel mt-4 rounded-lg p-3">
+  const keyFactsBlock = keyFacts.length > 0 ? (
+    <div className="glass-panel mt-4 rounded-[8px] p-3">
       <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
         Key Facts
       </p>
-      <div className="mt-2 flex flex-col">
+
+      {/* Mobile: 2-per-row */}
+      <div className="mt-2 flex flex-col md:hidden">
         {Array.from({ length: Math.ceil(keyFacts.length / 2) }, (_, row) => {
           const pair = keyFacts.slice(row * 2, row * 2 + 2);
           return (
@@ -103,7 +108,7 @@ export default function Overview({ data, band = "page" }) {
               {pair.map((fact, i) => {
                 const index = row * 2 + i;
                 return (
-                  <div key={fact.label} className="flex flex-1 items-stretch">
+                  <div key={`kf-m-${index}`} className="flex flex-1 items-stretch">
                     {i > 0 ? (
                       <span
                         aria-hidden="true"
@@ -119,43 +124,39 @@ export default function Overview({ data, band = "page" }) {
           );
         })}
       </div>
-    </div>
-  ) : null;
 
-  const keyFactsBlockDesktop = keyFacts.length > 0 ? (
-    <div className="glass-panel mt-4 rounded-lg p-3">
-      <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-        Key Facts
-      </p>
-      <div className="mt-2 grid grid-cols-4">
+      {/* Desktop: 4-col */}
+      <div className="mt-2 hidden grid-cols-4 md:grid">
         {keyFacts.map((fact, index) => (
           <div
-            key={fact.label}
-            className={`flex items-start gap-2 border-l py-0 pl-3 first:border-l-0 first:pl-0 ${cardDividerClass}`}
+            key={`kf-d-${index}`}
+            className={`flex flex-col gap-1 border-l py-0 pl-3 first:border-l-0 first:pl-0 ${cardDividerClass}`}
           >
-            {factIconCircled[index % factIconCircled.length] ? (
-              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
-                <HomeIcon name={factIcons[index % factIcons.length]} size={18} className="h-[18px] w-[18px]" />
-              </span>
-            ) : (
-              <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-                <HomeIcon name={factIcons[index % factIcons.length]} size={32} className="h-8 w-8" />
-              </span>
-            )}
-            <div className="min-w-0 flex-1">
-              <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
-              <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
+            <div className="flex items-center gap-2">
+              {factIconCircled[index % factIconCircled.length] ? (
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
+                  <HomeIcon name={factIcons[index % factIcons.length]} size={18} className="h-[18px] w-[18px]" />
+                </span>
+              ) : (
+                <span className="shrink-0 text-[var(--color-primary)]">
+                  <HomeIcon name={factIcons[index % factIcons.length]} size={28} className="h-7 w-7" />
+                </span>
+              )}
+              <p className={`min-w-0 text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
             </div>
+            {fact.value ? (
+              <p className={`w-full text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
+            ) : null}
           </div>
         ))}
       </div>
     </div>
   ) : null;
 
-  const marketIntelligenceBlockMobile = data.marketIntelligenceLine ? (
-    <div className="glass-panel relative mt-2.5 flex items-center gap-3 rounded-lg p-3.5">
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-        <HomeIcon name="trend" size={28} className="h-7 w-7" />
+  const marketIntelligenceBlock = data.marketIntelligenceLine ? (
+    <div className="glass-panel relative mt-2.5 flex items-start gap-3 rounded-[8px] p-3.5">
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white md:h-9 md:w-9">
+        <HomeIcon name="trend" size={28} className="h-7 w-7 md:h-6 md:w-6" />
       </span>
       <div className="min-w-0 flex-1">
         <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
@@ -167,117 +168,65 @@ export default function Overview({ data, band = "page" }) {
       </div>
     </div>
   ) : null;
-
-  const marketIntelligenceBlockDesktop = data.marketIntelligenceLine ? (
-    <div className="glass-panel relative mt-2.5 flex items-start gap-3 rounded-lg p-3.5">
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-        <HomeIcon name="trend" size={24} className="h-6 w-6" />
-      </span>
-      <div className="min-w-0 flex-1">
-        <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-          Market Intelligence
-        </p>
-        <p className={`mt-1 text-[0.8rem] leading-[1.4] ${marketLineClass}`}>
-          <HighlightedLine text={data.marketIntelligenceLine} />
-        </p>
-      </div>
-    </div>
-  ) : null;
-
-  const mobileImage = isDark ? "/e90/overview_mobile_dark.webp" : "/e90/overview_mobile_light.webp";
 
   return (
-    <section className={`w-full ${sectionBgClass(band)} ${headingClass}`}>
-      {/* MOBILE: hero image up top in normal flow, content stacked below it (not overlaid) */}
-      <div className="md:hidden">
-        <div className="relative -mb-px h-[260px] w-full overflow-hidden">
+    <section
+      className={`relative text-[var(--color-text)] ${sectionBgClass(band)}`}
+      style={{ "--section-fade": rgb }}
+    >
+      {/* Header image sizes to headings only — same pattern as other gen sections */}
+      <div className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0">
           <Image
-            src={mobileImage}
-            alt={data.image?.alt || "BMW 3 Series E90"}
+            src={HEADER_IMAGE}
+            alt={data.image?.alt || ""}
             fill
-            className="object-cover"
+            className="object-cover object-[78%_center] md:object-[75%_center]"
             sizes="100vw"
             priority
           />
           <div
-            className={`absolute inset-0 ${
+            className={
               isDark
-                ? "bg-[linear-gradient(180deg,transparent_40%,rgba(2,7,17,0.75)_75%,rgba(2,7,17,1)_97%)]"
-                : "bg-[linear-gradient(180deg,transparent_40%,rgba(255,255,255,0.75)_75%,rgba(255,255,255,1)_97%)]"
+                ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.55)_50%,rgba(var(--section-fade),1)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.15)_78%,rgba(var(--section-fade),0)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.55)_0%,rgba(var(--section-fade),0.32)_45%,rgba(var(--section-fade),1)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.1)_78%,rgba(var(--section-fade),0)_100%)]"
+            }
+          />
+          <div className="absolute inset-x-0 bottom-0 hidden h-16 bg-[linear-gradient(0deg,rgba(var(--section-fade),1)_0%,transparent_100%)] md:block" />
+          <div
+            className={`absolute inset-0 md:hidden ${
+              isDark
+                ? "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.65)_45%,transparent_75%)]"
+                : "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.88)_0%,rgba(var(--section-fade),0.5)_45%,transparent_75%)]"
             }`}
           />
-          {/* Solid strip guarantees full opacity at the very edge — no sub-pixel seam from the gradient's asymptotic stop */}
-          <div className={`absolute inset-x-0 bottom-0 h-3 ${sectionBgClass(band)}`} />
         </div>
 
-        <div className="px-4 pb-7 pt-5">
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 pt-6 md:px-8 md:pb-10 md:pt-8">
           <HeadingEyebrow text="OVERVIEW" />
           <h2
-            className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal"
+            className={`mt-2 max-w-[720px] font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${
+              isDark
+                ? "text-white md:text-[var(--color-text)]"
+                : `text-black md:text-[var(--color-text)] ${mobileTitleShadow} md:[text-shadow:none]`
+            }`}
             dangerouslySetInnerHTML={{ __html: data.h2 }}
           />
-
-          {introParts.length > 0 ? (
-            <div className={`mt-4 flex flex-col gap-3 text-[0.9rem] leading-[1.5] ${bodyTextClass}`}>
-              {introParts.map((para, i) => (
-                <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
-              ))}
-            </div>
-          ) : null}
-
-          {keyFactsBlockMobile}
-          {marketIntelligenceBlockMobile}
         </div>
       </div>
 
-      {/* DESKTOP: full-bleed background image with content overlaid on top */}
-      <div className={`relative hidden overflow-hidden px-10 md:block md:h-[500px] lg:h-[520px]`}>
-        <div className="absolute inset-0">
-          <Image
-            src={image}
-            alt={data.image?.alt || "BMW 3 Series E90"}
-            fill
-            className="object-cover object-[20%_55%]"
-            sizes="100vw"
-            priority
-          />
-          {isDark ? (
-            <>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_58%,transparent_0%,transparent_30%,rgba(2,7,17,0.45)_58%,rgba(2,7,17,0.85)_85%)]" />
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_28%,rgba(2,7,17,0.92)_40%,rgba(2,7,17,1)_50%,rgba(2,7,17,1)_100%)]" />
-            </>
-          ) : (
-            <>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_58%,transparent_0%,transparent_30%,rgba(255,255,255,0.5)_58%,rgba(255,255,255,0.92)_85%)]" />
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_28%,rgba(255,255,255,0.94)_40%,rgba(255,255,255,1)_50%,rgba(255,255,255,1)_100%)]" />
-            </>
-          )}
-        </div>
-
-        <div className="relative mx-auto flex h-full w-full max-w-8xl px-4 md:px-8">
-          <div className="grid h-full w-full grid-cols-[0.6fr_1fr] items-center gap-0">
-            <div aria-hidden="true" />
-
-            <div className="flex flex-col justify-center pl-8">
-              <HeadingEyebrow text="OVERVIEW" />
-              <h2
-                className="mt-2 font-lora text-[3rem] font-medium leading-[1.1] tracking-normal"
-                dangerouslySetInnerHTML={{ __html: data.h2 }}
-              />
-
-              {introParts.length > 0 ? (
-                <div className={`mt-4 flex flex-col gap-3 text-[1.05rem] leading-[1.55] ${bodyTextClass}`}>
-                  {introParts.map((para, i) => (
-                    <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
-                  ))}
-                </div>
-              ) : null}
-
-              {keyFactsBlockDesktop}
-              {marketIntelligenceBlockDesktop}
-            </div>
+      {/* Intro + cards sit below the image — no fixed-height clip on desktop */}
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 md:px-8 md:pb-10">
+        {introParts.length > 0 ? (
+          <div className={`flex flex-col gap-3 text-[0.9rem] leading-[1.5] md:max-w-[920px] md:text-[1.05rem] md:leading-[1.55] ${bodyTextClass}`}>
+            {introParts.map((para, i) => (
+              <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
+            ))}
           </div>
-        </div>
+        ) : null}
+
+        {keyFactsBlock}
+        {marketIntelligenceBlock}
       </div>
     </section>
   );

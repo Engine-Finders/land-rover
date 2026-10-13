@@ -5,7 +5,11 @@ import Link from "next/link";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
 import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+
+const HEADER_IMAGE = "/sec2-bg.webp";
+const mobileTitleShadow =
+  "[text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)]";
 
 function VariantPanel({ title, variants, tone, isDark }) {
   if (!variants?.length) return null;
@@ -53,8 +57,7 @@ export default function CoreVariants({ data, band = "soft" }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/e90/core_dark.webp" : "/e90/core_light.webp";
-  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
+  const rgb = sectionRgb(band, isDark);
   const scopeNoteTextClass = isDark ? "text-white/85" : "text-[var(--color-text-muted)]";
   const scopeNoteStrongClass = isDark ? "text-white" : "text-[var(--color-text)]";
 
@@ -70,74 +73,67 @@ export default function CoreVariants({ data, band = "soft" }) {
     </div>
   ) : null;
 
-  const variantPanels = (
-    <div className="mt-2 grid grid-cols-1 gap-4 sm:grid-cols-2">
-      <VariantPanel
-        title="Diesel Variants"
-        variants={data.dieselVariants}
-        tone="diesel"
-        isDark={isDark}
-      />
-      <VariantPanel
-        title="Petrol Variants"
-        variants={data.petrolVariants}
-        tone="petrol"
-        isDark={isDark}
-      />
-    </div>
-  );
-
   return (
-    <section className={`w-full ${sectionBgClass(band)}`}>
-      <div className="px-4 py-8 text-[var(--color-text)] md:hidden">
-        <HeadingEyebrow text="CORE VARIANTS" />
-        <h2 className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal">
-          {data.h2 || "Core Variants"}
-        </h2>
+    <section
+      className={`relative text-[var(--color-text)] ${sectionBgClass(band)}`}
+      style={{ "--section-fade": rgb }}
+    >
+      <div className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src={HEADER_IMAGE}
+            alt=""
+            fill
+            className="object-cover object-[78%_center] md:object-[75%_center]"
+            sizes="100vw"
+            priority
+          />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.55)_50%,rgba(var(--section-fade),0.98)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
+                : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.55)_0%,rgba(var(--section-fade),0.32)_45%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
+            }
+          />
+          <div
+            className={`absolute inset-0 md:hidden ${
+              isDark
+                ? "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.65)_45%,transparent_75%)]"
+                : "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.88)_0%,rgba(var(--section-fade),0.5)_45%,transparent_75%)]"
+            }`}
+          />
+        </div>
 
-        <div className="mt-4 flex flex-col gap-4">
-          {variantPanels}
-          {scopeNoteBlock}
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 pt-6 md:px-8 md:pb-10 md:pt-8">
+          <HeadingEyebrow text="CORE VARIANTS" />
+          <h2
+            className={`mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${
+              isDark
+                ? "text-white md:text-[var(--color-text)]"
+                : `text-black md:text-[var(--color-text)] ${mobileTitleShadow} md:[text-shadow:none]`
+            }`}
+          >
+            {data.h2 || "Core Variants"}
+          </h2>
         </div>
       </div>
 
-      <div
-        className={`relative hidden overflow-hidden md:block md:h-[380px] lg:h-[400px] ${headingClass}`}
-      >
-        <div className="absolute inset-0">
-          <Image
-            src={image}
-            alt="BMW 3 Series E90"
-            fill
-            className="object-cover object-right"
-            sizes="100vw"
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-8 md:px-8 md:pb-10">
+        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <VariantPanel
+            title="Diesel Variants"
+            variants={data.dieselVariants}
+            tone="diesel"
+            isDark={isDark}
           />
-          {isDark ? (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,17,0.9)_0%,rgba(2,7,17,0.55)_38%,transparent_75%)]" />
-              <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(2,7,17,0.65)_0%,transparent_28%)]" />
-            </>
-          ) : (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.6)_38%,transparent_75%)]" />
-              <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(255,255,255,0.7)_0%,transparent_28%)]" />
-            </>
-          )}
+          <VariantPanel
+            title="Petrol Variants"
+            variants={data.petrolVariants}
+            tone="petrol"
+            isDark={isDark}
+          />
         </div>
-
-        <div className="relative mx-auto flex h-full w-full max-w-8xl flex-col justify-start px-8 py-5">
-          <div className="flex w-full max-w-[640px] flex-col gap-4">
-            <div>
-              <HeadingEyebrow text="CORE VARIANTS" />
-              <h2 className={`mt-2 font-lora text-[3rem] font-medium leading-[1.1] tracking-normal ${headingClass}`}>
-                {data.h2 || "Core Variants"}
-              </h2>
-            </div>
-
-            {variantPanels}
-            {scopeNoteBlock}
-          </div>
-        </div>
+        {scopeNoteBlock ? <div className="mt-4">{scopeNoteBlock}</div> : null}
       </div>
     </section>
   );

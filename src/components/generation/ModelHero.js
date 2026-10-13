@@ -121,6 +121,14 @@ export default function ModelHero({ data, band = "page" }) {
             className={`mt-2 font-lora text-[32px] font-medium leading-[0.95] tracking-normal md:text-[50px] md:leading-[1.08] ${headingClass}`}
             dangerouslySetInnerHTML={{ __html: data.h1 }}
           />
+          <span
+            className="mt-2 block h-px w-[7.5rem] md:w-[9rem]"
+            style={{
+              background:
+                "linear-gradient(to right, var(--color-accent) 0 38%, var(--color-border) 38% 100%)",
+            }}
+            aria-hidden="true"
+          />
 
           <p
             className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[17px] md:leading-[1.45] ${
@@ -136,19 +144,19 @@ export default function ModelHero({ data, band = "page" }) {
           {data.trustStrip?.length > 0 ? (
             <>
               <div className={`rounded-[8px] border ${cardBorderClass} ${cardBgClass} p-2 backdrop-blur-sm md:hidden`}>
-                <div className="grid grid-cols-4 gap-x-1 text-center">
+                <div className="grid grid-cols-4 items-stretch gap-x-1">
                   {data.trustStrip.map((item, index) => {
                     const stat = splitStat(item.label);
                     return (
                       <div
                         key={item.label}
-                        className={`flex flex-col items-center gap-1 px-0.5 ${index > 0 ? `border-l ${isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]"}` : ""}`}
+                        className={`flex flex-col items-center justify-center gap-1 px-0.5 text-center ${index > 0 ? `border-l ${isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]"}` : ""}`}
                       >
                         <HomeIcon name={stripIcon(item.icon)} size={44} className="h-11 w-11 shrink-0" />
                         {stat.value ? (
-                          <strong className={`text-[0.78rem] font-bold leading-none ${headingClass}`}>{stat.value}</strong>
+                          <strong className={`w-full text-center text-[0.78rem] font-bold leading-none ${headingClass}`}>{stat.value}</strong>
                         ) : null}
-                        <span className={`text-[0.58rem] leading-tight ${badgeTextClass}`}>{stat.label}</span>
+                        <span className={`w-full text-center text-[0.58rem] leading-tight ${badgeTextClass}`}>{stat.label}</span>
                       </div>
                     );
                   })}

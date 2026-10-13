@@ -4,7 +4,11 @@ import Image from "next/image";
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
 import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+
+const HEADER_IMAGE = "/sec2-bg.webp";
+const mobileTitleShadow =
+  "[text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)]";
 
 const GEN_TO_HOME = {
   warning: "expensiveFailure",
@@ -84,7 +88,7 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
             <div className={labelBg} />
             {rows.map((row, index) => (
               <div
-                key={row.engineCode}
+                key={`${row.engineCode}-${index}`}
                 className={`flex flex-col items-center justify-center gap-1 border-l px-2 py-3 text-center ${cellDivider} ${
                   index === 0 ? `${toneBg} text-white` : `${rowBg} ${rowText}`
                 }`}
@@ -114,9 +118,9 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
                 <HomeIcon name={toHomeIcon(metric.icon)} size={20} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
                 {metric.label}
               </div>
-              {rows.map((row) => (
+              {rows.map((row, rowIndex) => (
                 <div
-                  key={row.engineCode}
+                  key={`${row.engineCode}-${rowIndex}`}
                   className={`flex items-center justify-center border-l px-2 py-3 text-center text-[0.78rem] ${cellDivider} ${rowText}`}
                   dangerouslySetInnerHTML={{ __html: row[metric.key] }}
                 />
@@ -134,63 +138,68 @@ export default function ReplacementCosts({ data, band = "page" }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
+  const rgb = sectionRgb(band, isDark);
   const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
 
   const petrolRows = data.rows?.filter((row) => row.fuelType === "petrol") || [];
   const dieselRows = data.rows?.filter((row) => row.fuelType === "diesel") || [];
-  const headerImage = isDark ? "/e90/engine_replacement_dark.webp" : "/e90/engine_replacement_light.webp";
-  const headerImageMobile = isDark ? "/e90/engine_replacement_mobile_dark.webp" : "/e90/engine_replacement_mobile_light.webp";
-  const headerHeadingClass = isDark ? "text-white" : "text-[var(--color-text)]";
-  const headerSubClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
 
   return (
-    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
+    <section
+      className={`relative text-[var(--color-text)] ${sectionBgClass(band)}`}
+      style={{ "--section-fade": rgb }}
+    >
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 hidden md:block">
-          <Image src={headerImage} alt="" fill className="object-cover" sizes="100vw" priority />
-          {isDark ? (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,17,0.9)_0%,rgba(2,7,11,0.72)_32%,transparent_60%)]" />
-              <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(2,7,17,0.65)_0%,transparent_100%)]" />
-            </>
-          ) : (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.72)_32%,transparent_60%)]" />
-              <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(255,255,255,0.65)_0%,transparent_100%)]" />
-            </>
-          )}
-        </div>
-
-        <div className="relative -mb-px h-[200px] w-full overflow-hidden md:hidden">
-          <Image src={headerImageMobile} alt="" fill className="object-cover" sizes="100vw" priority />
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src={HEADER_IMAGE}
+            alt=""
+            fill
+            className="object-cover object-[78%_center] md:object-[75%_center]"
+            sizes="100vw"
+            priority
+          />
           <div
-            className={`absolute inset-0 ${
+            className={
               isDark
-                ? "bg-[linear-gradient(180deg,transparent_55%,rgba(2,7,17,1)_97%)]"
-                : "bg-[linear-gradient(180deg,transparent_55%,rgba(255,255,255,1)_97%)]"
+                ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.55)_50%,rgba(var(--section-fade),1)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.15)_78%,rgba(var(--section-fade),0)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.55)_0%,rgba(var(--section-fade),0.32)_45%,rgba(var(--section-fade),1)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.1)_78%,rgba(var(--section-fade),0)_100%)]"
+            }
+          />
+          {/* Desktop: kill hard bottom edge / “border” under the header image */}
+          <div className="absolute inset-x-0 bottom-0 hidden h-20 bg-[linear-gradient(0deg,rgba(var(--section-fade),1)_0%,transparent_100%)] md:block" />
+          <div
+            className={`absolute inset-0 md:hidden ${
+              isDark
+                ? "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.65)_45%,transparent_75%)]"
+                : "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.88)_0%,rgba(var(--section-fade),0.5)_45%,transparent_75%)]"
             }`}
           />
-          <div className={`absolute inset-x-0 bottom-0 h-3 ${sectionBgClass(band)}`} />
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-10">
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-6 pt-5 md:px-8 md:pb-8 md:pt-6">
           <HeadingEyebrow text="REPLACEMENT COSTS" />
           <h2
-            className={`mt-2 max-w-[720px] font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${headerHeadingClass}`}
+            className={`mt-2 max-w-[720px] font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${
+              isDark
+                ? "text-white md:text-[var(--color-text)]"
+                : `text-black md:text-[var(--color-text)] ${mobileTitleShadow} md:[text-shadow:none]`
+            }`}
             dangerouslySetInnerHTML={{ __html: data.h2 }}
           />
-          {data.subHeadline ? (
-            <p
-              className={`mt-4 max-w-[560px] text-[0.88rem] leading-[1.4] md:mt-5 md:text-[1.08rem] md:leading-[1.42] ${headerSubClass}`}
-              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-            />
-          ) : null}
         </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-8 md:px-8 md:pb-10">
+        {data.subHeadline ? (
+          <p
+            className="max-w-[560px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:text-[1.08rem] md:leading-[1.42]"
+            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+          />
+        ) : null}
+
         <div className="mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
           <div className={`grid grid-cols-[1.3fr_1fr_1fr_1.1fr_1fr_0.8fr] gap-px ${headerBg} px-5 py-3 text-[0.82rem] font-semibold text-white`}>
             {data.columns?.map((col, index) => (
@@ -201,8 +210,8 @@ export default function ReplacementCosts({ data, band = "page" }) {
             ))}
           </div>
           <div className={bodyWrapperBg}>
-            {data.rows?.map((row) => (
-              <DesktopRow key={row.engineCode} row={row} isDark={isDark} />
+            {data.rows?.map((row, index) => (
+              <DesktopRow key={`${row.engineCode}-${row.variant || index}`} row={row} isDark={isDark} />
             ))}
           </div>
         </div>

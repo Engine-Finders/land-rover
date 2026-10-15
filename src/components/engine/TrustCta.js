@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
 import { sectionH2 } from "@/components/models/sectionTypography";
 
 function cleanText(text = "") {
@@ -93,12 +93,10 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
 
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div>
-          <h2 className={`font-bold tracking-normal ${sectionH2}`}>
+          <HeadingEyebrow text="TRUST & PROOF" />
+          <h2 className={`mt-3 font-bold tracking-normal ${sectionH2}`}>
             Why Owners <span className="text-[var(--color-primary)]">Trust Us</span>
           </h2>
-          <div className="mt-3">
-            <MStripe />
-          </div>
         </div>
 
         {/* Desktop */}
@@ -128,7 +126,7 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
         >
           <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface)] text-[var(--color-primary)] shadow-[0_4px_12px_var(--color-shadow)]">
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-              <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
+              <path d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />
             </svg>
           </span>
           <p className="min-w-0 flex-1 text-[13px] leading-[1.45] text-[var(--color-text)]">
@@ -168,7 +166,7 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
           >
             <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-surface)] text-[var(--color-primary)] shadow-[0_4px_12px_var(--color-shadow)]">
               <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-                <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
+                <path d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />
               </svg>
             </span>
             <p className="mt-3 text-[20px] font-bold leading-[1.25] text-[var(--color-text)]">

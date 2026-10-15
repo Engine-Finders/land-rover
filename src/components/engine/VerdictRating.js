@@ -1,25 +1,20 @@
 "use client";
 
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { HomeIcon } from "@/components/home/homeIcons";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionH2 } from "@/components/models/sectionTypography";
 
-const dimensionIcons = {
-  Reliability: (
-    <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-  ),
-  "Repair Cost": <path d="M12 3v18m3-14H9.5a2.5 2.5 0 0 0 0 5h5a2.5 2.5 0 0 1 0 5H8" />,
-  Repairability: (
-    <path d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />
-  ),
-  "Parts Supply": (
-    <>
-      <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" />
-      <path d="M12 12 4.2 7.5M12 12v9m0-9 7.8-4.5" />
-    </>
-  ),
-  "Replacement Economics": <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-};
+function dimensionIconName(dimension) {
+  const map = {
+    Reliability: "safestBuy",
+    "Repair Cost": "checkValue",
+    Repairability: "repairVsReplace",
+    "Parts Supply": "ukDelivery",
+    "Replacement Economics": "trend",
+  };
+  return map[dimension] || "note";
+}
 
 function cleanText(text = "") {
   return String(text)
@@ -143,31 +138,25 @@ function StarRating({ value }) {
   );
 }
 
-function CircleIcon({ children, className = "" }) {
+function CircleIcon({ icon = "note", className = "" }) {
   return (
     <span
       className={`flex shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)] ${className}`}
     >
-      {children}
+      <HomeIcon name={icon} size={36} className="h-9 w-9 md:h-10 md:w-10" />
     </span>
   );
 }
 
 function DimensionIcon({ dimension }) {
-  return (
-    <CircleIcon className="h-8 w-8 md:h-10 md:w-10">
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5 md:h-5 md:w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-        {dimensionIcons[dimension] || dimensionIcons.Reliability}
-      </svg>
-    </CircleIcon>
-  );
+  return <CircleIcon icon={dimensionIconName(dimension)} className="h-10 w-10 md:h-12 md:w-12" />;
 }
 
 function RatingCard({ starRating, confidence, isDark }) {
   const rating = parseStarRating(starRating);
 
   return (
-    <article className={`rounded-xl border px-3.5 py-3.5 md:px-5 md:py-5 ${cardClass(isDark)}`}>
+    <article className={`rounded-[8px] border px-3.5 py-3.5 md:px-5 md:py-5 ${cardClass(isDark)}`}>
       <p className={`text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-soft)]"}`}>Rating:</p>
 
       <div className="mt-1.5 flex flex-wrap items-end gap-x-2.5 gap-y-1 md:mt-2 md:gap-x-3">
@@ -180,11 +169,7 @@ function RatingCard({ starRating, confidence, isDark }) {
 
       <div className="mt-3 border-t border-[var(--color-border)] pt-3">
         <div className="flex items-start gap-2.5">
-          <CircleIcon className="mt-0.5 h-7 w-7 md:h-8 md:w-8">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5 md:h-4 md:w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
-              <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-            </svg>
-          </CircleIcon>
+          <CircleIcon icon="expertVerified" className="mt-0.5 h-9 w-9 md:h-10 md:w-10" />
           <p className="min-w-0 text-[12px] leading-[1.4] text-[var(--color-text-muted)] md:text-[13px]">
             {renderTaggedText(confidence)}
           </p>
@@ -198,7 +183,7 @@ function VerdictQuote({ oneLineVerdict, isDark }) {
   const { quote, meta } = parseVerdict(oneLineVerdict);
 
   return (
-    <article className={`relative overflow-hidden rounded-xl border px-3.5 py-3.5 md:px-5 md:py-5 ${cardClass(isDark)}`}>
+    <article className={`relative overflow-hidden rounded-[8px] border px-3.5 py-3.5 md:px-5 md:py-5 ${cardClass(isDark)}`}>
       <span aria-hidden="true" className="pointer-events-none absolute left-2.5 top-1 text-[36px] font-bold leading-none text-[var(--color-primary)] opacity-70 md:left-4 md:top-2 md:text-[48px] md:opacity-80">
         “
       </span>
@@ -222,17 +207,15 @@ function AdviceCards({ bestFor, avoidIf, isDark }) {
   return (
     <div className="grid grid-cols-2 gap-2.5 md:gap-3">
       <article
-        className={`rounded-xl border px-3.5 py-3 md:px-4 md:py-3.5 ${
+        className={`rounded-[8px] border px-3.5 py-3 md:px-4 md:py-3.5 ${
           isDark
             ? "border-[var(--color-accent-green)] bg-[var(--color-accent-green-soft)]"
             : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_22px_var(--color-shadow)]"
         }`}
       >
         <div className="flex items-center gap-2 text-[var(--color-accent-green)]">
-          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-green)] bg-[var(--color-accent-green-soft)]">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2.2">
-              <path d="m6 12 4 4 8-8" />
-            </svg>
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-green)] bg-[var(--color-accent-green-soft)]">
+            <HomeIcon name="check" size={32} className="h-8 w-8" />
           </span>
           <p className="text-[13px] font-semibold md:text-[14px]">Best for:</p>
         </div>
@@ -240,17 +223,15 @@ function AdviceCards({ bestFor, avoidIf, isDark }) {
       </article>
 
       <article
-        className={`rounded-xl border px-3.5 py-3 md:px-4 md:py-3.5 ${
+        className={`rounded-[8px] border px-3.5 py-3 md:px-4 md:py-3.5 ${
           isDark
             ? "border-[var(--color-accent-red)] bg-[var(--color-accent-red-soft)]"
             : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_22px_var(--color-shadow)]"
         }`}
       >
         <div className="flex items-center gap-2 text-[var(--color-accent-red)]">
-          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-red)] bg-[var(--color-accent-red-soft)]">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 9v4m0 4h.01M10.3 4.9 2.7 18a2 2 0 0 0 1.75 3h15.1A2 2 0 0 0 21.3 18L13.7 4.9a2 2 0 0 0-3.4 0Z" />
-            </svg>
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-red)] bg-[var(--color-accent-red-soft)]">
+            <HomeIcon name="expensiveFailure" size={32} className="h-8 w-8" />
           </span>
           <p className="text-[13px] font-semibold md:text-[14px]">Avoid if:</p>
         </div>
@@ -277,7 +258,7 @@ function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
   const totalOutOf = totalRow?.outOf ?? 100;
 
   return (
-    <article className={`overflow-hidden rounded-xl border ${cardClass(isDark)}`}>
+    <article className={`overflow-hidden rounded-[8px] border ${cardClass(isDark)}`}>
       <div className="px-3.5 pt-3.5 md:px-5 md:pt-5">
         <p className="text-[13px] font-semibold text-[var(--color-text)] md:text-[15px]">{cleanText(scoreNote)}</p>
       </div>
@@ -303,8 +284,8 @@ function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
               </div>
             </div>
             <p className="shrink-0 pt-0.5 text-right leading-none">
-              <span className="text-[20px] font-bold text-[var(--color-primary)] md:text-[26px]">{row.points}</span>
-              <span className={`text-[11px] font-medium md:text-[13px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> /{row.outOf}</span>
+              <span className="font-lora text-[20px] font-bold text-[var(--color-primary)] md:text-[26px]">{row.points}</span>
+              <span className={`font-lora text-[11px] font-medium md:text-[13px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> /{row.outOf}</span>
             </p>
           </div>
         ))}
@@ -319,32 +300,31 @@ function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
           Total Engine Score
         </p>
         <p className="text-right leading-none">
-          <span className="text-[26px] font-bold text-[var(--color-primary)] md:text-[34px]">{totalPoints}</span>
-          <span className={`text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> / {totalOutOf}</span>
+          <span className="font-lora text-[26px] font-bold text-[var(--color-primary)] md:text-[34px]">{totalPoints}</span>
+          <span className={`font-lora text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> / {totalOutOf}</span>
         </p>
       </div>
     </article>
   );
 }
 
-export default function VerdictRating({ data }) {
+export default function VerdictRating({ data, band = "page" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
+  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-9">
-      <div className={`absolute inset-0 ${isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page-soft)]"}`} />
-
+    <section className={`w-full py-6 text-[var(--color-text)] md:py-9 ${sectionBgClass(band)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="text-center md:text-left">
-          <h2 className={`font-bold tracking-normal ${sectionH2}`}>
+          <div className="flex justify-center md:justify-start">
+            <HeadingEyebrow text="VERDICT & RATING" />
+          </div>
+          <h2 className={`mt-3 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${headingClass}`}>
             Verdict <span className="text-[var(--color-primary)]">& Rating</span>
           </h2>
-          <div className="mt-3 flex justify-center md:justify-start">
-            <MStripe />
-          </div>
         </div>
 
         {/* Desktop */}

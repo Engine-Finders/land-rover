@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
+import { HomeIcon } from "@/components/home/homeIcons";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
+import { sectionDescription } from "@/components/models/sectionTypography";
 
 const ENGINE_IMAGE =
   "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80";
@@ -32,7 +34,7 @@ function stripTags(text = "") {
 }
 
 function shortEngineName(engineLabel = "") {
-  return cleanText(engineLabel).replace(/^Jaguar\s+/i, "") || "Engine";
+  return cleanText(engineLabel).replace(/^(Jaguar|Land Rover|BMW)\s+/i, "") || "Engine";
 }
 
 function seriesParts(model = "") {
@@ -50,7 +52,8 @@ function seriesParts(model = "") {
     return { big, label: rest.join(" ") };
   }
 
-  const [big, ...rest] = clean.split(/\s+/);
+  const landRover = clean.replace(/^Land Rover\s+/i, "");
+  const [big, ...rest] = landRover.split(/\s+/);
   return { big: big || clean, label: rest.join(" ") };
 }
 
@@ -126,24 +129,16 @@ function carImageFor(model = "") {
   return CAR_IMAGES[hash % CAR_IMAGES.length];
 }
 
-function ShieldIcon({ className = "h-4 w-4" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.9">
-      <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-    </svg>
-  );
-}
-
 function ExclusiveBadge({ isDark }) {
   return (
-    <div className={`flex max-w-[260px] items-start gap-2 rounded-lg border px-2.5 py-2 ${cardClass(isDark)}`}>
-      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-        <ShieldIcon className="h-3.5 w-3.5" />
+    <div className={`flex max-w-[280px] items-start gap-2.5 rounded-[8px] border px-3 py-2.5 ${cardClass(isDark)}`}>
+      <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)]">
+        <HomeIcon name="safestBuy" size={32} className="h-8 w-8" />
       </span>
       <div className="min-w-0">
-        <p className="text-[10px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Jaguar Exclusive Engine</p>
+        <p className="text-[10px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Land Rover Engine</p>
         <p className="mt-0.5 text-[10px] leading-[1.35] text-[var(--color-text-muted)]">
-          This is an exclusive Jaguar engine. No cross-platform sharing.
+          Compatibility mapped across generations and badges.
         </p>
       </div>
     </div>
@@ -172,7 +167,7 @@ function DesktopModelCard({ item, isDark }) {
   const series = seriesParts(item.model);
 
   return (
-    <article className={`flex h-full flex-col rounded-lg border p-2.5 ${cardClass(isDark)}`}>
+    <article className={`flex h-full flex-col rounded-[8px] border p-2.5 ${cardClass(isDark)}`}>
       <div className="flex items-start justify-between gap-2">
         <div className="min-w-0">
           <p className="text-[26px] font-bold leading-none text-[var(--color-primary)]">{series.big}</p>
@@ -180,7 +175,7 @@ function DesktopModelCard({ item, isDark }) {
             <p className="mt-0.5 text-[10px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text-soft)]">{series.label}</p>
           ) : null}
         </div>
-        <div className="relative h-11 w-[84px] shrink-0 overflow-hidden rounded-md">
+        <div className="relative h-11 w-[84px] shrink-0 overflow-hidden rounded-[8px]">
           <Image src={carImageFor(item.model)} alt="" fill sizes="84px" className="object-cover object-center" />
         </div>
       </div>
@@ -207,14 +202,14 @@ function MobileModelRow({ row, isDark }) {
   const series = seriesParts(row.model);
 
   return (
-    <article className={`grid grid-cols-[68px_minmax(0,1fr)_auto] items-center gap-2 rounded-lg border px-2.5 py-2 ${cardClass(isDark)}`}>
-      <div className="min-w-0 overflow-hidden">
-        <p className="text-[22px] font-bold leading-none text-[var(--color-primary)]">{series.big}</p>
+    <article className={`grid grid-cols-[88px_minmax(0,1fr)_auto] items-center gap-2 rounded-[8px] border px-2.5 py-2 ${cardClass(isDark)}`}>
+      <div className="min-w-0">
+        <p className="break-words text-[18px] font-bold leading-[1.05] text-[var(--color-primary)]">{series.big}</p>
         {series.label ? (
-          <p className="mt-0.5 text-[9px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text-soft)]">{series.label}</p>
+          <p className="mt-0.5 break-words text-[9px] font-semibold uppercase leading-[1.2] tracking-[0.04em] text-[var(--color-text-soft)]">{series.label}</p>
         ) : null}
-        <div className="relative mt-1 h-8 w-full overflow-hidden rounded">
-          <Image src={carImageFor(row.model)} alt="" fill sizes="68px" className="object-cover object-center" />
+        <div className="relative mt-1.5 h-8 w-full overflow-hidden rounded-[8px]">
+          <Image src={carImageFor(row.model)} alt="" fill sizes="88px" className="object-cover object-center" />
         </div>
       </div>
 
@@ -244,17 +239,15 @@ function MobileModelRow({ row, isDark }) {
 
 function VerifiedStrip() {
   return (
-    <article className="flex w-full items-start gap-3 rounded-lg border border-[var(--color-primary)] bg-[var(--color-primary-soft)] px-3.5 py-3 md:items-center md:px-4 md:py-3.5">
-      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-[var(--color-primary)] bg-[var(--color-surface)] text-[var(--color-primary)]">
-        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
-          <path d="M8 7h11M8 12h11M8 17h11M5 7h.01M5 12h.01M5 17h.01" />
-        </svg>
+    <article className="flex w-full items-start gap-3 rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-primary-soft)] px-3.5 py-3 md:items-center md:px-4 md:py-3.5">
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-surface)]">
+        <HomeIcon name="expertVerified" size={36} className="h-9 w-9" />
       </span>
       <div className="min-w-0">
         <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Compatibility Verified</p>
         <p className="mt-0.5 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">
-          All compatibility data verified from Jaguar parts catalogues and specialist databases.{" "}
-          <span className="font-semibold text-[var(--color-primary)]">[JAGUAR-VERIFIED]</span>
+          All compatibility data verified from Land Rover parts catalogues and specialist databases.{" "}
+          <span className="font-semibold text-[var(--color-primary)]">[LR-VERIFIED]</span>
         </p>
       </div>
     </article>
@@ -263,10 +256,11 @@ function VerifiedStrip() {
 
 export default function Compatibility({
   data,
-  engineLabel = "Jaguar Engine",
+  engineLabel = "Land Rover Engine",
   yearsProduced = "",
   modelsFitted = "",
   crossBrandFitment = "",
+  band = "soft",
 }) {
   const { theme } = useTheme();
   if (!data) return null;
@@ -280,23 +274,18 @@ export default function Compatibility({
   const exclusiveNote = cleanText(data.crossBrandNote || crossBrandFitment || "(Exclusive mode – no cross-link)");
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-9">
-      {/* Engine background + fog */}
+    <section className={`relative w-full overflow-hidden py-8 text-[var(--color-text)] md:py-9 ${sectionBgClass(band)}`}>
       <div className="absolute inset-0">
-        <div className={`absolute inset-0 ${isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page-soft)]"}`} />
-
         <div className="absolute inset-y-0 right-0 w-full md:w-[62%]">
           <Image
             src={ENGINE_IMAGE}
             alt=""
             fill
             sizes="(max-width: 768px) 100vw, 62vw"
-            className="object-cover object-[center_30%] opacity-55 md:object-center md:opacity-70"
+            className="object-cover object-[center_30%] opacity-40 md:object-center md:opacity-55"
             priority={false}
           />
         </div>
-
-        {/* Fog / smoke between image and content */}
         <div
           className={`absolute inset-0 ${
             isDark
@@ -311,20 +300,17 @@ export default function Compatibility({
               : "bg-[linear-gradient(180deg,var(--color-hero-overlay)_0%,transparent_30%,transparent_70%,var(--color-hero-fade)_100%)]"
           }`}
         />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_78%_42%,transparent_0%,var(--color-hero-overlay)_58%,var(--color-hero-fade)_100%)] opacity-90" />
       </div>
 
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="grid max-w-[720px] items-start gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:gap-5">
+        <div className="grid max-w-[760px] items-start gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:gap-5">
           <div className="min-w-0">
-            <h2 className={`font-bold tracking-normal ${sectionH2}`}>
+            <HeadingEyebrow text="COMPATIBILITY" />
+            <h2 className="mt-3 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">
               Compatibility
             </h2>
-            <div className="mt-3">
-              <MStripe />
-            </div>
             <p className={`mt-4 max-w-[540px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
-              Jaguar {engineCode} engines are fitted across{" "}
+              {engineCode} engines are fitted across{" "}
               <span className="font-semibold text-[var(--color-primary)]">{modelCountLabel}</span> from{" "}
               <span className="font-semibold text-[var(--color-primary)]">
                 {bounds.start && bounds.end ? `${bounds.start}\u2013${bounds.end}` : stripTags(yearsProduced) || "multiple years"}
@@ -340,18 +326,17 @@ export default function Compatibility({
 
         <ProductionTimeline start={bounds.start} end={bounds.end} span={bounds.span} isDark={isDark} />
 
-        {/* Desktop cards */}
         <div className="mt-4 hidden md:block">
           <div className="grid gap-2.5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {grouped.map((item) => (
               <DesktopModelCard key={item.model} item={item} isDark={isDark} />
             ))}
 
-            <article className="flex min-h-[132px] flex-col items-start justify-center rounded-lg border border-dashed border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-2.5">
-              <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[var(--color-primary)] text-[16px] font-bold text-[var(--color-primary)]">
-                +
+            <article className="flex min-h-[132px] flex-col items-start justify-center rounded-[8px] border border-dashed border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-2.5">
+              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-surface)]">
+                <HomeIcon name="vehicle" size={32} className="h-8 w-8" />
               </span>
-              <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other Jaguar Models</p>
+              <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other Models</p>
               <p className="mt-1 text-[11px] leading-[1.35] text-[var(--color-text-muted)]">
                 {engineCode} also appears in limited variants and markets.
               </p>
@@ -364,18 +349,17 @@ export default function Compatibility({
           </div>
         </div>
 
-        {/* Mobile rows */}
         <div className="mt-4 grid gap-2.5 md:hidden">
-          {rows.map((row) => (
-            <MobileModelRow key={`${row.model}-${row.generation}`} row={row} isDark={isDark} />
+          {rows.map((row, index) => (
+            <MobileModelRow key={`${row.model}-${row.generation}-${index}`} row={row} isDark={isDark} />
           ))}
 
-          <article className={`flex items-center gap-3 rounded-lg border px-3 py-2.5 ${cardClass(isDark)}`}>
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[18px] font-bold text-[var(--color-primary)]">
-              +
+          <article className={`flex items-center gap-3 rounded-[8px] border px-3 py-2.5 ${cardClass(isDark)}`}>
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)]">
+              <HomeIcon name="vehicle" size={32} className="h-8 w-8" />
             </span>
             <div className="min-w-0 flex-1">
-              <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other Jaguar Models</p>
+              <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other Models</p>
               <p className="mt-0.5 text-[11px] leading-[1.35] text-[var(--color-text-muted)]">
                 {engineCode} also appears in limited variants and markets.
               </p>
@@ -385,9 +369,9 @@ export default function Compatibility({
 
           <VerifiedStrip />
 
-          <div className={`flex items-center gap-2 rounded-lg border px-3 py-2.5 ${cardClass(isDark)}`}>
-            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-              <ShieldIcon className="h-3.5 w-3.5" />
+          <div className={`flex items-center gap-2 rounded-[8px] border px-3 py-2.5 ${cardClass(isDark)}`}>
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)]">
+              <HomeIcon name="safestBuy" size={32} className="h-8 w-8" />
             </span>
             <p className="text-[11px] text-[var(--color-text-soft)]">{exclusiveNote}</p>
           </div>

@@ -65,17 +65,7 @@ export default async function EnginePage({ params }) {
   if (!data) notFound();
 
   return (
-    <main
-      style={{
-        padding: "24px 16px 64px",
-        maxWidth: 1100,
-        margin: "0 auto",
-        lineHeight: 1.5,
-        display: "flex",
-        flexDirection: "column",
-        gap: 40,
-      }}
-    >
+    <main className="flex flex-col">
       {data.meta?.jsonLd && (
         <script
           type="application/ld+json"
@@ -84,13 +74,13 @@ export default async function EnginePage({ params }) {
           }}
         />
       )}
-      <EngineHero data={data.hero} />
-      <AtAGlance data={data.atAGlance} />
-      <VerdictRating data={data.verdictRating} />
-      <Compatibility data={data.compatibility} />
-      <CostGuide data={data.costGuide} />
-      <FAQAccordion data={data.faq} />
-      <TrustCta data={data.trustCta} />
+      <EngineHero data={data.hero} band="page" />
+      <AtAGlance data={data.atAGlance} band="soft" />
+      <VerdictRating data={data.verdictRating} band="page" />
+      <Compatibility data={data.compatibility} band="soft" />
+      <CostGuide data={data.costGuide} band="page" />
+      <FAQAccordion data={data.faq} band="soft" />
+      <TrustCta data={data.trustCta} band="page" />
     </main>
   );
 }

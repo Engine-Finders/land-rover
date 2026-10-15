@@ -2,16 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { HomeIcon } from "@/components/home/homeIcons";
+import { sectionBgClass } from "@/components/home/sectionBand";
 import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionButton, sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
 
-const statIconPaths = [
-  <path key="chart" d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-  <path key="tool" d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />,
-  <path key="shield" d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />,
-  <path key="trophy" d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />,
-];
+const STAT_ICONS = ["realEnquiries", "repairVsReplace", "safestBuy", "topChoice"];
 
 function normalizeText(value = "") {
   return value
@@ -48,7 +43,6 @@ function splitStatLabel(label = "") {
         } else {
           acc[1] = acc[1] ? `${acc[1]} ${word}` : word;
         }
-
         return acc;
       },
       ["", ""],
@@ -56,15 +50,15 @@ function splitStatLabel(label = "") {
   };
 }
 
-function ArrowIcon() {
+function ArrowIcon({ className = "h-5 w-5" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
       <path d="M5 12h14m-6-6 6 6-6 6" />
     </svg>
   );
 }
 
-function StatIcon({ index, isDark }) {
+function StatIcon({ name, isDark }) {
   return (
     <span
       className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] md:h-14 md:w-14 ${
@@ -73,50 +67,8 @@ function StatIcon({ index, isDark }) {
           : "border-[rgba(11,103,220,0.18)] bg-[radial-gradient(circle_at_30%_30%,rgba(220,234,255,0.95),rgba(255,255,255,0.98)_72%)]"
       }`}
     >
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7 md:h-8 md:w-8" fill="none" stroke="currentColor" strokeWidth="1.85">
-        {statIconPaths[index] || statIconPaths[0]}
-      </svg>
+      <HomeIcon name={name} size={36} className="h-8 w-8 md:h-9 md:w-9" />
     </span>
-  );
-}
-
-function MetaPill({ items, isDark }) {
-  if (items.length === 0) return null;
-
-  return (
-    <div
-      className={`inline-flex max-w-full items-center gap-0 overflow-x-auto whitespace-nowrap rounded-full border px-2.5 py-2.5 text-[13px] leading-[1.2] [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:gap-x-4 md:gap-y-2 md:px-6 md:py-3.5 md:text-[16px] ${
-        isDark
-          ? "border-[rgba(36,132,255,0.9)] bg-[rgba(4,12,24,0.62)] text-white"
-          : "border-[rgba(11,103,220,0.58)] bg-[rgba(255,255,255,0.52)] text-[var(--color-text)]"
-      }`}
-    >
-      {items.map((item, index) => (
-        <span key={`${item}-${index}`} className="flex shrink-0 items-center md:gap-4">
-          {index > 0 ? <span aria-hidden="true" className="px-[1px] text-white/80 md:px-0">{"\u2022"}</span> : null}
-          <span className={index === 1 ? "font-semibold text-[var(--color-primary)]" : ""}>{item}</span>
-        </span>
-      ))}
-    </div>
-  );
-}
-
-function HeroTitle({ title, isDark, accentText }) {
-  const cleanTitle = normalizeText(title);
-  const accent = accentText && cleanTitle.includes(accentText) ? accentText : "Replacement Cost";
-  const accentIndex = cleanTitle.indexOf(accent);
-  const textClass = isDark ? "text-white" : "text-[var(--color-text)]";
-
-  if (accentIndex === -1) {
-    return <h1 className={`max-w-[700px] font-bold tracking-normal ${textClass} ${sectionH1}`}>{cleanTitle}</h1>;
-  }
-
-  return (
-    <h1 className={`max-w-[700px] font-bold tracking-normal ${textClass} ${sectionH1}`}>
-      {cleanTitle.slice(0, accentIndex)}
-      <span className="text-[var(--color-primary)]">{accent}</span>
-      {cleanTitle.slice(accentIndex + accent.length)}
-    </h1>
   );
 }
 
@@ -125,18 +77,25 @@ function StatCard({ item, index, isDark }) {
 
   return (
     <li
-      className={`flex min-h-[108px] items-center gap-2 rounded-2xl border px-3 py-0 shadow-[0_20px_48px_rgba(0,0,0,0.22)] md:min-h-[82px] md:rounded-none md:border-0 md:border-r md:bg-transparent md:px-3 md:py-1.5 md:last:border-r-0 md:shadow-none ${
+      className={`flex min-h-[108px] items-center gap-2 rounded-[8px] border px-3 py-0 shadow-[0_20px_48px_rgba(0,0,0,0.22)] md:min-h-[82px] md:rounded-none md:border-0 md:border-r md:bg-transparent md:px-3 md:py-1.5 md:shadow-none md:last:border-r-0 ${
         isDark
           ? "border-white/14 bg-[linear-gradient(180deg,rgba(7,16,33,0.88)_0%,rgba(3,10,23,0.96)_100%)] md:border-white/14"
           : "border-[rgba(11,103,220,0.18)] bg-[linear-gradient(180deg,rgba(255,255,255,0.88)_0%,rgba(239,245,252,0.96)_100%)] md:border-[rgba(11,103,220,0.16)]"
       }`}
     >
-      <StatIcon index={index} isDark={isDark} />
+      <StatIcon name={STAT_ICONS[index % STAT_ICONS.length]} isDark={isDark} />
       <div className="min-w-0">
-        {stat.value ? <p className={`text-[21px] font-bold leading-none md:text-[20px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{stat.value}</p> : null}
+        {stat.value ? (
+          <p className={`text-[21px] font-bold leading-none md:text-[20px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+            {stat.value}
+          </p>
+        ) : null}
         <div className={`${stat.value ? "mt-0.5" : ""} space-y-0`}>
           {stat.lines.filter(Boolean).map((line) => (
-            <p key={line} className={`text-[11px] font-medium uppercase leading-[1.02] md:text-[11px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+            <p
+              key={line}
+              className={`text-[11px] font-medium uppercase leading-[1.02] md:text-[11px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
+            >
               {line}
             </p>
           ))}
@@ -146,9 +105,30 @@ function StatCard({ item, index, isDark }) {
   );
 }
 
-export default function EngineHero({ data }) {
-  const { theme } = useTheme();
+function HeroTitle({ title, headingClass, accentText }) {
+  const cleanTitle = normalizeText(title);
+  const accent = accentText && cleanTitle.includes(accentText) ? accentText : "Replacement Cost";
+  const accentIndex = cleanTitle.indexOf(accent);
 
+  if (accentIndex === -1) {
+    return (
+      <h1 className={`mt-2 max-w-[700px] font-lora text-[32px] font-medium leading-[0.95] tracking-normal md:text-[50px] md:leading-[1.08] ${headingClass}`}>
+        {cleanTitle}
+      </h1>
+    );
+  }
+
+  return (
+    <h1 className={`mt-2 max-w-[700px] font-lora text-[32px] font-medium leading-[0.95] tracking-normal md:text-[50px] md:leading-[1.08] ${headingClass}`}>
+      {cleanTitle.slice(0, accentIndex)}
+      <span className="text-[var(--color-primary)]">{accent}</span>
+      {cleanTitle.slice(accentIndex + accent.length)}
+    </h1>
+  );
+}
+
+export default function EngineHero({ data, band = "page" }) {
+  const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
@@ -157,98 +137,139 @@ export default function EngineHero({ data }) {
   const description = normalizeText(data.subHeadline);
   const ctaLabel = data.primaryCta?.label ? normalizeText(data.primaryCta.label).replace(/\s*\u2192$/, "") : "";
 
+  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
+  const tagPillClass = isDark
+    ? "border-white/30 bg-[rgba(2,7,17,0.5)] text-white"
+    : "border-[rgba(11,103,220,0.4)] bg-[rgba(255,255,255,0.75)] text-[var(--color-text)]";
+  const cardBorderClass = isDark ? "border-white/20" : "border-[var(--color-border)]";
+  const cardBgClass = isDark ? "bg-[rgba(2,7,17,0.45)]" : "bg-[rgba(255,255,255,0.7)]";
+  const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
+  const heroImage = isDark ? "/320d/hero_dark.webp" : "/320d/hero_light.webp";
+  const heroImageMobile = isDark ? "/320d/hero_mobile_dark1.webp" : "/320d/hero_mobile_light1.webp";
+
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
-      <div className="absolute inset-0">
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[radial-gradient(circle_at_78%_64%,rgba(36,132,255,0.2)_0%,rgba(36,132,255,0)_24%),linear-gradient(180deg,#02060d_0%,#07101d_58%,#030913_100%)]"
-              : "bg-[radial-gradient(circle_at_78%_64%,rgba(11,103,220,0.16)_0%,rgba(11,103,220,0)_24%),linear-gradient(180deg,#dbe7f7_0%,#cfdced_24%,#f2f5fa_100%)]"
-          }`}
+    <section className={`relative overflow-hidden text-[var(--color-text)] ${sectionBgClass(band)} ${headingClass}`}>
+      <div className="pointer-events-none absolute inset-0">
+        <Image
+          src={heroImageMobile}
+          alt=""
+          fill
+          className="object-cover object-[70%_center] md:hidden"
+          sizes="100vw"
+          priority
         />
-        <div className="absolute inset-0 bg-[url('/Hero-dark.webp')] bg-cover bg-[center_right] opacity-25 mix-blend-screen md:opacity-35" />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(90deg,rgba(2,6,13,0.98)_0%,rgba(2,8,18,0.95)_36%,rgba(2,8,18,0.68)_58%,rgba(2,8,18,0.2)_74%,rgba(2,8,18,0.06)_100%)]"
-              : "bg-[linear-gradient(90deg,rgba(238,244,252,0.98)_0%,rgba(232,239,248,0.94)_36%,rgba(232,239,248,0.72)_58%,rgba(232,239,248,0.26)_74%,rgba(232,239,248,0.08)_100%)]"
-          }`}
+        <Image
+          src={heroImage}
+          alt=""
+          fill
+          className="hidden object-cover object-[72%_center] md:block"
+          sizes="100vw"
+          priority
         />
-        <div className="absolute right-[28%] top-0 hidden h-full w-[190px] skew-x-[-24deg] bg-[linear-gradient(180deg,rgba(108,158,255,0.16)_0%,rgba(108,158,255,0.04)_100%)] md:block" />
-        <div className="absolute bottom-[23%] right-[8%] hidden h-[230px] w-[460px] rounded-[50%] border border-[rgba(79,133,242,0.35)] md:block" />
-        <div className="absolute bottom-[26%] right-[11%] hidden h-[170px] w-[340px] rounded-[50%] border border-[rgba(79,133,242,0.28)] md:block" />
+        {isDark ? (
+          <>
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,28,24,0.94)_0%,rgba(13,28,24,0.55)_42%,rgba(13,28,24,0.92)_100%)] md:hidden" />
+            <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(13,28,24,1)_0%,rgba(13,28,24,0.92)_28%,rgba(13,28,24,0.45)_52%,rgba(13,28,24,0.08)_78%,transparent_100%)] md:block" />
+            <div className="absolute inset-x-0 bottom-0 hidden h-40 bg-[linear-gradient(0deg,rgba(13,28,24,1)_0%,transparent_100%)] md:block" />
+          </>
+        ) : (
+          <>
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.72)_36%,rgba(248,247,242,0.2)_62%,rgba(248,247,242,0.85)_100%)] md:hidden" />
+            <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(248,247,242,0.96)_26%,rgba(248,247,242,0.55)_48%,rgba(248,247,242,0.12)_72%,transparent_100%)] md:block" />
+            <div className="absolute inset-x-0 bottom-0 hidden h-40 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] md:block" />
+          </>
+        )}
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-3 pb-[6px] pt-0 md:px-6 md:pb-[12px] md:pt-1">
-        <div className="grid items-start md:grid-cols-[minmax(0,1.02fr)_minmax(400px,0.98fr)] md:gap-2">
-          <div className="order-1 min-w-0 max-w-[760px] pt-1 md:order-none md:self-start md:pt-2">
-            <MetaPill items={metaItems} isDark={isDark} />
-
-            <div className="mt-3 md:mt-3">
-              <HeroTitle title={data.h1} isDark={isDark} accentText={accentToken} />
-            </div>
-            <div className="mt-3">
-              <MStripe />
-            </div>
-
-            <p className={`mt-3 max-w-full break-words px-0 ${sectionDescription} ${isDark ? "text-white/88" : "text-[var(--color-text-muted)]"}`}>
-              {description.split("[BMW-VERIFIED]").map((part, index, array) => (
-                <span key={`${part}-${index}`}>
-                  {part}
-                  {index < array.length - 1 ? <span className="text-[var(--color-primary)]">[BMW-VERIFIED]</span> : null}
+      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:px-8 md:pb-6 md:pt-8">
+        <div className="flex w-full max-w-[720px] flex-col gap-1.5 md:gap-2">
+          {metaItems.length > 0 ? (
+            <span className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-[8px] border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-2.5 md:py-1.5 md:text-[0.78rem] ${tagPillClass}`}>
+              <HomeIcon name="engine" size={28} className="h-7 w-7 shrink-0 md:h-5.5 md:w-5.5" />
+              {metaItems.map((item, index) => (
+                <span key={`${item}-${index}`} className="inline-flex items-center gap-x-2">
+                  {index > 0 ? <span aria-hidden="true" className="opacity-50">•</span> : null}
+                  <span className={index === 1 ? "font-semibold text-[var(--color-primary)]" : ""}>{item}</span>
                 </span>
               ))}
-            </p>
+            </span>
+          ) : null}
 
-            {data.primaryCta ? (
-              <Link
-                href="/quote"
-                className={`btn-cta mt-4 hidden min-h-11 w-fit items-center justify-center md:gap-3 rounded-lg border border-[rgba(114,160,255,0.34)] bg-[linear-gradient(180deg,var(--color-primary)_0%,var(--color-primary-strong)_100%)] px-6 py-2.5 font-bold text-white shadow-[0_18px_46px_rgba(1,20,48,0.42)] md:inline-flex ${sectionButton}`}
-              >
-                <span>{ctaLabel}</span>
-                <ArrowIcon />
-              </Link>
-            ) : null}
-          </div>
+          <HeroTitle title={data.h1} headingClass={headingClass} accentText={accentToken} />
+          <span
+            className="mt-2 block h-px w-[7.5rem] md:w-[9rem]"
+            style={{
+              background: "linear-gradient(to right, var(--color-accent) 0 38%, var(--color-border) 38% 100%)",
+            }}
+            aria-hidden="true"
+          />
 
-          <div className="relative order-2 flex min-h-[240px] items-end justify-center md:min-h-[500px] md:justify-end">
-            <div className="absolute inset-x-0 bottom-[8%] mx-auto h-[150px] w-[92%] rounded-[50%] border border-[rgba(79,133,242,0.3)] md:bottom-[3%] md:h-[220px] md:w-[86%]" />
-            <div className="absolute inset-x-0 bottom-[11%] mx-auto h-[104px] w-[72%] rounded-[50%] border border-[rgba(79,133,242,0.2)] md:bottom-[7%] md:h-[152px] md:w-[64%]" />
-            <Image
-              src="/e90/engine.webp"
-              alt={normalizeText(data.h1)}
-              width={522}
-              height={608}
-              priority
-              className="relative z-10 mx-auto h-auto w-[64%] max-w-[270px] object-contain drop-shadow-[0_28px_48px_rgba(0,0,0,0.5)] md:ml-auto md:w-full md:max-w-[522px]"
-            />
-          </div>
-        </div>
-
-        {data.primaryCta ? (
-          <Link
-            href="/quote"
-            className={`btn-cta relative z-10 mt-4 inline-flex min-h-12 items-center justify-center gap-3 rounded-2xl border border-[rgba(114,160,255,0.34)] bg-[linear-gradient(180deg,var(--color-primary)_0%,var(--color-primary-strong)_100%)] px-6 py-3 text-center font-bold text-white shadow-[0_18px_46px_rgba(1,20,48,0.42)] md:hidden ${sectionButton}`}
-          >
-            <span>{ctaLabel}</span>
-            <ArrowIcon />
-          </Link>
-        ) : null}
-
-        {data.trustStrip?.length > 0 ? (
-          <ul
-            className={`relative z-10 mt-3 grid grid-cols-2 gap-2.5 md:mt-[-10px] md:grid-cols-4 md:gap-0 md:overflow-hidden md:rounded-2xl md:border md:shadow-[0_22px_56px_rgba(0,0,0,0.24)] ${
+          <p
+            className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[17px] md:leading-[1.45] ${
               isDark
-                ? "md:border-white/14 md:bg-[linear-gradient(180deg,rgba(7,16,33,0.74)_0%,rgba(3,10,23,0.86)_100%)]"
-                : "md:border-[rgba(11,103,220,0.16)] md:bg-[linear-gradient(180deg,rgba(255,255,255,0.82)_0%,rgba(239,245,252,0.94)_100%)]"
+                ? "text-white/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)] md:text-white/85 md:[text-shadow:none]"
+                : "text-black/90 [text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)] md:text-[var(--color-text-muted)] md:[text-shadow:none]"
             }`}
           >
-            {data.trustStrip.map((item, index) => (
-              <StatCard key={`${item.label}-${index}`} item={item} index={index} isDark={isDark} />
+            {description.split("[BMW-VERIFIED]").map((part, index, array) => (
+              <span key={`${part}-${index}`}>
+                {part}
+                {index < array.length - 1 ? <span className="text-[var(--color-primary)]">[BMW-VERIFIED]</span> : null}
+              </span>
             ))}
-          </ul>
-        ) : null}
+          </p>
+        </div>
+
+        <div className="mt-4 flex w-full flex-col gap-2.5 md:mt-4 md:gap-3">
+          {data.primaryCta ? (
+            <Link
+              href="/quote"
+              className="btn-cta flex w-full items-center justify-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-4 py-3 text-[0.85rem] font-bold text-white no-underline shadow-[0_12px_28px_var(--color-shadow)] md:w-fit md:px-6 md:py-3.5 md:text-[0.95rem]"
+            >
+              <span>{ctaLabel}</span>
+              <ArrowIcon className="h-4 w-4 shrink-0 md:h-5 md:w-5" />
+            </Link>
+          ) : null}
+
+          {data.trustStrip?.length > 0 ? (
+            <>
+              {/* Mobile: all 4 badges in one row */}
+              <div className={`rounded-[8px] border ${cardBorderClass} ${cardBgClass} p-2 backdrop-blur-sm md:hidden`}>
+                <div className="grid grid-cols-4 items-stretch gap-x-1">
+                  {data.trustStrip.map((item, index) => {
+                    const stat = splitStatLabel(item.label);
+                    const label = (stat.lines || []).filter(Boolean).join(" ") || "";
+                    return (
+                      <div
+                        key={`${item.label}-${index}`}
+                        className={`flex flex-col items-center justify-center gap-1 px-0.5 text-center ${index > 0 ? `border-l ${isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]"}` : ""}`}
+                      >
+                        <HomeIcon name={STAT_ICONS[index % STAT_ICONS.length]} size={44} className="h-11 w-11 shrink-0" />
+                        {stat.value ? (
+                          <strong className={`w-full text-center text-[0.78rem] font-bold leading-none ${headingClass}`}>{stat.value}</strong>
+                        ) : null}
+                        <span className={`w-full text-center text-[0.58rem] leading-tight ${badgeTextClass}`}>{label}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Desktop: original badge cards */}
+              <ul
+                className={`relative z-10 hidden w-full max-w-[980px] grid-cols-4 gap-0 overflow-hidden rounded-[8px] border shadow-[0_22px_56px_rgba(0,0,0,0.24)] md:grid ${
+                  isDark
+                    ? "border-white/14 bg-[linear-gradient(180deg,rgba(7,16,33,0.74)_0%,rgba(3,10,23,0.86)_100%)]"
+                    : "border-[rgba(11,103,220,0.16)] bg-[linear-gradient(180deg,rgba(255,255,255,0.82)_0%,rgba(239,245,252,0.94)_100%)]"
+                }`}
+              >
+                {data.trustStrip.map((item, index) => (
+                  <StatCard key={`${item.label}-${index}`} item={item} index={index} isDark={isDark} />
+                ))}
+              </ul>
+            </>
+          ) : null}
+        </div>
       </div>
     </section>
   );

@@ -105,21 +105,21 @@ function StatCard({ item, index, isDark }) {
   );
 }
 
-function HeroTitle({ title, headingClass, accentText }) {
+function HeroTitle({ title, headingClass, accentText, isDark }) {
   const cleanTitle = normalizeText(title);
   const accent = accentText && cleanTitle.includes(accentText) ? accentText : "Replacement Cost";
   const accentIndex = cleanTitle.indexOf(accent);
+  const shadowClass = isDark
+    ? "[text-shadow:0_2px_8px_rgba(0,0,0,0.45)]"
+    : "[text-shadow:0_1px_3px_rgba(255,255,255,0.85),0_2px_10px_rgba(0,0,0,0.12)]";
+  const titleClass = `mt-2 max-w-[700px] font-lora text-[32px] font-medium leading-[1.08] tracking-normal md:text-[50px] md:leading-[1.16] ${shadowClass} ${headingClass}`;
 
   if (accentIndex === -1) {
-    return (
-      <h1 className={`mt-2 max-w-[700px] font-lora text-[32px] font-medium leading-[0.95] tracking-normal md:text-[50px] md:leading-[1.08] ${headingClass}`}>
-        {cleanTitle}
-      </h1>
-    );
+    return <h1 className={titleClass}>{cleanTitle}</h1>;
   }
 
   return (
-    <h1 className={`mt-2 max-w-[700px] font-lora text-[32px] font-medium leading-[0.95] tracking-normal md:text-[50px] md:leading-[1.08] ${headingClass}`}>
+    <h1 className={titleClass}>
       {cleanTitle.slice(0, accentIndex)}
       <span className="text-[var(--color-primary)]">{accent}</span>
       {cleanTitle.slice(accentIndex + accent.length)}
@@ -195,7 +195,7 @@ export default function EngineHero({ data, band = "page" }) {
             </span>
           ) : null}
 
-          <HeroTitle title={data.h1} headingClass={headingClass} accentText={accentToken} />
+          <HeroTitle title={data.h1} headingClass={headingClass} accentText={accentToken} isDark={isDark} />
           <span
             className="mt-2 block h-px w-[7.5rem] md:w-[9rem]"
             style={{

@@ -5,7 +5,7 @@ function normalizeCapacity(raw) {
   const cleaned = String(raw).replace(/[^\d.]/g, "");
   const num = Number(cleaned);
   if (!Number.isFinite(num) || num <= 0) return "";
-  // DVLA often returns cc (e.g. 1995) — store as litres bucket like "2"
+  // DVLA often returns cc (e.g. 1995) - store as litres bucket like "2"
   return String(Math.round(num >= 100 ? num / 1000 : num));
 }
 
@@ -65,7 +65,7 @@ export function toCrmLeadPayload(payload = {}) {
   };
 }
 
-/** Columns we send to CRM — used by email + /leads table. */
+/** Columns we send to CRM - used by email + /leads table. */
 export const CRM_LEAD_FIELDS = [
   { key: "name", label: "Name" },
   { key: "email", label: "Email" },

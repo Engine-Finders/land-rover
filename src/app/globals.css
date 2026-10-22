@@ -106,7 +106,7 @@ a {
   color: var(--color-accent-red);
 }
 
-/* CTA button — primary solid background, dark overlay on hover */
+/* CTA button - primary solid background, dark overlay on hover */
 .btn-cta {
   transition: all 0.2s ease;
 }
@@ -123,7 +123,7 @@ a {
   color: #ffffff;
 }
 
-/* Infinite horizontal ticker (variant hero, etc.) — seamless loop, no seam gap */
+/* Infinite horizontal ticker (variant hero, etc.) - seamless loop, no seam gap */
 @keyframes ticker-marquee {
   from {
     transform: translateX(0);

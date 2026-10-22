@@ -17,7 +17,7 @@ function ArrowIcon({ className = "h-4 w-4" }) {
 }
 
 function TrustStrip({ items, isDark }) {
-  // Mobile strip sits on the dark hero wash — keep a dark glass shell there.
+  // Mobile strip sits on the dark hero wash - keep a dark glass shell there.
   const shell = isDark
     ? "border-white/14 bg-[rgba(16,28,24,0.55)]"
     : "border-white/18 bg-[rgba(12,22,18,0.55)] md:border-[var(--color-glass-border)] md:bg-[var(--color-surface-glass)]";
@@ -239,7 +239,7 @@ export default function HomeSec1({ data, band = "page" }) {
             </div>
           </div>
 
-          {/* Desktop trust strip — 54rem so copy wraps to ~2 lines */}
+          {/* Desktop trust strip - 54rem so copy wraps to ~2 lines */}
           <div className="mt-8 hidden w-[min(100%,54rem)] md:block">
             <TrustStrip items={trustStrip} isDark={isDark} />
           </div>

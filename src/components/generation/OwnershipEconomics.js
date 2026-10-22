@@ -98,7 +98,7 @@ export default function OwnershipEconomics({ data, band = "page" }) {
       className={`relative text-[var(--color-text)] ${sectionBgClass(band)}`}
       style={{ "--section-fade": rgb }}
     >
-      {/* Image sizes to heading block — headings only */}
+      {/* Image sizes to heading block - headings only */}
       <div className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
           <Image
@@ -176,7 +176,7 @@ export default function OwnershipEconomics({ data, band = "page" }) {
         <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-[0.85fr_1.15fr]">
           {data.economicsRule ? (
             <>
-              {/* Mobile: floated icon — title beside it, description wraps under the icon */}
+              {/* Mobile: floated icon - title beside it, description wraps under the icon */}
               <div className="rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-3.5 md:hidden">
                 <span className="mr-3 flex h-14 w-14 float-left items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
                   <HomeIcon name="scale" size={36} className="h-9 w-9" />

@@ -19,7 +19,7 @@ export const metadata = {
     template: "%s | Land Rover & Range Rover Ownership Guide",
   },
   description:
-    "Reliability rankings, real failure data, honest repair-vs-replace economics — for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.",
+    "Reliability rankings, real failure data, honest repair-vs-replace economics - for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.",
   applicationName: "Land Rover & Range Rover Ownership Guide",
   robots: {
     index: true,

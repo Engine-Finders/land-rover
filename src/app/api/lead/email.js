@@ -15,7 +15,7 @@ function escapeHtml(value) {
 }
 
 function row(label, value) {
-  const display = value === undefined || value === null || String(value).trim() === "" ? "—" : String(value);
+  const display = value === undefined || value === null || String(value).trim() === "" ? "-" : String(value);
   return `<tr>
     <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#64748b;font-size:13px;width:38%;">${escapeHtml(label)}</td>
     <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#0f172a;font-size:14px;font-weight:600;">${escapeHtml(display)}</td>

@@ -64,7 +64,7 @@ function ArrowIcon({ className = "h-4 w-4" }) {
 }
 
 function TickerTrack({ items, isDark, bodyTextClass, compact = false }) {
-  // Repeat enough times so one half always fills the viewport — no empty seam on loop.
+  // Repeat enough times so one half always fills the viewport - no empty seam on loop.
   const repeats = Math.max(6, Math.ceil(18 / Math.max(items.length, 1)));
   const half = Array.from({ length: repeats }, () => items).flat();
   // Scale duration with repeats so speed matches the old single-cycle ~28s pace.
@@ -245,7 +245,7 @@ export default function VariantHero({ data, band = "page" }) {
       <section
         className={`relative overflow-hidden text-[var(--color-text)] ${sectionBgClass(band)} ${headingClass}`}
       >
-        {/* Full-bleed hero image — left fades to page bg, right stays visible */}
+        {/* Full-bleed hero image - left fades to page bg, right stays visible */}
         <div className="pointer-events-none absolute inset-0">
           <Image
             src={heroImageMobile}

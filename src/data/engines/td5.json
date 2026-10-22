@@ -1,12 +1,12 @@
 {
   "meta": {
     "slug": "td5",
-    "title": "Land Rover TD5 Engine — Specs, Reliability & Cost",
-    "description": "The TD5 is a refined 5-cylinder diesel — reliable but watch the oil pump bolt. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
+    "title": "Land Rover TD5 Engine - Specs, Reliability & Cost",
+    "description": "The TD5 is a refined 5-cylinder diesel - reliable but watch the oil pump bolt. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
     "canonical": "https://landroverengine.uk/engine/td5",
     "openGraph": {
-      "title": "Land Rover TD5 Engine — Specs, Reliability & Cost",
-      "description": "The TD5 is a refined 5-cylinder diesel — reliable but watch the oil pump bolt. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "title": "Land Rover TD5 Engine - Specs, Reliability & Cost",
+      "description": "The TD5 is a refined 5-cylinder diesel - reliable but watch the oil pump bolt. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/engine/td5",
       "image": "https://landroverengine.uk/images/landrover/engines/td5.jpg",
@@ -14,8 +14,8 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "Land Rover TD5 Engine — Specs, Reliability & Cost",
-      "description": "The TD5 is a refined 5-cylinder diesel — reliable but watch the oil pump bolt. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "title": "Land Rover TD5 Engine - Specs, Reliability & Cost",
+      "description": "The TD5 is a refined 5-cylinder diesel - reliable but watch the oil pump bolt. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "image": "https://landroverengine.uk/images/landrover/engines/td5.jpg"
     },
     "jsonLd": {
@@ -84,7 +84,7 @@
               "name": "Is the TD5 a reliable engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes — the TD5 is widely regarded as one of Land Rover's most dependable modern diesels, with many exceeding 200,000 miles. Its cast-iron block and five-cylinder design are robust, though the electronic injection system requires proper maintenance."
+                "text": "Yes - the TD5 is widely regarded as one of Land Rover's most dependable modern diesels, with many exceeding 200,000 miles. Its cast-iron block and five-cylinder design are robust, though the electronic injection system requires proper maintenance."
               }
             },
             {
@@ -92,7 +92,7 @@
               "name": "What is the most common TD5 failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The most serious TD5 failure is the oil pump bolt working loose — a known issue on early engines that can cause sudden loss of oil pressure and catastrophic bearing failure. Other common issues include injector wiring loom oil contamination and diesel dilution from leaking injector seals."
+                "text": "The most serious TD5 failure is the oil pump bolt working loose - a known issue on early engines that can cause sudden loss of oil pressure and catastrophic bearing failure. Other common issues include injector wiring loom oil contamination and diesel dilution from leaking injector seals."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "How long does the TD5 last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "With proper maintenance — regular oil changes, injector loom checks, and addressing the oil pump bolt on early engines — TD5 engines routinely exceed 200,000 miles, with many well-maintained examples reaching 250,000–350,000+ km (~155,000–217,000+ miles)."
+                "text": "With proper maintenance - regular oil changes, injector loom checks, and addressing the oil pump bolt on early engines - TD5 engines routinely exceed 200,000 miles, with many well-maintained examples reaching 250,000–350,000+ km (~155,000–217,000+ miles)."
               }
             }
           ]
@@ -167,7 +167,7 @@
         },
         {
           "@type": "WebPage",
-          "name": "Land Rover TD5 Engine — Specs, Reliability & Cost",
+          "name": "Land Rover TD5 Engine - Specs, Reliability & Cost",
           "url": "https://landroverengine.uk/engine/td5",
           "author": {
             "@type": "Organization",
@@ -185,8 +185,8 @@
   },
   "hero": {
     "tagPill": "Land Rover • TD5 • Diesel • 2.5L I5 Turbo • 1998–2007",
-    "h1": "Land Rover TD5 Engine — Specs, Reliability & Replacement Cost",
-    "subHeadline": "The Land Rover TD5 is a 2.5-litre five-cylinder turbo diesel — smoother and more refined than the Tdi, with strong tuning potential. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
+    "h1": "Land Rover TD5 Engine - Specs, Reliability & Replacement Cost",
+    "subHeadline": "The Land Rover TD5 is a 2.5-litre five-cylinder turbo diesel - smoother and more refined than the Tdi, with strong tuning potential. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -248,7 +248,7 @@
   },
   "verdictRating": {
     "starRating": "★★★★ out of 5",
-    "confidence": "82% confidence — based on enthusiast consensus, specialist workshop data, and long-term owner reports spanning two decades of real-world use.",
+    "confidence": "82% confidence - based on enthusiast consensus, specialist workshop data, and long-term owner reports spanning two decades of real-world use.",
     "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
@@ -274,7 +274,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "16 (Reconditioned cost (~£4,550 midpoint) as % of lowest typical vehicle value (Defender/Disco 2, ~£5,000–£8,000) = 57–91% — falls in 30–44% bracket → 16)"
+          "score": "16 (Reconditioned cost (~£4,550 midpoint) as % of lowest typical vehicle value (Defender/Disco 2, ~£5,000–£8,000) = 57–91% - falls in 30–44% bracket → 16)"
         },
         {
           "dimension": "Total",
@@ -282,7 +282,7 @@
         }
       ]
     },
-    "oneLineVerdict": "The TD5 is a refined and tunable five-cylinder diesel — its electronics and oil pump bolt are known weak points — buy with full service history and check for oil pressure issues.",
+    "oneLineVerdict": "The TD5 is a refined and tunable five-cylinder diesel - its electronics and oil pump bolt are known weak points - buy with full service history and check for oil pressure issues.",
     "bestFor": "",
     "avoidIf": ""
   },
@@ -313,7 +313,7 @@
         "years": "1998–2002"
       }
     ],
-    "crossBrandNote": "Exclusive to Land Rover — no cross-brand fitment."
+    "crossBrandNote": "Exclusive to Land Rover - no cross-brand fitment."
   },
   "costGuide": {
     "columns": [
@@ -343,7 +343,7 @@
       }
     ],
     "labourEstimate": "Fitting a TD5 typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
-    "sharedCostNote": "Omitted — engine is exclusive to Land Rover.",
+    "sharedCostNote": "Omitted - engine is exclusive to Land Rover.",
     "cta": {
       "label": "→ Compare TD5 engine prices from UK specialists",
       "href": "#"
@@ -359,12 +359,12 @@
       {
         "id": 2,
         "question": "Is the TD5 a reliable engine?",
-        "answer": "Yes — the TD5 is widely regarded as one of Land Rover's most dependable modern diesels, with many exceeding 200,000 miles. Its cast-iron block and five-cylinder design are robust, though the electronic injection system requires proper maintenance."
+        "answer": "Yes - the TD5 is widely regarded as one of Land Rover's most dependable modern diesels, with many exceeding 200,000 miles. Its cast-iron block and five-cylinder design are robust, though the electronic injection system requires proper maintenance."
       },
       {
         "id": 3,
         "question": "What is the most common TD5 failure?",
-        "answer": "The most serious TD5 failure is the oil pump bolt working loose — a known issue on early engines that can cause sudden loss of oil pressure and catastrophic bearing failure. Other common issues include injector wiring loom oil contamination (oil wicking up from the injectors) and diesel dilution from leaking injector seals."
+        "answer": "The most serious TD5 failure is the oil pump bolt working loose - a known issue on early engines that can cause sudden loss of oil pressure and catastrophic bearing failure. Other common issues include injector wiring loom oil contamination (oil wicking up from the injectors) and diesel dilution from leaking injector seals."
       },
       {
         "id": 4,
@@ -374,14 +374,14 @@
       {
         "id": 5,
         "question": "How long does the TD5 last?",
-        "answer": "With proper maintenance — regular oil changes, injector loom checks, and addressing the oil pump bolt on early engines — TD5 engines routinely exceed 200,000 miles, with many well-maintained examples reaching 250,000–350,000+ km (~155,000–217,000+ miles)."
+        "answer": "With proper maintenance - regular oil changes, injector loom checks, and addressing the oil pump bolt on early engines - TD5 engines routinely exceed 200,000 miles, with many well-maintained examples reaching 250,000–350,000+ km (~155,000–217,000+ miles)."
       }
     ]
   },
   "trustCta": {
     "trustPoints": [
       "Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real TD5 owners, as part of the Engine Finders network.",
-      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists — so you see the real market, not just one garage's quote.",
+      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists - so you see the real market, not just one garage's quote.",
       "UK Coverage: From Cornwall to the Highlands, our specialist network covers the whole UK with expert TD5 knowledge."
     ],
     "finalCta": "Find the best Land Rover TD5 engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

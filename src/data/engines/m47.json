@@ -1,12 +1,12 @@
 {
   "meta": {
     "slug": "m47",
-    "title": "BMW M47 (Td4) Engine — Reliability & Cost",
-    "description": "The BMW M47 is a refined, economical turbo diesel — one of the best of its era, but swirl flap failure is its Achilles' heel. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
+    "title": "BMW M47 (Td4) Engine - Reliability & Cost",
+    "description": "The BMW M47 is a refined, economical turbo diesel - one of the best of its era, but swirl flap failure is its Achilles' heel. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
     "canonical": "https://landroverengine.uk/engine/m47",
     "openGraph": {
-      "title": "BMW M47 (Td4) Engine — Reliability & Cost",
-      "description": "The BMW M47 is a refined, economical turbo diesel — one of the best of its era, but swirl flap failure is its Achilles' heel. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "title": "BMW M47 (Td4) Engine - Reliability & Cost",
+      "description": "The BMW M47 is a refined, economical turbo diesel - one of the best of its era, but swirl flap failure is its Achilles' heel. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/engine/m47",
       "image": "https://landroverengine.uk/images/landrover/engines/bmw-m47.jpg",
@@ -14,8 +14,8 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "BMW M47 (Td4) Engine — Reliability & Cost",
-      "description": "The BMW M47 is a refined, economical turbo diesel — one of the best of its era, but swirl flap failure is its Achilles' heel. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "title": "BMW M47 (Td4) Engine - Reliability & Cost",
+      "description": "The BMW M47 is a refined, economical turbo diesel - one of the best of its era, but swirl flap failure is its Achilles' heel. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "image": "https://landroverengine.uk/images/landrover/engines/bmw-m47.jpg"
     },
     "jsonLd": {
@@ -72,7 +72,7 @@
               "name": "Is the BMW M47 (Td4) a reliable engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes — the M47 is considered one of BMW's most reliable diesel fours (4.0★), with many examples exceeding 200,000 miles when properly maintained. Its simplicity and robust construction make it a favourite among Freelander owners."
+                "text": "Yes - the M47 is considered one of BMW's most reliable diesel fours (4.0★), with many examples exceeding 200,000 miles when properly maintained. Its simplicity and robust construction make it a favourite among Freelander owners."
               }
             },
             {
@@ -80,7 +80,7 @@
               "name": "What is the most common M47 failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Swirl flap failure is the most critical — the plastic flaps in the intake manifold can break off and be ingested by the engine, causing catastrophic damage. Other common issues include EGR valve clogging, turbocharger wear, and injector problems."
+                "text": "Swirl flap failure is the most critical - the plastic flaps in the intake manifold can break off and be ingested by the engine, causing catastrophic damage. Other common issues include EGR valve clogging, turbocharger wear, and injector problems."
               }
             },
             {
@@ -96,7 +96,7 @@
               "name": "Is the Land Rover M47 the same as BMW's version?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes — the M47D20 engine is mechanically identical across BMW and Land Rover fitments. Land Rover Freelander applications used slightly different ECU calibrations and ancillaries, but the core engine, block, and internals are the same."
+                "text": "Yes - the M47D20 engine is mechanically identical across BMW and Land Rover fitments. Land Rover Freelander applications used slightly different ECU calibrations and ancillaries, but the core engine, block, and internals are the same."
               }
             }
           ]
@@ -155,7 +155,7 @@
         },
         {
           "@type": "WebPage",
-          "name": "BMW M47 (Td4) Engine — Reliability & Cost",
+          "name": "BMW M47 (Td4) Engine - Reliability & Cost",
           "url": "https://landroverengine.uk/engine/m47",
           "author": {
             "@type": "Organization",
@@ -173,8 +173,8 @@
   },
   "hero": {
     "tagPill": "Land Rover • BMW M47 (Td4) • Diesel • 2.0L I4 Turbo • 1998–2007",
-    "h1": "BMW M47 (Freelander 1 Td4) Engine — Specs, Reliability & Replacement Cost",
-    "subHeadline": "The BMW M47 is a refined, economical turbo diesel — one of the best small diesels of its era, but the swirl flap issue is its Achilles' heel. Backed by real UK enquiries in 2025 [ESTIMATED].",
+    "h1": "BMW M47 (Freelander 1 Td4) Engine - Specs, Reliability & Replacement Cost",
+    "subHeadline": "The BMW M47 is a refined, economical turbo diesel - one of the best small diesels of its era, but the swirl flap issue is its Achilles' heel. Backed by real UK enquiries in 2025 [ESTIMATED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -236,7 +236,7 @@
   },
   "verdictRating": {
     "starRating": "★★★★ out of 5",
-    "confidence": "86% confidence — based on 20+ years of real-world data, enthusiast consensus, and specialist workshop reports.",
+    "confidence": "86% confidence - based on 20+ years of real-world data, enthusiast consensus, and specialist workshop reports.",
     "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
@@ -270,7 +270,7 @@
         }
       ]
     },
-    "oneLineVerdict": "The M47 is a refined, economical diesel four — swirl flap failure is the main risk — buy with documented swirl flap history and regular oil changes.",
+    "oneLineVerdict": "The M47 is a refined, economical diesel four - swirl flap failure is the main risk - buy with documented swirl flap history and regular oil changes.",
     "bestFor": "",
     "avoidIf": ""
   },
@@ -335,12 +335,12 @@
       {
         "id": 2,
         "question": "Is the BMW M47 (Td4) a reliable engine?",
-        "answer": "Yes — the M47 is considered one of BMW's most reliable diesel fours (4.0★), with many examples exceeding 200,000 miles when properly maintained. Its simplicity and robust construction make it a favourite among Freelander owners."
+        "answer": "Yes - the M47 is considered one of BMW's most reliable diesel fours (4.0★), with many examples exceeding 200,000 miles when properly maintained. Its simplicity and robust construction make it a favourite among Freelander owners."
       },
       {
         "id": 3,
         "question": "What is the most common M47 failure?",
-        "answer": "Swirl flap failure is the most critical — the plastic flaps in the intake manifold can break off and be ingested by the engine, causing catastrophic damage. Other common issues include EGR valve clogging, turbocharger wear, and injector problems."
+        "answer": "Swirl flap failure is the most critical - the plastic flaps in the intake manifold can break off and be ingested by the engine, causing catastrophic damage. Other common issues include EGR valve clogging, turbocharger wear, and injector problems."
       },
       {
         "id": 4,
@@ -350,14 +350,14 @@
       {
         "id": 5,
         "question": "Is the Land Rover M47 the same as BMW's version?",
-        "answer": "Yes — the M47D20 engine is mechanically identical across BMW and Land Rover fitments. Land Rover Freelander applications used slightly different ECU calibrations and ancillaries, but the core engine, block, and internals are the same."
+        "answer": "Yes - the M47D20 engine is mechanically identical across BMW and Land Rover fitments. Land Rover Freelander applications used slightly different ECU calibrations and ancillaries, but the core engine, block, and internals are the same."
       }
     ]
   },
   "trustCta": {
     "trustPoints": [
       "Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real M47 owners, as part of the Engine Finders network.",
-      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists — so you see the real market, not just one garage's quote.",
+      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists - so you see the real market, not just one garage's quote.",
       "UK Coverage: From Cornwall to the Highlands, our specialist network covers the whole UK with expert M47 Td4 knowledge."
     ],
     "finalCta": "Find the best BMW M47 (Td4) engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

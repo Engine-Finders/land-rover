@@ -1,12 +1,12 @@
 {
   "meta": {
     "slug": "200-300tdi",
-    "title": "Land Rover 200Tdi / 300Tdi Engine — Reliability",
-    "description": "The 200Tdi/300Tdi are among the most reliable diesel fours ever built — backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
+    "title": "Land Rover 200Tdi / 300Tdi Engine - Reliability",
+    "description": "The 200Tdi/300Tdi are among the most reliable diesel fours ever built - backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
     "canonical": "https://landroverengine.uk/engine/200-300tdi",
     "openGraph": {
-      "title": "Land Rover 200Tdi / 300Tdi Engine — Reliability",
-      "description": "The 200Tdi/300Tdi are among the most reliable diesel fours ever built — backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "title": "Land Rover 200Tdi / 300Tdi Engine - Reliability",
+      "description": "The 200Tdi/300Tdi are among the most reliable diesel fours ever built - backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/engine/200-300tdi",
       "image": "https://landroverengine.uk/images/landrover/engines/200-300tdi.jpg",
@@ -14,8 +14,8 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "Land Rover 200Tdi / 300Tdi Engine — Reliability",
-      "description": "The 200Tdi/300Tdi are among the most reliable diesel fours ever built — backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
+      "title": "Land Rover 200Tdi / 300Tdi Engine - Reliability",
+      "description": "The 200Tdi/300Tdi are among the most reliable diesel fours ever built - backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "image": "https://landroverengine.uk/images/landrover/engines/200-300tdi.jpg"
     },
     "jsonLd": {
@@ -84,7 +84,7 @@
               "name": "Is the 200Tdi / 300Tdi a reliable engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes — both are widely considered among the most reliable Land Rover engines ever built. Their fully mechanical fuel systems, lack of complex electronics, and simple OHV design make them exceptionally durable, with many exceeding 250,000–300,000 miles."
+                "text": "Yes - both are widely considered among the most reliable Land Rover engines ever built. Their fully mechanical fuel systems, lack of complex electronics, and simple OHV design make them exceptionally durable, with many exceeding 250,000–300,000 miles."
               }
             },
             {
@@ -92,7 +92,7 @@
               "name": "What is the most common 200Tdi / 300Tdi failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Head gasket failure from overheating is the most common serious issue — typically caused by cooling system neglect. Early 300Tdi units also suffered timing belt idler alignment problems, and 200Tdi crank dampers can disintegrate."
+                "text": "Head gasket failure from overheating is the most common serious issue - typically caused by cooling system neglect. Early 300Tdi units also suffered timing belt idler alignment problems, and 200Tdi crank dampers can disintegrate."
               }
             },
             {
@@ -167,7 +167,7 @@
         },
         {
           "@type": "WebPage",
-          "name": "Land Rover 200Tdi / 300Tdi Engine — Reliability",
+          "name": "Land Rover 200Tdi / 300Tdi Engine - Reliability",
           "url": "https://landroverengine.uk/engine/200-300tdi",
           "author": {
             "@type": "Organization",
@@ -185,8 +185,8 @@
   },
   "hero": {
     "tagPill": "Land Rover • 200Tdi / 300Tdi • Diesel • 2.5L I4 Turbo • 1989–2006",
-    "h1": "Land Rover 200Tdi / 300Tdi Engine — Specs, Reliability & Replacement Cost",
-    "subHeadline": "The Land Rover 200Tdi and 300Tdi are 2.5-litre turbo diesels — legendary for bulletproof mechanical reliability and global field-repairability. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
+    "h1": "Land Rover 200Tdi / 300Tdi Engine - Specs, Reliability & Replacement Cost",
+    "subHeadline": "The Land Rover 200Tdi and 300Tdi are 2.5-litre turbo diesels - legendary for bulletproof mechanical reliability and global field-repairability. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -248,7 +248,7 @@
   },
   "verdictRating": {
     "starRating": "★★★★½ out of 5",
-    "confidence": "85% confidence — based on enthusiast consensus, specialist workshop data, and long-term owner reports.",
+    "confidence": "85% confidence - based on enthusiast consensus, specialist workshop data, and long-term owner reports.",
     "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
@@ -266,7 +266,7 @@
         },
         {
           "dimension": "Repairability",
-          "score": "20 (Fully mechanical, no ECU, parts widely available, field-repairable anywhere — the gold standard)"
+          "score": "20 (Fully mechanical, no ECU, parts widely available, field-repairable anywhere - the gold standard)"
         },
         {
           "dimension": "Parts Supply",
@@ -282,7 +282,7 @@
         }
       ]
     },
-    "oneLineVerdict": "The 200Tdi and 300Tdi are among the most reliable diesel fours ever built — both are fully mechanical and simple to fix anywhere — buy on condition and documented history.",
+    "oneLineVerdict": "The 200Tdi and 300Tdi are among the most reliable diesel fours ever built - both are fully mechanical and simple to fix anywhere - buy on condition and documented history.",
     "bestFor": "",
     "avoidIf": ""
   },
@@ -313,7 +313,7 @@
         "years": "1992–1996"
       }
     ],
-    "crossBrandNote": "Exclusive to Land Rover — no cross-brand fitment."
+    "crossBrandNote": "Exclusive to Land Rover - no cross-brand fitment."
   },
   "costGuide": {
     "columns": [
@@ -343,7 +343,7 @@
       }
     ],
     "labourEstimate": "Fitting a 200Tdi or 300Tdi typically takes 15–25 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
-    "sharedCostNote": "Omitted — engine is exclusive to Land Rover.",
+    "sharedCostNote": "Omitted - engine is exclusive to Land Rover.",
     "cta": {
       "label": "→ Compare 200Tdi / 300Tdi engine prices from UK specialists",
       "href": "#"
@@ -359,12 +359,12 @@
       {
         "id": 2,
         "question": "Is the 200Tdi / 300Tdi a reliable engine?",
-        "answer": "Yes — both are widely considered among the most reliable Land Rover engines ever built. Their fully mechanical fuel systems, lack of complex electronics, and simple OHV design make them exceptionally durable, with many exceeding 250,000–300,000 miles."
+        "answer": "Yes - both are widely considered among the most reliable Land Rover engines ever built. Their fully mechanical fuel systems, lack of complex electronics, and simple OHV design make them exceptionally durable, with many exceeding 250,000–300,000 miles."
       },
       {
         "id": 3,
         "question": "What is the most common 200Tdi / 300Tdi failure?",
-        "answer": "Head gasket failure from overheating is the most common serious issue — typically caused by cooling system neglect. Early 300Tdi units also suffered timing belt idler alignment problems, and 200Tdi crank dampers can disintegrate."
+        "answer": "Head gasket failure from overheating is the most common serious issue - typically caused by cooling system neglect. Early 300Tdi units also suffered timing belt idler alignment problems, and 200Tdi crank dampers can disintegrate."
       },
       {
         "id": 4,
@@ -381,7 +381,7 @@
   "trustCta": {
     "trustPoints": [
       "Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real 200Tdi and 300Tdi owners, as part of the Engine Finders network.",
-      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists — so you see the real market, not just one garage's quote.",
+      "Compare Companies: We compare genuine reconditioned and used engine prices from vetted UK specialists - so you see the real market, not just one garage's quote.",
       "UK Coverage: From Cornwall to the Highlands, our specialist network covers the whole UK with expert 200Tdi and 300Tdi knowledge."
     ],
     "finalCta": "Find the best Land Rover 200Tdi or 300Tdi engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

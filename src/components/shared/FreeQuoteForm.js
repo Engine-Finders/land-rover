@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { HomeIcon } from "@/components/home/homeIcons";
 import { buildQuoteLeadPayload } from "@/app/api/lead/crm";
+import { DEFAULT_VEHICLE_IMAGE, matchVehicleImage } from "@/lib/matchVehicleImage";
 
 const HEADER_BG = "/sec2-bg.webp";
-const CAR_IMAGE = "/right.webp";
 
 const emptyVehicle = {
   vrm: "",
@@ -140,11 +140,11 @@ function Icon({ name, className = "h-4 w-4" }) {
 
 function Field({ id, label, icon, children }) {
   return (
-    <label htmlFor={id} className="block">
-      <span className="mb-1.5 block text-[13px] font-bold text-[var(--color-text)]">{label}</span>
+    <label htmlFor={id} className="block min-w-0">
+      <span className="mb-1 block text-[12px] font-bold text-[var(--color-text)] sm:text-[13px]">{label}</span>
       <span className="relative block">
-        <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--color-text-soft)]">
-          <Icon name={icon} className="h-[18px] w-[18px]" />
+        <span className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-[var(--color-text-soft)]">
+          <Icon name={icon} className="h-4 w-4" />
         </span>
         {children}
       </span>
@@ -153,7 +153,7 @@ function Field({ id, label, icon, children }) {
 }
 
 const inputClass =
-  "w-full rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] py-3 pl-10 pr-3 text-[14px] text-[var(--color-text)] outline-none placeholder:text-[var(--color-text-soft)] focus:border-[var(--color-primary)]";
+  "w-full rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] py-2.5 pl-9 pr-2.5 text-[13px] text-[var(--color-text)] outline-none placeholder:text-[var(--color-text-soft)] focus:border-[var(--color-primary)] sm:text-[14px]";
 
 function UkPlate({ value, onChange, readOnly = false, inputId = "sticky-reg" }) {
   return (
@@ -210,6 +210,10 @@ export default function FreeQuoteSticky() {
   const vehicleReady = Boolean(vehicle.vrm && (vehicle.brand || vehicle.series || vehicle.year));
   const engineDisplay = useMemo(() => engineLitres(vehicle.engineCapacity), [vehicle.engineCapacity]);
   const modelLine = [vehicle.series, vehicle.fuelType].filter(Boolean).join(" · ");
+  const vehicleImage = useMemo(
+    () => (vehicleReady ? matchVehicleImage(vehicle) : DEFAULT_VEHICLE_IMAGE),
+    [vehicle, vehicleReady],
+  );
 
   function resetForm() {
     setRegInput("");
@@ -305,6 +309,7 @@ export default function FreeQuoteSticky() {
       const payload = buildQuoteLeadPayload({
         contact: { name, phone, email, postcode, remarks, honeypot },
         vehicle,
+        pageUrl: typeof window !== "undefined" ? window.location.href : "",
       });
 
       const response = await fetch("/api/lead", {
@@ -352,7 +357,7 @@ export default function FreeQuoteSticky() {
             className="relative z-[61] flex max-h-[94vh] w-full max-w-[520px] flex-col overflow-hidden rounded-[18px] bg-[var(--color-page)] shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
           >
             {/* Header — sec2-bg, no logo */}
-            <div className="relative shrink-0 overflow-hidden px-5 pb-8 pt-5 sm:px-6 sm:pt-6">
+            <div className="relative shrink-0 overflow-hidden px-4 pb-6 pt-4 sm:px-5 sm:pb-7 sm:pt-5">
               <Image src={HEADER_BG} alt="" fill priority sizes="520px" className="object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-[var(--color-page)]" />
 
@@ -360,48 +365,48 @@ export default function FreeQuoteSticky() {
                 ref={closeRef}
                 type="button"
                 onClick={closeModal}
-                className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/35 bg-black/25 text-white backdrop-blur-sm hover:bg-black/45"
+                className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full border border-white/35 bg-black/25 text-white backdrop-blur-sm hover:bg-black/45"
                 aria-label="Close"
               >
                 <Icon name="close" className="h-4 w-4" />
               </button>
 
-              <div className="relative z-[1] max-w-[380px] pr-10">
+              <div className="relative z-[1] max-w-[380px] pr-9">
                 <h2
                   id={titleId}
-                  className="font-lora text-[28px] font-medium leading-[1.15] tracking-normal text-white sm:text-[32px]"
+                  className="font-lora text-[24px] font-medium leading-[1.15] tracking-normal text-white sm:text-[30px]"
                 >
                   Get My Vehicle <span className="text-[var(--color-accent)]">Information</span>
                 </h2>
-                <p className="mt-2 text-[13px] leading-[1.45] text-white/85 sm:text-[14px]">
+                <p className="mt-1.5 text-[12px] leading-[1.4] text-white/85 sm:text-[13px]">
                   Enter your vehicle registration to find best replacement engine quote.
                 </p>
               </div>
             </div>
 
             {/* Body */}
-            <div className="relative -mt-4 flex min-h-0 flex-1 flex-col overflow-y-auto rounded-t-[18px] bg-[var(--color-surface)] px-4 pb-5 pt-4 sm:px-5 sm:pb-6">
+            <div className="relative -mt-3 flex min-h-0 flex-1 flex-col overflow-y-auto rounded-t-[16px] bg-[var(--color-surface)] px-3 pb-4 pt-3 sm:px-4 sm:pb-5 sm:pt-4">
               {submitted ? (
-                <div className="flex flex-col items-center px-2 py-10 text-center">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-accent-green)] text-white">
+                <div className="flex flex-col items-center px-2 py-8 text-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-accent-green)] text-white">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
                       <path d="M6 14l6 6 10-10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
-                  <p className="mt-4 text-xl font-bold text-[var(--color-text)]">Quote Request Sent!</p>
-                  <p className="mt-2 max-w-sm text-sm text-[var(--color-text-muted)]">
+                  <p className="mt-3 text-lg font-bold text-[var(--color-text)]">Quote Request Sent!</p>
+                  <p className="mt-1.5 max-w-sm text-sm text-[var(--color-text-muted)]">
                     We&apos;ve received your details and will be contacting you soon.
                   </p>
                   <button
                     type="button"
                     onClick={closeModal}
-                    className="btn-cta mt-6 rounded-[8px] bg-[var(--color-primary)] px-5 py-2.5 text-sm font-bold text-white"
+                    className="btn-cta mt-5 rounded-[8px] bg-[var(--color-primary)] px-5 py-2.5 text-sm font-bold text-white"
                   >
                     Close
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-3">
                   {/* State 1: UK plate + search */}
                   {!vehicleReady ? (
                     <div className="grid gap-2">
@@ -411,7 +416,7 @@ export default function FreeQuoteSticky() {
                           type="button"
                           onClick={lookupVehicle}
                           disabled={lookupLoading}
-                          className="btn-cta inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-4 text-[14px] font-bold text-white hover:bg-[var(--color-primary-strong)] disabled:opacity-60"
+                          className="btn-cta inline-flex min-h-[44px] shrink-0 items-center justify-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-3 text-[13px] font-bold text-white hover:bg-[var(--color-primary-strong)] disabled:opacity-60 sm:min-h-[48px] sm:px-4 sm:text-[14px]"
                         >
                           {lookupLoading ? (
                             <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
@@ -426,41 +431,48 @@ export default function FreeQuoteSticky() {
                     </div>
                   ) : (
                     /* State 2: car + vehicle summary */
-                    <div className="overflow-hidden rounded-[12px] border border-[var(--color-border)] bg-[var(--color-page-soft)]">
-                      <div className="grid grid-cols-[minmax(0,0.95fr)_minmax(0,1.15fr)] gap-3 p-3 sm:gap-4 sm:p-4">
-                        <div className="relative min-h-[120px] overflow-hidden rounded-[10px] bg-[var(--color-surface)]">
-                          <Image src={CAR_IMAGE} alt="" fill sizes="200px" className="object-contain object-center p-1" />
+                    <div className="overflow-hidden rounded-[10px] border border-[var(--color-border)] bg-[var(--color-page-soft)]">
+                      <div className="grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)] gap-2 p-2.5 sm:gap-3 sm:p-3">
+                        <div className="relative min-h-[96px] overflow-hidden rounded-[8px] bg-[var(--color-surface)] sm:min-h-[112px]">
+                          <Image
+                            key={vehicleImage}
+                            src={vehicleImage}
+                            alt={[vehicle.brand, vehicle.series].filter(Boolean).join(" ") || "Vehicle"}
+                            fill
+                            sizes="200px"
+                            className="object-contain object-center p-1"
+                          />
                         </div>
                         <div className="min-w-0">
-                          <div className="mb-2 max-w-[170px]">
+                          <div className="mb-1.5 max-w-[150px]">
                             <UkPlate value={vehicle.vrm || regInput} readOnly />
                           </div>
-                          <p className="font-lora text-[17px] font-medium leading-tight text-[var(--color-text)]">
+                          <p className="font-lora text-[15px] font-medium leading-tight text-[var(--color-text)] sm:text-[16px]">
                             {vehicle.brand || "Land Rover"} {vehicle.series || ""}
                           </p>
                           {modelLine ? (
-                            <p className="mt-0.5 text-[13px] text-[var(--color-text-muted)]">{modelLine}</p>
+                            <p className="mt-0.5 text-[12px] text-[var(--color-text-muted)]">{modelLine}</p>
                           ) : null}
-                          <ul className="mt-3 grid gap-1.5 text-[13px] text-[var(--color-text)]">
-                            <li className="flex items-center gap-2">
+                          <ul className="mt-2 grid gap-1 text-[12px] text-[var(--color-text)] sm:text-[13px]">
+                            <li className="flex items-center gap-1.5">
                               <Icon name="calendar" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
                               <span>
                                 <strong className="font-semibold">Year:</strong> {vehicle.year || "—"}
                               </span>
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-1.5">
                               <Icon name="fuel" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
                               <span>
                                 <strong className="font-semibold">Fuel Type:</strong> {vehicle.fuelType || "—"}
                               </span>
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-1.5">
                               <Icon name="engine" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
                               <span>
                                 <strong className="font-semibold">Engine:</strong> {engineDisplay || "—"}
                               </span>
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-1.5">
                               <span
                                 className="inline-block h-3.5 w-3.5 rounded-full border border-black/15"
                                 style={{ background: colourSwatch(vehicle.colour) }}
@@ -477,7 +489,7 @@ export default function FreeQuoteSticky() {
                               setVehicle(emptyVehicle);
                               setLookupError("");
                             }}
-                            className="mt-2 text-[12px] font-semibold text-[var(--color-primary)] hover:underline"
+                            className="mt-1.5 text-[11px] font-semibold text-[var(--color-primary)] hover:underline"
                           >
                             Change registration
                           </button>
@@ -487,13 +499,13 @@ export default function FreeQuoteSticky() {
                   )}
 
                   <div>
-                    <p className="font-lora text-[18px] font-medium text-[var(--color-text)]">
+                    <p className="font-lora text-[16px] font-medium text-[var(--color-text)] sm:text-[17px]">
                       Enter Your <span className="text-[var(--color-primary)]">Details</span>
                     </p>
-                    <span className="mt-1.5 block h-[3px] w-16 rounded-full bg-[var(--color-accent)]" aria-hidden="true" />
+                    <span className="mt-1 block h-[3px] w-14 rounded-full bg-[var(--color-accent)]" aria-hidden="true" />
                   </div>
 
-                  <div className="grid gap-3 sm:grid-cols-2">
+                  <div className="grid grid-cols-2 gap-2 sm:gap-3">
                     <Field id="fq-name" label="Name" icon="user">
                       <input
                         id="fq-name"
@@ -545,22 +557,22 @@ export default function FreeQuoteSticky() {
                   </div>
 
                   <label htmlFor="fq-remarks" className="block">
-                    <span className="mb-1.5 block text-[13px] font-bold text-[var(--color-text)]">
+                    <span className="mb-1 block text-[12px] font-bold text-[var(--color-text)] sm:text-[13px]">
                       Any Remarks{" "}
-                      <span className="font-medium text-[var(--color-text-soft)]">(Additional Information – Optional)</span>
+                      <span className="font-medium text-[var(--color-text-soft)]">(Optional)</span>
                     </span>
                     <span className="relative block">
-                      <span className="pointer-events-none absolute left-3 top-3.5 text-[var(--color-text-soft)]">
-                        <Icon name="chat" className="h-[18px] w-[18px]" />
+                      <span className="pointer-events-none absolute left-2.5 top-3 text-[var(--color-text-soft)]">
+                        <Icon name="chat" className="h-4 w-4" />
                       </span>
                       <textarea
                         id="fq-remarks"
                         name="description"
-                        rows={3}
+                        rows={2}
                         value={remarks}
                         onChange={(event) => setRemarks(event.target.value)}
                         placeholder="Please enter any info you would like us to know."
-                        className={`${inputClass} min-h-[88px] resize-y pt-3`}
+                        className={`${inputClass} min-h-[72px] resize-y pt-2.5`}
                       />
                     </span>
                   </label>
@@ -584,24 +596,24 @@ export default function FreeQuoteSticky() {
                   <button
                     type="submit"
                     disabled={submitLoading || !vehicleReady}
-                    className="btn-cta inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-[10px] bg-[var(--color-primary)] px-4 text-[15px] font-bold text-white hover:bg-[var(--color-primary-strong)] disabled:cursor-not-allowed disabled:opacity-50"
+                    className="btn-cta inline-flex min-h-[46px] w-full items-center justify-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-3 text-[13px] font-bold text-white hover:bg-[var(--color-primary-strong)] disabled:cursor-not-allowed disabled:opacity-50 sm:min-h-[50px] sm:text-[14px]"
                   >
                     {submitLoading ? (
                       <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
                     ) : (
-                      <HomeIcon name="quote" size={28} className="h-7 w-7 shrink-0" />
+                      <HomeIcon name="quote" size={24} className="h-6 w-6 shrink-0" />
                     )}
-                    <span>{submitLoading ? "Sending…" : "Get Your Free Replacement Engine Quote"}</span>
+                    <span className="text-balance">{submitLoading ? "Sending…" : "Get Your Free Replacement Engine Quote"}</span>
                     {!submitLoading ? <Icon name="arrow" className="h-4 w-4" /> : null}
                   </button>
 
                   {!vehicleReady ? (
-                    <p className="text-center text-[12px] text-[var(--color-text-soft)]">
+                    <p className="text-center text-[11px] text-[var(--color-text-soft)]">
                       Enter a registration and tap Get Instant Quote first.
                     </p>
                   ) : null}
 
-                  <p className="flex items-start justify-center gap-2 text-center text-[11px] leading-[1.4] text-[var(--color-text-soft)] sm:text-[12px]">
+                  <p className="flex items-start justify-center gap-1.5 text-center text-[10px] leading-[1.35] text-[var(--color-text-soft)] sm:text-[11px]">
                     <Icon name="lock" className="mt-0.5 h-3.5 w-3.5 shrink-0" />
                     <span>Your details are secure, no spam — genuine quote from UK vetted engine specialists only.</span>
                   </p>

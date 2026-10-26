@@ -10,10 +10,10 @@ function normalizeCapacity(raw) {
 }
 
 /**
- * Build quote payload from form state (contact + vehicle + optional calculator).
+ * Build quote payload from form state (contact + vehicle + optional calculator / page URL).
  * Calculator is for email only; strip before CRM with toCrmLeadPayload().
  */
-export function buildQuoteLeadPayload({ contact, vehicle, calculator = null }) {
+export function buildQuoteLeadPayload({ contact, vehicle, calculator = null, pageUrl = "" } = {}) {
   const vrm = String(vehicle?.vrm || "").replace(/\s+/g, "").toUpperCase();
   const series = vehicle?.series || "";
   const brand = vehicle?.brand || "";
@@ -34,6 +34,7 @@ export function buildQuoteLeadPayload({ contact, vehicle, calculator = null }) {
     fuel_type: vehicle?.fuelType || "",
     vehicle_part: "Engine",
     source: LEAD_SOURCE,
+    page_url: String(pageUrl || "").trim(),
     honeypot: contact?.honeypot || "",
   };
 
@@ -62,6 +63,7 @@ export function toCrmLeadPayload(payload = {}) {
     fuel_type: payload.fuel_type || payload.fuelType || "",
     vehicle_part: payload.vehicle_part || "Engine",
     source: payload.source || LEAD_SOURCE,
+    page_url: payload.page_url || "",
   };
 }
 
@@ -82,6 +84,7 @@ export const CRM_LEAD_FIELDS = [
   { key: "fuel_type", label: "Fuel type" },
   { key: "vehicle_part", label: "Part" },
   { key: "source", label: "Source" },
+  { key: "page_url", label: "Page URL" },
 ];
 
 /**

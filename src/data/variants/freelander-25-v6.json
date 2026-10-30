@@ -11,14 +11,14 @@
       "description": "Land Rover Freelander 2.5 V6 - real UK costs, head gasket & cambelt insight, and honest reliability data for the Rover KV6. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/freelander/25-v6",
-      "image": "https://landroverengine.uk/images/landrover/hero/freelander-25-v6.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "2.5 V6 Engine Replacement Cost UK - Compare Quotes",
       "description": "Land Rover Freelander 2.5 V6 - real UK costs, head gasket & cambelt insight, and honest reliability data for the Rover KV6.",
-      "image": "https://landroverengine.uk/images/landrover/hero/freelander-25-v6.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -127,7 +127,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

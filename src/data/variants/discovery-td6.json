@@ -11,14 +11,14 @@
       "description": "Land Rover Discovery TD6 / SDV6 3.0 V6 diesel - real UK costs, crank bearing watchpoint and maintenance advice. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/discovery/td6",
-      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-td6.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Discovery TD6 Engine Replacement Cost UK - Compare Quotes",
       "description": "Land Rover Discovery TD6 / SDV6 3.0 V6 diesel - real UK costs, crank bearing watchpoint and maintenance advice.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-td6.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

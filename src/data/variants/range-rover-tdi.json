@@ -11,14 +11,14 @@
       "description": "Land Rover Range Rover Tdi – 200Tdi and 300Tdi mechanical diesels. Real UK costs, timing belt facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/range-rover/tdi",
-      "image": "https://landroverengine.uk/images/land-rover/hero/tdi.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Range Rover Tdi Engine Cost UK - Compare Quotes",
       "description": "Land Rover Range Rover Tdi – 200Tdi and 300Tdi mechanical diesels. Real UK costs, timing belt facts, and specialist quotes.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/tdi.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -139,7 +139,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

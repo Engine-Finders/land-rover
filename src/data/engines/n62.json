@@ -9,14 +9,14 @@
       "description": "The BMW N62 V8 is a smooth, advanced engine - but valve stem seals and coolant leaks are well-documented weaknesses. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/engine/n62",
-      "image": "https://landroverengine.uk/images/landrover/engines/bmw-n62.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "landroverengine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW N62 4.4 V8 Engine - Reliability & Cost",
       "description": "The BMW N62 V8 is a smooth, advanced engine - but valve stem seals and coolant leaks are well-documented weaknesses. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
-      "image": "https://landroverengine.uk/images/landrover/engines/bmw-n62.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -105,7 +105,7 @@
           "@type": "Organization",
           "name": "landroverengine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

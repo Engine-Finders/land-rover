@@ -11,14 +11,14 @@
       "description": "Land Rover Discovery SD4 (204DTD) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your 2.0-litre Ingenium diesel.",
       "type": "website",
       "url": "https://landroverengine.uk/discovery/sd4",
-      "image": "https://landroverengine.uk/images/land-rover/hero/sd4.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "SD4 Engine Replacement Cost UK - Compare Quotes",
       "description": "Land Rover Discovery SD4 (204DTD) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/sd4.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -127,7 +127,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

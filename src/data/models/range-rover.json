@@ -9,9 +9,9 @@
       "title": "Range Rover Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Range Rover engine - TDV6 to SDV8. 5 generations, real UK costs and reliability data. Compare prices from vetted JLR specialists today.",
       "type": "website",
-      "url": "https://rangeroverengine.uk/range-rover/",
-      "image": "https://rangeroverengine.uk/images/range-rover-hero.jpg",
-      "siteName": "RangeRoverEngines.uk"
+      "url": "https://landroverengine.uk/hero-day.webp",
+      "image": "https://landroverengine.uk/hero-day.webp",
+      "siteName": "landroverengine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
@@ -28,13 +28,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://rangeroverengine.uk/"
+              "item": "https://landroverengine.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover",
-              "item": "https://rangeroverengine.uk/range-rover/"
+              "item": "https://landroverengine.uk/hero-day.webp"
             }
           ]
         },
@@ -46,31 +46,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Range Rover Classic (1970–1996)",
-              "url": "https://rangeroverengine.uk/range-rover/classic/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Range Rover P38A (1994–2002)",
-              "url": "https://rangeroverengine.uk/range-rover/p38/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Range Rover L322 (2002–2012)",
-              "url": "https://rangeroverengine.uk/range-rover/l322/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Range Rover L405 (2012–2021)",
-              "url": "https://rangeroverengine.uk/range-rover/l405/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "Range Rover L460 (2022–present)",
-              "url": "https://rangeroverengine.uk/range-rover/l460/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             }
           ]
         },
@@ -82,97 +82,97 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Rover V8 Classic",
-              "url": "https://rangeroverengine.uk/engines/rover-v8/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "300Tdi Diesel",
-              "url": "https://rangeroverengine.uk/engines/300tdi/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.5 VM Diesel",
-              "url": "https://rangeroverengine.uk/engines/25-vm/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "4.0/4.6 Rover V8 (P38)",
-              "url": "https://rangeroverengine.uk/engines/rover-v8-p38/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "2.5 DSE BMW M51",
-              "url": "https://rangeroverengine.uk/engines/m51-dse/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M62 4.4 BMW V8",
-              "url": "https://rangeroverengine.uk/engines/m62/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "M57 Td6 BMW Diesel",
-              "url": "https://rangeroverengine.uk/engines/m57-td6/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "4.4 AJ-V8",
-              "url": "https://rangeroverengine.uk/engines/aj-v8-44/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "368DT TDV8 3.6",
-              "url": "https://rangeroverengine.uk/engines/368dt/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "448DT TDV8/SDV8 4.4",
-              "url": "https://rangeroverengine.uk/engines/448dt/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 11,
               "name": "306DT TDV6/SDV6 3.0",
-              "url": "https://rangeroverengine.uk/engines/306dt/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 12,
               "name": "AJ133 5.0 V8 SC",
-              "url": "https://rangeroverengine.uk/engines/aj133/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 13,
               "name": "204PT P400e PHEV",
-              "url": "https://rangeroverengine.uk/engines/204pt/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 14,
               "name": "AJ20D6 D300/D350",
-              "url": "https://rangeroverengine.uk/engines/aj20d6/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 15,
               "name": "AJ20P6 P400",
-              "url": "https://rangeroverengine.uk/engines/aj20p6/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             },
             {
               "@type": "ListItem",
               "position": 16,
               "name": "P530 4.4 V8",
-              "url": "https://rangeroverengine.uk/engines/p530-44-v8/"
+              "url": "https://landroverengine.uk/hero-day.webp"
             }
           ]
         },
@@ -247,9 +247,9 @@
         },
         {
           "@type": "Organization",
-          "name": "RangeRoverEngines.uk",
-          "url": "https://rangeroverengine.uk/",
-          "logo": "https://rangeroverengine.uk/images/rangeroverengines-logo.png",
+          "name": "landroverengine.uk",
+          "url": "https://landroverengine.uk/",
+          "logo": "https://landroverengine.uk/hero-day.webp",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -260,7 +260,7 @@
           "serviceType": "Range Rover Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "RangeRoverEngines.uk"
+            "name": "landroverengine.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -274,10 +274,10 @@
         {
           "@type": "Dataset",
           "name": "Range Rover UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for Range Rover engines, sourced from RangeRoverEngines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for Range Rover engines, sourced from landroverengine.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "RangeRoverEngines.uk"
+            "name": "landroverengine.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -285,14 +285,14 @@
         {
           "@type": "WebPage",
           "name": "Range Rover Engine Replacement Cost UK - Compare Quotes",
-          "url": "https://rangeroverengine.uk/range-rover/",
+          "url": "https://landroverengine.uk/hero-day.webp",
           "author": {
             "@type": "Organization",
-            "name": "RangeRoverEngines.uk Editorial Team"
+            "name": "landroverengine.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "RangeRoverEngines.uk Specialist Network"
+            "name": "landroverengine.uk Specialist Network"
           },
           "datePublished": "2026-07-10",
           "dateModified": "2026-07-10"
@@ -1160,7 +1160,7 @@
     ]
   },
   "trustBlock": {
-    "h2": "Why Range Rover Owners Trust RangeRoverEngines.uk",
+    "h2": "Why Range Rover Owners Trust landroverengine.uk",
     "signals": [
       {
         "icon": "📊",

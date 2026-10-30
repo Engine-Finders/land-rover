@@ -11,14 +11,14 @@
       "description": "Every Defender D240 engine - 204DTD 2.0 diesel. Real UK costs, timing chain reliability data, and honest advice. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/defender/d240",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-d240.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "D240 Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Defender D240 engine - 204DTD 2.0 diesel. Real UK costs, timing chain reliability data, and honest advice.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-d240.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

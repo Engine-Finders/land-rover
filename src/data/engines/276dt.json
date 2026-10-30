@@ -9,14 +9,14 @@
       "description": "The 276DT is a refined V6 diesel - but its oil pump housing is the Achilles' heel. Backed by 700+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/engine/276dt",
-      "image": "https://landroverengine.uk/images/landrover/engines/276dt.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "landroverengine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Land Rover 276DT (2.7 TDV6) Engine - Reliability & Cost",
       "description": "The 276DT is a refined V6 diesel - but its oil pump housing is the Achilles' heel. Backed by 700+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
-      "image": "https://landroverengine.uk/images/landrover/engines/276dt.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -111,7 +111,7 @@
           "@type": "Organization",
           "name": "landroverengine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

@@ -9,14 +9,14 @@
       "description": "The AJ-V8 supercharged is a glorious V8 - sonorous and powerful, but pre-2012 cooling and chain issues need watching. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/engine/aj-v8-42-44-sc",
-      "image": "https://landroverengine.uk/images/landrover/engines/aj-v8-42-44-sc.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "landroverengine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Land Rover AJ-V8 4.2/4.4 SC Engine - Reliability",
       "description": "The AJ-V8 supercharged is a glorious V8 - sonorous and powerful, but pre-2012 cooling and chain issues need watching. Backed by real UK enquiries. Compare quotes from 12 vetted specialists today.",
-      "image": "https://landroverengine.uk/images/landrover/engines/aj-v8-42-44-sc.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -117,7 +117,7 @@
           "@type": "Organization",
           "name": "landroverengine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

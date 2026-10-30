@@ -9,14 +9,14 @@
       "description": "The PT204 is JLR's modern 2.0 turbo petrol - punchy and efficient, but cooling system and timing chain issues need watching. Backed by 480+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/engine/ford-si4-pt204",
-      "image": "https://landroverengine.uk/images/landrover/engines/ford-si4-pt204.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "landroverengine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Land Rover PT204 (2.0 Si4 GTDi) Engine - Reliability",
       "description": "The PT204 is JLR's modern 2.0 turbo petrol - punchy and efficient, but cooling system and timing chain issues need watching. Backed by 480+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
-      "image": "https://landroverengine.uk/images/landrover/engines/ford-si4-pt204.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -141,7 +141,7 @@
           "@type": "Organization",
           "name": "landroverengine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

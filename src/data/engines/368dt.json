@@ -9,14 +9,14 @@
       "description": "The 368DT is a torquey V8 diesel - but early timing chain and crankshaft issues are well-documented risks. Backed by 650+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/engine/368dt",
-      "image": "https://landroverengine.uk/images/landrover/engines/368dt.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "landroverengine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Land Rover 368DT (3.6 TDV8) Engine - Reliability",
       "description": "The 368DT is a torquey V8 diesel - but early timing chain and crankshaft issues are well-documented risks. Backed by 650+ real UK enquiries. Compare quotes from 12 vetted specialists today.",
-      "image": "https://landroverengine.uk/images/landrover/engines/368dt.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -111,7 +111,7 @@
           "@type": "Organization",
           "name": "landroverengine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

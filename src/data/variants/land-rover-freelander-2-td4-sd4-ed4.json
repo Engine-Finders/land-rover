@@ -11,14 +11,14 @@
       "description": "The 224DT Duratorq - eD4, TD4 and SD4 power outputs explained. Real UK costs, common EGR and turbo issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/freelander/22-td4",
-      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-22-td4.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Freelander 2 2.2 Diesel Engine Replacement Cost UK - Compare Quotes",
       "description": "The 224DT Duratorq - eD4, TD4 and SD4 power outputs explained. Real UK costs, common EGR and turbo issues, and honest reliability data.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-22-td4.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -127,7 +127,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

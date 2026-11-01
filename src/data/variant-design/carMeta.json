@@ -1,0 +1,1477 @@
+{
+ "/variant/cars/land-rover-defender-defender-110-camel-trophy-5-door-4x4-199-5e24.webp": {
+  "w": 704,
+  "h": 459,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    13.2,
+    94.8,
+    6.4
+   ],
+   [
+    50.7,
+    100.0,
+    5.8
+   ],
+   [
+    88.6,
+    89.3,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-defender-defender-110-station-wagon-5-door-4x4-19-5cd1.webp": {
+  "w": 675,
+  "h": 408,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.4,
+    95.3,
+    5.0
+   ],
+   [
+    53.0,
+    100.0,
+    5.9
+   ],
+   [
+    88.4,
+    87.0,
+    6.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-defender-defender-90-county-3-door-4x4-19901998-n-547b.webp": {
+  "w": 633,
+  "h": 419,
+  "top": 0.0,
+  "bottom": 0.24,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    13.7,
+    94.5,
+    7.3
+   ],
+   [
+    56.6,
+    100.0,
+    5.4
+   ],
+   [
+    90.1,
+    87.4,
+    5.7
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-defender-defender-90-hard-top-3-door-4x4-19902016-7891.webp": {
+  "w": 661,
+  "h": 426,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.7,
+    95.5,
+    5.9
+   ],
+   [
+    57.7,
+    100.0,
+    6.1
+   ],
+   [
+    90.5,
+    89.0,
+    6.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-defender-l663-110-5-door-suv-2020-new-gondwana-st-28b7.webp": {
+  "w": 723,
+  "h": 428,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.2,
+    96.0,
+    7.1
+   ],
+   [
+    56.1,
+    100.0,
+    6.9
+   ],
+   [
+    92.5,
+    90.2,
+    6.4
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-defender-l663-130-5-door-suv-2022-new-carpathian-142b.webp": {
+  "w": 668,
+  "h": 411,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    9.7,
+    95.6,
+    7.3
+   ],
+   [
+    56.8,
+    100.0,
+    5.7
+   ],
+   [
+    91.4,
+    84.4,
+    6.9
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-defender-l663-90-3-door-suv-2020-new-pangea-green-caf9.webp": {
+  "w": 716,
+  "h": 430,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.4,
+    96.0,
+    8.7
+   ],
+   [
+    57.3,
+    100.0,
+    7.7
+   ],
+   [
+    91.7,
+    90.7,
+    6.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-defender-l663-x-dynamic-hse-suv-2020-new-carpathi-7977.webp": {
+  "w": 753,
+  "h": 435,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.6,
+    96.6,
+    8.5
+   ],
+   [
+    55.5,
+    100.0,
+    8.4
+   ],
+   [
+    92.2,
+    90.1,
+    5.8
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-defender-l663-x-dynamic-s-suv-2020-new-hakuba-sil-86d9.webp": {
+  "w": 669,
+  "h": 413,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.6,
+    96.4,
+    7.9
+   ],
+   [
+    62.1,
+    100.0,
+    8.4
+   ],
+   [
+    92.8,
+    88.4,
+    6.7
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-defender-one-ten-110-county-5-door-4x4-19871990-g-3eac.webp": {
+  "w": 701,
+  "h": 423,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.9,
+    95.0,
+    5.4
+   ],
+   [
+    53.8,
+    100.0,
+    5.0
+   ],
+   [
+    89.7,
+    88.2,
+    5.0
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-l319-commercial-commercial-suv-20122016-b3a8.webp": {
+  "w": 700,
+  "h": 436,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.5,
+    94.0,
+    5.4
+   ],
+   [
+    56.9,
+    100.0,
+    5.4
+   ],
+   [
+    91.4,
+    84.9,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-l319-hse-5-door-suv-20042009-group-buck-6375.webp": {
+  "w": 702,
+  "h": 415,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.3,
+    94.2,
+    5.6
+   ],
+   [
+    56.1,
+    100.0,
+    8.0
+   ],
+   [
+    90.7,
+    85.1,
+    5.8
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-l319-hse-5-door-suv-20092016-new-causew-0ea8.webp": {
+  "w": 738,
+  "h": 444,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.2,
+    93.7,
+    6.9
+   ],
+   [
+    58.5,
+    100.0,
+    5.8
+   ],
+   [
+    91.1,
+    82.4,
+    6.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-l319-se-5-door-suv-20092016-new-nara-br-bd73.webp": {
+  "w": 660,
+  "h": 428,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.8,
+    93.9,
+    7.0
+   ],
+   [
+    60.9,
+    100.0,
+    6.5
+   ],
+   [
+    92.7,
+    81.1,
+    5.9
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-l462-s-5-door-suv-20172020-new-indus-si-eaa4.webp": {
+  "w": 730,
+  "h": 414,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.9,
+    94.7,
+    7.1
+   ],
+   [
+    57.6,
+    100.0,
+    6.3
+   ],
+   [
+    92.9,
+    87.4,
+    6.4
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-l462-s-5-door-suv-2026-new-tasman-blue-867b.webp": {
+  "w": 716,
+  "h": 420,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.0,
+    95.0,
+    8.0
+   ],
+   [
+    59.6,
+    100.0,
+    5.9
+   ],
+   [
+    93.1,
+    87.4,
+    5.9
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-sport-l550-hse-compact-suv-20152019-new-3d45.webp": {
+  "w": 716,
+  "h": 417,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.7,
+    93.5,
+    5.9
+   ],
+   [
+    59.7,
+    100.0,
+    6.4
+   ],
+   [
+    93.3,
+    82.7,
+    5.7
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-sport-l550-hse-dynamic-compact-suv-2015-8030.webp": {
+  "w": 772,
+  "h": 448,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.6,
+    93.1,
+    6.7
+   ],
+   [
+    62.4,
+    100.0,
+    6.5
+   ],
+   [
+    93.6,
+    84.8,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-sport-l550-hse-luxury-compact-suv-2019-1e02.webp": {
+  "w": 721,
+  "h": 437,
+  "top": 0.0,
+  "bottom": 0.23,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.9,
+    93.4,
+    7.5
+   ],
+   [
+    64.0,
+    100.0,
+    5
+   ],
+   [
+    93.6,
+    81.9,
+    6.9
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-sport-l550-lci-dynamic-hse-compact-suv-f91c.webp": {
+  "w": 716,
+  "h": 425,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.7,
+    94.1,
+    7.4
+   ],
+   [
+    59.8,
+    100.0,
+    6.1
+   ],
+   [
+    92.9,
+    83.8,
+    5.9
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-sport-l550-lci-r-dynamic-black-compact-e352.webp": {
+  "w": 721,
+  "h": 432,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.9,
+    94.0,
+    7.1
+   ],
+   [
+    64.3,
+    100.0,
+    6.4
+   ],
+   [
+    93.8,
+    82.6,
+    5.5
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-sport-l550-lci-s-compact-suv-20192021-n-41a7.webp": {
+  "w": 726,
+  "h": 420,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.7,
+    94.8,
+    7.9
+   ],
+   [
+    60.3,
+    100.0,
+    5.2
+   ],
+   [
+    93.1,
+    86.9,
+    5.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-sport-l550-lci-se-compact-suv-20192021-3487.webp": {
+  "w": 655,
+  "h": 420,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.6,
+    94.8,
+    7.6
+   ],
+   [
+    66.3,
+    100.0,
+    6.0
+   ],
+   [
+    93.5,
+    83.8,
+    6.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-sport-l550-se-compact-suv-20152019-new-9504.webp": {
+  "w": 651,
+  "h": 418,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.6,
+    95.0,
+    6.9
+   ],
+   [
+    66.2,
+    100.0,
+    6.9
+   ],
+   [
+    93.9,
+    84.0,
+    6.0
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-freelander-l314-3-door-softback-compact-suv-19972-dac8.webp": {
+  "w": 732,
+  "h": 466,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.8,
+    93.3,
+    6.8
+   ],
+   [
+    66.6,
+    100.0,
+    5
+   ],
+   [
+    93.5,
+    80.7,
+    5.2
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-freelander-l314-5-door-station-wagon-compact-suv-6ab4.webp": {
+  "w": 730,
+  "h": 438,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.2,
+    94.1,
+    6.4
+   ],
+   [
+    59.0,
+    100.0,
+    5.9
+   ],
+   [
+    91.8,
+    86.3,
+    5.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-freelander-l314-xedi-5-door-suv-19982001-new-epso-c6bf.webp": {
+  "w": 646,
+  "h": 460,
+  "top": 3.7,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.9,
+    95.0,
+    7.0
+   ],
+   [
+    66.0,
+    100.0,
+    6.5
+   ],
+   [
+    93.1,
+    84.1,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-freelander-l359-gs-compact-suv-20062010-group-ala-3258.webp": {
+  "w": 734,
+  "h": 442,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.1,
+    92.5,
+    6.4
+   ],
+   [
+    60.8,
+    100.0,
+    5
+   ],
+   [
+    90.9,
+    81.0,
+    6.3
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-freelander-l359-hse-luxury-compact-suv-20102012-n-5069.webp": {
+  "w": 725,
+  "h": 454,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.6,
+    93.8,
+    6.1
+   ],
+   [
+    63.6,
+    100.0,
+    5.7
+   ],
+   [
+    93.1,
+    81.5,
+    5.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-freelander-l359-lci-se-dynamic-compact-suv-201420-a831.webp": {
+  "w": 672,
+  "h": 424,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.6,
+    95.0,
+    7.0
+   ],
+   [
+    62.6,
+    100.0,
+    7.3
+   ],
+   [
+    92.6,
+    83.3,
+    6.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-freelander-l359-sport-compact-suv-20102012-specia-1b69.webp": {
+  "w": 668,
+  "h": 423,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.5,
+    95.0,
+    5.7
+   ],
+   [
+    62.4,
+    100.0,
+    5.8
+   ],
+   [
+    92.3,
+    83.2,
+    5.1
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-range-rover-l322-hse-suv-20022009-new-zambezi-sil-bcf0.webp": {
+  "w": 712,
+  "h": 403,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    13.5,
+    94.3,
+    7.2
+   ],
+   [
+    56.3,
+    100.0,
+    6.3
+   ],
+   [
+    90.4,
+    86.4,
+    5.9
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-range-rover-l405-vogue-suv-20122017-new-causeway-b791.webp": {
+  "w": 708,
+  "h": 409,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    13.6,
+    92.9,
+    5.2
+   ],
+   [
+    60.2,
+    100.0,
+    7.2
+   ],
+   [
+    93.2,
+    80.4,
+    5.2
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-range-rover-l460-hse-suv-2022-new-eiger-grey-l460-263f.webp": {
+  "w": 710,
+  "h": 399,
+  "top": 0.0,
+  "bottom": 0.25,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.0,
+    95.0,
+    6.9
+   ],
+   [
+    58.6,
+    100.0,
+    5.2
+   ],
+   [
+    92.0,
+    86.7,
+    7.0
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-range-rover-l460-se-suv-2022-new-belgravia-green-52f1.webp": {
+  "w": 727,
+  "h": 416,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.7,
+    91.3,
+    6.2
+   ],
+   [
+    58.4,
+    100.0,
+    5
+   ],
+   [
+    93.6,
+    80.5,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-evoque-l538-dynamic-5-door-suv-20112015-new-fire-7306.webp": {
+  "w": 706,
+  "h": 424,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.5,
+    93.9,
+    6.1
+   ],
+   [
+    65.4,
+    100.0,
+    7.1
+   ],
+   [
+    93.3,
+    82.8,
+    5.9
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-evoque-l538-pure-5-door-suv-20112015-new-fuji-wh-d9c9.webp": {
+  "w": 702,
+  "h": 425,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.2,
+    94.1,
+    7.7
+   ],
+   [
+    65.7,
+    100.0,
+    7.1
+   ],
+   [
+    93.5,
+    83.5,
+    6.3
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-evoque-l538-se-5-door-suv-20152018-new-corris-gr-19e8.webp": {
+  "w": 711,
+  "h": 425,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.9,
+    93.4,
+    7.0
+   ],
+   [
+    65.5,
+    100.0,
+    6.3
+   ],
+   [
+    93.6,
+    82.6,
+    5.9
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-evoque-l551-autobiography-5-door-suv-20202023-sp-8ee1.webp": {
+  "w": 713,
+  "h": 422,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.7,
+    93.4,
+    6.3
+   ],
+   [
+    65.3,
+    100.0,
+    6.2
+   ],
+   [
+    93.3,
+    81.8,
+    5.6
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-evoque-l551-hse-5-door-suv-20192023-new-corris-g-385e.webp": {
+  "w": 709,
+  "h": 422,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.6,
+    93.6,
+    6.6
+   ],
+   [
+    65.2,
+    100.0,
+    7.3
+   ],
+   [
+    93.7,
+    82.2,
+    5.5
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-evoque-l551-lci-dynamic-hse-5-door-suv-2023-new-be93.webp": {
+  "w": 675,
+  "h": 376,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.7,
+    93.9,
+    8.0
+   ],
+   [
+    59.7,
+    100.0,
+    5.2
+   ],
+   [
+    93.0,
+    85.1,
+    6.7
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-evoque-l551-lci-s-5-door-suv-2023-new-fuji-white-f53b.webp": {
+  "w": 701,
+  "h": 425,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.2,
+    95.5,
+    6.8
+   ],
+   [
+    66.9,
+    100.0,
+    7.0
+   ],
+   [
+    93.9,
+    83.1,
+    6.0
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-evoque-l551-s-5-door-suv-20192023-new-indus-silv-4781.webp": {
+  "w": 708,
+  "h": 421,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.7,
+    93.3,
+    7.8
+   ],
+   [
+    65.0,
+    100.0,
+    7.1
+   ],
+   [
+    93.7,
+    81.9,
+    6.5
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-sport-l320-autobiography-suv-20102013-new-nara-b-8dfd.webp": {
+  "w": 732,
+  "h": 413,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    13.1,
+    93.2,
+    7.2
+   ],
+   [
+    57.0,
+    100.0,
+    5.2
+   ],
+   [
+    91.9,
+    84.0,
+    5.5
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-sport-l320-hse-suv-20052009-new-zambezi-silver-s-3a4c.webp": {
+  "w": 688,
+  "h": 398,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.9,
+    93.7,
+    6.7
+   ],
+   [
+    57.6,
+    100.0,
+    5.7
+   ],
+   [
+    90.6,
+    84.4,
+    5.2
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-sport-l461-autobiography-suv-2022-new-ostuni-whi-f46c.webp": {
+  "w": 674,
+  "h": 407,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.8,
+    95.3,
+    8.6
+   ],
+   [
+    63.8,
+    100.0,
+    9.3
+   ],
+   [
+    94.2,
+    85.3,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-sport-l461-dynamic-hse-suv-2022-new-eiger-grey-l-78f7.webp": {
+  "w": 677,
+  "h": 407,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.7,
+    95.1,
+    8.0
+   ],
+   [
+    64.3,
+    100.0,
+    8.0
+   ],
+   [
+    93.9,
+    85.3,
+    6.5
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-sport-l461-dynamic-se-suv-2022-new-santorini-bla-bfe9.webp": {
+  "w": 681,
+  "h": 394,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    11.9,
+    93.4,
+    7.5
+   ],
+   [
+    59.5,
+    100.0,
+    5.9
+   ],
+   [
+    93.3,
+    85.3,
+    5.0
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-sport-l494-autobiography-dynamic-suv-20132017-ne-3660.webp": {
+  "w": 681,
+  "h": 401,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.6,
+    94.3,
+    6.6
+   ],
+   [
+    61.8,
+    100.0,
+    6.0
+   ],
+   [
+    93.2,
+    84.3,
+    5.3
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-sport-l494-autobiography-suv-20132017-new-scotia-31c1.webp": {
+  "w": 718,
+  "h": 413,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.7,
+    91.8,
+    5.8
+   ],
+   [
+    57.3,
+    100.0,
+    5.0
+   ],
+   [
+    92.7,
+    83.3,
+    5.0
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-sport-l494-se-suv-20132017-new-indus-silver-l494-c7c8.webp": {
+  "w": 681,
+  "h": 390,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.6,
+    93.6,
+    5.1
+   ],
+   [
+    58.8,
+    100.0,
+    6.8
+   ],
+   [
+    92.3,
+    83.6,
+    6.8
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-sport-l494-svr-performance-suv-20152018-special-214e.webp": {
+  "w": 705,
+  "h": 400,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.6,
+    92.2,
+    5.2
+   ],
+   [
+    57.0,
+    100.0,
+    5.2
+   ],
+   [
+    92.7,
+    82.8,
+    5.4
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-velar-l560-hse-suv-20172019-new-silicon-silver-v-a6a5.webp": {
+  "w": 679,
+  "h": 408,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.2,
+    94.4,
+    8.4
+   ],
+   [
+    65.1,
+    100.0,
+    6.0
+   ],
+   [
+    94.7,
+    84.1,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-velar-l560-lci-belgravia-edition-suv-2026-specia-0967.webp": {
+  "w": 678,
+  "h": 421,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.3,
+    94.5,
+    8.1
+   ],
+   [
+    65.1,
+    100.0,
+    7.4
+   ],
+   [
+    94.0,
+    83.4,
+    5.8
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-velar-l560-lci-s-suv-20212024-new-ostuni-white-v-c0f3.webp": {
+  "w": 678,
+  "h": 418,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.4,
+    94.5,
+    6.8
+   ],
+   [
+    65.0,
+    100.0,
+    6.3
+   ],
+   [
+    93.8,
+    83.3,
+    6.3
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-velar-l560-r-dynamic-black-suv-20202022-special-9667.webp": {
+  "w": 683,
+  "h": 419,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.0,
+    94.0,
+    7.0
+   ],
+   [
+    66.2,
+    100.0,
+    6.9
+   ],
+   [
+    93.9,
+    83.1,
+    6.4
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-velar-l560-r-dynamic-s-suv-20172019-new-byron-bl-1b57.webp": {
+  "w": 679,
+  "h": 408,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.3,
+    94.4,
+    8.1
+   ],
+   [
+    64.5,
+    100.0,
+    6.9
+   ],
+   [
+    94.8,
+    84.1,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-velar-l560-r-dynamic-se-suv-20172019-new-firenze-e5d9.webp": {
+  "w": 681,
+  "h": 409,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.1,
+    94.4,
+    8.5
+   ],
+   [
+    64.2,
+    100.0,
+    7.9
+   ],
+   [
+    94.7,
+    84.1,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/range-rover-velar-l560-se-suv-20172019-new-corris-grey-velar-204d.webp": {
+  "w": 680,
+  "h": 411,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.2,
+    94.4,
+    7.4
+   ],
+   [
+    64.7,
+    100.0,
+    6.9
+   ],
+   [
+    94.6,
+    83.9,
+    5.4
+   ]
+  ]
+ }
+}

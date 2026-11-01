@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Lora } from "next/font/google";
+import { Instrument_Sans, Libre_Caslon_Text, Lora } from "next/font/google";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import FreeQuoteSticky from "@/components/shared/FreeQuoteForm";
@@ -9,6 +9,21 @@ const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-lora",
+  display: "swap",
+});
+
+// Variant page redesign: Instrument Sans for the hero headline, Libre Caslon for section titles.
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-instrument-sans",
+  display: "swap",
+});
+
+const libreCaslon = Libre_Caslon_Text({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-serif-display",
   display: "swap",
 });
 
@@ -33,7 +48,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`h-full ${lora.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`h-full ${lora.variable} ${instrumentSans.variable} ${libreCaslon.variable}`} suppressHydrationWarning>
       <body className="min-h-full bg-[var(--color-page)] text-[var(--color-text)] antialiased" suppressHydrationWarning>
         <ThemeProvider>
           <div className="flex min-h-screen flex-col bg-[var(--color-page)] text-[var(--color-text)]">

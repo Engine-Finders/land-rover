@@ -1,0 +1,181 @@
+{
+  "eyebrow": "Failure Database",
+  "h2": "The Land Rover & Range Rover|Failure Database",
+  "subhead": "A permanent, categorised reference – not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
+  "categories": [
+    {
+      "key": "engine",
+      "icon": "engine",
+      "name": "Engine",
+      "title": "Engine Failures",
+      "itemLabel": "Engine Failure",
+      "codeLabel": "Engine Code",
+      "items": [
+        {
+          "title": "TDV6 Crankshaft Failure",
+          "text": "The 306DT's defining weak point – cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon.",
+          "severity": "catastrophic",
+          "image": "/engines/jaguar-d300-engine.webp",
+          "href": "/data/306dt-failure-rate",
+          "code": "306DT",
+          "symptom": "Cold-start knock",
+          "cost": "£6,500 – £9,500"
+        },
+        {
+          "title": "276DT Oil Pump Housing Failure",
+          "text": "Often kills the engine outright before any other symptom appears. The 2.7 TDV6's single-point failure.",
+          "severity": "catastrophic",
+          "image": "/engines/jaguar-276dt-tdv6-engine.webp",
+          "href": "/data/276dt-failure-rate",
+          "code": "276DT",
+          "symptom": "Sudden oil pressure loss",
+          "cost": "On inspection"
+        },
+        {
+          "title": "Ingenium Timing Chain Failure",
+          "text": "Pre-2019 204DTD tensioner wear, significantly improved from 2019 onward. £1,200–£2,500 repair cost.",
+          "severity": "monitor",
+          "image": "/engines/jaguar-aj200d-engine.webp",
+          "href": "/data/204dtd-failure-rate",
+          "code": "204DTD",
+          "symptom": "Start-up rattle",
+          "cost": "£1,200 – £2,500"
+        },
+        {
+          "title": "508PS Oil Cooler & Dilution Issues",
+          "text": "The 4.4 SDV8's main (and comparatively minor) weak point – oil cooler leaks can lead to coolant ingestion.",
+          "severity": "immediate",
+          "image": "/home/engine-core.webp",
+          "href": "/data/aj133-failure-rate",
+          "code": "508PS",
+          "symptom": "Coolant loss",
+          "cost": "On inspection"
+        }
+      ]
+    },
+    {
+      "key": "suspension",
+      "icon": "suspension",
+      "name": "Suspension",
+      "title": "Suspension Failures",
+      "itemLabel": "Suspension Failure",
+      "codeLabel": "Component",
+      "items": [
+        {
+          "title": "Air Suspension Compressor Failure",
+          "text": "The most common air suspension complaint across Range Rover and Discovery. Burnout presents a fire risk.",
+          "severity": "catastrophic",
+          "image": "/parts/air-suspension-compressor.webp",
+          "href": "/blog",
+          "code": "Air compressor",
+          "symptom": "Slow or no lift",
+          "cost": "On inspection"
+        },
+        {
+          "title": "Height Sensor Faults",
+          "text": "Trigger warning lights and uneven ride height well before a full system failure. £200–£500 repair cost.",
+          "severity": "low",
+          "image": "/parts/ride-height-sensor.webp",
+          "href": "/blog",
+          "code": "Height sensor",
+          "symptom": "Uneven ride height",
+          "cost": "£200 – £500"
+        },
+        {
+          "title": "Valve Block & Air Spring Leaks",
+          "text": "Slow leaks that are often mistaken for compressor failure. £300–£800 repair cost.",
+          "severity": "low",
+          "image": "/parts/air-suspension-valve-block.webp",
+          "href": "/blog",
+          "code": "Valve block",
+          "symptom": "Overnight sagging",
+          "cost": "£300 – £800"
+        }
+      ]
+    },
+    {
+      "key": "drivetrain",
+      "icon": "drivetrain",
+      "name": "Drivetrain",
+      "title": "Drivetrain Failures",
+      "itemLabel": "Drivetrain Failure",
+      "codeLabel": "Component",
+      "items": [
+        {
+          "title": "Transfer Box Faults",
+          "text": "Loss of drive or grinding noises on 4x4 engagement. ATC300/400 chain stretch is the most common cause.",
+          "severity": "monitor",
+          "image": "/parts/transfer-box.webp",
+          "href": "/blog",
+          "code": "ATC300/400",
+          "symptom": "Grinding in 4x4",
+          "cost": "On inspection"
+        },
+        {
+          "title": "Differential Wear",
+          "text": "Front and rear diff whine, most common on high-mileage Discovery and Defender. £800–£1,500 repair.",
+          "severity": "monitor",
+          "image": "/parts/differential.webp",
+          "href": "/blog",
+          "code": "Differential",
+          "symptom": "Whine at speed",
+          "cost": "£800 – £1,500"
+        },
+        {
+          "title": "Propshaft & UJ Failures",
+          "text": "Vibration under load, a common MOT advisory across the range. £200–£500 repair.",
+          "severity": "low",
+          "image": "/parts/propshaft-u-joint.webp",
+          "href": "/blog",
+          "code": "Propshaft & UJ",
+          "symptom": "Vibration under load",
+          "cost": "£200 – £500"
+        }
+      ]
+    },
+    {
+      "key": "electrical",
+      "icon": "bolt",
+      "name": "Electrical",
+      "title": "Electrical Failures",
+      "itemLabel": "Electrical Failure",
+      "codeLabel": "Component",
+      "items": [
+        {
+          "title": "Terrain Response System Faults",
+          "text": "Sensor and module failures that disable off-road drive modes. Often linked to transfer case issues.",
+          "severity": "monitor",
+          "image": "/parts/terrain-response-control-module.webp",
+          "href": "/blog",
+          "code": "TR module",
+          "symptom": "Modes unavailable",
+          "cost": "On inspection"
+        },
+        {
+          "title": "Infotainment & Software Glitches",
+          "text": "Particularly common on pre-2018 Touch Pro systems. Can be resolved with software updates.",
+          "severity": "low",
+          "image": "/parts/infotainment-head-unit.webp",
+          "href": "/blog",
+          "code": "Touch Pro",
+          "symptom": "Freezes & reboots",
+          "cost": "Software update"
+        },
+        {
+          "title": "Battery Drain / Parasitic Drain",
+          "text": "Modules failing to sleep correctly – a frequent no-start complaint on stop-start models.",
+          "severity": "low",
+          "image": "/parts/12v-car-battery.webp",
+          "href": "/blog",
+          "code": "12V system",
+          "symptom": "No-start after standing",
+          "cost": "On inspection"
+        }
+      ]
+    }
+  ],
+  "note": {
+    "title": "Data Note",
+    "text": "Engine Failures are backed by [EM-VERIFIED] enquiry, mileage, and cost data. Suspension, Drivetrain, and Electrical categories are built on documented patterns rather than proprietary volume data."
+  }
+}

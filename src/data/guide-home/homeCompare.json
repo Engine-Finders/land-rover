@@ -1,0 +1,66 @@
+{
+  "h2": "Comparison Hub –|Head-to-Head|Verdicts",
+  "subhead": "The comparisons Land Rover buyers actually want – generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
+  "columns": [
+    "#",
+    "Comparison",
+    "Verdict Preview",
+    "Link"
+  ],
+  "cta": "Read the verdict",
+  "items": [
+    {
+      "title": "Discovery 4 vs Discovery 5",
+      "image": "/home/compare/ref/disco4-vs-disco5.webp",
+      "icon": "scale",
+      "text": "Which generation to buy – the verdict on reliability, running costs, and long-term value.",
+      "href": "/discovery",
+      "mobileImage": "/home/compare/ref/disco4-vs-disco5-m.webp"
+    },
+    {
+      "title": "L405 vs L460 Range Rover",
+      "image": "/home/compare/ref/l405-vs-l460.webp",
+      "icon": "crown",
+      "text": "Is the extra outlay worth it? We compare ownership costs, reliability, and resale value.",
+      "href": "/range-rover",
+      "mobileImage": "/home/compare/ref/l405-vs-l460-m.webp"
+    },
+    {
+      "title": "TDV6 vs SDV6",
+      "image": "/home/compare/ref/tdv6-vs-sdv6.webp",
+      "icon": "pistons",
+      "text": "What's the real difference? Performance, reliability, and replacement costs compared side-by-side.",
+      "href": "/compare/tdv6-vs-sdv6",
+      "mobileImage": "/home/compare/ref/tdv6-vs-sdv6-m.webp"
+    },
+    {
+      "title": "Ingenium vs TDV6",
+      "image": "/home/compare/ref/ingenium-vs-tdv6.webp",
+      "icon": "gauge",
+      "text": "Which should you buy? We compare fuel economy, reliability, and long-term ownership costs.",
+      "href": "/compare/ingenium-vs-tdv6",
+      "mobileImage": "/home/compare/ref/ingenium-vs-tdv6-m.webp"
+    },
+    {
+      "title": "Defender vs Discovery",
+      "image": "/home/compare/ref/defender-vs-discovery.webp",
+      "icon": "mountain",
+      "text": "The practical ownership comparison – space, capability, running costs, and everyday usability.",
+      "href": "/defender",
+      "mobileImage": "/home/compare/ref/defender-vs-discovery-m.webp"
+    },
+    {
+      "title": "Range Rover Sport vs Discovery",
+      "image": "/home/compare/ref/rrs-vs-discovery.webp",
+      "icon": "pie",
+      "text": "Ownership costs compared – which SUV offers better value for money over 3–5 years?",
+      "href": "/range-rover-sport",
+      "mobileImage": "/home/compare/ref/rrs-vs-discovery-m.webp"
+    }
+  ],
+  "note": {
+    "title": "Data Note:",
+    "text": "All comparison pages pull from [EM-VERIFIED] enquiry data, replacement cost tables, and ownership decision indices. Each comparison includes a clear winner and an honest breakdown of pros and cons.",
+    "image": "/home/compare/ref/cars-drawing.webp"
+  }
+}

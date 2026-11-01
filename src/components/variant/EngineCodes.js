@@ -1,202 +1,171 @@
-"use client";
-
+import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import { useTheme } from "@/components/shared/themeProvider";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import Tagged from "@/components/variant/Tagged";
+import VIcon from "@/components/variant/VariantIcons";
+import { stripArrow, stripBullet } from "@/components/variant/variantText";
 
-const DESKTOP_COLS = "grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr_1.1fr]";
-const ENGINE_IMAGE = "/320d/engine.webp";
-const SPEC_ICONS = ["engine", "repairVsReplace", "checkWatch", "drivetrain", "expertVerified"];
+// Variant section: engine codes table (engine photo, code, years, power, enquiries, recon cost),
+// technical specs and a compare CTA, from the page's `engineCodes` JSON. Fixed dark design.
 
-function shortCode(engineCode = "") {
-  return engineCode.split(" / ")[0].split(" (")[0];
-}
+const INK = "#a9c47e";
+const SERIF = { fontFamily: "var(--font-serif-display), Georgia, 'Times New Roman', serif" };
+const SANS = { fontFamily: "var(--font-instrument-sans), Arial, sans-serif" };
 
+const DEFAULT_COLUMNS = ["Engine Code", "Years", "Power", "2025 Enquiries", "Avg. Recon Cost"];
+
+// "Technical Specs (204DTD):" -> title + tag
 function splitSpecsTitle(title = "") {
   const match = title.match(/^(.*?)\s*\(([^)]+)\)\s*:?$/);
-  if (!match) return { title: title.replace(/:$/, ""), tag: "" };
-  return { title: match[1], tag: match[2] };
+  return match ? { title: match[1], tag: match[2] } : { title: title.replace(/:$/, ""), tag: "" };
 }
 
-function DesktopRow({ row, isDark }) {
-  const rowClass = isDark ? "bg-black text-white" : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]/55";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const codeText = isDark ? "text-[var(--color-text)]" : "text-[var(--color-primary)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]/55";
-
-  return (
-    <div className={`grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-2 py-2.5 text-[0.8rem] border-b ${borderBottom} last:border-b-0`}>
-      <span className="flex items-center gap-2 px-2 font-semibold">
-        <span className="relative h-9 w-11 shrink-0 overflow-hidden">
-          <Image src={ENGINE_IMAGE} alt={row.engineCode} fill className="object-contain" sizes="44px" />
-        </span>
-        <span className={codeText}>{row.engineCode}</span>
-      </span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`}>{row.years}</span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`}>{row.power}</span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`}>{row.enquiries}</span>
-      <span className={`px-2 border-l ${cellDivider} font-semibold`}>{row.avgReconCost}</span>
-    </div>
-  );
+function specIcon(label = "") {
+  const t = label.toLowerCase();
+  if (/displacement|capacity/.test(t)) return "engine";
+  if (/cylinder/.test(t)) return "cylinders";
+  if (/compression/.test(t)) return "gauge";
+  if (/fuel|injection/.test(t)) return "fuel";
+  if (/turbo|torque|power|output/.test(t)) return "turbo";
+  if (/valve|timing|cam/.test(t)) return "cog";
+  return "info";
 }
 
-function DetailCard({ row }) {
-  return (
-    <div className="glass-panel flex gap-4 rounded-[8px] p-4">
-      <span className="relative h-auto w-28 shrink-0 self-stretch">
-        <Image src={ENGINE_IMAGE} alt={row.engineCode} fill className="object-contain" sizes="112px" />
-      </span>
-      <div className="flex min-w-0 flex-1 flex-col gap-2.5 text-[0.82rem]">
-        <p className="truncate text-[1rem] font-bold text-[var(--color-text)]">{row.engineCode}</p>
-        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[var(--color-border)]/55 pb-2.5">
-          <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-            <HomeIcon name="checkWatch" size={32} className="h-8 w-8 shrink-0" />
-            Years
-          </span>
-          <span className="font-semibold text-[var(--color-text)]">{row.years}</span>
-        </div>
-        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[var(--color-border)]/55 pb-2.5">
-          <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-            <HomeIcon name="engine" size={32} className="h-8 w-8 shrink-0" />
-            Power
-          </span>
-          <span className="font-semibold text-[var(--color-text)]">{row.power}</span>
-        </div>
-        <div className="flex items-start justify-between gap-3 border-b border-[var(--color-border)]/55 pb-2.5">
-          <span className="flex shrink-0 items-center gap-1.5 text-[var(--color-text-muted)]">
-            <HomeIcon name="trend" size={32} className="h-8 w-8 shrink-0" />
-            2025 Enquiries
-          </span>
-          <span className="min-w-0 flex-1 text-right font-semibold text-[var(--color-text)]">{row.enquiries}</span>
-        </div>
-        <div className="flex items-start justify-between gap-3">
-          <span className="flex shrink-0 items-center gap-1.5 text-[var(--color-text-muted)]">
-            <HomeIcon name="checkValue" size={32} className="h-8 w-8 shrink-0" />
-            Avg. Recon Cost
-          </span>
-          <span className="min-w-0 flex-1 text-right font-semibold text-[var(--color-primary)]">{row.avgReconCost}</span>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default function EngineCodes({ data, band = "soft" }) {
-  const { theme } = useTheme();
-  const [activeIndex, setActiveIndex] = useState(0);
+export default function EngineCodes({ data, engine = "/variant/sec10_engine.webp" }) {
   if (!data) return null;
-
-  const isDark = theme === "dark";
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
-  const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
   const rows = data.rows || [];
-
-  const specsTitle = data.technicalSpecs ? splitSpecsTitle(data.technicalSpecs.title) : null;
-
-  const technicalSpecsCard = data.technicalSpecs ? (
-    <div className="overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)]">
-      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 border-b border-[var(--color-border)]/55 px-4 py-3">
-        <p className="text-[0.85rem] font-bold uppercase tracking-wide text-[var(--color-text)]">{specsTitle.title}</p>
-        {specsTitle.tag ? (
-          <span className="text-[0.68rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">{specsTitle.tag}</span>
-        ) : null}
-      </div>
-      <div className="flex flex-col">
-        {data.technicalSpecs.items?.map((item, index) => (
-          <div
-            key={item.label}
-            className={`grid grid-cols-[1fr_1fr] gap-3 px-4 py-3 ${index > 0 ? "border-t border-[var(--color-border)]/55" : ""}`}
-          >
-            <span className="flex items-center gap-2 border-r border-[var(--color-border)]/55 pr-3 text-[0.78rem] text-[var(--color-text-muted)]">
-              <HomeIcon name={SPEC_ICONS[index % SPEC_ICONS.length]} size={36} className="h-9 w-9 shrink-0" />
-              {item.label.replace(/^\*\s*/, "")}
-            </span>
-            <span className="text-[0.8rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.value }} />
-          </div>
-        ))}
-      </div>
-    </div>
-  ) : null;
-
-  const quoteCtaBanner = data.cta?.label ? (
-    <a
-      href="/quote"
-      className="btn-cta relative flex items-center gap-4 overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-primary-strong)] p-5 text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
-    >
-      <div className="absolute inset-0">
-        <Image src={ENGINE_IMAGE} alt="" fill className="object-cover object-right opacity-60" sizes="400px" />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-primary-strong)_0%,rgba(3,20,55,0.75)_55%,transparent_100%)]" />
-      </div>
-
-      <div className="relative z-10 flex items-center gap-4">
-        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/30 bg-[var(--color-primary-soft)] shadow-lg">
-          <HomeIcon name="quote" size={44} className="h-11 w-11" />
-        </span>
-        <div className="min-w-0">
-          <p className="text-[0.95rem] font-bold leading-tight">{data.cta.label}</p>
-          <p className="mt-1 text-[0.78rem] leading-[1.4] text-white/80">Get quotes from trusted UK specialists in minutes.</p>
-        </div>
-      </div>
-    </a>
-  ) : null;
+  const columns = data.columns?.length === 5 ? data.columns : DEFAULT_COLUMNS;
+  const specs = data.technicalSpecs;
+  const specsTitle = specs ? splitSpecsTitle(specs.title) : null;
 
   return (
-    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
-          <div className="lg:col-span-8">
-            <HeadingEyebrow text="ENGINE CODES" />
-            <h2 className="mt-3 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">
-              Engine Codes
-            </h2>
-            {data.matchNote ? (
-              <p className="mt-3 text-[0.78rem] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.matchNote }} />
-            ) : null}
+    <section className="relative overflow-hidden bg-[#0b0d0a] text-white">
+      <div className="relative mx-auto grid max-w-8xl gap-y-4 border-t border-white/10 px-4 py-10 sm:px-6 md:px-8 md:py-14 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-x-10">
+        {/* ---------- engine codes ---------- */}
+        <div className="min-w-0">
+          <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-[#c9a24a] md:text-[13px]">Engine Reference</p>
+          <h2 className="mt-2 text-[32px] uppercase leading-[1.05] tracking-[0.01em] text-white sm:text-[40px] lg:text-[50px]" style={SERIF}>
+            Engine Codes
+          </h2>
+          {data.matchNote && <p className="mt-3 text-[15px] leading-[1.6] text-white/80 md:text-[17px]" dangerouslySetInnerHTML={{ __html: data.matchNote }} />}
 
-            <div className="mt-6 grid grid-cols-4 gap-1.5 md:hidden">
-              {rows.map((row, index) => (
-                <button
-                  key={row.engineCode}
-                  type="button"
-                  onClick={() => setActiveIndex(index)}
-                  className={`flex min-w-0 flex-col items-center gap-0.5 rounded-[8px] border px-1 py-2 text-center ${
-                    activeIndex === index
-                      ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
-                      : "border-[var(--color-border)]/75 bg-[var(--color-surface)] text-[var(--color-text)]"
-                  }`}
-                >
-                  <span className="truncate text-[0.7rem] font-bold leading-tight">{shortCode(row.engineCode)}</span>
-                  <span className={`truncate text-[0.58rem] ${activeIndex === index ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>{row.years}</span>
-                </button>
-              ))}
-            </div>
-            <div className="mt-3 md:hidden">
-              {rows[activeIndex] ? <DetailCard row={rows[activeIndex]} /> : null}
-            </div>
-
-            <div className="mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-table-surface)] shadow-lg backdrop-blur md:block">
-              <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold text-white`}>
-                {data.columns?.map((col, index) => (
-                  <span key={col} className={`px-2 ${index > 0 ? `border-l ${headerDivider}` : ""}`}>{col}</span>
+          {rows.length > 0 && (
+            <>
+              {/* mobile cards */}
+              <ul className="mt-5 space-y-2.5 md:hidden">
+                {rows.map((r) => (
+                  <li key={r.engineCode} className="flex gap-3 rounded-xl border border-white/12 bg-white/[0.03] p-3.5">
+                    <Image src={engine} alt="" width={504} height={495} sizes="64px" className="h-16 w-16 shrink-0 object-contain" aria-hidden="true" />
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <p className="text-[16px] font-semibold leading-snug" style={{ color: INK }} dangerouslySetInnerHTML={{ __html: r.engineCode }} />
+                        <p className="shrink-0 text-[13.5px] font-medium text-white/80">{r.years}</p>
+                      </div>
+                      <dl className="mt-2 grid grid-cols-3 gap-2 text-[12.5px] leading-snug">
+                        {[[columns[2], r.power], [columns[3], r.enquiries], [columns[4], r.avgReconCost]].map(([k, val]) => (
+                          <div key={k} className="min-w-0">
+                            <dt className="text-[10.5px] font-medium uppercase tracking-[0.05em] text-white/50">{k}</dt>
+                            <dd className="mt-0.5 font-medium text-white"><Tagged value={val || "—"} /></dd>
+                          </div>
+                        ))}
+                      </dl>
+                    </div>
+                  </li>
                 ))}
-              </div>
-              <div className={bodyWrapperBg}>
-                {rows.map((row) => (
-                  <DesktopRow key={row.engineCode} row={row} isDark={isDark} />
-                ))}
-              </div>
-            </div>
-          </div>
+              </ul>
 
-          <div className="flex flex-col gap-4 lg:col-span-4">
-            {technicalSpecsCard}
-            {quoteCtaBanner}
-          </div>
+              {/* tablet / desktop table */}
+              <div className="mt-6 hidden overflow-hidden rounded-xl border border-[#7f9f4f]/35 md:block">
+                <table className="w-full border-collapse text-left">
+                  <thead>
+                    <tr className="text-[14.5px] font-semibold text-white" style={{ background: "#16231a" }}>
+                      <th scope="col" className="w-[110px] px-3 py-3.5"><span className="sr-only">Engine</span></th>
+                      {columns.map((h) => (
+                        <th key={h} scope="col" className="border-l border-white/15 px-4 py-3.5">{h}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {rows.map((r, i) => (
+                      <tr key={r.engineCode} className="border-t border-white/10 text-[15px]">
+                        {i === 0 && (
+                          <td rowSpan={rows.length} className="px-3 py-3 align-middle">
+                            <Image src={engine} alt="" width={504} height={495} sizes="90px" className="mx-auto h-auto w-[86px]" aria-hidden="true" />
+                          </td>
+                        )}
+                        <td className="border-l border-white/10 px-4 py-4 font-medium leading-snug" style={{ color: INK }} dangerouslySetInnerHTML={{ __html: r.engineCode }} />
+                        <td className="whitespace-nowrap border-l border-white/10 px-4 py-4 text-white/80">{r.years}</td>
+                        <td className="border-l border-white/10 px-4 py-4 leading-snug text-white/80">{r.power || "—"}</td>
+                        <td className="border-l border-white/10 px-4 py-4 text-[14px] leading-snug text-white/80"><Tagged value={r.enquiries || "—"} /></td>
+                        <td className="border-l border-white/10 px-4 py-4 font-medium leading-snug text-white"><Tagged value={r.avgReconCost || "—"} /></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* ---------- specs + CTA ---------- */}
+        <div className="flex flex-col gap-4 lg:pt-2">
+          {specs?.items?.length > 0 && (
+            <div className="rounded-xl border border-white/12 bg-[#0f130e]/90 p-4 md:p-6">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-white/10 pb-3">
+                <h3 className="text-[21px] uppercase leading-tight text-white md:text-[24px]" style={SERIF}>{specsTitle.title}</h3>
+                {specsTitle.tag && <p className="text-[11.5px] font-semibold uppercase tracking-[0.08em]" style={{ color: INK }}>{specsTitle.tag}</p>}
+              </div>
+              <dl className="divide-y divide-white/10">
+                {specs.items.map((s) => {
+                  const label = stripBullet(s.label);
+                  return (
+                    <div key={label} className="grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-3 py-3 text-[14px] md:text-[15px]">
+                      <dt className="flex items-center gap-3 text-white/75">
+                        <VIcon name={specIcon(label)} className="h-6 w-6 shrink-0" style={{ color: INK }} />
+                        {label}
+                      </dt>
+                      <dd className="leading-snug text-white" dangerouslySetInnerHTML={{ __html: s.value }} />
+                    </div>
+                  );
+                })}
+              </dl>
+            </div>
+          )}
+
+          {data.cta?.label && (
+            <Link
+              href="/quote"
+              className="group relative isolate flex min-h-[132px] items-center gap-4 overflow-hidden rounded-xl border border-[#7f9f4f]/35 px-5 py-5 text-white shadow-[0_18px_40px_-20px_rgba(60,100,40,0.8)] md:min-h-[150px] md:gap-6 md:px-7 md:py-6"
+              style={{
+                background:
+                  "radial-gradient(ellipse 30% 55% at 18% 25%, rgba(78,112,58,0.55) 0%, transparent 70%), radial-gradient(ellipse 35% 60% at 55% 85%, rgba(58,92,44,0.5) 0%, transparent 70%), radial-gradient(ellipse 25% 45% at 70% 15%, rgba(90,124,66,0.35) 0%, transparent 70%), linear-gradient(115deg, #1e3a1d 0%, #1a3319 45%, #132613 100%)",
+              }}
+            >
+              {/* engine, blended into the green on its left edge */}
+              <Image
+                src={engine}
+                alt=""
+                width={504}
+                height={495}
+                sizes="(min-width: 768px) 240px, 170px"
+                className="pointer-events-none absolute -right-6 top-1/2 -z-10 h-auto w-[170px] -translate-y-1/2 opacity-55 drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)] sm:w-[210px] sm:opacity-80 md:-right-8 md:w-[230px] md:opacity-95"
+                aria-hidden="true"
+              />
+              <span
+                className="pointer-events-none absolute inset-0 -z-10"
+                style={{ background: "linear-gradient(90deg, #1b3519 0%, rgba(27,53,25,0.95) 52%, rgba(27,53,25,0.45) 74%, transparent 100%)" }}
+                aria-hidden="true"
+              />
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[1.5px] border-[#d4ab55] text-[#d4ab55] transition-colors group-hover:bg-[#d4ab55]/10 md:h-16 md:w-16">
+                <VIcon name="arrow" className="h-6 w-6 transition-transform group-hover:translate-x-0.5 md:h-7 md:w-7" strokeWidth={1.8} />
+              </span>
+              <span className="min-w-0 max-w-[70%] sm:max-w-[60%]">
+                <span className="block text-[19px] font-semibold leading-[1.2] tracking-[-0.01em] md:text-[25px]" style={SANS}>
+                  {stripArrow(data.cta.label)}
+                </span>
+                <span className="mt-1.5 block text-[13.5px] leading-snug text-white/90 md:mt-2 md:text-[16px]">Get quotes from trusted UK specialists in minutes.</span>
+              </span>
+            </Link>
+          )}
         </div>
       </div>
     </section>

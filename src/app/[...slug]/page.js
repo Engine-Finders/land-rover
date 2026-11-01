@@ -41,6 +41,7 @@ import EngineCodes from "@/components/variant/EngineCodes";
 import VarMarketIntelligence from "@/components/variant/MarketIntelligence";
 import VarFAQAccordion from "@/components/variant/FAQAccordion";
 import VarTrustCta from "@/components/variant/TrustCta";
+import { variantCar, variantEngine } from "@/lib/variantDesign";
 
 async function getModelData(dataFile) {
   try {
@@ -221,6 +222,11 @@ export default async function CatchAllPage({ params }) {
   }
 
   if (type === "variants") {
+    const car = variantCar(entry.dataFile);
+    const engine = variantEngine(entry.dataFile);
+    const codeRow = data.engineCodes?.rows?.[0] || {};
+    const engineCode = (codeRow.engineCode || "").replace(/\s*\(.*\)\s*$/, "");
+    const engineDesc = [codeRow.power, codeRow.years].filter(Boolean).join(" · ");
     return (
       <main className="flex flex-col">
         {data.meta?.jsonLd && (
@@ -229,17 +235,17 @@ export default async function CatchAllPage({ params }) {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
           />
         )}
-        <VariantHero data={data.hero} band="page" />
+        <VariantHero data={data.hero} car={car} />
         <EraMap data={data.eraMap} band="soft" />
-        <VarReplacementCosts data={data.replacementCosts} band="page" />
-        <VarProblems data={data.commonProblems} band="soft" />
-        <QuotesCta data={data.quotesCta} band="page" />
-        <RepairBuyOrReplace data={data.repairBuyOrReplace} band="soft" />
-        <BuyingChecklist data={data.buyingChecklist} band="page" />
-        <EngineCodes data={data.engineCodes} band="soft" />
-        <VarMarketIntelligence data={data.marketIntelligence} band="page" />
-        <VarFAQAccordion data={data.faq} band="soft" />
-        <VarTrustCta data={data.trustCta} band="page" />
+        <VarReplacementCosts data={data.replacementCosts} />
+        <VarProblems data={data.commonProblems} />
+        <QuotesCta data={data.quotesCta} car={car} />
+        <RepairBuyOrReplace data={data.repairBuyOrReplace} car={car} engine={engine} />
+        <BuyingChecklist data={data.buyingChecklist} car={car} />
+        <EngineCodes data={data.engineCodes} engine={engine} />
+        <VarMarketIntelligence data={data.marketIntelligence} />
+        <VarFAQAccordion data={data.faq} />
+        <VarTrustCta data={data.trustCta} car={car} engine={engine} engineCode={engineCode} engineDesc={engineDesc} />
       </main>
     );
   }

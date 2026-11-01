@@ -1,119 +1,104 @@
-"use client";
-
 import Image from "next/image";
-import { useTheme } from "@/components/shared/themeProvider";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import VIcon from "@/components/variant/VariantIcons";
+import { carRatio } from "@/lib/carGeometry";
+import { stripBullet, topicIcon } from "@/components/variant/variantText";
 
-const ITEM_ICONS = [
-  "symptoms",
-  "note",
-  "checkWatch",
-  "airSuspension",
-  "drivetrain",
-  "engine",
-  "expensiveFailure",
-  "genuineFailureData",
-];
+// Variant section: buying checklist - numbered check cards from the page's `buyingChecklist`
+// JSON, the vehicle, and a "Buy smart" reassurance card. Fixed dark design.
 
+const INK = "#a9c47e";
+const SERIF = { fontFamily: "var(--font-serif-display), Georgia, 'Times New Roman', serif" };
+
+// "* Cold Start - Listen for rattle ..." -> label + text
 function splitItem(item = "") {
-  const clean = item.replace(/^\*\s*/, "");
-  const dashIndex = clean.indexOf(" - ");
-  if (dashIndex === -1) return { label: clean, text: "" };
-  return { label: clean.slice(0, dashIndex), text: clean.slice(dashIndex + 3) };
+  const clean = stripBullet(item);
+  const dash = clean.indexOf(" - ");
+  return dash === -1 ? { label: clean, text: "" } : { label: clean.slice(0, dash), text: clean.slice(dash + 3) };
 }
 
-function TrustCard({ className = "", isDark }) {
-  const cardBorder = isDark ? "border-white/10" : "border-[var(--color-border)]/75";
-  const cardBg = isDark ? "bg-[rgba(2,7,17,0.75)]" : "bg-[var(--color-surface)]";
-  const titleClass = isDark ? "text-white" : "text-[var(--color-text)]";
-  const bodyClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
-
-  return (
-    <div className={`flex w-full max-w-[360px] items-center gap-3 rounded-[8px] border ${cardBorder} ${cardBg} p-3.5 shadow-sm backdrop-blur ${className}`}>
-      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
-        <HomeIcon name="safestBuy" size={44} className="h-11 w-11" />
-      </span>
-      <div className="min-w-0">
-        <p className={`text-[0.92rem] font-bold leading-tight ${titleClass}`}>Buy smart. Drive with confidence.</p>
-        <p className={`mt-1 text-[0.8rem] leading-[1.4] ${bodyClass}`}>
-          A few checks today can save thousands tomorrow. Use this checklist to avoid the most common pitfalls.
-        </p>
-      </div>
-    </div>
-  );
+function checkIcon(label = "") {
+  const t = label.toLowerCase();
+  if (/cold start|listen|noise/.test(t)) return "ear";
+  if (/coolant|cooling/.test(t)) return "tank";
+  if (/turbo|boost/.test(t)) return "turbo";
+  if (/oil/.test(t)) return "oilcan";
+  if (/smoke|exhaust/.test(t)) return "smoke";
+  if (/warning|light|diagnos|fault/.test(t)) return "engine";
+  if (/mot/.test(t)) return "docsearch";
+  return topicIcon(label);
 }
 
-export default function BuyingChecklist({ data, band = "page" }) {
-  const { theme } = useTheme();
-  if (!data) return null;
-
-  const isDark = theme === "dark";
-  const image = isDark ? "/320d/checklist_dark.webp" : "/320d/checklist_light.webp";
-  const imageMobile = isDark ? "/320d/checklist_mobile_dark.webp" : "/320d/checklist_mobile_light.webp";
-  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
-  const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
+export default function BuyingChecklist({ data, car = null }) {
+  if (!data?.items?.length) return null;
 
   return (
-    <section className={`relative w-full overflow-hidden text-[var(--color-text)] ${sectionBgClass(band)}`}>
-      <div className="relative h-[220px] w-full bg-[var(--color-page)] md:hidden">
-        <Image src={imageMobile} alt="" fill className="object-cover" sizes="100vw" />
-        {isDark ? (
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(0,0,0,0.85)_0%,transparent_100%)]" />
-        ) : (
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-        )}
-      </div>
+    <section className="relative overflow-hidden bg-[#0b0d0a] text-white">
+      {/* soft studio backdrop behind the vehicle */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        aria-hidden="true"
+        style={{ background: "radial-gradient(ellipse 45% 60% at 82% 28%, rgba(92,110,84,0.32) 0%, rgba(40,48,36,0.15) 48%, transparent 76%)" }}
+      />
 
-      <div className="absolute inset-0 hidden md:block">
-        <Image src={image} alt="" fill className="object-cover object-right" sizes="100vw" />
-        {isDark ? (
-          <>
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,17,0.95)_0%,rgba(2,7,17,0.75)_38%,rgba(2,7,17,0.25)_75%)]" />
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,rgba(2,7,17,0.85)_0%,transparent_100%)]" />
-          </>
-        ) : null}
-      </div>
+      <div className="relative mx-auto grid max-w-8xl border-t border-white/10 px-4 py-10 sm:px-6 md:px-8 md:py-14 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-x-10">
+        <div className="lg:col-start-1 lg:row-start-1">
+          <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-[#c9a24a] md:text-[13px]">Before You Buy</p>
+          <h2 className="mt-2 text-[32px] uppercase leading-[1.05] tracking-[0.01em] text-white sm:text-[40px] lg:text-[50px]" style={SERIF}>
+            Buying Checklist
+          </h2>
+          {data.intro && <p className="mt-3 max-w-[560px] text-[15px] leading-[1.6] text-white/80 md:text-[17px]" dangerouslySetInnerHTML={{ __html: data.intro }} />}
+        </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-8xl px-4 py-8 md:px-8 md:py-10 lg:pr-[400px]">
-        <div className="flex flex-col gap-5 lg:max-w-[720px]">
-          <div>
-            <HeadingEyebrow text="BUYING CHECKLIST" />
-            <h2 className={`mt-3 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${headingClass}`}>
-              Buying Checklist
-            </h2>
-            {data.intro ? (
-              <p className={`mt-4 max-w-[560px] text-[0.88rem] leading-[1.5] md:text-[1rem] ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: data.intro }} />
-            ) : null}
-          </div>
-
-          {data.items?.length > 0 ? (
-            <div className="relative grid grid-cols-2 gap-3 md:grid-cols-4">
-              {data.items.map((item, index) => {
-                const { label, text } = splitItem(item);
-                return (
-                  <div
-                    key={item}
-                    className="relative flex flex-col items-center gap-2 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-4 text-center shadow-[0_14px_40px_var(--color-shadow)]"
-                  >
-                    <span className="absolute left-3 top-3 flex h-6 w-6 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary)] text-[0.7rem] font-bold text-white">
-                      {index + 1}
-                    </span>
-                    <HomeIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} size={48} className="mt-2 h-12 w-12" />
-                    <p className="text-[0.92rem] font-bold leading-tight text-[var(--color-text)]">{label}</p>
-                    {text ? <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]">{text}</p> : null}
-                  </div>
-                );
-              })}
-
-              <div className="absolute bottom-0 left-full ml-6 hidden w-[340px] lg:block">
-                <TrustCard isDark={isDark} />
-              </div>
+        {/* vehicle */}
+        {car && (
+          <div className="relative mt-4 flex justify-center lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mt-0 lg:items-start" aria-hidden="true">
+            <div className="relative w-[84%] max-w-[400px] sm:max-w-[460px] lg:mt-2 lg:w-full lg:max-w-[560px]" style={{ aspectRatio: carRatio(car) }}>
+              <div className="absolute inset-x-[10%] bottom-[1%] h-[10%] rounded-[50%] bg-black/85 blur-xl" />
+              <Image src={car} alt="" fill sizes="(min-width: 1024px) 36vw, 84vw" className="object-fill drop-shadow-[0_24px_30px_rgba(0,0,0,0.6)]" />
             </div>
-          ) : null}
+          </div>
+        )}
 
-          <TrustCard className="lg:hidden" isDark={isDark} />
+        {/* checklist cards */}
+        <ol className="mt-5 grid grid-cols-2 gap-2.5 sm:grid-cols-4 md:gap-3 lg:col-start-1 lg:row-start-2 lg:mt-7">
+          {data.items.map((item, i) => {
+            const { label, text } = splitItem(item);
+            return (
+              <li key={item} className="relative flex flex-col items-center rounded-xl border border-white/12 bg-white/[0.03] px-3 pb-4 pt-9 text-center md:px-3.5 md:pt-10">
+                <span className="absolute left-2.5 top-2.5 flex h-6 w-6 items-center justify-center rounded text-[12px] font-semibold text-white md:h-7 md:w-7 md:text-[13px]" style={{ background: "#3e5a2c" }}>
+                  {i + 1}
+                </span>
+                <VIcon name={checkIcon(label)} className="h-10 w-10 md:h-12 md:w-12" style={{ color: INK }} strokeWidth={1.4} />
+                <h3 className="mt-2.5 text-[14.5px] font-semibold leading-tight text-white md:text-[16px]" dangerouslySetInnerHTML={{ __html: label }} />
+                {text && <p className="mt-1.5 text-[12.5px] leading-[1.5] text-white/65 md:text-[13px]" dangerouslySetInnerHTML={{ __html: text }} />}
+              </li>
+            );
+          })}
+        </ol>
+
+        {/* buy smart */}
+        <div className="mt-4 flex items-center gap-4 rounded-xl border border-[#7f9f4f]/30 bg-[#0f130e]/90 p-4 backdrop-blur-sm md:gap-6 md:p-6 lg:col-start-2 lg:row-start-2 lg:mt-0 lg:self-end">
+          <svg viewBox="0 0 64 72" className="h-16 w-14 shrink-0 md:h-24 md:w-20" aria-hidden="true">
+            <defs>
+              <linearGradient id="bc-rim" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stopColor="#e9ece8" />
+                <stop offset="1" stopColor="#9aa29a" />
+              </linearGradient>
+              <linearGradient id="bc-fill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stopColor="#2f5a35" />
+                <stop offset="1" stopColor="#173219" />
+              </linearGradient>
+            </defs>
+            <path d="M32 2 60 12v20c0 18-12 30-28 38C16 62 4 50 4 32V12z" fill="url(#bc-rim)" />
+            <path d="M32 7 55 15.5v16.5c0 15-10 25-23 32C19 57 9 47 9 32V15.5z" fill="url(#bc-fill)" />
+            <path d="m21 35 8 8 15-17" fill="none" stroke="#fff" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          <div>
+            <h3 className="text-[20px] leading-tight text-white md:text-[26px]" style={SERIF}>Buy smart. Drive with confidence.</h3>
+            <p className="mt-1.5 text-[14px] leading-[1.55] text-white/80 md:text-[16px]">
+              A few checks today can save thousands tomorrow. Use this checklist to avoid the most common pitfalls.
+            </p>
+          </div>
         </div>
       </div>
     </section>

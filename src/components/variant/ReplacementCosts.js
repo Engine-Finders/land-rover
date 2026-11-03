@@ -1,199 +1,157 @@
-"use client";
+import Link from "next/link";
+import VIcon from "@/components/variant/VariantIcons";
 
-import { useState } from "react";
-import { useTheme } from "@/components/shared/themeProvider";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+// Variant section: engine replacement cost table (desktop) / one card per engine type (mobile),
+// the figures note, labour estimate and compare CTA - all from the page's `replacementCosts` JSON.
+// Fixed dark design.
 
-const ROW_ICONS = ["quote", "engine", "vettedSpecialists", "flagshipChoice"];
-const DESKTOP_COLS = "grid-cols-[1.2fr_1fr_1fr_0.9fr_1.4fr]";
+const GREEN = "#7f9f4f";
+const SANS = { fontFamily: "var(--font-instrument-sans), Arial, sans-serif" };
 
-function ArrowIcon({ className = "h-4 w-4" }) {
+// icon for the engine type and its "best for" line, matched on the row's engine type
+function rowIcons(type = "") {
+  const t = type.toLowerCase();
+  if (t.includes("used")) return ["tag", "car"];
+  if (t.includes("recon")) return ["cog", "scale"];
+  if (t.includes("rebuil")) return ["piston", "clock"];
+  if (t.includes("dealer") || t.includes("new")) return ["star", "shield"];
+  return ["engine", "info"];
+}
+
+const isNA = (v = "") => /^n\/?a$/i.test(String(v).trim());
+const stripArrow = (label = "") => label.replace(/^\s*→\s*/, "").replace(/\s*→\s*$/, "");
+// highlight the "10–14 hours" span of the labour estimate
+const highlightHours = (html = "") => html.replace(/(\d+\s*[–-]\s*\d+\s*hours?)/, `<span style="color:${GREEN}">$1</span>`);
+
+function TypeIcon({ name }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
+    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#7f9f4f]/30 bg-[#1d2a18] text-white md:h-11 md:w-11">
+      <VIcon name={name} className="h-5 w-5 md:h-[22px] md:w-[22px]" />
+    </span>
   );
 }
 
-function ChevronIcon({ open = false, className = "h-5 w-5" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={`${className} transition-transform ${open ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d="m6 9 6 6 6-6" />
-    </svg>
-  );
-}
+const Html = ({ html, className }) => <span className={className} dangerouslySetInnerHTML={{ __html: html }} />;
 
-function DesktopRow({ row, icon, isDark }) {
-  const rowClass = isDark ? "bg-black text-white" : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]/55";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]/55";
+export default function ReplacementCosts({ data }) {
+  if (!data?.rows?.length) return null;
+  const columns = data.columns?.length === 5 ? data.columns : ["Engine Type", "Supply Only", "Fitted (Indie)", "Warranty", "Best For"];
 
   return (
-    <div className={`grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-2 py-3 text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
-      <span className="flex items-center gap-2.5 px-2 font-semibold">
-        <HomeIcon name={icon} size={32} className="h-8 w-8 shrink-0" />
-        <span dangerouslySetInnerHTML={{ __html: row.engineType }} />
-      </span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.supplyOnly }} />
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.fittedIndie }} />
-      <span className={`flex items-center gap-2 px-2 border-l ${cellDivider}`}>
-        <HomeIcon name="safestBuy" size={28} className="h-7 w-7 shrink-0" />
-        <span dangerouslySetInnerHTML={{ __html: row.warranty }} />
-      </span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.bestFor }} />
-    </div>
-  );
-}
+    <section className="relative overflow-hidden bg-[#0b0d0a] text-white">
+      <div className="relative mx-auto max-w-8xl px-4 py-10 sm:px-6 md:px-8 md:py-14">
+        <span className="inline-block rounded bg-[#1d2a18] px-2 py-1 text-[10.5px] font-semibold uppercase tracking-[0.08em] text-[#a9c47e] md:text-[11px]">
+          Replacement Costs
+        </span>
+        <h2 className="mt-3 text-[24px] font-semibold leading-[1.15] tracking-[-0.02em] sm:text-[30px] lg:text-[36px]" style={SANS}>
+          {data.h2}
+        </h2>
 
-function AccordionRow({ row, icon, isOpen, onToggle }) {
-  return (
-    <div
-      className={`overflow-hidden rounded-[8px] border shadow-sm ${
-        isOpen ? "border-2 border-[var(--color-primary)]" : "border-[var(--color-border)]/75"
-      } bg-[var(--color-surface)]`}
-    >
-      <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full items-center justify-between gap-3 p-4 text-left">
-        <div className="flex min-w-0 items-center gap-3">
-          <HomeIcon name={icon} size={36} className="h-9 w-9 shrink-0" />
-          <div className="min-w-0">
-            <p className="text-[0.92rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.engineType }} />
-            <p className="mt-0.5 truncate text-[0.74rem] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.bestFor }} />
-          </div>
-        </div>
-        <ChevronIcon open={isOpen} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-      </button>
-
-      {isOpen ? (
-        <div className="flex flex-col gap-2.5 px-4 pb-4 text-[0.84rem]">
-          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-[var(--color-border)]/55 pt-2.5">
-            <span className="flex items-center gap-2 text-[var(--color-text-muted)]">
-              <HomeIcon name="quote" size={28} className="h-7 w-7 shrink-0" />
-              Supply Only
-            </span>
-            <span className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: row.supplyOnly }} />
-          </div>
-          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-[var(--color-border)]/55 pt-2.5">
-            <span className="flex items-center gap-2 text-[var(--color-text-muted)]">
-              <HomeIcon name="vettedSpecialists" size={28} className="h-7 w-7 shrink-0" />
-              Fitted (Indie)
-            </span>
-            <span className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: row.fittedIndie }} />
-          </div>
-          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-[var(--color-border)]/55 pt-2.5">
-            <span className="flex items-center gap-2 text-[var(--color-text-muted)]">
-              <HomeIcon name="safestBuy" size={28} className="h-7 w-7 shrink-0" />
-              Warranty
-            </span>
-            <span className="font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.warranty }} />
-          </div>
-          <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1 border-t border-[var(--color-border)]/55 pt-2.5">
-            <span className="flex items-center gap-2 text-[var(--color-text-muted)]">
-              <HomeIcon name="users" size={28} className="h-7 w-7 shrink-0" />
-              Best For
-            </span>
-            <span className="text-right text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.bestFor }} />
-          </div>
-        </div>
-      ) : null}
-    </div>
-  );
-}
-
-export default function ReplacementCosts({ data, band = "page" }) {
-  const { theme } = useTheme();
-  const [openIndex, setOpenIndex] = useState(null);
-  if (!data) return null;
-
-  const isDark = theme === "dark";
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
-  const headerDivider = isDark ? "border-white/20" : "border-white/18";
-  const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
-
-  return (
-    <section className={`w-full py-6 text-[var(--color-text)] md:py-8 ${sectionBgClass(band)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <HeadingEyebrow text="REPLACEMENT COSTS" />
-        <h2 className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">{data.h2}</h2>
-
-        <div className="mt-4 flex flex-col gap-3 md:hidden">
-          {data.rows?.map((row, index) => (
-            <AccordionRow
-              key={row.engineType}
-              row={row}
-              icon={ROW_ICONS[index % ROW_ICONS.length]}
-              isOpen={openIndex === index}
-              onToggle={() => setOpenIndex(openIndex === index ? null : index)}
-            />
-          ))}
+        {/* ---------- mobile / tablet: one card per engine type ---------- */}
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:hidden">
+          {data.rows.map((r) => {
+            const [icon, bestIcon] = rowIcons(r.engineType);
+            return (
+              <article key={r.engineType} className="rounded-xl border border-white/12 bg-white/[0.03] p-4">
+                <div className="flex items-center gap-3">
+                  <TypeIcon name={icon} />
+                  <h3 className="text-[16px] font-semibold leading-tight" dangerouslySetInnerHTML={{ __html: r.engineType }} />
+                </div>
+                <dl className="mt-3.5 grid grid-cols-3 divide-x divide-white/10 rounded-lg border border-white/10 bg-black/30 py-2.5">
+                  {[[columns[1], r.supplyOnly], [columns[2], r.fittedIndie], [columns[3], r.warranty]].map(([k, val]) => (
+                    <div key={k} className="px-1.5 text-center">
+                      <dt className="text-[10px] font-medium uppercase tracking-[0.06em] text-white/55">{k}</dt>
+                      <dd className={`mt-1 text-[12.5px] font-semibold leading-snug tracking-[-0.01em] min-[400px]:text-[13.5px] ${isNA(val) ? "text-white/45" : "text-white"}`} dangerouslySetInnerHTML={{ __html: String(val || "").replace(" – ", "–") }} />
+                    </div>
+                  ))}
+                </dl>
+                {r.bestFor && (
+                  <p className="mt-3 flex items-start gap-2 text-[13px] leading-snug text-white/80">
+                    <VIcon name={bestIcon} className="mt-px h-4 w-4 shrink-0" style={{ color: GREEN }} />
+                    <span>
+                      <span className="font-semibold text-white">{columns[4]}:</span> <Html html={r.bestFor} />
+                    </span>
+                  </p>
+                )}
+              </article>
+            );
+          })}
         </div>
 
-        <div className="mt-4 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-3 text-[0.82rem] font-semibold text-white`}>
-            {data.columns?.map((col, index) => (
-              <span key={col} className={`px-2 text-center ${index > 0 ? `border-l ${headerDivider}` : ""}`}>
-                {col}
-              </span>
-            ))}
-          </div>
-          <div className={bodyWrapperBg}>
-            {data.rows?.map((row, index) => (
-              <DesktopRow key={row.engineType} row={row} icon={ROW_ICONS[index % ROW_ICONS.length]} isDark={isDark} />
-            ))}
-          </div>
+        {/* ---------- desktop: table ---------- */}
+        <div className="mt-6 hidden overflow-hidden rounded-xl border border-[#7f9f4f]/35 lg:block">
+          <table className="w-full border-collapse text-left">
+            <thead>
+              <tr className="bg-[#16231a] text-[15px] font-semibold">
+                {columns.map((h, i) => (
+                  <th key={h} scope="col" className={`border-white/10 px-5 py-3.5 ${i ? "border-l" : ""} ${i > 0 && i < 4 ? "text-center" : i === 0 ? "pl-16" : "pl-6"}`}>
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {data.rows.map((r) => {
+                const [icon, bestIcon] = rowIcons(r.engineType);
+                return (
+                  <tr key={r.engineType} className="border-t border-white/10 text-[16px] transition-colors hover:bg-white/[0.025]">
+                    <th scope="row" className="w-[22%] px-5 py-4 font-medium">
+                      <span className="flex items-center gap-3.5">
+                        <TypeIcon name={icon} />
+                        <Html html={r.engineType} />
+                      </span>
+                    </th>
+                    <td className={`border-l border-white/10 px-4 py-4 text-center ${isNA(r.supplyOnly) ? "text-white/45" : ""}`}><Html html={r.supplyOnly} /></td>
+                    <td className={`border-l border-white/10 px-4 py-4 text-center ${isNA(r.fittedIndie) ? "text-white/45" : ""}`}><Html html={r.fittedIndie} /></td>
+                    <td className="border-l border-white/10 px-4 py-4">
+                      <span className={`flex items-center justify-center gap-3 ${isNA(r.warranty) ? "text-white/45" : ""}`}>
+                        {!isNA(r.warranty) && <VIcon name="shield" className="h-7 w-7 shrink-0" style={{ color: GREEN }} />}
+                        <Html html={r.warranty} />
+                      </span>
+                    </td>
+                    <td className="w-[24%] border-l border-white/10 px-5 py-4">
+                      <span className="flex items-center gap-3.5 text-[15px] leading-snug">
+                        <VIcon name={bestIcon} className="h-7 w-7 shrink-0 text-white/80" />
+                        <Html html={r.bestFor} />
+                      </span>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
 
-        {data.figuresNote ? (
-          <div className="glass-panel mt-4 flex gap-3 rounded-[8px] p-4">
-            <HomeIcon name="note" size={36} className="mt-0.5 h-9 w-9 shrink-0" />
-            <p className="text-[0.82rem] leading-[1.5] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: data.figuresNote }} />
-          </div>
-        ) : null}
+        {/* figures note */}
+        {data.figuresNote && (
+          <p className="mt-3 flex items-start gap-3 rounded-xl border border-white/12 bg-white/[0.03] px-4 py-3.5 text-[13.5px] leading-relaxed text-white/85 md:mt-4 md:items-center md:px-5 md:text-[15px]">
+            <VIcon name="info" className="mt-0.5 h-5 w-5 shrink-0 md:mt-0 md:h-6 md:w-6" style={{ color: GREEN }} />
+            <Html html={data.figuresNote} />
+          </p>
+        )}
 
-        {data.labourEstimate ? (
-          <div className="mt-4 flex items-center gap-4 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-4 shadow-sm md:hidden">
-            <HomeIcon name="vettedSpecialists" size={40} className="h-10 w-10 shrink-0" />
-            <p className="text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
-              <span className="font-bold">Labour estimate: </span>
-              <span dangerouslySetInnerHTML={{ __html: data.labourEstimate }} />
-            </p>
-          </div>
-        ) : null}
-
-        {data.labourEstimate || data.cta?.label ? (
-          <div className="mt-4 hidden items-center gap-4 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)] p-4 shadow-sm md:flex">
-            {data.labourEstimate ? (
-              <>
-                <HomeIcon name="vettedSpecialists" size={40} className="h-10 w-10 shrink-0" />
-                <p className="flex-1 text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
-                  <span className="font-bold">Labour estimate: </span>
-                  <span dangerouslySetInnerHTML={{ __html: data.labourEstimate }} />
+        {/* labour + CTA */}
+        {(data.labourEstimate || data.cta?.label) && (
+          <div className="mt-3 flex flex-col gap-4 rounded-xl border border-white/12 bg-white/[0.03] p-4 md:mt-4 md:p-5 lg:flex-row lg:items-center lg:gap-8">
+            {data.labourEstimate && (
+              <div className="flex flex-1 items-start gap-3.5 md:gap-5">
+                <VIcon name="wrench" className="h-9 w-9 shrink-0 text-white/85 md:h-12 md:w-12" />
+                <p className="text-[14px] leading-relaxed text-white/85 md:text-[15px]">
+                  <span className="font-semibold text-white">Labour estimate:</span> <Html html={highlightHours(data.labourEstimate)} />
                 </p>
-              </>
-            ) : null}
-            {data.cta?.label ? (
-              <a
+              </div>
+            )}
+            {data.cta?.label && (
+              <Link
                 href="/quote"
-                className="btn-cta flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[8px] bg-[var(--color-primary)] px-4 py-2.5 text-[0.8rem] font-bold text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
+                className="group flex items-center gap-4 rounded-lg border border-[#5a7a3c] bg-linear-to-br from-[#3e5a2c] to-[#2c4220] px-5 py-4 text-[15px] font-semibold leading-snug text-white shadow-[0_10px_30px_-12px_rgba(90,122,60,0.8)] transition-colors hover:from-[#4a6a35] hover:to-[#35502a] md:text-[17px] lg:w-[400px] lg:shrink-0 lg:px-6"
               >
-                <ArrowIcon className="h-4 w-4 shrink-0" />
-                {data.cta.label}
-              </a>
-            ) : null}
+                <VIcon name="arrow" className="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-1" />
+                {stripArrow(data.cta.label)}
+              </Link>
+            )}
           </div>
-        ) : null}
-
-        {data.cta?.label ? (
-          <a
-            href="/quote"
-            className="btn-cta mt-4 flex w-full items-center justify-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-3 py-2.5 text-white no-underline shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
-          >
-            <ArrowIcon className="h-4 w-4 shrink-0" />
-            <span className="whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{data.cta.label}</span>
-          </a>
-        ) : null}
+        )}
       </div>
     </section>
   );

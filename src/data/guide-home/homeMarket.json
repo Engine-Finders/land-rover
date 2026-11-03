@@ -1,0 +1,219 @@
+{
+  "h2": "Land Rover &|Range Rover|Market Intelligence",
+  "subhead": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate – 9,000+ real enquiries, 15+ engine codes tracked, and live market insights updated monthly.",
+  "image": "/home/market/hero.webp",
+  "mobileImage": "/home/market/hero-band.webp",
+  "imageAlt": "Range Rover Sport",
+  "tag": "[EM-VERIFIED]",
+  "engines": {
+    "title": "Most-Enquired Engines (2025)",
+    "cta": {
+      "label": "View all engines",
+      "href": "/data/engine-failure-index-2026"
+    },
+    "image": "/home/market/engine.webp",
+    "items": [
+      {
+        "code": "204DTD",
+        "name": "Ingenium Diesel",
+        "count": 1150,
+        "href": "/engine/ingenium-20-diesel"
+      },
+      {
+        "code": "306DT",
+        "name": "TDV6/SDV6 3.0",
+        "count": 980,
+        "href": "/engine/306dt"
+      },
+      {
+        "code": "276DT",
+        "name": "2.7 TDV6",
+        "count": 700,
+        "href": "/engine/276dt"
+      },
+      {
+        "code": "368DT",
+        "name": "3.6 TDV8",
+        "count": 650,
+        "href": "/engine/368dt"
+      },
+      {
+        "code": "508PS",
+        "name": "4.4 SDV8",
+        "count": 620,
+        "href": "/engine/448dt"
+      },
+      {
+        "code": "204PT",
+        "name": "Ingenium Petrol",
+        "count": 480,
+        "href": "/engine/ingenium-20-petrol"
+      }
+    ]
+  },
+  "models": {
+    "title": "Most-Enquired Models (2025)",
+    "cta": {
+      "label": "View all models",
+      "href": "#models"
+    },
+    "items": [
+      {
+        "name": "Discovery Sport L550",
+        "count": 362,
+        "image": "/home/market/ds-l550.webp",
+        "href": "/discovery-sport"
+      },
+      {
+        "name": "Range Rover Evoque L551",
+        "count": 349,
+        "image": "/home/market/evoque-l551.webp",
+        "href": "/range-rover-evoque"
+      },
+      {
+        "name": "Range Rover Sport L494",
+        "count": 308,
+        "image": "/home/econ/rrs-l494.webp",
+        "href": "/range-rover-sport"
+      },
+      {
+        "name": "Defender L663",
+        "count": 292,
+        "image": "/home/econ/defender-l663.webp",
+        "href": "/defender"
+      },
+      {
+        "name": "Range Rover L405",
+        "count": 284,
+        "image": "/home/econ/rr-l405.webp",
+        "href": "/range-rover"
+      },
+      {
+        "name": "Range Rover Evoque L538",
+        "count": 244,
+        "image": "/home/market/evoque-l538.webp",
+        "href": "/range-rover-evoque"
+      }
+    ]
+  },
+  "costs": {
+    "title": "Replacement Cost Index",
+    "sub": "(Reconditioned, Supply-Only)",
+    "items": [
+      {
+        "code": "204DTD",
+        "name": "Ingenium Diesel",
+        "range": "£3,500 – £5,800"
+      },
+      {
+        "code": "306DT",
+        "name": "TDV6/SDV6 3.0",
+        "range": "£6,500 – £9,500"
+      },
+      {
+        "code": "276DT",
+        "name": "2.7 TDV6",
+        "range": "£5,000 – £7,500"
+      },
+      {
+        "code": "368DT",
+        "name": "3.6 TDV8",
+        "range": "£5,500 – £8,000"
+      },
+      {
+        "code": "508PS",
+        "name": "4.4 SDV8",
+        "range": "£8,000 – £12,000"
+      }
+    ]
+  },
+  "risks": {
+    "title": "Highest-Risk Failures",
+    "items": [
+      {
+        "title": "306DT Crankshaft Bearing Failure",
+        "severity": "catastrophic",
+        "note": "Little rebuildable material once it starts",
+        "image": "/home/market/engine.webp"
+      },
+      {
+        "title": "276DT Oil Pump Housing Failure",
+        "severity": "catastrophic",
+        "note": "Often kills the engine outright",
+        "image": "/home/market/engine.webp"
+      },
+      {
+        "title": "204DTD Pre-2019",
+        "sub": "Timing Chain Tensioner Wear",
+        "severity": "monitor",
+        "note": "Improved significantly from 2019 onward",
+        "image": "/home/market/chain.webp"
+      }
+    ]
+  },
+  "feed": {
+    "title": "Live Enquiry Feed",
+    "sub": "Live updates from real owners",
+    "items": [
+      {
+        "vehicle": "Discovery 4 (SDV6)",
+        "place": "Surrey",
+        "issue": "Cold-start knock",
+        "when": "3 hours ago",
+        "image": "/home/econ/disco4.webp"
+      },
+      {
+        "vehicle": "Range Rover Evoque (204DTD)",
+        "place": "Leeds",
+        "issue": "Limp mode, EGR fault",
+        "when": "5 hours ago",
+        "image": "/home/market/evoque-l551.webp"
+      },
+      {
+        "vehicle": "Defender L663 (306DT)",
+        "place": "Aberdeen",
+        "issue": "Pre-purchase inspection",
+        "when": "7 hours ago",
+        "image": "/home/econ/defender-l663.webp"
+      },
+      {
+        "vehicle": "Range Rover Sport L494",
+        "place": "Birmingham",
+        "issue": "Air suspension compressor failure",
+        "when": "12 hours ago",
+        "image": "/home/econ/rrs-l494.webp"
+      }
+    ]
+  },
+  "insights": {
+    "title": "Market Insights",
+    "items": [
+      {
+        "icon": "trend-bold",
+        "text": "Engine enquiries for 204DTD are up 12% vs. last quarter. Timing chain concerns driving pre-purchase inspections."
+      },
+      {
+        "icon": "wallet",
+        "text": "Average reconditioned engine costs have increased 8% in 2025 due to core availability."
+      }
+    ]
+  },
+  "note": {
+    "title": "Data Note:",
+    "text": "All data in this section comes from real UK enquiries via EnginesMarket.",
+    "stats": [
+      {
+        "label": "Enquiry volumes",
+        "value": "9,000+"
+      },
+      {
+        "label": "Engine codes tracked",
+        "value": "15+"
+      },
+      {
+        "label": "Last updated",
+        "value": "May 2025"
+      }
+    ]
+  }
+}

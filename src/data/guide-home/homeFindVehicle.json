@@ -1,0 +1,100 @@
+{
+  "h2": "Find Your|Vehicle",
+  "subhead": "Choose your model to explore reliability, common faults and real running costs.",
+  "groups": [
+    {
+      "brand": "landRover",
+      "label": "Land Rover",
+      "models": [
+        {
+          "name": "Defender",
+          "generations": "2 Generations",
+          "image": "/home/find/defender-rt.webp",
+          "href": "/defender",
+          "badge": "Safest Buy",
+          "icon": "trophy",
+          "tone": "gold"
+        },
+        {
+          "name": "Discovery",
+          "generations": "5 Generations",
+          "image": "/home/find/discovery-rt.webp",
+          "href": "/discovery",
+          "badge": "Best Family",
+          "icon": "family",
+          "tone": "green"
+        },
+        {
+          "name": "Discovery Sport",
+          "generations": "1 Generation",
+          "image": "/home/find/discovery-sport-rt.webp",
+          "href": "/discovery-sport",
+          "badge": "Most Enquired",
+          "icon": "flame",
+          "tone": "orange"
+        },
+        {
+          "name": "Freelander",
+          "generations": "2 Generations",
+          "image": "/home/find/freelander-rt.webp",
+          "href": "/freelander",
+          "badge": "Check Value",
+          "icon": "alert",
+          "tone": "gold"
+        }
+      ]
+    },
+    {
+      "brand": "rangeRover",
+      "label": "Range Rover",
+      "models": [
+        {
+          "name": "Range Rover",
+          "generations": "3 Generations",
+          "image": "/home/find/range-rover-rt.webp",
+          "href": "/range-rover",
+          "badge": "Flagship Choice",
+          "icon": "crown",
+          "tone": "gold"
+        },
+        {
+          "name": "Range Rover Sport",
+          "generations": "3 Generations",
+          "image": "/home/find/range-rover-sport-rt.webp",
+          "href": "/range-rover-sport",
+          "badge": "High Demand",
+          "icon": "rocket",
+          "tone": "green"
+        },
+        {
+          "name": "Velar",
+          "generations": "1 Generation",
+          "image": "/home/find/range-rover-velar-rt.webp",
+          "href": "/velar",
+          "badge": "Premium Style",
+          "icon": "diamond",
+          "tone": "green"
+        },
+        {
+          "name": "Evoque",
+          "generations": "2 Generations",
+          "image": "/home/find/range-rover-evoque-rt.webp",
+          "href": "/range-rover-evoque",
+          "badge": "Best-Seller",
+          "icon": "flame",
+          "tone": "orange"
+        }
+      ]
+    }
+  ],
+  "help": {
+    "title": "Not sure which model is right for you?",
+    "text": "We’ll help you identify your Land Rover or Range Rover and show you the most important reliability data.",
+    "cta": {
+      "label": "Identify My Vehicle",
+      "href": "/quote"
+    },
+    "image": "/home/find-road.webp",
+    "mobileImage": "/home/find-road-mobile.webp"
+  }
+}

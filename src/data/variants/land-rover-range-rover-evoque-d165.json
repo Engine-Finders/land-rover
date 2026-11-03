@@ -11,14 +11,14 @@
       "description": "The 163PS 2.0 MHEV 204DTD - real UK costs, L551 Ingenium reliability insights, and honest advice. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/evoque/d165",
-      "image": "https://landroverengine.uk/images/land-rover/hero/evoque-d165.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Evoque D165 Engine Replacement Cost UK - Compare Quotes",
       "description": "The 163PS 2.0 MHEV 204DTD - real UK costs, L551 Ingenium reliability insights, and honest advice.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/evoque-d165.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -127,7 +127,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

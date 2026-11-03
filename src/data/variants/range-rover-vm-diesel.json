@@ -11,14 +11,14 @@
       "description": "Every Land Rover Range Rover VM Diesel engine - 2.4L and 2.5L four-cylinder turbo-diesels, 1986–1992. Real UK costs, head gasket advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/range-rover/vm-diesel",
-      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-vm-diesel.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "VM Diesel Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Land Rover Range Rover VM Diesel engine - 2.4L and 2.5L four-cylinder turbo-diesels, 1986–1992. Real UK costs, head gasket advice, and honest reliability data.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-vm-diesel.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -139,7 +139,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

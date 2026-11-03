@@ -65,7 +65,7 @@ export default function ModelHero({ data, band = "page" }) {
 
   return (
     <section className={`relative overflow-hidden text-[var(--color-text)] ${sectionBgClass(band)} ${headingClass}`}>
-      {/* Full-bleed hero image — left fades to page bg, right stays visible */}
+      {/* Full-bleed hero image - left fades to page bg, right stays visible */}
       <div className="pointer-events-none absolute inset-0">
         <Image
           src={heroImageMobile}

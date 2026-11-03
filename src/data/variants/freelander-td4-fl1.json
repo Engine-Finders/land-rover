@@ -11,14 +11,14 @@
       "description": "Land Rover Freelander Td4 BMW M47R engine - real UK costs, injection pump & turbo advice. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/freelander/td4-fl1",
-      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-td4-fl1.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Td4 Engine Replacement Cost UK - Compare Quotes",
       "description": "Land Rover Freelander Td4 BMW M47R engine - real UK costs, injection pump & turbo advice.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/freelander-td4-fl1.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

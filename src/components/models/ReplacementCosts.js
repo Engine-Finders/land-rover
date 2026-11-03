@@ -157,18 +157,18 @@ function buildNotes(data = {}) {
 
   if (!isUsableRuleTitle(ruleTitle)) {
     ruleTitle = "";
-    // Garbled title usually means the box was corrupted — prefer embedded labour rule.
+    // Garbled title usually means the box was corrupted - prefer embedded labour rule.
     if (/labour estimate|cost sheet/i.test(cleanText(data.economicsBox?.title || ""))) {
       ruleText = "";
     }
   }
 
   // Some models append the rule onto labourEstimate; peel it off when economicsBox is empty/incomplete.
-  const embedded = labour.match(/^(.*?)\s+(The\s+.+?\srule(?:\s*[-—–:]\s*|\s+)[\s\S]+)$/i);
+  const embedded = labour.match(/^(.*?)\s+(The\s+.+?\srule(?:\s*[--–:]\s*|\s+)[\s\S]+)$/i);
   if (embedded) {
     labour = embedded[1].replace(/\.\s*$/, ".") || embedded[1];
     if (!ruleText || !ruleTitle) {
-      const parts = embedded[2].match(/^(The\s+.+?\srule(?:\s*[-—–][^.]*?)?)(?:\s*[:]\s*|\s+)([\s\S]*)$/i);
+      const parts = embedded[2].match(/^(The\s+.+?\srule(?:\s*[--–][^.]*?)?)(?:\s*[:]\s*|\s+)([\s\S]*)$/i);
       if (parts) {
         if (!ruleTitle) ruleTitle = parts[1];
         if (!ruleText) ruleText = parts[2];
@@ -323,7 +323,7 @@ function Notes({ parts }) {
             </span>
             <h3 className="font-bold text-[var(--color-primary)]">Important Notes</h3>
           </div>
-          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.important || "—" }} />
+          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.important || "-" }} />
         </div>
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-3">
@@ -332,7 +332,7 @@ function Notes({ parts }) {
             </span>
             <h3 className="font-bold text-[var(--color-primary)]">Labour Estimate</h3>
           </div>
-          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.labour || "—" }} />
+          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.labour || "-" }} />
         </div>
       </div>
 
@@ -344,7 +344,7 @@ function Notes({ parts }) {
           <div className="max-w-[540px]">
             <h3 className="font-lora text-[24px] font-medium leading-[1.12] text-[var(--color-primary)] md:text-[30px]">
               {parts.ruleTitle}
-              {parts.ruleTitle && !/[:—–-]\s*$/.test(parts.ruleTitle) ? ":" : ""}
+              {parts.ruleTitle && !/[:-–-]\s*$/.test(parts.ruleTitle) ? ":" : ""}
             </h3>
             {parts.ruleText ? (
               <p className="mt-2 text-[14px] leading-[1.5] md:text-[15px]" dangerouslySetInnerHTML={{ __html: parts.ruleText }} />

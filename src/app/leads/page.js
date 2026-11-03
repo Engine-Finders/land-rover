@@ -46,7 +46,7 @@ async function fetchLeads() {
 }
 
 function cell(value) {
-  if (value === undefined || value === null || String(value).trim() === "") return "—";
+  if (value === undefined || value === null || String(value).trim() === "") return "-";
   if (typeof value === "object") return JSON.stringify(value);
   return String(value);
 }

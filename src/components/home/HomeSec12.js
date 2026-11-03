@@ -82,7 +82,7 @@ function CommitmentCard({ data, isDark }) {
         </div>
         <div className="mt-6">
           <p className="font-lora text-[1.15rem] italic text-white">{data.signature}</p>
-          <p className="mt-0.5 text-[0.72rem] text-white/70">— {data.signatureRole}</p>
+          <p className="mt-0.5 text-[0.72rem] text-white/70">- {data.signatureRole}</p>
         </div>
       </div>
     </div>

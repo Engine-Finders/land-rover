@@ -11,14 +11,14 @@
       "description": "The Land Rover Range Rover P615 SV (S68B44B) - 4.4L twin‑turbo V8, 615 PS, 750 Nm. Real UK costs, performance advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/range-rover/p615-sv",
-      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-p615-sv.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Range Rover P615 SV Engine Replacement Cost UK - Compare Quotes",
       "description": "The Land Rover Range Rover P615 SV (S68B44B) - 4.4L twin‑turbo V8, 615 PS, 750 Nm. Real UK costs, performance advice, and honest reliability data.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-p615-sv.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

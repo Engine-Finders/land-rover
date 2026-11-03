@@ -11,14 +11,14 @@
       "description": "Land Rover Range Rover Evoque P250 – 2.0‑litre Ingenium petrol. Real UK costs, water pump facts, and specialist quotes. Get free prices from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/evoque/p250",
-      "image": "https://landroverengine.uk/images/land-rover/hero/p250-evoque.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Evoque P250 Engine Cost UK - Compare Quotes",
       "description": "Land Rover Range Rover Evoque P250 – 2.0‑litre Ingenium petrol. Real UK costs, water pump facts, and specialist quotes.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/p250-evoque.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -127,7 +127,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

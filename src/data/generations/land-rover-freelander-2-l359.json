@@ -180,7 +180,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk/",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -684,7 +684,7 @@
     "ctaButton": {
       "label": "Compare Land Rover Freelander 2 L359 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+      "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }
 }

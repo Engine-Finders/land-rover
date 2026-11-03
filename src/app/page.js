@@ -27,7 +27,7 @@ import homeSec13Data from "@/data/home/homeSec13.json";
 
 const HOME_TITLE = "The UK's Most Trusted Land Rover & Range Rover Ownership Guide";
 const HOME_DESCRIPTION =
-  "Reliability rankings, real failure data, honest repair-vs-replace economics — for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.";
+  "Reliability rankings, real failure data, honest repair-vs-replace economics - for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.";
 const HOME_URL = "https://landroverengine.uk";
 const HOME_IMAGE = "https://landroverengine.uk/hero-day.webp";
 

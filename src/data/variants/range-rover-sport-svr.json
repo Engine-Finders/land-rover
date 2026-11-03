@@ -11,14 +11,14 @@
       "description": "Every Range Rover Sport SVR engine - AJ133 5.0 SC V8. Real UK costs, timing chain, coolant pipe and oil consumption data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/range-rover-sport/svr",
-      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-svr.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Range Rover Sport SVR Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Range Rover Sport SVR engine - AJ133 5.0 SC V8. Real UK costs, timing chain, coolant pipe and oil consumption data.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-sport-svr.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -151,7 +151,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

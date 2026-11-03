@@ -11,14 +11,14 @@
       "description": "Every Land Rover Defender 2.4 TDCi engine - ZSD‑424 Puma. Real UK costs, injector and EGR issues explained. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/defender/24-tdci",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-24-tdci.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "2.4 TDCi Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Land Rover Defender 2.4 TDCi engine - ZSD‑424 Puma. Real UK costs, injector and EGR issues explained.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-24-tdci.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

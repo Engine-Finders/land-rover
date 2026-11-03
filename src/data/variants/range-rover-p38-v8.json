@@ -11,14 +11,14 @@
       "description": "Every Range Rover P38 4.0/4.6 V8 engine - GEMS and THOR Rover V8s. Real UK costs, slipped liner advice, and honest reliability data. Get free quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/range-rover/p38-v8",
-      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-p38-v8.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "P38 4.0 / 4.6 V8 Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Range Rover P38 4.0/4.6 V8 engine - GEMS and THOR Rover V8s. Real UK costs, slipped liner advice, and honest reliability data.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/range-rover-p38-v8.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -145,7 +145,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

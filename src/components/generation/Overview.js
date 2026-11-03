@@ -174,7 +174,7 @@ export default function Overview({ data, band = "page" }) {
       className={`relative text-[var(--color-text)] ${sectionBgClass(band)}`}
       style={{ "--section-fade": rgb }}
     >
-      {/* Header image sizes to headings only — same pattern as other gen sections */}
+      {/* Header image sizes to headings only - same pattern as other gen sections */}
       <div className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
           <Image
@@ -215,7 +215,7 @@ export default function Overview({ data, band = "page" }) {
         </div>
       </div>
 
-      {/* Intro + cards sit below the image — no fixed-height clip on desktop */}
+      {/* Intro + cards sit below the image - no fixed-height clip on desktop */}
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 md:px-8 md:pb-10">
         {introParts.length > 0 ? (
           <div className={`flex flex-col gap-3 text-[0.9rem] leading-[1.5] md:max-w-[920px] md:text-[1.05rem] md:leading-[1.55] ${bodyTextClass}`}>

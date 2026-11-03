@@ -4,7 +4,7 @@ import { ComposableMap, Geographies, Geography } from "@vnedyalk0v/react19-simpl
 import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { HomeIcon } from "@/components/home/homeIcons";
 import { sectionBgClass } from "@/components/home/sectionBand";
-// Pass TopoJSON as an object — URL fetches are HTTPS-only by default in
+// Pass TopoJSON as an object - URL fetches are HTTPS-only by default in
 // @vnedyalk0v/react19-simple-maps, so localhost http:// paths fail to load.
 import ukRegionsTopo from "../../../public/320d/uk-regions-topo.json";
 
@@ -47,7 +47,7 @@ function parseRegionalDemand(value = "") {
   const tag = tagMatch ? tagMatch[1] : "";
   let clean = tagMatch ? value.slice(0, tagMatch.index) : value;
   // Drop trailing prose after the last share, e.g. "- premium SUV strongholds"
-  clean = clean.replace(/\s+[-–—].*$/, "").trim();
+  clean = clean.replace(/\s+[-–-].*$/, "").trim();
   const regions = clean
     .split(",")
     .map((part) => {

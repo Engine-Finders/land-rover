@@ -11,14 +11,14 @@
       "description": "Land Rover Discovery Sport D180 (204DTD MHEV) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists for your 2.0-litre Ingenium diesel.",
       "type": "website",
       "url": "https://landroverengine.uk/discovery-sport/d180",
-      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-d180.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Discovery Sport D180 Engine Cost UK - Compare Quotes",
       "description": "Land Rover Discovery Sport D180 (204DTD MHEV) engine costs, reliability, and common faults. Get free quotes from 12 vetted Land Rover specialists.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-sport-d180.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -127,7 +127,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengines-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

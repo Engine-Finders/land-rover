@@ -11,14 +11,14 @@
       "description": "Every Discovery 300Tdi engine - 2.5L mechanical turbo diesel. Real UK costs, timing belt and head gasket reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/discovery/300tdi",
-      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-300tdi.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "300Tdi Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Discovery 300Tdi engine - 2.5L mechanical turbo diesel. Real UK costs, timing belt and head gasket reliability data.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/discovery-300tdi.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

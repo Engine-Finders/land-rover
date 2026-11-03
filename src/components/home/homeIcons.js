@@ -5,7 +5,7 @@ import { useTheme } from "@/components/shared/themeProvider";
 
 /**
  * Semantic key → exact filename under public/Jaguar Black|Silver.
- * Keep filenames identical to silver-black-icons.txt — do not rename assets.
+ * Keep filenames identical to silver-black-icons.txt - do not rename assets.
  *
  * Dark/silver appearance uses Jaguar Black + CSS invert. Switching image folders
  * through next/image was unreliable in the browser (stuck on black assets).

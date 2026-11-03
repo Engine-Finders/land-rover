@@ -1,7 +1,7 @@
 import { LEAD_SOURCE, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/app/api/lead/constants";
 
 /**
- * GET /api/leads — list leads for this website only (source = landroverengines.uk).
+ * GET /api/leads - list leads for this website only (source = landroverengines.uk).
  */
 export async function GET() {
   try {

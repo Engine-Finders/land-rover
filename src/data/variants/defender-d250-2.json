@@ -11,14 +11,14 @@
       "description": "Every Land Rover Defender D250 engine - the 3.0-litre AJ20D6 six-cylinder Ingenium diesel. Real UK costs, reliability data and recall info. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/defender/d250",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-d250.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Defender D250 Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Land Rover Defender D250 engine - the 3.0-litre AJ20D6 six-cylinder Ingenium diesel. Real UK costs, reliability data and recall info.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-d250.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

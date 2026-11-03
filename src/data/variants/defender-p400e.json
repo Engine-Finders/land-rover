@@ -11,14 +11,14 @@
       "description": "Every Land Rover Defender P400e powertrain - the 2.0-litre PT204 Ingenium petrol with 105kW e-motor. Real UK costs, coolant leak advice, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/defender/p400e",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-p400e.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Defender P400e Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Land Rover Defender P400e powertrain - the 2.0-litre PT204 Ingenium petrol with 105kW e-motor. Real UK costs, coolant leak advice, and honest reliability data.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-p400e.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

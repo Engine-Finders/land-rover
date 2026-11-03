@@ -11,14 +11,14 @@
       "description": "Every Land Rover Defender 2.5 diesel engine - 12J and 19J. Real UK costs, known head and pump issues, and honest reliability data. Get free quotes from 12 vetted Land Rover specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/defender/25-diesel",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-25-diesel.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Defender 2.5 Diesel Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Land Rover Defender 2.5 diesel engine - 12J and 19J. Real UK costs, known head and pump issues, and honest reliability data.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/defender-25-diesel.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -145,7 +145,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

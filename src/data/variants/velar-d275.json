@@ -11,14 +11,14 @@
       "description": "Every Land Rover Range Rover Velar D275 engine - the 3.0-litre 306DT V6 diesel. Real UK costs, crankshaft bearing advice, and honest reliability data. Get free quotes from 12 vetted specialists today.",
       "type": "website",
       "url": "https://landroverengine.uk/velar/d275",
-      "image": "https://landroverengine.uk/images/land-rover/hero/velar-d275.jpg",
+      "image": "https://landroverengine.uk/hero-day.webp",
       "siteName": "LandRoverEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Velar D275 Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Land Rover Range Rover Velar D275 engine - the 3.0-litre 306DT V6 diesel. Real UK costs, crankshaft bearing advice, and honest reliability data.",
-      "image": "https://landroverengine.uk/images/land-rover/hero/velar-d275.jpg"
+      "image": "https://landroverengine.uk/hero-day.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "LandRoverEngine.uk",
           "url": "https://landroverengine.uk",
-          "logo": "https://landroverengine.uk/images/landroverengine-logo.png",
+          "logo": "https://landroverengine.uk/land-rover-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

@@ -126,7 +126,7 @@ function ExampleVerdict({ example, isDark }) {
       }`}
     >
       <div className="md:grid md:grid-cols-[220px_minmax(0,1fr)] lg:grid-cols-[260px_minmax(0,1fr)]">
-        {/* Image — full height of the card on desktop */}
+        {/* Image - full height of the card on desktop */}
         <div className="relative min-h-[180px] md:min-h-full">
           <Image
             src={example.image?.src || "/right.webp"}
@@ -137,7 +137,7 @@ function ExampleVerdict({ example, isDark }) {
           />
         </div>
 
-        {/* Heading + insight cards — all to the right of the image */}
+        {/* Heading + insight cards - all to the right of the image */}
         <div className="flex min-w-0 flex-col">
           <div className="px-4 pt-5 md:px-5 md:pt-5 md:pb-2">
             <p className={`text-[0.68rem] font-bold uppercase tracking-[0.08em] ${isDark ? "text-white/55" : "text-[var(--color-text-muted)]"}`}>

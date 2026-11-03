@@ -7,6 +7,10 @@ const nextConfig = {
   // Avoid trailing-slash 301 → 404 chains (SEO recovery brief)
   trailingSlash: false,
   images: {
+    // Serve images straight from /public (they are already compressed WebP). Vercel's image
+    // optimisation is billed per account, and once the quota ran out every /_next/image request
+    // returned 402 OPTIMIZED_IMAGE_REQUEST_PAYMENT_REQUIRED, so no images showed on the live site.
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",

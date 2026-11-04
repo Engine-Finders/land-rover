@@ -228,7 +228,7 @@ export default async function CatchAllPage({ params }) {
     const engineCode = (codeRow.engineCode || "").replace(/\s*\(.*\)\s*$/, "");
     const engineDesc = [codeRow.power, codeRow.years].filter(Boolean).join(" · ");
     return (
-      <main className="flex flex-col">
+      <main className="lr-redesign flex flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
@@ -236,7 +236,7 @@ export default async function CatchAllPage({ params }) {
           />
         )}
         <VariantHero data={data.hero} car={car} />
-        <EraMap data={data.eraMap} band="soft" />
+        <EraMap data={data.eraMap} band="soft" car={car} />
         <VarReplacementCosts data={data.replacementCosts} />
         <VarProblems data={data.commonProblems} />
         <QuotesCta data={data.quotesCta} car={car} />

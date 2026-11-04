@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import Image from "next/image";
-import { CONTAINER, DARK, GOLD_ON_DARK as GOLD, SANS, SERIF } from "@/components/engine/engineTheme";
+import { CONTAINER, SANS } from "@/components/engine/engineTheme";
+import { BODY, BODY_SM, H2, SMALL, STAT_LG } from "@/lib/typeScale";
 
 // Engine section: At a Glance - four spec tiles (family, fuel, power, score), four wide cards
 // (configuration with the engine photo, years, models fitted, cross-brand fitment) and a
 // four-point trust bar. Values come from the page's `atAGlance.rows` JSON; a row's optional
-// `note` overrides the supporting line built from the data. Fixed dark design, like the hero.
+// `note` overrides the supporting line built from the data. Follows the site theme (day / night).
 
 
 /* ---------- gold line icons ---------- */
@@ -95,14 +96,13 @@ const Svg = ({ name, className }) => (
 function IconRing({ name, size = "md" }) {
   const box = {
     sm: "h-11 w-11 lg:h-[60px] lg:w-[60px]",
-    tile: "h-12 w-12 lg:h-14 lg:w-14 xl:h-[60px] xl:w-[60px] 2xl:h-[72px] 2xl:w-[72px]",
+    tile: "h-12 w-12 lg:h-14 lg:w-14 xl:h-[60px] xl:w-[60px]",
     md: "h-12 w-12 lg:h-[72px] lg:w-[72px]",
   }[size];
-  const glyph = { sm: "h-[22px] w-[22px] lg:h-8 lg:w-8", tile: "h-6 w-6 lg:h-7 lg:w-7 2xl:h-9 2xl:w-9", md: "h-6 w-6 lg:h-9 lg:w-9" }[size];
+  const glyph = { sm: "h-[22px] w-[22px] lg:h-8 lg:w-8", tile: "h-6 w-6 lg:h-7 lg:w-7", md: "h-6 w-6 lg:h-9 lg:w-9" }[size];
   return (
     <span
-      className={`flex shrink-0 items-center justify-center rounded-full border-[1.5px] border-[#8c7650] bg-[radial-gradient(circle_at_50%_38%,#0c2a1d_0%,#04140e_72%)] shadow-[0_0_24px_-10px_rgba(201,163,93,0.55)] ${box}`}
-      style={{ color: GOLD }}
+      className={`flex shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line/70 bg-lr-chip text-lr-gold dark:bg-[radial-gradient(circle_at_50%_38%,#17402d_0%,#0b2219_72%)] dark:shadow-[0_0_24px_-10px_rgba(201,163,93,0.55)] ${box}`}
     >
       <Svg name={name} className={glyph} />
     </span>
@@ -112,7 +112,7 @@ function IconRing({ name, size = "md" }) {
 function Star({ on }) {
   return (
     <svg viewBox="0 0 24 24" className="h-4 w-4 lg:h-[22px] lg:w-[22px]" aria-hidden="true">
-      <path fill={on ? "#d2ab6a" : "#313836"} d="m12 2.6 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17l-5.7 3.1 1.2-6.4L2.8 9.3l6.4-.8z" />
+      <path fill={on ? "var(--lr-gold-line)" : "var(--lr-line-strong)"} d="m12 2.6 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17l-5.7 3.1 1.2-6.4L2.8 9.3l6.4-.8z" />
     </svg>
   );
 }
@@ -163,8 +163,8 @@ function parseCrossBrand(value = "") {
 
 /* ---------- cards ---------- */
 const CARD =
-  "relative overflow-hidden rounded-xl border border-[#2a2d25] bg-[linear-gradient(180deg,#0f1512_0%,#070d0c_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_24px_50px_-34px_rgba(0,0,0,0.9)]";
-const LABEL = "text-[10.5px] font-medium uppercase leading-[1.35] tracking-[0.06em] text-[#b5bbb7] sm:text-[11.5px] lg:text-[13px] xl:text-[14px]";
+  "relative overflow-hidden rounded-xl border border-lr-line bg-lr-card shadow-[0_20px_44px_-34px_var(--lr-shadow)] dark:bg-[linear-gradient(180deg,#17302a_0%,#12271f_100%)]";
+const LABEL = `${SMALL} font-medium uppercase tracking-[0.06em] text-lr-muted`;
 
 function GoldEdge() {
   return <span className="pointer-events-none absolute inset-x-8 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(214,178,110,0.55),transparent)]" aria-hidden="true" />;
@@ -172,7 +172,7 @@ function GoldEdge() {
 
 function SpecTile({ icon, label, children }) {
   return (
-    <article className={`${CARD} flex flex-col gap-3 p-4 sm:flex-row sm:items-start sm:gap-4 sm:p-5 lg:p-6 2xl:gap-5`}>
+    <article className={`${CARD} flex flex-col gap-3 p-4 sm:flex-row sm:items-start sm:gap-4 sm:p-5 lg:p-6`}>
       <GoldEdge />
       <IconRing name={icon} size="tile" />
       <div className="min-w-0 sm:pt-1 lg:pt-2">
@@ -183,13 +183,13 @@ function SpecTile({ icon, label, children }) {
   );
 }
 
-const VALUE = "mt-1.5 text-[17px] font-medium leading-[1.25] text-[#f5f3ee] sm:text-[19px] lg:mt-2.5 lg:text-[21px] xl:text-[22px] 2xl:text-[24px]";
+const VALUE = "mt-1.5 text-[17px] font-medium leading-[1.25] text-lr-head sm:text-[18px] lg:mt-2.5 lg:text-[19px] xl:text-[20px]";
 
 function Underline() {
-  return <span className="mt-3 block h-[2px] w-8 rounded-full lg:mt-4 lg:w-10" style={{ background: "#d2ab6a" }} aria-hidden="true" />;
+  return <span className="mt-3 block h-[2px] w-8 rounded-full bg-lr-gold-line lg:mt-4 lg:w-10" aria-hidden="true" />;
 }
 
-function WideCard({ icon, label, value, note, media, textClass = "", headClass = "", valueClass = "sm:text-[21px] lg:text-[25px] xl:text-[28px]" }) {
+function WideCard({ icon, label, value, note, media, textClass = "", headClass = "", valueClass = "sm:text-[21px] lg:text-[22px] xl:text-[24px]" }) {
   return (
     <article className={`${CARD} p-5 sm:p-6 lg:min-h-[214px] lg:p-7`}>
       {media}
@@ -198,9 +198,9 @@ function WideCard({ icon, label, value, note, media, textClass = "", headClass =
         <div className={`min-w-0 pt-0.5 lg:pt-3 ${textClass}`}>
           <div className={headClass}>
             <p className={LABEL}>{label}</p>
-            <p className={`mt-1.5 text-[19px] font-medium leading-[1.25] text-[#f5f3ee] lg:mt-2.5 ${valueClass}`}>{value}</p>
+            <p className={`mt-1.5 text-[19px] font-medium leading-[1.25] text-lr-head lg:mt-2.5 ${valueClass}`}>{value}</p>
           </div>
-          {note && <p className="mt-2.5 text-[14px] leading-[1.6] text-[#c0c1be] lg:mt-3.5 lg:text-[15.5px]">{note}</p>}
+          {note && <p className={`mt-2.5 ${BODY_SM} text-lr-body lg:mt-3.5`}>{note}</p>}
         </div>
       </div>
     </article>
@@ -236,7 +236,7 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
   const engine = /tdi/.test(slug) ? "/variant/sec2_engine.webp" : "/engine-glance/engine.webp";
 
   return (
-    <section className="relative overflow-hidden text-white" style={{ ...SANS, background: DARK }}>
+    <section className="relative overflow-hidden bg-lr-band text-lr-head" style={SANS}>
       {/* soft diagonal light bands, top right */}
       <div
         className="pointer-events-none absolute right-0 top-0 h-[520px] w-full max-w-[900px] opacity-90 [mask-image:radial-gradient(ellipse_at_top_right,black_20%,transparent_70%)]"
@@ -247,17 +247,17 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
         aria-hidden="true"
       />
 
-      <div className={`relative ${CONTAINER} py-10 md:py-14 lg:py-16 xl:py-20`}>
+      <div className={`relative ${CONTAINER} py-12 md:py-14 lg:py-16`}>
         <header className="mx-auto max-w-[1240px] text-center">
-          <p className="flex items-center justify-center gap-3 text-[12px] font-semibold uppercase tracking-[0.28em] text-[#d9b47a] md:gap-4 md:text-[14px]">
-            <span className="h-px w-8 bg-[#c9a35d] md:w-10" aria-hidden="true" />
+          <p className={`flex items-center justify-center gap-3 ${SMALL} font-medium uppercase tracking-[0.24em] text-lr-gold md:gap-4`}>
+            <span className="h-px w-8 bg-lr-gold-line md:w-10" aria-hidden="true" />
             At a Glance
-            <span className="h-px w-8 bg-[#c9a35d] md:w-10" aria-hidden="true" />
+            <span className="h-px w-8 bg-lr-gold-line md:w-10" aria-hidden="true" />
           </p>
-          <h2 className="mt-3 text-[28px] leading-[1.15] text-[#efece5] min-[375px]:text-[30px] sm:text-[38px] md:mt-4 md:text-[44px] lg:text-[46px] xl:text-[52px] 2xl:text-[58px]" style={SERIF}>
+          <h2 className={`mt-3 ${H2} text-lr-head md:mt-4`}>
             {heading}
           </h2>
-          <p className="mx-auto mt-3 max-w-[640px] text-[15px] leading-[1.6] text-white/80 md:mt-4 md:text-[18px] xl:text-[19px]">
+          <p className={`mx-auto mt-3 max-w-[640px] ${BODY} text-lr-body md:mt-4`}>
             All the essential specifications, performance data, and compatibility information at a glance.
           </p>
         </header>
@@ -275,7 +275,7 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
           <SpecTile icon="gauge" label="Power Range">
             <p className={VALUE}>{power}</p>
             {powerTag && (
-              <span className="mt-2.5 inline-flex items-center gap-1 whitespace-nowrap rounded-md border border-[#8c7650]/80 bg-[#c9a35d]/[0.06] px-1.5 py-1 text-[10px] font-medium uppercase tracking-[0.03em] min-[375px]:gap-1.5 min-[375px]:px-2 min-[375px]:text-[10.5px] min-[375px]:tracking-[0.05em] text-[#d9b47a] lg:mt-3 lg:gap-2 lg:px-3 lg:py-1.5 lg:text-[13px]">
+              <span className="mt-2.5 inline-flex items-center gap-1 whitespace-nowrap rounded-md border border-lr-gold-line/70 bg-lr-gold-line/[0.08] px-1.5 py-1 text-[10px] font-medium uppercase tracking-[0.03em] min-[375px]:gap-1.5 min-[375px]:px-2 min-[375px]:text-[10.5px] min-[375px]:tracking-[0.05em] text-lr-gold lg:mt-3 lg:gap-2 lg:px-3 lg:py-1.5 lg:text-[14px] xl:text-[15px]">
                 <Svg name="shieldCheck" className="h-3.5 w-3.5 lg:h-4 lg:w-4" />
                 {powerTag}
               </span>
@@ -285,8 +285,8 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
             {score && (
               <>
                 <p className="mt-1 flex items-baseline gap-1 leading-none lg:mt-2 lg:gap-1.5">
-                  <span className="bg-[linear-gradient(180deg,#e6c78d_0%,#b38a45_100%)] bg-clip-text text-[32px] font-semibold text-transparent lg:text-[42px] 2xl:text-[48px]">{score[1]}</span>
-                  <span className="text-[17px] text-[#f5f3ee] lg:text-[22px] 2xl:text-[28px]">/{score[2]}</span>
+                  <span className={`${STAT_LG} text-lr-gold dark:bg-[linear-gradient(180deg,#e6c78d_0%,#b38a45_100%)] dark:bg-clip-text dark:text-transparent`}>{score[1]}</span>
+                  <span className="text-[17px] text-lr-head lg:text-[19px] xl:text-[20px]">/{score[2]}</span>
                 </p>
                 <span className="mt-2.5 flex gap-1 lg:mt-3 lg:gap-1.5" role="img" aria-label={`${stars} out of 5 stars`}>
                   {[0, 1, 2, 3, 4].map((i) => (
@@ -323,12 +323,12 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
               </Fragment>
             ))}
             note={years.note || yearsNote(years.value)}
-            valueClass={(years.value || "").length > 24 ? "sm:text-[20px] lg:text-[21px] xl:text-[23px]" : undefined}
+            valueClass={(years.value || "").length > 24 ? "sm:text-[20px] lg:text-[20px] xl:text-[22px]" : undefined}
             textClass="lg:pr-[8%]"
             media={
               <Svg
                 name="calendar"
-                className="pointer-events-none absolute -right-2 top-1/2 h-[130px] w-[130px] -translate-y-1/2 text-white/[0.05] sm:h-[150px] sm:w-[150px] lg:right-4 lg:h-[170px] lg:w-[170px]"
+                className="pointer-events-none absolute -right-2 top-1/2 h-[130px] w-[130px] -translate-y-1/2 text-lr-head/[0.05] sm:h-[150px] sm:w-[150px] lg:right-4 lg:h-[170px] lg:w-[170px]"
               />
             }
           />
@@ -339,7 +339,7 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
             note={modelsParsed.note}
             textClass="sm:pr-[30%] lg:pr-[36%]"
             media={
-              <div className="pointer-events-none absolute bottom-2 right-0 aspect-[612/240] w-[46%] max-w-[320px] opacity-60 mix-blend-screen sm:bottom-auto sm:opacity-100 sm:top-1/2 sm:w-[40%] sm:-translate-y-1/2 lg:right-3 lg:w-[44%]" aria-hidden="true">
+              <div className="pointer-events-none absolute bottom-2 right-0 aspect-[612/240] w-[46%] max-w-[320px] opacity-60 mix-blend-multiply grayscale invert sm:bottom-auto dark:mix-blend-screen dark:grayscale-0 dark:invert-0 sm:opacity-100 sm:top-1/2 sm:w-[40%] sm:-translate-y-1/2 lg:right-3 lg:w-[44%]" aria-hidden="true">
                 <Image src="/engine-glance/cars.webp" alt="" fill sizes="320px" className="object-contain object-right" />
               </div>
             }
@@ -351,7 +351,7 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
             note={crossParsed.note}
             textClass="sm:pr-[24%] lg:pr-[26%]"
             media={
-              <div className="pointer-events-none absolute -right-3 top-1/2 aspect-[468/292] w-[44%] max-w-[260px] -translate-y-1/2 opacity-60 mix-blend-screen sm:right-2 sm:w-[34%] sm:opacity-100 lg:right-4 lg:w-[33%]" aria-hidden="true">
+              <div className="pointer-events-none absolute -right-3 top-1/2 aspect-[468/292] w-[44%] max-w-[260px] -translate-y-1/2 opacity-60 mix-blend-multiply grayscale invert sm:right-2 dark:mix-blend-screen dark:grayscale-0 dark:invert-0 sm:w-[34%] sm:opacity-100 lg:right-4 lg:w-[33%]" aria-hidden="true">
                 <Image src="/engine-glance/land-rover-badge.webp" alt="" fill sizes="260px" className="object-contain object-right" />
               </div>
             }
@@ -359,18 +359,18 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
         </div>
 
         {/* trust bar */}
-        <ul className={`${CARD} mt-3 grid divide-y divide-[#22261f] sm:grid-cols-2 sm:divide-y-0 lg:mt-4 lg:grid-cols-4 lg:px-2`}>
+        <ul className={`${CARD} mt-3 grid divide-y divide-lr-line sm:grid-cols-2 sm:divide-y-0 lg:mt-4 lg:grid-cols-4 lg:px-2`}>
           {TRUST.map((t, i) => (
             <li
               key={t.title}
-              className={`relative flex items-start gap-3.5 px-4 py-4 sm:px-5 sm:py-5 lg:gap-4 lg:px-5 lg:py-7 xl:px-6 ${i >= 2 ? "sm:border-t sm:border-[#22261f] lg:border-t-0" : ""} ${
-                i % 2 === 1 ? "sm:border-l sm:border-[#22261f] lg:border-l-0" : ""
-              } ${i > 0 ? "lg:before:absolute lg:before:left-0 lg:before:top-1/2 lg:before:h-[60%] lg:before:w-px lg:before:-translate-y-1/2 lg:before:bg-[#2c3029]" : ""}`}
+              className={`relative flex items-start gap-3.5 px-4 py-4 sm:px-5 sm:py-5 lg:gap-4 lg:px-5 lg:py-7 xl:px-6 ${i >= 2 ? "sm:border-t sm:border-lr-line lg:border-t-0" : ""} ${
+                i % 2 === 1 ? "sm:border-l sm:border-lr-line lg:border-l-0" : ""
+              } ${i > 0 ? "lg:before:absolute lg:before:left-0 lg:before:top-1/2 lg:before:h-[60%] lg:before:w-px lg:before:-translate-y-1/2 lg:before:bg-lr-line" : ""}`}
             >
               <IconRing name={t.icon} size="sm" />
               <div className="min-w-0 pt-0.5 lg:pt-1.5">
-                <p className="text-[12.5px] font-medium uppercase leading-[1.3] tracking-[0.04em] text-[#e3e5e2] lg:text-[13.5px] xl:text-[14.5px]">{t.title}</p>
-                <p className="mt-1.5 text-[13px] leading-[1.55] text-[#9fa3a1] lg:text-[14px] xl:text-[14.5px]">{t.text}</p>
+                <p className={`${SMALL} font-medium uppercase tracking-[0.04em] text-lr-head`}>{t.title}</p>
+                <p className={`mt-1.5 ${SMALL} leading-[1.55] text-lr-muted`}>{t.text}</p>
               </div>
             </li>
           ))}

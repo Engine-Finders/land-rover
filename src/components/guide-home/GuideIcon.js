@@ -437,7 +437,7 @@ export default function GuideIcon({ name, className = "h-6 w-6" }) {
       return (
         <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
           <path fill="currentColor" d="M12 2.5 4.5 5.3v6.1c0 4.7 3.2 8.4 7.5 10.1 4.3-1.7 7.5-5.4 7.5-10.1V5.3z" />
-          <path d="m8.6 12 2.4 2.4 4.5-4.6" fill="none" stroke="#fff" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="m8.6 12 2.4 2.4 4.5-4.6" fill="none" stroke="var(--lr-chip)" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       );
     case "people-filled":
@@ -454,7 +454,7 @@ export default function GuideIcon({ name, className = "h-6 w-6" }) {
           <circle cx="10" cy="8" r="3.8" />
           <path d="M3 20.5v-1a5.5 5.5 0 0 1 5.5-5.5h3" />
           <circle cx="17" cy="17" r="4" fill="currentColor" stroke="none" />
-          <path d="m15.2 17 1.3 1.3 2.4-2.5" stroke="#fff" strokeWidth="1.5" />
+          <path d="m15.2 17 1.3 1.3 2.4-2.5" stroke="var(--lr-chip)" strokeWidth="1.5" />
         </svg>
       );
     case "calendar":

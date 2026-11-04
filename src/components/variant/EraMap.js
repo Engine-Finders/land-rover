@@ -2,13 +2,17 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { useTheme } from "@/components/shared/themeProvider";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
 import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import { BODY, BODY_SM, CONTAINER, H2, H6, LABEL, SMALL } from "@/lib/typeScale";
 
-const DESKTOP_COLS = "grid-cols-[130px_110px_1.3fr_1.2fr_1.1fr_1.8fr]";
-const CAR_IMAGE = "/320d/era_map.webp";
+const DESKTOP_COLS = "grid-cols-[100px_98px_1.1fr_1.2fr_1.1fr_1.6fr] lg:grid-cols-[130px_110px_1.3fr_1.2fr_1.1fr_1.8fr]";
+
+// Variant section: era map - one row per generation (years, engine code, reliability, recon cost,
+// era note) from the page's `eraMap` JSON. Follows the site theme (day / night); `band` picks the
+// page or the alternate section background.
+
+// black icon artwork, turned silver on the night theme in CSS (follows data-theme directly)
+const ICON_TONE = "dark:brightness-0 dark:invert";
 
 const TRUST_POINTS = [
   { icon: "checkValue", label: "Real UK Cost Data" },
@@ -23,10 +27,24 @@ function splitBracketTag(value = "") {
   return { main: match[1].trim(), tag: match[2] };
 }
 
+// gold eyebrow + short two-tone rule (same look as HeadingEyebrow, on the shared label size)
+function Eyebrow({ text }) {
+  return (
+    <div className="w-fit max-w-full">
+      <p className={`${LABEL} text-lr-gold`}>{text}</p>
+      <span
+        className="mt-2 block h-px w-full"
+        style={{ background: "linear-gradient(to right, var(--lr-gold-line) 0 38%, var(--lr-line) 38% 100%)" }}
+        aria-hidden="true"
+      />
+    </div>
+  );
+}
+
 function GenerationBadge({ generation, className = "" }) {
   return (
     <span
-      className={`absolute left-0 top-0 flex h-full w-12 items-start justify-center bg-[var(--color-primary)] pt-1 text-[0.72rem] font-bold text-white ${className}`}
+      className={`${SMALL} absolute left-0 top-0 flex h-full w-14 items-start justify-start bg-lr-brand pl-1 pt-1 font-semibold text-lr-on-brand ${className}`}
       style={{ clipPath: "polygon(0 0, 100% 0, 45% 100%, 0 100%)" }}
     >
       {generation}
@@ -34,102 +52,107 @@ function GenerationBadge({ generation, className = "" }) {
   );
 }
 
-function GenerationThumb({ generation }) {
+// `car` is the variant's own Land Rover cutout (null when there is no clean cutout for it)
+function GenerationThumb({ generation, car }) {
   return (
     <div className="relative h-16 w-full">
       <GenerationBadge generation={generation} />
-      <Image src={CAR_IMAGE} alt="" fill className="relative z-10 object-contain" sizes="130px" />
+      {car && <Image src={car} alt="" fill className="relative z-10 object-contain" sizes="130px" />}
     </div>
   );
 }
 
-function DesktopRow({ row, isDark }) {
-  const rowClass = isDark ? "bg-black text-white" : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]/55";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]/55";
+// a table cell; the HTML sits in its own span so inline links stay in the text flow
+function Cell({ className = "", html }) {
+  return (
+    <span className={`flex items-center px-3 ${className}`}>
+      <span dangerouslySetInnerHTML={{ __html: html }} />
+    </span>
+  );
+}
+
+function DesktopRow({ row, car }) {
+  const cellDivider = "border-lr-line";
+  const mutedText = "text-lr-body";
 
   return (
-    <div className={`grid ${DESKTOP_COLS} items-stretch gap-px ${rowClass} text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
+    <div className={`${BODY_SM} grid ${DESKTOP_COLS} items-stretch gap-px border-b border-lr-line bg-lr-card text-lr-head last:border-b-0`}>
       <div className="flex items-center px-2 py-2">
-        <GenerationThumb generation={row.generation} />
+        <GenerationThumb generation={row.generation} car={car} />
       </div>
-      <span className={`flex items-center px-3 border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.years }} />
-      <span className={`flex items-center px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engineCode }} />
-      <span className={`flex items-center px-3 font-semibold text-[var(--color-primary)] border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.reliability }} />
-      <span className={`flex items-center px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.reconCost }} />
-      <span className={`flex items-center px-3 py-3 leading-[1.4] ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.eraNote }} />
+      <Cell className={`border-r ${cellDivider}`} html={row.years} />
+      <Cell className={`${mutedText} border-r ${cellDivider}`} html={row.engineCode} />
+      <Cell className={`font-semibold text-lr-green border-r ${cellDivider}`} html={row.reliability} />
+      <Cell className={`font-semibold border-r ${cellDivider}`} html={row.reconCost} />
+      <Cell className={`py-3 ${mutedText}`} html={row.eraNote} />
     </div>
   );
 }
 
-function MobileCard({ row, isOpen, onToggle }) {
+function MobileCard({ row, car, isOpen, onToggle }) {
   const reliability = splitBracketTag(row.reliability);
   const reconCost = splitBracketTag(row.reconCost);
 
   return (
-    <div className={`overflow-hidden rounded-[8px] border ${isOpen ? "border-[var(--color-primary)]" : "border-[var(--color-border)]/75"} bg-[var(--color-surface)]`}>
+    <div className={`overflow-hidden rounded-[8px] border ${isOpen ? "border-lr-green" : "border-lr-line"} bg-lr-card shadow-[0_20px_44px_-34px_var(--lr-shadow)]`}>
       <button type="button" onClick={onToggle} aria-expanded={isOpen} className="relative grid w-full grid-cols-[104px_1fr_1fr] p-3 text-left">
-        <span className={`absolute right-3 top-3 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`}>
+        <span className={`absolute right-3 top-3 text-lr-green transition-transform ${isOpen ? "rotate-180" : ""}`}>
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="m6 9 6 6 6-6" />
           </svg>
         </span>
 
         <div className="flex flex-col items-center gap-0.5 pr-2.5">
-          <span className="w-full rounded-[8px] bg-[var(--color-primary)] px-2 py-0.5 text-center text-[0.7rem] font-bold leading-tight text-white">{row.generation}</span>
-          <span className="text-center text-[0.64rem] leading-tight text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.years }} />
-          <div className="relative h-20 w-full">
-            <Image src={CAR_IMAGE} alt="" fill className="object-contain" sizes="104px" />
-          </div>
+          <span className="w-full rounded-[8px] bg-lr-brand px-2 py-0.5 text-center text-[12px] font-semibold leading-tight text-lr-on-brand">{row.generation}</span>
+          <span className="text-center text-[11.5px] leading-tight text-lr-body" dangerouslySetInnerHTML={{ __html: row.years }} />
+          {car && (
+            <div className="relative h-20 w-full">
+              <Image src={car} alt="" fill className="object-contain" sizes="104px" />
+            </div>
+          )}
         </div>
 
-        <div className="flex min-w-0 flex-col gap-1 border-l border-[var(--color-border)]/55 px-2.5">
-          <p className="text-[0.64rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Engine Code</p>
-          <p className="text-[0.8rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.engineCode }} />
+        <div className="flex min-w-0 flex-col gap-1 border-l border-lr-line px-2.5">
+          <p className="text-[11px] font-medium uppercase tracking-[0.06em] text-lr-muted">Engine Code</p>
+          <p className="text-[14px] font-semibold leading-tight text-lr-head" dangerouslySetInnerHTML={{ __html: row.engineCode }} />
         </div>
 
-        <div className="flex min-w-0 flex-col gap-2 border-l border-[var(--color-border)]/55 px-2.5 pr-5">
+        <div className="flex min-w-0 flex-col gap-2 border-l border-lr-line px-2.5 pr-5">
           <div>
-            <p className="text-[0.64rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Reliability</p>
-            <p className="text-[0.85rem] font-bold leading-tight text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: reliability.main }} />
+            <p className="text-[11px] font-medium uppercase tracking-[0.06em] text-lr-muted">Reliability</p>
+            <p className="text-[14px] font-semibold leading-tight text-lr-green" dangerouslySetInnerHTML={{ __html: reliability.main }} />
           </div>
           <div>
-            <p className="text-[0.64rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Recon Cost (Guide)</p>
-            <p className="text-[0.78rem] font-bold leading-tight text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: reconCost.main }} />
+            <p className="text-[11px] font-medium uppercase tracking-[0.06em] text-lr-muted">Recon Cost (Guide)</p>
+            <p className="text-[13.5px] font-semibold leading-tight text-lr-green" dangerouslySetInnerHTML={{ __html: reconCost.main }} />
           </div>
         </div>
       </button>
 
       {isOpen ? (
-        <div className="border-t border-[var(--color-border)]/55 px-3.5 py-3">
-          <p className="text-[0.66rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Era Note</p>
-          <p className="mt-0.5 text-[0.76rem] leading-[1.4] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.eraNote }} />
+        <div className="border-t border-lr-line px-3.5 py-3">
+          <p className="text-[11px] font-medium uppercase tracking-[0.06em] text-lr-muted">Era Note</p>
+          <p className={`${BODY_SM} mt-0.5 text-lr-body`} dangerouslySetInnerHTML={{ __html: row.eraNote }} />
         </div>
       ) : null}
     </div>
   );
 }
 
-export default function EraMap({ data, band = "soft" }) {
-  const { theme } = useTheme();
+export default function EraMap({ data, band = "soft", car = null }) {
   const [openIndex, setOpenIndex] = useState(null);
   if (!data) return null;
 
-  const isDark = theme === "dark";
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
-  const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
   const rows = data.rows || [];
 
   return (
-    <section className={`w-full py-6 text-[var(--color-text)] md:py-8 ${sectionBgClass(band)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
+    <section className={`w-full py-6 text-lr-head md:py-8 ${band === "soft" ? "bg-lr-band" : "bg-lr-page"}`}>
+      <div className={`relative ${CONTAINER}`}>
         <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
           <div>
-            <HeadingEyebrow text="ERA MAP" />
-            <h2 className="mt-2 font-lora text-[1.6rem] font-medium leading-[1.1] tracking-normal md:text-[2.4rem]">{data.title}</h2>
-            <p className="mt-1.5 max-w-[520px] text-[0.82rem] leading-[1.45] text-[var(--color-text-muted)] md:text-[0.9rem]">
+            <Eyebrow text="ERA MAP" />
+            <h2 className={`${H2} mt-3 text-lr-head`}>{data.title}</h2>
+            <p className={`${BODY} mt-2 max-w-[720px] text-lr-body`}>
               Four generations. Four eras. One guide to reliability, costs and what really matters.
             </p>
           </div>
@@ -142,38 +165,39 @@ export default function EraMap({ data, band = "soft" }) {
                 <MobileCard
                   key={row.generation}
                   row={row}
+                  car={car}
                   isOpen={openIndex === index}
                   onToggle={() => setOpenIndex(openIndex === index ? null : index)}
                 />
               ))}
             </div>
 
-            <div className="mt-4 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-              <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold text-white`}>
+            <div className="mt-4 hidden overflow-hidden rounded-[8px] border border-lr-line bg-lr-card shadow-[0_20px_44px_-34px_var(--lr-shadow)] md:block">
+              <div className={`${SMALL} grid ${DESKTOP_COLS} gap-px bg-lr-brand px-2 py-3 font-medium text-lr-on-brand`}>
                 {data.columns?.map((col) => (
-                  <span key={col} className={`flex items-center justify-center px-3 text-center border-r ${headerDivider} last:border-r-0`}>
+                  <span key={col} className="flex items-center justify-center border-r border-lr-on-brand/25 px-3 text-center last:border-r-0">
                     {col}
                   </span>
                 ))}
               </div>
-              <div className={bodyWrapperBg}>
+              <div className="bg-lr-card">
                 {rows.map((row) => (
-                  <DesktopRow key={row.generation} row={row} isDark={isDark} />
+                  <DesktopRow key={row.generation} row={row} car={car} />
                 ))}
               </div>
             </div>
           </>
         ) : null}
 
-        <div className="mt-4 flex flex-col items-start gap-6 rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-card)] p-6 shadow-lg lg:flex-row lg:items-center lg:justify-between md:p-8">
-          <div className="flex items-start gap-4 lg:max-w-[45%] lg:items-center">
-            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)]/20 bg-[var(--color-primary-soft)]">
-              <HomeIcon name="safestBuy" size={40} className="h-10 w-10" />
+        <div className="mt-4 flex flex-col items-start gap-6 rounded-[8px] border border-lr-line bg-lr-card p-5 shadow-[0_20px_44px_-34px_var(--lr-shadow)] md:p-7 lg:flex-row lg:items-center lg:gap-8">
+          <div className="flex min-w-0 flex-1 items-start gap-4 lg:items-center">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-lr-green/20 bg-lr-chip">
+              <HomeIcon name="safestBuy" size={40} tone="black" className={`h-10 w-10 ${ICON_TONE}`} />
             </span>
             <div>
-              <p className="text-[0.95rem] font-bold text-[var(--color-text)]">Why use this era map?</p>
+              <p className={`${H6} text-lr-head`}>Why use this era map?</p>
               <p
-                className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]"
+                className={`${BODY_SM} mt-1 text-lr-body`}
                 dangerouslySetInnerHTML={{
                   __html:
                     data.sourceNote ||
@@ -183,25 +207,20 @@ export default function EraMap({ data, band = "soft" }) {
             </div>
           </div>
 
-          <span aria-hidden="true" className="hidden h-12 w-px shrink-0 bg-[var(--color-border)]/55 lg:block" />
+          <span aria-hidden="true" className="hidden h-12 w-px shrink-0 bg-lr-line lg:block" />
 
-          <div className="flex w-full flex-wrap items-center justify-between gap-6 lg:w-auto lg:flex-nowrap">
-            {TRUST_POINTS.map((point, index) => (
-              <div key={point.label} className="flex items-center gap-4">
-                {index > 0 ? (
-                  <span aria-hidden="true" className="h-6 w-px shrink-0 bg-[var(--color-border)]/55 lg:h-8" />
-                ) : null}
-                <div className="flex items-center gap-2.5">
-                  <HomeIcon name={point.icon} size={36} className="h-9 w-9 shrink-0" />
-                  <span className="whitespace-nowrap text-[0.78rem] font-semibold text-[var(--color-text)]">{point.label}</span>
-                </div>
-              </div>
+          <ul className="grid w-full grid-cols-2 gap-x-5 gap-y-4 sm:grid-cols-4 lg:w-auto lg:shrink-0 lg:grid-cols-2 lg:gap-x-8">
+            {TRUST_POINTS.map((point) => (
+              <li key={point.label} className="flex items-center gap-2.5">
+                <HomeIcon name={point.icon} size={36} tone="black" className={`h-8 w-8 shrink-0 md:h-9 md:w-9 ${ICON_TONE}`} />
+                <span className={`${SMALL} font-medium text-lr-head lg:whitespace-nowrap`}>{point.label}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
         {data.dataNote ? (
-          <p className="mt-4 text-[0.74rem] leading-[1.5] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.dataNote }} />
+          <p className={`${SMALL} mt-4 text-lr-muted`} dangerouslySetInnerHTML={{ __html: data.dataNote }} />
         ) : null}
       </div>
     </section>

@@ -1,14 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CONTAINER, DARK, GOLD_ON_DARK as GOLD, SANS, SERIF } from "@/components/engine/engineTheme";
+import { CONTAINER, SANS } from "@/components/engine/engineTheme";
+import { BODY, H1, SMALL } from "@/lib/typeScale";
 
 // Engine hero: tag pill, serif headline (accent on "Replacement Cost"), sub-headline, quote CTA,
 // the engine on its lit ring in the dusk mountain / garage scene, and a four-stat trust strip -
-// all from the page's `hero` JSON. Fixed dark design. Phones and tablets stack the copy, scene
-// and strip; from lg the scene sits behind the copy on the right. The 200Tdi/300Tdi page shows the
-// "Tdi"-badged engine cover, every other engine the same render without the badge.
+// all from the page's `hero` JSON. Follows the site theme: on the day theme the scene is a framed
+// photo on white; on the night theme it fades into the green page (a CSS mask, so it blends with any
+// background). Phones and tablets stack the copy, scene and strip; from lg the scene sits on the
+// right. The 200Tdi/300Tdi page shows the "Tdi"-badged engine cover, every other engine the same
+// render without the badge.
 
-const GREEN = "#3f8a5c";
+// night theme: feather the photo's edges into the page
+const FADE_X = "dark:[mask-image:linear-gradient(to_right,transparent,#000_34%,#000_90%,transparent),linear-gradient(to_bottom,transparent,#000_14%,#000_76%,transparent)] dark:[mask-composite:intersect]";
+const FADE_Y = "dark:[mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_84%,transparent)]";
 
 /* ---------- gold line icons for the trust strip ---------- */
 const line = { fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
@@ -59,7 +64,7 @@ function splitTitle(h1 = "") {
 
 // green source tag at the end of the sub-headline: "... in 2025 [EM-VERIFIED]."
 const highlightTags = (html = "") =>
-  html.replace(/ - /g, " — ").replace(/(\[[A-Z][A-Z-]*\]\.?)/g, `<span style="color:${GREEN}">$1</span>`);
+  html.replace(/ - /g, " — ").replace(/(\[[A-Z][A-Z-]*\]\.?)/g, `<span class="text-lr-green">$1</span>`);
 
 // "1,500+ Enquiries" / "[Score]/100 Engine Score" / "3 Models Fitted" / "Part of Engine Finders"
 function parseStat(label = "") {
@@ -74,10 +79,9 @@ function parseStat(label = "") {
 function StatIcon({ name }) {
   return (
     <span
-      className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-[1.5px] border-[#8c7650] bg-[radial-gradient(circle_at_50%_38%,#0c2a1d_0%,#04140e_72%)] sm:h-16 sm:w-16 lg:h-[52px] lg:w-[52px] xl:h-[72px] xl:w-[72px] 2xl:h-[84px] 2xl:w-[84px]"
-      style={{ color: GOLD }}
+      className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-16 sm:w-16 lg:h-[52px] lg:w-[52px] xl:h-[72px] xl:w-[72px] dark:bg-[radial-gradient(circle_at_50%_38%,#17402d_0%,#0b2219_72%)]"
     >
-      <svg viewBox="0 0 24 24" className="h-7 w-7 sm:h-8 sm:w-8 lg:h-7 lg:w-7 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" aria-hidden="true">
+      <svg viewBox="0 0 24 24" className="h-7 w-7 sm:h-8 sm:w-8 lg:h-7 lg:w-7 xl:h-9 xl:w-9" aria-hidden="true">
         {GLYPHS[name]}
       </svg>
     </span>
@@ -87,13 +91,13 @@ function StatIcon({ name }) {
 function Stat({ item, index }) {
   const icon = ICON_BY_EMOJI[item.icon] || ICON_ORDER[index % ICON_ORDER.length];
   const stat = parseStat(item.label);
-  const captionClass = "block text-[11px] uppercase leading-[1.3] tracking-[0.03em] text-[#a4aaa8] sm:text-[12.5px] lg:text-[11.5px] xl:text-[13.5px] 2xl:text-[15px]";
+  const captionClass = `block ${SMALL} uppercase tracking-[0.03em] text-lr-muted`;
 
   return (
     <li
-      className={`relative flex flex-col items-center gap-2.5 px-2 py-4 text-center sm:flex-row sm:gap-4 sm:px-4 sm:py-5 sm:text-left lg:justify-center lg:gap-3 lg:px-3 lg:py-6 xl:gap-5 2xl:gap-6 ${
+      className={`relative flex flex-col items-center gap-2.5 px-2 py-4 text-center sm:flex-row sm:gap-4 sm:px-4 sm:py-5 sm:text-left lg:justify-center lg:gap-3 lg:px-3 lg:py-6 xl:gap-5 ${
         index > 0
-          ? "lg:before:absolute lg:before:left-0 lg:before:top-1/2 lg:before:h-[56%] lg:before:w-px lg:before:-translate-y-1/2 lg:before:bg-[#2c3333]"
+          ? "lg:before:absolute lg:before:left-0 lg:before:top-1/2 lg:before:h-[56%] lg:before:w-px lg:before:-translate-y-1/2 lg:before:bg-lr-line"
           : ""
       }`}
     >
@@ -101,19 +105,19 @@ function Stat({ item, index }) {
       <span className="min-w-0" style={SANS}>
         {stat.value ? (
           <>
-            <span className="block whitespace-nowrap text-[18px] leading-[1.1] text-[#f3f1ec] min-[375px]:text-[20px] sm:text-[23px] lg:text-[20px] xl:text-[26px] 2xl:text-[30px]" style={SERIF}>
+            <span className="block whitespace-nowrap text-[18px] font-semibold leading-[1.1] text-lr-head min-[375px]:text-[20px] sm:text-[22px] lg:text-[21px] xl:text-[24px]">
               {stat.value}
               {stat.outOf && <span className="text-[0.72em]">{stat.outOf}</span>}
             </span>
-            <span className={`mt-1 2xl:mt-1.5 ${captionClass}`}>
+            <span className={`mt-1 ${captionClass}`}>
               {stat.caption}
               {icon === "chart" && <span className="normal-case"> in 2025</span>}
             </span>
           </>
         ) : (
           <>
-            {stat.lead && <span className="block text-[11px] uppercase leading-[1.3] tracking-[0.03em] text-[#eceae5] sm:text-[12.5px] lg:text-[11.5px] xl:text-[13.5px] 2xl:text-[15px]">{stat.lead}</span>}
-            <span className={`mt-1 2xl:mt-1.5 ${captionClass}`}>{stat.caption}</span>
+            {stat.lead && <span className={`block ${SMALL} uppercase tracking-[0.03em] text-lr-head`}>{stat.lead}</span>}
+            <span className={`mt-1 ${captionClass}`}>{stat.caption}</span>
           </>
         )}
       </span>
@@ -131,39 +135,39 @@ export default function EngineHero({ data, slug = "" }) {
   const alt = `${pill[1] ? pill[1].replace(/<[^>]+>/g, "") : "Land Rover"} engine`;
 
   return (
-    <section className="relative overflow-hidden text-white" style={{ ...SANS, background: DARK }}>
-      {/* desktop: the scene on the right, faded into the page under the copy */}
-      <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-full max-w-[1680px] -translate-x-1/2 lg:block" aria-hidden="true">
-        <div className="absolute right-0 top-0 aspect-[882/656] w-[56%] xl:w-[54%]">
-          <Image src={scene} alt="" fill priority sizes="56vw" className="object-cover" />
-          <div className="absolute inset-0" style={{ background: `linear-gradient(to right, ${DARK} 0%, rgba(6,11,13,0.85) 8%, rgba(6,11,13,0.35) 20%, transparent 34%)` }} />
-          <div className="absolute inset-x-0 top-0 h-[16%]" style={{ background: "linear-gradient(to bottom, rgba(6,11,13,0.7), transparent)" }} />
-          <div className="absolute inset-x-0 bottom-0 h-[22%]" style={{ background: `linear-gradient(to top, ${DARK}, transparent)` }} />
-          <div className="absolute inset-y-0 right-0 hidden w-[10%] min-[1700px]:block" style={{ background: `linear-gradient(to left, ${DARK}, transparent)` }} />
+    <section className="relative overflow-hidden bg-lr-page text-lr-head" style={SANS}>
+      {/* desktop: the scene on the right - framed on the day theme, feathered into the page at night */}
+      <div className="pointer-events-none absolute inset-0 hidden lg:block" aria-hidden="true">
+        <div className={`relative h-full ${CONTAINER}`}>
+          <div
+            className={`absolute right-4 top-12 aspect-[882/656] w-[46%] overflow-hidden rounded-2xl border border-lr-line shadow-[0_30px_60px_-34px_var(--lr-shadow)] md:right-8 xl:top-14 xl:w-[47%] dark:right-0 dark:top-0 dark:w-[56%] dark:rounded-none dark:border-0 dark:shadow-none xl:dark:w-[54%] ${FADE_X}`}
+          >
+            <Image src={scene} alt="" fill priority sizes="56vw" className="object-cover" />
+          </div>
         </div>
       </div>
 
       <div className={`relative ${CONTAINER} pb-6 pt-5 md:pb-10 md:pt-8 lg:pb-12 lg:pt-12 xl:pt-14`}>
         {pill.length > 0 && (
-          <p className="inline-flex max-w-full flex-wrap items-center gap-x-2.5 gap-y-1 rounded-[22px] border border-[#8c7650]/80 bg-black/35 px-4 py-2 text-[13px] leading-[1.45] text-[#eceae5] sm:gap-x-3 sm:px-5 sm:text-[14px] xl:gap-x-4 xl:px-6 xl:py-2.5 xl:text-[16px] 2xl:gap-x-5 2xl:text-[17.5px] [&_a]:underline [&_a]:decoration-white/30 [&_a]:underline-offset-2">
+          <p className="inline-flex max-w-full flex-wrap items-center gap-x-2.5 gap-y-1 rounded-[22px] border border-lr-gold-line/60 bg-lr-panel/80 px-4 py-2 text-[13px] leading-[1.45] text-lr-body sm:gap-x-3 sm:px-5 md:text-[14px] xl:gap-x-4 xl:px-6 xl:py-2.5 xl:text-[15px] [&_a]:underline [&_a]:decoration-current/30 [&_a]:underline-offset-2">
             {pill.map((part, i) => (
               <span key={i} className="inline-flex items-center gap-x-2.5 sm:gap-x-3 xl:gap-x-4">
-                {i > 0 && <span className="h-[5px] w-[5px] rounded-full" style={{ background: "#e4b97c" }} aria-hidden="true" />}
+                {i > 0 && <span className="h-[5px] w-[5px] rounded-full bg-lr-gold-line" aria-hidden="true" />}
                 <span dangerouslySetInnerHTML={{ __html: part }} />
               </span>
             ))}
           </p>
         )}
 
-        <div className="lg:max-w-[50%] xl:max-w-[640px] 2xl:max-w-[720px]">
-          <h1 className="mt-5 text-[31px] leading-[1.14] tracking-[-0.01em] text-[#f3f1ec] min-[375px]:text-[32px] sm:text-[42px] md:mt-7 md:text-[48px] lg:max-w-[10.4em] lg:text-[44px] xl:text-[54px] 2xl:text-[64px] [&_a]:text-inherit [&_a]:no-underline" style={SERIF}>
+        <div className="lg:max-w-[50%] xl:max-w-[640px]">
+          <h1 className={`mt-5 ${H1} text-lr-head md:mt-7 lg:max-w-[10.4em] [&_a]:text-inherit [&_a]:no-underline`}>
             <span dangerouslySetInnerHTML={{ __html: lead }} />
-            {accent && <span style={{ color: GREEN }}>{accent}</span>}
+            {accent && <span className="text-lr-green">{accent}</span>}
           </h1>
 
           {data.subHeadline && (
             <p
-              className="mt-4 max-w-[600px] text-[15.5px] leading-[1.6] text-white/[0.88] md:mt-5 md:text-[18px] xl:text-[19px] 2xl:text-[20px] [&_a]:underline [&_a]:decoration-white/30 [&_a]:underline-offset-2"
+              className={`mt-4 max-w-[600px] ${BODY} text-lr-body md:mt-5 [&_a]:underline [&_a]:decoration-current/30 [&_a]:underline-offset-2`}
               dangerouslySetInnerHTML={{ __html: highlightTags(data.subHeadline) }}
             />
           )}
@@ -171,7 +175,7 @@ export default function EngineHero({ data, slug = "" }) {
           {data.primaryCta && (
             <Link
               href="/quote"
-              className="group mt-6 flex w-full items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-[#8c7650] bg-[linear-gradient(180deg,#123222_0%,#0a2318_100%)] px-4 py-[15px] text-[15px] font-medium leading-snug text-white shadow-[0_14px_34px_-16px_rgba(63,138,92,0.7)] transition-colors hover:border-[#b0955f] hover:bg-[linear-gradient(180deg,#173d2a_0%,#0d2a1d_100%)] min-[390px]:text-[15.5px] sm:w-fit sm:gap-3 sm:px-8 sm:text-[16px] md:mt-8 md:text-[18px] xl:px-9 xl:py-[18px] xl:text-[19px]"
+              className="group mt-6 flex w-full items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-lr-gold-line/70 bg-lr-brand px-4 py-[15px] text-[15px] font-medium leading-snug text-lr-on-brand shadow-[0_14px_34px_-18px_rgba(31,112,73,0.7)] transition-colors hover:border-lr-gold-line hover:bg-lr-brand-hover sm:w-fit sm:gap-3 sm:px-8 sm:text-[16px] md:mt-8 xl:px-9 xl:py-[17px] xl:text-[17px]"
             >
               <span className="min-w-0 text-center sm:text-left">{ctaLabel}</span>
               <ArrowIcon className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
@@ -180,15 +184,13 @@ export default function EngineHero({ data, slug = "" }) {
         </div>
 
         {/* phones / tablets: the scene between the CTA and the trust strip */}
-        <div className="relative -mx-4 mt-6 aspect-[882/656] overflow-hidden sm:-mx-6 md:-mx-8 md:mt-8 md:aspect-[16/10] lg:hidden">
+        <div className={`relative mt-6 aspect-[882/656] overflow-hidden rounded-xl border border-lr-line md:mt-8 md:aspect-[16/10] lg:hidden dark:-mx-4 dark:rounded-none dark:border-0 sm:dark:-mx-6 md:dark:-mx-8 ${FADE_Y}`}>
           <Image src={scene} alt={alt} fill priority sizes="100vw" className="object-cover object-[50%_60%]" />
-          <div className="absolute inset-x-0 top-0 h-[20%]" style={{ background: `linear-gradient(to bottom, ${DARK}, transparent)` }} />
-          <div className="absolute inset-x-0 bottom-0 h-[16%]" style={{ background: `linear-gradient(to top, ${DARK}, transparent)` }} />
         </div>
 
         {/* trust strip */}
         {data.trustStrip?.length > 0 && (
-          <ul className="relative grid grid-cols-2 overflow-hidden rounded-xl border border-[#262d2d] bg-[#0b1212]/90 shadow-[0_24px_60px_-30px_rgba(0,0,0,0.9)] max-lg:divide-[#262d2d] max-lg:[&>li:nth-child(even)]:border-l max-lg:[&>li:nth-child(n+3)]:border-t max-lg:[&>li]:border-[#262d2d] lg:mt-9 lg:grid-cols-4 lg:px-2">
+          <ul className="relative grid grid-cols-2 overflow-hidden mt-6 rounded-xl border border-lr-line bg-lr-card/95 shadow-[0_24px_60px_-34px_var(--lr-shadow)] max-lg:[&>li:nth-child(even)]:border-l max-lg:[&>li:nth-child(n+3)]:border-t max-lg:[&>li]:border-lr-line lg:mt-9 max-lg:dark:mt-0 lg:grid-cols-4 lg:px-2">
             {data.trustStrip.map((item, i) => (
               <Stat key={item.label} item={item} index={i} />
             ))}

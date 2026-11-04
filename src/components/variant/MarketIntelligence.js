@@ -2,18 +2,17 @@
 
 import { ComposableMap, Geographies, Geography } from "@vnedyalk0v/react19-simple-maps";
 import VIcon from "@/components/variant/VariantIcons";
+import { BODY_SM, CONTAINER, H2, H5, LABEL, NUM, SMALL, STAT, STAT_LG } from "@/lib/typeScale";
 // Pass TopoJSON as an object - URL fetches are HTTPS-only by default in
 // @vnedyalk0v/react19-simple-maps, so localhost http:// paths fail to load.
 import ukRegionsTopo from "../../../public/320d/uk-regions-topo.json";
 
 // Variant section: "Market Intelligence" - stat cards and the regional demand map from the page's
-// `marketIntelligence` JSON. Fixed light design: white cards with dark-green icon discs and serif
-// figures that size themselves to the card (container query units), so long values never clip.
-
-const INK = "#1f3d24";
-const GREEN = "#2f5a35";
-const GOLD = "#c9a24a";
-const SERIF = { fontFamily: "var(--font-serif-display), Georgia, 'Times New Roman', serif" };
+// `marketIntelligence` JSON. Follows the site theme (day / night): cards with brand-green icon discs
+// and stat figures on the shared scale that also shrink to the card (container query units), so long
+// values never clip.
+// figures and shares in the sans, which has a real semibold
+const FIG = "font-[family-name:var(--font-instrument-sans)]";
 
 // Map copy labels -> England EER geo names used in the topo file.
 const REGION_ALIASES = {
@@ -30,12 +29,13 @@ const REGION_ALIASES = {
   "Yorkshire and The Humber": ["Yorkshire and The Humber"],
 };
 
-const MAP_FILL = { base: "#dcdfd8", highlight: "#2f5a35", stroke: "#ffffff" };
+const MAP_FILL = { base: "var(--lr-line)", highlight: "var(--lr-green)", stroke: "var(--lr-card)" };
+const CARD = "rounded-xl border border-lr-line bg-lr-card shadow-[0_20px_44px_-34px_var(--lr-shadow)]";
 
 // Bubble + connector layout for the right-side callouts.
 const BUBBLE_LAYOUT = {
-  London: { className: "right-[6%] top-[42%]", line: { x1: 80, y1: 50, x2: 58, y2: 54 }, rank: 1 },
-  "South East": { className: "right-[4%] top-[62%]", line: { x1: 82, y1: 70, x2: 62, y2: 68 }, rank: 2 },
+  London: { className: "right-[6%] top-[34%]", line: { x1: 80, y1: 44, x2: 58, y2: 54 }, rank: 1 },
+  "South East": { className: "right-[4%] top-[63%]", line: { x1: 82, y1: 72, x2: 62, y2: 68 }, rank: 2 },
   "South West": { className: "left-[2%] top-[78%]", line: { x1: 18, y1: 82, x2: 38, y2: 80 }, rank: 3 },
   "North West": { className: "left-[2%] top-[20%]", line: { x1: 18, y1: 26, x2: 40, y2: 28 }, rank: 4 },
   "North East": { className: "right-[8%] top-[6%]", line: { x1: 76, y1: 12, x2: 54, y2: 14 }, rank: 5 },
@@ -107,52 +107,54 @@ function itemIcon(label = "") {
   return "info";
 }
 
-// one line, scaled to the card width; long text values wrap at a smaller size instead
-function figureSize(value, max) {
+// one line, scaled down to the card width when the value is too long for the STAT_LG step;
+// the class caps each breakpoint at the shared scale (28/30/32/34px)
+function figureFit(value) {
   const cq = Math.min(18, 96 / (String(value).length * 0.56));
-  return `min(${max}px, ${cq.toFixed(1)}cqw)`;
+  return { "--fig-fit": `${cq.toFixed(1)}cqw` };
 }
+const STAT_LG_FIT = `${STAT_LG.replace(/\S*text-\[\d+px\]/g, "").trim()} text-[length:min(28px,var(--fig-fit))] md:text-[length:min(30px,var(--fig-fit))] lg:text-[length:min(32px,var(--fig-fit))] xl:text-[length:min(34px,var(--fig-fit))]`;
 
 function StatCard({ icon, label, title, stat, subtext, tag }) {
   const wrap = String(stat).length > 14;
   return (
-    <div className="@container flex min-w-0 flex-col rounded-xl border border-[#e6e2d8] bg-white p-3.5 shadow-[0_8px_24px_-18px_rgba(31,61,36,0.4)] md:p-5">
+    <div className={`@container flex min-w-0 flex-col p-3.5 md:p-5 ${CARD}`}>
       <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white md:h-12 md:w-12" style={{ background: INK }}>
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand md:h-12 md:w-12">
           <VIcon name={icon} className="h-5 w-5 md:h-6 md:w-6" strokeWidth={1.8} />
         </span>
-        <p className="text-[12.5px] font-medium leading-snug text-[#2b3229] md:text-[13.5px]">{label}</p>
+        <p className={`${SMALL} font-medium text-lr-body`}>{label}</p>
       </div>
-      {title && <p className="mt-3 text-[14px] font-semibold leading-snug text-[#141a13] md:text-[15px]">{title}</p>}
+      {title && <p className={`${BODY_SM} mt-3 font-medium text-lr-head`}>{title}</p>}
       {wrap ? (
-        <p className={`${title ? "mt-1.5" : "mt-3"} break-words leading-[1.15] text-[#141a13]`} style={{ ...SERIF, fontSize: "min(26px, 15cqw)" }}>{stat}</p>
+        <p className={`${STAT} ${FIG} ${title ? "mt-1.5" : "mt-3"} break-words text-lr-head`}>{stat}</p>
       ) : (
-        <p className={`${title ? "mt-1.5" : "mt-3"} whitespace-nowrap leading-[1.1] text-[#141a13]`} style={{ ...SERIF, fontSize: figureSize(stat, 34) }}>{stat}</p>
+        <p className={`${STAT_LG_FIT} ${FIG} ${title ? "mt-1.5" : "mt-3"} whitespace-nowrap text-lr-head`} style={figureFit(stat)}>{stat}</p>
       )}
-      {subtext && <p className="mt-1.5 text-[12.5px] leading-snug text-[#4a5048] md:text-[14px]">{subtext}</p>}
-      {tag && <p className="mt-auto pt-2 text-[11px] font-semibold uppercase tracking-[0.08em]" style={{ color: GREEN }}>{tag}</p>}
+      {subtext && <p className={`${BODY_SM} mt-2 text-lr-body`}>{subtext}</p>}
+      {tag && <p className={`${LABEL} mt-auto pt-3 text-lr-green`}>{tag}</p>}
     </div>
   );
 }
 
 function RegionCard({ label, regions, tag }) {
   return (
-    <div className="flex min-w-0 flex-col rounded-xl border border-[#e6e2d8] bg-white p-3.5 shadow-[0_8px_24px_-18px_rgba(31,61,36,0.4)] md:p-5">
+    <div className={`flex min-w-0 flex-col p-3.5 md:p-5 ${CARD}`}>
       <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white md:h-12 md:w-12" style={{ background: INK }}>
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand md:h-12 md:w-12">
           <VIcon name="users" className="h-5 w-5 md:h-6 md:w-6" strokeWidth={1.8} />
         </span>
-        <p className="text-[12.5px] font-medium leading-snug text-[#2b3229] md:text-[13.5px]">{label}</p>
+        <p className={`${SMALL} font-medium text-lr-body`}>{label}</p>
       </div>
-      <ul className="mt-3 divide-y divide-[#ece8df]">
+      <ul className="mt-3 divide-y divide-lr-line">
         {regions.map((r) => (
           <li key={r.name} className="flex items-baseline justify-between gap-2 py-1.5 first:pt-0">
-            <span className="text-[13px] text-[#4a5048] md:text-[14px]">{r.name}</span>
-            <span className="text-[18px] leading-none text-[#141a13] md:text-[21px]" style={SERIF}>{r.share}</span>
+            <span className={`${BODY_SM} text-lr-body`}>{r.name}</span>
+            <span className={`${NUM} ${FIG} text-lr-head`}>{r.share}</span>
           </li>
         ))}
       </ul>
-      {tag && <p className="mt-auto pt-2 text-[11px] font-semibold uppercase tracking-[0.08em]" style={{ color: GREEN }}>{tag}</p>}
+      {tag && <p className={`${LABEL} mt-auto pt-3 text-lr-green`}>{tag}</p>}
     </div>
   );
 }
@@ -171,8 +173,8 @@ function RegionalDemandMap({ regions }) {
     .slice(0, 2);
 
   return (
-    <div className="flex h-full flex-col overflow-visible rounded-xl border border-[#e6e2d8] bg-white p-4 shadow-[0_8px_24px_-18px_rgba(31,61,36,0.4)] md:p-6">
-      <h3 className="text-[20px] leading-tight text-[#141a13] md:text-[23px]" style={SERIF}>
+    <div className={`flex h-full flex-col overflow-visible p-4 md:p-6 ${CARD}`}>
+      <h3 className={`${H5} text-lr-head`}>
         Regional Demand Breakdown
       </h3>
       <div className="relative mt-2 min-h-[340px] w-full flex-1 overflow-visible">
@@ -201,7 +203,7 @@ function RegionalDemandMap({ regions }) {
           </Geographies>
         </ComposableMap>
 
-        <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="pointer-events-none absolute inset-0 z-[5] h-full w-full overflow-visible">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="pointer-events-none absolute inset-0 z-[5] h-full w-full overflow-visible text-lr-green/50">
           {bubbleRegions.map((region) => {
             const line = BUBBLE_LAYOUT[region.name]?.line;
             if (!line) return null;
@@ -212,7 +214,7 @@ function RegionalDemandMap({ regions }) {
                 key={region.name}
                 d={`M ${line.x1} ${line.y1} Q ${midX} ${midY} ${line.x2} ${line.y2}`}
                 fill="none"
-                stroke="#9fb39a"
+                stroke="currentColor"
                 strokeWidth="0.4"
                 strokeLinecap="round"
                 vectorEffect="non-scaling-stroke"
@@ -224,10 +226,10 @@ function RegionalDemandMap({ regions }) {
         {bubbleRegions.map((region) => (
           <div
             key={region.name}
-            className={`absolute z-10 flex h-[4.25rem] w-[4.25rem] shrink-0 flex-col items-center justify-center rounded-full border-[1.5px] border-[#9fb39a] bg-white text-center shadow-[0_3px_10px_rgba(0,0,0,0.1)] ${BUBBLE_LAYOUT[region.name]?.className || ""}`}
+            className={`absolute z-10 flex h-[5rem] w-[5rem] shrink-0 flex-col items-center justify-center rounded-full border-[1.5px] border-lr-green/50 bg-lr-card text-center shadow-[0_3px_10px_var(--lr-shadow)] xl:h-[5.75rem] xl:w-[5.75rem] ${BUBBLE_LAYOUT[region.name]?.className || ""}`}
           >
-            <span className="text-[1.05rem] font-bold leading-none text-[#1f3d24]">{region.share}</span>
-            <span className="mt-1 max-w-[88%] text-[0.58rem] leading-[1.1] text-black/65">{region.name}</span>
+            <span className={`${NUM} ${FIG} text-lr-ink`}>{region.share}</span>
+            <span className={`${SMALL} mt-1 max-w-[90%] leading-[1.1] text-lr-muted`}>{region.name}</span>
           </div>
         ))}
       </div>
@@ -243,13 +245,13 @@ export default function MarketIntelligence({ data }) {
   const { regions, tag } = regionalItem ? parseRegionalDemand(regionalItem.value) : { regions: [], tag: "" };
 
   return (
-    <section className="relative overflow-hidden bg-[#f6f5f1] text-[#141a13]">
-      <div className="relative mx-auto max-w-8xl px-4 py-10 sm:px-6 md:px-8 md:py-14">
+    <section className="relative overflow-hidden bg-lr-band text-lr-head">
+      <div className={`relative ${CONTAINER} py-10 md:py-14`}>
         <div className="flex items-center gap-3">
-          <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-[#8a6a1f] md:text-[13px]">Engine Snapshot</p>
-          <span className="h-px w-10 md:w-14" style={{ background: GOLD }} aria-hidden="true" />
+          <p className={`${LABEL} text-lr-gold`}>Engine Snapshot</p>
+          <span className="h-px w-10 bg-lr-gold-line md:w-14" aria-hidden="true" />
         </div>
-        <h2 className="mt-2 text-[34px] leading-[1.08] sm:text-[42px] lg:text-[52px]" style={{ ...SERIF, color: INK }}>Market Intelligence</h2>
+        <h2 className={`${H2} mt-3 text-lr-ink`}>Market Intelligence</h2>
 
         <div className={`mt-6 grid gap-4 lg:gap-5 ${regions.length ? "lg:grid-cols-[minmax(0,1.65fr)_minmax(0,1fr)]" : ""}`}>
           <div className="grid grid-cols-2 gap-2.5 md:grid-cols-3 md:gap-4">

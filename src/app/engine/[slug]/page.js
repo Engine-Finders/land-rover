@@ -69,7 +69,7 @@ export default async function EnginePage({ params }) {
   const yearsProduced = data.atAGlance?.rows?.find((r) => r.metric === "Years Produced")?.value || "";
 
   return (
-    <main className="flex flex-col">
+    <main className="lr-redesign flex flex-col">
       {data.meta?.jsonLd && (
         <script
           type="application/ld+json"

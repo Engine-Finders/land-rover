@@ -2,21 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
-import { serif } from "@/lib/guideFonts";
+import { CONTAINER, H2, H5, H6, BODY, BODY_SM, SMALL, LABEL } from "@/lib/typeScale";
 
-const ICON_DISC = "flex shrink-0 items-center justify-center rounded-full bg-[#e9efe9] text-[#0e2b20]";
+// Follows the site theme (day / night): colours come from the --lr-* tokens; the photos fade into
+// their cards through CSS masks, so they blend with either theme's card.
+const ICON_DISC = "flex shrink-0 items-center justify-center rounded-full bg-lr-chip text-lr-ink";
 
 // phones / tablets: icon left, title + gold rule + text right (mobile reference)
 function MobileCard({ c }) {
   return (
-    <li className="flex gap-4 rounded-lg border border-black/[0.07] bg-white p-4 shadow-[0_6px_18px_-14px_rgba(0,0,0,0.35)] sm:gap-5 sm:p-5">
+    <li className="flex gap-4 rounded-lg border border-lr-line bg-lr-card p-4 shadow-[0_6px_18px_-14px_var(--lr-shadow)] sm:gap-5 sm:p-5">
       <span className={`${ICON_DISC} h-[56px] w-[56px] sm:h-[66px] sm:w-[66px]`}>
         <GuideIcon name={c.icon} className="h-7 w-7 sm:h-8 sm:w-8" />
       </span>
       <span className="min-w-0">
-        <span className="block text-[16.5px] font-medium leading-snug text-[#141414] sm:text-[18px]">{c.title}</span>
-        <span className="mt-2 block h-[2px] w-7 bg-[#c9963f]" />
-        <span className="mt-2.5 block text-[13.5px] leading-[1.55] text-[#3a3a3a]">{c.text}</span>
+        <span className={`${H6} block text-lr-head`}>{c.title}</span>
+        <span className="mt-2 block h-[2px] w-7 bg-lr-gold-line" />
+        <span className={`${BODY_SM} mt-2.5 block text-lr-body`}>{c.text}</span>
       </span>
     </li>
   );
@@ -25,21 +27,21 @@ function MobileCard({ c }) {
 // desktop: centred card (desktop reference)
 function DesktopCard({ c }) {
   return (
-    <li className="flex flex-col items-center rounded-lg border border-black/[0.07] bg-white px-5 pb-6 pt-5 text-center shadow-[0_6px_18px_-14px_rgba(0,0,0,0.35)]">
+    <li className="flex flex-col items-center rounded-lg border border-lr-line bg-lr-card px-4 pb-6 pt-5 text-center shadow-[0_6px_18px_-14px_var(--lr-shadow)]">
       <span className={`${ICON_DISC} h-[60px] w-[60px]`}>
         <GuideIcon name={c.icon} className="h-8 w-8" />
       </span>
-      <span className="mt-4 block text-[15px] font-medium leading-snug text-[#141414]">{c.title}</span>
-      <span className="mt-4 block h-[2px] w-9 bg-[#c9963f]" />
-      <span className="mt-4 block text-[12.5px] leading-[1.6] text-[#3a3a3a]">{c.text}</span>
+      <span className={`${H6} mt-4 block text-lr-head`}>{c.title}</span>
+      <span className="mt-3 block h-[2px] w-9 bg-lr-gold-line" />
+      <span className={`${BODY_SM} mt-3 block text-lr-body`}>{c.text}</span>
     </li>
   );
 }
 
 function Commitment({ c }) {
   return (
-    <div className="relative overflow-hidden rounded-lg bg-[#0b120f] text-white shadow-[0_14px_30px_-18px_rgba(0,0,0,0.7)]">
-      {/* sm+: photo on the right, its left edge fading into the dark panel (mask - no tint on the car) */}
+    <div className="relative overflow-hidden rounded-lg border border-lr-line bg-lr-card text-lr-head shadow-[0_14px_30px_-18px_var(--lr-shadow)]">
+      {/* sm+: photo on the right, its left edge fading into the panel (mask - no tint on the car) */}
       <div
         className="absolute inset-y-0 right-0 hidden w-[46%] [mask-image:linear-gradient(to_right,transparent,#000_22%)] sm:block"
         aria-hidden="true"
@@ -48,15 +50,15 @@ function Commitment({ c }) {
       </div>
 
       <div className="relative px-5 pb-5 pt-5 sm:w-[57%] sm:px-7 sm:py-7 xl:w-[57%] xl:px-8 xl:py-8">
-        <p className="flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.04em] text-[#c9963f]">
+        <p className={`${LABEL} flex items-center gap-3 text-lr-gold`}>
           <GuideIcon name="shield" className="h-6 w-6" />
           {c.eyebrow}
         </p>
-        <h3 className={`${serif.className} mt-3 text-[22px] leading-[1.18] sm:text-[24px] xl:text-[26px]`}>{c.title}</h3>
-        <span className="mt-4 hidden h-[2px] w-9 bg-[#c9963f] xl:block" />
-        <p className="mt-3 text-[14px] leading-[1.6] text-white/88 xl:mt-5 xl:text-[13px] xl:leading-[1.7]">{c.text}</p>
-        <p className="mt-4 flex items-center gap-3 text-[14px] font-medium xl:mt-6 xl:text-[13px]">
-          <GuideIcon name="signature" className="h-7 w-[72px] text-white/90" />
+        <h3 className={`${H5} mt-3 text-lr-head`}>{c.title}</h3>
+        <span className="mt-4 hidden h-[2px] w-9 bg-lr-gold-line xl:block" />
+        <p className={`${BODY_SM} mt-3 text-lr-body xl:mt-5`}>{c.text}</p>
+        <p className={`${SMALL} mt-4 flex items-center gap-3 font-medium text-lr-head xl:mt-6`}>
+          <GuideIcon name="signature" className="h-7 w-[72px] text-lr-head/80" />
           {c.sign}
         </p>
       </div>
@@ -72,25 +74,25 @@ function Commitment({ c }) {
 function Faq({ faq }) {
   const firstMobile = faq.items.findIndex((it) => it.show === "mobile");
   return (
-    <div className="rounded-lg border border-black/[0.07] bg-white px-4 shadow-[0_6px_18px_-14px_rgba(0,0,0,0.35)] sm:px-6">
-      <div className="flex items-center gap-3 border-b border-black/[0.08] py-3.5 sm:py-4">
-        <GuideIcon name="question" className="h-6 w-6 shrink-0 text-[#0e2b20]" />
-        <h3 className="min-w-0 flex-1 text-[14px] font-medium uppercase tracking-[0.04em] text-[#0e2b20] sm:text-[15px]">{faq.title}</h3>
-        <Link href={faq.cta.href} className="inline-flex shrink-0 items-center gap-1.5 text-[13px] font-medium text-[#0e2b20] hover:underline">
+    <div className="rounded-lg border border-lr-line bg-lr-card px-4 shadow-[0_6px_18px_-14px_var(--lr-shadow)] sm:px-6">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 border-b border-lr-line py-3.5 sm:flex-nowrap sm:py-4">
+        <GuideIcon name="question" className="h-6 w-6 shrink-0 text-lr-ink" />
+        <h3 className={`${H6} min-w-0 flex-1 basis-[220px] uppercase tracking-[0.03em] text-lr-ink sm:basis-auto`}>{faq.title}</h3>
+        <Link href={faq.cta.href} className={`${SMALL} ml-9 inline-flex shrink-0 items-center gap-1.5 font-medium text-lr-ink hover:underline sm:ml-0`}>
           {faq.cta.label} <Arrow className="h-4 w-4" />
         </Link>
       </div>
-      <ul className="divide-y divide-black/[0.08]">
+      <ul className="divide-y divide-lr-line">
         {faq.items.map((it, i) => {
           const open = i === firstMobile;
           return (
             <li key={it.q} className={it.show === "mobile" ? "xl:hidden" : "hidden xl:block"}>
               <details className="group" open={open}>
-                <summary className="flex cursor-pointer list-none items-center gap-4 py-3 text-[15px] text-[#141414] hover:text-[#1f5c3d] xl:py-[17px] xl:text-[14px] [&::-webkit-details-marker]:hidden">
+                <summary className={`${BODY_SM} flex cursor-pointer list-none items-center gap-4 py-3 text-lr-head hover:text-lr-green xl:py-[15px] [&::-webkit-details-marker]:hidden`}>
                   <span className="min-w-0 flex-1 font-medium xl:font-normal">{it.q}</span>
                   <GuideIcon name="chevron-down" className="h-5 w-5 shrink-0 transition-transform group-open:rotate-180" />
                 </summary>
-                <p className="pb-3.5 pr-8 text-[13.5px] leading-[1.55] text-[#3a3a3a]">{it.a}</p>
+                <p className={`${BODY_SM} pb-3.5 pr-8 text-lr-body`}>{it.a}</p>
               </details>
             </li>
           );
@@ -102,7 +104,7 @@ function Faq({ faq }) {
 
 function Cta({ cta }) {
   return (
-    <div className="relative overflow-hidden rounded-lg bg-[#0b1f17] text-white shadow-[0_14px_30px_-18px_rgba(0,0,0,0.7)]">
+    <div className="relative overflow-hidden rounded-lg border border-lr-line bg-lr-card text-lr-head shadow-[0_14px_30px_-18px_var(--lr-shadow)]">
       <div
         className="absolute inset-y-0 right-0 hidden w-[36%] [mask-image:linear-gradient(to_right,transparent,#000_14%)] lg:block"
         aria-hidden="true"
@@ -111,22 +113,22 @@ function Cta({ cta }) {
       </div>
       <div className="relative flex flex-col gap-4 px-5 py-5 sm:flex-row sm:items-center sm:gap-6 sm:px-7 lg:w-[66%] lg:py-6">
         <div className="flex items-start gap-4 sm:min-w-0 sm:flex-1 sm:items-center">
-          <span className="shrink-0 text-[#c9963f]">
+          <span className="shrink-0 text-lr-gold">
             <GuideIcon name="shield" className="h-12 w-12 sm:h-14 sm:w-14" />
           </span>
           <span className="min-w-0">
-            <span className={`${serif.className} block text-[21px] leading-[1.15] sm:text-[23px] 2xl:whitespace-nowrap 2xl:text-[24px]`}>{cta.title}</span>
-            <span className="mt-1.5 block text-[13.5px] leading-snug text-white/85">{cta.text}</span>
+            <span className={`${H5} block text-lr-head`}>{cta.title}</span>
+            <span className={`${BODY_SM} mt-1.5 block text-lr-body`}>{cta.text}</span>
           </span>
         </div>
         <div className="shrink-0">
           <QuoteLink
             href={cta.href}
-            className="flex items-center justify-center gap-3 rounded-[4px] bg-white px-5 py-3 text-[14px] font-medium uppercase tracking-[0.03em] text-[#0e2b20] transition-colors hover:bg-[#eef3ef]"
+            className="flex items-center justify-center gap-3 whitespace-nowrap rounded-[4px] bg-lr-brand px-5 py-3 text-[14px] font-medium uppercase tracking-[0.03em] text-lr-on-brand transition-colors hover:bg-lr-brand-hover xl:text-[15px]"
           >
             {cta.label} <Arrow className="h-4 w-4" />
           </QuoteLink>
-          <p className="mt-2 flex items-center justify-center gap-2 text-[12.5px] text-white/85 sm:justify-start">
+          <p className={`${SMALL} mt-2 flex items-center justify-center gap-2 text-lr-muted sm:justify-start`}>
             <GuideIcon name="lock" className="h-3.5 w-3.5" />
             {cta.small}
           </p>
@@ -146,18 +148,18 @@ export default function HomeTrust({ data }) {
   const { note } = data;
 
   return (
-    <section lang="en-GB" className="relative bg-[#fafaf8] text-[#141414]">
-      <div className="mx-auto max-w-[1536px] px-3 pb-10 pt-9 sm:px-6 lg:px-12 lg:pb-14 lg:pt-10 xl:px-[88px]">
+    <section lang="en-GB" className="relative bg-lr-band text-lr-head">
+      <div className={`${CONTAINER} pb-10 pt-9 lg:pb-14 lg:pt-10`}>
         <div className="flex items-center justify-center gap-4">
-          <span className="h-px w-10 bg-[#c9963f] sm:w-12" />
-          <p className="text-[13px] font-medium uppercase tracking-[0.08em] text-[#0e2b20] sm:text-[14px]">{data.eyebrow}</p>
-          <span className="h-px w-10 bg-[#c9963f] sm:w-12" />
+          <span className="h-px w-10 bg-lr-gold-line sm:w-12" />
+          <p className={`${LABEL} text-lr-ink`}>{data.eyebrow}</p>
+          <span className="h-px w-10 bg-lr-gold-line sm:w-12" />
         </div>
-        <h2 className={`${serif.className} mt-3 text-center text-[clamp(30px,8.6vw,50px)] leading-[1.08] tracking-[-0.01em]`}>
+        <h2 className={`${H2} mt-3 text-balance text-center`}>
           {h1} <br className="xl:hidden" />
-          <span className="text-[#0e2b20]">{h2}</span>
+          <span className="text-lr-ink">{h2}</span>
         </h2>
-        <p className="mx-auto mt-3 max-w-[720px] text-center text-[14.5px] leading-[1.6] text-[#2a2a2a] sm:text-[16px]">
+        <p className={`${BODY} mx-auto mt-3 max-w-[800px] text-center text-lr-body`}>
           {s1} <br className="hidden sm:block" />
           {s2}
         </p>
@@ -183,19 +185,19 @@ export default function HomeTrust({ data }) {
         </div>
 
         {/* data note */}
-        <div className="mt-4 flex gap-4 rounded-lg border border-black/[0.08] bg-white px-4 py-4 sm:px-6 xl:items-center xl:py-3.5">
-          <GuideIcon name="shield" className="h-7 w-7 shrink-0 text-[#0e2b20]" />
+        <div className="mt-4 flex gap-4 rounded-lg border border-lr-line bg-lr-card px-4 py-4 sm:px-6 xl:items-center xl:py-3.5">
+          <GuideIcon name="shield" className="h-7 w-7 shrink-0 text-lr-ink" />
           <div className="min-w-0 xl:flex xl:flex-1 xl:items-center xl:gap-8">
-            <p className="text-[13.5px] leading-[1.55] text-[#3a3a3a] xl:flex-1 xl:text-[13px]">
-              <span className="font-semibold text-[#141414]">{note.title}</span> <span className="break-words">{note.text}</span>
+            <p className={`${BODY_SM} text-lr-body xl:flex-1`}>
+              <span className="font-semibold text-lr-head">{note.title}</span> <span className="break-words">{note.text}</span>
             </p>
-            <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-[13.5px] text-[#3a3a3a] xl:mt-0 xl:shrink-0 xl:items-center xl:border-l xl:border-black/10 xl:pl-8 xl:text-[13px]">
+            <ul className={`${SMALL} mt-2 flex flex-wrap gap-x-5 gap-y-1 text-lr-body xl:mt-0 xl:shrink-0 xl:items-center xl:border-l xl:border-lr-line xl:pl-8`}>
               <li className="hidden xl:block">
-                <GuideIcon name="star" className="h-5 w-5 text-[#3a3a3a]" />
+                <GuideIcon name="star" className="h-5 w-5 text-lr-body" />
               </li>
               {note.stats.map((s) => (
                 <li key={s} className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#1f6b45] xl:bg-[#3a3a3a]" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-lr-green xl:bg-lr-body" />
                   {s}
                 </li>
               ))}

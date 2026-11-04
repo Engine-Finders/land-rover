@@ -27,7 +27,7 @@
   --color-shadow: rgba(22, 54, 42, 0.12);
   --color-hero-overlay: rgba(248, 247, 242, 0.66);
   --color-hero-fade: rgba(248, 247, 242, 0.96);
-  --color-navbar: rgba(248, 247, 242, 0.96);
+  --color-navbar: rgba(255, 255, 255, 0.96);
   --color-glass-border: rgba(23, 95, 70, 0.16);
   --color-glass-shadow: rgba(22, 54, 42, 0.1);
   --color-btn-hover: rgba(255, 255, 255, 0.12);
@@ -36,12 +36,117 @@
 
 [data-theme="dark"] {
   color-scheme: dark;
+  --color-page: #0d1c18;
+  --color-page-soft: #142722;
+  --color-surface: #182e28;
+  --color-surface-raised: rgba(27, 49, 42, 0.96);
+  --color-surface-glass: rgba(20, 42, 35, 0.86);
+  --color-table-surface: rgba(24, 46, 39, 0.97);
+  --color-text: #f4f3ed;
+  --color-text-muted: #d2dbd5;
+  --color-text-soft: #a5b6ad;
+  --color-border: #38584d;
+  --color-border-strong: #58776c;
+  --color-primary: #69b58a;
+  --color-primary-strong: #8bcaa4;
+  --color-primary-soft: rgba(105, 181, 138, 0.16);
+  --color-chrome: #24533f;
+  --color-accent: #d4aa68;
+  --color-accent-red: #ee7c82;
+  --color-accent-red-soft: rgba(238, 124, 130, 0.16);
+  --color-accent-green: #7bc39a;
+  --color-accent-green-soft: rgba(123, 195, 154, 0.16);
+  --color-shadow: rgba(0, 9, 6, 0.42);
+  --color-hero-overlay: rgba(13, 28, 24, 0.58);
+  --color-hero-fade: rgba(13, 28, 24, 0.94);
+  --color-navbar: rgba(11, 27, 23, 0.95);
+  --color-glass-border: rgba(151, 205, 174, 0.24);
+  --color-glass-shadow: rgba(0, 9, 6, 0.34);
+  --color-btn-hover: rgba(255, 255, 255, 0.12);
+  --color-btn-hover-text: #ffffff;
 }
+
+/* Section theme for the redesigned pages (home, model variants, engines). One token set, two
+   themes switched by data-theme on <html> (navbar day/night button): a clean white day theme and
+   a deep green night theme. Use them as Tailwind colours: bg-lr-page, text-lr-head, border-lr-line,
+   bg-lr-brand/10 and so on. */
+:root {
+  --lr-page: #ffffff; /* section background */
+  --lr-band: #f6f7f4; /* alternate section background */
+  --lr-card: #ffffff; /* cards */
+  --lr-panel: #f4f5f1; /* tinted panels inside cards: table heads, notes, inputs */
+  --lr-line: #e3e5df; /* borders, dividers */
+  --lr-line-strong: #cdd2ca;
+  --lr-head: #13201a; /* headings, key values */
+  --lr-ink: #123d2a; /* brand-green headings and scores (off-white at night) */
+  --lr-body: #414c46; /* description text */
+  --lr-muted: #6b756f; /* labels, captions */
+  --lr-brand: #123d2a; /* primary buttons, pills, icon tiles */
+  --lr-brand-hover: #0b2e1f;
+  --lr-on-brand: #ffffff;
+  --lr-green: #1f6b45; /* green text accents, eyebrows, links, icons */
+  --lr-gold: #9c7a3c; /* gold text accents */
+  --lr-gold-line: #b9995c; /* gold rules, stars, decorative lines */
+  --lr-chip: #edf2ee; /* icon circles */
+  --lr-good: #2f805c;
+  --lr-warn: #b7791f;
+  --lr-bad: #b23b3b;
+  --lr-shadow: rgba(24, 40, 31, 0.1);
+}
+
+[data-theme="dark"] {
+  --lr-page: #0d1c18;
+  --lr-band: #11231d;
+  --lr-card: #152b24;
+  --lr-panel: #1a332b;
+  --lr-line: #274239;
+  --lr-line-strong: #375a4d;
+  --lr-head: #f4f3ed;
+  --lr-ink: #f4f3ed;
+  --lr-body: #c6d2cb;
+  --lr-muted: #93a79c;
+  --lr-brand: #1f7049;
+  --lr-brand-hover: #26845a;
+  --lr-on-brand: #ffffff;
+  --lr-green: #7bc49a;
+  --lr-gold: #d4aa68;
+  --lr-gold-line: #c9a35d;
+  --lr-chip: #1c3a2f;
+  --lr-good: #7bc49a;
+  --lr-warn: #e3b45c;
+  --lr-bad: #f08787;
+  --lr-shadow: rgba(0, 0, 0, 0.45);
+}
+
+/* dark: utilities follow the navbar theme button, not the OS setting */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --container-8xl: 88rem;
+
+  --color-lr-page: var(--lr-page);
+  --color-lr-band: var(--lr-band);
+  --color-lr-card: var(--lr-card);
+  --color-lr-panel: var(--lr-panel);
+  --color-lr-line: var(--lr-line);
+  --color-lr-line-strong: var(--lr-line-strong);
+  --color-lr-head: var(--lr-head);
+  --color-lr-ink: var(--lr-ink);
+  --color-lr-body: var(--lr-body);
+  --color-lr-muted: var(--lr-muted);
+  --color-lr-brand: var(--lr-brand);
+  --color-lr-brand-hover: var(--lr-brand-hover);
+  --color-lr-on-brand: var(--lr-on-brand);
+  --color-lr-green: var(--lr-green);
+  --color-lr-gold: var(--lr-gold);
+  --color-lr-gold-line: var(--lr-gold-line);
+  --color-lr-chip: var(--lr-chip);
+  --color-lr-good: var(--lr-good);
+  --color-lr-warn: var(--lr-warn);
+  --color-lr-bad: var(--lr-bad);
+  --color-lr-shadow: var(--lr-shadow);
 }
 
 body {
@@ -50,15 +155,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,
-h2,
-.font-lora {
-  font-family: var(--font-lora), "Lora", Georgia, "Times New Roman", serif;
-}
+/* default heading face; layered so utility classes (the shared type scale) can override it */
+@layer base {
+  h1,
+  h2,
+  .font-lora {
+    font-family: var(--font-lora), "Lora", Georgia, "Times New Roman", serif;
+  }
 
-h1,
-h2 {
-  font-weight: 500;
+  h1,
+  h2 {
+    font-weight: 500;
+  }
 }
 
 body,
@@ -89,6 +197,14 @@ a {
   a {
     font-weight: 900;
     text-decoration: none;
+  }
+}
+
+/* redesigned pages (home, model variants, engines): links inside running text keep the text's
+   weight instead of the global 900 */
+@layer base {
+  .lr-redesign :where(p, li, td, th, dd, dt, blockquote, span) a {
+    font-weight: inherit;
   }
 }
 

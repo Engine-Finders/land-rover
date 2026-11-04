@@ -3,19 +3,16 @@ import Image from "next/image";
 import VIcon from "@/components/variant/VariantIcons";
 import { carRatio } from "@/lib/carGeometry";
 import { stripArrow, stripBullet, topicIcon } from "@/components/variant/variantText";
+import { BODY, BODY_SM, CONTAINER, H2, H5, H6, SMALL } from "@/lib/typeScale";
 
 // Variant section: "Repair, Buy, or Replace?" - repairability table, buy/avoid checklist,
 // closing verdict, compare CTA and trust strip, from the page's `repairBuyOrReplace` JSON.
-// Fixed dark editorial design (serif headings, gold accents).
-
-const GREEN = "#8fb35a";
-const GOLD = "#c9a24a";
-const SERIF = { fontFamily: "var(--font-serif-display), Georgia, 'Times New Roman', serif" };
+// Editorial design (serif headings, gold accents) that follows the site theme (day / night).
 
 const STATUS = {
-  yes: { color: "#7fbf5a", mark: "check" },
-  partial: { color: "#e3b04b", mark: "check" },
-  no: { color: "#ef5b4f", mark: "cross" },
+  yes: { disc: "bg-lr-good", mark: "check" },
+  partial: { disc: "bg-lr-warn", mark: "check" },
+  no: { disc: "bg-lr-bad", mark: "cross" },
 };
 
 const TRUST = [
@@ -38,25 +35,25 @@ function StatusMark({ value, className = "" }) {
   const { ok, label } = repairable(value);
   const s = STATUS[ok];
   return (
-    <span className={`inline-flex items-center gap-1.5 font-medium ${className}`} style={{ color: ok === "no" ? s.color : undefined }}>
-      <span className="flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full" style={{ background: s.color }}>
-        <svg viewBox="0 0 24 24" className="h-3 w-3 text-[#0b0d0a]" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <span className={`inline-flex items-center gap-1.5 font-medium ${ok === "no" ? "text-lr-bad" : ""} ${className}`}>
+      <span className={`flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full ${s.disc}`}>
+        <svg viewBox="0 0 24 24" className="h-3 w-3 text-lr-page" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           {s.mark === "check" ? <path d="m6 12.5 4 4 8-9" /> : <path d="M7 7l10 10M17 7 7 17" />}
         </svg>
       </span>
-      <span className={ok === "no" ? "" : "text-white"}>{label}</span>
+      <span className={ok === "no" ? "" : "text-lr-head"}>{label}</span>
     </span>
   );
 }
 
 function Card({ className = "", children }) {
-  return <div className={`rounded-xl border border-white/12 bg-[#0f130e]/90 backdrop-blur-sm ${className}`}>{children}</div>;
+  return <div className={`rounded-xl border border-lr-line bg-lr-card/90 shadow-[0_20px_44px_-34px_var(--lr-shadow)] backdrop-blur-sm ${className}`}>{children}</div>;
 }
 
 function CardTitle({ icon, children }) {
   return (
-    <h3 className="flex items-center gap-3 text-[20px] leading-tight text-white md:text-[24px]" style={SERIF}>
-      <VIcon name={icon} className="h-6 w-6 shrink-0 md:h-7 md:w-7" style={{ color: GOLD }} />
+    <h3 className={`${H5} flex items-center gap-3 text-lr-head`}>
+      <VIcon name={icon} className="h-6 w-6 shrink-0 text-lr-gold md:h-7 md:w-7" />
       <span dangerouslySetInnerHTML={{ __html: children }} />
     </h3>
   );
@@ -66,30 +63,30 @@ function CheckList({ tone, title, items }) {
   if (!items?.length) return null;
   const good = tone === "buy";
   const c = good
-    ? { border: "rgba(127,191,90,0.35)", bg: "linear-gradient(180deg, rgba(36,58,30,0.55) 0%, rgba(16,24,14,0.6) 100%)", head: "#7fbf5a", iconBg: "rgba(127,191,90,0.12)" }
-    : { border: "rgba(239,91,79,0.35)", bg: "linear-gradient(180deg, rgba(70,26,22,0.55) 0%, rgba(26,14,12,0.6) 100%)", head: "#ef5b4f", iconBg: "rgba(239,91,79,0.12)" };
+    ? { box: "border-lr-good/35 from-lr-good/[0.09] to-lr-good/[0.02]", head: "text-lr-good", icon: "bg-lr-good/12 text-lr-good" }
+    : { box: "border-lr-bad/35 from-lr-bad/[0.09] to-lr-bad/[0.02]", head: "text-lr-bad", icon: "bg-lr-bad/12 text-lr-bad" };
   return (
-    <div className="rounded-lg border p-3.5 md:p-4" style={{ borderColor: c.border, background: c.bg }}>
-      <p className="flex items-center gap-2.5 border-b border-white/10 pb-3 text-[19px] md:text-[21px]" style={{ ...SERIF, color: c.head }}>
+    <div className={`rounded-lg border bg-linear-to-b p-3.5 md:p-4 ${c.box}`}>
+      <p className={`${H6} flex items-center gap-2.5 border-b border-lr-line pb-3 ${c.head}`}>
         <span className="relative flex h-7 w-7 shrink-0 items-center justify-center">
           <svg viewBox="0 0 24 24" className="absolute inset-0 h-7 w-7" aria-hidden="true">
             <path fill="currentColor" d="M12 2.5l8 3.3v6.3c0 5-3.4 8.4-8 10.4-4.6-2-8-5.4-8-10.4V5.8z" />
           </svg>
-          <svg viewBox="0 0 24 24" className="relative h-3.5 w-3.5 text-[#0b0d0a]" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <svg viewBox="0 0 24 24" className="relative h-3.5 w-3.5 text-lr-page" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             {good ? <path d="m6 12.5 4 4 8-9" /> : <path d="M7 7l10 10M17 7 7 17" />}
           </svg>
         </span>
         {title}
       </p>
-      <ul className="divide-y divide-white/10">
+      <ul className="divide-y divide-lr-line">
         {items.map((raw) => {
           const text = stripBullet(raw);
           return (
             <li key={text} className="flex items-start gap-3 py-3 last:pb-0.5">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full" style={{ background: c.iconBg, color: c.head }}>
+              <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${c.icon}`}>
                 <VIcon name={topicIcon(text)} className="h-[18px] w-[18px]" />
               </span>
-              <p className="pt-1 text-[14px] leading-snug text-white/90 md:text-[14.5px]" dangerouslySetInnerHTML={{ __html: text }} />
+              <p className={`${BODY_SM} pt-1 text-lr-body`} dangerouslySetInnerHTML={{ __html: text }} />
             </li>
           );
         })}
@@ -111,28 +108,28 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
   const checks = data.buyingChecks;
 
   return (
-    <section className="relative overflow-hidden bg-[#0b0d0a] text-white">
-      {/* backdrop */}
+    <section className="relative overflow-hidden bg-lr-page text-lr-head">
+      {/* backdrop: soft light and layered hills in the page's own tints */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[620px] md:h-[520px]" aria-hidden="true">
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 55% 70% at 75% 25%, rgba(92,110,84,0.30) 0%, rgba(40,48,36,0.15) 50%, transparent 78%)" }} />
-        <svg className="absolute right-0 top-[18%] h-[50%] w-full opacity-75 lg:top-[8%] lg:h-[62%] lg:w-[60%]" viewBox="0 0 800 400" preserveAspectRatio="none">
-          <path d="M0 230 C120 140 220 100 340 130 S540 40 640 80 S760 120 800 100 V400 H0Z" fill="#161b15" />
-          <path d="M0 290 C150 230 270 215 390 235 S610 170 800 200 V400 H0Z" fill="#12160f" />
-          <path d="M0 340 C160 300 300 300 440 312 S660 282 800 292 V400 H0Z" fill="#1a160f" />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 55% 70% at 75% 25%, color-mix(in srgb, var(--lr-line) 70%, transparent) 0%, color-mix(in srgb, var(--lr-line) 25%, transparent) 50%, transparent 78%)" }} />
+        <svg className="absolute right-0 top-[18%] h-[50%] w-full opacity-75 [mask-image:linear-gradient(to_right,transparent,#000_35%)] lg:top-[8%] lg:h-[62%] lg:w-[60%]" viewBox="0 0 800 400" preserveAspectRatio="none">
+          <path d="M0 230 C120 140 220 100 340 130 S540 40 640 80 S760 120 800 100 V400 H0Z" className="fill-lr-panel" />
+          <path d="M0 290 C150 230 270 215 390 235 S610 170 800 200 V400 H0Z" className="fill-lr-band" />
+          <path d="M0 340 C160 300 300 300 440 312 S660 282 800 292 V400 H0Z" className="fill-lr-card" />
         </svg>
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-b from-transparent to-[#0b0d0a]" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-b from-transparent to-lr-page" />
       </div>
 
-      <div className="relative mx-auto max-w-8xl border-t border-white/10 px-4 pb-10 pt-10 sm:px-6 md:px-8 md:pb-14 md:pt-14">
+      <div className={`relative ${CONTAINER} border-t border-transparent pb-10 pt-10 md:pb-14 md:pt-14`}>
         {/* ---------- header ---------- */}
         <div className="grid items-center gap-2 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-10">
           <div>
-            <span className="block h-0.5 w-14 md:w-20" style={{ background: GOLD }} aria-hidden="true" />
-            <h2 className="mt-4 text-[32px] leading-[1.08] tracking-[-0.01em] text-white sm:text-[42px] md:mt-5 lg:text-[52px] xl:text-[58px]" style={SERIF}>
+            <span className="block h-0.5 w-14 bg-lr-gold-line md:w-20" aria-hidden="true" />
+            <h2 className={`${H2} mt-4 text-lr-head md:mt-5`}>
               {lead && (
                 <>
                   {cut > 0 ? `${lead.slice(0, cut)} ` : ""}
-                  <span style={{ color: GREEN }}>{cut > 0 ? lead.slice(cut + 1) : lead}</span> —<br />
+                  <span className="text-lr-green">{cut > 0 ? lead.slice(cut + 1) : lead}</span> —<br />
                 </>
               )}
               {tail}
@@ -141,59 +138,59 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
           {car && (
             <div className="relative flex justify-center lg:justify-end" aria-hidden="true">
               <div className="relative w-[82%] max-w-[380px] sm:max-w-[440px] lg:w-full lg:max-w-[560px]" style={{ aspectRatio: carRatio(car) }}>
-                <div className="absolute inset-x-[10%] bottom-[1%] h-[12%] rounded-[50%] bg-black/85 blur-xl" />
-                <Image src={car} alt="" fill sizes="(min-width: 1024px) 40vw, 82vw" className="object-fill drop-shadow-[0_24px_30px_rgba(0,0,0,0.6)]" />
+                <div className="absolute inset-x-[10%] bottom-[1%] h-[12%] rounded-[50%] bg-black/35 blur-xl dark:bg-black/85" />
+                <Image src={car} alt="" fill sizes="(min-width: 1024px) 40vw, 82vw" className="object-fill drop-shadow-[0_24px_30px_rgba(24,40,31,0.28)] dark:drop-shadow-[0_24px_30px_rgba(0,0,0,0.6)]" />
               </div>
             </div>
           )}
         </div>
 
-        {/* ---------- repair + buy ---------- */}
-        <div className="mt-6 grid gap-4 lg:mt-8 lg:grid-cols-2 lg:gap-5">
+        {/* ---------- repair + buy (stacked, so the repair table has room for its columns) ---------- */}
+        <div className="mt-6 grid gap-4 lg:mt-8 lg:gap-5">
           {repair?.rows?.length > 0 && (
             <Card className="p-4 md:p-5">
               <CardTitle icon="wrench">{repair.title || "Can It Be Repaired?"}</CardTitle>
 
               {/* mobile list */}
-              <ul className="mt-4 divide-y divide-white/10 rounded-lg border border-white/10 md:hidden">
+              <ul className="mt-4 divide-y divide-lr-line rounded-lg border border-lr-line md:hidden">
                 {repair.rows.map((r) => (
                   <li key={r.problem} className="flex gap-3 p-3">
-                    <VIcon name={topicIcon(r.problem)} className="mt-0.5 h-7 w-7 shrink-0" style={{ color: GOLD }} />
+                    <VIcon name={topicIcon(r.problem)} className="mt-0.5 h-7 w-7 shrink-0 text-lr-gold" />
                     <div className="min-w-0 flex-1">
                       <div className="flex items-start justify-between gap-3">
-                        <p className="text-[14.5px] font-medium leading-snug text-white" dangerouslySetInnerHTML={{ __html: r.problem }} />
-                        <StatusMark value={r.repairable} className="shrink-0 text-[12.5px]" />
+                        <p className={`${BODY_SM} font-medium text-lr-head`} dangerouslySetInnerHTML={{ __html: r.problem }} />
+                        <StatusMark value={r.repairable} className={`${SMALL} shrink-0`} />
                       </div>
-                      <p className="mt-1 text-[13.5px] font-semibold" style={{ color: GREEN }}>{r.typicalCost}</p>
-                      <p className="mt-0.5 text-[13px] leading-snug text-white/65" dangerouslySetInnerHTML={{ __html: r.whenItMakesSense }} />
+                      <p className={`${BODY_SM} mt-1 font-semibold text-lr-green`}>{r.typicalCost}</p>
+                      <p className={`${BODY_SM} mt-0.5 text-lr-body`} dangerouslySetInnerHTML={{ __html: r.whenItMakesSense }} />
                     </div>
                   </li>
                 ))}
               </ul>
 
               {/* tablet / desktop table */}
-              <div className="mt-4 hidden overflow-hidden rounded-lg border border-white/10 md:block">
+              <div className="mt-4 hidden overflow-hidden rounded-lg border border-lr-line md:block">
                 <table className="w-full border-collapse text-left">
                   <thead>
-                    <tr className="bg-white/[0.04] text-[13.5px] font-medium" style={{ color: GOLD }}>
-                      <th scope="col" className="py-3 pl-[60px] pr-3">{cols[0]}</th>
-                      <th scope="col" className="border-l border-white/10 px-3 py-3">{cols[1]}</th>
-                      <th scope="col" className="border-l border-white/10 px-3 py-3 text-center">{cols[2]}</th>
-                      <th scope="col" className="border-l border-white/10 px-3 py-3">{cols[3]}</th>
+                    <tr className={`${SMALL} bg-lr-panel text-lr-gold [&>th]:font-medium`}>
+                      <th scope="col" className="w-[28%] py-3 pl-[60px] pr-3">{cols[0]}</th>
+                      <th scope="col" className="w-[16%] border-l border-lr-line px-3 py-3">{cols[1]}</th>
+                      <th scope="col" className="w-[20%] border-l border-lr-line px-3 py-3 text-center">{cols[2]}</th>
+                      <th scope="col" className="border-l border-lr-line px-3 py-3">{cols[3]}</th>
                     </tr>
                   </thead>
                   <tbody>
                     {repair.rows.map((r) => (
-                      <tr key={r.problem} className="border-t border-white/10 text-[14px]">
+                      <tr key={r.problem} className={`${BODY_SM} border-t border-lr-line`}>
                         <th scope="row" className="py-3 pl-3 pr-3 font-normal">
                           <span className="flex items-center gap-3">
-                            <VIcon name={topicIcon(r.problem)} className="h-8 w-8 shrink-0" style={{ color: GOLD }} />
-                            <span className="leading-snug text-white" dangerouslySetInnerHTML={{ __html: r.problem }} />
+                            <VIcon name={topicIcon(r.problem)} className="h-8 w-8 shrink-0 text-lr-gold" />
+                            <span className="leading-snug text-lr-head" dangerouslySetInnerHTML={{ __html: r.problem }} />
                           </span>
                         </th>
-                        <td className="border-l border-white/10 px-3 py-3"><StatusMark value={r.repairable} className="text-[14px]" /></td>
-                        <td className={`border-l border-white/10 px-3 py-3 text-center leading-snug ${/replacement|rebuild/i.test(r.typicalCost) ? "text-[13px] text-white/85" : "whitespace-nowrap text-[15px] text-white"}`}>{r.typicalCost}</td>
-                        <td className="border-l border-white/10 px-3 py-3 text-[13px] leading-snug text-white/80" dangerouslySetInnerHTML={{ __html: r.whenItMakesSense }} />
+                        <td className="border-l border-lr-line px-3 py-3"><StatusMark value={r.repairable} /></td>
+                        <td className={`border-l border-lr-line px-3 py-3 text-center ${/replacement|rebuild/i.test(r.typicalCost) ? "text-lr-body" : "whitespace-nowrap font-medium text-lr-head"}`}>{r.typicalCost}</td>
+                        <td className="border-l border-lr-line px-3 py-3 text-lr-body" dangerouslySetInnerHTML={{ __html: r.whenItMakesSense }} />
                       </tr>
                     ))}
                   </tbody>
@@ -220,12 +217,12 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
               <svg viewBox="0 0 64 72" className="h-16 w-14 shrink-0 md:h-24 md:w-20" aria-hidden="true">
                 <defs>
                   <linearGradient id="rbr-gold" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stopColor="#e5c77a" />
-                    <stop offset="1" stopColor="#9c7a32" />
+                    <stop offset="0" style={{ stopColor: "var(--lr-gold-line)" }} />
+                    <stop offset="1" style={{ stopColor: "var(--lr-gold)" }} />
                   </linearGradient>
                   <linearGradient id="rbr-green" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0" stopColor="#3c6b34" />
-                    <stop offset="1" stopColor="#1d3a1c" />
+                    <stop offset="0" style={{ stopColor: "var(--lr-brand)" }} />
+                    <stop offset="1" style={{ stopColor: "var(--lr-brand-hover)" }} />
                   </linearGradient>
                 </defs>
                 <path d="M32 2 60 12v20c0 18-12 30-28 38C16 62 4 50 4 32V12z" fill="url(#rbr-gold)" />
@@ -233,8 +230,8 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
                 <path d="m21 35 8 8 15-17" fill="none" stroke="url(#rbr-gold)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <div>
-                <h3 className="text-[24px] leading-tight text-white md:text-[30px]" style={SERIF}>Closing Verdict</h3>
-                <p className="mt-2 text-[14.5px] leading-[1.65] text-white/85 md:text-[15.5px]" dangerouslySetInnerHTML={{ __html: data.closingVerdict }} />
+                <h3 className={`${H5} text-lr-head`}>Closing Verdict</h3>
+                <p className={`${BODY} mt-2 text-lr-body`} dangerouslySetInnerHTML={{ __html: data.closingVerdict }} />
               </div>
             </Card>
           )}
@@ -250,21 +247,21 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
                 className="pointer-events-none absolute -right-8 top-1/2 h-auto w-[180px] -translate-y-1/2 opacity-25 sm:w-[220px] md:opacity-45 lg:w-[240px]"
                 aria-hidden="true"
               />
-              <div className="pointer-events-none absolute inset-0 bg-linear-to-r from-[#0f130e] via-[#0f130e]/80 to-transparent" aria-hidden="true" />
+              <div className="pointer-events-none absolute inset-0 bg-linear-to-r from-lr-card via-lr-card/80 to-transparent" aria-hidden="true" />
               <div className="relative">
                 <div className="flex items-center gap-4 md:gap-6">
-                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 md:h-[72px] md:w-[72px]" style={{ borderColor: GOLD, color: GOLD }}>
+                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-lr-gold-line text-lr-gold md:h-[72px] md:w-[72px]">
                     <VIcon name="pound" className="h-7 w-7 md:h-9 md:w-9" />
                   </span>
-                  <h3 className="text-[22px] leading-[1.2] text-white md:text-[30px]" style={SERIF}>
+                  <h3 className={`${H5} text-lr-head`}>
                     Don&apos;t guess. Get the right engine at the right price.
                   </h3>
                 </div>
                 <Link
                   href="/quote"
-                  className="group mt-5 flex items-center gap-3.5 rounded-lg border border-[#7f9f4f]/60 bg-[#14200f]/80 px-4 py-3.5 text-[15px] font-medium leading-snug text-white transition-colors hover:border-[#8fb35a] hover:bg-[#1d2d16] md:mt-6 md:px-6 md:py-4 md:text-[17px] lg:max-w-[460px]"
+                  className="group mt-5 flex items-center gap-3.5 rounded-lg border border-lr-green/50 bg-lr-brand/[0.08] px-4 py-3.5 text-[15px] font-medium leading-snug text-lr-head transition-colors hover:border-lr-green hover:bg-lr-brand/15 md:mt-6 md:px-6 md:py-4 md:text-[16px] xl:text-[17px] lg:max-w-[480px]"
                 >
-                  <VIcon name="arrow" className="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-1" />
+                  <VIcon name="arrow" className="h-6 w-6 shrink-0 text-lr-green transition-transform group-hover:translate-x-1" />
                   {stripArrow(data.cta.label)}
                 </Link>
               </div>
@@ -273,11 +270,11 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
         </div>
 
         {/* trust strip */}
-        <ul className="mt-4 grid grid-cols-1 gap-x-4 gap-y-3 rounded-xl border border-white/12 bg-white/[0.03] p-4 min-[420px]:grid-cols-2 md:grid-cols-3 lg:mt-5 lg:grid-cols-5 lg:divide-x lg:divide-white/10 lg:px-2">
+        <ul className="mt-4 grid grid-cols-1 gap-x-4 gap-y-3 rounded-xl border border-lr-line bg-lr-card p-4 shadow-[0_20px_44px_-34px_var(--lr-shadow)] min-[420px]:grid-cols-2 md:grid-cols-3 lg:mt-5 lg:grid-cols-5 lg:divide-x lg:divide-lr-line lg:px-2">
           {TRUST.map((t) => (
             <li key={t.label} className="flex items-center gap-3 lg:justify-center lg:px-3">
-              <VIcon name={t.icon} className="h-6 w-6 shrink-0" style={{ color: GOLD }} />
-              <span className="text-[13.5px] leading-snug text-white/85">{t.label}</span>
+              <VIcon name={t.icon} className="h-6 w-6 shrink-0 text-lr-gold" />
+              <span className={`${SMALL} text-lr-body`}>{t.label}</span>
             </li>
           ))}
         </ul>

@@ -3,13 +3,11 @@ import Image from "next/image";
 import Tagged from "@/components/variant/Tagged";
 import VIcon from "@/components/variant/VariantIcons";
 import { stripArrow, stripBullet } from "@/components/variant/variantText";
+import { BODY, BODY_SM, CONTAINER, H2, H5, LABEL, SMALL } from "@/lib/typeScale";
 
 // Variant section: engine codes table (engine photo, code, years, power, enquiries, recon cost),
-// technical specs and a compare CTA, from the page's `engineCodes` JSON. Fixed dark design.
-
-const INK = "#a9c47e";
-const SERIF = { fontFamily: "var(--font-serif-display), Georgia, 'Times New Roman', serif" };
-const SANS = { fontFamily: "var(--font-instrument-sans), Arial, sans-serif" };
+// technical specs and a compare CTA, from the page's `engineCodes` JSON. Follows the site theme
+// (day / night); the compare CTA is a brand-green panel in both themes.
 
 const DEFAULT_COLUMNS = ["Engine Code", "Years", "Power", "2025 Enquiries", "Avg. Recon Cost"];
 
@@ -38,65 +36,64 @@ export default function EngineCodes({ data, engine = "/variant/sec10_engine.webp
   const specsTitle = specs ? splitSpecsTitle(specs.title) : null;
 
   return (
-    <section className="relative overflow-hidden bg-[#0b0d0a] text-white">
-      <div className="relative mx-auto grid max-w-8xl gap-y-4 border-t border-white/10 px-4 py-10 sm:px-6 md:px-8 md:py-14 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-x-10">
+    <section className="relative overflow-hidden bg-lr-page text-lr-head">
+      <div className={`relative ${CONTAINER} grid gap-y-4 border-t border-transparent py-10 md:py-14 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-x-10`}>
         {/* ---------- engine codes ---------- */}
         <div className="min-w-0">
-          <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-[#c9a24a] md:text-[13px]">Engine Reference</p>
-          <h2 className="mt-2 text-[32px] uppercase leading-[1.05] tracking-[0.01em] text-white sm:text-[40px] lg:text-[50px]" style={SERIF}>
+          <p className={`${LABEL} text-lr-gold`}>Engine Reference</p>
+          <h2 className={`${H2} mt-3 text-lr-head`}>
             Engine Codes
           </h2>
-          {data.matchNote && <p className="mt-3 text-[15px] leading-[1.6] text-white/80 md:text-[17px]" dangerouslySetInnerHTML={{ __html: data.matchNote }} />}
+          {data.matchNote && <p className={`${BODY} mt-3 text-lr-body`} dangerouslySetInnerHTML={{ __html: data.matchNote }} />}
 
           {rows.length > 0 && (
             <>
               {/* mobile cards */}
               <ul className="mt-5 space-y-2.5 md:hidden">
                 {rows.map((r) => (
-                  <li key={r.engineCode} className="flex gap-3 rounded-xl border border-white/12 bg-white/[0.03] p-3.5">
-                    <Image src={engine} alt="" width={504} height={495} sizes="64px" className="h-16 w-16 shrink-0 object-contain" aria-hidden="true" />
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-baseline justify-between gap-2">
-                        <p className="text-[16px] font-semibold leading-snug" style={{ color: INK }} dangerouslySetInnerHTML={{ __html: r.engineCode }} />
-                        <p className="shrink-0 text-[13.5px] font-medium text-white/80">{r.years}</p>
-                      </div>
-                      <dl className="mt-2 grid grid-cols-3 gap-2 text-[12.5px] leading-snug">
-                        {[[columns[2], r.power], [columns[3], r.enquiries], [columns[4], r.avgReconCost]].map(([k, val]) => (
-                          <div key={k} className="min-w-0">
-                            <dt className="text-[10.5px] font-medium uppercase tracking-[0.05em] text-white/50">{k}</dt>
-                            <dd className="mt-0.5 font-medium text-white"><Tagged value={val || "—"} /></dd>
-                          </div>
-                        ))}
-                      </dl>
+                  <li key={r.engineCode} className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-x-3 gap-y-3 rounded-xl border border-lr-line bg-lr-card p-3.5 shadow-[0_20px_44px_-34px_var(--lr-shadow)]">
+                    <Image src={engine} alt="" width={504} height={495} sizes="56px" className="h-14 w-14 object-contain" aria-hidden="true" />
+                    <div className="flex items-baseline justify-between gap-2">
+                      <p className="text-[17px] font-semibold leading-snug text-lr-green" dangerouslySetInnerHTML={{ __html: r.engineCode }} />
+                      <p className={`${SMALL} shrink-0 font-medium text-lr-body`}>{r.years}</p>
                     </div>
+                    {/* the figures use the card's full width so long values and source tags fit */}
+                    <dl className="col-span-2 grid grid-cols-3 gap-3 border-t border-lr-line pt-3 text-[13px] leading-snug">
+                      {[[columns[2], r.power], [columns[3], r.enquiries], [columns[4], r.avgReconCost]].map(([k, val]) => (
+                        <div key={k} className="min-w-0">
+                          <dt className="text-[11px] font-medium uppercase tracking-[0.05em] text-lr-muted">{k}</dt>
+                          <dd className="mt-0.5 font-medium text-lr-head [overflow-wrap:anywhere]"><Tagged value={val || "—"} tagSize="text-[10px] font-medium uppercase tracking-[0.02em]" /></dd>
+                        </div>
+                      ))}
+                    </dl>
                   </li>
                 ))}
               </ul>
 
               {/* tablet / desktop table */}
-              <div className="mt-6 hidden overflow-hidden rounded-xl border border-[#7f9f4f]/35 md:block">
+              <div className="mt-6 hidden overflow-hidden rounded-xl border border-lr-line bg-lr-card shadow-[0_20px_44px_-34px_var(--lr-shadow)] md:block">
                 <table className="w-full border-collapse text-left">
                   <thead>
-                    <tr className="text-[14.5px] font-semibold text-white" style={{ background: "#16231a" }}>
+                    <tr className={`${SMALL} bg-lr-panel text-lr-head [&>th]:font-medium`}>
                       <th scope="col" className="w-[110px] px-3 py-3.5"><span className="sr-only">Engine</span></th>
                       {columns.map((h) => (
-                        <th key={h} scope="col" className="border-l border-white/15 px-4 py-3.5">{h}</th>
+                        <th key={h} scope="col" className="border-l border-lr-line px-4 py-3.5">{h}</th>
                       ))}
                     </tr>
                   </thead>
                   <tbody>
                     {rows.map((r, i) => (
-                      <tr key={r.engineCode} className="border-t border-white/10 text-[15px]">
+                      <tr key={r.engineCode} className={`${BODY_SM} border-t border-lr-line`}>
                         {i === 0 && (
                           <td rowSpan={rows.length} className="px-3 py-3 align-middle">
                             <Image src={engine} alt="" width={504} height={495} sizes="90px" className="mx-auto h-auto w-[86px]" aria-hidden="true" />
                           </td>
                         )}
-                        <td className="border-l border-white/10 px-4 py-4 font-medium leading-snug" style={{ color: INK }} dangerouslySetInnerHTML={{ __html: r.engineCode }} />
-                        <td className="whitespace-nowrap border-l border-white/10 px-4 py-4 text-white/80">{r.years}</td>
-                        <td className="border-l border-white/10 px-4 py-4 leading-snug text-white/80">{r.power || "—"}</td>
-                        <td className="border-l border-white/10 px-4 py-4 text-[14px] leading-snug text-white/80"><Tagged value={r.enquiries || "—"} /></td>
-                        <td className="border-l border-white/10 px-4 py-4 font-medium leading-snug text-white"><Tagged value={r.avgReconCost || "—"} /></td>
+                        <td className="border-l border-lr-line px-4 py-4 font-medium leading-snug text-lr-green" dangerouslySetInnerHTML={{ __html: r.engineCode }} />
+                        <td className="whitespace-nowrap border-l border-lr-line px-4 py-4 text-lr-body">{r.years}</td>
+                        <td className="border-l border-lr-line px-4 py-4 leading-snug text-lr-body">{r.power || "—"}</td>
+                        <td className="border-l border-lr-line px-4 py-4 leading-snug text-lr-body"><Tagged value={r.enquiries || "—"} /></td>
+                        <td className="border-l border-lr-line px-4 py-4 font-medium leading-snug text-lr-head"><Tagged value={r.avgReconCost || "—"} /></td>
                       </tr>
                     ))}
                   </tbody>
@@ -109,21 +106,21 @@ export default function EngineCodes({ data, engine = "/variant/sec10_engine.webp
         {/* ---------- specs + CTA ---------- */}
         <div className="flex flex-col gap-4 lg:pt-2">
           {specs?.items?.length > 0 && (
-            <div className="rounded-xl border border-white/12 bg-[#0f130e]/90 p-4 md:p-6">
-              <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-white/10 pb-3">
-                <h3 className="text-[21px] uppercase leading-tight text-white md:text-[24px]" style={SERIF}>{specsTitle.title}</h3>
-                {specsTitle.tag && <p className="text-[11.5px] font-semibold uppercase tracking-[0.08em]" style={{ color: INK }}>{specsTitle.tag}</p>}
+            <div className="rounded-xl border border-lr-line bg-lr-card p-4 shadow-[0_20px_44px_-34px_var(--lr-shadow)] md:p-6">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-lr-line pb-3">
+                <h3 className={`${H5} text-lr-head`}>{specsTitle.title}</h3>
+                {specsTitle.tag && <p className={`${LABEL} text-lr-green`}>{specsTitle.tag}</p>}
               </div>
-              <dl className="divide-y divide-white/10">
+              <dl className="divide-y divide-lr-line">
                 {specs.items.map((s) => {
                   const label = stripBullet(s.label);
                   return (
-                    <div key={label} className="grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-3 py-3 text-[14px] md:text-[15px]">
-                      <dt className="flex items-center gap-3 text-white/75">
-                        <VIcon name={specIcon(label)} className="h-6 w-6 shrink-0" style={{ color: INK }} />
+                    <div key={label} className={`${BODY_SM} grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-3 py-3`}>
+                      <dt className="flex items-center gap-3 text-lr-body">
+                        <VIcon name={specIcon(label)} className="h-6 w-6 shrink-0 text-lr-green" />
                         {label}
                       </dt>
-                      <dd className="leading-snug text-white" dangerouslySetInnerHTML={{ __html: s.value }} />
+                      <dd className="leading-snug text-lr-head" dangerouslySetInnerHTML={{ __html: s.value }} />
                     </div>
                   );
                 })}
@@ -134,10 +131,10 @@ export default function EngineCodes({ data, engine = "/variant/sec10_engine.webp
           {data.cta?.label && (
             <Link
               href="/quote"
-              className="group relative isolate flex min-h-[132px] items-center gap-4 overflow-hidden rounded-xl border border-[#7f9f4f]/35 px-5 py-5 text-white shadow-[0_18px_40px_-20px_rgba(60,100,40,0.8)] md:min-h-[150px] md:gap-6 md:px-7 md:py-6"
+              className="group relative isolate flex min-h-[132px] items-center gap-4 overflow-hidden rounded-xl font-medium border border-lr-green/35 px-5 py-5 text-lr-on-brand shadow-[0_18px_40px_-20px_var(--lr-shadow)] md:min-h-[150px] md:gap-6 md:px-7 md:py-6"
               style={{
                 background:
-                  "radial-gradient(ellipse 30% 55% at 18% 25%, rgba(78,112,58,0.55) 0%, transparent 70%), radial-gradient(ellipse 35% 60% at 55% 85%, rgba(58,92,44,0.5) 0%, transparent 70%), radial-gradient(ellipse 25% 45% at 70% 15%, rgba(90,124,66,0.35) 0%, transparent 70%), linear-gradient(115deg, #1e3a1d 0%, #1a3319 45%, #132613 100%)",
+                  "radial-gradient(ellipse 30% 55% at 18% 25%, rgba(255,255,255,0.09) 0%, transparent 70%), radial-gradient(ellipse 35% 60% at 55% 85%, rgba(255,255,255,0.06) 0%, transparent 70%), radial-gradient(ellipse 25% 45% at 70% 15%, rgba(255,255,255,0.05) 0%, transparent 70%), linear-gradient(115deg, var(--lr-brand) 0%, var(--lr-brand-hover) 100%)",
               }}
             >
               {/* engine, blended into the green on its left edge */}
@@ -152,17 +149,17 @@ export default function EngineCodes({ data, engine = "/variant/sec10_engine.webp
               />
               <span
                 className="pointer-events-none absolute inset-0 -z-10"
-                style={{ background: "linear-gradient(90deg, #1b3519 0%, rgba(27,53,25,0.95) 52%, rgba(27,53,25,0.45) 74%, transparent 100%)" }}
+                style={{ background: "linear-gradient(90deg, var(--lr-brand) 0%, color-mix(in srgb, var(--lr-brand) 95%, transparent) 52%, color-mix(in srgb, var(--lr-brand) 45%, transparent) 74%, transparent 100%)" }}
                 aria-hidden="true"
               />
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[1.5px] border-[#d4ab55] text-[#d4ab55] transition-colors group-hover:bg-[#d4ab55]/10 md:h-16 md:w-16">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line text-lr-gold-line transition-colors group-hover:bg-lr-gold-line/10 md:h-16 md:w-16">
                 <VIcon name="arrow" className="h-6 w-6 transition-transform group-hover:translate-x-0.5 md:h-7 md:w-7" strokeWidth={1.8} />
               </span>
               <span className="min-w-0 max-w-[70%] sm:max-w-[60%]">
-                <span className="block text-[19px] font-semibold leading-[1.2] tracking-[-0.01em] md:text-[25px]" style={SANS}>
+                <span className={`${H5} block`}>
                   {stripArrow(data.cta.label)}
                 </span>
-                <span className="mt-1.5 block text-[13.5px] leading-snug text-white/90 md:mt-2 md:text-[16px]">Get quotes from trusted UK specialists in minutes.</span>
+                <span className={`${BODY_SM} mt-1.5 block font-normal text-lr-on-brand/90 md:mt-2`}>Get quotes from trusted UK specialists in minutes.</span>
               </span>
             </Link>
           )}

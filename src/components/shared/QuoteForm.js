@@ -1,8 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import { HomeIcon } from "@/components/home/homeIcons";
 import { buildQuoteLeadPayload } from "@/app/api/lead/crm";
+import { DEFAULT_VEHICLE_IMAGE, matchVehicleImage } from "@/lib/matchVehicleImage";
+
+const HEADER_BG = "/sec2-bg.webp";
 
 const emptyVehicle = {
   vrm: "",
@@ -15,30 +20,174 @@ const emptyVehicle = {
   wheelplan: "",
 };
 
-const inputClass =
-  "w-full rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2.5 text-sm font-normal text-[var(--color-text)] outline-none placeholder:text-[var(--color-text-soft)] focus:border-[var(--color-primary)] disabled:cursor-not-allowed disabled:bg-[var(--color-page-soft)] disabled:text-[var(--color-text-muted)]";
-
-const labelClass = "mb-1 block text-xs font-bold uppercase tracking-wide text-[var(--color-text-muted)]";
-
-function Alert({ type, children }) {
-  if (!children) return null;
-  const styles =
-    type === "error"
-      ? "border-[var(--color-accent-red)]/40 bg-[var(--color-accent-red-soft)] text-[var(--color-accent-red)]"
-      : type === "success"
-        ? "border-[var(--color-accent-green)]/40 bg-[var(--color-accent-green-soft)] text-[var(--color-accent-green)]"
-        : "border-[var(--color-border)] bg-[var(--color-page-soft)] text-[var(--color-text-muted)]";
-
-  return <div className={`rounded border px-3 py-2 text-sm ${styles}`}>{children}</div>;
+function formatPlate(vrm = "") {
+  const clean = String(vrm).replace(/\s+/g, "").toUpperCase();
+  if (clean.length <= 3) return clean;
+  return `${clean.slice(0, -3)} ${clean.slice(-3)}`;
 }
 
-export default function QuoteForm({ onSuccess, compact = false }) {
+function engineLitres(capacity) {
+  const raw = String(capacity || "").replace(/[^\d.]/g, "");
+  const num = Number(raw);
+  if (!Number.isFinite(num) || num <= 0) return "";
+  if (num >= 100) return `${(num / 1000).toFixed(1)}L`;
+  return `${num}L`;
+}
+
+function colourSwatch(colour = "") {
+  const key = String(colour).toLowerCase();
+  if (/white|alpine|mineral|silver|grey|gray|polaris/.test(key)) return "#e8eef5";
+  if (/black|sapphire|carbon|jet/.test(key)) return "#1a1f26";
+  if (/blue|atlantic|portimao|santorini/.test(key)) return "#1d4ed8";
+  if (/red|melbourne|imola|fire/.test(key)) return "#c41e2a";
+  if (/green|british|isle|keswick/.test(key)) return "#1f6b3a";
+  if (/yellow|orange|fuji/.test(key)) return "#f5b301";
+  if (/brown|bronze|champagne|lrc/.test(key)) return "#8b6914";
+  return "#94a3b8";
+}
+
+function Icon({ name, className = "h-4 w-4" }) {
+  const common = {
+    className,
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.7",
+    viewBox: "0 0 24 24",
+    "aria-hidden": true,
+  };
+  if (name === "user")
+    return (
+      <svg {...common}>
+        <path d="M20 21a8 8 0 0 0-16 0" strokeLinecap="round" />
+        <circle cx="12" cy="8" r="4" />
+      </svg>
+    );
+  if (name === "mail")
+    return (
+      <svg {...common}>
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m4 7 8 6 8-6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  if (name === "phone")
+    return (
+      <svg {...common}>
+        <path
+          d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 3.5 8.7a2 2 0 0 1 3-5.2Z"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  if (name === "pin")
+    return (
+      <svg {...common}>
+        <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z" />
+        <circle cx="12" cy="10" r="2.2" />
+      </svg>
+    );
+  if (name === "chat")
+    return (
+      <svg {...common}>
+        <path d="M5 18.5 3.5 21V7a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5Z" strokeLinejoin="round" />
+        <path d="M8 9.5h8M8 13h5" strokeLinecap="round" />
+      </svg>
+    );
+  if (name === "calendar")
+    return (
+      <svg {...common}>
+        <rect x="3.5" y="5" width="17" height="15" rx="2" />
+        <path d="M8 3.5v3M16 3.5v3M3.5 10h17" strokeLinecap="round" />
+      </svg>
+    );
+  if (name === "fuel")
+    return (
+      <svg {...common}>
+        <path d="M6 20V6a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v14M6 20h9M10 9h3" strokeLinecap="round" />
+        <path
+          d="M15 9h2.5a2 2 0 0 1 2 2v5.5a1.5 1.5 0 0 0 3 0V10l-2-2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  if (name === "engine")
+    return (
+      <svg {...common}>
+        <path d="M4 13h2l2-3h3l1.5 3H16l2 2v3H5.5L4 16v-3Z" strokeLinejoin="round" />
+        <path d="M9 10V7h4v3M18 12h2M7 18v2" strokeLinecap="round" />
+      </svg>
+    );
+  if (name === "lock")
+    return (
+      <svg {...common}>
+        <rect x="5" y="11" width="14" height="10" rx="2" />
+        <path d="M8 11V8a4 4 0 0 1 8 0v3" strokeLinecap="round" />
+      </svg>
+    );
+  if (name === "arrow")
+    return (
+      <svg {...common}>
+        <path d="M4 12h14m-6-6 6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  return null;
+}
+
+function Field({ id, label, icon, children }) {
+  return (
+    <label htmlFor={id} className="block min-w-0">
+      <span className="mb-1 block text-[12px] font-bold text-[var(--color-text)] sm:text-[13px]">{label}</span>
+      <span className="relative block">
+        <span className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-[var(--color-text-soft)]">
+          <Icon name={icon} className="h-4 w-4" />
+        </span>
+        {children}
+      </span>
+    </label>
+  );
+}
+
+const inputClass =
+  "w-full rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] py-2.5 pl-9 pr-2.5 text-[13px] text-[var(--color-text)] outline-none placeholder:text-[var(--color-text-soft)] focus:border-[var(--color-primary)] sm:text-[14px]";
+
+function UkPlate({ value, onChange, readOnly = false, inputId = "quote-reg" }) {
+  return (
+    <div className="flex min-h-[48px] flex-1 overflow-hidden rounded-[6px] border border-[#1a1a1a] bg-[#f5c518] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]">
+      <span className="flex w-9 shrink-0 flex-col items-center justify-center gap-0.5 bg-[#003399] py-1 text-[10px] font-bold leading-none text-white">
+        <span aria-hidden="true" className="mb-0.5 grid grid-cols-3 gap-[1px]">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <span key={i} className="h-[3px] w-[3px] rounded-full bg-[#fc0]" />
+          ))}
+        </span>
+        GB
+      </span>
+      {readOnly ? (
+        <span className="flex flex-1 items-center justify-center px-3 text-[20px] font-black tracking-[0.08em] text-[#111]">
+          {formatPlate(value)}
+        </span>
+      ) : (
+        <input
+          id={inputId}
+          type="text"
+          value={value}
+          maxLength={8}
+          autoComplete="off"
+          placeholder="REG HERE"
+          onChange={(event) => onChange(event.target.value.replace(/\s+/g, "").toUpperCase())}
+          className="min-w-0 flex-1 bg-transparent px-3 text-center text-[18px] font-black tracking-[0.08em] text-[#111] outline-none placeholder:text-[#111]/55"
+        />
+      )}
+    </div>
+  );
+}
+
+export default function QuoteForm({ onSuccess }) {
   const searchParams = useSearchParams();
+
   const [regInput, setRegInput] = useState("");
   const [vehicle, setVehicle] = useState(emptyVehicle);
   const [lookupLoading, setLookupLoading] = useState(false);
-  const [lookupAlert, setLookupAlert] = useState({ type: "", message: "" });
-  const [notice, setNotice] = useState("");
+  const [lookupError, setLookupError] = useState("");
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -48,18 +197,24 @@ export default function QuoteForm({ onSuccess, compact = false }) {
   const [honeypot, setHoneypot] = useState("");
 
   const [submitLoading, setSubmitLoading] = useState(false);
-  const [submitAlert, setSubmitAlert] = useState({ type: "", message: "" });
+  const [submitError, setSubmitError] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [calculator, setCalculator] = useState(null);
 
-  // Prefill from /quote?reg=… (e.g. variant hero). Lookup still runs on Search.
+  const vehicleReady = Boolean(vehicle.vrm && (vehicle.brand || vehicle.series || vehicle.year));
+  const engineDisplay = useMemo(() => engineLitres(vehicle.engineCapacity), [vehicle.engineCapacity]);
+  const modelLine = [vehicle.series, vehicle.fuelType].filter(Boolean).join(" · ");
+  const vehicleImage = useMemo(
+    () => (vehicleReady ? matchVehicleImage(vehicle) : DEFAULT_VEHICLE_IMAGE),
+    [vehicle, vehicleReady],
+  );
+
   useEffect(() => {
     const fromUrl = searchParams?.get("reg") || searchParams?.get("vrm") || "";
     const cleaned = fromUrl.replace(/\s+/g, "").toUpperCase();
     if (cleaned) setRegInput(cleaned);
   }, [searchParams]);
 
-  // Calculator results from HomeSec3 (only when arriving via /quote?from=calculator).
   useEffect(() => {
     if (searchParams?.get("from") !== "calculator") return;
     try {
@@ -72,26 +227,16 @@ export default function QuoteForm({ onSuccess, compact = false }) {
     }
   }, [searchParams]);
 
-  const vehicleReady = Boolean(vehicle.vrm && (vehicle.brand || vehicle.series || vehicle.year));
-  const canSubmit = vehicleReady && !submitLoading;
-
-  const engineDisplay = useMemo(() => {
-    if (!vehicle.engineCapacity) return "";
-    const raw = String(vehicle.engineCapacity);
-    return /cc/i.test(raw) ? raw : `${raw} cc`;
-  }, [vehicle.engineCapacity]);
-
   async function lookupVehicle(event) {
     event?.preventDefault?.();
     const reg = regInput.replace(/\s+/g, "").toUpperCase();
     if (!reg) {
-      setLookupAlert({ type: "error", message: "Enter a registration number first." });
+      setLookupError("Enter a registration number first.");
       return;
     }
 
     setLookupLoading(true);
-    setLookupAlert({ type: "", message: "" });
-    setNotice("");
+    setLookupError("");
     setSubmitted(false);
 
     try {
@@ -100,16 +245,14 @@ export default function QuoteForm({ onSuccess, compact = false }) {
 
       if (!response.ok) {
         setVehicle(emptyVehicle);
-        setLookupAlert({ type: "error", message: data.error || "Could not find that vehicle." });
+        setLookupError(data.error || "Could not find that vehicle.");
         return;
       }
 
       setVehicle(data.vehicle || emptyVehicle);
-      setNotice("Vehicle details loaded from DVLA / vehicle data.");
-      setLookupAlert({ type: "success", message: "Vehicle found. Confirm details and complete your contact info." });
     } catch (error) {
       setVehicle(emptyVehicle);
-      setLookupAlert({ type: "error", message: error.message || "Lookup failed. Please try again." });
+      setLookupError(error.message || "Lookup failed. Please try again.");
     } finally {
       setLookupLoading(false);
     }
@@ -117,15 +260,15 @@ export default function QuoteForm({ onSuccess, compact = false }) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    setSubmitAlert({ type: "", message: "" });
+    setSubmitError("");
 
     if (!vehicleReady) {
-      setSubmitAlert({ type: "error", message: "Search a registration before submitting." });
+      setSubmitError("Search a registration before submitting.");
       return;
     }
 
     if (!name.trim() || !phone.trim() || !email.trim() || !postcode.trim()) {
-      setSubmitAlert({ type: "error", message: "Full name, phone, email and postcode are required." });
+      setSubmitError("Full name, phone, email and postcode are required.");
       return;
     }
 
@@ -141,6 +284,7 @@ export default function QuoteForm({ onSuccess, compact = false }) {
         contact: { name, phone, email, postcode, remarks, honeypot },
         vehicle,
         calculator,
+        pageUrl: typeof window !== "undefined" ? window.location.href : "",
       });
 
       const response = await fetch("/api/lead", {
@@ -161,236 +305,262 @@ export default function QuoteForm({ onSuccess, compact = false }) {
       }
 
       setSubmitted(true);
-      setSubmitAlert({ type: "success", message: "Quote request sent." });
       onSuccess?.(payload);
     } catch (error) {
-      setSubmitAlert({ type: "error", message: error.message || "Something went wrong. Please try again." });
+      setSubmitError(error.message || "Something went wrong. Please try again.");
     } finally {
       setSubmitLoading(false);
     }
   }
 
-  if (submitted) {
-    return (
-      <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-6 text-center shadow-[0_14px_40px_var(--color-shadow)]">
-        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-accent-green)] text-white">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-            <path d="M6 14l6 6 10-10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </div>
-        <h3 className="mt-4 text-xl font-bold text-[var(--color-text)]">Quote Request Sent!</h3>
-        <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-          We&apos;ve received your details and will be contacting you soon.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <form
-      name="engine_quote_form"
-      id="engine_quote_form"
-      onSubmit={handleSubmit}
-      className={`rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_14px_40px_var(--color-shadow)] ${compact ? "p-4" : "p-5 md:p-7"}`}
-    >
-      <div className="text-lg font-extrabold text-[var(--color-text)] md:text-xl">Confirm Details To Show Price</div>
+    <div className="mx-auto w-full max-w-[520px] overflow-hidden rounded-[18px] border border-[var(--color-border)] bg-[var(--color-page)] shadow-[0_24px_60px_rgba(0,0,0,0.18)]">
+      <div className="relative overflow-hidden px-4 pb-6 pt-4 sm:px-5 sm:pb-7 sm:pt-5">
+        <Image src={HEADER_BG} alt="" fill priority sizes="520px" className="object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-[var(--color-page)]" />
+        <div className="relative z-[1] max-w-[380px]">
+          <h1 className="font-lora text-[24px] font-medium leading-[1.15] tracking-normal text-white sm:text-[30px]">
+            Get My Vehicle <span className="text-[var(--color-accent)]">Information</span>
+          </h1>
+          <p className="mt-1.5 text-[12px] leading-[1.4] text-white/85 sm:text-[13px]">
+            Enter your vehicle registration to find best replacement engine quote.
+          </p>
+        </div>
+      </div>
 
-      {calculator ? (
-        <p className="mt-2 rounded border border-[var(--color-primary)]/25 bg-[var(--color-primary-soft)] px-3 py-2 text-xs text-[var(--color-text-muted)]">
-          Diagnostic calculator results will be included with your quote request.
-        </p>
-      ) : null}
+      <div className="relative -mt-3 rounded-t-[16px] bg-[var(--color-surface)] px-3 pb-4 pt-3 sm:px-4 sm:pb-5 sm:pt-4">
+        {submitted ? (
+          <div className="flex flex-col items-center px-2 py-8 text-center">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-accent-green)] text-white">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <path d="M6 14l6 6 10-10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+            <p className="mt-3 text-lg font-bold text-[var(--color-text)]">Quote Request Sent!</p>
+            <p className="mt-1.5 max-w-sm text-sm text-[var(--color-text-muted)]">
+              We&apos;ve received your details and will be contacting you soon.
+            </p>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+            {!vehicleReady ? (
+              <div className="grid gap-2">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-stretch">
+                  <UkPlate value={regInput} onChange={setRegInput} />
+                  <button
+                    type="button"
+                    onClick={lookupVehicle}
+                    disabled={lookupLoading}
+                    className="btn-cta inline-flex min-h-[44px] shrink-0 items-center justify-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-3 text-[13px] font-bold text-white hover:bg-[var(--color-primary-strong)] disabled:opacity-60 sm:min-h-[48px] sm:px-4 sm:text-[14px]"
+                  >
+                    {lookupLoading ? (
+                      <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                    ) : null}
+                    <span>{lookupLoading ? "Searching…" : "Get Instant Quote"}</span>
+                    {!lookupLoading ? <Icon name="arrow" className="h-4 w-4" /> : null}
+                  </button>
+                </div>
+                {lookupError ? (
+                  <p className="text-[13px] font-medium text-[var(--color-accent-red)]">{lookupError}</p>
+                ) : null}
+              </div>
+            ) : (
+              <div className="overflow-hidden rounded-[10px] border border-[var(--color-border)] bg-[var(--color-page-soft)]">
+                <div className="grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)] gap-2 p-2.5 sm:gap-3 sm:p-3">
+                  <div className="relative min-h-[96px] overflow-hidden rounded-[8px] bg-[var(--color-surface)] sm:min-h-[112px]">
+                    <Image
+                      key={vehicleImage}
+                      src={vehicleImage}
+                      alt={[vehicle.brand, vehicle.series].filter(Boolean).join(" ") || "Vehicle"}
+                      fill
+                      sizes="200px"
+                      className="object-contain object-center p-1"
+                    />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="mb-1.5 max-w-[150px]">
+                      <UkPlate value={vehicle.vrm || regInput} readOnly />
+                    </div>
+                    <p className="font-lora text-[15px] font-medium leading-tight text-[var(--color-text)] sm:text-[16px]">
+                      {vehicle.brand || "Land Rover"} {vehicle.series || ""}
+                    </p>
+                    {modelLine ? (
+                      <p className="mt-0.5 text-[12px] text-[var(--color-text-muted)]">{modelLine}</p>
+                    ) : null}
+                    <ul className="mt-2 grid gap-1 text-[12px] text-[var(--color-text)] sm:text-[13px]">
+                      <li className="flex items-center gap-1.5">
+                        <Icon name="calendar" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
+                        <span>
+                          <strong className="font-semibold">Year:</strong> {vehicle.year || "—"}
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-1.5">
+                        <Icon name="fuel" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
+                        <span>
+                          <strong className="font-semibold">Fuel Type:</strong> {vehicle.fuelType || "—"}
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-1.5">
+                        <Icon name="engine" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
+                        <span>
+                          <strong className="font-semibold">Engine:</strong> {engineDisplay || "—"}
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-1.5">
+                        <span
+                          className="inline-block h-3.5 w-3.5 rounded-full border border-black/15"
+                          style={{ background: colourSwatch(vehicle.colour) }}
+                          aria-hidden="true"
+                        />
+                        <span>
+                          <strong className="font-semibold">Colour:</strong> {vehicle.colour || "—"}
+                        </span>
+                      </li>
+                    </ul>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setVehicle(emptyVehicle);
+                        setLookupError("");
+                      }}
+                      className="mt-1.5 text-[11px] font-semibold text-[var(--color-primary)] hover:underline"
+                    >
+                      Change registration
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
 
-      <div className="mt-5 text-xs font-extrabold uppercase tracking-wide text-[var(--color-primary)]">Car Details</div>
-      {notice ? <p className="mt-1 text-xs text-[var(--color-text-soft)]">{notice}</p> : null}
+            {calculator ? (
+              <p className="rounded-[8px] border border-[var(--color-primary)]/25 bg-[var(--color-primary-soft)] px-3 py-2 text-[12px] text-[var(--color-text-muted)]">
+                Diagnostic calculator results will be included with your quote request.
+              </p>
+            ) : null}
 
-      <div className="mt-3 grid gap-3">
-        <Alert type={lookupAlert.type}>{lookupAlert.message}</Alert>
+            <div>
+              <p className="font-lora text-[16px] font-medium text-[var(--color-text)] sm:text-[17px]">
+                Enter Your <span className="text-[var(--color-primary)]">Details</span>
+              </p>
+              <span className="mt-1 block h-[3px] w-14 rounded-full bg-[var(--color-accent)]" aria-hidden="true" />
+            </div>
 
-        <div>
-          <label className={labelClass} htmlFor="regInput">
-            Registration Number <span className="text-[var(--color-accent-red)]">*</span>
-          </label>
-          <div className="flex flex-col gap-2 sm:flex-row">
-            <input
-              id="regInput"
-              type="text"
-              value={regInput}
-              maxLength={8}
-              autoComplete="off"
-              placeholder="E.g., AB12CDE"
-              onChange={(event) => setRegInput(event.target.value.toUpperCase())}
-              className={`${inputClass} font-semibold tracking-wide sm:flex-1`}
-            />
+            <div className="grid grid-cols-2 gap-2 sm:gap-3">
+              <Field id="qf-name" label="Name" icon="user">
+                <input
+                  id="qf-name"
+                  name="name"
+                  type="text"
+                  required
+                  value={name}
+                  onChange={(event) => setName(event.target.value)}
+                  placeholder="John Smith"
+                  className={inputClass}
+                />
+              </Field>
+              <Field id="qf-email" label="Email" icon="mail">
+                <input
+                  id="qf-email"
+                  name="email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                  placeholder="john@example.com"
+                  className={inputClass}
+                />
+              </Field>
+              <Field id="qf-phone" label="Phone Number" icon="phone">
+                <input
+                  id="qf-phone"
+                  name="number"
+                  type="tel"
+                  required
+                  value={phone}
+                  onChange={(event) => setPhone(event.target.value)}
+                  placeholder="07XXXXXXXXX"
+                  className={inputClass}
+                />
+              </Field>
+              <Field id="qf-postcode" label="Post Code" icon="pin">
+                <input
+                  id="qf-postcode"
+                  name="postcode"
+                  type="text"
+                  required
+                  value={postcode}
+                  onChange={(event) => setPostcode(event.target.value)}
+                  placeholder="W12 9AB"
+                  className={inputClass}
+                />
+              </Field>
+            </div>
+
+            <label htmlFor="qf-remarks" className="block">
+              <span className="mb-1 block text-[12px] font-bold text-[var(--color-text)] sm:text-[13px]">
+                Any Remarks <span className="font-medium text-[var(--color-text-soft)]">(Optional)</span>
+              </span>
+              <span className="relative block">
+                <span className="pointer-events-none absolute left-2.5 top-3 text-[var(--color-text-soft)]">
+                  <Icon name="chat" className="h-4 w-4" />
+                </span>
+                <textarea
+                  id="qf-remarks"
+                  name="description"
+                  rows={2}
+                  value={remarks}
+                  onChange={(event) => setRemarks(event.target.value)}
+                  placeholder="Please enter any info you would like us to know."
+                  className={`${inputClass} min-h-[72px] resize-y pt-2.5`}
+                />
+              </span>
+            </label>
+
+            <div className="hidden" aria-hidden="true">
+              <label htmlFor="qf-honeypot">Keep this field blank</label>
+              <input
+                id="qf-honeypot"
+                name="honeypot"
+                tabIndex={-1}
+                autoComplete="off"
+                value={honeypot}
+                onChange={(event) => setHoneypot(event.target.value)}
+              />
+            </div>
+
+            {submitError ? (
+              <p className="text-[13px] font-medium text-[var(--color-accent-red)]">{submitError}</p>
+            ) : null}
+
             <button
-              type="button"
-              onClick={lookupVehicle}
-              disabled={lookupLoading}
-              className="btn-cta inline-flex min-h-11 items-center justify-center gap-2 rounded bg-[var(--color-primary)] px-4 py-2.5 text-sm font-bold text-white disabled:opacity-60"
+              type="submit"
+              disabled={submitLoading || !vehicleReady}
+              className="btn-cta inline-flex min-h-[46px] w-full items-center justify-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-3 text-[13px] font-bold text-white hover:bg-[var(--color-primary-strong)] disabled:cursor-not-allowed disabled:opacity-50 sm:min-h-[50px] sm:text-[14px]"
             >
-              {lookupLoading ? (
-                <span className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
-              ) : null}
-              <span>{lookupLoading ? "Searching…" : "Search Vehicle"}</span>
+              {submitLoading ? (
+                <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+              ) : (
+                <HomeIcon name="quote" size={24} className="h-6 w-6 shrink-0" />
+              )}
+              <span className="text-balance">
+                {submitLoading ? "Sending…" : "Get Your Free Replacement Engine Quote"}
+              </span>
+              {!submitLoading ? <Icon name="arrow" className="h-4 w-4" /> : null}
             </button>
-          </div>
-        </div>
 
-        <div className={`grid gap-3 ${compact ? "grid-cols-2" : "sm:grid-cols-2"}`}>
-          <div className="col-span-2">
-            <label className={labelClass} htmlFor="fMake">
-              Make <span className="text-[var(--color-accent-red)]">*</span>
-            </label>
-            <input id="fMake" value={vehicle.brand} disabled placeholder="e.g., BMW" className={inputClass} />
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="fYear">
-              Year <span className="text-[var(--color-accent-red)]">*</span>
-            </label>
-            <input id="fYear" value={vehicle.year} disabled placeholder="e.g., 2016" className={inputClass} />
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="fSeries">
-              Series / Model
-            </label>
-            <input id="fSeries" value={vehicle.series} disabled placeholder="e.g., 3 SERIES" className={inputClass} />
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="fFuel">
-              Fuel Type
-            </label>
-            <input id="fFuel" value={vehicle.fuelType} disabled placeholder="e.g., DIESEL" className={inputClass} />
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="fEngine">
-              Engine Capacity
-            </label>
-            <input id="fEngine" value={engineDisplay} disabled placeholder="e.g., 1995 cc" className={inputClass} />
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="fColour">
-              Color
-            </label>
-            <input id="fColour" value={vehicle.colour} disabled placeholder="e.g., BLACK" className={inputClass} />
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="fWheel">
-              Wheelplan
-            </label>
-            <input id="fWheel" value={vehicle.wheelplan} disabled placeholder="e.g., 2 AXLE RIGID BODY" className={inputClass} />
-          </div>
-        </div>
+            {!vehicleReady ? (
+              <p className="text-center text-[11px] text-[var(--color-text-soft)]">
+                Enter a registration and tap Get Instant Quote first.
+              </p>
+            ) : null}
+
+            <p className="flex items-start justify-center gap-1.5 text-center text-[10px] leading-[1.35] text-[var(--color-text-soft)] sm:text-[11px]">
+              <Icon name="lock" className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+              <span>Your details are secure, no spam — genuine quote from UK vetted engine specialists only.</span>
+            </p>
+          </form>
+        )}
       </div>
-
-      <div className="my-5 border-t border-[var(--color-border)]" />
-
-      <div className="text-xs font-extrabold uppercase tracking-wide text-[var(--color-primary)]">Customer Details</div>
-
-      <div className={`mt-3 grid gap-3 ${compact ? "grid-cols-2" : ""}`}>
-        <div className={compact ? "" : undefined}>
-          <label className={labelClass} htmlFor="name">
-            Full Name <span className="text-[var(--color-accent-red)]">*</span>
-          </label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            required
-            value={name}
-            onChange={(event) => setName(event.target.value)}
-            placeholder="John Smith"
-            className={inputClass}
-          />
-        </div>
-        <div>
-          <label className={labelClass} htmlFor="email">
-            Email Address <span className="text-[var(--color-accent-red)]">*</span>
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            placeholder="john@example.com"
-            className={inputClass}
-          />
-        </div>
-        <div>
-          <label className={labelClass} htmlFor="phone">
-            Phone Number <span className="text-[var(--color-accent-red)]">*</span>
-          </label>
-          <input
-            id="phone"
-            name="number"
-            type="tel"
-            required
-            value={phone}
-            onChange={(event) => setPhone(event.target.value)}
-            placeholder="07xxx xxx xxx"
-            className={inputClass}
-          />
-        </div>
-        <div>
-          <label className={labelClass} htmlFor="postcode">
-            Postcode <span className="text-[var(--color-accent-red)]">*</span>
-          </label>
-          <input
-            id="postcode"
-            name="postcode"
-            type="text"
-            required
-            value={postcode}
-            onChange={(event) => setPostcode(event.target.value)}
-            placeholder="Enter Postcode"
-            className={inputClass}
-          />
-        </div>
-        <div className={compact ? "col-span-2" : undefined}>
-          <label className={labelClass} htmlFor="description">
-            Any remarks
-          </label>
-          <textarea
-            id="description"
-            name="description"
-            rows={3}
-            value={remarks}
-            onChange={(event) => setRemarks(event.target.value)}
-            placeholder="Enter any additional information..."
-            className={`${inputClass} resize-y`}
-          />
-        </div>
-
-        <div className="hidden" aria-hidden="true">
-          <label htmlFor="honeypot">Keep this field blank</label>
-          <input id="honeypot" name="honeypot" tabIndex={-1} autoComplete="off" value={honeypot} onChange={(event) => setHoneypot(event.target.value)} />
-        </div>
-
-        {/* Hidden vehicle fields - same names as the reference form / CRM API */}
-        <input type="hidden" name="vehicle_vrm" value={vehicle.vrm} />
-        <input type="hidden" name="vehicle_brand" value={vehicle.brand} />
-        <input type="hidden" name="vehicle_series" value={vehicle.series} />
-        <input type="hidden" name="vehicle_year" value={vehicle.year} />
-        <input type="hidden" name="fuelType" value={vehicle.fuelType} />
-        <input type="hidden" name="engin_capacity" value={vehicle.engineCapacity} />
-      </div>
-
-      <div className="mt-5 grid gap-3">
-        <Alert type={submitAlert.type}>{submitAlert.message}</Alert>
-        <button
-          type="submit"
-          id="btnSubmit"
-          disabled={!canSubmit}
-          className="btn-cta inline-flex min-h-12 w-full items-center justify-center gap-2 rounded bg-[var(--color-primary)] px-4 py-3 text-sm font-bold text-white disabled:cursor-not-allowed disabled:opacity-45"
-        >
-          {submitLoading ? <span className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" /> : null}
-          <span>{submitLoading ? "Sending…" : "Send Me Price Quote"}</span>
-        </button>
-        {!vehicleReady ? (
-          <p className="text-center text-xs text-[var(--color-text-soft)]">Search a vehicle registration to enable submit.</p>
-        ) : null}
-      </div>
-    </form>
+    </div>
   );
 }

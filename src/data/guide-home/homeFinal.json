@@ -1,0 +1,44 @@
+{
+  "h2": "Get the Right Answer.|Not Just Any Answer.",
+  "mobileH2": "Get the Right|Answer.|Not Just Any|Answer.",
+  "subhead": "Free, expert guidance.|Real data. Honest advice.",
+  "image": "/home/final/range-rover.webp",
+  "mobileImage": "/home/final/range-rover-tall.webp",
+  "imageAlt": "Range Rover parked beside a Highland loch",
+  "stats": [
+    {
+      "icon": "trend-up",
+      "value": "24,650+",
+      "label": "UK enquiries analysed"
+    },
+    {
+      "icon": "engine",
+      "value": "50+",
+      "label": "engine codes tracked"
+    },
+    {
+      "icon": "invoice",
+      "label": "Real quotes, real costs"
+    },
+    {
+      "icon": "shield",
+      "label": "Independent & unbiased"
+    }
+  ],
+  "guidance": {
+    "eyebrow": "Get Your Free Guidance",
+    "title": "Ask a Land Rover engine specialist",
+    "href": "/quote"
+  },
+  "call": {
+    "eyebrow": "Call a Specialist",
+    "title": "Speak to a Land Rover expert now",
+    "href": "/contact",
+    "phone": "01268 944234"
+  },
+  "trustpilot": {
+    "rating": "4.8 out of 5",
+    "reviews": "from 1200+ reviews",
+    "quote": "Trusted by thousands of Land Rover owners across the UK."
+  }
+}

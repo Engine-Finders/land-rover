@@ -1,0 +1,158 @@
+{
+  "eyebrow": "Trust & FAQ",
+  "h2": "Why Land Rover Owners|Trust This Site",
+  "subhead": "Built on real data, verified by specialists, and written for owners.|We don't sell cars. We don't guess. We give you the truth so you can make the right decision.",
+  "mobileCards": [
+    {
+      "icon": "chart",
+      "title": "Built on Real Data",
+      "text": "Every reliability rating and cost range comes from genuine UK quote and enquiry data – not manufacturer marketing, not forum guesswork."
+    },
+    {
+      "icon": "scale",
+      "title": "We Tell You When Not to Repair",
+      "text": "Where replacement cost exceeds what the car is worth, we say so. That's the difference between a knowledge base and a sales page."
+    },
+    {
+      "icon": "user-check",
+      "title": "Vetted JLR Specialists",
+      "text": "Every specialist in our network is vetted specifically for Land Rover and Range Rover work – not generalists who happen to take on JLR jobs."
+    },
+    {
+      "icon": "cog",
+      "title": "Part of Engine Finders",
+      "text": "LandRoverEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace."
+    },
+    {
+      "icon": "calendar",
+      "title": "Updated Monthly",
+      "text": "Fresh market insights and cost data are reviewed regularly so owners always have the latest picture."
+    },
+    {
+      "icon": "shield",
+      "title": "Independent Advice",
+      "text": "No sponsors, no bias, no pressure – just honest advice for owners."
+    }
+  ],
+  "desktopCards": [
+    {
+      "icon": "shield-filled",
+      "title": "Real Data. Real Land Rover Owners.",
+      "text": "9,000+ UK enquiries powering our insights. This is the largest Land Rover engine enquiry dataset in the UK."
+    },
+    {
+      "icon": "people-filled",
+      "title": "Specialist Verified. Always.",
+      "text": "Every technical guide is reviewed by JLR engine specialists with decades of real-world experience."
+    },
+    {
+      "icon": "document",
+      "title": "Transparent & Unbiased.",
+      "text": "We don't push products. We show you all options – repair, replace or walk away – with honest verdicts."
+    },
+    {
+      "icon": "pound",
+      "title": "Replacement Costs You Can Trust.",
+      "text": "All cost ranges come from real quotes and reconditioned specialists – not guesswork or averages."
+    },
+    {
+      "icon": "chart",
+      "title": "Updated Monthly. Always Accurate.",
+      "text": "Market data, failure trends and costs change. We update everything monthly so you always have the latest."
+    },
+    {
+      "icon": "lock",
+      "title": "No Sales. No Pressure.",
+      "text": "We're here to help you protect your Land Rover investment, not sell you anything."
+    }
+  ],
+  "commitment": {
+    "eyebrow": "Our Commitment",
+    "title": "The truth about Land Rover ownership – even when it's not what you want to hear.",
+    "text": "Land Rover ownership should be rewarding, not stressful. We'll always give you the straight answer, backed by data and specialist experience – so you can make confident decisions with your money and your vehicle.",
+    "sign": "– EnginesMarket UK Team",
+    "image": "/home/trust/commitment-hd.webp",
+    "imageAlt": "Land Rover Defender on a rocky mountain track at dusk"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "cta": {
+      "label": "View all FAQs",
+      "href": "/blog"
+    },
+    "items": [
+      {
+        "q": "Is it worth replacing a Land Rover engine?",
+        "a": "It depends on vehicle value versus replacement cost. High-value models like a Range Rover Sport or Defender L663 often justify replacement, while lower-value models may not. Use the diagnostic calculator for a personalised verdict.",
+        "show": "mobile"
+      },
+      {
+        "q": "Which Land Rover engine should I avoid?",
+        "a": "The 3.0 TDV6/SDV6 (306DT) and 2.7 TDV6 (276DT) carry the most expensive failure risks – crankshaft bearing and oil pump housing failures respectively. Pre-2019 204DTD Ingenium diesels also need timing chain checks.",
+        "show": "mobile"
+      },
+      {
+        "q": "Is the Ingenium engine reliable?",
+        "a": "Post-2019 Ingenium engines are significantly improved. Earlier 204DTD diesels are known for timing chain tensioner wear, so service history and a cold-start listen matter on pre-2019 cars.",
+        "show": "mobile"
+      },
+      {
+        "q": "Discovery 4 vs Discovery 5 – which is more reliable?",
+        "a": "The Discovery 5 with the revised post-2019 Ingenium has the stronger ownership profile. A Discovery 4 SDV6 can still be a good buy with full service history and proven oil-interval discipline.",
+        "show": "mobile"
+      },
+      {
+        "q": "How do I know if my Land Rover is worth repairing?",
+        "a": "Use the 60% rule: if a reconditioned engine costs 60% or more of what your car is worth today, get a scrap valuation alongside any repair quote before deciding.",
+        "show": "mobile"
+      },
+      {
+        "q": "Which is the safest Range Rover to buy used?",
+        "a": "The L405 (2012–2021). Typical values of £14,000–£55,000 against £6,500–£12,000 recon cost keep replacement comfortably viable across almost every example.",
+        "show": "mobile"
+      },
+      {
+        "q": "Where does your data come from?",
+        "a": "From 9,000+ real UK engine enquiries handled through EnginesMarket, combined with replacement quotes from vetted JLR specialists. Third-party value bands are labelled as such.",
+        "show": "desktop"
+      },
+      {
+        "q": "How are your replacement cost ranges calculated?",
+        "a": "Ranges come from real reconditioned, supply-only quotes from specialists, refreshed monthly – not from averages or guesswork. Fitting costs vary by garage and are quoted separately.",
+        "show": "desktop"
+      },
+      {
+        "q": "Do you sell engines or parts?",
+        "a": "No. This guide is independent advice. If you want a quote, we can connect you with vetted JLR specialists in the Engine Finders network – there is no obligation.",
+        "show": "desktop"
+      },
+      {
+        "q": "Are your guides model and engine specific?",
+        "a": "Yes. Every guide is written for a specific Land Rover or Range Rover model, generation or engine code, using exact JLR terminology and OEM part references.",
+        "show": "desktop"
+      },
+      {
+        "q": "How often is the information updated?",
+        "a": "Monthly. Enquiry volumes, failure trends and cost ranges are reviewed every month so you always see the latest picture.",
+        "show": "desktop"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Still not sure what's right for your Land Rover?",
+    "text": "Get specialist advice tailored to your model, engine and budget.",
+    "label": "Get Free Expert Advice",
+    "href": "/quote",
+    "small": "No obligation. 100% confidential.",
+    "image": "/home/trust/cta-cars-hd.webp"
+  },
+  "note": {
+    "title": "Data Note:",
+    "text": "All enquiry volumes and market insights are from EM_Proprietary_Data_2025.txt (updated monthly). [EM-VERIFIED]",
+    "stats": [
+      "9,000+ enquiries",
+      "15+ engine codes",
+      "Live UK market data"
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "h2": "The Ownership|Economics Centre",
+  "subhead": "The question every Land Rover owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap – based on real UK data, not estimates.",
+  "image": "/home/econ/hero.webp",
+  "mobileImage": "/home/econ/hero-tall2.webp",
+  "phoneImage": "/home/econ/hero-phone.webp",
+  "imageAlt": "Range Rover Sport on a rocky Highland track",
+  "matrix": {
+    "title": "The Decision Matrix",
+    "columns": [
+      "Model & Engine",
+      "Typical Vehicle Value",
+      "Replace­ment Cost",
+      "Verdict"
+    ],
+    "rows": [
+      {
+        "name": "Discovery 4 SDV6",
+        "image": "/home/econ/disco4.webp",
+        "value": "£6,000 – £18,000",
+        "cost": "£6,500 – £9,500",
+        "verdict": "watch",
+        "label": "Watch",
+        "note": "Sub-£10k examples approach the threshold"
+      },
+      {
+        "name": "Freelander 2 (204DTD)",
+        "image": "/home/econ/freelander2.webp",
+        "value": "£2,500 – £7,000",
+        "cost": "£3,500 – £5,800",
+        "verdict": "scrap",
+        "label": "Scrap Threshold",
+        "note": "Recon cost frequently exceeds car value"
+      },
+      {
+        "name": "Range Rover Sport L494",
+        "image": "/home/econ/rrs-l494.webp",
+        "value": "£12,000 – £55,000",
+        "cost": "£5,000 – £12,000",
+        "verdict": "safe",
+        "label": "Safe",
+        "note": "Replacement viable across most examples"
+      },
+      {
+        "name": "Range Rover L405",
+        "image": "/home/econ/rr-l405.webp",
+        "value": "£14,000 – £55,000",
+        "cost": "£6,500 – £12,000",
+        "verdict": "safe",
+        "label": "Safe",
+        "note": "Well within value even at upper recon cost"
+      },
+      {
+        "name": "Defender L663",
+        "image": "/home/econ/defender-l663.webp",
+        "value": "£35,000 – £90,000",
+        "cost": "£3,500 – £9,500",
+        "verdict": "safe",
+        "label": "Safe",
+        "note": "Very safe across all variants"
+      },
+      {
+        "name": "Range Rover Sport L320",
+        "sub": "(368DT)",
+        "image": "/home/econ/rrs-l320.webp",
+        "value": "£5,000 – £15,000",
+        "cost": "£5,500 – £8,000",
+        "verdict": "watch",
+        "label": "Watch",
+        "note": "Older examples sit at 40–60% of vehicle value"
+      }
+    ]
+  },
+  "rule": {
+    "title": "The Rule of Thumb",
+    "figure": "60%",
+    "text": "If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote – don't decide on repair cost alone."
+  },
+  "links": {
+    "title": "Deeper Analysis Links",
+    "items": [
+      {
+        "label": "Is It Worth Replacing a Discovery 4 Engine?",
+        "href": "/discovery"
+      },
+      {
+        "label": "Is a TDV6 Failure a Write-Off?",
+        "href": "/engine/276dt"
+      },
+      {
+        "label": "When Should You Scrap a Land Rover?",
+        "href": "/case-studies"
+      },
+      {
+        "label": "Most Expensive Land Rover Repairs",
+        "href": "/data/average-replacement-cost"
+      },
+      {
+        "label": "Cheapest Land Rovers to Own",
+        "href": "/blog"
+      }
+    ]
+  },
+  "note": {
+    "title": "Data Note:",
+    "items": [
+      {
+        "text": "Vehicle value bands from AutoTrader, Motors.co.uk 2024–2025",
+        "tag": "[THIRD-PARTY]"
+      },
+      {
+        "text": "Replacement costs from Table A – Engine Replacement Economics",
+        "tag": "[EM-QUOTE]"
+      },
+      {
+        "text": "Verdict flags derived from the R-to-V flag system."
+      }
+    ]
+  }
+}

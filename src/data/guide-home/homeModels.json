@@ -1,0 +1,162 @@
+{
+  "h2": "Every Model.|Every Generation.|Honestly Rated.",
+  "subhead": "Not a navigation grid – a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers six questions: which generation is best, which engines to avoid, which engines are most reliable, what replacement actually costs, what fails most often, and whether ownership still makes financial sense.",
+  "image": "/home/models/lineup-wide.webp",
+  "mobileImage": "/home/models/lineup-m.webp",
+  "imageAlt": "Defender, Discovery, Range Rover and Evoque lined up in front of mountains",
+  "columns": [
+    "Model",
+    "Generations",
+    "Verdict"
+  ],
+  "groups": [
+    {
+      "brand": "landRover",
+      "label": "Land Rover",
+      "models": [
+        {
+          "name": "Defender",
+          "image": "/home/models/thumb/defender.webp",
+          "count": "2 Generations",
+          "gens": "(Classic, L663)",
+          "verdict": "Safest Buy",
+          "icon": "trophy",
+          "tone": "dark",
+          "href": "/defender"
+        },
+        {
+          "name": "Discovery",
+          "image": "/home/models/thumb/discovery.webp",
+          "count": "5 Generations",
+          "gens": "(D1, D2, D3, D4, D5)",
+          "verdict": "Best Family",
+          "icon": "family",
+          "tone": "dark",
+          "href": "/discovery"
+        },
+        {
+          "name": "Discovery Sport",
+          "image": "/home/models/thumb/discovery-sport.webp",
+          "count": "1 Generation",
+          "gens": "(L550)",
+          "verdict": "Most Enquired",
+          "icon": "flame",
+          "tone": "gold",
+          "href": "/discovery-sport"
+        },
+        {
+          "name": "Freelander",
+          "image": "/home/models/thumb/freelander.webp",
+          "count": "2 Generations",
+          "gens": "(Freelander, L359)",
+          "verdict": "Check Value",
+          "icon": "alert",
+          "tone": "light",
+          "href": "/freelander"
+        }
+      ]
+    },
+    {
+      "brand": "rangeRover",
+      "label": "Range Rover",
+      "models": [
+        {
+          "name": "Range Rover",
+          "image": "/home/models/thumb/range-rover.webp",
+          "count": "3 Generations",
+          "gens": "(L322, L405, L460)",
+          "verdict": "Flagship Choice",
+          "icon": "crown",
+          "tone": "dark",
+          "href": "/range-rover"
+        },
+        {
+          "name": "Range Rover Sport",
+          "image": "/home/models/thumb/range-rover-sport.webp",
+          "count": "3 Generations",
+          "gens": "(L320, L494, L461)",
+          "verdict": "High Demand",
+          "icon": "rocket",
+          "tone": "gold",
+          "href": "/range-rover-sport"
+        },
+        {
+          "name": "Velar",
+          "image": "/home/models/thumb/velar.webp",
+          "count": "1 Generation",
+          "gens": "(L560)",
+          "verdict": "Premium Style",
+          "icon": "diamond",
+          "tone": "gold",
+          "href": "/velar"
+        },
+        {
+          "name": "Evoque",
+          "image": "/home/models/thumb/evoque.webp",
+          "count": "2 Generations",
+          "gens": "(L538, L551)",
+          "verdict": "Best-Seller",
+          "icon": "flame",
+          "tone": "gold",
+          "href": "/range-rover-evoque"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "eyebrow": "Example Verdict – Land Rover",
+    "title": "Discovery",
+    "href": "/discovery",
+    "image": "/home/models/discovery-portrait.webp",
+    "mobileImage": "/home/models/discovery-portrait.webp",
+    "imageAlt": "Land Rover Discovery on a rocky Highland track",
+    "items": [
+      {
+        "icon": "star-circle",
+        "title": "Best Generation",
+        "text": "Discovery 5, for build quality and the revised post-2019 Ingenium."
+      },
+      {
+        "icon": "shield",
+        "title": "Worst Generation",
+        "text": "Discovery 3/4 on the 2.7 TDV6, where oil pump failure can take the engine out with little warning."
+      },
+      {
+        "icon": "check-circle",
+        "title": "Most Reliable Engine Across the Range",
+        "text": "The 4.4 SDV8 – high replacement cost, but a genuinely low failure rate."
+      },
+      {
+        "icon": "alert",
+        "title": "Highest Risk",
+        "text": "The 3.0 TDV6/SDV6's crankshaft bearing failure, which is largely unrepairable once it starts."
+      },
+      {
+        "icon": "thumbs-up",
+        "title": "Best Used Buy",
+        "text": "A Discovery 4 SDV6 with full service history and proven oil-interval discipline – anything without that history is a gamble."
+      }
+    ]
+  },
+  "note": {
+    "title": "Data Note:",
+    "text": "All data in this section comes from real UK enquiries via EnginesMarket.",
+    "stats": [
+      {
+        "icon": "people",
+        "label": "Enquiry volumes",
+        "value": "9,000+"
+      },
+      {
+        "icon": "engine",
+        "label": "Engine codes tracked",
+        "value": "15+"
+      },
+      {
+        "icon": "document",
+        "label": "Last updated",
+        "value": "May 2025"
+      }
+    ]
+  }
+}

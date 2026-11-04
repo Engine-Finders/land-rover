@@ -2,7 +2,8 @@ import LegalPage from "@/components/shared/LegalPage";
 
 export const metadata = {
   title: "Privacy Policy",
-  description: "How we collect, use, and protect personal information on this website.",
+  description:
+    "How we collect, use, and protect personal information on this website.",
   alternates: {
     canonical: "https://landroverengine.uk/privacy-policy",
   },
@@ -12,14 +13,19 @@ export default function PrivacyPolicyPage() {
   return (
     <LegalPage title="Privacy Policy" updated="22 October 2026">
       <p>
-        This privacy policy explains what personal information we collect and how we use it when you
-        visit this website.
+        This privacy policy explains what personal information we collect and
+        how we use it when you visit this website.
       </p>
 
       <h2>1. Information we collect</h2>
       <ul>
-        <li>Contact details you submit (such as name, email, phone, and vehicle details).</li>
-        <li>Technical data such as browser type, device, and approximate location.</li>
+        <li>
+          Contact details you submit (such as name, email, phone, and vehicle
+          details).
+        </li>
+        <li>
+          Technical data such as browser type, device, and approximate location.
+        </li>
         <li>Usage data such as pages viewed and referring websites.</li>
       </ul>
 
@@ -33,26 +39,37 @@ export default function PrivacyPolicyPage() {
 
       <h2>3. Sharing</h2>
       <p>
-        We may share enquiry details with vetted specialists when you ask for quotes. We do not sell
-        personal data. Service providers who help us run the site may process data on our behalf.
+        We may share enquiry details with vetted specialists when you ask for
+        quotes. We do not sell personal data. Specialists may use your
+        information only to handle your enquiry and provide the requested
+        service, not for unrelated marketing or sharing with third parties
+        except where legally required. Service providers may also process data
+        on our behalf.
       </p>
 
       <h2>4. Retention</h2>
       <p>
-        We keep personal data only as long as needed for the purpose it was collected, or as required
-        by law.
+        We retain enquiry data for up to 3 years from your last interaction to
+        handle complaints, disputes and legal claims. After this period, we
+        delete or anonymise it unless the law requires longer retention.
+        Suppliers may retain data under their own policies, and anonymised data
+        may be kept indefinitely for analytics.
       </p>
 
       <h2>5. Your rights</h2>
       <p>
-        Depending on where you live, you may have rights to access, correct, or delete your personal
-        data, or to object to certain processing. Contact us to make a request.
+        Depending on where you live, you may have rights to access, correct, or
+        delete your personal data, or to object to certain processing. Contact
+        us to make a request.
       </p>
 
       <h2>6. Cookies</h2>
       <p>
         We use cookies and similar technologies as described in our{" "}
-        <a href="/cookies-policy" className="font-semibold text-[var(--color-primary)] no-underline hover:underline">
+        <a
+          href="/cookies-policy"
+          className="font-semibold text-[var(--color-primary)] no-underline hover:underline"
+        >
           Cookies Policy
         </a>
         .

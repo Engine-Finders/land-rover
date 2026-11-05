@@ -64,7 +64,7 @@ export const metadata = {
 // wires the JSON in. The previous HomeSec1-13 sections stay in src/components/home for now.
 export default function Home() {
   return (
-    <main>
+    <main className="lr-redesign">
       <HomeSec1 hero={homeSec1} />
       <HomeFindVehicle data={homeFindVehicle} />
       <HomeDiagnose data={homeDiagnose} />

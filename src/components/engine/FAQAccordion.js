@@ -1,112 +1,101 @@
 "use client";
 
 import { useState } from "react";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import Image from "next/image";
+import { CONTAINER, SANS } from "@/components/engine/engineTheme";
+import { BODY, BODY_SM, H2, H6, LABEL } from "@/lib/typeScale";
 
-function cleanText(text = "") {
-  return String(text)
-    .replace(/\u00c2\u00a3|\u00a3/g, "\u00a3")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u201c|\u00c3\u00a2\u00e2\u20ac\u201d|\u00e2\u20ac\u201c|\u00e2\u20ac\u201d|\u2013|\u2014/g, "\u2013")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u02dc|\u00e2\u20ac\u2018|\u2011/g, "-")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u00a2|\u00e2\u20ac\u00a2|\u2022/g, "\u2022")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// Engine section: Frequently Asked Questions - heading, intro and engine photo on the left, the
+// numbered questions on the right with every answer open by default (each one can be folded).
+// Copy from the page's `faq` JSON. Follows the site theme; the engine photo panel stays a dark
+// photo in both. lg narrows the photo panel; below lg the panel sits above the questions.
 
-function renderTaggedText(text = "") {
-  return cleanText(text).split(/(\[[^\]]+\])/g).map((part, index) => {
-    if (/^\[[^\]]+\]$/.test(part)) {
-      return (
-        <span key={`${part}-${index}`} className="font-semibold text-[var(--color-primary)]">
-          {part}
-        </span>
-      );
-    }
-    return <span key={`${part}-${index}`}>{part}</span>;
-  });
-}
+const dash = (t = "") => String(t).replace(/ - /g, " — ");
+// source tags such as [EM-VERIFIED] in green
+const tagged = (t = "") => dash(t).replace(/(\[[A-Z][A-Z -]*\])/g, `<span class="text-lr-green">$1</span>`);
 
-function ChevronIcon({ open = false, className = "h-5 w-5" }) {
+function Chevron({ open }) {
   return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className={`${className} transition-transform ${open ? "rotate-180" : ""}`}
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-    >
-      <path d="m6 9 6 6 6-6" />
+    <svg viewBox="0 0 24 24" className={`h-5 w-5 transition-transform duration-200 ${open ? "" : "-rotate-90"}`} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="m5 9 7 7 7-7" />
     </svg>
   );
 }
 
-function FAQItem({ item, isOpen, onToggle }) {
+function Question({ item, index, open, onToggle }) {
+  const id = `engine-faq-${item.id ?? index}`;
   return (
-    <div className="rounded-[8px] border border-[var(--color-border)]/75 bg-[var(--color-surface)]">
+    <li className="relative border-b border-lr-line last:border-b-0">
+      {/* divider between the number column and the copy, as in the reference */}
+      <span className="absolute inset-y-0 left-[79px] hidden w-px bg-lr-line md:block xl:left-[77px]" aria-hidden="true" />
       <button
         type="button"
         onClick={onToggle}
-        aria-expanded={isOpen}
-        className="flex w-full items-center gap-4 px-5 py-4 text-left"
+        aria-expanded={open}
+        aria-controls={id}
+        className="grid w-full grid-cols-[40px_minmax(0,1fr)_20px] items-start gap-x-3.5 px-4 py-4 text-left sm:px-5 md:grid-cols-[48px_minmax(0,1fr)_24px] md:gap-x-5 xl:grid-cols-[46px_minmax(0,1fr)_22px] xl:gap-x-[26px] xl:px-[18px] xl:py-[8px]"
       >
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary-soft)]">
-          <HomeIcon name="faq" size={36} className="h-9 w-9" />
+        <span className="flex h-10 w-10 items-center justify-center rounded-md border border-lr-line bg-lr-chip text-[17px] font-medium leading-none text-lr-green md:h-12 md:w-12 md:text-[19px] xl:mt-[3px] xl:h-[46px] xl:w-[46px] xl:text-[20px]">
+          {index + 1}
         </span>
-        <span className="flex-1 text-[0.92rem] font-semibold leading-snug text-[var(--color-text)]">
-          {cleanText(item.question)}
+        <span className="min-w-0">
+          <span className={`block ${H6} text-lr-head xl:pt-[6px]`}>{dash(item.question)}</span>
+          {open && (
+            <span id={id} className={`mt-1.5 block max-w-[720px] ${BODY_SM} text-lr-body xl:mt-[6px]`} dangerouslySetInnerHTML={{ __html: tagged(item.answer) }} />
+          )}
         </span>
-        <ChevronIcon open={isOpen} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
+        <span className="self-center text-lr-muted">
+          <Chevron open={open} />
+        </span>
       </button>
-      {isOpen ? (
-        <p className="px-5 pb-4 pl-[60px] text-[0.85rem] leading-[1.55] text-[var(--color-text-muted)]">
-          {renderTaggedText(item.answer)}
-        </p>
-      ) : null}
-    </div>
+    </li>
   );
 }
 
-export default function FAQAccordion({ data, band = "soft" }) {
-  const [openId, setOpenId] = useState(null);
-  if (!data) return null;
+export default function FAQAccordion({ data, engineName = "", slug = "" }) {
+  const items = data?.items || [];
+  // every answer starts open (they are the page's best answers); a tap folds or unfolds one
+  const [closed, setClosed] = useState(() => new Set());
+  if (items.length === 0) return null;
 
-  const items = data.items || [];
-  const mid = Math.ceil(items.length / 2);
-  const left = items.slice(0, mid);
-  const right = items.slice(mid);
+  const toggle = (key) =>
+    setClosed((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+
+  const name = engineName.replace(/<[^>]+>/g, "").replace(/^Land Rover\s+/i, "");
+  const engineFor = (/\(/.test(name) ? name : name.replace(" / ", " & ")) || "engine";
+  const photo = /tdi/.test(slug) ? "/engine-faq/engine-tdi.webp" : "/engine-hero/scene.webp";
 
   return (
-    <section className={`w-full py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <HeadingEyebrow text="FAQ" />
-        <h2 className="mt-3 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">
-          FAQ
-        </h2>
+    <section className="relative overflow-hidden bg-lr-page text-lr-head" style={SANS}>
+      <div className={`${CONTAINER} pb-6 pt-10 md:pb-8 md:pt-14 xl:pb-8 xl:pt-16`}>
+        <header className="mb-6 md:mb-8">
+          <p className={`flex items-center gap-3 ${LABEL} text-lr-green`}>
+            <span className="h-px w-7 bg-current xl:w-[24px]" aria-hidden="true" />
+            FAQ
+          </p>
+          <h2 className={`mt-2.5 ${H2} text-lr-head xl:mt-3`}>Frequently Asked Questions</h2>
+          <p className={`mt-3 max-w-[640px] ${BODY} text-lr-body`}>Expert answers to the most common {engineFor} engine questions.</p>
+        </header>
 
-        <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-x-5">
-          <div className="flex flex-col gap-3">
-            {left.map((item) => (
-              <FAQItem
-                key={item.id}
-                item={item}
-                isOpen={openId === item.id}
-                onToggle={() => setOpenId(openId === item.id ? null : item.id)}
-              />
-            ))}
+        <div className="grid overflow-hidden rounded-2xl border border-lr-line bg-lr-card shadow-[0_20px_44px_-34px_var(--lr-shadow)] lg:grid-cols-[minmax(0,400fr)_minmax(0,1015fr)] xl:-mx-[13px] xl:rounded-[14px]">
+          {/* engine photo */}
+          <div className="relative aspect-[16/9] w-full bg-[#0b1012] sm:aspect-[21/9] lg:aspect-auto lg:min-h-full lg:border-r lg:border-lr-line" aria-hidden="true">
+            <Image src={photo} alt="" fill sizes="(min-width: 1024px) 420px, 100vw" className="object-cover object-[55%_60%]" />
+            <div className="absolute inset-x-0 top-0 h-[30%]" style={{ background: "linear-gradient(to bottom, #0b1012, transparent)" }} />
           </div>
-          <div className="flex flex-col gap-3">
-            {right.map((item) => (
-              <FAQItem
-                key={item.id}
-                item={item}
-                isOpen={openId === item.id}
-                onToggle={() => setOpenId(openId === item.id ? null : item.id)}
-              />
-            ))}
-          </div>
+
+          {/* questions */}
+          <ul className="border-t border-lr-line bg-lr-card lg:border-t-0">
+            {items.map((item, i) => {
+              const key = item.id ?? i;
+              return <Question key={key} item={item} index={i} open={!closed.has(key)} onToggle={() => toggle(key)} />;
+            })}
+          </ul>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Instrument_Sans, Libre_Caslon_Text, Lora } from "next/font/google";
+import Script from "next/script";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import FreeQuoteSticky from "@/components/shared/FreeQuoteForm";
@@ -46,9 +47,15 @@ export const metadata = {
   },
 };
 
+// sets <html data-theme> before first paint, so night-theme visitors never see a day flash
+const THEME_SCRIPT = `try{var t=localStorage.getItem("site-theme");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.dataset.theme=t}catch(e){}`;
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`h-full ${lora.variable} ${instrumentSans.variable} ${libreCaslon.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
       <Script
   id="microsoft-clarity"
   strategy="afterInteractive"

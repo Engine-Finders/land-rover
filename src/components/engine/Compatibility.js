@@ -1,380 +1,196 @@
-"use client";
-
 import Image from "next/image";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
-import { useTheme } from "@/components/shared/themeProvider";
-import { sectionDescription } from "@/components/models/sectionTypography";
+import { CONTAINER, SANS } from "@/components/engine/engineTheme";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, H2, H6, ICON_LG, ICON_MD, LABEL, SMALL } from "@/lib/typeScale";
 
-const ENGINE_IMAGE =
-  "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80";
+// Engine section: Compatible Land Rover Models - heading, cross-brand badge, production timeline,
+// one card per compatibility row (side-profile photo of that generation, generation pill, badge,
+// years) plus a "Compatibility Verified" card, and the engine on a cream disc. Copy from the
+// page's `compatibility` JSON; the timeline uses the At a Glance "Years Produced" value when given.
+// Fixed light design. 2xl values are the reference design at 1672px; xl is the same layout scaled
+// for 1280-1535px; below xl the engine moves beside / above the heading.
 
-const CAR_IMAGES = [
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
+
+// side-profile studio photo for a model + generation (public/engine-compat/*.webp, transparent cut-outs)
+const CAR_RULES = [
+  [/defender/i, /l663/i, "defender-l663"],
+  [/defender/i, null, "defender-classic"],
+  [/discovery sport/i, null, "discovery-sport"],
+  [/discovery/i, /series 1|\blj\b/i, "discovery-1"],
+  [/discovery/i, /series 2|l318/i, "discovery-2"],
+  [/discovery/i, /series 4/i, "discovery-4"],
+  [/discovery/i, /series 5|l462/i, "discovery-5"],
+  [/discovery/i, /series 3|l319/i, "discovery-3"],
+  [/evoque/i, /l538/i, "evoque-l538"],
+  [/evoque/i, null, "evoque-l551"],
+  [/velar/i, null, "velar"],
+  [/freelander/i, /series 2|l359/i, "freelander-2"],
+  [/freelander/i, null, "freelander-1"],
+  [/range rover sport/i, /l320/i, "rrs-l320"],
+  [/range rover sport/i, /l494/i, "rrs-l494"],
+  [/range rover sport/i, /l461/i, "rrs-l461"],
+  [/range rover/i, /classic/i, "rr-classic"],
+  [/range rover/i, /p38/i, "rr-p38a"],
+  [/range rover/i, /l322/i, "rr-l322"],
+  [/range rover/i, /l405/i, "rr-l405"],
+  [/range rover/i, /l460/i, "rr-l460"],
 ];
-
-function cleanText(text = "") {
-  return String(text)
-    .replace(/\u00c2\u00a3|\u00a3/g, "\u00a3")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u201c|\u00c3\u00a2\u00e2\u20ac\u201d|\u00e2\u20ac\u201c|\u00e2\u20ac\u201d|\u2013|\u2014/g, "\u2013")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u02dc|\u00e2\u20ac\u2018|\u2011/g, "-")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u00a2|\u00e2\u20ac\u00a2|\u2022/g, "\u2022")
-    .replace(/\s+/g, " ")
-    .trim();
+function carFor(model = "", generation = "") {
+  const hit = CAR_RULES.find(([m, g]) => m.test(model) && (!g || g.test(generation)));
+  return hit ? `/engine-compat/${hit[2]}.webp` : null;
 }
 
-function stripTags(text = "") {
-  return cleanText(text).replace(/\[[^\]]+\]/g, "").trim();
-}
+const modelName = (model = "") => model.replace(/^Land Rover\s+/i, "");
+const tidy = (t = "") => t.replace(/\s*→\s*\[[^\]]*\]/g, "").replace(/ - /g, " — ").trim();
 
-function shortEngineName(engineLabel = "") {
-  return cleanText(engineLabel).replace(/^(Jaguar|Land Rover|BMW)\s+/i, "") || "Engine";
-}
-
-function seriesParts(model = "") {
-  const clean = cleanText(model);
-  const seriesMatch = clean.match(/^(\d+)\s+Series(.*)$/i);
-  if (seriesMatch) {
-    return {
-      big: seriesMatch[1],
-      label: seriesMatch[2]?.trim() ? `SERIES ${seriesMatch[2].trim()}` : "SERIES",
-    };
-  }
-
-  if (/^X\d/i.test(clean) || /^Z\d/i.test(clean) || /^M\d/i.test(clean)) {
-    const [big, ...rest] = clean.split(/\s+/);
-    return { big, label: rest.join(" ") };
-  }
-
-  const landRover = clean.replace(/^Land Rover\s+/i, "");
-  const [big, ...rest] = landRover.split(/\s+/);
-  return { big: big || clean, label: rest.join(" ") };
-}
-
-function yearBounds(rows = [], yearsProduced = "") {
-  const fromRows = rows.flatMap((row) => (cleanText(row.years).match(/\d{4}/g) || []).map(Number));
-  const fromGlance = (cleanText(yearsProduced).match(/\d{4}/g) || []).map(Number);
-  const years = [...fromRows, ...fromGlance].filter(Boolean);
-
-  if (years.length === 0) return { start: "", end: "", span: 0 };
-
+// "200Tdi: 1989–1994 · 300Tdi: 1994–2006" -> { start: 1989, end: 2006 }; "2017–present" -> end "Present"
+function productionSpan(text = "") {
+  const years = (text.match(/\b(19|20)\d{2}\b/g) || []).map(Number);
+  if (years.length === 0) return null;
   const start = Math.min(...years);
-  const end = Math.max(...years);
-  return { start, end, span: Math.max(end - start, 1) };
+  return /present/i.test(text) ? { start, end: "Present", label: `In production since ${start}` } : { start, end: Math.max(...years), label: `${Math.max(...years) - start} years of production` };
 }
 
-function groupModels(rows = []) {
-  const map = new Map();
-
-  rows.forEach((row) => {
-    const model = cleanText(row.model);
-    if (!map.has(model)) {
-      map.set(model, {
-        model,
-        generations: [],
-        variants: [],
-        years: [],
-        rowCount: 0,
-      });
-    }
-
-    const entry = map.get(model);
-    entry.generations.push(cleanText(row.generation).replace(/\s*\/\s*/g, " / "));
-    cleanText(row.variantBadge)
-      .split(/,\s*/)
-      .filter(Boolean)
-      .forEach((variant) => {
-        if (!entry.variants.includes(variant)) entry.variants.push(variant);
-      });
-    entry.years.push(stripTags(row.years));
-    entry.rowCount += 1;
-  });
-
-  return Array.from(map.values()).map((entry) => {
-    const yearNums = entry.years.flatMap((value) => (value.match(/\d{4}/g) || []).map(Number));
-    const start = yearNums.length ? Math.min(...yearNums) : "";
-    const end = yearNums.length ? Math.max(...yearNums) : "";
-
-    return {
-      ...entry,
-      generationLabel: entry.generations
-        .join(" / ")
-        .split(/\s*\/\s*/)
-        .filter(Boolean)
-        .filter((item, index, arr) => arr.indexOf(item) === index)
-        .join(" · "),
-      variantLabel: entry.variants.join(" · "),
-      yearLabel: start && end ? `${start}\u2013${end}` : entry.years[0] || "",
-      variantCount: entry.variants.length,
-    };
-  });
+function crossBrand(note = "") {
+  if (/^exclusive to land rover\s*[-–—]\s*no cross-brand fitment\.?$/i.test(note.trim())) {
+    return { title: "Land Rover Exclusive Engine", text: "This engine is exclusive to Land Rover. No cross-brand fitment." };
+  }
+  const title = /^exclusive/i.test(note) ? "Land Rover Exclusive Engine" : /jaguar/i.test(note) ? "Shared with Jaguar" : /bmw/i.test(note) ? "Shared with BMW" : "Cross-Brand Fitment";
+  return { title, text: tidy(note) };
 }
 
-function cardClass(isDark) {
-  return isDark
-    ? "border-[var(--color-border)] bg-[var(--color-surface)]"
-    : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_20px_var(--color-shadow)]";
-}
+// static class maps so Tailwind sees every span the verified card can take
+const SPAN = { 1: "col-span-1", 2: "col-span-2" };
+const SPAN_SM = { 1: "sm:col-span-1", 2: "sm:col-span-2", 3: "sm:col-span-3" };
+const SPAN_LG = { 1: "lg:col-span-1", 2: "lg:col-span-2", 3: "lg:col-span-3", 4: "lg:col-span-4" };
+const fill = (n, cols) => cols - (n % cols);
 
-function carImageFor(model = "") {
-  const clean = cleanText(model);
-  let hash = 0;
-  for (let i = 0; i < clean.length; i += 1) hash += clean.charCodeAt(i);
-  return CAR_IMAGES[hash % CAR_IMAGES.length];
-}
-
-function ExclusiveBadge({ isDark }) {
+/* ---------- production timeline ---------- */
+function Track() {
   return (
-    <div className={`flex max-w-[280px] items-start gap-2.5 rounded-[8px] border px-3 py-2.5 ${cardClass(isDark)}`}>
-      <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)]">
-        <HomeIcon name="safestBuy" size={32} className="h-8 w-8" />
+    <span className="relative h-px min-w-3 flex-1 bg-lr-line-strong" aria-hidden="true">
+      <span className="absolute inset-x-[4%] -top-[3.5px] hidden h-2 bg-[repeating-linear-gradient(to_right,var(--lr-line-strong)_0_1px,transparent_1px_58px)] md:block" />
+    </span>
+  );
+}
+
+function Dot() {
+  return <span className="h-2.5 w-2.5 shrink-0 rounded-full border-2 border-lr-gold-line bg-lr-card md:h-[11px] md:w-[11px]" aria-hidden="true" />;
+}
+
+const YEAR = "shrink-0 text-[18px] font-medium leading-none tabular-nums text-lr-head md:text-[19px] xl:text-[20px]";
+
+function Timeline({ span }) {
+  return (
+    <div className="flex flex-wrap items-center gap-x-2 gap-y-2.5 sm:flex-nowrap md:gap-x-0">
+      {/* small phones: the pill sits above the line; sm+: inline, a little right of centre as in the reference */}
+      <span className="flex basis-full justify-center sm:order-3 sm:basis-auto md:ml-[10px] md:mr-[7px]">
+        <span className="shrink-0 rounded-full px-4 py-1.5 text-[12px] font-medium uppercase leading-none tracking-[0.04em] bg-lr-brand text-lr-on-brand md:px-5 md:py-[10px] md:text-[14px] xl:px-[21px] xl:py-[11px] xl:text-[15px]">
+          {span.label}
+        </span>
       </span>
-      <div className="min-w-0">
-        <p className="text-[10px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Land Rover Engine</p>
-        <p className="mt-0.5 text-[10px] leading-[1.35] text-[var(--color-text-muted)]">
-          Compatibility mapped across generations and badges.
-        </p>
-      </div>
+      <span className={`order-1 ${YEAR}`}>{span.start}</span>
+      <span className="order-2 flex flex-1 items-center gap-2 md:ml-[17px] md:flex-[1.37] md:gap-0">
+        <Dot />
+        <Track />
+      </span>
+      <span className="order-4 flex flex-1 items-center gap-2 max-sm:hidden md:gap-0">
+        <Track />
+      </span>
+      <span className="order-5 flex items-center md:mr-[15px]">
+        <Dot />
+      </span>
+      <span className={`order-6 ${YEAR}`}>{span.end}</span>
     </div>
   );
 }
 
-function ProductionTimeline({ start, end, span, isDark }) {
-  if (!start || !end) return null;
+const CARD = "rounded-xl border border-lr-line bg-lr-card shadow-[0_14px_30px_-26px_var(--lr-shadow)]";
+
+export default function Compatibility({ data, engineName = "", years = "", slug = "" }) {
+  const rows = data?.rows || [];
+  if (rows.length === 0) return null;
+
+  const span = productionSpan(years) || productionSpan(rows.map((r) => r.years).join(" "));
+  const brand = crossBrand(data.crossBrandNote || "");
+  const plainName = engineName.replace(/<[^>]+>/g, "");
+  const fittedName = /\(/.test(plainName) ? plainName : plainName.replace(" / ", " and ");
+  const n = rows.length;
+  const engine = /tdi/.test(slug) ? "/variant/sec2_engine.webp" : "/engine-glance/engine.webp";
+  // three models + the verified card is the reference layout: the verified card is a little narrower
+  const desktopCols = n % 4 === 3 ? "xl:grid-cols-[repeat(3,minmax(0,1.25fr))_minmax(0,1fr)]" : "xl:grid-cols-4";
 
   return (
-    <div className="mt-4 flex items-center gap-3 md:mt-5">
-      <span className="text-[13px] font-semibold text-[var(--color-primary)] md:text-[14px]">{start}</span>
-      <div className="relative h-px flex-1 bg-[var(--color-primary)]">
-        <span className="absolute left-0 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-[var(--color-primary)]" />
-        <span className="absolute right-0 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-[var(--color-primary)]" />
-        <span className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.04em] text-white md:text-[11px] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-          {span} Years of Production
-        </span>
-      </div>
-      <span className="text-[13px] font-semibold text-[var(--color-primary)] md:text-[14px]">{end}</span>
-    </div>
-  );
-}
+    <section className="relative overflow-hidden bg-lr-band text-lr-head" style={SANS}>
+      <div className={`relative ${CONTAINER} grid grid-cols-[minmax(0,1fr)] gap-y-5 pb-6 pt-10 [grid-template-areas:'head'_'engine'_'badge'_'timeline'_'cards'] md:grid-cols-[minmax(0,1fr)_240px] md:gap-x-6 md:gap-y-6 md:pb-8 md:pt-14 md:[grid-template-areas:'head_engine'_'badge_engine'_'timeline_timeline'_'cards_cards'] lg:grid-cols-[minmax(0,1fr)_280px] xl:grid-cols-[minmax(0,1fr)_minmax(0,360px)_minmax(0,300px)] xl:gap-x-0 xl:gap-y-0 xl:pb-8 xl:pt-16 xl:[grid-template-areas:'head_badge_engine'_'timeline_timeline_engine'_'cards_cards_engine']`}>
+        {/* heading */}
+        <header className="[grid-area:head]">
+          <p className={`flex items-center gap-3 ${LABEL} text-lr-ink xl:gap-[10px] dark:text-lr-gold`}>
+            <span className="h-[2px] w-7 bg-lr-gold-line xl:w-[24px]" aria-hidden="true" />
+            Compatibility
+          </p>
+          <h2 className={`mt-2 ${H2} text-lr-ink xl:mt-[7px]`}>
+            Compatible Land Rover Models
+          </h2>
+          <p className={`mt-2.5 max-w-[470px] ${BODY} text-lr-body xl:mt-[11px]`}>
+            {fittedName} engines are fitted across {n} iconic Land Rover {n === 1 ? "model" : "models"}.
+          </p>
+        </header>
 
-function DesktopModelCard({ item, isDark }) {
-  const series = seriesParts(item.model);
+        {/* cross-brand badge */}
+        <aside className={`${CARD} flex items-start gap-4 self-start px-4 py-4 [grid-area:badge] md:max-w-[440px] md:px-5 md:py-5 xl:mr-6 xl:max-w-none xl:gap-[21px] xl:pb-[17px] xl:pl-[19px] xl:pr-[14px] xl:pt-[17px]`}>
+          <LrIcon name="independent-and-impartial" className={`${ICON_LG} xl:mt-[3px]`} />
+          <div className="min-w-0">
+            <p className={`${LABEL} text-lr-ink dark:text-lr-green`}>{brand.title}</p>
+            <p className={`mt-1.5 ${SMALL} leading-[1.55] text-lr-body xl:mt-[8px]`}>{brand.text}</p>
+          </div>
+        </aside>
 
-  return (
-    <article className={`flex h-full flex-col rounded-[8px] border p-2.5 ${cardClass(isDark)}`}>
-      <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0">
-          <p className="text-[26px] font-bold leading-none text-[var(--color-primary)]">{series.big}</p>
-          {series.label ? (
-            <p className="mt-0.5 text-[10px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text-soft)]">{series.label}</p>
-          ) : null}
-        </div>
-        <div className="relative h-11 w-[84px] shrink-0 overflow-hidden rounded-[8px]">
-          <Image src={carImageFor(item.model)} alt="" fill sizes="84px" className="object-cover object-center" />
-        </div>
-      </div>
-
-      <div className="mt-2">
-        <span className="inline-flex max-w-full rounded-full bg-[var(--color-page-soft)] px-2 py-0.5 text-[10px] font-semibold text-[var(--color-text)]">
-          <span className="truncate">{item.generationLabel}</span>
-        </span>
-      </div>
-
-      <p className="mt-1.5 line-clamp-2 min-h-[28px] text-[11px] leading-[1.3] text-[var(--color-text-muted)]">{item.variantLabel}</p>
-
-      <div className="mt-auto flex items-center justify-between gap-2 border-t border-[var(--color-border)] pt-1.5">
-        <span className="text-[10px] text-[var(--color-text-soft)]">{item.yearLabel}</span>
-        <span className="text-[10px] font-semibold uppercase tracking-[0.04em] text-[var(--color-primary)]">
-          {item.variantCount} Variants →
-        </span>
-      </div>
-    </article>
-  );
-}
-
-function MobileModelRow({ row, isDark }) {
-  const series = seriesParts(row.model);
-
-  return (
-    <article className={`grid grid-cols-[88px_minmax(0,1fr)_auto] items-center gap-2 rounded-[8px] border px-2.5 py-2 ${cardClass(isDark)}`}>
-      <div className="min-w-0">
-        <p className="break-words text-[18px] font-bold leading-[1.05] text-[var(--color-primary)]">{series.big}</p>
-        {series.label ? (
-          <p className="mt-0.5 break-words text-[9px] font-semibold uppercase leading-[1.2] tracking-[0.04em] text-[var(--color-text-soft)]">{series.label}</p>
-        ) : null}
-        <div className="relative mt-1.5 h-8 w-full overflow-hidden rounded-[8px]">
-          <Image src={carImageFor(row.model)} alt="" fill sizes="88px" className="object-cover object-center" />
-        </div>
-      </div>
-
-      <div className="grid min-w-0 gap-2 sm:grid-cols-2">
-        <div className="min-w-0">
-          <p className="text-[10px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Generation</p>
-          <span className="mt-1 inline-flex max-w-full rounded-full bg-[var(--color-page-soft)] px-2 py-1 text-[11px] font-semibold text-[var(--color-text)]">
-            <span className="truncate">{cleanText(row.generation).replace(/\s*\/\s*/g, "/")}</span>
+        {/* engine on a cream disc */}
+        <div className="relative mx-auto aspect-square w-full max-w-[260px] [grid-area:engine] md:mx-0 md:max-w-none md:self-start xl:aspect-auto xl:self-stretch" aria-hidden="true">
+          <span className="absolute inset-[2%] rounded-full bg-[radial-gradient(circle_at_45%_40%,#f1efe8_0%,#eeebe3_60%,#ebe7dd_100%)] dark:bg-[radial-gradient(circle_at_45%_40%,#21423a_0%,#1a362e_60%,#163027_100%)] xl:inset-auto xl:left-[60%] xl:top-[49%] xl:aspect-square xl:w-[130%] xl:-translate-x-1/2 xl:-translate-y-1/2 xl:bg-[radial-gradient(circle,#eeece5_0%,#f0eee8_62%,rgba(240,238,232,0)_70.7%)] xl:dark:bg-[radial-gradient(circle,#21423a_0%,#1a362e_62%,rgba(26,54,46,0)_70.7%)]" />
+          <span className="absolute -inset-[2%] xl:inset-auto xl:left-[57%] xl:top-[45%] xl:aspect-square xl:w-[114%] xl:-translate-x-1/2 xl:-translate-y-1/2">
+            <Image src={engine} alt="" fill sizes="(min-width: 1280px) 420px, 280px" className="object-contain drop-shadow-[0_24px_26px_rgba(31,32,28,0.28)]" />
           </span>
         </div>
-        <div className="min-w-0">
-          <p className="text-[10px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Variant/Badge</p>
-          <p className="mt-1 text-[11px] leading-[1.3] text-[var(--color-text)]">{cleanText(row.variantBadge)}</p>
-        </div>
-      </div>
 
-      <div className="flex items-center gap-2 pl-1">
-        <div className="text-right">
-          <p className="text-[10px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Years</p>
-          <p className="mt-1 text-[12px] font-semibold text-[var(--color-primary)]">{stripTags(row.years)}</p>
-        </div>
-        <span aria-hidden="true" className="text-[18px] font-bold text-[var(--color-primary)]">›</span>
-      </div>
-    </article>
-  );
-}
-
-function VerifiedStrip() {
-  return (
-    <article className="flex w-full items-start gap-3 rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-primary-soft)] px-3.5 py-3 md:items-center md:px-4 md:py-3.5">
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-surface)]">
-        <HomeIcon name="expertVerified" size={36} className="h-9 w-9" />
-      </span>
-      <div className="min-w-0">
-        <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Compatibility Verified</p>
-        <p className="mt-0.5 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">
-          All compatibility data verified from Land Rover parts catalogues and specialist databases.{" "}
-          <span className="font-semibold text-[var(--color-primary)]">[LR-VERIFIED]</span>
-        </p>
-      </div>
-    </article>
-  );
-}
-
-export default function Compatibility({
-  data,
-  engineLabel = "Land Rover Engine",
-  yearsProduced = "",
-  modelsFitted = "",
-  crossBrandFitment = "",
-  band = "soft",
-}) {
-  const { theme } = useTheme();
-  if (!data) return null;
-
-  const isDark = theme === "dark";
-  const rows = data.rows || [];
-  const grouped = groupModels(rows);
-  const bounds = yearBounds(rows, yearsProduced);
-  const engineCode = shortEngineName(engineLabel);
-  const modelCountLabel = stripTags(modelsFitted) || `${grouped.length}+ models`;
-  const exclusiveNote = cleanText(data.crossBrandNote || crossBrandFitment || "(Exclusive mode – no cross-link)");
-
-  return (
-    <section className={`relative w-full overflow-hidden py-8 text-[var(--color-text)] md:py-9 ${sectionBgClass(band)}`}>
-      <div className="absolute inset-0">
-        <div className="absolute inset-y-0 right-0 w-full md:w-[62%]">
-          <Image
-            src={ENGINE_IMAGE}
-            alt=""
-            fill
-            sizes="(max-width: 768px) 100vw, 62vw"
-            className="object-cover object-[center_30%] opacity-40 md:object-center md:opacity-55"
-            priority={false}
-          />
-        </div>
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(90deg,var(--color-page)_0%,var(--color-page)_34%,var(--color-hero-overlay)_58%,transparent_78%)]"
-              : "bg-[linear-gradient(90deg,var(--color-page-soft)_0%,var(--color-page-soft)_34%,var(--color-hero-overlay)_58%,transparent_78%)]"
-          }`}
-        />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(180deg,var(--color-hero-overlay)_0%,transparent_28%,transparent_72%,var(--color-hero-fade)_100%)]"
-              : "bg-[linear-gradient(180deg,var(--color-hero-overlay)_0%,transparent_30%,transparent_70%,var(--color-hero-fade)_100%)]"
-          }`}
-        />
-      </div>
-
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="grid max-w-[760px] items-start gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:gap-5">
-          <div className="min-w-0">
-            <HeadingEyebrow text="COMPATIBILITY" />
-            <h2 className="mt-3 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem]">
-              Compatibility
-            </h2>
-            <p className={`mt-4 max-w-[540px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
-              {engineCode} engines are fitted across{" "}
-              <span className="font-semibold text-[var(--color-primary)]">{modelCountLabel}</span> from{" "}
-              <span className="font-semibold text-[var(--color-primary)]">
-                {bounds.start && bounds.end ? `${bounds.start}\u2013${bounds.end}` : stripTags(yearsProduced) || "multiple years"}
-              </span>
-              .
-            </p>
+        {/* production timeline */}
+        {span && (
+          <div className="[grid-area:timeline] xl:mt-[12px] xl:pr-6">
+            <Timeline span={span} />
           </div>
+        )}
 
-          <div className="md:pt-2">
-            <ExclusiveBadge isDark={isDark} />
-          </div>
-        </div>
+        {/* model cards + verified card */}
+        <div className={`grid grid-cols-2 gap-3 [grid-area:cards] sm:grid-cols-3 lg:grid-cols-4 xl:mt-[16px] xl:gap-[11px] xl:pr-6 ${desktopCols}`}>
+          {rows.map((r, i) => {
+            const car = carFor(r.model, r.generation);
+            return (
+              <article key={`${r.generation}-${i}`} className={`${CARD} flex flex-col px-3 pb-3 pt-4 sm:px-3.5 xl:px-[10px] xl:pb-[8px] xl:pt-[15px]`}>
+                <h3 className={`min-h-[2.5em] pl-1 ${H6} uppercase leading-[1.25] text-lr-head xl:pl-[14px]`}>{modelName(r.model)}</h3>
+                <div className="relative mx-auto mt-1.5 aspect-[2/1] w-[92%] xl:mt-[4px] xl:aspect-auto xl:h-[103px] xl:w-[87%]">
+                  {car && <Image src={car} alt={`${modelName(r.model)} ${r.generation}`} fill sizes="(min-width: 1280px) 250px, (min-width: 640px) 30vw, 45vw" className="object-contain object-bottom" />}
+                </div>
+                <span className="mx-auto mt-2.5 max-w-full truncate rounded-full px-3 py-1 text-center text-[12px] font-medium leading-[1.4] bg-lr-brand text-lr-on-brand md:text-[14px] xl:mt-[10px] xl:px-[18px] xl:py-[2px] xl:text-[15px]">
+                  {r.generation}
+                </span>
+                <p className={`mt-1.5 text-center ${SMALL} text-lr-body xl:mt-[6px]`}>{r.variantBadge}</p>
+                <div className="mt-auto flex flex-wrap items-center justify-between gap-x-2 gap-y-1.5 pt-3 xl:pr-[16px] xl:pt-[9px]">
+                  <span className="whitespace-nowrap rounded-md border border-lr-gold-line/70 bg-lr-gold-line/10 px-2 py-0.5 text-[12px] font-medium leading-[1.4] text-lr-gold md:text-[13px] xl:px-[7px] xl:text-[15px]">{r.years}</span>
+                  <span className="text-[11px] font-medium uppercase tracking-[0.04em] md:text-[13px] xl:text-[15px] text-lr-ink dark:text-lr-green">Core Model</span>
+                </div>
+              </article>
+            );
+          })}
 
-        <ProductionTimeline start={bounds.start} end={bounds.end} span={bounds.span} isDark={isDark} />
-
-        <div className="mt-4 hidden md:block">
-          <div className="grid gap-2.5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            {grouped.map((item) => (
-              <DesktopModelCard key={item.model} item={item} isDark={isDark} />
-            ))}
-
-            <article className="flex min-h-[132px] flex-col items-start justify-center rounded-[8px] border border-dashed border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-2.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-surface)]">
-                <HomeIcon name="vehicle" size={32} className="h-8 w-8" />
-              </span>
-              <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other Models</p>
-              <p className="mt-1 text-[11px] leading-[1.35] text-[var(--color-text-muted)]">
-                {engineCode} also appears in limited variants and markets.
-              </p>
-              <p className="mt-2 text-[11px] font-semibold text-[var(--color-primary)]">View full details →</p>
-            </article>
-          </div>
-
-          <div className="mt-2.5">
-            <VerifiedStrip />
-          </div>
-        </div>
-
-        <div className="mt-4 grid gap-2.5 md:hidden">
-          {rows.map((row, index) => (
-            <MobileModelRow key={`${row.model}-${row.generation}-${index}`} row={row} isDark={isDark} />
-          ))}
-
-          <article className={`flex items-center gap-3 rounded-[8px] border px-3 py-2.5 ${cardClass(isDark)}`}>
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)]">
-              <HomeIcon name="vehicle" size={32} className="h-8 w-8" />
+          <article className={`${CARD} flex flex-col p-4 xl:pb-[16px] xl:pl-[20px] xl:pr-[12px] xl:pt-[14px] ${SPAN[fill(n, 2)]} ${SPAN_SM[fill(n, 3)]} ${SPAN_LG[fill(n, 4)]}`}>
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-lr-chip text-lr-ink shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] xl:h-[48px] xl:w-[48px] dark:text-lr-green">
+              <LrIcon name="oem-references" className={ICON_MD} />
             </span>
-            <div className="min-w-0 flex-1">
-              <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other Models</p>
-              <p className="mt-0.5 text-[11px] leading-[1.35] text-[var(--color-text-muted)]">
-                {engineCode} also appears in limited variants and markets.
-              </p>
-            </div>
-            <span className="shrink-0 text-[11px] font-semibold text-[var(--color-primary)]">View full details ›</span>
+            <p className={`mt-3 ${H6} uppercase leading-[1.25] text-lr-head xl:mt-[13px]`}>Compatibility Verified</p>
+            <p className={`mt-1.5 max-w-[340px] ${BODY_SM} text-lr-body xl:mt-[8px]`}>All compatibility data verified from model catalogues and specialist databases.</p>
+            <p className={`mt-auto pt-3 ${SMALL} font-medium tracking-[0.02em] text-lr-green xl:pt-[13px]`}>[EM-VERIFIED]</p>
           </article>
-
-          <VerifiedStrip />
-
-          <div className={`flex items-center gap-2 rounded-[8px] border px-3 py-2.5 ${cardClass(isDark)}`}>
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)]">
-              <HomeIcon name="safestBuy" size={32} className="h-8 w-8" />
-            </span>
-            <p className="text-[11px] text-[var(--color-text-soft)]">{exclusiveNote}</p>
-          </div>
         </div>
       </div>
     </section>

@@ -1,11 +1,26 @@
-import Image from "next/image";
 import Link from "next/link";
 import LandRoverLogo from "@/components/guide-home/LandRoverLogo";
+import GroundedCar from "@/components/variant/GroundedCar";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
-import { serif } from "@/lib/guideFonts";
+import { BODY, BODY_SM, CONTAINER, H1, H4, H6, ICON_LG, ICON_MD, ICON_SM, ICON_XL, LABEL, NUM, SMALL, STAT } from "@/lib/typeScale";
 
-const GOLD = "#d4a54c";
-const GREEN = "#4fae7e";
+// Follows the site theme (navbar day / night button). The hero stands the Defender on a Highland
+// loch-side hillside: golden hour on the day theme, a storm at night. The landscape is a CSS
+// background picked by theme and screen size, so each visitor downloads only the one they see.
+// Desktop: full-bleed behind the band, washed in the page colour behind the headline and fading
+// into the page at the bottom. Phones / tablets: a banner under the headline with the car in it.
+
+const CAR = "/home/hero-defender-cut.webp";
+const BG_DESKTOP = "bg-[url(/home/hero-loch-day.webp)] dark:bg-[url(/home/hero-loch-night.webp)]";
+const BG_MOBILE = "bg-[url(/home/hero-loch-day-m.webp)] dark:bg-[url(/home/hero-loch-night-m.webp)]";
+// the band's height: the car stands on the foreground, its wheels ~78% down
+const BAND = "h-[640px] xl:h-[680px] min-[1400px]:h-[700px]";
+// page-coloured wash behind the headline column (measured from the container's left edge at any
+// width), so the copy reads cleanly while the loch and the car show on the right
+const WASH = {
+  background:
+    "linear-gradient(90deg, var(--lr-page) 0px, color-mix(in srgb, var(--lr-page) 92%, transparent) calc(max(0px, 50vw - 704px) + 500px), color-mix(in srgb, var(--lr-page) 60%, transparent) calc(max(0px, 50vw - 704px) + 720px), transparent calc(max(0px, 50vw - 704px) + 980px))",
+};
 
 export default function HomeSec1({ hero }) {
   const [line1, line2, line3] = hero.h1.split("|");
@@ -13,44 +28,43 @@ export default function HomeSec1({ hero }) {
   const [mh2a, mh2b] = hero.trust.mobileH2.split("|");
 
   return (
-    <section id="find-my-landrover" className="relative z-10 overflow-hidden bg-[#0a0f0d] text-white">
+    <section id="find-my-landrover" className="relative z-10 overflow-hidden bg-lr-page text-lr-head">
       {/* ===== mobile + tablet ===== */}
       <div className="lg:hidden">
         <div className="relative">
-          {/* stormy sky behind the headline: the hero photo's cloud band, blurred and dimmed */}
+          {/* night theme: stormy sky behind the headline - the hero photo's cloud band, blurred and dimmed */}
           <div
-            className="absolute inset-x-0 top-0 h-[620px]"
+            className="absolute inset-x-0 top-0 hidden h-[620px] dark:block"
             aria-hidden="true"
             style={{
               background:
-                "radial-gradient(60% 30% at 15% 20%, rgba(120,128,124,0.22), transparent 70%), radial-gradient(55% 28% at 85% 35%, rgba(110,118,114,0.2), transparent 70%), radial-gradient(70% 25% at 50% 75%, rgba(150,140,120,0.16), transparent 70%), linear-gradient(180deg, #0c1210 0%, #121a17 45%, #0a0f0d 100%)",
+                "radial-gradient(60% 30% at 15% 20%, rgba(120,128,124,0.16), transparent 70%), radial-gradient(55% 28% at 85% 35%, rgba(110,118,114,0.14), transparent 70%), radial-gradient(70% 25% at 50% 75%, rgba(150,140,120,0.1), transparent 70%)",
             }}
           />
 
-          <div className="relative z-10 mx-auto max-w-160 px-4 pt-6 text-center sm:px-8">
+          <div className={`${CONTAINER} relative z-10 pt-6 text-center`}>
+            <div className="mx-auto max-w-160">
             <div className="flex items-center justify-center gap-3">
-              <span className="h-px flex-1 bg-linear-to-r from-transparent to-[#d4a54c]/70" />
-              <p className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.14em] sm:text-sm" style={{ color: GOLD }}>
-                {hero.eyebrow}
-              </p>
-              <span className="h-px flex-1 bg-linear-to-l from-transparent to-[#d4a54c]/70" />
+              <span className="h-px flex-1 bg-linear-to-r from-transparent to-lr-gold-line/70" />
+              <p className={`${LABEL} whitespace-nowrap text-lr-gold`}>{hero.eyebrow}</p>
+              <span className="h-px flex-1 bg-linear-to-l from-transparent to-lr-gold-line/70" />
             </div>
 
-            <h1 className={`${serif.className} mt-3 whitespace-nowrap text-[clamp(25px,7.6vw,50px)] leading-[1.08] tracking-[-0.01em]`}>
-              <span className="block text-[#f2efe9]">{line1}</span>
-              <span className="block text-[#f2efe9]">{line2}</span>
-              <span className="block" style={{ color: GREEN }}>{line3}</span>
+            <h1 className={`${H1} mt-3 text-balance`}>
+              <span className="text-lr-head sm:block">{line1}</span>{" "}
+              <span className="text-lr-head sm:block">{line2}</span>
+              <span className="block text-lr-green">{line3}</span>
             </h1>
 
-            <p className="mx-auto mt-3 max-w-120 text-[15px] leading-[1.5] text-white/85 sm:text-base">{hero.subhead}</p>
+            <p className={`${BODY} mx-auto mt-3 max-w-120 text-lr-body`}>{hero.subhead}</p>
 
             {/* stats card */}
-            <div className="mt-5 grid grid-cols-4 rounded-[20px] border border-white/15 bg-white/[0.04] px-1 py-3.5 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md">
+            <div className="mt-5 grid grid-cols-4 rounded-[20px] border border-lr-line bg-lr-card/80 px-1 py-3.5 shadow-[0_10px_40px_-10px_var(--lr-shadow)] backdrop-blur-md dark:bg-lr-card/50">
               {hero.stats.map((s, i) => (
-                <div key={s.value} className={`flex flex-col items-center px-1 ${i > 0 ? "border-l border-white/15" : ""}`}>
-                  <GuideIcon name={s.icon} className="h-7 w-7 text-[#bfe3cf]" />
-                  <p className="mt-2 text-[15px] font-semibold leading-tight text-white">{s.value}</p>
-                  <p className="text-[12px] leading-tight text-white/80">
+                <div key={s.value} className={`flex flex-col items-center px-1 ${i > 0 ? "border-l border-lr-line" : ""}`}>
+                  <GuideIcon name={s.icon} className={ICON_LG} />
+                  <p className={`${NUM} mt-2 text-lr-head`}>{s.value}</p>
+                  <p className={`${SMALL} mt-0.5 text-lr-body`}>
                     {s.icon === "book" ? (
                       <>
                         {s.label}
@@ -67,51 +81,51 @@ export default function HomeSec1({ hero }) {
 
             <Link
               href={hero.cta.href}
-              className="relative mx-auto mt-6 flex w-[82%] max-w-100 items-center justify-center gap-3 rounded-xl border border-[#5fd19a]/45 bg-linear-to-b from-[#1f7a52] via-[#155e3e] to-[#0e4730] py-4 text-[17px] font-semibold uppercase tracking-[0.06em] text-white shadow-[0_0_28px_-4px_rgba(60,190,125,0.55),inset_0_1px_0_rgba(255,255,255,0.25)]"
+              className="relative mx-auto mt-6 flex w-[82%] max-w-100 items-center justify-center gap-3 whitespace-nowrap rounded-xl border border-lr-brand bg-lr-brand py-4 text-[15px] font-semibold uppercase tracking-[0.05em] min-[360px]:text-[17px] min-[360px]:tracking-[0.06em] text-lr-on-brand shadow-[0_12px_28px_-12px_var(--lr-shadow),inset_0_1px_0_rgba(255,255,255,0.18)] transition-colors hover:bg-lr-brand-hover dark:border-lr-green/45 dark:shadow-[0_0_28px_-4px_rgba(60,190,125,0.45),inset_0_1px_0_rgba(255,255,255,0.25)]"
             >
               {hero.cta.label}
               <Arrow />
-              {/* bottom edge light */}
-              <span className="pointer-events-none absolute -bottom-px left-1/2 h-px w-1/2 -translate-x-1/2 bg-linear-to-r from-transparent via-[#8ff0bf] to-transparent" />
+              {/* night theme: bottom edge light */}
+              <span className="pointer-events-none absolute -bottom-px left-1/2 hidden h-px w-1/2 -translate-x-1/2 bg-linear-to-r from-transparent via-lr-green to-transparent dark:block" />
             </Link>
-          </div>
-
-          {/* Defender photo */}
-          <div className="relative mt-1 w-full">
-            <div className="relative mx-auto aspect-16/11 w-full max-w-200 sm:aspect-887/464">
-              <Image src={hero.mobileImage} alt={hero.imageAlt} fill priority quality={90} className="object-cover object-[62%_55%]" sizes="(max-width: 800px) 100vw, 800px" />
-              <div className="absolute inset-x-0 top-0 h-1/4 bg-linear-to-b from-[#0a0f0d] to-transparent" />
-              <div className="absolute inset-y-0 left-0 w-6 bg-linear-to-r from-[#0a0f0d]/70 to-transparent" />
-              <div className="absolute inset-y-0 right-0 w-6 bg-linear-to-l from-[#0a0f0d]/70 to-transparent" />
             </div>
           </div>
 
-          {/* trust card, overlapping the bottom of the photo */}
-          <div className="relative mx-auto -mt-10 max-w-160 px-0 pb-8 sm:px-4">
-            <div className="relative rounded-t-[26px] border-t border-white/15 bg-linear-to-b from-[#0f1a16]/95 to-[#0a0f0d] px-3 pb-2 pt-10 shadow-[0_-20px_40px_-20px_rgba(0,0,0,0.8)] backdrop-blur-md sm:rounded-[26px] sm:border">
+          {/* the Defender on the loch-side hillside - top edge feathered into the page */}
+          <div className="relative mt-6 w-full">
+            <div className={`relative mx-auto aspect-[4/3] w-full max-w-200 bg-cover bg-bottom sm:aspect-[16/9] ${BG_MOBILE} [mask-image:linear-gradient(to_bottom,transparent,#000_20%)]`} role="img" aria-label={hero.imageAlt}>
+              <div className="absolute bottom-[19%] left-1/2 w-[70%] max-w-[520px] -translate-x-1/2 sm:bottom-[15%] sm:w-[56%]">
+                <GroundedCar src={CAR} priority sceneByTheme sizes="(max-width: 640px) 74vw, 520px" />
+              </div>
+            </div>
+          </div>
+
+          {/* trust card, overlapping only the ground below the car */}
+          <div className="relative mx-auto -mt-8 max-w-160 px-0 pb-8 sm:px-4">
+            <div className="relative rounded-t-[26px] border-t border-lr-line bg-linear-to-b from-lr-card/95 to-lr-page px-3 pb-2 pt-10 shadow-[0_-20px_40px_-20px_var(--lr-shadow)] backdrop-blur-md sm:rounded-[26px] sm:border">
               {/* logo tab */}
               <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-[60%]">
-                <div className="flex h-12 w-30 items-center justify-center rounded-t-[22px] border border-b-0 border-white/15 bg-[#0f1a16]">
+                <div className="flex h-12 w-30 items-center justify-center rounded-t-[22px] border border-b-0 border-lr-line bg-lr-card">
                   <LandRoverLogo crop className="h-8 w-[58px]" />
                 </div>
               </div>
 
-              <h2 className={`${serif.className} whitespace-nowrap text-center text-[clamp(19px,5.6vw,34px)] leading-tight text-[#f2efe9]`}>
-                {mh2a} <span style={{ color: GREEN }}>{mh2b}</span>
+              <h2 className={`${H4} text-center text-lr-head`}>
+                {mh2a} <span className="text-lr-green">{mh2b}</span>
               </h2>
 
               <div className="mt-4 grid grid-cols-2 gap-2.5">
                 {hero.trust.items.map((t) => (
-                  <div key={t.title} className="flex items-center gap-2.5 rounded-2xl border border-white/10 bg-white/[0.035] p-2.5 sm:gap-3 sm:p-3">
-                    <span className="flex h-11 w-11 shrink-0 sm:h-13 sm:w-13 items-center justify-center rounded-full border border-[#3c8d64]/60 bg-[radial-gradient(circle_at_50%_35%,#1d4a35,#0d2219)] text-[#cfeedd] shadow-[0_0_14px_-2px_rgba(70,180,120,0.35)]">
-                      <GuideIcon name={t.icon} className="h-5 w-5 sm:h-6 sm:w-6" />
+                  <div key={t.title} className="flex items-center gap-2.5 rounded-2xl border border-lr-line bg-lr-panel/60 p-2.5 sm:gap-3 sm:p-3">
+                    <span className="flex h-10 w-10 shrink-0 sm:h-12 sm:w-12 items-center justify-center rounded-full border border-lr-green/35 bg-lr-chip text-lr-green dark:bg-[radial-gradient(circle_at_50%_35%,#1d4a35,#0d2219)] dark:shadow-[0_0_14px_-2px_rgba(70,180,120,0.35)]">
+                      <GuideIcon name={t.icon} className={ICON_SM} />
                     </span>
-                    <p className="text-[12.5px] sm:text-[14px] leading-snug text-white/90">
-                      <span className="font-semibold text-white">{t.mobileTitle}</span>
+                    <p className={`${SMALL} text-lr-body`}>
+                      <span className="font-semibold text-lr-head">{t.mobileTitle}</span>
                       {t.mobileText && (
                         <>
                           {" "}
-                          <span className="block text-white/80">{t.mobileText}</span>
+                          <span className="block text-lr-body">{t.mobileText}</span>
                         </>
                       )}
                     </p>
@@ -126,49 +140,51 @@ export default function HomeSec1({ hero }) {
       {/* ===== desktop ===== */}
       <div className="hidden lg:block">
         <div className="relative">
-          {/* photo, anchored right and faded into the dark left column */}
-          <div className="absolute right-0 top-0 h-[620px] w-[66%] xl:h-[640px]">
-            <Image src={hero.image} alt={hero.imageAlt} fill priority quality={90} className="object-cover object-center" sizes="66vw" />
-            <div className="absolute inset-0 bg-linear-to-r from-[#0a0f0d] via-[#0a0f0d]/35 via-25% to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-linear-to-t from-[#0a0f0d] to-transparent" />
-            <div className="absolute inset-x-0 top-0 h-16 bg-linear-to-b from-[#0a0f0d]/70 to-transparent" />
+          {/* the loch landscape behind the band, fading into the page at the bottom */}
+          <div className={`pointer-events-none absolute inset-x-0 top-0 ${BAND} bg-cover bg-[center_62%] ${BG_DESKTOP} [mask-image:linear-gradient(to_bottom,#000_74%,transparent)]`} aria-hidden="true" />
+          <div className={`pointer-events-none absolute inset-x-0 top-0 ${BAND}`} style={WASH} aria-hidden="true" />
+          {/* the Defender on the foreground - width steps with the screen so it always clears the headline */}
+          <div className={`pointer-events-none absolute inset-x-0 top-0 ${BAND}`}>
+            <div className={`${CONTAINER} relative h-full`}>
+              <div className="absolute bottom-[22%] right-8 w-[34%] xl:w-[40%] min-[1400px]:w-[45%]">
+                <GroundedCar src={CAR} priority sceneByTheme sizes="(min-width: 1024px) 46vw, 1px" />
+              </div>
+            </div>
           </div>
 
-          <div className="relative mx-auto max-w-[1440px] px-10 pt-12 xl:px-20">
-            <div className="max-w-[600px]">
-              <p className="text-[13px] font-medium uppercase tracking-[0.08em]" style={{ color: GOLD }}>
-                {hero.eyebrow}
-              </p>
+          <div className={`${CONTAINER} relative pt-12`}>
+            <div className="max-w-[660px]">
+              <p className={`${LABEL} text-lr-gold`}>{hero.eyebrow}</p>
               <div className="mt-2 flex h-px w-[370px]">
-                <span className="w-[120px] bg-[#d4a54c]" />
-                <span className="w-[50px] bg-white/80" />
-                <span className="flex-1 bg-white/25" />
+                <span className="w-[120px] bg-lr-gold-line" />
+                <span className="w-[50px] bg-lr-head/70" />
+                <span className="flex-1 bg-lr-line-strong" />
               </div>
 
-              <h1 className={`${serif.className} mt-6 whitespace-nowrap text-[clamp(44px,3.9vw,60px)] leading-[1.02] tracking-[-0.01em] text-[#f2efe9]`}>
+              <h1 className={`${H1} mt-6 whitespace-nowrap text-lr-head`}>
                 {line1.replace(" Trusted", "")}
                 <br />
-                Trusted {line2.split(" & ")[0]} &amp;
+                Trusted {line2.split(" & ")[0]}{" "}&amp;
                 <br />
                 {line2.split(" & ")[1]}
                 <br />
-                <span style={{ color: "#2f7d55" }}>{line3}</span>
+                <span className="text-lr-green">{line3}</span>
               </h1>
 
-              <p className="mt-5 max-w-[400px] text-[17px] leading-[1.55] text-white/85">{hero.subhead}</p>
+              <p className={`${BODY} mt-5 max-w-[440px] text-lr-body`}>{hero.subhead}</p>
 
               <div className="mt-6 flex items-center gap-10">
                 <Link
                   href={hero.cta.href}
-                  className="inline-flex items-center gap-4 rounded-[3px] border border-[#2f6b4c] bg-[#0f2a1e] px-7 py-4 text-[17px] font-semibold uppercase tracking-[0.04em] text-white transition-colors hover:bg-[#15392a]"
+                  className="inline-flex items-center gap-4 rounded-[3px] border border-lr-brand bg-lr-brand px-7 py-4 text-[17px] font-semibold uppercase tracking-[0.04em] text-lr-on-brand transition-colors hover:bg-lr-brand-hover dark:border-lr-green/40"
                 >
                   {hero.cta.label}
                   <Arrow className="h-5 w-5" />
                 </Link>
                 <div className="flex items-center gap-3">
-                  <GuideIcon name="shield" className="h-9 w-9 text-white/90" />
-                  <p className="text-[13px] leading-[1.6] text-white/90">
-                    <span className="block font-medium">{hero.independent.title}</span>
+                  <GuideIcon name="shield" className={ICON_LG} />
+                  <p className={`${SMALL} text-lr-body`}>
+                    <span className="block font-medium text-lr-head">{hero.independent.title}</span>
                     {hero.independent.text}
                   </p>
                 </div>
@@ -176,16 +192,16 @@ export default function HomeSec1({ hero }) {
             </div>
 
             {/* stats bar */}
-            <div className="mt-7 grid grid-cols-4 rounded-md border border-white/15 bg-[#0c1311]/85 py-5 backdrop-blur-sm">
+            <div className="relative mt-7 grid grid-cols-4 rounded-md border border-lr-line bg-lr-card/90 py-5 shadow-[0_24px_60px_-34px_var(--lr-shadow)] backdrop-blur-sm dark:bg-lr-card/80">
               {hero.stats.map((s, i) => (
-                <div key={s.value} className={`flex items-center justify-center gap-5 px-4 ${i > 0 ? "border-l border-white/15" : ""}`}>
-                  <span className="shrink-0" style={{ color: GOLD }}>
-                    <GuideIcon name={s.icon} className="h-12 w-12" />
+                <div key={s.value} className={`flex items-center justify-center gap-5 px-4 ${i > 0 ? "border-l border-lr-line" : ""}`}>
+                  <span className="shrink-0 text-lr-gold">
+                    <GuideIcon name={s.icon} className={ICON_XL} />
                   </span>
                   <div>
-                    <p className="text-[24px] leading-tight text-white">{s.value}</p>
-                    <p className="text-[16px] leading-snug text-white/85">{s.label}</p>
-                    <p className="text-[16px] leading-snug text-white/85">{s.detail}</p>
+                    <p className={`${STAT} text-lr-head`}>{s.value}</p>
+                    <p className={`${BODY_SM} mt-1.5 leading-snug text-lr-body`}>{s.label}</p>
+                    <p className={`${BODY_SM} leading-snug text-lr-body`}>{s.detail}</p>
                   </div>
                 </div>
               ))}
@@ -193,26 +209,24 @@ export default function HomeSec1({ hero }) {
 
             {/* trust row */}
             <div className="pb-14 pt-8 text-center">
-              <p className="text-[13px] font-medium uppercase tracking-[0.12em]" style={{ color: GOLD }}>
-                {hero.trust.eyebrow}
-              </p>
+              <p className={`${LABEL} text-lr-gold`}>{hero.trust.eyebrow}</p>
               <div className="mt-1 flex items-center justify-center gap-5">
-                <span className="h-px w-24 bg-linear-to-r from-transparent to-[#d4a54c]" />
-                <h2 className={`${serif.className} text-[34px] leading-tight text-[#f2efe9]`}>
-                  {h2a} <span style={{ color: "#2f7d55" }}>{h2b}</span>
+                <span className="h-px w-24 bg-linear-to-r from-transparent to-lr-gold-line" />
+                <h2 className={`${H4} text-lr-head`}>
+                  {h2a} <span className="text-lr-green">{h2b}</span>
                 </h2>
-                <span className="h-px w-24 bg-linear-to-l from-transparent to-[#d4a54c]" />
+                <span className="h-px w-24 bg-linear-to-l from-transparent to-lr-gold-line" />
               </div>
 
               <div className="mt-6 grid grid-cols-4">
                 {hero.trust.items.map((t, i) => (
-                  <div key={t.title} className={`flex flex-col items-center px-8 ${i > 0 ? "border-l border-white/15" : ""}`}>
-                    <span className="flex h-15 w-15 items-center justify-center rounded-full border border-[#d4a54c]/55 bg-[#0d1714]" style={{ color: GOLD }}>
-                      <GuideIcon name={t.icon} className="h-7 w-7" />
+                  <div key={t.title} className={`flex flex-col items-center px-8 ${i > 0 ? "border-l border-lr-line" : ""}`}>
+                    <span className="flex h-13 w-13 items-center justify-center rounded-full border border-lr-gold-line/55 bg-lr-chip text-lr-gold">
+                      <GuideIcon name={t.icon} className={ICON_MD} />
                     </span>
-                    <h3 className="mt-4 max-w-[220px] text-[16px] font-semibold leading-snug text-white">{t.title}</h3>
-                    <p className="mt-2 max-w-[230px] text-[14px] leading-[1.6] text-white/75">{t.text}</p>
-                    <span className="mt-5 h-px w-8 bg-[#d4a54c]" />
+                    <h3 className={`${H6} mt-4 max-w-[260px] text-lr-head`}>{t.title}</h3>
+                    <p className={`${BODY_SM} mt-2 max-w-[270px] text-lr-muted`}>{t.text}</p>
+                    <span className="mt-5 h-px w-8 bg-lr-gold-line" />
                   </div>
                 ))}
               </div>

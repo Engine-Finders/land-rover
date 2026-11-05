@@ -1,275 +1,201 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
-import { useTheme } from "@/components/shared/themeProvider";
+import { CONTAINER, SANS } from "@/components/engine/engineTheme";
+import LrIcon from "@/components/shared/LrIcon";
+import GroundedCar from "@/components/variant/GroundedCar";
+import { BODY, H1, ICON_LG, SMALL } from "@/lib/typeScale";
 
-const STAT_ICONS = ["realEnquiries", "repairVsReplace", "safestBuy", "topChoice"];
+// Engine hero: tag pill, serif headline (accent on "Replacement Cost"), sub-headline, quote CTA,
+// the engine on its lit ring in the dusk mountain / garage scene, and a four-stat trust strip -
+// all from the page's `hero` JSON. Follows the site theme: on the day theme the engine (a cut-out of
+// the same render) stands on the golden-hour Highland loch used by the home hero, washed in the page
+// colour behind the copy; on the night theme the dusk garage scene fades into the green page (CSS
+// masks). Phones and tablets stack the copy, the scene and the strip; from lg the scene sits on the
+// right. The 200Tdi/300Tdi page shows the "Tdi"-badged engine cover, every other engine the same
+// render without the badge.
 
-function normalizeText(value = "") {
-  return value
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u00a2|\u00e2\u20ac\u00a2|\u2022/g, " \u2022 ")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u00a0\u00e2\u201e\u00a2|\u00e2\u2020\u2019|\u2192/g, "\u2192")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u201c|\u00c3\u00a2\u00e2\u20ac\u201d|\u00e2\u20ac\u201c|\u00e2\u20ac\u201d|\u2013|\u2014/g, "\u2013")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u02dc|\u00e2\u20ac\u2018|\u2011/g, "-")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// day theme: page-coloured wash over the loch behind the copy column (from the container's left edge)
+const WASH = {
+  background:
+    "linear-gradient(90deg, var(--lr-page) 0px, color-mix(in srgb, var(--lr-page) 92%, transparent) calc(max(0px, 50vw - 704px) + 520px), color-mix(in srgb, var(--lr-page) 55%, transparent) calc(max(0px, 50vw - 704px) + 740px), transparent calc(max(0px, 50vw - 704px) + 980px))",
+};
 
-function splitTagPill(tagPill = "") {
-  return normalizeText(tagPill)
-    .split(" \u2022 ")
-    .map((item) => item.trim())
-    .filter(Boolean);
-}
+// night theme: feather the photo's edges into the page
+const FADE_X = "dark:[mask-image:linear-gradient(to_right,transparent,#000_34%,#000_90%,transparent),linear-gradient(to_bottom,transparent,#000_14%,#000_76%,transparent)] dark:[mask-composite:intersect]";
+const FADE_Y = "dark:[mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_84%,transparent)]";
 
-function splitStatLabel(label = "") {
-  const clean = normalizeText(label);
-  const match = clean.match(/^([0-9,/+.]+)\s+(.+)$/);
+/* ---------- trust strip icons (brand icon set) ---------- */
+const ICON_BY_EMOJI = { "📊": "real-inquiries", "🔧": "vehicle", "💯": "real-data", "🏆": "part-of-engine-finders" };
+const ICON_ORDER = ["real-inquiries", "vehicle", "real-data", "part-of-engine-finders"];
 
-  if (!match) {
-    return { value: "", lines: [clean] };
-  }
-
-  const [, value, rest] = match;
-  return {
-    value,
-    lines: rest.split(" ").reduce(
-      (acc, word) => {
-        if (acc[0].length <= acc[1].length) {
-          acc[0] = acc[0] ? `${acc[0]} ${word}` : word;
-        } else {
-          acc[1] = acc[1] ? `${acc[1]} ${word}` : word;
-        }
-        return acc;
-      },
-      ["", ""],
-    ),
-  };
-}
-
-function ArrowIcon({ className = "h-5 w-5" }) {
+function ArrowIcon({ className }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M4 12h16M14 6l6 6-6 6" />
     </svg>
   );
 }
 
-function StatIcon({ name, isDark }) {
+// "Land Rover 200Tdi / 300Tdi Engine - Specs, Reliability & Replacement Cost"
+// -> lead "... Engine — Specs, Reliability & " + accent "Replacement Cost"
+function splitTitle(h1 = "") {
+  const title = h1.replace(/ - /g, " — ");
+  const accent = "Replacement Cost";
+  const at = title.lastIndexOf(accent);
+  return at === -1 ? { lead: title, accent: "" } : { lead: title.slice(0, at), accent: title.slice(at) };
+}
+
+// green source tag at the end of the sub-headline: "... in 2025 [EM-VERIFIED]."
+const highlightTags = (html = "") =>
+  html.replace(/ - /g, " — ").replace(/(\[[A-Z][A-Z-]*\]\.?)/g, `<span class="text-lr-green">$1</span>`);
+
+// "1,500+ Enquiries" / "[Score]/100 Engine Score" / "3 Models Fitted" / "Part of Engine Finders"
+function parseStat(label = "") {
+  const m = label.match(/^(\[[^\]]+\]|[\d,.+]+)(\/\d+)?\s+(.+)$/);
+  if (!m) {
+    const i = label.indexOf(" of ");
+    return i === -1 ? { lead: "", caption: label } : { lead: label.slice(0, i + 3), caption: label.slice(i + 4) };
+  }
+  return { value: m[1], outOf: m[2] || "", caption: m[3] };
+}
+
+function StatIcon({ name }) {
   return (
     <span
-      className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] md:h-14 md:w-14 ${
-        isDark
-          ? "border-white/14 bg-[radial-gradient(circle_at_30%_30%,rgba(31,90,185,0.24),rgba(4,12,26,0.92)_72%)]"
-          : "border-[rgba(11,103,220,0.18)] bg-[radial-gradient(circle_at_30%_30%,rgba(220,234,255,0.95),rgba(255,255,255,0.98)_72%)]"
-      }`}
+      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line/70 bg-lr-chip sm:h-13 sm:w-13 lg:h-[52px] lg:w-[52px] xl:h-[58px] xl:w-[58px] dark:bg-[radial-gradient(circle_at_50%_38%,#17402d_0%,#0b2219_72%)]"
     >
-      <HomeIcon name={name} size={36} className="h-8 w-8 md:h-9 md:w-9" />
+      <LrIcon name={name} className={ICON_LG} />
     </span>
   );
 }
 
-function StatCard({ item, index, isDark }) {
-  const stat = splitStatLabel(item.label);
+function Stat({ item, index }) {
+  const icon = ICON_BY_EMOJI[item.icon] || ICON_ORDER[index % ICON_ORDER.length];
+  const stat = parseStat(item.label);
+  const captionClass = `block ${SMALL} uppercase tracking-[0.03em] text-lr-muted`;
 
   return (
     <li
-      className={`flex min-h-[108px] items-center gap-2 rounded-[8px] border px-3 py-0 shadow-[0_20px_48px_rgba(0,0,0,0.22)] md:min-h-[82px] md:rounded-none md:border-0 md:border-r md:bg-transparent md:px-3 md:py-1.5 md:shadow-none md:last:border-r-0 ${
-        isDark
-          ? "border-white/14 bg-[linear-gradient(180deg,rgba(7,16,33,0.88)_0%,rgba(3,10,23,0.96)_100%)] md:border-white/14"
-          : "border-[rgba(11,103,220,0.18)] bg-[linear-gradient(180deg,rgba(255,255,255,0.88)_0%,rgba(239,245,252,0.96)_100%)] md:border-[rgba(11,103,220,0.16)]"
+      className={`relative flex flex-col items-center gap-2.5 px-2 py-4 text-center sm:flex-row sm:gap-4 sm:px-4 sm:py-5 sm:text-left lg:justify-center lg:gap-3 lg:px-3 lg:py-6 xl:gap-5 ${
+        index > 0
+          ? "lg:before:absolute lg:before:left-0 lg:before:top-1/2 lg:before:h-[56%] lg:before:w-px lg:before:-translate-y-1/2 lg:before:bg-lr-line"
+          : ""
       }`}
     >
-      <StatIcon name={STAT_ICONS[index % STAT_ICONS.length]} isDark={isDark} />
-      <div className="min-w-0">
+      <StatIcon name={icon} />
+      <span className="min-w-0" style={SANS}>
         {stat.value ? (
-          <p className={`text-[21px] font-bold leading-none md:text-[20px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-            {stat.value}
-          </p>
-        ) : null}
-        <div className={`${stat.value ? "mt-0.5" : ""} space-y-0`}>
-          {stat.lines.filter(Boolean).map((line) => (
-            <p
-              key={line}
-              className={`text-[11px] font-medium uppercase leading-[1.02] md:text-[11px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
-            >
-              {line}
-            </p>
-          ))}
-        </div>
-      </div>
+          <>
+            <span className="block whitespace-nowrap text-[18px] font-semibold leading-[1.1] text-lr-head min-[375px]:text-[20px] sm:text-[22px] lg:text-[21px] xl:text-[24px]">
+              {stat.value}
+              {stat.outOf && <span className="text-[0.72em]">{stat.outOf}</span>}
+            </span>
+            <span className={`mt-1 ${captionClass}`}>
+              {stat.caption}
+              {icon === "real-inquiries" && <span className="normal-case"> in 2025</span>}
+            </span>
+          </>
+        ) : (
+          <>
+            {stat.lead && <span className={`block ${SMALL} uppercase tracking-[0.03em] text-lr-head`}>{stat.lead}</span>}
+            <span className={`mt-1 ${captionClass}`}>{stat.caption}</span>
+          </>
+        )}
+      </span>
     </li>
   );
 }
 
-function HeroTitle({ title, headingClass, accentText, isDark }) {
-  const cleanTitle = normalizeText(title);
-  const accent = accentText && cleanTitle.includes(accentText) ? accentText : "Replacement Cost";
-  const accentIndex = cleanTitle.indexOf(accent);
-  const shadowClass = isDark
-    ? "[text-shadow:0_2px_8px_rgba(0,0,0,0.45)]"
-    : "[text-shadow:0_1px_3px_rgba(255,255,255,0.85),0_2px_10px_rgba(0,0,0,0.12)]";
-  const titleClass = `mt-2 max-w-[700px] font-lora text-[32px] font-medium leading-[1.08] tracking-normal md:text-[50px] md:leading-[1.16] ${shadowClass} ${headingClass}`;
-
-  if (accentIndex === -1) {
-    return <h1 className={titleClass}>{cleanTitle}</h1>;
-  }
-
-  return (
-    <h1 className={titleClass}>
-      {cleanTitle.slice(0, accentIndex)}
-      <span className="text-[var(--color-primary)]">{accent}</span>
-      {cleanTitle.slice(accentIndex + accent.length)}
-    </h1>
-  );
-}
-
-export default function EngineHero({ data, band = "page" }) {
-  const { theme } = useTheme();
+export default function EngineHero({ data, slug = "" }) {
   if (!data) return null;
 
-  const isDark = theme === "dark";
-  const metaItems = splitTagPill(data.tagPill);
-  const accentToken = metaItems[1] || "";
-  const description = normalizeText(data.subHeadline);
-  const ctaLabel = data.primaryCta?.label ? normalizeText(data.primaryCta.label).replace(/\s*\u2192$/, "") : "";
-
-  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
-  const tagPillClass = isDark
-    ? "border-white/30 bg-[rgba(2,7,17,0.5)] text-white"
-    : "border-[rgba(11,103,220,0.4)] bg-[rgba(255,255,255,0.75)] text-[var(--color-text)]";
-  const cardBorderClass = isDark ? "border-white/20" : "border-[var(--color-border)]";
-  const cardBgClass = isDark ? "bg-[rgba(2,7,17,0.45)]" : "bg-[rgba(255,255,255,0.7)]";
-  const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
-  const heroImage = isDark ? "/320d/hero_dark.webp" : "/320d/hero_light.webp";
-  const heroImageMobile = isDark ? "/320d/hero_mobile_dark1.webp" : "/320d/hero_mobile_light1.webp";
+  const pill = (data.tagPill || "").split(" • ").filter(Boolean);
+  const { lead, accent } = splitTitle(data.h1);
+  const ctaLabel = (data.primaryCta?.label || "Compare Engine Prices").replace(/\s*→\s*$/, "");
+  const tdi = /tdi/.test(slug);
+  const scene = tdi ? "/engine-hero/scene-tdi.webp" : "/engine-hero/scene.webp";
+  const engine = tdi ? "/engine-hero/engine-tdi-cut.webp" : "/engine-hero/engine-cut.webp";
+  const alt = `${pill[1] ? pill[1].replace(/<[^>]+>/g, "") : "Land Rover"} engine`;
 
   return (
-    <section className={`relative overflow-hidden text-[var(--color-text)] ${sectionBgClass(band)} ${headingClass}`}>
-      <div className="pointer-events-none absolute inset-0">
-        <Image
-          src={heroImageMobile}
-          alt=""
-          fill
-          className="object-cover object-[70%_center] md:hidden"
-          sizes="100vw"
-          priority
-        />
-        <Image
-          src={heroImage}
-          alt=""
-          fill
-          className="hidden object-cover object-[72%_center] md:block"
-          sizes="100vw"
-          priority
-        />
-        {isDark ? (
-          <>
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,28,24,0.94)_0%,rgba(13,28,24,0.55)_42%,rgba(13,28,24,0.92)_100%)] md:hidden" />
-            <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(13,28,24,1)_0%,rgba(13,28,24,0.92)_28%,rgba(13,28,24,0.45)_52%,rgba(13,28,24,0.08)_78%,transparent_100%)] md:block" />
-            <div className="absolute inset-x-0 bottom-0 hidden h-40 bg-[linear-gradient(0deg,rgba(13,28,24,1)_0%,transparent_100%)] md:block" />
-          </>
-        ) : (
-          <>
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(248,247,242,0.97)_0%,rgba(248,247,242,0.72)_36%,rgba(248,247,242,0.2)_62%,rgba(248,247,242,0.85)_100%)] md:hidden" />
-            <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(248,247,242,0.96)_26%,rgba(248,247,242,0.55)_48%,rgba(248,247,242,0.12)_72%,transparent_100%)] md:block" />
-            <div className="absolute inset-x-0 bottom-0 hidden h-40 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] md:block" />
-          </>
-        )}
+    <section className="relative overflow-hidden bg-lr-page text-lr-head" style={SANS}>
+      {/* desktop, day theme: the loch behind the band, the engine standing on its foreground */}
+      <div className="pointer-events-none absolute inset-0 hidden lg:block lg:dark:hidden" aria-hidden="true">
+        <div className="absolute inset-0 bg-[url(/home/hero-loch-day.webp)] bg-cover bg-[center_64%] [mask-image:linear-gradient(to_bottom,#000_86%,transparent)]" />
+        <div className="absolute inset-0" style={WASH} />
+        <div className={`relative h-full ${CONTAINER}`}>
+          {/* the engine's base sits on the hillside just above the stats strip */}
+          <div className="absolute bottom-[168px] right-12 w-[31%] xl:bottom-[160px] xl:w-[30%] min-[1400px]:w-[29%]">
+            <GroundedCar src={engine} priority sceneByTheme sizes="(min-width: 1024px) 32vw, 1px" />
+          </div>
+        </div>
+      </div>
+      {/* desktop, night theme: the dusk scene feathered into the page */}
+      <div className="pointer-events-none absolute inset-0 hidden dark:lg:block" aria-hidden="true">
+        <div className={`relative h-full ${CONTAINER}`}>
+          <div
+            className={`absolute right-4 top-12 aspect-[882/656] w-[46%] overflow-hidden rounded-2xl border border-lr-line shadow-[0_30px_60px_-34px_var(--lr-shadow)] md:right-8 xl:top-14 xl:w-[47%] dark:right-0 dark:top-0 dark:w-[56%] dark:rounded-none dark:border-0 dark:shadow-none xl:dark:w-[54%] ${FADE_X}`}
+          >
+            <Image src={scene} alt="" fill sizes="56vw" className="object-cover" />
+          </div>
+        </div>
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:px-8 md:pb-6 md:pt-8">
-        <div className="flex w-full max-w-[720px] flex-col gap-1.5 md:gap-2">
-          {metaItems.length > 0 ? (
-            <span className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-[8px] border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-2.5 md:py-1.5 md:text-[0.78rem] ${tagPillClass}`}>
-              <HomeIcon name="engine" size={28} className="h-7 w-7 shrink-0 md:h-5.5 md:w-5.5" />
-              {metaItems.map((item, index) => (
-                <span key={`${item}-${index}`} className="inline-flex items-center gap-x-2">
-                  {index > 0 ? <span aria-hidden="true" className="opacity-50">•</span> : null}
-                  <span className={index === 1 ? "font-semibold text-[var(--color-primary)]" : ""}>{item}</span>
-                </span>
-              ))}
-            </span>
-          ) : null}
-
-          <HeroTitle title={data.h1} headingClass={headingClass} accentText={accentToken} isDark={isDark} />
-          <span
-            className="mt-2 block h-px w-[7.5rem] md:w-[9rem]"
-            style={{
-              background: "linear-gradient(to right, var(--color-accent) 0 38%, var(--color-border) 38% 100%)",
-            }}
-            aria-hidden="true"
-          />
-
-          <p
-            className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[17px] md:leading-[1.45] ${
-              isDark
-                ? "text-white/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)] md:text-white/85 md:[text-shadow:none]"
-                : "text-black/90 [text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)] md:text-[var(--color-text-muted)] md:[text-shadow:none]"
-            }`}
-          >
-            {description.split("[BMW-VERIFIED]").map((part, index, array) => (
-              <span key={`${part}-${index}`}>
-                {part}
-                {index < array.length - 1 ? <span className="text-[var(--color-primary)]">[BMW-VERIFIED]</span> : null}
+      <div className={`relative ${CONTAINER} pb-6 pt-5 md:pb-10 md:pt-8 lg:pb-12 lg:pt-12 xl:pt-14`}>
+        {pill.length > 0 && (
+          <p className="inline-flex max-w-full flex-wrap items-center gap-x-2.5 gap-y-1 rounded-[22px] border border-lr-gold-line/60 bg-lr-panel/80 px-4 py-2 text-[13px] leading-[1.45] text-lr-body sm:gap-x-3 sm:px-5 md:text-[14px] xl:gap-x-4 xl:px-6 xl:py-2.5 xl:text-[15px] [&_a]:underline [&_a]:decoration-current/30 [&_a]:underline-offset-2">
+            {pill.map((part, i) => (
+              <span key={i} className="inline-flex items-center gap-x-2.5 sm:gap-x-3 xl:gap-x-4">
+                {i > 0 && <span className="h-[5px] w-[5px] rounded-full bg-lr-gold-line" aria-hidden="true" />}
+                <span dangerouslySetInnerHTML={{ __html: part }} />
               </span>
             ))}
           </p>
-        </div>
+        )}
 
-        <div className="mt-4 flex w-full flex-col gap-2.5 md:mt-4 md:gap-3">
-          {data.primaryCta ? (
+        <div className="lg:max-w-[50%] xl:max-w-[640px]">
+          <h1 className={`mt-5 ${H1} text-lr-head md:mt-7 lg:max-w-[10.4em] [&_a]:text-inherit [&_a]:no-underline`}>
+            <span dangerouslySetInnerHTML={{ __html: lead }} />
+            {accent && <span className="text-lr-green">{accent}</span>}
+          </h1>
+
+          {data.subHeadline && (
+            <p
+              className={`mt-4 max-w-[600px] ${BODY} text-lr-body md:mt-5 [&_a]:underline [&_a]:decoration-current/30 [&_a]:underline-offset-2`}
+              dangerouslySetInnerHTML={{ __html: highlightTags(data.subHeadline) }}
+            />
+          )}
+
+          {data.primaryCta && (
             <Link
               href="/quote"
-              className="btn-cta flex w-full items-center justify-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-4 py-3 text-[0.85rem] font-bold text-white no-underline shadow-[0_12px_28px_var(--color-shadow)] md:w-fit md:px-6 md:py-3.5 md:text-[0.95rem]"
+              className="group mt-6 flex w-full items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-lr-gold-line/70 bg-lr-brand px-4 py-[15px] text-[15px] font-medium leading-snug text-lr-on-brand shadow-[0_14px_34px_-18px_rgba(31,112,73,0.7)] transition-colors hover:border-lr-gold-line hover:bg-lr-brand-hover sm:w-fit sm:gap-3 sm:px-8 sm:text-[16px] md:mt-8 xl:px-9 xl:py-[17px] xl:text-[17px]"
             >
-              <span>{ctaLabel}</span>
-              <ArrowIcon className="h-4 w-4 shrink-0 md:h-5 md:w-5" />
+              <span className="min-w-0 text-center sm:text-left">{ctaLabel}</span>
+              <ArrowIcon className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
             </Link>
-          ) : null}
-
-          {data.trustStrip?.length > 0 ? (
-            <>
-              {/* Mobile: all 4 badges in one row */}
-              <div className={`rounded-[8px] border ${cardBorderClass} ${cardBgClass} p-2 backdrop-blur-sm md:hidden`}>
-                <div className="grid grid-cols-4 items-stretch gap-x-1">
-                  {data.trustStrip.map((item, index) => {
-                    const stat = splitStatLabel(item.label);
-                    const label = (stat.lines || []).filter(Boolean).join(" ") || "";
-                    return (
-                      <div
-                        key={`${item.label}-${index}`}
-                        className={`flex flex-col items-center justify-center gap-1 px-0.5 text-center ${index > 0 ? `border-l ${isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]"}` : ""}`}
-                      >
-                        <HomeIcon name={STAT_ICONS[index % STAT_ICONS.length]} size={44} className="h-11 w-11 shrink-0" />
-                        {stat.value ? (
-                          <strong className={`w-full text-center text-[0.78rem] font-bold leading-none ${headingClass}`}>{stat.value}</strong>
-                        ) : null}
-                        <span className={`w-full text-center text-[0.58rem] leading-tight ${badgeTextClass}`}>{label}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Desktop: original badge cards */}
-              <ul
-                className={`relative z-10 hidden w-full max-w-[980px] grid-cols-4 gap-0 overflow-hidden rounded-[8px] border shadow-[0_22px_56px_rgba(0,0,0,0.24)] md:grid ${
-                  isDark
-                    ? "border-white/14 bg-[linear-gradient(180deg,rgba(7,16,33,0.74)_0%,rgba(3,10,23,0.86)_100%)]"
-                    : "border-[rgba(11,103,220,0.16)] bg-[linear-gradient(180deg,rgba(255,255,255,0.82)_0%,rgba(239,245,252,0.94)_100%)]"
-                }`}
-              >
-                {data.trustStrip.map((item, index) => (
-                  <StatCard key={`${item.label}-${index}`} item={item} index={index} isDark={isDark} />
-                ))}
-              </ul>
-            </>
-          ) : null}
+          )}
         </div>
+
+        {/* phones / tablets, day theme: the engine on the loch-side hillside, top edge feathered into the page */}
+        <div className="relative -mx-4 mt-6 aspect-[4/3] bg-[url(/home/hero-loch-day-m.webp)] bg-cover bg-bottom [mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_86%,transparent)] sm:aspect-[16/9] md:-mx-8 md:mt-8 lg:hidden dark:hidden" role="img" aria-label={alt}>
+          <div className="absolute bottom-[16%] left-1/2 w-[50%] max-w-[360px] -translate-x-1/2 sm:bottom-[15%] sm:w-[34%]">
+            <GroundedCar src={engine} priority sceneByTheme sizes="(max-width: 640px) 50vw, 360px" />
+          </div>
+        </div>
+        {/* phones / tablets, night theme: the dusk scene between the CTA and the trust strip */}
+        <div className={`relative mt-6 hidden aspect-[882/656] overflow-hidden md:mt-8 md:aspect-[16/10] dark:-mx-4 dark:block md:dark:-mx-8 lg:dark:hidden ${FADE_Y}`}>
+          <Image src={scene} alt={alt} fill sizes="100vw" className="object-cover object-[50%_60%]" />
+        </div>
+
+        {/* trust strip */}
+        {data.trustStrip?.length > 0 && (
+          <ul className="relative grid grid-cols-2 overflow-hidden mt-6 rounded-xl border border-lr-line bg-lr-card/95 shadow-[0_24px_60px_-34px_var(--lr-shadow)] max-lg:[&>li:nth-child(even)]:border-l max-lg:[&>li:nth-child(n+3)]:border-t max-lg:[&>li]:border-lr-line lg:mt-9 max-lg:dark:mt-0 lg:grid-cols-4 lg:px-2">
+            {data.trustStrip.map((item, i) => (
+              <Stat key={item.label} item={item} index={i} />
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );

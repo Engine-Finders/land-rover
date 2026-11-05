@@ -1,8 +1,10 @@
 import { splitTag } from "@/components/variant/variantText";
+import { LABEL } from "@/lib/typeScale";
 
 // A value with its data-source tag, e.g. "£3,500–£5,800 [EM-QUOTE]": the value, then the tag as a
-// small muted label (the same treatment the Era Map gives these tags).
-export default function Tagged({ value = "", tagClassName = "border-white/15 text-white/45" }) {
+// small muted label (the same treatment the Era Map gives these tags). Short tags never break; long
+// ones wrap with the text. `tagSize` overrides the label size in narrow mobile columns.
+export default function Tagged({ value = "", tagClassName = "border-lr-line-strong text-lr-muted", tagSize = LABEL }) {
   const { text, tag } = splitTag(value);
   return (
     <>
@@ -10,7 +12,7 @@ export default function Tagged({ value = "", tagClassName = "border-white/15 tex
       {tag && (
         <>
           {" "}
-          <span className={`whitespace-nowrap rounded border px-1 py-px align-[1px] text-[10px] font-medium uppercase tracking-[0.06em] ${tagClassName}`}>{tag}</span>
+          <span className={`${tagSize} ${tag.length <= 14 ? "whitespace-nowrap" : ""} rounded border px-1.5 py-px align-[1px] ${tagClassName}`}>{tag}</span>
         </>
       )}
     </>

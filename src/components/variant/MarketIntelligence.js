@@ -1,19 +1,17 @@
 "use client";
 
 import { ComposableMap, Geographies, Geography } from "@vnedyalk0v/react19-simple-maps";
-import VIcon from "@/components/variant/VariantIcons";
+import LrIcon from "@/components/shared/LrIcon";
+import { CONTAINER, H2, H5, ICON_MD } from "@/lib/typeScale";
 // Pass TopoJSON as an object - URL fetches are HTTPS-only by default in
 // @vnedyalk0v/react19-simple-maps, so localhost http:// paths fail to load.
 import ukRegionsTopo from "../../../public/320d/uk-regions-topo.json";
 
-// Variant section: "Market Intelligence" - stat cards and the regional demand map from the page's
-// `marketIntelligence` JSON. Fixed light design: white cards with dark-green icon discs and serif
-// figures that size themselves to the card (container query units), so long values never clip.
-
-const INK = "#1f3d24";
-const GREEN = "#2f5a35";
-const GOLD = "#c9a24a";
-const SERIF = { fontFamily: "var(--font-serif-display), Georgia, 'Times New Roman', serif" };
+// Variant section 7: "Market Intelligence", built to the approved reference (day + night) - a gold
+// label, serif title and intro, six stat cards (icon disc, label, serif figure, note, source tag) and
+// the regional demand map with share bubbles, from the page's `marketIntelligence` JSON. Icon discs
+// are brand green by day and gold rings at night. Phones: two cards per row (ranges may break after
+// their dash), the map below.
 
 // Map copy labels -> England EER geo names used in the topo file.
 const REGION_ALIASES = {
@@ -30,12 +28,18 @@ const REGION_ALIASES = {
   "Yorkshire and The Humber": ["Yorkshire and The Humber"],
 };
 
-const MAP_FILL = { base: "#dcdfd8", highlight: "#2f5a35", stroke: "#ffffff" };
+const SERIF = "font-[family-name:var(--font-serif-display)]";
+const SANS = "font-[family-name:var(--font-instrument-sans)]";
+const CARD = "rounded-lg border border-lr-line bg-lr-card shadow-[0_14px_30px_-26px_var(--lr-shadow)]";
+const TAG = "text-[12.5px] font-medium uppercase tracking-[0.04em] text-lr-ink dark:text-lr-green md:text-[13px] xl:text-[15px]";
+// map fills: a quiet base, the demand regions graded by share (darkest = highest)
+const MAP_BASE = "color-mix(in srgb, var(--lr-line) 85%, var(--lr-card))";
+const MAP_HOT = ["var(--lr-green)", "color-mix(in srgb, var(--lr-green) 72%, var(--lr-card))", "color-mix(in srgb, var(--lr-green) 50%, var(--lr-card))"];
 
 // Bubble + connector layout for the right-side callouts.
 const BUBBLE_LAYOUT = {
-  London: { className: "right-[6%] top-[42%]", line: { x1: 80, y1: 50, x2: 58, y2: 54 }, rank: 1 },
-  "South East": { className: "right-[4%] top-[62%]", line: { x1: 82, y1: 70, x2: 62, y2: 68 }, rank: 2 },
+  London: { className: "right-[6%] top-[34%]", line: { x1: 80, y1: 44, x2: 58, y2: 54 }, rank: 1 },
+  "South East": { className: "right-[4%] top-[63%]", line: { x1: 82, y1: 72, x2: 62, y2: 68 }, rank: 2 },
   "South West": { className: "left-[2%] top-[78%]", line: { x1: 18, y1: 82, x2: 38, y2: 80 }, rank: 3 },
   "North West": { className: "left-[2%] top-[20%]", line: { x1: 18, y1: 26, x2: 40, y2: 28 }, rank: 4 },
   "North East": { className: "right-[8%] top-[6%]", line: { x1: 76, y1: 12, x2: 54, y2: 14 }, rank: 5 },
@@ -68,7 +72,11 @@ function parseMetric(value = "") {
   const tag = tagMatch ? tagMatch[1] : "";
   const clean = (tagMatch ? value.slice(0, tagMatch.index) : value).trim();
 
-  const numberLead = /^(?:approximately\s+)?(£[\d,.]+|[\d,.]+%|[\d,.]+)\s*(.*)$/i;
+  // a figure or range: "120,000–150,000", "£3,500–£4,500", "65%", "£1.2k"
+  const numberLead = /^(?:approximately\s+)?(£?[\d][\d,.]*k?(?:\s*[–-]\s*£?[\d][\d,.]*k?)?%?)\s*(.*)$/i;
+  // an engine code with its note: "11L (Defender-spec 200Tdi)" -> "11L" + "(Defender-spec 200Tdi)"
+  const code = clean.match(/^([A-Z0-9][A-Z0-9/]{1,9})\s+(\(.+\))$/);
+  if (code && /\d/.test(code[1])) return { title: "", stat: code[1], subtext: code[2], tag };
 
   const dashIndex = clean.indexOf(" - ");
   if (dashIndex !== -1) {
@@ -96,138 +104,104 @@ function highlightedGeoNames(regions) {
   return names;
 }
 
-function itemIcon(label = "") {
+// card icon, matched on its label: chain / gauge / pound / engine / calendar / bars
+function CardIcon({ label = "", title = "" }) {
   const t = label.toLowerCase();
-  if (/failure|problem/.test(t)) return "alert";
-  if (/mileage|miles/.test(t)) return "gauge";
-  if (/cost|price/.test(t)) return "pound";
-  if (/code|engine/.test(t)) return "engine";
-  if (/season|month|time/.test(t)) return "calendar";
-  if (/region/.test(t)) return "users";
-  return "info";
+  const disc = "flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lr-brand text-white md:h-12 md:w-12 lg:h-10 lg:w-10 xl:h-12 xl:w-12 dark:border-[1.5px] dark:border-lr-gold-line/70 dark:bg-transparent dark:text-lr-gold";
+  if (/cost|price/.test(t)) return <span className={disc}><LrIcon name="best-used-buy-2" tone="current" className={ICON_MD} /></span>;
+  if (/season|month|time/.test(t)) return <span className={disc}><LrIcon name="market-insight" tone="current" className={ICON_MD} /></span>;
+  const name = /failure|problem/.test(t) ? (/belt|chain/i.test(title) ? "chain" : "expensive-failure")
+    : /mileage|miles/.test(t) ? "meter" : /code|engine/.test(t) ? "engine" : /region/.test(t) ? "real-inquiries" : "real-inquiries";
+  return <span className={disc}><LrIcon name={name} tone="current" className={ICON_MD} /></span>;
 }
+const dash = (v = "") => String(v).replace(/ - /g, " — ");
 
-// one line, scaled to the card width; long text values wrap at a smaller size instead
-function figureSize(value, max) {
-  const cq = Math.min(18, 96 / (String(value).length * 0.56));
-  return `min(${max}px, ${cq.toFixed(1)}cqw)`;
-}
-
-function StatCard({ icon, label, title, stat, subtext, tag }) {
-  const wrap = String(stat).length > 14;
+function StatCard({ label, title, stat, subtext, tag }) {
+  // a failure / text-only card: the name in the serif and its note, no big figure
+  const textual = !/[\d£]/.test(stat) && !/^[A-Z][a-z]+\/[A-Z]/.test(stat);
+  const head = textual ? stat : title;
+  const figure = textual ? "" : stat;
   return (
-    <div className="@container flex min-w-0 flex-col rounded-xl border border-[#e6e2d8] bg-white p-3.5 shadow-[0_8px_24px_-18px_rgba(31,61,36,0.4)] md:p-5">
-      <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white md:h-12 md:w-12" style={{ background: INK }}>
-          <VIcon name={icon} className="h-5 w-5 md:h-6 md:w-6" strokeWidth={1.8} />
-        </span>
-        <p className="text-[12.5px] font-medium leading-snug text-[#2b3229] md:text-[13.5px]">{label}</p>
+    <div className={`${CARD} flex min-w-0 flex-col p-3.5 md:p-5 lg:p-4 xl:p-5`}>
+      <div className="flex flex-col items-start gap-2 min-[400px]:flex-row min-[400px]:items-center min-[400px]:gap-3">
+        <CardIcon label={label} title={head} />
+        <p className="text-[13px] font-medium leading-snug text-lr-body md:text-[13.5px] lg:text-[12.5px] xl:text-[15px]">{label}</p>
       </div>
-      {title && <p className="mt-3 text-[14px] font-semibold leading-snug text-[#141a13] md:text-[15px]">{title}</p>}
-      {wrap ? (
-        <p className={`${title ? "mt-1.5" : "mt-3"} break-words leading-[1.15] text-[#141a13]`} style={{ ...SERIF, fontSize: "min(26px, 15cqw)" }}>{stat}</p>
-      ) : (
-        <p className={`${title ? "mt-1.5" : "mt-3"} whitespace-nowrap leading-[1.1] text-[#141a13]`} style={{ ...SERIF, fontSize: figureSize(stat, 34) }}>{stat}</p>
+      {head && <p className={`${SERIF} mt-2.5 text-[16px] leading-snug text-lr-head md:mt-3 md:text-[18px]`}>{dash(head)}</p>}
+      {figure && (
+        <p className={`${SERIF} mt-2.5 text-[21px] leading-[1.12] tracking-[-0.01em] text-lr-ink min-[400px]:text-[23px] md:mt-3 md:text-[26px] lg:text-[23px] xl:text-[28px] min-[1400px]:text-[31px] dark:text-lr-green`} dangerouslySetInnerHTML={{ __html: figure.replace(/([–\-/])/, "$1<wbr>") }} />
       )}
-      {subtext && <p className="mt-1.5 text-[12.5px] leading-snug text-[#4a5048] md:text-[14px]">{subtext}</p>}
-      {tag && <p className="mt-auto pt-2 text-[11px] font-semibold uppercase tracking-[0.08em]" style={{ color: GREEN }}>{tag}</p>}
+      {subtext && <p className="mt-2 text-[13.5px] leading-snug text-lr-body md:text-[14.5px] xl:text-[15px]">{dash(subtext)}</p>}
+      {tag && <p className={`${TAG} mt-auto pt-3`}>[{tag}]</p>}
     </div>
   );
 }
 
 function RegionCard({ label, regions, tag }) {
   return (
-    <div className="flex min-w-0 flex-col rounded-xl border border-[#e6e2d8] bg-white p-3.5 shadow-[0_8px_24px_-18px_rgba(31,61,36,0.4)] md:p-5">
-      <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white md:h-12 md:w-12" style={{ background: INK }}>
-          <VIcon name="users" className="h-5 w-5 md:h-6 md:w-6" strokeWidth={1.8} />
-        </span>
-        <p className="text-[12.5px] font-medium leading-snug text-[#2b3229] md:text-[13.5px]">{label}</p>
+    <div className={`${CARD} flex min-w-0 flex-col p-3.5 md:p-5 lg:p-4 xl:p-5`}>
+      <div className="flex flex-col items-start gap-2 min-[400px]:flex-row min-[400px]:items-center min-[400px]:gap-3">
+        <CardIcon label={label} />
+        <p className="text-[13px] font-medium leading-snug text-lr-body md:text-[13.5px] lg:text-[12.5px] xl:text-[15px]">{label}</p>
       </div>
-      <ul className="mt-3 divide-y divide-[#ece8df]">
+      <ul className="mt-3 divide-y divide-lr-line">
         {regions.map((r) => (
-          <li key={r.name} className="flex items-baseline justify-between gap-2 py-1.5 first:pt-0">
-            <span className="text-[13px] text-[#4a5048] md:text-[14px]">{r.name}</span>
-            <span className="text-[18px] leading-none text-[#141a13] md:text-[21px]" style={SERIF}>{r.share}</span>
+          <li key={r.name} className="flex items-baseline justify-between gap-2 py-2">
+            <span className="text-[13.5px] text-lr-head md:text-[14.5px] xl:text-[15px]">{r.name}</span>
+            <span className="text-[14px] font-semibold text-lr-head md:text-[15px]">{r.share}</span>
           </li>
         ))}
       </ul>
-      {tag && <p className="mt-auto pt-2 text-[11px] font-semibold uppercase tracking-[0.08em]" style={{ color: GREEN }}>{tag}</p>}
+      {tag && <p className={`${TAG} mt-auto pt-3`}>[{tag}]</p>}
     </div>
   );
 }
 
 function RegionalDemandMap({ regions }) {
-  const highlighted = highlightedGeoNames(regions);
-  // Prefer London → South East stack like the reference; otherwise top 2 by share.
-  const bubbleRegions = [...regions]
-    .filter((region) => BUBBLE_LAYOUT[region.name])
-    .sort((a, b) => {
-      const rankA = BUBBLE_LAYOUT[a.name]?.rank ?? 99;
-      const rankB = BUBBLE_LAYOUT[b.name]?.rank ?? 99;
-      if (rankA !== rankB) return rankA - rankB;
-      return parseFloat(b.share) - parseFloat(a.share);
-    })
-    .slice(0, 2);
+  // shade rank by share, highest first
+  const ranked = [...regions].sort((a, b) => parseFloat(b.share) - parseFloat(a.share));
+  const shade = new Map();
+  ranked.forEach((r, i) => (REGION_ALIASES[r.name] || []).forEach((g) => shade.set(g, MAP_HOT[Math.min(i, MAP_HOT.length - 1)])));
+  const bubbleRegions = regions.filter((region) => BUBBLE_LAYOUT[region.name]).slice(0, 3);
 
   return (
-    <div className="flex h-full flex-col overflow-visible rounded-xl border border-[#e6e2d8] bg-white p-4 shadow-[0_8px_24px_-18px_rgba(31,61,36,0.4)] md:p-6">
-      <h3 className="text-[20px] leading-tight text-[#141a13] md:text-[23px]" style={SERIF}>
-        Regional Demand Breakdown
-      </h3>
-      <div className="relative mt-2 min-h-[340px] w-full flex-1 overflow-visible">
-        <ComposableMap
-          projection="geoMercator"
-          projectionConfig={{ center: [-1.5, 52.6], scale: 3000 }}
-          className="absolute inset-0 h-full w-full"
-        >
+    <div className={`${CARD} flex h-full flex-col p-4 md:p-6`}>
+      <h3 className={`${H5} text-lr-head`}>Regional Demand Breakdown</h3>
+      <div className="relative mt-3 aspect-[4/3.3] w-full max-w-[520px] self-center lg:mt-2 lg:aspect-auto lg:min-h-[360px] lg:max-w-none lg:flex-1">
+        <ComposableMap projection="geoMercator" projectionConfig={{ center: [-1.6, 52.7], scale: 2900 }} className="absolute inset-0 h-full w-full">
           <Geographies geography={ukRegionsTopo}>
             {({ geographies }) =>
-              geographies.map((geo) => {
-                const name = geo.properties.EER13NM;
-                const isHot = highlighted.has(name);
-                return (
-                  <Geography
-                    key={geo.rsmKey}
-                    geography={geo}
-                    fill={isHot ? MAP_FILL.highlight : MAP_FILL.base}
-                    stroke={MAP_FILL.stroke}
-                    strokeWidth={0.55}
-                    style={{ default: { outline: "none" }, hover: { outline: "none" }, pressed: { outline: "none" } }}
-                  />
-                );
-              })
+              geographies.map((geo) => (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  fill={shade.get(geo.properties.EER13NM) || MAP_BASE}
+                  stroke="var(--lr-card)"
+                  strokeWidth={0.6}
+                  style={{ default: { outline: "none" }, hover: { outline: "none" }, pressed: { outline: "none" } }}
+                />
+              ))
             }
           </Geographies>
         </ComposableMap>
 
-        <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="pointer-events-none absolute inset-0 z-[5] h-full w-full overflow-visible">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="pointer-events-none absolute inset-0 z-[5] h-full w-full overflow-visible text-lr-line-strong" aria-hidden="true">
           {bubbleRegions.map((region) => {
             const line = BUBBLE_LAYOUT[region.name]?.line;
             if (!line) return null;
             const midX = (line.x1 + line.x2) / 2 + 4;
             const midY = (line.y1 + line.y2) / 2 - 4;
-            return (
-              <path
-                key={region.name}
-                d={`M ${line.x1} ${line.y1} Q ${midX} ${midY} ${line.x2} ${line.y2}`}
-                fill="none"
-                stroke="#9fb39a"
-                strokeWidth="0.4"
-                strokeLinecap="round"
-                vectorEffect="non-scaling-stroke"
-              />
-            );
+            return <path key={region.name} d={`M ${line.x1} ${line.y1} Q ${midX} ${midY} ${line.x2} ${line.y2}`} fill="none" stroke="currentColor" strokeWidth="1" vectorEffect="non-scaling-stroke" />;
           })}
         </svg>
 
         {bubbleRegions.map((region) => (
           <div
             key={region.name}
-            className={`absolute z-10 flex h-[4.25rem] w-[4.25rem] shrink-0 flex-col items-center justify-center rounded-full border-[1.5px] border-[#9fb39a] bg-white text-center shadow-[0_3px_10px_rgba(0,0,0,0.1)] ${BUBBLE_LAYOUT[region.name]?.className || ""}`}
+            className={`absolute z-10 flex h-[68px] w-[68px] flex-col items-center justify-center rounded-full xl:h-[92px] xl:w-[92px] border border-lr-line-strong bg-lr-card text-center shadow-[0_4px_14px_-6px_var(--lr-shadow)] md:h-[76px] md:w-[76px] ${BUBBLE_LAYOUT[region.name].className}`}
           >
-            <span className="text-[1.05rem] font-bold leading-none text-[#1f3d24]">{region.share}</span>
-            <span className="mt-1 max-w-[88%] text-[0.58rem] leading-[1.1] text-black/65">{region.name}</span>
+            <span className={`${SERIF} text-[19px] leading-none text-lr-ink md:text-[21px] dark:text-lr-head`}>{region.share}</span>
+            <span className="mt-1 max-w-[86%] text-[10.5px] leading-[1.1] text-lr-body md:text-[11px] xl:text-[15px]">{region.name}</span>
           </div>
         ))}
       </div>
@@ -235,7 +209,7 @@ function RegionalDemandMap({ regions }) {
   );
 }
 
-export default function MarketIntelligence({ data }) {
+export default function MarketIntelligence({ data, variantName = "" }) {
   if (!data?.items?.length) return null;
 
   const items = data.items;
@@ -243,34 +217,30 @@ export default function MarketIntelligence({ data }) {
   const { regions, tag } = regionalItem ? parseRegionalDemand(regionalItem.value) : { regions: [], tag: "" };
 
   return (
-    <section className="relative overflow-hidden bg-[#f6f5f1] text-[#141a13]">
-      <div className="relative mx-auto max-w-8xl px-4 py-10 sm:px-6 md:px-8 md:py-14">
-        <div className="flex items-center gap-3">
-          <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-[#8a6a1f] md:text-[13px]">Engine Snapshot</p>
-          <span className="h-px w-10 md:w-14" style={{ background: GOLD }} aria-hidden="true" />
-        </div>
-        <h2 className="mt-2 text-[34px] leading-[1.08] sm:text-[42px] lg:text-[52px]" style={{ ...SERIF, color: INK }}>Market Intelligence</h2>
-
-        <div className={`mt-6 grid gap-4 lg:gap-5 ${regions.length ? "lg:grid-cols-[minmax(0,1.65fr)_minmax(0,1fr)]" : ""}`}>
-          <div className="grid grid-cols-2 gap-2.5 md:grid-cols-3 md:gap-4">
-            {items.map((item) =>
-              item.label === "Regional Demand" ? (
-                regions.length ? (
+    <section className={`relative overflow-hidden bg-lr-page text-lr-head ${SANS}`}>
+      <div className={`relative ${CONTAINER} py-9 md:py-12 lg:py-14`}>
+        <div className="grid gap-4 lg:gap-5 lg:grid-cols-[minmax(0,1.65fr)_minmax(0,1fr)]">
+          <div className="min-w-0">
+            <div className="flex items-center gap-3">
+              <p className="text-[13px] font-semibold uppercase tracking-[0.08em] text-lr-gold md:text-[14px] xl:text-[15px]">Market Snapshot</p>
+              <span className="h-px w-10 bg-lr-gold-line md:w-14" aria-hidden="true" />
+            </div>
+            <h2 className={`${H2} mt-3 text-lr-head`}>Market Intelligence</h2>
+            <p className="mt-3 text-[15px] leading-relaxed text-lr-body md:text-[16px]">
+              Real data from thousands of {variantName || "Land Rover"} enquiries in 2025.
+            </p>
+            <div className="mt-5 grid grid-cols-2 gap-2.5 md:grid-cols-3 md:gap-4">
+              {items.map((item) =>
+                item.label === "Regional Demand" && regions.length ? (
                   <RegionCard key={item.label} label={item.label} regions={regions} tag={tag} />
                 ) : (
-                  <StatCard key={item.label} icon="users" label={item.label} {...parseMetric(item.value)} />
-                )
-              ) : (
-                <StatCard key={item.label} icon={itemIcon(item.label)} label={item.label} {...parseMetric(item.value)} />
-              ),
-            )}
+                  <StatCard key={item.label} label={item.label} {...parseMetric(item.value)} />
+                ),
+              )}
+            </div>
           </div>
 
-          {regions.length > 0 && (
-            <div className="lg:h-full">
-              <RegionalDemandMap regions={regions} />
-            </div>
-          )}
+          {regions.length > 0 && <RegionalDemandMap regions={regions} />}
         </div>
       </div>
     </section>

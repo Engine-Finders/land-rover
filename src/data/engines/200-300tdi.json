@@ -222,7 +222,8 @@
       },
       {
         "metric": "Configuration / Displacement",
-        "value": "2.5L I4 Turbo"
+        "value": "2.5L I4 Turbo",
+        "note": "Mechanical four-cylinder turbo-diesel with proven field-serviceable architecture."
       },
       {
         "metric": "Power Range",
@@ -230,7 +231,8 @@
       },
       {
         "metric": "Years Produced",
-        "value": "200Tdi: 1989–1994 · 300Tdi: 1994–2006"
+        "value": "200Tdi: 1989–1994 · 300Tdi: 1994–2006",
+        "note": "Two generations of Land Rover's most respected mechanical turbo diesels."
       },
       {
         "metric": "Models Fitted (Land Rover only)",
@@ -283,8 +285,8 @@
       ]
     },
     "oneLineVerdict": "The 200Tdi and 300Tdi are among the most reliable diesel fours ever built - both are fully mechanical and simple to fix anywhere - buy on condition and documented history.",
-    "bestFor": "",
-    "avoidIf": ""
+    "bestFor": "Owners who value rugged simplicity, field repairability, and long-term durability.",
+    "avoidIf": "You want refinement, modern NVH, or a fully documented example is not available."
   },
   "compatibility": {
     "columns": [

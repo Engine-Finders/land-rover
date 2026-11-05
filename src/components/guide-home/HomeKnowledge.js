@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon from "@/components/guide-home/GuideIcon";
-import { serif } from "@/lib/guideFonts";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_XL, LABEL, STAT_LG } from "@/lib/typeScale";
+
+// Follows the site theme (day / night): colours come from the --lr-* tokens; the data-note photo fades
+// into its card through CSS masks, so it blends with either theme's card.
 
 const pad = (n) => String(n).padStart(2, "0");
 
@@ -9,23 +12,23 @@ function Centre({ item, n, cta }) {
   return (
     <Link
       href={item.href}
-      className="group flex overflow-hidden rounded-md border border-black/[0.07] bg-white shadow-[0_6px_18px_-14px_rgba(0,0,0,0.45)] transition-shadow hover:shadow-[0_10px_24px_-14px_rgba(0,0,0,0.5)]"
+      className="group flex overflow-hidden rounded-md border font-normal border-lr-line bg-lr-card shadow-[0_6px_18px_-14px_var(--lr-shadow)] transition-shadow hover:shadow-[0_10px_24px_-12px_var(--lr-shadow)]"
     >
       {/* number block */}
-      <span className={`${serif.className} flex w-[58px] shrink-0 items-center justify-center bg-[#0e2b20] text-[27px] text-[#d4a54c] sm:w-[72px] sm:text-[32px] xl:w-[80px] xl:text-[38px]`}>
+      <span className={`${STAT_LG} flex w-[58px] shrink-0 items-center justify-center bg-lr-brand text-lr-gold-line sm:w-[72px] xl:w-[80px] dark:bg-lr-chip dark:text-lr-gold`}>
         {pad(n)}
       </span>
-      <span className="flex min-w-0 flex-1 items-center gap-3 px-3 py-3 sm:gap-5 sm:px-5 xl:gap-7 xl:px-7 xl:py-4">
-        <span className="shrink-0 text-[#1c1c1c]">
-          <GuideIcon name={item.icon} className="h-[34px] w-[34px] sm:h-11 sm:w-11 xl:h-[60px] xl:w-[60px]" />
+      <span className="flex min-w-0 flex-1 items-center gap-3 px-3 py-3 sm:gap-5 sm:px-5 xl:gap-6 xl:px-6 xl:py-4">
+        <span className="shrink-0 text-lr-head">
+          <GuideIcon name={item.icon} className={ICON_XL} />
         </span>
-        <span className="min-w-0 flex-1 xl:pl-6">
-          <span className="block text-[15px] font-semibold leading-snug text-[#141414] sm:text-[16.5px] xl:text-[18px]">{item.title}</span>
-          <span className="mt-1 block text-[12.5px] leading-[1.5] text-[#444] sm:text-[13.5px] xl:mt-1.5 xl:max-w-[260px] xl:text-[13px] 2xl:max-w-[280px]">{item.text}</span>
+        <span className="min-w-0 flex-1 xl:pl-2">
+          <span className={`${H6} block text-lr-head`}>{item.title}</span>
+          <span className={`${BODY_SM} mt-1 block text-lr-body xl:mt-1.5`}>{item.text}</span>
         </span>
-        <span className="flex shrink-0 items-center gap-3 self-stretch sm:border-l sm:border-black/10 sm:pl-5 xl:pl-8">
-          <span className="hidden text-[16px] font-medium text-[#141414] sm:inline">{cta}</span>
-          <span className="text-[#141414] transition-transform group-hover:translate-x-0.5">
+        <span className="flex shrink-0 items-center gap-3 self-stretch sm:border-l sm:border-lr-line sm:pl-5 xl:pl-6">
+          <span className="hidden text-[16px] font-medium text-lr-head sm:inline">{cta}</span>
+          <span className="text-lr-head transition-transform group-hover:translate-x-0.5 group-hover:text-lr-green">
             <GuideIcon name="arrow-circle" className="h-[30px] w-[30px] sm:h-9 sm:w-9" />
           </span>
         </span>
@@ -39,12 +42,12 @@ export default function HomeKnowledge({ data }) {
   const { note } = data;
 
   return (
-    <section className="relative bg-[#f7f7f5] text-[#141414]">
-      <div className="mx-auto max-w-[1536px] px-3 pb-10 pt-9 sm:px-6 lg:px-12 lg:pb-14 lg:pt-12">
-        <h2 className={`${serif.className} px-1 text-[clamp(36px,10vw,60px)] leading-[1.05] tracking-[-0.01em] sm:px-0`}>
-          {h1} <span className="text-[#1f5c3d]">{h2}</span>
+    <section className="relative bg-lr-band text-lr-head">
+      <div className={`${CONTAINER} pb-10 pt-9 lg:pb-14 lg:pt-12`}>
+        <h2 className={H2}>
+          {h1} <span className="text-lr-green">{h2}</span>
         </h2>
-        <p className="mt-3 max-w-[700px] px-1 text-[14px] leading-[1.6] text-[#3a3a3a] sm:px-0 sm:text-[15px] lg:mt-5">{data.subhead}</p>
+        <p className={`${BODY} mt-3 max-w-[760px] text-lr-body lg:mt-5`}>{data.subhead}</p>
 
         <div className="mt-6 grid gap-2 lg:mt-7 xl:grid-flow-col xl:grid-cols-2 xl:grid-rows-4 xl:gap-x-6 xl:gap-y-1.5">
           {data.items.map((item, i) => (
@@ -53,11 +56,11 @@ export default function HomeKnowledge({ data }) {
         </div>
 
         {/* data note */}
-        <div className="relative mt-5 overflow-hidden rounded-md bg-[#0e2b20] text-white shadow-[0_14px_30px_-18px_rgba(0,0,0,0.6)] lg:mt-6">
+        <div className="relative mt-5 overflow-hidden rounded-md border border-lr-line bg-lr-card text-lr-head shadow-[0_14px_30px_-18px_var(--lr-shadow)] lg:mt-6">
           {/* desktop: wide landscape photo filling the right side. The box takes the photo's own aspect ratio
               from the panel height so the whole Defender stays in frame (capped at 48% and centred below xl).
               Its left edge blends into the panel with a transparency mask over the first 14% - landscape only,
-              the car starts further in - so no green is ever painted over the car itself. */}
+              the car starts further in - so no colour is ever painted over the car itself. */}
           <div
             className="absolute inset-y-0 right-0 hidden w-[48%] [mask-image:linear-gradient(to_right,transparent,#000_14%)] lg:block xl:aspect-[976/375] xl:w-auto xl:max-w-[48%]"
             aria-hidden="true"
@@ -65,14 +68,14 @@ export default function HomeKnowledge({ data }) {
             <Image src={note.wideImage} alt="" fill quality={90} className="object-cover object-center" sizes="(min-width: 1024px) 620px, 0px" />
           </div>
           <div className="relative flex items-start gap-4 px-4 pb-5 pt-5 sm:items-center sm:gap-6 sm:px-7 lg:min-h-[230px] lg:max-w-[52%] lg:py-8">
-            <span className="flex h-[54px] w-[54px] shrink-0 items-center justify-center rounded-full border border-[#d4a54c]/70 text-[#d4a54c] sm:h-[78px] sm:w-[78px]">
-              <GuideIcon name="shield" className="h-7 w-7 sm:h-10 sm:w-10" />
+            <span className="flex h-[54px] w-[54px] shrink-0 items-center justify-center rounded-full border border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-[52px] sm:w-[52px]">
+              <GuideIcon name="shield" className={ICON_LG} />
             </span>
             <div className="min-w-0">
-              <p className="text-[13.5px] font-medium uppercase tracking-[0.12em] text-[#d4a54c] sm:text-[15px]">{note.title}</p>
-              <p className="mt-1.5 text-[13px] leading-[1.7] text-white/90 sm:text-[14.5px] lg:leading-[1.85]">
+              <p className={`${LABEL} text-lr-gold`}>{note.title}</p>
+              <p className={`${BODY_SM} mt-1.5 text-lr-body`}>
                 {note.before}
-                <span className="whitespace-nowrap text-[#4fae7e]">{note.tag}</span>
+                <span className="whitespace-nowrap text-lr-green">{note.tag}</span>
                 {note.after}
               </p>
             </div>

@@ -64,8 +64,12 @@ export default async function EnginePage({ params }) {
   const data = await getPageData(entry.dataFile);
   if (!data) notFound();
 
+  // "Land Rover 200Tdi / 300Tdi Engine - Specs, ..." -> "Land Rover 200Tdi / 300Tdi"
+  const engineName = (data.hero?.h1 || "").split(" Engine - ")[0];
+  const yearsProduced = data.atAGlance?.rows?.find((r) => r.metric === "Years Produced")?.value || "";
+
   return (
-    <main className="flex flex-col">
+    <main className="lr-redesign flex flex-col">
       {data.meta?.jsonLd && (
         <script
           type="application/ld+json"
@@ -74,13 +78,13 @@ export default async function EnginePage({ params }) {
           }}
         />
       )}
-      <EngineHero data={data.hero} band="page" />
-      <AtAGlance data={data.atAGlance} band="soft" />
-      <VerdictRating data={data.verdictRating} band="page" />
-      <Compatibility data={data.compatibility} band="soft" />
-      <CostGuide data={data.costGuide} band="page" />
-      <FAQAccordion data={data.faq} band="soft" />
-      <TrustCta data={data.trustCta} band="page" />
+      <EngineHero data={data.hero} slug={slug} />
+      <AtAGlance data={data.atAGlance} title={data.hero?.h1} slug={slug} />
+      <VerdictRating data={data.verdictRating} />
+      <Compatibility data={data.compatibility} engineName={engineName} years={yearsProduced} slug={slug} />
+      <CostGuide data={data.costGuide} engineName={engineName} />
+      <FAQAccordion data={data.faq} engineName={engineName} slug={slug} />
+      <TrustCta data={data.trustCta} />
     </main>
   );
 }

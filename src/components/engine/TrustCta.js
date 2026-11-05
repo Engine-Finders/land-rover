@@ -1,195 +1,97 @@
-"use client";
-
 import Link from "next/link";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { useTheme } from "@/components/shared/themeProvider";
-import { sectionH2 } from "@/components/models/sectionTypography";
+import { CONTAINER, SANS } from "@/components/engine/engineTheme";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY_SM, H2, H5, H6, ICON_MD, ICON_XL, LABEL } from "@/lib/typeScale";
 
-function cleanText(text = "") {
-  return String(text)
-    .replace(/\u00c2\u00a3|\u00a3/g, "\u00a3")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u201c|\u00c3\u00a2\u00e2\u20ac\u201d|\u00e2\u20ac\u201c|\u00e2\u20ac\u201d|\u2013|\u2014/g, "\u2013")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u02dc|\u00e2\u20ac\u2018|\u2011/g, "-")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u00a2|\u00e2\u20ac\u00a2|\u2022/g, "\u2022")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+const CARD = "rounded-xl border border-lr-line bg-lr-card shadow-[0_14px_30px_-26px_var(--lr-shadow)] dark:bg-[linear-gradient(180deg,#17302a_0%,#12271f_100%)]";
 
-function shortEngineName(engineLabel = "") {
-  return cleanText(engineLabel).replace(/^BMW\s+/i, "") || "Engine";
-}
+// Engine section: Why Owners Trust Us - three trust cards ("Title: text" points from the page's
+// `trustCta` JSON) and the closing call-to-action bar with the quote button. Fixed dark design,
+// straight under the FAQ on the same band. 2xl values are the reference design at 1536px; xl is
+// the same layout scaled for 1280-1535px; md shows the cards three across; phones stack.
 
-function parseTrustPoint(point = "") {
-  const clean = cleanText(point);
-  const index = clean.indexOf(":");
-  if (index === -1) return { title: clean, text: "" };
-  return {
-    title: clean.slice(0, index).trim(),
-    text: clean.slice(index + 1).trim(),
-  };
-}
 
+// brand icons: compare -> magnifier, UK coverage -> globe, everything else -> vetted specialist
 function TrustIcon({ title }) {
-  const key = cleanText(title).toLowerCase();
-  let path = <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />;
-
-  if (key.includes("compare")) {
-    path = (
-      <>
-        <circle cx="11" cy="11" r="6" />
-        <path d="m20 20-3.5-3.5M9 11h4M11 9v4" />
-      </>
-    );
-  } else if (key.includes("coverage") || key.includes("uk")) {
-    path = (
-      <>
-        <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z" />
-        <circle cx="12" cy="10" r="2.2" />
-      </>
-    );
-  }
-
+  const key = title.toLowerCase();
+  const name = key.includes("compare") ? "scope-decision" : key.includes("coverage") || key.includes("uk") ? "uk-focused" : "vetted-specialist";
   return (
-    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-        {path}
-      </svg>
+    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-lr-line bg-lr-chip md:h-14 md:w-14 xl:h-[52px] xl:w-[52px]">
+      <LrIcon name={name} className={ICON_MD} />
     </span>
   );
 }
 
-function highlightConfidence(text = "") {
-  const clean = cleanText(text);
-  const phrase = "get back on the road with confidence.";
-  const index = clean.toLowerCase().indexOf(phrase);
-
-  if (index === -1) return clean;
-
-  return (
-    <>
-      {clean.slice(0, index)}
-      <span className="font-semibold text-[var(--color-primary)]">{clean.slice(index, index + phrase.length)}</span>
-      {clean.slice(index + phrase.length)}
-    </>
-  );
+function parsePoint(point = "") {
+  const i = point.indexOf(":");
+  return i === -1 ? { title: point, text: "" } : { title: point.slice(0, i).trim(), text: point.slice(i + 1).trim() };
 }
 
-export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
-  const { theme } = useTheme();
+const dash = (t = "") => t.replace(/ - /g, " — ");
+
+// "Find the best ... rely on. Compare real prices ... and get back on the road with confidence."
+function splitFinal(text = "") {
+  const at = text.indexOf(". ");
+  const title = at === -1 ? text : text.slice(0, at + 1);
+  const rest = at === -1 ? "" : text.slice(at + 2);
+  return { title, rest: rest.replace(/(get back on the road with confidence)/i, `<span class="text-lr-green">$1</span>`) };
+}
+
+export default function TrustCta({ data }) {
   if (!data) return null;
-
-  const isDark = theme === "dark";
-  const engineCode = shortEngineName(engineLabel);
-  const points = (data.trustPoints || []).map(parseTrustPoint);
-  const ctaLabel = cleanText(data.ctaButton?.label || "").replace(/\s*→\s*$/, "");
-
-  const lightCard =
-    "border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_10px_28px_var(--color-shadow)]";
-  const darkCard = "border-[var(--color-border)] bg-[var(--color-surface)]";
+  const points = (data.trustPoints || []).map(parsePoint);
+  const { title, rest } = splitFinal(data.finalCta || "");
+  const label = (data.ctaButton?.label || "Compare Engine Prices Now").replace(/\s*→\s*$/, "").replace(/^Compare Land Rover /i, "Compare ");
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-9">
-      <div className={`absolute inset-0 ${isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page)]"}`} />
+    <section className="relative bg-lr-page text-lr-head" style={SANS}>
+      <div className={`${CONTAINER} pb-12 pt-10 md:pb-16 md:pt-14 xl:pb-16 xl:pt-8`}>
+        {points.length > 0 && (
+          <>
+            <header className="mb-6 md:mb-8">
+              <p className={`flex items-center gap-3 ${LABEL} text-lr-green`}>
+                <span className="h-px w-7 bg-current xl:w-[24px]" aria-hidden="true" />
+                Trust &amp; Proof
+              </p>
+              <h2 className={`mt-2.5 ${H2} text-lr-head xl:mt-3`}>Why Owners Trust Us</h2>
+            </header>
+            <ul className="grid gap-3 md:grid-cols-3 md:gap-4 xl:gap-[22px]">
+              {points.map((p) => (
+                <li key={p.title} className={`${CARD} flex items-start gap-4 px-4 py-4 md:flex-col md:gap-3 md:px-5 md:py-5 xl:flex-row xl:gap-[24px] xl:pb-[8px] xl:pl-[14px] xl:pr-[16px] xl:pt-[14px]`}>
+                  <TrustIcon title={p.title} />
+                  <div className="min-w-0">
+                    <h3 className={`${H6} text-lr-head xl:pt-[2px]`}>{p.title}</h3>
+                    <p className={`mt-1.5 ${BODY_SM} text-lr-body xl:mt-[6px]`} dangerouslySetInnerHTML={{ __html: dash(p.text) }} />
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div>
-          <HeadingEyebrow text="TRUST & PROOF" />
-          <h2 className={`mt-3 font-bold tracking-normal ${sectionH2}`}>
-            Why Owners <span className="text-[var(--color-primary)]">Trust Us</span>
-          </h2>
-        </div>
-
-        {/* Desktop */}
-        <div className="mt-4 hidden gap-3 md:grid md:grid-cols-3">
-          {points.map((point) => (
-            <article
-              key={point.title}
-              className={`rounded-xl border px-4 py-4 ${isDark ? darkCard : lightCard}`}
-            >
-              <div className="flex items-start gap-3">
-                <TrustIcon title={point.title} />
-                <div className="min-w-0">
-                  <p className="text-[15px] font-bold text-[var(--color-text)]">{point.title}</p>
-                  <p className="mt-1.5 text-[13px] leading-[1.45] text-[var(--color-text-muted)]">{point.text}</p>
-                </div>
+        {(title || data.ctaButton) && (
+          <div className="relative mt-5 overflow-hidden rounded-2xl border border-lr-line bg-lr-panel px-5 dark:bg-[linear-gradient(100deg,#183229_0%,#142b23_45%,#11251e_100%)] py-5 md:mt-6 md:px-7 md:py-6 xl:mt-6 xl:flex xl:items-center xl:gap-[18px] xl:rounded-[12px] xl:py-[10px] xl:pl-[22px] xl:pr-[20px]">
+            {/* soft green glow behind the shield */}
+            <span className="pointer-events-none absolute -left-10 top-1/2 h-40 w-40 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(123,196,126,0.16),transparent_70%)]" aria-hidden="true" />
+            <div className="relative flex items-start gap-4 md:items-center xl:min-w-0 xl:flex-1 xl:gap-[21px]">
+              <LrIcon name="genuine-failure-data" className={ICON_XL} />
+              <span className="hidden h-[52px] w-px shrink-0 bg-lr-line xl:block" aria-hidden="true" />
+              <div className="min-w-0">
+                {title && <p className={`${H5} text-lr-head`}>{title}</p>}
+                {rest && <p className={`mt-1.5 ${BODY_SM} text-lr-body xl:mt-[6px]`} dangerouslySetInnerHTML={{ __html: rest }} />}
               </div>
-            </article>
-          ))}
-        </div>
-
-        <div
-          className={`mt-3 hidden items-center gap-4 rounded-xl border px-4 py-3.5 md:flex ${
-            isDark
-              ? "border-[var(--color-border)] bg-[var(--color-primary-soft)]"
-              : "border-[var(--color-border)] bg-[var(--color-primary-soft)] shadow-[0_10px_28px_var(--color-shadow)]"
-          }`}
-        >
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface)] text-[var(--color-primary)] shadow-[0_4px_12px_var(--color-shadow)]">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-              <path d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />
-            </svg>
-          </span>
-          <p className="min-w-0 flex-1 text-[13px] leading-[1.45] text-[var(--color-text)]">
-            {highlightConfidence(data.finalCta)}
-          </p>
-          {data.ctaButton?.href ? (
+            </div>
             <Link
               href="/quote"
-              className="btn-cta inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] px-5 text-[13px] font-bold text-white"
+              className="group relative mt-4 flex items-center justify-center gap-2.5 rounded-lg border border-lr-brand bg-lr-brand px-5 py-3.5 text-center text-[15px] font-medium leading-snug text-lr-on-brand shadow-[0_10px_26px_-14px_rgba(31,112,73,0.8)] transition-colors hover:bg-lr-brand-hover md:mt-5 md:w-fit md:px-7 xl:mt-0 xl:shrink-0 xl:px-[17px] xl:py-[14px] xl:text-[17px]"
             >
-              {ctaLabel || `Compare BMW ${engineCode} Engine Prices Now`} →
-            </Link>
-          ) : null}
-        </div>
-
-        {/* Mobile */}
-        <div className="mt-3 grid gap-2.5 md:hidden">
-          {points.map((point) => (
-            <article
-              key={point.title}
-              className={`flex items-start gap-3 rounded-xl border px-3.5 py-3 ${isDark ? darkCard : lightCard}`}
-            >
-              <TrustIcon title={point.title} />
-              <div className="min-w-0">
-                <p className="text-[14px] font-bold text-[var(--color-text)]">{point.title}</p>
-                <p className="mt-1 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">{point.text}</p>
-              </div>
-            </article>
-          ))}
-
-          <article
-            className={`rounded-xl border px-3.5 py-4 text-center ${
-              isDark
-                ? "border-[var(--color-border)] bg-[var(--color-primary-soft)]"
-                : "border-[var(--color-border)] bg-[var(--color-primary-soft)] shadow-[0_10px_28px_var(--color-shadow)]"
-            }`}
-          >
-            <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-surface)] text-[var(--color-primary)] shadow-[0_4px_12px_var(--color-shadow)]">
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-                <path d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />
+              {label}
+              <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M4 12h16M14 6l6 6-6 6" />
               </svg>
-            </span>
-            <p className="mt-3 text-[20px] font-bold leading-[1.25] text-[var(--color-text)]">
-              Find the best BMW {engineCode} engine replacement UK drivers rely on.
-            </p>
-            <p className="mt-2 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">
-              {highlightConfidence(
-                data.finalCta?.includes("Compare")
-                  ? data.finalCta.slice(data.finalCta.indexOf("Compare"))
-                  : data.finalCta,
-              )}
-            </p>
-            {data.ctaButton?.href ? (
-              <Link
-                href="/quote"
-                className="btn-cta mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[var(--color-primary)] px-4 text-[13px] font-bold text-white"
-              >
-                <span>{ctaLabel || `Compare BMW ${engineCode} Engine Prices Now`}</span>
-                <span aria-hidden="true">→</span>
-              </Link>
-            ) : null}
-          </article>
-        </div>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

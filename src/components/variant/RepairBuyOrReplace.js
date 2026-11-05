@@ -3,7 +3,8 @@ import Image from "next/image";
 import VIcon from "@/components/variant/VariantIcons";
 import { carRatio } from "@/lib/carGeometry";
 import { stripArrow, stripBullet, topicIcon } from "@/components/variant/variantText";
-import { BODY, BODY_SM, CONTAINER, H2, H5, H6, SMALL } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, CONTAINER, H2, H5, H6, ICON_LG, ICON_MD, ICON_SM, SMALL } from "@/lib/typeScale";
 
 // Variant section: "Repair, Buy, or Replace?" - repairability table, buy/avoid checklist,
 // closing verdict, compare CTA and trust strip, from the page's `repairBuyOrReplace` JSON.
@@ -16,11 +17,11 @@ const STATUS = {
 };
 
 const TRUST = [
-  { icon: "users", label: "20+ Vetted Specialists UK Network" },
-  { icon: "shield", label: "12-Month Warranty as Standard" },
-  { icon: "truck", label: "Nationwide Delivery & Collection" },
-  { icon: "pound", label: "Transparent Pricing, No Hidden Fees" },
-  { icon: "star", label: "Thousands of Owners Helped" },
+  { icon: "vetted-specialist", label: "20+ Vetted Specialists UK Network" },
+  { icon: "genuine-failure-data", label: "12-Month Warranty as Standard" },
+  { icon: "uk-wide-delivery", label: "Nationwide Delivery & Collection" },
+  { icon: "best-used-buy-2", label: "Transparent Pricing, No Hidden Fees" },
+  { icon: "users", label: "Thousands of Owners Helped" },
 ];
 
 // "✅ Yes" / "❌ No" / "⚠️ Sometimes" -> status + label without the emoji
@@ -53,7 +54,7 @@ function Card({ className = "", children }) {
 function CardTitle({ icon, children }) {
   return (
     <h3 className={`${H5} flex items-center gap-3 text-lr-head`}>
-      <VIcon name={icon} className="h-6 w-6 shrink-0 text-lr-gold md:h-7 md:w-7" />
+      <LrIcon name={icon} className={ICON_MD} />
       <span dangerouslySetInnerHTML={{ __html: children }} />
     </h3>
   );
@@ -84,7 +85,7 @@ function CheckList({ tone, title, items }) {
           return (
             <li key={text} className="flex items-start gap-3 py-3 last:pb-0.5">
               <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${c.icon}`}>
-                <VIcon name={topicIcon(text)} className="h-[18px] w-[18px]" />
+                <LrIcon name={topicIcon(text)} tone="current" className={ICON_SM} />
               </span>
               <p className={`${BODY_SM} pt-1 text-lr-body`} dangerouslySetInnerHTML={{ __html: text }} />
             </li>
@@ -149,13 +150,13 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
         <div className="mt-6 grid gap-4 lg:mt-8 lg:gap-5">
           {repair?.rows?.length > 0 && (
             <Card className="p-4 md:p-5">
-              <CardTitle icon="wrench">{repair.title || "Can It Be Repaired?"}</CardTitle>
+              <CardTitle icon="expert-verified">{repair.title || "Can It Be Repaired?"}</CardTitle>
 
               {/* mobile list */}
               <ul className="mt-4 divide-y divide-lr-line rounded-lg border border-lr-line md:hidden">
                 {repair.rows.map((r) => (
                   <li key={r.problem} className="flex gap-3 p-3">
-                    <VIcon name={topicIcon(r.problem)} className="mt-0.5 h-7 w-7 shrink-0 text-lr-gold" />
+                    <LrIcon name={topicIcon(r.problem)} className={`mt-0.5 ${ICON_SM}`} />
                     <div className="min-w-0 flex-1">
                       <div className="flex items-start justify-between gap-3">
                         <p className={`${BODY_SM} font-medium text-lr-head`} dangerouslySetInnerHTML={{ __html: r.problem }} />
@@ -184,7 +185,7 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
                       <tr key={r.problem} className={`${BODY_SM} border-t border-lr-line`}>
                         <th scope="row" className="py-3 pl-3 pr-3 font-normal">
                           <span className="flex items-center gap-3">
-                            <VIcon name={topicIcon(r.problem)} className="h-8 w-8 shrink-0 text-lr-gold" />
+                            <LrIcon name={topicIcon(r.problem)} className={ICON_MD} />
                             <span className="leading-snug text-lr-head" dangerouslySetInnerHTML={{ __html: r.problem }} />
                           </span>
                         </th>
@@ -201,7 +202,7 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
 
           {checks && (checks.buyIf?.length || checks.avoidIf?.length) ? (
             <Card className="p-4 md:p-5">
-              <CardTitle icon="cart">{checks.title || "Check These First"}</CardTitle>
+              <CardTitle icon="symptoms">{checks.title || "Check These First"}</CardTitle>
               <div className="mt-4 grid gap-3 md:grid-cols-2 md:gap-4">
                 <CheckList tone="buy" title="Buy If:" items={checks.buyIf} />
                 <CheckList tone="avoid" title="Avoid If:" items={checks.avoidIf} />
@@ -251,7 +252,7 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
               <div className="relative">
                 <div className="flex items-center gap-4 md:gap-6">
                   <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-lr-gold-line text-lr-gold md:h-[72px] md:w-[72px]">
-                    <VIcon name="pound" className="h-7 w-7 md:h-9 md:w-9" />
+                    <LrIcon name="best-used-buy-2" className={ICON_LG} />
                   </span>
                   <h3 className={`${H5} text-lr-head`}>
                     Don&apos;t guess. Get the right engine at the right price.
@@ -273,7 +274,7 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
         <ul className="mt-4 grid grid-cols-1 gap-x-4 gap-y-3 rounded-xl border border-lr-line bg-lr-card p-4 shadow-[0_20px_44px_-34px_var(--lr-shadow)] min-[420px]:grid-cols-2 md:grid-cols-3 lg:mt-5 lg:grid-cols-5 lg:divide-x lg:divide-lr-line lg:px-2">
           {TRUST.map((t) => (
             <li key={t.label} className="flex items-center gap-3 lg:justify-center lg:px-3">
-              <VIcon name={t.icon} className="h-6 w-6 shrink-0 text-lr-gold" />
+              <LrIcon name={t.icon} className={ICON_SM} />
               <span className={`${SMALL} text-lr-body`}>{t.label}</span>
             </li>
           ))}

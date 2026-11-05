@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LandRoverLogo from "@/components/guide-home/LandRoverLogo";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
-import { CONTAINER, H1, H4, H6, BODY, BODY_SM, NUM, SMALL, LABEL, STAT } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H1, H4, H6, ICON_LG, ICON_MD, ICON_SM, ICON_XL, LABEL, NUM, SMALL, STAT } from "@/lib/typeScale";
 
 // Follows the site theme (navbar day / night button). Day: white page, the Defender photo framed as a
 // rounded card beside the headline (desktop) or under the CTA (phones). Night: the photo bleeds off the
@@ -56,7 +56,7 @@ export default function HomeSec1({ hero }) {
             <div className="mt-5 grid grid-cols-4 rounded-[20px] border border-lr-line bg-lr-card/80 px-1 py-3.5 shadow-[0_10px_40px_-10px_var(--lr-shadow)] backdrop-blur-md dark:bg-lr-card/50">
               {hero.stats.map((s, i) => (
                 <div key={s.value} className={`flex flex-col items-center px-1 ${i > 0 ? "border-l border-lr-line" : ""}`}>
-                  <GuideIcon name={s.icon} className="h-7 w-7 text-lr-green" />
+                  <GuideIcon name={s.icon} className={ICON_LG} />
                   <p className={`${NUM} mt-2 text-lr-head`}>{s.value}</p>
                   <p className={`${SMALL} mt-0.5 text-lr-body`}>
                     {s.icon === "book" ? (
@@ -112,7 +112,7 @@ export default function HomeSec1({ hero }) {
                 {hero.trust.items.map((t) => (
                   <div key={t.title} className="flex items-center gap-2.5 rounded-2xl border border-lr-line bg-lr-panel/60 p-2.5 sm:gap-3 sm:p-3">
                     <span className="flex h-11 w-11 shrink-0 sm:h-13 sm:w-13 items-center justify-center rounded-full border border-lr-green/35 bg-lr-chip text-lr-green dark:bg-[radial-gradient(circle_at_50%_35%,#1d4a35,#0d2219)] dark:shadow-[0_0_14px_-2px_rgba(70,180,120,0.35)]">
-                      <GuideIcon name={t.icon} className="h-5 w-5 sm:h-6 sm:w-6" />
+                      <GuideIcon name={t.icon} className={ICON_SM} />
                     </span>
                     <p className={`${SMALL} text-lr-body`}>
                       <span className="font-semibold text-lr-head">{t.mobileTitle}</span>
@@ -177,7 +177,7 @@ export default function HomeSec1({ hero }) {
                   <Arrow className="h-5 w-5" />
                 </Link>
                 <div className="flex items-center gap-3">
-                  <GuideIcon name="shield" className="h-9 w-9 text-lr-green" />
+                  <GuideIcon name="shield" className={ICON_LG} />
                   <p className={`${SMALL} text-lr-body`}>
                     <span className="block font-medium text-lr-head">{hero.independent.title}</span>
                     {hero.independent.text}
@@ -191,7 +191,7 @@ export default function HomeSec1({ hero }) {
               {hero.stats.map((s, i) => (
                 <div key={s.value} className={`flex items-center justify-center gap-5 px-4 ${i > 0 ? "border-l border-lr-line" : ""}`}>
                   <span className="shrink-0 text-lr-gold">
-                    <GuideIcon name={s.icon} className="h-12 w-12" />
+                    <GuideIcon name={s.icon} className={ICON_XL} />
                   </span>
                   <div>
                     <p className={`${STAT} text-lr-head`}>{s.value}</p>
@@ -217,7 +217,7 @@ export default function HomeSec1({ hero }) {
                 {hero.trust.items.map((t, i) => (
                   <div key={t.title} className={`flex flex-col items-center px-8 ${i > 0 ? "border-l border-lr-line" : ""}`}>
                     <span className="flex h-15 w-15 items-center justify-center rounded-full border border-lr-gold-line/55 bg-lr-chip text-lr-gold">
-                      <GuideIcon name={t.icon} className="h-7 w-7" />
+                      <GuideIcon name={t.icon} className={ICON_MD} />
                     </span>
                     <h3 className={`${H6} mt-4 max-w-[260px] text-lr-head`}>{t.title}</h3>
                     <p className={`${BODY_SM} mt-2 max-w-[270px] text-lr-muted`}>{t.text}</p>

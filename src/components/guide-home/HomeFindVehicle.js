@@ -3,7 +3,7 @@ import Link from "next/link";
 import LandRoverLogo from "@/components/guide-home/LandRoverLogo";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
-import { CONTAINER, H2, H6, BODY, BODY_SM, SMALL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_XS, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): every colour comes from the --lr-* tokens, apart from the
 // orange "Most Enquired" badge, which has no token (a day / night pair in the same orange).
@@ -50,7 +50,7 @@ function ModelRow({ m }) {
 
       <span className="flex w-[100px] shrink-0 items-center gap-2 border-l min-[420px]:w-[132px] min-[420px]:whitespace-nowrap border-lr-line py-1.5 pl-2.5 sm:w-[170px] sm:gap-3 sm:pl-5 lg:w-[180px]">
         <span className={TONES[m.tone]}>
-          <GuideIcon name={m.icon} className="h-[22px] w-[22px] sm:h-6 sm:w-6" />
+          <GuideIcon name={m.icon} className={ICON_XS} />
         </span>
         <span className={`${SMALL} font-medium leading-[1.2] ${TONES[m.tone]}`}>{m.badge}</span>
       </span>
@@ -106,7 +106,7 @@ export default function HomeFindVehicle({ data }) {
 
           <div className="relative grid grid-cols-[auto_1fr] items-start gap-x-3 gap-y-3.5 px-3 pb-3.5 pt-3 sm:gap-x-4 sm:p-6 lg:flex lg:items-center lg:gap-7 lg:px-8 lg:py-7">
             <span className="flex h-[46px] w-[46px] items-center justify-center rounded-full border border-lr-gold-line/60 bg-lr-chip/70 text-lr-green sm:h-16 sm:w-16 lg:h-[76px] lg:w-[76px]">
-              <GuideIcon name="shield" className="h-[22px] w-[22px] sm:h-8 sm:w-8 lg:h-9 lg:w-9" />
+              <GuideIcon name="shield" className={ICON_LG} />
             </span>
 
             <div className="max-w-[420px] lg:max-w-[440px]">

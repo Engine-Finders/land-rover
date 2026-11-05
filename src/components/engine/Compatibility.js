@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CONTAINER, SANS } from "@/components/engine/engineTheme";
-import { BODY, BODY_SM, H2, H6, LABEL, SMALL } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, H2, H6, ICON_LG, ICON_MD, LABEL, SMALL } from "@/lib/typeScale";
 
 // Engine section: Compatible Land Rover Models - heading, cross-brand badge, production timeline,
 // one card per compatibility row (side-profile photo of that generation, generation pill, badge,
@@ -9,28 +10,6 @@ import { BODY, BODY_SM, H2, H6, LABEL, SMALL } from "@/lib/typeScale";
 // Fixed light design. 2xl values are the reference design at 1672px; xl is the same layout scaled
 // for 1280-1535px; below xl the engine moves beside / above the heading.
 
-
-const line = { fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round" };
-
-function ShieldIcon({ className }) {
-  return (
-    <svg viewBox="3 1.6 18 20.8" className={className} aria-hidden="true">
-      <path {...line} strokeWidth="1.8" d="M12 2.6 19.6 5.6v6c0 4.7-3.2 8-7.6 9.8-4.4-1.8-7.6-5.1-7.6-9.8v-6z" style={{ color: "var(--lr-ink)" }} />
-      <path fill="none" stroke="var(--lr-gold-line)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="m8.6 12 2.4 2.4 4.5-4.7" />
-    </svg>
-  );
-}
-
-function DocCheckIcon({ className }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-      <path {...line} d="M14 3H7.5A1.5 1.5 0 0 0 6 4.5v15A1.5 1.5 0 0 0 7.5 21h4.8M14 3l4 4M14 3v4h4v4.5" />
-      <path {...line} d="M9 10.5h5M9 13.5h3.5M9 16.5h2.5" />
-      <circle cx="17" cy="17.2" r="4" fill="var(--lr-brand)" />
-      <path fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="m15.2 17.3 1.2 1.2 2.4-2.5" />
-    </svg>
-  );
-}
 
 // side-profile studio photo for a model + generation (public/engine-compat/*.webp, transparent cut-outs)
 const CAR_RULES = [
@@ -160,7 +139,7 @@ export default function Compatibility({ data, engineName = "", years = "", slug 
 
         {/* cross-brand badge */}
         <aside className={`${CARD} flex items-start gap-4 self-start px-4 py-4 [grid-area:badge] md:max-w-[440px] md:px-5 md:py-5 xl:mr-6 xl:max-w-none xl:gap-[21px] xl:pb-[17px] xl:pl-[19px] xl:pr-[14px] xl:pt-[17px]`}>
-          <ShieldIcon className="h-11 w-9 shrink-0 md:h-[52px] md:w-[43px] xl:mt-[3px] xl:h-[52px] xl:w-[43px]" />
+          <LrIcon name="independent-and-impartial" className={`${ICON_LG} xl:mt-[3px]`} />
           <div className="min-w-0">
             <p className={`${LABEL} text-lr-ink dark:text-lr-green`}>{brand.title}</p>
             <p className={`mt-1.5 ${SMALL} leading-[1.55] text-lr-body xl:mt-[8px]`}>{brand.text}</p>
@@ -206,7 +185,7 @@ export default function Compatibility({ data, engineName = "", years = "", slug 
 
           <article className={`${CARD} flex flex-col p-4 xl:pb-[16px] xl:pl-[20px] xl:pr-[12px] xl:pt-[14px] ${SPAN[fill(n, 2)]} ${SPAN_SM[fill(n, 3)]} ${SPAN_LG[fill(n, 4)]}`}>
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-lr-chip text-lr-ink shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] xl:h-[56px] xl:w-[56px] dark:text-lr-green">
-              <DocCheckIcon className="h-6 w-6 xl:h-[30px] xl:w-[30px]" />
+              <LrIcon name="oem-references" className={ICON_MD} />
             </span>
             <p className={`mt-3 ${H6} uppercase leading-[1.25] text-lr-head xl:mt-[13px]`}>Compatibility Verified</p>
             <p className={`mt-1.5 max-w-[340px] ${BODY_SM} text-lr-body xl:mt-[8px]`}>All compatibility data verified from model catalogues and specialist databases.</p>

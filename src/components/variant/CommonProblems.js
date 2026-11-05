@@ -1,7 +1,7 @@
-import VIcon from "@/components/variant/VariantIcons";
 import Tagged from "@/components/variant/Tagged";
 import { topicIcon } from "@/components/variant/variantText";
-import { BODY_SM, CONTAINER, H2, H6, LABEL, SMALL } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY_SM, CONTAINER, H2, H6, ICON_MD, ICON_SM, LABEL, SMALL } from "@/lib/typeScale";
 
 // Variant section: the engine's common problems as cards (symptoms, mileage, costs, urgency,
 // recommendation, failure guide link) from the page's `commonProblems` JSON. Follows the site theme
@@ -19,7 +19,7 @@ const URGENCY = {
 function Row({ icon, label, children }) {
   return (
     <li className="flex gap-2.5">
-      <VIcon name={icon} className="mt-1 h-4 w-4 shrink-0 text-lr-muted" />
+      <LrIcon name={icon} className={`mt-0.5 ${ICON_SM}`} />
       <p className={`${BODY_SM} min-w-0 text-lr-body`}>
         <span className="font-semibold text-lr-head">{label}:</span> {children}
       </p>
@@ -33,8 +33,8 @@ function ProblemCard({ p, n }) {
   return (
     <article className="flex flex-col rounded-xl border border-lr-line bg-lr-card p-4 shadow-[0_20px_44px_-34px_var(--lr-shadow)] md:p-5">
       <header className="flex items-center gap-3.5">
-        <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border ${u.text} ${u.disc}`}>
-          <VIcon name={topicIcon(p.title)} className="h-6 w-6" />
+        <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border xl:h-14 xl:w-14 ${u.text} ${u.disc}`}>
+          <LrIcon name={topicIcon(p.title)} tone="current" className={ICON_MD} />
         </span>
         <h3 className={`${H6} text-lr-head`}>
           {n}. <span dangerouslySetInnerHTML={{ __html: p.title }} />
@@ -42,12 +42,12 @@ function ProblemCard({ p, n }) {
       </header>
 
       <ul className="mt-4 space-y-2 border-t border-lr-line pt-4">
-        {p.symptoms && <Row icon="clipboard" label="Symptoms"><Tagged value={p.symptoms} /></Row>}
-        {p.typicalMileage && <Row icon="gauge" label="Typical Mileage"><Tagged value={p.typicalMileage} /></Row>}
-        {p.repairCost && <Row icon="receipt" label="Repair Cost"><Tagged value={p.repairCost} /></Row>}
+        {p.symptoms && <Row icon="symptoms" label="Symptoms"><Tagged value={p.symptoms} /></Row>}
+        {p.typicalMileage && <Row icon="meter" label="Typical Mileage"><Tagged value={p.typicalMileage} /></Row>}
+        {p.repairCost && <Row icon="best-used-buy-2" label="Repair Cost"><Tagged value={p.repairCost} /></Row>}
         {p.replacementCost && <Row icon="engine" label="Replacement Cost"><Tagged value={p.replacementCost} /></Row>}
         {p.urgency && (
-          <Row icon="alert" label="Urgency">
+          <Row icon="check-watch" label="Urgency">
             <span className={`font-semibold ${u.text}`}>{p.urgency.label}</span>
             {p.urgency.text && <> — <span dangerouslySetInnerHTML={{ __html: p.urgency.text }} /></>}
           </Row>
@@ -56,7 +56,7 @@ function ProblemCard({ p, n }) {
 
       {p.recommendation && (
         <div className="mt-3 flex gap-2.5 rounded-lg bg-lr-panel p-3">
-          <VIcon name="thumb" className="mt-1 h-4 w-4 shrink-0 text-lr-green" />
+          <LrIcon name="good-choice" className={`mt-0.5 ${ICON_SM}`} />
           <p className={`${BODY_SM} text-lr-body`}>
             <span className="block font-semibold text-lr-head">Our recommendation:</span>
             <span dangerouslySetInnerHTML={{ __html: p.recommendation }} />

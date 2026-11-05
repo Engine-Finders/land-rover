@@ -3,7 +3,8 @@ import Image from "next/image";
 import Tagged from "@/components/variant/Tagged";
 import VIcon from "@/components/variant/VariantIcons";
 import { stripArrow, stripBullet } from "@/components/variant/variantText";
-import { BODY, BODY_SM, CONTAINER, H2, H5, LABEL, SMALL } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, CONTAINER, H2, H5, ICON_SM, LABEL, SMALL } from "@/lib/typeScale";
 
 // Variant section: engine codes table (engine photo, code, years, power, enquiries, recon cost),
 // technical specs and a compare CTA, from the page's `engineCodes` JSON. Follows the site theme
@@ -20,12 +21,12 @@ function splitSpecsTitle(title = "") {
 function specIcon(label = "") {
   const t = label.toLowerCase();
   if (/displacement|capacity/.test(t)) return "engine";
-  if (/cylinder/.test(t)) return "cylinders";
-  if (/compression/.test(t)) return "gauge";
-  if (/fuel|injection/.test(t)) return "fuel";
+  if (/cylinder/.test(t)) return "ingenium";
+  if (/compression/.test(t)) return "meter";
+  if (/fuel|injection/.test(t)) return "hpfp";
   if (/turbo|torque|power|output/.test(t)) return "turbo";
-  if (/valve|timing|cam/.test(t)) return "cog";
-  return "info";
+  if (/valve|timing|cam/.test(t)) return "timing-chain";
+  return "note";
 }
 
 export default function EngineCodes({ data, engine = "/variant/sec10_engine.webp" }) {
@@ -117,7 +118,7 @@ export default function EngineCodes({ data, engine = "/variant/sec10_engine.webp
                   return (
                     <div key={label} className={`${BODY_SM} grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-3 py-3`}>
                       <dt className="flex items-center gap-3 text-lr-body">
-                        <VIcon name={specIcon(label)} className="h-6 w-6 shrink-0 text-lr-green" />
+                        <LrIcon name={specIcon(label)} className={ICON_SM} />
                         {label}
                       </dt>
                       <dd className="leading-snug text-lr-head" dangerouslySetInnerHTML={{ __html: s.value }} />

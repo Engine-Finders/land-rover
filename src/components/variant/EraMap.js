@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { BODY, BODY_SM, CONTAINER, H2, H6, LABEL, SMALL } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_MD, LABEL, SMALL } from "@/lib/typeScale";
 
 const DESKTOP_COLS = "grid-cols-[100px_98px_1.1fr_1.2fr_1.1fr_1.6fr] lg:grid-cols-[130px_110px_1.3fr_1.2fr_1.1fr_1.8fr]";
 
@@ -11,14 +11,12 @@ const DESKTOP_COLS = "grid-cols-[100px_98px_1.1fr_1.2fr_1.1fr_1.6fr] lg:grid-col
 // era note) from the page's `eraMap` JSON. Follows the site theme (day / night); `band` picks the
 // page or the alternate section background.
 
-// black icon artwork, turned silver on the night theme in CSS (follows data-theme directly)
-const ICON_TONE = "dark:brightness-0 dark:invert";
-
+// brand icons (outline family): cost data, verified reliability, experts, updated
 const TRUST_POINTS = [
-  { icon: "checkValue", label: "Real UK Cost Data" },
-  { icon: "expertVerified", label: "Verified Reliability" },
+  { icon: "honest-repair-vs-replace", label: "Real UK Cost Data" },
+  { icon: "genuine-failure-data", label: "Verified Reliability" },
   { icon: "users", label: "Expert Insights" },
-  { icon: "checkWatch", label: "Updated for 2025" },
+  { icon: "gearbox-problem", label: "Updated for 2025" },
 ];
 
 function splitBracketTag(value = "") {
@@ -192,7 +190,7 @@ export default function EraMap({ data, band = "soft", car = null }) {
         <div className="mt-4 flex flex-col items-start gap-6 rounded-[8px] border border-lr-line bg-lr-card p-5 shadow-[0_20px_44px_-34px_var(--lr-shadow)] md:p-7 lg:flex-row lg:items-center lg:gap-8">
           <div className="flex min-w-0 flex-1 items-start gap-4 lg:items-center">
             <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-lr-green/20 bg-lr-chip">
-              <HomeIcon name="safestBuy" size={40} tone="black" className={`h-10 w-10 ${ICON_TONE}`} />
+              <LrIcon name="generation-honest-rated" className={ICON_MD} />
             </span>
             <div>
               <p className={`${H6} text-lr-head`}>Why use this era map?</p>
@@ -212,7 +210,7 @@ export default function EraMap({ data, band = "soft", car = null }) {
           <ul className="grid w-full grid-cols-2 gap-x-5 gap-y-4 sm:grid-cols-4 lg:w-auto lg:shrink-0 lg:grid-cols-2 lg:gap-x-8">
             {TRUST_POINTS.map((point) => (
               <li key={point.label} className="flex items-center gap-2.5">
-                <HomeIcon name={point.icon} size={36} tone="black" className={`h-8 w-8 shrink-0 md:h-9 md:w-9 ${ICON_TONE}`} />
+                <LrIcon name={point.icon} className={ICON_MD} />
                 <span className={`${SMALL} font-medium text-lr-head lg:whitespace-nowrap`}>{point.label}</span>
               </li>
             ))}

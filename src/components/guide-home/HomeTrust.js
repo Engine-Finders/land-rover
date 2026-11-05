@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
-import { CONTAINER, H2, H5, H6, BODY, BODY_SM, SMALL, LABEL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H5, H6, ICON_MD, ICON_SM, ICON_XL, ICON_XS, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens; the photos fade into
 // their cards through CSS masks, so they blend with either theme's card.
@@ -13,7 +13,7 @@ function MobileCard({ c }) {
   return (
     <li className="flex gap-4 rounded-lg border border-lr-line bg-lr-card p-4 shadow-[0_6px_18px_-14px_var(--lr-shadow)] sm:gap-5 sm:p-5">
       <span className={`${ICON_DISC} h-[56px] w-[56px] sm:h-[66px] sm:w-[66px]`}>
-        <GuideIcon name={c.icon} className="h-7 w-7 sm:h-8 sm:w-8" />
+        <GuideIcon name={c.icon} className={ICON_MD} />
       </span>
       <span className="min-w-0">
         <span className={`${H6} block text-lr-head`}>{c.title}</span>
@@ -29,7 +29,7 @@ function DesktopCard({ c }) {
   return (
     <li className="flex flex-col items-center rounded-lg border border-lr-line bg-lr-card px-4 pb-6 pt-5 text-center shadow-[0_6px_18px_-14px_var(--lr-shadow)]">
       <span className={`${ICON_DISC} h-[60px] w-[60px]`}>
-        <GuideIcon name={c.icon} className="h-8 w-8" />
+        <GuideIcon name={c.icon} className={ICON_MD} />
       </span>
       <span className={`${H6} mt-4 block text-lr-head`}>{c.title}</span>
       <span className="mt-3 block h-[2px] w-9 bg-lr-gold-line" />
@@ -51,7 +51,7 @@ function Commitment({ c }) {
 
       <div className="relative px-5 pb-5 pt-5 sm:w-[57%] sm:px-7 sm:py-7 xl:w-[57%] xl:px-8 xl:py-8">
         <p className={`${LABEL} flex items-center gap-3 text-lr-gold`}>
-          <GuideIcon name="shield" className="h-6 w-6" />
+          <GuideIcon name="shield" className={ICON_XS} />
           {c.eyebrow}
         </p>
         <h3 className={`${H5} mt-3 text-lr-head`}>{c.title}</h3>
@@ -76,7 +76,7 @@ function Faq({ faq }) {
   return (
     <div className="rounded-lg border border-lr-line bg-lr-card px-4 shadow-[0_6px_18px_-14px_var(--lr-shadow)] sm:px-6">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1 border-b border-lr-line py-3.5 sm:flex-nowrap sm:py-4">
-        <GuideIcon name="question" className="h-6 w-6 shrink-0 text-lr-ink" />
+        <GuideIcon name="question" className={ICON_SM} />
         <h3 className={`${H6} min-w-0 flex-1 basis-[220px] uppercase tracking-[0.03em] text-lr-ink sm:basis-auto`}>{faq.title}</h3>
         <Link href={faq.cta.href} className={`${SMALL} ml-9 inline-flex shrink-0 items-center gap-1.5 font-medium text-lr-ink hover:underline sm:ml-0`}>
           {faq.cta.label} <Arrow className="h-4 w-4" />
@@ -114,7 +114,7 @@ function Cta({ cta }) {
       <div className="relative flex flex-col gap-4 px-5 py-5 sm:flex-row sm:items-center sm:gap-6 sm:px-7 lg:w-[66%] lg:py-6">
         <div className="flex items-start gap-4 sm:min-w-0 sm:flex-1 sm:items-center">
           <span className="shrink-0 text-lr-gold">
-            <GuideIcon name="shield" className="h-12 w-12 sm:h-14 sm:w-14" />
+            <GuideIcon name="shield" className={ICON_XL} />
           </span>
           <span className="min-w-0">
             <span className={`${H5} block text-lr-head`}>{cta.title}</span>
@@ -129,7 +129,7 @@ function Cta({ cta }) {
             {cta.label} <Arrow className="h-4 w-4" />
           </QuoteLink>
           <p className={`${SMALL} mt-2 flex items-center justify-center gap-2 text-lr-muted sm:justify-start`}>
-            <GuideIcon name="lock" className="h-3.5 w-3.5" />
+            <GuideIcon name="lock" className={ICON_XS} />
             {cta.small}
           </p>
         </div>
@@ -186,14 +186,14 @@ export default function HomeTrust({ data }) {
 
         {/* data note */}
         <div className="mt-4 flex gap-4 rounded-lg border border-lr-line bg-lr-card px-4 py-4 sm:px-6 xl:items-center xl:py-3.5">
-          <GuideIcon name="shield" className="h-7 w-7 shrink-0 text-lr-ink" />
+          <GuideIcon name="shield" className={ICON_SM} />
           <div className="min-w-0 xl:flex xl:flex-1 xl:items-center xl:gap-8">
             <p className={`${BODY_SM} text-lr-body xl:flex-1`}>
               <span className="font-semibold text-lr-head">{note.title}</span> <span className="break-words">{note.text}</span>
             </p>
             <ul className={`${SMALL} mt-2 flex flex-wrap gap-x-5 gap-y-1 text-lr-body xl:mt-0 xl:shrink-0 xl:items-center xl:border-l xl:border-lr-line xl:pl-8`}>
               <li className="hidden xl:block">
-                <GuideIcon name="star" className="h-5 w-5 text-lr-body" />
+                <GuideIcon name="star" className={ICON_XS} />
               </li>
               {note.stats.map((s) => (
                 <li key={s} className="flex items-center gap-2">

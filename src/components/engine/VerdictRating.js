@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CONTAINER, SANS, SERIF } from "@/components/engine/engineTheme";
-import { BODY, BODY_SM, H2, H5, H6, LABEL, STAT_LG } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, H2, H5, H6, ICON_LG, ICON_MD, ICON_XL, LABEL, STAT_LG } from "@/lib/typeScale";
 
 // Engine section: Verdict & Rating - rating stars, confidence line, verdict quote and best-for /
 // avoid-if cards on the left; the five-row Engine Score breakdown with its total on the right.
@@ -8,85 +9,14 @@ import { BODY, BODY_SM, H2, H5, H6, LABEL, STAT_LG } from "@/lib/typeScale";
 // lower left cards. Desktop (xl) is two columns; below xl the columns stack. Type follows the
 // shared scale in src/lib/typeScale.js.
 
-/* ---------- line icons ---------- */
-const line = { fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
-const GLYPHS = {
-  shield: (
-    <>
-      <path {...line} d="M12 3 19 5.8v5.8c0 4.4-3 7.5-7 9.2-4-1.7-7-4.8-7-9.2V5.8z" />
-      <path fill="none" stroke="var(--lr-gold-line)" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" d="m8.8 12.1 2.2 2.2 4.3-4.5" />
-    </>
-  ),
-  pound: (
-    <>
-      <circle {...line} cx="12" cy="12" r="8.6" />
-      <path {...line} d="M14.6 8.4a2.6 2.6 0 0 0-4.6 1.7v5.8M8.6 12.6h4.6M8.4 15.9h7" />
-    </>
-  ),
-  tools: (
-    <>
-      <path {...line} d="M14.2 6.4a3.4 3.4 0 0 0 4.3 4.3L9.4 19.8a1.6 1.6 0 0 1-2.3-2.3zM14.2 6.4a3.4 3.4 0 0 1 4.2-2.1l-2 2 .3 1.8 1.8.3 2-2a3.4 3.4 0 0 1-2.1 4.2" />
-      <path {...line} d="m4.2 4.2 2.4-.9 5.2 5.2-1.5 1.5-5.2-5.2zM12.9 13.1l5.6 5.6a1.4 1.4 0 0 1-2 2l-5.6-5.6" />
-    </>
-  ),
-  cube: (
-    <>
-      <path {...line} d="M12 2.8 20 7.2v9.6L12 21.2 4 16.8V7.2z" />
-      <path {...line} d="M4 7.2 12 11.6l8-4.4M12 11.6v9.6" />
-      <circle cx="8.4" cy="13" r="0.9" fill="currentColor" />
-      <circle cx="15.6" cy="13" r="0.9" fill="currentColor" />
-      <circle cx="12" cy="7.2" r="0.9" fill="currentColor" />
-    </>
-  ),
-  chart: (
-    <>
-      <path {...line} d="M3.5 20.5h17" />
-      <rect {...line} x="5" y="12" width="3" height="8.5" rx="0.4" />
-      <rect {...line} x="10.5" y="6" width="3" height="14.5" rx="0.4" />
-      <rect {...line} x="16" y="9.5" width="3" height="11" rx="0.4" />
-    </>
-  ),
-};
+/* ---------- icons: brand icon set; rating stars stay drawn (half stars) ---------- */
 const ICON_BY_DIMENSION = [
-  [/reliab/i, "shield"],
-  [/cost/i, "pound"],
-  [/repairab/i, "tools"],
-  [/parts/i, "cube"],
-  [/econom/i, "chart"],
+  [/reliab/i, "genuine-failure-data"],
+  [/cost/i, "best-used-buy-2"],
+  [/repairab/i, "expert-verified"],
+  [/parts/i, "uk-wide-delivery"],
+  [/econom/i, "scale"],
 ];
-
-const Svg = ({ name, className, style }) => (
-  <svg viewBox="0 0 24 24" className={className} style={style} aria-hidden="true">
-    {GLYPHS[name]}
-  </svg>
-);
-
-// card icons drawn on viewBoxes cropped to their outlines, so the box size is the visible size
-function ShieldCheckIcon({ className }) {
-  return (
-    <svg viewBox="3 1.6 18 20.8" className={`text-lr-ink ${className}`} aria-hidden="true">
-      <path {...line} strokeWidth="1.9" d="M12 2.6 19.6 5.6v6c0 4.7-3.2 8-7.6 9.8-4.4-1.8-7.6-5.1-7.6-9.8v-6z" />
-      <path {...line} strokeWidth="2.1" d="m8.6 12 2.4 2.4 4.5-4.7" />
-    </svg>
-  );
-}
-function CheckCircleIcon({ className }) {
-  return (
-    <svg viewBox="2.1 2.1 19.8 19.8" className={className} aria-hidden="true">
-      <circle {...line} strokeWidth="1.4" cx="12" cy="12" r="9.2" />
-      <path {...line} strokeWidth="1.6" d="m7.8 12.3 2.8 2.8 5.6-5.8" />
-    </svg>
-  );
-}
-function WarningIcon({ className }) {
-  return (
-    <svg viewBox="2.1 2.4 19.8 18.6" className={className} aria-hidden="true">
-      <path {...line} strokeWidth="1.4" d="M10.4 4.1a1.85 1.85 0 0 1 3.2 0l7.6 13.4a1.85 1.85 0 0 1-1.6 2.8H4.4a1.85 1.85 0 0 1-1.6-2.8z" />
-      <path {...line} strokeWidth="1.6" d="M12 9.2v4.8" />
-      <circle cx="12" cy="16.8" r="1" fill="currentColor" />
-    </svg>
-  );
-}
 
 const STAR_PATH = "m12 2.4 2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.1l-5.9 3.2 1.3-6.5-4.9-4.6 6.6-.8z";
 
@@ -151,9 +81,9 @@ const CARD = "relative rounded-xl border border-lr-line bg-lr-card shadow-[0_14p
 function IconDisc({ name }) {
   return (
     <span
-      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lr-chip text-lr-ink shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] md:my-4 md:h-14 md:w-14 xl:my-[16px] xl:h-[60px] xl:w-[60px] dark:text-lr-green"
+      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lr-chip shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] md:my-4 md:h-14 md:w-14 xl:my-[16px] xl:h-[60px] xl:w-[60px]"
     >
-      <Svg name={name} className="h-[26px] w-[26px] md:h-[34px] md:w-[34px] xl:h-[38px] xl:w-[38px]" />
+      <LrIcon name={name} className={ICON_MD} />
     </span>
   );
 }
@@ -214,7 +144,7 @@ export default function VerdictRating({ data }) {
 
               {data.confidence && (
                 <article className={`${CARD} flex items-center gap-4 px-5 py-5 md:gap-7 md:px-9 md:py-6 xl:items-start xl:gap-[37px] xl:px-[34px] xl:pb-[11px] xl:pt-[16px]`}>
-                  <ShieldCheckIcon className="h-12 w-10 shrink-0 md:h-[64px] md:w-[53px] xl:mt-[3px] xl:h-[58px] xl:w-[50px]" />
+                  <LrIcon name="genuine-failure-data" className={`${ICON_XL} xl:mt-[3px]`} />
                   <p className={`${BODY} text-lr-head`}>
                     {confidence.lead && <strong className="font-semibold text-lr-ink dark:text-lr-green">{confidence.lead}</strong>}
                     {confidence.lead ? " — " : ""}
@@ -239,7 +169,7 @@ export default function VerdictRating({ data }) {
                 <div className="grid gap-3 min-[480px]:grid-cols-2 md:gap-3.5 xl:gap-[12px]">
                   {data.bestFor && (
                     <article className={`${CARD} flex gap-3.5 p-5 md:gap-4 md:px-6 md:py-6 xl:gap-[17px] xl:pb-[8px] xl:pl-[20px] xl:pr-[5px] xl:pt-[19px]`}>
-                      <CheckCircleIcon className="h-11 w-11 shrink-0 text-lr-head md:h-[50px] md:w-[50px] xl:mt-[2px] xl:h-[42px] xl:w-[42px]" />
+                      <LrIcon name="good-choice" className={`${ICON_LG} xl:mt-[2px]`} />
                       <div className="min-w-0">
                         <p className={`${H6} text-lr-ink dark:text-lr-green`}>Best for:</p>
                         <p className={`mt-1.5 ${BODY_SM} text-lr-body xl:mt-[5px]`} dangerouslySetInnerHTML={{ __html: data.bestFor }} />
@@ -248,7 +178,7 @@ export default function VerdictRating({ data }) {
                   )}
                   {data.avoidIf && (
                     <article className={`${CARD} flex gap-3.5 p-5 md:gap-4 md:px-6 md:py-6 xl:gap-[17px] xl:pb-[8px] xl:pl-[20px] xl:pr-[5px] xl:pt-[19px]`}>
-                      <WarningIcon className="h-[42px] w-[45px] shrink-0 text-lr-bad md:h-[47px] md:w-[50px] xl:mt-[2px] xl:h-[40px] xl:w-[42px]" />
+                      <LrIcon name="expensive-failure" tone="current" className={`${ICON_LG} text-lr-bad xl:mt-[2px]`} />
                       <div className="min-w-0">
                         <p className={`${H6} text-lr-bad`}>Avoid if:</p>
                         <p className={`mt-1.5 ${BODY_SM} text-lr-body xl:mt-[5px]`} dangerouslySetInnerHTML={{ __html: data.avoidIf }} />
@@ -275,7 +205,7 @@ export default function VerdictRating({ data }) {
             <ul>
               {dimensions.map((r) => {
                 const s = splitScore(r.score);
-                const icon = (ICON_BY_DIMENSION.find(([re]) => re.test(r.dimension)) || [])[1] || "shield";
+                const icon = (ICON_BY_DIMENSION.find(([re]) => re.test(r.dimension)) || [])[1] || "genuine-failure-data";
                 return (
                   <li key={r.dimension} className={`${ROW_GRID} border-b border-lr-line py-4 md:py-0`}>
                     <IconDisc name={icon} />

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import VIcon from "@/components/variant/VariantIcons";
 import { carRatio } from "@/lib/carGeometry";
 import { stripBullet, topicIcon } from "@/components/variant/variantText";
-import { BODY, BODY_SM, CONTAINER, H2, H5, H6, LABEL, SMALL } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, CONTAINER, H2, H5, H6, ICON_LG, LABEL, SMALL } from "@/lib/typeScale";
 
 // Variant section: buying checklist - numbered check cards from the page's `buyingChecklist`
 // JSON, the vehicle, and a "Buy smart" reassurance card. Follows the site theme (day / night).
@@ -16,13 +16,13 @@ function splitItem(item = "") {
 
 function checkIcon(label = "") {
   const t = label.toLowerCase();
-  if (/cold start|listen|noise/.test(t)) return "ear";
-  if (/coolant|cooling/.test(t)) return "tank";
+  if (/cold start|listen|noise/.test(t)) return "engine";
+  if (/coolant|cooling/.test(t)) return "cooling-system-2";
   if (/turbo|boost/.test(t)) return "turbo";
-  if (/oil/.test(t)) return "oilcan";
-  if (/smoke|exhaust/.test(t)) return "smoke";
-  if (/warning|light|diagnos|fault/.test(t)) return "engine";
-  if (/mot/.test(t)) return "docsearch";
+  if (/oil/.test(t)) return "oil-leaks";
+  if (/smoke|exhaust/.test(t)) return "exhaust-and-emission";
+  if (/warning|light|diagnos|fault/.test(t)) return "check-watch";
+  if (/mot/.test(t)) return "symptoms";
   return topicIcon(label);
 }
 
@@ -66,7 +66,7 @@ export default function BuyingChecklist({ data, car = null }) {
                 <span className={`${SMALL} absolute left-2.5 top-2.5 flex h-6 w-6 items-center justify-center rounded bg-lr-brand font-semibold text-lr-on-brand md:h-7 md:w-7`}>
                   {i + 1}
                 </span>
-                <VIcon name={checkIcon(label)} className="h-10 w-10 text-lr-green md:h-12 md:w-12" strokeWidth={1.4} />
+                <LrIcon name={checkIcon(label)} className={ICON_LG} />
                 <h3 className={`${H6} mt-2.5 text-lr-head`} dangerouslySetInnerHTML={{ __html: label }} />
                 {text && <p className={`${BODY_SM} mt-1.5 text-lr-body`} dangerouslySetInnerHTML={{ __html: text }} />}
               </li>

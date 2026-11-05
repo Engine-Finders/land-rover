@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
-import { CONTAINER, H2, H5, H6, BODY, BODY_SM, SMALL, LABEL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H5, H6, ICON_MD, ICON_SM, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens. The severity pills keep
 // their own red / amber / orange / green scale - soft tinted pills by day, deep tinted pills with a
@@ -70,7 +70,7 @@ function Featured({ cat, item, n, onClose }) {
         {stats.map((s, i) => (
           <div key={s.label} className={`flex min-w-0 flex-col gap-1 px-2 sm:flex-row sm:items-center sm:gap-3 sm:px-4 ${i > 0 ? "border-l border-lr-line" : "pl-0 sm:pl-0"}`}>
             <span className={s.tone ?? "text-lr-green"}>
-              <GuideIcon name={s.icon} className="h-6 w-6 sm:h-8 sm:w-8" />
+              <GuideIcon name={s.icon} className={ICON_SM} />
             </span>
             <span className="min-w-0">
               <span className={`${SMALL} block text-lr-muted`}>{s.label}</span>
@@ -140,7 +140,7 @@ function MobileDatabase({ categories }) {
                 on ? "border-lr-brand bg-lr-brand text-lr-on-brand shadow-[0_8px_18px_-10px_var(--lr-shadow)]" : "border-lr-line bg-lr-card text-lr-head hover:bg-lr-panel"
               }`}
             >
-              <GuideIcon name={c.icon} className="h-6 w-6 shrink-0 sm:h-8 sm:w-8" />
+              <GuideIcon name={c.icon} className={ICON_MD} />
               <span className="leading-tight">
                 <span className={`${SMALL} block font-semibold`}>{c.name}</span>
                 <span className={`${SMALL} block ${on ? "text-lr-on-brand/80" : "text-lr-muted"}`}>Failures ({c.items.length})</span>
@@ -204,7 +204,7 @@ function DesktopDatabase({ categories }) {
         <div key={c.key}>
           <div className="flex items-center gap-4">
             <span className="flex h-10 w-10 items-center justify-center rounded-md bg-lr-brand text-lr-on-brand">
-              <GuideIcon name={c.icon} className="h-6 w-6" />
+              <GuideIcon name={c.icon} className={ICON_SM} />
             </span>
             <h3 className={`${H6} uppercase tracking-[0.02em] text-lr-ink`}>{c.title}</h3>
             <span className="h-px flex-1 bg-lr-line-strong" />
@@ -245,7 +245,7 @@ export default function HomeFailures({ data }) {
         <div className="relative mt-4 overflow-hidden rounded-xl border border-lr-line bg-lr-panel lg:mt-5 lg:rounded-md">
           <div className="relative flex flex-wrap items-center gap-3.5 px-3.5 py-4 sm:flex-nowrap sm:gap-6 sm:px-6 lg:px-7">
             <span className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand sm:h-[60px] sm:w-[60px]">
-              <GuideIcon name="shield" className="h-7 w-7" />
+              <GuideIcon name="shield" className={ICON_MD} />
             </span>
             <div className="min-w-0 flex-1">
               <p className={`${SMALL} font-semibold uppercase tracking-[0.02em] text-lr-ink lg:inline`}>{data.note.title}: </p>

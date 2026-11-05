@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
-import { CONTAINER, H2, H6, BODY, BODY_SM, SMALL, LABEL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_MD, ICON_XS, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens, and the Defender photo
 // fades into the page through CSS masks (no colour overlays), so it blends with either background.
@@ -45,7 +45,7 @@ function HowItWorks({ steps }) {
                 {i + 1}
               </span>
               <span className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-lr-brand text-lr-gold-line sm:h-16 sm:w-16 xl:ml-5 dark:bg-lr-chip dark:text-lr-gold">
-                <GuideIcon name={s.icon} className="h-7 w-7 sm:h-8 sm:w-8" />
+                <GuideIcon name={s.icon} className={ICON_MD} />
               </span>
             </span>
             <span className="min-w-0 pt-1">
@@ -72,7 +72,7 @@ function Value({ col, value, className = "" }) {
   return (
     <span className={`flex items-center gap-1.5 whitespace-nowrap ${className}`}>
       <span className={tone(col.tone)}>
-        <GuideIcon name={col.icon} className="h-4 w-4" />
+        <GuideIcon name={col.icon} className={ICON_XS} />
       </span>
       <span className={`${SMALL} text-lr-head`}>{value}</span>
     </span>
@@ -126,7 +126,7 @@ function CostTable({ costs }) {
         {columns.map((c) => (
           <span key={c.key} className={`${SMALL} flex items-center gap-1.5 text-lr-body`}>
             <span className={tone(c.tone)}>
-              <GuideIcon name={c.icon} className="h-4.5 w-4.5" />
+              <GuideIcon name={c.icon} className={ICON_XS} />
             </span>
             {c.label}
           </span>
@@ -175,7 +175,7 @@ function WhyTrust({ trust }) {
         {trust.items.map((t) => (
           <li key={t.title} className="flex items-center gap-3.5 py-3 xl:items-start xl:gap-5 xl:py-5">
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-lr-brand text-lr-gold-line xl:h-[58px] xl:w-[58px] dark:bg-lr-chip dark:text-lr-gold">
-              <GuideIcon name={t.icon} className="h-6 w-6 xl:h-8 xl:w-8" />
+              <GuideIcon name={t.icon} className={ICON_MD} />
             </span>
             <span className="min-w-0">
               <span className={`${H6} block uppercase tracking-[0.01em] text-lr-head`}>{t.title}</span>
@@ -228,7 +228,7 @@ export default function HomeDiagnose({ data }) {
           {data.stats.map((s, i) => (
             <div key={s.text} className={`flex flex-col items-center px-1.5 text-center ${i > 0 ? "border-l border-lr-line" : ""}`}>
               <span className="text-lr-gold">
-                <GuideIcon name={s.icon} className="h-[30px] w-[30px] sm:h-9 sm:w-9" />
+                <GuideIcon name={s.icon} className={ICON_LG} />
               </span>
               <span className={`${SMALL} mt-2 text-lr-body`}>{s.text}</span>
             </div>

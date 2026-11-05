@@ -2,7 +2,7 @@ import Image from "next/image";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
 import { serif } from "@/lib/guideFonts";
-import { CONTAINER, H2, H5, BODY, NUM, SMALL, LABEL, STAT } from "@/lib/typeScale";
+import { BODY, CONTAINER, H2, H5, ICON_MD, ICON_SM, ICON_XL, LABEL, NUM, SMALL, STAT } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens; Trustpilot's own green
 // stays as their brand colour. The Range Rover photo fades into the page through CSS masks; at night
@@ -20,7 +20,7 @@ function Stat({ s }) {
   return (
     <li className="flex flex-col items-center rounded-lg border border-lr-line bg-lr-card px-1.5 pb-4 pt-4 text-center shadow-[0_6px_18px_-14px_var(--lr-shadow)] sm:px-3 lg:rounded-none lg:border-0 lg:border-l lg:border-lr-line lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none lg:first:border-l-0">
       <span className="flex h-[46px] w-[46px] items-center justify-center rounded-full bg-lr-chip text-lr-ink sm:h-14 sm:w-14 lg:h-[62px] lg:w-[62px]">
-        <GuideIcon name={s.icon} className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
+        <GuideIcon name={s.icon} className={ICON_MD} />
       </span>
       <span className="mt-3 flex min-h-[64px] flex-col justify-center sm:min-h-[70px] lg:min-h-0">
         {s.value ? <span className={`${NUM} block text-lr-ink`}>{s.value}</span> : null}
@@ -41,7 +41,7 @@ function ActionCard({ dark, icon, eyebrow, title, href, label }) {
       aria-label={label}
       className={`group flex items-center gap-3.5 rounded-lg px-4 py-5 font-normal shadow-[0_14px_30px_-18px_var(--lr-shadow)] transition-transform hover:-translate-y-0.5 sm:gap-6 sm:px-7 sm:py-7 lg:px-9 ${
         dark
-          ? "bg-linear-to-br from-lr-brand to-lr-brand-hover text-lr-on-brand dark:from-lr-chip dark:to-lr-card dark:ring-1 dark:ring-inset dark:ring-lr-gold-line/35"
+          ? "lr-on-brand bg-linear-to-br from-lr-brand to-lr-brand-hover text-lr-on-brand dark:from-lr-chip dark:to-lr-card dark:ring-1 dark:ring-inset dark:ring-lr-gold-line/35"
           : "border border-lr-line bg-lr-card text-lr-head"
       }`}
     >
@@ -50,7 +50,7 @@ function ActionCard({ dark, icon, eyebrow, title, href, label }) {
           dark ? "border border-lr-gold-line/45 text-lr-gold-line" : "bg-lr-chip text-lr-ink"
         }`}
       >
-        <GuideIcon name={icon} className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12" />
+        <GuideIcon name={icon} className={ICON_XL} />
       </span>
       <span className={`self-stretch border-l ${dark ? "border-lr-on-brand/15" : "border-lr-line"}`} aria-hidden="true" />
       <span className="min-w-0 flex-1">
@@ -101,7 +101,7 @@ function Trustpilot({ tp }) {
           <p className={`${SMALL} mt-1.5 text-lr-body`}>{tp.reviews}</p>
         </div>
         <div className="flex gap-2.5 pl-4 xl:ml-auto xl:max-w-[380px] xl:border-l xl:border-lr-line-strong xl:pl-8">
-          <GuideIcon name="quote" className="mt-1 h-5 w-7 shrink-0 text-lr-green sm:h-6 sm:w-8" />
+          <GuideIcon name="quote" className={`mt-1 ${ICON_SM}`} />
           <p className={`${serif.className} ${BODY} italic text-lr-body`}>{tp.quote}</p>
         </div>
       </div>

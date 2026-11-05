@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CONTAINER, SANS } from "@/components/engine/engineTheme";
-import { BODY, H1, SMALL } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, H1, ICON_LG, SMALL } from "@/lib/typeScale";
 
 // Engine hero: tag pill, serif headline (accent on "Replacement Cost"), sub-headline, quote CTA,
 // the engine on its lit ring in the dusk mountain / garage scene, and a four-stat trust strip -
@@ -15,35 +16,9 @@ import { BODY, H1, SMALL } from "@/lib/typeScale";
 const FADE_X = "dark:[mask-image:linear-gradient(to_right,transparent,#000_34%,#000_90%,transparent),linear-gradient(to_bottom,transparent,#000_14%,#000_76%,transparent)] dark:[mask-composite:intersect]";
 const FADE_Y = "dark:[mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_84%,transparent)]";
 
-/* ---------- gold line icons for the trust strip ---------- */
-const line = { fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
-const GLYPHS = {
-  chart: (
-    <>
-      <rect {...line} x="3.5" y="14" width="3" height="6" rx="0.4" />
-      <rect {...line} x="8.5" y="9.5" width="3" height="10.5" rx="0.4" />
-      <rect {...line} x="13.5" y="4" width="3" height="16" rx="0.4" />
-      <rect {...line} x="18.5" y="11" width="3" height="9" rx="0.4" />
-      <path {...line} d="m13.5 20 3-16" />
-    </>
-  ),
-  wrench: <path {...line} d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z" />,
-  shield: (
-    <>
-      <path {...line} d="M12 2.8 19.5 5.6v6.1c0 4.6-3.1 7.7-7.5 9.5-4.4-1.8-7.5-4.9-7.5-9.5V5.6z" />
-      <path fill="currentColor" d="m12 7.9 1.2 2.6 2.8.3-2.1 1.9.6 2.8-2.5-1.4-2.5 1.4.6-2.8-2.1-1.9 2.8-.3z" />
-    </>
-  ),
-  trophy: (
-    <>
-      <path {...line} d="M7.5 3.5h9v5.2a4.5 4.5 0 0 1-9 0z" />
-      <path {...line} d="M7.5 5.5H4.3v1.6a3.3 3.3 0 0 0 3.5 3.3M16.5 5.5h3.2v1.6a3.3 3.3 0 0 1-3.5 3.3" />
-      <path {...line} d="M12 13.2v3.6M9.2 20.5h5.6M10 16.8h4l.8 3.7H9.2z" />
-    </>
-  ),
-};
-const ICON_BY_EMOJI = { "📊": "chart", "🔧": "wrench", "💯": "shield", "🏆": "trophy" };
-const ICON_ORDER = ["chart", "wrench", "shield", "trophy"];
+/* ---------- trust strip icons (brand icon set) ---------- */
+const ICON_BY_EMOJI = { "📊": "real-inquiries", "🔧": "vehicle", "💯": "real-data", "🏆": "part-of-engine-finders" };
+const ICON_ORDER = ["real-inquiries", "vehicle", "real-data", "part-of-engine-finders"];
 
 function ArrowIcon({ className }) {
   return (
@@ -79,11 +54,9 @@ function parseStat(label = "") {
 function StatIcon({ name }) {
   return (
     <span
-      className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-16 sm:w-16 lg:h-[52px] lg:w-[52px] xl:h-[72px] xl:w-[72px] dark:bg-[radial-gradient(circle_at_50%_38%,#17402d_0%,#0b2219_72%)]"
+      className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line/70 bg-lr-chip sm:h-16 sm:w-16 lg:h-[60px] lg:w-[60px] xl:h-[72px] xl:w-[72px] dark:bg-[radial-gradient(circle_at_50%_38%,#17402d_0%,#0b2219_72%)]"
     >
-      <svg viewBox="0 0 24 24" className="h-7 w-7 sm:h-8 sm:w-8 lg:h-7 lg:w-7 xl:h-9 xl:w-9" aria-hidden="true">
-        {GLYPHS[name]}
-      </svg>
+      <LrIcon name={name} className={ICON_LG} />
     </span>
   );
 }
@@ -111,7 +84,7 @@ function Stat({ item, index }) {
             </span>
             <span className={`mt-1 ${captionClass}`}>
               {stat.caption}
-              {icon === "chart" && <span className="normal-case"> in 2025</span>}
+              {icon === "real-inquiries" && <span className="normal-case"> in 2025</span>}
             </span>
           </>
         ) : (

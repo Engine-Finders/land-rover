@@ -30,3 +30,11 @@ export const LABEL = `${SMALL} font-medium uppercase tracking-[0.06em]`;
 // large stat figures (scores, prices) sit on the heading steps so the hierarchy stays intact
 export const STAT_LG = "font-semibold leading-none text-[28px] md:text-[30px] lg:text-[32px] xl:text-[34px]";
 export const STAT = "font-semibold leading-none text-[21px] md:text-[22px] xl:text-[24px]";
+
+// icon sizes for the brand icon set (src/components/shared/LrIcon.js), matched to the text beside
+// them; inside a round chip the icon is about 55% of the chip
+export const ICON_XS = "h-4 w-4 xl:h-[18px] xl:w-[18px]"; // inline with small text, badges (15px)
+export const ICON_SM = "h-5 w-5 xl:h-[22px] xl:w-[22px]"; // list rows, table cells (16px text)
+export const ICON_MD = "h-6 w-6 md:h-7 md:w-7 xl:h-8 xl:w-8"; // card titles (H6 20px), 48-56px chips
+export const ICON_LG = "h-8 w-8 md:h-9 md:w-9 xl:h-10 xl:w-10"; // feature and trust tiles, 60-72px chips
+export const ICON_XL = "h-10 w-10 md:h-12 md:w-12 xl:h-14 xl:w-14"; // hero and highlight icons

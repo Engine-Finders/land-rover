@@ -1,5 +1,5 @@
-import VIcon from "@/components/variant/VariantIcons";
-import { BODY_SM, CONTAINER, H2, H6, LABEL, SMALL } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY_SM, CONTAINER, H2, H6, ICON_LG, LABEL, SMALL } from "@/lib/typeScale";
 
 // Variant section: FAQ accordion (native <details>, no client JS) from the page's `faq` JSON,
 // split into two columns, plus the pricing disclaimer. Follows the site theme (day / night).
@@ -53,7 +53,7 @@ export default function FAQAccordion({ data }) {
 
         {data.disclaimer && (
           <div className="mt-4 flex items-start gap-3.5 rounded-xl border border-lr-line bg-lr-panel p-4 md:items-center md:gap-5 md:p-5">
-            <VIcon name="shield" className="h-8 w-8 shrink-0 text-lr-gold md:h-10 md:w-10" />
+            <LrIcon name="genuine-failure-data" className={ICON_LG} />
             <p className={`${BODY_SM} text-lr-body`} dangerouslySetInnerHTML={{ __html: data.disclaimer }} />
           </div>
         )}

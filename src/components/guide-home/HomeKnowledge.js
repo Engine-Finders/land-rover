@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon from "@/components/guide-home/GuideIcon";
-import { CONTAINER, H2, H6, BODY, BODY_SM, LABEL, STAT_LG } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_XL, LABEL, STAT_LG } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens; the data-note photo fades
 // into its card through CSS masks, so it blends with either theme's card.
@@ -20,7 +20,7 @@ function Centre({ item, n, cta }) {
       </span>
       <span className="flex min-w-0 flex-1 items-center gap-3 px-3 py-3 sm:gap-5 sm:px-5 xl:gap-6 xl:px-6 xl:py-4">
         <span className="shrink-0 text-lr-head">
-          <GuideIcon name={item.icon} className="h-[34px] w-[34px] sm:h-11 sm:w-11 xl:h-[52px] xl:w-[52px]" />
+          <GuideIcon name={item.icon} className={ICON_XL} />
         </span>
         <span className="min-w-0 flex-1 xl:pl-2">
           <span className={`${H6} block text-lr-head`}>{item.title}</span>
@@ -69,7 +69,7 @@ export default function HomeKnowledge({ data }) {
           </div>
           <div className="relative flex items-start gap-4 px-4 pb-5 pt-5 sm:items-center sm:gap-6 sm:px-7 lg:min-h-[230px] lg:max-w-[52%] lg:py-8">
             <span className="flex h-[54px] w-[54px] shrink-0 items-center justify-center rounded-full border border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-[78px] sm:w-[78px]">
-              <GuideIcon name="shield" className="h-7 w-7 sm:h-10 sm:w-10" />
+              <GuideIcon name="shield" className={ICON_LG} />
             </span>
             <div className="min-w-0">
               <p className={`${LABEL} text-lr-gold`}>{note.title}</p>

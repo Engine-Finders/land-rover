@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GuideIcon from "@/components/guide-home/GuideIcon";
 import LandRoverLogo from "@/components/guide-home/LandRoverLogo";
-import { CONTAINER, H2, H4, H6, BODY, BODY_SM, SMALL, LABEL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H4, H6, ICON_LG, ICON_MD, ICON_SM, ICON_XS, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens; the line-up photo fades
 // into the page through CSS masks. The verdict badge tones ("dark" / "gold" / "light") are design
@@ -27,7 +27,8 @@ function Verdict({ m }) {
     <span
       className={`inline-flex w-[124px] items-center gap-2 rounded-md px-2.5 py-2 text-[10.5px] font-semibold uppercase leading-tight tracking-[0.02em] shadow-[0_3px_8px_-4px_var(--lr-shadow)] sm:w-[148px] sm:gap-2.5 sm:px-3 sm:text-[12px] xl:w-[164px] xl:text-[15px] ${BADGE[m.tone]}`}
     >
-      <GuideIcon name={m.icon} className="h-[18px] w-[18px] shrink-0 sm:h-5 sm:w-5" />
+      {/* white on the amber pill (like its label); theme colours on the green and sand pills */}
+      <GuideIcon name={m.icon} tone={m.tone === "gold" ? "current" : undefined} className={ICON_XS} />
       {m.verdict}
     </span>
   );
@@ -104,7 +105,7 @@ function Example({ ex }) {
           {ex.items.map((it) => (
             <li key={it.title} className="flex gap-2.5 py-2.5 sm:gap-4 sm:py-3 xl:block xl:px-5 xl:py-1 xl:first:pl-0 xl:last:pr-0">
               <span className={`shrink-0 ${it.icon === "alert" ? "text-lr-warn" : "text-lr-head"}`}>
-                <GuideIcon name={it.icon} className="h-6 w-6 sm:h-8 sm:w-8" />
+                <GuideIcon name={it.icon} className={ICON_MD} />
               </span>
               <span className="min-w-0 xl:mt-1 xl:block">
                 <span className={`${SMALL} block font-semibold uppercase tracking-[0.02em] text-lr-head`}>{it.title}</span>
@@ -159,7 +160,7 @@ export default function HomeModels({ data }) {
         <div className="mt-3 flex flex-col gap-3 rounded-md border border-lr-line bg-lr-panel px-4 py-4 text-lr-head min-[420px]:flex-row min-[420px]:items-center min-[420px]:gap-5 sm:px-6 xl:mt-4 xl:py-3.5">
           <div className="flex items-start gap-3.5 min-[420px]:flex-1 xl:items-center xl:gap-6">
             <span className="shrink-0 text-lr-gold">
-              <GuideIcon name="database" className="h-8 w-8" />
+              <GuideIcon name="database" className={ICON_LG} />
             </span>
             <p className={`${BODY_SM} leading-snug text-lr-body`}>
               <span className={`${SMALL} block font-semibold uppercase text-lr-gold xl:mr-6 xl:inline`}>{note.title}</span>
@@ -169,7 +170,7 @@ export default function HomeModels({ data }) {
           <ul className="flex flex-col gap-1.5 border-t border-lr-line pt-3 text-lr-body min-[420px]:border-l min-[420px]:border-t-0 min-[420px]:pl-5 min-[420px]:pt-0 xl:flex-row xl:gap-0 xl:divide-x xl:divide-lr-line-strong xl:border-l-0 xl:pl-0">
             {note.stats.map((s) => (
               <li key={s.label} className={`${SMALL} flex items-center gap-3 whitespace-nowrap xl:px-6`}>
-                <GuideIcon name={s.icon} className="h-5 w-5 shrink-0 text-lr-green xl:hidden" />
+                <GuideIcon name={s.icon} className={`${ICON_SM} xl:hidden`} />
                 {s.label}: {s.value}
               </li>
             ))}

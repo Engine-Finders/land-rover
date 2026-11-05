@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon from "@/components/guide-home/GuideIcon";
-import { CONTAINER, H2, H6, BODY, BODY_SM, NUM, SMALL, LABEL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_SM, LABEL, NUM, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens, and the Defender photos
 // fade into the page through CSS masks (no colour overlays), so they blend with either background.
@@ -30,7 +30,7 @@ function Verdict({ row, desktop = false }) {
     return (
       <span className={`inline-flex min-w-[150px] items-center gap-2.5 rounded-md py-2 pl-3 pr-3.5 shadow-[0_4px_10px_-4px_var(--lr-shadow)] ${BADGE}`}>
         <span className={v.iconTone}>
-          <GuideIcon name={v.icon} className="h-6 w-6" />
+          <GuideIcon name={v.icon} tone="current" className={ICON_SM} />
         </span>
         <span className="leading-tight">
           <span className={`${SMALL} block font-semibold uppercase tracking-[0.02em] ${v.labelTone}`}>{row.verdictLabel}</span>
@@ -43,7 +43,7 @@ function Verdict({ row, desktop = false }) {
   return (
     <span className={`flex w-[66px] shrink-0 flex-col items-center justify-center gap-1 rounded-lg px-1.5 py-2 text-center shadow-[0_4px_10px_-4px_var(--lr-shadow)] sm:w-[124px] sm:flex-row sm:gap-2.5 sm:px-2 sm:py-3 sm:text-left ${BADGE}`}>
       <span className={v.iconTone}>
-        <GuideIcon name={v.icon} className="h-[22px] w-[22px] sm:h-7 sm:w-7" />
+        <GuideIcon name={v.icon} tone="current" className={ICON_SM} />
       </span>
       <span className={`${SMALL} font-semibold uppercase leading-[1.15] tracking-[0.02em] ${v.labelTone}`}>{label}</span>
     </span>
@@ -160,7 +160,7 @@ export default function HomeRankings({ data }) {
           </div>
           <div className="relative flex items-start gap-3.5 px-3.5 py-4 sm:items-center sm:gap-6 sm:px-6 sm:py-6 lg:px-5">
             <span className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full border border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-[68px] sm:w-[68px]">
-              <GuideIcon name="shield" className="h-7 w-7 sm:h-9 sm:w-9" />
+              <GuideIcon name="shield" className={ICON_LG} />
             </span>
             <div className="min-w-0 sm:max-w-[62%] lg:max-w-[720px]">
               <p className={`${H6} text-lr-head`}>{note.title}</p>

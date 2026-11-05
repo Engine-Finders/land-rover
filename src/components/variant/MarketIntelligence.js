@@ -1,8 +1,8 @@
 "use client";
 
 import { ComposableMap, Geographies, Geography } from "@vnedyalk0v/react19-simple-maps";
-import VIcon from "@/components/variant/VariantIcons";
-import { BODY_SM, CONTAINER, H2, H5, LABEL, NUM, SMALL, STAT, STAT_LG } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY_SM, CONTAINER, H2, H5, ICON_MD, LABEL, NUM, SMALL, STAT, STAT_LG } from "@/lib/typeScale";
 // Pass TopoJSON as an object - URL fetches are HTTPS-only by default in
 // @vnedyalk0v/react19-simple-maps, so localhost http:// paths fail to load.
 import ukRegionsTopo from "../../../public/320d/uk-regions-topo.json";
@@ -96,15 +96,25 @@ function highlightedGeoNames(regions) {
   return names;
 }
 
+// brand icon for a stat card, matched on its label
 function itemIcon(label = "") {
   const t = label.toLowerCase();
-  if (/failure|problem/.test(t)) return "alert";
-  if (/mileage|miles/.test(t)) return "gauge";
-  if (/cost|price/.test(t)) return "pound";
+  if (/failure|problem/.test(t)) return "expensive-failure";
+  if (/mileage|miles/.test(t)) return "meter";
+  if (/cost|price/.test(t)) return "best-used-buy-2";
   if (/code|engine/.test(t)) return "engine";
-  if (/season|month|time/.test(t)) return "calendar";
-  if (/region/.test(t)) return "users";
-  return "info";
+  if (/season|month|time/.test(t)) return "market-insight";
+  if (/region/.test(t)) return "uk-focused";
+  return "real-inquiries";
+}
+
+// brand-green icon disc (the icon turns sand on it in both themes)
+function IconDisc({ name }) {
+  return (
+    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lr-brand md:h-12 md:w-12 xl:h-14 xl:w-14">
+      <LrIcon name={name} className={ICON_MD} />
+    </span>
+  );
 }
 
 // one line, scaled down to the card width when the value is too long for the STAT_LG step;
@@ -120,9 +130,7 @@ function StatCard({ icon, label, title, stat, subtext, tag }) {
   return (
     <div className={`@container flex min-w-0 flex-col p-3.5 md:p-5 ${CARD}`}>
       <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand md:h-12 md:w-12">
-          <VIcon name={icon} className="h-5 w-5 md:h-6 md:w-6" strokeWidth={1.8} />
-        </span>
+        <IconDisc name={icon} />
         <p className={`${SMALL} font-medium text-lr-body`}>{label}</p>
       </div>
       {title && <p className={`${BODY_SM} mt-3 font-medium text-lr-head`}>{title}</p>}
@@ -141,9 +149,7 @@ function RegionCard({ label, regions, tag }) {
   return (
     <div className={`flex min-w-0 flex-col p-3.5 md:p-5 ${CARD}`}>
       <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand md:h-12 md:w-12">
-          <VIcon name="users" className="h-5 w-5 md:h-6 md:w-6" strokeWidth={1.8} />
-        </span>
+        <IconDisc name="uk-focused" />
         <p className={`${SMALL} font-medium text-lr-body`}>{label}</p>
       </div>
       <ul className="mt-3 divide-y divide-lr-line">
@@ -260,7 +266,7 @@ export default function MarketIntelligence({ data }) {
                 regions.length ? (
                   <RegionCard key={item.label} label={item.label} regions={regions} tag={tag} />
                 ) : (
-                  <StatCard key={item.label} icon="users" label={item.label} {...parseMetric(item.value)} />
+                  <StatCard key={item.label} icon="uk-focused" label={item.label} {...parseMetric(item.value)} />
                 )
               ) : (
                 <StatCard key={item.label} icon={itemIcon(item.label)} label={item.label} {...parseMetric(item.value)} />

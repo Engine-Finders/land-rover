@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import Image from "next/image";
 import { CONTAINER, SANS } from "@/components/engine/engineTheme";
-import { BODY, BODY_SM, H2, SMALL, STAT_LG } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, H2, ICON_LG, ICON_MD, ICON_XS, SMALL, STAT_LG } from "@/lib/typeScale";
 
 // Engine section: At a Glance - four spec tiles (family, fuel, power, score), four wide cards
 // (configuration with the engine photo, years, models fitted, cross-brand fitment) and a
@@ -9,102 +10,19 @@ import { BODY, BODY_SM, H2, SMALL, STAT_LG } from "@/lib/typeScale";
 // `note` overrides the supporting line built from the data. Follows the site theme (day / night).
 
 
-/* ---------- gold line icons ---------- */
-const line = { fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round" };
-const GLYPHS = {
-  engine: (
-    <>
-      <path {...line} d="M7 8.5h7.5l1.5 2h2v-1.5h2.5v7H18V15h-1.8l-2 2.5H8.5L6.8 16H5v-2.2H3.5v-3.3H5V8.5z" />
-      <path {...line} d="M9 8.5V6.5h4v2M10 4.8h2" />
-      <path {...line} d="m8.9 12.6 1.8 1.8 3.4-3.4" />
-    </>
-  ),
-  drop: (
-    <>
-      <path {...line} d="M12 3.2c3 3.7 6.2 7.4 6.2 10.8a6.2 6.2 0 0 1-12.4 0c0-3.4 3.2-7.1 6.2-10.8z" />
-      <path {...line} d="M9.1 14.6a3 3 0 0 0 3 2.9" />
-    </>
-  ),
-  gauge: (
-    <>
-      <path {...line} d="M4.4 17.6a8.6 8.6 0 1 1 15.2 0" />
-      <path {...line} d="M12 5.6v1.7M6.4 9l1.2 1.2M17.6 9l-1.2 1.2M4.9 13.7h1.7M17.4 13.7h1.7M12 14.2l3.5-3.7" />
-      <circle cx="12" cy="14.2" r="1.4" fill="currentColor" />
-    </>
-  ),
-  shieldCheck: (
-    <>
-      <path {...line} d="M12 3 19 5.8v5.8c0 4.4-3 7.5-7 9.2-4-1.7-7-4.8-7-9.2V5.8z" />
-      <path {...line} d="m8.8 12.1 2.2 2.2 4.3-4.5" />
-    </>
-  ),
-  piston: (
-    <g transform="rotate(38 12 12)">
-      <rect {...line} x="7.8" y="2.6" width="8.4" height="7.2" rx="1.2" />
-      <path {...line} d="M7.8 5.2h8.4M7.8 7.3h8.4M10.6 9.8l.4 5.9M13.4 9.8l-.4 5.9" />
-      <circle {...line} cx="12" cy="18" r="2.4" />
-      <circle cx="12" cy="18" r="0.8" fill="currentColor" />
-    </g>
-  ),
-  calendar: (
-    <>
-      <rect {...line} x="4" y="5.5" width="16" height="14.5" rx="2" />
-      <path {...line} d="M4 10h16M8.5 3.5v4M15.5 3.5v4" />
-      {[8, 12, 16].map((x) => [13.3, 16.8].map((y) => <rect key={`${x}-${y}`} x={x - 1} y={y - 1} width="2" height="2" rx="0.4" fill="currentColor" />))}
-    </>
-  ),
-  car: (
-    <>
-      <path {...line} d="M4 16.2v-4.1l1.9-4.9a1.6 1.6 0 0 1 1.5-1h9.2a1.6 1.6 0 0 1 1.5 1l1.9 4.9v4.1z" />
-      <path {...line} d="M4.2 12.1h15.6M5.5 16.2v2.3h2.3v-2.3M16.2 16.2v2.3h2.3v-2.3" />
-      <circle cx="7.6" cy="14.2" r="1.1" fill="currentColor" />
-      <circle cx="16.4" cy="14.2" r="1.1" fill="currentColor" />
-    </>
-  ),
-  chartUp: (
-    <>
-      <rect x="4" y="15" width="3" height="5" rx="0.5" fill="currentColor" />
-      <rect x="8.7" y="12.5" width="3" height="7.5" rx="0.5" fill="currentColor" />
-      <rect x="13.4" y="13.5" width="3" height="6.5" rx="0.5" fill="currentColor" />
-      <rect x="18.1" y="10" width="3" height="10" rx="0.5" fill="currentColor" />
-      <path {...line} strokeWidth="1.7" d="m3.6 11.4 5-4.4 3.4 2.8 6.8-5.6M15.6 4.2h3.5v3.4" />
-    </>
-  ),
-  users: (
-    <>
-      <circle cx="12" cy="7" r="3.2" fill="currentColor" />
-      <circle cx="5.5" cy="8.5" r="2.4" fill="currentColor" />
-      <circle cx="18.5" cy="8.5" r="2.4" fill="currentColor" />
-      <path fill="currentColor" d="M6 19.5c0-3.6 2.7-6 6-6s6 2.4 6 6zM1.5 18.5c0-2.6 1.7-4.4 4-4.4.8 0 1.5.2 2.1.6-1.2 1.1-2 2.5-2.2 3.8zM22.5 18.5c0-2.6-1.7-4.4-4-4.4-.8 0-1.5.2-2.1.6 1.2 1.1 2 2.5 2.2 3.8z" />
-    </>
-  ),
-  award: (
-    <>
-      <path {...line} d="M12 2.8l1.6 1.2 2-.2.8 1.8 1.8.8-.2 2 1.2 1.6-1.2 1.6.2 2-1.8.8-.8 1.8-2-.2L12 17l-1.6-1.2-2 .2-.8-1.8-1.8-.8.2-2L4.8 9.8 6 8.2l-.2-2 1.8-.8.8-1.8 2 .2z" />
-      <circle {...line} cx="12" cy="9.9" r="3.3" />
-      <path {...line} d="m8.4 16.4-1.5 4.8 2.6-1 1.7 2 .8-4.1M15.6 16.4l1.5 4.8-2.6-1-1.7 2-.8-4.1" />
-    </>
-  ),
-};
-
-const Svg = ({ name, className }) => (
-  <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-    {GLYPHS[name]}
-  </svg>
-);
-
+/* ---------- icons: brand icon set in gold-rimmed rings ---------- */
 function IconRing({ name, size = "md" }) {
   const box = {
     sm: "h-11 w-11 lg:h-[60px] lg:w-[60px]",
     tile: "h-12 w-12 lg:h-14 lg:w-14 xl:h-[60px] xl:w-[60px]",
-    md: "h-12 w-12 lg:h-[72px] lg:w-[72px]",
+    md: "h-14 w-14 lg:h-[72px] lg:w-[72px]",
   }[size];
-  const glyph = { sm: "h-[22px] w-[22px] lg:h-8 lg:w-8", tile: "h-6 w-6 lg:h-7 lg:w-7", md: "h-6 w-6 lg:h-9 lg:w-9" }[size];
+  const glyph = size === "md" ? ICON_LG : ICON_MD;
   return (
     <span
-      className={`flex shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line/70 bg-lr-chip text-lr-gold dark:bg-[radial-gradient(circle_at_50%_38%,#17402d_0%,#0b2219_72%)] dark:shadow-[0_0_24px_-10px_rgba(201,163,93,0.55)] ${box}`}
+      className={`flex shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line/70 bg-lr-chip dark:bg-[radial-gradient(circle_at_50%_38%,#17402d_0%,#0b2219_72%)] dark:shadow-[0_0_24px_-10px_rgba(201,163,93,0.55)] ${box}`}
     >
-      <Svg name={name} className={glyph} />
+      <LrIcon name={name} className={glyph} />
     </span>
   );
 }
@@ -208,10 +126,10 @@ function WideCard({ icon, label, value, note, media, textClass = "", headClass =
 }
 
 const TRUST = [
-  { icon: "shieldCheck", title: "EM-Verified Data", text: "Verified using real UK enquiries and workshop data." },
-  { icon: "chartUp", title: "Real-World Insights", text: "Based on UK owner and specialist patterns." },
+  { icon: "genuine-failure-data", title: "EM-Verified Data", text: "Verified using real UK enquiries and workshop data." },
+  { icon: "market-insight", title: "Real-World Insights", text: "Based on UK owner and specialist patterns." },
   { icon: "users", title: "Trusted by Enthusiasts", text: "Part of Engine Finders — trusted Land Rover specialists." },
-  { icon: "award", title: "Quality You Can Trust", text: "Every engine is checked, inspected and quality assured." },
+  { icon: "transparent-data", title: "Quality You Can Trust", text: "Every engine is checked, inspected and quality assured." },
 ];
 
 export default function AtAGlance({ data, title = "", slug = "" }) {
@@ -268,20 +186,20 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
             <p className={VALUE}>{family}</p>
             <Underline />
           </SpecTile>
-          <SpecTile icon="drop" label="Fuel">
+          <SpecTile icon="petrol" label="Fuel">
             <p className={VALUE}>{fuel}</p>
             <Underline />
           </SpecTile>
-          <SpecTile icon="gauge" label="Power Range">
+          <SpecTile icon="meter" label="Power Range">
             <p className={VALUE}>{power}</p>
             {powerTag && (
               <span className="mt-2.5 inline-flex items-center gap-1 whitespace-nowrap rounded-md border border-lr-gold-line/70 bg-lr-gold-line/[0.08] px-1.5 py-1 text-[10px] font-medium uppercase tracking-[0.03em] min-[375px]:gap-1.5 min-[375px]:px-2 min-[375px]:text-[10.5px] min-[375px]:tracking-[0.05em] text-lr-gold lg:mt-3 lg:gap-2 lg:px-3 lg:py-1.5 lg:text-[14px] xl:text-[15px]">
-                <Svg name="shieldCheck" className="h-3.5 w-3.5 lg:h-4 lg:w-4" />
+                <LrIcon name="genuine-failure-data" tone="current" className={ICON_XS} />
                 {powerTag}
               </span>
             )}
           </SpecTile>
-          <SpecTile icon="shieldCheck" label="Engine Score">
+          <SpecTile icon="real-data" label="Engine Score">
             {score && (
               <>
                 <p className="mt-1 flex items-baseline gap-1 leading-none lg:mt-2 lg:gap-1.5">
@@ -301,7 +219,7 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
         {/* wide cards */}
         <div className="mt-3 grid gap-3 lg:mt-4 lg:grid-cols-[minmax(0,1.11fr)_minmax(0,1fr)] lg:gap-4">
           <WideCard
-            icon="piston"
+            icon="rod-bearing"
             label={config.metric || "Configuration / Displacement"}
             value={config.value}
             note={config.note || configNote(config.value, fuel, power)}
@@ -314,7 +232,7 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
             }
           />
           <WideCard
-            icon="calendar"
+            icon="generation-honest-rated"
             label="Years Produced"
             value={(years.value || "").split(" · ").map((part, i) => (
               <Fragment key={part}>
@@ -326,14 +244,14 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
             valueClass={(years.value || "").length > 24 ? "sm:text-[20px] lg:text-[20px] xl:text-[22px]" : undefined}
             textClass="lg:pr-[8%]"
             media={
-              <Svg
-                name="calendar"
-                className="pointer-events-none absolute -right-2 top-1/2 h-[130px] w-[130px] -translate-y-1/2 text-lr-head/[0.05] sm:h-[150px] sm:w-[150px] lg:right-4 lg:h-[170px] lg:w-[170px]"
+              <LrIcon
+                name="generation-honest-rated"
+                className="pointer-events-none absolute -right-2 top-1/2 h-[130px] w-[130px] -translate-y-1/2 opacity-[0.07] sm:h-[150px] sm:w-[150px] lg:right-4 lg:h-[170px] lg:w-[170px]"
               />
             }
           />
           <WideCard
-            icon="car"
+            icon="two-cars"
             label={models.metric || "Models Fitted"}
             value={modelsParsed.value}
             note={modelsParsed.note}
@@ -345,7 +263,7 @@ export default function AtAGlance({ data, title = "", slug = "" }) {
             }
           />
           <WideCard
-            icon="shieldCheck"
+            icon="independent-and-impartial"
             label={cross.metric || "Cross-Brand Fitment"}
             value={crossParsed.value}
             note={crossParsed.note}

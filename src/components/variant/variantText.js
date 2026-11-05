@@ -1,24 +1,42 @@
 // Small text helpers shared by the redesigned variant sections.
 
-// a problem/check icon (VariantIcons name) picked from its wording
-export function topicIcon(text = "") {
+// a problem / check pictogram (brand icon set name, see src/components/shared/lrIconNames.js) picked
+// from its wording. Rules run in order, so the most specific part wins ("oil dilution from DPF
+// regeneration" is an oil problem, "EGR cooler coolant leak" an EGR one).
+const TOPIC_ICONS = [
+  [/chain|belt|pulley|fead|vanos|vvt|valve timing|camshaft|valvetrain/, "timing-chain"],
+  [/egr/, "egr"],
+  [/dilution/, "oil-leaks"],
+  [/dpf|regen|particulate/, "dpf-filter"],
+  [/turbo|supercharg|boost|whistl/, "turbo"],
+  [/injector/, "injector"],
+  [/hpfp|high-pressure|injection pump|lift pump|fuel pump|fuel pressure|fuel system|vacuum/, "hpfp"],
+  [/adblue/, "adblue"],
+  [/gasket|cylinder head|head bolt|liner|top-hat|piston/, "ingenium"],
+  [/crank|balancer/, "crankshaft"],
+  [/bearing|knock|con-?rod/, "rod-bearing"],
+  [/coolant|overheat|water pump|thermostat|cooling|radiator|temperature|heater|cabin heat/, "cooling-system-2"],
+  [/oil|leak|dipstick/, "oil-leaks"],
+  [/smoke|soot|carbon|exhaust|emission|gpf/, "exhaust-and-emission"],
+  [/hybrid|48v|mhev|phev|ev mode|electric range|hv battery/, "ev"],
+  [/battery|charging|alternator|stop-start|starter/, "starting-and-charging"],
+  [/electr|sensor|ecu|wiring|loom|connector/, "chip"],
+  [/warning|engine light|management light|check engine|mil\b|diagnos|fault|codes/, "check-watch"],
+  [/warranty/, "genuine-failure-data"],
+  [/mot\b|advisor/, "symptoms"],
+  [/service|history|record|stamp|invoice|documented|recall|parts/, "oem-references"],
+  [/clutch|flywheel|vibration/, "flywheel"],
+  [/gearbox|transmission|drivetrain|brake/, "drivetrain-failures"],
+  [/pump/, "hpfp"],
+  [/fuel|petrol|diesel|carb|efi|economy/, "petrol"],
+  [/test drive|drivab/, "steering-wheel"],
+  [/compression|performance|power|mileage|miles/, "meter"],
+  [/chassis|body|rust|corrosion/, "chassis"],
+];
+
+export function topicIcon(text = "", fallback = "engine") {
   const t = text.toLowerCase();
-  if (/chain/.test(t)) return "chain";
-  if (/belt/.test(t)) return "belt";
-  if (/turbo/.test(t)) return "turbo";
-  if (/gasket|cylinder head|head bolt/.test(t)) return "gasket";
-  if (/injector|fuel|high-pressure pump|hpfp/.test(t)) return "fuel";
-  if (/bearing|crank/.test(t)) return "bearing";
-  if (/coolant|overheat|water pump|thermostat|cooling/.test(t)) return "coolant";
-  if (/oil/.test(t)) return "oil";
-  if (/dpf|egr|smoke|soot|filter|regen/.test(t)) return "filter";
-  if (/electr|sensor|ecu|wiring|battery/.test(t)) return "bolt";
-  if (/warning light|engine light|mil\b/.test(t)) return "engine";
-  if (/service|history|record|stamp|invoice/.test(t)) return "clipboard";
-  if (/mot\b|advisor/.test(t)) return "docsearch";
-  if (/mileage|miles/.test(t)) return "gauge";
-  if (/noise|rattle|knock/.test(t)) return "ear";
-  return "alert";
+  return TOPIC_ICONS.find(([re]) => re.test(t))?.[1] || fallback;
 }
 
 export const stripArrow = (label = "") => label.replace(/^\s*→\s*/, "").replace(/\s*→\s*$/, "");

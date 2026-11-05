@@ -4,8 +4,9 @@ import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import GroundedCar from "@/components/variant/GroundedCar";
-import VIcon from "@/components/variant/VariantIcons";
-import { BODY, BODY_SM, CONTAINER, H1, NUM, SMALL } from "@/lib/typeScale";
+import ArrowIcon from "@/components/variant/VariantIcons";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, CONTAINER, H1, ICON_LG, NUM, SMALL } from "@/lib/typeScale";
 
 // Variant hero: the variant's own car standing on a dusk highland photo (CC0 Poly Haven
 // "Champagne Castle", graded), with the tag pill, headline, trust badges, price anchor, reg
@@ -18,14 +19,15 @@ import { BODY, BODY_SM, CONTAINER, H1, NUM, SMALL } from "@/lib/typeScale";
 const FADE_DESKTOP = "dark:[mask-image:linear-gradient(to_right,transparent,rgba(0,0,0,0.25)_8%,rgba(0,0,0,0.7)_20%,#000_34%),linear-gradient(to_bottom,rgba(0,0,0,0.3),#000_22%,#000_70%,transparent)] dark:[mask-composite:intersect]";
 const FADE_MOBILE = "dark:[mask-image:linear-gradient(to_bottom,transparent,#000_28%,#000_82%,transparent)]";
 
-const BADGE_ICON_BY_EMOJI = { "🔧": "wrench", "✅": "shield", "🚚": "truck", "👥": "users" };
+// trust badge emoji -> brand icon (supply & fit, warranty, delivery, specialists)
+const BADGE_ICON_BY_EMOJI = { "🔧": "expert-verified", "✅": "genuine-failure-data", "🚚": "uk-wide-delivery", "👥": "users" };
 
 function parseBadge(badge = "") {
   const [emoji, ...rest] = badge.split(" ");
   const label = BADGE_ICON_BY_EMOJI[emoji] ? rest.join(" ") : badge;
   const cut = label.lastIndexOf(" ");
   return {
-    icon: BADGE_ICON_BY_EMOJI[emoji] || "shield",
+    icon: BADGE_ICON_BY_EMOJI[emoji] || "genuine-failure-data",
     lines: cut > 0 ? [label.slice(0, cut), label.slice(cut + 1)] : [label],
   };
 }
@@ -51,15 +53,6 @@ function UkFlagIcon({ className = "h-4 w-5" }) {
       <path d="M0 0 20 14M20 0 0 14" stroke="#C8102E" strokeWidth="1.2" />
       <path d="M10 0v14M0 7h20" stroke="#fff" strokeWidth="4" />
       <path d="M10 0v14M0 7h20" stroke="#C8102E" strokeWidth="2.4" />
-    </svg>
-  );
-}
-
-function TagIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path fill="currentColor" d="M11.2 2.5H20a1.5 1.5 0 0 1 1.5 1.5v8.8a1.5 1.5 0 0 1-.44 1.06l-7.7 7.7a1.5 1.5 0 0 1-2.12 0L2.44 12.76a1.5 1.5 0 0 1 0-2.12l7.7-7.7a1.5 1.5 0 0 1 1.06-.44z" />
-      <circle cx="16.6" cy="7.4" r="1.7" fill="var(--lr-card)" />
     </svg>
   );
 }
@@ -159,7 +152,7 @@ export default function VariantHero({ data, car = null }) {
                 const { icon, lines } = parseBadge(badge);
                 return (
                   <li key={badge} className="flex items-center gap-2.5 rounded-lg border border-lr-line bg-lr-card/85 px-3 py-3 shadow-[0_14px_30px_-26px_var(--lr-shadow)] md:py-4 lg:gap-3 lg:px-3.5 xl:px-4">
-                    <VIcon name={icon} className="h-7 w-7 shrink-0 text-lr-green md:h-9 md:w-9" />
+                    <LrIcon name={icon} className={ICON_LG} />
                     <span className={`${SMALL} text-lr-head`}>
                       {lines.map((l) => (
                         <span key={l} className="block">{l}</span>
@@ -175,7 +168,7 @@ export default function VariantHero({ data, car = null }) {
           {data.priceAnchor && (
             <div className="mt-2.5 flex flex-col rounded-xl border border-lr-line bg-lr-card/90 shadow-[0_20px_44px_-34px_var(--lr-shadow)] sm:flex-row sm:items-center md:mt-4 lg:max-w-[70%] xl:max-w-[66%]">
               <div className="flex flex-1 items-center gap-3.5 px-4 py-4 md:px-5 md:py-5">
-                <TagIcon className="h-8 w-8 shrink-0 -scale-x-100 text-lr-gold md:h-9 md:w-9" />
+                <LrIcon name="best-used-buy-2" className={ICON_LG} />
                 <p className={`${NUM} text-lr-head`} dangerouslySetInnerHTML={{ __html: highlightPrice(price.headline) }} />
               </div>
               {price.note && (
@@ -216,7 +209,7 @@ export default function VariantHero({ data, car = null }) {
                 <span className="md:hidden lg:inline xl:hidden">Get My Free Quotes Now</span>
                 <span className="hidden md:inline lg:hidden xl:inline">{ctaLabel}</span>
               </span>
-              <VIcon name="arrow" className="h-5 w-5 shrink-0" strokeWidth={2} />
+              <ArrowIcon className="h-5 w-5 shrink-0" strokeWidth={2} />
             </button>
           </form>
         </div>

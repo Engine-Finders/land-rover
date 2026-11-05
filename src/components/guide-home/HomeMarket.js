@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
-import { CONTAINER, H2, H6, BODY, BODY_SM, NUM, SMALL, LABEL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_MD, ICON_SM, LABEL, NUM, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night). The section's local palette (--mi-*) maps onto the site's
 // --lr-* tokens, so every card follows the navbar day / night button; only the bar fill and the plain
@@ -32,9 +32,9 @@ const FADE_BAND = "[mask-image:linear-gradient(to_bottom,transparent,#000_18%,#0
 function Card({ icon, title, sub, action, danger = false, className = "", children }) {
   return (
     <div className={`flex flex-col overflow-hidden rounded-lg border border-(--mi-border) bg-(--mi-card) shadow-[0_10px_28px_-18px_var(--lr-shadow)] ${className}`}>
-      <div className={`flex items-center gap-3.5 border-b border-transparent px-4 py-3 text-lr-on-brand sm:px-5 ${danger ? "bg-[#7a1a14] dark:bg-[#5a1712]" : "bg-(--mi-head)"}`}>
+      <div className={`lr-on-brand flex items-center gap-3.5 border-b border-transparent px-4 py-3 text-lr-on-brand sm:px-5 ${danger ? "bg-[#7a1a14] dark:bg-[#5a1712]" : "bg-(--mi-head)"}`}>
         <span className={danger ? "text-[#ffb3a9] dark:text-[#ff8a7e]" : ""}>
-          <GuideIcon name={icon} className="h-6 w-6 shrink-0 sm:h-7 sm:w-7" />
+          <GuideIcon name={icon} className={ICON_SM} />
         </span>
         <span className="min-w-0 flex-1 leading-tight">
           <span className={`${H6} block uppercase tracking-[0.02em]`}>{title}</span>
@@ -151,7 +151,7 @@ function Risks({ data }) {
           return (
             <li key={r.title} className="grid grid-cols-[auto_auto_minmax(0,1fr)] items-center gap-x-3 gap-y-1.5 py-3 sm:grid-cols-[auto_auto_minmax(0,1.2fr)_auto_minmax(0,1fr)] sm:gap-x-4 xl:gap-x-3">
               <span className={`row-span-2 sm:row-span-1 ${s.icon}`}>
-                <GuideIcon name="alert" className="h-7 w-7 xl:h-6 xl:w-6" />
+                <GuideIcon name="alert" tone="current" className={ICON_SM} />
               </span>
               <span className="relative row-span-2 h-10 w-11 sm:row-span-1 xl:h-9 xl:w-9">
                 <Image src={r.image} alt="" fill className="object-contain" sizes="44px" />
@@ -217,7 +217,7 @@ function Insights({ data }) {
                 i === 0 ? "bg-(--mi-soft) text-(--mi-tag)" : "bg-lr-gold-line/15 text-lr-gold"
               }`}
             >
-              <GuideIcon name={it.icon} className="h-7 w-7 sm:h-8 sm:w-8" />
+              <GuideIcon name={it.icon} className={ICON_MD} />
             </span>
             <span className={`${BODY_SM} text-(--mi-text)`}>{it.text}</span>
           </li>
@@ -286,7 +286,7 @@ export default function HomeMarket({ data }) {
         <div className="mt-3.5 rounded-lg border border-(--mi-border) bg-lr-panel px-4 py-4 sm:px-6 xl:mt-4 xl:flex xl:items-center xl:gap-0 xl:rounded-md xl:py-4">
           <div className="flex items-center gap-3.5 border-b border-(--mi-line) pb-3 xl:border-0 xl:pb-0">
             <span className="text-lr-gold">
-              <GuideIcon name="database" className="h-8 w-8" />
+              <GuideIcon name="database" className={ICON_LG} />
             </span>
             <p className={`${BODY_SM} leading-snug text-(--mi-text)`}>
               <span className="mr-2 font-semibold uppercase text-lr-gold sm:mr-5">{data.note.title}</span>

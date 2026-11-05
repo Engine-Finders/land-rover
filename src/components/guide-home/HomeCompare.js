@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
-import { CONTAINER, H2, H6, BODY, BODY_SM, SMALL, LABEL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_MD, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens.
 
@@ -116,7 +116,7 @@ export default function HomeCompare({ data }) {
         {/* data note */}
         <div className="mt-3 flex flex-wrap items-start gap-3.5 rounded-md border border-lr-line bg-lr-panel px-3.5 py-4 sm:flex-nowrap sm:items-center sm:gap-6 sm:px-6 lg:py-5">
           <span className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand sm:h-16 sm:w-16">
-            <GuideIcon name="chart-search" className="h-6 w-6 sm:h-8 sm:w-8" />
+            <GuideIcon name="chart-search" className={ICON_MD} />
           </span>
           <p className={`${BODY_SM} min-w-0 flex-1 text-lr-body lg:max-w-[760px]`}>
             <span className="font-semibold uppercase text-lr-green">{data.note.title}</span> {data.note.text}

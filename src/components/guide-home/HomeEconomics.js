@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
-import { CONTAINER, H2, H6, BODY, BODY_SM, SMALL, STAT_LG } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_SM, SMALL, STAT_LG } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens. The photos fade into the
 // page through CSS masks; at night the misty white sky the day photos were shot with is masked away
@@ -30,7 +30,7 @@ function Panel({ icon, title, className = "", children }) {
   return (
     <div className={`overflow-hidden rounded-md border border-lr-line bg-lr-card shadow-[0_10px_28px_-18px_var(--lr-shadow)] ${className}`}>
       <h3 className={`${H6} flex items-center gap-4 bg-lr-brand px-5 py-3.5 uppercase tracking-[0.04em] text-lr-on-brand sm:px-7 lg:py-4`}>
-        <GuideIcon name={icon} className="h-6 w-6 shrink-0 sm:h-7 sm:w-7" />
+        <GuideIcon name={icon} className={ICON_SM} />
         {title}
       </h3>
       {children}
@@ -80,7 +80,7 @@ function Matrix({ matrix }) {
               </span>
               <span className="flex items-start gap-1 border-l border-lr-line py-1 pl-1.5 sm:gap-3 sm:pl-4 lg:pl-6 xl:pl-4">
                 <span className={`shrink-0 ${v.tone}`}>
-                  <GuideIcon name={v.icon} className="h-[18px] w-[18px] sm:h-7 sm:w-7" />
+                  <GuideIcon name={v.icon} tone="current" className={ICON_SM} />
                 </span>
                 <span className="min-w-0">
                   <span className={`block text-[11px] font-semibold uppercase leading-tight sm:text-[14px] xl:text-[15px] ${v.tone}`}>{r.label}</span>
@@ -193,7 +193,7 @@ export default function HomeEconomics({ data }) {
         {/* data note */}
         <div className="mt-4 flex gap-4 rounded-md border border-lr-line bg-lr-panel px-4 py-4 sm:gap-6 sm:px-6 lg:mt-5 lg:items-center lg:px-9 lg:py-5">
           <span className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand lg:h-auto lg:w-auto lg:rounded-none lg:bg-transparent lg:text-lr-green">
-            <GuideIcon name="document" className="h-6 w-6 lg:h-10 lg:w-10" />
+            <GuideIcon name="document" className={ICON_LG} />
           </span>
           <div className="min-w-0 flex-1 lg:flex lg:items-center lg:gap-8">
             <p className={`${SMALL} font-semibold uppercase tracking-[0.02em] text-lr-ink lg:shrink-0`}>{data.note.title}</p>

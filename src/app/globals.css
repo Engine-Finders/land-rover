@@ -92,6 +92,8 @@
   --lr-warn: #b7791f;
   --lr-bad: #b23b3b;
   --lr-shadow: rgba(24, 40, 31, 0.1);
+  --lr-icon: #225c1f; /* brand icon set: IBS green by day */
+  --lr-icon-on-brand: #dec8a6; /* sand icons on brand-green tiles */
 }
 
 [data-theme="dark"] {
@@ -116,6 +118,28 @@
   --lr-warn: #e3b45c;
   --lr-bad: #f08787;
   --lr-shadow: rgba(0, 0, 0, 0.45);
+  --lr-icon: #dec8a6; /* Land Rover skin (sand) set at night */
+}
+
+/* brand icon set (LrIcon): an alpha mask painted in the theme's icon colour */
+@layer components {
+  .lr-icon {
+    display: inline-block;
+    flex-shrink: 0;
+    background-color: var(--lr-icon);
+    -webkit-mask: var(--lr-icon-src) center / contain no-repeat;
+    mask: var(--lr-icon-src) center / contain no-repeat;
+  }
+  :where(.bg-lr-brand, .lr-on-brand) .lr-icon,
+  .lr-icon-skin {
+    background-color: var(--lr-icon-on-brand);
+  }
+  .lr-icon-green {
+    background-color: #225c1f;
+  }
+  .lr-icon.lr-icon-current {
+    background-color: currentColor;
+  }
 }
 
 /* dark: utilities follow the navbar theme button, not the OS setting */

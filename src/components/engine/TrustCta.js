@@ -1,37 +1,23 @@
 import Link from "next/link";
 import { CONTAINER, SANS } from "@/components/engine/engineTheme";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY_SM, H2, H5, H6, ICON_MD, ICON_XL, LABEL } from "@/lib/typeScale";
 
 const CARD = "rounded-xl border border-lr-line bg-lr-card shadow-[0_14px_30px_-26px_var(--lr-shadow)] dark:bg-[linear-gradient(180deg,#17302a_0%,#12271f_100%)]";
-import { BODY_SM, H2, H5, H6, LABEL } from "@/lib/typeScale";
 
 // Engine section: Why Owners Trust Us - three trust cards ("Title: text" points from the page's
 // `trustCta` JSON) and the closing call-to-action bar with the quote button. Fixed dark design,
 // straight under the FAQ on the same band. 2xl values are the reference design at 1536px; xl is
 // the same layout scaled for 1280-1535px; md shows the cards three across; phones stack.
 
-const line = { fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
 
+// brand icons: compare -> magnifier, UK coverage -> globe, everything else -> vetted specialist
 function TrustIcon({ title }) {
   const key = title.toLowerCase();
-  const glyph = key.includes("compare") ? (
-    <>
-      <circle {...line} strokeWidth="2" cx="10.5" cy="10.5" r="6.5" />
-      <path {...line} strokeWidth="2.4" d="m15.4 15.4 5.1 5.1" />
-      <path {...line} strokeWidth="1.4" d="M7.6 9.2a3.4 3.4 0 0 1 2.4-2" />
-    </>
-  ) : key.includes("coverage") || key.includes("uk") ? (
-    <path fill="currentColor" fillRule="evenodd" d="M12 2.5a7.2 7.2 0 0 0-7.2 7.2c0 5.3 6.2 11.2 6.5 11.5a1 1 0 0 0 1.4 0c.3-.3 6.5-6.2 6.5-11.5A7.2 7.2 0 0 0 12 2.5zm0 4.4a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6z" />
-  ) : (
-    <>
-      <path {...line} strokeWidth="1.7" d="M12 2.8 19.4 5.7v5.9c0 4.6-3.1 7.8-7.4 9.6-4.3-1.8-7.4-5-7.4-9.6V5.7z" />
-      <path {...line} strokeWidth="1.9" d="m8.6 12 2.4 2.4 4.5-4.7" />
-    </>
-  );
+  const name = key.includes("compare") ? "scope-decision" : key.includes("coverage") || key.includes("uk") ? "uk-focused" : "vetted-specialist";
   return (
-    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-lr-line bg-lr-chip text-lr-green md:h-14 md:w-14 xl:h-[62px] xl:w-[62px]">
-      <svg viewBox="0 0 24 24" className="h-7 w-7 md:h-8 md:w-8 xl:h-[37px] xl:w-[37px]" aria-hidden="true">
-        {glyph}
-      </svg>
+    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-lr-line bg-lr-chip md:h-14 md:w-14 xl:h-[62px] xl:w-[62px]">
+      <LrIcon name={name} className={ICON_MD} />
     </span>
   );
 }
@@ -88,10 +74,7 @@ export default function TrustCta({ data }) {
             {/* soft green glow behind the shield */}
             <span className="pointer-events-none absolute -left-10 top-1/2 h-40 w-40 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(123,196,126,0.16),transparent_70%)]" aria-hidden="true" />
             <div className="relative flex items-start gap-4 md:items-center xl:min-w-0 xl:flex-1 xl:gap-[21px]">
-              <svg viewBox="3.6 1.8 16.8 20.4" className="h-12 w-10 shrink-0 md:h-14 md:w-12 xl:h-[58px] xl:w-[48px]" aria-hidden="true" style={{ color: "var(--lr-green)" }}>
-                <path {...line} strokeWidth="1.4" d="M12 2.6 19.6 5.6v6c0 4.7-3.2 8-7.6 9.8-4.4-1.8-7.6-5.1-7.6-9.8v-6z" />
-                <path {...line} strokeWidth="1.6" d="m8.6 12 2.4 2.4 4.5-4.7" />
-              </svg>
+              <LrIcon name="genuine-failure-data" className={ICON_XL} />
               <span className="hidden h-[52px] w-px shrink-0 bg-lr-line xl:block" aria-hidden="true" />
               <div className="min-w-0">
                 {title && <p className={`${H5} text-lr-head`}>{title}</p>}

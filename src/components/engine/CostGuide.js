@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CONTAINER, INK, SANS } from "@/components/engine/engineTheme";
-import { BODY, BODY_SM, H2, H5, LABEL as EYEBROW, STAT } from "@/lib/typeScale";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, H2, H5, ICON_MD, ICON_SM, ICON_XL, LABEL as EYEBROW, STAT } from "@/lib/typeScale";
 
 // Engine section: Cost Guide - intro (labour estimate + shared-cost note), one price card per
 // condition (Used / Reconditioned "most popular" / Rebuilt: supply-only, fitted, warranty) and a
@@ -11,68 +12,21 @@ import { BODY, BODY_SM, H2, H5, LABEL as EYEBROW, STAT } from "@/lib/typeScale";
 
 
 const line = { fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
+// arrow on the CTA button; every other icon is from the brand icon set
 const GLYPHS = {
-  tag: (
-    <>
-      <path fill="currentColor" d="M11.2 2.5H20a1.5 1.5 0 0 1 1.5 1.5v8.8a1.5 1.5 0 0 1-.44 1.06l-7.7 7.7a1.5 1.5 0 0 1-2.12 0L2.44 12.76a1.5 1.5 0 0 1 0-2.12l7.7-7.7a1.5 1.5 0 0 1 1.06-.44z" />
-      <circle cx="16.6" cy="7.4" r="1.7" fill="var(--lr-chip)" />
-    </>
-  ),
-  star: <path fill="currentColor" d="m12 3.2 2.6 5.4 5.9.7-4.4 4.1 1.2 5.8L12 16.3l-5.3 2.9 1.2-5.8-4.4-4.1 5.9-.7z" />,
-  tools: (
-    <>
-      <path {...line} d="M14.2 6.4a3.4 3.4 0 0 0 4.3 4.3L9.4 19.8a1.6 1.6 0 0 1-2.3-2.3zM14.2 6.4a3.4 3.4 0 0 1 4.2-2.1l-2 2 .3 1.8 1.8.3 2-2a3.4 3.4 0 0 1-2.1 4.2" />
-      <path {...line} d="m4.2 4.2 2.4-.9 5.2 5.2-1.5 1.5-5.2-5.2zM12.9 13.1l5.6 5.6a1.4 1.4 0 0 1-2 2l-5.6-5.6" />
-    </>
-  ),
-  info: (
-    <>
-      <circle {...line} strokeWidth="1.4" cx="12" cy="12" r="9.2" />
-      <path {...line} d="M12 11v5.5" />
-      <circle cx="12" cy="7.8" r="1.1" fill="currentColor" />
-    </>
-  ),
-  arrow: <path {...line} strokeWidth="1.8" d="M4 12h16M14 6l6 6-6 6" />,
+  arrow: <path {...line} d="M5 12h14M13 6l6 6-6 6" />,
 };
+
 const Svg = ({ name, className }) => (
   <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
     {GLYPHS[name]}
   </svg>
 );
 
-// filled shield on a viewBox cropped to its outline
-function ShieldIcon({ className }) {
-  return (
-    <svg viewBox="4.4 2.6 15.2 18.8" className={className} aria-hidden="true">
-      <path fill="currentColor" d="M12 2.6 19.6 5.6v6c0 4.7-3.2 8-7.6 9.8-4.4-1.8-7.6-5.1-7.6-9.8v-6z" />
-      <path fill="none" stroke="var(--lr-panel)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" d="m8.6 12 2.4 2.4 4.5-4.7" />
-    </svg>
-  );
-}
-
-function ChartIcon({ className }) {
-  return (
-    <svg viewBox="0 0 48 42" className={className} aria-hidden="true">
-      <defs>
-        <linearGradient id="cost-guide-gold" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#e7c98d" />
-          <stop offset="1" stopColor="#a9853f" />
-        </linearGradient>
-      </defs>
-      <rect x="4" y="29" width="7" height="12" rx="1" fill="url(#cost-guide-gold)" />
-      <rect x="15" y="22" width="7" height="19" rx="1" fill="url(#cost-guide-gold)" />
-      <rect x="26" y="25" width="7" height="16" rx="1" fill="url(#cost-guide-gold)" />
-      <rect x="37" y="15" width="7" height="26" rx="1" fill="url(#cost-guide-gold)" />
-      <path d="m3 21 10-9 7 6 15-13" fill="none" stroke="url(#cost-guide-gold)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M29 4h7v7" fill="none" stroke="url(#cost-guide-gold)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
 const ICON_BY_CONDITION = [
-  [/recon/i, "star"],
-  [/rebuil/i, "tools"],
-  [/used/i, "tag"],
+  [/recon/i, "independent-star"],
+  [/rebuil/i, "expert-verified"],
+  [/used/i, "best-used-buy-2"],
 ];
 
 // source tags in green, hours and labour rates in bold
@@ -89,8 +43,8 @@ const LABEL = "text-[12px] uppercase leading-snug tracking-[0.04em] text-lr-mute
 const NOTE = `rounded-lg border border-lr-line bg-lr-panel ${BODY_SM} text-lr-body xl:rounded-[9px]`;
 
 function PriceCard({ row }) {
-  const icon = (ICON_BY_CONDITION.find(([re]) => re.test(row.condition)) || [])[1] || "tag";
-  const featured = icon === "star";
+  const icon = (ICON_BY_CONDITION.find(([re]) => re.test(row.condition)) || [])[1] || "best-used-buy-2";
+  const featured = icon === "independent-star";
   return (
     <article
       className={`${CARD} flex flex-col px-4 pb-4 pt-5 sm:px-5 md:px-4 xl:px-[16px] xl:pb-[22px] xl:pt-[14px] ${featured ? "mt-3 border-[1.5px] border-lr-ink md:mt-0 dark:border-lr-green" : ""}`}
@@ -104,7 +58,7 @@ function PriceCard({ row }) {
         <span
           className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full md:h-9 md:w-9 xl:h-[41px] xl:w-[41px] ${featured ? "bg-lr-brand text-lr-on-brand" : "bg-lr-chip text-lr-ink shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] dark:text-lr-green"}`}
         >
-          <Svg name={icon} className="h-6 w-6 md:h-5 md:w-5 xl:h-[22px] xl:w-[22px]" />
+          <LrIcon name={icon} className={ICON_SM} />
         </span>
         <div className="min-w-0 xl:mt-[5px]">
           {/* 3-4 cards share a row from md to lg, so the title steps down there to fit "Reconditioned" */}
@@ -155,15 +109,13 @@ export default function CostGuide({ data, engineName = "" }) {
             <div className="mt-4 grid gap-2.5 lg:mt-0 xl:gap-[10px]">
               {data.labourEstimate && (
                 <p className={`${NOTE} flex gap-3 px-3.5 py-3.5 md:px-4 xl:gap-[17px] xl:pb-[9px] xl:pl-[13px] xl:pr-[10px] xl:pt-[11px] [&_strong]:font-semibold [&_strong]:text-lr-head`}>
-                  <Svg name="info" className="mt-0.5 h-7 w-7 shrink-0 md:h-8 md:w-8 xl:mt-[2px] xl:h-[28px] xl:w-[28px]" />
+                  <LrIcon name="note" className={`mt-0.5 ${ICON_MD} xl:mt-[2px]`} />
                   <span dangerouslySetInnerHTML={{ __html: richText(data.labourEstimate) }} />
                 </p>
               )}
               {data.sharedCostNote && (
                 <p className={`${NOTE} flex items-center gap-3 px-3.5 py-3 md:px-4 xl:gap-[20px] xl:pb-[9px] xl:pl-[15px] xl:pt-[9px]`}>
-                  <span className="shrink-0 text-lr-ink dark:text-lr-green">
-                    <ShieldIcon className="h-7 w-[23px] md:h-8 md:w-[26px] xl:h-[27px] xl:w-[22px]" />
-                  </span>
+                  <LrIcon name="independent-and-impartial" className={ICON_MD} />
                   <span dangerouslySetInnerHTML={{ __html: richText(data.sharedCostNote) }} />
                 </p>
               )}
@@ -178,8 +130,8 @@ export default function CostGuide({ data, engineName = "" }) {
           </div>
 
           {/* compare prices */}
-          <aside className="flex flex-col rounded-xl px-5 pb-5 pt-6 text-white shadow-[0_24px_44px_-28px_rgba(18,61,42,0.9)] md:flex-row md:items-center md:gap-6 md:px-7 lg:flex-col lg:items-stretch lg:gap-0 lg:px-5 xl:px-[23px] xl:pb-[16px] xl:pt-[18px]" style={{ background: "linear-gradient(160deg,#184a34 0%,#0f3323 100%)" }}>
-            <ChartIcon className="h-11 w-12 shrink-0 md:h-12 md:w-14 lg:mx-auto lg:h-14 lg:w-16 xl:h-[55px] xl:w-[54px]" />
+          <aside className="lr-on-brand flex flex-col rounded-xl px-5 pb-5 pt-6 text-white shadow-[0_24px_44px_-28px_rgba(18,61,42,0.9)] md:flex-row md:items-center md:gap-6 md:px-7 lg:flex-col lg:items-stretch lg:gap-0 lg:px-5 xl:px-[23px] xl:pb-[16px] xl:pt-[18px]" style={{ background: "linear-gradient(160deg,#184a34 0%,#0f3323 100%)" }}>
+            <LrIcon name="trend" className={`${ICON_XL} lg:mx-auto`} />
             <div className="mt-4 md:mt-0 md:flex-1 lg:mb-5 lg:mt-4 xl:mb-[15px] xl:mt-[9px]">
               <p className={H5}>Compare Prices from UK specialists</p>
               <p className={`mt-2 ${BODY_SM} text-white/85 xl:mt-[8px]`}>Get live pricing from trusted engine suppliers across the UK.</p>

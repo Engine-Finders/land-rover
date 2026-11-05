@@ -213,7 +213,7 @@ function Insights({ data }) {
         {data.items.map((it, i) => (
           <li key={it.text} className="flex items-center gap-4 py-4 sm:gap-5">
             <span
-              className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-(--mi-border) sm:h-16 sm:w-16 ${
+              className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-(--mi-border) sm:h-13 sm:w-13 ${
                 i === 0 ? "bg-(--mi-soft) text-(--mi-tag)" : "bg-lr-gold-line/15 text-lr-gold"
               }`}
             >

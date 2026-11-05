@@ -1,20 +1,26 @@
-import Image from "next/image";
 import Link from "next/link";
 import LandRoverLogo from "@/components/guide-home/LandRoverLogo";
+import GroundedCar from "@/components/variant/GroundedCar";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import { BODY, BODY_SM, CONTAINER, H1, H4, H6, ICON_LG, ICON_MD, ICON_SM, ICON_XL, LABEL, NUM, SMALL, STAT } from "@/lib/typeScale";
 
-// Follows the site theme (navbar day / night button). Day: white page, the Defender photo framed as a
-// rounded card beside the headline (desktop) or under the CTA (phones). Night: the photo bleeds off the
-// right edge and feathers into the green page through CSS masks (no colour overlays, so it blends with
-// any background).
+// Follows the site theme (navbar day / night button). The hero stands the Defender on a Highland
+// loch-side hillside: golden hour on the day theme, a storm at night. The landscape is a CSS
+// background picked by theme and screen size, so each visitor downloads only the one they see.
+// Desktop: full-bleed behind the band, washed in the page colour behind the headline and fading
+// into the page at the bottom. Phones / tablets: a banner under the headline with the car in it.
 
-// night theme: feather the desktop photo's left / top / bottom edges into the page
-const FADE_DESKTOP =
-  "[mask-image:linear-gradient(to_right,transparent,rgba(0,0,0,0.65)_25%,#000_46%),linear-gradient(to_bottom,rgba(0,0,0,0.3),#000_10%,#000_66%,transparent)] [mask-composite:intersect]";
-// night theme: feather the phone photo's top and side edges
-const FADE_MOBILE =
-  "dark:[mask-image:linear-gradient(to_bottom,transparent,#000_25%),linear-gradient(to_right,rgba(0,0,0,0.3),#000_6%,#000_94%,rgba(0,0,0,0.3))] dark:[mask-composite:intersect]";
+const CAR = "/home/hero-defender-cut.webp";
+const BG_DESKTOP = "bg-[url(/home/hero-loch-day.webp)] dark:bg-[url(/home/hero-loch-night.webp)]";
+const BG_MOBILE = "bg-[url(/home/hero-loch-day-m.webp)] dark:bg-[url(/home/hero-loch-night-m.webp)]";
+// the band's height: the car stands on the foreground, its wheels ~78% down
+const BAND = "h-[640px] xl:h-[680px] min-[1400px]:h-[700px]";
+// page-coloured wash behind the headline column (measured from the container's left edge at any
+// width), so the copy reads cleanly while the loch and the car show on the right
+const WASH = {
+  background:
+    "linear-gradient(90deg, var(--lr-page) 0px, color-mix(in srgb, var(--lr-page) 92%, transparent) calc(max(0px, 50vw - 704px) + 500px), color-mix(in srgb, var(--lr-page) 60%, transparent) calc(max(0px, 50vw - 704px) + 720px), transparent calc(max(0px, 50vw - 704px) + 980px))",
+};
 
 export default function HomeSec1({ hero }) {
   const [line1, line2, line3] = hero.h1.split("|");
@@ -75,7 +81,7 @@ export default function HomeSec1({ hero }) {
 
             <Link
               href={hero.cta.href}
-              className="relative mx-auto mt-6 flex w-[82%] max-w-100 items-center justify-center gap-3 rounded-xl border border-lr-brand bg-lr-brand py-4 text-[17px] font-semibold uppercase tracking-[0.06em] text-lr-on-brand shadow-[0_12px_28px_-12px_var(--lr-shadow),inset_0_1px_0_rgba(255,255,255,0.18)] transition-colors hover:bg-lr-brand-hover dark:border-lr-green/45 dark:shadow-[0_0_28px_-4px_rgba(60,190,125,0.45),inset_0_1px_0_rgba(255,255,255,0.25)]"
+              className="relative mx-auto mt-6 flex w-[82%] max-w-100 items-center justify-center gap-3 whitespace-nowrap rounded-xl border border-lr-brand bg-lr-brand py-4 text-[15px] font-semibold uppercase tracking-[0.05em] min-[360px]:text-[17px] min-[360px]:tracking-[0.06em] text-lr-on-brand shadow-[0_12px_28px_-12px_var(--lr-shadow),inset_0_1px_0_rgba(255,255,255,0.18)] transition-colors hover:bg-lr-brand-hover dark:border-lr-green/45 dark:shadow-[0_0_28px_-4px_rgba(60,190,125,0.45),inset_0_1px_0_rgba(255,255,255,0.25)]"
             >
               {hero.cta.label}
               <Arrow />
@@ -85,17 +91,17 @@ export default function HomeSec1({ hero }) {
             </div>
           </div>
 
-          {/* Defender photo: a framed card on the day theme, full-bleed and feathered into the page at night */}
-          <div className="relative mt-7 w-full px-4 md:px-8 dark:mt-1 dark:px-0">
-            <div
-              className={`relative mx-auto aspect-16/11 w-full max-w-200 overflow-hidden rounded-2xl border border-lr-line shadow-[0_20px_44px_-30px_var(--lr-shadow)] sm:aspect-887/464 dark:rounded-none dark:border-0 dark:shadow-none ${FADE_MOBILE}`}
-            >
-              <Image src={hero.mobileImage} alt={hero.imageAlt} fill priority quality={90} className="object-cover object-[62%_55%]" sizes="(max-width: 800px) 100vw, 800px" />
+          {/* the Defender on the loch-side hillside - top edge feathered into the page */}
+          <div className="relative mt-6 w-full">
+            <div className={`relative mx-auto aspect-[4/3] w-full max-w-200 bg-cover bg-bottom sm:aspect-[16/9] ${BG_MOBILE} [mask-image:linear-gradient(to_bottom,transparent,#000_20%)]`} role="img" aria-label={hero.imageAlt}>
+              <div className="absolute bottom-[19%] left-1/2 w-[70%] max-w-[520px] -translate-x-1/2 sm:bottom-[15%] sm:w-[56%]">
+                <GroundedCar src={CAR} priority sceneByTheme sizes="(max-width: 640px) 74vw, 520px" />
+              </div>
             </div>
           </div>
 
-          {/* trust card, overlapping the bottom of the photo */}
-          <div className="relative mx-auto -mt-10 max-w-160 px-0 pb-8 sm:px-4">
+          {/* trust card, overlapping only the ground below the car */}
+          <div className="relative mx-auto -mt-8 max-w-160 px-0 pb-8 sm:px-4">
             <div className="relative rounded-t-[26px] border-t border-lr-line bg-linear-to-b from-lr-card/95 to-lr-page px-3 pb-2 pt-10 shadow-[0_-20px_40px_-20px_var(--lr-shadow)] backdrop-blur-md sm:rounded-[26px] sm:border">
               {/* logo tab */}
               <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-[60%]">
@@ -111,7 +117,7 @@ export default function HomeSec1({ hero }) {
               <div className="mt-4 grid grid-cols-2 gap-2.5">
                 {hero.trust.items.map((t) => (
                   <div key={t.title} className="flex items-center gap-2.5 rounded-2xl border border-lr-line bg-lr-panel/60 p-2.5 sm:gap-3 sm:p-3">
-                    <span className="flex h-11 w-11 shrink-0 sm:h-13 sm:w-13 items-center justify-center rounded-full border border-lr-green/35 bg-lr-chip text-lr-green dark:bg-[radial-gradient(circle_at_50%_35%,#1d4a35,#0d2219)] dark:shadow-[0_0_14px_-2px_rgba(70,180,120,0.35)]">
+                    <span className="flex h-10 w-10 shrink-0 sm:h-12 sm:w-12 items-center justify-center rounded-full border border-lr-green/35 bg-lr-chip text-lr-green dark:bg-[radial-gradient(circle_at_50%_35%,#1d4a35,#0d2219)] dark:shadow-[0_0_14px_-2px_rgba(70,180,120,0.35)]">
                       <GuideIcon name={t.icon} className={ICON_SM} />
                     </span>
                     <p className={`${SMALL} text-lr-body`}>
@@ -134,17 +140,16 @@ export default function HomeSec1({ hero }) {
       {/* ===== desktop ===== */}
       <div className="hidden lg:block">
         <div className="relative">
-          {/* day theme: the photo as a framed card beside the headline */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 dark:hidden" aria-hidden="true">
-            <div className={`${CONTAINER} relative`}>
-              <div className="absolute right-8 top-12 aspect-[3/2] w-[40%] overflow-hidden rounded-2xl border border-lr-line shadow-[0_30px_60px_-34px_var(--lr-shadow)] xl:w-[47%]">
-                <Image src={hero.image} alt="" fill priority quality={90} className="object-cover object-center" sizes="66vw" />
+          {/* the loch landscape behind the band, fading into the page at the bottom */}
+          <div className={`pointer-events-none absolute inset-x-0 top-0 ${BAND} bg-cover bg-[center_62%] ${BG_DESKTOP} [mask-image:linear-gradient(to_bottom,#000_74%,transparent)]`} aria-hidden="true" />
+          <div className={`pointer-events-none absolute inset-x-0 top-0 ${BAND}`} style={WASH} aria-hidden="true" />
+          {/* the Defender on the foreground - width steps with the screen so it always clears the headline */}
+          <div className={`pointer-events-none absolute inset-x-0 top-0 ${BAND}`}>
+            <div className={`${CONTAINER} relative h-full`}>
+              <div className="absolute bottom-[22%] right-8 w-[34%] xl:w-[40%] min-[1400px]:w-[45%]">
+                <GroundedCar src={CAR} priority sceneByTheme sizes="(min-width: 1024px) 46vw, 1px" />
               </div>
             </div>
-          </div>
-          {/* night theme: the photo anchored right, feathered into the page */}
-          <div className={`absolute right-0 top-0 hidden h-[620px] w-[66%] dark:block xl:h-[640px] ${FADE_DESKTOP}`}>
-            <Image src={hero.image} alt={hero.imageAlt} fill priority quality={90} className="object-cover object-center" sizes="66vw" />
           </div>
 
           <div className={`${CONTAINER} relative pt-12`}>
@@ -216,7 +221,7 @@ export default function HomeSec1({ hero }) {
               <div className="mt-6 grid grid-cols-4">
                 {hero.trust.items.map((t, i) => (
                   <div key={t.title} className={`flex flex-col items-center px-8 ${i > 0 ? "border-l border-lr-line" : ""}`}>
-                    <span className="flex h-15 w-15 items-center justify-center rounded-full border border-lr-gold-line/55 bg-lr-chip text-lr-gold">
+                    <span className="flex h-13 w-13 items-center justify-center rounded-full border border-lr-gold-line/55 bg-lr-chip text-lr-gold">
                       <GuideIcon name={t.icon} className={ICON_MD} />
                     </span>
                     <h3 className={`${H6} mt-4 max-w-[260px] text-lr-head`}>{t.title}</h3>

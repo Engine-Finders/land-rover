@@ -56,7 +56,7 @@ function PriceCard({ row }) {
       )}
       <div className="flex items-center gap-3 md:gap-2.5 xl:items-start xl:gap-[14px] xl:pl-[3px]">
         <span
-          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full md:h-9 md:w-9 xl:h-[41px] xl:w-[41px] ${featured ? "bg-lr-brand text-lr-on-brand" : "bg-lr-chip text-lr-ink shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] dark:text-lr-green"}`}
+          className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full md:h-9 md:w-9 xl:h-[41px] xl:w-[41px] ${featured ? "bg-lr-brand text-lr-on-brand" : "bg-lr-chip text-lr-ink shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] dark:text-lr-green"}`}
         >
           <LrIcon name={icon} className={ICON_SM} />
         </span>

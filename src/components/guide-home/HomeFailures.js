@@ -244,7 +244,7 @@ export default function HomeFailures({ data }) {
         {/* data note */}
         <div className="relative mt-4 overflow-hidden rounded-xl border border-lr-line bg-lr-panel lg:mt-5 lg:rounded-md">
           <div className="relative flex flex-wrap items-center gap-3.5 px-3.5 py-4 sm:flex-nowrap sm:gap-6 sm:px-6 lg:px-7">
-            <span className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand sm:h-[60px] sm:w-[60px]">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand sm:h-[52px] sm:w-[52px]">
               <GuideIcon name="shield" className={ICON_MD} />
             </span>
             <div className="min-w-0 flex-1">

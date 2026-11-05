@@ -184,7 +184,7 @@ export default function Compatibility({ data, engineName = "", years = "", slug 
           })}
 
           <article className={`${CARD} flex flex-col p-4 xl:pb-[16px] xl:pl-[20px] xl:pr-[12px] xl:pt-[14px] ${SPAN[fill(n, 2)]} ${SPAN_SM[fill(n, 3)]} ${SPAN_LG[fill(n, 4)]}`}>
-            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-lr-chip text-lr-ink shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] xl:h-[56px] xl:w-[56px] dark:text-lr-green">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-lr-chip text-lr-ink shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] xl:h-[48px] xl:w-[48px] dark:text-lr-green">
               <LrIcon name="oem-references" className={ICON_MD} />
             </span>
             <p className={`mt-3 ${H6} uppercase leading-[1.25] text-lr-head xl:mt-[13px]`}>Compatibility Verified</p>

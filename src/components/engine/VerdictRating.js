@@ -81,7 +81,7 @@ const CARD = "relative rounded-xl border border-lr-line bg-lr-card shadow-[0_14p
 function IconDisc({ name }) {
   return (
     <span
-      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lr-chip shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] md:my-4 md:h-14 md:w-14 xl:my-[16px] xl:h-[60px] xl:w-[60px]"
+      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lr-chip shadow-[inset_0_0_0_1px_var(--lr-line),0_3px_8px_-3px_var(--lr-shadow)] md:my-4 md:h-14 md:w-14 xl:my-[16px] xl:h-[52px] xl:w-[52px]"
     >
       <LrIcon name={name} className={ICON_MD} />
     </span>

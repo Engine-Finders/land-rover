@@ -1473,5 +1473,180 @@
     5.4
    ]
   ]
+ },
+ "/variant/cars/land-rover-discovery-series-i-discovery-3-5-door-suv-1989199-519f.webp": {
+  "w": 996,
+  "h": 640,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    14.9,
+    94.7,
+    7.5
+   ],
+   [
+    62.1,
+    99.8,
+    6.4
+   ],
+   [
+    89.6,
+    87.0,
+    5.5
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-discovery-series-ii-discovery-5-door-suv-19982004-d782.webp": {
+  "w": 1098,
+  "h": 628,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    13.7,
+    95.1,
+    7.5
+   ],
+   [
+    53.0,
+    99.8,
+    7.1
+   ],
+   [
+    87.7,
+    90.3,
+    5
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-range-rover-p38a-vogue-suv-19982002-new-epsom-gre-b23e.webp": {
+  "w": 1017,
+  "h": 556,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    14.9,
+    93.9,
+    6.4
+   ],
+   [
+    54.5,
+    99.8,
+    5.6
+   ],
+   [
+    88.9,
+    84.7,
+    5.4
+   ]
+  ]
+ },
+ "/variant/cars/land-rover-range-rover-classic-2-door-2-door-suv-19701981-hi-e1f2.webp": {
+  "w": 1100,
+  "h": 662,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    14.7,
+    94.3,
+    6.5
+   ],
+   [
+    58.5,
+    99.8,
+    6.1
+   ],
+   [
+    88.5,
+    83.5,
+    5
+   ]
+  ]
+ },
+ "/home/hero-defender-cut.webp": {
+  "w": 1088,
+  "h": 662,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    10.5,
+    95.9,
+    7.5
+   ],
+   [
+    57.1,
+    99.8,
+    7.5
+   ],
+   [
+    92.6,
+    88.5,
+    6.4
+   ]
+  ]
+ },
+ "/engine-hero/engine-cut.webp": {
+  "w": 902,
+  "h": 787,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    21.0,
+    90.8,
+    9.0
+   ],
+   [
+    40.0,
+    99.6,
+    11.0
+   ],
+   [
+    76.0,
+    87.0,
+    9.0
+   ]
+  ]
+ },
+ "/engine-hero/engine-tdi-cut.webp": {
+  "w": 902,
+  "h": 787,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    21.0,
+    90.8,
+    9.0
+   ],
+   [
+    40.0,
+    99.6,
+    11.0
+   ],
+   [
+    76.0,
+    87.0,
+    9.0
+   ]
+  ]
  }
 }

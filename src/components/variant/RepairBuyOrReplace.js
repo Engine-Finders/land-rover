@@ -1,93 +1,151 @@
 import Link from "next/link";
 import Image from "next/image";
+import GroundedCar from "@/components/variant/GroundedCar";
+import { LochBand, LochBanner } from "@/components/variant/PhotoScene";
 import VIcon from "@/components/variant/VariantIcons";
-import { carRatio } from "@/lib/carGeometry";
 import { stripArrow, stripBullet, topicIcon } from "@/components/variant/variantText";
 import LrIcon from "@/components/shared/LrIcon";
-import { BODY, BODY_SM, CONTAINER, H2, H5, H6, ICON_LG, ICON_MD, ICON_SM, SMALL } from "@/lib/typeScale";
+import { CONTAINER, H2, H5, ICON_LG, ICON_MD, ICON_SM } from "@/lib/typeScale";
 
-// Variant section: "Repair, Buy, or Replace?" - repairability table, buy/avoid checklist,
-// closing verdict, compare CTA and trust strip, from the page's `repairBuyOrReplace` JSON.
-// Editorial design (serif headings, gold accents) that follows the site theme (day / night).
+// Variant sections 4-5: "Repair, Buy, or Replace?", built to the approved reference (day + night):
+// a gold rule, serif title (the engine in green) and intro beside the car standing on the loch-side
+// hillside; then "Can It Be Repaired?" (problem table) beside "Buying This ...? Check These First"
+// (Buy If / Avoid If boxes); then the Closing Verdict with its shield beside the "Don't guess" compare
+// card with the engine photo. Copy from the page's `repairBuyOrReplace` JSON; the intro defaults to
+// the verdict's opening claim. Phones stack everything; the two card rows sit side by side from xl.
 
-const STATUS = {
-  yes: { disc: "bg-lr-good", mark: "check" },
-  partial: { disc: "bg-lr-warn", mark: "check" },
-  no: { disc: "bg-lr-bad", mark: "cross" },
-};
+const SERIF = "font-[family-name:var(--font-serif-display)]";
+const SANS = "font-[family-name:var(--font-instrument-sans)]";
+const CARD = "rounded-lg border border-lr-line bg-lr-card/95 shadow-[0_14px_30px_-26px_var(--lr-shadow)] backdrop-blur-sm";
+const CARD_TITLE = `${H5} text-lr-head`;
+const dashify = (t = "") => String(t).replace(/ - /g, " — ");
 
-const TRUST = [
-  { icon: "vetted-specialist", label: "20+ Vetted Specialists UK Network" },
-  { icon: "genuine-failure-data", label: "12-Month Warranty as Standard" },
-  { icon: "uk-wide-delivery", label: "Nationwide Delivery & Collection" },
-  { icon: "best-used-buy-2", label: "Transparent Pricing, No Hidden Fees" },
-  { icon: "users", label: "Thousands of Owners Helped" },
-];
+/* ---------- icons ---------- */
+const stroke = { fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
+// topic pictogram for a problem / check line (brand set; a calendar for model-year advice)
+function TopicIcon({ text = "", className = "" }) {
+  const t = text.toLowerCase();
+  let name = topicIcon(text);
+  if (/pre-?19\d\d|example|model year/.test(t)) name = "generation-honest-rated";
+  if (/timing belt|snapped/.test(t)) name = "chain";
+  else if (/overheat|coolant/.test(t)) name = "cooling-system-2";
+  else if (/head gasket/.test(t)) name = "ingenium";
+  else if (/injection pump|injector/.test(t)) name = "injector";
+  else if (/lift pump/.test(t)) name = "petrol";
+  else if (/cold start|smoke/.test(t) && !/black smoke/.test(t)) name = "exhaust-and-emission";
+  return <LrIcon name={name} tone="current" className={className} />;
+}
+function StatusDisc({ ok }) {
+  const bg = ok === "no" ? "bg-lr-bad" : ok === "partial" ? "bg-lr-warn" : "bg-lr-good";
+  return (
+    <span className={`flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full ${bg}`} aria-hidden="true">
+      <svg viewBox="0 0 24 24" className="h-3 w-3 text-white" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round">
+        {ok === "no" ? <path d="M7 7l10 10M17 7 7 17" /> : <path d="m6 12.5 4 4 8-9" />}
+      </svg>
+    </span>
+  );
+}
 
-// "✅ Yes" / "❌ No" / "⚠️ Sometimes" -> status + label without the emoji
+// "✅ Yes" / "❌ Usually No" / "⚠️ Sometimes" -> status + label without the emoji
 function repairable(value = "") {
   const label = value.replace(/^[^\p{L}\p{N}]+/u, "").trim() || value;
   if (value.includes("✅")) return { ok: "yes", label };
   if (value.includes("❌")) return { ok: "no", label };
   return { ok: "partial", label };
 }
-
-function StatusMark({ value, className = "" }) {
+function Status({ value, className = "" }) {
   const { ok, label } = repairable(value);
-  const s = STATUS[ok];
   return (
-    <span className={`inline-flex items-center gap-1.5 font-medium ${ok === "no" ? "text-lr-bad" : ""} ${className}`}>
-      <span className={`flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full ${s.disc}`}>
-        <svg viewBox="0 0 24 24" className="h-3 w-3 text-lr-page" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          {s.mark === "check" ? <path d="m6 12.5 4 4 8-9" /> : <path d="M7 7l10 10M17 7 7 17" />}
-        </svg>
-      </span>
-      <span className={ok === "no" ? "" : "text-lr-head"}>{label}</span>
+    <span className={`inline-flex items-center gap-2 whitespace-nowrap ${ok === "no" ? "text-lr-bad" : "text-lr-head"} ${className}`}>
+      <StatusDisc ok={ok} />
+      {label}
     </span>
   );
 }
 
-function Card({ className = "", children }) {
-  return <div className={`rounded-xl border border-lr-line bg-lr-card/90 shadow-[0_20px_44px_-34px_var(--lr-shadow)] backdrop-blur-sm ${className}`}>{children}</div>;
-}
-
-function CardTitle({ icon, children }) {
+/* ---------- Can it be repaired ---------- */
+function RepairCard({ repair }) {
+  const cols = repair.columns?.length === 4 ? repair.columns : ["Problem", "Repairable?", "Typical Cost", "When It Makes Sense"];
+  const rowIcon = `${ICON_MD} text-lr-head dark:text-lr-gold`;
   return (
-    <h3 className={`${H5} flex items-center gap-3 text-lr-head`}>
-      <LrIcon name={icon} className={ICON_MD} />
-      <span dangerouslySetInnerHTML={{ __html: children }} />
-    </h3>
+    <div className={`${CARD} p-4 md:p-5`}>
+      <h3 className={`${CARD_TITLE} flex items-center gap-3`}>
+        <LrIcon name="commercial" tone="current" className={`${ICON_MD} text-lr-head dark:text-lr-gold`} />
+        <span dangerouslySetInnerHTML={{ __html: repair.title || "Can It Be Repaired?" }} />
+      </h3>
+
+      {/* phones: one row per problem */}
+      <ul className="mt-4 divide-y divide-lr-line overflow-hidden rounded-md border border-lr-line md:hidden">
+        {repair.rows.map((r) => (
+          <li key={r.problem} className="flex gap-3 px-3 py-3.5">
+            <TopicIcon text={r.problem} className={rowIcon} />
+            <div className="min-w-0 flex-1">
+              <div className="flex items-start justify-between gap-3">
+                <p className="text-[15px] font-medium leading-snug text-lr-head" dangerouslySetInnerHTML={{ __html: r.problem }} />
+                <Status value={r.repairable} className="shrink-0 pt-px text-[14px] xl:text-[16px]" />
+              </div>
+              <p className={`mt-1 text-[14.5px] font-semibold ${/£/.test(r.typicalCost) ? "text-lr-ink dark:text-lr-green" : "text-lr-body"}`}>{r.typicalCost}</p>
+              <p className="mt-0.5 text-[14px] leading-relaxed text-lr-body xl:text-[16px]" dangerouslySetInnerHTML={{ __html: dashify(r.whenItMakesSense) }} />
+            </div>
+          </li>
+        ))}
+      </ul>
+
+      {/* tablet / desktop: table */}
+      <div className="mt-4 hidden overflow-hidden rounded-md border border-lr-line md:block">
+        <table className="w-full table-fixed border-collapse text-left">
+          <colgroup>
+            <col className="w-[30%]" /><col className="w-[19%]" /><col className="w-[18%]" /><col className="w-[33%]" />
+          </colgroup>
+          <thead>
+            <tr className="bg-lr-panel text-[14px] font-medium text-lr-head dark:text-lr-gold xl:text-[16px]">
+              {cols.map((h, i) => (
+                <th key={h} scope="col" className={`py-3 font-medium ${i === 0 ? "pl-[66px] pr-3" : i === 2 ? "border-l border-lr-line px-3 text-center" : "border-l border-lr-line px-3"}`}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody className="text-[14px] xl:text-[16px]">
+            {repair.rows.map((r) => (
+              <tr key={r.problem} className="border-t border-lr-line">
+                <th scope="row" className="py-3 pl-3 pr-3 font-normal">
+                  <span className="flex items-center gap-3.5">
+                    <TopicIcon text={r.problem} className={rowIcon} />
+                    <span className="leading-snug text-lr-head" dangerouslySetInnerHTML={{ __html: r.problem }} />
+                  </span>
+                </th>
+                <td className="border-l border-lr-line px-3 py-3"><Status value={r.repairable} /></td>
+                <td className={`border-l border-lr-line px-3 py-3 text-center ${/£/.test(r.typicalCost) ? "whitespace-nowrap text-lr-head" : "text-[13.5px] leading-snug text-lr-head xl:text-[15px]"}`}>{r.typicalCost}</td>
+                <td className="border-l border-lr-line px-3 py-3 leading-snug text-lr-body" dangerouslySetInnerHTML={{ __html: dashify(r.whenItMakesSense) }} />
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 }
 
-function CheckList({ tone, title, items }) {
+/* ---------- Buy If / Avoid If ---------- */
+function CheckBox({ good, items }) {
   if (!items?.length) return null;
-  const good = tone === "buy";
   const c = good
-    ? { box: "border-lr-good/35 from-lr-good/[0.09] to-lr-good/[0.02]", head: "text-lr-good", icon: "bg-lr-good/12 text-lr-good" }
-    : { box: "border-lr-bad/35 from-lr-bad/[0.09] to-lr-bad/[0.02]", head: "text-lr-bad", icon: "bg-lr-bad/12 text-lr-bad" };
+    ? { box: "border-lr-good/45 dark:bg-lr-good/[0.05]", head: "text-lr-good", ring: "border-lr-line-strong text-lr-head dark:border-lr-good/35 dark:text-lr-good" }
+    : { box: "border-lr-bad/40 dark:bg-lr-bad/[0.05]", head: "text-lr-bad", ring: "border-lr-bad/35 text-lr-bad" };
   return (
-    <div className={`rounded-lg border bg-linear-to-b p-3.5 md:p-4 ${c.box}`}>
-      <p className={`${H6} flex items-center gap-2.5 border-b border-lr-line pb-3 ${c.head}`}>
-        <span className="relative flex h-7 w-7 shrink-0 items-center justify-center">
-          <svg viewBox="0 0 24 24" className="absolute inset-0 h-7 w-7" aria-hidden="true">
-            <path fill="currentColor" d="M12 2.5l8 3.3v6.3c0 5-3.4 8.4-8 10.4-4.6-2-8-5.4-8-10.4V5.8z" />
-          </svg>
-          <svg viewBox="0 0 24 24" className="relative h-3.5 w-3.5 text-lr-page" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            {good ? <path d="m6 12.5 4 4 8-9" /> : <path d="M7 7l10 10M17 7 7 17" />}
-          </svg>
-        </span>
-        {title}
+    <div className={`rounded-md border bg-lr-card px-3.5 pb-1 pt-3.5 md:px-4 ${c.box}`}>
+      <p className={`${SANS} flex items-center gap-2.5 border-b border-lr-line pb-3 text-[19px] font-semibold leading-none md:text-[20px] ${c.head}`}>
+        <LrIcon name={good ? "genuine-failure-data" : "check-watch"} tone="current" className={`${ICON_MD} ${good ? "text-lr-good" : "text-lr-bad"}`} />
+        {good ? "Buy If:" : "Avoid If:"}
       </p>
       <ul className="divide-y divide-lr-line">
         {items.map((raw) => {
-          const text = stripBullet(raw);
+          const text = dashify(stripBullet(raw));
           return (
-            <li key={text} className="flex items-start gap-3 py-3 last:pb-0.5">
-              <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${c.icon}`}>
-                <LrIcon name={topicIcon(text)} tone="current" className={ICON_SM} />
+            <li key={text} className="flex items-center gap-3.5 py-3">
+              <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border ${c.ring}`}>
+                <TopicIcon text={text} className={ICON_SM} />
               </span>
-              <p className={`${BODY_SM} pt-1 text-lr-body`} dangerouslySetInnerHTML={{ __html: text }} />
+              <p className="text-[14.5px] leading-snug text-lr-body xl:text-[15px]" dangerouslySetInnerHTML={{ __html: text }} />
             </li>
           );
         })}
@@ -96,189 +154,138 @@ function CheckList({ tone, title, items }) {
   );
 }
 
+/* ---------- verdict ---------- */
+function VerdictShield({ className = "" }) {
+  return (
+    <svg viewBox="0 0 64 72" className={className} aria-hidden="true">
+      <defs>
+        <linearGradient id="rbr-rim" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" className="[stop-color:#e3e7e2] dark:[stop-color:#e7c98d]" />
+          <stop offset="1" className="[stop-color:#8d958f] dark:[stop-color:#a7843f]" />
+        </linearGradient>
+        <linearGradient id="rbr-field" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" style={{ stopColor: "#1f7049" }} />
+          <stop offset="1" style={{ stopColor: "#0f3d27" }} />
+        </linearGradient>
+      </defs>
+      <path d="M32 2 60 12v20c0 18-12 30-28 38C16 62 4 50 4 32V12z" fill="url(#rbr-rim)" />
+      <path d="M32 7.5 55 15.8v16.4c0 15-10 25.2-23 31.8C19 57.4 9 47.2 9 32.2V15.8z" fill="url(#rbr-field)" />
+      <path d="m20.5 35 8.5 8.5 15.5-17" fill="none" className="stroke-white dark:stroke-[#e7c98d]" strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+// green highlights in the verdict: the engine name, the "2.5-litre mechanical turbo-diesel" phrase, "no ECU"
+function highlightVerdict(html = "", engine = "") {
+  const g = (s) => `<span class="font-medium text-lr-ink dark:text-lr-green">${s}</span>`;
+  let out = dashify(html);
+  out = out.replace(/\b\d(?:\.\d)?-litre\b[^,.;—]*?\b(?:diesel|petrol|engine|V8|V6)\b/, (m) => g(m));
+  out = out.replace(/\bno ECU\b/, (m) => g(m));
+  if (engine) out = out.replace(new RegExp(`(?<![\\w-])${engine.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\w-])`, "g"), (m) => g(m));
+  return out;
+}
+
 export default function RepairBuyOrReplace({ data, car = null, engine = "/variant/sec10_engine.webp" }) {
   if (!data) return null;
-  // "Defender D240 - Repair, Buy, or Replace?" -> "Defender" + green "D240"
+  // "Defender 200Tdi - Repair, Buy, or Replace?" -> "Defender " + green "200Tdi" + " —" / "Repair, Buy, or Replace?"
   const h2 = data.h2 || "";
   const dash = h2.indexOf(" - ");
   const lead = (dash === -1 ? "" : h2.slice(0, dash)).trim();
   const tail = dash === -1 ? h2 : h2.slice(dash + 3);
   const cut = lead.lastIndexOf(" ");
+  const engineName = cut > 0 ? lead.slice(cut + 1) : lead;
+  // intro: the verdict's opening claim, then the section's promise
+  const opening = (data.closingVerdict || "").split(/ - |(?<=\.)\s/)[0].replace(/[.\s]*$/, ".");
+  const intro = data.intro || `${opening && opening.length < 180 ? `${opening} ` : ""}Use clear data, repair reality, and honest buying guidance before you commit.`;
   const repair = data.canItBeRepaired;
-  const cols = repair?.columns?.length === 4 ? repair.columns : ["Problem", "Repairable?", "Typical Cost", "When It Makes Sense"];
   const checks = data.buyingChecks;
+  const hasChecks = checks && (checks.buyIf?.length || checks.avoidIf?.length);
 
   return (
-    <section className="relative overflow-hidden bg-lr-page text-lr-head">
-      {/* backdrop: soft light and layered hills in the page's own tints */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[620px] md:h-[520px]" aria-hidden="true">
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 55% 70% at 75% 25%, color-mix(in srgb, var(--lr-line) 70%, transparent) 0%, color-mix(in srgb, var(--lr-line) 25%, transparent) 50%, transparent 78%)" }} />
-        <svg className="absolute right-0 top-[18%] h-[50%] w-full opacity-75 [mask-image:linear-gradient(to_right,transparent,#000_35%)] lg:top-[8%] lg:h-[62%] lg:w-[60%]" viewBox="0 0 800 400" preserveAspectRatio="none">
-          <path d="M0 230 C120 140 220 100 340 130 S540 40 640 80 S760 120 800 100 V400 H0Z" className="fill-lr-panel" />
-          <path d="M0 290 C150 230 270 215 390 235 S610 170 800 200 V400 H0Z" className="fill-lr-band" />
-          <path d="M0 340 C160 300 300 300 440 312 S660 282 800 292 V400 H0Z" className="fill-lr-card" />
-        </svg>
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-b from-transparent to-lr-page" />
+    <section className={`relative overflow-hidden bg-lr-page text-lr-head ${SANS}`}>
+      {/* ---------- header: like the heroes, the loch spans the band (washed behind the title) and
+          the car stands on its foreground; phones show it as a banner under the intro ---------- */}
+      <div className="relative">
+        {car && <LochBand copy="left" tone="page" from="lg" solid={480} half={700} clear={940} position="center 66%" />}
+        <div className={`relative ${CONTAINER} pt-9 md:pt-12 lg:pt-12`}>
+          <div className="grid items-center lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:gap-10">
+            <div>
+              <span className="block h-[3px] w-14 rounded-full bg-lr-gold-line md:w-20" aria-hidden="true" />
+              <h2 className={`${H2} mt-5 text-lr-head`}>
+                {lead && (
+                  <>
+                    {cut > 0 ? `${lead.slice(0, cut)} ` : ""}
+                    <span className="text-lr-ink dark:text-lr-green">{engineName}</span> —<br />
+                  </>
+                )}
+                {tail}
+              </h2>
+              <p className="mt-4 max-w-[34em] text-[15px] leading-relaxed text-lr-body md:text-[16px] xl:text-[17px]" dangerouslySetInnerHTML={{ __html: dashify(intro) }} />
+            </div>
+            {car && (
+              <div className="relative hidden lg:block" aria-hidden="true">
+                <div className="ml-auto w-full max-w-[540px] pb-12 pt-0">
+                  <GroundedCar src={car} sceneByTheme sizes="(min-width: 1024px) 40vw, 1px" />
+                </div>
+              </div>
+            )}
+          </div>
+          {car && <LochBanner car={car} className="mt-5 lg:hidden" sizes="80vw" />}
+        </div>
       </div>
 
-      <div className={`relative ${CONTAINER} border-t border-transparent pb-10 pt-10 md:pb-14 md:pt-14`}>
-        {/* ---------- header ---------- */}
-        <div className="grid items-center gap-2 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-10">
-          <div>
-            <span className="block h-0.5 w-14 bg-lr-gold-line md:w-20" aria-hidden="true" />
-            <h2 className={`${H2} mt-4 text-lr-head md:mt-5`}>
-              {lead && (
-                <>
-                  {cut > 0 ? `${lead.slice(0, cut)} ` : ""}
-                  <span className="text-lr-green">{cut > 0 ? lead.slice(cut + 1) : lead}</span> —<br />
-                </>
-              )}
-              {tail}
-            </h2>
-          </div>
-          {car && (
-            <div className="relative flex justify-center lg:justify-end" aria-hidden="true">
-              <div className="relative w-[82%] max-w-[380px] sm:max-w-[440px] lg:w-full lg:max-w-[560px]" style={{ aspectRatio: carRatio(car) }}>
-                <div className="absolute inset-x-[10%] bottom-[1%] h-[12%] rounded-[50%] bg-black/35 blur-xl dark:bg-black/85" />
-                <Image src={car} alt="" fill sizes="(min-width: 1024px) 40vw, 82vw" className="object-fill drop-shadow-[0_24px_30px_rgba(24,40,31,0.28)] dark:drop-shadow-[0_24px_30px_rgba(0,0,0,0.6)]" />
+      <div className={`relative ${CONTAINER} pb-10 md:pb-14`}>
+        {/* ---------- repair table + buying checks (side by side from xl) ---------- */}
+        <div className="mt-5 grid gap-4 md:mt-6 lg:-mt-2 lg:gap-5 min-[1400px]:grid-cols-[minmax(0,1fr)_minmax(0,1.04fr)]">
+          {repair?.rows?.length > 0 && <RepairCard repair={repair} />}
+          {hasChecks ? (
+            <div className={`${CARD} p-4 md:p-5`}>
+              <h3 className={`${CARD_TITLE} flex items-center gap-3`}>
+                <LrIcon name="symptoms" tone="current" className={`${ICON_MD} text-lr-head dark:text-lr-gold`} />
+                <span dangerouslySetInnerHTML={{ __html: checks.title || "Check These First" }} />
+              </h3>
+              <div className="mt-4 grid gap-3 md:grid-cols-2 md:gap-4">
+                <CheckBox good items={checks.buyIf} />
+                <CheckBox items={checks.avoidIf} />
               </div>
             </div>
-          )}
-        </div>
-
-        {/* ---------- repair + buy (stacked, so the repair table has room for its columns) ---------- */}
-        <div className="mt-6 grid gap-4 lg:mt-8 lg:gap-5">
-          {repair?.rows?.length > 0 && (
-            <Card className="p-4 md:p-5">
-              <CardTitle icon="expert-verified">{repair.title || "Can It Be Repaired?"}</CardTitle>
-
-              {/* mobile list */}
-              <ul className="mt-4 divide-y divide-lr-line rounded-lg border border-lr-line md:hidden">
-                {repair.rows.map((r) => (
-                  <li key={r.problem} className="flex gap-3 p-3">
-                    <LrIcon name={topicIcon(r.problem)} className={`mt-0.5 ${ICON_SM}`} />
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-start justify-between gap-3">
-                        <p className={`${BODY_SM} font-medium text-lr-head`} dangerouslySetInnerHTML={{ __html: r.problem }} />
-                        <StatusMark value={r.repairable} className={`${SMALL} shrink-0`} />
-                      </div>
-                      <p className={`${BODY_SM} mt-1 font-semibold text-lr-green`}>{r.typicalCost}</p>
-                      <p className={`${BODY_SM} mt-0.5 text-lr-body`} dangerouslySetInnerHTML={{ __html: r.whenItMakesSense }} />
-                    </div>
-                  </li>
-                ))}
-              </ul>
-
-              {/* tablet / desktop table */}
-              <div className="mt-4 hidden overflow-hidden rounded-lg border border-lr-line md:block">
-                <table className="w-full border-collapse text-left">
-                  <thead>
-                    <tr className={`${SMALL} bg-lr-panel text-lr-gold [&>th]:font-medium`}>
-                      <th scope="col" className="w-[28%] py-3 pl-[60px] pr-3">{cols[0]}</th>
-                      <th scope="col" className="w-[16%] border-l border-lr-line px-3 py-3">{cols[1]}</th>
-                      <th scope="col" className="w-[20%] border-l border-lr-line px-3 py-3 text-center">{cols[2]}</th>
-                      <th scope="col" className="border-l border-lr-line px-3 py-3">{cols[3]}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {repair.rows.map((r) => (
-                      <tr key={r.problem} className={`${BODY_SM} border-t border-lr-line`}>
-                        <th scope="row" className="py-3 pl-3 pr-3 font-normal">
-                          <span className="flex items-center gap-3">
-                            <LrIcon name={topicIcon(r.problem)} className={ICON_MD} />
-                            <span className="leading-snug text-lr-head" dangerouslySetInnerHTML={{ __html: r.problem }} />
-                          </span>
-                        </th>
-                        <td className="border-l border-lr-line px-3 py-3"><StatusMark value={r.repairable} /></td>
-                        <td className={`border-l border-lr-line px-3 py-3 text-center ${/replacement|rebuild/i.test(r.typicalCost) ? "text-lr-body" : "whitespace-nowrap font-medium text-lr-head"}`}>{r.typicalCost}</td>
-                        <td className="border-l border-lr-line px-3 py-3 text-lr-body" dangerouslySetInnerHTML={{ __html: r.whenItMakesSense }} />
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </Card>
-          )}
-
-          {checks && (checks.buyIf?.length || checks.avoidIf?.length) ? (
-            <Card className="p-4 md:p-5">
-              <CardTitle icon="symptoms">{checks.title || "Check These First"}</CardTitle>
-              <div className="mt-4 grid gap-3 md:grid-cols-2 md:gap-4">
-                <CheckList tone="buy" title="Buy If:" items={checks.buyIf} />
-                <CheckList tone="avoid" title="Avoid If:" items={checks.avoidIf} />
-              </div>
-            </Card>
           ) : null}
         </div>
 
-        {/* ---------- verdict + CTA ---------- */}
+        {/* ---------- closing verdict + compare CTA ---------- */}
         <div className="mt-4 grid gap-4 lg:mt-5 lg:grid-cols-2 lg:gap-5">
           {data.closingVerdict && (
-            <Card className="flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:gap-6 md:p-7">
-              <svg viewBox="0 0 64 72" className="h-16 w-14 shrink-0 md:h-24 md:w-20" aria-hidden="true">
-                <defs>
-                  <linearGradient id="rbr-gold" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" style={{ stopColor: "var(--lr-gold-line)" }} />
-                    <stop offset="1" style={{ stopColor: "var(--lr-gold)" }} />
-                  </linearGradient>
-                  <linearGradient id="rbr-green" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0" style={{ stopColor: "var(--lr-brand)" }} />
-                    <stop offset="1" style={{ stopColor: "var(--lr-brand-hover)" }} />
-                  </linearGradient>
-                </defs>
-                <path d="M32 2 60 12v20c0 18-12 30-28 38C16 62 4 50 4 32V12z" fill="url(#rbr-gold)" />
-                <path d="M32 8 54 16v16c0 14.5-9.5 24.5-22 31.2C19.5 56.5 10 46.5 10 32V16z" fill="url(#rbr-green)" />
-                <path d="m21 35 8 8 15-17" fill="none" stroke="url(#rbr-gold)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-              <div>
-                <h3 className={`${H5} text-lr-head`}>Closing Verdict</h3>
-                <p className={`${BODY} mt-2 text-lr-body`} dangerouslySetInnerHTML={{ __html: data.closingVerdict }} />
-              </div>
-            </Card>
+            <div className={`${CARD} grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 p-4 sm:gap-x-6 md:p-6 xl:gap-x-8 xl:p-7`}>
+              <VerdictShield className="h-14 w-[50px] drop-shadow-[0_8px_10px_rgba(0,0,0,0.25)] sm:row-span-2 sm:h-24 sm:w-[86px] xl:h-[118px] xl:w-[104px]" />
+              <h3 className={`${H5} text-lr-head sm:self-end`}>Closing Verdict</h3>
+              <p className="col-span-2 mt-3 text-[14.5px] leading-[1.6] text-lr-body sm:col-span-1 sm:col-start-2 sm:mt-2 sm:self-start md:text-[15px] xl:text-[16px]" dangerouslySetInnerHTML={{ __html: highlightVerdict(data.closingVerdict, engineName) }} />
+            </div>
           )}
 
           {data.cta?.label && (
-            <Card className="relative overflow-hidden p-5 md:p-7">
-              <Image
-                src={engine}
-                alt=""
-                width={504}
-                height={495}
-                sizes="260px"
-                className="pointer-events-none absolute -right-8 top-1/2 h-auto w-[180px] -translate-y-1/2 opacity-25 sm:w-[220px] md:opacity-45 lg:w-[240px]"
-                aria-hidden="true"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-linear-to-r from-lr-card via-lr-card/80 to-transparent" aria-hidden="true" />
-              <div className="relative">
+            <div className={`${CARD} relative overflow-hidden p-4 md:p-6 xl:p-7`}>
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-[44%] max-w-[300px] [mask-image:linear-gradient(to_right,transparent,#000_40%)] sm:w-[38%]" aria-hidden="true">
+                <Image src={engine} alt="" fill sizes="300px" className="object-cover object-left opacity-35 sm:opacity-60 dark:opacity-30 sm:dark:opacity-55" />
+              </div>
+              <div className="relative sm:max-w-[66%]">
                 <div className="flex items-center gap-4 md:gap-6">
-                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-lr-gold-line text-lr-gold md:h-[72px] md:w-[72px]">
-                    <LrIcon name="best-used-buy-2" className={ICON_LG} />
+                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-lr-head/80 text-lr-head dark:border-lr-gold-line dark:text-lr-gold md:h-[60px] md:w-[60px]" aria-hidden="true">
+                    <LrIcon name="best-used-buy-2" tone="current" className={ICON_LG} />
                   </span>
-                  <h3 className={`${H5} text-lr-head`}>
+                  <h3 className={`${H5} max-w-[16em] text-lr-head`}>
                     Don&apos;t guess. Get the right engine at the right price.
                   </h3>
                 </div>
                 <Link
                   href="/quote"
-                  className="group mt-5 flex items-center gap-3.5 rounded-lg border border-lr-green/50 bg-lr-brand/[0.08] px-4 py-3.5 text-[15px] font-medium leading-snug text-lr-head transition-colors hover:border-lr-green hover:bg-lr-brand/15 md:mt-6 md:px-6 md:py-4 md:text-[16px] xl:text-[17px] lg:max-w-[480px]"
+                  className="group mt-5 flex items-center gap-3.5 rounded-md border border-lr-brand bg-lr-brand px-4 py-3.5 text-[15px] font-medium leading-snug text-lr-on-brand shadow-[0_10px_30px_-14px_rgba(31,112,73,0.7)] transition-colors hover:bg-lr-brand-hover md:mt-6 md:px-5 md:text-[16px] xl:text-[17px] dark:border-lr-green/55 dark:bg-lr-brand/15 dark:text-lr-head dark:shadow-none dark:hover:bg-lr-brand/30"
                 >
-                  <VIcon name="arrow" className="h-6 w-6 shrink-0 text-lr-green transition-transform group-hover:translate-x-1" />
+                  <VIcon name="arrow" className="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-1" />
                   {stripArrow(data.cta.label)}
                 </Link>
               </div>
-            </Card>
+            </div>
           )}
         </div>
-
-        {/* trust strip */}
-        <ul className="mt-4 grid grid-cols-1 gap-x-4 gap-y-3 rounded-xl border border-lr-line bg-lr-card p-4 shadow-[0_20px_44px_-34px_var(--lr-shadow)] min-[420px]:grid-cols-2 md:grid-cols-3 lg:mt-5 lg:grid-cols-5 lg:divide-x lg:divide-lr-line lg:px-2">
-          {TRUST.map((t) => (
-            <li key={t.label} className="flex items-center gap-3 lg:justify-center lg:px-3">
-              <LrIcon name={t.icon} className={ICON_SM} />
-              <span className={`${SMALL} text-lr-body`}>{t.label}</span>
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );

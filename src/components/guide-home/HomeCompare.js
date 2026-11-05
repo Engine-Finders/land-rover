@@ -7,10 +7,9 @@ import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_MD, LABEL, SMALL } from "@/lib/t
 
 const pad = (n) => String(n).padStart(2, "0");
 
-// the two engine-pair renders were shot on a light studio grey (a pale box on the night theme); their
-// "-cut" files are transparent cut-outs of the same renders, so the engines sit on the panel colour in
-// either theme. The car pairs are full scenic photos and stay as they are.
-const CUTOUTS = ["/ingenium-vs-tdv6", "/tdv6-vs-sdv6"];
+// every pair has a "-cut" file: transparent studio cut-outs (engines, and the two cars side by side,
+// both facing left) that sit on the panel colour in either theme
+const CUTOUTS = ["/ingenium-vs-tdv6", "/tdv6-vs-sdv6", "/defender-vs-discovery", "/disco4-vs-disco5", "/l405-vs-l460", "/rrs-vs-discovery"];
 const pairSrc = (src = "") => (CUTOUTS.some((k) => src.includes(k)) ? src.replace(/\.webp$/, "-cut.webp") : src);
 
 function VerdictIcon({ name, className = "" }) {
@@ -115,7 +114,7 @@ export default function HomeCompare({ data }) {
 
         {/* data note */}
         <div className="mt-3 flex flex-wrap items-start gap-3.5 rounded-md border border-lr-line bg-lr-panel px-3.5 py-4 sm:flex-nowrap sm:items-center sm:gap-6 sm:px-6 lg:py-5">
-          <span className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand sm:h-16 sm:w-16">
+          <span className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand sm:h-14 sm:w-14">
             <GuideIcon name="chart-search" className={ICON_MD} />
           </span>
           <p className={`${BODY_SM} min-w-0 flex-1 text-lr-body lg:max-w-[760px]`}>

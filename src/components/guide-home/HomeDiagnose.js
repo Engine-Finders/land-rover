@@ -44,7 +44,7 @@ function HowItWorks({ steps }) {
               <span className={`${SMALL} mt-1.5 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-lr-brand font-semibold text-lr-on-brand xl:absolute xl:-left-1 xl:-top-1 xl:z-10 xl:mt-0 xl:ring-2 xl:ring-lr-card`}>
                 {i + 1}
               </span>
-              <span className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-lr-brand text-lr-gold-line sm:h-16 sm:w-16 xl:ml-5 dark:bg-lr-chip dark:text-lr-gold">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-lr-brand text-lr-gold-line sm:h-13 sm:w-13 xl:ml-5 dark:bg-lr-chip dark:text-lr-gold">
                 <GuideIcon name={s.icon} className={ICON_MD} />
               </span>
             </span>

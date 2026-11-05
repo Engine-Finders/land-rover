@@ -159,7 +159,7 @@ export default function HomeRankings({ data }) {
             <Image src={note.image} alt="" fill quality={90} className="object-cover" sizes="36vw" />
           </div>
           <div className="relative flex items-start gap-3.5 px-3.5 py-4 sm:items-center sm:gap-6 sm:px-6 sm:py-6 lg:px-5">
-            <span className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full border border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-[68px] sm:w-[68px]">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-[56px] sm:w-[56px]">
               <GuideIcon name="shield" className={ICON_LG} />
             </span>
             <div className="min-w-0 sm:max-w-[62%] lg:max-w-[720px]">

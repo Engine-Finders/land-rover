@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GuideIcon from "@/components/guide-home/GuideIcon";
 import LandRoverLogo from "@/components/guide-home/LandRoverLogo";
+import RangeRoverBadge from "@/components/guide-home/RangeRoverBadge";
 import { BODY, BODY_SM, CONTAINER, H2, H4, H6, ICON_LG, ICON_MD, ICON_SM, ICON_XS, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens; the line-up photo fades
@@ -38,7 +39,7 @@ function ModelTable({ group, columns }) {
   return (
     <div className="overflow-hidden rounded-md border border-lr-line bg-lr-card shadow-[0_10px_28px_-18px_var(--lr-shadow)]">
       <h3 className={`${H6} flex items-center gap-5 bg-lr-brand px-5 py-3 uppercase tracking-[0.04em] text-lr-on-brand sm:px-6`}>
-        {group.brand === "landRover" ? <LandRoverLogo crop className="h-[26px] w-[48px] shrink-0" /> : null}
+        {group.brand === "landRover" ? <LandRoverLogo crop className="h-[26px] w-[48px] shrink-0" /> : <RangeRoverBadge className="h-[26px] w-[45px]" />}
         {group.label}
       </h3>
       <div className={`${ROW} ${LABEL} items-center gap-x-3 border-b border-lr-line px-4 py-2.5 text-lr-head sm:gap-x-4 sm:px-6`}>

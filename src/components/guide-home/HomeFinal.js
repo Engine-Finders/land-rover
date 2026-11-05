@@ -19,7 +19,7 @@ const FADE_MOBILE =
 function Stat({ s }) {
   return (
     <li className="flex flex-col items-center rounded-lg border border-lr-line bg-lr-card px-1.5 pb-4 pt-4 text-center shadow-[0_6px_18px_-14px_var(--lr-shadow)] sm:px-3 lg:rounded-none lg:border-0 lg:border-l lg:border-lr-line lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none lg:first:border-l-0">
-      <span className="flex h-[46px] w-[46px] items-center justify-center rounded-full bg-lr-chip text-lr-ink sm:h-14 sm:w-14 lg:h-[62px] lg:w-[62px]">
+      <span className="flex h-[46px] w-[46px] items-center justify-center rounded-full bg-lr-chip text-lr-ink sm:h-14 sm:w-14 lg:h-[52px] lg:w-[52px]">
         <GuideIcon name={s.icon} className={ICON_MD} />
       </span>
       <span className="mt-3 flex min-h-[64px] flex-col justify-center sm:min-h-[70px] lg:min-h-0">
@@ -46,7 +46,7 @@ function ActionCard({ dark, icon, eyebrow, title, href, label }) {
       }`}
     >
       <span
-        className={`flex h-[62px] w-[62px] shrink-0 items-center justify-center rounded-full sm:h-[86px] sm:w-[86px] lg:h-[110px] lg:w-[110px] ${
+        className={`flex h-[62px] w-[62px] shrink-0 items-center justify-center rounded-full sm:h-[68px] sm:w-[68px] lg:h-[84px] lg:w-[84px] ${
           dark ? "border border-lr-gold-line/45 text-lr-gold-line" : "bg-lr-chip text-lr-ink"
         }`}
       >

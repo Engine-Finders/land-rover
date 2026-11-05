@@ -32,9 +32,10 @@ export const STAT_LG = "font-semibold leading-none text-[28px] md:text-[30px] lg
 export const STAT = "font-semibold leading-none text-[21px] md:text-[22px] xl:text-[24px]";
 
 // icon sizes for the brand icon set (src/components/shared/LrIcon.js), matched to the text beside
-// them; inside a round chip the icon is about 55% of the chip
-export const ICON_XS = "h-4 w-4 xl:h-[18px] xl:w-[18px]"; // inline with small text, badges (15px)
-export const ICON_SM = "h-5 w-5 xl:h-[22px] xl:w-[22px]"; // list rows, table cells (16px text)
-export const ICON_MD = "h-6 w-6 md:h-7 md:w-7 xl:h-8 xl:w-8"; // card titles (H6 20px), 48-56px chips
-export const ICON_LG = "h-8 w-8 md:h-9 md:w-9 xl:h-10 xl:w-10"; // feature and trust tiles, 60-72px chips
-export const ICON_XL = "h-10 w-10 md:h-12 md:w-12 xl:h-14 xl:w-14"; // hero and highlight icons
+// them and kept compact so they accent the copy rather than compete with it; inside a round chip the
+// icon is about half the chip
+export const ICON_XS = "h-3.5 w-3.5 xl:h-4 xl:w-4"; // inline with small text, badges (14-16px)
+export const ICON_SM = "h-4 w-4 xl:h-[18px] xl:w-[18px]"; // list rows, table cells (16-18px)
+export const ICON_MD = "h-5 w-5 md:h-[22px] md:w-[22px] xl:h-6 xl:w-6"; // card titles, 40-48px chips (20-24px)
+export const ICON_LG = "h-6 w-6 md:h-[26px] md:w-[26px] xl:h-7 xl:w-7"; // feature and trust tiles, 52-60px chips (24-28px)
+export const ICON_XL = "h-7 w-7 md:h-8 md:w-8 xl:h-9 xl:w-9"; // hero stats and highlight icons (28-36px)

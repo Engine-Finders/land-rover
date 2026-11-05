@@ -2,15 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { CONTAINER, SANS } from "@/components/engine/engineTheme";
 import LrIcon from "@/components/shared/LrIcon";
+import GroundedCar from "@/components/variant/GroundedCar";
 import { BODY, H1, ICON_LG, SMALL } from "@/lib/typeScale";
 
 // Engine hero: tag pill, serif headline (accent on "Replacement Cost"), sub-headline, quote CTA,
 // the engine on its lit ring in the dusk mountain / garage scene, and a four-stat trust strip -
-// all from the page's `hero` JSON. Follows the site theme: on the day theme the scene is a framed
-// photo on white; on the night theme it fades into the green page (a CSS mask, so it blends with any
-// background). Phones and tablets stack the copy, scene and strip; from lg the scene sits on the
+// all from the page's `hero` JSON. Follows the site theme: on the day theme the engine (a cut-out of
+// the same render) stands on the golden-hour Highland loch used by the home hero, washed in the page
+// colour behind the copy; on the night theme the dusk garage scene fades into the green page (CSS
+// masks). Phones and tablets stack the copy, the scene and the strip; from lg the scene sits on the
 // right. The 200Tdi/300Tdi page shows the "Tdi"-badged engine cover, every other engine the same
 // render without the badge.
+
+// day theme: page-coloured wash over the loch behind the copy column (from the container's left edge)
+const WASH = {
+  background:
+    "linear-gradient(90deg, var(--lr-page) 0px, color-mix(in srgb, var(--lr-page) 92%, transparent) calc(max(0px, 50vw - 704px) + 520px), color-mix(in srgb, var(--lr-page) 55%, transparent) calc(max(0px, 50vw - 704px) + 740px), transparent calc(max(0px, 50vw - 704px) + 980px))",
+};
 
 // night theme: feather the photo's edges into the page
 const FADE_X = "dark:[mask-image:linear-gradient(to_right,transparent,#000_34%,#000_90%,transparent),linear-gradient(to_bottom,transparent,#000_14%,#000_76%,transparent)] dark:[mask-composite:intersect]";
@@ -54,7 +62,7 @@ function parseStat(label = "") {
 function StatIcon({ name }) {
   return (
     <span
-      className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line/70 bg-lr-chip sm:h-16 sm:w-16 lg:h-[60px] lg:w-[60px] xl:h-[72px] xl:w-[72px] dark:bg-[radial-gradient(circle_at_50%_38%,#17402d_0%,#0b2219_72%)]"
+      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-gold-line/70 bg-lr-chip sm:h-13 sm:w-13 lg:h-[52px] lg:w-[52px] xl:h-[58px] xl:w-[58px] dark:bg-[radial-gradient(circle_at_50%_38%,#17402d_0%,#0b2219_72%)]"
     >
       <LrIcon name={name} className={ICON_LG} />
     </span>
@@ -104,18 +112,31 @@ export default function EngineHero({ data, slug = "" }) {
   const pill = (data.tagPill || "").split(" • ").filter(Boolean);
   const { lead, accent } = splitTitle(data.h1);
   const ctaLabel = (data.primaryCta?.label || "Compare Engine Prices").replace(/\s*→\s*$/, "");
-  const scene = /tdi/.test(slug) ? "/engine-hero/scene-tdi.webp" : "/engine-hero/scene.webp";
+  const tdi = /tdi/.test(slug);
+  const scene = tdi ? "/engine-hero/scene-tdi.webp" : "/engine-hero/scene.webp";
+  const engine = tdi ? "/engine-hero/engine-tdi-cut.webp" : "/engine-hero/engine-cut.webp";
   const alt = `${pill[1] ? pill[1].replace(/<[^>]+>/g, "") : "Land Rover"} engine`;
 
   return (
     <section className="relative overflow-hidden bg-lr-page text-lr-head" style={SANS}>
-      {/* desktop: the scene on the right - framed on the day theme, feathered into the page at night */}
-      <div className="pointer-events-none absolute inset-0 hidden lg:block" aria-hidden="true">
+      {/* desktop, day theme: the loch behind the band, the engine standing on its foreground */}
+      <div className="pointer-events-none absolute inset-0 hidden lg:block lg:dark:hidden" aria-hidden="true">
+        <div className="absolute inset-0 bg-[url(/home/hero-loch-day.webp)] bg-cover bg-[center_64%] [mask-image:linear-gradient(to_bottom,#000_86%,transparent)]" />
+        <div className="absolute inset-0" style={WASH} />
+        <div className={`relative h-full ${CONTAINER}`}>
+          {/* the engine's base sits on the hillside just above the stats strip */}
+          <div className="absolute bottom-[168px] right-12 w-[31%] xl:bottom-[160px] xl:w-[30%] min-[1400px]:w-[29%]">
+            <GroundedCar src={engine} priority sceneByTheme sizes="(min-width: 1024px) 32vw, 1px" />
+          </div>
+        </div>
+      </div>
+      {/* desktop, night theme: the dusk scene feathered into the page */}
+      <div className="pointer-events-none absolute inset-0 hidden dark:lg:block" aria-hidden="true">
         <div className={`relative h-full ${CONTAINER}`}>
           <div
             className={`absolute right-4 top-12 aspect-[882/656] w-[46%] overflow-hidden rounded-2xl border border-lr-line shadow-[0_30px_60px_-34px_var(--lr-shadow)] md:right-8 xl:top-14 xl:w-[47%] dark:right-0 dark:top-0 dark:w-[56%] dark:rounded-none dark:border-0 dark:shadow-none xl:dark:w-[54%] ${FADE_X}`}
           >
-            <Image src={scene} alt="" fill priority sizes="56vw" className="object-cover" />
+            <Image src={scene} alt="" fill sizes="56vw" className="object-cover" />
           </div>
         </div>
       </div>
@@ -156,9 +177,15 @@ export default function EngineHero({ data, slug = "" }) {
           )}
         </div>
 
-        {/* phones / tablets: the scene between the CTA and the trust strip */}
-        <div className={`relative mt-6 aspect-[882/656] overflow-hidden rounded-xl border border-lr-line md:mt-8 md:aspect-[16/10] lg:hidden dark:-mx-4 dark:rounded-none dark:border-0 sm:dark:-mx-6 md:dark:-mx-8 ${FADE_Y}`}>
-          <Image src={scene} alt={alt} fill priority sizes="100vw" className="object-cover object-[50%_60%]" />
+        {/* phones / tablets, day theme: the engine on the loch-side hillside, top edge feathered into the page */}
+        <div className="relative -mx-4 mt-6 aspect-[4/3] bg-[url(/home/hero-loch-day-m.webp)] bg-cover bg-bottom [mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_86%,transparent)] sm:aspect-[16/9] md:-mx-8 md:mt-8 lg:hidden dark:hidden" role="img" aria-label={alt}>
+          <div className="absolute bottom-[16%] left-1/2 w-[50%] max-w-[360px] -translate-x-1/2 sm:bottom-[15%] sm:w-[34%]">
+            <GroundedCar src={engine} priority sceneByTheme sizes="(max-width: 640px) 50vw, 360px" />
+          </div>
+        </div>
+        {/* phones / tablets, night theme: the dusk scene between the CTA and the trust strip */}
+        <div className={`relative mt-6 hidden aspect-[882/656] overflow-hidden md:mt-8 md:aspect-[16/10] dark:-mx-4 dark:block md:dark:-mx-8 lg:dark:hidden ${FADE_Y}`}>
+          <Image src={scene} alt={alt} fill sizes="100vw" className="object-cover object-[50%_60%]" />
         </div>
 
         {/* trust strip */}

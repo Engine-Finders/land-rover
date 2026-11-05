@@ -13,9 +13,9 @@ import { BODY, BODY_SM, H2, ICON_LG, ICON_MD, ICON_XS, SMALL, STAT_LG } from "@/
 /* ---------- icons: brand icon set in gold-rimmed rings ---------- */
 function IconRing({ name, size = "md" }) {
   const box = {
-    sm: "h-11 w-11 lg:h-[60px] lg:w-[60px]",
-    tile: "h-12 w-12 lg:h-14 lg:w-14 xl:h-[60px] xl:w-[60px]",
-    md: "h-14 w-14 lg:h-[72px] lg:w-[72px]",
+    sm: "h-11 w-11 lg:h-[52px] lg:w-[52px]",
+    tile: "h-12 w-12 lg:h-14 lg:w-14 xl:h-[52px] xl:w-[52px]",
+    md: "h-14 w-14 lg:h-[58px] lg:w-[58px]",
   }[size];
   const glyph = size === "md" ? ICON_LG : ICON_MD;
   return (

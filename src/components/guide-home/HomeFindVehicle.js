@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import LandRoverLogo from "@/components/guide-home/LandRoverLogo";
+import RangeRoverBadge from "@/components/guide-home/RangeRoverBadge";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
 import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_XS, SMALL } from "@/lib/typeScale";
@@ -22,8 +23,10 @@ function GroupHeader({ group }) {
           <h3 className={`${H6} uppercase tracking-[0.3em]`}>{group.label}</h3>
         </>
       ) : (
-        // Range Rover's wordmark is a very wide, spaced capital - approximated with tracking
-        <h3 className={`${H6} py-1 uppercase tracking-[0.62em]`}>{group.label}</h3>
+        <>
+          <RangeRoverBadge className="h-8.5 w-15.5 lg:h-9.5 lg:w-17.5" />
+          <h3 className={`${H6} uppercase tracking-[0.3em]`}>{group.label}</h3>
+        </>
       )}
     </div>
   );
@@ -105,7 +108,7 @@ export default function HomeFindVehicle({ data }) {
           </div>
 
           <div className="relative grid grid-cols-[auto_1fr] items-start gap-x-3 gap-y-3.5 px-3 pb-3.5 pt-3 sm:gap-x-4 sm:p-6 lg:flex lg:items-center lg:gap-7 lg:px-8 lg:py-7">
-            <span className="flex h-[46px] w-[46px] items-center justify-center rounded-full border border-lr-gold-line/60 bg-lr-chip/70 text-lr-green sm:h-16 sm:w-16 lg:h-[76px] lg:w-[76px]">
+            <span className="flex h-[46px] w-[46px] items-center justify-center rounded-full border border-lr-gold-line/60 bg-lr-chip/70 text-lr-green sm:h-14 sm:w-14 lg:h-[52px] lg:w-[52px]">
               <GuideIcon name="shield" className={ICON_LG} />
             </span>
 

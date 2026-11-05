@@ -68,7 +68,7 @@ export default function HomeKnowledge({ data }) {
             <Image src={note.wideImage} alt="" fill quality={90} className="object-cover object-center" sizes="(min-width: 1024px) 620px, 0px" />
           </div>
           <div className="relative flex items-start gap-4 px-4 pb-5 pt-5 sm:items-center sm:gap-6 sm:px-7 lg:min-h-[230px] lg:max-w-[52%] lg:py-8">
-            <span className="flex h-[54px] w-[54px] shrink-0 items-center justify-center rounded-full border border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-[78px] sm:w-[78px]">
+            <span className="flex h-[54px] w-[54px] shrink-0 items-center justify-center rounded-full border border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-[52px] sm:w-[52px]">
               <GuideIcon name="shield" className={ICON_LG} />
             </span>
             <div className="min-w-0">

@@ -16,7 +16,7 @@ function TrustIcon({ title }) {
   const key = title.toLowerCase();
   const name = key.includes("compare") ? "scope-decision" : key.includes("coverage") || key.includes("uk") ? "uk-focused" : "vetted-specialist";
   return (
-    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-lr-line bg-lr-chip md:h-14 md:w-14 xl:h-[62px] xl:w-[62px]">
+    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-lr-line bg-lr-chip md:h-14 md:w-14 xl:h-[52px] xl:w-[52px]">
       <LrIcon name={name} className={ICON_MD} />
     </span>
   );

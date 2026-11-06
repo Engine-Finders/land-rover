@@ -1,423 +1,299 @@
-"use client";
+import GroundedCar from "@/components/variant/GroundedCar";
+import LrIcon from "@/components/shared/LrIcon";
+import { BadgeStrip, PoundShield } from "@/components/models/costBuyerBadges";
+import { BAND_PAGE, CARD, Eyebrow, SANS, SECTION_Y, SERIF, SectionTitle, TABLE_HEAD, generationCar, prose, INTRO } from "@/components/models/modelKit";
+import { BODY_SM, CONTAINER } from "@/lib/typeScale";
 
-import { useMemo, useState } from "react";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { sectionBgClass } from "@/components/home/sectionBand";
-import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+// Model page section 8 - engine replacement costs, built to the approved Velar reference: the
+// headline with the four-up promise card beside it, then one card per generation table (a panel
+// with the generation's name, years and its car, beside a dark green price table), then the notes
+// row (Important Notes + Labour Estimate, and the model's replacement rule with its verdict chip).
+// Phones: each generation card shows its title and car, then one compact entry per variant (its
+// code chip, then used / reconditioned / rebuilt prices and labour hours as label-value rows).
+// Tablets / 1024: the car sits beside the title above a full-width table. xl (1280+): the
+// reference layout, panel left of the table.
 
-const carImages = {
-  classic: "/right.webp",
-  e46: "/right.webp",
-  e90: "/right.webp",
-  f30: "/right.webp",
-  g20: "/right.webp",
-};
-
-const f30Fallback = {
-  title: "F30/F31 - 3 Series (2012–2019)",
-  columns: ["Variant", "Engine Code", "Used (Supply)", "Reconditioned (Supply)", "Rebuilt (Supply)", "Labour Hours"],
-  rows: [
-    {
-      model: "316d–320d (N47 pre-2016)",
-      engineCode: "N47D20C",
-      usedSupply: "£1,800–£3,200",
-      reconditionedSupply: "£3,200–£5,500",
-      rebuiltSupply: "£4,500–£6,500",
-      labourHours: "10–14 hrs",
-    },
-    {
-      model: "316d–320d (B47 2016+)",
-      engineCode: "B47D20A",
-      usedSupply: "£1,500–£2,800",
-      reconditionedSupply: "£2,800–£4,500",
-      rebuiltSupply: "£3,800–£5,800",
-      labourHours: "8–12 hrs",
-    },
-    {
-      model: "325d–330d (N57)",
-      engineCode: "N57D30",
-      usedSupply: "£2,500–£4,500",
-      reconditionedSupply: "£4,500–£7,000",
-      rebuiltSupply: "£6,000–£9,000",
-      labourHours: "12–16 hrs",
-    },
-    {
-      model: "330i (B48)",
-      engineCode: "B48B20",
-      usedSupply: "£1,500–£2,800",
-      reconditionedSupply: "£3,000–£5,000",
-      rebuiltSupply: "£4,200–£6,500",
-      labourHours: "10–14 hrs",
-    },
-    {
-      model: "335i/340i (N55/B58)",
-      engineCode: "N55B30 / B58B30",
-      usedSupply: "£2,000–£4,000",
-      reconditionedSupply: "£3,800–£6,000",
-      rebuiltSupply: "£5,000–£8,000",
-      labourHours: "10–16 hrs",
-    },
-  ],
-};
-
-const trustItems = [
-  { title: "Transparent", text: "Real UK Prices", icon: "pound" },
-  { title: "Quality Assured", text: "Tested Engines", icon: "gear" },
-  { title: "Fitted by Experts", text: "Trusted Garages", icon: "wrench" },
-  { title: "12 Months", text: "Warranty", icon: "shield" },
+// Promises the site makes on its own pages (about/how-it-works, warranty-standards,
+// specialist-vetting) and in this section's data (real UK pricing, supply-only quotes)
+const BADGES = [
+  { icon: <PoundShield />, title: "Transparent", text: "Real UK Prices" },
+  { icon: "transparent-data", title: "Quality Assured", text: "Tested Engines" },
+  { icon: "commercial", title: "Fitted by Experts", text: "Trusted Garages" },
+  { icon: "genuine-failure-data", title: "12 Months", text: "Warranty" },
 ];
 
-function cleanText(text = "") {
-  return String(text)
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "\u2013")
-    .replaceAll("â€“", "\u2013")
-    .replaceAll("Ã¢â‚¬â€", "\u2014")
-    .replaceAll("â€”", "\u2014")
-    .replace(/\s+/g, " ")
-    .trim();
+// "Velar (L560) - 2017–2020 (pre-facelift)" -> { name: "Velar (L560)", years: "2017–2020", note: "(pre-facelift)" }
+function splitGenTitle(title = "") {
+  const t = String(title).replace(/\s+[-–—]\s+/, " — ");
+  const i = t.indexOf(" — ");
+  const name = i === -1 ? t : t.slice(0, i);
+  const rest = i === -1 ? "" : t.slice(i + 3);
+  const m = rest.match(/^(.*?)\s*(\([^)]*\))\s*$/);
+  return { name, years: m ? m[1] : rest, note: m ? m[2] : "" };
 }
 
-function Icon({ type, className = "h-10 w-10" }) {
-  const paths = {
-    pound: <path d="M16 6.5A4.5 4.5 0 0 0 7.5 9v8m-3 0h10M6 13h7" />,
-    gear: <path d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0-5 1.3 2.2 2.5.7 2.2-1.2 1.8 3.1-1.9 1.7.1 2.6 1.8 1.8-1.8 3.1-2.4-.8-2.3 1.3L12 21l-1.3-2.5-2.3-1.3-2.4.8-1.8-3.1L6 13.1l.1-2.6-1.9-1.7L6 5.7l2.2 1.2 2.5-.7L12 3Z" />,
-    wrench: <path d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L6 15.3V18h2.7l7.6-7.6-1.6-4.1Z" />,
-    shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />,
-    note: <path d="M6 3h9l4 4v14H6V3Zm9 0v5h5M9 13h7M9 17h7M9 9h3" />,
-    info: <path d="M12 17v-6m0-4h.01M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" />,
-    crown: <path d="m4 9 4 4 4-7 4 7 4-4-2 9H6L4 9Zm4 12h8" />,
-    chartShield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3ZM9 16v-4m3 4V9m3 7v-6" />,
-  };
-
+// "£2,000–£3,500 (top-hat linered)" -> spaced range, halves kept whole, the note on its own line
+function Range({ value = "" }) {
+  const s = String(value).trim();
+  const m = s.match(/^(.*?)\s*\(([^)]*)\)\s*$/);
+  const main = m ? m[1] : s;
+  const note = m ? m[2] : "";
+  const parts = main.split(/\s*–\s*/);
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2">
-      {paths[type] || paths.info}
+    <>
+      {parts.length === 2 ? (
+        <>
+          <span className="whitespace-nowrap">{parts[0]} –</span> <span className="whitespace-nowrap">{parts[1]}</span>
+        </>
+      ) : (
+        main
+      )}
+      {note && <span className="mt-0.5 block text-[13px] font-normal leading-snug text-lr-muted">({note})</span>}
+    </>
+  );
+}
+
+function Clock({ className = "h-4 w-4" }) {
+  return (
+    <svg viewBox="0 0 24 24" className={`shrink-0 ${className}`} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7.5V12l3 2" />
     </svg>
   );
 }
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const [main, accent = ""] = clean.split(/\s+(?:\u2014|-)\s+By\s+/);
-  return { main, accent: accent ? `By ${accent}` : "" };
-}
-
-function tableKey(title = "") {
-  const clean = cleanText(title).toLowerCase();
-  if (clean.includes("classic")) return "classic";
-  if (clean.includes("e46")) return "e46";
-  if (clean.includes("e90")) return "e90";
-  if (clean.includes("f30")) return "f30";
-  if (clean.includes("g20")) return "g20";
-  return "classic";
-}
-
-function tableLabel(title = "") {
-  const clean = cleanText(title);
-  const years = clean.match(/\(([^)]+)\)/)?.[1] || "";
-  const label = clean.replace(/\s*\([^)]+\)\s*$/, "").replace(" - 3 Series", "");
-  return { label, years };
-}
-
-function normalizeTables(tables = []) {
-  const output = [];
-  let insertedF30 = false;
-
-  tables.forEach((table) => {
-    const key = tableKey(table.title);
-
-    if (key === "f30") {
-      if (!insertedF30) {
-        output.push(table.rows?.length ? table : f30Fallback);
-        insertedF30 = true;
-      }
-      return;
-    }
-
-    if (table.rows?.length) output.push(table);
+// ✅ / ⚠️ / ❌ verdict markers inside the copy -> coloured chips ("✅ Safe." -> [✓ Safe].)
+const CHIP = {
+  "✅": ["bg-lr-good/12 text-lr-good", '<path d="m7 12.5 3.2 3.2L17 8.8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>'],
+  "⚠️": ["bg-lr-warn/14 text-lr-warn", '<path d="M12 7.5v5.5M12 16.6h.01" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>'],
+  "❌": ["bg-lr-bad/12 text-lr-bad", '<path d="m8.5 8.5 7 7m0-7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>'],
+};
+function verdictChips(html = "") {
+  return html.replace(/(✅|⚠️|⚠|❌)\s*([^,.;:)—<]+?)(?=[,.;:)]|\s—\s|<|$)/gu, (_, mark, phrase) => {
+    const key = mark === "⚠" ? "⚠️" : mark;
+    const [tone, glyph] = CHIP[key];
+    const words = phrase.trim().split(/\s+/);
+    // short phrases ("Safe", "walk away", "past the line") go in the chip; a longer clause keeps
+    // only its first word in the chip and reads on as text
+    const inChip = words.length <= 3 ? phrase.trim() : words[0];
+    const after = words.length <= 3 ? "" : ` ${words.slice(1).join(" ")}`;
+    return `<span class="inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2 py-px align-[1px] text-[0.92em] font-semibold ${tone}"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor" opacity=".18"/>${glyph}</svg>${inChip}</span>${after}`;
   });
-
-  return output;
 }
+// long data tags ("[PLACEHOLDER - confirm vs Table A; …]") may wrap, so they never push a phone
+// layout sideways; short ones ("[EM-QUOTE]") stay on one line
+const wrapLongTags = (html) =>
+  html.replace(/<span class="whitespace-nowrap ([^"]*)">(\[[^\]]{18,}\])<\/span>/g, '<span class="$1">$2</span>');
+const copy = (text) => verdictChips(wrapLongTags(prose(text)));
 
-function isUsableRuleTitle(title = "") {
-  const clean = cleanText(title);
-  if (!clean || clean.length < 8) return false;
-  if (/labour estimate|cost sheet|placeholder/i.test(clean)) return false;
-  return /^the\s+.+\srule/i.test(clean);
-}
-
-function buildNotes(data = {}) {
-  const important = cleanText(data.figuresNote || "");
-  let labour = cleanText(data.labourEstimate || "").replace(/^Labour estimate:\s*/i, "");
-  let ruleTitle = cleanText(data.economicsBox?.title || "");
-  let ruleText = cleanText(data.economicsBox?.text || "");
-
-  if (!isUsableRuleTitle(ruleTitle)) {
-    ruleTitle = "";
-    // Garbled title usually means the box was corrupted - prefer embedded labour rule.
-    if (/labour estimate|cost sheet/i.test(cleanText(data.economicsBox?.title || ""))) {
-      ruleText = "";
-    }
+// Labour estimate, and the model's rule: from economicsBox, or - on models whose rule was written
+// into the labour estimate ("… [EM-QUOTE]. The Evoque rule - the generation split: …") - split out
+// of it, so nothing is lost and nothing shows twice.
+function splitNotes(data = {}) {
+  const raw = String(data.labourEstimate || "").trim();
+  const at = raw.search(/\s+The\s[^.:]{2,60}?\brule\b[^.:]*:/);
+  let labour = at === -1 ? raw : raw.slice(0, at).trim();
+  let title = String(data.economicsBox?.title || "").trim();
+  let text = String(data.economicsBox?.text || "").trim();
+  if (at !== -1 && !(title && text)) {
+    const embedded = raw.slice(at).trim();
+    const colon = embedded.indexOf(":");
+    title = title || embedded.slice(0, colon).trim();
+    text = text || embedded.slice(colon + 1).trim();
   }
-
-  // Some models append the rule onto labourEstimate; peel it off when economicsBox is empty/incomplete.
-  const embedded = labour.match(/^(.*?)\s+(The\s+.+?\srule(?:\s*[--–:]\s*|\s+)[\s\S]+)$/i);
-  if (embedded) {
-    labour = embedded[1].replace(/\.\s*$/, ".") || embedded[1];
-    if (!ruleText || !ruleTitle) {
-      const parts = embedded[2].match(/^(The\s+.+?\srule(?:\s*[--–][^.]*?)?)(?:\s*[:]\s*|\s+)([\s\S]*)$/i);
-      if (parts) {
-        if (!ruleTitle) ruleTitle = parts[1];
-        if (!ruleText) ruleText = parts[2];
-      } else if (!ruleText) {
-        ruleText = embedded[2];
-      }
-    }
-  }
-
-  if (!ruleTitle && ruleText) ruleTitle = "Ownership rule";
-
-  return { important, labour, ruleTitle, ruleText };
+  labour = labour.replace(/^Labour estimate:\s*/i, "");
+  return { labour, title, text };
 }
 
-function TrustStrip() {
-  return (
-    <div className="grid grid-cols-4 overflow-hidden rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)]">
-      {trustItems.map((item) => (
-        <div
-          key={item.title}
-          className="flex flex-col items-center justify-center border-r border-[var(--color-border)]/55 px-1 py-2 text-center last:border-r-0 md:px-2.5 md:py-2"
-        >
-          <span className="text-[var(--color-primary)]">
-            <Icon type={item.icon} className="h-6 w-6 md:h-7 md:w-7" />
-          </span>
-          <strong className="mt-1 text-[12px] leading-[1.1] text-[var(--color-text)] md:text-[13px]">{item.title}</strong>
-          <span className="mt-0.5 text-[11px] leading-[1.1] text-[var(--color-text-muted)] md:text-[12px]">{item.text}</span>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function CostTable({ table }) {
-  if (!table) return null;
-
-  const columns = table.columns || [];
+function GenerationCard({ table, slug }) {
+  const { name, years, note } = splitGenTitle(table.title);
+  const car = generationCar(table.title, slug);
+  const cols = table.columns?.length === 6 ? table.columns : ["Variant", "Engine Code", "Used (Supply)", "Reconditioned (Supply)", "Rebuilt (Supply)", "Labour Hours"];
+  const short = (c) => c.replace(/\s*\(Supply\)\s*/i, "");
+  const rows = table.rows || [];
 
   return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface)]">
-      <table className="w-full border-collapse text-left text-[14px] text-[var(--color-text)] md:text-[15px]">
-        <thead>
-          <tr className="bg-[var(--color-chrome)] text-white">
-            {columns.map((column) => (
-              <th key={column} className="border-r border-white/18 px-2 py-2 text-left font-bold last:border-r-0 md:px-4 md:py-2">
-                {column}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {(table.rows || []).map((row) => (
-            <tr key={`${row.model}-${row.engineCode}`}>
-              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 font-bold md:px-4 md:py-2">{cleanText(row.model)}</td>
-              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 md:px-4 md:py-2">{cleanText(row.engineCode)}</td>
-              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.usedSupply)}</td>
-              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.reconditionedSupply)}</td>
-              <td className="border-r border-t border-[var(--color-border)]/55 px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.rebuiltSupply)}</td>
-              <td className="border-t border-[var(--color-border)]/55 px-2 py-2 text-center md:px-4 md:py-2">{cleanText(row.labourHours)}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function DesktopGenerationRow({ table }) {
-  const key = tableKey(table.title);
-  const { label, years } = tableLabel(table.title);
-
-  return (
-    <div className="grid gap-0 md:grid-cols-[260px_minmax(0,1fr)]">
-      <div className="border border-r-0 border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] p-3.5 md:rounded-l-md md:p-4">
-        <h3 className="font-lora text-[17px] font-medium leading-[1.08] text-[var(--color-primary)] md:text-[19px]">{label}</h3>
-        <p className={`mt-1 font-lora font-medium ${sectionTableText}`}>{years}</p>
-        <div className="mt-2 h-[82px] overflow-hidden rounded-md md:h-[96px]">
-          <img src={carImages[key]} alt="" className="h-full w-full object-cover object-center" loading="lazy" />
-        </div>
-      </div>
-      <CostTable table={table} />
-    </div>
-  );
-}
-
-function MobileTabs({ tables }) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const activeTable = tables[activeIndex] || tables[0];
-  if (!activeTable) return null;
-
-  const key = tableKey(activeTable?.title);
-  const active = tableLabel(activeTable?.title);
-
-  return (
-    <div className="md:hidden">
-      <div className="overflow-hidden rounded-t-md border border-[var(--color-border)]/75 bg-[var(--color-surface)]">
-        <div className="flex overflow-x-auto">
-          {tables.map((table, index) => {
-            const label = tableLabel(table.title);
-            const selected = index === activeIndex;
-
-            return (
-              <button
-                key={table.title}
-                type="button"
-                onClick={() => setActiveIndex(index)}
-                className={`min-w-[150px] border-r border-[var(--color-border)]/55 px-3 py-3.5 text-center last:border-r-0 transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${
-                  selected ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-surface)] text-[var(--color-text)]"
-                }`}
-              >
-                <span className="font-lora block text-[0.95rem] font-medium leading-tight">{label.label}</span>
-                <span className="font-lora mt-1 block text-[14px] font-medium leading-tight">{label.years}</span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      <article className="rounded-b-md border border-t-0 border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] p-4">
-        <h3 className="font-lora text-[35px] font-medium leading-tight text-[var(--color-text)] md:text-[50px]">
-          <span dangerouslySetInnerHTML={{ __html: active.label }} /> <span className="text-[var(--color-primary)]">(<span dangerouslySetInnerHTML={{ __html: active.years }} />)</span>
+    <article className={`${CARD} overflow-hidden xl:grid xl:grid-cols-[288px_minmax(0,1fr)] 2xl:grid-cols-[316px_minmax(0,1fr)]`}>
+      {/* generation panel: title (and car beside it until xl, below it from xl) */}
+      <header className="flex items-center gap-3 border-b border-lr-line bg-lr-panel/80 px-4 py-3.5 sm:gap-5 sm:px-5 md:px-6 md:py-4 xl:flex-col xl:items-stretch xl:justify-between xl:gap-4 xl:border-b-0 xl:border-r xl:px-6 xl:pb-5 xl:pt-6">
+        <h3 className={`${SERIF} min-w-0 flex-1 text-[19px] leading-[1.2] text-lr-head sm:text-[22px] md:text-[24px] xl:flex-none xl:text-[26px]`}>
+          {name}
+          {years && (
+            <>
+              {" "}—<br />
+              {years}
+            </>
+          )}
+          {note && <span className="mt-0.5 block text-[15px] text-lr-body sm:text-[16px] xl:text-[19px]">{note}</span>}
         </h3>
-        <div className="mt-3 h-[190px]">
-          <img src={carImages[key]} alt="" className="h-full w-full object-contain" loading="lazy" />
-        </div>
-        <div className="mt-4 overflow-x-auto">
-          <div className="min-w-[720px]">
-            <CostTable table={activeTable} />
+        {car && (
+          <div className="w-[42%] max-w-[176px] shrink-0 sm:w-[200px] sm:max-w-none md:w-[230px] xl:mx-auto xl:w-full xl:max-w-[250px]">
+            <GroundedCar src={car} studio sizes="(min-width: 1280px) 250px, (min-width: 768px) 230px, 176px" />
           </div>
-        </div>
-        <div className="mt-4 flex items-center gap-3 rounded-md bg-[var(--color-page-soft)] px-4 py-3 text-[15px] text-[var(--color-text)]">
-          <span className="shrink-0 text-[var(--color-primary)]">
-            <Icon type="info" className="h-7 w-7" />
-          </span>
-          Prices are supply only. Labour and ancillary parts extra.
-        </div>
-      </article>
-    </div>
-  );
-}
+        )}
+      </header>
 
-function Notes({ parts }) {
-  const hasRule = Boolean(parts.ruleTitle || parts.ruleText);
+      {/* xl: the table fills the panel's height (short tables get airier rows, not a gap) */}
+      <div className="min-w-0 xl:flex xl:flex-col">
+        {/* phones: one compact entry per variant */}
+        <p className="flex items-center gap-1.5 border-b border-lr-line px-4 py-2 text-[13px] text-lr-muted sm:px-5 md:hidden">
+          <LrIcon name="note" tone="current" className="h-3.5 w-3.5 text-lr-ink dark:text-lr-green" />
+          Supply-only prices · labour extra
+        </p>
+        <ul className="divide-y divide-lr-line md:hidden">
+          {rows.map((r) => (
+            <li key={`${r.model}-${r.engineCode}`} className="px-4 py-3 sm:px-5">
+              {/* variant + engine code, labour hours on the right */}
+              <div className="flex items-start justify-between gap-3">
+                <p className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
+                  <span className="text-[15px] font-semibold leading-snug text-lr-head">{r.model}</span>
+                  <span className="rounded-md bg-lr-panel px-2 py-0.5 text-[12.5px] font-semibold leading-snug text-lr-ink dark:text-lr-green">{r.engineCode}</span>
+                </p>
+                <p className="flex max-w-[48%] shrink-0 items-start gap-1.5 text-right text-[13.5px] font-medium leading-snug text-lr-body">
+                  <Clock className="mt-[3px] h-3.5 w-3.5 shrink-0 text-lr-ink dark:text-lr-green" />
+                  <span className="sr-only">{cols[5]}: </span>
+                  <span>
+                    <Range value={r.labourHours} />
+                  </span>
+                </p>
+              </div>
+              {/* the three supply prices side by side, like the table */}
+              <dl className="mt-2 grid grid-cols-3 divide-x divide-lr-line overflow-hidden rounded-lg border border-lr-line tabular-nums">
+                {[
+                  [short(cols[2]), r.usedSupply],
+                  [short(cols[3]).replace(/^Reconditioned$/i, "Recon"), r.reconditionedSupply],
+                  [short(cols[4]), r.rebuiltSupply],
+                ].map(([label, v]) => (
+                  <div key={label} className="min-w-0 px-2.5 py-2">
+                    <dt className="text-[12px] font-medium uppercase tracking-[0.04em] text-lr-muted">{label}</dt>
+                    <dd className="mt-0.5 text-[14px] font-semibold leading-snug text-lr-head">
+                      <Range value={v} />
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </li>
+          ))}
+        </ul>
 
-  return (
-    <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
-      <div className="grid gap-4 rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] p-5 md:grid-cols-2">
-        <div className="flex flex-col gap-3 border-[var(--color-border)]/55 md:border-r md:pr-6">
-          <div className="flex items-center gap-3">
-            <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="note" className="h-6 w-6" />
-            </span>
-            <h3 className="font-bold text-[var(--color-primary)]">Important Notes</h3>
-          </div>
-          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.important || "-" }} />
-        </div>
-        <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-3">
-            <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="info" className="h-6 w-6" />
-            </span>
-            <h3 className="font-bold text-[var(--color-primary)]">Labour Estimate</h3>
-          </div>
-          <p className="text-[15px] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: parts.labour || "-" }} />
-        </div>
+        {/* tablets and up: the price table */}
+        <table className="hidden w-full border-collapse text-[14px] tabular-nums md:table lg:text-[15px] xl:flex-1">
+          <colgroup>
+            <col className="w-[16%]" />
+            <col className="w-[15%]" />
+            <col className="w-[17%]" />
+            <col className="w-[19%]" />
+            <col className="w-[17%]" />
+            <col className="w-[16%]" />
+          </colgroup>
+          <thead>
+            <tr className={TABLE_HEAD}>
+              {cols.map((c, i) => (
+                <th key={c} scope="col" className={`px-2.5 py-3 text-[14px] font-semibold leading-tight lg:px-3 xl:py-3.5 ${i === 0 ? "text-left lg:pl-4 xl:pl-6" : "text-center"}`}>
+                  {c}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={`${r.model}-${r.engineCode}`} className="border-t border-lr-line first:border-t-0 transition-colors hover:bg-lr-panel/50">
+                <th scope="row" className="px-3 py-3 text-left font-semibold leading-snug text-lr-head lg:px-4 lg:py-3.5 xl:pl-6">{r.model}</th>
+                <td className="px-3 py-3 text-center leading-snug text-lr-body lg:px-4 lg:py-3.5">{r.engineCode}</td>
+                {[r.usedSupply, r.reconditionedSupply, r.rebuiltSupply].map((v, i) => (
+                  <td key={i} className="px-3 py-3 text-center leading-snug text-lr-head lg:px-4 lg:py-3.5">
+                    <Range value={v} />
+                  </td>
+                ))}
+                <td className="px-3 py-3 text-center leading-snug text-lr-head lg:px-4 lg:py-3.5">
+                  <Range value={r.labourHours} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
+    </article>
+  );
+}
 
-      {hasRule ? (
-        <div className="inline-flex w-fit max-w-[620px] flex-row gap-4 self-start rounded-md border border-[var(--color-border)]/75 bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] md:p-5">
-          <span className="hidden shrink-0 text-[var(--color-primary)] md:block">
-            <Icon type="crown" className="h-12 w-12 md:h-16 md:w-16" />
-          </span>
-          <div className="max-w-[540px]">
-            <h3 className="font-lora text-[24px] font-medium leading-[1.12] text-[var(--color-primary)] md:text-[30px]">
-              {parts.ruleTitle}
-              {parts.ruleTitle && !/[:-–-]\s*$/.test(parts.ruleTitle) ? ":" : ""}
-            </h3>
-            {parts.ruleText ? (
-              <p className="mt-2 text-[14px] leading-[1.5] md:text-[15px]" dangerouslySetInnerHTML={{ __html: parts.ruleText }} />
-            ) : null}
-            <p className="mt-2 font-bold">Value the car first; the engine decision follows.</p>
-          </div>
-        </div>
-      ) : null}
+// "… whole parc - ✅ Safe. The one pressure point …" -> the verdict sentence, then the rest
+function ruleParagraphs(text = "") {
+  const m = String(text).match(/^(.*?(?:✅|⚠️|⚠|❌)[^.]*\.)\s+(\S.*)$/su);
+  return m ? [m[1], m[2]] : [text];
+}
+
+function NoteBlock({ icon, title, html }) {
+  return (
+    <div className="p-4 sm:p-5 xl:p-6">
+      <h3 className="flex items-center gap-3 text-[16px] font-semibold text-lr-head xl:text-[17px]">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-lr-line-strong text-lr-ink dark:text-lr-green">{icon}</span>
+        {title}
+      </h3>
+      <p className={`${BODY_SM} mt-3 text-lr-body`} dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   );
 }
 
-export default function ReplacementCosts({ data, band = "page" }) {
-  const tables = useMemo(() => normalizeTables(data?.tables || []), [data]);
+export default function ReplacementCosts({ data, slug = "" }) {
   if (!data) return null;
-
-  const title = splitTitle(data.h2);
-  const notes = buildNotes(data);
+  const tables = (data.tables || []).filter((t) => t.rows?.length);
+  const { labour, title: ruleTitle, text: ruleText } = splitNotes(data);
+  const hasNotes = data.figuresNote || labour;
 
   return (
-    <section className={`${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6`}>
-      <div className="mx-auto w-full max-w-8xl">
-      <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between md:gap-6">
-        <div className="min-w-0 flex-1">
-          <HeadingEyebrow text="REPLACEMENT COSTS" />
-          <h2 className={`mt-3 ${sectionH2} tracking-normal md:text-[34px] lg:text-[42px]`}>
-            <span className="md:whitespace-nowrap" dangerouslySetInnerHTML={{ __html: title.main }} />
-            {title.accent ? (
-              <>
-                <br />
-                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-              </>
-            ) : null}
-          </h2>
-          {data.subHeadline ? (
-            <p className={`mt-3 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`}>{cleanText(data.subHeadline)}</p>
-          ) : null}
+    <section id="replacement-costs" className={`${BAND_PAGE} text-lr-head ${SANS}`}>
+      <div className={`${CONTAINER} ${SECTION_Y}`}>
+        <div className="grid gap-6 xl:gap-8 min-[1500px]:grid-cols-[minmax(0,1fr)_minmax(0,560px)] min-[1500px]:items-center min-[1500px]:gap-10">
+          <div>
+            <Eyebrow>Replacement Costs</Eyebrow>
+            <SectionTitle h2={data.h2} className="mt-3 md:mt-4" />
+            {data.subHeadline && <p className={INTRO} dangerouslySetInnerHTML={{ __html: prose(data.subHeadline) }} />}
+          </div>
+          <BadgeStrip items={BADGES} />
         </div>
 
-        <div className="hidden w-full max-w-[420px] shrink-0 md:block lg:max-w-[480px]">
-          <TrustStrip />
-        </div>
-
-        <div className="mt-1 w-full overflow-hidden rounded-md md:hidden">
-          <img src={carImages.classic} alt="" className="h-[170px] w-full object-cover object-center" loading="lazy" />
-        </div>
-
-        <div className="md:hidden">
-          <TrustStrip />
-        </div>
-      </div>
-
-      {tables.length > 0 ? (
-        <>
-      <div className="mt-6 hidden space-y-3 md:block">
-            {tables.map((table) => (
-              <DesktopGenerationRow key={table.title} table={table} />
+        {tables.length > 0 && (
+          <div className="mt-6 space-y-4 md:mt-8 md:space-y-5 xl:mt-10">
+            {tables.map((t) => (
+              <GenerationCard key={t.title} table={t} slug={slug} />
             ))}
           </div>
+        )}
 
-          <div className="mt-6">
-            <MobileTabs tables={tables} />
+        {(hasNotes || ruleText) && (
+          <div className="mt-5 grid gap-4 md:mt-6 md:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,1.12fr)_minmax(0,1fr)_minmax(0,0.5fr)] xl:gap-5">
+            {hasNotes && (
+              <div className={`${CARD} grid divide-y divide-lr-line md:col-span-2 md:grid-cols-2 md:divide-x md:divide-y-0 xl:col-span-1`}>
+                {data.figuresNote && <NoteBlock icon={<LrIcon name="note" tone="current" className="h-[18px] w-[18px]" />} title="Important Notes" html={copy(data.figuresNote)} />}
+                {labour && <NoteBlock icon={<Clock className="h-[18px] w-[18px]" />} title="Labour Estimate" html={copy(labour)} />}
+              </div>
+            )}
+            {ruleText && (
+              <div className="flex gap-4 rounded-xl border border-lr-line bg-lr-chip/70 p-4 sm:gap-5 sm:p-5 lg:rounded-2xl xl:p-6">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-lr-line-strong bg-lr-card text-lr-ink sm:h-14 sm:w-14 dark:text-lr-green">
+                  <LrIcon name="flagship-choice" tone="current" className="h-6 w-6 sm:h-7 sm:w-7" />
+                </span>
+                <div className="min-w-0">
+                  {ruleTitle && <h3 className="text-[17px] font-semibold leading-snug text-lr-head xl:text-[18px]" dangerouslySetInnerHTML={{ __html: prose(ruleTitle) }} />}
+                  {ruleParagraphs(ruleText).map((para, i) => (
+                    <p key={i} className={`${BODY_SM} ${i ? "mt-2.5" : "mt-2"} text-lr-body`} dangerouslySetInnerHTML={{ __html: copy(para) }} />
+                  ))}
+                </div>
+              </div>
+            )}
+            {/* the value-first tip (gold), as in the reference */}
+            <div className="flex gap-4 rounded-xl border border-lr-gold-line/35 bg-lr-gold-line/[0.08] p-4 sm:p-5 lg:rounded-2xl xl:flex-col xl:gap-3 xl:p-6 min-[1440px]:flex-row min-[1440px]:gap-4">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-lr-gold-line/45 bg-lr-card text-lr-gold">
+                <LrIcon name="real-inquiries" tone="current" className="h-6 w-6" />
+              </span>
+              <div className={`${BODY_SM} min-w-0 text-lr-body`}>
+                <p>Always compare against the car&rsquo;s value and your long-term ownership plan.</p>
+                <p className="mt-2.5 font-medium text-lr-head">Value the car first; the engine decision follows.</p>
+              </div>
+            </div>
           </div>
-        </>
-      ) : null}
-
-      <div className="mt-5">
-        <Notes parts={notes} />
-      </div>
-
-      <p className="mt-5 text-center text-[15px] text-[var(--color-text-soft)] md:hidden">
-        All prices in GBP (£) &nbsp; • &nbsp; Supply only &nbsp; • &nbsp; Subject to availability and condition
-      </p>
+        )}
       </div>
     </section>
   );

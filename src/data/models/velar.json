@@ -264,6 +264,7 @@
   },
   "ownershipVerdict": {
     "h2": "Velar - The Ownership Verdict",
+    "subHeadline": "Seven generations. Dozens of engine codes. One clear truth: the Velar is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -310,6 +311,7 @@
   },
   "atAGlance": {
     "h2": "Velar at a Glance",
+    "subHeadline": "All the key facts about the Velar in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
         "metric": "Generations",
@@ -369,30 +371,76 @@
         }
       },
       {
-        "title": "Which Velar Powertrain Is Right for You?",
+        "title": "The D300 Question - Same Badge, Two Engines",
         "badge": "",
-        "meta": "Pre-2021 Pick",
         "rating": "",
         "verdict": "",
         "cta": {
           "label": "",
           "href": "#"
-        }
+        },
+        "meta": "The pre-facelift D300 is the 306DT V6 - the engine with the crankshaft-bearing history it shares with the Discovery 4 and Range Rover Sport. The 2021+ D300 is the AJ20D6 straight-six - no such legacy. Two listings, identical badges, opposite risk profiles. Check the registration year before the price."
       }
     ],
     "rangeTable": {
-      "title": "",
-      "columns": [],
-      "rows": []
+      "title": "Which Velar Powertrain Is Right for You?",
+      "columns": [
+        "Your Driving",
+        "Pre-2021 Pick",
+        "2021+ Pick",
+        "Avoid"
+      ],
+      "rows": [
+        {
+          "model": "Short urban runs (<15 mi/day)",
+          "engineCode": "P250 petrol",
+          "power": "P400e PHEV",
+          "induction": "Any diesel - DPF and oil-dilution territory",
+          "years": "",
+          "notes": ""
+        },
+        {
+          "model": "Motorway miles",
+          "engineCode": "D240 (with chain history)",
+          "power": "D300 (AJ20D6)",
+          "induction": "Pre-2019 D180 without chain inspection",
+          "years": "",
+          "notes": ""
+        },
+        {
+          "model": "Towing (up to 2,500kg)",
+          "engineCode": "D300 (V6 - with oil history)",
+          "power": "D300 (AJ20D6)",
+          "induction": "Four-cylinder petrols - legal, but working hard",
+          "years": "",
+          "notes": ""
+        },
+        {
+          "model": "Performance",
+          "engineCode": "P380 (AJ126)",
+          "power": "P400 (AJ20P6)",
+          "induction": "P550 SVAD only with specialist history budgeted",
+          "years": "",
+          "notes": ""
+        },
+        {
+          "model": "Lowest ownership risk",
+          "engineCode": "P250 (204PT)",
+          "power": "Anything post-2021",
+          "induction": "2017–2018 D180",
+          "years": "",
+          "notes": ""
+        }
+      ]
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full explainer: Velar D300 - V6 vs Straight-Six →",
       "href": "#"
     }
   },
   "engineDatabase": {
     "h2": "Velar Engine Codes - The Complete Database",
-    "subHeadline": "",
+    "subHeadline": "Every engine ever fitted to a Range Rover Velar - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
       "Family",
@@ -510,7 +558,7 @@
   },
   "commonProblems": {
     "h2": "Common Velar Engine Problems",
-    "subHeadline": "",
+    "subHeadline": "The six most common failure patterns across the Velar range - symptoms, costs and urgency.",
     "columns": [
       "#",
       "Problem",
@@ -658,8 +706,8 @@
     "quote": "If you buy one Velar based on this page, buy a 2021-or-later car - and remember that 'D300' means two different engines on this model. The one with the crankshaft question retired in 2020; make sure the listing you're reading knows that too."
   },
   "replacementCosts": {
-    "h2": "Velar Engine Replacement Costs",
-    "subHeadline": "",
+    "h2": "Velar Engine Replacement Costs - By Generation",
+    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
         "title": "Velar (L560) - 2017–2020 (pre-facelift)",
@@ -777,6 +825,7 @@
   },
   "engineEvolution": {
     "h2": "How the Velar Engine Range Evolved - 2017 to Today",
+    "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Velar engines.",
     "columns": [
       "Era",
       "Years",
@@ -787,6 +836,8 @@
     "eras": [
       {
         "era": "Launch era",
+        "tagline": "original line-up",
+        "note": "The Velar arrives",
         "years": "2017–2020",
         "keyEngines": "204DTD, 204PT, 306DT D300, AJ126 P380",
         "whyBmwChanged": "The Velar launched as the design flagship on borrowed engines - the Ingenium fours plus the ageing V6s from across the range",
@@ -794,6 +845,8 @@
       },
       {
         "era": "SV moment",
+        "tagline": "halo performance",
+        "note": "The SVAutobiography Dynamic era",
         "years": "2019–2020",
         "keyEngines": "AJ133 P550",
         "whyBmwChanged": "A short-run 5.0 V8 halo car - the SVAutobiography Dynamic",
@@ -801,6 +854,8 @@
       },
       {
         "era": "Facelift era",
+        "tagline": "modern powertrains",
+        "note": "Electrified, refined, and future-ready",
         "years": "2021–present",
         "keyEngines": "AJ20D6, AJ20P6, P400e, 204DTD MHEV",
         "whyBmwChanged": "Electrification retired the V6s - the straight-sixes and PHEV arrived with Pivi Pro",
@@ -810,6 +865,7 @@
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a Velar?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Velar is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -846,6 +902,7 @@
   "calculatorCta": {
     "h2": "Can I Repair My Velar Engine - or Should I Replace It?",
     "intro": "Cold-start knock on a D300? Chain rattle on an early D180? Get a personalised repair-vs-replace verdict using real UK cost data.",
+    "context": "On the Velar, the answer swings on your car's value - an early D180 at £15,000 and a D300 at £30,000 face very different economics.",
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch with Velar pre-selected",
@@ -929,6 +986,7 @@
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {
         "icon": "🔍",

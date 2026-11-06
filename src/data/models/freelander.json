@@ -258,6 +258,7 @@
   },
   "ownershipVerdict": {
     "h2": "Freelander - The Ownership Verdict",
+    "subHeadline": "Two generations. Dozens of engine codes. One clear truth: the Freelander is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -300,6 +301,7 @@
   },
   "atAGlance": {
     "h2": "Freelander at a Glance",
+    "subHeadline": "All the key facts about the Freelander in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
         "metric": "Generations",
@@ -368,6 +370,17 @@
           "label": "Explore Freelander 2 →",
           "href": "https://landroverengine.uk/land-rover-freelander-2/l359"
         }
+      },
+      {
+        "title": "Freelander 1 vs Freelander 2 - Different Cars, Different Advice",
+        "badge": "",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        },
+        "meta": "The Freelander 1 is now a sub-£2,500 car where almost any engine failure is an economic write-off - our advice is head-gasket prevention (K-series) or a good used engine, never a full recon. The Freelander 2 is the last truly affordable dependable Land Rover: values of £3,000–£7,000 can still justify engine work, but only just. Read the maths before the mechanicals."
       }
     ],
     "rangeTable": {
@@ -382,7 +395,7 @@
   },
   "engineDatabase": {
     "h2": "Freelander Engine Codes - The Complete Database",
-    "subHeadline": "",
+    "subHeadline": "Every engine ever fitted to a Freelander - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
       "Family",
@@ -489,7 +502,7 @@
   },
   "commonProblems": {
     "h2": "Common Freelander Engine Problems",
-    "subHeadline": "",
+    "subHeadline": "The six most common failure patterns across the Freelander range - symptoms, costs and urgency.",
     "columns": [
       "#",
       "Problem",
@@ -732,6 +745,7 @@
   },
   "engineEvolution": {
     "h2": "How the Freelander Engine Range Evolved - 1997 to 2014",
+    "subHeadline": "From the original 1997 line-up to the last 2014 cars, see how engineering, emissions and performance shaped every generation of Freelander engines.",
     "columns": [
       "Era",
       "Years",
@@ -772,6 +786,7 @@
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a Freelander?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Freelander is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -891,6 +906,7 @@
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {
         "icon": "🔍",

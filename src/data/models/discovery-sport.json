@@ -246,6 +246,7 @@
   },
   "ownershipVerdict": {
     "h2": "Discovery Sport - The Ownership Verdict",
+    "subHeadline": "One generation. Dozens of engine codes. One clear truth: the Discovery Sport is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -292,6 +293,7 @@
   },
   "atAGlance": {
     "h2": "Discovery Sport at a Glance",
+    "subHeadline": "All the key facts about the Discovery Sport in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
         "metric": "Generations",
@@ -400,7 +402,7 @@
   },
   "engineDatabase": {
     "h2": "Discovery Sport Engine Codes - The Complete Database",
-    "subHeadline": "",
+    "subHeadline": "Every engine ever fitted to a Discovery Sport - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
       "Family",
@@ -482,7 +484,7 @@
   },
   "commonProblems": {
     "h2": "Common Discovery Sport Engine Problems",
-    "subHeadline": "",
+    "subHeadline": "The six most common failure patterns across the Discovery Sport range - symptoms, costs and urgency.",
     "columns": [
       "#",
       "Problem",
@@ -630,7 +632,7 @@
     "quote": "If you buy one Discovery Sport based on this page, buy a 2020-or-later car. The 2019.5 facelift is the dividing line between this model's two reliability lives - and on a pre-facelift diesel, a documented timing-chain inspection is worth more than any service stamp."
   },
   "replacementCosts": {
-    "h2": "Discovery Sport Engine Replacement Costs",
+    "h2": "Discovery Sport Engine Replacement Costs - By Generation",
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
@@ -717,6 +719,7 @@
   },
   "engineEvolution": {
     "h2": "How the Discovery Sport Engine Range Evolved - 2015 to Today",
+    "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Discovery Sport engines.",
     "columns": [
       "Era",
       "Years",
@@ -750,6 +753,7 @@
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a Discovery Sport?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Discovery Sport is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -869,6 +873,7 @@
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {
         "icon": "🔍",

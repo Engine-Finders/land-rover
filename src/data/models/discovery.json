@@ -306,6 +306,7 @@
   },
   "ownershipVerdict": {
     "h2": "Discovery - The Ownership Verdict",
+    "subHeadline": "Five generations. Dozens of engine codes. One clear truth: the Discovery is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -352,6 +353,7 @@
   },
   "atAGlance": {
     "h2": "Discovery at a Glance",
+    "subHeadline": "All the key facts about the Discovery in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
         "metric": "Generations",
@@ -971,6 +973,7 @@
   },
   "engineEvolution": {
     "h2": "How the Discovery Engine Range Evolved - 1989 to Today",
+    "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Discovery engines.",
     "columns": [
       "Era",
       "Years",
@@ -1018,6 +1021,7 @@
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a Discovery?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Discovery is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -1137,6 +1141,7 @@
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {
         "icon": "🔍",

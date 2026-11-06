@@ -330,6 +330,7 @@
   },
   "ownershipVerdict": {
     "h2": "Range Rover - The Ownership Verdict",
+    "subHeadline": "Five generations. Dozens of engine codes. One clear truth: the Range Rover is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -376,6 +377,7 @@
   },
   "atAGlance": {
     "h2": "Range Rover at a Glance",
+    "subHeadline": "All the key facts about the Range Rover in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
         "metric": "Generations",
@@ -491,7 +493,7 @@
   },
   "engineDatabase": {
     "h2": "Range Rover Engine Codes - The Complete Database",
-    "subHeadline": "",
+    "subHeadline": "Every engine ever fitted to a Range Rover - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
       "Family",
@@ -706,7 +708,7 @@
   },
   "commonProblems": {
     "h2": "Common Range Rover Engine Problems",
-    "subHeadline": "",
+    "subHeadline": "The six most common failure patterns across the Range Rover range - symptoms, costs and urgency.",
     "columns": [
       "#",
       "Problem",
@@ -860,7 +862,7 @@
   },
   "replacementCosts": {
     "h2": "Range Rover Engine Replacement Costs - By Generation",
-    "subHeadline": "",
+    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
         "title": "Range Rover Classic - 1970–1996",
@@ -1065,6 +1067,7 @@
   },
   "engineEvolution": {
     "h2": "How the Range Rover Engine Range Evolved - 1970 to Today",
+    "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Range Rover engines.",
     "columns": [
       "Era",
       "Years",
@@ -1112,6 +1115,7 @@
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a Range Rover?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Range Rover is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -1231,6 +1235,7 @@
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {
         "icon": "🔍",

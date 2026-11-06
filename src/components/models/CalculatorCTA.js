@@ -1,321 +1,241 @@
-"use client";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY, BODY_SM, CONTAINER } from "@/lib/typeScale";
+import {
+  Arrow,
+  BAND_SOFT,
+  CAR_ART,
+  CAR_ART_RATIO,
+  CARD,
+  EyebrowPill,
+  SANS,
+  SECTION_Y,
+  SERIF,
+  modelArt,
+  modelName,
+  prose,
+  splitHeading,
+  H2_MODEL,
+  INTRO,
+} from "@/components/models/modelKit";
+import { resolveHref } from "@/components/models/ClosingActionLinks";
 
-import Image from "next/image";
-import Link from "next/link";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
-import { useTheme } from "@/components/shared/themeProvider";
-import { sectionBody, sectionButton, sectionDescription } from "@/components/models/sectionTypography";
+// Model page section 11, built to the approved reference: "Can I Repair My Velar Engine — / or Should
+// I Replace It?" with the question line and "The smarter way to decide" callout beside the model's car,
+// the two PATH cards (know your engine -> the calculator with the model pre-selected; not sure ->
+// identify the engine first) and the dark "Stop guessing" banner. Phones stack it in that order.
+// Links: the JSON's planned /calculator URLs are mapped to the live tools (ClosingActionLinks.js).
 
-const iconPaths = {
-  calculator: (
-    <>
-      <path d="M6 3h12v18H6V3Zm3 4h6M9 11h.01M12 11h.01M15 11h.01M9 15h.01M12 15h.01M15 15h.01M9 18h.01M12 18h.01M15 18h.01" />
-    </>
-  ),
-  engineSearch: (
-    <>
-      <path d="M4 12h3m10 0h3M7 9h7.5a3.5 3.5 0 0 1 0 7H7V9Zm2-3h5m-2 0V3M6 16v3m10-3v3" />
-      <path d="m17 17 4 4" />
-      <circle cx="14" cy="13" r="4" />
-    </>
-  ),
-  documentSearch: (
-    <>
-      <path d="M7 3h7l4 4v14H7V3Zm7 0v5h5M10 11h5M10 15h2" />
-      <circle cx="14" cy="16" r="3" />
-      <path d="m16.5 18.5 3 3" />
-    </>
-  ),
-  engineQuestion: (
-    <>
-      <path d="M4 12h3m10 0h3M7 9h10v7H7V9Zm2-3h6m-3 0V3M6 16v3m12-3v3" />
-      <path d="M12 14v-.4c0-.8.7-1.1 1.2-1.5.4-.3.8-.7.8-1.3 0-1-1-1.7-2-1.7s-1.8.5-2.2 1.3M12 16.8h.01" />
-    </>
-  ),
-  check: <path d="M21 11a9 9 0 1 1-2.6-6.4M21 4 12 13l-3-3" />,
-  chart: <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-  shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />,
-  info: <path d="M12 17v-6m0-4h.01M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />,
-  target: <path d="M12 21a9 9 0 1 0-9-9m14 0a5 5 0 1 1-5-5m8-3-4 4m4-4h-4m4 0v4" />,
-};
+const SERIF_TITLE = `${SERIF} font-normal tracking-[-0.01em]`;
 
-function cleanText(text = "") {
-  return text
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "-")
-    .replaceAll("Ã¢â‚¬â€", "-")
-    .replaceAll("Ã¢â€ â€™", "->")
-    .replace(/\s+-\s+/g, " - ")
-    .replace(/\s+/g, " ")
-    .trim();
+// "Path 1 - Know your engine? Launch with Velar pre-selected" -> { n, title, body }
+function parsePath(label = "") {
+  const m = label.match(/^Path\s*(\d+)\s*[-–—:]\s*([\s\S]*)$/i);
+  const rest = (m ? m[2] : label).trim();
+  const q = rest.indexOf("?");
+  const title = q === -1 ? rest : rest.slice(0, q + 1);
+  let body = q === -1 ? "" : rest.slice(q + 1).trim();
+  if (body && !/[.!?]$/.test(body)) body += ".";
+  return { n: m ? m[1] : "", title, body };
 }
 
-function modelNameFromTitle(title = "") {
-  const clean = cleanText(title);
-  const match = clean.match(/My\s+(.+?)\s+Engine/i);
-  return match ? match[1] : "Land Rover";
+// the intro's questions, and its closing "Get a personalised verdict…" sentence for the callout
+function splitIntro(intro = "") {
+  const m = intro.match(/^([\s\S]*?)(?:(?<=[.?!])\s+|\s+-\s+)(get\s[\s\S]+)$/i);
+  if (!m) return { question: intro.trim(), callout: "" };
+  let question = m[1].trim();
+  if (question && !/[.?!]$/.test(question)) question += ".";
+  return { question, callout: m[2].charAt(0).toUpperCase() + m[2].slice(1) };
 }
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const markers = ["or Should I Replace It?", "- or Should I Replace It?", "- or Should I Replace It?"];
-  const marker = markers.find((item) => clean.includes(item));
-
-  if (!marker) {
-    return { before: clean, accent: "" };
-  }
-
-  return {
-    before: clean.slice(0, clean.indexOf(marker)).replace(/[--]\s*$/, "").trim(),
-    accent: "or Should I Replace It?",
-  };
-}
-
-function introParts(intro = "") {
-  const clean = cleanText(intro);
-  const marker = " On the ";
-  const markerIndex = clean.indexOf(marker);
-
-  if (markerIndex !== -1) {
-    return {
-      first: clean.slice(0, markerIndex).trim(),
-      second: clean.slice(markerIndex + 1).trim(),
-    };
-  }
-
-  const sentences = clean.match(/[^.!?]+[.!?]+/g) || [clean];
-
-  return {
-    first: sentences[0]?.trim() || clean,
-    second: sentences.slice(1).join(" ").trim(),
-  };
-}
-
-function Icon({ name, className = "h-8 w-8", stroke = 2 }) {
+// accent the opening words of a path title, as in the reference ("Know your engine?", "Not sure which…")
+function accentTitle(title = "") {
+  const m = title.match(/^(Not sure|\S+)(\s[\s\S]*)?$/i);
+  if (!m) return title;
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={stroke} strokeLinecap="round" strokeLinejoin="round">
-      {iconPaths[name] || iconPaths.calculator}
+    <>
+      <span className="text-lr-ink dark:text-lr-green">{m[1]}</span>
+      {m[2]}
+    </>
+  );
+}
+
+function TargetIcon({ className = "h-7 w-7" }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="11" cy="13" r="8" />
+      <circle cx="11" cy="13" r="4.2" />
+      <circle cx="11" cy="13" r="0.9" fill="currentColor" />
+      <path d="m11 13 9.5-9.5M17 3.5h3.5V7" />
     </svg>
   );
 }
 
-function CircleIcon({ name, large = false, className = "" }) {
+function Feature({ icon, title, sub }) {
   return (
-    <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)] ${large ? "h-20 w-20 md:h-24 md:w-24" : "h-12 w-12"} ${className}`}>
-      <Icon name={name} className={large ? "h-10 w-10 md:h-12 md:w-12" : "h-7 w-7"} />
-    </span>
-  );
-}
-
-function Feature({ icon, title, text }) {
-  return (
-      <li className="flex min-w-0 items-start gap-2.5 pr-3 last:pr-0 md:gap-3 md:pr-4">
-      <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-        <Icon name={icon} className="h-7 w-7 md:h-8 md:w-8" stroke={2.2} />
-      </span>
-      <span className="min-w-0">
-        <strong className="block text-[13px] leading-tight text-[var(--color-text)] md:text-[14px]" dangerouslySetInnerHTML={{ __html: title }} />
-        <span className="mt-0.5 block text-[12px] leading-[1.2] text-[var(--color-text-muted)] md:text-[13px]">{text}</span>
+    <li className="flex items-center gap-3 sm:justify-center sm:px-3 sm:first:justify-start sm:first:pl-0 sm:last:pr-0">
+      <LrIcon name={icon} tone="current" className="h-6 w-6 text-lr-ink xl:h-7 xl:w-7 dark:text-lr-green" />
+      <span className="min-w-0 leading-snug">
+        <span className="block text-[14px] font-semibold text-lr-head xl:text-[15px]">{title}</span>
+        <span className="block text-[13px] text-lr-muted xl:text-[14px]">{sub}</span>
       </span>
     </li>
   );
 }
 
-function ArrowIcon({ className = "h-7 w-7" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
-}
-
-function PrimaryPath({ path, modelName }) {
-  return (
-    <article className="rounded-md bg-[var(--color-surface-raised)] p-3.5 shadow-[0_10px_28px_var(--color-shadow)] md:p-4">
-      <span className="inline-flex rounded bg-[var(--color-primary)] px-2 py-1 text-[12px] font-bold uppercase leading-none text-white md:px-2.5 md:py-1 md:text-[13px]">Path 1</span>
-      <div className="mt-3.5 grid grid-cols-[auto_1fr] items-center gap-3.5 md:grid-cols-[1fr_auto] md:items-start">
-        <div className="order-2 md:order-1">
-          <h3 className="font-lora text-[30px] font-medium leading-[1.06] text-[var(--color-text)] md:text-[42px]">
-            <span className="text-[var(--color-primary)]">Know</span> your engine?
-          </h3>
-          <p className={`mt-2 max-w-[420px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-            Launch the diagnostic calculator with <span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected.
-          </p>
-        </div>
-        <CircleIcon name="engineSearch" large className="order-1 md:order-2" />
-      </div>
-
-      <Link href={path?.href || "/#calculator-example"} className={`btn-cta mt-3 md:mt-13 flex min-h-12 items-center justify-between gap-2.5 rounded-md bg-[var(--color-primary)] px-3.5 py-2.5 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton}`}>
-        <span className="flex min-w-0 items-center gap-2.5 text-white">
-          <Icon name="calculator" className="h-7 w-7 shrink-0 text-white" />
-          <span className="min-w-0">
-            <span className="block leading-tight">Launch Diagnostic Calculator</span>
-            <span className="mt-1 block text-[13px] font-normal leading-tight text-white/90 md:text-[14px]">
-              <span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected
-            </span>
-          </span>
-        </span>
-        <ArrowIcon className="h-6 w-6 shrink-0 text-white" />
-      </Link>
-
-      <ul className="mt-4 grid w-fit max-w-full grid-cols-3 gap-2.5">
-        <Feature icon="check" title={`${modelName} pre-selected`} text="All generations covered" />
-        <Feature icon="chart" title="Real UK cost data" text="Used, recon & rebuilt" />
-        <Feature icon="shield" title="Instant verdict" text="Repair vs replace" />
-      </ul>
-    </article>
-  );
-}
-
-function SecondaryPath({ path }) {
-  const note = cleanText(path?.label || "").includes("identification is the first step")
-    ? "Identification is the first step inside the tool."
-    : "Identification is the first step inside the tool.";
+function PathCard({ path, href, index, model }) {
+  const parsed = parsePath(path.label);
+  const primary = index === 0;
+  const { n, title } = parsed;
+  const body = primary && model ? `Launch the ${model} diagnostic calculator with your engine pre-selected.` : parsed.body;
+  const button = primary
+    ? { icon: "calculator", label: `Launch ${model} Diagnostic Calculator`, sub: "Engine pre-selected" }
+    : { icon: "engine", label: "Identify My Engine First", sub: "Then launch the diagnostic calculator" };
+  const Tag = href ? "a" : "span";
 
   return (
-    <article className="rounded-md bg-[var(--color-surface-raised)] p-3.5 shadow-[0_10px_28px_var(--color-shadow)] md:p-4">
-      <span className="inline-flex rounded bg-[var(--color-primary)] px-2 py-1 text-[12px] font-bold uppercase leading-none text-white md:px-2.5 md:py-1 md:text-[13px]">Path 2</span>
-      <div className="mt-3.5 grid grid-cols-[auto_1fr] items-center gap-3.5 md:grid-cols-[1fr_auto] md:items-start">
-        <div className="order-2 md:order-1">
-          <h3 className="font-lora max-w-[420px] text-[30px] font-medium leading-[1.06] text-[var(--color-text)] md:text-[42px]">
-            <span className="text-[var(--color-primary)]">Not sure</span> which engine you have?
-          </h3>
-          <p className={`mt-2 text-[var(--color-text-muted)] ${sectionDescription}`}>We&apos;ll identify it first.</p>
-        </div>
-        <CircleIcon name="documentSearch" large className="order-1 md:order-2" />
-      </div>
-
-      <Link
-        href={path?.href || "/#calculator-example"}
-        className="mt-8 flex min-h-14 items-center justify-between gap-3 rounded-md border border-[var(--color-primary)] px-4 py-3.5 text-[17px] font-bold text-[var(--color-primary)] md:min-h-[60px] md:text-[18px]"
-      >
-        <span className="flex min-w-0 items-center gap-3">
-          <Icon name="engineQuestion" className="h-8 w-8 shrink-0 text-[var(--color-primary)]" />
-          <span className="min-w-0">
-            <span className="block leading-tight">Identify My Engine First</span>
-            <span className="mt-1 block text-[13px] font-normal leading-tight text-[var(--color-text-muted)] md:text-[14px]">
-              Then launch the diagnostic calculator
-            </span>
-          </span>
-        </span>
-        <ArrowIcon className="h-6 w-6 shrink-0 text-[var(--color-primary)]" />
-      </Link>
-
-      <div className="mt-4 inline-flex max-w-full gap-3 rounded-md bg-[var(--color-page-soft)] p-3.5">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-          <Icon name="info" className="h-5 w-5" />
-        </span>
-        <p className={`text-[var(--color-text)] ${sectionBody}`}>
-          <strong className="font-bold" dangerouslySetInnerHTML={{ __html: note }} />
-          <br />
-          <span className="text-[var(--color-text-muted)]">We&apos;ll pinpoint your exact engine code before running the diagnostics.</span>
-        </p>
-      </div>
-    </article>
-  );
-}
-
-function SmartDecision() {
-  return (
-    <div className="flex max-w-[620px] gap-3.5 rounded-md bg-[var(--color-page-soft)] p-3.5 shadow-[0_8px_22px_var(--color-shadow)] md:p-4">
-      <span className="shrink-0 text-[var(--color-primary)]">
-        <Icon name="calculator" className="h-9 w-9 md:h-11 md:w-11" stroke={2.2} />
+    <article className={`${CARD} relative flex flex-col p-5 sm:p-7 xl:p-8`}>
+      <span className="inline-flex w-fit items-center rounded-md bg-lr-brand px-2.5 py-1 text-[12.5px] font-semibold uppercase tracking-[0.06em] text-lr-on-brand xl:text-[13.5px]">
+        Path {n || index + 1}
       </span>
-      <p className={`text-[var(--color-text)] ${sectionBody} md:text-[17px]`}>
-        <strong className="font-bold text-[var(--color-primary)]">The smarter way to decide:</strong> Get a personalised repair-vs-replace verdict using real UK cost data.
-      </p>
-    </div>
+      <span className="absolute right-4 top-4 flex h-14 w-14 items-center justify-center rounded-full bg-lr-chip sm:right-6 sm:top-6 sm:h-24 sm:w-24 xl:right-8 xl:top-7 xl:h-[124px] xl:w-[124px]" aria-hidden="true">
+        <LrIcon name={primary ? "engine" : "not-sure"} tone="current" className="h-7 w-7 text-lr-ink sm:h-11 sm:w-11 xl:h-14 xl:w-14 dark:text-lr-green" />
+      </span>
+
+      <h3 className={`${SERIF_TITLE} mt-4 text-balance pr-16 text-[26px] leading-[1.15] text-lr-head sm:mt-5 sm:pr-28 sm:text-[30px] xl:pr-36 xl:text-[36px]`}>{accentTitle(title)}</h3>
+      {body && <p className={`${BODY} mt-2.5 max-w-[26em] text-lr-body sm:pr-28 xl:pr-36`} dangerouslySetInnerHTML={{ __html: prose(body) }} />}
+
+      <div className="mt-6 flex flex-1 flex-col justify-end xl:mt-8">
+        <Tag
+          {...(href ? { href } : {})}
+          className={`group flex items-center gap-3.5 rounded-xl px-4 py-3.5 no-underline transition-colors sm:gap-4 sm:px-5 xl:px-6 xl:py-5 ${
+            primary
+              ? "bg-lr-brand text-lr-on-brand shadow-[0_16px_30px_-20px_rgba(18,61,42,0.9)] hover:bg-lr-brand-hover"
+              : "border-[1.5px] border-lr-ink/70 bg-lr-card text-lr-head hover:bg-lr-chip dark:border-lr-green/60"
+          }`}
+        >
+          <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg xl:h-[52px] xl:w-[52px] ${primary ? "border border-white/25 bg-white/5" : "bg-lr-chip"}`}>
+            <LrIcon name={button.icon} tone={primary ? "skin" : "current"} className={`h-6 w-6 xl:h-7 xl:w-7 ${primary ? "" : "text-lr-ink dark:text-lr-green"}`} />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-[16px] font-semibold leading-snug sm:text-[17px] xl:text-[19px]">{button.label}</span>
+            <span className={`mt-0.5 block text-[13.5px] leading-snug xl:text-[15px] ${primary ? "text-white/75" : "text-lr-muted"}`}>{button.sub}</span>
+          </span>
+          <Arrow className="h-6 w-6 transition-transform group-hover:translate-x-0.5" />
+        </Tag>
+
+        {primary ? (
+          <ul className="mt-5 grid gap-3.5 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-lr-line xl:mt-6">
+            <Feature icon="good-choice" title={`${model} pre-selected`} sub="All engines covered" />
+            <Feature icon="real-inquiries" title="Real UK cost data" sub="Used, recon & rebuilt" />
+            <Feature icon="genuine-failure-data" title="Instant verdict" sub="Repair vs replace" />
+          </ul>
+        ) : (
+          <div className="mt-5 flex items-start gap-3 rounded-xl bg-lr-chip/70 px-4 py-3.5 xl:mt-6 xl:items-center xl:px-5">
+            <LrIcon name="note" tone="current" className="mt-0.5 h-6 w-6 text-lr-ink xl:mt-0 dark:text-lr-green" />
+            <p className={`${BODY_SM} text-lr-body`}>
+              <strong className="block font-semibold text-lr-head">Identification is the first step inside the tool.</strong> We&rsquo;ll pinpoint your exact engine code before running the diagnostics.
+            </p>
+          </div>
+        )}
+      </div>
+    </article>
   );
 }
 
-export default function CalculatorCTA({ data, band = "page" }) {
-  const { theme } = useTheme();
+export default function CalculatorCTA({ data, slug = "" }) {
   if (!data) return null;
 
-  const isDark = theme === "dark";
-  const rgb = sectionRgb(band, isDark);
-  const title = splitTitle(data.h2);
-  const intro = introParts(data.intro);
-  const modelName = modelNameFromTitle(data.h2);
-  const paths = data.paths || [];
+  const { lead, accent } = splitHeading(data.h2);
+  const or = accent.match(/^(or\s+)([\s\S]+)$/i);
+  const { question, callout } = splitIntro(data.intro || "");
+  const paths = (data.paths || []).slice(0, 2);
+  const hrefs = paths.map((p) => resolveHref(p.href, "verdict"));
+  const fromPath = (paths[0]?.label || "").match(/with\s+(.+?)\s+pre-selected/i);
+  const model = fromPath ? fromPath[1] : modelName(slug);
+  const art = modelArt(slug, "silver");
 
   return (
-    <section
-      className={`relative overflow-hidden ${sectionBgClass(band)} px-3 py-6 text-[var(--color-text)] md:px-6 md:py-8`}
-      style={{ "--section-fade": rgb }}
-    >
-      <div className="absolute inset-x-0 top-0 h-[220px] md:h-[280px]">
-        <Image
-          src="/sec2-bg.webp"
-          alt=""
-          fill
-          className="object-cover object-[78%_center] md:object-[75%_center]"
-          sizes="100vw"
-          priority={false}
-        />
-        <div
-          className={
-            isDark
-              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.62)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
-              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.72)_0%,rgba(var(--section-fade),0.48)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
-          }
-        />
-        <div
-          className={`pointer-events-none absolute inset-0 md:hidden ${
-            isDark
-              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.7)_42%,transparent_72%)]"
-              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_42%,transparent_72%)]"
-          }`}
-        />
-      </div>
+    <section className={`relative overflow-hidden ${BAND_SOFT} text-lr-head ${SANS}`}>
+      <div className={`${CONTAINER} ${SECTION_Y}`}>
+        <div className="grid items-start gap-6 md:gap-8 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] xl:gap-14">
+          <div className="min-w-0">
+            <EyebrowPill>Repair or Replace</EyebrowPill>
+            {/* 38-50px from xl so "Can I Repair My … Engine — / or Should I Replace It?" holds two lines beside the car */}
+            <h2 className={`${H2_MODEL} mt-3 text-balance text-lr-head md:mt-4`}>
+              {accent ? (
+                <>
+                  {lead}
+                  {" "}—<br />
+                  {or ? (
+                    <>
+                      {or[1]}
+                      <span className="text-lr-ink dark:text-lr-green">{or[2]}</span>
+                    </>
+                  ) : (
+                    <span className="text-lr-ink dark:text-lr-green">{accent}</span>
+                  )}
+                </>
+              ) : (
+                lead
+              )}
+            </h2>
+            {question && (
+              <p className={INTRO}>
+                <span dangerouslySetInnerHTML={{ __html: prose(question) }} />
+                {data.context && <span className="mt-1 block" dangerouslySetInnerHTML={{ __html: prose(data.context) }} />}
+              </p>
+            )}
+            {callout && (
+              <div className="mt-5 flex max-w-[600px] items-center gap-3.5 rounded-xl bg-lr-chip/60 p-3 pr-4 sm:gap-4 sm:p-3.5 sm:pr-5 xl:mt-7">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-lr-card xl:h-14 xl:w-14">
+                  <LrIcon name="calculator" tone="current" className="h-6 w-6 text-lr-ink xl:h-7 xl:w-7 dark:text-lr-green" />
+                </span>
+                <p className={`${BODY_SM} text-lr-body`}>
+                  <strong className="font-semibold text-lr-head">The smarter way to decide:</strong>{" "}
+                  <span dangerouslySetInnerHTML={{ __html: prose(callout) }} />
+                </p>
+              </div>
+            )}
+          </div>
 
-      <div className="relative mx-auto w-full max-w-8xl">
-        <div className="relative max-w-[820px]">
-          <HeadingEyebrow text="DIAGNOSTIC CALCULATOR" />
-          <h2 className="mt-3 max-w-[820px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-            <span dangerouslySetInnerHTML={{ __html: title.before }} />
-            {title.accent ? (
-              <>
-                {" "}
-                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-              </>
-            ) : null}
-          </h2>
-          {data.intro ? (
-            <div className={`mt-3 max-w-[700px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-              <p dangerouslySetInnerHTML={{ __html: intro.first }} />
-              {intro.second ? <p className="mt-1.5" dangerouslySetInnerHTML={{ __html: intro.second }} /> : null}
+          {art && (
+            <div className="relative mx-auto w-full max-w-[560px] xl:max-w-none xl:self-center" style={art} aria-hidden="true">
+              {/* soft studio fade behind the car */}
+              <span className="absolute -right-[12%] -top-[18%] aspect-square w-[72%] rounded-full bg-[radial-gradient(circle,var(--lr-chip)_0%,transparent_70%)] opacity-90" />
+              <div className={`relative ${CAR_ART_RATIO} ${CAR_ART}`} />
             </div>
-          ) : null}
+          )}
         </div>
 
-        <div className="mt-4 lg:hidden">
-          <SmartDecision />
-        </div>
+        {paths.length > 0 && (
+          <div className="mt-7 grid gap-5 md:mt-9 xl:grid-cols-2 xl:gap-6">
+            {paths.map((p, i) => (
+              <PathCard key={p.label} path={p} href={hrefs[i]} index={i} model={model} />
+            ))}
+          </div>
+        )}
 
-        <div className="mt-5 grid gap-4 lg:grid-cols-2">
-          <PrimaryPath path={paths[0]} modelName={modelName} />
-          <SecondaryPath path={paths[1]} />
-        </div>
-
-        <div className="mt-5 flex flex-col gap-4 rounded-md bg-[var(--color-chrome)] p-4 text-white shadow-[0_12px_32px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
-          <div className="flex gap-4">
-            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white/15 text-white md:h-16 md:w-16">
-              <Icon name="target" className="h-8 w-8 md:h-9 md:w-9" />
+        <div className="mt-5 flex flex-col gap-5 rounded-2xl bg-lr-brand p-5 text-lr-on-brand shadow-[0_24px_50px_-34px_rgba(10,30,20,0.9)] sm:p-7 md:mt-6 lg:flex-row lg:items-center lg:justify-between lg:gap-8 xl:px-10 xl:py-8 dark:border dark:border-lr-line-strong dark:bg-lr-page">
+          <div className="flex items-start gap-4 sm:items-center sm:gap-5">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/25 bg-white/5 xl:h-[72px] xl:w-[72px]">
+              <TargetIcon className="h-7 w-7 text-[var(--lr-icon-on-brand)] xl:h-9 xl:w-9" />
             </span>
-            <div className="max-w-[700px]">
-              <h3 className="text-[20px] font-bold leading-tight md:text-[22px]">Stop guessing. Get the right answer.</h3>
-              <p className={`mt-2 text-white/90 ${sectionDescription}`}>
-                Our calculator compares real repair and replacement costs against your car&apos;s value - so you know the financially smarter move.
+            <div className="min-w-0">
+              <h3 className={`${SERIF_TITLE} text-[22px] leading-tight sm:text-[26px] xl:text-[30px]`}>Stop guessing. Get the right answer.</h3>
+              <p className="mt-1.5 max-w-[34em] text-[14.5px] leading-[1.55] text-white/75 md:text-[15px] xl:text-[16px]">
+                Our calculator compares real repair and replacement costs against your car&rsquo;s value — so you know the financially smarter move.
               </p>
             </div>
           </div>
-          <Link href={paths[0]?.href || "/#calculator-example"} className={`btn-cta inline-flex min-h-14 shrink-0 items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-5 py-3.5 font-bold text-white md:min-w-[360px] ${sectionButton}`}>
-            <span className="text-white">Start Your Verdict Now</span>
-            <ArrowIcon className="h-5 w-5 text-white" />
-          </Link>
+          {hrefs[0] && (
+            <a
+              href={hrefs[0]}
+              className="group flex h-14 shrink-0 items-center justify-center gap-3 rounded-xl bg-lr-green px-6 text-[16px] font-semibold text-white no-underline shadow-[0_14px_30px_-18px_rgba(0,0,0,0.8)] transition-[filter] hover:brightness-110 lg:h-16 lg:min-w-[320px] xl:h-[72px] xl:min-w-[400px] xl:text-[19px] dark:bg-lr-brand"
+            >
+              Start Your Verdict Now
+              <Arrow className="h-6 w-6 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          )}
         </div>
       </div>
     </section>

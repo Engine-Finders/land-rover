@@ -300,6 +300,7 @@
   },
   "ownershipVerdict": {
     "h2": "Range Rover Sport - The Ownership Verdict",
+    "subHeadline": "Three generations. Dozens of engine codes. One clear truth: the Range Rover Sport is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -346,6 +347,7 @@
   },
   "atAGlance": {
     "h2": "Range Rover Sport at a Glance",
+    "subHeadline": "All the key facts about the Range Rover Sport in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
         "metric": "Generations",
@@ -389,57 +391,57 @@
       }
     ]
   },
- "generations": {
-  "h2": "Range Rover Sport Generations - Find Your Vehicle",
-  "subHeadline": "Three generations, and the value curve decides as much as the engine does.",
-  "cards": [
-    {
-      "title": "Range Rover Sport L320",
-      "badge": "",
-      "meta": "2005–2013 • 2.7 TDV6 (276DT), 3.0 TDV6/SDV6 (306DT), 3.6 TDV8 (368DT), 4.2 SC / 4.4 AJ-V8, 5.0 SC (AJ133)",
-      "rating": "⭐⭐½",
-      "verdict": "Now the bargain-bin Range Rover - and the danger zone. Values have fallen to where one V6 diesel failure writes the car off. The TDV8 is the survivor's choice; any 2.7 without oil-pump history is a gamble, not a purchase.",
-      "cta": {
-        "label": "Explore the L320 →",
-        "href": "https://landroverengine.uk/range-rover-sport/l320"
+  "generations": {
+    "h2": "Range Rover Sport Generations - Find Your Vehicle",
+    "subHeadline": "Three generations, and the value curve decides as much as the engine does.",
+    "cards": [
+      {
+        "title": "Range Rover Sport L320",
+        "badge": "",
+        "meta": "2005–2013 • 2.7 TDV6 (276DT), 3.0 TDV6/SDV6 (306DT), 3.6 TDV8 (368DT), 4.2 SC / 4.4 AJ-V8, 5.0 SC (AJ133)",
+        "rating": "⭐⭐½",
+        "verdict": "Now the bargain-bin Range Rover - and the danger zone. Values have fallen to where one V6 diesel failure writes the car off. The TDV8 is the survivor's choice; any 2.7 without oil-pump history is a gamble, not a purchase.",
+        "cta": {
+          "label": "Explore the L320 →",
+          "href": "https://landroverengine.uk/range-rover-sport/l320"
+        }
+      },
+      {
+        "title": "Range Rover Sport L494",
+        "badge": "🔥 Most Enquired - 308 enquiries (2025) [EM-VERIFIED]",
+        "meta": "2013–2022 • 3.0 TDV6/SDV6 (306DT), 4.4 SDV8 (<a href='https://landroverengine.uk/engine/448dt'>448DT</a>), 3.0 SC V6 (AJ126), 5.0 SC (AJ133/SVR), P400e (204PT), P400 (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>), D300/D350 (AJ20D6, 2020+)",
+        "rating": "⭐⭐⭐⭐☆",
+        "verdict": "The definitive Sport - aluminium body, huge choice, real depreciation absorbed. Buy the SDV8 or a 2020+ D350 and it's excellent; buy a high-mileage SDV6 without oil-interval paperwork and you've bought the range's most common £9,500 phone call.",
+        "cta": {
+          "label": "Explore the L494 →",
+          "href": "https://landroverengine.uk/range-rover-sport/l494"
+        }
+      },
+      {
+        "title": "Range Rover Sport L461",
+        "badge": "",
+        "meta": "2022–present • D300/D350 (AJ20D6), P400 (AJ20P6), P440e/P510e PHEV, P530 V8 (BMW-derived), SV P635",
+        "rating": "⭐⭐⭐⭐☆",
+        "verdict": "The cleanest engine slate a Sport has ever had - no V6 diesel legacy, warranty cover, and values that make any engine bill economically trivial. Early-build electronics niggles, not engines, dominate its enquiries.",
+        "cta": {
+          "label": "Explore the L461 →",
+          "href": "https://landroverengine.uk/range-rover-sport/l461"
+        }
       }
+    ],
+    "rangeTable": {
+      "title": "",
+      "columns": [],
+      "rows": []
     },
-    {
-      "title": "Range Rover Sport L494",
-      "badge": "🔥 Most Enquired - 308 enquiries (2025) [EM-VERIFIED]",
-      "meta": "2013–2022 • 3.0 TDV6/SDV6 (306DT), 4.4 SDV8 (<a href='https://landroverengine.uk/engine/448dt'>448DT</a>), 3.0 SC V6 (AJ126), 5.0 SC (AJ133/SVR), P400e (204PT), P400 (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>), D300/D350 (AJ20D6, 2020+)",
-      "rating": "⭐⭐⭐⭐☆",
-      "verdict": "The definitive Sport - aluminium body, huge choice, real depreciation absorbed. Buy the SDV8 or a 2020+ D350 and it's excellent; buy a high-mileage SDV6 without oil-interval paperwork and you've bought the range's most common £9,500 phone call.",
-      "cta": {
-        "label": "Explore the L494 →",
-        "href": "https://landroverengine.uk/range-rover-sport/l494"
-      }
-    },
-    {
-      "title": "Range Rover Sport L461",
-      "badge": "",
-      "meta": "2022–present • D300/D350 (AJ20D6), P400 (AJ20P6), P440e/P510e PHEV, P530 V8 (BMW-derived), SV P635",
-      "rating": "⭐⭐⭐⭐☆",
-      "verdict": "The cleanest engine slate a Sport has ever had - no V6 diesel legacy, warranty cover, and values that make any engine bill economically trivial. Early-build electronics niggles, not engines, dominate its enquiries.",
-      "cta": {
-        "label": "Explore the L461 →",
-        "href": "https://landroverengine.uk/range-rover-sport/l461"
-      }
+    "comparisonLink": {
+      "label": "",
+      "href": "#"
     }
-  ],
-  "rangeTable": {
-    "title": "",
-    "columns": [],
-    "rows": []
   },
-  "comparisonLink": {
-    "label": "",
-    "href": "#"
-  }
-},
   "engineDatabase": {
     "h2": "Range Rover Sport Engine Codes - The Complete Database",
-    "subHeadline": "",
+    "subHeadline": "Every engine ever fitted to a Range Rover Sport - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
       "Family",
@@ -618,7 +620,7 @@
   },
   "commonProblems": {
     "h2": "Common Range Rover Sport Engine Problems",
-    "subHeadline": "",
+    "subHeadline": "The six most common failure patterns across the Range Rover Sport range - symptoms, costs and urgency.",
     "columns": [
       "#",
       "Problem",
@@ -772,7 +774,7 @@
   },
   "replacementCosts": {
     "h2": "Range Rover Sport Engine Replacement Costs - By Generation",
-    "subHeadline": "",
+    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
         "title": "Range Rover Sport L320 - 2005–2013",
@@ -943,6 +945,7 @@
   },
   "engineEvolution": {
     "h2": "How the Range Rover Sport Engine Range Evolved - 2005 to Today",
+    "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Range Rover Sport engines.",
     "columns": [
       "Era",
       "Years",
@@ -983,6 +986,7 @@
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a Range Rover Sport?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Range Rover Sport is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -1102,6 +1106,7 @@
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {
         "icon": "🔍",

@@ -1,259 +1,240 @@
-"use client";
+import LrIcon from "@/components/shared/LrIcon";
+import { CONTAINER, H1, ICON_MD, ICON_SM, ICON_XL } from "@/lib/typeScale";
 
-import Image from "next/image";
-import Link from "next/link";
-import { Lora } from "next/font/google";
-import { HomeIcon, HOME_ICON_FILES } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
-import { useTheme } from "@/components/shared/themeProvider";
-import { sectionButton, sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
+// Model page hero (section 1), built to the approved Velar reference: a rounded card holding the
+// model pill, the serif headline ("UK Guide" in green), the sub-headline and the Explore button on
+// the left; on the right a diagonal panel with the model's line-up of four cars in the Highland
+// mountains (misty overcast by day, a storm at night); and a four-stat bar along the bottom.
+// Below xl (1280px) the copy stacks over the line-up, with the stats over its foot (2 x 2 grid on
+// phones and tablets, one row from lg).
+// Art comes in two layers (built by scripts/build-model-hero-art.py) so the cars are never cropped,
+// masked or softened by the panel: a shared Highland backdrop with a paved apron
+// (public/model/hero/bg-<day|night>[-m].webp, cover-fitted) and each model's four-car line-up on
+// transparency (<slug>-cars-<day|night>[-m].webp), laid out like the reference and stood on the
+// apron with its own cast and contact shadows.
 
-const lora = Lora({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  display: "swap",
-});
+const SANS = "font-[family-name:var(--font-instrument-sans)]";
+const STAT_ICONS = ["real-inquiries", "commercial", "generation-honest-rated", "part-of-engine-finders"];
+const LINEUPS = new Set([
+  "defender", "discovery", "discovery-sport", "freelander",
+  "range-rover", "range-rover-evoque", "range-rover-sport", "velar",
+]);
 
-const STAT_ICONS = ["realEnquiries", "repairVsReplace", "knowledgeCentre", "engineFinders"];
+// desktop panel: diagonal left edge, feathered into the card at the foot (behind the stats bar)
+const PANEL_CLIP = "[clip-path:polygon(30%_0,100%_0,100%_100%,0_100%,0_58%)]";
+const PANEL_FADE =
+  "[mask-image:linear-gradient(to_bottom,#000_78%,transparent),linear-gradient(to_right,transparent,#000_12%)] [mask-composite:intersect]";
+// phones / tablets: the backdrop feathers into the card at the top and under the stats
+const MOBILE_FADE = "[mask-image:linear-gradient(to_bottom,transparent,#000_20%,#000_80%,transparent)]";
+const BG_DESKTOP = "bg-[url(/model/hero/bg-day.webp)] dark:bg-[url(/model/hero/bg-night.webp)]";
+const BG_MOBILE =
+  "bg-[url(/model/hero/bg-day-m.webp)] sm:bg-[url(/model/hero/bg-day.webp)] dark:bg-[url(/model/hero/bg-night-m.webp)] sm:dark:bg-[url(/model/hero/bg-night.webp)]";
+const CARS_DESKTOP = "bg-[image:var(--cars-day)] dark:bg-[image:var(--cars-night)]";
+const CARS_MOBILE =
+  "bg-[image:var(--cars-day-m)] sm:bg-[image:var(--cars-day)] dark:bg-[image:var(--cars-night-m)] sm:dark:bg-[image:var(--cars-night)]";
+// the line-up image's own proportions (1950 x 670)
+const CARS_RATIO = "aspect-[1950/670] bg-contain bg-no-repeat bg-bottom";
 
-function ArrowIcon({ className = "h-5 w-5" }) {
+const verified = (html = "") =>
+  html.replace(/\[EM-VERIFIED\]/g, '<span class="whitespace-nowrap font-semibold text-lr-ink dark:font-medium dark:text-lr-green">[EM-VERIFIED]</span>');
+
+// "Velar • 2017–Present • 1 Generation (L560) • Ingenium, SDV6, PHEV"
+function splitPill(tagPill = "") {
+  const [model = "", years = "", generations = "", ...engines] = tagPill.split(" • ");
+  return { model, years, generations, engines: engines.join(" • ") };
+}
+
+// "275+ Enquiries (2025) [EM-VERIFIED] - #1 Most-Enquired Velar Model"
+//   -> { value: "275+", label: "Enquiries (2025) [EM-VERIFIED] — #1 Most-Enquired Velar Model" }
+function splitStat(text = "") {
+  const clean = text.replace(/\s+-\s+/g, " — ");
+  const m = clean.match(/^([\d,.]+\+?)\s+(.+)$/);
+  // short labels break after their comma, as in the reference ("Generation," / "8 Powertrains")
+  const label = (s) => (s.length < 40 ? s.replace(/, /, ",<br>") : s);
+  return m ? { value: m[1], label: label(m[2]) } : { value: "", label: clean };
+}
+
+function Arrow({ className = "" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M5 12h14m-6-6 6 6-6 6" />
     </svg>
   );
 }
 
-function MetaIcon({ type }) {
-  const path =
-    type === "engine" ? (
-      <path d="M3 12h3m12 0h3M7 9h10v6H7V9Zm2-3h6m-3 0V3M5 15v3m14-3v3M9 18h6" />
-    ) : (
-      <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-    );
-
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth="2">
-      {path}
-    </svg>
-  );
+function Dot() {
+  return <span aria-hidden="true" className="px-1.5 text-lr-muted md:px-2.5">•</span>;
 }
 
-function MetaSeparator() {
-  return (
-    <span aria-hidden="true" className="text-[var(--color-text-muted)]">
-      {"\u2022"}
-    </span>
-  );
-}
-
-function splitTagPill(tagPill = "") {
-  const parts = tagPill.split(" • ");
-  return {
-    model: parts[0] || "",
-    years: parts[1] || "",
-    generations: parts[2] || "",
-    engines: parts.slice(3).join(" • "),
-  };
-}
-
-function splitStat(label = "") {
-  const [main, ...detailParts] = label.split(/\s*[-–]\s*/);
-  const detail = detailParts.join(" - ").trim();
-  const match = main.match(/^(\d+\+?)\s+(.+)$/);
-
-  if (match) {
-    return { value: match[1], label: match[2], detail };
-  }
-
-  return { value: "", label: main.trim(), detail };
-}
-
-function highlightVerified(text = "") {
-  return text.replace(
-    /\[EM-VERIFIED\]/g,
-    '<span class="font-semibold text-[var(--color-primary)]">[EM-VERIFIED]</span>'
-  );
-}
-
-function HeroTitle({ title, isDark }) {
-  const guideMarker = "The Complete UK Guide";
-  const guideIndex = title.indexOf(guideMarker);
-  const base = `${lora.className} max-w-[760px] font-medium tracking-normal ${sectionH1}`;
-
-  if (guideIndex === -1) {
-    return <h1 className={`${base} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{title}</h1>;
-  }
-
-  return (
-    <h1 className={`${base} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-      {title.slice(0, guideIndex)}
-      <span className="text-[var(--color-primary)]">{title.slice(guideIndex)}</span>
-    </h1>
-  );
-}
-
-function StatIcon({ name, isDark }) {
-  return (
-    <span
-      className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
-        isDark
-          ? "border border-white/35 bg-transparent"
-          : "bg-[var(--color-primary)]"
-      }`}
-    >
-      <HomeIcon name={name} size={52} tone="silver" className="h-8 w-8 md:h-11 md:w-11" />
-    </span>
-  );
-}
-
-function StatCard({ item, index, isDark }) {
-  const iconName = HOME_ICON_FILES[item.icon] ? item.icon : STAT_ICONS[index] || STAT_ICONS[0];
-  const stat = splitStat(item.label || item.text || "");
-  const isPartOf = /^part of\b/i.test(stat.label);
-
+function Stat({ item, index }) {
+  const { value, label } = splitStat(item.label || item.text || "");
+  const partOf = label.match(/^Part of\s+(.+)$/i);
   return (
     <li
-      className={`flex min-w-0 flex-col items-center justify-center gap-1.5 px-1 py-2.5 text-center md:min-h-0 md:flex-row md:items-center md:justify-start md:gap-3.5 md:px-4 md:py-4 md:text-left ${
-        index > 0 ? (isDark ? "border-l border-white/12" : "border-l border-[var(--color-border)]") : ""
-      }`}
+      className={`flex min-w-0 flex-col items-start gap-2.5 px-4 py-4 sm:flex-row sm:items-center sm:gap-3.5 sm:px-5 lg:gap-4 lg:px-6 lg:py-6 xl:gap-5 xl:px-8
+        ${index % 2 === 0 ? "border-r border-lr-line" : ""} ${index < 2 ? "border-b border-lr-line lg:border-b-0" : ""} ${index === 1 ? "lg:border-r" : ""}`}
     >
-      <StatIcon name={iconName} isDark={isDark} />
-      <div className="min-w-0 flex-1">
-        {isPartOf ? (
-          <p className={`leading-[1.25] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-            <span className="block text-[0.55rem] font-medium opacity-80 md:text-[0.78rem]">Part of</span>
-            <strong className="text-[0.62rem] font-bold md:text-[1.05rem]">Engine Finders</strong>
-          </p>
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lr-brand sm:h-14 sm:w-14 lg:h-16 lg:w-16 xl:h-[72px] xl:w-[72px] dark:border dark:border-lr-gold-line/55 dark:bg-transparent">
+        <LrIcon name={STAT_ICONS[index] || STAT_ICONS[0]} tone="skin" className={`${ICON_XL} max-sm:h-6 max-sm:w-6`} />
+      </span>
+      <p className="min-w-0 text-[13px] leading-[1.4] text-lr-body sm:text-[14px] lg:text-[15px] xl:text-[16px]">
+        {partOf ? (
+          <>
+            <span className="block">Part of</span>
+            <strong className="block font-semibold text-lr-head">{partOf[1]}</strong>
+          </>
         ) : (
           <>
-            <p className={`leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-              {stat.value ? (
-                <>
-                  <span className="block text-[0.85rem] font-bold text-[var(--color-primary)] md:inline md:text-[1.35rem]">{stat.value}</span>{" "}
-                  <span
-                    className="text-[0.52rem] font-semibold md:text-[0.84rem]"
-                    dangerouslySetInnerHTML={{ __html: highlightVerified(stat.label) }}
-                  />
-                </>
-              ) : (
-                <span
-                  className="text-[0.58rem] font-semibold md:text-[0.88rem]"
-                  dangerouslySetInnerHTML={{ __html: highlightVerified(stat.label) }}
-                />
-              )}
-            </p>
-            {stat.detail ? (
-              <p className={`mt-0.5 hidden text-[0.72rem] leading-[1.3] md:mt-1 md:block ${isDark ? "text-white/65" : "text-[var(--color-text-muted)]"}`}>
-                {stat.detail}
-              </p>
-            ) : null}
+            {value && (
+              <span className="mb-0.5 block text-[21px] font-semibold leading-none text-lr-ink sm:text-[24px] lg:mb-1 lg:text-[26px] xl:text-[30px] dark:text-lr-green">
+                {value}
+              </span>
+            )}
+            <span className="block" dangerouslySetInnerHTML={{ __html: verified(label) }} />
           </>
         )}
-      </div>
+      </p>
     </li>
   );
 }
 
-export default function ModelHero({ data, band = "page" }) {
-  const { theme } = useTheme();
+export default function ModelHero({ data, slug = "" }) {
   if (!data) return null;
 
-  const isDark = theme === "dark";
-  const meta = splitTagPill(data.tagPill);
-  const ctaLabel = (data.primaryCta?.label || "").replace(/\s*(?:→|â†’|->)\s*$/, "");
+  const pill = splitPill(data.tagPill);
+  const [firstEngine, ...restEngines] = pill.engines.split(" ");
+  const dash = (data.h1 || "").search(/\s[-–—]\s/);
+  const lead = dash === -1 ? data.h1 : data.h1.slice(0, dash);
+  const tail = dash === -1 ? "" : data.h1.slice(dash + 3);
+  const accentAt = tail.search(/UK Guide$/);
+  // long model names ("Range Rover Sport Engines —") step down to 54px on desktop so the headline
+  // stays at three lines and the line-up panel beside it keeps its proportions
+  const longLead = lead.length > 20;
+  const ctaLabel = (data.primaryCta?.label || "").replace(/\s*(?:→|->)\s*$/, "");
+  const ctaHref = data.primaryCta?.href && data.primaryCta.href !== "#" ? data.primaryCta.href : "#engine-database";
+  const sub = (data.subHeadline || "").replace(/\s+-\s+/g, " — ");
+
+  const lineup = LINEUPS.has(slug) ? slug : "";
+  const art = lineup && {
+    "--cars-day": `url(/model/hero/${lineup}-cars-day.webp)`,
+    "--cars-night": `url(/model/hero/${lineup}-cars-night.webp)`,
+    "--cars-day-m": `url(/model/hero/${lineup}-cars-day-m.webp)`,
+    "--cars-night-m": `url(/model/hero/${lineup}-cars-night-m.webp)`,
+  };
 
   return (
-    <section
-      className={`relative left-1/2 w-screen -translate-x-1/2 overflow-hidden text-[var(--color-text)] md:min-h-[620px] ${sectionBgClass(band)}`}
-    >
-      <div className="absolute inset-0">
-        <Image
-          src="/model/Hero-bg-image.webp"
-          alt=""
-          fill
-          className="object-cover object-[62%_center] md:object-center"
-          sizes="100vw"
-          priority
-        />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(100deg,rgba(13,28,24,0.97)_0%,rgba(13,28,24,0.9)_40%,rgba(13,28,24,0.28)_68%,rgba(13,28,24,0.1)_100%)]"
-              : "bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,rgba(248,247,242,0.92)_34%,rgba(248,247,242,0.28)_66%,rgba(248,247,242,0)_100%)]"
-          }`}
-        />
-        <div
-          className={`absolute inset-y-0 left-[48%] hidden w-14 -skew-x-[18deg] md:block ${
-            isDark ? "bg-[rgba(105,181,138,0.18)]" : "bg-[rgba(23,95,70,0.14)]"
-          }`}
-        />
-        <div
-          className={`absolute inset-x-0 bottom-0 h-36 md:h-44 ${
-            isDark
-              ? "bg-[linear-gradient(0deg,rgba(13,28,24,1)_0%,transparent_100%)]"
-              : "bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]"
-          }`}
-        />
-      </div>
+    <section className={`relative overflow-hidden bg-lr-page text-lr-head ${SANS}`} style={art || undefined}>
+      <div className={`${CONTAINER} pb-8 pt-6 md:pb-12 md:pt-8 lg:pt-10`}>
+        <div className="relative">
+          <div className="relative">
+          {/* desktop: the line-up in a diagonal panel on the right, as tall as the copy and running
+              under the top of the stats bar, with the green accent stripe on its edge */}
+          {lineup && (
+            <div className="pointer-events-none absolute -bottom-20 -top-10 left-[47%] right-[calc(50%-50vw)] hidden xl:block" aria-hidden="true">
+              <div className={`absolute inset-0 bg-cover bg-[right_bottom] ${BG_DESKTOP} ${PANEL_CLIP} ${PANEL_FADE}`} />
+              <svg className="absolute inset-0 h-full w-full overflow-visible" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="model-hero-stripe" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="100">
+                    <stop offset="0" stopColor="var(--lr-brand)" />
+                    <stop offset="0.35" stopColor="var(--lr-brand)" stopOpacity="0.9" />
+                    <stop offset="0.58" stopColor="var(--lr-brand)" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                <line x1="30" y1="-1" x2="0" y2="58" stroke="url(#model-hero-stripe)" strokeWidth="7" vectorEffect="non-scaling-stroke" />
+              </svg>
+            </div>
+          )}
+          {/* desktop: the line-up stands on the apron with the front wheels level with the button,
+              the back car running past the diagonal and the front car cut by the card edge, as in
+              the reference - never masked, so every car stays sharp */}
+          {lineup && (
+            <div className={`pointer-events-none absolute bottom-0 left-[43.8%] hidden w-[60.2%] xl:block ${CARS_RATIO} ${CARS_DESKTOP}`} aria-hidden="true" />
+          )}
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:min-h-[620px] md:px-8 md:pb-7 md:pt-11">
-        <div className="max-w-[650px]">
-          <div
-            className={`inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1.5 rounded-md border px-3 py-2 text-[13px] leading-[1.35] md:max-w-[680px] md:px-4 md:py-2.5 md:text-[15px] md:leading-[1.45] ${
-              isDark
-                ? "border-white/25 bg-[rgba(13,28,24,0.55)] text-white/88"
-                : "border-[var(--color-border)] bg-white/70 text-[var(--color-text-muted)]"
-            }`}
-          >
-            <MetaIcon />
-            <strong className="font-semibold text-[var(--color-primary)]">{meta.model}</strong>
-            <MetaSeparator />
-            <span>{meta.years}</span>
-            <MetaSeparator />
-            <span>{meta.generations}</span>
-            <MetaSeparator />
-            <MetaIcon type="engine" />
-            <span>{meta.engines}</span>
+          <div className="relative text-center xl:pt-4 xl:text-left">
+            {/* model pill: one line from sm; on phones three tidy lines (model + years, generations,
+                engines) with no bullets left dangling at a line start */}
+            <div className="mx-auto inline-flex max-w-full items-start gap-2.5 rounded-xl border border-lr-line-strong/80 bg-lr-card/70 px-3.5 py-3 text-left text-[13.5px] leading-[1.55] text-lr-head backdrop-blur-sm sm:items-center sm:gap-3 sm:px-5 sm:text-[14.5px] xl:max-w-[54%] lg:rounded-2xl lg:px-6 lg:py-4 xl:text-[16px]">
+              <LrIcon name="genuine-failure-data" className={`${ICON_MD} mt-0.5 sm:mt-0 lg:h-7 lg:w-7 xl:h-8 xl:w-8`} />
+              <p className="min-w-0 [&_a]:font-[inherit] [&_a]:text-inherit [&_a]:no-underline hover:[&_a]:underline">
+                <strong className="font-semibold text-lr-ink dark:text-lr-green lg:text-[18px] xl:text-[20px]">{pill.model}</strong>
+                {"\u00a0"}<Dot /> {pill.years}
+                {pill.generations && (
+                  <>
+                    <span className="max-sm:hidden">{"\u00a0"}<Dot /> </span>
+                    <br className="sm:hidden" />
+                    <span className="whitespace-nowrap">{pill.generations}</span>
+                  </>
+                )}
+                {pill.engines && (
+                  <>
+                    <span className="max-sm:hidden">{"\u00a0"}<Dot /> </span>
+                    <br className="sm:hidden" />
+                    <span className="whitespace-nowrap">
+                      <LrIcon name="drivetrain-failures" className={`${ICON_SM} mr-1.5 inline-block align-[-3px] dark:bg-lr-gold`} />
+                      <span dangerouslySetInnerHTML={{ __html: firstEngine }} />
+                    </span>
+                    {restEngines.length > 0 && <span dangerouslySetInnerHTML={{ __html: ` ${restEngines.join(" ")}` }} />}
+                  </>
+                )}
+              </p>
+            </div>
+
+            <h1 className={`${H1} mt-6 text-balance text-lr-head sm:mt-8 lg:mt-11 xl:mt-12 xl:max-w-[63%] ${longLead ? "xl:text-[54px]!" : ""}`}>
+              {tail ? (
+                <>
+                  {lead}{"\u00a0"}—{!longLead && <br className="max-xl:hidden" />}{" "}
+                  {accentAt > 0 ? (
+                    <>
+                      {tail.slice(0, accentAt)}
+                      <span className="whitespace-nowrap text-lr-ink dark:text-lr-green">{tail.slice(accentAt)}</span>
+                    </>
+                  ) : (
+                    tail
+                  )}
+                </>
+              ) : (
+                lead
+              )}
+            </h1>
+
+            {sub && (
+              <p
+                className="mx-auto mt-4 max-w-[34em] text-[15px] xl:mx-0 [&_a]:font-semibold [&_a]:text-lr-ink [&_a]:no-underline hover:[&_a]:underline dark:[&_a]:text-lr-green leading-[1.65] text-lr-body sm:mt-5 md:text-[16px] lg:mt-6 xl:max-w-[42%] xl:text-[18px]"
+                dangerouslySetInnerHTML={{ __html: verified(sub) }}
+              />
+            )}
+
+            {ctaLabel && (
+              <a
+                href={ctaHref}
+                className="mt-6 flex h-12 items-center justify-center gap-2.5 whitespace-nowrap rounded-[10px] bg-lr-brand px-4 text-[15px] sm:gap-3 sm:px-6 sm:text-[16px] font-semibold text-lr-on-brand no-underline shadow-[0_14px_30px_-18px_rgba(18,61,42,0.8)] transition-colors hover:bg-lr-brand-hover sm:inline-flex sm:h-[52px] lg:mt-9 lg:h-14 lg:px-8 lg:text-[17px] xl:h-[60px] xl:text-[18px] dark:border dark:border-lr-gold-line/80 dark:bg-lr-page/80 dark:hover:bg-lr-card"
+              >
+                {ctaLabel}
+                <Arrow className="h-5 w-5 shrink-0 dark:text-lr-gold" />
+              </a>
+            )}
+          </div>
           </div>
 
-          <div className="mt-6 md:mt-8">
-            <HeroTitle title={data.h1} isDark={isDark} />
-          </div>
+          {/* phones / tablets: the line-up between the copy and the stats */}
+          {lineup && (
+            <div className="relative -mx-5 sm:-mx-6 -mt-2 aspect-[16/11] sm:-mt-4 sm:aspect-[16/10] md:-mx-10 lg:aspect-[2/1] xl:hidden" aria-hidden="true">
+              <div className={`absolute inset-0 bg-cover bg-[right_bottom] ${BG_MOBILE} ${MOBILE_FADE}`} />
+              <div className={`absolute bottom-[21%] left-[-1%] w-[112%] sm:bottom-[18%] sm:left-[2%] sm:w-[104%] lg:bottom-[19%] lg:left-[9%] lg:w-[94%] ${CARS_RATIO} ${CARS_MOBILE}`} />
+            </div>
+          )}
 
-          <p
-            className={`mt-4 max-w-[610px] ${sectionDescription} ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}
-            dangerouslySetInnerHTML={{ __html: highlightVerified(data.subHeadline) }}
-          />
-
-          {data.primaryCta ? (
-            <Link
-              href={data.primaryCta.href && data.primaryCta.href !== "#" ? data.primaryCta.href : "/quote"}
-              className={`btn-cta mt-8 inline-flex min-h-10 items-center justify-center gap-3 rounded-md px-4 py-2 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton} md:mt-5 md:min-h-11 md:px-5 ${
-                isDark
-                  ? "border border-[var(--color-accent)] bg-[rgba(13,28,24,0.88)]"
-                  : "bg-[var(--color-primary)]"
-              }`}
-            >
-              <span>{ctaLabel}</span>
-              <ArrowIcon className={isDark ? "h-5 w-5 text-[var(--color-accent)]" : "h-5 w-5"} />
-            </Link>
-          ) : null}
+          {data.trustStrip?.length > 0 && (
+            <div className={`relative ${lineup ? "-mt-12 sm:-mt-16 lg:-mt-20 xl:mt-14" : "mt-6 lg:mt-14"}`}>
+              <ul className="grid grid-cols-2 overflow-hidden rounded-xl border border-lr-line bg-lr-card/92 shadow-[0_18px_40px_-30px_var(--lr-shadow)] backdrop-blur-md lg:grid-cols-4 lg:rounded-2xl dark:bg-lr-page/80">
+                {data.trustStrip.slice(0, 4).map((item, i) => (
+                  <Stat key={item.label || i} item={item} index={i} />
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
-
-        {data.trustStrip?.length > 0 ? (
-          <ul
-            className={`mt-5 grid w-full grid-cols-4 gap-0 overflow-hidden rounded-lg border shadow-[0_14px_36px_var(--color-shadow)] md:mt-6 md:w-[92%] md:max-w-[78rem] md:self-start ${
-              isDark
-                ? "border-white/12 bg-[rgba(16,28,24,0.72)]"
-                : "border-[var(--color-border)] bg-white/92"
-            }`}
-          >
-            {data.trustStrip.map((item, index) => (
-              <StatCard key={item.label || item.text || index} item={item} index={index} isDark={isDark} />
-            ))}
-          </ul>
-        ) : null}
       </div>
     </section>
   );

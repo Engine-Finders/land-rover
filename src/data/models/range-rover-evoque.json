@@ -50,6 +50,7 @@
   },
   "ownershipVerdict": {
     "h2": "Evoque - The Ownership Verdict",
+    "subHeadline": "Two generations. Dozens of engine codes. One clear truth: the Evoque is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -96,6 +97,7 @@
   },
   "atAGlance": {
     "h2": "Evoque at a Glance",
+    "subHeadline": "All the key facts about the Evoque in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
         "metric": "Generations",
@@ -189,7 +191,7 @@
   },
   "engineDatabase": {
     "h2": "Evoque Engine Codes - The Complete Database",
-    "subHeadline": "",
+    "subHeadline": "Every engine ever fitted to a Range Rover Evoque - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
       "Family",
@@ -296,7 +298,7 @@
   },
   "commonProblems": {
     "h2": "Common Evoque Engine Problems",
-    "subHeadline": "",
+    "subHeadline": "The six most common failure patterns across the Evoque range - symptoms, costs and urgency.",
     "columns": [
       "#",
       "Problem",
@@ -450,7 +452,7 @@
   },
   "replacementCosts": {
     "h2": "Evoque Engine Replacement Costs - By Generation",
-    "subHeadline": "",
+    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
         "title": "Evoque L538 - 2011–2018",
@@ -544,6 +546,7 @@
   },
   "engineEvolution": {
     "h2": "How the Evoque Engine Range Evolved - 2011 to Today",
+    "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Evoque engines.",
     "columns": [
       "Era",
       "Years",
@@ -577,6 +580,7 @@
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy an Evoque?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Evoque is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -696,6 +700,7 @@
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {
         "icon": "🔍",

@@ -54,4 +54,4 @@ Build a multi-page site (3–4 pages). Start with the **home page**. Priority is
 - [ ] Other pages (later)
 
 ### Layout width
-- Desktop content width: `max-w-8xl` (`--container-8xl: 88rem` in `globals.css`)
+- Desktop content width: `max-w-8xl` (`--container-8xl: 100rem` = 1600px in `globals.css`), gutters `px-5 sm:px-6 md:px-10 xl:px-12` (20 / 24 / 40 / 48px) - shared by navbar, footer and every section (use `CONTAINER` from `src/lib/typeScale.js`)

@@ -283,7 +283,7 @@ export default function ChecklistAndCodes({ checklist, codes, car = null, engine
               {checklist.intro && <p className="mt-3 max-w-[34em] text-[15px] leading-relaxed text-lr-body md:text-[16px] xl:text-[17px]" dangerouslySetInnerHTML={{ __html: dash(checklist.intro) }} />}
 
               {/* phones / tablets: the car on the studio floor */}
-              {car && <StudioCar car={car} className="-mx-4 mt-5 aspect-[4/3] sm:aspect-[16/9] md:-mx-8 lg:hidden" sizes="(min-width: 640px) 600px, 80vw" />}
+              {car && <StudioCar car={car} className="-mx-5 sm:-mx-6 mt-5 aspect-[4/3] sm:aspect-[16/9] md:-mx-10 lg:hidden" sizes="(min-width: 640px) 600px, 80vw" />}
 
               <ol className="mt-5 grid grid-cols-2 gap-2.5 sm:grid-cols-4 md:gap-3 lg:mt-6">
                 {items.map((item, i) => {

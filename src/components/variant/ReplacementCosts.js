@@ -174,7 +174,7 @@ export default function ReplacementCosts({ data, ticker = "" }) {
       {/* ticker band: scrolls on phones (list rendered twice), one static row from lg */}
       {items.length > 0 && (
         <div className="relative border-y border-lr-line bg-lr-band">
-          <div className="mx-auto w-full max-w-8xl overflow-hidden md:px-8">
+          <div className="mx-auto w-full max-w-8xl overflow-hidden md:px-10 xl:px-12">
             <ul className="hero-ticker flex w-max items-center py-3.5 md:py-4 lg:w-full lg:justify-between lg:gap-4">
               {[...items, ...items].map((t, i) => (
                 <li key={i} className={`flex shrink-0 items-center gap-2 pl-7 text-[13.5px] text-lr-body md:text-[14px] lg:pl-0 xl:text-[15px] ${i >= items.length ? "lg:hidden" : ""}`} aria-hidden={i >= items.length || undefined}>

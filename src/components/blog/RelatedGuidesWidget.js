@@ -20,10 +20,10 @@ export async function RelatedGuidesWidget({
   const { theme } = blogConfig;
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm space-y-3.5">
+    <div className="rounded-2xl border border-lr-line bg-lr-card p-4 sm:p-5 shadow-sm space-y-3.5">
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-        <h3 className="text-base font-bold tracking-tight text-slate-900">
+      <div className="flex items-center justify-between border-b border-lr-line pb-2.5">
+        <h3 className="text-base font-bold tracking-tight text-lr-head">
           {title}
         </h3>
         <Link
@@ -51,9 +51,9 @@ export async function RelatedGuidesWidget({
             <Link
               key={post.id}
               href={`/blog/${post.slug}`}
-              className="group flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50/50 p-2.5 transition duration-200 hover:border-slate-300 hover:bg-slate-50"
+              className="group flex items-start gap-3 rounded-xl border border-lr-line bg-lr-panel/50 p-2.5 transition duration-200 hover:border-lr-line-strong hover:bg-lr-panel"
             >
-              <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-slate-200">
+              <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-lr-line">
                 <img
                   src={imageUrl}
                   alt={post.title}
@@ -64,10 +64,10 @@ export async function RelatedGuidesWidget({
 
               <div className="flex-1 min-w-0 flex flex-col justify-between self-stretch py-0.5">
                 <div>
-                  <h4 className="text-xs font-bold leading-snug text-slate-900 line-clamp-2 transition group-hover:text-[var(--blog-primary)]">
+                  <h4 className="text-xs font-bold leading-snug text-lr-head line-clamp-2 transition group-hover:text-[var(--blog-primary)]">
                     {post.title}
                   </h4>
-                  <p className="text-[10px] text-slate-400 mt-1">
+                  <p className="text-[10px] text-lr-muted mt-1">
                     {formattedDate}
                   </p>
                 </div>

@@ -41,16 +41,16 @@ export const blogConfig = {
 
   // 3. Theme Colors
   theme: {
-    fontFamily: "Arial, Helvetica, sans-serif",
-    primaryColor: "#175f46",
-    primaryHover: "#114734",
-    accentColor: "#175f46",
-    accentHover: "#114734",
+    fontFamily: "var(--font-instrument-sans), system-ui, sans-serif",
+    primaryColor: "var(--lr-green)",
+    primaryHover: "var(--lr-brand-hover)",
+    accentColor: "var(--lr-green)",
+    accentHover: "var(--lr-brand-hover)",
     widgetBg: "#0d281f",
     widgetBorder: "#133e30",
     widgetButtonBg: "#175f46",
     widgetButtonHover: "#114734",
     ukBadgeBg: "#003399",
-    fallbackThumbnail: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80",
+    fallbackThumbnail: "/home/knowledge-defender.webp", // a Land Rover in the site's own art (the template shipped a stock photo)
   },
 };

@@ -123,12 +123,15 @@
 
 /* brand icon set (LrIcon): an alpha mask painted in the theme's icon colour */
 @layer components {
+  /* every brand icon draws 12% larger than its box, site-wide: the artwork has its own margin, so
+     it grows without moving anything around it (a scale-* utility on an icon still overrides) */
   .lr-icon {
     display: inline-block;
     flex-shrink: 0;
     background-color: var(--lr-icon);
     -webkit-mask: var(--lr-icon-src) center / contain no-repeat;
     mask: var(--lr-icon-src) center / contain no-repeat;
+    scale: var(--lr-icon-scale, 1.12);
   }
   :where(.bg-lr-brand, .lr-on-brand) .lr-icon,
   .lr-icon-skin {
@@ -148,7 +151,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --container-8xl: 88rem;
+  /* site content width (navbar, footer and every section): 1600px, so wide screens keep a
+     32px gutter up to 1600 and only then centre - the references run nearly edge to edge */
+  --container-8xl: 100rem;
 
   --color-lr-page: var(--lr-page);
   --color-lr-band: var(--lr-band);

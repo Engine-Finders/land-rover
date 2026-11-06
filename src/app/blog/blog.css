@@ -1,8 +1,8 @@
 /* =========================================================
-   BMW Engines UK Blog Styling
+   Land Rover Engine blog styling (theme colours from globals.css)
    ========================================================= */
 :root {
-  --blog-font: Arial, Helvetica, sans-serif;
+  --blog-font: var(--font-instrument-sans), system-ui, sans-serif;
   --blog-primary: #175f46;
   --blog-primary-hover: #114734;
   --blog-accent: #175f46;
@@ -20,30 +20,31 @@
 
 .cms-content {
   font-family: var(--blog-font) !important;
-  color: #374151;
+  color: var(--lr-body);
   line-height: 1.75;
 }
 
-.cms-article-title,
+/* the article title uses the site's H1 (src/lib/typeScale.js); headings inside the article use the
+   site serif, one step under the section H2 */
 .cms-content h1 {
-  font-family: var(--blog-font) !important;
-  font-size: 2.5rem !important;
-  line-height: 1.2 !important;
-  font-weight: 800 !important;
-  letter-spacing: -0.02em;
-  color: #0f172a;
+  font-family: var(--font-serif-display) !important;
+  font-size: clamp(2rem, 1.6rem + 1.6vw, 2.75rem) !important;
+  line-height: 1.15 !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.01em;
+  color: var(--lr-head);
 }
 
 .cms-content h2 {
-  font-family: var(--blog-font) !important;
-  font-size: 32px !important;
-  line-height: 1.25 !important;
-  font-weight: 700 !important;
+  font-family: var(--font-serif-display) !important;
+  font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem) !important;
+  line-height: 1.2 !important;
+  font-weight: 400 !important;
   border-left: 5px solid var(--blog-primary) !important;
   padding-left: 14px !important;
   margin-top: 2.25rem !important;
   margin-bottom: 1rem !important;
-  color: #0f172a !important;
+  color: var(--lr-head) !important;
 }
 
 .cms-content h3 {
@@ -53,7 +54,7 @@
   font-weight: 700 !important;
   margin-top: 1.75rem !important;
   margin-bottom: 0.75rem !important;
-  color: #1e293b !important;
+  color: var(--lr-head) !important;
 }
 
 .cms-content p {
@@ -61,13 +62,13 @@
   margin-bottom: 1rem;
   font-size: 15.5px;
   line-height: 1.75;
-  color: #374151;
+  color: var(--lr-body);
 }
 
 .cms-content strong,
 .cms-content b {
   font-weight: 700;
-  color: #0f172a;
+  color: var(--lr-head);
 }
 
 .cms-content a {
@@ -90,8 +91,8 @@
   width: 100%;
   overflow-x: auto;
   border-radius: 0.5rem;
-  border: 1px solid #E2E8F0;
-  background-color: #ffffff;
+  border: 1px solid var(--lr-line);
+  background-color: var(--lr-card);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -104,13 +105,13 @@
 }
 
 .cms-table th {
-  background-color: #DDE3EA !important;
-  color: #0F172A !important;
+  background-color: var(--lr-panel) !important;
+  color: var(--lr-head) !important;
   font-weight: 700 !important;
   font-size: 13.5px !important;
   padding: 12px 18px !important;
-  border-bottom: 1px solid #CBD5E1 !important;
-  border-right: 1px solid #E2E8F0 !important;
+  border-bottom: 1px solid var(--lr-line-strong) !important;
+  border-right: 1px solid var(--lr-line) !important;
   letter-spacing: -0.01em;
 }
 
@@ -120,10 +121,10 @@
 
 .cms-table td {
   padding: 11px 18px !important;
-  border-bottom: 1px solid #F1F5F9 !important;
-  border-right: 1px solid #F1F5F9 !important;
-  color: #334155 !important;
-  background-color: #ffffff;
+  border-bottom: 1px solid var(--lr-line) !important;
+  border-right: 1px solid var(--lr-line) !important;
+  color: var(--lr-body) !important;
+  background-color: var(--lr-card);
   line-height: 1.5;
 }
 
@@ -132,11 +133,11 @@
 }
 
 .cms-table tr:nth-child(even) td {
-  background-color: #F8FAFC !important;
+  background-color: var(--lr-panel) !important;
 }
 
 .cms-table tr:hover td {
-  background-color: #F1F5F9 !important;
+  background-color: var(--lr-panel) !important;
 }
 
 /* =========================================================
@@ -167,7 +168,7 @@
   padding-left: 1rem !important;
   margin: 1.5rem 0 !important;
   font-style: italic !important;
-  color: #475569 !important;
+  color: var(--lr-body) !important;
 }
 
 /* =========================================================
@@ -177,8 +178,8 @@
   margin: 1.75rem 0 !important;
   padding: 1.25rem 1.5rem !important;
   border-radius: 0.75rem !important;
-  border: 1px solid #E2E8F0 !important;
-  background-color: #F8FAFC !important;
+  border: 1px solid var(--lr-line) !important;
+  background-color: var(--lr-panel) !important;
 }
 
 .cms-callout-title {
@@ -220,6 +221,18 @@
 }
 .cms-callout-destructive .cms-callout-title { color: #7F1D1D !important; }
 .cms-callout-destructive p { color: #991B1B !important; margin: 0.25rem 0 0 !important; }
+
+
+/* night theme: the callouts keep their meaning on the dark page */
+[data-theme="dark"] .cms-callout { background-color: var(--lr-panel) !important; border-color: var(--lr-line) !important; }
+[data-theme="dark"] .cms-callout-note { background-color: rgba(59, 130, 246, 0.12) !important; border-color: rgba(147, 197, 253, 0.35) !important; color: #bfdbfe !important; }
+[data-theme="dark"] .cms-callout-note .cms-callout-title, [data-theme="dark"] .cms-callout-note p { color: #bfdbfe !important; }
+[data-theme="dark"] .cms-callout-warning { background-color: rgba(245, 158, 11, 0.12) !important; border-color: rgba(253, 230, 138, 0.35) !important; color: #fde68a !important; }
+[data-theme="dark"] .cms-callout-warning .cms-callout-title, [data-theme="dark"] .cms-callout-warning p { color: #fde68a !important; }
+[data-theme="dark"] .cms-callout-tip { background-color: rgba(34, 197, 94, 0.12) !important; border-color: rgba(187, 247, 208, 0.35) !important; color: #bbf7d0 !important; }
+[data-theme="dark"] .cms-callout-tip .cms-callout-title, [data-theme="dark"] .cms-callout-tip p { color: #bbf7d0 !important; }
+[data-theme="dark"] .cms-callout-destructive { background-color: rgba(239, 68, 68, 0.12) !important; border-color: rgba(254, 202, 202, 0.35) !important; color: #fecaca !important; }
+[data-theme="dark"] .cms-callout-destructive .cms-callout-title, [data-theme="dark"] .cms-callout-destructive p { color: #fecaca !important; }
 
 /* =========================================================
    Call to Action (CTA) & Buttons
@@ -282,7 +295,7 @@
   border-radius: 1rem !important;
   overflow: hidden !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
-  border: 1px solid #E2E8F0 !important;
+  border: 1px solid var(--lr-line) !important;
   background-color: #0F172A !important;
 }
 
@@ -307,12 +320,12 @@
   width: 100% !important;
   height: auto !important;
   border-radius: 0.75rem !important;
-  border: 1px solid #E2E8F0 !important;
+  border: 1px solid var(--lr-line) !important;
 }
 
 .cms-image-caption {
   font-size: 0.8rem !important;
-  color: #64748B !important;
+  color: var(--lr-muted) !important;
   text-align: center !important;
   margin-top: 0.5rem !important;
   font-style: italic !important;

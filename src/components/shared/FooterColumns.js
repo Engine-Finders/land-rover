@@ -94,7 +94,7 @@ export default function FooterColumns() {
   const brandTextClass = isDark ? "text-[var(--color-text)]" : "text-black";
 
   return (
-    <div className="mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-8">
+    <div className="mx-auto w-full max-w-8xl px-5 sm:px-6 py-6 md:px-10 xl:px-12 md:py-8">
       <Link href="/" className={`mb-6 inline-flex items-center gap-3 no-underline ${brandTextClass}`}>
         <LogoMark />
       </Link>

@@ -124,7 +124,7 @@ export default function VariantHero({ data, car = null, parent = "" }) {
 
         <div className={`relative ${CONTAINER} pt-4 md:pt-6 lg:pt-7`}>
           {/* breadcrumb */}
-          <nav aria-label="Breadcrumb" className="-mx-4 overflow-x-auto px-4 [scrollbar-width:none] md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden">
+          <nav aria-label="Breadcrumb" className="-mx-5 sm:-mx-6 overflow-x-auto px-5 sm:px-6 [scrollbar-width:none] md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden">
             <ol className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-md border border-lr-line bg-lr-card/90 px-3 py-1.5 text-[12.5px] font-medium text-lr-green backdrop-blur-sm md:gap-2 md:px-3.5 md:py-2 md:text-[13.5px] lg:text-[14px] xl:text-[15px]">
               {crumbs.map((c, i) => (
                 <li key={c.label} className={`inline-flex items-center gap-1.5 md:gap-2 ${i === 3 ? "max-[409px]:hidden" : ""}`}>
@@ -161,7 +161,7 @@ export default function VariantHero({ data, car = null, parent = "" }) {
 
           {/* phones / tablets: the car on the hillside, full-bleed between the copy and the badges */}
           {car && (
-            <div className={`relative -mx-4 mt-5 aspect-[4/3] bg-cover bg-bottom sm:aspect-[16/9] md:-mx-8 md:mt-7 lg:hidden ${BG_MOBILE} [mask-image:linear-gradient(to_bottom,transparent,#000_14%,#000_86%,transparent)]`} aria-hidden="true">
+            <div className={`relative -mx-5 sm:-mx-6 mt-5 aspect-[4/3] bg-cover bg-bottom sm:aspect-[16/9] md:-mx-10 md:mt-7 lg:hidden ${BG_MOBILE} [mask-image:linear-gradient(to_bottom,transparent,#000_14%,#000_86%,transparent)]`} aria-hidden="true">
               <div className="absolute bottom-[13%] left-1/2 w-[80%] max-w-[580px] -translate-x-1/2 sm:bottom-[11%] sm:w-[62%]">
                 <GroundedCar src={car} priority sceneByTheme sizes="(min-width: 640px) 580px, 80vw" />
               </div>
@@ -259,7 +259,7 @@ export default function VariantHero({ data, car = null, parent = "" }) {
       {/* ticker band: scrolls on phones (list rendered twice), one static row from lg */}
       {ticker.length > 0 && (
         <div className="relative border-y border-lr-line bg-lr-band">
-          <div className="mx-auto w-full max-w-8xl overflow-hidden md:px-8">
+          <div className="mx-auto w-full max-w-8xl overflow-hidden md:px-10 xl:px-12">
             <ul className="hero-ticker flex w-max items-center py-3.5 md:py-4 lg:w-full lg:justify-between lg:gap-4">
               {[...ticker, ...ticker].map((t, i) => (
                 <li key={i} className={`flex shrink-0 items-center gap-2.5 pl-7 text-[13.5px] text-lr-body md:text-[14px] lg:pl-0 xl:text-[15px] ${i >= ticker.length ? "lg:hidden" : ""}`} aria-hidden={i >= ticker.length || undefined}>

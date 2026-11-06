@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CONTAINER, H1 } from "@/lib/typeScale";
 import { getBlogPosts, cleanExcerpt, resolvePostImage } from "@/lib/cms";
 import { blogConfig } from "@/lib/blog.config";
 import { EngineQuoteWidget } from "@/components/blog/EngineQuoteWidget";
@@ -27,7 +28,7 @@ export default async function BlogPage(props) {
 
   return (
     <div
-      className="cms-blog-root mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12"
+      className={`cms-blog-root ${CONTAINER} py-10 md:py-14 xl:py-16`}
       style={{
         "--blog-primary": theme.primaryColor,
         "--blog-primary-hover": theme.primaryHover,
@@ -38,19 +39,19 @@ export default async function BlogPage(props) {
       }}
     >
       {/* Breadcrumbs */}
-      <nav className="mb-4 text-xs text-slate-500">
-        <Link href="/" className="hover:underline hover:text-slate-900">Home</Link>
+      <nav className="mb-4 text-xs text-lr-muted">
+        <Link href="/" className="hover:underline hover:text-lr-head">Home</Link>
         <span className="mx-2">/</span>
-        <span className="text-slate-900 font-medium">Blog</span>
+        <span className="text-lr-head font-medium">Blog</span>
       </nav>
 
       {/* Header Banner */}
       <header className="mb-8">
-        <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+        <h1 className={`${H1} text-balance text-lr-head`}>
           {copy.blogTitlePrefix}{" "}
-          <span style={{ color: theme.accentColor }}>{copy.blogTitleAccent}</span>
+          <span className="text-lr-ink dark:text-lr-green">{copy.blogTitleAccent}</span>
         </h1>
-        <p className="mt-2 text-sm text-slate-600 max-w-3xl">
+        <p className="mt-2 text-sm text-lr-body max-w-3xl">
           {copy.blogSubtitle}
         </p>
       </header>
@@ -60,9 +61,9 @@ export default async function BlogPage(props) {
         {/* Main Content (8 cols) */}
         <div className="lg:col-span-8 min-w-0">
           {posts.length === 0 ? (
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-12 text-center">
-              <p className="text-base font-bold text-slate-900">{copy.emptyTitle}</p>
-              <p className="mt-1 text-xs text-slate-500">{copy.emptySubtitle}</p>
+            <div className="rounded-2xl border border-lr-line bg-lr-panel p-12 text-center">
+              <p className="text-base font-bold text-lr-head">{copy.emptyTitle}</p>
+              <p className="mt-1 text-xs text-lr-muted">{copy.emptySubtitle}</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
@@ -78,11 +79,11 @@ export default async function BlogPage(props) {
                 return (
                   <article
                     key={post.id}
-                    className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-200 hover:shadow-md hover:border-slate-300"
+                    className="group flex flex-col overflow-hidden rounded-2xl border border-lr-line bg-lr-card shadow-sm transition duration-200 hover:shadow-md hover:border-lr-line-strong"
                   >
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="relative aspect-16/10 w-full overflow-hidden bg-slate-100 block"
+                      className="relative aspect-16/10 w-full overflow-hidden bg-lr-panel block"
                     >
                       <img
                         src={imageUrl}
@@ -94,17 +95,17 @@ export default async function BlogPage(props) {
 
                     <div className="flex flex-1 flex-col justify-between p-4">
                       <div>
-                        <h3 className="text-sm sm:text-base font-bold leading-snug text-slate-900 line-clamp-3 group-hover:text-[var(--blog-primary)] transition">
+                        <h3 className="text-sm sm:text-base font-bold leading-snug text-lr-head line-clamp-3 group-hover:text-[var(--blog-primary)] transition">
                           <Link href={`/blog/${post.slug}`}>
                             {post.title}
                           </Link>
                         </h3>
-                        <p className="mt-2 text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                        <p className="mt-2 text-xs text-lr-body line-clamp-3 leading-relaxed">
                           {excerpt}
                         </p>
                       </div>
 
-                      <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                      <div className="mt-4 pt-3 border-t border-lr-line flex items-center justify-between">
                         <Link
                           href={`/blog/${post.slug}`}
                           className="inline-flex items-center gap-1 text-xs font-bold hover:underline"
@@ -113,7 +114,7 @@ export default async function BlogPage(props) {
                           <span>{copy.readMoreText || "Read Guide"}</span>
                           <span className="text-sm leading-none">»</span>
                         </Link>
-                        <span className="text-[10px] text-slate-400 font-medium">
+                        <span className="text-[10px] text-lr-muted font-medium">
                           {formattedDate}
                         </span>
                       </div>
@@ -126,16 +127,16 @@ export default async function BlogPage(props) {
 
           {/* Pagination */}
           {totalPages > 1 && (
-            <div className="mt-10 flex items-center justify-center gap-2 border-t border-slate-200 pt-6 text-xs font-semibold text-slate-700">
+            <div className="mt-10 flex items-center justify-center gap-2 border-t border-lr-line pt-6 text-xs font-semibold text-lr-body">
               {currentPage > 1 ? (
                 <Link
                   href={`/blog?page=${currentPage - 1}`}
-                  className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 hover:bg-slate-50 transition"
+                  className="rounded-lg border border-lr-line bg-lr-card px-3 py-1.5 hover:bg-lr-panel transition"
                 >
                   « Prev
                 </Link>
               ) : (
-                <span className="rounded-lg border border-slate-100 bg-slate-50 px-3 py-1.5 text-slate-300 cursor-not-allowed">
+                <span className="rounded-lg border border-lr-line bg-lr-panel px-3 py-1.5 text-lr-muted/60 cursor-not-allowed">
                   « Prev
                 </span>
               )}
@@ -147,9 +148,9 @@ export default async function BlogPage(props) {
                   className={`rounded-lg px-3 py-1.5 transition ${
                     pageNum === currentPage
                       ? "font-bold text-white shadow-sm"
-                      : "border border-slate-200 bg-white hover:bg-slate-50 text-slate-700"
+                      : "border border-lr-line bg-lr-card hover:bg-lr-panel text-lr-body"
                   }`}
-                  style={pageNum === currentPage ? { backgroundColor: theme.primaryColor } : undefined}
+                  style={pageNum === currentPage ? { backgroundColor: "var(--lr-brand)" } : undefined}
                 >
                   {pageNum}
                 </Link>
@@ -158,12 +159,12 @@ export default async function BlogPage(props) {
               {currentPage < totalPages ? (
                 <Link
                   href={`/blog?page=${currentPage + 1}`}
-                  className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 hover:bg-slate-50 transition"
+                  className="rounded-lg border border-lr-line bg-lr-card px-3 py-1.5 hover:bg-lr-panel transition"
                 >
                   Next »
                 </Link>
               ) : (
-                <span className="rounded-lg border border-slate-100 bg-slate-50 px-3 py-1.5 text-slate-300 cursor-not-allowed">
+                <span className="rounded-lg border border-lr-line bg-lr-panel px-3 py-1.5 text-lr-muted/60 cursor-not-allowed">
                   Next »
                 </span>
               )}

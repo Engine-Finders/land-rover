@@ -109,7 +109,7 @@ function BridgeSection({ bridge, isDark }) {
         }`}
       />
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-8 pt-5 md:px-8 md:pb-10 md:pt-6">
+      <div className="relative mx-auto w-full max-w-8xl px-5 sm:px-6 pb-8 pt-5 md:px-10 xl:px-12 md:pb-10 md:pt-6">
         <BridgeEyebrow text={bridge.eyebrow} />
         <BridgeHeading isDark={isDark} />
 
@@ -188,7 +188,7 @@ export default function HomeSec1({ data, band = "page" }) {
           <div className="absolute inset-0 hidden bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_22%)] md:block" />
         </div>
 
-        <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-8 pt-7 md:min-h-[640px] md:justify-center md:px-8 md:pb-6 md:pt-12">
+        <div className="relative mx-auto flex w-full max-w-8xl flex-col px-5 sm:px-6 pb-8 pt-7 md:min-h-[640px] md:justify-center md:px-10 xl:px-12 md:pb-6 md:pt-12">
           <div className="relative flex w-full flex-col items-stretch gap-4 text-left md:max-w-[720px] md:items-start md:gap-5">
             <HeadingEyebrow text={data.eyebrow} />
 

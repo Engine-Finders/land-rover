@@ -1,362 +1,308 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
-import { useTheme } from "@/components/shared/themeProvider";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import Link from "next/link";
+import LrIcon from "@/components/shared/LrIcon";
+import { CONTAINER } from "@/lib/typeScale";
+import { Arrow, H2_MODEL, SANS, prose } from "@/components/models/modelKit";
+import { keyEngines, stripHtml } from "@/components/models/engineSections";
+import { localHref, localHtml } from "@/components/models/generationsFaqLinks";
+import { genCode, genName } from "./genKit";
 
-const GEN_TO_HOME = {
-  warning: "expensiveFailure",
-  wrench: "repairVsReplace",
-  car: "vehicle",
-  gauge: "trend",
-  chart: "trend",
-  shield: "safestBuy",
-  clock: "checkWatch",
-  tag: "quote",
-  engine: "engine",
-  refresh: "checkWatch",
-  dollar: "checkValue",
-  pin: "ukDelivery",
-  drum: "engine",
-  info: "note",
-};
+// Generation page section 6 - common problems, built to the approved Defender L316 reference: the
+// eyebrow, "<generation> — Common Problems" headline, a one-line intro and a split rule; one card per
+// problem - its number, the engine over the fault, an engine shot in the corner, affected models,
+// typical failure mileage and root cause with icons, the tiered cost table (preventative repair:
+// dealer / specialist / the work), the catastrophic tier as a coloured box, our recommendation and a
+// "Compare … prices" button; then a four-point trust strip.
+// Tiers come from the JSON's tieredCosts; where those are empty, from the costs the recommendation
+// itself states ("a £200 harness replacement is … cheaper than the £800+ ECU replacement that follows").
+// Phones: swipe through the cards (the next one peeks in); tablets 2-up; laptops one row.
 
-function toHomeIcon(name) {
-  return GEN_TO_HOME[name] || "note";
+const html = (raw) => localHtml(prose(raw || ""));
+const capital = (t = "") => String(t).trim().replace(/^[a-z]/, (c) => c.toUpperCase());
+const MONEY = "£[\\d,]+(?:\\s?[–-]\\s?£[\\d,]+)?\\+?";
+
+// ------------------------------------------------------------------ title
+
+// tokens that belong to the engine part of a title ("2.4 / 2.2 Td4", "Rover V8", "204DT 2.0 Ingenium Diesel")
+const ENGINE_WORD =
+  /^(?:\/|&|\(.*\d.*\)|.*\d.*|Td\d|TDi?|Tdi|TDV\d|SDV\d|SCV\d|V\d|Si\d|SI\d|Ingenium|Puma|BMW|Rover|Ford|Duratorq|Jaguar|AJ[-‑\w]*|GTDI|EcoBoost|[KL][-‑]Series|KV6|VM|Turbodiesel|MPi|EFi|Diesel|Petrol|Supercharged|PHEV|MHEV|DW12)$/i;
+const isEngineToken = (t) => t.split("/").some((part) => ENGINE_WORD.test(part) || part === "");
+
+// "Td5 Injector Wiring Harness Oil Contamination" -> { engine: "Td5", fault: "Injector Wiring …" }
+function splitTitle(raw = "") {
+  const text = stripHtml(raw);
+  const tokens = text.split(/\s+/);
+  let i = 0;
+  while (i < tokens.length && isEngineToken(tokens[i])) i += 1;
+  const engine = tokens.slice(0, i).join(" ");
+  const fault = tokens.slice(i).join(" ");
+  if (engine && fault && /\d|Tdi|V\d|Ingenium|Rover|BMW|VM|Series/i.test(engine)) return { engine, fault };
+  // non-engine faults led by the generation ("Defender L316 Chassis Corrosion")
+  const gen = text.match(/^(.*?\b(?:L\d{3}|P38A?|D\d|Classic)\b)\s+(.+)$/);
+  return gen ? { engine: gen[1], fault: gen[2], general: true } : { engine: "", fault: text, general: true };
 }
 
-function ChevronDownIcon({ className = "h-4 w-4" }) {
+// ------------------------------------------------------------------ tiers
+
+// the JSON's tiers when filled in, else the two costs the recommendation names
+function tiers(problem) {
+  const filled = (problem.tieredCosts || []).filter((t) => t.dealer || t.specialist || t.work || t.note);
+  if (filled.length) {
+    const pre = filled.find((t) => /prevent|repair/i.test(t.tier)) || filled[0];
+    const cat = filled.find((t) => t !== pre);
+    return {
+      source: "data",
+      pre: pre && { label: pre.tier, dealer: pre.dealer, specialist: pre.specialist, work: pre.work, note: pre.note },
+      cat: cat && { label: cat.tier, cost: cat.specialist || cat.dealer, body: [cat.work, cat.note].filter(Boolean).map(capital).join(". ") },
+    };
+  }
+  const text = stripHtml(problem.recommendation || "");
+  const pair = (cost, work, catCost, catBody) => ({
+    source: "text",
+    pre: { label: "Preventative (Repair)", cost, work: capital(work.replace(/^(?:preventative)\s+/i, "")) },
+    cat: catCost ? { label: "If ignored", cost: catCost, body: capital(catBody) } : null,
+  });
+  // "a £200 harness replacement is … cheaper than the £800+ ECU replacement that follows"
+  let m = text.match(new RegExp(`(${MONEY})\\s+([^.;£]*?)\\s+is\\s+[^£.]*?(?:than|against)\\s+the\\s+(${MONEY})\\s+([^.;£]*?)\\s+that\\s+follows`, "i"));
+  if (m) return pair(m[1], m[2], m[3], m[4]);
+  // "a £200–£400 job that can save you from a £2,500+ head gasket bill"
+  m = text.match(new RegExp(`(${MONEY})\\s+([^.;£]*?)\\s+that\\s+can\\s+save\\s+you\\s+from\\s+an?\\s+(${MONEY})\\s+([^.;£]*?)(?:\\s+bill)?[.;]`, "i"));
+  if (m) return pair(m[1], m[2], m[3], m[4]);
+  // "A £300–£600 refurbishment is manageable"
+  m = text.match(new RegExp(`\\ban?\\s+(${MONEY})\\s+([a-z][^.;£]*?)\\s+is\\s+manageable`, "i"));
+  if (m) return pair(m[1], m[2]);
+  return null;
+}
+
+// the costliest tier's figure decides its tone: amber under £5,000, red above
+function catTone(cost = "") {
+  const top = Math.max(...(String(cost).match(/[\d,]+/g) || ["0"]).map((n) => Number(n.replace(/,/g, ""))));
+  return top >= 5000
+    ? { box: "border-[#e8b3b3] bg-[#fdf3f3] dark:border-[#7a3a3a] dark:bg-[#3a1f22]/50", text: "text-[#c62828] dark:text-[#ff8f8f]" }
+    : { box: "border-[#efc99a] bg-[#fdf6ec] dark:border-[#7a5a2e] dark:bg-[#3a2c18]/50", text: "text-[#c96a12] dark:text-[#ffb36b]" };
+}
+
+// ------------------------------------------------------------------ pieces
+
+const STROKE = { fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round" };
+
+function ClockIcon({ className = "" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="m6 9 6 6 6-6" />
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <g {...STROKE}>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7.5V12l3 2" />
+      </g>
     </svg>
   );
 }
 
-function ChevronIcon({ className = "h-4 w-4" }) {
+function Fact({ icon, label, value }) {
+  if (!value) return null;
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="m9 6 6 6-6 6" />
-    </svg>
-  );
-}
-
-function TieredCostTable({ tiers, isDark }) {
-  if (!tiers?.length) return null;
-
-  const specialistClass = isDark ? "text-[#67d99a]" : "text-[#13884a]";
-
-  return (
-    <div className="overflow-hidden rounded-[8px] border border-[var(--color-border)]">
-      {tiers.map((tier) => {
-        const isCatastrophic = tier.tier.toLowerCase().includes("catastrophic");
-        const toneClass = isCatastrophic ? "text-[#db2e2e]" : "text-[var(--color-primary)]";
-
-        return (
-          <div key={tier.tier} className="border-b border-[var(--color-border)] last:border-b-0">
-            <div className="grid grid-cols-[1.6fr_1fr_1fr] items-stretch">
-              <div className="flex items-center gap-1.5 border-b border-r border-[var(--color-border)]">
-                <HomeIcon
-                  name={isCatastrophic ? "expensiveFailure" : "repairVsReplace"}
-                  size={18}
-                  className="h-[18px] w-[18px] shrink-0"
-                />
-                <p className={`text-[0.62rem] uppercase tracking-wide ${toneClass}`} dangerouslySetInnerHTML={{ __html: tier.tier }} />
-              </div>
-              <div className="flex items-center justify-center border-b border-r border-[var(--color-border)]">
-                <p className="text-[0.62rem] uppercase tracking-wide text-[var(--color-text-soft)]">Dealer</p>
-              </div>
-              <div className="flex items-center justify-center border-b border-[var(--color-border)]">
-                <p className="text-[0.62rem] uppercase tracking-wide text-[var(--color-text-soft)]">Specialist</p>
-              </div>
-
-              <div className="border-r border-[var(--color-border)]" />
-              <div className="flex items-center justify-center border-r border-[var(--color-border)]">
-                <p className="text-[0.62rem] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: tier.dealer }} />
-              </div>
-              <div className="flex items-center justify-center">
-                <p className={`text-[0.62rem] ${specialistClass}`} dangerouslySetInnerHTML={{ __html: tier.specialist }} />
-              </div>
-            </div>
-            <div className="border-t border-[var(--color-border)]">
-              <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: tier.work }} />
-              {tier.note ? <p className="mt-0.5 text-[0.72rem] italic text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: tier.note }} /> : null}
-            </div>
-          </div>
-        );
-      })}
+    <div className="flex gap-3">
+      {icon === "clock" ? (
+        <ClockIcon className="mt-0.5 h-5 w-5 shrink-0 text-lr-ink dark:text-lr-green" />
+      ) : (
+        <LrIcon name={icon} tone="current" className="mt-0.5 h-5 w-5 shrink-0 text-lr-ink dark:text-lr-green" />
+      )}
+      <div className="min-w-0">
+        <p className="text-[14px] font-semibold leading-snug text-lr-ink xl:text-[15px] dark:text-lr-green">{label}</p>
+        <p className="mt-0.5 text-[14px] leading-[1.5] text-lr-body [&_a]:text-inherit [&_a]:underline" dangerouslySetInnerHTML={{ __html: html(value).replace(/\.$/, "") }} />
+      </div>
     </div>
   );
 }
 
-function splitTitle(title = "") {
-  const spaceIndex = title.indexOf(" ");
-  if (spaceIndex === -1) return { code: title, name: "" };
-  return { code: title.slice(0, spaceIndex), name: title.slice(spaceIndex + 1) };
-}
-
-function RiskBadge({ riskLevel }) {
-  if (!riskLevel) return null;
-  const isHigh = riskLevel.toLowerCase().includes("high");
-  const toneClass = isHigh
-    ? "border-[#db2e2e] text-[#db2e2e]"
-    : "border-[#da7a12] text-[#da7a12]";
-
+function TierTable({ pre }) {
+  const works = String(pre.work || "")
+    .split(/;\s*/)
+    .map((w) => capital(w))
+    .filter(Boolean);
+  const cols = pre.cost ? [["Typical cost", pre.cost]] : [["Dealer", pre.dealer], ["Specialist", pre.specialist]].filter(([, v]) => v);
   return (
-    <span className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2 py-0.5 text-[0.7rem] font-semibold ${toneClass}`}>
-      <HomeIcon name="expensiveFailure" size={16} className="h-4 w-4" />
-      {riskLevel}
-    </span>
+    <div className="mt-2 overflow-hidden rounded-lg border border-lr-line text-[13px] leading-snug">
+      <div className="flex items-center gap-2 border-b border-lr-line bg-lr-panel/70 px-3 py-1.5 font-semibold text-lr-head">
+        <LrIcon name="commercial" tone="current" className="h-4 w-4 shrink-0 text-lr-ink dark:text-lr-green" />
+        {pre.label}
+      </div>
+      <div className={`grid divide-x divide-lr-line border-b border-lr-line ${cols.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
+        {cols.map(([k, v]) => (
+          <div key={k} className="px-3 py-1.5 text-center">
+            <span className="block text-[12px] text-lr-muted">{k}</span>
+            <span className="block font-semibold text-lr-head">{v}</span>
+          </div>
+        ))}
+      </div>
+      {works.map((w, i) => (
+        <p key={i} className="border-b border-lr-line px-3 py-1.5 text-center text-lr-body last:border-b-0" dangerouslySetInnerHTML={{ __html: html(w) }} />
+      ))}
+      {pre.note && <p className="bg-lr-panel/40 px-3 py-1.5 text-center text-[12px] text-lr-muted" dangerouslySetInnerHTML={{ __html: html(capital(pre.note)) }} />}
+    </div>
   );
 }
 
-function AccordionCard({ problem, isDark, isOpen, onToggle }) {
+function CatBox({ cat }) {
+  const tone = catTone(cat.cost);
   return (
-    <div className="glass-panel overflow-hidden rounded-[8px]">
-      <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full gap-3 py-3 pr-3 text-left">
-        <span className="relative h-20 w-20 shrink-0 overflow-hidden">
-          <Image src="/e90/section6.webp" alt={problem.title} fill className="object-cover object-[center_20%] scale-125" sizes="80px" />
+    <div className={`mt-3 rounded-lg border px-3.5 py-3 ${tone.box}`}>
+      <p className="flex items-center gap-2.5 text-[14px] font-semibold leading-snug">
+        <svg viewBox="0 0 24 24" className={`h-5 w-5 shrink-0 ${tone.text}`} aria-hidden="true">
+          <path d="M10.4 3.9 2.4 17.7a1.8 1.8 0 0 0 1.6 2.8h16a1.8 1.8 0 0 0 1.6-2.8L13.6 3.9a1.8 1.8 0 0 0-3.2 0Z" fill="currentColor" />
+          <path d="M12 9v5M12 17.2h.01" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+        <span className={tone.text}>{cat.label}</span>
+        {cat.cost && <span className="ml-auto whitespace-nowrap font-semibold text-lr-head">{cat.cost}</span>}
+      </p>
+      {cat.body && <p className="mt-1.5 text-[13.5px] leading-[1.5] text-lr-body" dangerouslySetInnerHTML={{ __html: html(cat.body) }} />}
+    </div>
+  );
+}
+
+function ShieldIcon({ className = "" }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <path d="M12 2.5 20 5.6v5.9c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V5.6Z" fill="currentColor" />
+      <path d="m8.4 12.2 2.5 2.5 4.9-5.2" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function ProblemCard({ problem, index, shot }) {
+  const { engine, fault } = splitTitle(problem.title);
+  const t = tiers(problem);
+  const label = String(problem.cta?.label || "").replace(/\s*(?:→|->)\s*$/, "").trim() || `Compare ${engine || "engine"} prices`;
+  const href = localHref(problem.cta?.href) || "/quote";
+  return (
+    <li className="relative flex min-w-0 shrink-0 snap-start flex-col overflow-hidden rounded-xl border border-lr-line bg-lr-card p-4 shadow-[0_18px_44px_-34px_var(--lr-shadow)] basis-[88%] sm:basis-[62%] md:basis-auto md:p-5">
+      {shot && (
+        <span className="pointer-events-none absolute right-0 top-0 h-[140px] w-[160px] [mask-image:radial-gradient(115%_105%_at_100%_0%,#000_40%,transparent_74%)] xl:h-[150px] xl:w-[172px]" aria-hidden="true">
+          <Image src={shot} alt="" fill sizes="160px" className="object-cover object-left-bottom opacity-95 dark:opacity-80" />
+        </span>
+      )}
+      <div className="relative flex items-start gap-3 pr-[58px] xl:pr-[64px]">
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-lr-brand text-[20px] font-bold leading-none text-lr-on-brand xl:h-12 xl:w-12 xl:text-[22px]">
+          {String(index + 1).padStart(2, "0")}
+        </span>
+        <h3 className="min-w-0 leading-snug">
+          {engine && <span className="block text-[20px] font-semibold leading-tight text-lr-head [text-shadow:0_0_12px_var(--lr-card)] xl:text-[22px]">{engine}</span>}
+          <span className={`block text-lr-head [text-shadow:0_0_12px_var(--lr-card)] ${engine ? "mt-0.5 text-[15px] xl:text-[16px]" : "text-[18px] font-semibold xl:text-[20px]"}`}>{fault}</span>
+        </h3>
+      </div>
+
+      <div className="relative mt-4 space-y-3">
+        <Fact icon="vehicle" label="Affected models:" value={problem.affectedModels} />
+        <Fact icon="clock" label="Typical failure mileage:" value={problem.typicalFailureMileage} />
+        <Fact icon="specific-knowledge" label="Root cause:" value={problem.rootCause} />
+      </div>
+
+      {t?.pre && (
+        <div className="mt-4">
+          <p className="text-[12.5px] font-semibold uppercase tracking-[0.04em] text-lr-head">Tiered cost table</p>
+          <TierTable pre={t.pre} />
+        </div>
+      )}
+      {t?.cat && <CatBox cat={t.cat} />}
+
+      {problem.recommendation && (
+        <div className="mt-4 flex gap-2.5">
+          <ShieldIcon className="mt-0.5 h-5 w-5 shrink-0 text-[#2346a0] dark:text-[#8eaaf5]" />
+          <div className="min-w-0">
+            <p className="text-[12.5px] font-semibold uppercase tracking-[0.04em] text-[#2346a0] dark:text-[#8eaaf5]">Our recommendation</p>
+            <p className="mt-1 text-[14px] leading-[1.55] text-lr-body" dangerouslySetInnerHTML={{ __html: html(problem.recommendation) }} />
+          </div>
+        </div>
+      )}
+
+      <div className="mt-auto pt-5">
+        <Link
+          href={href}
+          className="flex min-h-11 items-center justify-center gap-2 rounded-md bg-lr-brand px-4 py-2.5 text-center text-[14px] font-semibold leading-snug text-lr-on-brand no-underline transition-colors hover:bg-lr-brand-hover"
+        >
+          <span>{label}</span>
+          <Arrow className="h-4 w-4 shrink-0" />
+        </Link>
+      </div>
+    </li>
+  );
+}
+
+// ------------------------------------------------------------------ section
+
+const STRIP_ICONS = [
+  <LrIcon key="a" name="genuine-failure-data" tone="current" className="h-8 w-8 xl:h-9 xl:w-9" />,
+  <LrIcon key="b" name="real-inquiries" tone="current" className="h-8 w-8 xl:h-9 xl:w-9" />,
+  <LrIcon key="c" name="commercial" tone="current" className="h-8 w-8 xl:h-9 xl:w-9" />,
+  <LrIcon key="d" name="good-choice" tone="current" className="h-8 w-8 xl:h-9 xl:w-9" />,
+];
+
+export default function CommonProblems({ data, page = null }) {
+  const problems = data?.problems || [];
+  if (!problems.length) return null;
+
+  const name = genName(page);
+  const code = genCode(`${page?.hero?.h1 || ""} ${page?.hero?.tagPill || ""}`);
+  const owners = code && code !== "Classic" ? code : name.replace(/^Land Rover\s+/, "");
+  const enquiries = String(page?.hero?.trustStrip?.[0]?.label || "").match(/^(\d[\d,]*\+?)/)?.[1];
+
+  // one engine shot per engine, none for chassis / suspension / body faults
+  const engines = problems.map((p) => {
+    const t = splitTitle(p.title);
+    return t.general ? "" : t.engine;
+  });
+  const unique = [...new Set(engines.filter(Boolean))];
+  const shots = Object.fromEntries(keyEngines(unique.join(", ")).map((e, i) => [unique[i], e.shot]));
+
+  const strip = [
+    { title: "UK Specialist Data", text: enquiries ? `Problems drawn from ${enquiries} real UK ${owners} enquiries in 2025.` : `Problems drawn from real UK ${owners} enquiries and specialist workshop data.` },
+    { title: "Honest Costing", text: "Dealer and specialist pricing for real-world decisions." },
+    { title: "Expert Recommendations", text: "Every fault comes with our honest recommendation from UK specialist experience." },
+    { title: "Transparent Advice", text: "We tell you when to repair, when to walk, and when it’s worth the investment." },
+  ];
+  const n = problems.length;
+  const cols = n >= 4 && n % 4 === 0 ? "xl:grid-cols-4" : n % 3 === 0 || n === 5 ? "xl:grid-cols-3" : "xl:grid-cols-4";
+
+  return (
+    <section className={`bg-lr-band py-10 text-lr-head md:py-14 xl:py-16 ${SANS}`}>
+      <div className={CONTAINER}>
+        <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">Common Problems</p>
+        <h2 className={`${H2_MODEL} mt-3.5 text-balance text-lr-head md:mt-4`}>{name ? `${name} — Common Problems` : "Common Problems"}</h2>
+        <p className="mt-3 max-w-[50em] text-[15px] leading-[1.6] text-lr-body md:mt-4 md:text-[16px] xl:text-[17px]">
+          Real-world issues {owners} owners face most — with symptoms, causes, costs and our honest recommendations based on UK specialist experience.
+        </p>
+        <span className="mt-4 flex h-[3px] w-20 overflow-hidden rounded-full md:mt-5" aria-hidden="true">
+          <span className="w-[60%] bg-lr-ink dark:bg-lr-green" />
+          <span className="flex-1 bg-lr-gold-line" />
         </span>
 
-        <div className="min-w-0 flex-1">
-          <div className="flex items-start justify-between gap-2">
-            <div className="flex min-w-0 items-center gap-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary)] text-[0.7rem] font-bold text-white">
-                {String(problem.id).padStart(2, "0")}
-              </span>
-              <p className="min-w-0 text-[0.88rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: problem.title }} />
-            </div>
-            <ChevronDownIcon
-              className={`h-4 w-4 shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`}
-            />
-          </div>
-
-          <div className="mt-2 grid grid-cols-2 divide-x divide-[var(--color-border)] text-[0.7rem]">
-            <div className="flex items-start gap-1.5 pr-2">
-              <HomeIcon name="vehicle" size={18} className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[var(--color-primary)]" />
-              <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
-            </div>
-            <div className="flex items-start gap-1.5 pl-2">
-              <HomeIcon name="trend" size={18} className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[var(--color-primary)]" />
-              <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
-            </div>
-          </div>
-
-          <div className="mt-2 flex items-center gap-1.5">
-            <RiskBadge riskLevel={problem.riskLevel} />
-            <span className="min-w-0 flex-1 truncate text-[0.7rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: problem.rootCause }} />
-          </div>
-        </div>
-      </button>
-
-      {isOpen ? (
-        <div className="border-t border-[var(--color-border)]">
-          <div className="border-b border-[var(--color-border)] px-4 py-3">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">
-              Tiered Cost Table
-            </p>
-            <TieredCostTable tiers={problem.tieredCosts} isDark={isDark} />
-          </div>
-
-          {problem.recommendation ? (
-            <div className="border-b border-[var(--color-border)] px-4 py-3">
-              <p className="flex items-center gap-1.5 text-[0.76rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-                <HomeIcon name="safestBuy" size={20} className="h-5 w-5" />
-                Our Recommendation
-              </p>
-              <p className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
-            </div>
-          ) : null}
-
-          {problem.cta ? (
-            <div className="px-4 py-4">
-              <a
-                href="/quote"
-                className="btn-cta flex h-11 w-full items-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-4 text-white"
-              >
-                <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
-                <HomeIcon name="quote" size={32} className="h-8 w-8 shrink-0" />
-              </a>
-            </div>
-          ) : null}
-        </div>
-      ) : null}
-    </div>
-  );
-}
-
-function ProblemCard({ problem, isDark }) {
-  const { code, name } = splitTitle(problem.title);
-
-  return (
-    <div className="glass-panel flex h-full flex-col overflow-hidden rounded-[8px]">
-      <div className="relative min-h-[140px] px-4 pb-3 pt-4">
-        <div className="relative z-10 flex max-w-[62%] flex-col gap-2.5">
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-primary)] text-[0.8rem] font-bold text-white">
-                {String(problem.id).padStart(2, "0")}
-              </span>
-              <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: code }} />
-            </div>
-            {name ? <p className="mt-1 text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: name }} /> : null}
-          </div>
-          <div className="text-[0.8rem]">
-            <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
-              <HomeIcon name="checkWatch" size={20} className="h-5 w-5" />
-              Affected models:
-            </p>
-            <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
-          </div>
-        </div>
-        <div className="absolute right-0 top-0 h-full w-[42%] overflow-hidden rounded-bl-[8px]">
-          <div className="relative h-full min-h-[128px] w-full">
-            <Image src="/e90/section6.webp" alt={problem.title} fill className="object-cover" sizes="180px" />
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-2.5 px-4 py-3 text-[0.8rem]">
-        <div>
-          <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
-            <HomeIcon name="checkWatch" size={20} className="h-5 w-5" />
-            Typical failure mileage:
-          </p>
-          <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
-        </div>
-        <div>
-          <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
-            <HomeIcon name="repairVsReplace" size={20} className="h-5 w-5" />
-            Root cause:
-          </p>
-          <p className="mt-0.5 leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.rootCause }} />
-        </div>
-      </div>
-
-      <div className="border-t border-[var(--color-border)] px-4 py-3">
-        <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">
-          Tiered Cost Table
-        </p>
-        <TieredCostTable tiers={problem.tieredCosts} isDark={isDark} />
-      </div>
-
-      {problem.recommendation ? (
-        <div className="border-t border-[var(--color-border)] px-4 py-3">
-          <p className="flex items-center gap-1.5 text-[0.76rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-            <HomeIcon name="safestBuy" size={20} className="h-5 w-5" />
-            Our Recommendation
-          </p>
-          <p className="mt-1 w-full text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
-        </div>
-      ) : null}
-
-      {problem.cta ? (
-        <div className="mt-auto border-t border-[var(--color-border)] px-4 py-4">
-          <a
-            href="/quote"
-            className="flex h-11 w-full items-center gap-2 rounded-[8px] bg-[var(--color-primary)] px-4 text-white"
-          >
-            <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
-            <HomeIcon name="quote" size={32} className="h-8 w-8 shrink-0" />
-          </a>
-        </div>
-      ) : null}
-    </div>
-  );
-}
-
-export default function CommonProblems({ data, band = "soft" }) {
-  const { theme } = useTheme();
-  const [openId, setOpenId] = useState(null);
-  if (!data) return null;
-
-  const isDark = theme === "dark";
-
-  return (
-    <section className={`w-full pt-8 pb-4 text-[var(--color-text)] md:pt-10 md:pb-5 ${sectionBgClass(band)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <HeadingEyebrow text="COMMON PROBLEMS" />
-        <h2
-          className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]"
-          dangerouslySetInnerHTML={{ __html: data.h2 || "Common Problems" }}
-        />
-        {data.subHeadline ? (
-          <p
-            className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]"
-            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-          />
-        ) : null}
-
-        <div className="mt-6 flex flex-col gap-3 md:hidden">
-          {data.problems?.map((problem) => (
-            <AccordionCard
-              key={problem.id}
-              problem={problem}
-              isDark={isDark}
-              isOpen={problem.id === openId}
-              onToggle={() => setOpenId(problem.id === openId ? null : problem.id)}
-            />
+        <ul
+          className={`-mx-5 mt-6 flex snap-x snap-mandatory scroll-px-5 gap-4 overflow-x-auto px-5 pb-1 [scrollbar-width:none] sm:-mx-6 sm:scroll-px-6 sm:px-6 md:mx-0 md:mt-8 md:grid md:grid-cols-2 md:overflow-visible md:px-0 md:pb-0 xl:gap-5 ${cols} [&::-webkit-scrollbar]:hidden`}
+          aria-label={`${owners} common problems`}
+        >
+          {problems.map((p, i) => (
+            <ProblemCard key={p.id || i} problem={p} index={i} shot={shots[engines[i]] || ""} />
           ))}
-        </div>
+        </ul>
+        {n > 1 && <p className="mt-2.5 text-[13px] text-lr-muted md:hidden">Swipe for all {n} problems →</p>}
 
-        <div className="mt-6 hidden gap-4 md:grid md:grid-cols-2 lg:grid-cols-4">
-          {data.problems?.map((problem) => (
-            <ProblemCard key={problem.id} problem={problem} isDark={isDark} />
-          ))}
-        </div>
-
-        {data.trustStrip?.length > 0 || data.footerNote ? (
-          <div className={`mt-6 overflow-hidden rounded-[8px] border ${isDark ? "border-white/10 bg-black" : "border-[var(--color-border)] bg-[var(--color-table-surface)]"}`}>
-            <div className={`flex items-center gap-3 border-b px-4 py-3.5 ${isDark ? "border-white/10" : "border-[var(--color-border)]"}`}>
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                <HomeIcon name="safestBuy" size={36} className="h-9 w-9" />
+        <ul className="mt-5 grid overflow-hidden rounded-xl border border-lr-line bg-lr-card shadow-[0_18px_44px_-36px_var(--lr-shadow)] sm:grid-cols-2 md:mt-6 xl:grid-cols-4">
+          {strip.map((s, i) => (
+            <li
+              key={s.title}
+              className={`relative flex items-center gap-4 px-5 py-4 xl:gap-5 xl:px-7 xl:py-5 ${i > 0 ? "border-t border-lr-line sm:border-t-0" : ""} ${i >= 2 ? "sm:border-t sm:border-lr-line xl:border-t-0" : ""} ${
+                i % 2 === 1 ? "sm:border-l sm:border-lr-line xl:border-l-0" : ""
+              } ${i > 0 ? "xl:before:absolute xl:before:inset-y-5 xl:before:left-0 xl:before:w-px xl:before:bg-lr-line" : ""}`}
+            >
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-ink/40 text-lr-ink xl:h-[66px] xl:w-[66px] dark:border-lr-gold-line/55 dark:text-lr-gold">
+                {STRIP_ICONS[i]}
               </span>
-              <p className={`text-[1rem] font-bold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                How confident are these ratings?
-              </p>
-            </div>
-
-            {data.trustStrip?.map((item, index) => (
-              <div
-                key={item.title}
-                className={`flex items-center gap-3 px-4 py-3.5 ${index > 0 ? `border-t ${isDark ? "border-white/10" : "border-[var(--color-border)]"}` : ""}`}
-              >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <HomeIcon name={toHomeIcon(item.icon)} size={36} className="h-9 w-9" />
-                </span>
-                <div className="min-w-0 flex-1">
-                  <p
-                    className={`text-[0.85rem] font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
-                    dangerouslySetInnerHTML={{ __html: item.title }}
-                  />
-                  <p
-                    className={`text-[0.76rem] leading-[1.35] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}
-                    dangerouslySetInnerHTML={{ __html: item.text }}
-                  />
-                </div>
-                <ChevronIcon className="h-4 w-4 shrink-0 text-[var(--color-text-soft)]" />
+              <div className="min-w-0">
+                <p className="text-[16px] font-semibold leading-snug text-lr-head xl:text-[17px]">{s.title}</p>
+                <p className="mt-1 text-[14px] leading-[1.5] text-lr-body">{s.text}</p>
               </div>
-            ))}
-
-            {data.footerNote ? (
-              <div className={`flex items-center gap-3 border-t px-4 py-3.5 ${isDark ? "border-white/10" : "border-[var(--color-border)]"}`}>
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <HomeIcon name="quote" size={36} className="h-9 w-9" />
-                </span>
-                <div className="min-w-0 flex-1">
-                  <p className="text-[0.85rem] font-semibold text-[var(--color-primary)]">Data Note</p>
-                  <p
-                    className={`text-[0.76rem] leading-[1.35] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}
-                    dangerouslySetInnerHTML={{ __html: data.footerNote }}
-                  />
-                </div>
-              </div>
-            ) : null}
-          </div>
-        ) : null}
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

@@ -29,6 +29,7 @@ import CoreVariants from "@/components/generation/CoreVariants";
 import GenMarketIntelligence from "@/components/generation/MarketIntelligence";
 import GenFAQAccordion from "@/components/generation/FAQAccordion";
 import GenTrustCta from "@/components/generation/TrustCta";
+import { genName } from "@/components/generation/genKit";
 
 import VariantHero from "@/components/variant/VariantHero";
 import EraMap from "@/components/variant/EraMap";
@@ -129,7 +130,7 @@ export async function generateMetadata({ params }) {
   const { meta } = data;
   const og = meta.openGraph;
   const hasOg = og && (og.title || og.description || og.url || og.image || og.siteName || og.type);
-  const canonical = meta.canonical || `https://bmwengines.uk/${slugSegments.join("/")}`;
+  const canonical = meta.canonical || `https://landroverengine.uk/${slugSegments.join("/")}`;
 
   return {
     title: meta.title || undefined,
@@ -178,20 +179,21 @@ export default async function CatchAllPage({ params }) {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
           />
         )}
-        <ModelHero data={data.hero} band="page" />
-        <OwnershipVerdict data={data.ownershipVerdict} band="soft" />
-        <AtAGlance data={data.atAGlance} band="page" />
-        <GenerationsGrid data={data.generations} band="soft" />
-        <EngineDatabase data={data.engineDatabase} band="page" />
-        <CommonProblems data={data.commonProblems} band="soft" />
-        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote} band="page" />
-        <ReplacementCosts data={data.replacementCosts} band="soft" />
-        <EngineEvolution data={data.engineEvolution} band="page" />
-        <WhoShouldBuy data={data.whoShouldBuy} band="soft" />
-        <CalculatorCTA data={data.calculatorCta} band="page" />
-        <TrustBlock data={data.trustBlock} band="soft" />
-        <FAQAccordion data={data.faq} band="page" />
-        <ClosingActionCards data={data.closingActionCards} band="soft" />
+        <ModelHero data={data.hero} slug={entry.slug} />
+        <OwnershipVerdict data={data.ownershipVerdict} slug={entry.slug} hero={data.hero} />
+        <AtAGlance data={data.atAGlance} slug={entry.slug} />
+        {/* sections 4-14 get the model slug (art, names) and the whole page (cross-section figures) */}
+        <GenerationsGrid data={data.generations} slug={entry.slug} page={data} />
+        <EngineDatabase data={data.engineDatabase} slug={entry.slug} page={data} />
+        <CommonProblems data={data.commonProblems} slug={entry.slug} page={data} />
+        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote} slug={entry.slug} page={data} />
+        <ReplacementCosts data={data.replacementCosts} slug={entry.slug} page={data} />
+        <EngineEvolution data={data.engineEvolution} slug={entry.slug} page={data} />
+        <WhoShouldBuy data={data.whoShouldBuy} slug={entry.slug} page={data} />
+        <CalculatorCTA data={data.calculatorCta} slug={entry.slug} page={data} />
+        <TrustBlock data={data.trustBlock} slug={entry.slug} page={data} />
+        <FAQAccordion data={data.faq} slug={entry.slug} page={data} />
+        <ClosingActionCards data={data.closingActionCards} slug={entry.slug} page={data} />
       </main>
     );
   }
@@ -205,17 +207,17 @@ export default async function CatchAllPage({ params }) {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
           />
         )}
-        <GenHero data={data.hero} band="page" />
-        <GenEngineDatabase data={data.engineDatabase} band="soft" />
-        <Overview data={data.overview} band="page" />
-        <BestWorstEngines data={data.bestWorstEngines} band="soft" />
-        <OwnershipEconomics data={data.ownershipEconomics} band="page" />
-        <GenProblems data={data.commonProblems} band="soft" />
-        <GenReplacementCosts data={data.replacementCosts} band="page" />
-        <CoreVariants data={data.coreVariants} parentSlug={entry.parent} band="soft" />
-        <GenMarketIntelligence data={data.marketIntelligence} band="page" />
-        <GenFAQAccordion data={data.faq} band="soft" />
-        <GenTrustCta data={data.trustCta} band="page" />
+        <GenHero data={data.hero} model={entry.parent || entry.slug} />
+        <GenEngineDatabase data={data.engineDatabase} hero={data.hero} model={entry.parent || entry.slug} />
+        <Overview data={data.overview} hero={data.hero} model={entry.parent || entry.slug} />
+        <BestWorstEngines data={data.bestWorstEngines} />
+        <OwnershipEconomics data={data.ownershipEconomics} hero={data.hero} model={entry.parent || entry.slug} />
+        <GenProblems data={data.commonProblems} page={data} />
+        <GenReplacementCosts data={data.replacementCosts} page={data} model={entry.parent || entry.slug} />
+        <CoreVariants data={data.coreVariants} page={data} model={entry.parent || entry.slug} />
+        <GenMarketIntelligence data={data.marketIntelligence} page={data} model={entry.parent || entry.slug} />
+        <GenFAQAccordion data={data.faq} name={genName(data)} />
+        <GenTrustCta data={data.trustCta} page={data} model={entry.parent || entry.slug} />
       </main>
     );
   }

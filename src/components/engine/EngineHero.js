@@ -178,13 +178,13 @@ export default function EngineHero({ data, slug = "" }) {
         </div>
 
         {/* phones / tablets, day theme: the engine on the loch-side hillside, top edge feathered into the page */}
-        <div className="relative -mx-4 mt-6 aspect-[4/3] bg-[url(/home/hero-loch-day-m.webp)] bg-cover bg-bottom [mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_86%,transparent)] sm:aspect-[16/9] md:-mx-8 md:mt-8 lg:hidden dark:hidden" role="img" aria-label={alt}>
+        <div className="relative -mx-5 sm:-mx-6 mt-6 aspect-[4/3] bg-[url(/home/hero-loch-day-m.webp)] bg-cover bg-bottom [mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_86%,transparent)] sm:aspect-[16/9] md:-mx-10 md:mt-8 lg:hidden dark:hidden" role="img" aria-label={alt}>
           <div className="absolute bottom-[16%] left-1/2 w-[50%] max-w-[360px] -translate-x-1/2 sm:bottom-[15%] sm:w-[34%]">
             <GroundedCar src={engine} priority sceneByTheme sizes="(max-width: 640px) 50vw, 360px" />
           </div>
         </div>
         {/* phones / tablets, night theme: the dusk scene between the CTA and the trust strip */}
-        <div className={`relative mt-6 hidden aspect-[882/656] overflow-hidden md:mt-8 md:aspect-[16/10] dark:-mx-4 dark:block md:dark:-mx-8 lg:dark:hidden ${FADE_Y}`}>
+        <div className={`relative mt-6 hidden aspect-[882/656] overflow-hidden md:mt-8 md:aspect-[16/10] dark:-mx-5 sm:dark:-mx-6 dark:block md:dark:-mx-10 lg:dark:hidden ${FADE_Y}`}>
           <Image src={scene} alt={alt} fill sizes="100vw" className="object-cover object-[50%_60%]" />
         </div>
 

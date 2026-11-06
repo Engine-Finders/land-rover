@@ -59,7 +59,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-navbar)] backdrop-blur">
-      <nav className="mx-auto flex w-full max-w-8xl items-center justify-between gap-3 px-4 py-3 md:px-8 md:py-4">
+      <nav className="mx-auto flex w-full max-w-8xl items-center justify-between gap-3 px-5 sm:px-6 py-3 md:px-10 xl:px-12 md:py-4">
         <Link href="/" className="flex shrink-0 items-center gap-3 text-[var(--color-text)] no-underline">
           <LogoMark />
         </Link>

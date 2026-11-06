@@ -1,256 +1,236 @@
-"use client";
+import LrIcon from "@/components/shared/LrIcon";
+import { BODY_SM, CONTAINER, H5 } from "@/lib/typeScale";
+import { Arrow, BACKDROP, BAND_PAGE, CAR_ART, CAR_ART_RATIO, EyebrowPill, SANS, SECTION_Y, modelArt, prose, H2_MODEL, INTRO } from "@/components/models/modelKit";
+import { generationLinks, resolveHref } from "@/components/models/ClosingActionLinks";
+import { UkPinMap } from "@/components/models/TrustBlockArt";
 
-import Image from "next/image";
-import Link from "next/link";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
-import { useTheme } from "@/components/shared/themeProvider";
-import { sectionBody, sectionButton, sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
+// Model page section 14, built to the approved reference: "Ready to Make / a Decision?" with a short
+// rule, the model's car on the loch-side backdrop (feathered into the band), then the three action
+// cards — explore (the model's line-up), diagnose (a green-tinted engine with the inputs the card
+// names) and compare specialists (a UK map with gold pins) — each with an icon tile, an accented
+// title, a rule, the text and its link. Phones stack the cards under the car.
+// The card JSON's planned URLs are mapped to live routes (ClosingActionLinks.js); a card that names
+// several generations gets a link per generation page instead of one dead "…" link.
 
-const cardThemes = [
-  {
-    accent: "var(--color-primary)",
-    border: "border-blue-200",
-    bg: "bg-[linear-gradient(135deg,#f7fbff_0%,#eef6ff_100%)]",
-    image: "/model/Hero-bg-image.webp",
-    cta: "Explore Now",
-    icon: "search",
-  },
-  {
-    accent: "#078f58",
-    border: "border-emerald-200",
-    bg: "bg-[linear-gradient(135deg,#f8fffb_0%,#eefaf5_100%)]",
-    image: "/e90/engine.webp",
-    cta: "Start Diagnosis",
-    icon: "stethoscope",
-  },
-  {
-    accent: "#ee8500",
-    border: "border-orange-200",
-    bg: "bg-[linear-gradient(135deg,#fffdf9_0%,#fff5e8_100%)]",
-    cta: "Compare Specialists",
-    icon: "handshake",
-  },
-];
+const CARD_SHELL = "relative flex flex-col overflow-hidden rounded-xl border border-lr-line shadow-[0_18px_44px_-36px_var(--lr-shadow)] lg:rounded-2xl";
+const TINT = {
+  explore: "bg-[color-mix(in_srgb,var(--lr-chip)_55%,var(--lr-card))]",
+  diagnose: "bg-[color-mix(in_srgb,var(--lr-chip)_55%,var(--lr-card))]",
+  compare: "bg-[color-mix(in_srgb,var(--lr-gold)_8%,var(--lr-card))]",
+};
+const KIND_BY_EMOJI = { "🔍": "explore", "🩺": "diagnose", "🤝": "compare" };
+const LINK_LABEL = { explore: "Explore Now", diagnose: "Start Diagnosis", compare: "Compare Specialists" };
 
-function cleanText(text = "") {
-  return text
-    .replaceAll("â†’", "")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// desktop art: the backdrop feathered into the band towards the heading and the cards
+const ART_FADE =
+  "[mask-image:linear-gradient(to_right,transparent_3%,#000_36%),linear-gradient(to_bottom,#000_62%,transparent)] [mask-composite:intersect]";
+const ART_FADE_M = "[mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_78%,transparent)]";
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const marker = "a Decision?";
-  const index = clean.indexOf(marker);
-
-  if (index === -1) return { before: clean, accent: "" };
-
-  return {
-    before: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
-}
-
-function ArrowIcon({ className = "h-7 w-7" }) {
+function Stethoscope({ className = "" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M11 2v2M5 2v2M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" />
+      <path d="M8 15a6 6 0 0 0 12 0v-3" />
+      <circle cx="20" cy="10" r="2" />
     </svg>
   );
 }
 
-function CardIcon({ name }) {
-  const paths = {
-    search: (
-      <>
-        <circle cx="10.5" cy="10.5" r="6.5" />
-        <path d="m16 16 5 5" />
-      </>
-    ),
-    stethoscope: (
-      <>
-        <path d="M6 3v5a4 4 0 0 0 8 0V3" />
-        <path d="M10 12v2a5 5 0 0 0 10 0v-1.5" />
-        <circle cx="20" cy="10" r="2" />
-        <path d="M4 3h4M12 3h4" />
-      </>
-    ),
-    handshake: (
-      <>
-        <path d="m8 12 2.4-2.4a2 2 0 0 1 2.8 0l.8.8a2 2 0 0 0 2.8 0L18 9" />
-        <path d="m5 13 5 5a2 2 0 0 0 2.8 0l.3-.3.7.7a2 2 0 0 0 2.8 0l2.4-2.4" />
-        <path d="m2 9 4-4 4 4-4 4-4-4ZM14 6l4-4 4 4-4 4-4-4Z" />
-      </>
-    ),
-  };
-
+function Handshake({ className = "" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-14 w-14 md:h-16 md:w-16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      {paths[name] || paths.search}
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+      <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+      <path d="m21 3 1 11h-2M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3M3 4h8" />
     </svg>
   );
 }
 
-function UkMapArt({ accent }) {
-  const pins = [
-    [56, 24],
-    [66, 39],
-    [58, 51],
-    [72, 58],
-    [50, 66],
-    [64, 72],
-    [76, 76],
-  ];
+function CardIcon({ kind }) {
+  const cls = "h-8 w-8 xl:h-10 xl:w-10";
+  if (kind === "diagnose") return <Stethoscope className={`${cls} text-lr-ink dark:text-lr-green`} />;
+  if (kind === "compare") return <Handshake className={`${cls} text-lr-gold`} />;
+  return <LrIcon name="scope-decision" tone="current" className={`${cls} text-lr-ink dark:text-lr-green`} />;
+}
 
+// the diagnostic tool's inputs, listed beside the stethoscope as in the reference
+function diagnoseInputs() {
+  return ["Symptoms", "Engine Code", "Mileage", "History"];
+}
+
+// title with its accent: a generation code / "Generations" in green, "My <Model>" in green,
+// "UK Specialists" in gold
+function accentTitle(title = "", kind) {
+  const patterns = {
+    explore: /\b(L\d{3}|D\d|P38A|Generations)\b/,
+    diagnose: /\bMy\s[\s\S]+$/,
+    compare: /\bUK Specialists\b|\bSpecialists\b/,
+  };
+  const m = title.match(patterns[kind]);
+  if (!m) return title;
+  const i = m.index;
+  const color = kind === "compare" ? "text-lr-gold" : "text-lr-ink dark:text-lr-green";
   return (
-    <svg aria-hidden="true" viewBox="0 0 180 220" className="pointer-events-none absolute right-0 top-0 h-[58%] w-[48%] opacity-80 md:w-[44%]">
-      <path
-        d="M80 10 65 24l9 15-18 12 10 17-16 13 20 13-11 20 22 8-16 28 28 8 10 31 24-17 25 13-2-31 20-11-19-21 10-28-20-16 4-28-28-1-10-28-27 8Z"
-        fill="#ead9bd"
+    <>
+      {title.slice(0, i)}
+      <span className={color}>{m[0]}</span>
+      {title.slice(i + m[0].length)}
+    </>
+  );
+}
+
+function CardArt({ kind, text, slug }) {
+  if (kind === "explore") {
+    const cars = {
+      "--cars-day": `url(/model/hero/${slug}-cars-day.webp)`,
+      "--cars-night": `url(/model/hero/${slug}-cars-night.webp)`,
+      "--cars-day-m": `url(/model/hero/${slug}-cars-day-m.webp)`,
+      "--cars-night-m": `url(/model/hero/${slug}-cars-night-m.webp)`,
+    };
+    return (
+      <span
+        className="absolute bottom-0 left-[16%] aspect-[1950/670] w-[92%] bg-contain bg-bottom bg-no-repeat bg-[image:var(--cars-day-m)] sm:bg-[image:var(--cars-day)] dark:bg-[image:var(--cars-night-m)] sm:dark:bg-[image:var(--cars-night)]"
+        style={cars}
+        aria-hidden="true"
       />
-      <path d="M33 105 16 121l22 8 17-12-22-12ZM72 189l-34 13 31 9 31-13-28-9Z" fill="#ead9bd" opacity="0.72" />
-      {pins.map(([cx, cy]) => (
-        <g key={`${cx}-${cy}`} transform={`translate(${cx} ${cy})`}>
-          <path d="M0-10c5.2 0 9 3.8 9 8.5C9 5-0 13-0 13S-9 5-9-1.5C-9-6.2-5.2-10 0-10Z" fill={accent} />
-          <circle r="3" fill="white" />
-        </g>
-      ))}
-    </svg>
-  );
-}
-
-function titlePartsFromCard(title = "") {
-  const clean = cleanText(title);
-
-  let match = clean.match(/^(Explore(?:\s+the)?)\s+(.+)$/i);
-  if (match) {
-    const trail = match[2].match(/^(.+?)\s+(In Depth|Generations)$/i);
-    if (trail) return { before: match[1], accent: trail[1], after: trail[2] };
-    return { before: match[1], accent: match[2], after: "" };
+    );
   }
-
-  match = clean.match(/^(Diagnose)\s+(.+)$/i);
-  if (match) return { before: match[1], accent: match[2], after: "" };
-
-  match = clean.match(/^(Compare)\s+(.+)$/i);
-  if (match) return { before: match[1], accent: match[2], after: "" };
-
-  return { before: clean, accent: "", after: "" };
+  if (kind === "diagnose") {
+    const inputs = diagnoseInputs(text);
+    return (
+      <>
+        <span
+          className="absolute -right-[6%] -top-[6%] h-[118%] w-[62%] bg-[url(/home/engine-core.webp)] bg-contain bg-right bg-no-repeat opacity-60 [filter:grayscale(1)_sepia(0.4)_hue-rotate(62deg)_saturate(1.05)_brightness(1.12)] dark:opacity-35"
+          aria-hidden="true"
+        />
+        {inputs.length > 0 && (
+          <ul className="absolute left-[92px] top-5 space-y-1.5 sm:left-[104px] lg:max-xl:hidden xl:left-[124px] xl:top-6" aria-hidden="true">
+            {inputs.map((t) => (
+              <li key={t} className="flex items-center gap-2 text-[13px] font-medium text-lr-body xl:text-[14px]">
+                <LrIcon name="good-choice" tone="current" className="h-4 w-4 text-lr-ink dark:text-lr-green" />
+                {t}
+              </li>
+            ))}
+          </ul>
+        )}
+      </>
+    );
+  }
+  return <UkPinMap className="absolute right-[6%] top-3 h-[112%] max-w-[58%]" />;
 }
 
-function ActionCard({ card, index }) {
-  const theme = cardThemes[index] || cardThemes[0];
-  const titleParts = titlePartsFromCard(card.title);
+function ActionCard({ card, index, slug, gens }) {
+  const kind = KIND_BY_EMOJI[card.icon] || ["explore", "diagnose", "compare"][index] || "explore";
+  // strip raw path lists the copy carries ("… → /freelander/fl1/ • /freelander/l359/")
+  const text = (card.text || "").replace(/\s*→\s*\/\S+(?:\s*•\s*\/\S+)*/g, "").trim();
+  const href = resolveHref(card.href, kind === "diagnose" ? "diagnose" : "verdict");
+  const chips = kind === "explore" && !href ? gens : [];
+  const linkColor = kind === "compare" ? "text-lr-gold" : "text-lr-ink dark:text-lr-green";
 
   return (
-    <Link
-      href={card.href || "#"}
-      className={`group relative min-h-[250px] overflow-hidden rounded-md border ${theme.border} ${theme.bg} p-4 shadow-[0_10px_28px_rgba(10,26,43,0.10)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(10,26,43,0.16)] md:min-h-[270px] md:p-5 lg:min-h-[270px]`}
-      style={{ "--card-accent": theme.accent }}
-    >
-      <div className="pointer-events-none absolute right-0 top-0 h-[52%] w-[52%] bg-[radial-gradient(circle_at_70%_30%,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.2)_55%,transparent_100%)] md:h-[58%] md:w-[48%]" />
-      {theme.image ? (
-        <div className="pointer-events-none absolute right-0 top-0 h-[48%] w-[48%] md:h-[54%] md:w-[44%]">
-          <Image
-            src={theme.image}
-            alt=""
-            fill
-            className="object-contain object-right-top opacity-50 mix-blend-multiply"
-            sizes="(min-width: 1024px) 15vw, 40vw"
-          />
-        </div>
-      ) : (
-        <UkMapArt accent={theme.accent} />
-      )}
-      <div className="relative z-10 flex h-full max-w-[74%] flex-col items-start md:max-w-[78%]">
-        <span className="flex h-16 w-16 items-center justify-center rounded-md bg-white/86 text-[var(--card-accent)] shadow-[0_12px_26px_rgba(10,26,43,0.10)] md:h-20 md:w-20">
-          <CardIcon name={theme.icon} />
-        </span>
-        <h3 className="mt-5 text-[24px] font-bold leading-[1.06] text-black dark:text-black md:text-[26px] lg:text-[24px]">
-          <span dangerouslySetInnerHTML={{ __html: titleParts.before }} />
-          {titleParts.before ? <br className="md:hidden lg:block" /> : null}
-          {titleParts.accent ? (
-            <>
-              {" "}
-              <span className="text-[var(--card-accent)]" dangerouslySetInnerHTML={{ __html: titleParts.accent }} />
-            </>
-          ) : null}
-          {titleParts.after ? <> <span dangerouslySetInnerHTML={{ __html: titleParts.after }} /></> : null}
-        </h3>
-        <span className="mt-4 block h-1 w-12 rounded-full bg-[var(--card-accent)]" />
-        <p className={`mt-4 max-w-[360px] text-[var(--color-text)] ${sectionBody} md:text-[17px]`} dangerouslySetInnerHTML={{ __html: cleanText(card.text) }} />
-        <span className={`mt-auto inline-flex items-center gap-5 pt-6 font-bold text-[var(--card-accent)] ${sectionButton}`}>
-          {theme.cta}
-          <ArrowIcon className="h-6 w-6 transition-transform duration-200 group-hover:translate-x-1" />
+    <li className={`${CARD_SHELL} ${TINT[kind]}`}>
+      <div className="relative h-[150px] sm:h-[170px] xl:h-[190px]">
+        <CardArt kind={kind} text={text} slug={slug} />
+        <span className="absolute left-5 top-5 flex h-[60px] w-[60px] items-center justify-center rounded-2xl bg-lr-card shadow-[0_10px_24px_-14px_var(--lr-shadow)] sm:h-[68px] sm:w-[68px] xl:left-6 xl:top-6 xl:h-20 xl:w-20">
+          <CardIcon kind={kind} />
         </span>
       </div>
-    </Link>
+
+      <div className="relative flex flex-1 flex-col px-5 pb-5 sm:px-6 sm:pb-6 xl:px-7 xl:pb-7">
+        <h3 className={`${H5} font-semibold text-lr-head xl:text-[26px]`}>{accentTitle(card.title || "", kind)}</h3>
+        <span className={`mt-3 block h-[3px] w-10 rounded-full ${kind === "compare" ? "bg-lr-gold" : "bg-lr-green"}`} aria-hidden="true" />
+        {text && <p className={`${BODY_SM} mt-3 text-lr-body`} dangerouslySetInnerHTML={{ __html: prose(text) }} />}
+
+        <div className="mt-auto pt-5">
+          {href ? (
+            <a href={href} className={`group inline-flex items-center gap-3 text-[16px] font-semibold no-underline xl:text-[17px] ${linkColor}`}>
+              {LINK_LABEL[kind]}
+              <Arrow className="h-5 w-5 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          ) : chips.length > 0 ? (
+            <div className="flex flex-wrap items-center gap-2">
+              <span className={`mr-1 text-[15px] font-semibold ${linkColor}`}>Explore</span>
+              {chips.map((g) => (
+                <a
+                  key={g.href}
+                  href={g.href}
+                  className="rounded-full border border-lr-line-strong bg-lr-card/70 px-3 py-1 text-[13.5px] font-semibold text-lr-ink no-underline transition-colors hover:border-lr-green hover:bg-lr-card dark:text-lr-green"
+                >
+                  {g.label}
+                </a>
+              ))}
+            </div>
+          ) : null}
+        </div>
+      </div>
+    </li>
   );
 }
 
-export default function ClosingActionCards({ data, band = "page" }) {
-  const { theme } = useTheme();
-  if (!data) return null;
+// "Ready to Make a Decision?" -> "Ready to Make" / "a Decision?" (accent)
+function splitDecision(h2 = "") {
+  const m = h2.match(/^([\s\S]*\S)\s+(a\s+\S+)$/i);
+  return m ? { lead: m[1], accent: m[2] } : { lead: h2, accent: "" };
+}
 
-  const isDark = theme === "dark";
-  const rgb = sectionRgb(band, isDark);
-  const title = splitTitle(data.h2);
+export default function ClosingActionCards({ data, slug = "", page }) {
+  if (!data) return null;
+  const { lead, accent } = splitDecision(data.h2 || "");
+  const cards = data.cards || [];
+  const gens = generationLinks(page);
+  const art = modelArt(slug);
 
   return (
-    <section
-      className={`relative overflow-hidden ${sectionBgClass(band)} px-3 pt-2 pb-6 text-[var(--color-text)] md:px-6 md:pb-8`}
-      style={{ "--section-fade": rgb }}
-    >
-      <div className="absolute inset-x-0 top-0 h-[220px] md:h-[280px]">
-        <Image
-          src="/sec2-bg.webp"
-          alt=""
-          fill
-          className="object-cover object-[78%_center] md:object-[75%_center]"
-          sizes="100vw"
-        />
-        <div
-          className={
-            isDark
-              ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.62)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
-              : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.72)_0%,rgba(var(--section-fade),0.48)_40%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
-          }
-        />
-        <div
-          className={`pointer-events-none absolute inset-0 md:hidden ${
-            isDark
-              ? "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.7)_42%,transparent_72%)]"
-              : "bg-[radial-gradient(120%_85%_at_0%_20%,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_42%,transparent_72%)]"
-          }`}
-        />
-      </div>
+    <section className={`relative overflow-hidden ${BAND_PAGE} text-lr-head ${SANS}`}>
+      <div className={`${CONTAINER} ${SECTION_Y}`}>
+        <div className="relative lg:min-h-[300px] xl:min-h-[350px]">
+          {/* desktop: the car on the loch-side backdrop, feathered into the band */}
+          {art && (
+            <div className="pointer-events-none absolute -top-14 bottom-0 left-[38%] right-[calc(50%-50vw)] hidden lg:block xl:-top-16" style={art} aria-hidden="true">
+              <div className={`absolute inset-0 ${BACKDROP} ${ART_FADE}`} />
+              <div className={`absolute bottom-[2%] right-[5%] w-[70%] max-w-[640px] ${CAR_ART_RATIO} ${CAR_ART}`} />
+            </div>
+          )}
 
-      <div className="relative mx-auto w-full max-w-8xl">
-        <div className="relative max-w-[620px]">
-          <HeadingEyebrow text="NEXT STEPS" />
-          <h2 className="mt-3 max-w-[570px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-            <span dangerouslySetInnerHTML={{ __html: title.before }} />
-            {title.accent ? (
-              <>
-                <br />
-                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-              </>
-            ) : null}
-          </h2>
-          <p className={`mt-4 max-w-[500px] text-[var(--color-text)] ${sectionDescription} md:text-[17px]`}>
-            Everything you need to choose with confidence.
-            <br />
-            Data. Honesty. Specialists. All in one place.
-          </p>
+          <div className="relative lg:max-w-[40%]">
+            <EyebrowPill>Next Steps</EyebrowPill>
+            <h2 className={`${H2_MODEL} mt-3 text-balance text-lr-head md:mt-4`}>
+              {lead}
+              {accent && (
+                <>
+                  <br />
+                  <span className="text-lr-ink dark:text-lr-green">{accent}</span>
+                </>
+              )}
+            </h2>
+            <span className="mt-5 block h-[3px] w-12 rounded-full bg-lr-green xl:mt-6" aria-hidden="true" />
+            {data.subHeadline && (
+              <p className={`${INTRO} max-w-[30em]!`}>
+                {String(data.subHeadline)
+                  .split(/(?<=\.)\s+(?=Data\.)/)
+                  .map((line, i) => (
+                    <span key={i} className={i ? "sm:block" : ""} dangerouslySetInnerHTML={{ __html: (i ? " " : "") + prose(line) }} />
+                  ))}
+              </p>
+            )}
+          </div>
+
+          {/* phones / tablets: the car full-bleed under the heading */}
+          {art && (
+            <div className="relative -mx-5 sm:-mx-6 mt-5 aspect-[16/10] sm:aspect-[2/1] md:-mx-10 lg:hidden" style={art} aria-hidden="true">
+              <div className={`absolute inset-0 ${BACKDROP} ${ART_FADE_M}`} />
+              <div className={`absolute bottom-[8%] left-1/2 w-[84%] max-w-[560px] -translate-x-1/2 ${CAR_ART_RATIO} ${CAR_ART}`} />
+            </div>
+          )}
         </div>
 
-        <div className="mt-5 grid gap-4 md:grid-cols-3">
-          {(data.cards || []).map((card, index) => (
-            <ActionCard key={card.title || card.href} card={card} index={index} />
-          ))}
-        </div>
+        {cards.length > 0 && (
+          <ul className="relative mt-2 grid gap-4 sm:gap-5 lg:mt-6 lg:grid-cols-3 lg:gap-6">
+            {cards.map((card, i) => (
+              <ActionCard key={card.title || i} card={card} index={i} slug={slug} gens={gens} />
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );

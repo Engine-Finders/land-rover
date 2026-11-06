@@ -1,177 +1,245 @@
-"use client";
-
 import Image from "next/image";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { useTheme } from "@/components/shared/themeProvider";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
+import LrIcon from "@/components/shared/LrIcon";
+import { CONTAINER } from "@/lib/typeScale";
+import { H2_MODEL, SANS, prose } from "@/components/models/modelKit";
+import { localHtml } from "@/components/models/generationsFaqLinks";
+import { genCar, genCode } from "./genKit";
+import { TrustStrip } from "./ReplacementCosts";
 
-const GEN_TO_HOME = {
-  warning: "expensiveFailure",
-  wrench: "repairVsReplace",
-  car: "vehicle",
-  gauge: "trend",
-  chart: "trend",
-  shield: "safestBuy",
-  clock: "checkWatch",
-  tag: "quote",
-  engine: "engine",
-  refresh: "checkWatch",
-  dollar: "checkValue",
-  pin: "ukDelivery",
-  drum: "engine",
-  info: "note",
-};
+// Generation page section 9 - market intelligence, built to the approved Defender L316 reference:
+// the eyebrow, "Market Intelligence" headline and split rule; four insight cards (most requested
+// engines, most requested variants, average replacement cost, most common failures - each with its
+// round icon, its basis line and data tag at the foot) beside the live feed (vehicle with a thumbnail,
+// location, issue, enquiries, updated); then the five-point trust strip.
+// Phones: the cards stacked, the feed as one row per enquiry. Tablets: cards 2 x 2, feed below.
+// Large screens (1536px+): the reference row of four cards with the feed on the right.
 
-function toHomeIcon(name) {
-  return GEN_TO_HOME[name] || "note";
+const html = (raw) => localHtml(prose(raw || ""));
+const TAG = /\s*\[(PATTERN DATA|EM[-‑]\w+)\]\.?/i;
+const capital = (t = "") => String(t).trim().replace(/^[a-z]/, (c) => c.toUpperCase());
+
+// ["1. Td5 (…)", "2. …", "3. 2.2 Td4 (…) - based on UK specialist enquiry patterns [PATTERN DATA]"]
+// -> { items: ["Td5 (…)", …], basis: "Based on UK specialist enquiry patterns", tag: "[PATTERN DATA]" }
+function parseList(list = []) {
+  let basis = "";
+  let tag = "";
+  const items = list.map((raw) => {
+    let text = String(raw).replace(/^\s*\d+\.\s*/, "").trim();
+    const t = text.match(TAG);
+    if (t) {
+      tag = `[${t[1].replace("‑", "-")}]`;
+      text = text.replace(TAG, "").trim();
+    }
+    const b = text.match(/^(.*?)\s+[-–—]\s+(based on .+)$/i);
+    if (b) {
+      text = b[1];
+      basis = capital(b[2]);
+    }
+    return text;
+  });
+  return { items: items.filter(Boolean), basis, tag };
 }
 
-function splitVehicle(vehicle = "") {
-  const match = vehicle.match(/^(.*?)\s((?:E|F|G)\d{2}\b.*)$/);
-  if (!match) return { model: vehicle, chassis: "" };
-  return { model: match[1], chassis: match[2] };
+// "£1,800–£7,000 reconditioned, supply only [EM‑QUOTE]" -> figure / rest / tag
+function parseCost(raw = "") {
+  const text = String(raw).trim().replace(/\.$/, "");
+  const t = text.match(TAG);
+  const clean = text.replace(TAG, "").trim();
+  const m = clean.match(/^(£[\d,]+(?:\s?[–-]\s?£[\d,]+)?)\s*(.*)$/);
+  return { figure: m ? m[1] : clean, rest: m ? m[2].replace(/^\(|\)$/g, "").trim() : "", tag: t ? `[${t[1].replace("‑", "-")}]` : "" };
 }
 
-function splitEnquiries(enquiries = "") {
-  const [count, ...rest] = enquiries.split(" ");
-  return { count, label: rest.join(" ") };
-}
+const ICON_RING = "flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-ink/45 text-lr-ink xl:h-[54px] xl:w-[54px] 2xl:max-[1679px]:h-11 2xl:max-[1679px]:w-11 dark:border-lr-gold-line/55 dark:text-lr-gold";
+const STROKE = { fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round" };
 
-function StatCard({ icon, title, children }) {
+function CardIcon({ kind }) {
+  if (kind === "engines") return <LrIcon name="real-inquiries" tone="current" className="h-6 w-6" />;
+  if (kind === "variants") return <LrIcon name="vehicle" tone="current" className="h-6 w-6" />;
+  if (kind === "cost") return <span className="font-[family-name:var(--font-serif-display)] text-[24px] leading-none">£</span>;
   return (
-    <div className="glass-panel flex flex-col gap-2 rounded-[8px] p-3">
-      <div className="flex items-center gap-2">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-          <HomeIcon name={toHomeIcon(icon)} size={36} className="h-9 w-9" />
-        </span>
-        <p className="text-[0.68rem] font-semibold uppercase leading-[1.25] tracking-wide text-[var(--color-primary)]">{title}</p>
-      </div>
-      {children}
-    </div>
+    <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
+      <g {...STROKE}>
+        <path d="M10.4 4.2 2.6 17.8a1.8 1.8 0 0 0 1.6 2.7h15.6a1.8 1.8 0 0 0 1.6-2.7L13.6 4.2a1.8 1.8 0 0 0-3.2 0Z" />
+        <path d="M12 9.6v4.6M12 17.2h.01" />
+      </g>
+    </svg>
   );
 }
 
-function RankedList({ items }) {
+function Card({ kind, title, sub, children, basis, tag, art }) {
   return (
-    <ol className="flex flex-col gap-1">
-      {items?.map((item, index) => (
-        <li key={`${index}-${item}`} className="flex gap-1.5 text-[0.74rem] leading-[1.3] text-[var(--color-text)]">
-          <span className="font-semibold text-[var(--color-primary)]">{index + 1}.</span>
-          <span dangerouslySetInnerHTML={{ __html: item }} />
+    <article className="relative flex min-w-0 flex-col overflow-hidden rounded-xl border border-lr-line bg-lr-card p-5 shadow-[0_18px_44px_-36px_var(--lr-shadow)] xl:p-6 2xl:max-[1679px]:px-4 2xl:max-[1679px]:py-5">
+      <div className="flex items-start gap-3.5 2xl:gap-3">
+        <span className={ICON_RING}>
+          <CardIcon kind={kind} />
+        </span>
+        <div className="min-w-0 pt-0.5">
+          <h3 className="text-[14px] font-semibold uppercase leading-snug tracking-[0.02em] text-lr-ink xl:text-[15px] 2xl:max-[1679px]:text-[13.5px] dark:text-lr-green">{title}</h3>
+          {sub && <p className="mt-1 text-[12.5px] leading-snug text-lr-muted xl:text-[13px]">{sub}</p>}
+        </div>
+      </div>
+      <div className="mt-5 flex-1">{children}</div>
+      {(basis || tag) && (
+        <div className="relative mt-5 pr-20">
+          {basis && <p className="text-[12.5px] leading-snug text-lr-body xl:text-[13px]">{basis}</p>}
+          {tag && <p className="mt-1 text-[12.5px] font-medium text-lr-green xl:text-[13px]">{tag}</p>}
+          {art && <LrIcon name={art} tone="current" className="absolute bottom-0 right-0 h-14 w-[72px] text-lr-head/15 dark:text-white/15" />}
+        </div>
+      )}
+    </article>
+  );
+}
+
+function List({ items }) {
+  return (
+    <ol className="space-y-3.5">
+      {items.map((t, i) => (
+        <li key={i} className="flex gap-3 text-[14px] leading-[1.5] text-lr-head xl:text-[15px] 2xl:gap-2 2xl:max-[1679px]:text-[14px]">
+          <span className="w-4 shrink-0 font-medium">{i + 1}.</span>
+          <span className="min-w-0 [&_a]:text-inherit [&_a]:underline" dangerouslySetInnerHTML={{ __html: html(t) }} />
         </li>
       ))}
     </ol>
   );
 }
 
-export default function MarketIntelligence({ data, band = "page" }) {
-  const { theme } = useTheme();
-  if (!data) return null;
+function FeedIcon({ kind, className = "h-4 w-4 shrink-0" }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <g {...STROKE}>
+        {kind === "pin" && (
+          <>
+            <path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11Z" />
+            <circle cx="12" cy="10" r="2.3" />
+          </>
+        )}
+        {kind === "issue" && (
+          <>
+            <path d="M10.4 4.2 2.6 17.8a1.8 1.8 0 0 0 1.6 2.7h15.6a1.8 1.8 0 0 0 1.6-2.7L13.6 4.2a1.8 1.8 0 0 0-3.2 0Z" />
+            <path d="M12 9.6v4.6M12 17.2h.01" />
+          </>
+        )}
+        {kind === "refresh" && <path d="M19.5 8.5A8 8 0 0 0 5.4 6.6L4 8M4.5 15.5a8 8 0 0 0 14.1 1.9L20 16M4 3.8V8h4.2M20 20.2V16h-4.2" />}
+      </g>
+    </svg>
+  );
+}
 
-  const isDark = theme === "dark";
-  const feedBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
-  const feedBorder = isDark ? "border-white/10" : "border-[var(--color-border)]";
-  const feedText = isDark ? "text-white" : "text-[var(--color-text)]";
-  const feedMuted = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const feedSoft = isDark ? "text-white/50" : "text-[var(--color-text-soft)]";
-  const feedHeaderBg = isDark ? "bg-white/[0.03]" : "bg-[var(--color-page-soft)]";
-  const feedImageBg = isDark ? "bg-white/5" : "bg-[var(--color-page-soft)]";
+// "3 enquiries" -> { n: "3", label: "enquiries" }
+const splitCount = (t = "") => {
+  const m = String(t).match(/^(\d[\d,]*\+?)\s*(.*)$/);
+  return m ? { n: m[1], label: m[2] } : { n: "", label: String(t) };
+};
+
+function LiveFeed({ rows, car }) {
+  return (
+    <article className="min-w-0 overflow-hidden rounded-xl border border-lr-line bg-lr-card shadow-[0_18px_44px_-36px_var(--lr-shadow)]">
+      <h3 className="flex items-center gap-3 px-5 py-4 text-[15px] font-semibold uppercase tracking-[0.02em] text-lr-head xl:px-6 xl:py-5 xl:text-[16px]">
+        <LrIcon name="live-feed" tone="current" className="h-6 w-6 text-lr-ink dark:text-lr-green" />
+        Live Feed
+        <span className="relative ml-1 flex h-2 w-2" aria-hidden="true">
+          <span className="absolute inset-0 animate-ping rounded-full bg-lr-green/60 motion-reduce:animate-none" />
+          <span className="relative h-2 w-2 rounded-full bg-lr-green" />
+        </span>
+      </h3>
+      {/* tablets and up: the five columns */}
+      <div className="hidden border-t border-lr-line sm:block">
+        <div className="grid grid-cols-[minmax(0,1.35fr)_minmax(0,1.15fr)_minmax(0,1.15fr)_minmax(0,0.82fr)_minmax(0,0.92fr)] gap-2.5 bg-lr-panel/50 px-5 py-3 text-[10.5px] font-semibold uppercase tracking-[0.03em] text-lr-head 2xl:px-4">
+          <span>Vehicle</span>
+          <span>Location</span>
+          <span>Issue</span>
+          <span>Enquiries</span>
+          <span>Updated</span>
+        </div>
+      </div>
+      <ul className="divide-y divide-lr-line border-t border-lr-line">
+        {rows.map((r, i) => {
+          const c = splitCount(r.enquiries);
+          return (
+            <li key={`${r.vehicle}-${r.location}-${i}`} className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-x-3 gap-y-2 px-5 py-3.5 text-[13px] leading-snug text-lr-body sm:grid-cols-[minmax(0,1.35fr)_minmax(0,1.15fr)_minmax(0,1.15fr)_minmax(0,0.82fr)_minmax(0,0.92fr)] sm:gap-2.5 2xl:px-4 2xl:max-[1679px]:text-[12px]">
+              <span className="col-span-2 flex min-w-0 items-center gap-3 sm:col-span-1 xl:gap-2">
+                <span className="relative h-11 w-14 shrink-0 overflow-hidden rounded-md xl:h-10 xl:w-12 2xl:max-[1679px]:h-8 2xl:max-[1679px]:w-10 bg-[linear-gradient(180deg,#d9dfd3,#aab59f)] dark:bg-[linear-gradient(180deg,#2a3d33,#17261f)]">
+                  {car && <Image src={car} alt="" fill sizes="56px" className="object-contain p-0.5" />}
+                </span>
+                <span className="min-w-0 font-medium text-lr-head hyphens-auto [overflow-wrap:anywhere]" lang="en-GB" dangerouslySetInnerHTML={{ __html: html(r.vehicle) }} />
+              </span>
+              <span className="col-span-2 flex min-w-0 items-center gap-2 sm:col-span-1">
+                <FeedIcon kind="pin" className="h-4 w-4 shrink-0 text-lr-ink dark:text-lr-green" />
+                <span className="min-w-0 [overflow-wrap:anywhere]">{r.location}</span>
+              </span>
+              <span className="col-span-2 flex items-center gap-2 sm:col-span-1">
+                <FeedIcon kind="issue" className="h-4 w-4 shrink-0 text-lr-muted" />
+                <span dangerouslySetInnerHTML={{ __html: html(r.issue) }} />
+              </span>
+              <span className="leading-tight">
+                <strong className="block text-[15px] font-semibold text-lr-head">{c.n}</strong>
+                {c.label}
+              </span>
+              <span className="flex min-w-0 items-center gap-1.5 leading-tight">
+                <FeedIcon kind="refresh" className="h-4 w-4 shrink-0 text-lr-muted" />
+                <span className="min-w-0">{r.updated}</span>
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+    </article>
+  );
+}
+
+export default function MarketIntelligence({ data, page = null, model = "" }) {
+  if (!data) return null;
+  const engines = parseList(data.mostRequestedEngines);
+  const variants = parseList(data.mostRequestedVariants);
+  const failures = parseList(data.mostCommonFailures);
+  const cost = parseCost(data.averageReplacementCost);
+  const feed = data.liveFeed || [];
+  if (!engines.items.length && !variants.items.length && !failures.items.length && !cost.figure && !feed.length) return null;
+
+  const code = genCode(`${page?.hero?.h1 || ""} ${page?.hero?.tagPill || ""}`);
+  const car = genCar(page?.hero || {}, model);
+
+  const cards = [
+    engines.items.length > 0 && (
+      <Card key="e" kind="engines" title="Most Requested Engines" sub="(UK specialist enquiries)" basis={engines.basis} tag={engines.tag} art="engine">
+        <List items={engines.items} />
+      </Card>
+    ),
+    variants.items.length > 0 && (
+      <Card key="v" kind="variants" title="Most Requested Variants" sub="(Model-level requests)" basis={variants.basis} tag={variants.tag} art="vehicle">
+        <List items={variants.items} />
+      </Card>
+    ),
+    cost.figure && (
+      <Card key="c" kind="cost" title="Average Replacement Cost" sub={cost.rest ? `(${capital(cost.rest)})` : ""}>
+        <p className="whitespace-nowrap text-[28px] font-semibold leading-tight tracking-[-0.02em] text-lr-head xl:text-[30px] 2xl:max-[1679px]:text-[22px]">{cost.figure}</p>
+        {cost.rest && <p className="mt-2 text-[17px] leading-snug text-lr-body xl:text-[19px]">{cost.rest}</p>}
+        {cost.tag && <p className="mt-5 text-[14px] font-medium text-lr-green">{cost.tag}</p>}
+      </Card>
+    ),
+    failures.items.length > 0 && (
+      <Card key="f" kind="failures" title="Most Common Failures" basis={failures.basis} tag={failures.tag}>
+        <List items={failures.items} />
+      </Card>
+    ),
+  ].filter(Boolean);
 
   return (
-    <section className={`w-full border-t border-[var(--color-border)] py-8 text-[var(--color-text)] md:py-10 ${sectionBgClass(band)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-start">
-          <div>
-            <HeadingEyebrow text="MARKET INTELLIGENCE" />
-            <h2 className="mt-2 font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
-              {data.h2 || "Market Intelligence"}
-            </h2>
+    <section className={`bg-lr-page pb-10 pt-2 text-lr-head md:pb-14 xl:pb-16 ${SANS}`}>
+      <div className={CONTAINER}>
+        <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">{code ? `${code} enquiry data` : "Enquiry data"}</p>
+        <h2 className={`${H2_MODEL} mt-3.5 text-lr-head md:mt-4`}>Market Intelligence</h2>
+        <span className="mt-4 flex h-[3px] w-20 overflow-hidden rounded-full md:mt-5" aria-hidden="true">
+          <span className="w-[60%] bg-lr-ink dark:bg-lr-green" />
+          <span className="flex-1 bg-lr-gold-line" />
+        </span>
 
-            <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
-              <StatCard icon="chart" title="Most Requested E90 Engines (2025)">
-                <RankedList items={data.mostRequestedEngines} />
-              </StatCard>
-              <StatCard icon="car" title="Most Requested E90 Variants">
-                <RankedList items={data.mostRequestedVariants} />
-              </StatCard>
-              <StatCard icon="dollar" title="Average E90 Replacement Cost">
-                <p className="text-[0.82rem] font-semibold leading-[1.35] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: data.averageReplacementCost }} />
-                {data.averageReplacementCostNote ? (
-                  <p className="text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.averageReplacementCostNote }} />
-                ) : null}
-              </StatCard>
-              <StatCard icon="warning" title="Most Common E90 Failures">
-                <RankedList items={data.mostCommonFailures} />
-              </StatCard>
-            </div>
-          </div>
-
-          {data.liveFeed?.length > 0 ? (
-            <div className={`overflow-hidden rounded-[8px] border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${feedBorder} ${feedBg}`}>
-              <div className={`flex items-center gap-2 border-b px-4 py-3 text-[0.85rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedText}`}>
-                <HomeIcon name="trend" size={28} className="h-7 w-7 text-[var(--color-primary)]" />
-                Live Feed
-              </div>
-
-              <div className="overflow-x-auto">
-                <div className="min-w-[560px] md:min-w-0">
-                  <div className={`grid grid-cols-[1.3fr_0.9fr_1fr_0.7fr] gap-2 border-b px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedHeaderBg} ${feedSoft}`}>
-                    <span>Vehicle</span>
-                    <span>Location</span>
-                    <span>Issue</span>
-                    <span>Enquiries</span>
-                  </div>
-
-                  {data.liveFeed.map((row, index) => {
-                    const { model, chassis } = splitVehicle(row.vehicle);
-                    const { count, label } = splitEnquiries(row.enquiries);
-                    return (
-                      <div
-                        key={`${row.vehicle}-${row.location}`}
-                        className={`grid grid-cols-[1.3fr_0.9fr_1fr_0.7fr] items-center gap-2 px-4 py-3 text-[0.8rem] ${feedText} ${
-                          index === data.liveFeed.length - 1 ? "" : `border-b ${feedBorder}`
-                        }`}
-                      >
-                        <div className="flex items-center gap-2.5">
-                          <span className={`relative h-8 w-11 shrink-0 overflow-hidden rounded-[8px] ${feedImageBg}`}>
-                            <Image src="/live_feed.webp" alt={model} fill className="object-cover" sizes="44px" />
-                          </span>
-                          <div className="min-w-0">
-                            <p className={`truncate font-semibold ${feedText}`} dangerouslySetInnerHTML={{ __html: model }} />
-                            {chassis ? <p className={`truncate text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
-                          </div>
-                        </div>
-
-                        <div className={`flex items-center gap-1.5 ${feedMuted}`}>
-                          <HomeIcon name="ukDelivery" size={20} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-                          <span dangerouslySetInnerHTML={{ __html: row.location }} />
-                        </div>
-
-                        <div className={`flex items-center gap-1.5 ${feedMuted}`}>
-                          <HomeIcon name="expensiveFailure" size={20} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-                          <span dangerouslySetInnerHTML={{ __html: row.issue }} />
-                        </div>
-
-                        <div className="leading-[1.25]">
-                          <p className={`font-semibold ${feedText}`} dangerouslySetInnerHTML={{ __html: count }} />
-                          {label ? <p className={`text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {data.liveFeed[0]?.updated ? (
-                <div className={`flex items-center justify-end gap-1.5 border-t px-4 py-2.5 text-[0.72rem] ${feedBorder} ${feedSoft}`}>
-                  <HomeIcon name="checkWatch" size={20} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-                  <span dangerouslySetInnerHTML={{ __html: data.liveFeed[0].updated }} />
-                </div>
-              ) : null}
-            </div>
-          ) : null}
+        <div className="mt-6 grid gap-4 md:mt-8 xl:gap-5 2xl:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]">
+          {cards.length > 0 && <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4 xl:gap-5">{cards}</div>}
+          {feed.length > 0 && <LiveFeed rows={feed} car={car} />}
         </div>
+
+        <TrustStrip className="mt-5 md:mt-6" />
       </div>
     </section>
   );

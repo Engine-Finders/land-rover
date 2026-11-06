@@ -259,7 +259,7 @@ export default function HomeMarket({ data }) {
         {/* phones / tablets: the car gets its own full-width band under the intro (text never sits on it);
             top and bottom edges fade into the page through a mask. Day: the light studio shot (a wider band,
             so the whole car fits); night: the same car in the dark studio */}
-        <div className="relative -mx-4 mt-2 md:-mx-8 xl:hidden" aria-hidden="true">
+        <div className="relative -mx-5 sm:-mx-6 mt-2 md:-mx-10 xl:hidden" aria-hidden="true">
           <div className={`relative aspect-[2/1] sm:aspect-[16/7] dark:hidden ${FADE_BAND}`}>
             <Image src={data.image} alt="" fill quality={90} className="object-cover object-[50%_60%]" sizes="100vw" />
           </div>

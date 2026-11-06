@@ -1,17 +1,19 @@
 // Site-wide container and type scale for the redesigned pages (home, model variants, engines).
-// Desktop sizes (xl, 1280px and up) follow the typography brief: H1 60, H2 54, H3 44, H4 34,
+// Desktop sizes (xl, 1280px and up) follow the typography brief: H1 60, H2 48 (44 on 1280-1439px), H3 44, H4 34,
 // H5 24, H6 20; description text at most 18; highlighted numbers 19-20; badges, icon labels and
 // small text 15-17. Smaller screens step down. H1/H2 use the serif at regular weight; H3-H6 the
 // sans at medium weight.
 
 // same width and side padding as the navbar and footer, so every section lines up with them
-export const CONTAINER = "mx-auto w-full max-w-8xl px-4 md:px-8";
+export const CONTAINER = "mx-auto w-full max-w-8xl px-5 sm:px-6 md:px-10 xl:px-12";
 
 const SERIF = "font-[family-name:var(--font-serif-display)] font-normal tracking-[-0.01em]";
 const SANS = "font-[family-name:var(--font-instrument-sans)] font-medium";
 
 export const H1 = `${SERIF} text-[34px] leading-[1.1] sm:text-[42px] md:text-[48px] lg:text-[54px] xl:text-[60px]`;
-export const H2 = `${SERIF} text-[30px] leading-[1.15] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[54px]`;
+// One H2 size on every page (home, model, generation, variant, engine): 48px from lg, a step down to
+// 44px on 1280-1439px laptops (where two-column section heads are narrowest), 48px again from 1440px
+export const H2 = `${SERIF} text-[30px] leading-[1.15] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:max-[1439px]:text-[44px]!`;
 export const H3 = `${SANS} text-[26px] leading-[1.2] md:text-[32px] lg:text-[38px] xl:text-[44px]`;
 export const H4 = `${SANS} text-[22px] leading-[1.25] md:text-[27px] lg:text-[31px] xl:text-[34px]`;
 export const H5 = `${SANS} text-[19px] leading-[1.3] md:text-[21px] lg:text-[22px] xl:text-[24px]`;

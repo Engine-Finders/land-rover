@@ -1648,5 +1648,30 @@
     9.0
    ]
   ]
+ },
+ "/variant/cars/land-rover-defender-110-county-coniston-green.webp": {
+  "w": 701,
+  "h": 423,
+  "top": 0.0,
+  "bottom": 0.0,
+  "left": 0.0,
+  "right": 0.0,
+  "wheels": [
+   [
+    12.9,
+    95.0,
+    5.4
+   ],
+   [
+    53.8,
+    100.0,
+    5.0
+   ],
+   [
+    89.7,
+    88.2,
+    5.0
+   ]
+  ]
  }
 }

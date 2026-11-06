@@ -1,285 +1,233 @@
-"use client";
+import GroundedCar from "@/components/variant/GroundedCar";
+import LrIcon from "@/components/shared/LrIcon";
+import { CONTAINER } from "@/lib/typeScale";
+import { H2_MODEL, SANS, prose, splitHeading } from "@/components/models/modelKit";
+import { localHtml } from "@/components/models/generationsFaqLinks";
+import { engineDbCar } from "./genKit";
 
-import Image from "next/image";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { useTheme } from "@/components/shared/themeProvider";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+// Generation page section 7 - engine replacement costs, built to the approved Defender L316
+// reference: the eyebrow, "<code> Engine Replacement Costs — / By Engine and Condition" with the last
+// word in green and a short intro; on the right the hillside with the generation's car standing on
+// the table's top edge; the six-column table (icons in the head - variant, engine code, used,
+// reconditioned, rebuilt, labour hours); the data note when the JSON has one; and the five-point
+// trust strip.
+// Phones / tablets: the copy, the car full-bleed, one card per variant, the strip stacked.
 
-const HEADER_IMAGE = "/sec2-bg.webp";
-const mobileTitleShadow =
-  "[text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)]";
+const BG = "bg-[url(/home/hero-loch-day-m.webp)] sm:bg-[url(/home/hero-loch-day.webp)] dark:bg-[url(/home/hero-loch-night-m.webp)] sm:dark:bg-[url(/home/hero-loch-night.webp)]";
+const KEYS = ["variant", "engineCode", "usedSupply", "reconditionedSupply", "rebuiltSupply", "labourHours"];
+const DEFAULT_COLUMNS = ["Variant", "Engine Code", "Used (Supply)", "Reconditioned (Supply)", "Rebuilt (Supply)", "Labour Hours"];
+const WIDTHS = [14, 15.6, 14.6, 19.5, 16.6, 14.7];
+const html = (raw) => localHtml(prose(raw || ""));
+const LINKS = "[&_a]:text-inherit [&_a]:no-underline hover:[&_a]:underline";
+const STROKE = { fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round" };
 
-const GEN_TO_HOME = {
-  warning: "expensiveFailure",
-  wrench: "repairVsReplace",
-  car: "vehicle",
-  gauge: "trend",
-  chart: "trend",
-  shield: "safestBuy",
-  clock: "checkWatch",
-  tag: "quote",
-  engine: "engine",
-  refresh: "checkWatch",
-  dollar: "checkValue",
-  pin: "ukDelivery",
-  drum: "engine",
-  info: "note",
-};
-
-function toHomeIcon(name) {
-  return GEN_TO_HOME[name] || "note";
-}
-
-const COLUMN_ICONS = ["car", "engine", "tag", "refresh", "shield", "clock"];
-
-function DesktopRow({ row, isDark }) {
-  const rowClass = isDark
-    ? "bg-black text-white"
-    : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const codeText = isDark ? "text-[var(--color-text)]" : "text-[var(--color-primary)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
-
+function HeadIcon({ index, className = "h-6 w-6 shrink-0 xl:h-7 xl:w-7" }) {
+  if (index === 0) return <LrIcon name="vehicle" tone="current" className={className} />;
+  if (index === 1) return <LrIcon name="engine" tone="current" className={className} />;
   return (
-    <div
-      className={`grid grid-cols-[1.3fr_1fr_1fr_1.1fr_1fr_0.8fr] items-center gap-px ${rowClass} px-5 py-3.5 text-[0.85rem] border-b ${borderBottom} last:border-b-0`}
-    >
-      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.variant }} />
-      <span className={`px-3 ${codeText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engineCode }} />
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.usedSupply }} />
-      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.reconditionedSupply }} />
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.rebuiltSupply }} />
-      <span className={`px-3 ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.labourHours }} />
-    </div>
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <g {...STROKE}>
+        {index === 2 && (
+          <>
+            <path d="M3.5 12.6V4.4a.9.9 0 0 1 .9-.9h8.2l8 8a1.5 1.5 0 0 1 0 2.1l-6.3 6.3a1.5 1.5 0 0 1-2.1 0Z" />
+            <circle cx="8.2" cy="8.2" r="1.5" />
+          </>
+        )}
+        {index === 3 && <path d="M20 8.5A8.5 8.5 0 0 0 5 6.4L3.5 8M4 15.5a8.5 8.5 0 0 0 15 2.1l1.5-1.6M3.5 3.6V8h4.4M20.5 20.4V16h-4.4" />}
+        {index === 4 && (
+          <>
+            <path d="M12 2.8 19.5 5.8v5.6c0 4.7-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.1-7.5-9.8V5.8Z" />
+            <path d="m8.6 12 2.4 2.4 4.6-4.9" />
+          </>
+        )}
+        {index === 5 && (
+          <>
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 7.5V12l3 2" />
+          </>
+        )}
+      </g>
+    </svg>
   );
 }
 
-const METRIC_ROWS = [
-  { key: "usedSupply", label: "Used (Supply)", icon: "tag" },
-  { key: "reconditionedSupply", label: "Reconditioned (Supply)", icon: "refresh" },
-  { key: "rebuiltSupply", label: "Rebuilt (Supply)", icon: "shield" },
-  { key: "labourHours", label: "Labour Hours", icon: "clock" },
+const STRIP = [
+  { icon: "genuine-failure-data", title: "Transparent. Specialist. Trusted.", text: "All prices are supply only and reflect real UK market data. Labour hours are estimates based on specialist workshop experience.", ring: true },
+  { icon: "pound", title: "Specialist Prices", text: "Real-world pricing from UK engine specialists." },
+  { icon: "safe-buy", title: "Quality Assured", text: "Every rebuilder in our network is vetted, rated and reviewed by real owners." },
+  { icon: "commercial", title: "Expert Fitment", text: "Labour guidance from Land Rover specialist workshops." },
+  { icon: "uk-wide-delivery", title: "UK Wide Delivery", text: "Supply-only or full supply & fit, nationwide." },
 ];
 
-function FuelTable({ title, icon, rows, isDark, tone }) {
-  if (!rows?.length) return null;
-
-  const toneBg = tone === "diesel" ? "bg-[var(--color-primary)]" : "bg-[#189454]";
-  const tabBg = isDark ? (tone === "diesel" ? "bg-[var(--color-chrome)]" : "bg-[#0f3b28]") : toneBg;
-  const rowBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
-  const rowText = isDark ? "text-white" : "text-[var(--color-text)]";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const labelBg = isDark ? "bg-white/[0.03]" : "bg-[var(--color-page-soft)]";
-  const gridCols = `120px repeat(${rows.length}, 130px)`;
-
+function StripIcon({ item }) {
+  const icon =
+    item.icon === "pound" ? (
+      <span className="flex h-9 w-9 items-center justify-center rounded-full border-[1.8px] border-current font-[family-name:var(--font-serif-display)] text-[20px] leading-none xl:h-10 xl:w-10" aria-hidden="true">
+        £
+      </span>
+    ) : (
+      <LrIcon name={item.icon} tone="current" className="h-9 w-9 xl:h-10 xl:w-10" />
+    );
   return (
-    <div className={`overflow-hidden rounded-[8px] border ${cellDivider} ${rowBg} shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur`}>
-      <div className={`flex items-center gap-2 ${tabBg} px-4 py-2.5 text-[0.78rem] font-semibold uppercase tracking-wide text-white`}>
-        <HomeIcon name={toHomeIcon(icon)} size={24} className="h-6 w-6" />
-        {title}
-      </div>
-
-      <div className="overflow-x-auto">
-        <div style={{ minWidth: `calc(120px + ${rows.length} * 130px)` }}>
-          <div className={`grid border-b ${cellDivider}`} style={{ gridTemplateColumns: gridCols }}>
-            <div className={labelBg} />
-            {rows.map((row, index) => (
-              <div
-                key={`${row.engineCode}-${index}`}
-                className={`flex flex-col items-center justify-center gap-1 border-l px-2 py-3 text-center ${cellDivider} ${
-                  index === 0 ? `${toneBg} text-white` : `${rowBg} ${rowText}`
-                }`}
-                style={
-                  index === 0
-                    ? { clipPath: "polygon(0 0, 100% 0, 100% 78%, 88% 100%, 0 100%)" }
-                    : undefined
-                }
-              >
-                <HomeIcon name={tone === "diesel" ? "engine" : "vehicle"} size={24} className="h-6 w-6" />
-                <span className="text-[0.72rem] font-bold leading-tight" dangerouslySetInnerHTML={{ __html: row.variant }} />
-                <span
-                  className={`text-[0.66rem] leading-tight ${index === 0 ? "text-white/80" : "text-[var(--color-primary)]"}`}
-                  dangerouslySetInnerHTML={{ __html: row.engineCode }}
-                />
-              </div>
-            ))}
-          </div>
-
-          {METRIC_ROWS.map((metric, metricIndex) => (
-            <div
-              key={metric.key}
-              className={`grid ${metricIndex === METRIC_ROWS.length - 1 ? "" : `border-b ${cellDivider}`}`}
-              style={{ gridTemplateColumns: gridCols }}
-            >
-              <div className={`flex items-center gap-1.5 border-r px-2 py-3 text-[0.68rem] font-semibold uppercase tracking-wide ${cellDivider} ${labelBg} ${mutedText}`}>
-                <HomeIcon name={toHomeIcon(metric.icon)} size={20} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-                {metric.label}
-              </div>
-              {rows.map((row, rowIndex) => (
-                <div
-                  key={`${row.engineCode}-${rowIndex}`}
-                  className={`flex items-center justify-center border-l px-2 py-3 text-center text-[0.78rem] ${cellDivider} ${rowText}`}
-                  dangerouslySetInnerHTML={{ __html: row[metric.key] }}
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+    <span
+      className={`flex shrink-0 items-center justify-center text-lr-ink dark:text-lr-gold ${
+        item.ring ? "h-16 w-16 rounded-full border-[1.5px] border-lr-ink/40 xl:h-[72px] xl:w-[72px] dark:border-lr-gold-line/55" : "h-12 w-12"
+      }`}
+    >
+      {icon}
+    </span>
   );
 }
 
-export default function ReplacementCosts({ data, band = "page" }) {
-  const { theme } = useTheme();
-  if (!data) return null;
+// the five-point trust strip under the cost tables (also closes section 9)
+export function TrustStrip({ className = "" }) {
+  return (
+    <ul className={`grid overflow-hidden rounded-xl border border-lr-line bg-lr-card shadow-[0_18px_44px_-36px_var(--lr-shadow)] sm:grid-cols-2 lg:grid-cols-[minmax(0,1.5fr)_repeat(4,minmax(0,1fr))] ${className}`}>
+      {STRIP.map((s, i) => (
+        <li
+          key={s.title}
+          className={`relative flex items-center gap-4 px-5 py-4 lg:px-5 lg:py-5 xl:px-6 ${i > 0 ? "border-t border-lr-line lg:border-t-0" : ""} ${i === 0 ? "sm:col-span-2 lg:col-span-1" : ""} ${
+            i === 2 || i === 4 ? "sm:border-l sm:border-lr-line lg:border-l-0" : ""
+          } ${i > 0 ? "lg:before:absolute lg:before:inset-y-5 lg:before:left-0 lg:before:w-px lg:before:bg-lr-line" : ""}`}
+        >
+          <StripIcon item={s} />
+          <div className="min-w-0">
+            <p className="text-[15px] font-semibold leading-snug text-lr-head xl:text-[16px]">{s.title}</p>
+            <p className="mt-1 text-[13.5px] leading-[1.5] text-lr-body xl:text-[14px]">{s.text}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
-  const isDark = theme === "dark";
-  const rgb = sectionRgb(band, isDark);
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
-  const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
+export default function ReplacementCosts({ data, page = null, model = "" }) {
+  const rows = data?.rows || [];
+  if (!data || !rows.length) return null;
 
-  const petrolRows = data.rows?.filter((row) => row.fuelType === "petrol") || [];
-  const dieselRows = data.rows?.filter((row) => row.fuelType === "diesel") || [];
+  const { lead, accent } = splitHeading(prose(data.h2 || ""));
+  const words = accent.split(" ");
+  const last = words.pop();
+  const columns = KEYS.map((_, i) => data.columns?.[i] || DEFAULT_COLUMNS[i]);
+  const car = engineDbCar(page?.hero || { h1: data.h2 }, model);
 
   return (
-    <section
-      className={`relative text-[var(--color-text)] ${sectionBgClass(band)}`}
-      style={{ "--section-fade": rgb }}
-    >
-      <div className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0">
-          <Image
-            src={HEADER_IMAGE}
-            alt=""
-            fill
-            className="object-cover object-[78%_center] md:object-[75%_center]"
-            sizes="100vw"
-            priority
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.55)_50%,rgba(var(--section-fade),1)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.15)_78%,rgba(var(--section-fade),0)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.55)_0%,rgba(var(--section-fade),0.32)_45%,rgba(var(--section-fade),1)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.1)_78%,rgba(var(--section-fade),0)_100%)]"
-            }
-          />
-          {/* Desktop: kill hard bottom edge / “border” under the header image */}
-          <div className="absolute inset-x-0 bottom-0 hidden h-20 bg-[linear-gradient(0deg,rgba(var(--section-fade),1)_0%,transparent_100%)] md:block" />
-          <div
-            className={`absolute inset-0 md:hidden ${
-              isDark
-                ? "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.65)_45%,transparent_75%)]"
-                : "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.88)_0%,rgba(var(--section-fade),0.5)_45%,transparent_75%)]"
-            }`}
-          />
-        </div>
-
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-6 pt-5 md:px-8 md:pb-8 md:pt-6">
-          <HeadingEyebrow text="REPLACEMENT COSTS" />
-          <h2
-            className={`mt-2 max-w-[720px] font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${
-              isDark
-                ? "text-white md:text-[var(--color-text)]"
-                : `text-black md:text-[var(--color-text)] ${mobileTitleShadow} md:[text-shadow:none]`
-            }`}
-            dangerouslySetInnerHTML={{ __html: data.h2 }}
-          />
-        </div>
-      </div>
-
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-8 md:px-8 md:pb-10">
-        {data.subHeadline ? (
-          <p
-            className="max-w-[560px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:text-[1.08rem] md:leading-[1.42]"
-            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-          />
-        ) : null}
-
-        <div className="mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid grid-cols-[1.3fr_1fr_1fr_1.1fr_1fr_0.8fr] gap-px ${headerBg} px-5 py-3 text-[0.82rem] font-semibold text-white`}>
-            {data.columns?.map((col, index) => (
-              <span key={col} className={`flex items-center gap-2 px-3 border-r ${headerDivider} last:border-r-0`}>
-                <HomeIcon name={toHomeIcon(COLUMN_ICONS[index])} size={24} className="h-6 w-6 shrink-0" />
-                {col}
-              </span>
-            ))}
-          </div>
-          <div className={bodyWrapperBg}>
-            {data.rows?.map((row, index) => (
-              <DesktopRow key={`${row.engineCode}-${row.variant || index}`} row={row} isDark={isDark} />
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-6 flex flex-col gap-4 md:hidden">
-          <FuelTable title="Petrol Engines" icon="tag" rows={petrolRows} isDark={isDark} tone="petrol" />
-          <FuelTable title="Diesel Engines" icon="engine" rows={dieselRows} isDark={isDark} tone="diesel" />
-        </div>
-
-        {data.trustStrip?.length > 0 ? (
-          <div className="glass-panel mt-6 rounded-[8px] p-3 md:flex md:items-stretch md:gap-0 md:p-5">
-            <div className="flex flex-col md:hidden">
-              {Array.from({ length: Math.ceil(data.trustStrip.length / 2) }, (_, row) => {
-                const pair = data.trustStrip.slice(row * 2, row * 2 + 2);
-                return (
-                  <div
-                    key={row}
-                    className={`flex items-stretch py-3 first:pt-0 last:pb-0 ${row > 0 ? `border-t ${isDark ? "border-white/15" : "border-[var(--color-border)]"}` : ""}`}
-                  >
-                    {pair.map((item, i) => (
-                      <div key={item.title} className="flex flex-1 items-stretch">
-                        {i > 0 ? (
-                          <span
-                            aria-hidden="true"
-                            className={`mx-3 my-1 w-px shrink-0 self-center ${isDark ? "bg-white/15" : "bg-[var(--color-border)]"}`}
-                            style={{ height: "70%" }}
-                          />
-                        ) : null}
-                        <div className="flex flex-1 items-start gap-3">
-                          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                            <HomeIcon name={toHomeIcon(item.icon)} size={40} className="h-10 w-10" />
-                          </span>
-                          <div className="min-w-0">
-                            <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
-                            <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                );
-              })}
+    <section className={`relative overflow-hidden bg-lr-page pb-10 text-lr-head md:pb-14 xl:pb-16 ${SANS}`}>
+      <div className={`${CONTAINER} pt-10 md:pt-12 lg:pt-10 xl:pt-11`}>
+        <div className="relative lg:pb-7">
+          {/* laptops: the hillside and the car, from the screen's right edge to the table's top */}
+          <div className="pointer-events-none absolute -top-10 bottom-0 right-[calc(50%-50vw)] hidden w-[62vw] lg:block xl:-top-11" aria-hidden="true">
+            <div className="absolute inset-0 [mask-image:linear-gradient(90deg,transparent,rgba(0,0,0,0.6)_26%,#000_48%)]">
+              <div className={`absolute inset-0 bg-cover bg-[center_32%] ${BG} brightness-[1.05] contrast-[.92] hue-rotate-[14deg] saturate-[.78] dark:filter-none [mask-image:linear-gradient(180deg,transparent,#000_14%)]`} />
             </div>
-
-            {data.trustStrip.map((item, index) => (
-              <div key={item.title} className="hidden items-stretch md:flex">
-                {index > 0 ? (
-                  <span
-                    aria-hidden="true"
-                    className={`mx-3 my-1 w-px shrink-0 self-center ${isDark ? "bg-white/15" : "bg-[var(--color-border)]"}`}
-                    style={{ height: "70%" }}
-                  />
-                ) : null}
-                <div className="flex flex-1 items-start gap-3 pl-3">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                    <HomeIcon name={toHomeIcon(item.icon)} size={40} className="h-10 w-10" />
-                  </span>
-                  <div>
-                    <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
-                    <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
-                  </div>
-                </div>
+            {car && (
+              <div className="absolute bottom-[2px] right-[12vw] w-[25vw] max-w-[460px]">
+                <GroundedCar src={car} sceneByTheme sizes="(min-width: 1024px) 25vw, 1px" />
               </div>
-            ))}
+            )}
           </div>
-        ) : null}
 
-        {data.note ? <p className="mt-4 text-[0.78rem] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.note }} /> : null}
+          <div className="relative max-w-[760px] lg:max-w-[calc(54vw_-_56px)] xl:max-w-[calc(54vw_-_max(48px,50vw_-_752px)_-_16px)]">
+            <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">Replacement Costs</p>
+            <h2 className={`${H2_MODEL} mt-3.5 text-lr-head md:mt-4 xl:text-[44px]!`}>
+              {lead}
+              {accent && (
+                <>
+                  {"\u00a0"}—<br />
+                  {words.length > 0 && `${words.join(" ")} `}
+                  <span className="text-lr-ink dark:text-lr-green">{last}</span>
+                </>
+              )}
+            </h2>
+            <p className="mt-3 max-w-[34em] text-[15px] leading-[1.6] text-lr-body md:mt-4 md:text-[16px] xl:text-[17px]">
+              Real UK pricing for used, reconditioned and rebuilt engines —<br className="hidden lg:block" /> supply only, with labour guidance.
+            </p>
+          </div>
+        </div>
+
+        {/* phones / tablets: the hillside with the car, full-bleed */}
+        {car && (
+          <div className="relative -mx-5 mt-6 aspect-[2/1] sm:-mx-6 sm:aspect-[5/2] md:-mx-10 md:aspect-[3/1] lg:hidden" aria-hidden="true">
+            <div className={`absolute inset-0 bg-cover bg-[center_70%] ${BG} brightness-[1.05] contrast-[.92] hue-rotate-[14deg] saturate-[.78] dark:filter-none [mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_80%,transparent)]`} />
+            <div className="absolute bottom-[8%] left-1/2 w-[56%] max-w-[400px] -translate-x-1/2 sm:w-[44%] md:w-[34%]">
+              <GroundedCar src={car} sceneByTheme sizes="(max-width: 640px) 56vw, 400px" />
+            </div>
+          </div>
+        )}
+
+        {/* phones / tablets: one card per variant */}
+        <ul className={`relative grid gap-3 md:grid-cols-2 md:gap-4 xl:hidden ${car ? "-mt-6 sm:-mt-8 lg:mt-0" : "mt-6"}`}>
+          {rows.map((r, i) => (
+            <li key={`${r.variant}-${i}`} className="min-w-0 rounded-xl border border-lr-line bg-lr-card p-4 shadow-[0_18px_44px_-36px_var(--lr-shadow)] md:p-5">
+              <div className="flex items-baseline justify-between gap-3">
+                <h3 className={`text-[18px] font-semibold leading-snug text-lr-head ${LINKS}`} dangerouslySetInnerHTML={{ __html: html(r.variant) }} />
+                {r.labourHours && (
+                  <span className="flex shrink-0 items-center gap-1.5 text-[13px] text-lr-muted">
+                    <HeadIcon index={5} className="h-4 w-4" />
+                    {r.labourHours}
+                  </span>
+                )}
+              </div>
+              {r.engineCode && <p className={`mt-0.5 text-[14px] text-lr-body ${LINKS}`} dangerouslySetInnerHTML={{ __html: html(r.engineCode) }} />}
+              <dl className="mt-3.5 grid grid-cols-3 gap-2 border-t border-lr-line pt-3.5">
+                {[2, 3, 4].map((k) => (
+                  <div key={k} className="min-w-0">
+                    <dt className="text-[12px] leading-snug text-lr-muted">{columns[k].replace(/\s*\(Supply\)/i, "")}</dt>
+                    <dd className="mt-0.5 whitespace-nowrap text-[13px] font-semibold leading-snug tracking-[-0.01em] text-lr-head min-[400px]:text-[14px]" dangerouslySetInnerHTML={{ __html: html(r[KEYS[k]]) || "—" }} />
+                  </div>
+                ))}
+              </dl>
+            </li>
+          ))}
+        </ul>
+
+        {/* laptops: the table, on the hillside's foot */}
+        <div className="relative hidden overflow-hidden rounded-xl border border-lr-line bg-lr-card shadow-[0_28px_70px_-44px_var(--lr-shadow)] xl:block dark:bg-lr-card/85 dark:backdrop-blur-sm">
+          <table className="w-full table-fixed border-collapse">
+            <caption className="sr-only">{prose(data.h2 || "")}</caption>
+            <colgroup>
+              {WIDTHS.map((w, i) => (
+                <col key={i} style={{ width: `${w}%` }} />
+              ))}
+            </colgroup>
+            <thead className="border-b border-lr-line">
+              <tr>
+                {columns.map((c, i) => (
+                  <th key={c} scope="col" className="border-r border-lr-line px-4 py-5 align-middle last:border-r-0 min-[1440px]:px-6">
+                    <span className={`flex items-center gap-3 text-[13px] font-semibold uppercase leading-snug tracking-[0.02em] text-lr-ink min-[1440px]:text-[14.5px] dark:text-lr-green ${i >= 2 ? "justify-center" : ""}`}>
+                      <HeadIcon index={i} />
+                      {c}
+                    </span>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r, ri) => (
+                <tr key={`${r.variant}-${ri}`} className="border-t border-lr-line transition-colors first:border-t-0 hover:bg-lr-panel/50">
+                  {KEYS.map((k, i) => (
+                    <td
+                      key={k}
+                      className={`border-r border-lr-line px-4 py-3.5 align-middle leading-snug last:border-r-0 min-[1440px]:px-6 ${
+                        i === 0 ? "text-[17px] font-semibold text-lr-head min-[1440px]:text-[18px]" : i === 1 ? "text-[15px] text-lr-body min-[1440px]:text-[16px]" : "text-center text-[16px] text-lr-head min-[1440px]:text-[17px]"
+                      } ${LINKS}`}
+                      dangerouslySetInnerHTML={{ __html: html(r[k]) || "—" }}
+                    />
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {data.note && (
+          <p className="mt-3 text-[13px] leading-[1.55] text-lr-muted md:text-[14px]">
+            <strong className="font-semibold text-lr-body">Data note: </strong>
+            <span dangerouslySetInnerHTML={{ __html: html(data.note) }} />
+          </p>
+        )}
+
+        <TrustStrip className="mt-5 md:mt-6" />
       </div>
     </section>
   );

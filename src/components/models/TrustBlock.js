@@ -1,116 +1,96 @@
-import Image from "next/image";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass } from "@/components/home/sectionBand";
-import { sectionDescription } from "@/components/models/sectionTypography";
+import LrIcon from "@/components/shared/LrIcon";
+import { CONTAINER } from "@/lib/typeScale";
+import { BAND_PAGE, CAR_ART, CAR_ART_RATIO, EyebrowPill, SANS, SECTION_Y, modelArt, prose, H2_MODEL } from "@/components/models/modelKit";
+import { InsightsChart, UkDotMap } from "@/components/models/TrustBlockArt";
 
-function cleanText(text = "") {
-  return text
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "-")
-    .replaceAll("Ã¢â‚¬â€", "-")
-    .replace(/\s+-\s+/g, " - ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// Model page section 12, built to the approved reference: a framed card with "Why Velar Owners Trust
+// / landroverengine.uk" (the domain in green) and the trust signals as a list (soft icon tile, the
+// title in bold green, then the text, divided by hairlines); beside it the model's car standing over a
+// UK dot map and an abstract insights chart. Phones: heading, list, then the car art.
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const marker = "BMWEngines.uk";
-  const index = clean.indexOf(marker);
+// signal emoji -> brand icon (💚 has no match in the set, so it is drawn as a heart)
+const SIGNAL_ICONS = { "📊": "real-inquiries", "🔧": "vetted-specialist", "🏆": "real-data" };
 
-  if (index === -1) return { before: clean, accent: "" };
-
-  return {
-    before: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
-}
-
-function signalIconName(item = {}) {
-  const value = `${item.icon || ""} ${item.title || ""}`.toLowerCase();
-  if (value.includes("heart") || value.includes("💚") || value.includes("tell you") || value.includes("not to repair")) return "genuineFailureData";
-  if (value.includes("wrench") || value.includes("specialist") || value.includes("🔧")) return "vettedSpecialists";
-  if (value.includes("part of") || value.includes("trophy") || value.includes("🏆") || value.includes("engine finders")) return "engineFinders";
-  // graph / chart / real data
-  return "realData";
-}
-
-function SignalIcon({ item }) {
-  const name = signalIconName(item);
-
+function HeartIcon({ className = "" }) {
   return (
-    <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-md bg-[var(--color-page-soft)] md:h-16 md:w-16">
-      <HomeIcon name={name} size={44} className="h-10 w-10 md:h-11 md:w-11" />
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <path fill="currentColor" d="M12 21.2 10.6 20C5.4 15.4 2 12.3 2 8.5 2 5.4 4.4 3 7.5 3c1.7 0 3.4.8 4.5 2.1C13.1 3.8 14.8 3 16.5 3 19.6 3 22 5.4 22 8.5c0 3.8-3.4 6.9-8.6 11.5L12 21.2Z" />
+    </svg>
+  );
+}
+
+function SignalTile({ emoji }) {
+  const name = SIGNAL_ICONS[emoji];
+  const icon = "h-6 w-6 text-lr-ink sm:h-7 sm:w-7 xl:h-8 xl:w-8 dark:text-lr-green";
+  return (
+    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-lr-chip sm:h-14 sm:w-14 xl:h-[68px] xl:w-[68px]">
+      {emoji === "💚" ? <HeartIcon className={icon} /> : <LrIcon name={name || "genuine-failure-data"} tone="current" className={icon} />}
     </span>
   );
 }
 
-export default function TrustBlock({ data, band = "page" }) {
-  if (!data) return null;
+// "Why Velar Owners Trust landroverengine.uk" -> the domain on its own line, in green
+function TrustHeading({ h2 = "" }) {
+  const m = h2.match(/^([\s\S]*?)\s*\b([\w-]+\.(?:co\.uk|uk|com))\b([\s\S]*)$/i);
+  return (
+    <h2 className={`${H2_MODEL} mt-3 text-balance text-lr-head md:mt-4`}>
+      {m ? (
+        <>
+          {m[1]}
+          <br />
+          <span className="text-lr-ink dark:text-lr-green">{m[2]}</span>
+          {m[3]}
+        </>
+      ) : (
+        h2
+      )}
+    </h2>
+  );
+}
 
-  const title = splitTitle(data.h2);
+export default function TrustBlock({ data, slug = "" }) {
+  if (!data) return null;
   const signals = data.signals || [];
+  const art = modelArt(slug, "light");
 
   return (
-    <section className={`px-3 py-6 md:px-6 md:py-7 ${sectionBgClass(band)}`}>
-      <div className="mx-auto w-full max-w-8xl overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-5">
-      <div className="grid gap-4 lg:grid-cols-[minmax(0,0.92fr)_minmax(420px,1fr)] lg:items-center">
+    <section className={`${BAND_PAGE} text-lr-head ${SANS}`}>
+      <div className={`${CONTAINER} ${SECTION_Y}`}>
+        {/* open on the page like the home page sections - no card around the section */}
         <div>
-          <HeadingEyebrow text="TRUST & PROOF" />
-          <h2 className="mt-3 max-w-[650px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-            <span dangerouslySetInnerHTML={{ __html: title.before }} />
-            {title.accent ? (
-              <>
-                <br />
-                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-              </>
-            ) : null}
-          </h2>
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center lg:gap-10 xl:grid-cols-[minmax(0,1.03fr)_minmax(0,0.97fr)] xl:gap-14">
+            <div className="min-w-0">
+              <EyebrowPill>Why Trust Us</EyebrowPill>
+              <TrustHeading h2={data.h2} />
 
-          <div className="mt-4">
-            {signals.map((item) => (
-              <article key={item.title} className="flex items-center gap-3.5 border-b border-[var(--color-border)] py-3.5 first:pt-0 last:border-b-0 last:pb-0 md:gap-4 md:py-3.5">
-                <SignalIcon item={item} />
-                <p className="text-[15px] leading-[1.42] text-[var(--color-text)] md:text-[16px]">
-                  <strong className="font-bold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: cleanText(item.title) }} />
-                  {" - "}
-                  <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
-                </p>
-              </article>
-            ))}
+              <ul className="mt-6 md:mt-8">
+                {signals.map((s, i) => (
+                  <li key={s.title} className="flex items-start gap-4 sm:gap-5">
+                    <SignalTile emoji={s.icon} />
+                    <p className={`min-w-0 flex-1 py-1 text-[15px] leading-[1.6] text-lr-body sm:py-2 md:text-[16px] xl:text-[17px] ${i < signals.length - 1 ? "mb-4 border-b border-lr-line pb-4 sm:mb-5 sm:pb-5" : ""}`}>
+                      <strong className="font-semibold text-lr-ink dark:text-lr-green">{s.title}</strong>
+                      {s.text && (
+                        <>
+                          {" — "}
+                          <span dangerouslySetInnerHTML={{ __html: prose(s.text) }} />
+                        </>
+                      )}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {art && (
+              <div className="relative mx-auto aspect-[1.16] w-full max-w-[640px] lg:max-w-none" style={art} aria-hidden="true">
+                <UkDotMap className="absolute left-[2%] top-0 h-[84%] text-lr-green/45 dark:text-lr-green/25" />
+                <InsightsChart className="absolute right-0 top-0 w-[56%] opacity-95" />
+                {/* the car stands below the chart, over only the foot of its bars, as in the reference */}
+                <div className={`absolute bottom-0 left-[3%] right-0 ${CAR_ART_RATIO} ${CAR_ART}`} />
+              </div>
+            )}
           </div>
         </div>
-
-        <div className="relative hidden min-h-[340px] lg:block">
-          <div className="absolute right-8 top-0 h-[230px] w-[390px] opacity-30">
-            <svg aria-hidden="true" viewBox="0 0 430 260" className="h-full w-full text-[var(--color-primary)]" fill="none">
-              <path d="M12 220h400" stroke="currentColor" strokeOpacity=".25" />
-              {[40, 85, 130, 175, 220, 265, 310, 355, 400].map((x) => (
-                <path key={x} d={`M${x} 30v190`} stroke="currentColor" strokeOpacity=".12" />
-              ))}
-              <path d="M22 180 70 178 120 150 165 115 210 82 260 100 315 55" stroke="currentColor" strokeWidth="3" />
-              {[22, 70, 120, 165, 210, 260, 315].map((x, index) => (
-                <circle key={x} cx={x} cy={[180, 178, 150, 115, 82, 100, 55][index]} r="6" fill="var(--color-surface)" stroke="currentColor" strokeWidth="3" />
-              ))}
-              {[190, 220, 250, 285, 330, 370, 405].map((x, index) => (
-                <rect key={x} x={x} y={190 - index * 15} width="16" height={30 + index * 15} fill="currentColor" opacity=".18" />
-              ))}
-            </svg>
-          </div>
-          <div className="absolute left-0 top-10 h-[220px] w-[220px] opacity-25">
-            <svg aria-hidden="true" viewBox="0 0 240 240" className="h-full w-full text-[var(--color-primary)]">
-              {Array.from({ length: 210 }).map((_, index) => {
-                const x = 30 + ((index * 29) % 170);
-                const y = 20 + ((index * 47) % 190);
-                return <circle key={index} cx={x} cy={y} r="1.8" fill="currentColor" />;
-              })}
-            </svg>
-          </div>
-          <Image src="/model/Section 2-bg.webp" alt="" fill className="relative z-10 object-contain object-right-bottom" sizes="(min-width: 1024px) 48vw, 100vw" />
-        </div>
-      </div>
       </div>
     </section>
   );

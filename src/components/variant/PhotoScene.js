@@ -75,7 +75,7 @@ export function LochBand({ copy = "left", tone = "page", from = "lg", solid = 52
 // padding), feathered at the top and bottom, with the car standing on its foreground.
 export function LochBanner({ car, className = "", sizes = "(min-width: 640px) 560px, 78vw" }) {
   return (
-    <div className={`relative -mx-4 aspect-[4/3] bg-cover bg-bottom bg-[url(/home/hero-loch-day-m.webp)] dark:bg-[url(/home/hero-loch-night-m.webp)] sm:aspect-[16/9] md:-mx-8 [mask-image:linear-gradient(to_bottom,transparent,#000_16%,#000_86%,transparent)] ${className}`} aria-hidden="true">
+    <div className={`relative -mx-5 sm:-mx-6 aspect-[4/3] bg-cover bg-bottom bg-[url(/home/hero-loch-day-m.webp)] dark:bg-[url(/home/hero-loch-night-m.webp)] sm:aspect-[16/9] md:-mx-10 [mask-image:linear-gradient(to_bottom,transparent,#000_16%,#000_86%,transparent)] ${className}`} aria-hidden="true">
       <div className="absolute bottom-[14%] left-1/2 w-[78%] max-w-[560px] -translate-x-1/2 sm:bottom-[12%] sm:w-[60%]">
         <GroundedCar src={car} sizes={sizes} sceneByTheme />
       </div>

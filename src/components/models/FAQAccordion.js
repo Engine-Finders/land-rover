@@ -1,118 +1,137 @@
-import Link from "next/link";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { sectionBgClass } from "@/components/home/sectionBand";
-import { sectionBody, sectionButton, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+"use client";
 
-function cleanText(text = "") {
-  return text
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "-")
-    .replaceAll("Ã¢â‚¬â€", "-")
-    .replaceAll("Ã¢â€ â€™", "->")
-    .replaceAll("✅", "")
-    .replaceAll("❌", "")
-    .replace(/\s+-\s+/g, " - ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+import { useId, useRef, useState } from "react";
+import { BODY_SM, CONTAINER } from "@/lib/typeScale";
+import { Arrow, BAND_SOFT, Chevron, EyebrowPill, IconChip, SANS, SECTION_Y, SectionTitle, prose } from "@/components/models/modelKit";
+import { comparePage, localHtml } from "@/components/models/generationsFaqLinks";
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const marker = "Frequently Asked Questions";
-  const index = clean.indexOf(marker);
+// Model page section 13 (FAQ), built to the approved reference: numbered questions in two columns
+// on large screens (one on phones and tablets), each opening its answer in place, and the
+// "Need a head-to-head comparison?" bar - built from the FAQ's own "A vs B" question and linked to
+// that comparison guide (or, without one, to the answer itself). Answers stay in the HTML when
+// folded, so the page keeps its FAQ content for search.
 
-  if (index === -1) return { before: clean, accent: "" };
-
-  return {
-    before: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
-}
-
-function Icon({ name, className = "h-6 w-6" }) {
-  const path =
-    name === "document" ? (
-      <path d="M7 3h8l4 4v14H7V3Zm8 0v5h5M10 12h6M10 16h6" />
-    ) : (
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    );
-
+function Item({ item, number, open, onToggle, refFor }) {
+  const id = useId();
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      {path}
-    </svg>
-  );
-}
-
-function FaqItem({ item, index }) {
-  return (
-    <details className="group overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_6px_16px_var(--color-shadow)]">
-      <summary className="grid cursor-pointer list-none grid-cols-[auto_1fr_auto] items-center gap-3 px-4 py-3.5 marker:hidden md:px-4">
-        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[14px] font-bold leading-none text-white">
-          {item.id || index + 1}
-        </span>
-        <h3 className="font-bold text-[15px] leading-[1.15] text-[var(--color-text)] md:text-[17px]">{cleanText(item.question)}</h3>
-        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-[var(--color-text-muted)] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="m6 9 6 6 6-6" />
-        </svg>
-      </summary>
-      <div className={`border-t border-[var(--color-border)] px-4 pb-4 pt-2.5 text-[var(--color-text-muted)] md:px-4 ${sectionBody}`}>
-        {cleanText(item.answer)}
+    <div
+      ref={refFor}
+      className={`scroll-mt-28 rounded-xl border bg-lr-card shadow-[0_10px_30px_-26px_var(--lr-shadow)] transition-colors ${open ? "border-lr-ink/35 dark:border-lr-green/40" : "border-lr-line"}`}
+    >
+      <h3>
+        <button
+          type="button"
+          id={`${id}-q`}
+          aria-expanded={open}
+          aria-controls={`${id}-a`}
+          onClick={onToggle}
+          className="flex w-full items-center gap-3 rounded-xl px-4 py-3.5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lr-green/60 md:gap-4 md:px-5 md:py-4"
+        >
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-lr-brand text-[14px] font-semibold leading-none text-lr-on-brand md:h-8 md:w-8 md:text-[15px] dark:border dark:border-lr-green/45 dark:bg-lr-brand/35">
+            {number}
+          </span>
+          <span className="min-w-0 flex-1 text-[15px] font-medium leading-snug text-lr-head md:text-[16px] xl:text-[17px]" dangerouslySetInnerHTML={{ __html: prose(item.question) }} />
+          <Chevron className={`h-5 w-5 text-lr-head transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+        </button>
+      </h3>
+      <div
+        id={`${id}-a`}
+        role="region"
+        aria-labelledby={`${id}-q`}
+        className={`grid transition-[grid-template-rows,visibility] duration-300 ease-out motion-reduce:transition-none ${open ? "grid-rows-[1fr]" : "invisible grid-rows-[0fr]"}`}
+      >
+        <div className="min-h-0 overflow-hidden">
+          <p
+            className={`${BODY_SM} border-t border-lr-line px-4 pb-4 pt-3.5 text-lr-body md:px-5 md:pb-5 md:pl-[4.25rem] [&_a]:font-medium [&_a]:text-lr-green [&_a]:no-underline hover:[&_a]:underline`}
+            dangerouslySetInnerHTML={{ __html: localHtml(prose(item.answer)) }}
+          />
+        </div>
       </div>
-    </details>
+    </div>
   );
 }
 
-export default function FAQAccordion({ data, band = "page" }) {
+export default function FAQAccordion({ data }) {
+  const [open, setOpen] = useState(() => new Set());
+  const refs = useRef({});
   if (!data) return null;
 
-  const title = splitTitle(data.h2);
-  const items = data.items || [];
-  const midpoint = Math.ceil(items.length / 2);
-  const columns = [items.slice(0, midpoint), items.slice(midpoint)];
+  const items = (data.items || []).map((item, i) => ({ ...item, number: item.id || i + 1 }));
+  const half = Math.ceil(items.length / 2);
+  const columns = [items.slice(0, half), items.slice(half)];
+  const toggle = (n) =>
+    setOpen((prev) => {
+      const next = new Set(prev);
+      next.has(n) ? next.delete(n) : next.add(n);
+      return next;
+    });
+
+  // the head-to-head bar: the FAQ's own "A vs B" question
+  const vsItem = items.find((item) => /\svs\.?\s/i.test(item.question));
+  const pair = vsItem ? vsItem.question.split(/\s+[-–—]\s+/)[0].trim() : "";
+  const guide = vsItem ? comparePage(vsItem.question) : null;
+  const showAnswer = () => {
+    if (!vsItem) return;
+    setOpen((prev) => new Set(prev).add(vsItem.number));
+    refs.current[vsItem.number]?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
-    <section className={`px-3 py-6 md:px-6 md:py-7 ${sectionBgClass(band)}`}>
-      <div className="mx-auto w-full max-w-8xl rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-6">
-      <HeadingEyebrow text="FAQ" />
-      <h2 className={`mt-3 max-w-[980px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
-        <span dangerouslySetInnerHTML={{ __html: title.before }} />
-        {title.accent ? (
-          <>
-            {" "}
-            <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-          </>
-        ) : null}
-      </h2>
+    <section id="faq" className={`${BAND_SOFT} text-lr-head ${SANS}`}>
+      <div className={`${CONTAINER} ${SECTION_Y}`}>
+        <EyebrowPill>FAQ</EyebrowPill>
+        <SectionTitle h2={data.h2} accent="Frequently Asked Questions" className="mt-3 md:mt-4" />
 
-      <div className="mt-5 grid gap-3 lg:grid-cols-2 lg:gap-x-6">
-        {columns.map((column, columnIndex) => (
-          <div key={columnIndex} className="grid gap-3">
-            {column.map((item, index) => (
-              <FaqItem key={item.id || item.question} item={item} index={columnIndex * midpoint + index} />
-            ))}
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-5 flex flex-col gap-4 rounded-md bg-[var(--color-page-soft)] p-4 md:flex-row md:items-center md:justify-between md:p-5">
-        <div className="flex gap-4">
-          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white md:h-16 md:w-16">
-            <Icon name="document" className="h-8 w-8 md:h-9 md:w-9" />
-          </span>
-          <div>
-            <h3 className="text-[18px] font-bold leading-tight text-[var(--color-text)] md:text-[20px]">Need a head-to-head comparison?</h3>
-            <p className={`mt-1 max-w-[620px] text-[var(--color-text-muted)] ${sectionBody} md:text-[16px]`}>
-              Read our in-depth Land Rover &amp; Range Rover reliability comparisons.
-            </p>
-          </div>
+        <div className="mt-6 grid gap-3 md:mt-8 lg:grid-cols-2 lg:gap-x-6 lg:gap-y-0 xl:gap-x-8">
+          {columns.map((column, c) => (
+            <div key={c} className="flex flex-col gap-3">
+              {column.map((item) => (
+                <Item
+                  key={item.number}
+                  item={item}
+                  number={item.number}
+                  open={open.has(item.number)}
+                  onToggle={() => toggle(item.number)}
+                  refFor={(el) => {
+                    refs.current[item.number] = el;
+                  }}
+                />
+              ))}
+            </div>
+          ))}
         </div>
-        <Link href="#" className={`inline-flex min-h-12 shrink-0 items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black md:min-w-[300px] ${sectionButton}`}>
-          Read the Full Head-to-Head
-          <Icon className="h-6 w-6" />
-        </Link>
-      </div>
+
+        {vsItem && (
+          <div className="mt-5 flex flex-col gap-4 rounded-2xl border border-lr-line bg-lr-panel p-4 sm:p-5 md:flex-row md:items-center md:justify-between md:gap-6 lg:mt-6 xl:px-7 xl:py-6">
+            <div className="flex items-center gap-4">
+              <IconChip name="oem-references" className="h-12 w-12 md:h-14 md:w-14" iconClass="h-6 w-6 md:h-7 md:w-7" />
+              <div className="min-w-0">
+                <p className="text-[17px] font-semibold leading-snug text-lr-head md:text-[18px] xl:text-[19px]">Need a head-to-head comparison?</p>
+                <p className={`${BODY_SM} mt-0.5 text-lr-body`}>
+                  Read our in-depth <span className="font-medium text-lr-head">{pair}</span> reliability guide.
+                </p>
+              </div>
+            </div>
+            {guide ? (
+              <a
+                href={guide.href}
+                className="inline-flex h-12 shrink-0 items-center justify-center gap-3 rounded-lg bg-lr-brand px-6 text-[15px] font-semibold text-lr-on-brand no-underline shadow-[0_12px_26px_-16px_rgba(18,61,42,0.85)] transition-colors hover:bg-lr-brand-hover md:h-[54px] md:text-[16px] lg:min-w-[300px] xl:text-[17px] dark:border dark:border-lr-green/45 dark:bg-lr-brand/35 dark:hover:bg-lr-brand/55"
+              >
+                Read the Full Head-to-Head
+                <Arrow className="h-5 w-5" />
+              </a>
+            ) : (
+              <button
+                type="button"
+                onClick={showAnswer}
+                className="inline-flex h-12 shrink-0 items-center justify-center gap-3 rounded-lg bg-lr-brand px-6 text-[15px] font-semibold text-lr-on-brand transition-colors hover:bg-lr-brand-hover md:h-[54px] md:text-[16px] dark:border dark:border-lr-green/45 dark:bg-lr-brand/35"
+              >
+                Read the answer
+                <Arrow className="h-5 w-5" />
+              </button>
+            )}
+          </div>
+        )}
       </div>
     </section>
   );

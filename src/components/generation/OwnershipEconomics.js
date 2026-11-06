@@ -1,249 +1,341 @@
-"use client";
+import GroundedCar from "@/components/variant/GroundedCar";
+import LrIcon from "@/components/shared/LrIcon";
+import { CONTAINER } from "@/lib/typeScale";
+import { H2_MODEL, SANS, prose, splitHeading } from "@/components/models/modelKit";
+import { localHtml } from "@/components/models/generationsFaqLinks";
+import { engineDbCar } from "./genKit";
 
-import Image from "next/image";
-import { useTheme } from "@/components/shared/themeProvider";
-import HeadingEyebrow from "@/components/reusableComponents/HeadingEyebrow";
-import { HomeIcon } from "@/components/home/homeIcons";
-import { sectionBgClass, sectionRgb } from "@/components/home/sectionBand";
+// Generation page section 5 - ownership economics, built to the approved Defender L316 references
+// (day + night): the eyebrow, the "… — / Ownership Economics" headline with "Economics" in green and a
+// split rule; on the right the Highland hillside with the generation's car and the green-and-gold
+// stripe at the screen's edge, standing on the table's top edge. The six-column table (icons in the
+// head, the engine in green, the verdict with its own icon - check, star, thumbs-up, warning,
+// exclamation, info - and its label in bold), then "The <code> rule" card (balance scales, the rule in
+// two paragraphs, its closing line in green) beside the Key Takeaways (three questions, round icons).
+// Phones / tablets: the copy, the car full-bleed, one card per engine, the two cards stacked.
 
-const HEADER_IMAGE = "/sec2-bg.webp";
-const mobileTitleShadow =
-  "[text-shadow:0_1px_2px_rgba(255,255,255,0.95),0_0_10px_rgba(255,255,255,0.85)]";
+const BG = "bg-[url(/home/hero-loch-day-m.webp)] sm:bg-[url(/home/hero-loch-day.webp)] dark:bg-[url(/home/hero-loch-night-m.webp)] sm:dark:bg-[url(/home/hero-loch-night.webp)]";
+const KEYS = ["engine", "typicalMileage", "commonMajorFailure", "repairCostSpecialist", "replacementCostRecon", "ownershipVerdict"];
+const DEFAULT_COLUMNS = ["Engine", "Typical Mileage", "Common Major Failure", "Repair Cost (Specialist)", "Replacement Cost (Recon)", "Ownership Verdict"];
+// column widths (%), from the reference
+const WIDTHS = [12.5, 15, 18.5, 13, 16.5, 24.5];
+const html = (raw) => localHtml(prose(raw || ""));
+const LINKS = "[&_a]:text-inherit [&_a]:no-underline hover:[&_a]:underline";
 
-const verdictStyles = {
-  warning: { icon: "expensiveFailure", light: "text-[#d97517]", dark: "text-[#ffb05a]" },
-  success: { icon: "check", light: "text-[#13884a]", dark: "text-[#67d99a]" },
-  danger: { icon: "expensiveFailure", light: "text-[#db2e2e]", dark: "text-[#ff8b90]" },
-  info: { icon: "note", light: "text-[var(--color-primary)]", dark: "text-[var(--color-text)]" },
+// ------------------------------------------------------------------ icons
+
+const STROKE = { fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round" };
+
+function WarnIcon({ className = "" }) {
+  return (
+    <svg viewBox="0 0 24 24" className={`shrink-0 ${className}`} aria-hidden="true">
+      <g {...STROKE}>
+        <path d="M10.4 4.2 2.6 17.8a1.8 1.8 0 0 0 1.6 2.7h15.6a1.8 1.8 0 0 0 1.6-2.7L13.6 4.2a1.8 1.8 0 0 0-3.2 0Z" />
+        <path d="M12 9.6v4.6M12 17.2h.01" />
+      </g>
+    </svg>
+  );
+}
+
+// header icon per column
+function HeadIcon({ index }) {
+  const cls = "h-6 w-6 shrink-0 xl:h-7 xl:w-7";
+  if (index === 2) return <WarnIcon className={cls} />;
+  const name = ["drivetrain-failures", "meter", null, "commercial", "engine", "genuine-failure-data"][index];
+  return <LrIcon name={name} tone="current" className={cls} />;
+}
+
+// "Best Diesel - the Defender's most dependable engine" -> { label, rest, kind }
+const VERDICTS = [
+  [/highest risk|avoid|most expensive|expensive/i, "alert"],
+  [/risk vs reward|caution|complex|watch/i, "warn"],
+  [/enthusiast|niche|rare|future|specialist/i, "info"],
+  [/best value|value/i, "thumb"],
+  [/best (?:diesel|petrol)|best overall|top/i, "star"],
+];
+function splitVerdict(raw = "") {
+  const text = String(raw).trim();
+  const m = text.match(/^(.*?)\s+[-–—]\s+(.*)$/);
+  const label = m ? m[1] : text;
+  return { label, rest: m ? m[2] : "", kind: VERDICTS.find(([re]) => re.test(label))?.[1] || "check" };
+}
+
+const VERDICT_TONE = {
+  check: "text-lr-ink dark:text-lr-green",
+  star: "text-lr-ink dark:text-lr-green",
+  thumb: "text-lr-ink dark:text-lr-green",
+  warn: "text-[#d9921c] dark:text-[#f0b54f]",
+  alert: "text-[#d32f2f] dark:text-[#ff8a8a]",
+  info: "text-[#2f6fd6] dark:text-[#8eb4ff]",
 };
 
-function VerdictPill({ verdictType, text, isDark }) {
-  const style = verdictStyles[verdictType] || verdictStyles.info;
-  const iconColor = isDark ? style.dark : style.light;
-  const textColor = isDark ? "text-white" : "text-black";
-
+function VerdictIcon({ kind, className = "" }) {
   return (
-    <span className={`inline-flex items-start gap-2 text-[0.78rem] leading-[1.25] ${textColor}`}>
-      <HomeIcon name={style.icon} size={32} className={`mt-0.5 h-8 w-8 shrink-0 ${iconColor}`} />
-      <span dangerouslySetInnerHTML={{ __html: text }} />
+    <svg viewBox="0 0 28 28" className={`shrink-0 ${VERDICT_TONE[kind]} ${className}`} aria-hidden="true">
+      <g {...STROKE}>
+        {kind === "warn" ? (
+          <>
+            <circle cx="14" cy="14" r="12" />
+            <path d="M12.9 8.4 8.2 16.6a1.3 1.3 0 0 0 1.1 1.9h9.4a1.3 1.3 0 0 0 1.1-1.9l-4.7-8.2a1.3 1.3 0 0 0-2.2 0Z" strokeWidth="1.5" />
+            <path d="M14 11.6v2.8M14 16.4h.01" strokeWidth="1.6" />
+          </>
+        ) : (
+          <>
+            <circle cx="14" cy="14" r="12" />
+            {kind === "check" && <path d="m9 14.4 3.4 3.4 6.8-7.4" strokeWidth="2" />}
+            {kind === "star" && <path d="m14 7.8 1.9 3.9 4.3.6-3.1 3 .7 4.3L14 17.6l-3.8 2 .7-4.3-3.1-3 4.3-.6L14 7.8Z" strokeWidth="1.5" />}
+            {kind === "thumb" && <path d="M10.6 13v6.6M10.6 13l2.6-4.6c.9 0 1.7.8 1.5 1.8l-.4 2h3.6c.9 0 1.6.8 1.4 1.7l-.9 4.4a1.6 1.6 0 0 1-1.6 1.3h-6.2M8 13h2.6v6.6H8Z" strokeWidth="1.5" />}
+            {kind === "alert" && <path d="M14 8.4v7M14 19.2h.01" strokeWidth="2.2" />}
+            {kind === "info" && <path d="M14 12.6v7M14 8.8h.01" strokeWidth="2.2" />}
+          </>
+        )}
+      </g>
+    </svg>
+  );
+}
+
+function Verdict({ value }) {
+  const v = splitVerdict(value);
+  return (
+    <span className="flex items-center gap-3 text-left">
+      <VerdictIcon kind={v.kind} className="h-7 w-7" />
+      <span className="min-w-0 leading-snug">
+        <strong className="font-semibold text-lr-head" dangerouslySetInnerHTML={{ __html: html(v.label) }} />
+        {v.rest && <span className="text-lr-body" dangerouslySetInnerHTML={{ __html: ` — ${html(v.rest)}` }} />}
+      </span>
     </span>
   );
 }
 
-function DesktopRow({ row, isDark }) {
-  const rowClass = isDark
-    ? "bg-black text-white"
-    : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
-
+// takeaway icons: piggy bank (least), coins with an arrow (most), diamond (best value)
+function TakeawayIcon({ index }) {
   return (
-    <div
-      className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] items-center gap-px ${rowClass} px-5 py-3.5 text-[0.85rem] border-b ${borderBottom} last:border-b-0`}
-    >
-      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
-      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
-      <div className="pl-3">
-        <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
+    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand xl:h-14 xl:w-14 dark:bg-lr-chip dark:text-lr-green">
+      {index === 2 ? (
+        <LrIcon name="niche-style" tone="current" className="h-6 w-6 xl:h-7 xl:w-7" />
+      ) : (
+        <svg viewBox="0 0 28 28" className="h-6 w-6 xl:h-7 xl:w-7" aria-hidden="true">
+          {index === 0 ? (
+            <path
+              fill="currentColor"
+              d="M12.6 7.2c-4.7 0-8.3 3-8.3 6.9 0 2 1 3.8 2.6 5l-.3 2.6c0 .5.4.9.9.9h2.1c.4 0 .7-.3.8-.7l.3-1.3c.6.1 1.2.2 1.9.2s1.3-.1 1.9-.2l.3 1.3c.1.4.4.7.8.7h2.1c.5 0 .9-.4.9-.9l-.3-2.4c1.1-.8 1.9-1.8 2.3-2.9h1.4c.5 0 .9-.4.9-.9v-2.5c0-.5-.4-.9-.9-.9h-1.4a6.9 6.9 0 0 0-1.9-2.6l.6-2.4c.1-.4-.3-.8-.7-.7l-2.7.8a10 10 0 0 0-3.2-.5Zm6.3 5.6a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+            />
+          ) : (
+            <g {...STROKE} strokeWidth="1.7">
+              <ellipse cx="10" cy="9" rx="5.6" ry="2.2" />
+              <path d="M4.4 9v3.4c0 1.2 2.5 2.2 5.6 2.2M4.4 12.4v3.4c0 1.2 2.5 2.2 5.6 2.2M4.4 15.8v3.4c0 1.2 2.5 2.2 5.6 2.2" />
+              <circle cx="18.6" cy="17.6" r="5" />
+              <path d="M18.6 15.2v4.8M16.6 17.2l2-2 2 2M20 4.4l2.2 2.2-2.2 2.2M22.2 6.6h-6" />
+            </g>
+          )}
+        </svg>
+      )}
+    </span>
+  );
+}
+
+// ------------------------------------------------------------------ rule text
+
+// figures (prices, percentages) in the rule set in bold
+const boldFigures = (s) => s.replace(/(£[\d,]+(?:–£[\d,]+)?|\d+(?:–\d+)?%)/g, '<strong class="font-semibold text-lr-head">$1</strong>');
+
+// "A £3,200… one. Against … away. Value the vehicle first, then the engine." -> paragraphs + closing line
+function ruleParts(text = "") {
+  const sentences = html(text).trim().split(/(?<=[.!?])\s+(?=[A-Z])/);
+  const last = sentences.length > 2 && sentences.at(-1).length < 70 ? sentences.pop() : "";
+  return { paras: sentences.map(boldFigures), close: last };
+}
+
+// ------------------------------------------------------------------ backdrop
+
+// the hillside behind the heading's right side, anchored to the screen's right edge and the
+// table's top: by day it fades in from the left and ends at a pale band, a gold line and a sage band;
+// at night the gold line edges a deep-green band. Sizes in vw, scaled from 1536px.
+function Hillside({ car, className = "" }) {
+  return (
+    <div className={`pointer-events-none ${className}`} aria-hidden="true">
+      <div className="absolute inset-0 [clip-path:polygon(0_0,calc(100%-6.25vw)_0,calc(100%-15vw)_100%,0_100%)] [mask-image:linear-gradient(90deg,transparent,rgba(0,0,0,0.55)_26%,#000_50%)] dark:[clip-path:polygon(0_0,calc(100%-2.6vw)_0,calc(100%-11.5vw)_100%,0_100%)]">
+        <div className={`absolute inset-0 bg-cover bg-[center_30%] ${BG} brightness-[1.05] contrast-[.92] hue-rotate-[14deg] saturate-[.78] dark:filter-none`} />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.32),rgba(255,255,255,0)_70%)] dark:hidden" />
+        <div className="absolute inset-0 hidden bg-[linear-gradient(180deg,rgba(5,14,11,0.2),rgba(5,14,11,0.35))] dark:block" />
       </div>
+      <svg viewBox="0 0 460 300" preserveAspectRatio="none" className="absolute bottom-0 right-0 h-full w-[29.95vw]">
+        {/* day */}
+        <g className="dark:hidden">
+          <polygon points="364,0 424,0 309,300 229,300" fill="#cfd5c8" />
+          <polygon points="424,0 428,0 313,300 309,300" fill="#d4bb8c" />
+          <polygon points="428,0 600,0 485,300 313,300" fill="#7f8f78" />
+        </g>
+        {/* night */}
+        <g className="hidden dark:inline">
+          <polygon points="420,0 424,0 287,300 283,300" fill="#c9a35d" />
+          <polygon points="424,0 600,0 463,300 287,300" fill="#173524" />
+        </g>
+      </svg>
+      {car && (
+        <div className="absolute bottom-[2px] right-[16vw] w-[23vw] max-w-[440px]">
+          <GroundedCar src={car} sceneByTheme sizes="(min-width: 1024px) 23vw, 1px" />
+        </div>
+      )}
     </div>
   );
 }
 
-const MOBILE_COLS = "grid-cols-[90px_90px_140px_110px_120px_220px]";
+// ------------------------------------------------------------------ section
 
-function MobileRow({ row, isDark }) {
-  const rowClass = isDark
-    ? "bg-black text-white"
-    : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
-
-  return (
-    <div
-      className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} px-3 py-3 text-[0.72rem] leading-[1.3] border-b ${borderBottom} last:border-b-0`}
-    >
-      <span className={`px-2 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
-      <span className={`px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
-      <span className={`px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
-      <span className={`px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
-      <span className={`px-2 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
-      <div className="pl-2">
-        <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
-      </div>
-    </div>
-  );
-}
-
-const takeawayIcons = ["flagshipChoice", "trend", "topChoice"];
-const COLUMN_ICONS = ["engine", "checkWatch", "expensiveFailure", "repairVsReplace", "repairVsReplace", "safestBuy"];
-
-export default function OwnershipEconomics({ data, band = "page" }) {
-  const { theme } = useTheme();
+export default function OwnershipEconomics({ data, hero = null, model = "" }) {
   if (!data) return null;
 
-  const isDark = theme === "dark";
-  const rgb = sectionRgb(band, isDark);
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
-  const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
+  const { lead, accent } = splitHeading(prose(data.h2 || ""));
+  const accentWords = accent.split(" ");
+  const accentLast = accentWords.pop();
+  const columns = KEYS.map((_, i) => data.columns?.[i] || DEFAULT_COLUMNS[i]);
+  const rows = data.rows || [];
+  const car = engineDbCar(hero || { h1: data.h2 }, model);
+  const rule = data.economicsRule || {};
+  const { paras, close } = ruleParts(rule.text);
+  const takeaways = data.keyTakeaways || [];
 
   return (
-    <section
-      className={`relative text-[var(--color-text)] ${sectionBgClass(band)}`}
-      style={{ "--section-fade": rgb }}
-    >
-      {/* Image sizes to heading block - headings only */}
-      <div className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0">
-          <Image
-            src={HEADER_IMAGE}
-            alt=""
-            fill
-            className="object-cover object-[78%_center] md:object-[75%_center]"
-            sizes="100vw"
-            priority
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.78)_0%,rgba(var(--section-fade),0.55)_50%,rgba(var(--section-fade),0.98)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.96)_0%,rgba(var(--section-fade),0.72)_42%,rgba(var(--section-fade),0.2)_80%)]"
-                : "absolute inset-0 bg-[linear-gradient(180deg,rgba(var(--section-fade),0.55)_0%,rgba(var(--section-fade),0.32)_45%,rgba(var(--section-fade),0.96)_100%)] md:bg-[linear-gradient(90deg,rgba(var(--section-fade),0.97)_0%,rgba(var(--section-fade),0.82)_44%,rgba(var(--section-fade),0.12)_80%)]"
-            }
-          />
-          <div
-            className={`absolute inset-0 md:hidden ${
-              isDark
-                ? "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.95)_0%,rgba(var(--section-fade),0.65)_45%,transparent_75%)]"
-                : "bg-[radial-gradient(120%_85%_at_0%_18%,rgba(var(--section-fade),0.88)_0%,rgba(var(--section-fade),0.5)_45%,transparent_75%)]"
-            }`}
-          />
-        </div>
-
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 pt-6 md:px-8 md:pb-10 md:pt-8">
-          <HeadingEyebrow text="OWNERSHIP ECONOMICS" />
-          <h2
-            className={`mt-2 max-w-[720px] font-lora text-[2.15rem] font-medium leading-[1.1] tracking-normal md:text-[3rem] ${
-              isDark
-                ? "text-white md:text-[var(--color-text)]"
-                : `text-black md:text-[var(--color-text)] ${mobileTitleShadow} md:[text-shadow:none]`
-            }`}
-            dangerouslySetInnerHTML={{ __html: data.h2 }}
-          />
-        </div>
-      </div>
-
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-6 md:px-8 md:pb-8">
-        <div className="mt-6 hidden overflow-hidden rounded-[8px] border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] gap-px ${headerBg} px-5 py-3 text-[0.82rem] font-semibold text-white`}>
-            {data.columns?.map((col, index) => (
-              <span key={col} className={`flex items-center gap-2 px-3 border-r ${headerDivider} last:border-r-0`}>
-                <HomeIcon name={COLUMN_ICONS[index]} size={32} className="h-8 w-8 shrink-0" />
-                {col}
-              </span>
-            ))}
-          </div>
-          <div className={bodyWrapperBg}>
-            {data.rows?.map((row) => (
-              <DesktopRow key={row.engine} row={row} isDark={isDark} />
-            ))}
+    <section className={`relative overflow-hidden bg-lr-page pb-10 text-lr-head md:pb-14 xl:pb-16 ${SANS}`}>
+      <div className={`${CONTAINER} pt-10 md:pt-12 lg:pt-10 xl:pt-11`}>
+        <div className="relative lg:pb-7">
+          <Hillside car={car} className="absolute -top-10 bottom-0 right-[calc(50%-50vw)] hidden w-[60vw] lg:block xl:-top-11" />
+          <div className="relative max-w-[760px] lg:max-w-[calc(52vw_-_56px)] xl:max-w-[calc(52vw_-_max(48px,50vw_-_752px)_-_16px)]">
+            <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">Ownership Economics</p>
+            <h2 className={`${H2_MODEL} mt-3.5 text-lr-head md:mt-4`}>
+              {lead}
+              {accent && (
+                <>
+                  {"\u00a0"}—<br />
+                  {accentWords.length > 0 && `${accentWords.join(" ")} `}
+                  <span className="text-lr-ink dark:text-lr-green">{accentLast}</span>
+                </>
+              )}
+            </h2>
+            <span className="mt-4 flex gap-1.5 md:mt-5" aria-hidden="true">
+              <span className="h-[3px] w-11 rounded-full bg-lr-ink dark:bg-lr-green" />
+              <span className="h-[3px] w-11 rounded-full bg-lr-gold-line" />
+            </span>
           </div>
         </div>
 
-        <div className="mt-6 overflow-x-auto rounded-[8px] border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
-          <div className="min-w-[850px]">
-            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2.5 text-[0.7rem] font-semibold leading-[1.2] text-white`}>
-              {data.columns?.map((col, index) => (
-                <span key={col} className={`flex items-center gap-1.5 px-2 border-r ${headerDivider} last:border-r-0`}>
-                  <HomeIcon name={COLUMN_ICONS[index]} size={28} className="h-7 w-7 shrink-0" />
-                  {col}
-                </span>
-              ))}
-            </div>
-            <div className={bodyWrapperBg}>
-              {data.rows?.map((row) => (
-                <MobileRow key={row.engine} row={row} isDark={isDark} />
-              ))}
+        {/* phones / tablets: the hillside with the car, full-bleed */}
+        {car && (
+          <div className="relative -mx-5 mt-6 aspect-[2/1] sm:-mx-6 sm:aspect-[5/2] md:-mx-10 md:aspect-[3/1] lg:hidden" aria-hidden="true">
+            <div className={`absolute inset-0 bg-cover bg-[center_70%] ${BG} brightness-[1.05] contrast-[.92] hue-rotate-[14deg] saturate-[.78] dark:filter-none [mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_80%,transparent)]`} />
+            <div className="absolute bottom-[8%] left-1/2 w-[56%] max-w-[400px] -translate-x-1/2 sm:w-[44%] md:w-[34%]">
+              <GroundedCar src={car} sceneByTheme sizes="(max-width: 640px) 56vw, 400px" />
             </div>
           </div>
-        </div>
+        )}
 
-        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-[0.85fr_1.15fr]">
-          {data.economicsRule ? (
-            <>
-              {/* Mobile: floated icon - title beside it, description wraps under the icon */}
-              <div className="rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-3.5 md:hidden">
-                <span className="mr-3 flex h-14 w-14 float-left items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                  <HomeIcon name="scale" size={36} className="h-9 w-9" />
-                </span>
-                <p
-                  className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]"
-                  dangerouslySetInnerHTML={{ __html: data.economicsRule.title }}
-                />
-                <p
-                  className="mt-2 text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
-                  dangerouslySetInnerHTML={{ __html: data.economicsRule.text }}
-                />
-                {data.economicsRule.highlight ? (
-                  <p
-                    className="mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]"
-                    dangerouslySetInnerHTML={{ __html: data.economicsRule.highlight }}
-                  />
-                ) : null}
-                <div className="clear-both" />
-              </div>
+        {rows.length > 0 && (
+          <>
+            {/* phones / tablets: one card per engine */}
+            <ul className={`relative grid gap-3 md:grid-cols-2 md:gap-4 xl:hidden ${car ? "-mt-6 sm:-mt-8 lg:mt-0" : "mt-6"}`}>
+              {rows.map((r, i) => (
+                <li key={`${r.engine}-${i}`} className="min-w-0 rounded-xl border border-lr-line bg-lr-card p-4 shadow-[0_18px_44px_-36px_var(--lr-shadow)] md:p-5">
+                  <h3 className={`text-[18px] font-semibold leading-snug text-lr-ink dark:text-lr-green ${LINKS}`} dangerouslySetInnerHTML={{ __html: html(r.engine) }} />
+                  <div className="mt-2.5 text-[14px]">
+                    <Verdict value={r.ownershipVerdict} />
+                  </div>
+                  <dl className="mt-3.5 grid grid-cols-2 gap-x-4 gap-y-3 border-t border-lr-line pt-3.5">
+                    {[1, 3, 4, 2].map((k) => (
+                      <div key={k} className={`min-w-0 ${k === 2 ? "col-span-2" : ""}`}>
+                        <dt className="text-[13px] leading-snug text-lr-muted">{columns[k]}</dt>
+                        <dd className={`mt-0.5 text-[14px] leading-snug text-lr-head ${k === 2 ? "" : "font-medium"} ${LINKS}`} dangerouslySetInnerHTML={{ __html: html(r[KEYS[k]]) || "—" }} />
+                      </div>
+                    ))}
+                  </dl>
+                </li>
+              ))}
+            </ul>
 
-              {/* Desktop: icon beside copy, vertically centered */}
-              <div className="hidden items-center gap-4 rounded-[8px] border border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-3.5 md:flex">
-                <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                  <HomeIcon name="scale" size={44} className="h-11 w-11" />
-                </span>
-                <div className="min-w-0 flex-1">
-                  <p
-                    className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]"
-                    dangerouslySetInnerHTML={{ __html: data.economicsRule.title }}
-                  />
-                  <p
-                    className="mt-2 text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
-                    dangerouslySetInnerHTML={{ __html: data.economicsRule.text }}
-                  />
-                  {data.economicsRule.highlight ? (
-                    <p
-                      className="mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]"
-                      dangerouslySetInnerHTML={{ __html: data.economicsRule.highlight }}
-                    />
-                  ) : null}
+            {/* laptops: the table, on the hillside's foot */}
+            <div className="relative hidden overflow-hidden rounded-xl border border-lr-line bg-lr-card shadow-[0_28px_70px_-44px_var(--lr-shadow)] xl:block dark:bg-lr-card/85 dark:backdrop-blur-sm">
+              <table className="w-full table-fixed border-collapse text-left">
+                <caption className="sr-only">{prose(data.h2 || "")}</caption>
+                <colgroup>
+                  {WIDTHS.map((w, i) => (
+                    <col key={i} style={{ width: `${w}%` }} />
+                  ))}
+                </colgroup>
+                <thead className="border-b border-lr-line">
+                  <tr>
+                    {columns.map((c, i) => (
+                      <th key={c} scope="col" className="border-r border-lr-line px-4 py-4 align-middle last:border-r-0 min-[1440px]:px-5">
+                        <span className="flex items-center gap-2.5 text-[13px] font-semibold uppercase leading-snug tracking-[0.02em] text-lr-ink min-[1440px]:text-[14px] dark:text-lr-green">
+                          <HeadIcon index={i} />
+                          {c}
+                        </span>
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map((r, ri) => (
+                    <tr key={`${r.engine}-${ri}`} className="border-t border-lr-line transition-colors first:border-t-0 hover:bg-lr-panel/50">
+                      {KEYS.map((k, i) => (
+                        <td
+                          key={k}
+                          className={`border-r border-lr-line px-4 py-3 align-middle leading-snug last:border-r-0 min-[1440px]:px-5 ${
+                            i === 0
+                              ? "text-[17px] font-semibold text-lr-ink min-[1440px]:text-[18px] dark:text-lr-green"
+                              : i === 2
+                                ? "text-[14px] text-lr-body min-[1440px]:text-[15px]"
+                                : i === 5
+                                  ? "text-[14px] min-[1440px]:text-[15px]"
+                                  : "text-[16px] text-lr-head min-[1440px]:text-[17px]"
+                          } ${LINKS}`}
+                        >
+                          {i === 5 ? <Verdict value={r[k]} /> : <span dangerouslySetInnerHTML={{ __html: html(r[k]) || "—" }} />}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
+
+        {(paras.length > 0 || takeaways.length > 0) && (
+          <div className={`mt-5 grid gap-5 md:mt-6 ${paras.length && takeaways.length ? "lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-6" : ""}`}>
+            {paras.length > 0 && (
+              <article className="rounded-xl border border-lr-line bg-lr-card p-5 shadow-[0_18px_44px_-36px_var(--lr-shadow)] md:p-6 xl:px-8 xl:py-7 dark:bg-lr-card/70">
+                <h3 className="text-[17px] font-semibold uppercase leading-snug tracking-[0.02em] text-lr-ink md:text-[18px] xl:text-[20px] dark:text-lr-green">{rule.title || "The rule"}</h3>
+                <div className="mt-4 flex flex-col gap-5 sm:flex-row sm:items-center xl:mt-2 xl:gap-8">
+                  <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full border border-lr-line bg-lr-panel/60 text-lr-ink sm:h-24 sm:w-24 xl:h-[124px] xl:w-[124px] dark:border-lr-line-strong dark:bg-transparent dark:text-lr-green">
+                    <LrIcon name="scale" tone="current" className="h-10 w-10 xl:h-14 xl:w-14" />
+                  </span>
+                  <div className="min-w-0 space-y-3.5 text-[15px] leading-[1.6] text-lr-body sm:border-l sm:border-lr-line sm:pl-6 xl:pl-8 xl:text-[16px]">
+                    {paras.map((p, i) => (
+                      <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
+                    ))}
+                    {close && <p className="text-[16px] font-semibold text-lr-ink xl:text-[18px] dark:text-lr-green" dangerouslySetInnerHTML={{ __html: close }} />}
+                  </div>
                 </div>
-              </div>
-            </>
-          ) : null}
-
-          {data.keyTakeaways?.length > 0 ? (
-            <div className="glass-panel rounded-[8px] p-3.5">
-              <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-                Key Takeaways
-              </p>
-              <ul className="mt-2.5 flex flex-col gap-2.5">
-                {data.keyTakeaways.map((item, index) => (
-                  <li key={item.question} className="flex items-start gap-3 border-t border-[var(--color-border)] pt-3 first:border-t-0 first:pt-0">
-                    <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                      <HomeIcon name={takeawayIcons[index % takeawayIcons.length]} size={28} className="h-7 w-7" />
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.question }} />
-                      <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
-        </div>
+              </article>
+            )}
+            {takeaways.length > 0 && (
+              <article className="rounded-xl border border-lr-line bg-lr-card p-5 shadow-[0_18px_44px_-36px_var(--lr-shadow)] md:p-6 xl:px-8 xl:py-7 dark:bg-lr-card/70">
+                <h3 className="text-[17px] font-semibold uppercase leading-snug tracking-[0.02em] text-lr-ink md:text-[18px] xl:text-[20px] dark:text-lr-green">Key Takeaways</h3>
+                <ul className="mt-3 divide-y divide-lr-line">
+                  {takeaways.map((t, i) => (
+                    <li key={i} className="flex items-start gap-4 py-3.5 last:pb-0 sm:items-center xl:gap-5">
+                      <TakeawayIcon index={i} />
+                      <div className="min-w-0">
+                        <p className="text-[16px] font-semibold leading-snug text-lr-ink xl:text-[17px] dark:text-lr-green" dangerouslySetInnerHTML={{ __html: html(t.question) }} />
+                        <p className={`mt-1 text-[14px] leading-[1.55] text-lr-body xl:text-[16px] ${LINKS}`} dangerouslySetInnerHTML={{ __html: html(t.answer) }} />
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            )}
+          </div>
+        )}
       </div>
     </section>
   );

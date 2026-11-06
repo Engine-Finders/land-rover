@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import { HomeIcon } from "@/components/home/homeIcons";
+import LrIcon from "@/components/shared/LrIcon";
 import { buildQuoteLeadPayload } from "@/app/api/lead/crm";
 import { DEFAULT_VEHICLE_IMAGE, matchVehicleImage } from "@/lib/matchVehicleImage";
 
@@ -601,7 +601,7 @@ export default function FreeQuoteSticky() {
                     {submitLoading ? (
                       <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
                     ) : (
-                      <HomeIcon name="quote" size={24} className="h-6 w-6 shrink-0" />
+                      <LrIcon name="oem-references" tone="current" className="h-6 w-6 shrink-0" />
                     )}
                     <span className="text-balance">{submitLoading ? "Sending…" : "Get Your Free Replacement Engine Quote"}</span>
                     {!submitLoading ? <Icon name="arrow" className="h-4 w-4" /> : null}

@@ -1,0 +1,58 @@
+{
+ "velar": {
+  "Family Buyer": "/model/buyers/velar-1.webp",
+  "Daily Commuter": "/model/buyers/velar-2.webp",
+  "Towing & Working Use": "/model/buyers/velar-3.webp",
+  "Budget Owner": "/model/buyers/velar-4.webp",
+  "Design-Led Buyer": "/model/buyers/velar-5.webp"
+ },
+ "defender": {
+  "Family Buyer": "/model/buyers/defender-1.webp",
+  "Daily Commuter": "/model/buyers/defender-2.webp",
+  "Towing & Working Use": "/model/buyers/defender-3.webp",
+  "Budget Owner": "/model/buyers/defender-4.webp",
+  "Design-Led Buyer": "/model/buyers/defender-5.webp"
+ },
+ "discovery-sport": {
+  "Family Buyer": "/model/buyers/discovery-sport-1.webp",
+  "Daily Commuter": "/model/buyers/discovery-sport-2.webp",
+  "Towing & Working Use": "/model/buyers/discovery-sport-3.webp",
+  "Budget Owner": "/model/buyers/discovery-sport-4.webp",
+  "First-Time Land Rover Buyer": "/model/buyers/discovery-sport-5.webp"
+ },
+ "discovery": {
+  "Family Buyer": "/model/buyers/discovery-1.webp",
+  "Daily Commuter": "/model/buyers/discovery-2.webp",
+  "Towing & Working Use": "/model/buyers/discovery-3.webp",
+  "Budget Owner": "/model/buyers/discovery-4.webp",
+  "Long-Term Keeper": "/model/buyers/discovery-5.webp"
+ },
+ "freelander": {
+  "Family Buyer": "/model/buyers/freelander-1.webp",
+  "Daily Commuter": "/model/buyers/freelander-2.webp",
+  "Towing & Working Use": "/model/buyers/freelander-3.webp",
+  "Budget Owner": "/model/buyers/freelander-4.webp",
+  "First 4x4 Buyer": "/model/buyers/freelander-5.webp"
+ },
+ "range-rover-evoque": {
+  "First-Time Premium Buyer": "/model/buyers/range-rover-evoque-1.webp",
+  "Family Buyer": "/model/buyers/range-rover-evoque-2.webp",
+  "Daily Commuter": "/model/buyers/range-rover-evoque-3.webp",
+  "Towing & Working Use": "/model/buyers/range-rover-evoque-4.webp",
+  "Budget Owner": "/model/buyers/range-rover-evoque-5.webp"
+ },
+ "range-rover-sport": {
+  "Family Buyer": "/model/buyers/range-rover-sport-1.webp",
+  "Daily Commuter": "/model/buyers/range-rover-sport-2.webp",
+  "Towing & Working Use": "/model/buyers/range-rover-sport-3.webp",
+  "Budget Owner": "/model/buyers/range-rover-sport-4.webp",
+  "Performance Enthusiast": "/model/buyers/range-rover-sport-5.webp"
+ },
+ "range-rover": {
+  "Family Buyer": "/model/buyers/range-rover-1.webp",
+  "Daily Commuter": "/model/buyers/range-rover-2.webp",
+  "Towing & Working Use": "/model/buyers/range-rover-3.webp",
+  "Budget Owner": "/model/buyers/range-rover-4.webp",
+  "Collector / Keeper": "/model/buyers/range-rover-5.webp"
+ }
+}

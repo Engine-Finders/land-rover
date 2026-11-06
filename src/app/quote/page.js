@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function QuotePage() {
   return (
-    <main className="mx-auto flex w-full max-w-8xl justify-center px-3 py-6 md:px-8 md:py-10">
+    <main className="mx-auto flex w-full max-w-8xl justify-center px-3 py-6 md:px-10 xl:px-12 md:py-10">
       <Suspense fallback={<p className="text-sm text-[var(--color-text-soft)]">Loading quote form…</p>}>
         <QuoteForm />
       </Suspense>

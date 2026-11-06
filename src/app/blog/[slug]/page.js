@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { CONTAINER, H1 } from "@/lib/typeScale";
 import { getBlogPostBySlug, resolvePostImage } from "@/lib/cms";
 import { blogConfig } from "@/lib/blog.config";
 import { EngineQuoteWidget } from "@/components/blog/EngineQuoteWidget";
@@ -55,7 +56,7 @@ export default async function ArticlePage(props) {
 
   return (
     <div
-      className="cms-blog-root mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12"
+      className={`cms-blog-root ${CONTAINER} py-10 md:py-14 xl:py-16`}
       style={{
         "--blog-primary": theme.primaryColor,
         "--blog-primary-hover": theme.primaryHover,
@@ -79,12 +80,12 @@ export default async function ArticlePage(props) {
       ) : null}
 
       {/* Breadcrumb Navigation */}
-      <nav className="mb-6 text-xs text-slate-500">
-        <Link href="/" className="hover:underline hover:text-slate-900">Home</Link>
+      <nav className="mb-6 text-xs text-lr-muted">
+        <Link href="/" className="hover:underline hover:text-lr-head">Home</Link>
         <span className="mx-2">/</span>
-        <Link href="/blog" className="hover:underline hover:text-slate-900">Blog</Link>
+        <Link href="/blog" className="hover:underline hover:text-lr-head">Blog</Link>
         <span className="mx-2">/</span>
-        <span className="text-slate-900 font-medium">{post.title}</span>
+        <span className="text-lr-head font-medium">{post.title}</span>
       </nav>
 
       {/* 12-Column Responsive Grid */}
@@ -92,11 +93,11 @@ export default async function ArticlePage(props) {
         {/* Left Column: Article (8 cols) */}
         <article className="lg:col-span-8 min-w-0">
           <header className="mb-8 space-y-4">
-            <h1 className="cms-article-title text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl leading-tight">
+            <h1 className={`cms-article-title ${H1} text-balance text-lr-head`}>
               {post.title}
             </h1>
-            <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500 border-y border-slate-200 py-3">
-              <span>By <strong className="text-slate-900 font-semibold">{post.author?.name || blogConfig.defaultAuthor}</strong></span>
+            <div className="flex flex-wrap items-center gap-3 text-xs text-lr-muted border-y border-lr-line py-3">
+              <span>By <strong className="text-lr-head font-semibold">{post.author?.name || blogConfig.defaultAuthor}</strong></span>
               <span>•</span>
               <span>{post.readingTimeMinutes || 4} min read</span>
               {post.publishedAt && (
@@ -116,7 +117,7 @@ export default async function ArticlePage(props) {
 
           {/* Featured Image */}
           {featuredImageUrl && (
-            <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+            <div className="mb-8 overflow-hidden rounded-2xl border border-lr-line bg-lr-panel">
               <img
                 src={featuredImageUrl}
                 alt={featuredImageAlt}
@@ -128,7 +129,7 @@ export default async function ArticlePage(props) {
 
           {/* Rendered Semantic HTML */}
           <div
-            className="cms-content prose prose-neutral max-w-none"
+            className="cms-content prose prose-neutral dark:prose-invert max-w-none"
             dangerouslySetInnerHTML={{ __html: articleHtml }}
           />
 
@@ -137,8 +138,8 @@ export default async function ArticlePage(props) {
             <div
               className="mt-12 rounded-2xl p-8 text-center text-white shadow-xl relative overflow-hidden"
               style={{
-                background: `linear-gradient(135deg, #071827 0%, ${theme.primaryColor} 100%)`,
-                borderColor: theme.primaryColor,
+                background: "linear-gradient(135deg, #0b2e1f 0%, var(--lr-brand) 100%)",
+                borderColor: "var(--lr-brand)",
               }}
             >
               <div

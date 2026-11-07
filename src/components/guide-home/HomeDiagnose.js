@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
-import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_MD, ICON_XS, LABEL, SMALL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_SM, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens, and the Defender photo
 // fades into the page through CSS masks (no colour overlays), so it blends with either background.
@@ -27,7 +27,7 @@ const tone = (t) => TONES[t] ?? t;
 function Card({ title, className = "", children }) {
   return (
     <div className={`flex flex-col overflow-hidden rounded-lg border border-lr-line bg-lr-card shadow-[0_8px_28px_-14px_var(--lr-shadow)] ${className}`}>
-      <h3 className={`${H6} bg-lr-brand px-5 py-3 uppercase tracking-[0.03em] text-lr-on-brand lg:py-3.5`}>{title}</h3>
+      <h3 className={`${H6} flex items-center bg-lr-brand px-5 py-3 uppercase tracking-[0.03em] text-lr-on-brand lg:py-3.5 xl:min-h-[60px] xl:px-4 xl:py-2.5 xl:text-[15px]! xl:leading-snug 2xl:max-[1679px]:text-[16px]! min-[1680px]:text-[17px]!`}>{title}</h3>
       {children}
     </div>
   );
@@ -36,29 +36,29 @@ function Card({ title, className = "", children }) {
 function HowItWorks({ steps }) {
   return (
     <Card title={steps.title} className="order-1">
-      <ol className="flex flex-1 flex-col divide-y divide-lr-line px-4 xl:px-4">
+      <ol className="flex flex-1 flex-col divide-y divide-lr-line px-4 xl:px-3.5">
         {steps.items.map((s, i) => (
-          <li key={s.title} className="flex items-start gap-3 py-3.5 sm:gap-4 xl:py-5">
+          <li key={s.title} className="flex items-start gap-3 py-3.5 sm:gap-4 xl:gap-3 xl:py-4 2xl:gap-3.5">
             {/* number + icon disc; on wide desktop the number badge overlaps the disc like the reference */}
-            <span className="flex shrink-0 items-start gap-3 sm:gap-5 xl:relative xl:gap-0 xl:pl-2">
-              <span className={`${SMALL} mt-1.5 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-lr-brand font-semibold text-lr-on-brand xl:absolute xl:-left-1 xl:-top-1 xl:z-10 xl:mt-0 xl:ring-2 xl:ring-lr-card`}>
+            <span className="flex shrink-0 items-start gap-3 sm:gap-5 xl:relative xl:gap-0 xl:pl-1.5">
+              <span className={`${SMALL} mt-1.5 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-lr-brand font-semibold text-lr-on-brand lg:h-[30px] lg:w-[30px] xl:absolute xl:-left-1 xl:-top-1 xl:z-10 xl:mt-0 xl:h-6 xl:w-6 xl:text-[12px] xl:ring-2 xl:ring-lr-card 2xl:h-[26px] 2xl:w-[26px]`}>
                 {i + 1}
               </span>
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-lr-brand text-lr-gold-line sm:h-13 sm:w-13 xl:ml-5 dark:bg-lr-chip dark:text-lr-gold">
-                <GuideIcon name={s.icon} className={ICON_MD} />
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand sm:h-14 sm:w-14 lg:h-16 lg:w-16 xl:h-12 xl:w-12 2xl:h-14 2xl:w-14 dark:bg-lr-chip dark:text-lr-gold">
+                <GuideIcon name={s.icon} className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8 xl:h-6 xl:w-6 2xl:h-7 2xl:w-7" />
               </span>
             </span>
             <span className="min-w-0 pt-1">
-              <span className={`${H6} block text-lr-head`}>{s.title}</span>
-              <span className={`${BODY_SM} mt-1 block text-lr-body`}>{s.text}</span>
+              <span className={`${H6} block font-bold text-lr-head xl:text-[15px]! xl:leading-snug 2xl:text-[16px]!`}>{s.title}</span>
+              <span className={`${BODY_SM} mt-1 block text-lr-body xl:text-[13px]! xl:leading-[1.5] 2xl:text-[13.5px]!`}>{s.text}</span>
             </span>
           </li>
         ))}
       </ol>
-      <div className="px-4 pb-4 pt-1 xl:pb-6">
+      <div className="px-4 pb-4 pt-1 xl:px-3.5 xl:pb-4">
         <QuoteLink
           href={steps.cta.href}
-          className="flex w-full items-center justify-center gap-3 rounded-md bg-lr-brand py-3.5 text-[15.5px] font-semibold uppercase tracking-[0.04em] text-lr-on-brand shadow-[0_8px_18px_-8px_var(--lr-shadow)] transition-colors hover:bg-lr-brand-hover xl:py-4"
+          className="flex w-full items-center justify-center gap-3 rounded-md bg-lr-brand py-3.5 text-[15.5px] font-semibold uppercase tracking-[0.04em] text-lr-on-brand shadow-[0_8px_18px_-8px_var(--lr-shadow)] transition-colors hover:bg-lr-brand-hover xl:py-3.5 xl:text-[14px] 2xl:text-[15px]"
         >
           {steps.cta.label}
           <Arrow className="h-5 w-5" />
@@ -72,7 +72,7 @@ function Value({ col, value, className = "" }) {
   return (
     <span className={`flex items-center gap-1.5 whitespace-nowrap ${className}`}>
       <span className={tone(col.tone)}>
-        <GuideIcon name={col.icon} className={ICON_XS} />
+        <GuideIcon name={col.icon} className={ICON_SM} />
       </span>
       <span className={`${SMALL} text-lr-head`}>{value}</span>
     </span>
@@ -82,7 +82,7 @@ function Value({ col, value, className = "" }) {
 function CostTable({ costs }) {
   const { columns, rows } = costs;
   return (
-    <Card title={costs.title} className="order-2 md:order-3 md:col-span-2">
+    <Card title={costs.title} className="order-2 md:order-3 md:col-span-2 xl:order-2 xl:col-span-1">
       {/* mobile: accordion rows */}
       <ul className="divide-y divide-lr-line px-2 md:hidden">
         {rows.map((r) => (
@@ -108,7 +108,7 @@ function CostTable({ costs }) {
                 <dl className="grid grid-cols-2 gap-x-3 gap-y-1">
                   {columns.map((c) => (
                     <div key={c.key}>
-                      <dt className={`${LABEL} text-lr-muted`}>{c.label}</dt>
+                      <dt className={`${LABEL} text-lr-muted max-[359px]:text-[11px]`}>{c.label}</dt>
                       <dd className="font-medium text-lr-head">{r[c.key]}</dd>
                     </div>
                   ))}
@@ -126,7 +126,7 @@ function CostTable({ costs }) {
         {columns.map((c) => (
           <span key={c.key} className={`${SMALL} flex items-center gap-1.5 text-lr-body`}>
             <span className={tone(c.tone)}>
-              <GuideIcon name={c.icon} className={ICON_XS} />
+              <GuideIcon name={c.icon} className={ICON_SM} />
             </span>
             {c.label}
           </span>
@@ -135,12 +135,12 @@ function CostTable({ costs }) {
 
       {/* tablet / desktop: real table */}
       <div className="hidden flex-1 p-3 md:block">
-        <table className={`${BODY_SM} h-full w-full border-collapse border border-lr-line text-lr-head`}>
+        <table className={`${BODY_SM} h-full w-full border-collapse border border-lr-line text-lr-head xl:max-[1679px]:text-[13px]! min-[1680px]:text-[14px]!`}>
           <thead>
             <tr className="bg-lr-panel">
-              <th scope="col" className="px-2.5 py-4 text-left font-semibold">Failure Type</th>
+              <th scope="col" className="px-2.5 py-4 text-left font-semibold xl:max-[1535px]:px-2">Failure Type</th>
               {columns.map((c) => (
-                <th key={c.key} scope="col" className="border-l border-lr-line px-2 py-4 font-semibold leading-snug">
+                <th key={c.key} scope="col" className="border-l border-lr-line px-2 py-4 font-semibold leading-snug xl:max-[1535px]:px-1.5">
                   {c.label}
                 </th>
               ))}
@@ -149,13 +149,13 @@ function CostTable({ costs }) {
           <tbody>
             {rows.map((r) => (
               <tr key={r.name} className="border-t border-lr-line transition-colors hover:bg-lr-panel/60">
-                <th scope="row" className="whitespace-nowrap px-2.5 py-3.5 text-left font-semibold">
+                <th scope="row" className="px-2.5 py-3.5 text-left font-semibold xl:whitespace-nowrap xl:max-[1535px]:px-2">
                   <Link href={r.href} className="font-semibold hover:text-lr-green">
                     {r.name}
                   </Link>
                 </th>
                 {columns.map((c) => (
-                  <td key={c.key} className="whitespace-nowrap border-l border-lr-line px-2 py-3.5 text-center">
+                  <td key={c.key} className="whitespace-nowrap border-l border-lr-line px-2 py-3.5 text-center xl:max-[1535px]:px-1.5">
                     {r[c.key]}
                   </td>
                 ))}
@@ -170,16 +170,16 @@ function CostTable({ costs }) {
 
 function WhyTrust({ trust }) {
   return (
-    <Card title={trust.title} className="order-3 md:order-2">
-      <ul className="flex flex-1 flex-col divide-y divide-lr-line px-4 xl:px-5">
+    <Card title={trust.title} className="order-3 md:order-2 xl:order-3">
+      <ul className="flex flex-1 flex-col divide-y divide-lr-line px-4 xl:px-3.5 2xl:px-4">
         {trust.items.map((t) => (
-          <li key={t.title} className="flex items-center gap-3.5 py-3 xl:items-start xl:gap-5 xl:py-5">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-lr-brand text-lr-gold-line xl:h-[58px] xl:w-[58px] dark:bg-lr-chip dark:text-lr-gold">
-              <GuideIcon name={t.icon} className={ICON_MD} />
+          <li key={t.title} className="flex items-center gap-3.5 py-3 xl:items-start xl:gap-3 xl:py-4 2xl:gap-3.5">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-lr-brand text-lr-gold-line sm:h-14 sm:w-14 lg:h-[58px] lg:w-[58px] xl:h-11 xl:w-11 2xl:h-12 2xl:w-12 dark:bg-lr-chip dark:text-lr-gold">
+              <GuideIcon name={t.icon} className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8 xl:h-6 xl:w-6" />
             </span>
             <span className="min-w-0">
-              <span className={`${H6} block uppercase tracking-[0.01em] text-lr-head`}>{t.title}</span>
-              <span className={`${BODY_SM} mt-0.5 block text-lr-body xl:mt-1.5`}>{t.text}</span>
+              <span className={`${H6} block font-bold uppercase tracking-[0.01em] text-lr-head xl:text-[14px]! xl:leading-snug 2xl:text-[15px]!`}>{t.title}</span>
+              <span className={`${BODY_SM} mt-0.5 block text-lr-body xl:mt-1 xl:text-[13px]! xl:leading-[1.5] 2xl:text-[13.5px]!`}>{t.text}</span>
             </span>
           </li>
         ))}
@@ -199,7 +199,7 @@ export default function HomeDiagnose({ data }) {
         <Image src={data.image} alt="" fill quality={90} className="object-cover object-[62%_50%] dark:brightness-[0.82]" sizes="62vw" />
       </div>
 
-      <div className={`${CONTAINER} relative pb-10 pt-8 lg:pb-16 lg:pt-14`}>
+      <div className={`${CONTAINER} relative pb-6 pt-6 lg:pb-8 lg:pt-7`}>
         <div className="xl:min-h-[330px]">
           <p className={`${LABEL} text-lr-ink`}>{data.eyebrow}</p>
           <span className="mt-2 block h-[2px] w-8 bg-lr-gold-line lg:w-9" />
@@ -235,7 +235,8 @@ export default function HomeDiagnose({ data }) {
           ))}
         </div>
 
-        <div className="mt-4 grid items-stretch gap-4 md:grid-cols-2 xl:mt-0 xl:gap-5">
+        {/* phones: stacked; tablets: two across with the table below; from 1280px all three in one row - 20% / 60% / 20% */}
+        <div className="mt-4 grid items-stretch gap-4 md:grid-cols-2 xl:mt-0 xl:grid-cols-[minmax(0,1fr)_minmax(0,3fr)_minmax(0,1fr)] 2xl:gap-5">
           <HowItWorks steps={data.steps} />
           <CostTable costs={data.costs} />
           <WhyTrust trust={data.trust} />

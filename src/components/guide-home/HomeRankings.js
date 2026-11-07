@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon from "@/components/guide-home/GuideIcon";
-import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_SM, LABEL, NUM, SMALL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, LABEL, NUM, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens, and the Defender photos
 // fade into the page through CSS masks (no colour overlays), so they blend with either background.
@@ -21,20 +21,20 @@ const VERDICTS = {
   safe: { icon: "shield", iconTone: "text-[#4fae7e]", labelTone: "text-lr-on-brand" },
   avoid: { icon: "alert", iconTone: "text-[#ef5b5b]", labelTone: "text-[#ef5b5b]" },
   watch: { icon: "alert", iconTone: "text-lr-gold-line", labelTone: "text-lr-gold-line" },
-  family: { icon: "people", iconTone: "text-[#4fae7e]", labelTone: "text-lr-on-brand" },
+  family: { icon: "family", iconTone: "text-[#4fae7e]", labelTone: "text-lr-on-brand" },
 };
 
 function Verdict({ row, desktop = false }) {
   const v = VERDICTS[row.verdict];
   if (desktop) {
     return (
-      <span className={`inline-flex min-w-[150px] items-center gap-2.5 rounded-md py-2 pl-3 pr-3.5 shadow-[0_4px_10px_-4px_var(--lr-shadow)] ${BADGE}`}>
-        <span className={v.iconTone}>
-          <GuideIcon name={v.icon} tone="current" className={ICON_SM} />
+      <span className={`inline-flex w-[164px] items-center gap-3 rounded-md py-2 pl-3 pr-3 shadow-[0_4px_10px_-4px_var(--lr-shadow)] ${BADGE}`}>
+        <span className={`flex shrink-0 ${v.iconTone}`}>
+          <GuideIcon name={v.icon} tone="current" className="h-7 w-7" />
         </span>
         <span className="leading-tight">
-          <span className={`${SMALL} block font-semibold uppercase tracking-[0.02em] ${v.labelTone}`}>{row.verdictLabel}</span>
-          <span className={`${SMALL} block whitespace-nowrap text-lr-on-brand/90`}>{row.verdictSub}</span>
+          <span className={`block text-[14px] font-semibold uppercase leading-tight tracking-[0.02em] ${v.labelTone}`}>{row.verdictLabel}</span>
+          <span className="mt-0.5 block whitespace-nowrap text-[12px] leading-tight text-lr-on-brand/90">{row.verdictSub}</span>
         </span>
       </span>
     );
@@ -42,10 +42,10 @@ function Verdict({ row, desktop = false }) {
   const label = row.mobileLabel ?? row.verdictLabel;
   return (
     <span className={`flex w-[66px] shrink-0 flex-col items-center justify-center gap-1 rounded-lg px-1.5 py-2 text-center shadow-[0_4px_10px_-4px_var(--lr-shadow)] sm:w-[124px] sm:flex-row sm:gap-2.5 sm:px-2 sm:py-3 sm:text-left ${BADGE}`}>
-      <span className={v.iconTone}>
-        <GuideIcon name={v.icon} tone="current" className={ICON_SM} />
+      <span className={`flex shrink-0 ${v.iconTone}`}>
+        <GuideIcon name={v.icon} tone="current" className="h-6 w-6 sm:h-7 sm:w-7" />
       </span>
-      <span className={`${SMALL} font-semibold uppercase leading-[1.15] tracking-[0.02em] ${v.labelTone}`}>{label}</span>
+      <span className={`text-[11.5px] font-normal uppercase leading-[1.15] tracking-[0.04em] sm:text-[12.5px] ${v.labelTone}`}>{label}</span>
     </span>
   );
 }
@@ -69,7 +69,7 @@ function MobileRow({ row, n }) {
         </span>
         <span className="min-w-0 flex-1">
           <span className={`${BODY_SM} block font-semibold leading-snug text-lr-head`}>{row.category}</span>
-          <span className={`${H6} block text-lr-green`}>{row.winner}</span>
+          <span className={`${H6} block text-lr-ink [overflow-wrap:anywhere] dark:text-lr-green`}>{row.winner}</span>
           <span className={`${BODY_SM} mt-0.5 block text-lr-body`}>{row.why}</span>
         </span>
         <span className="self-center">
@@ -91,8 +91,8 @@ export default function HomeRankings({ data }) {
         <Image src={data.image} alt="" fill quality={90} className="object-cover object-[60%_45%] dark:brightness-[0.82]" sizes="58vw" />
       </div>
 
-      <div className={`${CONTAINER} relative pb-10 pt-9 lg:pb-14 lg:pt-10`}>
-        <h2 className={`${H2} text-balance text-lr-head lg:mt-4`}>
+      <div className={`${CONTAINER} relative pb-6 pt-6 lg:pb-6 lg:pt-6`}>
+        <h2 className={`${H2} text-balance text-lr-head`}>
           {h1} <br className="xl:hidden" />
           {h2}
           <br />
@@ -104,7 +104,7 @@ export default function HomeRankings({ data }) {
           <div className={`pointer-events-none absolute -right-[62px] top-0 aspect-[620/370] w-[64%] sm:-right-[86px] sm:w-[58%] lg:-right-[110px] xl:hidden ${FADE_MOBILE}`} aria-hidden="true">
             <Image src={data.mobileImage} alt="" fill quality={90} className="object-cover dark:brightness-[0.82]" sizes="60vw" />
           </div>
-          <p className={`${BODY} relative w-[52%] text-lr-body sm:w-[44%] xl:w-auto xl:max-w-[600px]`}>
+          <p className={`${BODY} relative w-[52%] text-lr-body sm:w-[44%] xl:w-auto xl:max-w-[700px]`}>
             {data.subhead}
           </p>
         </div>
@@ -117,10 +117,10 @@ export default function HomeRankings({ data }) {
         </ol>
 
         {/* ===== desktop: ranking table ===== */}
-        <div className="relative mt-6 hidden overflow-hidden rounded-md border border-lr-line bg-lr-card shadow-[0_10px_30px_-16px_var(--lr-shadow)] xl:block">
-          <div className={`${LABEL} grid grid-cols-[25%_27%_1fr_236px] bg-lr-brand text-lr-on-brand`}>
+        <div className="relative mt-5 hidden overflow-hidden rounded-md border border-lr-line bg-lr-card shadow-[0_10px_30px_-16px_var(--lr-shadow)] xl:block">
+          <div className={`${LABEL} grid grid-cols-[23%_26%_1fr_246px] bg-lr-brand text-lr-on-brand`}>
             {data.columns.map((c, i) => (
-              <span key={c} className={`py-3.5 ${i === 0 ? "pl-7" : i === 3 ? "pl-8" : "pl-6"}`}>
+              <span key={c} className={`py-3 ${i === 0 ? "pl-5" : i === 3 ? "pl-5" : "pl-4"}`}>
                 {c}
               </span>
             ))}
@@ -130,20 +130,20 @@ export default function HomeRankings({ data }) {
               <li key={r.rank} className="border-t border-lr-line first:border-t-0">
                 <Link
                   href={r.href}
-                  className="grid grid-cols-[25%_27%_1fr_236px] items-center font-normal transition-colors hover:bg-lr-panel/60"
+                  className="grid grid-cols-[23%_26%_1fr_246px] items-center font-normal transition-colors hover:bg-lr-panel/60"
                 >
-                  <span className="flex items-center self-stretch border-r border-lr-line py-4 pl-7">
-                    <span className={`${NUM} w-[60px] shrink-0 text-lr-head`}>{r.rank}</span>
-                    <span className={`${H6} pr-4 text-lr-head`}>{r.category}</span>
+                  <span className="flex items-center self-stretch border-r border-lr-line py-3 pl-5">
+                    <span className={`${NUM} w-[52px] shrink-0 text-lr-head`}>{r.rank}</span>
+                    <span className={`${H6} pr-4 text-lr-head xl:max-[1679px]:text-[16px]! min-[1680px]:text-[17px]!`}>{r.category}</span>
                   </span>
-                  <span className="flex items-center gap-4 self-stretch border-r border-lr-line py-1.5 pl-5 pr-4">
-                    <span className="relative h-[50px] w-[96px] shrink-0">
-                      <Image src={r.image} alt={r.imageAlt} fill className="object-contain" sizes="96px" />
+                  <span className="flex items-center gap-3 self-stretch border-r border-lr-line py-1.5 pl-4 pr-3">
+                    <span className="relative h-[54px] w-[104px] shrink-0">
+                      <Image src={r.image} alt={r.imageAlt} fill className="object-contain" sizes="104px" />
                     </span>
-                    <span className={`${H6} text-lr-green`}>{r.winner}</span>
+                    <span className={`${H6} font-semibold text-lr-ink xl:max-[1679px]:text-[16px]! min-[1680px]:text-[17px]! dark:text-lr-green`}>{r.winner}</span>
                   </span>
-                  <span className={`${BODY_SM} py-3 pl-7 pr-6 text-lr-body`}>{r.why}</span>
-                  <span className="flex justify-start py-2.5 pl-4">
+                  <span className={`${BODY_SM} py-2.5 pl-4 pr-4 text-lr-body xl:text-[14px]! xl:leading-[1.5]`}>{r.why}</span>
+                  <span className="flex justify-start py-2 pl-5">
                     <Verdict row={r} desktop />
                   </span>
                 </Link>
@@ -153,18 +153,19 @@ export default function HomeRankings({ data }) {
         </div>
 
         {/* data note */}
-        <div className="relative mt-4 overflow-hidden rounded-lg border border-lr-line bg-lr-card text-lr-head shadow-[0_10px_30px_-16px_var(--lr-shadow)] xl:mt-5 xl:rounded-md">
+        <div className="relative mt-4 overflow-hidden rounded-lg border border-lr-brand bg-lr-brand text-lr-on-brand shadow-[0_10px_30px_-16px_var(--lr-shadow)] xl:mt-5 xl:rounded-md dark:border-lr-line dark:bg-lr-chip">
           {/* photo on the right, its left edge fading into the card (mask - blends with either theme) */}
           <div className="absolute inset-y-0 right-0 hidden w-[36%] [mask-image:linear-gradient(to_right,transparent,rgba(0,0,0,0.6)_30%,#000_60%)] sm:block" aria-hidden="true">
             <Image src={note.image} alt="" fill quality={90} className="object-cover" sizes="36vw" />
           </div>
-          <div className="relative flex items-start gap-3.5 px-3.5 py-4 sm:items-center sm:gap-6 sm:px-6 sm:py-6 lg:px-5">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-lr-gold-line/70 bg-lr-chip text-lr-gold sm:h-[56px] sm:w-[56px]">
-              <GuideIcon name="shield" className={ICON_LG} />
+          {/* phones: the shield floats left so the text wraps under it (no empty strip down the left) */}
+          <div className="relative flex items-start gap-3.5 px-3.5 py-4 max-sm:flow-root sm:items-center sm:gap-6 sm:px-6 sm:py-6 lg:px-5">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-lr-gold-line/70 text-lr-gold-line max-sm:float-left max-sm:mb-1 max-sm:mr-3 sm:h-[60px] sm:w-[60px]">
+              <GuideIcon name="shield" tone="current" className="h-7 w-7 sm:h-8 sm:w-8" />
             </span>
             <div className="min-w-0 sm:max-w-[62%] lg:max-w-[720px]">
-              <p className={`${H6} text-lr-head`}>{note.title}</p>
-              <p className={`${BODY_SM} mt-1 text-lr-body`}>{note.text}</p>
+              <p className={`${H6} text-lr-on-brand max-sm:pt-2.5`}>{note.title}</p>
+              <p className={`${BODY_SM} mt-1 text-lr-on-brand/85 max-sm:mt-2.5`}>{note.text}</p>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER, LABEL } from "@/lib/typeScale";
-import { BAND_SOFT, CARD, EyebrowPill, SANS, SECTION_Y, SectionTitle, TABLE_HEAD, prose, splitHeading, INTRO } from "@/components/models/modelKit";
+import { BAND_PAGE, CARD, EyebrowPill, SANS, SECTION_Y, SectionTitle, TABLE_HEAD, prose, splitHeading, INTRO } from "@/components/models/modelKit";
 import { cellHtml, engineFamilies, eraCar, heroEnquiries, keyEngines, stripHtml, yearSpan } from "@/components/models/engineSections";
 
 // Model page section 9 — how the model's engine range evolved, built to the approved Velar
@@ -125,7 +125,7 @@ export default function EngineEvolution({ data, slug = "", page = null }) {
   ].filter(Boolean);
 
   return (
-    <section className={`${BAND_SOFT} text-lr-head ${SANS}`}>
+    <section className={`${BAND_PAGE} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         <div className="grid gap-6 md:gap-8 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] xl:items-center xl:gap-10">
           <div className="min-w-0">
@@ -167,21 +167,21 @@ export default function EngineEvolution({ data, slug = "", page = null }) {
             <tbody>
               {eras.map((e) => (
                 <tr key={`${e.era}-${e.years}`} className="border-t border-lr-line first:border-t-0">
-                  <th scope="row" className="border-r border-lr-line px-5 py-5 align-top font-normal">
-                    <EraTitle era={e} className="text-[23px]" />
+                  <th scope="row" className="border-r border-lr-line px-5 py-4 align-top font-normal">
+                    <EraTitle era={e} className="text-[20px] 2xl:text-[21px]" />
                     {e.car && (
-                      <span className="mt-3 block w-full max-w-[250px]">
-                        <GroundedCar src={e.car} studio sizes="(min-width: 1280px) 250px, 1px" />
+                      <span className="mt-2 block w-full max-w-[150px] 2xl:max-w-[168px]">
+                        <GroundedCar src={e.car} studio sizes="(min-width: 1280px) 170px, 1px" />
                       </span>
                     )}
                   </th>
-                  <td className="border-r border-lr-line px-3 py-5 text-center align-middle text-[16px] font-semibold text-lr-head">{e.years}</td>
-                  <td className="border-r border-lr-line px-4 py-5 align-middle">
+                  <td className="border-r border-lr-line px-3 py-4 text-center align-middle text-[16px] font-semibold text-lr-head">{e.years}</td>
+                  <td className="border-r border-lr-line px-4 py-4 align-middle">
                     {e.engines.length ? (
                       <ul className="flex flex-wrap justify-center gap-y-4">
                         {e.engines.map((en, i) => (
                           <li key={`${en.code}-${i}`} className={`w-1/4 min-w-0 px-2 ${i % 4 ? "border-l border-lr-line" : ""}`}>
-                            <EngineTile engine={en} imageClass="max-w-[116px] mx-auto" codeClass="text-[15px]" subClass="mt-0.5 text-[14px]" sizes="112px" />
+                            <EngineTile engine={en} imageClass="max-w-[92px] mx-auto 2xl:max-w-[100px]" codeClass="text-[15px]" subClass="mt-0.5 text-[14px]" sizes="100px" />
                           </li>
                         ))}
                       </ul>
@@ -189,8 +189,8 @@ export default function EngineEvolution({ data, slug = "", page = null }) {
                       <p className="text-center text-[15px] text-lr-muted">—</p>
                     )}
                   </td>
-                  <td className={`border-r border-lr-line px-5 py-5 align-middle text-[15px] leading-[1.6] text-lr-body ${LINKS}`} dangerouslySetInnerHTML={{ __html: cellHtml(e.whyBmwChanged) }} />
-                  <td className="px-5 py-5 align-middle">
+                  <td className={`border-r border-lr-line px-5 py-4 align-middle text-[15px] leading-[1.6] text-lr-body ${LINKS}`} dangerouslySetInnerHTML={{ __html: cellHtml(e.whyBmwChanged) }} />
+                  <td className="px-5 py-4 align-middle">
                     <p className={`flex gap-3.5 text-[15px] leading-[1.6] text-lr-body ${LINKS}`}>
                       <InfoIcon className="mt-0.5 h-7 w-7 text-lr-ink dark:text-lr-green" />
                       <span dangerouslySetInnerHTML={{ __html: cellHtml(e.worthKnowing) }} />
@@ -212,8 +212,8 @@ export default function EngineEvolution({ data, slug = "", page = null }) {
                   <EraTitle era={e} as="h3" className="mt-2.5 text-[21px] md:text-[24px]" taglineClass="text-[17px] min-[400px]:text-[18px] md:text-[24px]" />
                 </div>
                 {e.car && (
-                  <span className="block w-[46%] max-w-[230px] shrink-0 pt-1 md:mt-5 md:w-full md:max-w-[300px] md:pt-0">
-                    <GroundedCar src={e.car} studio sizes="(min-width: 768px) 300px, 46vw" />
+                  <span className="block w-[42%] max-w-[200px] shrink-0 pt-1 md:mt-4 md:w-full md:max-w-[240px] md:pt-0">
+                    <GroundedCar src={e.car} studio sizes="(min-width: 768px) 240px, 42vw" />
                   </span>
                 )}
               </div>

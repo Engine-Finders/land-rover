@@ -43,8 +43,8 @@ export default function TrustCta({ data, page = null, model = "" }) {
   const href = localHref(data.ctaButton?.href) || "/quote";
 
   return (
-    <section className={`relative overflow-hidden bg-lr-page pb-10 text-lr-head md:pb-14 xl:pb-16 ${SANS}`}>
-      <div className={`${CONTAINER} pt-10 md:pt-12 xl:pt-14`}>
+    <section className={`relative overflow-hidden bg-lr-page pb-6 text-lr-head md:pb-7 xl:pb-8 ${SANS}`}>
+      <div className={`${CONTAINER} pt-6 md:pt-6 xl:pt-7`}>
         <div className="relative lg:min-h-[36vw] xl:min-h-[32vw]">
           {/* laptops: the hillside and the car, from the screen's right edge */}
           <div className="pointer-events-none absolute -top-10 bottom-[-28px] right-[calc(50%-50vw)] hidden w-[62vw] lg:block xl:-top-14" aria-hidden="true">

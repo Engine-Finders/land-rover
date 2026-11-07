@@ -213,7 +213,7 @@ export default function AtAGlance({ data, slug = "" }) {
   const rows = data.rows || [];
 
   return (
-    <section className={`relative overflow-hidden bg-lr-page py-10 text-lr-head md:py-14 xl:py-16 ${SANS}`} style={art || undefined}>
+    <section className={`relative overflow-hidden bg-lr-page py-6 text-lr-head md:py-7 xl:py-8 ${SANS}`} style={art || undefined}>
       <div className={`relative ${CONTAINER}`}>
         <div className="relative md:grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-end lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)]">
           {/* md+: the backdrop panel, from the section top to behind the table, off the right edge */}
@@ -242,11 +242,12 @@ export default function AtAGlance({ data, slug = "" }) {
             )}
           </div>
 
+          {/* the car is sized to the heading and intro beside it (no empty band under the text) */}
           {art && (
             <div className="relative -mx-5 sm:-mx-6 mt-2 aspect-[16/10] sm:aspect-[2/1] md:mx-0 md:mt-0 md:aspect-auto md:pt-6 lg:pt-4" aria-hidden="true">
               <div className={`absolute inset-0 md:hidden ${BG_M} ${PHOTO_FADE_M}`} />
               <div
-                className={`absolute bottom-[10%] left-1/2 w-[84%] max-w-[560px] -translate-x-1/2 md:static md:ml-auto md:mr-[2%] md:w-full md:max-w-[600px] md:translate-x-0 ${CAR_ART_RATIO} ${CAR_ART}`}
+                className={`absolute bottom-[10%] left-1/2 w-[84%] max-w-[560px] -translate-x-1/2 md:static md:ml-auto md:mr-[2%] md:w-full md:max-w-[420px] md:translate-x-0 xl:max-w-[440px] 2xl:max-w-[460px] ${CAR_ART_RATIO} ${CAR_ART}`}
               />
             </div>
           )}

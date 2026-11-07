@@ -1,6 +1,6 @@
 import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER } from "@/lib/typeScale";
-import { BAND_PAGE, CAR_ART, CAR_ART_RATIO, EyebrowPill, SANS, SECTION_Y, modelArt, prose, H2_MODEL } from "@/components/models/modelKit";
+import { BAND_SOFT, CAR_ART, CAR_ART_RATIO, EyebrowPill, SANS, SECTION_Y, modelArt, prose, H2_MODEL } from "@/components/models/modelKit";
 import { InsightsChart, UkDotMap } from "@/components/models/TrustBlockArt";
 
 // Model page section 12, built to the approved reference: a framed card with "Why Velar Owners Trust
@@ -54,7 +54,7 @@ export default function TrustBlock({ data, slug = "" }) {
   const art = modelArt(slug, "light");
 
   return (
-    <section className={`${BAND_PAGE} text-lr-head ${SANS}`}>
+    <section className={`${BAND_SOFT} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         {/* open on the page like the home page sections - no card around the section */}
         <div>

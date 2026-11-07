@@ -77,7 +77,7 @@ export default function CoreVariants({ data, page = null, model = "" }) {
   const both = diesel.length > 0 && petrol.length > 0;
 
   return (
-    <section className={`relative overflow-hidden bg-lr-page py-10 text-lr-head md:py-14 xl:py-16 ${SANS}`}>
+    <section className={`relative overflow-hidden bg-lr-band py-6 text-lr-head md:py-7 xl:py-8 ${SANS}`}>
       {/* laptops: the hillside and the car, full-bleed on the right */}
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[50vw] lg:block" aria-hidden="true">
         <div className="absolute inset-0 [mask-image:linear-gradient(90deg,transparent,rgba(0,0,0,0.7)_22%,#000_40%)]">

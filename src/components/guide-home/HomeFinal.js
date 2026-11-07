@@ -5,16 +5,20 @@ import { serif } from "@/lib/guideFonts";
 import { BODY, CONTAINER, H2, H5, ICON_MD, ICON_SM, ICON_XL, LABEL, NUM, SMALL, STAT } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens; Trustpilot's own green
-// stays as their brand colour. The Range Rover photo fades into the page through CSS masks; at night
-// the pale sky and the white fade it was shot with are masked away too (and the photo dimmed a touch).
+// stays as their brand colour. The Range Rover photo fades into the page through CSS masks: its pale sky
+// and the white haze it was shot with are masked away in both themes (and the photo dimmed a touch at
+// night), so only the car on the loch-side road shows on the cream or green page - never a pale box.
 const TP_GREEN = "#00b67a";
 
-// desktop photo: left + bottom edges by day; night also fades the pale sky at the top
+// desktop photo: left edge, pale sky (top) and bottom fade into the page
 const FADE_DESKTOP =
-  "[mask-image:linear-gradient(to_right,transparent,#000_20%),linear-gradient(to_bottom,#000_78%,transparent)] [mask-composite:intersect] dark:[mask-image:linear-gradient(to_right,transparent,rgba(0,0,0,0.6)_16%,#000_30%),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.6)_18%,#000_32%,#000_74%,transparent)]";
-// phone / tablet photo: same idea
+  "[mask-image:linear-gradient(to_right,transparent,rgba(0,0,0,0.6)_16%,#000_30%),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.6)_18%,#000_32%,#000_74%,transparent)] [mask-composite:intersect]";
+// tablet photo (beside the heading): the same idea
 const FADE_MOBILE =
-  "[mask-image:linear-gradient(to_right,transparent,#000_11%),linear-gradient(to_bottom,#000_80%,transparent)] [mask-composite:intersect] dark:[mask-image:linear-gradient(to_right,transparent,#000_20%),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.6)_18%,#000_32%,#000_76%,transparent)]";
+  "[mask-image:linear-gradient(to_right,transparent,#000_20%),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.6)_18%,#000_32%,#000_76%,transparent)] [mask-composite:intersect]";
+// phones: a full-width band under the text - both sides, the sky and the road edge feather into the page
+const FADE_PHONE =
+  "max-sm:[mask-image:linear-gradient(to_right,transparent,rgba(0,0,0,0.75)_9%,#000_16%,#000_88%,transparent),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.7)_14%,#000_24%,#000_82%,transparent)]!";
 
 function Stat({ s }) {
   return (
@@ -115,13 +119,13 @@ export default function HomeFinal({ data }) {
   const [s1, s2] = data.subhead.split("|");
 
   return (
-    <section lang="en-GB" className="relative overflow-hidden bg-lr-page text-lr-head">
+    <section lang="en-GB" className="relative overflow-hidden bg-lr-band text-lr-head">
       {/* desktop: Range Rover on the right half, fading into the page on its left and bottom edges */}
       <div className={`absolute right-0 top-0 hidden aspect-[764/490] w-[52%] lg:block ${FADE_DESKTOP}`} aria-hidden="true">
         <Image src={data.image} alt="" fill quality={90} className="object-cover dark:brightness-[0.85]" sizes="52vw" />
       </div>
 
-      <div className={`${CONTAINER} relative pb-10 pt-8 lg:pb-14 lg:pt-16`}>
+      <div className={`${CONTAINER} relative pb-6 pt-6 lg:pb-7 lg:pt-8`}>
         {/* tablets: heading on the left, the car beside it on the right (car never under text). Phones: the
             heading needs the full width at its size, so the car follows as a band bleeding off the right edge */}
         <div className="relative lg:hidden">
@@ -143,11 +147,12 @@ export default function HomeFinal({ data }) {
               {s2}
             </p>
           </div>
+          {/* phones: full-width band under the text (car centred, larger); tablets: beside the heading */}
           <div
-            className={`pointer-events-none relative -right-4 -mt-6 ml-auto aspect-[660/524] w-[78%] sm:absolute sm:-top-2 sm:mt-0 sm:w-[58%] md:-right-8 ${FADE_MOBILE}`}
+            className={`pointer-events-none relative -mx-5 mt-1 aspect-[1320/960] sm:absolute sm:-right-4 sm:-top-2 sm:mx-0 sm:mt-0 sm:aspect-[660/524] sm:w-[58%] md:-right-8 ${FADE_MOBILE} ${FADE_PHONE}`}
             aria-hidden="true"
           >
-            <Image src={data.mobileImage} alt="" fill quality={90} className="object-cover dark:brightness-[0.85]" sizes="(min-width: 640px) 58vw, 78vw" />
+            <Image src={data.mobileImage} alt="" fill quality={90} className="object-cover object-[50%_40%] dark:brightness-[0.85] sm:object-center" sizes="(min-width: 640px) 58vw, 100vw" />
           </div>
         </div>
 

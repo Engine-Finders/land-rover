@@ -49,7 +49,7 @@ function parseCost(raw = "") {
   return { figure: m ? m[1] : clean, rest: m ? m[2].replace(/^\(|\)$/g, "").trim() : "", tag: t ? `[${t[1].replace("‑", "-")}]` : "" };
 }
 
-const ICON_RING = "flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-ink/45 text-lr-ink xl:h-[54px] xl:w-[54px] 2xl:max-[1679px]:h-11 2xl:max-[1679px]:w-11 dark:border-lr-gold-line/55 dark:text-lr-gold";
+const ICON_RING = "flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[1.5px] border-lr-ink/45 text-lr-ink xl:h-[54px] xl:w-[54px] dark:border-lr-gold-line/55 dark:text-lr-gold";
 const STROKE = { fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round" };
 
 function CardIcon({ kind }) {
@@ -68,13 +68,13 @@ function CardIcon({ kind }) {
 
 function Card({ kind, title, sub, children, basis, tag, art }) {
   return (
-    <article className="relative flex min-w-0 flex-col overflow-hidden rounded-xl border border-lr-line bg-lr-card p-5 shadow-[0_18px_44px_-36px_var(--lr-shadow)] xl:p-6 2xl:max-[1679px]:px-4 2xl:max-[1679px]:py-5">
+    <article className="relative flex min-w-0 flex-col overflow-hidden rounded-xl border border-lr-line bg-lr-card p-5 shadow-[0_18px_44px_-36px_var(--lr-shadow)] xl:p-6">
       <div className="flex items-start gap-3.5 2xl:gap-3">
         <span className={ICON_RING}>
           <CardIcon kind={kind} />
         </span>
         <div className="min-w-0 pt-0.5">
-          <h3 className="text-[14px] font-semibold uppercase leading-snug tracking-[0.02em] text-lr-ink xl:text-[15px] 2xl:max-[1679px]:text-[13.5px] dark:text-lr-green">{title}</h3>
+          <h3 className="text-[14px] font-semibold uppercase leading-snug tracking-[0.02em] text-lr-ink xl:text-[15px] dark:text-lr-green">{title}</h3>
           {sub && <p className="mt-1 text-[12.5px] leading-snug text-lr-muted xl:text-[13px]">{sub}</p>}
         </div>
       </div>
@@ -94,7 +94,7 @@ function List({ items }) {
   return (
     <ol className="space-y-3.5">
       {items.map((t, i) => (
-        <li key={i} className="flex gap-3 text-[14px] leading-[1.5] text-lr-head xl:text-[15px] 2xl:gap-2 2xl:max-[1679px]:text-[14px]">
+        <li key={i} className="flex gap-3 text-[14px] leading-[1.5] text-lr-head xl:text-[15px] 2xl:gap-2">
           <span className="w-4 shrink-0 font-medium">{i + 1}.</span>
           <span className="min-w-0 [&_a]:text-inherit [&_a]:underline" dangerouslySetInnerHTML={{ __html: html(t) }} />
         </li>
@@ -144,7 +144,7 @@ function LiveFeed({ rows, car }) {
       </h3>
       {/* tablets and up: the five columns */}
       <div className="hidden border-t border-lr-line sm:block">
-        <div className="grid grid-cols-[minmax(0,1.35fr)_minmax(0,1.15fr)_minmax(0,1.15fr)_minmax(0,0.82fr)_minmax(0,0.92fr)] gap-2.5 bg-lr-panel/50 px-5 py-3 text-[10.5px] font-semibold uppercase tracking-[0.03em] text-lr-head 2xl:px-4">
+        <div className="grid grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)_minmax(0,1.3fr)_minmax(0,0.8fr)_minmax(0,0.9fr)] gap-2.5 bg-lr-panel/50 px-5 py-3 text-[10.5px] font-semibold uppercase tracking-[0.03em] text-lr-head 2xl:px-4">
           <span>Vehicle</span>
           <span>Location</span>
           <span>Issue</span>
@@ -156,16 +156,16 @@ function LiveFeed({ rows, car }) {
         {rows.map((r, i) => {
           const c = splitCount(r.enquiries);
           return (
-            <li key={`${r.vehicle}-${r.location}-${i}`} className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-x-3 gap-y-2 px-5 py-3.5 text-[13px] leading-snug text-lr-body sm:grid-cols-[minmax(0,1.35fr)_minmax(0,1.15fr)_minmax(0,1.15fr)_minmax(0,0.82fr)_minmax(0,0.92fr)] sm:gap-2.5 2xl:px-4 2xl:max-[1679px]:text-[12px]">
+            <li key={`${r.vehicle}-${r.location}-${i}`} className="grid grid-cols-[56px_minmax(0,1fr)] items-center gap-x-3 gap-y-2 px-5 py-3.5 text-[13px] leading-snug text-lr-body sm:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)_minmax(0,1.3fr)_minmax(0,0.8fr)_minmax(0,0.9fr)] sm:gap-2.5 2xl:px-4">
               <span className="col-span-2 flex min-w-0 items-center gap-3 sm:col-span-1 xl:gap-2">
-                <span className="relative h-11 w-14 shrink-0 overflow-hidden rounded-md xl:h-10 xl:w-12 2xl:max-[1679px]:h-8 2xl:max-[1679px]:w-10 bg-[linear-gradient(180deg,#d9dfd3,#aab59f)] dark:bg-[linear-gradient(180deg,#2a3d33,#17261f)]">
+                <span className="relative h-11 w-14 shrink-0 overflow-hidden rounded-md xl:h-10 xl:w-12 bg-[linear-gradient(180deg,#d9dfd3,#aab59f)] dark:bg-[linear-gradient(180deg,#2a3d33,#17261f)]">
                   {car && <Image src={car} alt="" fill sizes="56px" className="object-contain p-0.5" />}
                 </span>
-                <span className="min-w-0 font-medium text-lr-head hyphens-auto [overflow-wrap:anywhere]" lang="en-GB" dangerouslySetInnerHTML={{ __html: html(r.vehicle) }} />
+                <span className="min-w-0 break-words font-medium text-lr-head" dangerouslySetInnerHTML={{ __html: html(r.vehicle) }} />
               </span>
               <span className="col-span-2 flex min-w-0 items-center gap-2 sm:col-span-1">
                 <FeedIcon kind="pin" className="h-4 w-4 shrink-0 text-lr-ink dark:text-lr-green" />
-                <span className="min-w-0 [overflow-wrap:anywhere]">{r.location}</span>
+                <span className="min-w-0 break-words">{r.location}</span>
               </span>
               <span className="col-span-2 flex items-center gap-2 sm:col-span-1">
                 <FeedIcon kind="issue" className="h-4 w-4 shrink-0 text-lr-muted" />
@@ -212,7 +212,7 @@ export default function MarketIntelligence({ data, page = null, model = "" }) {
     ),
     cost.figure && (
       <Card key="c" kind="cost" title="Average Replacement Cost" sub={cost.rest ? `(${capital(cost.rest)})` : ""}>
-        <p className="whitespace-nowrap text-[28px] font-semibold leading-tight tracking-[-0.02em] text-lr-head xl:text-[30px] 2xl:max-[1679px]:text-[22px]">{cost.figure}</p>
+        <p className="whitespace-nowrap text-[28px] font-semibold leading-tight tracking-[-0.02em] text-lr-head xl:text-[30px]">{cost.figure}</p>
         {cost.rest && <p className="mt-2 text-[17px] leading-snug text-lr-body xl:text-[19px]">{cost.rest}</p>}
         {cost.tag && <p className="mt-5 text-[14px] font-medium text-lr-green">{cost.tag}</p>}
       </Card>
@@ -225,7 +225,7 @@ export default function MarketIntelligence({ data, page = null, model = "" }) {
   ].filter(Boolean);
 
   return (
-    <section className={`bg-lr-page pb-10 pt-2 text-lr-head md:pb-14 xl:pb-16 ${SANS}`}>
+    <section className={`bg-lr-page pb-6 pt-2 text-lr-head md:pb-7 xl:pb-8 ${SANS}`}>
       <div className={CONTAINER}>
         <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">{code ? `${code} enquiry data` : "Enquiry data"}</p>
         <h2 className={`${H2_MODEL} mt-3.5 text-lr-head md:mt-4`}>Market Intelligence</h2>
@@ -234,7 +234,8 @@ export default function MarketIntelligence({ data, page = null, model = "" }) {
           <span className="flex-1 bg-lr-gold-line" />
         </span>
 
-        <div className="mt-6 grid gap-4 md:mt-8 xl:gap-5 2xl:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]">
+        {/* the four cards in a row, the live feed full width under them (side by side, both were squeezed) */}
+        <div className="mt-6 grid gap-4 md:mt-8 xl:gap-5">
           {cards.length > 0 && <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4 xl:gap-5">{cards}</div>}
           {feed.length > 0 && <LiveFeed rows={feed} car={car} />}
         </div>

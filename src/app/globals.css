@@ -145,6 +145,19 @@
   }
 }
 
+/* Section rhythm (model, generation and variant pages): the sections alternate white / cream by their
+   place on the page, so a page that skips a section (no data for it) still alternates and you always see
+   where one section ends and the next begins. --sec-bg carries the section's colour for photo washes
+   inside it. Unlayered, so it wins over each section's own bg utility. */
+.lr-sections > section:nth-of-type(odd) {
+  --sec-bg: var(--lr-page);
+  background-color: var(--sec-bg);
+}
+.lr-sections > section:nth-of-type(even) {
+  --sec-bg: var(--lr-band);
+  background-color: var(--sec-bg);
+}
+
 /* dark: utilities follow the navbar theme button, not the OS setting */
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
@@ -287,16 +300,19 @@ a {
   will-change: transform;
 }
 
-/* Variant hero ticker: auto-scrolls on mobile (list is rendered twice), static row on lg+. */
+/* Variant ticker bands: scroll on every screen size. The list is rendered four times (half of it is wider
+   than any screen, so the loop never shows a gap) and slides by half its width; hover pauses it. With
+   "reduce motion" on it stands still and only the first copy shows. */
 @keyframes hero-ticker {
   to { transform: translateX(-50%); }
 }
 .hero-ticker {
-  animation: hero-ticker 28s linear infinite;
+  animation: hero-ticker 56s linear infinite;
 }
-@media (min-width: 1024px) {
-  .hero-ticker { animation: none; }
+.hero-ticker:hover {
+  animation-play-state: paused;
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-ticker { animation: none; overflow-x: auto; }
+  .hero-ticker .ticker-copy { display: none; }
 }

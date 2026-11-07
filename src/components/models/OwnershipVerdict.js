@@ -272,7 +272,7 @@ export default function OwnershipVerdict({ data, slug = "", hero }) {
     <section className={`relative overflow-hidden bg-lr-band text-lr-head ${SANS}`} style={art || undefined}>
       {car && <div className={`pointer-events-none absolute inset-y-0 left-0 hidden w-[54%] bg-cover bg-[center_bottom] xl:block ${BG_DESKTOP} ${BACKDROP_FADE}`} aria-hidden="true" />}
 
-      <div className={`relative ${CONTAINER} grid gap-5 py-10 md:gap-7 md:py-14 xl:grid-cols-[minmax(0,0.76fr)_minmax(0,1fr)] xl:items-start xl:gap-x-6 xl:gap-y-6 xl:py-16`}>
+      <div className={`relative ${CONTAINER} grid gap-5 py-6 md:gap-7 md:py-7 xl:grid-cols-[minmax(0,0.76fr)_minmax(0,1fr)] xl:items-start xl:gap-x-6 xl:gap-y-6 xl:py-8`}>
         <div className="flex min-w-0 flex-col xl:self-stretch">
           <Eyebrow>Ownership Verdict</Eyebrow>
           {/* 44-48px beside the table so "… — / The Ownership Verdict" holds two lines, as in the reference */}

@@ -16,6 +16,9 @@ export const H1 = `${SERIF} text-[34px] leading-[1.1] sm:text-[42px] md:text-[48
 export const H2 = `${SERIF} text-[30px] leading-[1.15] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:max-[1439px]:text-[44px]!`;
 export const H3 = `${SANS} text-[26px] leading-[1.2] md:text-[32px] lg:text-[38px] xl:text-[44px]`;
 export const H4 = `${SANS} text-[22px] leading-[1.25] md:text-[27px] lg:text-[31px] xl:text-[34px]`;
+// H4 in the display serif, for section sub-headlines set like the H2s (e.g. the home hero's "Real
+// Data. Real Experts. Real Trust."); a step larger than H4 because the serif sets smaller
+export const H4_SERIF = `${SERIF} text-[24px] leading-[1.2] md:text-[28px] lg:text-[32px] xl:text-[36px]`;
 export const H5 = `${SANS} text-[19px] leading-[1.3] md:text-[21px] lg:text-[22px] xl:text-[24px]`;
 export const H6 = `${SANS} text-[17px] leading-[1.35] md:text-[18px] xl:text-[20px]`;
 

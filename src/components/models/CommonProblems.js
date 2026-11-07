@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { CONTAINER, LABEL } from "@/lib/typeScale";
-import { Arrow, BAND_PAGE, CARD, Eyebrow, SANS, SECTION_Y, SERIF, SectionTitle, prose, INTRO } from "@/components/models/modelKit";
+import { Arrow, BAND_SOFT, CARD, Eyebrow, SANS, SECTION_Y, SERIF, SectionTitle, prose, INTRO } from "@/components/models/modelKit";
 
 // Model page section 6, built to the approved "Common Velar Engine Problems" reference: the eyebrow,
 // the serif headline ("Common" dark, the rest green) with its short gold rule, then one card per
@@ -176,7 +176,7 @@ export default function CommonProblems({ data }) {
   const problems = (data.problems || []).map((p) => ({ problem: p, art: pickArt(plain(p.issue), used) }));
 
   return (
-    <section id="common-problems" className={`${BAND_PAGE} text-lr-head ${SANS}`}>
+    <section id="common-problems" className={`${BAND_SOFT} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         <Eyebrow>Engine Problems</Eyebrow>
         <SectionTitle h2={h2} accent={accent || undefined} className="mt-3 md:mt-4" />

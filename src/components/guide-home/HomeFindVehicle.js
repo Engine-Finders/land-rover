@@ -4,7 +4,7 @@ import LandRoverLogo from "@/components/guide-home/LandRoverLogo";
 import RangeRoverBadge from "@/components/guide-home/RangeRoverBadge";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
-import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_XS, SMALL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): every colour comes from the --lr-* tokens, apart from the
 // orange "Most Enquired" badge, which has no token (a day / night pair in the same orange).
@@ -42,20 +42,20 @@ function ModelRow({ m }) {
       href={m.href}
       className="group flex items-center gap-2 py-3 pl-2.5 pr-3 font-normal transition-colors hover:bg-lr-panel sm:gap-5 sm:px-5 sm:py-3 lg:gap-0 lg:rounded-lg lg:border lg:border-lr-line lg:bg-lr-card lg:px-3 lg:py-1.5 lg:hover:border-lr-line-strong lg:hover:bg-lr-panel dark:lg:bg-lr-page/40"
     >
-      <span className="relative h-[44px] w-[78px] shrink-0 min-[420px]:h-[50px] min-[420px]:w-[92px] sm:h-[68px] sm:w-[125px] lg:h-[82px] lg:w-[150px]">
+      <span className="relative h-[44px] w-[78px] shrink-0 max-[374px]:h-[36px] max-[374px]:w-[62px] min-[420px]:h-[50px] min-[420px]:w-[92px] sm:h-[68px] sm:w-[125px] lg:h-[82px] lg:w-[150px]">
         <Image src={cutout(m.image)} alt={`Land Rover ${m.name}`} fill className="object-contain" sizes="(min-width: 1024px) 150px, (min-width: 640px) 124px, 92px" />
       </span>
 
       <span className="min-w-0 flex-1 lg:ml-4 lg:border-l lg:border-lr-line lg:py-3 lg:pl-5">
-        <span className={`${H6} block text-lr-head`}>{m.name}</span>
+        <span className="block font-[family-name:var(--font-serif-display)] text-[17px] font-normal leading-[1.2] tracking-[-0.01em] text-lr-head max-[374px]:text-[16px] min-[420px]:text-[18px] sm:text-[21px] lg:text-[22px] xl:text-[24px]">{m.name}</span>
         <span className={`${SMALL} mt-1 block whitespace-nowrap text-lr-muted`}>{m.generations}</span>
       </span>
 
-      <span className="flex w-[100px] shrink-0 items-center gap-2 border-l min-[420px]:w-[132px] min-[420px]:whitespace-nowrap border-lr-line py-1.5 pl-2.5 sm:w-[170px] sm:gap-3 sm:pl-5 lg:w-[180px]">
-        <span className={TONES[m.tone]}>
-          <GuideIcon name={m.icon} className={ICON_XS} />
+      <span className="flex w-[100px] shrink-0 items-center gap-2 border-l max-[374px]:w-[90px] max-[374px]:gap-1.5 max-[374px]:pl-2 max-[359px]:w-[36px] min-[420px]:w-[132px] min-[420px]:whitespace-nowrap border-lr-line py-1.5 pl-2.5 sm:w-[170px] sm:gap-3 sm:pl-5 lg:w-[180px]">
+        <span className={`flex shrink-0 ${TONES[m.tone]}`}>
+          <GuideIcon name={m.icon} className="h-5 w-5 max-[374px]:h-[18px] max-[374px]:w-[18px] sm:h-6 sm:w-6 lg:h-[26px] lg:w-[26px] xl:h-7 xl:w-7" />
         </span>
-        <span className={`${SMALL} font-medium leading-[1.2] ${TONES[m.tone]}`}>{m.badge}</span>
+        <span className={`${SMALL} font-medium leading-[1.2] max-[359px]:sr-only ${TONES[m.tone]}`}>{m.badge}</span>
       </span>
 
       <span className="shrink-0 text-lr-muted transition-transform group-hover:translate-x-0.5 lg:pr-1">
@@ -74,7 +74,7 @@ export default function HomeFindVehicle({ data }) {
       {/* faint green glow, top right */}
       <div className="pointer-events-none absolute -right-40 -top-40 h-[520px] w-[520px] rounded-full bg-lr-green/[0.06] blur-[120px] dark:bg-lr-brand/25" aria-hidden="true" />
 
-      <div className={`${CONTAINER} relative pb-12 pt-10 lg:pb-16 lg:pt-12`}>
+      <div className={`${CONTAINER} relative pb-6 pt-6 lg:pb-8 lg:pt-6`}>
         <h2 className={`${H2} text-lr-head`}>
           {h2a} <span className="text-lr-green">{h2b}</span>
         </h2>

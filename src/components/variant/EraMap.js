@@ -115,7 +115,7 @@ export default function EraMap({ data, band = "soft", car = null }) {
   const cols = data.columns?.length === 6 ? data.columns : ["Generation", "Years", "Engine Code", "Reliability", "Recon Cost", "Era Note"];
 
   return (
-    <section id="era-map" className={`w-full scroll-mt-24 py-8 text-lr-head md:py-12 lg:py-14 ${SANS} ${band === "soft" ? "bg-lr-band" : "bg-lr-page"}`}>
+    <section id="era-map" className={`w-full scroll-mt-24 py-6 text-lr-head md:py-6 lg:py-7 ${SANS} ${band === "soft" ? "bg-lr-band" : "bg-lr-page"}`}>
       <div className={`relative ${CONTAINER}`}>
         {/* title + source note */}
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between md:gap-8">

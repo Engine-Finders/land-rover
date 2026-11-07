@@ -2,7 +2,7 @@ import LrIcon from "@/components/shared/LrIcon";
 import { BODY, BODY_SM, CONTAINER } from "@/lib/typeScale";
 import {
   Arrow,
-  BAND_SOFT,
+  BAND_PAGE,
   CAR_ART,
   CAR_ART_RATIO,
   CARD,
@@ -155,7 +155,7 @@ export default function CalculatorCTA({ data, slug = "" }) {
   const art = modelArt(slug, "silver");
 
   return (
-    <section className={`relative overflow-hidden ${BAND_SOFT} text-lr-head ${SANS}`}>
+    <section className={`relative overflow-hidden ${BAND_PAGE} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         <div className="grid items-start gap-6 md:gap-8 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] xl:gap-14">
           <div className="min-w-0">

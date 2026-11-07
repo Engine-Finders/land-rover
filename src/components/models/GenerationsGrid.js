@@ -6,7 +6,7 @@ import LrIcon from "@/components/shared/LrIcon";
 import { BODY_SM, CONTAINER } from "@/lib/typeScale";
 import {
   Arrow,
-  BAND_PAGE,
+  BAND_SOFT,
   CARD,
   Chevron,
   EyebrowPill,
@@ -170,7 +170,7 @@ function pickDiagram(card, others) {
 function DiagramNode({ name, sub }) {
   return (
     <span className="flex max-w-[7rem] flex-col items-center text-center">
-      <span className="text-[15px] font-medium leading-snug text-lr-head md:text-[16px]">{name}</span>
+      <span className="text-[15px] font-medium leading-snug text-lr-head max-[359px]:text-[14px] md:text-[16px]">{name}</span>
       {sub && <span className="mt-1 text-[13px] leading-snug text-lr-muted">{sub}</span>}
     </span>
   );
@@ -185,20 +185,21 @@ function QuestionCard({ card, others, linkTaken, className = "" }) {
   const link = guide && guide.href !== linkTaken ? guide : null;
 
   return (
-    <article className={`${CARD} flex flex-col p-4 sm:p-5 xl:p-6 ${className}`}>
+    <article className={`${CARD} flex min-w-0 flex-col p-4 sm:p-5 xl:p-6 ${className}`}>
       <div className="flex items-start gap-3.5 md:gap-4">
         <IconTile name="scale" />
         <h3 className={`${TITLE} min-w-0 flex-1 pt-0.5`} dangerouslySetInnerHTML={{ __html: prose(card.title) }} />
       </div>
       {diagram && (
         <div className={`flex items-center justify-center ${paragraph ? "pb-1 pt-6 md:pt-7" : "flex-1 py-7 md:py-9"}`} aria-label={`${diagram.left} or ${diagram.right}`} role="img">
-          <div className="flex items-center gap-2 sm:gap-3">
+          {/* the smallest phones tighten the dashes, gaps and circle so "Freelander 1 ? Freelander 2" fits the card */}
+          <div className="flex items-center gap-2 max-[359px]:gap-1.5 sm:gap-3">
             <DiagramNode name={diagram.left} sub={diagram.leftSub} />
-            <span className="w-6 border-t-2 border-dashed border-lr-line-strong sm:w-9" aria-hidden="true" />
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-lr-brand text-[19px] font-semibold text-lr-on-brand shadow-[0_10px_24px_-14px_rgba(18,61,42,0.9)] md:h-14 md:w-14 md:text-[21px] dark:border dark:border-lr-green/45 dark:bg-lr-brand/35" aria-hidden="true">
+            <span className="w-6 border-t-2 border-dashed border-lr-line-strong max-[359px]:w-3 sm:w-9" aria-hidden="true" />
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-lr-brand text-[19px] font-semibold max-[359px]:h-11 max-[359px]:w-11 text-lr-on-brand shadow-[0_10px_24px_-14px_rgba(18,61,42,0.9)] md:h-14 md:w-14 md:text-[21px] dark:border dark:border-lr-green/45 dark:bg-lr-brand/35" aria-hidden="true">
               {diagram.center}
             </span>
-            <span className="w-6 border-t-2 border-dashed border-lr-line-strong sm:w-9" aria-hidden="true" />
+            <span className="w-6 border-t-2 border-dashed border-lr-line-strong max-[359px]:w-3 sm:w-9" aria-hidden="true" />
             <DiagramNode name={diagram.right} sub={diagram.rightSub} />
           </div>
         </div>
@@ -453,7 +454,7 @@ export default function GenerationsGrid({ data, slug = "" }) {
   const { spans, grid, cols } = layout(cards, openIndex);
 
   return (
-    <section id="generations" className={`${BAND_PAGE} text-lr-head ${SANS}`}>
+    <section id="generations" className={`${BAND_SOFT} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         <EyebrowPill icon="scale">Generations</EyebrowPill>
         <SectionTitle h2={data.h2} className="mt-3 md:mt-4" />

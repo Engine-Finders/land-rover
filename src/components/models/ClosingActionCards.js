@@ -1,6 +1,6 @@
 import LrIcon from "@/components/shared/LrIcon";
 import { BODY_SM, CONTAINER, H5 } from "@/lib/typeScale";
-import { Arrow, BACKDROP, BAND_PAGE, CAR_ART, CAR_ART_RATIO, EyebrowPill, SANS, SECTION_Y, modelArt, prose, H2_MODEL, INTRO } from "@/components/models/modelKit";
+import { Arrow, BACKDROP, BAND_SOFT, CAR_ART, CAR_ART_RATIO, EyebrowPill, SANS, SECTION_Y, modelArt, prose, H2_MODEL, INTRO } from "@/components/models/modelKit";
 import { generationLinks, resolveHref } from "@/components/models/ClosingActionLinks";
 import { UkPinMap } from "@/components/models/TrustBlockArt";
 
@@ -89,7 +89,7 @@ function CardArt({ kind, text, slug }) {
     };
     return (
       <span
-        className="absolute bottom-0 left-[16%] aspect-[1950/670] w-[92%] bg-contain bg-bottom bg-no-repeat bg-[image:var(--cars-day-m)] sm:bg-[image:var(--cars-day)] dark:bg-[image:var(--cars-night-m)] sm:dark:bg-[image:var(--cars-night)]"
+        className="absolute bottom-0 left-[14%] aspect-[2040/670] w-[86%] bg-contain bg-bottom bg-no-repeat bg-[image:var(--cars-day-m)] sm:bg-[image:var(--cars-day)] dark:bg-[image:var(--cars-night-m)] sm:dark:bg-[image:var(--cars-night)]"
         style={cars}
         aria-hidden="true"
       />
@@ -181,7 +181,7 @@ export default function ClosingActionCards({ data, slug = "", page }) {
   const art = modelArt(slug);
 
   return (
-    <section className={`relative overflow-hidden ${BAND_PAGE} text-lr-head ${SANS}`}>
+    <section className={`relative overflow-hidden ${BAND_SOFT} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         <div className="relative lg:min-h-[300px] xl:min-h-[350px]">
           {/* desktop: the car on the loch-side backdrop, feathered into the band */}

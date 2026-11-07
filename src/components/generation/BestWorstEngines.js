@@ -248,7 +248,7 @@ export default function BestWorstEngines({ data }) {
   };
 
   return (
-    <section className={`bg-lr-page py-10 text-lr-head md:py-14 xl:py-16 ${SANS}`}>
+    <section className={`bg-lr-band py-6 text-lr-head md:py-7 xl:py-8 ${SANS}`}>
       <div className={CONTAINER}>
         <p className="flex items-center gap-3 text-[13px] font-semibold uppercase leading-none tracking-[0.08em] text-lr-ink md:text-[14px] xl:text-[15px] dark:text-lr-green">
           <span className="h-px w-6 bg-current" aria-hidden="true" />

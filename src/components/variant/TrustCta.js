@@ -41,8 +41,8 @@ export default function TrustCta({ data, car = null, engine = "/variant/sec10_en
   const h2 = (data.h2 || "").replace(/(LandRoverEngine\.uk)/, `<span class="text-lr-ink dark:text-lr-green">$1</span>`);
 
   return (
-    <section className={`relative overflow-hidden bg-lr-page text-lr-head ${SANS}`}>
-      <div className={`relative ${CONTAINER} border-t border-lr-line pb-10 pt-9 md:pb-14 md:pt-12 lg:pt-14`}>
+    <section className={`relative overflow-hidden bg-lr-band text-lr-head ${SANS}`}>
+      <div className={`relative ${CONTAINER} border-t border-lr-line pb-6 pt-6 md:pb-7 md:pt-6 lg:pt-7`}>
         <div className="flex items-center gap-3">
           <p className="text-[13px] font-semibold uppercase tracking-[0.08em] text-lr-gold md:text-[14px] xl:text-[15px]">Why Choose Us</p>
           <span className="h-px w-10 bg-lr-gold-line md:w-14" aria-hidden="true" />

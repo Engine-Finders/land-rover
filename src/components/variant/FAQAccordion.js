@@ -38,7 +38,7 @@ export default function FAQAccordion({ data }) {
 
   return (
     <section className={`relative overflow-hidden bg-lr-page text-lr-head ${SANS}`}>
-      <div className={`relative ${CONTAINER} border-t border-lr-line py-9 md:py-12 lg:py-14`}>
+      <div className={`relative ${CONTAINER} border-t border-lr-line py-6 md:py-6 lg:py-7`}>
         <div className="flex items-end justify-between gap-4">
           <div>
             <div className="flex items-center gap-3">

@@ -23,10 +23,10 @@ export default function QuotesCta({ data, car = null }) {
   const label = (data.button?.label || "Get My Free Quotes Now").replace(/\s*→\s*$/, "");
 
   return (
-    <section className="relative overflow-hidden bg-lr-band text-lr-head">
+    <section className="relative overflow-hidden bg-lr-page text-lr-head">
       {/* desktop: the loch across the band, washed behind the copy; the car stands on the right */}
-      {car && <LochBand copy="left" tone="band" from="md" solid={440} half={660} clear={900} position="center 72%" />}
-      <div className={`relative ${CONTAINER} pb-10 md:pb-14 md:pt-4`}>
+      {car && <LochBand copy="left" tone="page" from="md" solid={440} half={660} clear={900} position="center 72%" />}
+      <div className={`relative ${CONTAINER} pb-6 md:pb-7 md:pt-4`}>
         <div className="relative grid items-center md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] md:gap-6">
           {car && <LochBanner car={car} className="order-first md:hidden" sizes="78vw" />}
           {car && (
@@ -37,7 +37,7 @@ export default function QuotesCta({ data, car = null }) {
             </div>
           )}
 
-          <div className={`pb-2 md:py-10 ${car ? "pt-2" : "pt-6"}`}>
+          <div className={`pb-2 md:py-6 ${car ? "pt-2" : "pt-6"}`}>
             <span className={CHIP}>Compare Quotes</span>
             <h2 className={`${H2} mt-3 text-lr-head`}>
               {title}

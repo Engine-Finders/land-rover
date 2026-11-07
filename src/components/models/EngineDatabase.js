@@ -6,7 +6,7 @@ import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER } from "@/lib/typeScale";
 import {
   Arrow,
-  BAND_SOFT,
+  BAND_PAGE,
   CARD,
   Chevron,
   EyebrowPill,
@@ -258,16 +258,18 @@ function PoundIcon({ className = "" }) {
   );
 }
 
+// phones: icon above the figure, so a range such as "£2.5K–£9.5K" gets the card's full width (beside the
+// icon it ran out of its card); from sm the icon sits beside it
 function StatCard({ icon, value, label }) {
   return (
-    <li className={`${CARD} flex min-w-0 items-center gap-3 p-3.5 sm:p-4 xl:gap-3.5 xl:px-5 xl:py-6 min-[1440px]:px-4`}>
+    <li className={`${CARD} flex min-w-0 items-center gap-3 p-3.5 max-sm:flex-col max-sm:items-start max-sm:gap-2 sm:p-4 xl:gap-3.5 xl:px-5 xl:py-6 min-[1440px]:px-4`}>
       {icon === "pound" ? (
         <PoundIcon className="h-8 w-8 text-[17px] text-lr-ink md:h-9 md:w-9 md:text-[19px] xl:h-10 xl:w-10 xl:text-[21px] dark:text-lr-green" />
       ) : (
         <LrIcon name={icon} tone="current" className="h-8 w-8 shrink-0 text-lr-ink md:h-9 md:w-9 xl:h-10 xl:w-10 dark:text-lr-green" />
       )}
-      <p className="min-w-0">
-        <span className="block whitespace-nowrap text-[19px] font-semibold leading-tight tracking-[-0.01em] text-lr-head md:text-[21px] xl:text-[25px] min-[1440px]:text-[22px]">{value}</span>
+      <p className="min-w-0 max-sm:w-full">
+        <span className="block whitespace-nowrap text-[19px] font-semibold leading-tight tracking-[-0.01em] text-lr-head max-[359px]:whitespace-normal max-[359px]:text-[18px] md:text-[21px] md:max-[819px]:text-[19px]! xl:text-[25px] min-[1440px]:text-[22px]">{value}</span>
         <span className="mt-1 block text-[13px] leading-snug text-lr-body md:text-[14px] xl:text-[15px] min-[1440px]:text-[14px]">{label}</span>
       </p>
     </li>
@@ -380,7 +382,7 @@ export default function EngineDatabase({ data, page }) {
   const menuValue = sort.key ? `${sort.key}:${sort.dir}` : "";
 
   return (
-    <section id="engine-database" className={`${BAND_SOFT} scroll-mt-16 text-lr-head md:scroll-mt-20 ${SANS}`}>
+    <section id="engine-database" className={`${BAND_PAGE} scroll-mt-16 text-lr-head md:scroll-mt-20 ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         {/* heading + four stats from the page data */}
         <div className="grid gap-6 md:gap-8 min-[1440px]:grid-cols-[minmax(0,0.7fr)_minmax(0,1fr)] min-[1440px]:items-start min-[1440px]:gap-8">
@@ -531,7 +533,8 @@ export default function EngineDatabase({ data, page }) {
               [4, "Good"],
               [5, "Excellent"],
             ].map(([n, label]) => (
-              <li key={label} className="flex items-center gap-2.5 text-[14px] text-lr-head md:text-[15px]">
+              // small phones: stars above the label (side by side they ran out of the two-column key)
+              <li key={label} className="flex items-center gap-2.5 text-[14px] text-lr-head max-[419px]:flex-col max-[419px]:items-start max-[419px]:gap-1 md:text-[15px]">
                 <Stars full={n} empty={5 - n} size="h-[15px] w-[15px]" className="gap-0.5" />
                 {label}
               </li>

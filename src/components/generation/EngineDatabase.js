@@ -374,8 +374,8 @@ function Glen({ car, className = "" }) {
       <div className="absolute inset-0 [clip-path:polygon(0_0,calc(100%-2.93vw)_0,calc(100%-17.5vw)_100%,0_100%)] [mask-image:linear-gradient(90deg,transparent,rgba(0,0,0,0.5)_28%,#000_52%)] dark:[clip-path:polygon(51.8%_0,100%_0,100%_100%,29.8%_100%)] dark:[mask-image:none]">
         <div className={`absolute inset-0 bg-cover bg-[center_17%] ${BG} brightness-[1.06] contrast-[.9] hue-rotate-[16deg] saturate-[.72] dark:filter-none`} />
         {/* day: the reference's pale haze over the hills, strongest behind the heading */}
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.45),rgba(255,255,255,0.14)_55%,rgba(255,255,255,0)_82%)] dark:hidden" />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.6)_18%,rgba(255,255,255,0)_56%)] dark:hidden" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,color-mix(in_srgb,var(--sec-bg,var(--lr-band))_45%,transparent),color-mix(in_srgb,var(--sec-bg,var(--lr-band))_14%,transparent)_55%,transparent_82%)] dark:hidden" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,color-mix(in_srgb,var(--sec-bg,var(--lr-band))_60%,transparent)_18%,transparent_56%)] dark:hidden" />
         {/* night: a touch of shade at the foot, into the table */}
         <div className="absolute inset-0 hidden bg-[linear-gradient(180deg,transparent_62%,rgba(5,14,11,0.45))] dark:block" />
       </div>
@@ -402,8 +402,10 @@ function Glen({ car, className = "" }) {
         <polygon points="561,0 564.5,0 340.5,380 337,380" fill="#d4bb8c" />
         <polygon points="564.5,0 637,0 413,380 340.5,380" fill="#6c7662" />
       </svg>
+      {/* night: at least 44px in from the screen edge (the glen runs to 100vw, which on Windows includes the
+          scrollbar), so the car's tail and shadow are never cut off */}
       {car && (
-        <div className="absolute bottom-[3px] right-[13.4vw] w-[18.6vw] max-w-[360px] dark:bottom-[60px] dark:right-[1.7vw] dark:w-[16.3vw] dark:max-w-[320px]">
+        <div className="absolute bottom-[3px] right-[13.4vw] w-[18.6vw] max-w-[360px] dark:bottom-[60px] dark:right-[max(2.6vw,44px)] dark:w-[16vw] dark:max-w-[320px]">
           <GroundedCar src={car} sceneByTheme sizes="(min-width: 1024px) 19vw, 1px" />
         </div>
       )}
@@ -433,10 +435,10 @@ export default function EngineDatabase({ data, hero = null, model = "" }) {
   const total = engines.length;
 
   return (
-    <section id="engine-database" className={`relative scroll-mt-16 overflow-hidden bg-lr-page pb-10 text-lr-head md:scroll-mt-20 md:pb-14 xl:pb-16 ${SANS}`}>
+    <section id="engine-database" className={`relative scroll-mt-16 overflow-hidden bg-lr-band pb-6 text-lr-head md:scroll-mt-20 md:pb-7 xl:pb-8 ${SANS}`}>
       {/* the glen's top meets the section above softly */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-[1] hidden h-10 bg-[linear-gradient(180deg,var(--lr-page),transparent)] lg:block" aria-hidden="true" />
-      <div className={`${CONTAINER} pt-10 md:pt-12 lg:pt-8 xl:pt-7`}>
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-[1] hidden h-10 bg-[linear-gradient(180deg,var(--sec-bg,var(--lr-band)),transparent)] lg:block" aria-hidden="true" />
+      <div className={`${CONTAINER} pt-6 md:pt-6 lg:pt-6 xl:pt-6`}>
         <div className="relative">
           {/* laptops: the glen, its lines and the car, from the screen's right edge to the table's top */}
           <Glen car={car} className="absolute bottom-[-16px] right-[calc(50%-50vw)] hidden h-[380px] w-[60vw] lg:block" />

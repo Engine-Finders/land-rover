@@ -263,7 +263,7 @@ export default function CommonProblems({ data, page = null }) {
   const cols = n >= 4 && n % 4 === 0 ? "xl:grid-cols-4" : n % 3 === 0 || n === 5 ? "xl:grid-cols-3" : "xl:grid-cols-4";
 
   return (
-    <section className={`bg-lr-band py-10 text-lr-head md:py-14 xl:py-16 ${SANS}`}>
+    <section className={`bg-lr-band py-6 text-lr-head md:py-7 xl:py-8 ${SANS}`}>
       <div className={CONTAINER}>
         <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">Common Problems</p>
         <h2 className={`${H2_MODEL} mt-3.5 text-balance text-lr-head md:mt-4`}>{name ? `${name} — Common Problems` : "Common Problems"}</h2>

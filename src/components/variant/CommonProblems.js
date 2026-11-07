@@ -105,8 +105,8 @@ export default function CommonProblems({ data, engineTitle = "" }) {
   const fallback = engineTitle ? `Common Problems With ${engineTitle.replace(/\s*Engine Replacement Costs\s*$/i, "")} Engines` : "Common Problems";
 
   return (
-    <section className={`relative bg-lr-page text-lr-head ${SANS}`}>
-      <div className={`relative ${CONTAINER} py-8 md:py-12 lg:py-11`}>
+    <section className={`relative bg-lr-band text-lr-head ${SANS}`}>
+      <div className={`relative ${CONTAINER} py-6 md:py-6 lg:py-6`}>
         <span className={CHIP}>Common Problems</span>
         <h2 className={`${SECTION_TITLE} mt-3 text-lr-head`}>{data.h2 || fallback}</h2>
 

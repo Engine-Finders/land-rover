@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
-import { BODY, BODY_SM, CONTAINER, H2, H5, H6, ICON_MD, ICON_SM, LABEL, SMALL } from "@/lib/typeScale";
+import { BODY, BODY_SM, CONTAINER, H2, H5, H6, ICON_LG, ICON_MD, ICON_SM, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens. The severity pills keep
 // their own red / amber / orange / green scale - soft tinted pills by day, deep tinted pills with a
@@ -20,7 +20,7 @@ const pad = (n) => String(n).padStart(2, "0");
 
 function Pill({ severity, size = "md" }) {
   const s = SEVERITY[severity];
-  const sz = size === "sm" ? "gap-1.5 px-2 py-[3px]" : "gap-2 px-3 py-1.5";
+  const sz = size === "card" ? "gap-1.5 px-2 py-1 text-[12px]! 2xl:text-[13px]!" : size === "sm" ? "gap-1.5 px-2 py-[3px]" : "gap-2 px-3 py-1.5";
   return (
     <span className={`${SMALL} inline-flex shrink-0 items-center whitespace-nowrap rounded-md font-medium uppercase tracking-[0.03em] ring-inset ring-transparent dark:ring-1 ${sz} ${s.pill}`}>
       <span className={`h-2 w-2 rounded-full ${s.dot}`} />
@@ -66,15 +66,19 @@ function Featured({ cat, item, n, onClose }) {
           </div>
         </div>
       </div>
-      <div className="mx-3.5 grid grid-cols-3 border-t border-lr-line py-3 sm:mx-6 sm:py-4">
+      <div className="mx-3.5 grid grid-cols-3 border-t border-lr-line py-3 max-sm:mx-3 sm:mx-6 sm:py-4">
         {stats.map((s, i) => (
-          <div key={s.label} className={`flex min-w-0 flex-col gap-1 px-2 sm:flex-row sm:items-center sm:gap-3 sm:px-4 ${i > 0 ? "border-l border-lr-line" : "pl-0 sm:pl-0"}`}>
-            <span className={s.tone ?? "text-lr-green"}>
+          <div
+            key={s.label}
+            className={`flex min-w-0 flex-col gap-1 px-2 max-sm:grid max-sm:grid-cols-[auto_minmax(0,1fr)] max-sm:items-start max-sm:gap-x-1 max-sm:gap-y-1 max-sm:px-1.5 sm:flex-row sm:items-center sm:gap-3 sm:px-4 ${i > 0 ? "border-l border-lr-line" : "pl-0 sm:pl-0"}`}
+          >
+            {/* phones: the label sits beside its icon, the value runs underneath both */}
+            <span className={`max-sm:pt-px ${s.tone ?? "text-lr-green"}`}>
               <GuideIcon name={s.icon} className={ICON_SM} />
             </span>
-            <span className="min-w-0">
-              <span className={`${SMALL} block text-lr-muted`}>{s.label}</span>
-              <span className={`${BODY_SM} block font-medium leading-snug text-lr-head`}>{s.value}</span>
+            <span className="min-w-0 max-sm:contents">
+              <span className={`${SMALL} block text-lr-muted max-sm:text-[12px]! max-sm:leading-[1.3]`}>{s.label}</span>
+              <span className={`${BODY_SM} block font-medium leading-snug text-lr-head max-sm:col-span-2`}>{s.value}</span>
             </span>
           </div>
         ))}
@@ -168,72 +172,96 @@ function MobileDatabase({ categories }) {
 /* desktop: every category as a card grid                             */
 /* ------------------------------------------------------------------ */
 
-function DesktopCard({ item, n, wide }) {
+// one failure: the part photo on the left; the number chip, title and description beside it (the
+// description lines up under the title, the chip hangs to its left); severity and "Read more" under both.
+// Rows of four (engines) sit two to a row on small laptops and four from 1280px; rows of three stay
+// three across. Where a card is narrow (four across, or three across below 1280px) the photo shrinks
+// and the description also runs under the chip, so it keeps a readable measure.
+const CARD = {
+  four: {
+    grid: "lg:grid-cols-2 xl:grid-cols-4",
+    photo: "h-[100px] w-[124px] xl:h-[84px] xl:w-[74px] 2xl:h-[100px] 2xl:w-[100px]",
+    title: "text-[16px] xl:text-[15px] 2xl:text-[16px]",
+    text: "text-[14px] xl:text-[13px] 2xl:text-[13.5px] xl:col-span-2 xl:col-start-1",
+  },
+  three: {
+    grid: "lg:grid-cols-3",
+    photo: "h-[84px] w-[84px] xl:h-[96px] xl:w-[112px] 2xl:h-[104px] 2xl:w-[132px]",
+    title: "text-[15px] 2xl:text-[16px]",
+    text: "text-[13px] xl:text-[13.5px] 2xl:text-[14px] lg:max-xl:col-span-2 lg:max-xl:col-start-1",
+  },
+};
+
+function DesktopCard({ item, n, size }) {
   return (
     <Link
       href={item.href}
-      className="group flex flex-col rounded-md border border-lr-line bg-lr-card p-4 font-normal shadow-[0_6px_18px_-14px_var(--lr-shadow)] transition-shadow hover:shadow-[0_10px_24px_-12px_var(--lr-shadow)]"
+      className="group flex flex-col rounded-md border border-lr-line bg-lr-card p-3.5 font-normal shadow-[0_6px_18px_-14px_var(--lr-shadow)] transition-shadow hover:shadow-[0_10px_24px_-12px_var(--lr-shadow)] xl:p-4"
     >
-      {/* desktop rows (xl, three or four cards) are too narrow for photo + text side by side, so the photo sits above the text */}
-      <div className="flex flex-1 gap-4 xl:flex-col xl:gap-3">
-        <span className={`relative shrink-0 ${wide ? "h-[96px] w-[130px]" : "h-[88px] w-[92px] xl:h-[92px] xl:w-[120px]"}`}>
-          <Image src={item.image} alt="" fill className="object-contain" sizes="130px" />
+      <span className="flex flex-1 items-start gap-3 xl:gap-3.5">
+        <span className={`relative shrink-0 self-center ${size.photo}`}>
+          <Image src={item.image} alt="" fill className="object-contain drop-shadow-[0_8px_10px_rgba(0,0,0,0.16)] dark:drop-shadow-[0_8px_12px_rgba(0,0,0,0.55)]" sizes="140px" />
         </span>
-        <span className="min-w-0 flex-1">
-          <span className="flex items-start gap-2.5">
-            <span className={`${SMALL} mt-0.5 rounded bg-lr-chip px-1.5 py-0.5 text-lr-ink`}>{pad(n)}</span>
-            <span className={`${H6} text-lr-head`}>{item.title}</span>
-          </span>
-          <span className={`${BODY_SM} mt-2 block text-lr-body`}>{item.text}</span>
+        <span className="grid min-w-0 flex-1 grid-cols-[auto_minmax(0,1fr)] gap-x-2.5 gap-y-1.5 xl:gap-x-3">
+          <span className="mt-px self-start rounded border border-lr-line bg-lr-panel px-1.5 py-[3px] text-[12px] font-medium leading-none text-lr-body xl:text-[13px]">{pad(n)}</span>
+          <span className={`font-medium leading-[1.3] text-lr-head ${size.title}`}>{item.title}</span>
+          <span className={`col-start-2 leading-[1.55] text-lr-body ${size.text}`}>{item.text}</span>
         </span>
-      </div>
-      <div className="mt-3 flex items-center justify-between">
-        <Pill severity={item.severity} size="sm" />
-        <span className={`${SMALL} inline-flex items-center gap-1.5 font-medium text-lr-ink group-hover:underline`}>
+      </span>
+      <span className="mt-3 flex items-center justify-between gap-3">
+        <Pill severity={item.severity} size="card" />
+        <span className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-medium text-lr-ink group-hover:underline dark:text-lr-green">
           Read more <Arrow className="h-4 w-4" />
         </span>
-      </div>
+      </span>
     </Link>
   );
 }
 
 function DesktopDatabase({ categories }) {
   return (
-    <div className="mt-8 hidden flex-col gap-5 lg:flex">
-      {categories.map((c) => (
-        <div key={c.key}>
-          <div className="flex items-center gap-4">
-            <span className="flex h-10 w-10 items-center justify-center rounded-md bg-lr-brand text-lr-on-brand">
-              <GuideIcon name={c.icon} className={ICON_SM} />
-            </span>
-            <h3 className={`${H6} uppercase tracking-[0.02em] text-lr-ink`}>{c.title}</h3>
-            <span className="h-px flex-1 bg-lr-line-strong" />
+    <div className="mt-8 hidden flex-col gap-4 lg:flex xl:gap-3.5">
+      {categories.map((c) => {
+        const size = c.items.length === 4 ? CARD.four : CARD.three;
+        return (
+          <div key={c.key}>
+            <div className="flex items-center gap-3.5 xl:gap-4">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-lr-brand text-lr-on-brand xl:h-12 xl:w-12">
+                <GuideIcon name={c.icon} className={ICON_LG} />
+              </span>
+              <h3 className="text-[17px] font-semibold uppercase leading-tight tracking-[0.02em] text-lr-ink xl:text-[18px]">{c.title}</h3>
+              <span className="h-px flex-1 bg-lr-line-strong" />
+            </div>
+            <div className={`mt-3 grid gap-3 ${size.grid}`}>
+              {c.items.map((item, i) => (
+                <DesktopCard key={item.title} item={item} n={i + 1} size={size} />
+              ))}
+            </div>
           </div>
-          <div className={`mt-3 grid gap-3 lg:grid-cols-2 ${c.items.length === 4 ? "xl:grid-cols-4" : "xl:grid-cols-3"}`}>
-            {c.items.map((item, i) => (
-              <DesktopCard key={item.title} item={item} n={i + 1} wide={c.items.length !== 4} />
-            ))}
-          </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
 
 export default function HomeFailures({ data }) {
   const [l1, l2] = data.h2.split("|");
+  const [first, ...more] = String(data.note.text).split(/(?<=\.)\s+/);
+  const rest = more.join(" ");
 
   return (
     <section className="relative overflow-hidden bg-lr-page text-lr-head">
-      <div className={`${CONTAINER} pb-10 pt-9 lg:pb-14 lg:pt-12`}>
+      <div className={`${CONTAINER} pb-6 pt-6 lg:pb-7 lg:pt-6`}>
         <div className="flex items-center justify-center gap-4">
           <span className="h-px w-12 bg-lr-gold-line sm:w-16" />
           <p className={`${LABEL} text-lr-ink`}>{data.eyebrow}</p>
           <span className="h-px w-12 bg-lr-gold-line sm:w-16" />
         </div>
 
-        <h2 className={`${H2} mt-2.5 text-balance text-center`}>
-          <span>{l1}</span> <br className="xl:hidden" />
+        {/* phones: two lines ("The Land Rover & Range Rover" / "Failure Database") - the size follows the
+            screen width so the first line always fits */}
+        <h2 className={`${H2} mt-2.5 text-balance text-center max-sm:text-[min(30px,calc(6.6vw-2.7px))]!`}>
+          <span className="max-sm:whitespace-nowrap">{l1}</span> <br className="xl:hidden" />
           <span className="whitespace-nowrap text-lr-green">{l2}</span>
         </h2>
         <p className={`${BODY} mx-auto mt-3 max-w-[760px] text-center text-lr-body`}>{data.subhead}</p>
@@ -243,16 +271,22 @@ export default function HomeFailures({ data }) {
 
         {/* data note */}
         <div className="relative mt-4 overflow-hidden rounded-xl border border-lr-line bg-lr-panel lg:mt-5 lg:rounded-md">
-          <div className="relative flex flex-wrap items-center gap-3.5 px-3.5 py-4 sm:flex-nowrap sm:gap-6 sm:px-6 lg:px-7">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand sm:h-[52px] sm:w-[52px]">
+          {/* phones: the icon floats left so the text wraps under it */}
+          <div className="relative flex flex-wrap items-center gap-3.5 px-3.5 py-4 max-sm:flow-root sm:flex-nowrap sm:gap-6 sm:px-6 lg:px-7">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand max-sm:float-left max-sm:mb-1 max-sm:mr-3 sm:h-[52px] sm:w-[52px]">
               <GuideIcon name="shield" className={ICON_MD} />
             </span>
-            <div className="min-w-0 flex-1">
-              <p className={`${SMALL} font-semibold uppercase tracking-[0.02em] text-lr-ink lg:inline`}>{data.note.title}: </p>
-              <p className={`${BODY_SM} mt-0.5 text-lr-body lg:inline`}>{data.note.text}</p>
-            </div>
+            {/* the title runs into the first sentence; from laptops up the rest starts on its own line */}
+            <p className={`${BODY_SM} min-w-0 flex-1 text-lr-body`}>
+              <span className="font-semibold uppercase tracking-[0.02em] text-lr-ink dark:text-lr-head">{data.note.title}:</span> {first}
+              {rest ? (
+                <>
+                  <br className="max-lg:hidden" /> {rest}
+                </>
+              ) : null}
+            </p>
             {/* car line drawing: its own row under the text on phones, beside it (with a divider) from sm up */}
-            <span className="flex w-full justify-end border-t border-lr-line pt-3 text-lr-muted sm:w-auto sm:shrink-0 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0">
+            <span className="flex w-full justify-end border-t border-lr-line pt-3 text-lr-muted max-sm:clear-both max-sm:mt-3 sm:w-auto sm:shrink-0 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0">
               <GuideIcon name="suv-outline" className="h-[74px] w-[202px] sm:h-[70px] sm:w-[190px] lg:h-[80px] lg:w-[218px]" />
             </span>
           </div>

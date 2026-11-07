@@ -201,12 +201,12 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
   const hasChecks = checks && (checks.buyIf?.length || checks.avoidIf?.length);
 
   return (
-    <section className={`relative overflow-hidden bg-lr-page text-lr-head ${SANS}`}>
+    <section className={`relative overflow-hidden bg-lr-band text-lr-head ${SANS}`}>
       {/* ---------- header: like the heroes, the loch spans the band (washed behind the title) and
           the car stands on its foreground; phones show it as a banner under the intro ---------- */}
       <div className="relative">
-        {car && <LochBand copy="left" tone="page" from="lg" solid={480} half={700} clear={940} position="center 66%" />}
-        <div className={`relative ${CONTAINER} pt-9 md:pt-12 lg:pt-12`}>
+        {car && <LochBand copy="left" tone="band" from="lg" solid={480} half={700} clear={940} position="center 66%" />}
+        <div className={`relative ${CONTAINER} pt-6 md:pt-6 lg:pt-6`}>
           <div className="grid items-center lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:gap-10">
             <div>
               <span className="block h-[3px] w-14 rounded-full bg-lr-gold-line md:w-20" aria-hidden="true" />

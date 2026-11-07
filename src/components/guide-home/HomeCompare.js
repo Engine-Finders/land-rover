@@ -30,24 +30,25 @@ function PairImage({ item, mobile = false, sizes, className = "" }) {
   );
 }
 
-// phones / tablets: number badge + pair photo on the left, title / verdict / link on the right
+// phones / tablets: number badge + pair photo on the left, title / verdict / link on the right. On phones the
+// photo floats, so the text wraps under it (no empty space below the cars) and the link runs full width.
 function MobileCard({ item, n, cta }) {
   return (
     <li>
       <Link
         href={item.href}
-        className="group flex h-full items-start gap-2.5 rounded-lg border font-normal border-lr-line bg-lr-card p-2.5 shadow-[0_6px_18px_-14px_var(--lr-shadow)] sm:gap-4 sm:p-4"
+        className="group flex h-full items-start gap-2.5 rounded-lg border font-normal border-lr-line bg-lr-card p-2.5 shadow-[0_6px_18px_-14px_var(--lr-shadow)] max-sm:flow-root sm:gap-4 sm:p-4"
       >
-        <span className="relative w-[44%] shrink-0 sm:w-[46%]">
+        <span className="relative w-[44%] shrink-0 max-sm:float-left max-sm:mb-2 max-sm:mr-3 sm:w-[46%]">
           <PairImage item={item} mobile sizes="(min-width: 640px) 22vw, 44vw" />
           <span className={`${SMALL} absolute -left-1 -top-1 flex h-[26px] w-[26px] items-center justify-center rounded-md bg-lr-brand font-medium text-lr-on-brand shadow-[0_2px_6px_var(--lr-shadow)] ring-2 ring-lr-card sm:h-8 sm:w-8`}>
             {pad(n)}
           </span>
         </span>
-        <span className="flex min-w-0 flex-1 flex-col self-stretch">
+        <span className="flex min-w-0 flex-1 flex-col self-stretch max-sm:block">
           <span className={`${H6} block text-lr-head`}>{item.title}</span>
           <span className={`${BODY_SM} mt-1 block text-lr-body`}>{item.text}</span>
-          <span className="mt-auto border-t border-lr-line pt-1.5 sm:pt-2.5">
+          <span className="mt-auto border-t border-lr-line pt-1.5 max-sm:mt-2.5 max-sm:block max-sm:clear-both max-sm:pt-2 sm:pt-2.5">
             <span className={`${SMALL} inline-flex items-center gap-1.5 font-semibold text-lr-green group-hover:underline`}>
               {cta} <Arrow className="h-4 w-4" />
             </span>
@@ -59,19 +60,21 @@ function MobileCard({ item, n, cta }) {
 }
 
 const COLS = "grid-cols-[72px_240px_minmax(0,0.8fr)_minmax(0,1.3fr)_190px]";
+// column divider: a short centred rule (not the full row height), as marked on the reference
+const DIVIDER = "relative after:absolute after:right-0 after:top-1/2 after:h-8 after:w-px after:-translate-y-1/2 after:bg-lr-line";
 
 export default function HomeCompare({ data }) {
   const [h1, h2, h3] = data.h2.split("|");
 
   return (
-    <section className="relative bg-lr-band text-lr-head">
-      <div className={`${CONTAINER} pb-10 pt-6 lg:pb-14 lg:pt-8`}>
+    <section className="relative bg-lr-page text-lr-head">
+      <div className={`${CONTAINER} pb-6 pt-6 lg:pb-7 lg:pt-6`}>
         <h2 className={`${H2} text-balance`}>
           {h1}
           <br />
           {h2} <span className="text-lr-green">{h3}</span>
         </h2>
-        <p className={`${BODY} mt-3 max-w-[640px] text-lr-body`}>{data.subhead}</p>
+        <p className={`${BODY} mt-3 max-w-[640px] text-lr-body lg:max-w-[800px]`}>{data.subhead}</p>
 
         {/* ===== phones / tablets: comparison cards ===== */}
         <ol className="mt-5 grid gap-2.5 lg:grid-cols-2 xl:hidden">
@@ -96,8 +99,8 @@ export default function HomeCompare({ data }) {
                     <span className={`${SMALL} flex h-10 w-10 items-center justify-center rounded-md bg-lr-brand font-medium text-lr-on-brand`}>{pad(i + 1)}</span>
                   </span>
                   <PairImage item={item} sizes="240px" />
-                  <span className={`${H6} flex items-center self-stretch border-r border-lr-line py-4 pl-6 pr-5 text-lr-head`}>{item.title}</span>
-                  <span className="flex items-center gap-4 self-stretch border-r border-lr-line py-3 pl-5 pr-6">
+                  <span className={`${H6} flex items-center self-stretch py-4 pl-6 pr-5 text-lr-head ${DIVIDER}`}>{item.title}</span>
+                  <span className={`flex items-center gap-4 self-stretch py-3 pl-5 pr-6 ${DIVIDER}`}>
                     <VerdictIcon name={item.icon} className="h-[48px] w-[48px]" />
                     <span className={`${BODY_SM} text-lr-body`}>{item.text}</span>
                   </span>
@@ -113,15 +116,16 @@ export default function HomeCompare({ data }) {
         </div>
 
         {/* data note */}
-        <div className="mt-3 flex flex-wrap items-start gap-3.5 rounded-md border border-lr-line bg-lr-panel px-3.5 py-4 sm:flex-nowrap sm:items-center sm:gap-6 sm:px-6 lg:py-5">
-          <span className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand sm:h-14 sm:w-14">
+        {/* phones: the icon floats left so the text wraps under it */}
+        <div className="mt-3 flex flex-wrap items-start gap-3.5 rounded-md border border-lr-line bg-lr-panel px-3.5 py-4 max-sm:flow-root sm:flex-nowrap sm:items-center sm:gap-6 sm:px-6 lg:py-5">
+          <span className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-full bg-lr-brand text-lr-on-brand max-sm:float-left max-sm:mb-1 max-sm:mr-3 sm:h-14 sm:w-14">
             <GuideIcon name="chart-search" className={ICON_MD} />
           </span>
           <p className={`${BODY_SM} min-w-0 flex-1 text-lr-body lg:max-w-[760px]`}>
             <span className="font-semibold uppercase text-lr-green">{data.note.title}</span> {data.note.text}
           </p>
           {/* two car line drawings: own row under the text on phones, beside it from sm */}
-          <span className="flex w-full items-end justify-end border-t border-lr-line pt-2 text-lr-muted sm:ml-auto sm:w-auto sm:shrink-0 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0 lg:pl-8">
+          <span className="flex w-full items-end justify-end border-t border-lr-line pt-2 text-lr-muted max-sm:clear-both max-sm:mt-3 sm:ml-auto sm:w-auto sm:shrink-0 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0 lg:pl-8">
             <span className="relative block aspect-[1164/284] w-[78%] max-w-[300px] sm:w-[260px] lg:w-[330px]">
               <Image src={data.note.image} alt="" fill className="object-contain" sizes="330px" />
             </span>

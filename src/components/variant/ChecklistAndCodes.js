@@ -273,7 +273,7 @@ export default function ChecklistAndCodes({ checklist, codes, car = null, engine
         </div>
       )}
 
-      <div className={`relative ${CONTAINER} grid gap-x-10 pb-10 pt-9 md:pb-14 md:pt-12 lg:grid-cols-[minmax(0,1.14fr)_minmax(0,0.86fr)] xl:gap-x-12`}>
+      <div className={`relative ${CONTAINER} grid gap-x-10 pb-6 pt-6 md:pb-7 md:pt-6 lg:grid-cols-[minmax(0,1.14fr)_minmax(0,0.86fr)] xl:gap-x-12`}>
         {/* ---------------- left column (and phones' reading order) ---------------- */}
         <div className="min-w-0">
           {items.length > 0 && (

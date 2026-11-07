@@ -33,7 +33,7 @@ const CARS_DESKTOP = "bg-[image:var(--cars-day)] dark:bg-[image:var(--cars-night
 const CARS_MOBILE =
   "bg-[image:var(--cars-day-m)] sm:bg-[image:var(--cars-day)] dark:bg-[image:var(--cars-night-m)] sm:dark:bg-[image:var(--cars-night)]";
 // the line-up image's own proportions (1950 x 670)
-const CARS_RATIO = "aspect-[1950/670] bg-contain bg-no-repeat bg-bottom";
+const CARS_RATIO = "aspect-[2040/670] bg-contain bg-no-repeat bg-bottom";
 
 const verified = (html = "") =>
   html.replace(/\[EM-VERIFIED\]/g, '<span class="whitespace-nowrap font-semibold text-lr-ink dark:font-medium dark:text-lr-green">[EM-VERIFIED]</span>');
@@ -124,7 +124,7 @@ export default function ModelHero({ data, slug = "" }) {
 
   return (
     <section className={`relative overflow-hidden bg-lr-page text-lr-head ${SANS}`} style={art || undefined}>
-      <div className={`${CONTAINER} pb-8 pt-6 md:pb-12 md:pt-8 lg:pt-10`}>
+      <div className={`${CONTAINER} pb-6 pt-6 md:pb-6 md:pt-8 lg:pt-10`}>
         <div className="relative">
           <div className="relative">
           {/* desktop: the line-up in a diagonal panel on the right, as tall as the copy and running
@@ -144,11 +144,11 @@ export default function ModelHero({ data, slug = "" }) {
               </svg>
             </div>
           )}
-          {/* desktop: the line-up stands on the apron with the front wheels level with the button,
-              the back car running past the diagonal and the front car cut by the card edge, as in
-              the reference - never masked, so every car stays sharp */}
+          {/* desktop: the line-up stands on the apron with the front wheels level with the button and
+              the back car running past the diagonal - every car whole (the front car ends just inside the
+              page edge, never cut off), never masked, so every car stays sharp */}
           {lineup && (
-            <div className={`pointer-events-none absolute bottom-0 left-[43.8%] hidden w-[60.2%] xl:block ${CARS_RATIO} ${CARS_DESKTOP}`} aria-hidden="true" />
+            <div className={`pointer-events-none absolute bottom-0 left-[42.5%] hidden w-[59.5%] xl:block ${CARS_RATIO} ${CARS_DESKTOP}`} aria-hidden="true" />
           )}
 
           <div className="relative text-center xl:pt-4 xl:text-left">
@@ -221,7 +221,8 @@ export default function ModelHero({ data, slug = "" }) {
           {lineup && (
             <div className="relative -mx-5 sm:-mx-6 -mt-2 aspect-[16/11] sm:-mt-4 sm:aspect-[16/10] md:-mx-10 lg:aspect-[2/1] xl:hidden" aria-hidden="true">
               <div className={`absolute inset-0 bg-cover bg-[right_bottom] ${BG_MOBILE} ${MOBILE_FADE}`} />
-              <div className={`absolute bottom-[21%] left-[-1%] w-[112%] sm:bottom-[18%] sm:left-[2%] sm:w-[104%] lg:bottom-[19%] lg:left-[9%] lg:w-[94%] ${CARS_RATIO} ${CARS_MOBILE}`} />
+              {/* the whole line-up on screen at every width (no car running off the edge) */}
+              <div className={`absolute bottom-[21%] left-[-1%] w-[102%] sm:bottom-[18%] sm:left-[1%] sm:w-[99%] lg:bottom-[19%] lg:left-[8%] lg:w-[92%] ${CARS_RATIO} ${CARS_MOBILE}`} />
             </div>
           )}
 

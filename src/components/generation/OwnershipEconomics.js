@@ -156,7 +156,7 @@ function Hillside({ car, className = "" }) {
     <div className={`pointer-events-none ${className}`} aria-hidden="true">
       <div className="absolute inset-0 [clip-path:polygon(0_0,calc(100%-6.25vw)_0,calc(100%-15vw)_100%,0_100%)] [mask-image:linear-gradient(90deg,transparent,rgba(0,0,0,0.55)_26%,#000_50%)] dark:[clip-path:polygon(0_0,calc(100%-2.6vw)_0,calc(100%-11.5vw)_100%,0_100%)]">
         <div className={`absolute inset-0 bg-cover bg-[center_30%] ${BG} brightness-[1.05] contrast-[.92] hue-rotate-[14deg] saturate-[.78] dark:filter-none`} />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.32),rgba(255,255,255,0)_70%)] dark:hidden" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,color-mix(in_srgb,var(--sec-bg,#fff)_32%,transparent),transparent_70%)] dark:hidden" />
         <div className="absolute inset-0 hidden bg-[linear-gradient(180deg,rgba(5,14,11,0.2),rgba(5,14,11,0.35))] dark:block" />
       </div>
       <svg viewBox="0 0 460 300" preserveAspectRatio="none" className="absolute bottom-0 right-0 h-full w-[29.95vw]">
@@ -197,8 +197,8 @@ export default function OwnershipEconomics({ data, hero = null, model = "" }) {
   const takeaways = data.keyTakeaways || [];
 
   return (
-    <section className={`relative overflow-hidden bg-lr-page pb-10 text-lr-head md:pb-14 xl:pb-16 ${SANS}`}>
-      <div className={`${CONTAINER} pt-10 md:pt-12 lg:pt-10 xl:pt-11`}>
+    <section className={`relative overflow-hidden bg-lr-page pb-6 text-lr-head md:pb-7 xl:pb-8 ${SANS}`}>
+      <div className={`${CONTAINER} pt-6 md:pt-6 lg:pt-6 xl:pt-6`}>
         <div className="relative lg:pb-7">
           <Hillside car={car} className="absolute -top-10 bottom-0 right-[calc(50%-50vw)] hidden w-[60vw] lg:block xl:-top-11" />
           <div className="relative max-w-[760px] lg:max-w-[calc(52vw_-_56px)] xl:max-w-[calc(52vw_-_max(48px,50vw_-_752px)_-_16px)]">

@@ -82,13 +82,13 @@ function StripIcon({ item }) {
 // the five-point trust strip under the cost tables (also closes section 9)
 export function TrustStrip({ className = "" }) {
   return (
-    <ul className={`grid overflow-hidden rounded-xl border border-lr-line bg-lr-card shadow-[0_18px_44px_-36px_var(--lr-shadow)] sm:grid-cols-2 lg:grid-cols-[minmax(0,1.5fr)_repeat(4,minmax(0,1fr))] ${className}`}>
+    <ul className={`grid overflow-hidden rounded-xl border border-lr-line bg-lr-card shadow-[0_18px_44px_-36px_var(--lr-shadow)] sm:grid-cols-2 xl:grid-cols-[minmax(0,1.5fr)_repeat(4,minmax(0,1fr))] ${className}`}>
       {STRIP.map((s, i) => (
         <li
           key={s.title}
-          className={`relative flex items-center gap-4 px-5 py-4 lg:px-5 lg:py-5 xl:px-6 ${i > 0 ? "border-t border-lr-line lg:border-t-0" : ""} ${i === 0 ? "sm:col-span-2 lg:col-span-1" : ""} ${
-            i === 2 || i === 4 ? "sm:border-l sm:border-lr-line lg:border-l-0" : ""
-          } ${i > 0 ? "lg:before:absolute lg:before:inset-y-5 lg:before:left-0 lg:before:w-px lg:before:bg-lr-line" : ""}`}
+          className={`relative flex items-center gap-4 px-5 py-4 xl:px-6 xl:py-5 ${i > 0 ? "border-t border-lr-line xl:border-t-0" : ""} ${i === 0 ? "sm:col-span-2 xl:col-span-1" : ""} ${
+            i === 2 || i === 4 ? "sm:border-l sm:border-lr-line xl:border-l-0" : ""
+          } ${i > 0 ? "xl:before:absolute xl:before:inset-y-5 xl:before:left-0 xl:before:w-px xl:before:bg-lr-line" : ""}`}
         >
           <StripIcon item={s} />
           <div className="min-w-0">
@@ -112,8 +112,8 @@ export default function ReplacementCosts({ data, page = null, model = "" }) {
   const car = engineDbCar(page?.hero || { h1: data.h2 }, model);
 
   return (
-    <section className={`relative overflow-hidden bg-lr-page pb-10 text-lr-head md:pb-14 xl:pb-16 ${SANS}`}>
-      <div className={`${CONTAINER} pt-10 md:pt-12 lg:pt-10 xl:pt-11`}>
+    <section className={`relative overflow-hidden bg-lr-page pb-6 text-lr-head md:pb-7 xl:pb-8 ${SANS}`}>
+      <div className={`${CONTAINER} pt-6 md:pt-6 lg:pt-6 xl:pt-6`}>
         <div className="relative lg:pb-7">
           {/* laptops: the hillside and the car, from the screen's right edge to the table's top */}
           <div className="pointer-events-none absolute -top-10 bottom-0 right-[calc(50%-50vw)] hidden w-[62vw] lg:block xl:-top-11" aria-hidden="true">

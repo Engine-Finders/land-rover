@@ -11,7 +11,9 @@ export const SERIF = "font-[family-name:var(--font-serif-display)]";
 
 // vertical rhythm for a section band, and the alternating band colours (even sections white,
 // odd sections the soft band) so a long page keeps its rhythm in both themes
-export const SECTION_Y = "py-10 md:py-14 xl:py-16";
+// section padding (top + bottom): half the earlier 40 / 56 / 64px, so the step between two sections stays tight;
+// the alternating white / cream backgrounds mark where one section ends and the next begins
+export const SECTION_Y = "py-6 md:py-7 xl:py-8";
 
 // The site-wide H2 (src/lib/typeScale.js): 48px from lg, 44px on 1280-1439px laptops
 export const H2_MODEL = H2;

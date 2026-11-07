@@ -2,7 +2,7 @@
 
 import { useId, useRef, useState } from "react";
 import { BODY_SM, CONTAINER } from "@/lib/typeScale";
-import { Arrow, BAND_SOFT, Chevron, EyebrowPill, IconChip, SANS, SECTION_Y, SectionTitle, prose } from "@/components/models/modelKit";
+import { Arrow, BAND_PAGE, Chevron, EyebrowPill, IconChip, SANS, SECTION_Y, SectionTitle, prose } from "@/components/models/modelKit";
 import { comparePage, localHtml } from "@/components/models/generationsFaqLinks";
 
 // Model page section 13 (FAQ), built to the approved reference: numbered questions in two columns
@@ -77,7 +77,7 @@ export default function FAQAccordion({ data }) {
   };
 
   return (
-    <section id="faq" className={`${BAND_SOFT} text-lr-head ${SANS}`}>
+    <section id="faq" className={`${BAND_PAGE} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         <EyebrowPill>FAQ</EyebrowPill>
         <SectionTitle h2={data.h2} accent="Frequently Asked Questions" className="mt-3 md:mt-4" />

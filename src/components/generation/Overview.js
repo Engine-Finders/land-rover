@@ -162,8 +162,8 @@ export default function Overview({ data, hero = null, model = "" }) {
   const figure = bandFigure(line, hero);
 
   return (
-    <section className={`relative overflow-hidden bg-lr-page pb-10 text-lr-head md:pb-14 xl:pb-16 ${SANS}`}>
-      <div className={`${CONTAINER} pt-10 md:pt-12 lg:pt-12 xl:pt-14`}>
+    <section className={`relative overflow-hidden bg-lr-page pb-6 text-lr-head md:pb-7 xl:pb-8 ${SANS}`}>
+      <div className={`${CONTAINER} pt-6 md:pt-6 lg:pt-6 xl:pt-7`}>
         <div className="relative lg:grid lg:min-h-[30vw] lg:grid-cols-[minmax(0,0.486fr)_minmax(0,0.514fr)]">
           {/* laptops: the hillside from the screen's left edge, fading into the page under the copy */}
           <div className="pointer-events-none absolute -top-12 bottom-[-190px] left-[calc(50%-50vw)] right-[calc(51.4%-48px)] hidden lg:block xl:-top-14" aria-hidden="true">

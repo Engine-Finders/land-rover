@@ -71,7 +71,7 @@ export default function FAQAccordion({ data, name = "" }) {
   const toggle = (i) => setOpen((prev) => prev.map((v, j) => (j === i ? !(v ?? (Boolean(wide) || i === 0)) : v)));
 
   return (
-    <section id="faq" className={`scroll-mt-16 bg-lr-band py-10 text-lr-head md:scroll-mt-20 md:py-14 xl:py-16 ${SANS}`}>
+    <section id="faq" className={`scroll-mt-16 bg-lr-band py-6 text-lr-head md:scroll-mt-20 md:py-7 xl:py-8 ${SANS}`}>
       <div className={CONTAINER}>
         <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">Questions &amp; Answers</p>
         <h2 className={`${H2_MODEL} mt-3.5 text-balance text-lr-head md:mt-4`}>{name ? `FAQ — ${name}` : "FAQ"}</h2>

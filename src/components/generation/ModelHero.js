@@ -190,7 +190,7 @@ export default function ModelHero({ data, model = "" }) {
         </div>
       </div>
 
-      <div className={`${CONTAINER} relative pb-8 pt-7 md:pb-10 md:pt-9 lg:pb-12 lg:pt-12 xl:pt-14`}>
+      <div className={`${CONTAINER} relative pb-6 pt-7 md:pb-6 md:pt-9 lg:pb-6 lg:pt-12 xl:pt-14`}>
         <div className="max-w-[640px] lg:max-w-[54%]">
           <Pill pill={pill} />
 

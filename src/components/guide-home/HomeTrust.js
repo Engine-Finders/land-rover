@@ -4,9 +4,12 @@ import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
 import { BODY, BODY_SM, CONTAINER, H2, H5, H6, ICON_MD, ICON_SM, ICON_XL, ICON_XS, LABEL, SMALL } from "@/lib/typeScale";
 
-// Follows the site theme (day / night): colours come from the --lr-* tokens; the photos fade into
-// their cards through CSS masks, so they blend with either theme's card.
+// Follows the site theme (day / night): colours come from the --lr-* tokens. The note-type cards (our
+// commitment, the expert-advice call and the data note) are deep green in both themes, like every data
+// note on the page; their dark photos fade into that green through long, soft CSS masks.
 const ICON_DISC = "flex shrink-0 items-center justify-center rounded-full bg-lr-chip text-lr-ink";
+const NOTE_CARD = "border-[#0c2a1f] bg-[#0c2a1f] text-white shadow-[0_14px_30px_-18px_rgba(6,24,17,0.55)] dark:border-lr-line dark:bg-[#0a1c15]";
+const GOLD = "text-[#d4aa68]";
 
 // phones / tablets: icon left, title + gold rule + text right (mobile reference)
 function MobileCard({ c }) {
@@ -40,31 +43,31 @@ function DesktopCard({ c }) {
 
 function Commitment({ c }) {
   return (
-    <div className="relative overflow-hidden rounded-lg border border-lr-line bg-lr-card text-lr-head shadow-[0_14px_30px_-18px_var(--lr-shadow)]">
-      {/* sm+: photo on the right, its left edge fading into the panel (mask - no tint on the car) */}
+    <div className={`relative overflow-hidden rounded-lg border ${NOTE_CARD}`}>
+      {/* sm+: photo on the right, its left edge fading softly into the green (mask - no tint on the car) */}
       <div
-        className="absolute inset-y-0 right-0 hidden w-[46%] [mask-image:linear-gradient(to_right,transparent,#000_22%)] sm:block"
+        className="absolute inset-y-0 right-0 hidden w-[50%] [mask-image:linear-gradient(to_right,transparent,rgba(0,0,0,0.45)_20%,rgba(0,0,0,0.85)_34%,#000_46%)] sm:block"
         aria-hidden="true"
       >
         <Image src={c.image} alt="" fill quality={90} className="object-cover object-[35%_55%]" sizes="(min-width: 1280px) 420px, 50vw" />
       </div>
 
       <div className="relative px-5 pb-5 pt-5 sm:w-[57%] sm:px-7 sm:py-7 xl:w-[57%] xl:px-8 xl:py-8">
-        <p className={`${LABEL} flex items-center gap-3 text-lr-gold`}>
-          <GuideIcon name="shield" className={ICON_XS} />
+        <p className={`${LABEL} flex items-center gap-3 ${GOLD}`}>
+          <GuideIcon name="shield" tone="current" className={ICON_XS} />
           {c.eyebrow}
         </p>
-        <h3 className={`${H5} mt-3 text-lr-head`}>{c.title}</h3>
-        <span className="mt-4 hidden h-[2px] w-9 bg-lr-gold-line xl:block" />
-        <p className={`${BODY_SM} mt-3 text-lr-body xl:mt-5`}>{c.text}</p>
-        <p className={`${SMALL} mt-4 flex items-center gap-3 font-medium text-lr-head xl:mt-6`}>
-          <GuideIcon name="signature" className="h-7 w-[72px] text-lr-head/80" />
+        <h3 className={`${H5} mt-3 text-white`}>{c.title}</h3>
+        <span className="mt-4 hidden h-[2px] w-9 bg-[#c9a35d] xl:block" />
+        <p className={`${BODY_SM} mt-3 text-white/85 xl:mt-5`}>{c.text}</p>
+        <p className={`${SMALL} mt-4 flex items-center gap-3 font-medium text-white xl:mt-6`}>
+          <GuideIcon name="signature" className="h-7 w-[72px] text-white/80" />
           {c.sign}
         </p>
       </div>
 
       {/* phones: the car gets its own band under the text, fading into the panel at the top */}
-      <div className="relative aspect-[580/440] [mask-image:linear-gradient(to_bottom,transparent,#000_18%)] sm:hidden" aria-hidden="true">
+      <div className="relative aspect-[580/440] [mask-image:linear-gradient(to_bottom,transparent,rgba(0,0,0,0.6)_14%,#000_30%)] sm:hidden" aria-hidden="true">
         <Image src={c.image} alt="" fill quality={90} className="object-cover object-[50%_55%]" sizes="100vw" />
       </div>
     </div>
@@ -104,38 +107,39 @@ function Faq({ faq }) {
 
 function Cta({ cta }) {
   return (
-    <div className="relative overflow-hidden rounded-lg border border-lr-line bg-lr-card text-lr-head shadow-[0_14px_30px_-18px_var(--lr-shadow)]">
+    <div className={`relative overflow-hidden rounded-lg border ${NOTE_CARD}`}>
+      {/* laptops: the three cars on the right, fading softly into the green on their left */}
       <div
-        className="absolute inset-y-0 right-0 hidden w-[36%] [mask-image:linear-gradient(to_right,transparent,#000_14%)] lg:block"
+        className="absolute inset-y-0 right-0 hidden w-[40%] [mask-image:linear-gradient(to_right,transparent,rgba(0,0,0,0.5)_14%,rgba(0,0,0,0.9)_26%,#000_34%)] lg:block"
         aria-hidden="true"
       >
         <Image src={cta.image} alt="" fill quality={90} className="object-cover" sizes="40vw" />
       </div>
-      <div className="relative flex flex-col gap-4 px-5 py-5 sm:flex-row sm:items-center sm:gap-6 sm:px-7 lg:w-[66%] lg:py-6">
+      <div className="relative flex flex-col gap-4 px-5 py-5 sm:flex-row sm:items-center sm:gap-6 sm:px-7 lg:w-[64%] lg:py-6 xl:w-[60%]">
         <div className="flex items-start gap-4 sm:min-w-0 sm:flex-1 sm:items-center">
-          <span className="shrink-0 text-lr-gold">
-            <GuideIcon name="shield" className={ICON_XL} />
+          <span className={`shrink-0 ${GOLD}`}>
+            <GuideIcon name="shield" tone="current" className={ICON_XL} />
           </span>
           <span className="min-w-0">
-            <span className={`${H5} block text-lr-head`}>{cta.title}</span>
-            <span className={`${BODY_SM} mt-1.5 block text-lr-body`}>{cta.text}</span>
+            <span className={`${H5} block text-white`}>{cta.title}</span>
+            <span className={`${BODY_SM} mt-1.5 block text-white/85`}>{cta.text}</span>
           </span>
         </div>
         <div className="shrink-0">
           <QuoteLink
             href={cta.href}
-            className="flex items-center justify-center gap-3 whitespace-nowrap rounded-[4px] bg-lr-brand px-5 py-3 text-[14px] font-medium uppercase tracking-[0.03em] text-lr-on-brand transition-colors hover:bg-lr-brand-hover xl:text-[15px]"
+            className="flex items-center justify-center gap-3 whitespace-nowrap rounded-[4px] bg-[#c9a35d] px-5 py-3 text-[14px] font-semibold uppercase tracking-[0.03em] text-[#0c2a1f] shadow-[0_8px_18px_-10px_rgba(0,0,0,0.6)] transition-colors hover:bg-[#d8b574] xl:text-[15px]"
           >
             {cta.label} <Arrow className="h-4 w-4" />
           </QuoteLink>
-          <p className={`${SMALL} mt-2 flex items-center justify-center gap-2 text-lr-muted sm:justify-start`}>
-            <GuideIcon name="lock" className={ICON_XS} />
+          <p className={`${SMALL} mt-2 flex items-center justify-center gap-2 text-white/70 sm:justify-start`}>
+            <GuideIcon name="lock" tone="current" className={ICON_XS} />
             {cta.small}
           </p>
         </div>
       </div>
       {/* phones / tablets: the three cars as a band at the bottom, fading up into the panel */}
-      <div className="relative -mt-2 aspect-[711/156] [mask-image:linear-gradient(to_bottom,transparent,#000_30%)] lg:hidden" aria-hidden="true">
+      <div className="relative -mt-2 aspect-[711/156] [mask-image:linear-gradient(to_bottom,transparent,rgba(0,0,0,0.6)_20%,#000_42%)] lg:hidden" aria-hidden="true">
         <Image src={cta.image} alt="" fill quality={90} className="object-cover" sizes="100vw" />
       </div>
     </div>
@@ -148,8 +152,8 @@ export default function HomeTrust({ data }) {
   const { note } = data;
 
   return (
-    <section lang="en-GB" className="relative bg-lr-band text-lr-head">
-      <div className={`${CONTAINER} pb-10 pt-9 lg:pb-14 lg:pt-10`}>
+    <section lang="en-GB" className="relative bg-lr-page text-lr-head">
+      <div className={`${CONTAINER} pb-6 pt-6 lg:pb-7 lg:pt-6`}>
         <div className="flex items-center justify-center gap-4">
           <span className="h-px w-10 bg-lr-gold-line sm:w-12" />
           <p className={`${LABEL} text-lr-ink`}>{data.eyebrow}</p>
@@ -185,19 +189,22 @@ export default function HomeTrust({ data }) {
         </div>
 
         {/* data note */}
-        <div className="mt-4 flex gap-4 rounded-lg border border-lr-line bg-lr-card px-4 py-4 sm:px-6 xl:items-center xl:py-3.5">
-          <GuideIcon name="shield" className={ICON_SM} />
+        {/* data note: the same deep green bar as the other sections */}
+        <div className={`mt-4 flex gap-4 rounded-lg border px-4 py-4 max-sm:flow-root sm:px-6 xl:items-center xl:rounded-md xl:px-7 xl:py-4 ${NOTE_CARD}`}>
+          <span className={`shrink-0 max-sm:float-left max-sm:mb-1 max-sm:mr-3 ${GOLD}`}>
+            <GuideIcon name="shield" tone="current" className={ICON_MD} />
+          </span>
           <div className="min-w-0 xl:flex xl:flex-1 xl:items-center xl:gap-8">
-            <p className={`${BODY_SM} text-lr-body xl:flex-1`}>
-              <span className="font-semibold text-lr-head">{note.title}</span> <span className="break-words">{note.text}</span>
+            <p className={`${BODY_SM} text-white/90 xl:flex-1`}>
+              <span className={`font-semibold uppercase tracking-[0.02em] ${GOLD}`}>{note.title}</span> <span className="break-words">{note.text}</span>
             </p>
-            <ul className={`${SMALL} mt-2 flex flex-wrap gap-x-5 gap-y-1 text-lr-body xl:mt-0 xl:shrink-0 xl:items-center xl:border-l xl:border-lr-line xl:pl-8`}>
-              <li className="hidden xl:block">
-                <GuideIcon name="star" className={ICON_XS} />
+            <ul className={`${SMALL} mt-2 flex flex-wrap gap-x-5 gap-y-1 text-white xl:mt-0 xl:shrink-0 xl:items-center xl:border-l xl:border-white/20 xl:pl-8`}>
+              <li className={`hidden xl:block ${GOLD}`}>
+                <GuideIcon name="star" tone="current" className={ICON_XS} />
               </li>
               {note.stats.map((s) => (
                 <li key={s} className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-lr-green xl:bg-lr-body" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#7bc49a]" />
                   {s}
                 </li>
               ))}

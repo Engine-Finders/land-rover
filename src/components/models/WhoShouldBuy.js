@@ -2,7 +2,7 @@ import Image from "next/image";
 import LrIcon from "@/components/shared/LrIcon";
 import { BadgeStrip } from "@/components/models/costBuyerBadges";
 import thumbs from "@/components/models/whoShouldBuyThumbs.json";
-import { Arrow, BAND_PAGE, Eyebrow, SANS, SECTION_Y, SectionTitle, Stars, TABLE_HEAD, modelName, parseRating, prose, INTRO } from "@/components/models/modelKit";
+import { Arrow, BAND_SOFT, Eyebrow, SANS, SECTION_Y, SectionTitle, Stars, TABLE_HEAD, modelName, parseRating, prose, INTRO } from "@/components/models/modelKit";
 import { BODY_SM, CONTAINER } from "@/lib/typeScale";
 
 // Model page section 10 - who should buy, built to the approved Velar reference: the headline
@@ -95,7 +95,7 @@ export default function WhoShouldBuy({ data, slug = "", page = null }) {
   ];
 
   return (
-    <section id="who-should-buy" className={`${BAND_PAGE} text-lr-head ${SANS}`}>
+    <section id="who-should-buy" className={`${BAND_SOFT} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         <div className="grid gap-6 xl:gap-8 min-[1400px]:grid-cols-[minmax(0,1fr)_minmax(0,min(760px,52%))] min-[1400px]:items-center min-[1400px]:gap-8">
           <div>

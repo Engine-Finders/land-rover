@@ -217,7 +217,7 @@ export default function VariantHero({ data, car = null, parent = "" }) {
 
       {/* reg search -> /quote?reg= */}
       {data.registrationInput && (
-        <div className={`relative ${CONTAINER} pb-5 md:pb-8 lg:pb-10`}>
+        <div className={`relative ${CONTAINER} pb-5 md:pb-6 lg:pb-6`}>
           <form onSubmit={goToQuoteWithReg} className="mt-3 grid grid-cols-[96px_minmax(0,1fr)] gap-2 rounded-lg border border-lr-line bg-lr-card p-2.5 shadow-[0_10px_24px_-22px_var(--lr-shadow)] sm:grid-cols-[112px_minmax(0,1fr)] md:mt-4 md:grid-cols-[124px_minmax(0,1fr)_auto] md:gap-3 md:p-3.5 lg:mt-5 lg:grid-cols-[132px_minmax(0,1fr)_minmax(0,1.3fr)] lg:p-4">
             <label className="relative flex h-12 items-center rounded-md border border-lr-line-strong bg-lr-card md:h-[54px] lg:h-[58px]">
               <span className="sr-only">Registration region</span>
@@ -256,13 +256,13 @@ export default function VariantHero({ data, car = null, parent = "" }) {
         </div>
       )}
 
-      {/* ticker band: scrolls on phones (list rendered twice), one static row from lg */}
+      {/* ticker band: scrolls on every screen (the list rendered four times for a seamless loop) */}
       {ticker.length > 0 && (
         <div className="relative border-y border-lr-line bg-lr-band">
           <div className="mx-auto w-full max-w-8xl overflow-hidden md:px-10 xl:px-12">
-            <ul className="hero-ticker flex w-max items-center py-3.5 md:py-4 lg:w-full lg:justify-between lg:gap-4">
-              {[...ticker, ...ticker].map((t, i) => (
-                <li key={i} className={`flex shrink-0 items-center gap-2.5 pl-7 text-[13.5px] text-lr-body md:text-[14px] lg:pl-0 xl:text-[15px] ${i >= ticker.length ? "lg:hidden" : ""}`} aria-hidden={i >= ticker.length || undefined}>
+            <ul className="hero-ticker flex w-max items-center py-3.5 md:py-4">
+              {[...ticker, ...ticker, ...ticker, ...ticker].map((t, i) => (
+                <li key={i} className={`flex shrink-0 items-center gap-2.5 pl-7 text-[13.5px] text-lr-body md:pl-10 md:text-[14px] xl:pl-12 xl:text-[15px] ${i >= ticker.length ? "ticker-copy" : ""}`} aria-hidden={i >= ticker.length || undefined}>
                   <span className="h-1 w-1 rounded-full bg-lr-head/70" />
                   {t}
                 </li>

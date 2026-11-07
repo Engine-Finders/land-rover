@@ -172,7 +172,7 @@ export default async function CatchAllPage({ params }) {
 
   if (type === "models") {
     return (
-      <main className="flex w-full flex-col">
+      <main className="lr-sections flex w-full flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
@@ -200,7 +200,7 @@ export default async function CatchAllPage({ params }) {
 
   if (type === "generations") {
     return (
-      <main className="flex flex-col">
+      <main className="lr-sections flex flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
@@ -226,7 +226,7 @@ export default async function CatchAllPage({ params }) {
     const car = variantCar(entry.dataFile);
     const engine = variantEngine(entry.dataFile);
     return (
-      <main className="lr-redesign flex flex-col">
+      <main className="lr-redesign lr-sections flex flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"

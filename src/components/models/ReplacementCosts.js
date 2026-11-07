@@ -1,8 +1,8 @@
 import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
 import { BadgeStrip, PoundShield } from "@/components/models/costBuyerBadges";
-import { BAND_PAGE, CARD, Eyebrow, SANS, SECTION_Y, SERIF, SectionTitle, TABLE_HEAD, generationCar, prose, INTRO } from "@/components/models/modelKit";
-import { BODY_SM, CONTAINER } from "@/lib/typeScale";
+import { BAND_SOFT, CARD, Eyebrow, SANS, SECTION_Y, SERIF, SectionTitle, TABLE_HEAD, generationCar, prose } from "@/components/models/modelKit";
+import { BODY, BODY_SM, CONTAINER } from "@/lib/typeScale";
 
 // Model page section 8 - engine replacement costs, built to the approved Velar reference: the
 // headline with the four-up promise card beside it, then one card per generation table (a panel
@@ -114,9 +114,10 @@ function GenerationCard({ table, slug }) {
 
   return (
     <article className={`${CARD} overflow-hidden xl:grid xl:grid-cols-[288px_minmax(0,1fr)] 2xl:grid-cols-[316px_minmax(0,1fr)]`}>
-      {/* generation panel: title (and car beside it until xl, below it from xl) */}
-      <header className="flex items-center gap-3 border-b border-lr-line bg-lr-panel/80 px-4 py-3.5 sm:gap-5 sm:px-5 md:px-6 md:py-4 xl:flex-col xl:items-stretch xl:justify-between xl:gap-4 xl:border-b-0 xl:border-r xl:px-6 xl:pb-5 xl:pt-6">
-        <h3 className={`${SERIF} min-w-0 flex-1 text-[19px] leading-[1.2] text-lr-head sm:text-[22px] md:text-[24px] xl:flex-none xl:text-[26px]`}>
+      {/* generation panel: title (and car beside it until xl, below it from xl) - kept compact so the price rows,
+          not the panel, set the card's height */}
+      <header className="flex items-center gap-3 border-b border-lr-line bg-lr-panel/80 px-4 py-3.5 sm:gap-5 sm:px-5 md:px-6 md:py-4 xl:flex-col xl:items-stretch xl:justify-between xl:gap-3 xl:border-b-0 xl:border-r xl:px-6 xl:pb-4 xl:pt-5">
+        <h3 className={`${SERIF} min-w-0 flex-1 text-[19px] leading-[1.2] text-lr-head sm:text-[22px] md:text-[24px] xl:flex-none xl:text-[21px] xl:leading-[1.15] 2xl:text-[22px]`}>
           {name}
           {years && (
             <>
@@ -124,11 +125,11 @@ function GenerationCard({ table, slug }) {
               {years}
             </>
           )}
-          {note && <span className="mt-0.5 block text-[15px] text-lr-body sm:text-[16px] xl:text-[19px]">{note}</span>}
+          {note && <span className="mt-0.5 block text-[15px] text-lr-body sm:text-[16px]">{note}</span>}
         </h3>
         {car && (
-          <div className="w-[42%] max-w-[176px] shrink-0 sm:w-[200px] sm:max-w-none md:w-[230px] xl:mx-auto xl:w-full xl:max-w-[250px]">
-            <GroundedCar src={car} studio sizes="(min-width: 1280px) 250px, (min-width: 768px) 230px, 176px" />
+          <div className="w-[42%] max-w-[176px] shrink-0 sm:w-[190px] sm:max-w-none md:w-[200px] xl:mx-auto xl:w-full xl:max-w-[148px] 2xl:max-w-[160px]">
+            <GroundedCar src={car} studio sizes="(min-width: 1280px) 180px, (min-width: 768px) 200px, 176px" />
           </div>
         )}
       </header>
@@ -242,14 +243,14 @@ export default function ReplacementCosts({ data, slug = "" }) {
   const hasNotes = data.figuresNote || labour;
 
   return (
-    <section id="replacement-costs" className={`${BAND_PAGE} text-lr-head ${SANS}`}>
+    <section id="replacement-costs" className={`${BAND_SOFT} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
-        <div className="grid gap-6 xl:gap-8 min-[1500px]:grid-cols-[minmax(0,1fr)_minmax(0,560px)] min-[1500px]:items-center min-[1500px]:gap-10">
-          <div>
-            <Eyebrow>Replacement Costs</Eyebrow>
-            <SectionTitle h2={data.h2} className="mt-3 md:mt-4" />
-            {data.subHeadline && <p className={INTRO} dangerouslySetInnerHTML={{ __html: prose(data.subHeadline) }} />}
-          </div>
+        {/* the heading gets the full width (two lines: "… Engine Replacement Costs —" / "By Generation"); the
+            intro runs on one line beside the trust tiles from 1500px, the tiles under it below that */}
+        <Eyebrow>Replacement Costs</Eyebrow>
+        <SectionTitle h2={data.h2} className="mt-3 md:mt-4" />
+        <div className="mt-3 grid gap-6 md:mt-4 xl:gap-8 min-[1500px]:grid-cols-[minmax(0,1fr)_minmax(0,560px)] min-[1500px]:items-center min-[1500px]:gap-10">
+          {data.subHeadline ? <p className={`${BODY} max-w-[52em] text-lr-body`} dangerouslySetInnerHTML={{ __html: prose(data.subHeadline) }} /> : <span />}
           <BadgeStrip items={BADGES} />
         </div>
 

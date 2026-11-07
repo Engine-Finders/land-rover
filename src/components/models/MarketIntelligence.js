@@ -2,7 +2,7 @@ import Link from "next/link";
 import LrIcon from "@/components/shared/LrIcon";
 import EditorialPullQuote from "@/components/models/EditorialPullQuote";
 import { CONTAINER, H2, SMALL } from "@/lib/typeScale";
-import { Arrow, BAND_SOFT, CARD, Eyebrow, SANS, SECTION_Y, SoftTile, TABLE_HEAD, prose, splitHeading, H2_MODEL } from "@/components/models/modelKit";
+import { Arrow, BAND_PAGE, CARD, Eyebrow, SANS, SECTION_Y, SoftTile, TABLE_HEAD, prose, splitHeading, H2_MODEL } from "@/components/models/modelKit";
 
 // Model page section 7, built to the approved "Velar Market Intelligence" reference: the eyebrow and
 // the serif headline (the "275 UK Owners" phrase in green) beside the headline-figure card, the
@@ -303,7 +303,7 @@ export default function MarketIntelligence({ data, quoteData, slug = "", page })
   const figure = headlineFigure(data, page);
 
   return (
-    <section id="market-intelligence" className={`${BAND_SOFT} text-lr-head ${SANS}`}>
+    <section id="market-intelligence" className={`${BAND_PAGE} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
         <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between lg:gap-10">
           <div className="min-w-0">

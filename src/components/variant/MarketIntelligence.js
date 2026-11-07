@@ -217,8 +217,8 @@ export default function MarketIntelligence({ data, variantName = "" }) {
   const { regions, tag } = regionalItem ? parseRegionalDemand(regionalItem.value) : { regions: [], tag: "" };
 
   return (
-    <section className={`relative overflow-hidden bg-lr-page text-lr-head ${SANS}`}>
-      <div className={`relative ${CONTAINER} py-9 md:py-12 lg:py-14`}>
+    <section className={`relative overflow-hidden bg-lr-band text-lr-head ${SANS}`}>
+      <div className={`relative ${CONTAINER} py-6 md:py-6 lg:py-7`}>
         <div className="grid gap-4 lg:gap-5 lg:grid-cols-[minmax(0,1.65fr)_minmax(0,1fr)]">
           <div className="min-w-0">
             <div className="flex items-center gap-3">

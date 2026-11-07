@@ -55,7 +55,8 @@ export default function PhotoScene({ car, ground = 11, carClass = "left-1/2 w-[7
 // LochBanner.
 const BAND_FROM = { md: "hidden md:block", lg: "hidden lg:block" };
 const washFor = (copy, tone, solid, half, clear) => {
-  const c = `var(--lr-${tone})`;
+  // follow the section's own colour when the page alternates them (--sec-bg), else the given tone
+  const c = `var(--sec-bg, var(--lr-${tone}))`;
   const edge = "max(0px, 50vw - 704px)";
   return `linear-gradient(${copy === "left" ? "90deg" : "270deg"}, ${c} 0px, color-mix(in srgb, ${c} 92%, transparent) calc(${edge} + ${solid}px), color-mix(in srgb, ${c} 55%, transparent) calc(${edge} + ${half}px), transparent calc(${edge} + ${clear}px))`;
 };

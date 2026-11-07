@@ -61,7 +61,7 @@ export default function ReplacementCosts({ data, ticker = "" }) {
 
   return (
     <section className={`relative bg-lr-page text-lr-head ${SANS}`}>
-      <div className={`relative ${CONTAINER} pb-8 pt-8 md:pb-10 md:pt-12 lg:pt-11`}>
+      <div className={`relative ${CONTAINER} pb-6 pt-6 md:pb-6 md:pt-6 lg:pt-6`}>
         <span className={CHIP}>Replacement Costs</span>
         <h2 className={`${SECTION_TITLE} mt-3 text-lr-head`}>{data.h2}</h2>
 
@@ -171,13 +171,13 @@ export default function ReplacementCosts({ data, ticker = "" }) {
         )}
       </div>
 
-      {/* ticker band: scrolls on phones (list rendered twice), one static row from lg */}
+      {/* ticker band: scrolls on every screen (the list rendered four times for a seamless loop) */}
       {items.length > 0 && (
         <div className="relative border-y border-lr-line bg-lr-band">
           <div className="mx-auto w-full max-w-8xl overflow-hidden md:px-10 xl:px-12">
-            <ul className="hero-ticker flex w-max items-center py-3.5 md:py-4 lg:w-full lg:justify-between lg:gap-4">
-              {[...items, ...items].map((t, i) => (
-                <li key={i} className={`flex shrink-0 items-center gap-2 pl-7 text-[13.5px] text-lr-body md:text-[14px] lg:pl-0 xl:text-[15px] ${i >= items.length ? "lg:hidden" : ""}`} aria-hidden={i >= items.length || undefined}>
+            <ul className="hero-ticker flex w-max items-center py-3.5 md:py-4">
+              {[...items, ...items, ...items, ...items].map((t, i) => (
+                <li key={i} className={`flex shrink-0 items-center gap-2 pl-7 text-[13.5px] text-lr-body md:pl-10 md:text-[14px] xl:pl-12 xl:text-[15px] ${i >= items.length ? "ticker-copy" : ""}`} aria-hidden={i >= items.length || undefined}>
                   <span className="text-[15px] font-semibold leading-none text-lr-ink dark:text-lr-green" aria-hidden="true">+</span>
                   {t}
                 </li>

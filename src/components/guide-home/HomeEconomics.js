@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { HOME_CTA } from "@/lib/ctaCopy";
 import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_SM, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens. The photos fade into the
@@ -191,10 +193,13 @@ export default function HomeEconomics({ data }) {
 
         <div className="mt-5 grid gap-4 lg:mt-8 xl:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] xl:gap-5">
           <Matrix matrix={data.matrix} />
-          <div className="grid gap-4 lg:grid-cols-2 xl:flex xl:flex-col">
-            <Rule rule={data.rule} />
-            <Links links={data.links} className="xl:flex-1" />
-          </div>
+          <Rule rule={data.rule} />
+        </div>
+
+        <SectionQuoteCta label={HOME_CTA.economicsButton} supportText={HOME_CTA.economicsSupport} />
+
+        <div className="mt-4">
+          <Links links={data.links} />
         </div>
 
         {/* data note */}

@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
 import QuoteLink from "@/components/guide-home/QuoteLink";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { HOME_CTA } from "@/lib/ctaCopy";
 import { BODY, BODY_SM, CONTAINER, H2, H6, ICON_LG, ICON_SM, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens, and the Defender photo
@@ -241,6 +243,8 @@ export default function HomeDiagnose({ data }) {
           <CostTable costs={data.costs} />
           <WhyTrust trust={data.trust} />
         </div>
+
+        <SectionQuoteCta label={HOME_CTA.diagnoseButton} supportText={HOME_CTA.diagnoseSupport} />
       </div>
     </section>
   );

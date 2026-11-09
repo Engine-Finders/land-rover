@@ -5,6 +5,8 @@ import { CONTAINER } from "@/lib/typeScale";
 import { Arrow, H2_MODEL, SANS, prose } from "@/components/models/modelKit";
 import { keyEngines, stripHtml } from "@/components/models/engineSections";
 import { localHref, localHtml } from "@/components/models/generationsFaqLinks";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { generationCtaCopy } from "@/lib/ctaCopy";
 import { genCode, genName } from "./genKit";
 
 // Generation page section 6 - common problems, built to the approved Defender L316 reference: the
@@ -243,6 +245,11 @@ export default function CommonProblems({ data, page = null }) {
   const name = genName(page);
   const code = genCode(`${page?.hero?.h1 || ""} ${page?.hero?.tagPill || ""}`);
   const owners = code && code !== "Classic" ? code : name.replace(/^Land Rover\s+/, "");
+  const cta = generationCtaCopy({
+    brandLabel: /^Range Rover/i.test(name) ? "Range Rover" : "Land Rover",
+    modelShort: name.replace(/^(Land Rover|Range Rover)\s+/i, "").replace(new RegExp(`\\s*${code}$`, "i"), "").trim(),
+    generation: code || owners,
+  });
   const enquiries = String(page?.hero?.trustStrip?.[0]?.label || "").match(/^(\d[\d,]*\+?)/)?.[1];
 
   // one engine shot per engine, none for chassis / suspension / body faults
@@ -303,6 +310,8 @@ export default function CommonProblems({ data, page = null }) {
             </li>
           ))}
         </ul>
+
+        <SectionQuoteCta label={cta.problemsButton} supportText={cta.problemsSupport} />
       </div>
     </section>
   );

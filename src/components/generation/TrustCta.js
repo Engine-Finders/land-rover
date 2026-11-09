@@ -3,8 +3,9 @@ import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER } from "@/lib/typeScale";
 import { Arrow, H2_MODEL, SANS, prose } from "@/components/models/modelKit";
-import { localHref, localHtml } from "@/components/models/generationsFaqLinks";
-import { engineDbCar } from "./genKit";
+import { localHtml } from "@/components/models/generationsFaqLinks";
+import { generationCtaCopy, modelMeta } from "@/lib/ctaCopy";
+import { engineDbCar, genCode, genName } from "./genKit";
 
 // Generation page section 11 - why owners trust us, built to the approved Defender L316 reference:
 // the "Why UK <generation> Owners Trust / LandRoverEngine.uk" headline (the site name in green), the
@@ -39,8 +40,17 @@ export default function TrustCta({ data, page = null, model = "" }) {
   const { lead, site } = splitHeading(prose(data.h2 || ""));
   const points = data.trustPoints || [];
   const car = engineDbCar(page?.hero || {}, model);
-  const label = String(data.ctaButton?.label || "").replace(/\s*(?:→|->)\s*$/, "").trim();
-  const href = localHref(data.ctaButton?.href) || "/quote";
+  const name = genName(page);
+  const code = genCode(`${page?.hero?.h1 || ""} ${page?.hero?.tagPill || ""}`);
+  const meta = modelMeta(model);
+  const ctaCopy = generationCtaCopy({
+    brandLabel: /^Range Rover/i.test(name || meta.label) ? "Range Rover" : "Land Rover",
+    modelShort: meta.short === "Range Rover" ? "" : meta.short.replace(/^Range Rover\s+/, ""),
+    generation: code || meta.short,
+  });
+  const label = ctaCopy.trustButton;
+  const href = "/quote";
+  const support = ctaCopy.trustSupport;
 
   return (
     <section className={`relative overflow-hidden bg-lr-page pb-6 text-lr-head md:pb-7 xl:pb-8 ${SANS}`}>
@@ -103,13 +113,16 @@ export default function TrustCta({ data, page = null, model = "" }) {
             <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-lr-line bg-lr-card text-lr-ink xl:h-[92px] xl:w-[92px] dark:text-lr-green">
               <Rosette className="h-11 w-11 xl:h-[60px] xl:w-[60px]" />
             </span>
-            {data.finalCta && <p className="min-w-0 flex-1 text-[16px] leading-[1.55] text-lr-head md:text-[18px] xl:text-[21px]" dangerouslySetInnerHTML={{ __html: html(data.finalCta) }} />}
+            <div className="min-w-0 flex-1">
+              {data.finalCta && <p className="text-[16px] leading-[1.55] text-lr-head md:text-[18px] xl:text-[21px]" dangerouslySetInnerHTML={{ __html: html(data.finalCta) }} />}
+              {support && <p className="mt-2 text-[14px] leading-snug text-lr-body md:text-[15px]">{support}</p>}
+            </div>
             {label && (
               <Link
                 href={href}
                 className="flex min-h-14 shrink-0 items-center justify-center gap-3 rounded-lg bg-lr-brand px-6 py-3.5 text-center text-[16px] font-semibold leading-snug text-lr-on-brand no-underline shadow-[0_14px_30px_-18px_rgba(18,61,42,0.8)] transition-colors hover:bg-lr-brand-hover lg:max-w-[440px] xl:px-8 xl:text-[19px]"
               >
-                <span dangerouslySetInnerHTML={{ __html: html(label) }} />
+                <span>{label}</span>
                 <Arrow className="h-5 w-5 shrink-0" />
               </Link>
             )}

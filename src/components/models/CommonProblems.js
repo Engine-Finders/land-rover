@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { CONTAINER, LABEL } from "@/lib/typeScale";
 import { Arrow, BAND_SOFT, CARD, Eyebrow, SANS, SECTION_Y, SERIF, SectionTitle, prose, INTRO } from "@/components/models/modelKit";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { modelCtaCopy } from "@/lib/ctaCopy";
 
 // Model page section 6, built to the approved "Common Velar Engine Problems" reference: the eyebrow,
 // the serif headline ("Common" dark, the rest green) with its short gold rule, then one card per
@@ -167,9 +169,10 @@ function UrgencyKey({ items }) {
   );
 }
 
-export default function CommonProblems({ data }) {
+export default function CommonProblems({ data, slug = "" }) {
   if (!data) return null;
 
+  const cta = modelCtaCopy(slug);
   const h2 = String(data.h2 || "");
   const accent = /^Common\s+/i.test(h2) ? h2.replace(/^Common\s+/i, "") : "";
   const used = new Set();
@@ -192,6 +195,8 @@ export default function CommonProblems({ data }) {
         )}
 
         {data.urgencyKey?.length > 0 && <UrgencyKey items={data.urgencyKey} />}
+
+        <SectionQuoteCta label={cta.problemsButton} supportText={cta.problemsSupport} />
       </div>
     </section>
   );

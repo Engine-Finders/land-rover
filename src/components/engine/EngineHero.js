@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import { CONTAINER, SANS } from "@/components/engine/engineTheme";
 import LrIcon from "@/components/shared/LrIcon";
+import HeroRegCta from "@/components/shared/HeroRegCta";
 import GroundedCar from "@/components/variant/GroundedCar";
+import { engineCtaCopy } from "@/lib/ctaCopy";
 import { BODY, H1, ICON_LG, SMALL } from "@/lib/typeScale";
 
 // Engine hero: tag pill, serif headline (accent on "Replacement Cost"), sub-headline, quote CTA,
@@ -27,14 +28,6 @@ const FADE_Y = "dark:[mask-image:linear-gradient(to_bottom,transparent,#000_18%,
 /* ---------- trust strip icons (brand icon set) ---------- */
 const ICON_BY_EMOJI = { "📊": "real-inquiries", "🔧": "vehicle", "💯": "real-data", "🏆": "part-of-engine-finders" };
 const ICON_ORDER = ["real-inquiries", "vehicle", "real-data", "part-of-engine-finders"];
-
-function ArrowIcon({ className }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M4 12h16M14 6l6 6-6 6" />
-    </svg>
-  );
-}
 
 // "Land Rover 200Tdi / 300Tdi Engine - Specs, Reliability & Replacement Cost"
 // -> lead "... Engine — Specs, Reliability & " + accent "Replacement Cost"
@@ -111,7 +104,11 @@ export default function EngineHero({ data, slug = "" }) {
 
   const pill = (data.tagPill || "").split(" • ").filter(Boolean);
   const { lead, accent } = splitTitle(data.h1);
-  const ctaLabel = (data.primaryCta?.label || "Compare Engine Prices").replace(/\s*→\s*$/, "");
+  const engineName = String(data.h1 || "")
+    .split(/\s+[-–—]\s+/)[0]
+    .replace(/\s+Engine$/i, "")
+    .trim() || "Land Rover Engine";
+  const cta = engineCtaCopy(engineName);
   const tdi = /tdi/.test(slug);
   const scene = tdi ? "/engine-hero/scene-tdi.webp" : "/engine-hero/scene.webp";
   const engine = tdi ? "/engine-hero/engine-tdi-cut.webp" : "/engine-hero/engine-cut.webp";
@@ -166,15 +163,11 @@ export default function EngineHero({ data, slug = "" }) {
             />
           )}
 
-          {data.primaryCta && (
-            <Link
-              href="/quote"
-              className="group mt-6 flex w-full items-center justify-center gap-2.5 rounded-lg border-[1.5px] border-lr-gold-line/70 bg-lr-brand px-4 py-[15px] text-[15px] font-medium leading-snug text-lr-on-brand shadow-[0_14px_34px_-18px_rgba(31,112,73,0.7)] transition-colors hover:border-lr-gold-line hover:bg-lr-brand-hover sm:w-fit sm:gap-3 sm:px-8 sm:text-[16px] md:mt-8 xl:px-9 xl:py-[17px] xl:text-[17px]"
-            >
-              <span className="min-w-0 text-center sm:text-left">{ctaLabel}</span>
-              <ArrowIcon className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
-            </Link>
-          )}
+          <HeroRegCta
+            className="mt-6 max-w-[680px] md:mt-8"
+            buttonLabel={cta.heroButton}
+            buttonClassName="rounded-lg border-[1.5px] border-lr-gold-line/70"
+          />
         </div>
 
         {/* phones / tablets, day theme: the engine on the loch-side hillside, top edge feathered into the page */}

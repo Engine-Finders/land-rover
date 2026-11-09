@@ -4,6 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { HOME_CTA } from "@/lib/ctaCopy";
 import { BODY, BODY_SM, CONTAINER, H2, H5, H6, ICON_LG, ICON_MD, ICON_SM, LABEL, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night): colours come from the --lr-* tokens. The severity pills keep
@@ -268,6 +270,8 @@ export default function HomeFailures({ data }) {
 
         <MobileDatabase categories={data.categories} />
         <DesktopDatabase categories={data.categories} />
+
+        <SectionQuoteCta label={HOME_CTA.failuresButton} supportText={HOME_CTA.failuresSupport} />
 
         {/* data note */}
         <div className="relative mt-4 overflow-hidden rounded-xl border border-lr-line bg-lr-panel lg:mt-5 lg:rounded-md">

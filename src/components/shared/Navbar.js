@@ -42,10 +42,10 @@ function ThemeIcon({ theme }) {
 function LogoMark() {
   return (
     <Image
-      src="/land-rover-logo.png"
+      src="/png/icon.webp"
       alt="Land Rover"
       width={124}
-      height={63}
+      height={65}
       priority
       className="h-auto w-[104px] object-contain md:w-[124px]"
     />

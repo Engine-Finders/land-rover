@@ -37,6 +37,28 @@ export const metadata = {
   description:
     "Reliability rankings, real failure data, honest repair-vs-replace economics - for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.",
   applicationName: "Land Rover & Range Rover Ownership Guide",
+  icons: {
+    icon: [{ url: "/png/icon.webp", type: "image/webp" }],
+    apple: [{ url: "/png/icon.webp", type: "image/webp" }],
+    shortcut: ["/png/icon.webp"],
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Land Rover & Range Rover Ownership Guide",
+    locale: "en_GB",
+    images: [
+      {
+        url: "/png/12.webp",
+        width: 1734,
+        height: 907,
+        alt: "Land Rover & Range Rover Ownership Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/png/12.webp"],
+  },
   robots: {
     index: true,
     follow: true,

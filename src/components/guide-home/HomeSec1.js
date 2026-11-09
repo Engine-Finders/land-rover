@@ -1,7 +1,8 @@
-import Link from "next/link";
 import LandRoverLogo from "@/components/guide-home/LandRoverLogo";
 import GroundedCar from "@/components/variant/GroundedCar";
-import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
+import GuideIcon from "@/components/guide-home/GuideIcon";
+import HeroRegCta from "@/components/shared/HeroRegCta";
+import { HOME_CTA } from "@/lib/ctaCopy";
 import { BODY, BODY_SM, CONTAINER, H1, H4_SERIF, H6, ICON_LG, ICON_MD, ICON_SM, ICON_XL, LABEL, NUM, SMALL, STAT } from "@/lib/typeScale";
 
 // Follows the site theme (navbar day / night button). The hero stands the Defender on a Highland
@@ -78,15 +79,11 @@ export default function HomeSec1({ hero }) {
               ))}
             </div>
 
-            <Link
-              href={hero.cta.href}
-              className="relative mx-auto mt-6 flex w-[82%] max-w-100 items-center justify-center gap-3 whitespace-nowrap rounded-xl border border-lr-brand bg-lr-brand py-4 max-sm:mt-4 max-sm:py-3.5 text-[15px] font-semibold uppercase tracking-[0.05em] min-[360px]:text-[17px] min-[360px]:tracking-[0.06em] text-lr-on-brand shadow-[0_12px_28px_-12px_var(--lr-shadow),inset_0_1px_0_rgba(255,255,255,0.18)] transition-colors hover:bg-lr-brand-hover dark:border-lr-green/45 dark:shadow-[0_0_28px_-4px_rgba(60,190,125,0.45),inset_0_1px_0_rgba(255,255,255,0.25)]"
-            >
-              {hero.cta.label}
-              <Arrow />
-              {/* night theme: bottom edge light */}
-              <span className="pointer-events-none absolute -bottom-px left-1/2 hidden h-px w-1/2 -translate-x-1/2 bg-linear-to-r from-transparent via-lr-green to-transparent dark:block" />
-            </Link>
+            <HeroRegCta
+              className="mx-auto mt-6 max-w-[640px] max-sm:mt-4"
+              buttonLabel={HOME_CTA.heroButton}
+              buttonClassName="rounded-xl border border-lr-brand uppercase tracking-[0.04em] dark:border-lr-green/45"
+            />
             </div>
           </div>
 
@@ -172,22 +169,11 @@ export default function HomeSec1({ hero }) {
 
               <p className={`${BODY} mt-5 max-w-[440px] text-lr-body`}>{hero.subhead}</p>
 
-              <div className="mt-6 flex items-center gap-10">
-                <Link
-                  href={hero.cta.href}
-                  className="inline-flex items-center gap-4 rounded-[3px] border border-lr-brand bg-lr-brand px-7 py-4 text-[17px] font-semibold uppercase tracking-[0.04em] text-lr-on-brand transition-colors hover:bg-lr-brand-hover dark:border-lr-green/40"
-                >
-                  {hero.cta.label}
-                  <Arrow className="h-5 w-5" />
-                </Link>
-                <div className="flex items-center gap-3">
-                  <GuideIcon name="shield" className={ICON_LG} />
-                  <p className={`${SMALL} text-lr-body`}>
-                    <span className="block font-medium text-lr-head">{hero.independent.title}</span>
-                    {hero.independent.text}
-                  </p>
-                </div>
-              </div>
+              <HeroRegCta
+                className="mt-6 max-w-[640px]"
+                buttonLabel={HOME_CTA.heroButton}
+                buttonClassName="rounded-[3px] border border-lr-brand uppercase tracking-[0.04em] dark:border-lr-green/40"
+              />
             </div>
 
             {/* stats bar */}

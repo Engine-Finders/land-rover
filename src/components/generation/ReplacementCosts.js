@@ -3,7 +3,9 @@ import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER } from "@/lib/typeScale";
 import { H2_MODEL, SANS, prose, splitHeading } from "@/components/models/modelKit";
 import { localHtml } from "@/components/models/generationsFaqLinks";
-import { engineDbCar } from "./genKit";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { generationCtaCopy, modelMeta } from "@/lib/ctaCopy";
+import { engineDbCar, genCode, genName } from "./genKit";
 
 // Generation page section 7 - engine replacement costs, built to the approved Defender L316
 // reference: the eyebrow, "<code> Engine Replacement Costs — / By Engine and Condition" with the last
@@ -110,6 +112,14 @@ export default function ReplacementCosts({ data, page = null, model = "" }) {
   const last = words.pop();
   const columns = KEYS.map((_, i) => data.columns?.[i] || DEFAULT_COLUMNS[i]);
   const car = engineDbCar(page?.hero || { h1: data.h2 }, model);
+  const name = genName(page);
+  const code = genCode(`${page?.hero?.h1 || ""} ${page?.hero?.tagPill || ""}`);
+  const meta = modelMeta(model);
+  const cta = generationCtaCopy({
+    brandLabel: /^Range Rover/i.test(name || meta.label) ? "Range Rover" : "Land Rover",
+    modelShort: meta.short === "Range Rover" ? "" : meta.short.replace(/^Range Rover\s+/, ""),
+    generation: code || meta.short,
+  });
 
   return (
     <section className={`relative overflow-hidden bg-lr-page pb-6 text-lr-head md:pb-7 xl:pb-8 ${SANS}`}>
@@ -228,6 +238,8 @@ export default function ReplacementCosts({ data, page = null, model = "" }) {
         )}
 
         <TrustStrip className="mt-5 md:mt-6" />
+
+        <SectionQuoteCta label={cta.costsButton} supportText={cta.costsSupport} />
       </div>
     </section>
   );

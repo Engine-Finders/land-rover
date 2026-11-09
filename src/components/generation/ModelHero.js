@@ -1,8 +1,10 @@
 import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
+import HeroRegCta from "@/components/shared/HeroRegCta";
 import { CONTAINER, H1 } from "@/lib/typeScale";
-import { Arrow, SANS, prose } from "@/components/models/modelKit";
-import { localHref, localHtml } from "@/components/models/generationsFaqLinks";
+import { SANS, prose } from "@/components/models/modelKit";
+import { localHtml } from "@/components/models/generationsFaqLinks";
+import { modelMeta, generationCtaCopy } from "@/lib/ctaCopy";
 import { genCar, genCode } from "./genKit";
 
 // Generation page section 1 (hero), built to the approved Defender L316 references (day + night):
@@ -165,8 +167,13 @@ export default function ModelHero({ data, model = "" }) {
   const code = genCode(`${data.h1} ${data.tagPill}`);
   const car = genCar(data, model);
   const intro = introParts(data.subHeadline || "");
-  const ctaLabel = String(data.primaryCta?.label || "").replace(/\s*(?:→|->)\s*$/, "");
-  const ctaHref = localHref(data.primaryCta?.href) || "#engine-database";
+  const meta = modelMeta(model);
+  const generation = code || String(data.tagPill || "").split("•")[0]?.trim() || "Generation";
+  const cta = generationCtaCopy({
+    brandLabel: meta.label.includes("Range Rover") && !meta.label.includes("Land Rover") ? "Range Rover" : "Land Rover",
+    modelShort: meta.short === "Range Rover" ? "" : meta.short.replace(/^Range Rover\s+/, ""),
+    generation,
+  });
   const stats = (data.trustStrip || []).slice(0, 4);
 
   return (
@@ -217,15 +224,11 @@ export default function ModelHero({ data, model = "" }) {
             {intro.backed && <p className="mt-3.5 text-lr-head" dangerouslySetInnerHTML={{ __html: intro.backed }} />}
           </div>
 
-          {ctaLabel && (
-            <a
-              href={ctaHref}
-              className="group mt-7 flex h-13 items-center justify-center gap-3 rounded-xl bg-lr-brand px-6 text-[16px] font-semibold text-lr-on-brand no-underline shadow-[0_14px_30px_-18px_rgba(18,61,42,0.8)] transition-colors hover:bg-lr-brand-hover sm:inline-flex sm:h-14 lg:mt-9 lg:h-[60px] lg:px-8 lg:text-[18px] dark:border dark:border-lr-gold-line/70 dark:bg-lr-page/70 dark:hover:bg-lr-card"
-            >
-              {ctaLabel}
-              <Arrow className="h-5 w-5 transition-transform group-hover:translate-x-0.5 dark:text-lr-gold" />
-            </a>
-          )}
+          <HeroRegCta
+            className="mt-7 max-w-[680px] lg:mt-9"
+            buttonLabel={cta.heroButton}
+            buttonClassName="rounded-xl"
+          />
         </div>
 
         {/* phones / tablets: the car on the hillside, full-bleed */}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CONTAINER, INK, SANS } from "@/components/engine/engineTheme";
 import LrIcon from "@/components/shared/LrIcon";
+import { engineCtaCopy } from "@/lib/ctaCopy";
 import { BODY, BODY_SM, H2, H5, ICON_MD, ICON_SM, ICON_XL, LABEL as EYEBROW, STAT } from "@/lib/typeScale";
 
 // Engine section: Cost Guide - intro (labour estimate + shared-cost note), one price card per
@@ -88,7 +89,9 @@ export default function CostGuide({ data, engineName = "" }) {
   const rows = data?.rows || [];
   if (rows.length === 0) return null;
 
-  const title = `${engineName.replace(/<[^>]+>/g, "").replace(/^Land Rover\s+/i, "")} Engine Price Guide`;
+  const cleanName = engineName.replace(/<[^>]+>/g, "").trim() || "Land Rover Engine";
+  const title = `${cleanName.replace(/^Land Rover\s+/i, "")} Engine Price Guide`;
+  const costsLabel = engineCtaCopy(cleanName.includes("Engine") ? cleanName : `${cleanName} Engine`).costsButton;
 
   return (
     <section className="relative bg-lr-band text-lr-head" style={SANS}>
@@ -138,11 +141,11 @@ export default function CostGuide({ data, engineName = "" }) {
             </div>
             <Link
               href="/quote"
-              className="group mt-5 flex items-center justify-center gap-2 whitespace-nowrap rounded-md bg-white px-4 py-3 text-[14px] font-medium uppercase tracking-[0.04em] transition-colors hover:bg-[#f3efe4] md:mt-0 md:shrink-0 lg:mt-auto xl:h-[44px] xl:py-0 xl:text-[15px] xl:tracking-[0.03em]"
+              className="group mt-5 flex items-center justify-center gap-2 whitespace-nowrap rounded-md bg-white px-4 py-3 text-[14px] font-medium tracking-[0.02em] transition-colors hover:bg-[#f3efe4] md:mt-0 md:shrink-0 lg:mt-auto xl:min-h-[44px] xl:py-2 xl:text-[15px]"
               style={{ color: INK }}
             >
-              Compare Prices
-              <Svg name="arrow" className="h-5 w-5 transition-transform group-hover:translate-x-1 xl:h-[18px] xl:w-[18px]" />
+              {costsLabel}
+              <Svg name="arrow" className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1 xl:h-[18px] xl:w-[18px]" />
             </Link>
           </aside>
         </div>

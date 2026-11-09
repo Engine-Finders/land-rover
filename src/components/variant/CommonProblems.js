@@ -2,6 +2,8 @@ import Tagged from "@/components/variant/Tagged";
 import { topicIcon } from "@/components/variant/variantText";
 import { CHIP, SECTION_TITLE } from "@/components/variant/ReplacementCosts";
 import LrIcon from "@/components/shared/LrIcon";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { variantCtaCopy } from "@/lib/ctaCopy";
 import { CONTAINER, H6, ICON_MD, ICON_SM } from "@/lib/typeScale";
 
 // Variant section 3: the engine's common problems, built to the approved reference - a label chip and
@@ -103,6 +105,8 @@ export default function CommonProblems({ data, engineTitle = "" }) {
   if (!problems.length) return null;
   // "Land Rover Defender D240 Engine Replacement Costs" -> "Common Problems With Land Rover Defender D240 Engines"
   const fallback = engineTitle ? `Common Problems With ${engineTitle.replace(/\s*Engine Replacement Costs\s*$/i, "")} Engines` : "Common Problems";
+  const name = engineTitle.replace(/\s*Engine Replacement Costs\s*$/i, "").trim() || "Land Rover";
+  const cta = variantCtaCopy(name);
 
   return (
     <section className={`relative bg-lr-band text-lr-head ${SANS}`}>
@@ -115,6 +119,8 @@ export default function CommonProblems({ data, engineTitle = "" }) {
             <ProblemCard key={p.id || p.title} p={p} n={i + 1} />
           ))}
         </div>
+
+        <SectionQuoteCta label={cta.problemsButton} supportText={cta.problemsSupport} />
       </div>
     </section>
   );

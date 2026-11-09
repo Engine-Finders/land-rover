@@ -3,6 +3,8 @@ import LrIcon from "@/components/shared/LrIcon";
 import { BadgeStrip, PoundShield } from "@/components/models/costBuyerBadges";
 import { BAND_SOFT, CARD, Eyebrow, SANS, SECTION_Y, SERIF, SectionTitle, TABLE_HEAD, generationCar, prose } from "@/components/models/modelKit";
 import { BODY, BODY_SM, CONTAINER } from "@/lib/typeScale";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { modelCtaCopy } from "@/lib/ctaCopy";
 
 // Model page section 8 - engine replacement costs, built to the approved Velar reference: the
 // headline with the four-up promise card beside it, then one card per generation table (a panel
@@ -238,6 +240,7 @@ function NoteBlock({ icon, title, html }) {
 
 export default function ReplacementCosts({ data, slug = "" }) {
   if (!data) return null;
+  const cta = modelCtaCopy(slug);
   const tables = (data.tables || []).filter((t) => t.rows?.length);
   const { labour, title: ruleTitle, text: ruleText } = splitNotes(data);
   const hasNotes = data.figuresNote || labour;
@@ -295,6 +298,8 @@ export default function ReplacementCosts({ data, slug = "" }) {
             </div>
           </div>
         )}
+
+        <SectionQuoteCta label={cta.costsButton} supportText={cta.costsSupport} />
       </div>
     </section>
   );

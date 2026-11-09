@@ -1,4 +1,6 @@
 import LrIcon from "@/components/shared/LrIcon";
+import HeroRegCta from "@/components/shared/HeroRegCta";
+import { modelCtaCopy } from "@/lib/ctaCopy";
 import { CONTAINER, H1, ICON_MD, ICON_SM, ICON_XL } from "@/lib/typeScale";
 
 // Model page hero (section 1), built to the approved Velar reference: a rounded card holding the
@@ -54,14 +56,6 @@ function splitStat(text = "") {
   return m ? { value: m[1], label: label(m[2]) } : { value: "", label: clean };
 }
 
-function Arrow({ className = "" }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
-}
-
 function Dot() {
   return <span aria-hidden="true" className="px-1.5 text-lr-muted md:px-2.5">•</span>;
 }
@@ -110,8 +104,7 @@ export default function ModelHero({ data, slug = "" }) {
   // long model names ("Range Rover Sport Engines —") step down to 54px on desktop so the headline
   // stays at three lines and the line-up panel beside it keeps its proportions
   const longLead = lead.length > 20;
-  const ctaLabel = (data.primaryCta?.label || "").replace(/\s*(?:→|->)\s*$/, "");
-  const ctaHref = data.primaryCta?.href && data.primaryCta.href !== "#" ? data.primaryCta.href : "#engine-database";
+  const cta = modelCtaCopy(slug);
   const sub = (data.subHeadline || "").replace(/\s+-\s+/g, " — ");
 
   const lineup = LINEUPS.has(slug) ? slug : "";
@@ -205,15 +198,11 @@ export default function ModelHero({ data, slug = "" }) {
               />
             )}
 
-            {ctaLabel && (
-              <a
-                href={ctaHref}
-                className="mt-6 flex h-12 items-center justify-center gap-2.5 whitespace-nowrap rounded-[10px] bg-lr-brand px-4 text-[15px] sm:gap-3 sm:px-6 sm:text-[16px] font-semibold text-lr-on-brand no-underline shadow-[0_14px_30px_-18px_rgba(18,61,42,0.8)] transition-colors hover:bg-lr-brand-hover sm:inline-flex sm:h-[52px] lg:mt-9 lg:h-14 lg:px-8 lg:text-[17px] xl:h-[60px] xl:text-[18px] dark:border dark:border-lr-gold-line/80 dark:bg-lr-page/80 dark:hover:bg-lr-card"
-              >
-                {ctaLabel}
-                <Arrow className="h-5 w-5 shrink-0 dark:text-lr-gold" />
-              </a>
-            )}
+            <HeroRegCta
+              className="mx-auto mt-6 max-w-[680px] lg:mt-9 xl:mx-0"
+              buttonLabel={cta.heroButton}
+              buttonClassName="rounded-[10px]"
+            />
           </div>
           </div>
 

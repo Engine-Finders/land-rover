@@ -215,6 +215,41 @@ export default function QuoteForm({ onSuccess }) {
     if (cleaned) setRegInput(cleaned);
   }, [searchParams]);
 
+  // Hero reg links land here with ?reg= — look up vehicle details automatically.
+  useEffect(() => {
+    const fromUrl = searchParams?.get("reg") || searchParams?.get("vrm") || "";
+    const cleaned = fromUrl.replace(/\s+/g, "").toUpperCase();
+    if (!cleaned) return;
+
+    let cancelled = false;
+    (async () => {
+      setLookupLoading(true);
+      setLookupError("");
+      try {
+        const response = await fetch(`/api/vehicle-lookup?vrm=${encodeURIComponent(cleaned)}`);
+        const data = await response.json();
+        if (cancelled) return;
+        if (!response.ok) {
+          setVehicle(emptyVehicle);
+          setLookupError(data.error || "Could not find that vehicle.");
+          return;
+        }
+        setVehicle(data.vehicle || emptyVehicle);
+      } catch (error) {
+        if (!cancelled) {
+          setVehicle(emptyVehicle);
+          setLookupError(error.message || "Lookup failed. Please try again.");
+        }
+      } finally {
+        if (!cancelled) setLookupLoading(false);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [searchParams]);
+
   useEffect(() => {
     if (searchParams?.get("from") !== "calculator") return;
     try {

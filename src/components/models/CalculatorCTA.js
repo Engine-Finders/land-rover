@@ -17,7 +17,7 @@ import {
   H2_MODEL,
   INTRO,
 } from "@/components/models/modelKit";
-import { resolveHref } from "@/components/models/ClosingActionLinks";
+import { modelCtaCopy } from "@/lib/ctaCopy";
 
 // Model page section 11, built to the approved reference: "Can I Repair My Velar Engine — / or Should
 // I Replace It?" with the question line and "The smarter way to decide" callout beside the model's car,
@@ -59,17 +59,6 @@ function accentTitle(title = "") {
   );
 }
 
-function TargetIcon({ className = "h-7 w-7" }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <circle cx="11" cy="13" r="8" />
-      <circle cx="11" cy="13" r="4.2" />
-      <circle cx="11" cy="13" r="0.9" fill="currentColor" />
-      <path d="m11 13 9.5-9.5M17 3.5h3.5V7" />
-    </svg>
-  );
-}
-
 function Feature({ icon, title, sub }) {
   return (
     <li className="flex items-center gap-3 sm:justify-center sm:px-3 sm:first:justify-start sm:first:pl-0 sm:last:pr-0">
@@ -82,14 +71,14 @@ function Feature({ icon, title, sub }) {
   );
 }
 
-function PathCard({ path, href, index, model }) {
+function PathCard({ path, href, index, model, buttonLabel, buttonSub }) {
   const parsed = parsePath(path.label);
   const primary = index === 0;
   const { n, title } = parsed;
   const body = primary && model ? `Launch the ${model} diagnostic calculator with your engine pre-selected.` : parsed.body;
   const button = primary
-    ? { icon: "calculator", label: `Launch ${model} Diagnostic Calculator`, sub: "Engine pre-selected" }
-    : { icon: "engine", label: "Identify My Engine First", sub: "Then launch the diagnostic calculator" };
+    ? { icon: "calculator", label: buttonLabel || `Start ${model} Diagnosis`, sub: buttonSub || "Engine pre-selected" }
+    : { icon: "engine", label: buttonLabel || `Identify ${model} Engine Code`, sub: buttonSub || "Then start diagnosis" };
   const Tag = href ? "a" : "span";
 
   return (
@@ -148,11 +137,15 @@ export default function CalculatorCTA({ data, slug = "" }) {
   const { lead, accent } = splitHeading(data.h2);
   const or = accent.match(/^(or\s+)([\s\S]+)$/i);
   const { question, callout } = splitIntro(data.intro || "");
+  const cta = modelCtaCopy(slug);
   const paths = (data.paths || []).slice(0, 2);
-  const hrefs = paths.map((p) => resolveHref(p.href, "verdict"));
   const fromPath = (paths[0]?.label || "").match(/with\s+(.+?)\s+pre-selected/i);
   const model = fromPath ? fromPath[1] : modelName(slug);
   const art = modelArt(slug, "silver");
+  const pathMeta = [
+    { label: cta.path1Button, sub: cta.path1Support, href: "/quote" },
+    { label: cta.path2Button, sub: cta.path2Support, href: "/quote" },
+  ];
 
   return (
     <section className={`relative overflow-hidden ${BAND_PAGE} text-lr-head ${SANS}`}>
@@ -210,33 +203,18 @@ export default function CalculatorCTA({ data, slug = "" }) {
         {paths.length > 0 && (
           <div className="mt-7 grid gap-5 md:mt-9 xl:grid-cols-2 xl:gap-6">
             {paths.map((p, i) => (
-              <PathCard key={p.label} path={p} href={hrefs[i]} index={i} model={model} />
+              <PathCard
+                key={p.label}
+                path={p}
+                href={pathMeta[i]?.href || "/quote"}
+                index={i}
+                model={model}
+                buttonLabel={pathMeta[i]?.label}
+                buttonSub={pathMeta[i]?.sub}
+              />
             ))}
           </div>
         )}
-
-        <div className="mt-5 flex flex-col gap-5 rounded-2xl bg-lr-brand p-5 text-lr-on-brand shadow-[0_24px_50px_-34px_rgba(10,30,20,0.9)] sm:p-7 md:mt-6 lg:flex-row lg:items-center lg:justify-between lg:gap-8 xl:px-10 xl:py-8 dark:border dark:border-lr-line-strong dark:bg-lr-page">
-          <div className="flex items-start gap-4 sm:items-center sm:gap-5">
-            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/25 bg-white/5 xl:h-[72px] xl:w-[72px]">
-              <TargetIcon className="h-7 w-7 text-[var(--lr-icon-on-brand)] xl:h-9 xl:w-9" />
-            </span>
-            <div className="min-w-0">
-              <h3 className={`${SERIF_TITLE} text-[22px] leading-tight sm:text-[26px] xl:text-[30px]`}>Stop guessing. Get the right answer.</h3>
-              <p className="mt-1.5 max-w-[34em] text-[14.5px] leading-[1.55] text-white/75 md:text-[15px] xl:text-[16px]">
-                Our calculator compares real repair and replacement costs against your car&rsquo;s value — so you know the financially smarter move.
-              </p>
-            </div>
-          </div>
-          {hrefs[0] && (
-            <a
-              href={hrefs[0]}
-              className="group flex h-14 shrink-0 items-center justify-center gap-3 rounded-xl bg-lr-green px-6 text-[16px] font-semibold text-white no-underline shadow-[0_14px_30px_-18px_rgba(0,0,0,0.8)] transition-[filter] hover:brightness-110 lg:h-16 lg:min-w-[320px] xl:h-[72px] xl:min-w-[400px] xl:text-[19px] dark:bg-lr-brand"
-            >
-              Start Your Verdict Now
-              <Arrow className="h-6 w-6 transition-transform group-hover:translate-x-0.5" />
-            </a>
-          )}
-        </div>
       </div>
     </section>
   );

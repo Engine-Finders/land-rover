@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CONTAINER, SANS } from "@/components/engine/engineTheme";
 import LrIcon from "@/components/shared/LrIcon";
+import { engineCtaCopy } from "@/lib/ctaCopy";
 import { BODY_SM, H2, H5, H6, ICON_MD, ICON_XL, LABEL } from "@/lib/typeScale";
 
 const CARD = "rounded-xl border border-lr-line bg-lr-card shadow-[0_14px_30px_-26px_var(--lr-shadow)] dark:bg-[linear-gradient(180deg,#17302a_0%,#12271f_100%)]";
@@ -41,7 +42,14 @@ export default function TrustCta({ data }) {
   if (!data) return null;
   const points = (data.trustPoints || []).map(parsePoint);
   const { title, rest } = splitFinal(data.finalCta || "");
-  const label = (data.ctaButton?.label || "Compare Engine Prices Now").replace(/\s*→\s*$/, "").replace(/^Compare Land Rover /i, "Compare ");
+  const engineLabel = String(data.h2 || data.ctaButton?.label || "Land Rover Engine")
+    .replace(/^Why\s+/i, "")
+    .replace(/\s+Owners Trust.*$/i, "")
+    .replace(/\s*→\s*$/, "")
+    .trim();
+  const cta = engineCtaCopy(engineLabel.includes("Engine") ? engineLabel : `${engineLabel} Engine`);
+  const label = cta.trustButton;
+  const support = cta.trustSupport;
 
   return (
     <section className="relative bg-lr-page text-lr-head" style={SANS}>
@@ -78,7 +86,9 @@ export default function TrustCta({ data }) {
               <span className="hidden h-[52px] w-px shrink-0 bg-lr-line xl:block" aria-hidden="true" />
               <div className="min-w-0">
                 {title && <p className={`${H5} text-lr-head`}>{title}</p>}
-                {rest && <p className={`mt-1.5 ${BODY_SM} text-lr-body xl:mt-[6px]`} dangerouslySetInnerHTML={{ __html: rest }} />}
+                {(rest || support) && (
+                  <p className={`mt-1.5 ${BODY_SM} text-lr-body xl:mt-[6px]`} dangerouslySetInnerHTML={{ __html: rest || support }} />
+                )}
               </div>
             </div>
             <Link

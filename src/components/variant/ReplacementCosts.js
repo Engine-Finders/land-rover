@@ -1,6 +1,6 @@
-import Link from "next/link";
-import ArrowIcon from "@/components/variant/VariantIcons";
 import LrIcon from "@/components/shared/LrIcon";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { variantCtaCopy } from "@/lib/ctaCopy";
 import { CONTAINER, H2, H6, ICON_MD, ICON_XL } from "@/lib/typeScale";
 
 // Variant section 2: engine replacement costs, built to the approved reference - a label chip, bold
@@ -16,7 +16,6 @@ export const SECTION_TITLE = H2;
 export const CHIP = "inline-block rounded-[4px] bg-lr-brand/12 px-2 py-1 text-[11.5px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink ring-1 ring-inset ring-lr-brand/25 dark:bg-lr-brand/30 dark:text-lr-green md:text-[12px] xl:text-[15px]";
 
 const isNA = (v = "") => /^n\/?a$/i.test(String(v).trim());
-const stripArrow = (label = "") => label.replace(/^\s*→\s*/, "").replace(/\s*→\s*$/, "");
 const dash = (t = "") => String(t).replace(/ - /g, " — ");
 // "£800–£2,000" -> "£800 – £2,000"
 const money = (t = "") => String(t).replace(/(£[\d,.]+k?)\s*[–-]\s*(£)/g, "$1 – $2");
@@ -58,6 +57,7 @@ export default function ReplacementCosts({ data, ticker = "" }) {
   const items = (ticker || "").replace(/^●\s*/, "").split(" · ").filter(Boolean);
   // "... see the Era Map above." -> "Era Map" in green, linking up to the table
   const figures = dash(data.figuresNote || "").replace(/\bEra Map\b/, `<a href="#era-map" class="font-medium text-lr-ink no-underline hover:underline dark:text-lr-green">Era Map</a>`);
+  const costsCta = variantCtaCopy(String(data.h2 || "").replace(/\s*Engine Replacement Costs\s*$/i, "").trim() || "Land Rover");
 
   return (
     <section className={`relative bg-lr-page text-lr-head ${SANS}`}>
@@ -146,29 +146,16 @@ export default function ReplacementCosts({ data, ticker = "" }) {
           </p>
         )}
 
-        {/* labour estimate + compare CTA */}
-        {(data.labourEstimate || data.cta?.label) && (
-          <div className="mt-3 flex flex-col gap-4 rounded-lg border border-lr-line bg-lr-card p-4 shadow-[0_10px_24px_-22px_var(--lr-shadow)] md:mt-4 md:flex-row md:items-center md:gap-6 md:p-5">
-            {data.labourEstimate && (
-              <div className="flex flex-1 items-start gap-4 md:items-center md:gap-5">
-                <LrIcon name="commercial" tone="current" className={`${ICON_XL} text-lr-head`} />
-                <p className="text-[14.5px] leading-relaxed text-lr-body lg:text-[15.5px]">
-                  <span className="font-semibold text-lr-head">Labour estimate:</span> <Html html={highlightHours(data.labourEstimate)} />
-                </p>
-              </div>
-            )}
-            {data.labourEstimate && data.cta?.label && <span className="hidden h-16 w-px shrink-0 bg-lr-line md:block" aria-hidden="true" />}
-            {data.cta?.label && (
-              <Link
-                href="/quote"
-                className="group flex items-center gap-4 rounded-md bg-lr-brand px-5 py-4 text-[15.5px] font-semibold leading-snug text-lr-on-brand shadow-[0_10px_30px_-14px_rgba(31,112,73,0.7)] transition-colors hover:bg-lr-brand-hover md:w-[44%] md:max-w-[360px] md:shrink-0 lg:text-[17px]"
-              >
-                <ArrowIcon className="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-1" />
-                {stripArrow(data.cta.label)}
-              </Link>
-            )}
+        {data.labourEstimate && (
+          <div className="mt-3 flex items-start gap-4 rounded-lg border border-lr-line bg-lr-card p-4 shadow-[0_10px_24px_-22px_var(--lr-shadow)] md:mt-4 md:items-center md:gap-5 md:p-5">
+            <LrIcon name="commercial" tone="current" className={`${ICON_XL} text-lr-head`} />
+            <p className="text-[14.5px] leading-relaxed text-lr-body lg:text-[15.5px]">
+              <span className="font-semibold text-lr-head">Labour estimate:</span> <Html html={highlightHours(data.labourEstimate)} />
+            </p>
           </div>
         )}
+
+        <SectionQuoteCta className="mt-4 md:mt-5" label={costsCta.costsButton} supportText={costsCta.costsSupport} />
       </div>
 
       {/* ticker band: scrolls on every screen (the list rendered four times for a seamless loop) */}

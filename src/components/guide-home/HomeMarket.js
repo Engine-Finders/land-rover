@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import GuideIcon, { Arrow } from "@/components/guide-home/GuideIcon";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { HOME_CTA } from "@/lib/ctaCopy";
 import { BODY, BODY_SM, CONTAINER, H2, ICON_LG, ICON_MD, SMALL } from "@/lib/typeScale";
 
 // Follows the site theme (day / night). The section's local palette (--mi-*) maps onto the site's
@@ -301,6 +303,12 @@ export default function HomeMarket({ data }) {
           <Models data={data.models} tag={data.tag} />
           <Costs data={data.costs} image={data.engines.image} />
         </div>
+
+        <SectionQuoteCta
+          label={HOME_CTA.marketButton}
+          supportText={HOME_CTA.marketSupport}
+          className="border-(--mi-line) bg-(--mi-card,var(--lr-card))"
+        />
 
         {/* lower row: risks full width over feed + insights on tablets; all three side by side from 1280px */}
         <div className="mt-3.5 grid gap-3.5 lg:grid-cols-2 xl:mt-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,0.78fr)] xl:gap-4 2xl:gap-5">

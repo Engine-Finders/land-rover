@@ -27,7 +27,7 @@ const HOME_TITLE = "The UK's Most Trusted Land Rover & Range Rover Ownership Gui
 const HOME_DESCRIPTION =
   "Reliability rankings, real failure data, honest repair-vs-replace economics - for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.";
 const HOME_URL = "https://landroverengine.uk";
-const HOME_IMAGE = "https://landroverengine.uk/hero-day.webp";
+const HOME_IMAGE = "https://landroverengine.uk/png/12.webp";
 
 export const metadata = {
   title: {

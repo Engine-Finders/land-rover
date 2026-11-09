@@ -53,17 +53,46 @@ function repairable(value = "") {
   if (value.includes("❌")) return { ok: "no", label };
   return { ok: "partial", label };
 }
-function Status({ value, className = "" }) {
+// `wrap` (table cells): a long label ("Yes (if caught early)") wraps beside its disc instead of
+// running into the next column
+function Status({ value, className = "", wrap = false }) {
   const { ok, label } = repairable(value);
+  const tone = ok === "no" ? "text-lr-bad" : "text-lr-head";
+  if (wrap) {
+    return (
+      <span className={`flex items-start gap-1.5 leading-snug ${tone} ${className}`}>
+        <span className="flex h-[1.375em] shrink-0 items-center"><StatusDisc ok={ok} /></span>
+        <span className="min-w-0 hyphens-auto">{label}</span>
+      </span>
+    );
+  }
   return (
-    <span className={`inline-flex items-center gap-2 whitespace-nowrap ${ok === "no" ? "text-lr-bad" : "text-lr-head"} ${className}`}>
+    <span className={`inline-flex items-center gap-2 whitespace-nowrap ${tone} ${className}`}>
       <StatusDisc ok={ok} />
       {label}
     </span>
   );
 }
+// "Coolant leak (hoses/thermostat)": the slash may break, so a long pair never overflows its cell
+const slashBreak = (html = "") => String(html).replace(/([\p{L}\d)])\/([\p{L}\d(])/gu, "$1/<wbr>$2");
 
 /* ---------- Can it be repaired ---------- */
+// "£1,800–£4,500+ [11†L6]" -> the price (free to break only after its dash, never inside an amount)
+// with its data tag(s) on a smaller line underneath, so a long figure never runs into the next column
+function Cost({ value = "" }) {
+  const m = String(value).match(/^(.*?)\s*((?:\[[^\]]+\]\s*)+)$/);
+  const main = (m ? m[1] : String(value)).replace(/(£[\d,.]+k?\+?)\s*[–‑-]\s*(£)/g, "$1–​$2");
+  const tags = m ? m[2].match(/\[[^\]]+\]/g) : [];
+  return (
+    <>
+      <span className="block">{main}</span>
+      {tags.map((t) => (
+        <span key={t} className="mt-0.5 block text-[12px] font-medium leading-tight text-lr-muted xl:text-[12.5px]">{t}</span>
+      ))}
+    </>
+  );
+}
+
 function RepairCard({ repair }) {
   const cols = repair.columns?.length === 4 ? repair.columns : ["Problem", "Repairable?", "Typical Cost", "When It Makes Sense"];
   const rowIcon = `${ICON_MD} text-lr-head dark:text-lr-gold`;
@@ -95,7 +124,7 @@ function RepairCard({ repair }) {
       <div className="mt-4 hidden overflow-hidden rounded-md border border-lr-line md:block">
         <table className="w-full table-fixed border-collapse text-left">
           <colgroup>
-            <col className="w-[30%]" /><col className="w-[19%]" /><col className="w-[18%]" /><col className="w-[33%]" />
+            <col className="w-[27%]" /><col className="w-[21%]" /><col className="w-[20%]" /><col className="w-[32%]" />
           </colgroup>
           <thead>
             <tr className="bg-lr-panel text-[14px] font-medium text-lr-head dark:text-lr-gold xl:text-[16px]">
@@ -110,11 +139,11 @@ function RepairCard({ repair }) {
                 <th scope="row" className="py-3 pl-3 pr-3 font-normal">
                   <span className="flex items-center gap-3.5">
                     <TopicIcon text={r.problem} className={rowIcon} />
-                    <span className="leading-snug text-lr-head" dangerouslySetInnerHTML={{ __html: r.problem }} />
+                    <span className="min-w-0 leading-snug text-lr-head" dangerouslySetInnerHTML={{ __html: slashBreak(r.problem) }} />
                   </span>
                 </th>
-                <td className="border-l border-lr-line px-3 py-3"><Status value={r.repairable} /></td>
-                <td className={`border-l border-lr-line px-3 py-3 text-center ${/£/.test(r.typicalCost) ? "whitespace-nowrap text-lr-head" : "text-[13.5px] leading-snug text-lr-head xl:text-[15px]"}`}>{r.typicalCost}</td>
+                <td className="border-l border-lr-line px-2.5 py-3"><Status value={r.repairable} wrap /></td>
+                <td className={`border-l border-lr-line px-2.5 py-3 text-center leading-snug text-lr-head ${/£/.test(r.typicalCost) ? "xl:text-[15px]" : "text-[13.5px] xl:text-[15px]"}`}><Cost value={r.typicalCost} /></td>
                 <td className="border-l border-lr-line px-3 py-3 leading-snug text-lr-body" dangerouslySetInnerHTML={{ __html: dashify(r.whenItMakesSense) }} />
               </tr>
             ))}
@@ -235,13 +264,21 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
 
       <div className={`relative ${CONTAINER} pb-10 md:pb-14`}>
         {/* ---------- repair table + buying checks (side by side from xl) ---------- */}
-        <div className="mt-5 grid gap-4 md:mt-6 lg:-mt-2 lg:gap-5 min-[1400px]:grid-cols-[minmax(0,1fr)_minmax(0,1.04fr)]">
+        <div className="mt-5 grid gap-4 md:mt-6 lg:-mt-2 lg:gap-5 min-[1400px]:grid-cols-[minmax(0,1.18fr)_minmax(0,1fr)]">
           {repair?.rows?.length > 0 && <RepairCard repair={repair} />}
           {hasChecks ? (
             <div className={`${CARD} p-4 md:p-5`}>
               <h3 className={`${CARD_TITLE} flex items-center gap-3`}>
                 <LrIcon name="symptoms" tone="current" className={`${ICON_MD} text-lr-head dark:text-lr-gold`} />
-                <span dangerouslySetInnerHTML={{ __html: checks.title || "Check These First" }} />
+                {/* "Buying This …? Check These First": when it wraps, it breaks after the question */}
+                <span>
+                  {(checks.title || "Check These First").split(/(?<=\?)\s+/).map((part, i) => (
+                    <span key={i}>
+                      {i > 0 && " "}
+                      <span className="inline-block" dangerouslySetInnerHTML={{ __html: part }} />
+                    </span>
+                  ))}
+                </span>
               </h3>
               <div className="mt-4 grid gap-3 md:grid-cols-2 md:gap-4">
                 <CheckBox good items={checks.buyIf} />

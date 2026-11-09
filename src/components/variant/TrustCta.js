@@ -3,6 +3,7 @@ import Image from "next/image";
 import GroundedCar from "@/components/variant/GroundedCar";
 import { LOCH_BG } from "@/components/variant/PhotoScene";
 import LrIcon from "@/components/shared/LrIcon";
+import { carRatio } from "@/lib/carGeometry";
 import { CONTAINER, H2, H5, H6, ICON_LG, ICON_MD } from "@/lib/typeScale";
 
 // Variant section 9: why owners trust us, built to the approved reference (day + night) - a gold
@@ -25,6 +26,12 @@ const TRUST = [
   { icon: "genuine-failure-data", title: "12-Month Warranty", text: "Minimum cover" },
   { icon: "uk-wide-delivery", title: "Nationwide Delivery", text: "Fast & secure" },
 ];
+
+// the car cutout's width / height ("633 / 419" -> 1.51)
+const carAspect = (src) => {
+  const [w, h] = carRatio(src).split("/").map(Number);
+  return +(w / h).toFixed(4);
+};
 
 // trust point text continues its title ("every garage ...") - shown as its own sentence
 const sentence = (t = "") => dash(t.charAt(0).toUpperCase() + t.slice(1));
@@ -71,9 +78,11 @@ export default function TrustCta({ data, car = null, engine = "/variant/sec10_en
           <div className={`${CARD} relative mt-4 overflow-hidden md:mt-5`}>
             <div className="relative grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.05fr)_minmax(0,0.6fr)]">
               {car && (
-                <div className="relative aspect-[16/10] sm:aspect-[16/8] md:aspect-auto md:min-h-[230px]" aria-hidden="true">
+                // the car is sized by the band's height as well as its width (the band is only as tall
+                // as the CTA copy beside it), so its roof always clears the card edge with room to spare
+                <div className="relative aspect-[16/10] [container-type:size] sm:aspect-[16/8] md:aspect-auto md:min-h-[230px]" style={{ "--car-r": carAspect(car) }} aria-hidden="true">
                   <div className={`absolute inset-0 bg-[center_70%] ${LOCH_BG} [mask-image:linear-gradient(to_bottom,#000_70%,transparent)] md:[mask-image:linear-gradient(to_right,#000_62%,transparent)]`} />
-                  <div className="absolute bottom-[12%] left-1/2 w-[72%] max-w-[420px] -translate-x-1/2 md:left-[46%] md:w-[84%]">
+                  <div className="absolute bottom-[12%] left-1/2 w-[min(72%,calc(var(--car-r)*70cqh))] max-w-[420px] -translate-x-1/2 md:left-[46%] md:w-[min(84%,calc(var(--car-r)*70cqh))]">
                     <GroundedCar src={car} sceneByTheme sizes="(min-width: 768px) 34vw, 72vw" />
                   </div>
                 </div>

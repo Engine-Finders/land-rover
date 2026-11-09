@@ -5,6 +5,7 @@ import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER, LABEL } from "@/lib/typeScale";
 import { BAND_PAGE, CARD, EyebrowPill, SANS, SECTION_Y, SectionTitle, TABLE_HEAD, prose, splitHeading, INTRO } from "@/components/models/modelKit";
 import { cellHtml, engineFamilies, eraCar, heroEnquiries, keyEngines, stripHtml, yearSpan } from "@/components/models/engineSections";
+import EngineSlider from "@/components/models/EngineSlider";
 
 // Model page section 9 — how the model's engine range evolved, built to the approved Velar
 // reference: the eyebrow and "How the … Engine Range Evolved — 2017 to Today" headline with a
@@ -178,13 +179,13 @@ export default function EngineEvolution({ data, slug = "", page = null }) {
                   <td className="border-r border-lr-line px-3 py-4 text-center align-middle text-[16px] font-semibold text-lr-head">{e.years}</td>
                   <td className="border-r border-lr-line px-4 py-4 align-middle">
                     {e.engines.length ? (
-                      <ul className="flex flex-wrap justify-center gap-y-4">
+                      <EngineSlider baseClass="grid grid-flow-col auto-cols-[25%]" rowClass="justify-center">
                         {e.engines.map((en, i) => (
-                          <li key={`${en.code}-${i}`} className={`w-1/4 min-w-0 px-2 ${i % 4 ? "border-l border-lr-line" : ""}`}>
+                          <li key={`${en.code}-${i}`} className={`min-w-0 px-2 ${i ? "border-l border-lr-line" : ""}`}>
                             <EngineTile engine={en} imageClass="max-w-[92px] mx-auto 2xl:max-w-[100px]" codeClass="text-[15px]" subClass="mt-0.5 text-[14px]" sizes="100px" />
                           </li>
                         ))}
-                      </ul>
+                      </EngineSlider>
                     ) : (
                       <p className="text-center text-[15px] text-lr-muted">—</p>
                     )}
@@ -220,13 +221,19 @@ export default function EngineEvolution({ data, slug = "", page = null }) {
               <div className="min-w-0 p-4 pt-3 md:p-6">
                 <p className={`${LABEL} text-lr-muted`}>{cols[2]}</p>
                 {e.engines.length ? (
-                  <ul className="mt-2.5 grid grid-cols-4 gap-1.5 sm:gap-2">
-                    {e.engines.map((en, i) => (
-                      <li key={`${en.code}-${i}`} className="min-w-0 rounded-xl border border-lr-line bg-lr-panel/50 px-1 pb-2 pt-1.5 sm:px-2 sm:pb-2.5 sm:pt-2">
-                        <EngineTile engine={en} imageClass="max-w-[120px] mx-auto" codeClass="text-[12.5px] sm:text-[14px] md:text-[15px]" subClass="mt-0.5 text-[11.5px] sm:text-[13px]" sizes="(min-width: 640px) 120px, 22vw" />
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="mt-2.5">
+                    <EngineSlider
+                      baseClass="grid gap-1.5 sm:gap-2"
+                      rowClass="grid-cols-4"
+                      scrollClass="grid-flow-col auto-cols-[calc((100%-1.125rem)/4)] sm:auto-cols-[calc((100%-1.5rem)/4)]"
+                    >
+                      {e.engines.map((en, i) => (
+                        <li key={`${en.code}-${i}`} className="min-w-0 rounded-xl border border-lr-line bg-lr-panel/50 px-1 pb-2 pt-1.5 sm:px-2 sm:pb-2.5 sm:pt-2">
+                          <EngineTile engine={en} imageClass="max-w-[120px] mx-auto" codeClass="text-[12.5px] sm:text-[14px] md:text-[15px]" subClass="mt-0.5 text-[11.5px] sm:text-[13px]" sizes="(min-width: 640px) 120px, 22vw" />
+                        </li>
+                      ))}
+                    </EngineSlider>
+                  </div>
                 ) : (
                   <p className="mt-2 text-[15px] text-lr-muted">—</p>
                 )}

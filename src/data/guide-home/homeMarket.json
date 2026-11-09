@@ -1,6 +1,6 @@
 {
   "h2": "Land Rover &|Range Rover|Market Intelligence",
-  "subhead": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate – 9,000+ real enquiries, 15+ engine codes tracked, and live market insights updated monthly.",
+  "subhead": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate - 9,000+ real enquiries, 15+ engine codes tracked, and live market insights updated monthly.",
   "image": "/home/market/hero.webp",
   "mobileImage": "/home/market/hero-band.webp",
   "imageAlt": "Range Rover Sport",
@@ -103,27 +103,27 @@
       {
         "code": "204DTD",
         "name": "Ingenium Diesel",
-        "range": "£3,500 – £5,800"
+        "range": "£3,500 - £5,800"
       },
       {
         "code": "306DT",
         "name": "TDV6/SDV6 3.0",
-        "range": "£6,500 – £9,500"
+        "range": "£6,500 - £9,500"
       },
       {
         "code": "276DT",
         "name": "2.7 TDV6",
-        "range": "£5,000 – £7,500"
+        "range": "£5,000 - £7,500"
       },
       {
         "code": "368DT",
         "name": "3.6 TDV8",
-        "range": "£5,500 – £8,000"
+        "range": "£5,500 - £8,000"
       },
       {
         "code": "508PS",
         "name": "4.4 SDV8",
-        "range": "£8,000 – £12,000"
+        "range": "£8,000 - £12,000"
       }
     ]
   },

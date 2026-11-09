@@ -147,7 +147,7 @@
               "name": "How much does a Range Rover Sport L494 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned L494 engine costs between £3,000 and £9,500 supply-only, depending on the engine - the 2.0 Ingenium diesel ranges £3,500–£5,800, while the 3.0 V6 diesel runs £6,500–£9,500. Fitting adds 10–20 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+                "text": "A reconditioned L494 engine costs between £3,000 and £9,500 supply-only, depending on the engine - the 2.0 Ingenium diesel ranges £3,500-£5,800, while the 3.0 V6 diesel runs £6,500-£9,500. Fitting adds 10-20 hours of labour at £65-£90/hr. Use our calculator for a personalised quote."
               }
             },
             {
@@ -211,7 +211,7 @@
               "name": "What is the difference between the L494 and other Range Rover Sport generations?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The L494 is the second-generation Range Rover Sport, built from 2013 to 2022. It replaced the L320 (2005–2013) and was succeeded by the L461 in 2022. The L494 shares its aluminium D7u platform with the Range Rover L405, offering significantly lighter weight and better on-road dynamics than the previous generation."
+                "text": "The L494 is the second-generation Range Rover Sport, built from 2013 to 2022. It replaced the L320 (2005-2013) and was succeeded by the L461 in 2022. The L494 shares its aluminium D7u platform with the Range Rover L405, offering significantly lighter weight and better on-road dynamics than the previous generation."
               }
             },
             {
@@ -286,7 +286,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Range Rover Sport L494 • SUV • 2013–2022",
+    "tagPill": "Range Rover Sport L494 • SUV • 2013-2022",
     "h1": "Range Rover Sport L494 Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the Range Rover Sport L494 - from the entry-level 2.0-litre Ingenium diesel to the fire-breathing 5.0-litre supercharged V8 SVR. Real UK costs, honest failure data, and the V6 diesel crankshaft issue that defines this generation's ownership experience. Backed by 308+ real UK L494 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -335,23 +335,23 @@
         "fuel": "Diesel",
         "displacement": "2.0L",
         "power": "240 bhp",
-        "years": "2016–2019",
+        "years": "2016-2019",
         "variants": "SD4",
         "reliability": "★★★☆☆ [PROVISIONAL]",
         "enquiries": "1,150 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£3,500–£5,800"
+        "avgReconCost": "£3,500-£5,800"
       },
       {
         "engineCode": "306DT",
         "family": "AJD V6",
         "fuel": "Diesel",
         "displacement": "3.0L",
-        "power": "258–306 bhp",
-        "years": "2013–2022",
+        "power": "258-306 bhp",
+        "years": "2013-2022",
         "variants": "TDV6, SDV6, SDV6 Hybrid",
         "reliability": "★★★☆☆ [PROVISIONAL]",
         "enquiries": "980 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£6,500–£9,500"
+        "avgReconCost": "£6,500-£9,500"
       },
       {
         "engineCode": "<a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> / DT306",
@@ -359,11 +359,11 @@
         "fuel": "Diesel MHEV",
         "displacement": "3.0L",
         "power": "300 bhp",
-        "years": "2020–2022",
+        "years": "2020-2022",
         "variants": "D300, D250",
         "reliability": "★★★★☆ [PROVISIONAL]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,000"
+        "avgReconCost": "£4,500-£7,000"
       },
       {
         "engineCode": "448DT",
@@ -371,11 +371,11 @@
         "fuel": "Diesel",
         "displacement": "4.4L",
         "power": "339 bhp",
-        "years": "2013–2020",
+        "years": "2013-2020",
         "variants": "SDV8",
         "reliability": "★★★★☆ [PROVISIONAL]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,500–£8,500"
+        "avgReconCost": "£5,500-£8,500"
       },
       {
         "engineCode": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>PT204</a>",
@@ -383,11 +383,11 @@
         "fuel": "Petrol",
         "displacement": "2.0L",
         "power": "300 bhp",
-        "years": "2017–2022",
+        "years": "2017-2022",
         "variants": "P300, <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a>",
         "reliability": "★★★★☆ [PROVISIONAL]",
         "enquiries": "480 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£3,000–£5,000"
+        "avgReconCost": "£3,000-£5,000"
       },
       {
         "engineCode": "PT204 (PHEV)",
@@ -395,35 +395,35 @@
         "fuel": "Petrol PHEV",
         "displacement": "2.0L",
         "power": "404 bhp (combined)",
-        "years": "2017–2022",
+        "years": "2017-2022",
         "variants": "P400e",
         "reliability": "★★★★☆ [PROVISIONAL]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,000"
+        "avgReconCost": "£3,000-£5,000"
       },
       {
         "engineCode": "306PS",
         "family": "AJ126 V6",
         "fuel": "Petrol, supercharged",
         "displacement": "3.0L",
-        "power": "340–380 bhp",
-        "years": "2013–2019",
+        "power": "340-380 bhp",
+        "years": "2013-2019",
         "variants": "SCV6",
         "reliability": "★★★★☆ [PROVISIONAL]",
         "enquiries": "560 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£4,500–£7,500"
+        "avgReconCost": "£4,500-£7,500"
       },
       {
         "engineCode": "508PS",
         "family": "<a href='https://landroverengine.uk/engine/aj133'>AJ133</a> V8",
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L",
-        "power": "510–575 bhp",
-        "years": "2013–2022",
+        "power": "510-575 bhp",
+        "years": "2013-2022",
         "variants": "V8 Supercharged, SVR",
         "reliability": "★★★★☆ [PROVISIONAL]",
         "enquiries": "620 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£5,500–£9,000"
+        "avgReconCost": "£5,500-£9,000"
       }
     ],
     "confidenceScore": {
@@ -435,7 +435,7 @@
   "overview": {
     "h2": "Range Rover Sport L494 - Overview",
     "intro": "The Range Rover Sport L494 is the second generation of Land Rover's performance-oriented SUV, launched in 2013 as the successor to the L320. Built on the aluminium D7u platform shared with the Range Rover L405, the L494 offered significant weight savings and improved dynamics over its predecessor. The engine line-up expanded dramatically over its nine-year production run: early cars offered 3.0-litre V6 diesel, 3.0-litre supercharged V6 petrol, and 5.0-litre supercharged V8 petrol options; a 2016 update introduced the 2.0-litre Ingenium diesel four; the 2018 facelift brought the 2.0-litre Ingenium petrol (P300), the P400e plug-in hybrid, and later the 3.0-litre Ingenium six-cylinder diesel MHEV (D300). The range-topping SVR delivered 575 bhp from its supercharged 5.0-litre V8.",
-    "keyFacts": "Platform: Aluminium D7u (shared with Range Rover L405) • Predecessor: Range Rover Sport L320 (2005–2013) • Successor: Range Rover Sport L461 (2022–present) • Sibling body styles: None - L494 is sole second-generation Range Rover Sport body style",
+    "keyFacts": "Platform: Aluminium D7u (shared with Range Rover L405) • Predecessor: Range Rover Sport L320 (2005-2013) • Successor: Range Rover Sport L461 (2022-present) • Sibling body styles: None - L494 is sole second-generation Range Rover Sport body style",
     "marketIntelligenceLine": "The Range Rover Sport L494 generated 308+ real UK engine enquiries in 2025 [EM-VERIFIED], with the 3.0-litre V6 diesel (<a href='https://landroverengine.uk/engine/306dt'>306DT</a>) accounting for the largest share of JLR-wide enquiries (980), followed by the 5.0-litre supercharged V8 (508PS) at 620 enquiries."
   },
   "bestWorstEngines": {
@@ -454,13 +454,13 @@
       },
       {
         "slot": "Highest Risk",
-        "engine": "306DT 3.0-litre V6 Diesel - The AJD V6 diesel suffers from crankshaft bearing failure (tin-aluminium coating fatigue) at 80,000–140,000 miles, often preceded by cold-start knock. A bottom-end rebuild costs £5,500–£7,000; a full reconditioned replacement runs £6,500–£9,500. This is the defining risk of the L494 generation.",
+        "engine": "306DT 3.0-litre V6 Diesel - The AJD V6 diesel suffers from crankshaft bearing failure (tin-aluminium coating fatigue) at 80,000-140,000 miles, often preceded by cold-start knock. A bottom-end rebuild costs £5,500-£7,000; a full reconditioned replacement runs £6,500-£9,500. This is the defining risk of the L494 generation.",
         "quote": "",
         "whoItsFor": "only buyers with full service history, 5,000-mile oil changes, and a comprehensive warranty."
       },
       {
         "slot": "Most Expensive Failure",
-        "engine": "508PS 5.0-litre Supercharged V8 (SVR) - The SVR's 575 bhp V8 is the most expensive engine in the L494 line-up to replace, with reconditioned units costing £5,500–£9,000 supply-only. Timing-chain guide wear and cooling system leaks are the primary risks.",
+        "engine": "508PS 5.0-litre Supercharged V8 (SVR) - The SVR's 575 bhp V8 is the most expensive engine in the L494 line-up to replace, with reconditioned units costing £5,500-£9,000 supply-only. Timing-chain guide wear and cooling system leaks are the primary risks.",
         "quote": "",
         "whoItsFor": "enthusiasts and collectors who accept the premium."
       },
@@ -491,72 +491,72 @@
     "rows": [
       {
         "engine": "204DTA",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Timing chain tensioner",
-        "repairCostSpecialist": "£1,200–£2,500",
-        "replacementCostRecon": "£3,500–£5,800",
+        "repairCostSpecialist": "£1,200-£2,500",
+        "replacementCostRecon": "£3,500-£5,800",
         "ownershipVerdict": "Risk vs Reward - pre-2019 units: budget for chain work"
       },
       {
         "engine": "306DT",
-        "typicalMileage": "80k–140k",
+        "typicalMileage": "80k-140k",
         "commonMajorFailure": "Crankshaft bearing failure",
-        "repairCostSpecialist": "£5,500–£7,000",
-        "replacementCostRecon": "£6,500–£9,500",
+        "repairCostSpecialist": "£5,500-£7,000",
+        "replacementCostRecon": "£6,500-£9,500",
         "ownershipVerdict": "Most Expensive - catastrophic if ignored"
       },
       {
         "engine": "AJ20D6/DT306",
         "typicalMileage": "- (too new)",
         "commonMajorFailure": "Emerging patterns",
-        "repairCostSpecialist": "£300–£600",
-        "replacementCostRecon": "£4,500–£7,000",
+        "repairCostSpecialist": "£300-£600",
+        "replacementCostRecon": "£4,500-£7,000",
         "ownershipVerdict": "Too Early - no major pattern yet"
       },
       {
         "engine": "448DT",
-        "typicalMileage": "100k–200k",
+        "typicalMileage": "100k-200k",
         "commonMajorFailure": "Oil cooler leaks",
-        "repairCostSpecialist": "£1,200–£2,500",
-        "replacementCostRecon": "£5,500–£8,500",
+        "repairCostSpecialist": "£1,200-£2,500",
+        "replacementCostRecon": "£5,500-£8,500",
         "ownershipVerdict": "Best Diesel - no catastrophic design flaw"
       },
       {
         "engine": "PT204",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Water pump",
-        "repairCostSpecialist": "£400–£800",
-        "replacementCostRecon": "£3,000–£5,000",
+        "repairCostSpecialist": "£400-£800",
+        "replacementCostRecon": "£3,000-£5,000",
         "ownershipVerdict": "Best Petrol - reliable, simple"
       },
       {
         "engine": "PT204 PHEV",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Cooling system, battery",
-        "repairCostSpecialist": "£400–£1,200",
-        "replacementCostRecon": "£3,000–£5,000",
+        "repairCostSpecialist": "£400-£1,200",
+        "replacementCostRecon": "£3,000-£5,000",
         "ownershipVerdict": "Watch - battery adds complexity"
       },
       {
         "engine": "306PS",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Water pump, coolant leaks",
-        "repairCostSpecialist": "£600–£1,200",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£600-£1,200",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Solid Choice - cooling system is the watch-item"
       },
       {
         "engine": "508PS",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Timing chain guide wear",
-        "repairCostSpecialist": "£2,500–£4,500",
-        "replacementCostRecon": "£5,500–£9,000",
+        "repairCostSpecialist": "£2,500-£4,500",
+        "replacementCostRecon": "£5,500-£9,000",
         "ownershipVerdict": "Premium Choice - high running costs"
       }
     ],
     "economicsRule": {
       "title": "The L494 rule",
-      "text": "A £6,500–£9,500 306DT recon against a £10,000–£14,000 early L494 sits at 46–95% of the car's value. On a sub-£12,000 L494, that brushes our 60% Land Rover threshold - we'll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 36–53% - a repair decision, not a financial one. Value the car first."
+      "text": "A £6,500-£9,500 306DT recon against a £10,000-£14,000 early L494 sits at 46-95% of the car's value. On a sub-£12,000 L494, that brushes our 60% Land Rover threshold - we'll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 36-53% - a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -579,25 +579,25 @@
         "id": 1,
         "title": "306DT V6 Diesel Crankshaft Bearing Failure",
         "affectedModels": "L494 3.0-litre TDV6 and SDV6 (306DT), all years.",
-        "typicalFailureMileage": "80,000–140,000 miles.",
+        "typicalFailureMileage": "80,000-140,000 miles.",
         "rootCause": "The tin-aluminium coating on the crankshaft bearings fatigues over time, leading to bearing failure. Cold-start knock is the classic early warning; ignored, it causes catastrophic bottom-end failure. The 306DT is the single biggest reliability risk in the L494 line-up.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£6,500–£8,500",
-            "specialist": "£5,500–£7,000",
+            "dealer": "£6,500-£8,500",
+            "specialist": "£5,500-£7,000",
             "work": "Bottom-end bearing replacement",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£8,500–£12,000",
-            "specialist": "£6,500–£9,500",
+            "dealer": "£8,500-£12,000",
+            "specialist": "£6,500-£9,500",
             "work": "Full reconditioned engine",
             "note": ""
           }
         ],
-        "recommendation": "If your L494 306DT exhibits cold-start knock, stop driving and have the bottom end inspected immediately - £5,500–£7,000 now is far cheaper than the £6,500–£9,500 replacement that follows a full failure.",
+        "recommendation": "If your L494 306DT exhibits cold-start knock, stop driving and have the bottom end inspected immediately - £5,500-£7,000 now is far cheaper than the £6,500-£9,500 replacement that follows a full failure.",
         "cta": {
           "label": "Compare 306DT engine prices for your Range Rover Sport →",
           "href": "#"
@@ -607,25 +607,25 @@
         "id": 2,
         "title": "<a href='https://landroverengine.uk/engine/ingenium-20-diesel'>Ingenium 2.0 Diesel</a> Timing Chain Tensioner Failure",
         "affectedModels": "L494 2.0-litre SD4 (204DTA), particularly pre-2019 units.",
-        "typicalFailureMileage": "60,000–120,000 miles.",
+        "typicalFailureMileage": "60,000-120,000 miles.",
         "rootCause": "The timing chain tensioner on early Ingenium 2.0-litre diesel engines can fail, leading to chain stretch and, in catastrophic cases, engine destruction. Oil dilution from DPF regeneration accelerates tensioner wear.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£1,800–£3,000",
-            "specialist": "£1,200–£2,500",
+            "dealer": "£1,800-£3,000",
+            "specialist": "£1,200-£2,500",
             "work": "Chain, tensioner, guides replacement",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£5,500–£8,000",
-            "specialist": "£4,500–£6,500",
+            "dealer": "£5,500-£8,000",
+            "specialist": "£4,500-£6,500",
             "work": "Full reconditioned engine",
             "note": ""
           }
         ],
-        "recommendation": "On any pre-2019 L494 SD4, have the timing chain inspected at 60,000 miles - a £1,200–£2,500 preventative repair is cheaper than the £4,500–£6,500 replacement that follows if ignored.",
+        "recommendation": "On any pre-2019 L494 SD4, have the timing chain inspected at 60,000 miles - a £1,200-£2,500 preventative repair is cheaper than the £4,500-£6,500 replacement that follows if ignored.",
         "cta": {
           "label": "Compare 204DTA engine prices for your Range Rover Sport →",
           "href": "#"
@@ -635,25 +635,25 @@
         "id": 3,
         "title": "508PS/306PS Supercharged V6/V8 Cooling System Failure",
         "affectedModels": "L494 3.0 SCV6 (306PS) and 5.0 V8 Supercharged (508PS), all years.",
-        "typicalFailureMileage": "60,000–120,000 miles.",
+        "typicalFailureMileage": "60,000-120,000 miles.",
         "rootCause": "Water pump failure and coolant leaks from crossover pipes are well-documented on both supercharged V6 and V8 petrols. The supercharger sits in the engine's 'V', making access to cooling components labour-intensive.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£800–£1,600 (V6) / £1,000–£2,000 (V8)",
-            "specialist": "£600–£1,200 (V6) / £800–£1,600 (V8)",
+            "dealer": "£800-£1,600 (V6) / £1,000-£2,000 (V8)",
+            "specialist": "£600-£1,200 (V6) / £800-£1,600 (V8)",
             "work": "Water pump, thermostat, coolant pipes",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£6,000–£9,000 (V6) / £7,000–£11,000 (V8)",
-            "specialist": "£4,500–£7,500 (V6) / £5,500–£9,000 (V8)",
+            "dealer": "£6,000-£9,000 (V6) / £7,000-£11,000 (V8)",
+            "specialist": "£4,500-£7,500 (V6) / £5,500-£9,000 (V8)",
             "work": "Full reconditioned engine",
             "note": ""
           }
         ],
-        "recommendation": "On any L494 SCV6 or V8 Supercharged approaching 60,000 miles, replace the water pump as preventative maintenance - £600–£1,600 now is cheaper than the £4,500+ engine replacement that follows an overheat.",
+        "recommendation": "On any L494 SCV6 or V8 Supercharged approaching 60,000 miles, replace the water pump as preventative maintenance - £600-£1,600 now is cheaper than the £4,500+ engine replacement that follows an overheat.",
         "cta": {
           "label": "Compare 508PS/306PS engine prices for your Range Rover Sport →",
           "href": "#"
@@ -675,66 +675,66 @@
       {
         "variant": "2.0 SD4",
         "engineCode": "204DTA",
-        "usedSupply": "£2,000–£3,500",
-        "reconditionedSupply": "£3,500–£5,800",
-        "rebuiltSupply": "£4,800–£7,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£2,000-£3,500",
+        "reconditionedSupply": "£3,500-£5,800",
+        "rebuiltSupply": "£4,800-£7,000",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "3.0 TDV6/SDV6",
         "engineCode": "306DT",
-        "usedSupply": "£3,500–£5,500",
-        "reconditionedSupply": "£6,500–£9,500",
-        "rebuiltSupply": "£7,500–£11,000",
-        "labourHours": "15–20 hrs"
+        "usedSupply": "£3,500-£5,500",
+        "reconditionedSupply": "£6,500-£9,500",
+        "rebuiltSupply": "£7,500-£11,000",
+        "labourHours": "15-20 hrs"
       },
       {
         "variant": "3.0 D300/D250",
         "engineCode": "AJ20D6/DT306",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,000",
-        "rebuiltSupply": "£6,500–£10,000",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,000",
+        "rebuiltSupply": "£6,500-£10,000",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "4.4 SDV8",
         "engineCode": "448DT",
-        "usedSupply": "£3,000–£5,000",
-        "reconditionedSupply": "£5,500–£8,500",
-        "rebuiltSupply": "£7,000–£10,500",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,000",
+        "reconditionedSupply": "£5,500-£8,500",
+        "rebuiltSupply": "£7,000-£10,500",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "2.0 P300/Si4",
         "engineCode": "PT204",
-        "usedSupply": "£1,500–£2,800",
-        "reconditionedSupply": "£3,000–£5,000",
-        "rebuiltSupply": "£4,200–£6,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£1,500-£2,800",
+        "reconditionedSupply": "£3,000-£5,000",
+        "rebuiltSupply": "£4,200-£6,500",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "2.0 P400e",
         "engineCode": "PT204 PHEV",
-        "usedSupply": "£1,800–£3,200",
-        "reconditionedSupply": "£3,200–£5,500",
-        "rebuiltSupply": "£4,500–£7,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£1,800-£3,200",
+        "reconditionedSupply": "£3,200-£5,500",
+        "rebuiltSupply": "£4,500-£7,000",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "3.0 SCV6",
         "engineCode": "306PS",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,000–£9,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,000-£9,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "5.0 V8 Supercharged/SVR",
         "engineCode": "508PS",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£8,000–£12,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£8,000-£12,000",
+        "labourHours": "14-18 hrs"
       }
     ],
     "note": ""
@@ -809,7 +809,7 @@
       "2. V8 Supercharged (5.0)",
       "3. SVR (5.0 V8 high-output)"
     ],
-    "averageReplacementCost": "£1,500–£9,500 supply-only [EM-QUOTE]",
+    "averageReplacementCost": "£1,500-£9,500 supply-only [EM-QUOTE]",
     "mostCommonFailures": [
       "1. 306DT V6 diesel crankshaft bearing failure",
       "2. Ingenium 2.0 diesel timing chain tensioner",
@@ -844,7 +844,7 @@
       {
         "id": 1,
         "question": "How much does a Range Rover Sport L494 engine replacement cost in the UK?",
-        "answer": "A reconditioned L494 engine costs between £3,000 and £9,500 supply-only [EM-QUOTE], depending on the engine - the 2.0 Ingenium diesel ranges £3,500–£5,800, while the 3.0 V6 diesel runs £6,500–£9,500. Fitting adds 10–20 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+        "answer": "A reconditioned L494 engine costs between £3,000 and £9,500 supply-only [EM-QUOTE], depending on the engine - the 2.0 Ingenium diesel ranges £3,500-£5,800, while the 3.0 V6 diesel runs £6,500-£9,500. Fitting adds 10-20 hours of labour at £65-£90/hr. Use our calculator for a personalised quote."
       },
       {
         "id": 2,
@@ -884,7 +884,7 @@
       {
         "id": 9,
         "question": "What is the difference between the L494 and other Range Rover Sport generations?",
-        "answer": "The L494 is the second-generation Range Rover Sport, built from 2013 to 2022. It replaced the L320 (2005–2013) and was succeeded by the L461 in 2022. The L494 shares its aluminium D7u platform with the Range Rover L405, offering significantly lighter weight and better on-road dynamics than the previous generation."
+        "answer": "The L494 is the second-generation Range Rover Sport, built from 2013 to 2022. It replaced the L320 (2005-2013) and was succeeded by the L461 in 2022. The L494 shares its aluminium D7u platform with the Range Rover L405, offering significantly lighter weight and better on-road dynamics than the previous generation."
       },
       {
         "id": 10,

@@ -70,7 +70,7 @@
               "name": "How much does a 368DT (3.6 TDV8) engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 368DT TDV8 typically costs £5,500–£8,000 supply only, varying by specification and rebuild quality. Used units can be found from £3,000–£5,000, but provenance is critical. Fitting adds £1,000–£2,000 depending on labour rates."
+                "text": "A reconditioned 368DT TDV8 typically costs £5,500-£8,000 supply only, varying by specification and rebuild quality. Used units can be found from £3,000-£5,000, but provenance is critical. Fitting adds £1,000-£2,000 depending on labour rates."
               }
             },
             {
@@ -78,7 +78,7 @@
               "name": "Is the 368DT (3.6 TDV8) a reliable engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The 368DT has a poor reputation (3.0★). While it offers strong V8 torque and refinement, the early engines (2006–2009) are known for timing chain tensioner failure and, in more severe cases, crankshaft fracture. It is not the reliable 4.4 TDV8 (448DT) that replaced it."
+                "text": "The 368DT has a poor reputation (3.0★). While it offers strong V8 torque and refinement, the early engines (2006-2009) are known for timing chain tensioner failure and, in more severe cases, crankshaft fracture. It is not the reliable 4.4 TDV8 (448DT) that replaced it."
               }
             },
             {
@@ -86,7 +86,7 @@
               "name": "What is the most common 368DT failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Timing chain tensioner failure is the most critical on early (2006–2009) engines - causing chain slack, timing drift, and catastrophic valve/piston interference. Turbo actuator failure and crankshaft fracture are also well-documented risks."
+                "text": "Timing chain tensioner failure is the most critical on early (2006-2009) engines - causing chain slack, timing drift, and catastrophic valve/piston interference. Turbo actuator failure and crankshaft fracture are also well-documented risks."
               }
             },
             {
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover • 368DT (3.6 TDV8) • Diesel • 3.6L V8 Turbo • 2006–2012",
+    "tagPill": "Land Rover • 368DT (3.6 TDV8) • Diesel • 3.6L V8 Turbo • 2006-2012",
     "h1": "Land Rover 368DT (3.6 TDV8) Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The 368DT is a torquey V8 diesel - but early timing chain and crankshaft issues are well‑documented risks. Backed by 650+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -220,11 +220,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "268–295 hp [THIRD-PARTY]"
+        "value": "268-295 hp [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "2006–2012"
+        "value": "2006-2012"
       },
       {
         "metric": "Models Fitted (Land Rover only)",
@@ -256,7 +256,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £5,500–£8,000 → £6,750 midpoint → falls in £7,000–£9,999 bracket → 8)"
+          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £5,500-£8,000 → £6,750 midpoint → falls in £7,000-£9,999 bracket → 8)"
         },
         {
           "dimension": "Repairability",
@@ -268,7 +268,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "10 (Reconditioned cost (£6,750 midpoint) as % of lowest typical vehicle value (L322 ~£4,000–£8,000) = 84–169% → falls in 60–74% bracket → 8)"
+          "score": "10 (Reconditioned cost (£6,750 midpoint) as % of lowest typical vehicle value (L322 ~£4,000-£8,000) = 84-169% → falls in 60-74% bracket → 8)"
         },
         {
           "dimension": "Total",
@@ -292,13 +292,13 @@
         "model": "Land Rover Range Rover",
         "generation": "L322",
         "variantBadge": "TDV8 (3.6)",
-        "years": "2006–2009"
+        "years": "2006-2009"
       },
       {
         "model": "Land Rover Range Rover Sport",
         "generation": "L320",
         "variantBadge": "TDV8 (3.6)",
-        "years": "2006–2012"
+        "years": "2006-2012"
       }
     ],
     "crossBrandNote": "Exclusive to Land Rover - no cross-brand fitment."
@@ -313,24 +313,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£3,000–£5,000",
-        "fittedIndie": "£4,000–£6,500",
+        "supplyOnly": "£3,000-£5,000",
+        "fittedIndie": "£4,000-£6,500",
         "warranty": "Varies by supplier"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£5,500–£8,000",
-        "fittedIndie": "£6,500–£9,500",
+        "supplyOnly": "£5,500-£8,000",
+        "fittedIndie": "£6,500-£9,500",
         "warranty": "12 months typical"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£7,000–£10,500",
-        "fittedIndie": "£8,000–£12,000",
-        "warranty": "12–24 months typical"
+        "supplyOnly": "£7,000-£10,500",
+        "fittedIndie": "£8,000-£12,000",
+        "warranty": "12-24 months typical"
       }
     ],
-    "labourEstimate": "Fitting a 368DT typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "labourEstimate": "Fitting a 368DT typically takes 14-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM-QUOTE].",
     "sharedCostNote": "Omitted - engine is exclusive to Land Rover.",
     "cta": {
       "label": "→ Compare 368DT (3.6 TDV8) engine prices from UK specialists",
@@ -342,17 +342,17 @@
       {
         "id": 1,
         "question": "How much does a 368DT (3.6 TDV8) engine replacement cost?",
-        "answer": "A reconditioned 368DT TDV8 typically costs £5,500–£8,000 supply only, varying by specification and rebuild quality. Used units can be found from £3,000–£5,000, but provenance is critical. Fitting adds £1,000–£2,000 depending on labour rates."
+        "answer": "A reconditioned 368DT TDV8 typically costs £5,500-£8,000 supply only, varying by specification and rebuild quality. Used units can be found from £3,000-£5,000, but provenance is critical. Fitting adds £1,000-£2,000 depending on labour rates."
       },
       {
         "id": 2,
         "question": "Is the 368DT (3.6 TDV8) a reliable engine?",
-        "answer": "The 368DT has a poor reputation (3.0★). While it offers strong V8 torque and refinement, the early engines (2006–2009) are known for timing chain tensioner failure and, in more severe cases, crankshaft fracture. It is not the reliable 4.4 TDV8 (<a href='https://landroverengine.uk/engine/448dt'>448DT</a>) that replaced it."
+        "answer": "The 368DT has a poor reputation (3.0★). While it offers strong V8 torque and refinement, the early engines (2006-2009) are known for timing chain tensioner failure and, in more severe cases, crankshaft fracture. It is not the reliable 4.4 TDV8 (<a href='https://landroverengine.uk/engine/448dt'>448DT</a>) that replaced it."
       },
       {
         "id": 3,
         "question": "What is the most common 368DT failure?",
-        "answer": "Timing chain tensioner failure is the most critical on early (2006–2009) engines - causing chain slack, timing drift, and catastrophic valve/piston interference. Turbo actuator failure is also common (typically sticky vanes). The most severe risk is crankshaft fracture, which can occur without warning and writes off the engine."
+        "answer": "Timing chain tensioner failure is the most critical on early (2006-2009) engines - causing chain slack, timing drift, and catastrophic valve/piston interference. Turbo actuator failure is also common (typically sticky vanes). The most severe risk is crankshaft fracture, which can occur without warning and writes off the engine."
       },
       {
         "id": 4,

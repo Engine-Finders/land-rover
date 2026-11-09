@@ -105,7 +105,7 @@
               "name": "How much does a Land Rover Discovery 4 L319 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned L319 engine typically costs £4,000–£9,500 supply only, depending on the engine - the 306DT SDV6 sits at £6,500–£9,500, while the 276DT TDV6 is £5,000–£7,500. Fitting adds £650–£1,300 depending on specialist labour rates. Use our calculator for a personalised figure."
+                "text": "A reconditioned L319 engine typically costs £4,000-£9,500 supply only, depending on the engine - the 306DT SDV6 sits at £6,500-£9,500, while the 276DT TDV6 is £5,000-£7,500. Fitting adds £650-£1,300 depending on specialist labour rates. Use our calculator for a personalised figure."
               }
             },
             {
@@ -169,7 +169,7 @@
               "name": "What is the difference between the Discovery 3 and Discovery 4 L319?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Both share the L319 chassis code, but the Discovery 4 (2009–2018) is a significant evolution of the Discovery 3 (2004–2009). The Discovery 4 introduced the 3.0-litre SDV6, the 5.0-litre V8, and later the 3.0-litre supercharged V6, along with a more refined interior and improved suspension. Engine costs and failure patterns differ - this page covers the Discovery 4 only."
+                "text": "Both share the L319 chassis code, but the Discovery 4 (2009-2018) is a significant evolution of the Discovery 3 (2004-2009). The Discovery 4 introduced the 3.0-litre SDV6, the 5.0-litre V8, and later the 3.0-litre supercharged V6, along with a more refined interior and improved suspension. Engine costs and failure patterns differ - this page covers the Discovery 4 only."
               }
             },
             {
@@ -244,7 +244,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Land Rover Discovery 4 L319 • SUV • 2009–2018",
+    "tagPill": "Land Rover Discovery 4 L319 • SUV • 2009-2018",
     "h1": "Land Rover Discovery 4 L319 Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the Discovery 4 L319 - from the 2.7-litre TDV6 that carried over from the Discovery 3, to the 3.0-litre SDV6 that defined this generation, and the 5.0-litre V8 that gave it genuine pace. Real UK costs, honest failure data, and the crankshaft-bearing question that still haunts early SDV6 units. Backed by 120+ real UK L319 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -293,11 +293,11 @@
         "fuel": "Diesel",
         "displacement": "2.7L",
         "power": "190 bhp (140 kW)",
-        "years": "2009–2018",
+        "years": "2009-2018",
         "variants": "TDV6",
         "reliability": "★★★☆☆ [PROVISIONAL - inherited from Model Page]",
         "enquiries": "700 (JLR-wide) [EM-VERIFIED]",
-        "avgReconCost": "£5,000–£7,500 [EM-QUOTE]"
+        "avgReconCost": "£5,000-£7,500 [EM-QUOTE]"
       },
       {
         "engineCode": "306DT (155kW)",
@@ -305,11 +305,11 @@
         "fuel": "Diesel",
         "displacement": "3.0L",
         "power": "211 bhp (155 kW)",
-        "years": "2010–2018",
+        "years": "2010-2018",
         "variants": "TDV6",
         "reliability": "★★★☆☆ [PROVISIONAL - inherited from Model Page]",
         "enquiries": "980 (JLR-wide) [EM-VERIFIED]",
-        "avgReconCost": "£6,500–£9,500 [EM-QUOTE]"
+        "avgReconCost": "£6,500-£9,500 [EM-QUOTE]"
       },
       {
         "engineCode": "306DT (180kW)",
@@ -317,11 +317,11 @@
         "fuel": "Diesel",
         "displacement": "3.0L",
         "power": "245 bhp (180 kW)",
-        "years": "2009–2018",
+        "years": "2009-2018",
         "variants": "SDV6",
         "reliability": "★★★☆☆ [PROVISIONAL - inherited from Model Page]",
         "enquiries": "980 (JLR-wide) [EM-VERIFIED]",
-        "avgReconCost": "£6,500–£9,500 [EM-QUOTE]"
+        "avgReconCost": "£6,500-£9,500 [EM-QUOTE]"
       },
       {
         "engineCode": "306DT (188kW)",
@@ -329,11 +329,11 @@
         "fuel": "Diesel",
         "displacement": "3.0L",
         "power": "256 bhp (188 kW)",
-        "years": "2009–2018",
+        "years": "2009-2018",
         "variants": "SDV6",
         "reliability": "★★★☆☆ [PROVISIONAL - inherited from Model Page]",
         "enquiries": "980 (JLR-wide) [EM-VERIFIED]",
-        "avgReconCost": "£6,500–£9,500 [EM-QUOTE]"
+        "avgReconCost": "£6,500-£9,500 [EM-QUOTE]"
       },
       {
         "engineCode": "508PN",
@@ -341,11 +341,11 @@
         "fuel": "Petrol",
         "displacement": "5.0L",
         "power": "375 bhp (276 kW)",
-        "years": "2009–2018",
+        "years": "2009-2018",
         "variants": "V8",
         "reliability": "★★★★☆ [PROVISIONAL - inherited from Model Page]",
         "enquiries": "330 (AJ133 JLR-wide) [EM-VERIFIED]",
-        "avgReconCost": "£5,500–£9,000 [EM-QUOTE]"
+        "avgReconCost": "£5,500-£9,000 [EM-QUOTE]"
       },
       {
         "engineCode": "AJ126",
@@ -353,11 +353,11 @@
         "fuel": "Petrol",
         "displacement": "3.0L",
         "power": "340 bhp (250 kW)",
-        "years": "2013–2018",
+        "years": "2013-2018",
         "variants": "SCV6",
         "reliability": "★★★★☆ [PROVISIONAL - inherited from Model Page]",
         "enquiries": "560 (AJ126 JLR-wide) [EM-VERIFIED]",
-        "avgReconCost": "£4,500–£7,500 [EM-QUOTE]"
+        "avgReconCost": "£4,500-£7,500 [EM-QUOTE]"
       },
       {
         "engineCode": "406PN",
@@ -369,7 +369,7 @@
         "variants": "V6",
         "reliability": "★★★☆☆ [PROVISIONAL - pattern data]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£1,500–£3,000 [EM-QUOTE]"
+        "avgReconCost": "£1,500-£3,000 [EM-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -388,13 +388,13 @@
     "items": [
       {
         "slot": "Best Diesel Overall",
-        "engine": "306DT SDV6 (180kW/188kW, 2009–2018)",
+        "engine": "306DT SDV6 (180kW/188kW, 2009-2018)",
         "quote": "“The 3.0-litre SDV6 is a genuine step up from the 2.7 - more torque, better refinement, and genuinely capable of 200,000+ miles with strict servicing. The crankshaft-bearing question is real, but it’s a known risk with a known warning - cold-start knock.” Who it’s for: buyers who want Discovery 4’s defining diesel experience.",
         "whoItsFor": ""
       },
       {
         "slot": "Best Petrol Overall",
-        "engine": "508PN AJ133 V8 (5.0-litre, 2009–2018)",
+        "engine": "508PN AJ133 V8 (5.0-litre, 2009-2018)",
         "quote": "“The 5.0 V8 is the Discovery 4’s most dependable engine - chain-driven, naturally aspirated, and free of the crankshaft-bearing and timing-chain tensioner issues that define the SDV6. It’s thirsty, but it’s honest.” Who it’s for: buyers who prioritise reliability over fuel economy.",
         "whoItsFor": ""
       },
@@ -412,13 +412,13 @@
       },
       {
         "slot": "Best Value",
-        "engine": "276DT TDV6 (2.7-litre, 2009–2018)",
+        "engine": "276DT TDV6 (2.7-litre, 2009-2018)",
         "quote": "“Older than the SDV6, but proven in the Discovery 3 - simpler, cheaper to repair, and free of the SDV6’s crank-bearing question. It’s slower, but it’s honest.” Who it’s for: buyers who want Discovery 4 capability without the SDV6’s headline risk.",
         "whoItsFor": ""
       },
       {
         "slot": "Most Overlooked",
-        "engine": "AJ126 SCV6 (3.0-litre supercharged, 2013–2018)",
+        "engine": "AJ126 SCV6 (3.0-litre supercharged, 2013-2018)",
         "quote": "“The supercharged V6 replaced the 5.0 V8 from 2014 - it’s almost as quick, significantly more efficient, and carries none of the SDV6’s crankshaft risk. The cooling system is its only real demand.” Who it’s for: buyers who want petrol reliability without the 5.0 V8’s fuel consumption.",
         "whoItsFor": ""
       }
@@ -437,64 +437,64 @@
     "rows": [
       {
         "engine": "276DT TDV6",
-        "typicalMileage": "100k–150k+",
+        "typicalMileage": "100k-150k+",
         "commonMajorFailure": "Oil pump housing failure",
-        "repairCostSpecialist": "£1,500–£3,000",
-        "replacementCostRecon": "£5,000–£7,500",
+        "repairCostSpecialist": "£1,500-£3,000",
+        "replacementCostRecon": "£5,000-£7,500",
         "ownershipVerdict": "Solid Choice - older, proven, simpler"
       },
       {
         "engine": "306DT SDV6 (155kW)",
-        "typicalMileage": "80k–140k",
+        "typicalMileage": "80k-140k",
         "commonMajorFailure": "Crankshaft bearing failure",
-        "repairCostSpecialist": "£5,500–£7,000",
-        "replacementCostRecon": "£6,500–£9,500",
+        "repairCostSpecialist": "£5,500-£7,000",
+        "replacementCostRecon": "£6,500-£9,500",
         "ownershipVerdict": "Highest Risk - cold-start knock is the warning"
       },
       {
         "engine": "306DT SDV6 (180kW)",
-        "typicalMileage": "80k–140k",
+        "typicalMileage": "80k-140k",
         "commonMajorFailure": "Crankshaft bearing failure",
-        "repairCostSpecialist": "£5,500–£7,000",
-        "replacementCostRecon": "£6,500–£9,500",
+        "repairCostSpecialist": "£5,500-£7,000",
+        "replacementCostRecon": "£6,500-£9,500",
         "ownershipVerdict": "Highest Risk - same as 155kW, more power"
       },
       {
         "engine": "306DT SDV6 (188kW)",
-        "typicalMileage": "80k–140k",
+        "typicalMileage": "80k-140k",
         "commonMajorFailure": "Crankshaft bearing failure",
-        "repairCostSpecialist": "£5,500–£7,000",
-        "replacementCostRecon": "£6,500–£9,500",
+        "repairCostSpecialist": "£5,500-£7,000",
+        "replacementCostRecon": "£6,500-£9,500",
         "ownershipVerdict": "Highest Risk - the most powerful, same risk"
       },
       {
         "engine": "508PN AJ133 V8",
-        "typicalMileage": "100k–200k",
+        "typicalMileage": "100k-200k",
         "commonMajorFailure": "Timing chain tensioner (pre-2013)",
-        "repairCostSpecialist": "£2,500–£4,500",
-        "replacementCostRecon": "£5,500–£9,000",
+        "repairCostSpecialist": "£2,500-£4,500",
+        "replacementCostRecon": "£5,500-£9,000",
         "ownershipVerdict": "Best Petrol - reliable, thirsty, honest"
       },
       {
         "engine": "AJ126 SCV6",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Water pump / cooling system",
-        "repairCostSpecialist": "£600–£1,200",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£600-£1,200",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Most Overlooked - modern, reliable, efficient"
       },
       {
         "engine": "406PN Cologne V6",
         "typicalMileage": "100k+",
         "commonMajorFailure": "General wear",
-        "repairCostSpecialist": "£500–£1,000",
-        "replacementCostRecon": "£1,500–£3,000",
+        "repairCostSpecialist": "£500-£1,000",
+        "replacementCostRecon": "£1,500-£3,000",
         "ownershipVerdict": "Low Volume - Discovery 3 carryover, early cars only"
       }
     ],
     "economicsRule": {
       "title": "The L319 rule",
-      "text": "A £6,500–£9,500 SDV6 recon against a £8,000–£14,000 Discovery 4 sits at 46–120% of the car’s value. On a sub-£8,000 L319, that brushes our 60% Land Rover threshold - we’ll honestly tell you to walk away. Against a well-kept £18,000+ low-mileage example, the same recon drops to a routine 35–55% - a repair decision, not a financial one. Value the car first."
+      "text": "A £6,500-£9,500 SDV6 recon against a £8,000-£14,000 Discovery 4 sits at 46-120% of the car’s value. On a sub-£8,000 L319, that brushes our 60% Land Rover threshold - we’ll honestly tell you to walk away. Against a well-kept £18,000+ low-mileage example, the same recon drops to a routine 35-55% - a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": []
   },
@@ -503,26 +503,26 @@
       {
         "id": 1,
         "title": "306DT SDV6 Crankshaft Bearing Failure",
-        "affectedModels": "Discovery 4 L319 3.0 SDV6 (all power outputs, 2009–2018).",
-        "typicalFailureMileage": "80,000–140,000 miles.",
+        "affectedModels": "Discovery 4 L319 3.0 SDV6 (all power outputs, 2009-2018).",
+        "typicalFailureMileage": "80,000-140,000 miles.",
         "rootCause": "The tin-aluminium bearing coating fatigues over time, leading to bearing material loss, oil pressure drop, and eventual catastrophic bottom-end failure. Cold-start knock is the classic early warning - a deep, rhythmic rumble that disappears as oil pressure builds. Once the bearing spins, the crankshaft is typically damaged beyond repair.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£6,000–£8,000",
-            "specialist": "£5,500–£7,000",
+            "dealer": "£6,000-£8,000",
+            "specialist": "£5,500-£7,000",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£10,000–£14,000",
-            "specialist": "£7,500–£11,000",
+            "dealer": "£10,000-£14,000",
+            "specialist": "£7,500-£11,000",
             "work": "",
             "note": ""
           }
         ],
-        "recommendation": "At the first sign of cold-start knock on an SDV6, get a specialist oil analysis and sump inspection immediately - a £5,500–£7,000 bottom-end rebuild is dramatically cheaper than the £7,500–£11,000 replacement that follows if ignored. On an L319 worth under £8,000, this decision alone determines whether the car stays economically viable.",
+        "recommendation": "At the first sign of cold-start knock on an SDV6, get a specialist oil analysis and sump inspection immediately - a £5,500-£7,000 bottom-end rebuild is dramatically cheaper than the £7,500-£11,000 replacement that follows if ignored. On an L319 worth under £8,000, this decision alone determines whether the car stays economically viable.",
         "cta": {
           "label": "Compare 306DT SDV6 engine prices for your Discovery 4 L319 →",
           "href": "#"
@@ -531,26 +531,26 @@
       {
         "id": 2,
         "title": "276DT TDV6 Oil Pump Housing Failure",
-        "affectedModels": "Discovery 4 L319 2.7 TDV6 (2009–2018).",
-        "typicalFailureMileage": "80,000–140,000 miles.",
+        "affectedModels": "Discovery 4 L319 2.7 TDV6 (2009-2018).",
+        "typicalFailureMileage": "80,000-140,000 miles.",
         "rootCause": "The oil pump housing has a weak point at the tensioner mount - the casting can crack, leading to sudden oil pressure loss and, if not caught immediately, total engine failure. This is the 276DT’s equivalent of the SDV6 crank-bearing question - a single-point failure that kills the engine without warning.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£2,000–£3,500",
-            "specialist": "£1,500–£3,000",
+            "dealer": "£2,000-£3,500",
+            "specialist": "£1,500-£3,000",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£8,000–£11,000",
-            "specialist": "£5,000–£7,500",
+            "dealer": "£8,000-£11,000",
+            "specialist": "£5,000-£7,500",
             "work": "",
             "note": ""
           }
         ],
-        "recommendation": "Have the oil pump housing inspected at every major service on a 276DT - a £1,500–£3,000 preventative repair is far cheaper than the £5,000–£7,500 replacement that follows oil starvation. The 276DT is otherwise a robust engine, but this single weak point defines its ownership experience.",
+        "recommendation": "Have the oil pump housing inspected at every major service on a 276DT - a £1,500-£3,000 preventative repair is far cheaper than the £5,000-£7,500 replacement that follows oil starvation. The 276DT is otherwise a robust engine, but this single weak point defines its ownership experience.",
         "cta": {
           "label": "Compare 276DT TDV6 engine prices for your Discovery 4 L319 →",
           "href": "#"
@@ -559,26 +559,26 @@
       {
         "id": 3,
         "title": "508PN AJ133 V8 Timing Chain Tensioner Wear (pre-2013)",
-        "affectedModels": "Discovery 4 L319 5.0 V8 (2009–2013).",
-        "typicalFailureMileage": "60,000–120,000 miles.",
+        "affectedModels": "Discovery 4 L319 5.0 V8 (2009-2013).",
+        "typicalFailureMileage": "60,000-120,000 miles.",
         "rootCause": "The timing chain tensioners on early AJ133 V8s (pre-2013) wear prematurely, leading to chain slack, rattle on start-up, and - if ignored - catastrophic valve-to-piston contact. Revised tensioners were fitted from 2013 onward, making post-2013 V8s significantly more robust.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£3,500–£5,500",
-            "specialist": "£2,500–£4,500",
+            "dealer": "£3,500-£5,500",
+            "specialist": "£2,500-£4,500",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£10,000–£14,000",
-            "specialist": "£5,500–£9,000",
+            "dealer": "£10,000-£14,000",
+            "specialist": "£5,500-£9,000",
             "work": "",
             "note": ""
           }
         ],
-        "recommendation": "On any pre-2013 5.0 V8 L319, have the timing chain tensioners inspected at 60,000 miles - a £2,500–£4,500 preventative repair is dramatically cheaper than the £5,500–£9,000 replacement that follows a snapped chain. Post-2013 V8s are much safer.",
+        "recommendation": "On any pre-2013 5.0 V8 L319, have the timing chain tensioners inspected at 60,000 miles - a £2,500-£4,500 preventative repair is dramatically cheaper than the £5,500-£9,000 replacement that follows a snapped chain. Post-2013 V8s are much safer.",
         "cta": {
           "label": "Compare 508PN AJ133 V8 engine prices for your Discovery 4 L319 →",
           "href": "#"
@@ -588,25 +588,25 @@
         "id": 4,
         "title": "Air Suspension Compressor Failure",
         "affectedModels": "All Discovery 4 L319 variants with air suspension (most UK-market examples).",
-        "typicalFailureMileage": "80,000–150,000 miles.",
+        "typicalFailureMileage": "80,000-150,000 miles.",
         "rootCause": "The air suspension compressor is overworked by age-related air leaks in the system - the compressor motor seals deteriorate, leading to longer pump times, overheating, and eventual failure. The car may sit low on one corner or fail to raise at all.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£800–£1,400",
-            "specialist": "£500–£900",
+            "dealer": "£800-£1,400",
+            "specialist": "£500-£900",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£1,800–£2,800",
-            "specialist": "£1,200–£1,800",
+            "dealer": "£1,800-£2,800",
+            "specialist": "£1,200-£1,800",
             "work": "",
             "note": ""
           }
         ],
-        "recommendation": "This is the most common non-engine failure on the Discovery 4 - have the air suspension system leak-tested at every service on cars over 80,000 miles. A £500–£900 compressor repair is cheap insurance against the £1,200–£1,800 full system overhaul that follows if ignored.",
+        "recommendation": "This is the most common non-engine failure on the Discovery 4 - have the air suspension system leak-tested at every service on cars over 80,000 miles. A £500-£900 compressor repair is cheap insurance against the £1,200-£1,800 full system overhaul that follows if ignored.",
         "cta": {
           "label": "Compare Discovery 4 L319 air suspension repair quotes →",
           "href": "#"
@@ -628,61 +628,61 @@
       {
         "variant": "TDV6 (2.7)",
         "engineCode": "276DT",
-        "usedSupply": "£2,800–£4,500",
-        "reconditionedSupply": "£5,000–£7,500",
-        "rebuiltSupply": "£6,500–£9,500",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£2,800-£4,500",
+        "reconditionedSupply": "£5,000-£7,500",
+        "rebuiltSupply": "£6,500-£9,500",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "TDV6 (3.0, 211 bhp)",
         "engineCode": "306DT (155kW)",
-        "usedSupply": "£3,500–£5,500",
-        "reconditionedSupply": "£6,500–£9,500",
-        "rebuiltSupply": "£7,500–£11,000",
-        "labourHours": "15–20 hrs"
+        "usedSupply": "£3,500-£5,500",
+        "reconditionedSupply": "£6,500-£9,500",
+        "rebuiltSupply": "£7,500-£11,000",
+        "labourHours": "15-20 hrs"
       },
       {
         "variant": "SDV6 (3.0, 245 bhp)",
         "engineCode": "306DT (180kW)",
-        "usedSupply": "£3,500–£5,500",
-        "reconditionedSupply": "£6,500–£9,500",
-        "rebuiltSupply": "£7,500–£11,000",
-        "labourHours": "15–20 hrs"
+        "usedSupply": "£3,500-£5,500",
+        "reconditionedSupply": "£6,500-£9,500",
+        "rebuiltSupply": "£7,500-£11,000",
+        "labourHours": "15-20 hrs"
       },
       {
         "variant": "SDV6 (3.0, 256 bhp)",
         "engineCode": "306DT (188kW)",
-        "usedSupply": "£3,500–£5,500",
-        "reconditionedSupply": "£6,500–£9,500",
-        "rebuiltSupply": "£7,500–£11,000",
-        "labourHours": "15–20 hrs"
+        "usedSupply": "£3,500-£5,500",
+        "reconditionedSupply": "£6,500-£9,500",
+        "rebuiltSupply": "£7,500-£11,000",
+        "labourHours": "15-20 hrs"
       },
       {
         "variant": "V8 (5.0)",
         "engineCode": "508PN (AJ133)",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£8,000–£12,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£8,000-£12,000",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "SCV6 (3.0)",
         "engineCode": "AJ126",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,000–£9,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,000-£9,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "V6 (4.0)",
         "engineCode": "406PN (Cologne)",
-        "usedSupply": "£800–£1,800",
-        "reconditionedSupply": "£1,500–£3,000",
-        "rebuiltSupply": "£2,500–£4,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£800-£1,800",
+        "reconditionedSupply": "£1,500-£3,000",
+        "rebuiltSupply": "£2,500-£4,500",
+        "labourHours": "10-14 hrs"
       }
     ],
-    "note": "No Generation variance from the Model Page’s baseline figures - L319 Discovery 4 shares identical engine-bay access with its Discovery 3 predecessor, so costs are inherited directly per the Authority Model, with no divergence note required. The 306DT cost band (£6,500–£9,500) is carried forward from the EM_Proprietary_Data Table A for “Land Rover 306DT TDV6/SDV6”."
+    "note": "No Generation variance from the Model Page’s baseline figures - L319 Discovery 4 shares identical engine-bay access with its Discovery 3 predecessor, so costs are inherited directly per the Authority Model, with no divergence note required. The 306DT cost band (£6,500-£9,500) is carried forward from the EM_Proprietary_Data Table A for “Land Rover 306DT TDV6/SDV6”."
   },
   "coreVariants": {
     "dieselVariants": [
@@ -721,7 +721,7 @@
         "url": "https://landroverengine.uk/discovery/si4"
       }
     ],
-    "scopeNote": "All variants listed are Discovery 4 L319 SUV only. The 406PN (4.0 V6) was a Discovery 3 carryover fitted only to very early (2009) Discovery 4 examples. The 3.0-litre supercharged V6 (AJ126) replaced the 5.0 V8 from early 2014. The 2.7 TDV6 (276DT) and 3.0 SDV6 (306DT) ran throughout the entire 2009–2018 production run."
+    "scopeNote": "All variants listed are Discovery 4 L319 SUV only. The 406PN (4.0 V6) was a Discovery 3 carryover fitted only to very early (2009) Discovery 4 examples. The 3.0-litre supercharged V6 (AJ126) replaced the 5.0 V8 from early 2014. The 2.7 TDV6 (276DT) and 3.0 SDV6 (306DT) ran throughout the entire 2009-2018 production run."
   },
   "marketIntelligence": {
     "mostRequestedEngines": [
@@ -734,7 +734,7 @@
       "2. TDV6",
       "3. SCV6"
     ],
-    "averageReplacementCost": "£4,000–£9,500 supply only [EM‑QUOTE]",
+    "averageReplacementCost": "£4,000-£9,500 supply only [EM‑QUOTE]",
     "mostCommonFailures": [
       "1. SDV6 crankshaft bearing failure",
       "2. TDV6 oil pump housing failure",
@@ -769,7 +769,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Discovery 4 L319 engine replacement cost in the UK?",
-        "answer": "A reconditioned L319 engine typically costs £4,000–£9,500 supply only [EM‑QUOTE], depending on the engine - the 306DT SDV6 sits at £6,500–£9,500, while the 276DT TDV6 is £5,000–£7,500. Fitting adds £650–£1,300 depending on specialist labour rates. Use our calculator for a personalised figure."
+        "answer": "A reconditioned L319 engine typically costs £4,000-£9,500 supply only [EM‑QUOTE], depending on the engine - the 306DT SDV6 sits at £6,500-£9,500, while the 276DT TDV6 is £5,000-£7,500. Fitting adds £650-£1,300 depending on specialist labour rates. Use our calculator for a personalised figure."
       },
       {
         "id": 2,
@@ -809,7 +809,7 @@
       {
         "id": 9,
         "question": "What is the difference between the Discovery 3 and Discovery 4 L319?",
-        "answer": "Both share the L319 chassis code, but the Discovery 4 (2009–2018) is a significant evolution of the Discovery 3 (2004–2009). The Discovery 4 introduced the 3.0‑litre SDV6, the 5.0‑litre V8, and later the 3.0‑litre supercharged V6, along with a more refined interior and improved suspension. Engine costs and failure patterns differ - this page covers the Discovery 4 only."
+        "answer": "Both share the L319 chassis code, but the Discovery 4 (2009-2018) is a significant evolution of the Discovery 3 (2004-2009). The Discovery 4 introduced the 3.0‑litre SDV6, the 5.0‑litre V8, and later the 3.0‑litre supercharged V6, along with a more refined interior and improved suspension. Engine costs and failure patterns differ - this page covers the Discovery 4 only."
       },
       {
         "id": 10,

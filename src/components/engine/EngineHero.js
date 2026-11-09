@@ -30,9 +30,9 @@ const ICON_BY_EMOJI = { "📊": "real-inquiries", "🔧": "vehicle", "💯": "re
 const ICON_ORDER = ["real-inquiries", "vehicle", "real-data", "part-of-engine-finders"];
 
 // "Land Rover 200Tdi / 300Tdi Engine - Specs, Reliability & Replacement Cost"
-// -> lead "... Engine — Specs, Reliability & " + accent "Replacement Cost"
+// -> lead "... Engine - Specs, Reliability & " + accent "Replacement Cost"
 function splitTitle(h1 = "") {
-  const title = h1.replace(/ - /g, " — ");
+  const title = h1.replace(/ - /g, " - ");
   const accent = "Replacement Cost";
   const at = title.lastIndexOf(accent);
   return at === -1 ? { lead: title, accent: "" } : { lead: title.slice(0, at), accent: title.slice(at) };
@@ -40,7 +40,7 @@ function splitTitle(h1 = "") {
 
 // green source tag at the end of the sub-headline: "... in 2025 [EM-VERIFIED]."
 const highlightTags = (html = "") =>
-  html.replace(/ - /g, " — ").replace(/(\[[A-Z][A-Z-]*\]\.?)/g, `<span class="text-lr-green">$1</span>`);
+  html.replace(/ - /g, " - ").replace(/(\[[A-Z][A-Z-]*\]\.?)/g, `<span class="text-lr-green">$1</span>`);
 
 // "1,500+ Enquiries" / "[Score]/100 Engine Score" / "3 Models Fitted" / "Part of Engine Finders"
 function parseStat(label = "") {
@@ -105,7 +105,7 @@ export default function EngineHero({ data, slug = "" }) {
   const pill = (data.tagPill || "").split(" • ").filter(Boolean);
   const { lead, accent } = splitTitle(data.h1);
   const engineName = String(data.h1 || "")
-    .split(/\s+[-–—]\s+/)[0]
+    .split(/\s+[-–-]\s+/)[0]
     .replace(/\s+Engine$/i, "")
     .trim() || "Land Rover Engine";
   const cta = engineCtaCopy(engineName);

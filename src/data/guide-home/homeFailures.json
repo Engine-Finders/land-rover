@@ -1,7 +1,7 @@
 {
   "eyebrow": "Failure Database",
   "h2": "The Land Rover & Range Rover|Failure Database",
-  "subhead": "A permanent, categorised reference – not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
+  "subhead": "A permanent, categorised reference - not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
   "categories": [
     {
       "key": "engine",
@@ -13,13 +13,13 @@
       "items": [
         {
           "title": "TDV6 Crankshaft Failure",
-          "text": "The 306DT's defining weak point – cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon.",
+          "text": "The 306DT's defining weak point - cold-start knock is the early warning. Catastrophic bearing failure, £6,500-£9,500 recon.",
           "severity": "catastrophic",
           "image": "/home/failures/tdv6-306dt.webp",
           "href": "/data/306dt-failure-rate",
           "code": "306DT",
           "symptom": "Cold-start knock",
-          "cost": "£6,500 – £9,500"
+          "cost": "£6,500 - £9,500"
         },
         {
           "title": "276DT Oil Pump Housing Failure",
@@ -33,17 +33,17 @@
         },
         {
           "title": "Ingenium Timing Chain Failure",
-          "text": "Pre-2019 204DTD tensioner wear, significantly improved from 2019 onward. £1,200–£2,500 repair cost.",
+          "text": "Pre-2019 204DTD tensioner wear, significantly improved from 2019 onward. £1,200-£2,500 repair cost.",
           "severity": "monitor",
           "image": "/home/failures/ingenium-204dtd.webp",
           "href": "/data/204dtd-failure-rate",
           "code": "204DTD",
           "symptom": "Start-up rattle",
-          "cost": "£1,200 – £2,500"
+          "cost": "£1,200 - £2,500"
         },
         {
           "title": "508PS Oil Cooler & Dilution Issues",
-          "text": "The 4.4 SDV8's main (and comparatively minor) weak point – oil cooler leaks can lead to coolant ingestion.",
+          "text": "The 4.4 SDV8's main (and comparatively minor) weak point - oil cooler leaks can lead to coolant ingestion.",
           "severity": "immediate",
           "image": "/model/engines/compact-black.webp",
           "href": "/data/aj133-failure-rate",
@@ -73,23 +73,23 @@
         },
         {
           "title": "Height Sensor Faults",
-          "text": "Trigger warning lights and uneven ride height well before a full system failure. £200–£500 repair cost.",
+          "text": "Trigger warning lights and uneven ride height well before a full system failure. £200-£500 repair cost.",
           "severity": "low",
           "image": "/parts/ride-height-sensor.webp",
           "href": "/blog",
           "code": "Height sensor",
           "symptom": "Uneven ride height",
-          "cost": "£200 – £500"
+          "cost": "£200 - £500"
         },
         {
           "title": "Valve Block & Air Spring Leaks",
-          "text": "Slow leaks that are often mistaken for compressor failure. £300–£800 repair cost.",
+          "text": "Slow leaks that are often mistaken for compressor failure. £300-£800 repair cost.",
           "severity": "low",
           "image": "/parts/air-suspension-valve-block.webp",
           "href": "/blog",
           "code": "Valve block",
           "symptom": "Overnight sagging",
-          "cost": "£300 – £800"
+          "cost": "£300 - £800"
         }
       ]
     },
@@ -113,23 +113,23 @@
         },
         {
           "title": "Differential Wear",
-          "text": "Front and rear diff whine, most common on high-mileage Discovery and Defender. £800–£1,500 repair.",
+          "text": "Front and rear diff whine, most common on high-mileage Discovery and Defender. £800-£1,500 repair.",
           "severity": "monitor",
           "image": "/parts/differential.webp",
           "href": "/blog",
           "code": "Differential",
           "symptom": "Whine at speed",
-          "cost": "£800 – £1,500"
+          "cost": "£800 - £1,500"
         },
         {
           "title": "Propshaft & UJ Failures",
-          "text": "Vibration under load, a common MOT advisory across the range. £200–£500 repair.",
+          "text": "Vibration under load, a common MOT advisory across the range. £200-£500 repair.",
           "severity": "low",
           "image": "/parts/propshaft-u-joint.webp",
           "href": "/blog",
           "code": "Propshaft & UJ",
           "symptom": "Vibration under load",
-          "cost": "£200 – £500"
+          "cost": "£200 - £500"
         }
       ]
     },
@@ -163,7 +163,7 @@
         },
         {
           "title": "Battery Drain / Parasitic Drain",
-          "text": "Modules failing to sleep correctly – a frequent no-start complaint on stop-start models.",
+          "text": "Modules failing to sleep correctly - a frequent no-start complaint on stop-start models.",
           "severity": "low",
           "image": "/parts/12v-car-battery.webp",
           "href": "/blog",

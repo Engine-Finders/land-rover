@@ -13,7 +13,7 @@ import { CONTAINER, H2, ICON_LG, ICON_MD } from "@/lib/typeScale";
 const SANS = "font-[family-name:var(--font-instrument-sans)]";
 const DESKTOP_COLS = "grid-cols-[1.5fr_0.9fr_0.95fr_1.15fr_1.1fr_1.4fr]";
 const DEFAULT_SOURCE =
-  "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.";
+  "This table is the single source every other section on this page matches - Sections 2, 4 and 6 reference it rather than restating conflicting figures.";
 const WHY =
   "Every cost guide, reliability rating and engine code on this page is aligned to the data above. This keeps everything consistent and trustworthy.";
 
@@ -25,8 +25,8 @@ const POINTS = [
   { icon: "gearbox-problem", title: "Updated for 2025", text: "All data reviewed and updated for the UK market." },
 ];
 
-const dash = (t = "") => String(t).replace(/ - /g, " — ");
-// "★★★★½ [NEWLY ASSIGNED - see Data Note]" -> { main, tag: "[NEWLY ASSIGNED — see Data Note]" }
+const dash = (t = "") => String(t).replace(/ - /g, " - ");
+// "★★★★½ [NEWLY ASSIGNED - see Data Note]" -> { main, tag: "[NEWLY ASSIGNED - see Data Note]" }
 function splitTag(value = "") {
   const m = String(value).match(/^(.*?)\s*(\[[^\]]+\])\s*$/);
   return m ? { main: m[1].trim(), tag: dash(m[2]) } : { main: String(value), tag: "" };

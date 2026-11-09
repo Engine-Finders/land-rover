@@ -102,7 +102,7 @@
               "name": "How much does a Land Rover Range Rover Sport SVR engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Range Rover Sport SVR (AJ133 5.0 SC V8) engine typically costs £5,500–£9,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned Range Rover Sport SVR (AJ133 5.0 SC V8) engine typically costs £5,500-£9,500 supply only. Fitting adds £1,000-£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -126,7 +126,7 @@
               "name": "Is it worth replacing a Range Rover Sport SVR engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Against a well-maintained SVR (values £35,000–£70,000+ depending on year and mileage), a £6,000–£8,000 reconditioned engine is 10–25% of the vehicle's value - worth it. The Land Rover scrap threshold of 60% means replacement is almost always viable on an SVR, given the model's strong enthusiast following and residual values."
+                "text": "Against a well-maintained SVR (values £35,000-£70,000+ depending on year and mileage), a £6,000-£8,000 reconditioned engine is 10-25% of the vehicle's value - worth it. The Land Rover scrap threshold of 60% means replacement is almost always viable on an SVR, given the model's strong enthusiast following and residual values."
               }
             },
             {
@@ -134,7 +134,7 @@
               "name": "How do I find my Range Rover Sport SVR engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The engine code AJ133 is listed on the VIN plate and vehicle documentation. The SVR was offered on the L494 from 2014–2022 (550PS 2014–2017, 575PS 2017–2022) and returned on the L461 in 2024 with a BMW-sourced 4.4TT V8. If your L494 is an SVR, it's the AJ133. Check your V5C or VIN plate for confirmation."
+                "text": "The engine code AJ133 is listed on the VIN plate and vehicle documentation. The SVR was offered on the L494 from 2014-2022 (550PS 2014-2017, 575PS 2017-2022) and returned on the L461 in 2024 with a BMW-sourced 4.4TT V8. If your L494 is an SVR, it's the AJ133. Check your V5C or VIN plate for confirmation."
               }
             },
             {
@@ -142,7 +142,7 @@
               "name": "Can I repair the timing chain, or does it require engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Timing chain tensioner failure is repairable without replacing the engine - if caught early. A preventative chain and tensioner replacement costs £1,200–£2,500. If the chain skips and valves meet pistons, a full engine replacement (£5,500–£9,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+                "text": "Timing chain tensioner failure is repairable without replacing the engine - if caught early. A preventative chain and tensioner replacement costs £1,200-£2,500. If the chain skips and valves meet pistons, a full engine replacement (£5,500-£9,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
               }
             }
           ]
@@ -203,7 +203,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover Sport SVR • 2014–2022 · 2024–present • AJ133 5.0 SC V8 / 4.4TT V8",
+    "tagPill": "Land Rover Range Rover Sport SVR • 2014-2022 · 2024-present • AJ133 5.0 SC V8 / 4.4TT V8",
     "h1": "Land Rover Range Rover Sport SVR Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Range Rover Sport SVR specialists. Compare reconditioned, rebuilt and used AJ133 5.0 supercharged V8 engines - supply & fit available nationwide for JLR's flagship performance SUV.",
     "trustBadges": [
@@ -212,7 +212,7 @@
       "🚚 Nationwide Delivery",
       "👥 12 Specialists"
     ],
-    "priceAnchor": "Range Rover Sport SVR Engines - from £3,500 to £12,000 · Engine codes: AJ133 (2014–2022), 4.4TT V8 (2024–present)",
+    "priceAnchor": "Range Rover Sport SVR Engines - from £3,500 to £12,000 · Engine codes: AJ133 (2014-2022), 4.4TT V8 (2024-present)",
     "registrationInput": {
       "flag": "🇬🇧 GB",
       "placeholder": "Enter your reg - e.g. AB12 CDE",
@@ -236,26 +236,26 @@
     "rows": [
       {
         "generation": "Range Rover Sport L494",
-        "years": "2014–2017",
+        "years": "2014-2017",
         "engineCode": "AJ133 5.0 SC V8 (550PS)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,500–£9,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,500-£9,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "JLR's 5.0 SC V8 - epic soundtrack and performance, but coolant pipes, timing chains and oil consumption demand vigilance"
       },
       {
         "generation": "Range Rover Sport L494",
-        "years": "2017–2022",
+        "years": "2017-2022",
         "engineCode": "AJ133 5.0 SC V8 (575PS)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,500–£9,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,500-£9,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Revised 575PS version - same fundamental strengths and weaknesses as earlier cars"
       },
       {
         "generation": "Range Rover Sport L461",
-        "years": "2024–present",
+        "years": "2024-present",
         "engineCode": "4.4TT V8 (BMW-derived, 635PS)",
         "reliability": "★★★★☆ [PROVISIONAL - see Data Note]",
-        "reconCost": "£7,000–£12,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£7,000-£12,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "New-generation twin-turbo V8 - BMW-sourced, much newer, reliability profile still emerging"
       }
     ],
@@ -274,35 +274,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£4,500–£7,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£4,500-£7,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor required"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£5,500–£9,500",
-        "fittedIndie": "£6,800–£11,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,500-£9,500",
+        "fittedIndie": "£6,800-£11,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance for the 5.0 SC V8"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£7,500–£12,000",
-        "fittedIndie": "£9,000–£13,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£7,500-£12,000",
+        "fittedIndie": "£9,000-£13,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; full factory-spec refresh with upgraded tensioners"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£11,000–£16,000",
-        "fittedIndie": "£12,500–£18,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£11,000-£16,000",
+        "fittedIndie": "£12,500-£18,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the L494 SVR AJ133 era (2014–2022). The new L461 SVR's 4.4TT V8 is expected to command higher prices given its newer age and BMW sourcing - see the Era Map above for generation-specific context.",
-    "labourEstimate": "Fitting an SVR engine typically takes 14–20 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The supercharger and V8 layout add complexity. [PLACEHOLDER - confirm vs cost sheet]",
+    "figuresNote": "Figures above reflect the L494 SVR AJ133 era (2014-2022). The new L461 SVR's 4.4TT V8 is expected to command higher prices given its newer age and BMW sourcing - see the Era Map above for generation-specific context.",
+    "labourEstimate": "Fitting an SVR engine typically takes 14-20 hours at £75-£110/hr (independent) or £130-£180/hr (London/SE dealer). The supercharger and V8 layout add complexity. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare Range Rover Sport SVR engine prices from UK specialists",
       "href": "#"
@@ -313,10 +313,10 @@
       {
         "id": 1,
         "title": "Timing Chain Tensioner Failure (AJ133)",
-        "symptoms": "Rattling noise on cold start lasting 1–5 seconds, engine warning light, loss of power, metallic noises from the front of the engine.",
-        "typicalMileage": "60,000–95,000 miles",
-        "repairCost": "£1,200–£2,500 (preventative chain and tensioner replacement)",
-        "replacementCost": "£5,500–£9,500 (if chain skips and valves meet pistons)",
+        "symptoms": "Rattling noise on cold start lasting 1-5 seconds, engine warning light, loss of power, metallic noises from the front of the engine.",
+        "typicalMileage": "60,000-95,000 miles",
+        "repairCost": "£1,200-£2,500 (preventative chain and tensioner replacement)",
+        "replacementCost": "£5,500-£9,500 (if chain skips and valves meet pistons)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -333,7 +333,7 @@
         "title": "Coolant Pipe Failure (AJ133)",
         "symptoms": "Sudden coolant loss, steam from bonnet, overheating warning, sweet smell from engine bay, low coolant warning with no visible external leak.",
         "typicalMileage": "75,000+ miles",
-        "repairCost": "£500–£1,200 (replacement with updated aluminium pipes)",
+        "repairCost": "£500-£1,200 (replacement with updated aluminium pipes)",
         "replacementCost": "N/A - repair only (unless overheating leads to head gasket or engine damage)",
         "urgency": {
           "icon": "🔴",
@@ -350,15 +350,15 @@
         "id": 3,
         "title": "Oil Consumption & Starvation (AJ133)",
         "symptoms": "Low oil warning light, needing to top up oil frequently (1L per 1,000 miles or more), ticking noise from engine, eventual knocking from bottom end.",
-        "typicalMileage": "40,000–100,000 miles",
-        "repairCost": "£150–£300 (regular oil top-ups and monitoring) - prevention is key",
-        "replacementCost": "£5,500–£9,500 (if oil starvation leads to spun bearings and bottom-end failure)",
+        "typicalMileage": "40,000-100,000 miles",
+        "repairCost": "£150-£300 (regular oil top-ups and monitoring) - prevention is key",
+        "replacementCost": "£5,500-£9,500 (if oil starvation leads to spun bearings and bottom-end failure)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if oil consumption is excessive"
         },
-        "recommendation": "Many AJ133 engines burn 1L of oil per 1,000 miles - not inherently fatal, but if ignored, low oil leads to spun rod bearings and total bottom-end failure. Land Rover issued TSB LTB00485 (2015) acknowledging \"excessive oil consumption under spirited driving conditions\" but offered no free fix. Check your oil level weekly - this is not an engine you can neglect. Use the correct grade of fully synthetic oil and consider reducing oil change intervals to 6,000–8,000 miles.",
+        "recommendation": "Many AJ133 engines burn 1L of oil per 1,000 miles - not inherently fatal, but if ignored, low oil leads to spun rod bearings and total bottom-end failure. Land Rover issued TSB LTB00485 (2015) acknowledging \"excessive oil consumption under spirited driving conditions\" but offered no free fix. Check your oil level weekly - this is not an engine you can neglect. Use the correct grade of fully synthetic oil and consider reducing oil change intervals to 6,000-8,000 miles.",
         "failureLink": {
           "label": "",
           "href": "/failures/oil-starvation/"
@@ -368,9 +368,9 @@
         "id": 4,
         "title": "Supercharger Seal Leaks (AJ133)",
         "symptoms": "Oil leak from the front of the supercharger, belt contamination, squealing from auxiliary belt, loss of supercharger efficiency.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£800–£2,000 (supercharger seal replacement or nose rebuild)",
-        "replacementCost": "£2,000–£4,000 (if supercharger seizes)",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£800-£2,000 (supercharger seal replacement or nose rebuild)",
+        "replacementCost": "£2,000-£4,000 (if supercharger seizes)",
         "urgency": {
           "icon": "🟡",
           "label": "Monitor",
@@ -406,13 +406,13 @@
         {
           "problem": "Timing chain tensioner wear (early)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,200–£2,500",
+          "typicalCost": "£1,200-£2,500",
           "whenItMakesSense": "Preventative - far cheaper than catastrophic failure"
         },
         {
           "problem": "Coolant pipe failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Replace with aluminium pipes for permanent fix"
         },
         {
@@ -424,7 +424,7 @@
         {
           "problem": "Supercharger seal leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,000",
+          "typicalCost": "£800-£2,000",
           "whenItMakesSense": "Nose seal rebuild is cost-effective"
         },
         {
@@ -438,7 +438,7 @@
     "buyingChecks": {
       "title": "Buying This Range Rover Sport SVR? Check These First",
       "buyIf": [
-        "* Full service history with oil changes at 6,000–8,000 mile intervals (not JLR's extended schedule)",
+        "* Full service history with oil changes at 6,000-8,000 mile intervals (not JLR's extended schedule)",
         "* Aluminium coolant pipes fitted (or proof of recent plastic pipe replacement)",
         "* No cold-start rattle - timing chain tensioners should be healthy",
         "* Supercharger functioning correctly with no oil leaks or belt squeal"
@@ -459,8 +459,8 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Land Rover Range Rover Sport SVR (or before you commit to an engine replacement), check these:",
     "items": [
-      "* Cold Start - Listen for rattle lasting more than 1–2 seconds (timing chain tensioner warning)",
-      "* Service History - Oil changes every 6,000–8,000 miles are essential for this high-performance V8",
+      "* Cold Start - Listen for rattle lasting more than 1-2 seconds (timing chain tensioner warning)",
+      "* Service History - Oil changes every 6,000-8,000 miles are essential for this high-performance V8",
       "* Coolant Level - Check cold and hot; any loss indicates potential coolant pipe issues",
       "* Oil Level - Check dipstick; excessive consumption indicates potential oil starvation risk",
       "* Supercharger - Any oil leaks from the nose seal or belt squeal?",
@@ -480,24 +480,24 @@
     "rows": [
       {
         "engineCode": "AJ133 (5.0 SC V8, 550PS)",
-        "years": "2014–2017",
-        "power": "550 PS (405 kW) @ 6,000–6,500 rpm · 680 Nm @ 2,500–5,500 rpm",
+        "years": "2014-2017",
+        "power": "550 PS (405 kW) @ 6,000-6,500 rpm · 680 Nm @ 2,500-5,500 rpm",
         "enquiries": "560 (JLR-wide AJ126/AJ133 enquiries) [EM-VERIFIED]",
-        "avgReconCost": "£5,500–£9,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£5,500-£9,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "AJ133 (5.0 SC V8, 575PS)",
-        "years": "2017–2022",
-        "power": "575 PS (423 kW) @ 6,000–6,500 rpm · 700 Nm @ 2,500–5,500 rpm",
+        "years": "2017-2022",
+        "power": "575 PS (423 kW) @ 6,000-6,500 rpm · 700 Nm @ 2,500-5,500 rpm",
         "enquiries": "560 (JLR-wide AJ126/AJ133 enquiries) [EM-VERIFIED]",
-        "avgReconCost": "£5,500–£9,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£5,500-£9,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "4.4TT V8 (BMW-derived)",
-        "years": "2024–present",
+        "years": "2024-present",
         "power": "635 PS (467 kW) · 750 Nm",
         "enquiries": "- (pattern data; new-generation engine) [PATTERN DATA]",
-        "avgReconCost": "£7,000–£12,000 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£7,000-£12,000 [PLACEHOLDER - confirm vs cost sheet]"
       }
     ],
     "matchNote": "This table's rows exactly match Section 1B's Era Map - the same engine codes, years, and generation coverage.",
@@ -539,7 +539,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "75,000–95,000 miles"
+        "value": "75,000-95,000 miles"
       },
       {
         "label": "Average Replacement Cost",
@@ -564,7 +564,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Range Rover Sport SVR engine replacement cost in the UK?",
-        "answer": "A reconditioned Range Rover Sport SVR (AJ133 5.0 SC V8) engine typically costs £5,500–£9,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned Range Rover Sport SVR (AJ133 5.0 SC V8) engine typically costs £5,500-£9,500 supply only. Fitting adds £1,000-£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -579,17 +579,17 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Range Rover Sport SVR engine, or should I scrap the car?",
-        "answer": "Against a well-maintained SVR (values £35,000–£70,000+ depending on year and mileage), a £6,000–£8,000 reconditioned engine is 10–25% of the vehicle's value - worth it. The Land Rover scrap threshold of 60% means replacement is almost always viable on an SVR, given the model's strong enthusiast following and residual values."
+        "answer": "Against a well-maintained SVR (values £35,000-£70,000+ depending on year and mileage), a £6,000-£8,000 reconditioned engine is 10-25% of the vehicle's value - worth it. The Land Rover scrap threshold of 60% means replacement is almost always viable on an SVR, given the model's strong enthusiast following and residual values."
       },
       {
         "id": 5,
         "question": "How do I find my Range Rover Sport SVR engine code?",
-        "answer": "The engine code AJ133 is listed on the VIN plate and vehicle documentation. The SVR was offered on the L494 from 2014–2022 (550PS 2014–2017, 575PS 2017–2022) and returned on the L461 in 2024 with a BMW-sourced 4.4TT V8. If your L494 is an SVR, it's the AJ133. Check your V5C or VIN plate for confirmation."
+        "answer": "The engine code AJ133 is listed on the VIN plate and vehicle documentation. The SVR was offered on the L494 from 2014-2022 (550PS 2014-2017, 575PS 2017-2022) and returned on the L461 in 2024 with a BMW-sourced 4.4TT V8. If your L494 is an SVR, it's the AJ133. Check your V5C or VIN plate for confirmation."
       },
       {
         "id": 6,
         "question": "Can I repair the timing chain, or does it require engine replacement?",
-        "answer": "Timing chain tensioner failure is repairable without replacing the engine - if caught early. A preventative chain and tensioner replacement costs £1,200–£2,500. If the chain skips and valves meet pistons, a full engine replacement (£5,500–£9,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+        "answer": "Timing chain tensioner failure is repairable without replacing the engine - if caught early. A preventative chain and tensioner replacement costs £1,200-£2,500. If the chain skips and valves meet pistons, a full engine replacement (£5,500-£9,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

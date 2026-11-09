@@ -8,7 +8,7 @@ import { generationCtaCopy, modelMeta } from "@/lib/ctaCopy";
 import { engineDbCar, genCode, genName } from "./genKit";
 
 // Generation page section 7 - engine replacement costs, built to the approved Defender L316
-// reference: the eyebrow, "<code> Engine Replacement Costs — / By Engine and Condition" with the last
+// reference: the eyebrow, "<code> Engine Replacement Costs - / By Engine and Condition" with the last
 // word in green and a short intro; on the right the hillside with the generation's car standing on
 // the table's top edge; the six-column table (icons in the head - variant, engine code, used,
 // reconditioned, rebuilt, labour hours); the data note when the JSON has one; and the five-point
@@ -143,14 +143,14 @@ export default function ReplacementCosts({ data, page = null, model = "" }) {
               {lead}
               {accent && (
                 <>
-                  {"\u00a0"}—<br />
+                  {"\u00a0"}-<br />
                   {words.length > 0 && `${words.join(" ")} `}
                   <span className="text-lr-ink dark:text-lr-green">{last}</span>
                 </>
               )}
             </h2>
             <p className="mt-3 max-w-[34em] text-[15px] leading-[1.6] text-lr-body md:mt-4 md:text-[16px] xl:text-[17px]">
-              Real UK pricing for used, reconditioned and rebuilt engines —<br className="hidden lg:block" /> supply only, with labour guidance.
+              Real UK pricing for used, reconditioned and rebuilt engines -<br className="hidden lg:block" /> supply only, with labour guidance.
             </p>
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function ReplacementCosts({ data, page = null, model = "" }) {
                 {[2, 3, 4].map((k) => (
                   <div key={k} className="min-w-0">
                     <dt className="text-[12px] leading-snug text-lr-muted">{columns[k].replace(/\s*\(Supply\)/i, "")}</dt>
-                    <dd className="mt-0.5 whitespace-nowrap text-[13px] font-semibold leading-snug tracking-[-0.01em] text-lr-head min-[400px]:text-[14px]" dangerouslySetInnerHTML={{ __html: html(r[KEYS[k]]) || "—" }} />
+                    <dd className="mt-0.5 whitespace-nowrap text-[13px] font-semibold leading-snug tracking-[-0.01em] text-lr-head min-[400px]:text-[14px]" dangerouslySetInnerHTML={{ __html: html(r[KEYS[k]]) || "-" }} />
                   </div>
                 ))}
               </dl>
@@ -221,7 +221,7 @@ export default function ReplacementCosts({ data, page = null, model = "" }) {
                       className={`border-r border-lr-line px-4 py-3.5 align-middle leading-snug last:border-r-0 min-[1440px]:px-6 ${
                         i === 0 ? "text-[17px] font-semibold text-lr-head min-[1440px]:text-[18px]" : i === 1 ? "text-[15px] text-lr-body min-[1440px]:text-[16px]" : "text-center text-[16px] text-lr-head min-[1440px]:text-[17px]"
                       } ${LINKS}`}
-                      dangerouslySetInnerHTML={{ __html: html(r[k]) || "—" }}
+                      dangerouslySetInnerHTML={{ __html: html(r[k]) || "-" }}
                     />
                   ))}
                 </tr>

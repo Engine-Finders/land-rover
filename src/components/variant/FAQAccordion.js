@@ -8,7 +8,7 @@ import { CONTAINER, H2, H6, ICON_LG } from "@/lib/typeScale";
 
 const SERIF = "font-[family-name:var(--font-serif-display)]";
 const SANS = "font-[family-name:var(--font-instrument-sans)]";
-const dash = (t = "") => String(t).replace(/ - /g, " — ");
+const dash = (t = "") => String(t).replace(/ - /g, " - ");
 
 function FaqItem({ item, n }) {
   return (

@@ -128,7 +128,7 @@ function WideCard({ icon, label, value, note, media, textClass = "", headClass =
 const TRUST = [
   { icon: "genuine-failure-data", title: "EM-Verified Data", text: "Verified using real UK enquiries and workshop data." },
   { icon: "market-insight", title: "Real-World Insights", text: "Based on UK owner and specialist patterns." },
-  { icon: "users", title: "Trusted by Enthusiasts", text: "Part of Engine Finders — trusted Land Rover specialists." },
+  { icon: "users", title: "Trusted by Enthusiasts", text: "Part of Engine Finders - trusted Land Rover specialists." },
   { icon: "transparent-data", title: "Quality You Can Trust", text: "Every engine is checked, inspected and quality assured." },
 ];
 

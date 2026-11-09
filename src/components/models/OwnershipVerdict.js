@@ -3,7 +3,7 @@ import { BODY_SM, CONTAINER, ICON_SM } from "@/lib/typeScale";
 import { Eyebrow, prose, Stars as KitStars, H2_MODEL, INTRO } from "@/components/models/modelKit";
 
 // Model page section 2, built to the approved Velar reference: on the left the eyebrow, the serif
-// "Velar — / The Ownership Verdict" headline, the model's newest car standing in the Highland
+// "Velar - / The Ownership Verdict" headline, the model's newest car standing in the Highland
 // backdrop (misty by day, a storm at night) and the one-line verdict card over its foot; on the right
 // the verdict table (Verdict Metric | Our Call) with a brand icon per metric, star ratings drawn as
 // stars, the status emoji as icons and the [EM-…] data tags in green. Below xl (1280px) it stacks:
@@ -55,7 +55,7 @@ function parseCall(raw = "") {
     const full = (s[1].match(/★/g) || []).length;
     const half = s[1].includes("½") ? 1 : 0;
     stars = { full, half, empty: Math.max(0, 5 - full - half) };
-    rest = rest.slice(s[0].length).replace(/^-\s+/, "— ");
+    rest = rest.slice(s[0].length).replace(/^-\s+/, "- ");
   }
   let status = "";
   let emoji = "";
@@ -256,8 +256,8 @@ export default function OwnershipVerdict({ data, slug = "", hero }) {
   if (!data) return null;
   const stats = deriveStats(data, hero);
 
-  const h2 = (data.h2 || "").replace(/\s+-\s+/, " — ");
-  const dash = h2.indexOf(" — ");
+  const h2 = (data.h2 || "").replace(/\s+-\s+/, " - ");
+  const dash = h2.indexOf(" - ");
   const lead = dash === -1 ? h2 : h2.slice(0, dash);
   const accent = dash === -1 ? "" : h2.slice(dash + 3);
   const car = CARS.has(slug) ? slug : "";
@@ -275,12 +275,12 @@ export default function OwnershipVerdict({ data, slug = "", hero }) {
       <div className={`relative ${CONTAINER} grid gap-5 py-6 md:gap-7 md:py-7 xl:grid-cols-[minmax(0,0.76fr)_minmax(0,1fr)] xl:items-start xl:gap-x-6 xl:gap-y-6 xl:py-8`}>
         <div className="flex min-w-0 flex-col xl:self-stretch">
           <Eyebrow>Ownership Verdict</Eyebrow>
-          {/* 44-48px beside the table so "… — / The Ownership Verdict" holds two lines, as in the reference */}
+          {/* 44-48px beside the table so "… - / The Ownership Verdict" holds two lines, as in the reference */}
           <h2 className={`${H2_MODEL} mt-3 text-lr-head md:mt-4`}>
             {lead}
             {accent && (
               <>
-                {" "}—<br />
+                {" "}-<br />
                 <span className="text-lr-ink dark:text-lr-green">{accent}</span>
               </>
             )}

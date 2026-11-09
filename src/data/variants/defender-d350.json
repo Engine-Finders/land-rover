@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Defender D350 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned D350 engine (AJ20D6) typically costs £3,800–£6,500 supply only. Fitting adds £1,000–£1,700. As this is a relatively new engine, used and reconditioned supply is still developing – prices are indicative. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned D350 engine (AJ20D6) typically costs £3,800-£6,500 supply only. Fitting adds £1,000-£1,700. As this is a relatively new engine, used and reconditioned supply is still developing - prices are indicative. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -92,7 +92,7 @@
               "name": "Is the Land Rover Defender D350 engine reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The AJ20D6 is JLR's most powerful diesel, introduced in May 2024. Early data is limited, but it builds on the Ingenium 3.0L diesel platform. A recall has been issued for the FEAD belt idler pulley on certain AJ20-D6 engines – check your VIN. When properly maintained, early reports suggest it's a robust, impressive engine."
+                "text": "The AJ20D6 is JLR's most powerful diesel, introduced in May 2024. Early data is limited, but it builds on the Ingenium 3.0L diesel platform. A recall has been issued for the FEAD belt idler pulley on certain AJ20-D6 engines - check your VIN. When properly maintained, early reports suggest it's a robust, impressive engine."
               }
             },
             {
@@ -100,7 +100,7 @@
               "name": "What are the common problems with the Defender D350?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The main issue identified so far is a recall for the Front-End Auxiliary Drive (FEAD) belt idler pulley, which may over-rotate and damage the oil pressure sensor. Other potential issues shared with the Ingenium family include oil filter housing cracking and water pump pulley belt damage – both subject to prior recalls."
+                "text": "The main issue identified so far is a recall for the Front-End Auxiliary Drive (FEAD) belt idler pulley, which may over-rotate and damage the oil pressure sensor. Other potential issues shared with the Ingenium family include oil filter housing cracking and water pump pulley belt damage - both subject to prior recalls."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Defender D350 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Given the Defender D350's high value (typically £60,000–£100,000+), a £4,500–£6,500 reconditioned engine is a small fraction of the vehicle's worth. Replacement is almost always financially viable. Even at the higher end (£7,500), it rarely exceeds our 60% Land Rover threshold against current market values."
+                "text": "Given the Defender D350's high value (typically £60,000-£100,000+), a £4,500-£6,500 reconditioned engine is a small fraction of the vehicle's worth. Replacement is almost always financially viable. Even at the higher end (£7,500), it rarely exceeds our 60% Land Rover threshold against current market values."
               }
             },
             {
@@ -116,7 +116,7 @@
               "name": "How do I find my Defender's engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The D350 uses the AJ20D6 (also known as DT306) 3.0-litre Ingenium diesel. This is stamped on the engine block and listed on your V5C. The D350 badge itself confirms the engine – it's the only 350PS diesel offered in the L663 Defender."
+                "text": "The D350 uses the AJ20D6 (also known as DT306) 3.0-litre Ingenium diesel. This is stamped on the engine block and listed on your V5C. The D350 badge itself confirms the engine - it's the only 350PS diesel offered in the L663 Defender."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair a D350 engine issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most issues identified so far – the FEAD pulley recall, oil filter housing, and water pump belt – are repairs, not full replacements. If caught early, these are straightforward fixes. Major internal failure would require replacement, but there's no widespread evidence of this yet given the engine's recent introduction."
+                "text": "Most issues identified so far - the FEAD pulley recall, oil filter housing, and water pump belt - are repairs, not full replacements. If caught early, these are straightforward fixes. Major internal failure would require replacement, but there's no widespread evidence of this yet given the engine's recent introduction."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Defender D350 • 2024–present • 3.0L I6 Twin-Turbo Diesel",
+    "tagPill": "Land Rover Defender D350 • 2024-present • 3.0L I6 Twin-Turbo Diesel",
     "h1": "Land Rover Defender D350 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover specialists. Compare reconditioned and rebuilt 3.0-litre Ingenium diesel engines for the D350 - the most powerful diesel Defender ever built, with 350PS and 700Nm of torque. Supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "L663",
-        "years": "2024–present",
+        "years": "2024-present",
         "engineCode": "AJ20D6 (DT306)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£6,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,500-£6,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Most powerful Defender diesel - 350PS, 700Nm, MHEV"
       }
     ],
@@ -240,35 +240,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,500–£4,500",
-        "fittedIndie": "£3,500–£5,800",
-        "warranty": "1–6 months",
+        "supplyOnly": "£2,500-£4,500",
+        "fittedIndie": "£3,500-£5,800",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage salvage units"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,800–£6,500",
-        "fittedIndie": "£5,200–£8,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,800-£6,500",
+        "fittedIndie": "£5,200-£8,200",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£5,500–£7,500",
-        "fittedIndie": "£6,900–£9,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,500-£7,500",
+        "fittedIndie": "£6,900-£9,200",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; maximum reliability"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£10,000–£14,500",
-        "warranty": "24–36 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£10,000-£14,500",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs; warranty claims; full provenance"
       }
     ],
     "figuresNote": "Figures above reflect the current L663 D350 generation. As a relatively new engine, supply of used and reconditioned units is still developing - prices are indicative.",
-    "labourEstimate": "Fitting a Defender D350 engine typically takes 12–16 hours at £65–£95/hr (independent Land Rover specialist).",
+    "labourEstimate": "Fitting a Defender D350 engine typically takes 12-16 hours at £65-£95/hr (independent Land Rover specialist).",
     "cta": {
       "label": "→ Compare Defender D350 engine prices from UK specialists",
       "href": "#"
@@ -280,8 +280,8 @@
         "id": 1,
         "title": "FEAD Belt Idler Pulley Issue (AJ20D6 Recall)",
         "symptoms": "Unusual noise from front of engine, potential oil leak, warning lights - may affect engine oil pressure and temperature sensors.",
-        "typicalMileage": "Any mileage - recall affects 2024–2026 model year vehicles.",
-        "repairCost": "£0 (if recalled - dealer repair free) / £300–£600 [PLACEHOLDER] (if out of warranty).",
+        "typicalMileage": "Any mileage - recall affects 2024-2026 model year vehicles.",
+        "repairCost": "£0 (if recalled - dealer repair free) / £300-£600 [PLACEHOLDER] (if out of warranty).",
         "replacementCost": "N/A - repair only (pulley replacement, not full engine replacement).",
         "urgency": {
           "icon": "🟠",
@@ -298,15 +298,15 @@
         "id": 2,
         "title": "Oil Filter Housing Cracking (Diesel Ingenium Family)",
         "symptoms": "Oil leak, burning oil smell, oil warning light, visible oil pooling under the vehicle.",
-        "typicalMileage": "20,000–60,000 miles (varies).",
-        "repairCost": "£400–£1,200 [PLACEHOLDER] (oil filter housing replacement).",
+        "typicalMileage": "20,000-60,000 miles (varies).",
+        "repairCost": "£400-£1,200 [PLACEHOLDER] (oil filter housing replacement).",
         "replacementCost": "N/A - repair only (if caught early; ignored oil loss can lead to engine damage).",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if oil leak is detected."
         },
-        "recommendation": "On six-cylinder diesel (D200, D250, D300, D350) vehicles, an incorrect specification of plastic was used in the oil filter housing. This housing may crack over time, allowing oil under pressure to leak and potentially contact hot engine components - which could result in a fire. A recall affected 599 vehicles across 2020–2024 models. Ensure your vehicle's recall status is checked; this is a straightforward but critical fix.",
+        "recommendation": "On six-cylinder diesel (D200, D250, D300, D350) vehicles, an incorrect specification of plastic was used in the oil filter housing. This housing may crack over time, allowing oil under pressure to leak and potentially contact hot engine components - which could result in a fire. A recall affected 599 vehicles across 2020-2024 models. Ensure your vehicle's recall status is checked; this is a straightforward but critical fix.",
         "failureLink": {
           "label": "",
           "href": "/failures/oil-filter-housing-crack/"
@@ -316,15 +316,15 @@
         "id": 3,
         "title": "Water Pump Pulley Drive Belt Damage (Ingenium Family)",
         "symptoms": "Squealing from front of engine, coolant loss, overheating, warning lights.",
-        "typicalMileage": "20,000–60,000 miles.",
-        "repairCost": "£300–£800 [PLACEHOLDER] (belt and pulley replacement).",
+        "typicalMileage": "20,000-60,000 miles.",
+        "repairCost": "£300-£800 [PLACEHOLDER] (belt and pulley replacement).",
         "replacementCost": "N/A - repair only (belt replacement, not full engine replacement).",
         "urgency": {
           "icon": "🟡",
           "label": "Monitor",
           "text": "book inspection soon if you hear belt noise."
         },
-        "recommendation": "A recall was issued for the water pump pulley drive belt, which may become damaged and detach. This affected 18,151 vehicles across 2020–2023 models. While the D350 is a newer engine and may have revised components, it shares the same Ingenium architecture. If you hear squealing from the front of the engine or notice coolant loss, have the belt inspected promptly.",
+        "recommendation": "A recall was issued for the water pump pulley drive belt, which may become damaged and detach. This affected 18,151 vehicles across 2020-2023 models. While the D350 is a newer engine and may have revised components, it shares the same Ingenium architecture. If you hear squealing from the front of the engine or notice coolant loss, have the belt inspected promptly.",
         "failureLink": {
           "label": "",
           "href": "/failures/water-pump-belt/"
@@ -354,31 +354,31 @@
         {
           "problem": "FEAD belt idler pulley issue",
           "repairable": "✅ Yes (recall)",
-          "typicalCost": "£0–£600 [PLACEHOLDER]",
+          "typicalCost": "£0-£600 [PLACEHOLDER]",
           "whenItMakesSense": "Recall repair is free; out-of-warranty repair still cheaper than engine replacement"
         },
         {
           "problem": "Oil filter housing crack",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200 [PLACEHOLDER]",
+          "typicalCost": "£400-£1,200 [PLACEHOLDER]",
           "whenItMakesSense": "Straightforward fix - always worth doing"
         },
         {
           "problem": "Water pump pulley/belt damage",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800 [PLACEHOLDER]",
+          "typicalCost": "£300-£800 [PLACEHOLDER]",
           "whenItMakesSense": "Preventive maintenance - cheaper than engine damage from overheating"
         },
         {
           "problem": "Major internal failure (crank, bearings)",
           "repairable": "❌ Usually No",
-          "typicalCost": "£3,500–£7,500+",
+          "typicalCost": "£3,500-£7,500+",
           "whenItMakesSense": "Full engine replacement often more cost-effective"
         },
         {
           "problem": "Severe turbocharger failure",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£1,500–£3,000 or replacement",
+          "typicalCost": "£1,500-£3,000 or replacement",
           "whenItMakesSense": "Viable on higher-value examples; assess overall vehicle condition"
         }
       ]
@@ -428,10 +428,10 @@
     "rows": [
       {
         "engineCode": "AJ20D6 (DT306)",
-        "years": "2024–present",
+        "years": "2024-present",
         "power": "350PS (258kW) / 700Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,800–£6,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,800-£6,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -469,11 +469,11 @@
     "items": [
       {
         "label": "Most Common Failure",
-        "value": "FEAD belt idler pulley recall - affects 2024–2026 AJ20-D6 engines"
+        "value": "FEAD belt idler pulley recall - affects 2024-2026 AJ20-D6 engines"
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "15,000–30,000 miles (limited data - new engine) [PATTERN DATA]"
+        "value": "15,000-30,000 miles (limited data - new engine) [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
@@ -498,7 +498,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Defender D350 engine replacement cost in the UK?",
-        "answer": "A reconditioned D350 engine (AJ20D6) typically costs £3,800–£6,500 supply only. Fitting adds £1,000–£1,700. As this is a relatively new engine, used and reconditioned supply is still developing - prices are indicative. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned D350 engine (AJ20D6) typically costs £3,800-£6,500 supply only. Fitting adds £1,000-£1,700. As this is a relatively new engine, used and reconditioned supply is still developing - prices are indicative. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -513,7 +513,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Defender D350 engine, or should I scrap the car?",
-        "answer": "Given the Defender D350's high value (typically £60,000–£100,000+), a £4,500–£6,500 reconditioned engine is a small fraction of the vehicle's worth. Replacement is almost always financially viable. Even at the higher end (£7,500), it rarely exceeds our 60% Land Rover threshold against current market values."
+        "answer": "Given the Defender D350's high value (typically £60,000-£100,000+), a £4,500-£6,500 reconditioned engine is a small fraction of the vehicle's worth. Replacement is almost always financially viable. Even at the higher end (£7,500), it rarely exceeds our 60% Land Rover threshold against current market values."
       },
       {
         "id": 5,

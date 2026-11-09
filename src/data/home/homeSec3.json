@@ -72,38 +72,38 @@
     "rows": [
       {
         "failure": "Ingenium Timing Chain",
-        "reconditioned": "£3,500–£5,800",
-        "rebuilt": "£2,800–£4,500",
-        "used": "£2,000–£3,500",
-        "dealer": "£6,000–£10,000"
+        "reconditioned": "£3,500-£5,800",
+        "rebuilt": "£2,800-£4,500",
+        "used": "£2,000-£3,500",
+        "dealer": "£6,000-£10,000"
       },
       {
         "failure": "TDV6/SDV6 Crankshaft",
-        "reconditioned": "£6,500–£9,500",
-        "rebuilt": "£5,500–£7,000",
-        "used": "£3,500–£5,500",
-        "dealer": "£12,000–£18,000"
+        "reconditioned": "£6,500-£9,500",
+        "rebuilt": "£5,500-£7,000",
+        "used": "£3,500-£5,500",
+        "dealer": "£12,000-£18,000"
       },
       {
         "failure": "TDV8 Timing Chain",
-        "reconditioned": "£5,500–£8,000",
-        "rebuilt": "£4,500–£6,500",
-        "used": "£3,000–£4,800",
-        "dealer": "£10,000–£15,000"
+        "reconditioned": "£5,500-£8,000",
+        "rebuilt": "£4,500-£6,500",
+        "used": "£3,000-£4,800",
+        "dealer": "£10,000-£15,000"
       },
       {
         "failure": "4.4 V8 Oil Cooler",
-        "reconditioned": "£6,000–£9,000",
-        "rebuilt": "£5,000–£7,000",
-        "used": "£3,500–£5,500",
-        "dealer": "£12,000–£18,000"
+        "reconditioned": "£6,000-£9,000",
+        "rebuilt": "£5,000-£7,000",
+        "used": "£3,500-£5,500",
+        "dealer": "£12,000-£18,000"
       },
       {
         "failure": "Duratorq Injector Seal",
-        "reconditioned": "£2,000–£3,500",
-        "rebuilt": "£1,500–£2,800",
-        "used": "£1,000–£2,000",
-        "dealer": "£4,000–£7,000"
+        "reconditioned": "£2,000-£3,500",
+        "rebuilt": "£1,500-£2,800",
+        "used": "£1,000-£2,000",
+        "dealer": "£4,000-£7,000"
       }
     ]
   },
@@ -134,8 +134,8 @@
     "valueSteps": [4000, 8000, 12000, 18000, 25000, 35000],
     "ageOptions": [
       { "id": "under5", "label": "Under 5 years" },
-      { "id": "5to10", "label": "5–10 years" },
-      { "id": "10to15", "label": "10–15 years" },
+      { "id": "5to10", "label": "5-10 years" },
+      { "id": "10to15", "label": "10-15 years" },
       { "id": "over15", "label": "Over 15 years" }
     ],
     "symptoms": [

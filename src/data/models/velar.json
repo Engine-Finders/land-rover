@@ -45,13 +45,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Range Rover Velar L560 Pre-Facelift (2017–2020)",
+              "name": "Range Rover Velar L560 Pre-Facelift (2017-2020)",
               "url": "https://landroverengine.uk/png/12.webp"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Range Rover Velar L560 Facelift (2021–present)",
+              "name": "Range Rover Velar L560 Facelift (2021-present)",
               "url": "https://landroverengine.uk/png/12.webp"
             }
           ]
@@ -118,7 +118,7 @@
               "name": "How much does a Velar engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Reconditioned units run £3,000–£9,500 supply only depending on engine [EM-QUOTE] - the volume 204DTD at £3,500–£5,800, either D300 at £6,500–£9,500. Fitting adds £650–£1,900. Use our calculator for a personalised figure."
+                "text": "Reconditioned units run £3,000-£9,500 supply only depending on engine [EM-QUOTE] - the volume 204DTD at £3,500-£5,800, either D300 at £6,500-£9,500. Fitting adds £650-£1,900. Use our calculator for a personalised figure."
               }
             },
             {
@@ -134,7 +134,7 @@
               "name": "Which Velar engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A 2017–2020 D300 (306DT V6) without documented oil-interval history - it carries the same crankshaft-bearing risk as its Discovery and Range Rover Sport siblings. A pre-2019 D180 without a chain inspection is the other caveat."
+                "text": "A 2017-2020 D300 (306DT V6) without documented oil-interval history - it carries the same crankshaft-bearing risk as its Discovery and Range Rover Sport siblings. A pre-2019 D180 without a chain inspection is the other caveat."
               }
             },
             {
@@ -142,7 +142,7 @@
               "name": "Is the Velar D300 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Which one? The 2021+ D300 (AJ20D6 straight-six) - yes, genuinely. The 2017–2020 D300 (306DT V6) - only with maintenance history, because of the bottom-end risk. Same badge, two engines."
+                "text": "Which one? The 2021+ D300 (AJ20D6 straight-six) - yes, genuinely. The 2017-2020 D300 (306DT V6) - only with maintenance history, because of the bottom-end risk. Same badge, two engines."
               }
             },
             {
@@ -236,7 +236,7 @@
     "canonical": "https://landroverengine.uk/velar"
   },
   "hero": {
-    "tagPill": "Velar • 2017–Present • 1 Generation (L560) • Ingenium, SDV6, PHEV",
+    "tagPill": "Velar • 2017-Present • 1 Generation (L560) • Ingenium, SDV6, PHEV",
     "h1": "Velar Engines - The Complete UK Guide",
     "subHeadline": "Every engine. Every known failure. Every replacement cost - including why \"D300\" means two different engines on this car. Backed by 275+ real UK Velar enquiries [EM-VERIFIED].",
     "trustStrip": [
@@ -272,7 +272,7 @@
       },
       {
         "metric": "Replacement Economics",
-        "ourCall": "✅ Usually Worth Replacing - £3,500–£9,500 recons [EM-QUOTE] against £18,000–£60,000 host values clear our 60% rule comfortably across the range"
+        "ourCall": "✅ Usually Worth Replacing - £3,500-£9,500 recons [EM-QUOTE] against £18,000-£60,000 host values clear our 60% rule comfortably across the range"
       },
       {
         "metric": "Reliability",
@@ -284,7 +284,7 @@
       },
       {
         "metric": "Highest-Risk Engine",
-        "ourCall": "2017–2020 D300 (306DT V6) - crankshaft bearing • pre-2019 <a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a> - timing chain"
+        "ourCall": "2017-2020 D300 (306DT V6) - crankshaft bearing • pre-2019 <a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a> - timing chain"
       },
       {
         "metric": "Best Used Buy",
@@ -292,7 +292,7 @@
       },
       {
         "metric": "The D300 Trap",
-        "ourCall": "\"D300\" = 306DT V6 (2017–2020, crank-bearing risk) OR AJ20D6 straight-six (2021+, clean record). Same badge, opposite stories - check the year before the price."
+        "ourCall": "\"D300\" = 306DT V6 (2017-2020, crank-bearing risk) OR AJ20D6 straight-six (2021+, clean record). Same badge, opposite stories - check the year before the price."
       },
       {
         "metric": "Average Engine Replacement",
@@ -315,11 +315,11 @@
     "rows": [
       {
         "metric": "Generations",
-        "value": "1 (L560, 2017–present) - major facelift 2021"
+        "value": "1 (L560, 2017-present) - major facelift 2021"
       },
       {
         "metric": "Years Produced",
-        "value": "2017–present"
+        "value": "2017-present"
       },
       {
         "metric": "Engine Codes Tracked",
@@ -343,11 +343,11 @@
       },
       {
         "metric": "Typical Replacement Cost",
-        "value": "£3,000–£9,500 reconditioned [EM-QUOTE]"
+        "value": "£3,000-£9,500 reconditioned [EM-QUOTE]"
       },
       {
         "metric": "Typical Host Value",
-        "value": "£18,000–£60,000"
+        "value": "£18,000-£60,000"
       },
       {
         "metric": "Overall Rating",
@@ -362,7 +362,7 @@
       {
         "title": "Range Rover Velar (L560)",
         "badge": "🔥 275 enquiries (2025) [EM-VERIFIED]",
-        "meta": "2017–present • 204DTD, 204PT, 306DT D300, AJ126 P380, AJ133 P550, AJ20D6, <a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>, P400e",
+        "meta": "2017-present • 204DTD, 204PT, 306DT D300, AJ126 P380, AJ133 P550, AJ20D6, <a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>, P400e",
         "rating": "⭐⭐⭐½",
         "verdict": "Buy on the 2021 facelift line and the engine, in that order. Post-2021 cars swap every caveated engine for a clean one - the rare facelift that changed the mechanicals more than the face.",
         "cta": {
@@ -427,7 +427,7 @@
           "model": "Lowest ownership risk",
           "engineCode": "P250 (204PT)",
           "power": "Anything post-2021",
-          "induction": "2017–2018 D180",
+          "induction": "2017-2018 D180",
           "years": "",
           "notes": ""
         }
@@ -458,12 +458,12 @@
         "family": "Ingenium",
         "fuel": "Diesel",
         "displacement": "2.0L",
-        "power": "180–240 bhp",
-        "years": "2017–2020",
+        "power": "180-240 bhp",
+        "years": "2017-2020",
         "model": "",
         "reliability": "★★★☆☆ (pre-2019) / ★★★★☆ (2019+)",
         "enquiries": "1,150 JLR-wide [EM-VERIFIED]",
-        "avgRebuildCost": "£3,500–£5,800 [EM-QUOTE]"
+        "avgRebuildCost": "£3,500-£5,800 [EM-QUOTE]"
       },
       {
         "engineCode": "306DT (D300 V6)",
@@ -471,23 +471,23 @@
         "fuel": "Diesel",
         "displacement": "3.0L",
         "power": "300 bhp",
-        "years": "2017–2020",
+        "years": "2017-2020",
         "model": "",
         "reliability": "★★☆☆☆",
         "enquiries": "120 Velar D300 cohort [EM-VERIFIED - spans both D300 engines; split at source]",
-        "avgRebuildCost": "£6,500–£9,500 [EM-QUOTE]"
+        "avgRebuildCost": "£6,500-£9,500 [EM-QUOTE]"
       },
       {
         "engineCode": "204PT",
         "family": "Ingenium",
         "fuel": "Petrol",
         "displacement": "2.0L",
-        "power": "250–300 bhp",
-        "years": "2017–present",
+        "power": "250-300 bhp",
+        "years": "2017-present",
         "model": "",
         "reliability": "★★★★☆",
         "enquiries": "480 JLR-wide [EM-VERIFIED]",
-        "avgRebuildCost": "£3,000–£5,000 [EM-QUOTE]"
+        "avgRebuildCost": "£3,000-£5,000 [EM-QUOTE]"
       },
       {
         "engineCode": "AJ126 (P380)",
@@ -495,11 +495,11 @@
         "fuel": "Petrol",
         "displacement": "3.0L",
         "power": "380 bhp",
-        "years": "2017–2020",
+        "years": "2017-2020",
         "model": "",
         "reliability": "★★★★☆",
         "enquiries": "- (pattern data)",
-        "avgRebuildCost": "£4,500–£7,000 [PLACEHOLDER - confirm vs Table A]"
+        "avgRebuildCost": "£4,500-£7,000 [PLACEHOLDER - confirm vs Table A]"
       },
       {
         "engineCode": "AJ133 (P550 SVAD)",
@@ -507,11 +507,11 @@
         "fuel": "Petrol",
         "displacement": "5.0L",
         "power": "550 bhp",
-        "years": "2019–2020",
+        "years": "2019-2020",
         "model": "",
         "reliability": "★★★½",
         "enquiries": "- (pattern data - rare)",
-        "avgRebuildCost": "£8,000–£12,000 [PLACEHOLDER]"
+        "avgRebuildCost": "£8,000-£12,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "AJ20D6 (D300 i6)",
@@ -519,11 +519,11 @@
         "fuel": "Diesel MHEV",
         "displacement": "3.0L",
         "power": "300 bhp",
-        "years": "2021–present",
+        "years": "2021-present",
         "model": "",
         "reliability": "★★★★☆",
         "enquiries": "- (within D300 cohort - split at source)",
-        "avgRebuildCost": "£6,500–£9,500 [EM-QUOTE]"
+        "avgRebuildCost": "£6,500-£9,500 [EM-QUOTE]"
       },
       {
         "engineCode": "AJ20P6 (P400)",
@@ -531,11 +531,11 @@
         "fuel": "Petrol MHEV",
         "displacement": "3.0L",
         "power": "400 bhp",
-        "years": "2021–present",
+        "years": "2021-present",
         "model": "",
         "reliability": "★★★★☆",
         "enquiries": "- (pattern data - young parc)",
-        "avgRebuildCost": "£6,000–£9,000 [PLACEHOLDER]"
+        "avgRebuildCost": "£6,000-£9,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "P400e (204PT + e-motor)",
@@ -543,11 +543,11 @@
         "fuel": "Petrol PHEV",
         "displacement": "2.0L",
         "power": "404 bhp (system)",
-        "years": "2021–present",
+        "years": "2021-present",
         "model": "",
         "reliability": "★★★★☆",
         "enquiries": "- (pattern data - young parc)",
-        "avgRebuildCost": "£3,000–£5,000 [EM-QUOTE]"
+        "avgRebuildCost": "£3,000-£5,000 [EM-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -570,7 +570,7 @@
       {
         "id": 1,
         "issue": "D300 (<a href='https://landroverengine.uk/engine/306dt'>306DT</a>) Crankshaft Bearing Failure",
-        "description": "The pre-2021 D300 carries the same bottom-end risk as its Discovery 4 and Range Rover Sport siblings - cold-start knock is the warning. £6,500–£9,500 recon [EM-QUOTE]. 2017–2020 cars only.",
+        "description": "The pre-2021 D300 carries the same bottom-end risk as its Discovery 4 and Range Rover Sport siblings - cold-start knock is the warning. £6,500-£9,500 recon [EM-QUOTE]. 2017-2020 cars only.",
         "severity": {
           "icon": "🔴",
           "label": "Catastrophic",
@@ -681,7 +681,7 @@
       {
         "signal": "Velar (L560) enquiries",
         "data": "155 general + 120 D300-specific = 275 [EM-VERIFIED]",
-        "demandTrend": "⬆ Rising as the 2017–2018 parc exits warranty [PLACEHOLDER - YoY %]"
+        "demandTrend": "⬆ Rising as the 2017-2018 parc exits warranty [PLACEHOLDER - YoY %]"
       },
       {
         "signal": "D300 share of Velar enquiries",
@@ -710,7 +710,7 @@
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
-        "title": "Velar (L560) - 2017–2020 (pre-facelift)",
+        "title": "Velar (L560) - 2017-2020 (pre-facelift)",
         "columns": [
           "Variant",
           "Engine Code",
@@ -723,47 +723,47 @@
           {
             "model": "D180/D240",
             "engineCode": "204DTD",
-            "usedSupply": "£2,000–£3,500",
-            "reconditionedSupply": "£3,500–£5,800",
-            "rebuiltSupply": "£4,800–£7,000",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£2,000-£3,500",
+            "reconditionedSupply": "£3,500-£5,800",
+            "rebuiltSupply": "£4,800-£7,000",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "D300 (V6)",
             "engineCode": "306DT",
-            "usedSupply": "£3,500–£5,500",
-            "reconditionedSupply": "£6,500–£9,500",
-            "rebuiltSupply": "£7,500–£11,000",
-            "labourHours": "15–20 hrs"
+            "usedSupply": "£3,500-£5,500",
+            "reconditionedSupply": "£6,500-£9,500",
+            "rebuiltSupply": "£7,500-£11,000",
+            "labourHours": "15-20 hrs"
           },
           {
             "model": "P250/P300",
             "engineCode": "204PT",
-            "usedSupply": "£1,500–£2,800",
-            "reconditionedSupply": "£3,000–£5,000",
-            "rebuiltSupply": "£4,200–£6,500",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£1,500-£2,800",
+            "reconditionedSupply": "£3,000-£5,000",
+            "rebuiltSupply": "£4,200-£6,500",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "P380",
             "engineCode": "AJ126",
-            "usedSupply": "£2,800–£4,500",
-            "reconditionedSupply": "£4,500–£7,000",
-            "rebuiltSupply": "£6,000–£8,500",
-            "labourHours": "14–18 hrs"
+            "usedSupply": "£2,800-£4,500",
+            "reconditionedSupply": "£4,500-£7,000",
+            "rebuiltSupply": "£6,000-£8,500",
+            "labourHours": "14-18 hrs"
           },
           {
             "model": "P550 SVAD",
             "engineCode": "AJ133",
-            "usedSupply": "£3,500–£6,000",
-            "reconditionedSupply": "£8,000–£12,000",
-            "rebuiltSupply": "£10,000–£14,000",
-            "labourHours": "14–18 hrs"
+            "usedSupply": "£3,500-£6,000",
+            "reconditionedSupply": "£8,000-£12,000",
+            "rebuiltSupply": "£10,000-£14,000",
+            "labourHours": "14-18 hrs"
           }
         ]
       },
       {
-        "title": "Velar (L560) - 2021–present (facelift)",
+        "title": "Velar (L560) - 2021-present (facelift)",
         "columns": [
           "Variant",
           "Engine Code",
@@ -776,51 +776,51 @@
           {
             "model": "D200",
             "engineCode": "204DTD MHEV",
-            "usedSupply": "£2,000–£3,500",
-            "reconditionedSupply": "£3,500–£5,800",
-            "rebuiltSupply": "£4,800–£7,000",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£2,000-£3,500",
+            "reconditionedSupply": "£3,500-£5,800",
+            "rebuiltSupply": "£4,800-£7,000",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "D300 (i6)",
             "engineCode": "AJ20D6",
-            "usedSupply": "£3,500–£5,500",
-            "reconditionedSupply": "£6,500–£9,500",
-            "rebuiltSupply": "£7,500–£11,000",
-            "labourHours": "15–20 hrs"
+            "usedSupply": "£3,500-£5,500",
+            "reconditionedSupply": "£6,500-£9,500",
+            "rebuiltSupply": "£7,500-£11,000",
+            "labourHours": "15-20 hrs"
           },
           {
             "model": "P250",
             "engineCode": "204PT",
-            "usedSupply": "£1,500–£2,800",
-            "reconditionedSupply": "£3,000–£5,000",
-            "rebuiltSupply": "£4,200–£6,500",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£1,500-£2,800",
+            "reconditionedSupply": "£3,000-£5,000",
+            "rebuiltSupply": "£4,200-£6,500",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "P400",
             "engineCode": "AJ20P6",
-            "usedSupply": "£3,500–£6,000",
-            "reconditionedSupply": "£6,000–£9,000",
-            "rebuiltSupply": "£7,500–£11,000",
-            "labourHours": "15–20 hrs"
+            "usedSupply": "£3,500-£6,000",
+            "reconditionedSupply": "£6,000-£9,000",
+            "rebuiltSupply": "£7,500-£11,000",
+            "labourHours": "15-20 hrs"
           },
           {
             "model": "P400e",
             "engineCode": "204PT + e-motor",
-            "usedSupply": "£1,800–£3,200",
-            "reconditionedSupply": "£3,000–£5,000",
-            "rebuiltSupply": "£4,200–£6,500",
-            "labourHours": "12–16 hrs (hybrid decommission adds time)"
+            "usedSupply": "£1,800-£3,200",
+            "reconditionedSupply": "£3,000-£5,000",
+            "rebuiltSupply": "£4,200-£6,500",
+            "labourHours": "12-16 hrs (hybrid decommission adds time)"
           }
         ]
       }
     ],
     "figuresNote": "204DTD, 306DT, 204PT, AJ20D6 figures [EM-QUOTE]; AJ126, AJ133 and AJ20P6 rows [PLACEHOLDER - confirm vs Table A].",
-    "labourEstimate": "10–20 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE]. The Velar rule: With values of £18,000–£60,000, replacement clears our 60% scrap-threshold rule across essentially the whole parc - ✅ Safe. The one pressure point is the earliest D180s heading toward £15,000: a worst-case £5,800 recon on a tired one is still comfortably inside the line, but a V6 D300 quote against a cheap early car is the maths to run before you commit.",
+    "labourEstimate": "10-20 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM-QUOTE]. The Velar rule: With values of £18,000-£60,000, replacement clears our 60% scrap-threshold rule across essentially the whole parc - ✅ Safe. The one pressure point is the earliest D180s heading toward £15,000: a worst-case £5,800 recon on a tired one is still comfortably inside the line, but a V6 D300 quote against a cheap early car is the maths to run before you commit.",
     "economicsBox": {
       "title": "The Velar rule",
-      "text": "With values of £18,000–£60,000, replacement clears our 60% scrap-threshold rule across essentially the whole parc - ✅ Safe. The one pressure point is the earliest D180s heading toward £15,000: a worst-case £5,800 recon on a tired one is still comfortably inside the line, but a V6 D300 quote against a cheap early car is the maths to run before you commit."
+      "text": "With values of £18,000-£60,000, replacement clears our 60% scrap-threshold rule across essentially the whole parc - ✅ Safe. The one pressure point is the earliest D180s heading toward £15,000: a worst-case £5,800 recon on a tired one is still comfortably inside the line, but a V6 D300 quote against a cheap early car is the maths to run before you commit."
     }
   },
   "engineEvolution": {
@@ -838,7 +838,7 @@
         "era": "Launch era",
         "tagline": "original line-up",
         "note": "The Velar arrives",
-        "years": "2017–2020",
+        "years": "2017-2020",
         "keyEngines": "204DTD, 204PT, 306DT D300, AJ126 P380",
         "whyBmwChanged": "The Velar launched as the design flagship on borrowed engines - the Ingenium fours plus the ageing V6s from across the range",
         "worthKnowing": "It inherited every engine's existing reputation on day one, good and bad"
@@ -847,7 +847,7 @@
         "era": "SV moment",
         "tagline": "halo performance",
         "note": "The SVAutobiography Dynamic era",
-        "years": "2019–2020",
+        "years": "2019-2020",
         "keyEngines": "AJ133 P550",
         "whyBmwChanged": "A short-run 5.0 V8 halo car - the SVAutobiography Dynamic",
         "worthKnowing": "Rare, collectible, and a supercharger-history purchase"
@@ -856,7 +856,7 @@
         "era": "Facelift era",
         "tagline": "modern powertrains",
         "note": "Electrified, refined, and future-ready",
-        "years": "2021–present",
+        "years": "2021-present",
         "keyEngines": "AJ20D6, AJ20P6, P400e, 204DTD MHEV",
         "whyBmwChanged": "Electrification retired the V6s - the straight-sixes and PHEV arrived with Pivi Pro",
         "worthKnowing": "The rare facelift where the biggest changes were under the bonnet: every caveated engine left the range at once"
@@ -885,7 +885,7 @@
       {
         "buyerProfile": "Towing & Working Use",
         "rating": "⭐⭐⭐☆☆",
-        "verdict": "2,400–2,500kg braked on the sixes - capable, but this body was styled, not built, for the yard. D300 (either era) is the tow pick."
+        "verdict": "2,400-2,500kg braked on the sixes - capable, but this body was styled, not built, for the yard. D300 (either era) is the tow pick."
       },
       {
         "buyerProfile": "Budget Owner",
@@ -945,7 +945,7 @@
       {
         "id": 1,
         "question": "How much does a Velar engine replacement cost in the UK?",
-        "answer": "Reconditioned units run £3,000–£9,500 supply only depending on engine [EM-QUOTE] - the volume 204DTD at £3,500–£5,800, either D300 at £6,500–£9,500. Fitting adds £650–£1,900. Use our calculator for a personalised figure."
+        "answer": "Reconditioned units run £3,000-£9,500 supply only depending on engine [EM-QUOTE] - the volume 204DTD at £3,500-£5,800, either D300 at £6,500-£9,500. Fitting adds £650-£1,900. Use our calculator for a personalised figure."
       },
       {
         "id": 2,
@@ -955,12 +955,12 @@
       {
         "id": 3,
         "question": "Which Velar engine should I avoid?",
-        "answer": "A 2017–2020 D300 (306DT V6) without documented oil-interval history - it carries the same crankshaft-bearing risk as its Discovery and Range Rover Sport siblings. A pre-2019 D180 without a chain inspection is the other caveat."
+        "answer": "A 2017-2020 D300 (306DT V6) without documented oil-interval history - it carries the same crankshaft-bearing risk as its Discovery and Range Rover Sport siblings. A pre-2019 D180 without a chain inspection is the other caveat."
       },
       {
         "id": 4,
         "question": "Is the Velar D300 reliable?",
-        "answer": "Which one? The 2021+ D300 (AJ20D6 straight-six) - yes, genuinely. The 2017–2020 D300 (306DT V6) - only with maintenance history, because of the bottom-end risk. Same badge, two engines. Full explainer →"
+        "answer": "Which one? The 2021+ D300 (AJ20D6 straight-six) - yes, genuinely. The 2017-2020 D300 (306DT V6) - only with maintenance history, because of the bottom-end risk. Same badge, two engines. Full explainer →"
       },
       {
         "id": 5,

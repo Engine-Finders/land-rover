@@ -63,7 +63,7 @@ function Stars({ rating = "" }) {
 }
 
 /* ---------- data helpers ---------- */
-const dash = (t = "") => t.replace(/ - /g, " — ");
+const dash = (t = "") => t.replace(/ - /g, " - ");
 
 // "18 (Star rating (4.5★) × 4 = 18)" -> { value: "18", detail: "(Star rating (4.5★) × 4 = 18)" }
 function splitScore(score = "") {
@@ -72,7 +72,7 @@ function splitScore(score = "") {
 }
 
 function splitConfidence(text = "") {
-  const m = text.match(/^(\d+%\s*confidence)\s*[-–—]\s*([\s\S]*)$/i);
+  const m = text.match(/^(\d+%\s*confidence)\s*[-–-]\s*([\s\S]*)$/i);
   return m ? { lead: m[1], rest: m[2] } : { lead: "", rest: text };
 }
 
@@ -147,7 +147,7 @@ export default function VerdictRating({ data }) {
                   <LrIcon name="genuine-failure-data" className={`${ICON_XL} xl:mt-[3px]`} />
                   <p className={`${BODY} text-lr-head`}>
                     {confidence.lead && <strong className="font-semibold text-lr-ink dark:text-lr-green">{confidence.lead}</strong>}
-                    {confidence.lead ? " — " : ""}
+                    {confidence.lead ? " - " : ""}
                     <span dangerouslySetInnerHTML={{ __html: confidence.rest }} />
                   </p>
                 </article>

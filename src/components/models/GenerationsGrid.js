@@ -155,7 +155,7 @@ function GenerationCard({ card, slug, index, open, onToggle, cardRef, className 
 // "The Classic vs L663 Question" -> Classic ? L663; a "Pre-2021 Pick" meta labels the two sides of
 // that year; with neither, the line runs between the generations on the other cards.
 function pickDiagram(card, others) {
-  const title = String(card.title || "").replace(/\s+[-–—]\s+.*$/, "");
+  const title = String(card.title || "").replace(/\s+[-–-]\s+.*$/, "");
   const meta = String(card.meta || "").trim();
   const vs = title.match(/^(?:the\s+)?(.+?)\s+vs\.?\s+(.+?)(?:\s+question)?\s*\??$/i);
   const pre = meta.match(/^pre-(\d{4})\s+pick$/i);
@@ -254,9 +254,9 @@ function Calendar({ className = "h-5 w-5" }) {
 // names the fix (the reference's red pre-facelift / green facelift engine codes)
 function Cell({ value, position, avoid = false }) {
   const html = localHtml(prose(value || ""));
-  if (!html) return <span className="text-lr-muted">—</span>;
+  if (!html) return <span className="text-lr-muted">-</span>;
   if (position) return <span className="font-semibold text-lr-ink dark:text-lr-green" dangerouslySetInnerHTML={{ __html: html }} />;
-  let cut = html.indexOf(" — ");
+  let cut = html.indexOf(" - ");
   if (cut > 0 && (html.slice(0, cut).match(/\(/g) || []).length !== (html.slice(0, cut).match(/\)/g) || []).length) cut = -1;
   if (avoid && cut <= 0) return <span className="font-medium text-lr-bad" dangerouslySetInnerHTML={{ __html: html }} />;
   if (cut > 0) {
@@ -274,7 +274,7 @@ function Cell({ value, position, avoid = false }) {
 function CompareRow({ link }) {
   const raw = String(link?.label || "");
   const lead = raw.match(/^(read the full [^:]+:)\s*/i);
-  const label = stripArrow(lead ? raw.slice(lead[0].length) : raw).replace(/\s+-\s+/g, " — ");
+  const label = stripArrow(lead ? raw.slice(lead[0].length) : raw).replace(/\s+-\s+/g, " - ");
   if (!label) return null;
   const href = localHref(link.href) || comparePage(label)?.href || "";
   return (

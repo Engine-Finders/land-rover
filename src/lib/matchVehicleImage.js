@@ -10,21 +10,21 @@ export const DEFAULT_VEHICLE_IMAGE = "/right.webp";
 /** One representative front-angle photo per model line. */
 const MODEL_IMAGES = {
   defender:
-    "/cars/land rover-defender-l663-110-5-door suv-2020–-new-gondwana stone-l663 110-45-angle-front-view.webp",
+    "/cars/land rover-defender-l663-110-5-door suv-2020--new-gondwana stone-l663 110-45-angle-front-view.webp",
   discovery:
-    "/cars/land rover-discovery-l462 lci-r-dynamic hse luxury-5-door suv-2020–2024-new-santorini black-disc rd lux-45-angle-front-view.webp",
+    "/cars/land rover-discovery-l462 lci-r-dynamic hse luxury-5-door suv-2020-2024-new-santorini black-disc rd lux-45-angle-front-view.webp",
   "discovery sport":
-    "/cars/land rover-discovery sport-l550 lci-black edition-compact suv-2020–2022-special-santorini black-ds black fl-45-angle-front-view.webp",
+    "/cars/land rover-discovery sport-l550 lci-black edition-compact suv-2020-2022-special-santorini black-ds black fl-45-angle-front-view.webp",
   freelander:
-    "/cars/land rover-freelander-l359 lci-hse luxury-compact suv-2012–2014-new-orkney grey-fl lux-45-angle-front-view.webp",
+    "/cars/land rover-freelander-l359 lci-hse luxury-compact suv-2012-2014-new-orkney grey-fl lux-45-angle-front-view.webp",
   "range rover":
-    "/cars/land rover-range rover-l460-autobiography lwb-luxury suv-2022–-new-borasco grey-l460 auto lwb-45-angle-front-view.webp",
+    "/cars/land rover-range rover-l460-autobiography lwb-luxury suv-2022--new-borasco grey-l460 auto lwb-45-angle-front-view.webp",
   "range rover sport":
-    "/cars/range rover-sport-l461-autobiography-suv-2022–-new-ostuni white-l461 auto-45-angle-front-view.webp",
+    "/cars/range rover-sport-l461-autobiography-suv-2022--new-ostuni white-l461 auto-45-angle-front-view.webp",
   evoque:
-    "/cars/range rover-evoque-l551 lci-autobiography black-5-door suv-2023–-special-narvik black-l551 fl black-45-angle-front-view.webp",
+    "/cars/range rover-evoque-l551 lci-autobiography black-5-door suv-2023--special-narvik black-l551 fl black-45-angle-front-view.webp",
   velar:
-    "/cars/range rover-velar-l560 lci-belgravia edition-suv-2026–-special-hakuba silver-velar belgravia-45-angle-front-view.webp",
+    "/cars/range rover-velar-l560 lci-belgravia edition-suv-2026--special-hakuba silver-velar belgravia-45-angle-front-view.webp",
 };
 
 /** Longer / more specific names first. */
@@ -75,6 +75,6 @@ export function matchVehicleImage(vehicle = {}) {
     }
   }
 
-  // No model match → brand default (this site is Land Rover–focused).
+  // No model match → brand default (this site is Land Rover-focused).
   return DEFAULT_VEHICLE_IMAGE;
 }

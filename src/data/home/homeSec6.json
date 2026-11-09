@@ -14,8 +14,8 @@
         "model": "Discovery 4 SDV6",
         "engine": "306DT",
         "image": { "src": "/right.webp", "alt": "Discovery 4 SDV6" },
-        "vehicleValue": "£6,000 – £18,000",
-        "replacementCost": "£6,500 – £9,500",
+        "vehicleValue": "£6,000 - £18,000",
+        "replacementCost": "£6,500 - £9,500",
         "verdict": {
           "label": "WATCH",
           "text": "Sub-£10k examples approach the threshold. Service history matters more than mileage.",
@@ -27,8 +27,8 @@
         "model": "Freelander 2",
         "engine": "204DTD",
         "image": { "src": "/right.webp", "alt": "Freelander 2" },
-        "vehicleValue": "£2,500 – £7,000",
-        "replacementCost": "£3,500 – £5,800",
+        "vehicleValue": "£2,500 - £7,000",
+        "replacementCost": "£3,500 - £5,800",
         "verdict": {
           "label": "SCRAP THRESHOLD",
           "text": "Recon cost frequently exceeds car value on older examples.",
@@ -40,8 +40,8 @@
         "model": "Range Rover Sport L494",
         "engine": "Various",
         "image": { "src": "/right.webp", "alt": "Range Rover Sport L494" },
-        "vehicleValue": "£12,000 – £55,000",
-        "replacementCost": "£5,000 – £12,000",
+        "vehicleValue": "£12,000 - £55,000",
+        "replacementCost": "£5,000 - £12,000",
         "verdict": {
           "label": "SAFE",
           "text": "Replacement viable across most examples - well within value even at upper recon cost.",
@@ -53,8 +53,8 @@
         "model": "Range Rover L405",
         "engine": "Various",
         "image": { "src": "/right.webp", "alt": "Range Rover L405" },
-        "vehicleValue": "£14,000 – £55,000",
-        "replacementCost": "£6,500 – £12,000",
+        "vehicleValue": "£14,000 - £55,000",
+        "replacementCost": "£6,500 - £12,000",
         "verdict": {
           "label": "SAFE",
           "text": "Well within value even at upper recon cost. The safest-to-buy generation.",
@@ -66,8 +66,8 @@
         "model": "Defender L663",
         "engine": "Various",
         "image": { "src": "/right.webp", "alt": "Defender L663" },
-        "vehicleValue": "£35,000 – £90,000",
-        "replacementCost": "£3,500 – £9,500",
+        "vehicleValue": "£35,000 - £90,000",
+        "replacementCost": "£3,500 - £9,500",
         "verdict": {
           "label": "SAFE",
           "text": "Very safe across all variants. High host value means replacement is always viable.",
@@ -79,11 +79,11 @@
         "model": "Range Rover Sport L320",
         "engine": "368DT",
         "image": { "src": "/right.webp", "alt": "Range Rover Sport L320" },
-        "vehicleValue": "£5,000 – £15,000",
-        "replacementCost": "£5,500 – £8,000",
+        "vehicleValue": "£5,000 - £15,000",
+        "replacementCost": "£5,500 - £8,000",
         "verdict": {
           "label": "WATCH",
-          "text": "Older examples sit at 40–60% of vehicle value. Get a scrap valuation alongside any repair quote.",
+          "text": "Older examples sit at 40-60% of vehicle value. Get a scrap valuation alongside any repair quote.",
           "type": "watch"
         },
         "href": "#"

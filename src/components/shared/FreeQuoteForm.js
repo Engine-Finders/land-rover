@@ -356,7 +356,7 @@ export default function FreeQuoteSticky() {
             aria-labelledby={titleId}
             className="relative z-[61] flex max-h-[94vh] w-full max-w-[520px] flex-col overflow-hidden rounded-[18px] bg-[var(--color-page)] shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
           >
-            {/* Header — sec2-bg, no logo */}
+            {/* Header - sec2-bg, no logo */}
             <div className="relative shrink-0 overflow-hidden px-4 pb-6 pt-4 sm:px-5 sm:pb-7 sm:pt-5">
               <Image src={HEADER_BG} alt="" fill priority sizes="520px" className="object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-[var(--color-page)]" />
@@ -457,19 +457,19 @@ export default function FreeQuoteSticky() {
                             <li className="flex items-center gap-1.5">
                               <Icon name="calendar" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
                               <span>
-                                <strong className="font-semibold">Year:</strong> {vehicle.year || "—"}
+                                <strong className="font-semibold">Year:</strong> {vehicle.year || "-"}
                               </span>
                             </li>
                             <li className="flex items-center gap-1.5">
                               <Icon name="fuel" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
                               <span>
-                                <strong className="font-semibold">Fuel Type:</strong> {vehicle.fuelType || "—"}
+                                <strong className="font-semibold">Fuel Type:</strong> {vehicle.fuelType || "-"}
                               </span>
                             </li>
                             <li className="flex items-center gap-1.5">
                               <Icon name="engine" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
                               <span>
-                                <strong className="font-semibold">Engine:</strong> {engineDisplay || "—"}
+                                <strong className="font-semibold">Engine:</strong> {engineDisplay || "-"}
                               </span>
                             </li>
                             <li className="flex items-center gap-1.5">
@@ -479,7 +479,7 @@ export default function FreeQuoteSticky() {
                                 aria-hidden="true"
                               />
                               <span>
-                                <strong className="font-semibold">Colour:</strong> {vehicle.colour || "—"}
+                                <strong className="font-semibold">Colour:</strong> {vehicle.colour || "-"}
                               </span>
                             </li>
                           </ul>
@@ -615,7 +615,7 @@ export default function FreeQuoteSticky() {
 
                   <p className="flex items-start justify-center gap-1.5 text-center text-[10px] leading-[1.35] text-[var(--color-text-soft)] sm:text-[11px]">
                     <Icon name="lock" className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-                    <span>Your details are secure, no spam — genuine quote from UK vetted engine specialists only.</span>
+                    <span>Your details are secure, no spam - genuine quote from UK vetted engine specialists only.</span>
                   </p>
                 </form>
               )}

@@ -41,7 +41,7 @@ function carFor(model = "", generation = "") {
 }
 
 const modelName = (model = "") => model.replace(/^Land Rover\s+/i, "");
-const tidy = (t = "") => t.replace(/\s*→\s*\[[^\]]*\]/g, "").replace(/ - /g, " — ").trim();
+const tidy = (t = "") => t.replace(/\s*→\s*\[[^\]]*\]/g, "").replace(/ - /g, " - ").trim();
 
 // "200Tdi: 1989–1994 · 300Tdi: 1994–2006" -> { start: 1989, end: 2006 }; "2017–present" -> end "Present"
 function productionSpan(text = "") {
@@ -52,7 +52,7 @@ function productionSpan(text = "") {
 }
 
 function crossBrand(note = "") {
-  if (/^exclusive to land rover\s*[-–—]\s*no cross-brand fitment\.?$/i.test(note.trim())) {
+  if (/^exclusive to land rover\s*[-–-]\s*no cross-brand fitment\.?$/i.test(note.trim())) {
     return { title: "Land Rover Exclusive Engine", text: "This engine is exclusive to Land Rover. No cross-brand fitment." };
   }
   const title = /^exclusive/i.test(note) ? "Land Rover Exclusive Engine" : /jaguar/i.test(note) ? "Shared with Jaguar" : /bmw/i.test(note) ? "Shared with BMW" : "Cross-Brand Fitment";

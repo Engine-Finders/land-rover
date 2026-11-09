@@ -106,12 +106,12 @@ const TAG_RE = /\s*\[((?:EM-|PLACEHOLDER)[^\]]*)\]/g;
 function parseValue(raw = "") {
   const tags = [];
   let text = String(raw).replace(TAG_RE, (_, t) => {
-    tags.push(t.replace(/\s+-\s+/g, " — "));
+    tags.push(t.replace(/\s+-\s+/g, " - "));
     return "";
   });
   const r = parseRating(text);
   if (r.stars) return { rating: r, score: r.rest.replace(/[()]/g, ""), text: "", tags };
-  text = text.trim().replace(/\s+-\s+/g, " — ");
+  text = text.trim().replace(/\s+-\s+/g, " - ");
   return { rating: null, score: "", text, tags };
 }
 

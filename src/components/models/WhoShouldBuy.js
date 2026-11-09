@@ -82,7 +82,7 @@ export default function WhoShouldBuy({ data, slug = "", page = null }) {
   // the badge card: what the table is built on - its profiles, the page's enquiry figure (hero),
   // the star scale and its purpose
   const enquiries = String(page?.hero?.trustStrip?.[0]?.label || "")
-    .split(/\s+[-–—]\s+/)[0]
+    .split(/\s+[---]\s+/)[0]
     .replace(/\s*\[[^\]]+\]/g, "")
     .trim();
   // "275+ Enquiries (2025)" -> "275+ UK enquiries analysed in 2025"
@@ -127,7 +127,7 @@ export default function WhoShouldBuy({ data, slug = "", page = null }) {
             <LrIcon name="note" tone="current" className="h-10 w-10 shrink-0 text-lr-brand md:h-11 md:w-11 dark:text-lr-green" />
             <p className={`${BODY_SM} text-lr-body`}>
               <strong className="font-semibold text-lr-head">Real talk.</strong> The right {model || "car"} for you depends on your budget, your mileage, and your patience for maintenance.
-              <span className="lg:block"> Use the data on this page to make the right call — and avoid expensive mistakes.</span>
+              <span className="lg:block"> Use the data on this page to make the right call - and avoid expensive mistakes.</span>
             </p>
           </div>
           <a

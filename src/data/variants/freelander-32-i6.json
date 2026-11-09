@@ -78,7 +78,7 @@
               "name": "How much does a Land Rover Freelander 3.2 i6 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 3.2 i6 (306PN) engine typically costs £2,200–£3,500 supply only. Fitting adds £800–£1,500 depending on workshop location. Main dealer new engines are no longer available - specialist reconditioning is the route."
+                "text": "A reconditioned 3.2 i6 (306PN) engine typically costs £2,200-£3,500 supply only. Fitting adds £800-£1,500 depending on workshop location. Main dealer new engines are no longer available - specialist reconditioning is the route."
               }
             },
             {
@@ -94,7 +94,7 @@
               "name": "What are the common problems with the Land Rover Freelander 3.2 i6?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Alternator drive pulley failure (whining noise), PCV diaphragm failure (whistling noise, oil consumption), and timing chain tensioner wear (rattle on cold start). The engine also suffers from high fuel consumption - expect 25–27 MPG combined."
+                "text": "Alternator drive pulley failure (whining noise), PCV diaphragm failure (whistling noise, oil consumption), and timing chain tensioner wear (rattle on cold start). The engine also suffers from high fuel consumption - expect 25-27 MPG combined."
               }
             },
             {
@@ -118,7 +118,7 @@
               "name": "Can I repair the alternator pulley, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The alternator pulley itself can be replaced (around £200–£400). It's a much cheaper fix than a full alternator replacement. If you hear any whining or screeching from the engine bay, have the alternator drive pulley inspected promptly."
+                "text": "The alternator pulley itself can be replaced (around £200-£400). It's a much cheaper fix than a full alternator replacement. If you hear any whining or screeching from the engine bay, have the alternator drive pulley inspected promptly."
               }
             }
           ]
@@ -179,7 +179,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Freelander 3.2 i6 • 2006–2014 • 1 Engine Code",
+    "tagPill": "Land Rover Freelander 3.2 i6 • 2006-2014 • 1 Engine Code",
     "h1": "Land Rover Freelander 3.2 i6 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The Freelander 2's smooth, powerful Volvo-sourced straight-six petrol - a rare and characterful alternative to the diesel. Get quotes from specialists who understand this transverse-mounted 3.2-litre unit, supply & fit available nationwide.",
     "trustBadges": [
@@ -212,10 +212,10 @@
     "rows": [
       {
         "generation": "Freelander 2 / L359",
-        "years": "2006–2014",
+        "years": "2006-2014",
         "engineCode": "306PN (Volvo <a href='https://landroverengine.uk/engine/volvo-si6'>SI6</a> B6324S)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,200–£3,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,200-£3,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "One engine throughout this badge's history - no era ambiguity."
       }
     ],
@@ -234,23 +234,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,200–£1,800",
-        "fittedIndie": "£1,800–£2,600",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,200-£1,800",
+        "fittedIndie": "£1,800-£2,600",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short-term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,200–£3,500",
-        "fittedIndie": "£3,000–£4,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,200-£3,500",
+        "fittedIndie": "£3,000-£4,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£3,000–£4,500",
-        "fittedIndie": "£3,800–£5,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,000-£4,500",
+        "fittedIndie": "£3,800-£5,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
@@ -262,7 +262,7 @@
       }
     ],
     "figuresNote": "Figures above reflect the only engine generation this badge ever used - the 306PN (B6324S). See the Era Map above for era-specific pricing.",
-    "labourEstimate": "Fitting a Freelander 3.2 i6 engine typically takes 10–14 hours at £65–£95/hr (independent). The transverse-mounted layout makes access tighter than in longitudinal installations, so labour can be higher than on some other Land Rover models.",
+    "labourEstimate": "Fitting a Freelander 3.2 i6 engine typically takes 10-14 hours at £65-£95/hr (independent). The transverse-mounted layout makes access tighter than in longitudinal installations, so labour can be higher than on some other Land Rover models.",
     "cta": {
       "label": "→ Compare Freelander 3.2 i6 engine prices from UK specialists",
       "href": "#"
@@ -274,8 +274,8 @@
         "id": 1,
         "title": "Alternator Drive Pulley Failure",
         "symptoms": "Whining or screeching noise from the engine bay, battery warning light, intermittent charging issues, rough idle.",
-        "typicalMileage": "80,000–150,000 miles (age and mileage related).",
-        "repairCost": "£200–£400 (alternator pulley replacement).",
+        "typicalMileage": "80,000-150,000 miles (age and mileage related).",
+        "repairCost": "£200-£400 (alternator pulley replacement).",
         "replacementCost": "N/A - repair only; if ignored, the pulley can seize and snap the belt.",
         "urgency": {
           "icon": "🟡",
@@ -292,8 +292,8 @@
         "id": 2,
         "title": "PCV / Crankcase Ventilation Diaphragm Failure",
         "symptoms": "Whistling noise from under the bonnet, increased oil consumption, oil mist in the intake, crankcase fault codes.",
-        "typicalMileage": "60,000–120,000 miles.",
-        "repairCost": "£100–£250 (PCV diaphragm or oil separator replacement).",
+        "typicalMileage": "60,000-120,000 miles.",
+        "repairCost": "£100-£250 (PCV diaphragm or oil separator replacement).",
         "replacementCost": "N/A - repair only.",
         "urgency": {
           "icon": "🟡",
@@ -310,8 +310,8 @@
         "id": 3,
         "title": "Timing Chain Tensioner Wear",
         "symptoms": "Rattling noise on cold start, metallic ticking, loss of power, engine warning light.",
-        "typicalMileage": "80,000–150,000 miles.",
-        "repairCost": "£1,500–£2,500 (chain, tensioner, and guide replacement).",
+        "typicalMileage": "80,000-150,000 miles.",
+        "repairCost": "£1,500-£2,500 (chain, tensioner, and guide replacement).",
         "replacementCost": "N/A - repair only; if the chain snaps, it's an interference engine - catastrophic failure.",
         "urgency": {
           "icon": "🔴",
@@ -348,19 +348,19 @@
         {
           "problem": "Alternator pulley whine",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£400",
+          "typicalCost": "£200-£400",
           "whenItMakesSense": "Simple, cheap fix - do it preventatively"
         },
         {
           "problem": "PCV diaphragm whistle",
           "repairable": "✅ Yes",
-          "typicalCost": "£100–£250",
+          "typicalCost": "£100-£250",
           "whenItMakesSense": "Inexpensive repair that prevents oil consumption"
         },
         {
           "problem": "Timing chain tensioner rattle",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£1,500–£2,500",
+          "typicalCost": "£1,500-£2,500",
           "whenItMakesSense": "Preventative - catches fault before catastrophic failure"
         },
         {
@@ -372,7 +372,7 @@
         {
           "problem": "Cracked cylinder head (overheating)",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£1,000–£2,000",
+          "typicalCost": "£1,000-£2,000",
           "whenItMakesSense": "Viable if the rest of the vehicle is solid; often cheaper to fit a good used head"
         }
       ]
@@ -392,7 +392,7 @@
         "* Overheating or coolant loss - head gasket or cracked head risk"
       ]
     },
-    "closingVerdict": "The 3.2 i6 is one of the more reliable petrol engines Land Rover fitted to the Freelander, but it's now over a decade old. With no DPF or EGR to worry about, it offers a simpler ownership proposition than modern diesels. However, fuel consumption is high (around 25–27 MPG combined), and the tightly packed engine bay means some jobs take longer. A £2,800 reconditioned engine on a Freelander valued at £4,500 is 62% - at the Land Rover scrap threshold. On a sub-£3,500 example, think carefully before committing.",
+    "closingVerdict": "The 3.2 i6 is one of the more reliable petrol engines Land Rover fitted to the Freelander, but it's now over a decade old. With no DPF or EGR to worry about, it offers a simpler ownership proposition than modern diesels. However, fuel consumption is high (around 25-27 MPG combined), and the tightly packed engine bay means some jobs take longer. A £2,800 reconditioned engine on a Freelander valued at £4,500 is 62% - at the Land Rover scrap threshold. On a sub-£3,500 example, think carefully before committing.",
     "cta": {
       "label": "→ Compare Freelander 3.2 i6 engine prices before you buy",
       "href": "#"
@@ -422,10 +422,10 @@
     "rows": [
       {
         "engineCode": "306PN (B6324S / SI6)",
-        "years": "2006–2014",
+        "years": "2006-2014",
         "power": "233 bhp (171 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,200–£3,500 [PLACEHOLDER]"
+        "avgReconCost": "£2,200-£3,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -492,7 +492,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Freelander 3.2 i6 engine replacement cost in the UK?",
-        "answer": "A reconditioned 3.2 i6 (306PN) engine typically costs £2,200–£3,500 supply only. Fitting adds £800–£1,500 depending on workshop location. Main dealer new engines are no longer available - specialist reconditioning is the route."
+        "answer": "A reconditioned 3.2 i6 (306PN) engine typically costs £2,200-£3,500 supply only. Fitting adds £800-£1,500 depending on workshop location. Main dealer new engines are no longer available - specialist reconditioning is the route."
       },
       {
         "id": 2,
@@ -502,7 +502,7 @@
       {
         "id": 3,
         "question": "What are the common problems with the Land Rover Freelander 3.2 i6?",
-        "answer": "Alternator drive pulley failure (whining noise), PCV diaphragm failure (whistling noise, oil consumption), and timing chain tensioner wear (rattle on cold start). The engine also suffers from high fuel consumption - expect 25–27 MPG combined."
+        "answer": "Alternator drive pulley failure (whining noise), PCV diaphragm failure (whistling noise, oil consumption), and timing chain tensioner wear (rattle on cold start). The engine also suffers from high fuel consumption - expect 25-27 MPG combined."
       },
       {
         "id": 4,
@@ -517,7 +517,7 @@
       {
         "id": 6,
         "question": "Can I repair the alternator pulley, or does it need replacement?",
-        "answer": "The alternator pulley itself can be replaced (around £200–£400). It's a much cheaper fix than a full alternator replacement. If you hear any whining or screeching from the engine bay, have the alternator drive pulley inspected promptly."
+        "answer": "The alternator pulley itself can be replaced (around £200-£400). It's a much cheaper fix than a full alternator replacement. If you hear any whining or screeching from the engine bay, have the alternator drive pulley inspected promptly."
       },
       {
         "id": 1,

@@ -70,7 +70,7 @@
               "name": "How much does a 276DT (2.7 TDV6) engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 276DT TDV6 typically costs £5,000–£7,500 supply only, varying by spec and rebuild quality. A used unit can be found from £2,800–£4,500, but history is critical. Fitting adds £900–£2,000 depending on labour rates."
+                "text": "A reconditioned 276DT TDV6 typically costs £5,000-£7,500 supply only, varying by spec and rebuild quality. A used unit can be found from £2,800-£4,500, but history is critical. Fitting adds £900-£2,000 depending on labour rates."
               }
             },
             {
@@ -94,7 +94,7 @@
               "name": "Which Land Rover models use the 276DT?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The 276DT powered the Discovery 3 (L319) from 2004–2009 and the Range Rover Sport (L320) from 2005–2010."
+                "text": "The 276DT powered the Discovery 3 (L319) from 2004-2009 and the Range Rover Sport (L320) from 2005-2010."
               }
             },
             {
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover • 276DT (2.7 TDV6) • Diesel • 2.7L V6 Turbo • 2004–2010",
+    "tagPill": "Land Rover • 276DT (2.7 TDV6) • Diesel • 2.7L V6 Turbo • 2004-2010",
     "h1": "Land Rover 276DT (2.7 TDV6) Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The 276DT is Land Rover's first modern V6 diesel - smooth and torquey, but its oil pump is a single-point failure risk. Backed by 700+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -220,11 +220,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "190–210 hp [THIRD-PARTY]"
+        "value": "190-210 hp [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "2004–2010"
+        "value": "2004-2010"
       },
       {
         "metric": "Models Fitted (Land Rover only)",
@@ -256,7 +256,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £5,000–£7,500 → £6,250 midpoint → falls in £5,000–£6,999 bracket → 8)"
+          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £5,000-£7,500 → £6,250 midpoint → falls in £5,000-£6,999 bracket → 8)"
         },
         {
           "dimension": "Repairability",
@@ -268,7 +268,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "14 (Reconditioned cost (£6,250 midpoint) as % of lowest typical vehicle value (Discovery 3 ~£4,000–£7,000) = 89–156% - falls in 30–44% bracket → 14)"
+          "score": "14 (Reconditioned cost (£6,250 midpoint) as % of lowest typical vehicle value (Discovery 3 ~£4,000-£7,000) = 89-156% - falls in 30-44% bracket → 14)"
         },
         {
           "dimension": "Total",
@@ -292,13 +292,13 @@
         "model": "Land Rover Discovery",
         "generation": "Series 3 (L319)",
         "variantBadge": "TDV6 (2.7)",
-        "years": "2004–2009"
+        "years": "2004-2009"
       },
       {
         "model": "Land Rover Range Rover Sport",
         "generation": "L320",
         "variantBadge": "TDV6 (2.7)",
-        "years": "2005–2010"
+        "years": "2005-2010"
       }
     ],
     "crossBrandNote": "Also powers the Jaguar XF (X250) and XJ (X351) → [Jaguar 276DT page]."
@@ -313,24 +313,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£2,800–£4,500",
-        "fittedIndie": "£3,800–£5,900",
+        "supplyOnly": "£2,800-£4,500",
+        "fittedIndie": "£3,800-£5,900",
         "warranty": "Varies by supplier"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£5,000–£7,500",
-        "fittedIndie": "£6,000–£9,000",
+        "supplyOnly": "£5,000-£7,500",
+        "fittedIndie": "£6,000-£9,000",
         "warranty": "12 months typical"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£6,500–£9,500",
-        "fittedIndie": "£7,500–£11,000",
-        "warranty": "12–24 months typical"
+        "supplyOnly": "£6,500-£9,500",
+        "fittedIndie": "£7,500-£11,000",
+        "warranty": "12-24 months typical"
       }
     ],
-    "labourEstimate": "Fitting a 276DT typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "labourEstimate": "Fitting a 276DT typically takes 14-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM-QUOTE].",
     "sharedCostNote": "Parts cost is identical across Land Rover and Jaguar applications; labour time varies slightly by engine bay access and subframe design.",
     "cta": {
       "label": "→ Compare 276DT (2.7 TDV6) engine prices from UK specialists",
@@ -342,7 +342,7 @@
       {
         "id": 1,
         "question": "How much does a 276DT (2.7 TDV6) engine replacement cost?",
-        "answer": "A reconditioned 276DT TDV6 typically costs £5,000–£7,500 supply only, varying by spec and rebuild quality. A used unit can be found from £2,800–£4,500, but history is critical. Fitting adds £900–£2,000 depending on labour rates."
+        "answer": "A reconditioned 276DT TDV6 typically costs £5,000-£7,500 supply only, varying by spec and rebuild quality. A used unit can be found from £2,800-£4,500, but history is critical. Fitting adds £900-£2,000 depending on labour rates."
       },
       {
         "id": 2,
@@ -357,7 +357,7 @@
       {
         "id": 4,
         "question": "Which Land Rover models use the 276DT?",
-        "answer": "The 276DT powered the Discovery 3 (L319) from 2004–2009 and the Range Rover Sport (L320) from 2005–2010."
+        "answer": "The 276DT powered the Discovery 3 (L319) from 2004-2009 and the Range Rover Sport (L320) from 2005-2010."
       },
       {
         "id": 5,

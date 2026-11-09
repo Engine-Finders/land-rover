@@ -30,7 +30,7 @@ function parseList(list = []) {
       tag = `[${t[1].replace("‑", "-")}]`;
       text = text.replace(TAG, "").trim();
     }
-    const b = text.match(/^(.*?)\s+[-–—]\s+(based on .+)$/i);
+    const b = text.match(/^(.*?)\s+[-–-]\s+(based on .+)$/i);
     if (b) {
       text = b[1];
       basis = capital(b[2]);

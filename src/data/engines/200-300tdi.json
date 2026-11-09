@@ -76,7 +76,7 @@
               "name": "How much does a 200Tdi or 300Tdi engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 200Tdi or 300Tdi typically costs £3,000–£5,500 supply only, with used units from £1,000–£2,000. Fitting adds £900–£2,500 depending on labour rates and vehicle access."
+                "text": "A reconditioned 200Tdi or 300Tdi typically costs £3,000-£5,500 supply only, with used units from £1,000-£2,000. Fitting adds £900-£2,500 depending on labour rates and vehicle access."
               }
             },
             {
@@ -84,7 +84,7 @@
               "name": "Is the 200Tdi / 300Tdi a reliable engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - both are widely considered among the most reliable Land Rover engines ever built. Their fully mechanical fuel systems, lack of complex electronics, and simple OHV design make them exceptionally durable, with many exceeding 250,000–300,000 miles."
+                "text": "Yes - both are widely considered among the most reliable Land Rover engines ever built. Their fully mechanical fuel systems, lack of complex electronics, and simple OHV design make them exceptionally durable, with many exceeding 250,000-300,000 miles."
               }
             },
             {
@@ -184,7 +184,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover • 200Tdi / 300Tdi • Diesel • 2.5L I4 Turbo • 1989–2006",
+    "tagPill": "Land Rover • 200Tdi / 300Tdi • Diesel • 2.5L I4 Turbo • 1989-2006",
     "h1": "Land Rover 200Tdi / 300Tdi Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Land Rover 200Tdi and 300Tdi are 2.5-litre turbo diesels - legendary for bulletproof mechanical reliability and global field-repairability. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -227,11 +227,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "107–122 hp [THIRD-PARTY]"
+        "value": "107-122 hp [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "200Tdi: 1989–1994 · 300Tdi: 1994–2006",
+        "value": "200Tdi: 1989-1994 · 300Tdi: 1994-2006",
         "note": "Two generations of Land Rover's most respected mechanical turbo diesels."
       },
       {
@@ -264,7 +264,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £3,000–£5,500 → £4,250 midpoint → falls in £3,000–£4,999 bracket → 16)"
+          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £3,000-£5,500 → £4,250 midpoint → falls in £3,000-£4,999 bracket → 16)"
         },
         {
           "dimension": "Repairability",
@@ -276,7 +276,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "12 (Reconditioned cost (~£4,250 midpoint) as % of lowest typical vehicle value (Defender/Disco 1, ~£6,000–£8,000) = 53–70% → falls in 45–59% bracket → 12)"
+          "score": "12 (Reconditioned cost (~£4,250 midpoint) as % of lowest typical vehicle value (Defender/Disco 1, ~£6,000-£8,000) = 53-70% → falls in 45-59% bracket → 12)"
         },
         {
           "dimension": "Total",
@@ -300,19 +300,19 @@
         "model": "Land Rover Defender",
         "generation": "L316 (90/110)",
         "variantBadge": "200Tdi / 300Tdi",
-        "years": "1990–1998"
+        "years": "1990-1998"
       },
       {
         "model": "Land Rover Discovery",
         "generation": "Series 1 (LJ)",
         "variantBadge": "200Tdi / 300Tdi",
-        "years": "1989–1998"
+        "years": "1989-1998"
       },
       {
         "model": "Land Rover Range Rover",
         "generation": "Classic (LH)",
         "variantBadge": "200Tdi / 300Tdi",
-        "years": "1992–1996"
+        "years": "1992-1996"
       }
     ],
     "crossBrandNote": "Exclusive to Land Rover - no cross-brand fitment."
@@ -327,24 +327,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£1,000–£2,000",
-        "fittedIndie": "£1,600–£3,100",
+        "supplyOnly": "£1,000-£2,000",
+        "fittedIndie": "£1,600-£3,100",
         "warranty": "Varies by supplier"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£3,000–£5,500",
-        "fittedIndie": "£3,900–£6,900",
+        "supplyOnly": "£3,000-£5,500",
+        "fittedIndie": "£3,900-£6,900",
         "warranty": "12 months typical"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£4,500–£7,000",
-        "fittedIndie": "£5,400–£8,400",
-        "warranty": "12–24 months typical"
+        "supplyOnly": "£4,500-£7,000",
+        "fittedIndie": "£5,400-£8,400",
+        "warranty": "12-24 months typical"
       }
     ],
-    "labourEstimate": "Fitting a 200Tdi or 300Tdi typically takes 15–25 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
+    "labourEstimate": "Fitting a 200Tdi or 300Tdi typically takes 15-25 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
     "sharedCostNote": "Omitted - engine is exclusive to Land Rover.",
     "cta": {
       "label": "→ Compare 200Tdi / 300Tdi engine prices from UK specialists",
@@ -356,12 +356,12 @@
       {
         "id": 1,
         "question": "How much does a 200Tdi or 300Tdi engine replacement cost?",
-        "answer": "A reconditioned 200Tdi or 300Tdi typically costs £3,000–£5,500 supply only, with used units from £1,000–£2,000. Fitting adds £900–£2,500 depending on labour rates and vehicle access."
+        "answer": "A reconditioned 200Tdi or 300Tdi typically costs £3,000-£5,500 supply only, with used units from £1,000-£2,000. Fitting adds £900-£2,500 depending on labour rates and vehicle access."
       },
       {
         "id": 2,
         "question": "Is the 200Tdi / 300Tdi a reliable engine?",
-        "answer": "Yes - both are widely considered among the most reliable Land Rover engines ever built. Their fully mechanical fuel systems, lack of complex electronics, and simple OHV design make them exceptionally durable, with many exceeding 250,000–300,000 miles."
+        "answer": "Yes - both are widely considered among the most reliable Land Rover engines ever built. Their fully mechanical fuel systems, lack of complex electronics, and simple OHV design make them exceptionally durable, with many exceeding 250,000-300,000 miles."
       },
       {
         "id": 3,

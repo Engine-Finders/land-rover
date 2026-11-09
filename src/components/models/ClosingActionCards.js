@@ -6,8 +6,8 @@ import { UkPinMap } from "@/components/models/TrustBlockArt";
 
 // Model page section 14, built to the approved reference: "Ready to Make / a Decision?" with a short
 // rule, the model's car on the loch-side backdrop (feathered into the band), then the three action
-// cards — explore (the model's line-up), diagnose (a green-tinted engine with the inputs the card
-// names) and compare specialists (a UK map with gold pins) — each with an icon tile, an accented
+// cards - explore (the model's line-up), diagnose (a green-tinted engine with the inputs the card
+// names) and compare specialists (a UK map with gold pins) - each with an icon tile, an accented
 // title, a rule, the text and its link. Phones stack the cards under the car.
 // The card JSON's planned URLs are mapped to live routes (ClosingActionLinks.js); a card that names
 // several generations gets a link per generation page instead of one dead "…" link.

@@ -1,7 +1,7 @@
 import { generationCar, modelName } from "@/components/models/modelKit";
 
 // Helpers shared by the model page's engine sections: Engine Codes database (section 5) and
-// Engine Evolution (section 9). Everything here is derived from the page JSON — counts, ranges
+// Engine Evolution (section 9). Everything here is derived from the page JSON - counts, ranges
 // and links to engine pages that exist in this repo (src/data/registery/engines/pages.json).
 
 // ------------------------------------------------------------------ text
@@ -10,13 +10,13 @@ const TAG_RE = /\[((?:EM-|PLACEHOLDER)[^\]]*)\]/g;
 const tagHtml = (t) =>
   `<span class="${t.length > 16 ? "" : "whitespace-nowrap "}font-medium text-lr-green">[${t}]</span>`;
 
-// Table-cell copy: a leading "-" (no value) becomes an em dash, " - " becomes " — ", straight
+// Table-cell copy: a leading "-" (no value) becomes an em dash, " - " becomes " - ", straight
 // double quotes curly, and data tags green. Long tags may wrap (narrow cells); short ones don't.
 export function cellHtml(raw = "") {
   return String(raw)
     .trim()
-    .replace(/^-(\s|$)/, "—$1")
-    .replace(/\s+-\s+/g, " — ")
+    .replace(/^-(\s|$)/, "-$1")
+    .replace(/\s+-\s+/g, " - ")
     .replace(/"([^"<>]+)"/g, "“$1”")
     .replace(TAG_RE, (_, t) => tagHtml(t));
 }
@@ -108,7 +108,7 @@ export function keyEngines(list = "") {
   return String(list)
     .split(/,\s*/)
     .map((s) => s.trim())
-    .filter((s) => s && s !== "-" && s !== "—")
+    .filter((s) => s && s !== "-" && s !== "-")
     .map((item) => {
       const text = stripHtml(item);
       const pool = (SHOTS.find(([re]) => re.test(text)) || [null, FALLBACK_SHOTS])[1];
@@ -125,7 +125,7 @@ const NOW = new Date().getFullYear();
 // "2017–2020" -> [2017, 2020]; "2019.5–present" -> [2019, NOW]; "2014→" -> [2014, NOW]; "2015" -> [2015, 2015]
 export function yearSpan(text = "") {
   const t = stripHtml(text);
-  const m = t.match(/(\d{4})(?:\.\d)?\s*(?:[–—-]\s*(\d{4}|present|today)|(→))?/i);
+  const m = t.match(/(\d{4})(?:\.\d)?\s*(?:[–--]\s*(\d{4}|present|today)|(→))?/i);
   if (!m) return null;
   const start = Number(m[1]);
   const end = m[3] || /present|today/i.test(m[2] || "") ? NOW : m[2] ? Number(m[2]) : start;
@@ -133,7 +133,7 @@ export function yearSpan(text = "") {
 }
 
 // The car for an era row: the generation (from the page's generation cards) that overlaps the
-// era's years the most — "Tdi era 1989–1998" on the Discovery page is the Discovery 1 — with the
+// era's years the most - "Tdi era 1989–1998" on the Discovery page is the Discovery 1 - with the
 // era text added so facelift eras pick the facelift car. Falls back to the model's own car.
 export function eraCar(era = "", years = "", slug = "", page = null) {
   const span = yearSpan(years);

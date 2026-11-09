@@ -42,7 +42,7 @@ export function topicIcon(text = "", fallback = "engine") {
 export const stripArrow = (label = "") => label.replace(/^\s*→\s*/, "").replace(/\s*→\s*$/, "");
 export const stripBullet = (text = "") => text.replace(/^\s*[*•-]\s*/, "");
 
-// "£1,200–£2,500 [EM-QUOTE]" -> { text: "£1,200–£2,500", tag: "EM-QUOTE" }
+// "£1,200-£2,500 [EM-QUOTE]" -> { text: "£1,200-£2,500", tag: "EM-QUOTE" }
 export function splitTag(value = "") {
   const m = String(value).match(/^(.*?)\s*\[([^\]]+)\]\s*(.*)$/);
   return m ? { text: [m[1], m[3]].filter(Boolean).join(" "), tag: m[2] } : { text: String(value), tag: "" };

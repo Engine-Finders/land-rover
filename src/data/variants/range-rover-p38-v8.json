@@ -59,13 +59,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "P38A 4.0/4.6 V8 (GEMS, 1994–1999)",
+              "name": "P38A 4.0/4.6 V8 (GEMS, 1994-1999)",
               "url": "https://landroverengine.uk/range-rover/p38a"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "P38A 4.0/4.6 V8 (THOR, 1999–2002)",
+              "name": "P38A 4.0/4.6 V8 (THOR, 1999-2002)",
               "url": "https://landroverengine.uk/range-rover/p38a"
             }
           ]
@@ -96,7 +96,7 @@
               "name": "How much does a Range Rover P38 4.0 / 4.6 V8 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned P38 V8 engine typically costs £3,000–£5,500 supply only. A standard rebuild costs £2,000–£4,000, while a top-hat lined rebuild costs £4,000–£7,000. Fitting adds £1,500–£2,500 depending on location and workshop rates."
+                "text": "A reconditioned P38 V8 engine typically costs £3,000-£5,500 supply only. A standard rebuild costs £2,000-£4,000, while a top-hat lined rebuild costs £4,000-£7,000. Fitting adds £1,500-£2,500 depending on location and workshop rates."
               }
             },
             {
@@ -120,7 +120,7 @@
               "name": "Is it worth replacing a P38 4.0 / 4.6 V8 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £5,000–£12,000 P38, a £4,000–£5,500 recon is 30–110% of the car's value. For a clean example with good body and no corrosion, a top-hatted rebuild is a long-term investment that future-proofs the car. However, if the body or air suspension has significant issues, evaluate total restoration costs before committing."
+                "text": "Depends on vehicle value and condition. Against a well-kept £5,000-£12,000 P38, a £4,000-£5,500 recon is 30-110% of the car's value. For a clean example with good body and no corrosion, a top-hatted rebuild is a long-term investment that future-proofs the car. However, if the body or air suspension has significant issues, evaluate total restoration costs before committing."
               }
             },
             {
@@ -197,7 +197,7 @@
     }
   },
   "hero": {
-    "tagPill": "Range Rover P38 4.0 / 4.6 V8 • 1994–2002 • 1 Engine Generation (2 Capacities, 2 Management Systems)",
+    "tagPill": "Range Rover P38 4.0 / 4.6 V8 • 1994-2002 • 1 Engine Generation (2 Capacities, 2 Management Systems)",
     "h1": "Range Rover P38 4.0 / 4.6 V8 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Range Rover P38 specialists. The legendary Rover V8 powers the P38A in 4.0 and 4.6-litre forms - compare reconditioned, rebuilt and used GEMS and THOR engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -230,18 +230,18 @@
     "rows": [
       {
         "generation": "P38A (GEMS)",
-        "years": "1994–1999",
+        "years": "1994-1999",
         "engineCode": "42D / 44D (4.0) · 46D / 48D (4.6)",
         "reliability": "★★☆☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,000–£5,500 [PLACEHOLDER]",
+        "reconCost": "£3,000-£5,500 [PLACEHOLDER]",
         "eraNote": "Lucas GEMS management - 4.0 most prone to slipped liners; 4.6 suffers same block weaknesses"
       },
       {
         "generation": "P38A (THOR)",
-        "years": "1999–2002",
+        "years": "1999-2002",
         "engineCode": "57D / 58D (4.0) · 59D / 60D (4.6)",
         "reliability": "★★☆☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,000–£5,500 [PLACEHOLDER]",
+        "reconCost": "£3,000-£5,500 [PLACEHOLDER]",
         "eraNote": "Bosch Motronic management - more torque lower down; same fundamental block, similar liner risk"
       }
     ],
@@ -260,35 +260,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£800–£1,800",
-        "fittedIndie": "£1,800–£3,200",
-        "warranty": "1–6 months",
+        "supplyOnly": "£800-£1,800",
+        "fittedIndie": "£1,800-£3,200",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; donor engine for rebuild"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,000–£5,500",
-        "fittedIndie": "£4,500–£7,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,000-£5,500",
+        "fittedIndie": "£4,500-£7,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine (Standard)",
-        "supplyOnly": "£2,000–£4,000",
-        "fittedIndie": "£3,500–£5,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,000-£4,000",
+        "fittedIndie": "£3,500-£5,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Rebuilt Engine (Top-Hatted)",
-        "supplyOnly": "£4,000–£7,000",
-        "fittedIndie": "£5,500–£8,500",
-        "warranty": "24–36 months",
+        "supplyOnly": "£4,000-£7,000",
+        "fittedIndie": "£5,500-£8,500",
+        "warranty": "24-36 months",
         "bestFor": "The only permanent fix for liner slippage"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting a P38 V8 engine typically takes 15–25 hours at £65–£95/hr (independent). The engine bay is tight and body lift is often required for access. A standard rebuild costs £2,000–£4,000, while top-hat liners can triple the rebuild cost.",
+    "labourEstimate": "Fitting a P38 V8 engine typically takes 15-25 hours at £65-£95/hr (independent). The engine bay is tight and body lift is often required for access. A standard rebuild costs £2,000-£4,000, while top-hat liners can triple the rebuild cost.",
     "cta": {
       "label": "→ Compare P38 4.0 / 4.6 V8 engine prices from UK specialists",
       "href": "#"
@@ -301,14 +301,14 @@
         "title": "Slipped Cylinder Liners (The Defining P38 V8 Fault)",
         "symptoms": "Pressurised cooling system, coolant overflow from expansion tank, overheating, head gasket failure, rattling noise when engine is hot. Tapping noise from the block that disappears when cold.",
         "typicalMileage": "Any mileage - can occur under normal operating conditions on later P38s. 4.0 engines are most prone, followed by 4.6.",
-        "repairCost": "£1,000–£1,200 (re-linering)",
-        "replacementCost": "£4,500–£7,000 (full replacement or top-hatted rebuild)",
+        "repairCost": "£1,000-£1,200 (re-linering)",
+        "replacementCost": "£4,500-£7,000 (full replacement or top-hatted rebuild)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "overheating and pressurised coolant indicate imminent failure"
         },
-        "recommendation": "This is the single most infamous fault on the P38 V8. The 94mm bore on an already-stressed aluminium block means the cylinder liners can move, allowing combustion gases to enter the cooling system. The only permanent fix is a top-hat liner installation - where the liner is machined with a lip that locks it into the block. Standard re-linering is cheaper but may not be a permanent solution. If you see a pressurised coolant system, bubbling in the expansion tank or any overheating, stop driving immediately. A £1,000–£1,200 re-liner is far cheaper than a £4,500–£7,000 replacement.",
+        "recommendation": "This is the single most infamous fault on the P38 V8. The 94mm bore on an already-stressed aluminium block means the cylinder liners can move, allowing combustion gases to enter the cooling system. The only permanent fix is a top-hat liner installation - where the liner is machined with a lip that locks it into the block. Standard re-linering is cheaper but may not be a permanent solution. If you see a pressurised coolant system, bubbling in the expansion tank or any overheating, stop driving immediately. A £1,000-£1,200 re-liner is far cheaper than a £4,500-£7,000 replacement.",
         "failureLink": {
           "label": "Read the full slipped liner guide → /failures/slipped-cylinder-liners/ [NEW FAILURE PAGE NEEDED]",
           "href": "#"
@@ -319,7 +319,7 @@
         "title": "Overheating & Cooling System Failure (Root Cause)",
         "symptoms": "Temperature gauge rising, coolant loss with no visible leak, steam from engine bay, heater blowing cold, pressurised coolant system",
         "typicalMileage": "Any mileage - cooling system components age and fail",
-        "repairCost": "£200–£700 (radiator, thermostat, hoses, water pump replacement)",
+        "repairCost": "£200-£700 (radiator, thermostat, hoses, water pump replacement)",
         "replacementCost": "N/A - repair only (does not typically progress to engine replacement if addressed early)",
         "urgency": {
           "icon": "🔴",
@@ -337,7 +337,7 @@
         "title": "Worn Camshaft & Timing Chain (High-Mileage)",
         "symptoms": "Tappet noise from the top of the engine, loss of power, rough running, poor emissions",
         "typicalMileage": "70,000+ miles",
-        "repairCost": "£800–£1,500 (camshaft, lifters, timing chain and sprockets)",
+        "repairCost": "£800-£1,500 (camshaft, lifters, timing chain and sprockets)",
         "replacementCost": "N/A - repair only (does not typically progress to engine replacement)",
         "urgency": {
           "icon": "🟡",
@@ -374,31 +374,31 @@
         {
           "problem": "Slipped liner (early detection)",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£1,000–£1,200",
+          "typicalCost": "£1,000-£1,200",
           "whenItMakesSense": "Re-linering is possible but may not be permanent"
         },
         {
           "problem": "Slipped liner (top-hat solution)",
           "repairable": "✅ Yes",
-          "typicalCost": "£4,000–£7,000",
+          "typicalCost": "£4,000-£7,000",
           "whenItMakesSense": "The only permanent fix - future-proofs the block"
         },
         {
           "problem": "Overheating / cooling system",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£700",
+          "typicalCost": "£200-£700",
           "whenItMakesSense": "Essential maintenance - do it preventatively"
         },
         {
           "problem": "Worn camshaft / timing chain",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,500",
+          "typicalCost": "£800-£1,500",
           "whenItMakesSense": "Viable on any well-maintained example"
         },
         {
           "problem": "Head gasket failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,200",
+          "typicalCost": "£600-£1,200",
           "whenItMakesSense": "Viable if caught before liner damage occurs"
         }
       ]
@@ -448,31 +448,31 @@
     "rows": [
       {
         "engineCode": "42D / 44D (4.0 GEMS)",
-        "years": "1994–1999",
-        "power": "190–225 bhp (140–165 kW)",
+        "years": "1994-1999",
+        "power": "190-225 bhp (140-165 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,000-£5,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "46D / 48D (4.6 GEMS)",
-        "years": "1994–1999",
+        "years": "1994-1999",
         "power": "225 bhp / 380 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,000-£5,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "57D / 58D (4.0 THOR)",
-        "years": "1999–2002",
-        "power": "185–190 bhp (136–140 kW)",
+        "years": "1999-2002",
+        "power": "185-190 bhp (136-140 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,000-£5,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "59D / 60D (4.6 THOR)",
-        "years": "1999–2002",
-        "power": "214–218 bhp / 407 Nm",
+        "years": "1999-2002",
+        "power": "214-218 bhp / 407 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,000-£5,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -517,7 +517,7 @@
         },
         {
           "label": "* Management",
-          "value": "GEMS (1994–1999) · THOR (1999–2002)"
+          "value": "GEMS (1994-1999) · THOR (1999-2002)"
         },
         {
           "label": "* THOR torque advantage",
@@ -542,11 +542,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "70,000–120,000 miles【PATTERN DATA】"
+        "value": "70,000-120,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£4,000–£5,500 reconditioned, supply only【PLACEHOLDER】"
+        "value": "£4,000-£5,500 reconditioned, supply only【PLACEHOLDER】"
       },
       {
         "label": "Most Requested Engine Code",
@@ -567,7 +567,7 @@
       {
         "id": 1,
         "question": "How much does a Range Rover P38 4.0 / 4.6 V8 engine replacement cost in the UK?",
-        "answer": "A reconditioned P38 V8 engine typically costs £3,000–£5,500 supply only. A standard rebuild costs £2,000–£4,000, while a top-hat lined rebuild costs £4,000–£7,000. Fitting adds £1,500–£2,500 depending on location and workshop rates."
+        "answer": "A reconditioned P38 V8 engine typically costs £3,000-£5,500 supply only. A standard rebuild costs £2,000-£4,000, while a top-hat lined rebuild costs £4,000-£7,000. Fitting adds £1,500-£2,500 depending on location and workshop rates."
       },
       {
         "id": 2,
@@ -582,7 +582,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a P38 4.0 / 4.6 V8 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £5,000–£12,000 P38, a £4,000–£5,500 recon is 30–110% of the car's value. For a clean example with good body and no corrosion, a top-hatted rebuild is a long-term investment that future-proofs the car. However, if the body or air suspension has significant issues, evaluate total restoration costs before committing. For most examples under £4,000, the replacement cost may exceed our 60% Land Rover scrap threshold."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £5,000-£12,000 P38, a £4,000-£5,500 recon is 30-110% of the car's value. For a clean example with good body and no corrosion, a top-hatted rebuild is a long-term investment that future-proofs the car. However, if the body or air suspension has significant issues, evaluate total restoration costs before committing. For most examples under £4,000, the replacement cost may exceed our 60% Land Rover scrap threshold."
       },
       {
         "id": 5,

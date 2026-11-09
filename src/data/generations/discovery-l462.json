@@ -141,7 +141,7 @@
               "name": "How much does a Land Rover Discovery 5 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned L462 engine costs between £3,000 and £9,500 supply-only, depending on the engine - the 2.0 Ingenium diesel ranges £3,500–£5,800, while the 3.0 V6 diesel runs £6,500–£9,500. Fitting adds 10–20 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+                "text": "A reconditioned L462 engine costs between £3,000 and £9,500 supply-only, depending on the engine - the 2.0 Ingenium diesel ranges £3,500-£5,800, while the 3.0 V6 diesel runs £6,500-£9,500. Fitting adds 10-20 hours of labour at £65-£90/hr. Use our calculator for a personalised quote."
               }
             },
             {
@@ -280,7 +280,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Land Rover Discovery 5 L462 • SUV • 2016–present",
+    "tagPill": "Land Rover Discovery 5 L462 • SUV • 2016-present",
     "h1": "Land Rover Discovery 5 L462 Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the Discovery 5 L462 - from the Ingenium 2.0-litre diesel four to the 3.0-litre supercharged V6 and the limited-run 5.0-litre SVX V8. Real UK costs, honest failure data, and the Ingenium timing-chain question that defines this generation's ownership experience. Backed by 292+ real UK Discovery 5 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -329,11 +329,11 @@
         "fuel": "Diesel",
         "displacement": "2.0L",
         "power": "180 bhp",
-        "years": "2016–present",
+        "years": "2016-present",
         "variants": "TD4",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "1,150 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£3,500–£5,800"
+        "avgReconCost": "£3,500-£5,800"
       },
       {
         "engineCode": "204DTA",
@@ -341,23 +341,23 @@
         "fuel": "Diesel",
         "displacement": "2.0L",
         "power": "241 bhp",
-        "years": "2016–present",
+        "years": "2016-present",
         "variants": "SD4",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "1,150 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£3,500–£5,800"
+        "avgReconCost": "£3,500-£5,800"
       },
       {
         "engineCode": "306DT",
         "family": "AJD V6",
         "fuel": "Diesel",
         "displacement": "3.0L",
-        "power": "211–306 bhp",
-        "years": "2016–present",
+        "power": "211-306 bhp",
+        "years": "2016-present",
         "variants": "<a href='https://landroverengine.uk/engine/m57-td6'>TD6</a>, SD6",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "980 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£6,500–£9,500"
+        "avgReconCost": "£6,500-£9,500"
       },
       {
         "engineCode": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>PT204</a>",
@@ -365,11 +365,11 @@
         "fuel": "Petrol",
         "displacement": "2.0L",
         "power": "300 bhp",
-        "years": "2017–present",
+        "years": "2017-present",
         "variants": "P300",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "480 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£3,000–£5,000"
+        "avgReconCost": "£3,000-£5,000"
       },
       {
         "engineCode": "AJ126",
@@ -377,23 +377,23 @@
         "fuel": "Petrol, supercharged",
         "displacement": "3.0L",
         "power": "340 bhp",
-        "years": "2016–2020",
+        "years": "2016-2020",
         "variants": "<a href='https://landroverengine.uk/engine/volvo-si6'>Si6</a>",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "560 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£4,500–£7,500"
+        "avgReconCost": "£4,500-£7,500"
       },
       {
         "engineCode": "AJ133",
         "family": "AJ133 V8",
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L",
-        "power": "525–557 bhp",
+        "power": "525-557 bhp",
         "years": "Limited (SVX)",
         "variants": "SVX",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "330 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£5,500–£9,000"
+        "avgReconCost": "£5,500-£9,000"
       },
       {
         "engineCode": "PT306 (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>)",
@@ -401,11 +401,11 @@
         "fuel": "Petrol MHEV",
         "displacement": "3.0L",
         "power": "360 bhp",
-        "years": "2020–present",
+        "years": "2020-present",
         "variants": "P360",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,500"
+        "avgReconCost": "£4,500-£7,500"
       },
       {
         "engineCode": "306PS",
@@ -413,11 +413,11 @@
         "fuel": "Petrol MHEV",
         "displacement": "3.0L",
         "power": "400 bhp",
-        "years": "2020–present",
+        "years": "2020-present",
         "variants": "P400",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "80 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£4,500–£7,500"
+        "avgReconCost": "£4,500-£7,500"
       }
     ],
     "confidenceScore": {
@@ -448,13 +448,13 @@
       },
       {
         "slot": "Highest Risk",
-        "engine": "306DT 3.0-litre V6 Diesel - The AJD V6 diesel suffers from crankshaft bearing failure (tin-aluminium coating fatigue) at 80,000–140,000 miles, often preceded by cold-start knock. A bottom-end rebuild costs £5,500–£7,000; a full reconditioned replacement runs £6,500–£9,500.",
+        "engine": "306DT 3.0-litre V6 Diesel - The AJD V6 diesel suffers from crankshaft bearing failure (tin-aluminium coating fatigue) at 80,000-140,000 miles, often preceded by cold-start knock. A bottom-end rebuild costs £5,500-£7,000; a full reconditioned replacement runs £6,500-£9,500.",
         "quote": "",
         "whoItsFor": "only buyers with full service history and a warranty."
       },
       {
         "slot": "Most Expensive Failure",
-        "engine": "<a href='https://landroverengine.uk/engine/aj133'>AJ133</a> 5.0-litre Supercharged V8 (SVX) - The limited-run SVX V8 is the most expensive engine in the L462 line-up to replace, with reconditioned units costing £5,500–£9,000 supply-only. Timing-chain guide wear is the primary risk, similar to other Jaguar-Land Rover V8s.",
+        "engine": "<a href='https://landroverengine.uk/engine/aj133'>AJ133</a> 5.0-litre Supercharged V8 (SVX) - The limited-run SVX V8 is the most expensive engine in the L462 line-up to replace, with reconditioned units costing £5,500-£9,000 supply-only. Timing-chain guide wear is the primary risk, similar to other Jaguar-Land Rover V8s.",
         "quote": "",
         "whoItsFor": "collectors and enthusiasts who accept the premium."
       },
@@ -485,56 +485,56 @@
     "rows": [
       {
         "engine": "204DTD/204DTA",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Timing chain tensioner",
-        "repairCostSpecialist": "£1,200–£2,500",
-        "replacementCostRecon": "£3,500–£5,800",
+        "repairCostSpecialist": "£1,200-£2,500",
+        "replacementCostRecon": "£3,500-£5,800",
         "ownershipVerdict": "Risk vs Reward - pre-2019 units: budget for chain work"
       },
       {
         "engine": "306DT",
-        "typicalMileage": "80k–140k",
+        "typicalMileage": "80k-140k",
         "commonMajorFailure": "Crankshaft bearing failure",
-        "repairCostSpecialist": "£5,500–£7,000",
-        "replacementCostRecon": "£6,500–£9,500",
+        "repairCostSpecialist": "£5,500-£7,000",
+        "replacementCostRecon": "£6,500-£9,500",
         "ownershipVerdict": "Most Expensive - catastrophic if ignored"
       },
       {
         "engine": "PT204",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Water pump",
-        "repairCostSpecialist": "£400–£800",
-        "replacementCostRecon": "£3,000–£5,000",
+        "repairCostSpecialist": "£400-£800",
+        "replacementCostRecon": "£3,000-£5,000",
         "ownershipVerdict": "Best Petrol - reliable, simple"
       },
       {
         "engine": "AJ126",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Water pump, coolant leaks",
-        "repairCostSpecialist": "£600–£1,200",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£600-£1,200",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Solid Choice - cooling system is the watch-item"
       },
       {
         "engine": "AJ133",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Timing chain guide wear",
-        "repairCostSpecialist": "£2,500–£4,500",
-        "replacementCostRecon": "£5,500–£9,000",
+        "repairCostSpecialist": "£2,500-£4,500",
+        "replacementCostRecon": "£5,500-£9,000",
         "ownershipVerdict": "Collector's Premium - SVX only"
       },
       {
         "engine": "PT306/306PS",
         "typicalMileage": "- (too new)",
         "commonMajorFailure": "Cooling system (emerging)",
-        "repairCostSpecialist": "£300–£600",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£300-£600",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Too Early - no major pattern yet"
       }
     ],
     "economicsRule": {
       "title": "The L462 rule",
-      "text": "A £6,500–£9,500 306DT recon against a £10,000–£14,000 early Discovery 5 sits at 46–95% of the car's value. On a sub-£12,000 L462, that brushes our 60% Land Rover threshold - we'll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 36–53% - a repair decision, not a financial one. Value the car first."
+      "text": "A £6,500-£9,500 306DT recon against a £10,000-£14,000 early Discovery 5 sits at 46-95% of the car's value. On a sub-£12,000 L462, that brushes our 60% Land Rover threshold - we'll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 36-53% - a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -557,25 +557,25 @@
         "id": 1,
         "title": "<a href='https://landroverengine.uk/engine/ingenium-20-diesel'>Ingenium 2.0 Diesel</a> Timing Chain Tensioner Failure",
         "affectedModels": "L462 2.0-litre TD4 and SD4 (204DTD, 204DTA), particularly pre-2019 units.",
-        "typicalFailureMileage": "60,000–120,000 miles.",
+        "typicalFailureMileage": "60,000-120,000 miles.",
         "rootCause": "The timing chain tensioner on early Ingenium 2.0-litre diesel engines can fail, leading to chain stretch and, in catastrophic cases, engine destruction. Oil dilution from DPF regeneration accelerates tensioner wear.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£1,800–£3,000",
-            "specialist": "£1,200–£2,500",
+            "dealer": "£1,800-£3,000",
+            "specialist": "£1,200-£2,500",
             "work": "Chain, tensioner, guides replacement",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£5,500–£8,000",
-            "specialist": "£4,500–£6,500",
+            "dealer": "£5,500-£8,000",
+            "specialist": "£4,500-£6,500",
             "work": "Full reconditioned engine",
             "note": ""
           }
         ],
-        "recommendation": "On any pre-2019 L462 diesel, have the timing chain inspected at 60,000 miles - a £1,200–£2,500 preventative repair is cheaper than the £4,500–£6,500 replacement that follows if ignored.",
+        "recommendation": "On any pre-2019 L462 diesel, have the timing chain inspected at 60,000 miles - a £1,200-£2,500 preventative repair is cheaper than the £4,500-£6,500 replacement that follows if ignored.",
         "cta": {
           "label": "Compare 204DTD/204DTA engine prices for your Discovery 5 →",
           "href": "#"
@@ -585,25 +585,25 @@
         "id": 2,
         "title": "306DT V6 Diesel Crankshaft Bearing Failure",
         "affectedModels": "L462 3.0-litre TD6 and SD6 (306DT).",
-        "typicalFailureMileage": "80,000–140,000 miles.",
+        "typicalFailureMileage": "80,000-140,000 miles.",
         "rootCause": "The tin-aluminium coating on the crankshaft bearings fatigues over time, leading to bearing failure. Cold-start knock is the classic early warning; ignored, it causes catastrophic bottom-end failure.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£6,500–£8,500",
-            "specialist": "£5,500–£7,000",
+            "dealer": "£6,500-£8,500",
+            "specialist": "£5,500-£7,000",
             "work": "Bottom-end bearing replacement",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£8,500–£12,000",
-            "specialist": "£6,500–£9,500",
+            "dealer": "£8,500-£12,000",
+            "specialist": "£6,500-£9,500",
             "work": "Full reconditioned engine",
             "note": ""
           }
         ],
-        "recommendation": "If your L462 306DT exhibits cold-start knock, stop driving and have the bottom end inspected immediately - £5,500–£7,000 now is far cheaper than the £6,500–£9,500 replacement that follows a full failure.",
+        "recommendation": "If your L462 306DT exhibits cold-start knock, stop driving and have the bottom end inspected immediately - £5,500-£7,000 now is far cheaper than the £6,500-£9,500 replacement that follows a full failure.",
         "cta": {
           "label": "Compare 306DT engine prices for your Discovery 5 →",
           "href": "#"
@@ -612,26 +612,26 @@
       {
         "id": 3,
         "title": "AJ126 3.0 V6 Supercharged Petrol Cooling System Failure",
-        "affectedModels": "L462 Si6 (2016–2020).",
-        "typicalFailureMileage": "60,000–120,000 miles.",
+        "affectedModels": "L462 Si6 (2016-2020).",
+        "typicalFailureMileage": "60,000-120,000 miles.",
         "rootCause": "Water pump failure and coolant leaks from crossover pipes are well-documented on the supercharged V6. The supercharger sits in the engine's 'V', making access to cooling components labour-intensive.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£800–£1,600",
-            "specialist": "£600–£1,200",
+            "dealer": "£800-£1,600",
+            "specialist": "£600-£1,200",
             "work": "Water pump, thermostat, coolant pipes",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£6,000–£9,000",
-            "specialist": "£4,500–£7,500",
+            "dealer": "£6,000-£9,000",
+            "specialist": "£4,500-£7,500",
             "work": "Full reconditioned engine",
             "note": ""
           }
         ],
-        "recommendation": "On any L462 Si6 approaching 60,000 miles, replace the water pump as preventative maintenance - £600–£1,200 now is cheaper than the £4,500+ engine replacement that follows an overheat.",
+        "recommendation": "On any L462 Si6 approaching 60,000 miles, replace the water pump as preventative maintenance - £600-£1,200 now is cheaper than the £4,500+ engine replacement that follows an overheat.",
         "cta": {
           "label": "Compare AJ126 engine prices for your Discovery 5 →",
           "href": "#"
@@ -653,50 +653,50 @@
       {
         "variant": "2.0 TD4/SD4",
         "engineCode": "204DTD/204DTA",
-        "usedSupply": "£2,000–£3,500",
-        "reconditionedSupply": "£3,500–£5,800",
-        "rebuiltSupply": "£4,800–£7,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£2,000-£3,500",
+        "reconditionedSupply": "£3,500-£5,800",
+        "rebuiltSupply": "£4,800-£7,000",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "2.0 P300",
         "engineCode": "PT204",
-        "usedSupply": "£1,500–£2,800",
-        "reconditionedSupply": "£3,000–£5,000",
-        "rebuiltSupply": "£4,200–£6,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£1,500-£2,800",
+        "reconditionedSupply": "£3,000-£5,000",
+        "rebuiltSupply": "£4,200-£6,500",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "3.0 TD6/SD6",
         "engineCode": "306DT",
-        "usedSupply": "£3,500–£5,500",
-        "reconditionedSupply": "£6,500–£9,500",
-        "rebuiltSupply": "£7,500–£11,000",
-        "labourHours": "15–20 hrs"
+        "usedSupply": "£3,500-£5,500",
+        "reconditionedSupply": "£6,500-£9,500",
+        "rebuiltSupply": "£7,500-£11,000",
+        "labourHours": "15-20 hrs"
       },
       {
         "variant": "3.0 Si6",
         "engineCode": "AJ126",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,000–£9,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,000-£9,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "5.0 SVX",
         "engineCode": "AJ133",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£8,000–£12,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£8,000-£12,000",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "3.0 P360/P400",
         "engineCode": "PT306/306PS",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,500–£10,000",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,500-£10,000",
+        "labourHours": "12-16 hrs"
       }
     ],
     "note": ""
@@ -775,7 +775,7 @@
       "2. SD4 (2.0 high-output diesel)",
       "3. TD6 (3.0 V6 diesel)"
     ],
-    "averageReplacementCost": "£1,500–£9,500 supply-only [EM-QUOTE]",
+    "averageReplacementCost": "£1,500-£9,500 supply-only [EM-QUOTE]",
     "mostCommonFailures": [
       "1. Ingenium 2.0 diesel timing chain tensioner",
       "2. 306DT V6 diesel crankshaft bearing failure",
@@ -810,7 +810,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Discovery 5 engine replacement cost in the UK?",
-        "answer": "A reconditioned L462 engine costs between £3,000 and £9,500 supply-only [EM-QUOTE], depending on the engine - the 2.0 Ingenium diesel ranges £3,500–£5,800, while the 3.0 V6 diesel runs £6,500–£9,500. Fitting adds 10–20 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+        "answer": "A reconditioned L462 engine costs between £3,000 and £9,500 supply-only [EM-QUOTE], depending on the engine - the 2.0 Ingenium diesel ranges £3,500-£5,800, while the 3.0 V6 diesel runs £6,500-£9,500. Fitting adds 10-20 hours of labour at £65-£90/hr. Use our calculator for a personalised quote."
       },
       {
         "id": 2,

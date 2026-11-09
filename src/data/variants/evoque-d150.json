@@ -53,7 +53,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Evoque L551 D150 MHEV (2019–present)",
+              "name": "Evoque L551 D150 MHEV (2019-present)",
               "url": "https://landroverengine.uk/evoque/l551"
             }
           ]
@@ -78,7 +78,7 @@
               "name": "How much does a Land Rover Evoque D150 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned D150 2.0-litre Ingenium diesel engine typically costs £3,500–£5,800 supply only. Used engines are available from £2,000–£3,500. Fitting adds £1,300–£2,000 depending on your location and workshop. Most Evoque engine replacements range between £2,500 and £7,500."
+                "text": "A reconditioned D150 2.0-litre Ingenium diesel engine typically costs £3,500-£5,800 supply only. Used engines are available from £2,000-£3,500. Fitting adds £1,300-£2,000 depending on your location and workshop. Most Evoque engine replacements range between £2,500 and £7,500."
               }
             },
             {
@@ -118,7 +118,7 @@
               "name": "Can I repair the timing chain tensioners, or does it need full engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative timing chain tensioner replacement costs £800–£1,500. If ignored and the chain skips, timing is lost, valves contact pistons, and you're looking at a £3,500–£5,800 engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes are the single most effective preventative measure for the revised 2019+ tensioners."
+                "text": "Yes - if caught early. A preventative timing chain tensioner replacement costs £800-£1,500. If ignored and the chain skips, timing is lost, valves contact pistons, and you're looking at a £3,500-£5,800 engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes are the single most effective preventative measure for the revised 2019+ tensioners."
               }
             }
           ]
@@ -179,7 +179,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Evoque D150 • 2019–present • 2.0 Ingenium Diesel MHEV",
+    "tagPill": "Land Rover Evoque D150 • 2019-present • 2.0 Ingenium Diesel MHEV",
     "h1": "Land Rover Evoque D150 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover Evoque specialists. Compare reconditioned, rebuilt and used 2.0-litre Ingenium diesel engines with MHEV - supply & fit available nationwide.",
     "trustBadges": [
@@ -212,10 +212,10 @@
     "rows": [
       {
         "generation": "Evoque L551",
-        "years": "2019–present",
+        "years": "2019-present",
         "engineCode": "204DTD MHEV (2.0L Ingenium Diesel with mild hybrid)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£5,800 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,500-£5,800 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "One engine throughout this badge's history - no era ambiguity."
       }
     ],
@@ -234,35 +234,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,000–£3,500",
-        "fittedIndie": "£3,100–£4,900",
-        "warranty": "1–6 months",
+        "supplyOnly": "£2,000-£3,500",
+        "fittedIndie": "£3,100-£4,900",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; vehicle under £12,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,500–£5,800",
-        "fittedIndie": "£4,800–£7,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£5,800",
+        "fittedIndie": "£4,800-£7,200",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,800–£7,000",
-        "fittedIndie": "£6,100–£8,400",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,800-£7,000",
+        "fittedIndie": "£6,100-£8,400",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£7,500–£10,500+",
-        "fittedIndie": "£8,800–£12,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£7,500-£10,500+",
+        "fittedIndie": "£8,800-£12,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "Figures above reflect the 204DTD MHEV Ingenium diesel. Most Evoque engine replacements range between £2,500 and £7,500 depending on engine type and specification.",
-    "labourEstimate": "Fitting an Evoque D150 engine typically takes 10–14 hours at £70–£100/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting an Evoque D150 engine typically takes 10-14 hours at £70-£100/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare D150 engine prices from UK specialists",
       "href": "#"
@@ -274,8 +274,8 @@
         "id": 1,
         "title": "EGR Cooler Leaks",
         "symptoms": "Coolant loss with no visible external leak, white exhaust smoke, occasional burning smell, engine management light.",
-        "typicalMileage": "40,000–80,000 miles.",
-        "repairCost": "£400–£800 [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "40,000-80,000 miles.",
+        "repairCost": "£400-£800 [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -292,8 +292,8 @@
         "id": 2,
         "title": "DPF Clogging & Regeneration Issues",
         "symptoms": "DPF warning light, reduced performance, increased fuel consumption, failed regeneration cycles.",
-        "typicalMileage": "40,000–80,000 miles (urban-driven vehicles)",
-        "repairCost": "£300–£800 (forced regeneration or DPF clean)",
+        "typicalMileage": "40,000-80,000 miles (urban-driven vehicles)",
+        "repairCost": "£300-£800 (forced regeneration or DPF clean)",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -309,10 +309,10 @@
       {
         "id": 3,
         "title": "Timing Chain Tensioner Wear (Post-2019 - Reduced Risk)",
-        "symptoms": "Rattling noise on cold start lasting 1–2 seconds, metallic ticking from the engine.",
-        "typicalMileage": "80,000–120,000 miles (post-2019 revised tensioners)",
-        "repairCost": "£800–£1,500 [PLACEHOLDER - confirm vs cost sheet]",
-        "replacementCost": "£3,500–£5,800 (if chain skips and valves contact pistons)",
+        "symptoms": "Rattling noise on cold start lasting 1-2 seconds, metallic ticking from the engine.",
+        "typicalMileage": "80,000-120,000 miles (post-2019 revised tensioners)",
+        "repairCost": "£800-£1,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "replacementCost": "£3,500-£5,800 (if chain skips and valves contact pistons)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -348,31 +348,31 @@
         {
           "problem": "EGR cooler leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Straightforward fix; prevents overheating damage"
         },
         {
           "problem": "DPF clogging",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Forced regeneration or DPF clean - less than replacement"
         },
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,500",
+          "typicalCost": "£800-£1,500",
           "whenItMakesSense": "Preventative - catches the fault before catastrophic failure"
         },
         {
           "problem": "Injector failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200",
+          "typicalCost": "£400-£1,200",
           "whenItMakesSense": "Specialist repair available"
         },
         {
           "problem": "Chain snap (valve contact)",
           "repairable": "❌ Usually No",
-          "typicalCost": "£3,500–£5,800",
+          "typicalCost": "£3,500-£5,800",
           "whenItMakesSense": "Typically requires full engine replacement or complete rebuild"
         }
       ]
@@ -392,7 +392,7 @@
         "* Engine warning light with EGR or DPF codes and no diagnosis"
       ]
     },
-    "closingVerdict": "The D150 is the entry-point diesel for the L551 Evoque, and the 2019 revisions made the Ingenium diesel meaningfully more reliable than its predecessor. But it's still a modern diesel with modern diesel problems - EGR coolers, DPFs, and timing chain tensioners all need attention. Buy on documented history, not on faith. A well-maintained D150 is a £25,000–£35,000 luxury compact SUV; a neglected one is a £4,000 engine replacement waiting to happen.",
+    "closingVerdict": "The D150 is the entry-point diesel for the L551 Evoque, and the 2019 revisions made the Ingenium diesel meaningfully more reliable than its predecessor. But it's still a modern diesel with modern diesel problems - EGR coolers, DPFs, and timing chain tensioners all need attention. Buy on documented history, not on faith. A well-maintained D150 is a £25,000-£35,000 luxury compact SUV; a neglected one is a £4,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare D150 engine prices before you buy",
       "href": "#"
@@ -402,7 +402,7 @@
     "intro": "Before you buy a used Land Rover Evoque D150 (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for rattling or metallic ticking on startup (timing chain tensioner wear warning - post-2019 reduced but not eliminated)",
-      "* Service History - including the D150 MHEV era (2019–present) and confirmed oil-change intervals using JLR-spec 0W-30 or 5W-30 oil",
+      "* Service History - including the D150 MHEV era (2019-present) and confirmed oil-change intervals using JLR-spec 0W-30 or 5W-30 oil",
       "* DPF Check - Check for DPF warning light or evidence of regeneration issues (urban-driven vehicles are high risk)",
       "* Smoke Check - White smoke on startup can indicate EGR coolant leak",
       "* Coolant Level - Any history of coolant loss without visible leaks? (EGR cooler warning)",
@@ -422,10 +422,10 @@
     "rows": [
       {
         "engineCode": "204DTD MHEV (2.0L Ingenium Diesel with mild hybrid)",
-        "years": "2019–present",
-        "power": "150 PS (110 kW) @ 3,500 rpm · 380 Nm @ 1,500–2,500 rpm",
+        "years": "2019-present",
+        "power": "150 PS (110 kW) @ 3,500 rpm · 380 Nm @ 1,500-2,500 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£5,800 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£3,500-£5,800 [PLACEHOLDER - confirm vs cost sheet]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -467,11 +467,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "45,000–75,000 miles [PATTERN DATA]"
+        "value": "45,000-75,000 miles [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£3,500–£5,800 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
+        "value": "£3,500-£5,800 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "label": "Most Requested Engine Code",
@@ -492,7 +492,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Evoque D150 engine replacement cost in the UK?",
-        "answer": "A reconditioned D150 2.0-litre Ingenium diesel engine typically costs £3,500–£5,800 supply only. Used engines are available from £2,000–£3,500. Fitting adds £1,300–£2,000 depending on your location and workshop. Most Evoque engine replacements range between £2,500 and £7,500."
+        "answer": "A reconditioned D150 2.0-litre Ingenium diesel engine typically costs £3,500-£5,800 supply only. Used engines are available from £2,000-£3,500. Fitting adds £1,300-£2,000 depending on your location and workshop. Most Evoque engine replacements range between £2,500 and £7,500."
       },
       {
         "id": 2,
@@ -517,7 +517,7 @@
       {
         "id": 6,
         "question": "Can I repair the timing chain tensioners, or does it need full engine replacement?",
-        "answer": "Yes - if caught early. A preventative timing chain tensioner replacement costs £800–£1,500. If ignored and the chain skips, timing is lost, valves contact pistons, and you're looking at a £3,500–£5,800 engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes are the single most effective preventative measure for the revised 2019+ tensioners."
+        "answer": "Yes - if caught early. A preventative timing chain tensioner replacement costs £800-£1,500. If ignored and the chain skips, timing is lost, valves contact pistons, and you're looking at a £3,500-£5,800 engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes are the single most effective preventative measure for the revised 2019+ tensioners."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

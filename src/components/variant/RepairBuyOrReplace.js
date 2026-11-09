@@ -18,7 +18,7 @@ const SERIF = "font-[family-name:var(--font-serif-display)]";
 const SANS = "font-[family-name:var(--font-instrument-sans)]";
 const CARD = "rounded-lg border border-lr-line bg-lr-card/95 shadow-[0_14px_30px_-26px_var(--lr-shadow)] backdrop-blur-sm";
 const CARD_TITLE = `${H5} text-lr-head`;
-const dashify = (t = "") => String(t).replace(/ - /g, " — ");
+const dashify = (t = "") => String(t).replace(/ - /g, " - ");
 
 /* ---------- icons ---------- */
 const stroke = { fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
@@ -77,11 +77,11 @@ function Status({ value, className = "", wrap = false }) {
 const slashBreak = (html = "") => String(html).replace(/([\p{L}\d)])\/([\p{L}\d(])/gu, "$1/<wbr>$2");
 
 /* ---------- Can it be repaired ---------- */
-// "£1,800–£4,500+ [11†L6]" -> the price (free to break only after its dash, never inside an amount)
+// "£1,800-£4,500+ [11†L6]" -> the price (free to break only after its dash, never inside an amount)
 // with its data tag(s) on a smaller line underneath, so a long figure never runs into the next column
 function Cost({ value = "" }) {
   const m = String(value).match(/^(.*?)\s*((?:\[[^\]]+\]\s*)+)$/);
-  const main = (m ? m[1] : String(value)).replace(/(£[\d,.]+k?\+?)\s*[–‑-]\s*(£)/g, "$1–​$2");
+  const main = (m ? m[1] : String(value)).replace(/(£[\d,.]+k?\+?)\s*[-‑-]\s*(£)/g, "$1-​$2");
   const tags = m ? m[2].match(/\[[^\]]+\]/g) : [];
   return (
     <>
@@ -207,7 +207,7 @@ function VerdictShield({ className = "" }) {
 function highlightVerdict(html = "", engine = "") {
   const g = (s) => `<span class="font-medium text-lr-ink dark:text-lr-green">${s}</span>`;
   let out = dashify(html);
-  out = out.replace(/\b\d(?:\.\d)?-litre\b[^,.;—]*?\b(?:diesel|petrol|engine|V8|V6)\b/, (m) => g(m));
+  out = out.replace(/\b\d(?:\.\d)?-litre\b[^,.;-]*?\b(?:diesel|petrol|engine|V8|V6)\b/, (m) => g(m));
   out = out.replace(/\bno ECU\b/, (m) => g(m));
   if (engine) out = out.replace(new RegExp(`(?<![\\w-])${engine.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\w-])`, "g"), (m) => g(m));
   return out;
@@ -215,7 +215,7 @@ function highlightVerdict(html = "", engine = "") {
 
 export default function RepairBuyOrReplace({ data, car = null, engine = "/variant/sec10_engine.webp" }) {
   if (!data) return null;
-  // "Defender 200Tdi - Repair, Buy, or Replace?" -> "Defender " + green "200Tdi" + " —" / "Repair, Buy, or Replace?"
+  // "Defender 200Tdi - Repair, Buy, or Replace?" -> "Defender " + green "200Tdi" + " -" / "Repair, Buy, or Replace?"
   const h2 = data.h2 || "";
   const dash = h2.indexOf(" - ");
   const lead = (dash === -1 ? "" : h2.slice(0, dash)).trim();
@@ -243,7 +243,7 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
                 {lead && (
                   <>
                     {cut > 0 ? `${lead.slice(0, cut)} ` : ""}
-                    <span className="text-lr-ink dark:text-lr-green">{engineName}</span> —<br />
+                    <span className="text-lr-ink dark:text-lr-green">{engineName}</span> -<br />
                   </>
                 )}
                 {tail}

@@ -99,7 +99,7 @@
               "name": "How much does a Land Rover Range Rover P38A engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned P38A engine typically costs £1,800–£5,500 supply only, depending on engine - the 2.5-litre diesel sits at £1,800–£3,500, while the 4.6 V8 can reach £3,000–£5,500. Fitting adds £650–£1,040. Use our calculator for a personalised figure."
+                "text": "A reconditioned P38A engine typically costs £1,800-£5,500 supply only, depending on engine - the 2.5-litre diesel sits at £1,800-£3,500, while the 4.6 V8 can reach £3,000-£5,500. Fitting adds £650-£1,040. Use our calculator for a personalised figure."
               }
             },
             {
@@ -163,7 +163,7 @@
               "name": "What is the difference between the Range Rover P38A and the L322?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The P38A is the second-generation Range Rover (1994–2002) with a semi-monocoque chassis and Rover V8s or BMW diesel. The L322 is the third-generation (2002–2012) with a BMW E65-derived platform, a wider engine range (including BMW V8s and TDV6s) and significantly more electronics. The two generations are not interchangeable and have different engine fitments."
+                "text": "The P38A is the second-generation Range Rover (1994-2002) with a semi-monocoque chassis and Rover V8s or BMW diesel. The L322 is the third-generation (2002-2012) with a BMW E65-derived platform, a wider engine range (including BMW V8s and TDV6s) and significantly more electronics. The two generations are not interchangeable and have different engine fitments."
               }
             },
             {
@@ -238,7 +238,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover P38A • SUV • 1994–2002",
+    "tagPill": "Land Rover Range Rover P38A • SUV • 1994-2002",
     "h1": "Land Rover Range Rover P38A Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the second-generation Range Rover P38A - from the Rover V8s to the BMW-sourced <a href='https://landroverengine.uk/engine/m51'>M51</a> turbodiesel. Real UK replacement costs, honest failure data, and the V8 liner-drop risk that defines this generation.",
     "trustStrip": [
@@ -287,11 +287,11 @@
         "fuel": "Diesel, turbo",
         "displacement": "2.5L (2497cc)",
         "power": "136 bhp",
-        "years": "1994–2002",
+        "years": "1994-2002",
         "variants": "2.5 TD",
         "reliability": "★★★☆☆ [PATTERN DATA]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£1,800–£3,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£1,800-£3,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "42D",
@@ -299,11 +299,11 @@
         "fuel": "Petrol",
         "displacement": "4.0L (3947cc)",
         "power": "190 bhp",
-        "years": "1994–2002",
+        "years": "1994-2002",
         "variants": "4.0 V8",
         "reliability": "★★☆☆☆ [PATTERN DATA]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£4,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£2,500-£4,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "57D",
@@ -311,11 +311,11 @@
         "fuel": "Petrol",
         "displacement": "4.0L (3947cc)",
         "power": "185 bhp",
-        "years": "1994–2002",
+        "years": "1994-2002",
         "variants": "4.0 V8 (later mapping)",
         "reliability": "★★☆☆☆ [PATTERN DATA]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£4,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£2,500-£4,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "60D",
@@ -323,23 +323,23 @@
         "fuel": "Petrol",
         "displacement": "4.6L (4553cc)",
         "power": "218 bhp",
-        "years": "1994–2002",
+        "years": "1994-2002",
         "variants": "4.6 V8",
         "reliability": "★★☆☆☆ [PATTERN DATA]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£3,000-£5,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "46D",
         "family": "Rover V8",
         "fuel": "Petrol",
         "displacement": "4.6L (4553cc)",
-        "power": "224–225 bhp",
-        "years": "1994–2002",
+        "power": "224-225 bhp",
+        "years": "1994-2002",
         "variants": "4.6 V8 (HSE)",
         "reliability": "★★☆☆☆ [PATTERN DATA]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£3,000-£5,500 [PLACEHOLDER - confirm vs cost sheet]"
       }
     ],
     "confidenceScore": {
@@ -350,7 +350,7 @@
   },
   "overview": {
     "h2": "Land Rover Range Rover P38A - Overview",
-    "intro": "The P38A is the second-generation Range Rover, launched on 28 September 1994 as the successor to the original Range Rover Classic. Built on a new semi-monocoque chassis with air suspension, it introduced a BMW-sourced 2.5-litre turbodiesel alongside updated versions of the Rover V8. Production ran until 2001–2002, with over 167,000 units built.",
+    "intro": "The P38A is the second-generation Range Rover, launched on 28 September 1994 as the successor to the original Range Rover Classic. Built on a new semi-monocoque chassis with air suspension, it introduced a BMW-sourced 2.5-litre turbodiesel alongside updated versions of the Rover V8. Production ran until 2001-2002, with over 167,000 units built.",
     "keyFacts": "Platform: P38A semi-monocoque • Predecessor: Range Rover Classic • Successor: Range Rover L322 • Sibling body styles in this generation: 5-door SUV only",
     "marketIntelligenceLine": "As a classic model now over 20 years old, the P38A is a niche enthusiast vehicle - enquiry patterns are sparse, but the Rover V8s remain the most discussed engines in owner communities."
   },
@@ -377,32 +377,32 @@
     "rows": [
       {
         "engine": "M51D25 2.5 TD",
-        "typicalMileage": "100k–180k",
+        "typicalMileage": "100k-180k",
         "commonMajorFailure": "Injection pump failure, cracked head",
-        "repairCostSpecialist": "£500–£1,500",
-        "replacementCostRecon": "£1,800–£3,500",
+        "repairCostSpecialist": "£500-£1,500",
+        "replacementCostRecon": "£1,800-£3,500",
         "ownershipVerdict": "Solid Choice - economical but ageing BMW unit"
       },
       {
         "engine": "42D/57D 4.0 V8",
-        "typicalMileage": "80k–150k",
+        "typicalMileage": "80k-150k",
         "commonMajorFailure": "Porous block, dropped liners, head gasket",
-        "repairCostSpecialist": "£1,000–£2,500",
-        "replacementCostRecon": "£2,500–£4,500",
+        "repairCostSpecialist": "£1,000-£2,500",
+        "replacementCostRecon": "£2,500-£4,500",
         "ownershipVerdict": "High Risk - V8 character with V8 bills"
       },
       {
         "engine": "60D/46D 4.6 V8",
-        "typicalMileage": "80k–150k",
+        "typicalMileage": "80k-150k",
         "commonMajorFailure": "Porous block, dropped liners, overheating",
-        "repairCostSpecialist": "£1,200–£3,000",
-        "replacementCostRecon": "£3,000–£5,500",
+        "repairCostSpecialist": "£1,200-£3,000",
+        "replacementCostRecon": "£3,000-£5,500",
         "ownershipVerdict": "Most Expensive - the 4.6 is the riskiest of the V8s"
       }
     ],
     "economicsRule": {
       "title": "The P38A rule",
-      "text": "A £3,000–£5,500 4.6 V8 recon against a £5,000 P38A sits at 60–110% of the car's value - right at our 60% Land Rover threshold. On a sub-£4,000 P38A, a V8 replacement is a financial write-off. Against a well-kept £8,000+ example, the same recon drops to 38–69% - a repair decision, not a financial one. Value the car first."
+      "text": "A £3,000-£5,500 4.6 V8 recon against a £5,000 P38A sits at 60-110% of the car's value - right at our 60% Land Rover threshold. On a sub-£4,000 P38A, a V8 replacement is a financial write-off. Against a well-kept £8,000+ example, the same recon drops to 38-69% - a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -424,8 +424,8 @@
       {
         "id": 1,
         "title": "Rover V8 Porous Block & Dropped Liners",
-        "affectedModels": "P38A 4.0 V8, 4.6 V8 (all years, 1994–2002).",
-        "typicalFailureMileage": "80,000–150,000 miles.",
+        "affectedModels": "P38A 4.0 V8, 4.6 V8 (all years, 1994-2002).",
+        "typicalFailureMileage": "80,000-150,000 miles.",
         "rootCause": "The Rover V8's thin cylinder walls can develop porosity or stress fractures from heat cycling - and the liners can drop, leading to coolant loss, overheating, and catastrophic engine failure. The 4.6-litre is particularly prone due to its thinner liners and more aggressive mapping.",
         "tieredCosts": [],
         "recommendation": "If you're buying a P38A V8, pay for a specialist inspection that includes a cooling system pressure test and block check. The single most important question is: \"Has the engine been rebuilt with top-hat liners?\" If the answer is no, budget for it - or walk away.",
@@ -438,10 +438,10 @@
         "id": 2,
         "title": "Rover V8 Overheating & Head Gasket Failure",
         "affectedModels": "P38A 4.0 V8, 4.6 V8 (all years).",
-        "typicalFailureMileage": "80,000–120,000 miles.",
+        "typicalFailureMileage": "80,000-120,000 miles.",
         "rootCause": "The thermostat can fail closed, causing the engine to overheat rapidly. The aluminium V8 is sensitive to heat - once overheated, head gaskets fail, and the block can warp. Core plugs can also leak, compounding the issue.",
         "tieredCosts": [],
-        "recommendation": "Replace the thermostat proactively on any P38A V8 without documented history - it's a £200–£400 job that can save you from a £2,500+ head gasket bill. Monitor the temperature gauge obsessively.",
+        "recommendation": "Replace the thermostat proactively on any P38A V8 without documented history - it's a £200-£400 job that can save you from a £2,500+ head gasket bill. Monitor the temperature gauge obsessively.",
         "cta": {
           "label": "Compare P38A V8 cooling system parts for your Range Rover →",
           "href": "#"
@@ -450,8 +450,8 @@
       {
         "id": 3,
         "title": "BMW M51 Diesel Injection Pump & Crankshaft Issues",
-        "affectedModels": "P38A 2.5 TD (M51D25, 1994–2002).",
-        "typicalFailureMileage": "100,000–180,000 miles.",
+        "affectedModels": "P38A 2.5 TD (M51D25, 1994-2002).",
+        "typicalFailureMileage": "100,000-180,000 miles.",
         "rootCause": "The BMW M51's mechanical injection pump has a limited service life and can fail, causing poor starting, rough running, and eventual non-starting. The in-tank lift pump is also prone to failure. Less common but more serious: the timing chain tensioner can fail if the engine is turned backwards.",
         "tieredCosts": [],
         "recommendation": "The M51 is the most economical P38A to run, but it's an ageing BMW diesel with known weak points. If the engine struggles to start or runs lumpy, suspect the injection pump or lift pump first. Replace the lift pump proactively - it's a cheap fix that can save the injection pump.",
@@ -476,26 +476,26 @@
       {
         "variant": "2.5 TD",
         "engineCode": "M51D25",
-        "usedSupply": "£800–£1,800",
-        "reconditionedSupply": "£1,800–£3,500",
-        "rebuiltSupply": "£2,800–£4,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£800-£1,800",
+        "reconditionedSupply": "£1,800-£3,500",
+        "rebuiltSupply": "£2,800-£4,500",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "4.0 V8",
         "engineCode": "42D / 57D",
-        "usedSupply": "£1,200–£2,500",
-        "reconditionedSupply": "£2,500–£4,500",
-        "rebuiltSupply": "£3,500–£5,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£1,200-£2,500",
+        "reconditionedSupply": "£2,500-£4,500",
+        "rebuiltSupply": "£3,500-£5,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "4.6 V8",
         "engineCode": "60D / 46D",
-        "usedSupply": "£1,500–£3,000",
-        "reconditionedSupply": "£3,000–£5,500",
-        "rebuiltSupply": "£4,500–£7,000",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£1,500-£3,000",
+        "reconditionedSupply": "£3,000-£5,500",
+        "rebuiltSupply": "£4,500-£7,000",
+        "labourHours": "12-16 hrs"
       }
     ],
     "note": ""
@@ -521,7 +521,7 @@
         "url": "https://landroverengine.uk/range-rover/p38-v8"
       }
     ],
-    "scopeNote": "All variants listed are P38A-generation Range Rover only (1994–2002). The P38A was only available as a 5-door SUV."
+    "scopeNote": "All variants listed are P38A-generation Range Rover only (1994-2002). The P38A was only available as a 5-door SUV."
   },
   "marketIntelligence": {
     "mostRequestedEngines": [],
@@ -535,7 +535,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Range Rover P38A engine replacement cost in the UK?",
-        "answer": "A reconditioned P38A engine typically costs £1,800–£5,500 supply only [PLACEHOLDER - confirm vs cost sheet], depending on engine - the 2.5-litre diesel sits at £1,800–£3,500, while the 4.6 V8 can reach £3,000–£5,500. Fitting adds £650–£1,040. Use our calculator for a personalised figure."
+        "answer": "A reconditioned P38A engine typically costs £1,800-£5,500 supply only [PLACEHOLDER - confirm vs cost sheet], depending on engine - the 2.5-litre diesel sits at £1,800-£3,500, while the 4.6 V8 can reach £3,000-£5,500. Fitting adds £650-£1,040. Use our calculator for a personalised figure."
       },
       {
         "id": 2,
@@ -575,7 +575,7 @@
       {
         "id": 9,
         "question": "What is the difference between the Range Rover P38A and the L322?",
-        "answer": "The P38A is the second-generation Range Rover (1994–2002) with a semi-monocoque chassis and Rover V8s or BMW diesel. The L322 is the third-generation (2002–2012) with a BMW E65-derived platform, a wider engine range (including BMW V8s and TDV6s) and significantly more electronics. The two generations are not interchangeable and have different engine fitments."
+        "answer": "The P38A is the second-generation Range Rover (1994-2002) with a semi-monocoque chassis and Rover V8s or BMW diesel. The L322 is the third-generation (2002-2012) with a BMW E65-derived platform, a wider engine range (including BMW V8s and TDV6s) and significantly more electronics. The two generations are not interchangeable and have different engine fitments."
       },
       {
         "id": 10,

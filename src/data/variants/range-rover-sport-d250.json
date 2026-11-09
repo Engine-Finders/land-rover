@@ -59,13 +59,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "L494 Range Rover Sport D250 (AJ20D6, 2020–2022)",
+              "name": "L494 Range Rover Sport D250 (AJ20D6, 2020-2022)",
               "url": "https://landroverengine.uk/range-rover-sport/l494"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "L461 Range Rover Sport D250 (AJ20D6, 2022–present)",
+              "name": "L461 Range Rover Sport D250 (AJ20D6, 2022-present)",
               "url": "https://landroverengine.uk/range-rover-sport/l461"
             }
           ]
@@ -90,7 +90,7 @@
               "name": "How much does a Range Rover Sport D250 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Range Rover Sport D250 (AJ20D6) engine typically costs £4,500–£6,500 supply only. Fitting adds £2,000–£3,000 depending on location and workshop rates. Used engines start from £2,800–£4,500 supply only. Main dealer new engines start from £10,000–£15,000+ supply only."
+                "text": "A reconditioned Range Rover Sport D250 (AJ20D6) engine typically costs £4,500-£6,500 supply only. Fitting adds £2,000-£3,000 depending on location and workshop rates. Used engines start from £2,800-£4,500 supply only. Main dealer new engines start from £10,000-£15,000+ supply only."
               }
             },
             {
@@ -114,7 +114,7 @@
               "name": "Is it worth replacing a Range Rover Sport D250 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £25,000–£45,000 Range Rover Sport D250, a £4,500–£6,500 recon is 10–25% of the car's value - worth it given Range Rover Sport values have remained relatively strong. However, for higher-mileage examples, evaluate the vehicle's overall condition before committing."
+                "text": "Depends on vehicle value and condition. Against a well-kept £25,000-£45,000 Range Rover Sport D250, a £4,500-£6,500 recon is 10-25% of the car's value - worth it given Range Rover Sport values have remained relatively strong. However, for higher-mileage examples, evaluate the vehicle's overall condition before committing."
               }
             },
             {
@@ -130,7 +130,7 @@
               "name": "Can I prevent timing chain failure on the D250?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 10,000–12,000 miles with the correct JLR-spec oil, (2) Avoid short urban journeys - regular motorway runs allow DPF regeneration to complete, and (3) Never ignore cold-start rattle - book an inspection immediately if you hear it. Even with perfect maintenance, timing chain tensioner wear remains a risk on higher-mileage examples."
+                "text": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 10,000-12,000 miles with the correct JLR-spec oil, (2) Avoid short urban journeys - regular motorway runs allow DPF regeneration to complete, and (3) Never ignore cold-start rattle - book an inspection immediately if you hear it. Even with perfect maintenance, timing chain tensioner wear remains a risk on higher-mileage examples."
               }
             }
           ]
@@ -191,7 +191,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover Sport D250 • 2020–present • 1 Engine Generation",
+    "tagPill": "Land Rover Range Rover Sport D250 • 2020-present • 1 Engine Generation",
     "h1": "Land Rover Range Rover Sport D250 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Range Rover Sport specialists. The 3.0-litre six-cylinder Ingenium diesel (<a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a>) powers the D250 with 249 PS and mild-hybrid tech - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -224,18 +224,18 @@
     "rows": [
       {
         "generation": "L494",
-        "years": "2020–2022",
+        "years": "2020-2022",
         "engineCode": "AJ20D6 (DT306)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,500–£8,000 [PLACEHOLDER]",
+        "reconCost": "£4,500-£8,000 [PLACEHOLDER]",
         "eraNote": "3.0-litre inline-six Ingenium diesel with 48V MHEV - chain-driven, generally robust"
       },
       {
         "generation": "L461",
-        "years": "2022–present",
+        "years": "2022-present",
         "engineCode": "AJ20D6 (DT306)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,500–£8,000 [PLACEHOLDER]",
+        "reconCost": "£4,500-£8,000 [PLACEHOLDER]",
         "eraNote": "Third-generation Sport - same powertrain, similar risk profile"
       }
     ],
@@ -254,35 +254,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,800–£4,500",
-        "fittedIndie": "£4,000–£6,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£2,800-£4,500",
+        "fittedIndie": "£4,000-£6,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£4,500–£6,500",
-        "fittedIndie": "£6,500–£8,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£6,500",
+        "fittedIndie": "£6,500-£8,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£5,500–£8,000",
-        "fittedIndie": "£7,500–£10,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,500-£8,000",
+        "fittedIndie": "£7,500-£10,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£10,000–£15,000+",
-        "fittedIndie": "£12,000–£18,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£10,000-£15,000+",
+        "fittedIndie": "£12,000-£18,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "Figures above reflect the current L494/L461-generation AJ20D6, the only engine used in the Range Rover Sport D250.",
-    "labourEstimate": "Fitting a Range Rover Sport D250 engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting a Range Rover Sport D250 engine typically takes 14-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare Range Rover Sport D250 engine prices from UK specialists",
       "href": "#"
@@ -295,7 +295,7 @@
         "title": "Diesel Particulate Filter (DPF) Clogging",
         "symptoms": "DPF warning light, reduced performance, increased fuel consumption, \"Restricted Performance\" message on instrument cluster, engine warning light",
         "typicalMileage": "Any mileage - short urban journeys accelerate the issue",
-        "repairCost": "£300–£800 (forced DPF regeneration) / £1,000–£2,500 (DPF replacement)",
+        "repairCost": "£300-£800 (forced DPF regeneration) / £1,000-£2,500 (DPF replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟠",
@@ -311,16 +311,16 @@
       {
         "id": 2,
         "title": "Timing Chain Tensioner Wear",
-        "symptoms": "Cold-start rattling lasting 1–30 seconds, metallic ticking from engine, engine warning light, rough running",
-        "typicalMileage": "80,000–120,000 miles",
-        "repairCost": "£1,500–£3,000 (preventative chain, tensioners and guides)",
-        "replacementCost": "£6,500–£10,000 (if chain snaps - full engine replacement)",
+        "symptoms": "Cold-start rattling lasting 1-30 seconds, metallic ticking from engine, engine warning light, rough running",
+        "typicalMileage": "80,000-120,000 miles",
+        "repairCost": "£1,500-£3,000 (preventative chain, tensioners and guides)",
+        "replacementCost": "£6,500-£10,000 (if chain snaps - full engine replacement)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "if you hear rattle, book an inspection today"
         },
-        "recommendation": "The AJ20D6 shares the Ingenium diesel family's timing chain design. While the six-cylinder unit is more robust than the 2.0-litre four-cylinder, timing chain tensioner wear remains a documented pattern across the Ingenium diesel range. At the first sign of cold-start rattle, get the chain inspected - a £1,500–£3,000 preventative repair is dramatically cheaper than the £6,500+ replacement that follows a snapped chain. The chain is rear-mounted on many Ingenium diesel engines, significantly increasing labour costs.",
+        "recommendation": "The AJ20D6 shares the Ingenium diesel family's timing chain design. While the six-cylinder unit is more robust than the 2.0-litre four-cylinder, timing chain tensioner wear remains a documented pattern across the Ingenium diesel range. At the first sign of cold-start rattle, get the chain inspected - a £1,500-£3,000 preventative repair is dramatically cheaper than the £6,500+ replacement that follows a snapped chain. The chain is rear-mounted on many Ingenium diesel engines, significantly increasing labour costs.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
           "href": "/failures/ingenium-timing-chain/"
@@ -331,14 +331,14 @@
         "title": "EGR Cooler Coolant Leak",
         "symptoms": "Coolant loss with no visible external leak, white exhaust smoke, occasional burning smell, engine overheating",
         "typicalMileage": "Any mileage - a known vulnerability across Land Rover diesel engines",
-        "repairCost": "£750–£1,100 (EGR cooler replacement)",
+        "repairCost": "£750-£1,100 (EGR cooler replacement)",
         "replacementCost": "N/A - repair only (does not typically progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if coolant level drops frequently"
         },
-        "recommendation": "The EGR cooler is a known vulnerability across Land Rover's diesel engine range. Internal cooler leaks can cause coolant contamination and, in extreme cases, hydro-lock and catastrophic engine damage. If you're topping up coolant regularly without visible external leaks, book a pressure test immediately. A £750–£1,100 EGR cooler replacement is far cheaper than the engine damage that follows if ignored.",
+        "recommendation": "The EGR cooler is a known vulnerability across Land Rover's diesel engine range. Internal cooler leaks can cause coolant contamination and, in extreme cases, hydro-lock and catastrophic engine damage. If you're topping up coolant regularly without visible external leaks, book a pressure test immediately. A £750-£1,100 EGR cooler replacement is far cheaper than the engine damage that follows if ignored.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
           "href": "/failures/egr-valve-cooler-failure/"
@@ -368,19 +368,19 @@
         {
           "problem": "DPF clogging",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Forced regeneration or motorway run"
         },
         {
           "problem": "DPF replacement",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,000–£2,500",
+          "typicalCost": "£1,000-£2,500",
           "whenItMakesSense": "Viable if regeneration fails repeatedly"
         },
         {
           "problem": "Timing chain stretch (early detection)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,000",
+          "typicalCost": "£1,500-£3,000",
           "whenItMakesSense": "Preventative - catches the fault before catastrophic failure"
         },
         {
@@ -392,7 +392,7 @@
         {
           "problem": "EGR cooler coolant leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£750–£1,100",
+          "typicalCost": "£750-£1,100",
           "whenItMakesSense": "Straightforward component replacement"
         }
       ]
@@ -400,7 +400,7 @@
     "buyingChecks": {
       "title": "Buying This Range Rover Sport D250? Check These First",
       "buyIf": [
-        "* Full service history with 10,000–12,000-mile oil change intervals - the Ingenium is unforgiving of neglect",
+        "* Full service history with 10,000-12,000-mile oil change intervals - the Ingenium is unforgiving of neglect",
         "* Evidence of regular motorway use (DPF health)",
         "* No cold-start rattle - this is a critical warning sign",
         "* Remaining manufacturer warranty - these are complex vehicles"
@@ -423,7 +423,7 @@
     "items": [
       "* Cold Start - Listen for rattling or ticking from the engine (timing chain tensioner warning - this is critical)",
       "* DPF History - Ask about driving patterns; short urban journeys are a red flag",
-      "* Service History - Including the AJ20D6 engine and confirmed 10,000–12,000-mile oil change intervals - non-negotiable",
+      "* Service History - Including the AJ20D6 engine and confirmed 10,000-12,000-mile oil change intervals - non-negotiable",
       "* Coolant Level - Check for unexplained loss (EGR cooler leak)",
       "* Restricted Performance - Any warning messages? This often indicates DPF or turbo issues",
       "* Smoke Check - White smoke on startup (EGR cooler or injector issues)",
@@ -442,10 +442,10 @@
     "rows": [
       {
         "engineCode": "AJ20D6 (DT306)",
-        "years": "2020–present",
+        "years": "2020-present",
         "power": "249 PS (183 kW) / 600 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£8,000 [PLACEHOLDER]"
+        "avgReconCost": "£4,500-£8,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -490,7 +490,7 @@
         },
         {
           "label": "* Production",
-          "value": "July 2020–present"
+          "value": "July 2020-present"
         }
       ]
     },
@@ -507,7 +507,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "30,000–60,000 miles【PATTERN DATA】"
+        "value": "30,000-60,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -532,7 +532,7 @@
       {
         "id": 1,
         "question": "How much does a Range Rover Sport D250 engine replacement cost in the UK?",
-        "answer": "A reconditioned Range Rover Sport D250 (AJ20D6) engine typically costs £4,500–£6,500 supply only. Fitting adds £2,000–£3,000 depending on location and workshop rates. Used engines start from £2,800–£4,500 supply only. Main dealer new engines start from £10,000–£15,000+ supply only."
+        "answer": "A reconditioned Range Rover Sport D250 (AJ20D6) engine typically costs £4,500-£6,500 supply only. Fitting adds £2,000-£3,000 depending on location and workshop rates. Used engines start from £2,800-£4,500 supply only. Main dealer new engines start from £10,000-£15,000+ supply only."
       },
       {
         "id": 2,
@@ -547,7 +547,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Range Rover Sport D250 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £25,000–£45,000 Range Rover Sport D250, a £4,500–£6,500 recon is 10–25% of the car's value - worth it given Range Rover Sport values have remained relatively strong. Range Rover Sport values have remained relatively strong. However, for higher-mileage examples, evaluate the vehicle's overall condition before committing."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £25,000-£45,000 Range Rover Sport D250, a £4,500-£6,500 recon is 10-25% of the car's value - worth it given Range Rover Sport values have remained relatively strong. Range Rover Sport values have remained relatively strong. However, for higher-mileage examples, evaluate the vehicle's overall condition before committing."
       },
       {
         "id": 5,
@@ -557,7 +557,7 @@
       {
         "id": 6,
         "question": "Can I prevent timing chain failure on the D250?",
-        "answer": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 10,000–12,000 miles with the correct JLR-spec oil, (2) Avoid short urban journeys - regular motorway runs allow DPF regeneration to complete, and (3) Never ignore cold-start rattle - book an inspection immediately if you hear it. Even with perfect maintenance, timing chain tensioner wear remains a risk on higher-mileage examples."
+        "answer": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 10,000-12,000 miles with the correct JLR-spec oil, (2) Avoid short urban journeys - regular motorway runs allow DPF regeneration to complete, and (3) Never ignore cold-start rattle - book an inspection immediately if you hear it. Even with perfect maintenance, timing chain tensioner wear remains a risk on higher-mileage examples."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

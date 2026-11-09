@@ -16,13 +16,13 @@ export const SECTION_TITLE = H2;
 export const CHIP = "inline-block rounded-[4px] bg-lr-brand/12 px-2 py-1 text-[11.5px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink ring-1 ring-inset ring-lr-brand/25 dark:bg-lr-brand/30 dark:text-lr-green md:text-[12px] xl:text-[15px]";
 
 const isNA = (v = "") => /^n\/?a$/i.test(String(v).trim());
-const dash = (t = "") => String(t).replace(/ - /g, " — ");
-// "£800–£2,000" -> "£800 – £2,000"
-const money = (t = "") => String(t).replace(/(£[\d,.]+k?)\s*[–-]\s*(£)/g, "$1 – $2");
-// phones: "£3,500–£4,500" kept tight, allowed to break only after the dash
-const moneyTight = (t = "") => String(t).replace(/(£[\d,.]+k?)\s*[–-]\s*(£)/g, "$1–<wbr>$2");
-// the "8–12 hours" span of the labour estimate in green
-const highlightHours = (html = "") => html.replace(/(\d+\s*[–-]\s*\d+\s*hours?)/, `<span class="font-medium text-lr-ink dark:text-lr-green">$1</span>`);
+const dash = (t = "") => String(t).replace(/ - /g, " - ");
+// "£800-£2,000" -> "£800 - £2,000"
+const money = (t = "") => String(t).replace(/(£[\d,.]+k?)\s*[--]\s*(£)/g, "$1 - $2");
+// phones: "£3,500-£4,500" kept tight, allowed to break only after the dash
+const moneyTight = (t = "") => String(t).replace(/(£[\d,.]+k?)\s*[--]\s*(£)/g, "$1-<wbr>$2");
+// the "8-12 hours" span of the labour estimate in green
+const highlightHours = (html = "") => html.replace(/(\d+\s*[--]\s*\d+\s*hours?)/, `<span class="font-medium text-lr-ink dark:text-lr-green">$1</span>`);
 
 function typeIcon(type = "") {
   const t = type.toLowerCase();

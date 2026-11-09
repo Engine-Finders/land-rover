@@ -108,7 +108,7 @@
               "name": "How much does a Land Rover Defender V8 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Defender V8 engine typically costs £2,500–£5,500 supply only depending on era, with the late 4.0 sitting at £2,500–£5,500. Fitting adds £650–£1,300. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned Defender V8 engine typically costs £2,500-£5,500 supply only depending on era, with the late 4.0 sitting at £2,500-£5,500. Fitting adds £650-£1,300. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -116,7 +116,7 @@
               "name": "Is the Land Rover Defender V8 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "That depends on which of the four engine configurations your Defender has. The 3.5 carburettor (1983–1985) is widely considered the most durable configuration - simple, no ECU, easy to fix. The 3.9 EFI (1986–1994) adds some complexity but retains the same core reliability. The late 4.0 (1995–1997) introduces liner-slippage risk - a well-documented issue - but can be permanently cured with top-hat liners. Check the Era Map above for your specific car."
+                "text": "That depends on which of the four engine configurations your Defender has. The 3.5 carburettor (1983-1985) is widely considered the most durable configuration - simple, no ECU, easy to fix. The 3.9 EFI (1986-1994) adds some complexity but retains the same core reliability. The late 4.0 (1995-1997) introduces liner-slippage risk - a well-documented issue - but can be permanently cured with top-hat liners. Check the Era Map above for your specific car."
               }
             },
             {
@@ -140,7 +140,7 @@
               "name": "How do I find my Land Rover Defender V8 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Land Rover's VIN plate and engine block stamping. As a rule of thumb: pre-1986 is 3.5 carburettor, 1986–1994 is 3.9 EFI, 1995–1997 is 4.0 GEMS/Thor, and 1998 (50th Anniversary) is late 3.9 or 4.0. The engine code is stamped on the block's left-hand side near the dipstick."
+                "text": "Land Rover's VIN plate and engine block stamping. As a rule of thumb: pre-1986 is 3.5 carburettor, 1986-1994 is 3.9 EFI, 1995-1997 is 4.0 GEMS/Thor, and 1998 (50th Anniversary) is late 3.9 or 4.0. The engine code is stamped on the block's left-hand side near the dipstick."
               }
             },
             {
@@ -148,7 +148,7 @@
               "name": "Can I repair the 4.0 V8 liner issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. Top-hat liner installation (£1,500–£2,500) is a permanent cure for the classic Rover V8 liner-slip problem. If the block has already cracked or the liners have dropped significantly, replacement may be the only viable option (£2,500–£5,500 for a reconditioned long-block). At the first sign of coolant loss, book an inspection immediately."
+                "text": "Yes - if caught early. Top-hat liner installation (£1,500-£2,500) is a permanent cure for the classic Rover V8 liner-slip problem. If the block has already cracked or the liners have dropped significantly, replacement may be the only viable option (£2,500-£5,500 for a reconditioned long-block). At the first sign of coolant loss, book an inspection immediately."
               }
             }
           ]
@@ -209,7 +209,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Defender V8 • 1983–1998 • 4 Engine Variants",
+    "tagPill": "Land Rover Defender V8 • 1983-1998 • 4 Engine Variants",
     "h1": "Land Rover Defender V8 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover V8 specialists. Compare reconditioned, rebuilt and used Rover V8 3.5, 3.9 and 4.0 engines - supply & fit available nationwide for Classic Defender and 50th Anniversary models.",
     "trustBadges": [
@@ -242,26 +242,26 @@
     "rows": [
       {
         "generation": "Classic Defender",
-        "years": "1983–1985",
+        "years": "1983-1985",
         "engineCode": "Rover V8 3.5 (carburettor)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£1,500–£3,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£1,500-£3,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Carburettor 3.5 - simple, durable, no electronics"
       },
       {
         "generation": "Classic Defender",
-        "years": "1986–1994",
+        "years": "1986-1994",
         "engineCode": "Rover V8 3.9 (fuel-injected)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,000–£4,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,000-£4,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "EFI 3.9 - more power, more complexity, same core reliability"
       },
       {
         "generation": "Classic Defender",
-        "years": "1995–1997",
+        "years": "1995-1997",
         "engineCode": "Rover V8 4.0 (GEMS/Thor)",
         "reliability": "★★★½☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,500–£5,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,500-£5,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Final 4.0 - more refined but electronics more complex"
       },
       {
@@ -269,7 +269,7 @@
         "years": "1998",
         "engineCode": "Rover V8 3.9/4.0",
         "reliability": "★★★★☆ / ★★★½☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,000–£5,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,000-£5,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Limited run - same engines as late Classic"
       }
     ],
@@ -288,23 +288,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,500–£3,000",
-        "fittedIndie": "£2,300–£4,100",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,500-£3,000",
+        "fittedIndie": "£2,300-£4,100",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; non-daily or project vehicle"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,500–£4,500",
-        "fittedIndie": "£3,700–£6,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,500-£4,500",
+        "fittedIndie": "£3,700-£6,200",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£4,700–£6,800",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£4,700-£6,800",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 5+ year horizon"
       },
       {
@@ -316,7 +316,7 @@
       }
     ],
     "figuresNote": "Figures above reflect the final 4.0-era specification, the most common quote request today for Classic Defender V8s. Older generations: see the Era Map above for 3.5/3.9-specific pricing, which typically runs lower on the used market.",
-    "labourEstimate": "Fitting a Defender V8 engine typically takes 10–14 hours at £65–£95/hr (independent Land Rover specialist) or £110–£160/hr (London/SE specialist).",
+    "labourEstimate": "Fitting a Defender V8 engine typically takes 10-14 hours at £65-£95/hr (independent Land Rover specialist) or £110-£160/hr (London/SE specialist).",
     "cta": {
       "label": "→ Compare Defender V8 engine prices from UK specialists",
       "href": "#"
@@ -402,32 +402,32 @@
         {
           "problem": "Liner slippage (4.0)",
           "repairable": "✅ Yes (with top-hat liners)",
-          "typicalCost": "£1,500–£2,500",
+          "typicalCost": "£1,500-£2,500",
           "whenItMakesSense": "Vehicle is a keeper - value justifies a one-time bottom-end rebuild"
         },
         {
           "problem": "Timing chain wear (all)",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Preventative - avoids valve/piston damage"
         },
         {
           "problem": "Carb/EFI issues (3.5/3.9)",
           "repairable": "✅ Yes",
-          "typicalCost": "£150–£600",
+          "typicalCost": "£150-£600",
           "whenItMakesSense": "Almost always worth fixing - these are simple systems to service"
         },
         {
           "problem": "Crankshaft failure (rare)",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£3,000–£5,000",
+          "typicalCost": "£3,000-£5,000",
           "whenItMakesSense": "Only if the vehicle has exceptional value (e.g., 50th Anniversary, NAS-spec)"
         },
         {
           "problem": "Severe block porosity (4.0)",
           "repairable": "❌ Usually No",
           "typicalCost": "Engine replacement required",
-          "whenItMakesSense": "Block replacement - often £3,000–£5,500 for a replacement long-block"
+          "whenItMakesSense": "Block replacement - often £3,000-£5,500 for a replacement long-block"
         }
       ]
     },
@@ -476,24 +476,24 @@
     "rows": [
       {
         "engineCode": "Rover V8 3.5 (carburettor)",
-        "years": "1983–1985",
-        "power": "136–140 bhp",
+        "years": "1983-1985",
+        "power": "136-140 bhp",
         "enquiries": "- (pattern data - heritage)",
-        "avgReconCost": "£1,500–£3,500 [PLACEHOLDER]"
+        "avgReconCost": "£1,500-£3,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "Rover V8 3.9 (EFI)",
-        "years": "1986–1994",
-        "power": "155–175 bhp (varies by state of tune)",
+        "years": "1986-1994",
+        "power": "155-175 bhp (varies by state of tune)",
         "enquiries": "- (pattern data - heritage)",
-        "avgReconCost": "£2,000–£4,500 [PLACEHOLDER]"
+        "avgReconCost": "£2,000-£4,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "Rover V8 4.0 (GEMS/Thor)",
-        "years": "1995–1997",
-        "power": "181–190 bhp",
+        "years": "1995-1997",
+        "power": "181-190 bhp",
         "enquiries": "- (pattern data - heritage)",
-        "avgReconCost": "£2,500–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£2,500-£5,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -560,12 +560,12 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Defender V8 engine replacement cost in the UK?",
-        "answer": "A reconditioned Defender V8 engine typically costs £2,500–£5,500 supply only depending on era, with the late 4.0 sitting at £2,500–£5,500. Fitting adds £650–£1,300. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned Defender V8 engine typically costs £2,500-£5,500 supply only depending on era, with the late 4.0 sitting at £2,500-£5,500. Fitting adds £650-£1,300. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
         "question": "Is the Land Rover Defender V8 reliable?",
-        "answer": "That depends on which of the four engine configurations your Defender has. The 3.5 carburettor (1983–1985) is widely considered the most durable configuration - simple, no ECU, easy to fix. The 3.9 EFI (1986–1994) adds some complexity but retains the same core reliability. The late 4.0 (1995–1997) introduces liner-slippage risk - a well-documented issue - but can be permanently cured with top-hat liners. Check the Era Map above for your specific car."
+        "answer": "That depends on which of the four engine configurations your Defender has. The 3.5 carburettor (1983-1985) is widely considered the most durable configuration - simple, no ECU, easy to fix. The 3.9 EFI (1986-1994) adds some complexity but retains the same core reliability. The late 4.0 (1995-1997) introduces liner-slippage risk - a well-documented issue - but can be permanently cured with top-hat liners. Check the Era Map above for your specific car."
       },
       {
         "id": 3,
@@ -580,12 +580,12 @@
       {
         "id": 5,
         "question": "How do I find my Land Rover Defender V8 engine code?",
-        "answer": "Land Rover's VIN plate and engine block stamping. As a rule of thumb: pre-1986 is 3.5 carburettor, 1986–1994 is 3.9 EFI, 1995–1997 is 4.0 GEMS/Thor, and 1998 (50th Anniversary) is late 3.9 or 4.0. The engine code is stamped on the block's left-hand side near the dipstick."
+        "answer": "Land Rover's VIN plate and engine block stamping. As a rule of thumb: pre-1986 is 3.5 carburettor, 1986-1994 is 3.9 EFI, 1995-1997 is 4.0 GEMS/Thor, and 1998 (50th Anniversary) is late 3.9 or 4.0. The engine code is stamped on the block's left-hand side near the dipstick."
       },
       {
         "id": 6,
         "question": "Can I repair the 4.0 V8 liner issue, or does it need replacement?",
-        "answer": "Yes - if caught early. Top-hat liner installation (£1,500–£2,500) is a permanent cure for the classic Rover V8 liner-slip problem. If the block has already cracked or the liners have dropped significantly, replacement may be the only viable option (£2,500–£5,500 for a reconditioned long-block). At the first sign of coolant loss, book an inspection immediately."
+        "answer": "Yes - if caught early. Top-hat liner installation (£1,500-£2,500) is a permanent cure for the classic Rover V8 liner-slip problem. If the block has already cracked or the liners have dropped significantly, replacement may be the only viable option (£2,500-£5,500 for a reconditioned long-block). At the first sign of coolant loss, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

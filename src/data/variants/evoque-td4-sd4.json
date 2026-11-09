@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "L538 Evoque TD4/SD4 (204DTD, 2015–2018)",
+              "name": "L538 Evoque TD4/SD4 (204DTD, 2015-2018)",
               "url": "https://landroverengine.uk/evoque/l538"
             }
           ]
@@ -90,7 +90,7 @@
               "name": "How much does a Range Rover Evoque TD4 / SD4 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 2.0 Ingenium diesel engine typically costs £2,800–£4,000 supply only. A fully fitted replacement from a specialist costs approximately £4,500–£6,000. Main dealer new engines start from £8,000–£10,000+ supply only."
+                "text": "A reconditioned 2.0 Ingenium diesel engine typically costs £2,800-£4,000 supply only. A fully fitted replacement from a specialist costs approximately £4,500-£6,000. Main dealer new engines start from £8,000-£10,000+ supply only."
               }
             },
             {
@@ -98,7 +98,7 @@
               "name": "Is the Range Rover Evoque 2.0 TD4 / SD4 engine reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No - the 2.0-litre Ingenium diesel has a very poor reliability reputation. The most critical issue is timing chain stretch, which can occur between 60,000–100,000 miles. The root cause is oil dilution from incomplete DPF regenerations - a fundamental design issue because the Evoque's DPF is too far from the engine to stay hot enough. Turbo failure is also common."
+                "text": "No - the 2.0-litre Ingenium diesel has a very poor reliability reputation. The most critical issue is timing chain stretch, which can occur between 60,000-100,000 miles. The root cause is oil dilution from incomplete DPF regenerations - a fundamental design issue because the Evoque's DPF is too far from the engine to stay hot enough. Turbo failure is also common."
               }
             },
             {
@@ -114,7 +114,7 @@
               "name": "Is it worth replacing an Evoque TD4 / SD4 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £8,000–£15,000 Evoque, a £4,500–£6,000 recon is 30–75% of the car's value. For a clean example with good body and no other issues, replacement may be worthwhile. However, for higher-mileage examples under £6,000, evaluate whether the replacement cost exceeds our 60% Land Rover scrap threshold."
+                "text": "Depends on vehicle value and condition. Against a well-kept £8,000-£15,000 Evoque, a £4,500-£6,000 recon is 30-75% of the car's value. For a clean example with good body and no other issues, replacement may be worthwhile. However, for higher-mileage examples under £6,000, evaluate whether the replacement cost exceeds our 60% Land Rover scrap threshold."
               }
             },
             {
@@ -130,7 +130,7 @@
               "name": "Can I prevent timing chain failure on the 2.0 Ingenium diesel?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 5,000–10,000 miles with the correct JLR-spec oil, (2) Avoid short urban journeys - regular motorway runs allow DPF regeneration to complete, (3) Regularly check the dipstick for rising oil level or diesel smell (oil dilution warning), and (4) Never ignore cold-start rattle - book an inspection immediately if you hear it. Even with perfect maintenance, premature chain stretch remains a risk."
+                "text": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 5,000-10,000 miles with the correct JLR-spec oil, (2) Avoid short urban journeys - regular motorway runs allow DPF regeneration to complete, (3) Regularly check the dipstick for rising oil level or diesel smell (oil dilution warning), and (4) Never ignore cold-start rattle - book an inspection immediately if you hear it. Even with perfect maintenance, premature chain stretch remains a risk."
               }
             }
           ]
@@ -191,7 +191,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover Evoque TD4 / SD4 • 2015–2018 • 1 Engine Generation (2 Power Levels)",
+    "tagPill": "Land Rover Range Rover Evoque TD4 / SD4 • 2015-2018 • 1 Engine Generation (2 Power Levels)",
     "h1": "Land Rover Range Rover Evoque TD4 / SD4 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Range Rover Evoque specialists. The 2.0-litre Ingenium diesel (<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a>) powered the facelift L538 models - compare reconditioned, rebuilt and used TD4 and SD4 engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -224,11 +224,11 @@
     "rows": [
       {
         "generation": "L538 (facelift)",
-        "years": "2015–2018",
+        "years": "2015-2018",
         "engineCode": "204DTD (AJ200D)",
         "reliability": "★★☆☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,800–£5,000 [EM-QUOTE]",
-        "eraNote": "2.0-litre four-cylinder Ingenium diesel - TD4 (150–180PS) or SD4 (180PS). Notorious for timing chain stretch, oil dilution and turbo failure"
+        "reconCost": "£2,800-£5,000 [EM-QUOTE]",
+        "eraNote": "2.0-litre four-cylinder Ingenium diesel - TD4 (150-180PS) or SD4 (180PS). Notorious for timing chain stretch, oil dilution and turbo failure"
       }
     ],
     "sourceNote": "",
@@ -246,35 +246,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£800–£1,800",
-        "fittedIndie": "£1,800–£3,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£800-£1,800",
+        "fittedIndie": "£1,800-£3,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; donor for rebuild"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,800–£4,000",
-        "fittedIndie": "£4,500–£6,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,800-£4,000",
+        "fittedIndie": "£4,500-£6,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£3,500–£5,000",
-        "fittedIndie": "£5,500–£7,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£5,000",
+        "fittedIndie": "£5,500-£7,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£8,000–£10,000+",
-        "fittedIndie": "£10,000–£12,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£8,000-£10,000+",
+        "fittedIndie": "£10,000-£12,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an Evoque TD4/SD4 engine typically takes 10–14 hours at £65–£95/hr (independent). The transverse engine layout adds complexity.",
+    "labourEstimate": "Fitting an Evoque TD4/SD4 engine typically takes 10-14 hours at £65-£95/hr (independent). The transverse engine layout adds complexity.",
     "cta": {
       "label": "→ Compare Evoque TD4 / SD4 engine prices from UK specialists",
       "href": "#"
@@ -286,15 +286,15 @@
         "id": 1,
         "title": "Timing Chain Stretch (Catastrophic)",
         "symptoms": "Metallic rattle or knocking on cold start, rough running, engine warning light, camshaft correlation faults, loss of power",
-        "typicalMileage": "60,000–100,000 miles - can occur as early as 60,000 km",
-        "repairCost": "£1,200–£2,500 (preventative chain, guides and tensioners)",
-        "replacementCost": "£4,500–£7,000 (full engine replacement)",
+        "typicalMileage": "60,000-100,000 miles - can occur as early as 60,000 km",
+        "repairCost": "£1,200-£2,500 (preventative chain, guides and tensioners)",
+        "replacementCost": "£4,500-£7,000 (full engine replacement)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "if you hear rattle on cold start, book an inspection today"
         },
-        "recommendation": "This is the single most serious and costly issue affecting the 2.0 Ingenium diesel. The timing chain sits at the rear of the engine, making access extremely difficult. The chain stretches and the plastic guides break, shedding particles that block the oil pickup and cause spun bearings. If the chain snaps, pistons strike valves - full engine replacement is the only fix. At the first sign of cold-start rattle, book an inspection immediately. A £1,200–£2,500 preventative chain replacement is dramatically cheaper than a £4,500–£7,000 engine replacement.",
+        "recommendation": "This is the single most serious and costly issue affecting the 2.0 Ingenium diesel. The timing chain sits at the rear of the engine, making access extremely difficult. The chain stretches and the plastic guides break, shedding particles that block the oil pickup and cause spun bearings. If the chain snaps, pistons strike valves - full engine replacement is the only fix. At the first sign of cold-start rattle, book an inspection immediately. A £1,200-£2,500 preventative chain replacement is dramatically cheaper than a £4,500-£7,000 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
           "href": "/failures/ingenium-timing-chain/"
@@ -305,7 +305,7 @@
         "title": "Oil Dilution from DPF Regeneration (Root Cause)",
         "symptoms": "Rising oil level on dipstick, diesel smell in oil, DPF warning light, 'service required' dash warning",
         "typicalMileage": "Any mileage - short urban journeys accelerate the issue",
-        "repairCost": "£100–£300 (oil change + DPF regeneration)",
+        "repairCost": "£100-£300 (oil change + DPF regeneration)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed early)",
         "urgency": {
           "icon": "🟠",
@@ -322,15 +322,15 @@
         "id": 3,
         "title": "Turbocharger Failure",
         "symptoms": "Siren-like whining or whistling from the engine bay, loss of power, engine management light, black smoke",
-        "typicalMileage": "60,000–120,000 miles",
-        "repairCost": "£1,500–£2,000 (turbo replacement)",
-        "replacementCost": "£4,500–£7,000 (if ignored - full engine replacement)",
+        "typicalMileage": "60,000-120,000 miles",
+        "repairCost": "£1,500-£2,000 (turbo replacement)",
+        "replacementCost": "£4,500-£7,000 (if ignored - full engine replacement)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if you hear siren-like noise"
         },
-        "recommendation": "The turbocharger on the 2.0 Ingenium diesel is a common failure point. The turbo can fail as a direct cause of engine failure or as a secondary result. A failed turbo can cause hydro-lock by allowing excessive oil into the intake, bending conrods. If you hear a siren-like whining or whistling, or experience loss of power, book an inspection immediately. A £1,500–£2,000 turbo replacement is far cheaper than the engine damage that follows if ignored.",
+        "recommendation": "The turbocharger on the 2.0 Ingenium diesel is a common failure point. The turbo can fail as a direct cause of engine failure or as a secondary result. A failed turbo can cause hydro-lock by allowing excessive oil into the intake, bending conrods. If you hear a siren-like whining or whistling, or experience loss of power, book an inspection immediately. A £1,500-£2,000 turbo replacement is far cheaper than the engine damage that follows if ignored.",
         "failureLink": {
           "label": "Read the full turbo failure guide",
           "href": "/failures/turbo-failure/"
@@ -360,7 +360,7 @@
         {
           "problem": "Timing chain stretch (early detection)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,200–£2,500",
+          "typicalCost": "£1,200-£2,500",
           "whenItMakesSense": "Preventative - catches the fault before catastrophic failure"
         },
         {
@@ -372,19 +372,19 @@
         {
           "problem": "Oil dilution / DPF issues",
           "repairable": "✅ Yes",
-          "typicalCost": "£100–£300",
+          "typicalCost": "£100-£300",
           "whenItMakesSense": "Regular oil changes and DPF regeneration cycles"
         },
         {
           "problem": "Turbocharger failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£2,000",
+          "typicalCost": "£1,500-£2,000",
           "whenItMakesSense": "Viable if caught before engine damage occurs"
         },
         {
           "problem": "Injector over-fuelling",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,500",
+          "typicalCost": "£800-£1,500",
           "whenItMakesSense": "Viable - but check for piston damage"
         }
       ]
@@ -392,7 +392,7 @@
     "buyingChecks": {
       "title": "Buying This Evoque TD4 / SD4? Check These First",
       "buyIf": [
-        "* Full service history with frequent oil changes (5,000–10,000-mile intervals)",
+        "* Full service history with frequent oil changes (5,000-10,000-mile intervals)",
         "* Evidence of regular motorway use (DPF health)",
         "* No cold-start rattle - this is the critical warning sign",
         "* Extended warranty in place - this engine is high-risk"
@@ -416,7 +416,7 @@
       "* Cold Start - Listen for rattling or knocking from the rear of the engine (timing chain warning - this is critical)",
       "* Dipstick Check - Smell for diesel (oil dilution); check for rising oil level",
       "* DPF History - Ask about driving patterns; short urban journeys are a red flag",
-      "* Service History - Including frequent oil changes - 5,000–10,000-mile intervals are recommended",
+      "* Service History - Including frequent oil changes - 5,000-10,000-mile intervals are recommended",
       "* Turbo Noise - Listen for siren-like whining or whistling under acceleration",
       "* Engine Warning Light - Any warning lights? Have codes been read? Look for camshaft correlation faults",
       "* Smoke Check - Black smoke (turbo) or white smoke (injector / DPF issues)",
@@ -434,17 +434,17 @@
     "rows": [
       {
         "engineCode": "204DTD (TD4)",
-        "years": "2015–2018",
+        "years": "2015-2018",
         "power": "150 PS (110 kW) / 380 Nm",
         "enquiries": "1,150 [EM-VERIFIED]",
-        "avgReconCost": "£2,800–£4,000 [EM-QUOTE]"
+        "avgReconCost": "£2,800-£4,000 [EM-QUOTE]"
       },
       {
         "engineCode": "204DTD (SD4)",
-        "years": "2015–2018",
+        "years": "2015-2018",
         "power": "180 PS (132 kW) / 430 Nm",
         "enquiries": "1,150 [EM-VERIFIED]",
-        "avgReconCost": "£2,800–£4,000 [EM-QUOTE]"
+        "avgReconCost": "£2,800-£4,000 [EM-QUOTE]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -514,11 +514,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "60,000–100,000 miles【PATTERN DATA】"
+        "value": "60,000-100,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£3,500–£4,000 reconditioned【EM-QUOTE】"
+        "value": "£3,500-£4,000 reconditioned【EM-QUOTE】"
       },
       {
         "label": "Most Requested Engine Code",
@@ -539,12 +539,12 @@
       {
         "id": 1,
         "question": "How much does a Range Rover Evoque TD4 / SD4 engine replacement cost in the UK?",
-        "answer": "A reconditioned 2.0 Ingenium diesel engine typically costs £2,800–£4,000 supply only. A fully fitted replacement from a specialist costs approximately £4,500–£6,000. Main dealer new engines start from £8,000–£10,000+ supply only."
+        "answer": "A reconditioned 2.0 Ingenium diesel engine typically costs £2,800-£4,000 supply only. A fully fitted replacement from a specialist costs approximately £4,500-£6,000. Main dealer new engines start from £8,000-£10,000+ supply only."
       },
       {
         "id": 2,
         "question": "Is the Range Rover Evoque 2.0 TD4 / SD4 engine reliable?",
-        "answer": "No - the 2.0-litre Ingenium diesel has a very poor reliability reputation. The most critical issue is timing chain stretch, which can occur between 60,000–100,000 miles. The root cause is oil dilution from incomplete DPF regenerations - a fundamental design issue because the Evoque's DPF is too far from the engine to stay hot enough. Turbo failure is also common."
+        "answer": "No - the 2.0-litre Ingenium diesel has a very poor reliability reputation. The most critical issue is timing chain stretch, which can occur between 60,000-100,000 miles. The root cause is oil dilution from incomplete DPF regenerations - a fundamental design issue because the Evoque's DPF is too far from the engine to stay hot enough. Turbo failure is also common."
       },
       {
         "id": 3,
@@ -554,7 +554,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing an Evoque TD4 / SD4 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £8,000–£15,000 Evoque, a £4,500–£6,000 recon is 30–75% of the car's value. For a clean example with good body and no other issues, replacement may be worthwhile. However, for higher-mileage examples under £6,000, evaluate whether the replacement cost exceeds our 60% Land Rover scrap threshold."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £8,000-£15,000 Evoque, a £4,500-£6,000 recon is 30-75% of the car's value. For a clean example with good body and no other issues, replacement may be worthwhile. However, for higher-mileage examples under £6,000, evaluate whether the replacement cost exceeds our 60% Land Rover scrap threshold."
       },
       {
         "id": 5,
@@ -564,7 +564,7 @@
       {
         "id": 6,
         "question": "Can I prevent timing chain failure on the 2.0 Ingenium diesel?",
-        "answer": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 5,000–10,000 miles with the correct JLR-spec oil, (2) Avoid short urban journeys - regular motorway runs allow DPF regeneration to complete, (3) Regularly check the dipstick for rising oil level or diesel smell (oil dilution warning), and (4) Never ignore cold-start rattle - book an inspection immediately if you hear it. Even with perfect maintenance, premature chain stretch remains a risk."
+        "answer": "Prevention is not guaranteed, but you can significantly reduce the risk: (1) Change oil every 5,000-10,000 miles with the correct JLR-spec oil, (2) Avoid short urban journeys - regular motorway runs allow DPF regeneration to complete, (3) Regularly check the dipstick for rising oil level or diesel smell (oil dilution warning), and (4) Never ignore cold-start rattle - book an inspection immediately if you hear it. Even with perfect maintenance, premature chain stretch remains a risk."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

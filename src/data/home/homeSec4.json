@@ -53,7 +53,7 @@
       "rank": 4,
       "ranking": "Most Expensive Failure",
       "winner": "306DT (TDV6/SDV6) Crank Failure",
-      "why": "Catastrophic bearing failure, £6,500–£9,500 full recon, and largely unrepairable once it starts.",
+      "why": "Catastrophic bearing failure, £6,500-£9,500 full recon, and largely unrepairable once it starts.",
       "verdict": {
         "icon": "check",
         "label": "AVOID",
@@ -66,8 +66,8 @@
     {
       "rank": 5,
       "ranking": "Safest Range Rover to Buy",
-      "winner": "L405 (2012–2021)",
-      "why": "Typical values of £14,000–£55,000 against £6,500–£12,000 recon cost - comfortably safe across almost every example.",
+      "winner": "L405 (2012-2021)",
+      "why": "Typical values of £14,000-£55,000 against £6,500-£12,000 recon cost - comfortably safe across almost every example.",
       "verdict": {
         "icon": "safestBuy",
         "label": "SAFE",

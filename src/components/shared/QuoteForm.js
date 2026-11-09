@@ -215,7 +215,7 @@ export default function QuoteForm({ onSuccess }) {
     if (cleaned) setRegInput(cleaned);
   }, [searchParams]);
 
-  // Hero reg links land here with ?reg= — look up vehicle details automatically.
+  // Hero reg links land here with ?reg= - look up vehicle details automatically.
   useEffect(() => {
     const fromUrl = searchParams?.get("reg") || searchParams?.get("vrm") || "";
     const cleaned = fromUrl.replace(/\s+/g, "").toUpperCase();
@@ -426,19 +426,19 @@ export default function QuoteForm({ onSuccess }) {
                       <li className="flex items-center gap-1.5">
                         <Icon name="calendar" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
                         <span>
-                          <strong className="font-semibold">Year:</strong> {vehicle.year || "—"}
+                          <strong className="font-semibold">Year:</strong> {vehicle.year || "-"}
                         </span>
                       </li>
                       <li className="flex items-center gap-1.5">
                         <Icon name="fuel" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
                         <span>
-                          <strong className="font-semibold">Fuel Type:</strong> {vehicle.fuelType || "—"}
+                          <strong className="font-semibold">Fuel Type:</strong> {vehicle.fuelType || "-"}
                         </span>
                       </li>
                       <li className="flex items-center gap-1.5">
                         <Icon name="engine" className="h-3.5 w-3.5 text-[var(--color-primary)]" />
                         <span>
-                          <strong className="font-semibold">Engine:</strong> {engineDisplay || "—"}
+                          <strong className="font-semibold">Engine:</strong> {engineDisplay || "-"}
                         </span>
                       </li>
                       <li className="flex items-center gap-1.5">
@@ -448,7 +448,7 @@ export default function QuoteForm({ onSuccess }) {
                           aria-hidden="true"
                         />
                         <span>
-                          <strong className="font-semibold">Colour:</strong> {vehicle.colour || "—"}
+                          <strong className="font-semibold">Colour:</strong> {vehicle.colour || "-"}
                         </span>
                       </li>
                     </ul>
@@ -591,7 +591,7 @@ export default function QuoteForm({ onSuccess }) {
 
             <p className="flex items-start justify-center gap-1.5 text-center text-[10px] leading-[1.35] text-[var(--color-text-soft)] sm:text-[11px]">
               <Icon name="lock" className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-              <span>Your details are secure, no spam — genuine quote from UK vetted engine specialists only.</span>
+              <span>Your details are secure, no spam - genuine quote from UK vetted engine specialists only.</span>
             </p>
           </form>
         )}

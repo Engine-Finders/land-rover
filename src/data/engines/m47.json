@@ -64,7 +64,7 @@
               "name": "How much does an M47 (Td4) engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned M47 Td4 typically costs £1,500–£2,500 supply only, with used units from £500–£1,000. Fitting adds £700–£1,000 depending on labour rates and vehicle access."
+                "text": "A reconditioned M47 Td4 typically costs £1,500-£2,500 supply only, with used units from £500-£1,000. Fitting adds £700-£1,000 depending on labour rates and vehicle access."
               }
             },
             {
@@ -172,7 +172,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover • BMW M47 (Td4) • Diesel • 2.0L I4 Turbo • 1998–2007",
+    "tagPill": "Land Rover • BMW M47 (Td4) • Diesel • 2.0L I4 Turbo • 1998-2007",
     "h1": "BMW M47 (Freelander 1 Td4) Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The BMW M47 is a refined, economical turbo diesel - one of the best small diesels of its era, but the swirl flap issue is its Achilles' heel. Backed by real UK enquiries in 2025 [ESTIMATED].",
     "trustStrip": [
@@ -214,11 +214,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "112–150 hp [THIRD-PARTY]"
+        "value": "112-150 hp [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "1998–2007"
+        "value": "1998-2007"
       },
       {
         "metric": "Models Fitted (Land Rover only)",
@@ -250,7 +250,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "20 (Midpoint of Reconditioned (Supply Only) range: £1,500–£2,500 → £2,000 midpoint → falls in under £3,000 bracket → 20)"
+          "score": "20 (Midpoint of Reconditioned (Supply Only) range: £1,500-£2,500 → £2,000 midpoint → falls in under £3,000 bracket → 20)"
         },
         {
           "dimension": "Repairability",
@@ -262,7 +262,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "12 (Reconditioned cost (£2,000 midpoint) as % of lowest typical vehicle value (Freelander 1 ~£2,000–£4,000) = 50–100% → falls in 45–59% bracket → 12)"
+          "score": "12 (Reconditioned cost (£2,000 midpoint) as % of lowest typical vehicle value (Freelander 1 ~£2,000-£4,000) = 50-100% → falls in 45-59% bracket → 12)"
         },
         {
           "dimension": "Total",
@@ -286,7 +286,7 @@
         "model": "Land Rover Freelander",
         "generation": "Series 1 (L314)",
         "variantBadge": "Td4 (M47D20)",
-        "years": "2000–2006"
+        "years": "2000-2006"
       }
     ],
     "crossBrandNote": "Also powers numerous BMW models including the 3 Series (E46), 5 Series (E39), and X3 (E83) → [BMW M47 page]."
@@ -301,24 +301,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£500–£1,000",
-        "fittedIndie": "£900–£1,800",
+        "supplyOnly": "£500-£1,000",
+        "fittedIndie": "£900-£1,800",
         "warranty": "Varies by supplier"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£1,500–£2,500",
-        "fittedIndie": "£2,200–£3,500",
+        "supplyOnly": "£1,500-£2,500",
+        "fittedIndie": "£2,200-£3,500",
         "warranty": "12 months typical"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£2,200–£3,500",
-        "fittedIndie": "£3,000–£4,500",
-        "warranty": "12–24 months typical"
+        "supplyOnly": "£2,200-£3,500",
+        "fittedIndie": "£3,000-£4,500",
+        "warranty": "12-24 months typical"
       }
     ],
-    "labourEstimate": "Fitting an M47 Td4 typically takes 8–10 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
+    "labourEstimate": "Fitting an M47 Td4 typically takes 8-10 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
     "sharedCostNote": "Parts cost is identical across BMW and Land Rover applications; labour time varies slightly by engine bay access and subframe design.",
     "cta": {
       "label": "→ Compare M47 (Td4) engine prices from UK specialists",
@@ -330,7 +330,7 @@
       {
         "id": 1,
         "question": "How much does an M47 (Td4) engine replacement cost?",
-        "answer": "A reconditioned M47 Td4 typically costs £1,500–£2,500 supply only, with used units from £500–£1,000. Fitting adds £700–£1,000 depending on labour rates and vehicle access."
+        "answer": "A reconditioned M47 Td4 typically costs £1,500-£2,500 supply only, with used units from £500-£1,000. Fitting adds £700-£1,000 depending on labour rates and vehicle access."
       },
       {
         "id": 2,

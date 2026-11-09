@@ -3,11 +3,11 @@ Check A - CTA Intensity:
 Priority: Medium (per Variant Page Inventory: “D250” row for Defender L663, Priority H)
 Mode: Assertive throughout
 Check B - Badge Era Map:
-L663 (2021–present) → AJ20D6 (3.0L inline-6 diesel MHEV)
+L663 (2021-present) → AJ20D6 (3.0L inline-6 diesel MHEV)
 Authority Model mode: Case B - no dedicated AJ20D6 Engine Page content exists yet. Rating is newly assigned here based on live verification against 5+ independent sources and marked [NEWLY ASSIGNED], pending a dedicated Engine Page.
 
 SECTION 1 - HERO
-Tag Pill: Land Rover Defender D250 • 2021–present • AJ20D6
+Tag Pill: Land Rover Defender D250 • 2021-present • AJ20D6
 H1: Land Rover Defender D250 Engine Replacement - Compare Prices & Get Quotes
 Sub-headline: Get quotes today from trusted UK Land Rover D250 specialists. Compare reconditioned, rebuilt and used AJ20D6 3.0-litre straight-six diesel engines - supply & fit available nationwide.
 Trust Badges: 🔧 Supply & Fit Available | ✅ 12-Month Warranty | 🚚 Nationwide Delivery | 👥 12 Specialists
@@ -23,10 +23,10 @@ Reliability
 Recon Cost
 Era Note
 L663
-2021–present
+2021-present
 AJ20D6 (3.0 MHEV)
 ★★★★☆ [NEWLY ASSIGNED - see Data Note]
-£3,400–£5,800 [PLACEHOLDER - confirm vs cost sheet]
+£3,400-£5,800 [PLACEHOLDER - confirm vs cost sheet]
 Straight-six Ingenium diesel - smoother and more refined than the four-cylinder it replaced
 
 
@@ -41,43 +41,43 @@ Fitted (Indie)
 Warranty
 Best For
 Used Engine
-£2,800–£4,200
-£3,800–£5,200
-1–6 months
+£2,800-£4,200
+£3,800-£5,200
+1-6 months
 Budget priority; vehicle under £15,000
 Reconditioned Engine
-£4,200–£5,800
-£5,200–£6,900
-12–24 months
+£4,200-£5,800
+£5,200-£6,900
+12-24 months
 Most owners - best cost/warranty balance
 Rebuilt Engine
-£5,500–£7,500
-£6,500–£8,600
-12–24 months
+£5,500-£7,500
+£6,500-£8,600
+12-24 months
 Long-term ownership; 3+ year horizon
 Main Dealer New
-£8,500–£12,000
-£10,000–£13,500
-24–36 months
+£8,500-£12,000
+£10,000-£13,500
+24-36 months
 Insurance jobs, warranty claims
 
 Figures above reflect the current L663-generation AJ20D6 engine. The D250 shares its engine block with D200 and D300 variants - costs are similar across the range.
-Labour estimate: Fitting a Defender D250 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).
+Labour estimate: Fitting a Defender D250 engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).
 CTA: → Compare D250 engine prices from UK specialists
 
 SECTION 3 - COMMON PROBLEMS
 Problem 1: FEAD Belt Idler Pulley - Oil Pressure Sensor Damage (Recall)
 Symptoms: Oil leak from damaged sensor; potential oil pressure warning light; slip hazard for other road users
-Typical Mileage: Any mileage - recall affects 2024–2027 model year vehicles
-Repair Cost: £200–£400 (sensor and pulley replacement under recall if applicable)
+Typical Mileage: Any mileage - recall affects 2024-2027 model year vehicles
+Repair Cost: £200-£400 (sensor and pulley replacement under recall if applicable)
 Replacement Cost: N/A - does not typically progress to engine replacement
 Urgency: 🟠 Immediate - check recall status before purchase
 Our recommendation: This is a known recall on certain AJ20-D6 engines where the FEAD belt idler pulley can over-rotate after high-torsion input and damage the oil pressure/temperature sensor. Verify recall completion on any Defender D250 you’re considering - it’s a straightforward fix when caught early.
 Failure link: Read the full oil pressure sensor failure guide → /failures/oil-pressure-sensor-failure/
 Problem 2: DPF Clogging (Urban Use)
 Symptoms: Reduced power, increased fuel consumption, DPF warning light, frequent regeneration cycles
-Typical Mileage: 60,000–100,000 miles (urban-driven examples)
-Repair Cost: £400–£1,200 (DPF clean or replacement)
+Typical Mileage: 60,000-100,000 miles (urban-driven examples)
+Repair Cost: £400-£1,200 (DPF clean or replacement)
 Replacement Cost: N/A - does not typically progress to engine replacement
 Urgency: 🟡 Monitor - book inspection if warning light appears
 Our recommendation: Like all modern diesels, the AJ20D6 needs regular motorway running to complete DPF regenerations. Short urban journeys are the primary cause of clogging - if your driving pattern is mostly city-based, consider a petrol or PHEV Defender instead.
@@ -97,19 +97,19 @@ Typical Cost
 When It Makes Sense
 FEAD pulley/sensor damage (recall)
 ✅ Yes
-£200–£400 (or free under recall)
+£200-£400 (or free under recall)
 Catch it early - recall fix is straightforward
 DPF clogging
 ✅ Yes
-£400–£1,200
+£400-£1,200
 Regular maintenance item on urban-driven diesels
 Injector failure
 ✅ Yes
-£300–£800 per injector
+£300-£800 per injector
 Viable on lower-mileage examples
 Turbocharger failure
 ⚠️ Sometimes
-£1,200–£2,500
+£1,200-£2,500
 Viable if caught before debris damages engine
 Catastrophic bottom-end failure
 ❌ Usually No
@@ -124,7 +124,7 @@ Full service history with sub-15,000-mile oil intervals
 2021-onward build - the straight-six is a meaningful upgrade over the four-cylinder diesel
 Avoid If:
 Unresolved oil pressure warning light or visible oil leak
-No proof of recall status on 2024–2027 models
+No proof of recall status on 2024-2027 models
 Poor service history - the Ingenium range is unforgiving of neglect
 Engine warning light with no diagnosis
 Closing verdict: The Defender D250’s AJ20D6 represents a genuine step forward from the four-cylinder Ingenium diesel that preceded it. The straight-six is smoother, more refined, and carries fewer of the 2.0-litre’s timing chain and oil dilution problems. That said, it’s still a modern, emissions-controlled diesel - DPF maintenance and recall completion are non-negotiable. Buy on documented history, not just on badge appeal.
@@ -148,10 +148,10 @@ Power
 2025 Enquiries
 Avg. Recon Cost
 AJ20D6 (DT306)
-2021–present
+2021-present
 249 PS (183 kW)
 - (pattern data)
-£4,200–£5,800 [PLACEHOLDER]
+£4,200-£5,800 [PLACEHOLDER]
 
 This table’s rows match Section 1B’s Era Map exactly.
 Technical Specs (AJ20D6):
@@ -167,9 +167,9 @@ SECTION 7 - MARKET INTELLIGENCE
 Metric
 Data
 Most Common Failure
-FEAD belt idler pulley / oil pressure sensor (recall) - affects certain 2024–2027 AJ20-D6 engines
+FEAD belt idler pulley / oil pressure sensor (recall) - affects certain 2024-2027 AJ20-D6 engines
 Average Enquiry Mileage
-45,000–65,000 miles [PATTERN DATA]
+45,000-65,000 miles [PATTERN DATA]
 Average Replacement Cost
 £4,800 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]
 Most Requested Engine Code
@@ -182,7 +182,7 @@ South East (20%), London (18%), Midlands (14%) [PATTERN DATA]
 
 SECTION 8 - FAQ
 1. How much does a Land Rover Defender D250 engine replacement cost in the UK?
-A reconditioned Defender D250 (AJ20D6) engine typically costs £4,200–£5,800 supply only. Fitting adds £1,000–£1,600 depending on workshop location. Use our calculator for a figure specific to your car.
+A reconditioned Defender D250 (AJ20D6) engine typically costs £4,200-£5,800 supply only. Fitting adds £1,000-£1,600 depending on workshop location. Use our calculator for a figure specific to your car.
 2. Is the Defender D250 engine reliable?
 The AJ20D6 is JLR’s 3.0-litre inline-six diesel, introduced in 2021 to replace the four-cylinder Ingenium diesel. Early indications are positive - the straight-six is inherently better balanced and shares fewer of the 2.0-litre’s well-documented timing chain and oil dilution problems. A 2026 recall affecting certain AJ20-D6 engines involves the FEAD belt idler pulley - verify recall completion.
 3. What are the common problems with the Defender D250?
@@ -192,10 +192,10 @@ Depends on vehicle value. Against a well-kept £25,000 Defender D250, a £4,800 
 5. How do I find my Defender D250 engine code?
 Listed on the VIN plate and vehicle documentation. The D250 uses the AJ20D6 (also known as DT306) - a 3.0-litre inline-six diesel with 48V mild-hybrid assistance. Production began in 2020/2021. Tell us your registration date and we’ll confirm it for free.
 6. Can I repair the FEAD pulley/sensor issue, or does it need engine replacement?
-Yes - this is a recall fix, not an engine replacement scenario. The front-end auxiliary drive belt idler pulley and oil pressure/temperature sensor can be replaced (£200–£400 or free under recall if your vehicle is affected). At the first sign of an oil leak or pressure warning, verify recall status immediately.
+Yes - this is a recall fix, not an engine replacement scenario. The front-end auxiliary drive belt idler pulley and oil pressure/temperature sensor can be replaced (£200-£400 or free under recall if your vehicle is affected). At the first sign of an oil leak or pressure warning, verify recall status immediately.
 Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier.
 
-End of Part 1 - Sections 1–8
+End of Part 1 - Sections 1-8
 Proceed to Part 2 (Section 9 + Meta + Schema) to complete the Defender D250 Variant Page.
 
 
@@ -244,7 +244,7 @@ json
       "@type": "ItemList",
       "name": "Land Rover Defender D250 Engine Era Map",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "L663 Defender D250 (AJ20D6, 2021–present)", "url": "https://landroverengine.uk/defender/l663/" }
+        { "@type": "ListItem", "position": 1, "name": "L663 Defender D250 (AJ20D6, 2021-present)", "url": "https://landroverengine.uk/defender/l663/" }
       ]
     },
     {
@@ -257,12 +257,12 @@ json
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How much does a Land Rover Defender D250 engine replacement cost in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "A reconditioned Defender D250 (AJ20D6) engine typically costs £4,200–£5,800 supply only. Fitting adds £1,000–£1,600 depending on workshop location. Use our calculator for a figure specific to your car." } },
+        { "@type": "Question", "name": "How much does a Land Rover Defender D250 engine replacement cost in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "A reconditioned Defender D250 (AJ20D6) engine typically costs £4,200-£5,800 supply only. Fitting adds £1,000-£1,600 depending on workshop location. Use our calculator for a figure specific to your car." } },
         { "@type": "Question", "name": "Is the Defender D250 engine reliable?", "acceptedAnswer": { "@type": "Answer", "text": "The AJ20D6 is JLR’s 3.0-litre inline-six diesel, introduced in 2021 to replace the four-cylinder Ingenium diesel. Early indications are positive - the straight-six is inherently better balanced and shares fewer of the 2.0-litre’s well-documented timing chain and oil dilution problems. A 2026 recall affecting certain AJ20-D6 engines involves the FEAD belt idler pulley - verify recall completion." } },
         { "@type": "Question", "name": "What are the common problems with the Defender D250?", "acceptedAnswer": { "@type": "Answer", "text": "The primary known issue is a recall on certain AJ20-D6 engines where the front-end auxiliary drive belt idler pulley can over-rotate after high-torsion input and damage the oil pressure/temperature sensor, causing an oil leak. DPF clogging is also a concern for urban-driven examples - regular motorway running is essential." } },
         { "@type": "Question", "name": "Is it worth replacing a Defender D250 engine, or should I scrap the car?", "acceptedAnswer": { "@type": "Answer", "text": "Depends on vehicle value. Against a well-kept £25,000 Defender D250, a £4,800 recon is under 20% of the car’s value - worth it. Even against a higher-mileage £18,000 example, the same recon sits well below our 60% Land Rover threshold. These vehicles hold strong value." } },
         { "@type": "Question", "name": "How do I find my Defender D250 engine code?", "acceptedAnswer": { "@type": "Answer", "text": "Listed on the VIN plate and vehicle documentation. The D250 uses the AJ20D6 (also known as DT306) - a 3.0-litre inline-six diesel with 48V mild-hybrid assistance. Production began in 2020/2021. Tell us your registration date and we’ll confirm it for free." } },
-        { "@type": "Question", "name": "Can I repair the FEAD pulley/sensor issue, or does it need engine replacement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes - this is a recall fix, not an engine replacement scenario. The front-end auxiliary drive belt idler pulley and oil pressure/temperature sensor can be replaced (£200–£400 or free under recall if your vehicle is affected). At the first sign of an oil leak or pressure warning, verify recall status immediately." } }
+        { "@type": "Question", "name": "Can I repair the FEAD pulley/sensor issue, or does it need engine replacement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes - this is a recall fix, not an engine replacement scenario. The front-end auxiliary drive belt idler pulley and oil pressure/temperature sensor can be replaced (£200-£400 or free under recall if your vehicle is affected). At the first sign of an oil leak or pressure warning, verify recall status immediately." } }
       ]
     },
     {
@@ -322,12 +322,12 @@ Land Rover Defender 2.5 Diesel / TD - VARIANT PAGE, PART 1
 STEP 0 DECLARATIONS (internal - remove before publishing)
 Check A (CTA Intensity): {{VARIANT_PRIORITY}} = L, per the Variant Page Inventory. Consultative mode throughout.
 Check B (Badge Era Map): 2 rows - Classic Defender (pre-Tdi era):
-12J (1983–1986) - 2.5 naturally aspirated diesel
-19J (1986–1994) - 2.5 turbo diesel
+12J (1983-1986) - 2.5 naturally aspirated diesel
+19J (1986-1994) - 2.5 turbo diesel
 Authority Model mode: Case B for both rows - no dedicated 12J or 19J Engine Pages exist. Both ratings are newly assigned here based on live verification against multiple independent sources, marked [NEWLY ASSIGNED] and logged in Production Note.
 
 SECTION 1 - HERO
-Tag Pill: Land Rover Defender 2.5 Diesel / TD • 1983–1994 • 2 Engine Generations
+Tag Pill: Land Rover Defender 2.5 Diesel / TD • 1983-1994 • 2 Engine Generations
 H1: Land Rover Defender 2.5 Diesel Engine Replacement - Compare Prices & Get Quotes
 Sub-headline: Get quotes today from trusted UK Land Rover specialists. Compare reconditioned, rebuilt and used 12J and 19J engines - the original pre-Tdi Defender diesels. Supply & fit available nationwide.
 Trust Badges: 🔧 Supply & Fit Available | ✅ 12-Month Warranty | 🚚 Nationwide Delivery | 👥 12 Specialists
@@ -344,21 +344,21 @@ Reliability
 Recon Cost
 Era Note
 Classic (pre-Tdi)
-1983–1986
+1983-1986
 12J (2.5 NA)
 ★★★★☆ [NEWLY ASSIGNED - see Data Note]
-£700–£1,800 [PLACEHOLDER - confirm vs cost sheet]
+£700-£1,800 [PLACEHOLDER - confirm vs cost sheet]
 Simple indirect-injection diesel - robust but underpowered
 Classic (pre-Tdi)
-1986–1994
+1986-1994
 19J (2.5 TD)
 ★★★½☆ [NEWLY ASSIGNED - see Data Note]
-£1,200–£2,800 [PLACEHOLDER - confirm vs cost sheet]
+£1,200-£2,800 [PLACEHOLDER - confirm vs cost sheet]
 Turbo adds power, but cylinder head cracking is a known weak point
 
 
 
-Data Note (internal): Both engines are indirect-injection units from the pre-Tdi era. 12J is naturally aspirated (1983–1986), 19J is turbocharged (1986–1994). Ratings are [NEWLY ASSIGNED] based on live verification against 5+ sources: LR4x4 forums, LR Workshop specs, PistonHeads, Glencoyne 4x4 technical guides, and Britpart/John Craddock parts datasheets - all converging on the 12J's robustness and the 19J's reputation for head gasket/cylinder head issues at higher mileages. Full sources cited in Production Note.
+Data Note (internal): Both engines are indirect-injection units from the pre-Tdi era. 12J is naturally aspirated (1983-1986), 19J is turbocharged (1986-1994). Ratings are [NEWLY ASSIGNED] based on live verification against 5+ sources: LR4x4 forums, LR Workshop specs, PistonHeads, Glencoyne 4x4 technical guides, and Britpart/John Craddock parts datasheets - all converging on the 12J's robustness and the 19J's reputation for head gasket/cylinder head issues at higher mileages. Full sources cited in Production Note.
 
 SECTION 2 - REPLACEMENT COSTS
 H2: Land Rover Defender 2.5 Diesel / TD Engine Replacement Costs
@@ -368,19 +368,19 @@ Fitted (Indie)
 Warranty
 Best For
 Used Engine
-£700–£1,800
-£1,200–£2,600
-1–6 months
+£700-£1,800
+£1,200-£2,600
+1-6 months
 Budget priority; short-term ownership
 Reconditioned Engine
-£1,600–£3,200
-£2,500–£4,500
-12–24 months
+£1,600-£3,200
+£2,500-£4,500
+12-24 months
 Most owners - best cost/warranty balance
 Rebuilt Engine
-£2,400–£4,200
-£3,300–£5,500
-12–24 months
+£2,400-£4,200
+£3,300-£5,500
+12-24 months
 Long-term ownership; concours/restoration projects
 Main Dealer New
 N/A (NLA from Land Rover)
@@ -389,35 +389,35 @@ N/A
 Not available - all engines are rebuilt or used
 
 Figures above reflect pre-Tdi 2.5 diesel pricing. The 19J typically costs more than the 12J due to turbocharger complexity. Older generations: see the Era Map above for generation-specific pricing.
-Labour estimate: Fitting a Defender 2.5 diesel engine typically takes 8–12 hours at £65–£95/hr (independent Land Rover specialist).
+Labour estimate: Fitting a Defender 2.5 diesel engine typically takes 8-12 hours at £65-£95/hr (independent Land Rover specialist).
 CTA line: → Compare Defender 2.5 diesel engine prices from UK specialists
 
 SECTION 3 - COMMON PROBLEMS
-Problem 1: 19J Cylinder Head Cracking (Turbo Diesel, 1986–1994)
+Problem 1: 19J Cylinder Head Cracking (Turbo Diesel, 1986-1994)
 Symptoms: Coolant loss, oil in coolant, overheating, white smoke from exhaust, loss of power.
-Typical Mileage: 80,000–150,000 miles (often earlier on poorly maintained examples).
-Repair Cost: £800–£2,000 [PLACEHOLDER] (cylinder head replacement).
-Replacement Cost: £1,200–£2,800 [PLACEHOLDER] (if crack leads to catastrophic failure).
+Typical Mileage: 80,000-150,000 miles (often earlier on poorly maintained examples).
+Repair Cost: £800-£2,000 [PLACEHOLDER] (cylinder head replacement).
+Replacement Cost: £1,200-£2,800 [PLACEHOLDER] (if crack leads to catastrophic failure).
 Urgency: 🟠 Check - book inspection urgently if overheating or coolant loss occurs.
 Our recommendation: The 19J's reputation for head issues is well-earned. The alloy cylinder head is prone to cracking between valves or around the pre-combustion chambers, especially on turbocharged units run hard. If you're buying a 19J, factor in a potential head replacement - it's not a matter of if, but when on higher-mileage examples. Regular coolant checks and avoiding overheating are essential.
 CTA line: → Compare 19J engine replacement costs
 Failure-link: /failures/cylinder-head-crack/
-Problem 2: 12J Injection Pump Wear (Naturally Aspirated, 1983–1986)
+Problem 2: 12J Injection Pump Wear (Naturally Aspirated, 1983-1986)
 Symptoms: Hard starting, rough idle, lack of power, black smoke, poor fuel economy.
-Typical Mileage: 100,000–200,000 miles (pump wear is age-related as much as mileage).
-Repair Cost: £400–£900 [PLACEHOLDER] (injection pump rebuild).
+Typical Mileage: 100,000-200,000 miles (pump wear is age-related as much as mileage).
+Repair Cost: £400-£900 [PLACEHOLDER] (injection pump rebuild).
 Replacement Cost: N/A - repair only (pump rebuild rarely progresses to full engine replacement).
 Urgency: 🟡 Monitor - book inspection soon.
 Our recommendation: The 12J's Bosch injection pump is durable but not immortal. Poor fuel quality or water contamination accelerates wear. A pump rebuild is straightforward for any diesel specialist, but don't delay - worn pumps can cause misfuelling that damages the rest of the engine. If your 12J is hard to start when cold, investigate the pump and glow plugs simultaneously.
 CTA line: → Compare 12J engine parts and specialists
 Failure-link: /failures/injection-pump-failure/
-Problem 3: 19J Turbocharger Failure (Turbo Diesel, 1986–1994)
+Problem 3: 19J Turbocharger Failure (Turbo Diesel, 1986-1994)
 Symptoms: Whistling or grinding from turbo, loss of boost/power, excessive black smoke, oil consumption.
-Typical Mileage: 80,000–150,000 miles.
-Repair Cost: £500–£1,200 [PLACEHOLDER] (turbo rebuild).
+Typical Mileage: 80,000-150,000 miles.
+Repair Cost: £500-£1,200 [PLACEHOLDER] (turbo rebuild).
 Replacement Cost: N/A - repair or replacement of turbo unit (not typically full engine replacement).
 Urgency: 🟡 Monitor - book inspection soon if boost loss or smoke is evident.
-Our recommendation: The 19J's Garrett T2 turbocharger is robust when maintained but intolerant of poor oil quality or blocked breathers. Regular oil changes (every 3,000–5,000 miles on these pre-Tdi units) are the single most important preventative measure. If the turbo fails, have the oil feed checked - contaminated oil is often the root cause.
+Our recommendation: The 19J's Garrett T2 turbocharger is robust when maintained but intolerant of poor oil quality or blocked breathers. Regular oil changes (every 3,000-5,000 miles on these pre-Tdi units) are the single most important preventative measure. If the turbo fails, have the oil feed checked - contaminated oil is often the root cause.
 CTA line: → Compare 19J turbo replacement specialists
 Failure-link: /failures/turbocharger-failure/
 
@@ -435,23 +435,23 @@ Typical Cost
 When It Makes Sense
 19J cracked cylinder head
 ✅ Yes
-£800–£2,000 [PLACEHOLDER]
+£800-£2,000 [PLACEHOLDER]
 Most 19J examples - repair cheaper than replacement
 12J injection pump wear
 ✅ Yes
-£400–£900 [PLACEHOLDER]
+£400-£900 [PLACEHOLDER]
 Cost-effective on any 12J worth keeping
 19J turbocharger failure
 ✅ Yes
-£500–£1,200 [PLACEHOLDER]
+£500-£1,200 [PLACEHOLDER]
 Always worth repairing unless the engine is otherwise beyond hope
 12J major mechanical failure
 ❌ Usually No
-£700–£1,800+
+£700-£1,800+
 Parts availability vs. value - 12J engines are relatively cheap to replace
 19J snapped timing belt or cam failure
 ❌ Usually No
-£1,200–£2,800+
+£1,200-£2,800+
 Piston-valve damage means full strip; replacement often more cost-effective
 
 Buying This Defender 2.5 Diesel? Check These First
@@ -486,15 +486,15 @@ Power
 2025 Enquiries
 Avg. Recon Cost
 12J (2.5 NA)
-1983–1986
+1983-1986
 67 bhp
 - (pattern data)
-£700–£1,800 [PLACEHOLDER]
+£700-£1,800 [PLACEHOLDER]
 19J (2.5 TD)
-1986–1994
+1986-1994
 85 bhp
 - (pattern data)
-£1,200–£2,800 [PLACEHOLDER]
+£1,200-£2,800 [PLACEHOLDER]
 
 This table's rows match Section 1B's Era Map exactly.
 Technical Specs (12J and 19J overview):
@@ -524,21 +524,21 @@ South West (18%), Midlands (15%), Scotland (12%) - classic Defender strongholds 
 
 SECTION 8 - FAQ
 1. How much does a Land Rover Defender 2.5 diesel engine replacement cost in the UK?
-A reconditioned 2.5 diesel engine typically costs £700–£3,200 supply only depending on whether you have the 12J naturally aspirated or 19J turbocharged variant. Fitting adds £650–£1,100. Use our calculator for a figure specific to your vehicle.
+A reconditioned 2.5 diesel engine typically costs £700-£3,200 supply only depending on whether you have the 12J naturally aspirated or 19J turbocharged variant. Fitting adds £650-£1,100. Use our calculator for a figure specific to your vehicle.
 2. Is the Land Rover Defender 2.5 diesel engine reliable?
-It depends entirely on which of the two engine generations your Defender has. The 12J (1983–1986) is widely regarded as a simple, robust, if agricultural, indirect-injection diesel. The 19J (1986–1994) offers more power but has a well-documented reputation for cylinder head cracking - a weakness any buyer should know about.
+It depends entirely on which of the two engine generations your Defender has. The 12J (1983-1986) is widely regarded as a simple, robust, if agricultural, indirect-injection diesel. The 19J (1986-1994) offers more power but has a well-documented reputation for cylinder head cracking - a weakness any buyer should know about.
 3. What are the common problems with the Defender 2.5 diesel?
 On the 19J turbo diesel, cylinder head cracking and head gasket failure are the headline issues. On both engines, injection pump wear (especially on the 12J) and general age-related cooling system degradation are common. The 19J's Garrett turbocharger can also fail if oil quality has been neglected.
 4. Is it worth replacing a Defender 2.5 diesel engine, or should I scrap the car?
 Depends on vehicle value. Against a tidy £8,000 Defender, a £1,800 recon is 22.5% of the car's value - well worth it. Against a rusty £2,000 example, the same recon may exceed our 60% Land Rover threshold - get a chassis and bulkhead inspection before committing.
 5. How do I find my Defender's 2.5 diesel engine code?
-Check the engine block stamp (left side, near the dipstick) or your V5C. As a rule of thumb: pre-1986 is 12J naturally aspirated; 1986–1994 with a turbocharger is the 19J. Tell us your vehicle's build date and we'll confirm it for free.
+Check the engine block stamp (left side, near the dipstick) or your V5C. As a rule of thumb: pre-1986 is 12J naturally aspirated; 1986-1994 with a turbocharger is the 19J. Tell us your vehicle's build date and we'll confirm it for free.
 6. Can I repair a cracked 19J cylinder head, or does it need replacement?
-Yes - if caught early. A cylinder head replacement or professional repair typically costs £800–£2,000. If the crack has been ignored and the engine has overheated, a full replacement (£1,200–£2,800) may be necessary. At the first sign of coolant loss or overheating on a 19J, book an inspection immediately.
+Yes - if caught early. A cylinder head replacement or professional repair typically costs £800-£2,000. If the crack has been ignored and the engine has overheated, a full replacement (£1,200-£2,800) may be necessary. At the first sign of coolant loss or overheating on a 19J, book an inspection immediately.
 Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier.
 
 PART 1 COMPLETE - PROCEED TO PART 2
-This completes Sections 1–8 of the Land Rover Defender 2.5 Diesel / TD Variant Page. Please now run BRAND-VARIANT-PAGE-PART-2 with this output to generate Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON-LD schema.
+This completes Sections 1-8 of the Land Rover Defender 2.5 Diesel / TD Variant Page. Please now run BRAND-VARIANT-PAGE-PART-2 with this output to generate Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON-LD schema.
 Summary for Part 2:
 Brand: Land Rover
 Domain: landroverengine.uk
@@ -660,7 +660,7 @@ json
           "name": "How much does a Land Rover Defender 2.5 diesel engine replacement cost in the UK?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A reconditioned 2.5 diesel engine typically costs £700–£3,200 supply only depending on whether you have the 12J naturally aspirated or 19J turbocharged variant. Fitting adds £650–£1,100. Use our calculator for a figure specific to your vehicle."
+            "text": "A reconditioned 2.5 diesel engine typically costs £700-£3,200 supply only depending on whether you have the 12J naturally aspirated or 19J turbocharged variant. Fitting adds £650-£1,100. Use our calculator for a figure specific to your vehicle."
           }
         },
         {
@@ -668,7 +668,7 @@ json
           "name": "Is the Land Rover Defender 2.5 diesel engine reliable?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It depends entirely on which of the two engine generations your Defender has. The 12J (1983–1986) is widely regarded as a simple, robust, if agricultural, indirect-injection diesel. The 19J (1986–1994) offers more power but has a well-documented reputation for cylinder head cracking – a weakness any buyer should know about."
+            "text": "It depends entirely on which of the two engine generations your Defender has. The 12J (1983-1986) is widely regarded as a simple, robust, if agricultural, indirect-injection diesel. The 19J (1986-1994) offers more power but has a well-documented reputation for cylinder head cracking - a weakness any buyer should know about."
           }
         },
         {
@@ -684,7 +684,7 @@ json
           "name": "Is it worth replacing a Defender 2.5 diesel engine, or should I scrap the car?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Depends on vehicle value. Against a tidy £8,000 Defender, a £1,800 recon is 22.5% of the car's value – well worth it. Against a rusty £2,000 example, the same recon may exceed our 60% Land Rover threshold – get a chassis and bulkhead inspection before committing."
+            "text": "Depends on vehicle value. Against a tidy £8,000 Defender, a £1,800 recon is 22.5% of the car's value - well worth it. Against a rusty £2,000 example, the same recon may exceed our 60% Land Rover threshold - get a chassis and bulkhead inspection before committing."
           }
         },
         {
@@ -692,7 +692,7 @@ json
           "name": "How do I find my Defender's 2.5 diesel engine code?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Check the engine block stamp (left side, near the dipstick) or your V5C. As a rule of thumb: pre-1986 is 12J naturally aspirated; 1986–1994 with a turbocharger is the 19J. Tell us your vehicle's build date and we'll confirm it for free."
+            "text": "Check the engine block stamp (left side, near the dipstick) or your V5C. As a rule of thumb: pre-1986 is 12J naturally aspirated; 1986-1994 with a turbocharger is the 19J. Tell us your vehicle's build date and we'll confirm it for free."
           }
         },
         {
@@ -700,7 +700,7 @@ json
           "name": "Can I repair a cracked 19J cylinder head, or does it need replacement?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes – if caught early. A cylinder head replacement or professional repair typically costs £800–£2,000. If the crack has been ignored and the engine has overheated, a full replacement (£1,200–£2,800) may be necessary. At the first sign of coolant loss or overheating on a 19J, book an inspection immediately."
+            "text": "Yes - if caught early. A cylinder head replacement or professional repair typically costs £800-£2,000. If the crack has been ignored and the engine has overheated, a full replacement (£1,200-£2,800) may be necessary. At the first sign of coolant loss or overheating on a 19J, book an inspection immediately."
           }
         }
       ]
@@ -763,13 +763,13 @@ Check A - CTA Intensity:
 Priority: H (High per Variant Page Inventory: "D180/D240 badges fold in - same engine")
 Mode: Assertive throughout
 Check B - Badge Era Map:
-Discovery 5 / D5 (2017–2021) → 204DTD (2.0L four-cylinder Ingenium diesel)
+Discovery 5 / D5 (2017-2021) → 204DTD (2.0L four-cylinder Ingenium diesel)
 Authority Model mode: No dedicated Engine Page exists for the 204DTD. Rating is 
 NEWLYASSIGNED
 NEWLYASSIGNED based on live verification against multiple specialist sources. Cost figures are based on available UK specialist quotes .
 
 SECTION 1 - HERO
-Tag Pill: Land Rover Discovery SD4 • 2017–2021 • 1 Engine Code
+Tag Pill: Land Rover Discovery SD4 • 2017-2021 • 1 Engine Code
 H1: Land Rover Discovery SD4 Engine Replacement - Compare Prices & Get Quotes
 Sub-headline: The Discovery's 2.0-litre Ingenium diesel - a twin-turbocharged unit that powers the SD4 and its D180/D240 siblings. Get quotes from specialists who know these engines inside out, supply & fit available nationwide.
 Trust Badges: 🔧 Supply & Fit Available | ✅ 12-Month Warranty | 🚚 Nationwide Delivery | 👥 12 Specialists
@@ -785,10 +785,10 @@ Reliability
 Recon Cost
 Era Note
 Discovery 5 / L462
-2017–2021
+2017-2021
 204DTD (AJ20D4)
 ★★☆☆☆ [NEWLY ASSIGNED - see Data Note]
-£2,400–£4,000 [PLACEHOLDER - confirm vs cost sheet]
+£2,400-£4,000 [PLACEHOLDER - confirm vs cost sheet]
 One engine throughout this badge's history - no era ambiguity.
 
 
@@ -803,35 +803,35 @@ Fitted (Indie)
 Warranty
 Best For
 Used Engine
-£1,800–£2,500
-£2,600–£3,500
-1–6 months
+£1,800-£2,500
+£2,600-£3,500
+1-6 months
 Budget priority; short-term ownership
 Reconditioned Engine
-£2,400–£4,000
-£3,400–£5,200
-12–24 months
+£2,400-£4,000
+£3,400-£5,200
+12-24 months
 Most owners - best cost/warranty balance
 Rebuilt Engine
-£3,500–£5,500
-£4,500–£6,700
-12–24 months
+£3,500-£5,500
+£4,500-£6,700
+12-24 months
 Long-term ownership; 3+ year horizon
 Main Dealer New
-£6,500–£9,000
-£8,000–£11,000
-24–36 months
+£6,500-£9,000
+£8,000-£11,000
+24-36 months
 Insurance jobs, warranty claims
 
 Figures above reflect the only engine generation this badge ever used - the 204DTD. See the Era Map above for era-specific pricing.
-Labour estimate: Fitting a Discovery SD4 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The 204DTD is a complex modern diesel requiring specialist knowledge.
+Labour estimate: Fitting a Discovery SD4 engine typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). The 204DTD is a complex modern diesel requiring specialist knowledge.
 CTA: → Compare Discovery SD4 engine prices from UK specialists
 
 SECTION 3 - COMMON PROBLEMS
 Problem 1: Timing Chain Failure (204DTD)
 Symptoms: Cold-start rattle, metallic ticking from engine, engine warning light, loss of power, rough running.
-Typical Mileage: 60,000–120,000 miles - problems can appear much earlier .
-Repair Cost: £1,500–£3,000 (chain replacement, guides, tensioners).
+Typical Mileage: 60,000-120,000 miles - problems can appear much earlier .
+Repair Cost: £1,500-£3,000 (chain replacement, guides, tensioners).
 Replacement Cost: N/A - repair only if caught early; catastrophic failure requires full engine replacement .
 Urgency: 🔴 Immediate - at first sign of rattle, book inspection today.
 Our recommendation: The 204DTD's timing chain system is a known weak point. The components that make up the timing system are prone to failure because of the weak materials used . Plastic guides can break and drop debris into the oil pickup, causing spun bearings . If the chain stretches too far, it can "jump" a tooth or snap, causing pistons to strike open valves in this interference engine . Regular oil changes (every 8,000 miles, not the suggested 24,000) are critical .
@@ -839,8 +839,8 @@ Failure link: /failures/timing-chain-failure/
 
 Problem 2: Turbocharger Failure
 Symptoms: Loss of power, excessive smoke, whistling noise from engine bay, engine management light.
-Typical Mileage: 60,000–120,000 miles.
-Repair Cost: £800–£2,000 (turbocharger replacement).
+Typical Mileage: 60,000-120,000 miles.
+Repair Cost: £800-£2,000 (turbocharger replacement).
 Replacement Cost: N/A - repair only; turbo failure can cause catastrophic engine damage.
 Urgency: 🔴 Immediate - book inspection urgently if symptoms appear.
 Our recommendation: The turbocharger on all diesel Ingenium engines is composed of components and materials that are seemingly not sufficient for its purpose . A failed turbocharger can cause engine failure due to the intake of oil and possible debris . When excessive amounts of oil pass through the intake, the engine hydro-locks, bending conrods . If you notice any whistling, smoke, or power loss, have the turbo inspected immediately.
@@ -848,8 +848,8 @@ Failure link: /failures/turbocharger-failure/
 
 Problem 3: Fuel Injector Failure (Over-fuelling)
 Symptoms: Rough idle, black smoke, poor fuel economy, engine warning light, loss of power.
-Typical Mileage: 60,000–120,000 miles.
-Repair Cost: £400–£1,200 (injector replacement and calibration).
+Typical Mileage: 60,000-120,000 miles.
+Repair Cost: £400-£1,200 (injector replacement and calibration).
 Replacement Cost: N/A - repair only.
 Urgency: 🟠 Check - book inspection urgently if symptoms appear.
 Our recommendation: The fuel injectors fitted to the 2.0 Ingenium engines have a tendency to over-fuel . This produces an extreme amount of heat as the large amount of fuel is compressed and ignited . The piston itself is comprised of a weaker than expected material and is very susceptible to damage . Over-fuelling injectors can cause the piston to melt . Regular servicing and using quality fuel can help mitigate this risk.
@@ -869,15 +869,15 @@ Typical Cost
 When It Makes Sense
 Timing chain rattle
 ✅ Yes (if caught early)
-£1,500–£3,000
+£1,500-£3,000
 Preventative - catches fault before catastrophic failure
 Turbocharger failure
 ✅ Yes (if caught early)
-£800–£2,000
+£800-£2,000
 Replace turbo before it causes engine failure
 Injector over-fuelling
 ✅ Yes
-£400–£1,200
+£400-£1,200
 Replace affected injectors and calibrate
 Snapped timing chain
 ❌ Usually No
@@ -920,16 +920,16 @@ Power
 2025 Enquiries
 Avg. Recon Cost
 204DTD (AJ20D4)
-2017–2021
+2017-2021
 240 PS (177 kW) 
 - (pattern data)
-£2,400–£4,000 [PLACEHOLDER]
+£2,400-£4,000 [PLACEHOLDER]
 
 This table's rows match Section 1B's Era Map exactly.
 Technical Specs:
 Displacement: 1,999 cc 
 Cylinders: 4-cylinder inline
-Compression Ratio: 15.5:1–15.8:1 
+Compression Ratio: 15.5:1-15.8:1 
 Fuel System: Common-rail direct injection 
 Turbocharger: Twin-turbocharged
 CTA: → Compare Discovery SD4 engine prices for your Land Rover
@@ -953,7 +953,7 @@ South East (22%), Midlands (18%), North West (15%) 【PATTERN DATA】
 
 SECTION 8 - FAQ
 1. How much does a Land Rover Discovery SD4 engine replacement cost in the UK?
-A reconditioned SD4 (204DTD) engine typically costs £2,400–£4,000 supply only. Fitting adds £650–£1,300 depending on workshop location. Main dealer new engines can exceed £8,000 supply only. Use our calculator for a figure specific to your car.
+A reconditioned SD4 (204DTD) engine typically costs £2,400-£4,000 supply only. Fitting adds £650-£1,300 depending on workshop location. Main dealer new engines can exceed £8,000 supply only. Use our calculator for a figure specific to your car.
 2. Is the Land Rover Discovery SD4 engine reliable?
 This is one of the more controversial engines in Land Rover's modern lineup. The 204DTD Ingenium diesel has a well-documented reputation for timing chain and turbocharger issues . Specialist rebuilders report seeing these engines regularly with catastrophic failures . However, with meticulous maintenance (oil changes every 8,000 miles) and preventative timing chain replacement, some examples exceed 150,000 miles.
 3. What are the common problems with the Land Rover Discovery SD4?
@@ -963,10 +963,10 @@ Apply the 60% Land Rover scrap threshold: if your Discovery 5 is worth £12,000 
 5. How do I find my Land Rover Discovery SD4 engine code?
 The engine code is listed on the VIN plate and vehicle documentation. The SD4 uses the 204DTD (AJ20D4) - a 2.0-litre twin-turbo diesel producing 240 PS. Tell us your registration date and we'll confirm it for free.
 6. Can I repair the 204DTD timing chain, or does it need replacement?
-Yes - if caught early. A preventative chain replacement (£1,500–£3,000) is far cheaper than a catastrophic chain snap requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend replacing the chain as preventative maintenance at 80,000 miles.
+Yes - if caught early. A preventative chain replacement (£1,500-£3,000) is far cheaper than a catastrophic chain snap requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend replacing the chain as preventative maintenance at 80,000 miles.
 Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier.
 
-This completes Part 1 of the Land Rover Discovery SD4 Variant Page (Sections 1–8). Ready for Part 2 (Section 9 + Meta + Schema).
+This completes Part 1 of the Land Rover Discovery SD4 Variant Page (Sections 1-8). Ready for Part 2 (Section 9 + Meta + Schema).
 Part 2
 OK, the user just said "Part 2" after I generated Part 1 for the Land Rover Discovery SD4 variant page. So they want me to complete the page by generating Section 9, the meta data, and the full JSON-LD schema stack, following the rules from the AI Handover Document and the prompt files.
 First, I need to look at what we established in Part 1. The Step 0 checks showed the priority is High (H), so the CTA mode should be Assertive throughout. The badge era map is just one row for the 204DTD engine in the Discovery 5. The authority model assigned a new rating of ★★☆☆☆ based on specialist sources. Cost figures are placeholders.
@@ -1042,7 +1042,7 @@ json
           "name": "How much does a Land Rover Discovery SD4 engine replacement cost in the UK?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A reconditioned SD4 (204DTD) engine typically costs £2,400–£4,000 supply only. Fitting adds £650–£1,300 depending on workshop location. Main dealer new engines can exceed £8,000 supply only. Use our calculator for a figure specific to your car."
+            "text": "A reconditioned SD4 (204DTD) engine typically costs £2,400-£4,000 supply only. Fitting adds £650-£1,300 depending on workshop location. Main dealer new engines can exceed £8,000 supply only. Use our calculator for a figure specific to your car."
           }
         },
         {
@@ -1082,7 +1082,7 @@ json
           "name": "Can I repair the 204DTD timing chain, or does it need replacement?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes - if caught early. A preventative chain replacement (£1,500–£3,000) is far cheaper than a catastrophic chain snap requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend replacing the chain as preventative maintenance at 80,000 miles."
+            "text": "Yes - if caught early. A preventative chain replacement (£1,500-£3,000) is far cheaper than a catastrophic chain snap requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend replacing the chain as preventative maintenance at 80,000 miles."
           }
         }
       ]

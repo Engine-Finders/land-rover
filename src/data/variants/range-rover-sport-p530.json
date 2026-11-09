@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Range Rover Sport P530 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Range Rover Sport P530 (S68B44B) engine typically costs £6,000–£10,000 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned Range Rover Sport P530 (S68B44B) engine typically costs £6,000-£10,000 supply only. Fitting adds £1,000-£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Range Rover Sport P530 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Against a well-maintained L461 Range Rover Sport (values £50,000–£90,000+), a £7,000–£9,000 reconditioned engine is 10–18% of the vehicle's value - worth it. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a P530, given the L461's strong residual values."
+                "text": "Against a well-maintained L461 Range Rover Sport (values £50,000-£90,000+), a £7,000-£9,000 reconditioned engine is 10-18% of the vehicle's value - worth it. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a P530, given the L461's strong residual values."
               }
             },
             {
@@ -116,7 +116,7 @@
               "name": "How do I find my Range Rover Sport P530 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The engine code S68B44B is listed on the VIN plate and vehicle documentation. The P530 badge was offered on the L461 Range Rover Sport from 2022 until the 2024 model year update. If your L461 is a 2022–2024 petrol V8 (not the P400 straight-six), it is the S68B44B. Tell us your registration and we'll confirm for free."
+                "text": "The engine code S68B44B is listed on the VIN plate and vehicle documentation. The P530 badge was offered on the L461 Range Rover Sport from 2022 until the 2024 model year update. If your L461 is a 2022-2024 petrol V8 (not the P400 straight-six), it is the S68B44B. Tell us your registration and we'll confirm for free."
               }
             },
             {
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover Sport P530 • 2022–2024 • S68B44B 4.4 V8 Twin-Turbo",
+    "tagPill": "Land Rover Range Rover Sport P530 • 2022-2024 • S68B44B 4.4 V8 Twin-Turbo",
     "h1": "Land Rover Range Rover Sport P530 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Range Rover Sport P530 specialists. Compare reconditioned, rebuilt and used BMW-sourced 4.4-litre V8 engines - supply & fit available nationwide for JLR's premium performance SUV.",
     "trustBadges": [
@@ -194,7 +194,7 @@
       "🚚 Nationwide Delivery",
       "👥 12 Specialists"
     ],
-    "priceAnchor": "Range Rover Sport P530 Engines - from £3,500 to £12,000 · Engine code: S68B44B (2022–2024)",
+    "priceAnchor": "Range Rover Sport P530 Engines - from £3,500 to £12,000 · Engine code: S68B44B (2022-2024)",
     "registrationInput": {
       "flag": "🇬🇧 GB",
       "placeholder": "Enter your reg - e.g. AB12 CDE",
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "Range Rover Sport L461",
-        "years": "2022–2024",
+        "years": "2022-2024",
         "engineCode": "S68B44B (BMW N63 4.4L twin-turbo V8)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£6,000–£10,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£6,000-£10,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "BMW-sourced 'Hot V' twin-turbo V8 - 530PS, 750Nm, 0-62 in 4.4s; spectacular performance but complex cooling and turbo systems demand vigilance"
       }
     ],
@@ -240,35 +240,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£4,500–£7,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£4,500-£7,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor required"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£6,000–£10,000",
-        "fittedIndie": "£7,500–£11,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£10,000",
+        "fittedIndie": "£7,500-£11,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance for this BMW V8"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£9,500–£13,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£9,500-£13,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; full factory-spec refresh"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£10,000–£15,000",
-        "fittedIndie": "£11,500–£17,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£10,000-£15,000",
+        "fittedIndie": "£11,500-£17,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the L461 P530 S68B44B era (2022–2024). This engine was offered for a limited period, so availability may vary.",
-    "labourEstimate": "Fitting a P530 engine typically takes 14–20 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The 'Hot V' design and BMW-sourced engine add complexity. [PLACEHOLDER - confirm vs cost sheet]",
+    "figuresNote": "Figures above reflect the L461 P530 S68B44B era (2022-2024). This engine was offered for a limited period, so availability may vary.",
+    "labourEstimate": "Fitting a P530 engine typically takes 14-20 hours at £75-£110/hr (independent) or £130-£180/hr (London/SE dealer). The 'Hot V' design and BMW-sourced engine add complexity. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare Range Rover Sport P530 engine prices from UK specialists",
       "href": "#"
@@ -280,8 +280,8 @@
         "id": 1,
         "title": "'Hot V' Cooling System & Coolant Hose Failure (N63)",
         "symptoms": "Coolant loss, overheating warnings, steam from engine bay, sweet smell, brittle hoses showing signs of cracking, low coolant warning.",
-        "typicalMileage": "20,000–50,000 miles",
-        "repairCost": "£500–£1,500 (coolant hose replacement, water pump, or thermostat) [PLACEHOLDER]",
+        "typicalMileage": "20,000-50,000 miles",
+        "repairCost": "£500-£1,500 (coolant hose replacement, water pump, or thermostat) [PLACEHOLDER]",
         "replacementCost": "N/A - repair only (unless overheating leads to engine damage)",
         "urgency": {
           "icon": "🔴",
@@ -299,7 +299,7 @@
         "title": "Turbo Oil Drain Pipe Gasket Failure (Recall Issue)",
         "symptoms": "Oil leak from the turbo area, burning oil smell, visible oil under the vehicle, smoke from engine bay, potential fire risk.",
         "typicalMileage": "Any mileage - manufacturing-related",
-        "repairCost": "£0 (if recall applies) - £500–£1,200 (if out of warranty) [PLACEHOLDER]",
+        "repairCost": "£0 (if recall applies) - £500-£1,200 (if out of warranty) [PLACEHOLDER]",
         "replacementCost": "N/A - repair only (unless oil leak leads to fire or turbo damage)",
         "urgency": {
           "icon": "🔴",
@@ -316,8 +316,8 @@
         "id": 3,
         "title": "Engine Mount Failure & Rough Idle",
         "symptoms": "Excessive vibration at idle, shaking felt through the cabin, clunking noises, rough idle that smooths out at higher RPM.",
-        "typicalMileage": "10,000–30,000 miles",
-        "repairCost": "£800–£1,800 (engine mount replacement - both sides) [PLACEHOLDER]",
+        "typicalMileage": "10,000-30,000 miles",
+        "repairCost": "£800-£1,800 (engine mount replacement - both sides) [PLACEHOLDER]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -335,7 +335,7 @@
         "title": "MHEV System & Starting Issues",
         "symptoms": "Car fails to start, intermittent starting issues, battery warnings, stop-start system failure, electrical gremlins.",
         "typicalMileage": "Any mileage",
-        "repairCost": "£500–£2,000 (48V battery, starter-generator, or software) [PLACEHOLDER]",
+        "repairCost": "£500-£2,000 (48V battery, starter-generator, or software) [PLACEHOLDER]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -372,25 +372,25 @@
         {
           "problem": "Coolant hose failure ('Hot V')",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,500",
+          "typicalCost": "£500-£1,500",
           "whenItMakesSense": "Hose replacement is straightforward; catch it before overheating"
         },
         {
           "problem": "Turbo oil drain gasket (recall)",
           "repairable": "✅ Yes",
-          "typicalCost": "£0 (recall) / £500–£1,200",
+          "typicalCost": "£0 (recall) / £500-£1,200",
           "whenItMakesSense": "Essential safety repair; check recall status immediately"
         },
         {
           "problem": "Engine mount failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,800",
+          "typicalCost": "£800-£1,800",
           "whenItMakesSense": "Replacement restores smooth idle; worth doing"
         },
         {
           "problem": "MHEV starting system issues",
           "repairable": "⚠️ Varies",
-          "typicalCost": "£500–£2,000",
+          "typicalCost": "£500-£2,000",
           "whenItMakesSense": "Requires specialist diagnostics; can be complex"
         },
         {
@@ -404,7 +404,7 @@
     "buyingChecks": {
       "title": "Buying This Range Rover Sport P530? Check These First",
       "buyIf": [
-        "* Full service history with oil changes at 8,000–10,000 mile intervals",
+        "* Full service history with oil changes at 8,000-10,000 mile intervals",
         "* Cooling system inspected and no coolant loss history",
         "* Recall work completed (turbo oil drain pipe gasket)",
         "* Engine mounts inspected and no excessive vibration at idle"
@@ -427,7 +427,7 @@
     "items": [
       "* Coolant System - Check for any coolant loss; 'Hot V' hoses are a known weak point",
       "* Recall Status - Has the turbo oil drain pipe gasket recall been completed?",
-      "* Service History - Oil changes every 8,000–10,000 miles are essential for this high-performance V8",
+      "* Service History - Oil changes every 8,000-10,000 miles are essential for this high-performance V8",
       "* Cold Start - Any unusual noises? The N63 should start smoothly with no rattles",
       "* Idle Quality - Any excessive vibration? Engine mounts may be failing",
       "* Oil Level - Check dipstick; any oil loss could indicate turbo seal issues",
@@ -446,10 +446,10 @@
     "rows": [
       {
         "engineCode": "S68B44B (BMW N63 4.4TT V8)",
-        "years": "2022–2024",
-        "power": "530 PS (390 kW) @ 5,500–6,000 rpm · 750 Nm @ 1,800–4,600 rpm",
+        "years": "2022-2024",
+        "power": "530 PS (390 kW) @ 5,500-6,000 rpm · 750 Nm @ 1,800-4,600 rpm",
         "enquiries": "- (pattern data; new-generation engine) [PATTERN DATA]",
-        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£6,000-£10,000 [PLACEHOLDER - confirm vs cost sheet]"
       }
     ],
     "matchNote": "This table's rows exactly match Section 1B's Era Map - the same engine code, years, and generation coverage.",
@@ -491,7 +491,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "15,000–35,000 miles [PATTERN DATA]"
+        "value": "15,000-35,000 miles [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
@@ -516,7 +516,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Range Rover Sport P530 engine replacement cost in the UK?",
-        "answer": "A reconditioned Range Rover Sport P530 (S68B44B) engine typically costs £6,000–£10,000 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned Range Rover Sport P530 (S68B44B) engine typically costs £6,000-£10,000 supply only. Fitting adds £1,000-£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -531,12 +531,12 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Range Rover Sport P530 engine, or should I scrap the car?",
-        "answer": "Against a well-maintained L461 Range Rover Sport (values £50,000–£90,000+), a £7,000–£9,000 reconditioned engine is 10–18% of the vehicle's value - worth it. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a P530, given the L461's strong residual values."
+        "answer": "Against a well-maintained L461 Range Rover Sport (values £50,000-£90,000+), a £7,000-£9,000 reconditioned engine is 10-18% of the vehicle's value - worth it. The Land Rover scrap threshold of 60% means replacement is almost always financially viable on a P530, given the L461's strong residual values."
       },
       {
         "id": 5,
         "question": "How do I find my Range Rover Sport P530 engine code?",
-        "answer": "The engine code S68B44B is listed on the VIN plate and vehicle documentation. The P530 badge was offered on the L461 Range Rover Sport from 2022 until the 2024 model year update (replaced by SV in some markets). If your L461 is a 2022–2024 petrol V8 (not the P400 straight-six), it is the S68B44B. Tell us your registration and we'll confirm for free."
+        "answer": "The engine code S68B44B is listed on the VIN plate and vehicle documentation. The P530 badge was offered on the L461 Range Rover Sport from 2022 until the 2024 model year update (replaced by SV in some markets). If your L461 is a 2022-2024 petrol V8 (not the P400 straight-six), it is the S68B44B. Tell us your registration and we'll confirm for free."
       },
       {
         "id": 6,

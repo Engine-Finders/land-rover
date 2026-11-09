@@ -45,13 +45,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Discovery Sport L550 Pre-Facelift (2015–2019)",
+              "name": "Discovery Sport L550 Pre-Facelift (2015-2019)",
               "url": "https://landroverengine.uk/discovery-sport/l550/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Discovery Sport L550 Facelift (2019.5–present)",
+              "name": "Discovery Sport L550 Facelift (2019.5-present)",
               "url": "https://landroverengine.uk/discovery-sport/l550/"
             }
           ]
@@ -100,7 +100,7 @@
               "name": "How much does a Discovery Sport engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Discovery Sport engine typically costs £2,800–£5,800 supply only [EM-QUOTE], with the volume 204DTD diesel at £3,500–£5,800. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+                "text": "A reconditioned Discovery Sport engine typically costs £2,800-£5,800 supply only [EM-QUOTE], with the volume 204DTD diesel at £3,500-£5,800. Fitting adds £650-£1,500. Use our calculator for a personalised figure."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "How do I know if my Discovery Sport timing chain is worn?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Cold-start rattle for the first few seconds is the classic early warning, sometimes with a chain-noise change under load. Caught early it's a repair; ignored, it's a £3,500–£5,800 engine [EM-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+                "text": "Cold-start rattle for the first few seconds is the classic early warning, sometimes with a chain-noise change under load. Caught early it's a repair; ignored, it's a £3,500-£5,800 engine [EM-QUOTE]. Use our diagnostic calculator for a personalised assessment."
               }
             },
             {
@@ -132,7 +132,7 @@
               "name": "Is it worth replacing a Discovery Sport engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Usually yes - £3,500–£5,800 against typical £10,000+ values clears our 60% scrap-threshold rule. The honest exception is the cheapest 2015–2016 cars, where a worst-case quote brushes the threshold. Use the Ownership Decision Tool for your car."
+                "text": "Usually yes - £3,500-£5,800 against typical £10,000+ values clears our 60% scrap-threshold rule. The honest exception is the cheapest 2015-2016 cars, where a worst-case quote brushes the threshold. Use the Ownership Decision Tool for your car."
               }
             },
             {
@@ -218,7 +218,7 @@
     "canonical": "https://landroverengine.uk/discovery-sport"
   },
   "hero": {
-    "tagPill": "Discovery Sport • 2015–Present • 1 Generation (L550) • Ingenium, Duratorq",
+    "tagPill": "Discovery Sport • 2015-Present • 1 Generation (L550) • Ingenium, Duratorq",
     "h1": "Discovery Sport Engines - The Complete UK Guide",
     "subHeadline": "Every engine. Every known failure. Every replacement cost. The most-enquired Land Rover in our entire dataset - backed by 362+ real UK Discovery Sport enquiries [EM-VERIFIED].",
     "trustStrip": [
@@ -254,7 +254,7 @@
       },
       {
         "metric": "Replacement Economics",
-        "ourCall": "✅ Usually Worth Replacing - £3,500–£5,800 recon [EM-QUOTE] against typical £8,000–£45,000 host values clears our 60% rule on all but the very cheapest early diesels ⚠️"
+        "ourCall": "✅ Usually Worth Replacing - £3,500-£5,800 recon [EM-QUOTE] against typical £8,000-£45,000 host values clears our 60% rule on all but the very cheapest early diesels ⚠️"
       },
       {
         "metric": "Reliability",
@@ -297,11 +297,11 @@
     "rows": [
       {
         "metric": "Generations",
-        "value": "1 (L550, 2015–present) - major facelift 2019.5MY"
+        "value": "1 (L550, 2015-present) - major facelift 2019.5MY"
       },
       {
         "metric": "Years Produced",
-        "value": "2015–present"
+        "value": "2015-present"
       },
       {
         "metric": "Engine Codes Tracked",
@@ -325,11 +325,11 @@
       },
       {
         "metric": "Typical Replacement Cost",
-        "value": "£3,000–£5,800 reconditioned [EM-QUOTE]"
+        "value": "£3,000-£5,800 reconditioned [EM-QUOTE]"
       },
       {
         "metric": "Typical Host Value",
-        "value": "£8,000–£45,000"
+        "value": "£8,000-£45,000"
       },
       {
         "metric": "Overall Rating",
@@ -344,7 +344,7 @@
       {
         "title": "Discovery Sport (L550)",
         "badge": "🔥 Most Enquired Model - 362 enquiries (2025) [EM-VERIFIED]",
-        "meta": "2015–present • 224DT, 204DTD, <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> GTDi, 204PT, P300e",
+        "meta": "2015-present • 224DT, 204DTD, <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> GTDi, 204PT, P300e",
         "rating": "⭐⭐⭐½",
         "verdict": "Buy on the facelift line, not the badge. 2019.5MY brought the revised architecture, mild-hybrid drivetrains and the improved chain hardware that changed this model's reliability story.",
         "cta": {
@@ -357,14 +357,14 @@
       "title": "Pre-Facelift vs Post-Facelift - The Line That Matters",
       "columns": [
         "Aspect",
-        "2015–2019 (pre-facelift)",
+        "2015-2019 (pre-facelift)",
         "2019.5MY+ (facelift)"
       ],
       "rows": [
         {
           "model": "Core diesel",
           "engineCode": "204DTD TD4/SD4 - chain tensioner caveat",
-          "power": "204DTD D150–D200 MHEV - revised hardware",
+          "power": "204DTD D150-D200 MHEV - revised hardware",
           "induction": "",
           "years": "",
           "notes": ""
@@ -420,24 +420,24 @@
         "family": "Ford Duratorq",
         "fuel": "Diesel",
         "displacement": "2.2L",
-        "power": "150–190 bhp",
-        "years": "2015–2016",
+        "power": "150-190 bhp",
+        "years": "2015-2016",
         "model": "",
         "reliability": "★★★☆☆",
         "enquiries": "- (pattern data)",
-        "avgRebuildCost": "£2,800–£4,500 [PLACEHOLDER - confirm vs Table A]"
+        "avgRebuildCost": "£2,800-£4,500 [PLACEHOLDER - confirm vs Table A]"
       },
       {
         "engineCode": "204DTD",
         "family": "Ingenium",
         "fuel": "Diesel",
         "displacement": "2.0L",
-        "power": "150–204 bhp",
-        "years": "2015–present",
+        "power": "150-204 bhp",
+        "years": "2015-present",
         "model": "",
         "reliability": "★★★☆☆ (pre-2019) / ★★★★☆ (2019+)",
         "enquiries": "1,150 JLR-wide; 362 L550 model-level [EM-VERIFIED]",
-        "avgRebuildCost": "£3,500–£5,800 [EM-QUOTE]"
+        "avgRebuildCost": "£3,500-£5,800 [EM-QUOTE]"
       },
       {
         "engineCode": "Si4 GTDi",
@@ -445,23 +445,23 @@
         "fuel": "Petrol",
         "displacement": "2.0L",
         "power": "240 bhp",
-        "years": "2015–2017",
+        "years": "2015-2017",
         "model": "",
         "reliability": "★★★☆☆",
         "enquiries": "- (pattern data)",
-        "avgRebuildCost": "£2,800–£4,500 [PLACEHOLDER - confirm vs Table A]"
+        "avgRebuildCost": "£2,800-£4,500 [PLACEHOLDER - confirm vs Table A]"
       },
       {
         "engineCode": "204PT",
         "family": "Ingenium",
         "fuel": "Petrol",
         "displacement": "2.0L",
-        "power": "200–290 bhp",
-        "years": "2017–present",
+        "power": "200-290 bhp",
+        "years": "2017-present",
         "model": "",
         "reliability": "★★★★☆",
         "enquiries": "480 JLR-wide [EM-VERIFIED]",
-        "avgRebuildCost": "£3,000–£5,000 [EM-QUOTE]"
+        "avgRebuildCost": "£3,000-£5,000 [EM-QUOTE]"
       },
       {
         "engineCode": "AJ20P3 (P300e)",
@@ -469,16 +469,16 @@
         "fuel": "Petrol PHEV",
         "displacement": "1.5L",
         "power": "309 bhp (system)",
-        "years": "2020–present",
+        "years": "2020-present",
         "model": "",
         "reliability": "★★★★☆",
         "enquiries": "- (pattern data - young parc)",
-        "avgRebuildCost": "£3,000–£5,000 [PLACEHOLDER - confirm vs Table A]"
+        "avgRebuildCost": "£3,000-£5,000 [PLACEHOLDER - confirm vs Table A]"
       }
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "204DTD rating: 95% confidence - the single most-enquired engine in our dataset (1,150 JLR-wide) plus 362 model-level L550 enquiries [EM-VERIFIED]. The split rating (pre/post-2019) reflects a genuine hardware change, not opinion. 224DT, Si4 and P300e: Expert-knowledge tier - documented patterns and specialist reports; the P300e parc is simply too young for volume data. Data note (internal): Correction applied: the source data sheet omitted the Ford-derived Si4 GTDi petrol (2015–2017, pre-Ingenium) - added as pattern data so early petrol owners aren't orphaned. 224DT years corrected to 2015–2016 (launch engine, replaced by Ingenium within the first year); the sheet's \"2.2 Duratorq\" listing implied longer availability."
+      "text": "204DTD rating: 95% confidence - the single most-enquired engine in our dataset (1,150 JLR-wide) plus 362 model-level L550 enquiries [EM-VERIFIED]. The split rating (pre/post-2019) reflects a genuine hardware change, not opinion. 224DT, Si4 and P300e: Expert-knowledge tier - documented patterns and specialist reports; the P300e parc is simply too young for volume data. Data note (internal): Correction applied: the source data sheet omitted the Ford-derived Si4 GTDi petrol (2015-2017, pre-Ingenium) - added as pattern data so early petrol owners aren't orphaned. 224DT years corrected to 2015-2016 (launch engine, replaced by Ingenium within the first year); the sheet's \"2.2 Duratorq\" listing implied longer availability."
     },
     "dataCorrections": []
   },
@@ -496,7 +496,7 @@
       {
         "id": 1,
         "issue": "204DTD Timing Chain Tensioner Wear",
-        "description": "The defining Discovery Sport issue and our #1 enquiry driver on this model [EM-VERIFIED]. Cold-start rattle is the warning; left alone, chain slip destroys the engine. Pre-2019 builds. £3,500–£5,800 recon [EM-QUOTE].",
+        "description": "The defining Discovery Sport issue and our #1 enquiry driver on this model [EM-VERIFIED]. Cold-start rattle is the warning; left alone, chain slip destroys the engine. Pre-2019 builds. £3,500-£5,800 recon [EM-QUOTE].",
         "severity": {
           "icon": "🟠",
           "label": "Immediate",
@@ -566,7 +566,7 @@
       {
         "id": 6,
         "issue": "Si4 GTDi Timing & Cooling Issues",
-        "description": "The Ford-derived petrol's age-related weak points - worth a specialist check on any surviving 2015–2017 petrol car.",
+        "description": "The Ford-derived petrol's age-related weak points - worth a specialist check on any surviving 2015-2017 petrol car.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -622,7 +622,7 @@
     ],
     "insights": [
       "Interesting insight: The Discovery Sport generates more engine enquiries than any other single Land Rover - more than models costing three times as much. Volume of cars on UK roads plus the pre-2019 chain question is a demand engine nobody else can measure.",
-      "L550 enquiries skew heavily toward the 2015–2018 diesel parc now exiting affordable-warranty age - the exact cars where a £4,000+ engine decision meets a £10,000–£14,000 vehicle. (Editorial synthesis - specialist sense-check before publishing.)",
+      "L550 enquiries skew heavily toward the 2015-2018 diesel parc now exiting affordable-warranty age - the exact cars where a £4,000+ engine decision meets a £10,000-£14,000 vehicle. (Editorial synthesis - specialist sense-check before publishing.)",
       "Petrol and PHEV enquiry volume remains minimal - consistent with the smaller petrol parc, not evidence of superior reliability alone. (Editorial synthesis.)"
     ],
     "liveEnquiryFeedNote": "Live Enquiry Feed module embeds here."
@@ -636,7 +636,7 @@
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
-        "title": "Discovery Sport (L550) - 2015–2019 (pre-facelift)",
+        "title": "Discovery Sport (L550) - 2015-2019 (pre-facelift)",
         "columns": [
           "Variant",
           "Engine Code",
@@ -649,31 +649,31 @@
           {
             "model": "2.2 SD4",
             "engineCode": "224DT",
-            "usedSupply": "£1,500–£2,800",
-            "reconditionedSupply": "£2,800–£4,500",
-            "rebuiltSupply": "£4,000–£5,800",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£1,500-£2,800",
+            "reconditionedSupply": "£2,800-£4,500",
+            "rebuiltSupply": "£4,000-£5,800",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "TD4/SD4 2.0",
             "engineCode": "204DTD",
-            "usedSupply": "£2,000–£3,500",
-            "reconditionedSupply": "£3,500–£5,800",
-            "rebuiltSupply": "£4,800–£7,000",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£2,000-£3,500",
+            "reconditionedSupply": "£3,500-£5,800",
+            "rebuiltSupply": "£4,800-£7,000",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "Si4 2.0",
             "engineCode": "Si4 GTDi",
-            "usedSupply": "£1,500–£2,800",
-            "reconditionedSupply": "£2,800–£4,500",
-            "rebuiltSupply": "£4,000–£5,800",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£1,500-£2,800",
+            "reconditionedSupply": "£2,800-£4,500",
+            "rebuiltSupply": "£4,000-£5,800",
+            "labourHours": "10-14 hrs"
           }
         ]
       },
       {
-        "title": "Discovery Sport (L550) - 2019.5MY–present (facelift)",
+        "title": "Discovery Sport (L550) - 2019.5MY-present (facelift)",
         "columns": [
           "Variant",
           "Engine Code",
@@ -684,37 +684,37 @@
         ],
         "rows": [
           {
-            "model": "D150–D200 MHEV",
+            "model": "D150-D200 MHEV",
             "engineCode": "204DTD",
-            "usedSupply": "£2,000–£3,500",
-            "reconditionedSupply": "£3,500–£5,800",
-            "rebuiltSupply": "£4,800–£7,000",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£2,000-£3,500",
+            "reconditionedSupply": "£3,500-£5,800",
+            "rebuiltSupply": "£4,800-£7,000",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "P200/P250",
             "engineCode": "204PT",
-            "usedSupply": "£1,500–£2,800",
-            "reconditionedSupply": "£3,000–£5,000",
-            "rebuiltSupply": "£4,200–£6,500",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£1,500-£2,800",
+            "reconditionedSupply": "£3,000-£5,000",
+            "rebuiltSupply": "£4,200-£6,500",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "P300e PHEV",
             "engineCode": "AJ20P3",
-            "usedSupply": "£1,800–£3,200",
-            "reconditionedSupply": "£3,000–£5,000",
-            "rebuiltSupply": "£4,200–£6,500",
-            "labourHours": "12–16 hrs (hybrid decommission adds time)"
+            "usedSupply": "£1,800-£3,200",
+            "reconditionedSupply": "£3,000-£5,000",
+            "rebuiltSupply": "£4,200-£6,500",
+            "labourHours": "12-16 hrs (hybrid decommission adds time)"
           }
         ]
       }
     ],
     "figuresNote": "204DTD and 204PT figures [EM-QUOTE]; 224DT, Si4 and P300e [PLACEHOLDER - confirm vs Table A].",
-    "labourEstimate": "Fitting a Discovery Sport engine typically takes 10–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "labourEstimate": "Fitting a Discovery Sport engine typically takes 10-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM-QUOTE].",
     "economicsBox": {
       "title": "The Discovery Sport rule",
-      "text": "A £3,500–£5,800 recon against a £10,000+ car clears our 60% scrap-threshold rule comfortably - replacement is ✅ usually safe. The exception is the cheapest 2015–2016 diesels now trading at £7,000–£9,000: there, a top-end recon quote brushes the threshold, and a chain-damaged engine on a tired car is where we'll honestly tell you to walk away."
+      "text": "A £3,500-£5,800 recon against a £10,000+ car clears our 60% scrap-threshold rule comfortably - replacement is ✅ usually safe. The exception is the cheapest 2015-2016 diesels now trading at £7,000-£9,000: there, a top-end recon quote brushes the threshold, and a chain-damaged engine on a tired car is where we'll honestly tell you to walk away."
     }
   },
   "engineEvolution": {
@@ -737,14 +737,14 @@
       },
       {
         "era": "Ingenium era",
-        "years": "2015–2019",
+        "years": "2015-2019",
         "keyEngines": "204DTD, 204PT (2017+)",
         "whyBmwChanged": "JLR's first in-house modular engine family arrived here first - the Discovery Sport was Ingenium's proving ground",
         "worthKnowing": "Being first meant inheriting the early chain-tensioner hardware; this era defines the model's used-market reputation"
       },
       {
         "era": "Facelift / MHEV era",
-        "years": "2019.5–present",
+        "years": "2019.5-present",
         "keyEngines": "204DTD MHEV, 204PT, AJ20P3 P300e",
         "whyBmwChanged": "Emissions targets drove electrification - mild-hybrid diesels, then the three-cylinder PHEV",
         "worthKnowing": "The same facelift quietly brought the revised chain hardware - the reliability story changed more than the styling did"
@@ -773,7 +773,7 @@
       {
         "buyerProfile": "Towing & Working Use",
         "rating": "⭐⭐⭐☆☆",
-        "verdict": "2,000–2,500kg capacity - fine for trailers and small caravans, but this is the point in the range where the full-size Discovery earns its money."
+        "verdict": "2,000-2,500kg capacity - fine for trailers and small caravans, but this is the point in the range where the full-size Discovery earns its money."
       },
       {
         "buyerProfile": "Budget Owner",
@@ -832,7 +832,7 @@
       {
         "id": 1,
         "question": "How much does a Discovery Sport engine replacement cost in the UK?",
-        "answer": "A reconditioned Discovery Sport engine typically costs £2,800–£5,800 supply only [EM-QUOTE], with the volume 204DTD diesel at £3,500–£5,800. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+        "answer": "A reconditioned Discovery Sport engine typically costs £2,800-£5,800 supply only [EM-QUOTE], with the volume 204DTD diesel at £3,500-£5,800. Fitting adds £650-£1,500. Use our calculator for a personalised figure."
       },
       {
         "id": 2,
@@ -847,12 +847,12 @@
       {
         "id": 4,
         "question": "How do I know if my Discovery Sport timing chain is worn?",
-        "answer": "Cold-start rattle for the first few seconds is the classic early warning, sometimes with a chain-noise change under load. Caught early it's a repair; ignored, it's a £3,500–£5,800 engine [EM-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+        "answer": "Cold-start rattle for the first few seconds is the classic early warning, sometimes with a chain-noise change under load. Caught early it's a repair; ignored, it's a £3,500-£5,800 engine [EM-QUOTE]. Use our diagnostic calculator for a personalised assessment."
       },
       {
         "id": 5,
         "question": "Is it worth replacing a Discovery Sport engine?",
-        "answer": "Usually yes - £3,500–£5,800 against typical £10,000+ values clears our 60% scrap-threshold rule. The honest exception is the cheapest 2015–2016 cars, where a worst-case quote brushes the threshold. Use the Ownership Decision Tool for your car."
+        "answer": "Usually yes - £3,500-£5,800 against typical £10,000+ values clears our 60% scrap-threshold rule. The honest exception is the cheapest 2015-2016 cars, where a worst-case quote brushes the threshold. Use the Ownership Decision Tool for your car."
       },
       {
         "id": 6,

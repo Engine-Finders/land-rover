@@ -38,11 +38,11 @@
     "subtitle": "RECONDITIONED, SUPPLY-ONLY",
     "icon": "checkValue",
     "rows": [
-      { "code": "204DTD", "label": "Ingenium Diesel", "cost": "£3,500 – £5,800" },
-      { "code": "306DT", "label": "TDV6/SDV6", "cost": "£6,500 – £9,500" },
-      { "code": "276DT", "label": "2.7 TDV6", "cost": "£5,000 – £7,500" },
-      { "code": "368DT", "label": "3.6 TDV8", "cost": "£5,500 – £8,000" },
-      { "code": "508PS", "label": "4.4 SDV8", "cost": "£8,000 – £12,000" }
+      { "code": "204DTD", "label": "Ingenium Diesel", "cost": "£3,500 - £5,800" },
+      { "code": "306DT", "label": "TDV6/SDV6", "cost": "£6,500 - £9,500" },
+      { "code": "276DT", "label": "2.7 TDV6", "cost": "£5,000 - £7,500" },
+      { "code": "368DT", "label": "3.6 TDV8", "cost": "£5,500 - £8,000" },
+      { "code": "508PS", "label": "4.4 SDV8", "cost": "£8,000 - £12,000" }
     ]
   },
   "failures": {

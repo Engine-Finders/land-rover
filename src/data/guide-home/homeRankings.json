@@ -1,6 +1,6 @@
 {
   "h2": "Land Rover &|Range Rover|Ownership|Rankings",
-  "subhead": "The verdicts people actually want before they read a single spec sheet – the calls we'd make for a friend, backed by real UK enquiry and failure data.",
+  "subhead": "The verdicts people actually want before they read a single spec sheet - the calls we'd make for a friend, backed by real UK enquiry and failure data.",
   "image": "/home/diagnose-defender.webp",
   "mobileImage": "/home/rank/defender-road-m.webp",
   "imageAlt": "Land Rover Defender on a winding Highland road",
@@ -18,7 +18,7 @@
       "image": "/home/rank/engine.webp",
       "imageAlt": "Land Rover V8 diesel engine",
       "href": "/engine/448dt",
-      "why": "Highest replacement cost in the range, but by far the lowest failure rate – oil cooler wear aside, largely trouble-free.",
+      "why": "Highest replacement cost in the range, but by far the lowest failure rate - oil cooler wear aside, largely trouble-free.",
       "verdict": "best",
       "verdictLabel": "Best",
       "verdictSub": "Top Performer"
@@ -42,7 +42,7 @@
       "image": "/home/rank/disco4.webp",
       "imageAlt": "Land Rover Discovery 4",
       "href": "/discovery/30-tdv6-sdv6",
-      "why": "Genuinely capable when the oil-interval history is proven – the discipline matters more than the mileage.",
+      "why": "Genuinely capable when the oil-interval history is proven - the discipline matters more than the mileage.",
       "verdict": "safe",
       "verdictLabel": "Safe",
       "verdictSub": "Good Choice"
@@ -54,7 +54,7 @@
       "image": "/home/rank/crank.webp",
       "imageAlt": "Crankshaft",
       "href": "/engine/306dt",
-      "why": "Catastrophic bearing failure, £6,500–£9,500 full recon, and largely unrepairable once it starts.",
+      "why": "Catastrophic bearing failure, £6,500-£9,500 full recon, and largely unrepairable once it starts.",
       "verdict": "avoid",
       "verdictLabel": "Avoid",
       "verdictSub": "High Risk"
@@ -62,11 +62,11 @@
     {
       "rank": "5th",
       "category": "Safest Range Rover to Buy",
-      "winner": "L405 (2012–2021)",
+      "winner": "L405 (2012-2021)",
       "image": "/home/rank/l405.webp",
       "imageAlt": "Range Rover L405",
       "href": "/range-rover",
-      "why": "Typical values of £14,000–£55,000 against £6,500–£12,000 recon cost – comfortably safe across almost every example.",
+      "why": "Typical values of £14,000-£55,000 against £6,500-£12,000 recon cost - comfortably safe across almost every example.",
       "verdict": "safe",
       "verdictLabel": "Safe",
       "verdictSub": "Good Choice"
@@ -78,7 +78,7 @@
       "image": "/home/rank/evoque.webp",
       "imageAlt": "Range Rover Evoque L538",
       "href": "/range-rover-evoque",
-      "why": "Timing chain tensioner risk sits on an ageing, lower-value host – the combination that flags 'Watch' most often.",
+      "why": "Timing chain tensioner risk sits on an ageing, lower-value host - the combination that flags 'Watch' most often.",
       "verdict": "watch",
       "verdictLabel": "Watch",
       "verdictSub": "Proceed Carefully"
@@ -111,7 +111,7 @@
   ],
   "note": {
     "title": "Data Note:",
-    "text": "Entries drawing directly on enquiry volume, replacement cost, and R-to-V flag data are marked as verified in the source file. \"Most Reliable Model,\" \"Best Family Land Rover,\" and the specific engine/model pairings are our editorial synthesis of the failure-pattern data – worth a JLR specialist sense-check before publishing.",
+    "text": "Entries drawing directly on enquiry volume, replacement cost, and R-to-V flag data are marked as verified in the source file. \"Most Reliable Model,\" \"Best Family Land Rover,\" and the specific engine/model pairings are our editorial synthesis of the failure-pattern data - worth a JLR specialist sense-check before publishing.",
     "image": "/home/rank/note-photo.webp"
   }
 }

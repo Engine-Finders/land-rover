@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "D5 TD6/SDV6 (306DT 3.0 V6, 2017–2020)",
+              "name": "D5 TD6/SDV6 (306DT 3.0 V6, 2017-2020)",
               "url": "https://landroverengine.uk/discovery/d5"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Discovery TD6/SDV6 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 3.0 V6 306DT engine typically costs £6,500–£9,500 supply only, with fitting adding £1,600–£2,200. Use our calculator for a figure specific to your Discovery."
+                "text": "A reconditioned 3.0 V6 306DT engine typically costs £6,500-£9,500 supply only, with fitting adding £1,600-£2,200. Use our calculator for a figure specific to your Discovery."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Discovery TD6 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. A D5 Discovery is a £15,000–£35,000 vehicle - an £8,000 recon is 23–53% of the car's value. This sits at or just below our 60% Land Rover scrap threshold, so evaluate condition carefully. A well-maintained example justifies replacement; a tired, high-mileage one may not."
+                "text": "Depends on vehicle value. A D5 Discovery is a £15,000-£35,000 vehicle - an £8,000 recon is 23-53% of the car's value. This sits at or just below our 60% Land Rover scrap threshold, so evaluate condition carefully. A well-maintained example justifies replacement; a tired, high-mileage one may not."
               }
             },
             {
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Discovery <a href='https://landroverengine.uk/engine/m57-td6'>TD6</a> / SDV6 • 2017–2020 • 306DT 3.0 V6",
+    "tagPill": "Land Rover Discovery <a href='https://landroverengine.uk/engine/m57-td6'>TD6</a> / SDV6 • 2017-2020 • 306DT 3.0 V6",
     "h1": "Land Rover Discovery TD6 / SDV6 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The 3.0-litre V6 diesel (<a href='https://landroverengine.uk/engine/306dt'>306DT</a>) powers the D5 Discovery - a capable, torque-rich engine with a well-documented crank bearing watchpoint. Get quotes from trusted UK specialists today.",
     "trustBadges": [
@@ -231,35 +231,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£5,000–£7,300",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£5,000-£7,300",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£6,500–£9,500",
-        "fittedIndie": "£8,100–£11,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,500-£9,500",
+        "fittedIndie": "£8,100-£11,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£7,500–£11,000",
-        "fittedIndie": "£9,100–£12,800",
-        "warranty": "12–24 months",
+        "supplyOnly": "£7,500-£11,000",
+        "fittedIndie": "£9,100-£12,800",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£12,000–£16,000",
-        "fittedIndie": "£13,800–£18,300",
-        "warranty": "24–36 months",
+        "supplyOnly": "£12,000-£16,000",
+        "fittedIndie": "£13,800-£18,300",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "Figures above reflect the current 306DT V6 generation.",
-    "labourEstimate": "Fitting a Discovery 3.0 V6 diesel engine typically takes 15–20 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting a Discovery 3.0 V6 diesel engine typically takes 15-20 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare Discovery TD6 engine prices from UK specialists",
       "href": "#"
@@ -271,15 +271,15 @@
         "id": 1,
         "title": "Crankshaft Bearing Failure (Catastrophic)",
         "symptoms": "Cold-start knock or rumble, metallic tapping that fades as the engine warms up, oil pressure warning light, sudden engine seizure.",
-        "typicalMileage": "80,000–140,000 miles",
+        "typicalMileage": "80,000-140,000 miles",
         "repairCost": "N/A - cannot be repaired; bottom-end rebuild or replacement required",
-        "replacementCost": "£6,500–£11,000 (reconditioned engine) [PLACEHOLDER - confirm vs cost sheet]",
+        "replacementCost": "£6,500-£11,000 (reconditioned engine) [PLACEHOLDER - confirm vs cost sheet]",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "if you hear cold knock, stop driving and book an inspection today"
         },
-        "recommendation": "This is the single most important issue on the 306DT - the crankshaft bearing design has a fatigue life. The key defence is aggressive oil change intervals: 5,000 miles max, not the factory 15,000-mile schedule. If you hear a rumble or knock on cold start that fades as the engine warms up, have the oil pressure checked and the bearings inspected immediately. A bottom-end rebuild (£5,500–£7,000) is cheaper than a full engine replacement, but only if caught early.",
+        "recommendation": "This is the single most important issue on the 306DT - the crankshaft bearing design has a fatigue life. The key defence is aggressive oil change intervals: 5,000 miles max, not the factory 15,000-mile schedule. If you hear a rumble or knock on cold start that fades as the engine warms up, have the oil pressure checked and the bearings inspected immediately. A bottom-end rebuild (£5,500-£7,000) is cheaper than a full engine replacement, but only if caught early.",
         "failureLink": {
           "label": "",
           "href": "/failures/crankshaft-bearing-failure/"
@@ -289,8 +289,8 @@
         "id": 2,
         "title": "Oil Pump / Turbo Contamination",
         "symptoms": "Loss of power, turbo whistle or whine, oil pressure warning, excessive exhaust smoke.",
-        "typicalMileage": "60,000–120,000 miles",
-        "repairCost": "£800–£2,000 (turbo rebuild or replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "60,000-120,000 miles",
+        "repairCost": "£800-£2,000 (turbo rebuild or replacement) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only (if caught before turbo disintegrates)",
         "urgency": {
           "icon": "🟠",
@@ -307,8 +307,8 @@
         "id": 3,
         "title": "Diesel Injector Failure",
         "symptoms": "Rough idle, white or black smoke, loss of power, increased fuel consumption, engine rattle.",
-        "typicalMileage": "80,000–150,000 miles",
-        "repairCost": "£500–£1,200 (injector set) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "80,000-150,000 miles",
+        "repairCost": "£500-£1,200 (injector set) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -345,19 +345,19 @@
         {
           "problem": "Cold-start rumble (bearing wear)",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£5,500–£7,000 (bottom-end rebuild)",
+          "typicalCost": "£5,500-£7,000 (bottom-end rebuild)",
           "whenItMakesSense": "Only if caught before the crank is scored - act on the first knock"
         },
         {
           "problem": "Turbo contamination",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,000",
+          "typicalCost": "£800-£2,000",
           "whenItMakesSense": "Straightforward - rebuild or replace the turbo"
         },
         {
           "problem": "Diesel injector failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Routine maintenance - do as a set"
         },
         {
@@ -389,7 +389,7 @@
         "* Turbo whistle or whine without service history - contamination may have occurred"
       ]
     },
-    "closingVerdict": "The 306DT is a capable, torque-rich engine that powers the D5 Discovery well. But it has a known Achilles heel - the crankshaft bearing design. Buy only on documented evidence of 5,000-mile oil changes, and never ignore a cold-start knock. A well-maintained example is a reliable workhorse; a neglected one is a £7,000–£10,000 bill waiting to happen.",
+    "closingVerdict": "The 306DT is a capable, torque-rich engine that powers the D5 Discovery well. But it has a known Achilles heel - the crankshaft bearing design. Buy only on documented evidence of 5,000-mile oil changes, and never ignore a cold-start knock. A well-maintained example is a reliable workhorse; a neglected one is a £7,000-£10,000 bill waiting to happen.",
     "cta": {
       "label": "→ Compare Discovery TD6 engine prices before you buy",
       "href": "#"
@@ -419,10 +419,10 @@
     "rows": [
       {
         "engineCode": "306DT 3.0 V6 (TDV6/SDV6)",
-        "years": "2017–2020",
-        "power": "TD6: 258 bhp @ 3,600 rpm; 600 Nm @ 1,750–2,250 rpm / SDV6: 306 bhp @ 4,000 rpm; 700 Nm @ 1,500–2,500 rpm",
+        "years": "2017-2020",
+        "power": "TD6: 258 bhp @ 3,600 rpm; 600 Nm @ 1,750-2,250 rpm / SDV6: 306 bhp @ 4,000 rpm; 700 Nm @ 1,500-2,500 rpm",
         "enquiries": "980 [EM-VERIFIED]",
-        "avgReconCost": "£6,500–£9,500 [PLACEHOLDER]"
+        "avgReconCost": "£6,500-£9,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -489,7 +489,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Discovery TD6/SDV6 engine replacement cost in the UK?",
-        "answer": "A reconditioned 3.0 V6 306DT engine typically costs £6,500–£9,500 supply only, with fitting adding £1,600–£2,200. Use our calculator for a figure specific to your Discovery."
+        "answer": "A reconditioned 3.0 V6 306DT engine typically costs £6,500-£9,500 supply only, with fitting adding £1,600-£2,200. Use our calculator for a figure specific to your Discovery."
       },
       {
         "id": 2,
@@ -504,7 +504,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Discovery TD6 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. A D5 Discovery is a £15,000–£35,000 vehicle - an £8,000 recon is 23–53% of the car's value. This sits at or just below our 60% Land Rover scrap threshold, so evaluate condition carefully. A well-maintained example justifies replacement; a tired, high-mileage one may not."
+        "answer": "Depends on vehicle value. A D5 Discovery is a £15,000-£35,000 vehicle - an £8,000 recon is 23-53% of the car's value. This sits at or just below our 60% Land Rover scrap threshold, so evaluate condition carefully. A well-maintained example justifies replacement; a tired, high-mileage one may not."
       },
       {
         "id": 5,

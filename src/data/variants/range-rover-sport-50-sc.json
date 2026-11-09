@@ -53,13 +53,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Range Rover Sport L320 (2009–2013) 508PS",
+              "name": "Range Rover Sport L320 (2009-2013) 508PS",
               "url": "https://landroverengine.uk/range-rover-sport/l320"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Range Rover Sport L494 (2014–2022) 508PS",
+              "name": "Range Rover Sport L494 (2014-2022) 508PS",
               "url": "https://landroverengine.uk/range-rover-sport/l494"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Range Rover Sport 5.0 Supercharged engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 5.0 Supercharged (508PS AJ133) engine typically costs £5,000–£12,000 supply only. Fitting adds £900–£2,500 depending on workshop location. A used 2018 SVR engine is listed at £5,995 supply only with £2,000 fitting. Main dealer new engines can exceed £12,000 supply only."
+                "text": "A reconditioned 5.0 Supercharged (508PS AJ133) engine typically costs £5,000-£12,000 supply only. Fitting adds £900-£2,500 depending on workshop location. A used 2018 SVR engine is listed at £5,995 supply only with £2,000 fitting. Main dealer new engines can exceed £12,000 supply only."
               }
             },
             {
@@ -116,7 +116,7 @@
               "name": "How do I find my Land Rover Range Rover Sport 5.0 Supercharged engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The engine code is listed on the VIN plate and vehicle documentation. The 5.0 Supercharged uses the 508PS (AJ133) - a 5.0-litre supercharged V8 producing 510–575 bhp. Tell us your registration date and we'll confirm it for free."
+                "text": "The engine code is listed on the VIN plate and vehicle documentation. The 5.0 Supercharged uses the 508PS (AJ133) - a 5.0-litre supercharged V8 producing 510-575 bhp. Tell us your registration date and we'll confirm it for free."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair the timing chain tensioners, or does the engine need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative chain and tensioner replacement (£1,200–£3,000) is far cheaper than a catastrophic failure requiring a full engine replacement (£7,000+). At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend replacing the timing chain components as preventative maintenance at 80,000 miles."
+                "text": "Yes - if caught early. A preventative chain and tensioner replacement (£1,200-£3,000) is far cheaper than a catastrophic failure requiring a full engine replacement (£7,000+). At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend replacing the timing chain components as preventative maintenance at 80,000 miles."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover Sport 5.0 Supercharged • 2009–2022 • 1 Engine Code",
+    "tagPill": "Land Rover Range Rover Sport 5.0 Supercharged • 2009-2022 • 1 Engine Code",
     "h1": "Land Rover Range Rover Sport 5.0 Supercharged Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The flagship supercharged V8 that defined the Range Rover Sport - a 5.0-litre AJ133 powerhouse delivering 510 bhp and 625 Nm. Get quotes from specialists who understand this complex and powerful engine, supply & fit available nationwide.",
     "trustBadges": [
@@ -218,18 +218,18 @@
     "rows": [
       {
         "generation": "Range Rover Sport L320",
-        "years": "2009–2013",
+        "years": "2009-2013",
         "engineCode": "508PS (AJ133)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,500–£10,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£4,500-£10,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Early 6-speed auto, 510 bhp, 625 Nm"
       },
       {
         "generation": "Range Rover Sport L494",
-        "years": "2014–2022",
+        "years": "2014-2022",
         "engineCode": "508PS (AJ133)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,000–£12,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,000-£12,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Revised 8-speed auto, up to 575 bhp in SVR"
       }
     ],
@@ -248,35 +248,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£4,500–£7,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£4,500-£7,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short-term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£5,000–£10,000",
-        "fittedIndie": "£6,500–£12,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,000-£10,000",
+        "fittedIndie": "£6,500-£12,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£7,000–£12,000",
-        "fittedIndie": "£8,500–£14,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£7,000-£12,000",
+        "fittedIndie": "£8,500-£14,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£12,000–£18,000",
-        "fittedIndie": "£14,000–£21,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£12,000-£18,000",
+        "fittedIndie": "£14,000-£21,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "Figures above reflect the only engine generation this badge ever used - the 508PS (AJ133). See the Era Map above for era-specific pricing. Note that a used SVR engine from 2018 is listed at £5,995 supply only, with fitting at £2,000.",
-    "labourEstimate": "Fitting a Range Rover Sport 5.0 Supercharged engine typically takes 15–25 hours at £65–£95/hr (independent). The complex supercharger and V8 layout adds significant labour time compared to simpler engines.",
+    "labourEstimate": "Fitting a Range Rover Sport 5.0 Supercharged engine typically takes 15-25 hours at £65-£95/hr (independent). The complex supercharger and V8 layout adds significant labour time compared to simpler engines.",
     "cta": {
       "label": "→ Compare Range Rover Sport 5.0 Supercharged engine prices from UK specialists",
       "href": "#"
@@ -288,15 +288,15 @@
         "id": 1,
         "title": "Timing Chain Tensioner Failure",
         "symptoms": "Rattling noise on cold start, metallic ticking, rough running, engine warning light, misfire codes.",
-        "typicalMileage": "70,000–100,000 miles.",
-        "repairCost": "£1,200–£3,000 (chain, tensioner, and guide replacement).",
+        "typicalMileage": "70,000-100,000 miles.",
+        "repairCost": "£1,200-£3,000 (chain, tensioner, and guide replacement).",
         "replacementCost": "N/A - repair only if caught early; catastrophic failure requires full engine replacement (£7,000+).",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "at first sign of rattle, book inspection today."
         },
-        "recommendation": "The timing chain tensioners on the 5.0 AJ133 V8 are a well-documented weak point. Plastic guides degrade over time, causing chain slack that can lead to skipped timing and piston-valve contact in this interference engine. Extended oil service intervals (recommended at 10,000 miles) are \"absolutely insane for a hot, big V8 engine\" - they accelerate wear on the plastic guides, chain links, and tensioners. A £1,200–£3,000 preventative repair is dramatically cheaper than a £7,000+ engine replacement.",
+        "recommendation": "The timing chain tensioners on the 5.0 AJ133 V8 are a well-documented weak point. Plastic guides degrade over time, causing chain slack that can lead to skipped timing and piston-valve contact in this interference engine. Extended oil service intervals (recommended at 10,000 miles) are \"absolutely insane for a hot, big V8 engine\" - they accelerate wear on the plastic guides, chain links, and tensioners. A £1,200-£3,000 preventative repair is dramatically cheaper than a £7,000+ engine replacement.",
         "failureLink": {
           "label": "",
           "href": "/failures/timing-chain-failure/"
@@ -306,9 +306,9 @@
         "id": 2,
         "title": "Excessive Oil Consumption & Oil Starvation",
         "symptoms": "Low oil level warning between services, blue smoke from exhaust, knocking noise from bottom end, spun bearing failure.",
-        "typicalMileage": "60,000–100,000 miles.",
-        "repairCost": "£500–£2,000 (diagnosis and top-up management; oil consumption testing).",
-        "replacementCost": "£5,000–£12,000 (full engine replacement if bottom end fails).",
+        "typicalMileage": "60,000-100,000 miles.",
+        "repairCost": "£500-£2,000 (diagnosis and top-up management; oil consumption testing).",
+        "replacementCost": "£5,000-£12,000 (full engine replacement if bottom end fails).",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -324,9 +324,9 @@
         "id": 3,
         "title": "Supercharger Seal Leaks",
         "symptoms": "Oil smell from engine bay, oil contamination on belts, supercharger whining or rattling, loss of boost.",
-        "typicalMileage": "70,000–120,000 miles.",
-        "repairCost": "£800–£2,000 (supercharger seal replacement or full rebuild).",
-        "replacementCost": "£3,000–£5,000 (complete supercharger replacement).",
+        "typicalMileage": "70,000-120,000 miles.",
+        "repairCost": "£800-£2,000 (supercharger seal replacement or full rebuild).",
+        "replacementCost": "£3,000-£5,000 (complete supercharger replacement).",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
@@ -362,19 +362,19 @@
         {
           "problem": "Timing chain tensioner rattle",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£1,200–£3,000",
+          "typicalCost": "£1,200-£3,000",
           "whenItMakesSense": "Preventative - catches fault before catastrophic failure"
         },
         {
           "problem": "Oil consumption",
           "repairable": "⚠️ Manageable",
-          "typicalCost": "£500–£2,000",
+          "typicalCost": "£500-£2,000",
           "whenItMakesSense": "Regular top-ups and monitoring; bottom-end failure requires engine replacement"
         },
         {
           "problem": "Supercharger seal leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,000",
+          "typicalCost": "£800-£2,000",
           "whenItMakesSense": "Full rebuild with upgraded seals restores performance"
         },
         {
@@ -386,7 +386,7 @@
         {
           "problem": "Spun bearing (oil starvation)",
           "repairable": "❌ Usually No",
-          "typicalCost": "£5,000–£12,000 engine replacement",
+          "typicalCost": "£5,000-£12,000 engine replacement",
           "whenItMakesSense": "Bottom-end failure requires full rebuild or replacement"
         }
       ]
@@ -436,10 +436,10 @@
     "rows": [
       {
         "engineCode": "508PS (AJ133)",
-        "years": "2009–2022",
-        "power": "510–575 bhp (375–423 kW)",
+        "years": "2009-2022",
+        "power": "510-575 bhp (375-423 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,000–£12,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,000-£12,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -477,7 +477,7 @@
     "items": [
       {
         "label": "Most Common Failure",
-        "value": "Timing chain tensioner - 68% of AJ133 failures occur between 75,000–95,000 miles"
+        "value": "Timing chain tensioner - 68% of AJ133 failures occur between 75,000-95,000 miles"
       },
       {
         "label": "Average Enquiry Mileage",
@@ -506,7 +506,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Range Rover Sport 5.0 Supercharged engine replacement cost in the UK?",
-        "answer": "A reconditioned 5.0 Supercharged (508PS AJ133) engine typically costs £5,000–£12,000 supply only. Fitting adds £900–£2,500 depending on workshop location. A used 2018 SVR engine is listed at £5,995 supply only with £2,000 fitting. Main dealer new engines can exceed £12,000 supply only."
+        "answer": "A reconditioned 5.0 Supercharged (508PS AJ133) engine typically costs £5,000-£12,000 supply only. Fitting adds £900-£2,500 depending on workshop location. A used 2018 SVR engine is listed at £5,995 supply only with £2,000 fitting. Main dealer new engines can exceed £12,000 supply only."
       },
       {
         "id": 2,
@@ -526,12 +526,12 @@
       {
         "id": 5,
         "question": "How do I find my Land Rover Range Rover Sport 5.0 Supercharged engine code?",
-        "answer": "The engine code is listed on the VIN plate and vehicle documentation. The 5.0 Supercharged uses the 508PS (AJ133) - a 5.0-litre supercharged V8 producing 510–575 bhp. Tell us your registration date and we'll confirm it for free."
+        "answer": "The engine code is listed on the VIN plate and vehicle documentation. The 5.0 Supercharged uses the 508PS (AJ133) - a 5.0-litre supercharged V8 producing 510-575 bhp. Tell us your registration date and we'll confirm it for free."
       },
       {
         "id": 6,
         "question": "Can I repair the timing chain tensioners, or does the engine need replacement?",
-        "answer": "Yes - if caught early. A preventative chain and tensioner replacement (£1,200–£3,000) is far cheaper than a catastrophic failure requiring a full engine replacement (£7,000+). At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend replacing the timing chain components as preventative maintenance at 80,000 miles."
+        "answer": "Yes - if caught early. A preventative chain and tensioner replacement (£1,200-£3,000) is far cheaper than a catastrophic failure requiring a full engine replacement (£7,000+). At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend replacing the timing chain components as preventative maintenance at 80,000 miles."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

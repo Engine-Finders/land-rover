@@ -82,7 +82,7 @@
               "name": "How much does an Ingenium 2.0 petrol engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Ingenium 2.0 petrol typically costs £3,000–£5,000 supply only, varying by power output and specific sub-variant. Fitting adds £900–£1,700 depending on labour rates and vehicle model."
+                "text": "A reconditioned Ingenium 2.0 petrol typically costs £3,000-£5,000 supply only, varying by power output and specific sub-variant. Fitting adds £900-£1,700 depending on labour rates and vehicle model."
               }
             },
             {
@@ -98,7 +98,7 @@
               "name": "What is the most common Ingenium 2.0 petrol failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Water pump failure and coolant leaks from plastic fittings are the most common issues - typically occurring from 60,000–80,000 miles. Other reported problems include occasional timing chain stretch and PCV valve failure."
+                "text": "Water pump failure and coolant leaks from plastic fittings are the most common issues - typically occurring from 60,000-80,000 miles. Other reported problems include occasional timing chain stretch and PCV valve failure."
               }
             },
             {
@@ -106,7 +106,7 @@
               "name": "Which Land Rover models use the Ingenium 2.0 petrol?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) - spanning 200–300 hp outputs across P200, P250, and P300 variants."
+                "text": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) - spanning 200-300 hp outputs across P200, P250, and P300 variants."
               }
             },
             {
@@ -190,7 +190,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover • Ingenium 2.0 P (204PT) • Petrol • 2.0L I4 Turbo • 2017–present",
+    "tagPill": "Land Rover • Ingenium 2.0 P (204PT) • Petrol • 2.0L I4 Turbo • 2017-present",
     "h1": "Land Rover Ingenium 2.0 Petrol Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Ingenium 2.0 petrol is JLR's modern turbo four - more reliable than its diesel sibling, but cooling system issues are the main weakness. Backed by 480+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -232,11 +232,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "200–300 hp [THIRD-PARTY]"
+        "value": "200-300 hp [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "2017–present"
+        "value": "2017-present"
       },
       {
         "metric": "Models Fitted (Land Rover only)",
@@ -268,7 +268,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £3,000–£5,000 → £4,000 midpoint → falls in £3,000–£4,999 bracket → 16)"
+          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £3,000-£5,000 → £4,000 midpoint → falls in £3,000-£4,999 bracket → 16)"
         },
         {
           "dimension": "Repairability",
@@ -280,7 +280,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "12 (Reconditioned cost (£4,000 midpoint) as % of lowest typical vehicle value (Evoque/Discovery Sport ~£8,000–£12,000) = 33–50% → falls in 45–59% bracket → 12)"
+          "score": "12 (Reconditioned cost (£4,000 midpoint) as % of lowest typical vehicle value (Evoque/Discovery Sport ~£8,000-£12,000) = 33-50% → falls in 45-59% bracket → 12)"
         },
         {
           "dimension": "Total",
@@ -304,25 +304,25 @@
         "model": "Land Rover Discovery Sport",
         "generation": "L550",
         "variantBadge": "P200 / P250 (204PT)",
-        "years": "2017–present"
+        "years": "2017-present"
       },
       {
         "model": "Land Rover Evoque",
         "generation": "L551",
         "variantBadge": "P200 / P250 (204PT)",
-        "years": "2019–present"
+        "years": "2019-present"
       },
       {
         "model": "Land Rover Velar",
         "generation": "L560",
         "variantBadge": "P250 (204PT)",
-        "years": "2017–present"
+        "years": "2017-present"
       },
       {
         "model": "Land Rover Defender",
         "generation": "L663",
         "variantBadge": "P200 / P250 (204PT)",
-        "years": "2020–present"
+        "years": "2020-present"
       }
     ],
     "crossBrandNote": "Also powers the Jaguar XE, XF, F‑Pace and E‑Pace → [Jaguar Ingenium 2.0 Petrol page]."
@@ -337,24 +337,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£1,500–£2,800",
-        "fittedIndie": "£2,400–£4,100",
+        "supplyOnly": "£1,500-£2,800",
+        "fittedIndie": "£2,400-£4,100",
         "warranty": "Varies by supplier"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£3,000–£5,000",
-        "fittedIndie": "£4,000–£6,400",
+        "supplyOnly": "£3,000-£5,000",
+        "fittedIndie": "£4,000-£6,400",
         "warranty": "12 months typical"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£4,200–£6,500",
-        "fittedIndie": "£5,200–£7,900",
-        "warranty": "12–24 months typical"
+        "supplyOnly": "£4,200-£6,500",
+        "fittedIndie": "£5,200-£7,900",
+        "warranty": "12-24 months typical"
       }
     ],
-    "labourEstimate": "Fitting an Ingenium 2.0 petrol typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "labourEstimate": "Fitting an Ingenium 2.0 petrol typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM-QUOTE].",
     "sharedCostNote": "Parts cost is identical across Land Rover and Jaguar applications; labour time varies slightly by engine bay access and model‑specific subframe removal.",
     "cta": {
       "label": "→ Compare Ingenium 2.0 Petrol engine prices from UK specialists",
@@ -366,7 +366,7 @@
       {
         "id": 1,
         "question": "How much does an Ingenium 2.0 petrol engine replacement cost?",
-        "answer": "A reconditioned Ingenium 2.0 petrol typically costs £3,000–£5,000 supply only, varying by power output and specific sub‑variant. Fitting adds £900–£1,700 depending on labour rates and vehicle model."
+        "answer": "A reconditioned Ingenium 2.0 petrol typically costs £3,000-£5,000 supply only, varying by power output and specific sub‑variant. Fitting adds £900-£1,700 depending on labour rates and vehicle model."
       },
       {
         "id": 2,
@@ -376,12 +376,12 @@
       {
         "id": 3,
         "question": "What is the most common Ingenium 2.0 petrol failure?",
-        "answer": "Water pump failure and coolant leaks from plastic fittings are the most common issues - typically occurring from 60,000–80,000 miles. Other reported problems include occasional timing chain stretch and PCV valve failure."
+        "answer": "Water pump failure and coolant leaks from plastic fittings are the most common issues - typically occurring from 60,000-80,000 miles. Other reported problems include occasional timing chain stretch and PCV valve failure."
       },
       {
         "id": 4,
         "question": "Which Land Rover models use the Ingenium 2.0 petrol?",
-        "answer": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) - spanning 200–300 hp outputs across P200, P250, and P300 variants."
+        "answer": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) - spanning 200-300 hp outputs across P200, P250, and P300 variants."
       },
       {
         "id": 5,

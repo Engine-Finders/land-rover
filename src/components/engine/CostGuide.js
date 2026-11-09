@@ -33,7 +33,7 @@ const ICON_BY_CONDITION = [
 // source tags in green, hours and labour rates in bold
 const richText = (t = "") =>
   t
-    .replace(/ - /g, " — ")
+    .replace(/ - /g, " - ")
     .replace(/(\d+[–-]\d+)(?= hours)/g, "<strong>$1</strong>")
     .replace(/(£\d+[–-]£\d+\/hr)/g, "<strong>$1</strong>")
     .replace(/(\[[A-Z][A-Z -]*\]\.?)/g, `<span class="text-lr-green">$1</span>`);

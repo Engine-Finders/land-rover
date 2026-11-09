@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "L461 SV (S68 SV-tune, 2024–present)",
+              "name": "L461 SV (S68 SV-tune, 2024-present)",
               "url": "https://landroverengine.uk/range-rover-sport/l461"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Range Rover Sport SV (P635) engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned S68 SV-tune engine typically costs £14,000–£18,000 supply only. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £40,000. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned S68 SV-tune engine typically costs £14,000-£18,000 supply only. Fitting adds £1,500-£2,500. Main dealer new engines can exceed £40,000. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Range Rover Sport SV engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Against a £100,000–£140,000+ Range Rover Sport SV, a £14,000–£18,000 recon engine is a manageable 10–15% of the vehicle's value - well worth it. Given the Sport SV's strong retained values and limited production numbers, replacement is almost always viable."
+                "text": "Against a £100,000-£140,000+ Range Rover Sport SV, a £14,000-£18,000 recon engine is a manageable 10-15% of the vehicle's value - well worth it. Given the Sport SV's strong retained values and limited production numbers, replacement is almost always viable."
               }
             },
             {
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover Sport SV • 2024–present • 4.4 V8 (BMW S68)",
+    "tagPill": "Land Rover Range Rover Sport SV • 2024-present • 4.4 V8 (BMW S68)",
     "h1": "Land Rover Range Rover Sport SV (P635) Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Range Rover Sport SV specialists. Compare reconditioned, rebuilt and used 4.4 V8 engines for the flagship performance SUV - supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "L461",
-        "years": "2024–present",
+        "years": "2024-present",
         "engineCode": "S68 (4.4 TT V8, BMW-derived - 635 bhp SV tune)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£12,000–£20,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£12,000-£20,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "BMW's most powerful production V8 - 635 bhp hot-vee; watch for oil leaks, cooling system vulnerability and high maintenance costs."
       }
     ],
@@ -240,35 +240,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£10,000–£14,000",
-        "fittedIndie": "£11,500–£16,000",
-        "warranty": "3–6 months",
+        "supplyOnly": "£10,000-£14,000",
+        "fittedIndie": "£11,500-£16,000",
+        "warranty": "3-6 months",
         "bestFor": "Budget priority; vehicle under £40,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£14,000–£18,000",
-        "fittedIndie": "£15,500–£20,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£14,000-£18,000",
+        "fittedIndie": "£15,500-£20,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£16,000–£20,000",
-        "fittedIndie": "£17,500–£22,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£16,000-£20,000",
+        "fittedIndie": "£17,500-£22,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£30,000–£40,000+",
-        "fittedIndie": "£33,000–£45,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£30,000-£40,000+",
+        "fittedIndie": "£33,000-£45,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims; dealer costs can exceed £40,000"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting a Range Rover Sport SV engine typically takes 20–28 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). SV-specific calibration and coding requires specialist equipment.",
+    "labourEstimate": "Fitting a Range Rover Sport SV engine typically takes 20-28 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). SV-specific calibration and coding requires specialist equipment.",
     "cta": {
       "label": "",
       "href": "#"
@@ -299,25 +299,25 @@
         {
           "problem": "Hot-vee oil leaks (S68 - SV)",
           "repairable": "✅ Yes",
-          "typicalCost": "£2,000–£4,500",
+          "typicalCost": "£2,000-£4,500",
           "whenItMakesSense": "Essential maintenance - SV runs hotter; catch it before electrical damage"
         },
         {
           "problem": "Coolant crossover pipe failure (S68 - SV)",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,500",
+          "typicalCost": "£600-£1,500",
           "whenItMakesSense": "Replace plastic pipes as a preventative measure at 40,000 miles"
         },
         {
           "problem": "PCV valve/oil separator issues (S68 - SV)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,000",
+          "typicalCost": "£500-£1,000",
           "whenItMakesSense": "Straightforward replacement; don't let oil consumption worsen"
         },
         {
           "problem": "Water pump failure (S68 - SV)",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,500",
+          "typicalCost": "£800-£1,500",
           "whenItMakesSense": "Replace as a preventative item at 50,000 miles"
         },
         {
@@ -329,7 +329,7 @@
         {
           "problem": "Turbocharger failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£4,000–£8,000",
+          "typicalCost": "£4,000-£8,000",
           "whenItMakesSense": "Repairable by specialists; do not drive with boost issues"
         }
       ]
@@ -380,10 +380,10 @@
     "rows": [
       {
         "engineCode": "S68 (SV tune)",
-        "years": "2024–present",
+        "years": "2024-present",
         "power": "635 bhp / 750 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£12,000–£20,000 [PLACEHOLDER]"
+        "avgReconCost": "£12,000-£20,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "",
@@ -450,7 +450,7 @@
       {
         "id": 1,
         "question": "How much does a Range Rover Sport SV (P635) engine replacement cost in the UK?",
-        "answer": "A reconditioned S68 SV-tune engine typically costs £14,000–£18,000 supply only, with the same engine used across the L461 Range Rover Sport SV. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £40,000. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned S68 SV-tune engine typically costs £14,000-£18,000 supply only, with the same engine used across the L461 Range Rover Sport SV. Fitting adds £1,500-£2,500. Main dealer new engines can exceed £40,000. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -465,7 +465,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Range Rover Sport SV engine, or should I scrap the car?",
-        "answer": "Against a £100,000–£140,000+ Range Rover Sport SV, a £14,000–£18,000 recon engine is a manageable 10–15% of the vehicle's value - well worth it. Given the Sport SV's strong retained values and limited production numbers, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+        "answer": "Against a £100,000-£140,000+ Range Rover Sport SV, a £14,000-£18,000 recon engine is a manageable 10-15% of the vehicle's value - well worth it. Given the Sport SV's strong retained values and limited production numbers, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
       },
       {
         "id": 5,

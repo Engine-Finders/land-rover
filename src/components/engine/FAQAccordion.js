@@ -10,7 +10,7 @@ import { BODY, BODY_SM, H2, H6, LABEL } from "@/lib/typeScale";
 // Copy from the page's `faq` JSON. Follows the site theme; the engine photo panel stays a dark
 // photo in both. lg narrows the photo panel; below lg the panel sits above the questions.
 
-const dash = (t = "") => String(t).replace(/ - /g, " — ");
+const dash = (t = "") => String(t).replace(/ - /g, " - ");
 // source tags such as [EM-VERIFIED] in green
 const tagged = (t = "") => dash(t).replace(/(\[[A-Z][A-Z -]*\])/g, `<span class="text-lr-green">$1</span>`);
 

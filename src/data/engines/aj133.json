@@ -70,7 +70,7 @@
               "name": "How much does an AJ133 (5.0 V8) engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ133 V8 typically costs £5,500–£9,000 supply only, varying by specification (NA vs SC) and rebuild quality. Used units can be found from £3,000–£5,500, but provenance is critical. Fitting adds £900–£2,000 depending on labour rates."
+                "text": "A reconditioned AJ133 V8 typically costs £5,500-£9,000 supply only, varying by specification (NA vs SC) and rebuild quality. Used units can be found from £3,000-£5,500, but provenance is critical. Fitting adds £900-£2,000 depending on labour rates."
               }
             },
             {
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover • AJ133 (5.0 NA/SC) • Petrol • 5.0L V8 NA/SC • 2009–2022",
+    "tagPill": "Land Rover • AJ133 (5.0 NA/SC) • Petrol • 5.0L V8 NA/SC • 2009-2022",
     "h1": "Land Rover AJ133 (5.0 V8) Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The AJ133 is Land Rover's flagship 5.0‑litre V8 - a sonorous, powerful unit, but pre‑2013 timing chain tensioners are the main risk. Backed by 620+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -220,11 +220,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "375–575 hp [THIRD-PARTY]"
+        "value": "375-575 hp [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "2009–2022"
+        "value": "2009-2022"
       },
       {
         "metric": "Models Fitted (Land Rover only)",
@@ -256,7 +256,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £5,500–£9,000 → £7,250 midpoint → falls in £7,000–£9,999 bracket → 8)"
+          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £5,500-£9,000 → £7,250 midpoint → falls in £7,000-£9,999 bracket → 8)"
         },
         {
           "dimension": "Repairability",
@@ -292,13 +292,13 @@
         "model": "Land Rover Range Rover",
         "generation": "L405",
         "variantBadge": "5.0 V8 NA / SC",
-        "years": "2012–2021"
+        "years": "2012-2021"
       },
       {
         "model": "Land Rover Range Rover Sport",
         "generation": "L494",
         "variantBadge": "5.0 V8 SC",
-        "years": "2013–2022"
+        "years": "2013-2022"
       }
     ],
     "crossBrandNote": "Also powers the Jaguar XF, XJ, XK, and F‑Type → [Jaguar AJ133 page]."
@@ -313,24 +313,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£3,000–£5,500",
-        "fittedIndie": "£4,000–£7,000",
+        "supplyOnly": "£3,000-£5,500",
+        "fittedIndie": "£4,000-£7,000",
         "warranty": "Varies by supplier"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£5,500–£9,000",
-        "fittedIndie": "£6,500–£10,500",
+        "supplyOnly": "£5,500-£9,000",
+        "fittedIndie": "£6,500-£10,500",
         "warranty": "12 months typical"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£9,000–£13,500",
-        "warranty": "12–24 months typical"
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£9,000-£13,500",
+        "warranty": "12-24 months typical"
       }
     ],
-    "labourEstimate": "Fitting an AJ133 V8 typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "labourEstimate": "Fitting an AJ133 V8 typically takes 14-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM-QUOTE].",
     "sharedCostNote": "Parts cost is identical across Land Rover and Jaguar applications; labour time varies by model and engine bay access.",
     "cta": {
       "label": "→ Compare AJ133 (5.0 V8) engine prices from UK specialists",
@@ -342,7 +342,7 @@
       {
         "id": 1,
         "question": "How much does an AJ133 (5.0 V8) engine replacement cost?",
-        "answer": "A reconditioned AJ133 V8 typically costs £5,500–£9,000 supply only, varying by specification (NA vs SC) and rebuild quality. Used units can be found from £3,000–£5,500, but provenance is critical. Fitting adds £900–£2,000 depending on labour rates."
+        "answer": "A reconditioned AJ133 V8 typically costs £5,500-£9,000 supply only, varying by specification (NA vs SC) and rebuild quality. Used units can be found from £3,000-£5,500, but provenance is critical. Fitting adds £900-£2,000 depending on labour rates."
       },
       {
         "id": 2,

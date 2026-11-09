@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "L560 P400 (AJ20P6, 2021–present)",
+              "name": "L560 P400 (AJ20P6, 2021-present)",
               "url": "https://landroverengine.uk/velar/l560"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Velar P400 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ20P6 engine typically costs £4,500–£7,000 supply only, with the same engine used across the Velar, Range Rover, and Range Rover Sport ranges. Fitting adds £1,000–£1,500. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned AJ20P6 engine typically costs £4,500-£7,000 supply only, with the same engine used across the Velar, Range Rover, and Range Rover Sport ranges. Fitting adds £1,000-£1,500. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Velar P400 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Against a £20,000–£40,000 Velar P400, a £5,500 recon engine is a manageable 14–28% of the vehicle's value - worth it for a well-maintained example. Given the Velar's strong retained values, replacement is usually viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+                "text": "Against a £20,000-£40,000 Velar P400, a £5,500 recon engine is a manageable 14-28% of the vehicle's value - worth it for a well-maintained example. Given the Velar's strong retained values, replacement is usually viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair the AJ20P6's water pump, or does it need a new engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - the water pump is a straightforward repair costing £500–£1,000. The AJ20P6's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
+                "text": "Yes - the water pump is a straightforward repair costing £500-£1,000. The AJ20P6's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Velar P400 • 2021–present • 3.0 <a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>",
+    "tagPill": "Land Rover Velar P400 • 2021-present • 3.0 <a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>",
     "h1": "Land Rover Velar P400 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover Velar P400 specialists. Compare reconditioned, rebuilt and used AJ20P6 engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "L560 (facelift)",
-        "years": "2021–present",
+        "years": "2021-present",
         "engineCode": "AJ20P6 (3.0 6-cylinder Ingenium petrol)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,500–£7,000 [EM-QUOTE]",
+        "reconCost": "£4,500-£7,000 [EM-QUOTE]",
         "eraNote": "JLR's 3.0 straight-six Ingenium petrol - more reliable than the diesel <a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a>; cooling system is the main watchpoint."
       }
     ],
@@ -240,35 +240,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,500–£5,000",
-        "fittedIndie": "£4,200–£6,100",
-        "warranty": "3–6 months",
+        "supplyOnly": "£3,500-£5,000",
+        "fittedIndie": "£4,200-£6,100",
+        "warranty": "3-6 months",
         "bestFor": "Budget priority; vehicle under £15,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£4,500–£6,500",
-        "fittedIndie": "£5,500–£7,800",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£6,500",
+        "fittedIndie": "£5,500-£7,800",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£5,500–£8,500",
-        "fittedIndie": "£6,500–£9,800",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,500-£8,500",
+        "fittedIndie": "£6,500-£9,800",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£10,000–£14,000",
-        "fittedIndie": "£11,500–£16,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£10,000-£14,000",
+        "fittedIndie": "£11,500-£16,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting a Velar P400 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting a Velar P400 engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "",
       "href": "#"
@@ -299,25 +299,25 @@
         {
           "problem": "Water pump failure (AJ20P6)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,000",
+          "typicalCost": "£500-£1,000",
           "whenItMakesSense": "Preventative - replace the pump before it fails; far cheaper than overheating damage"
         },
         {
           "problem": "Coolant crossover pipe leak (AJ20P6)",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£600",
+          "typicalCost": "£300-£600",
           "whenItMakesSense": "Straightforward part replacement; book at next service"
         },
         {
           "problem": "Timing chain tensioner wear (AJ20P6)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£2,500",
+          "typicalCost": "£1,500-£2,500",
           "whenItMakesSense": "If caught early; don't drive with a rattling chain"
         },
         {
           "problem": "Overheating damage from coolant loss",
           "repairable": "⚠️ Depends",
-          "typicalCost": "£1,500–£5,000",
+          "typicalCost": "£1,500-£5,000",
           "whenItMakesSense": "If head gasket or block damage has occurred, replacement may be cheaper"
         },
         {
@@ -373,10 +373,10 @@
     "rows": [
       {
         "engineCode": "AJ20P6",
-        "years": "2021–present",
+        "years": "2021-present",
         "power": "400 bhp / 550 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,000 [EM-QUOTE]"
+        "avgReconCost": "£4,500-£7,000 [EM-QUOTE]"
       }
     ],
     "matchNote": "",
@@ -443,7 +443,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Velar P400 engine replacement cost in the UK?",
-        "answer": "A reconditioned AJ20P6 engine typically costs £4,500–£7,000 supply only, with the same engine used across the Velar, Range Rover, and Range Rover Sport ranges. Fitting adds £1,000–£1,500. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned AJ20P6 engine typically costs £4,500-£7,000 supply only, with the same engine used across the Velar, Range Rover, and Range Rover Sport ranges. Fitting adds £1,000-£1,500. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -458,7 +458,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Velar P400 engine, or should I scrap the car?",
-        "answer": "Against a £20,000–£40,000 Velar P400, a £5,500 recon engine is a manageable 14–28% of the vehicle's value - worth it for a well-maintained example. Given the Velar's strong retained values, replacement is usually viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+        "answer": "Against a £20,000-£40,000 Velar P400, a £5,500 recon engine is a manageable 14-28% of the vehicle's value - worth it for a well-maintained example. Given the Velar's strong retained values, replacement is usually viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
       },
       {
         "id": 5,
@@ -468,7 +468,7 @@
       {
         "id": 6,
         "question": "Can I repair the AJ20P6's water pump, or does it need a new engine?",
-        "answer": "Yes - the water pump is a straightforward repair costing £500–£1,000. The AJ20P6's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
+        "answer": "Yes - the water pump is a straightforward repair costing £500-£1,000. The AJ20P6's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

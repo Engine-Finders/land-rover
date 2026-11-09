@@ -45,13 +45,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Freelander 1 (1997–2006)",
+              "name": "Freelander 1 (1997-2006)",
               "url": "https://landroverengine.uk/freelander/fl1/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Freelander 2 L359 (2006–2014)",
+              "name": "Freelander 2 L359 (2006-2014)",
               "url": "https://landroverengine.uk/freelander/l359/"
             }
           ]
@@ -112,7 +112,7 @@
               "name": "How much does a Freelander engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A used engine typically costs £400–£2,000 supply only; reconditioned units run £1,500–£4,500 depending on engine [PLACEHOLDER - confirm vs Table A]. Fitting adds £520–£1,300. On most Freelanders, the used route is the economically sensible one. Use our calculator for a personalised verdict."
+                "text": "A used engine typically costs £400-£2,000 supply only; reconditioned units run £1,500-£4,500 depending on engine [PLACEHOLDER - confirm vs Table A]. Fitting adds £520-£1,300. On most Freelanders, the used route is the economically sensible one. Use our calculator for a personalised verdict."
               }
             },
             {
@@ -136,7 +136,7 @@
               "name": "Is the Freelander head gasket problem fixable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, permanently - a quality MLS gasket, revised oil rail and proper coolant bleeding resolve it for good. At £600–£1,200 it's the one big-ticket repair on a Freelander 1 that can still make sense. Prevention beats replacement on this engine."
+                "text": "Yes, permanently - a quality MLS gasket, revised oil rail and proper coolant bleeding resolve it for good. At £600-£1,200 it's the one big-ticket repair on a Freelander 1 that can still make sense. Prevention beats replacement on this engine."
               }
             },
             {
@@ -144,7 +144,7 @@
               "name": "Is it worth replacing a Freelander engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Honestly: often not with a full recon. Most Freelanders fail our 60% scrap-threshold rule for reconditioned engines - but a good used 2.2 at £800–£2,000 in a solid late Freelander 2 is a sound decision. Use the Ownership Decision Tool for your car."
+                "text": "Honestly: often not with a full recon. Most Freelanders fail our 60% scrap-threshold rule for reconditioned engines - but a good used 2.2 at £800-£2,000 in a solid late Freelander 2 is a sound decision. Use the Ownership Decision Tool for your car."
               }
             },
             {
@@ -152,7 +152,7 @@
               "name": "Which Freelander should I buy?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A 2011–2014 Freelander 2 SD4 with history - facelift car, strongest engine, last of the line. Among Freelander 1s, only the Td4 diesel, and only cheap."
+                "text": "A 2011-2014 Freelander 2 SD4 with history - facelift car, strongest engine, last of the line. Among Freelander 1s, only the Td4 diesel, and only cheap."
               }
             },
             {
@@ -230,7 +230,7 @@
     "canonical": "https://landroverengine.uk/freelander"
   },
   "hero": {
-    "tagPill": "Freelander • 1997–2014 • 2 Generations • K-series, Td4, Duratorq",
+    "tagPill": "Freelander • 1997-2014 • 2 Generations • K-series, Td4, Duratorq",
     "h1": "Freelander Engines - The Complete UK Guide",
     "subHeadline": "Every generation. Every engine code. Every known failure. Every replacement cost - including the honest answer about when replacement no longer makes sense. Backed by 279+ real UK Freelander 2 enquiries [EM-VERIFIED].",
     "trustStrip": [
@@ -266,7 +266,7 @@
       },
       {
         "metric": "Replacement Economics",
-        "ourCall": "⚠️→❌ Frequently Not Worth a Full Recon - a £2,800–£4,500 reconditioned engine against £2,000–£7,000 host values fails our 60% scrap-threshold rule on most cars. A good used engine (£800–£2,000) is the realistic route on this model."
+        "ourCall": "⚠️→❌ Frequently Not Worth a Full Recon - a £2,800-£4,500 reconditioned engine against £2,000-£7,000 host values fails our 60% scrap-threshold rule on most cars. A good used engine (£800-£2,000) is the realistic route on this model."
       },
       {
         "metric": "Reliability",
@@ -282,7 +282,7 @@
       },
       {
         "metric": "Best Used Buy",
-        "ourCall": "2011–2014 Freelander 2 SD4 - facelift car, strongest engine, last of the line"
+        "ourCall": "2011-2014 Freelander 2 SD4 - facelift car, strongest engine, last of the line"
       },
       {
         "metric": "Average Engine Replacement",
@@ -305,11 +305,11 @@
     "rows": [
       {
         "metric": "Generations",
-        "value": "2 (Freelander 1, 1997–2006 • Freelander 2 L359, 2006–2014)"
+        "value": "2 (Freelander 1, 1997-2006 • Freelander 2 L359, 2006-2014)"
       },
       {
         "metric": "Years Produced",
-        "value": "1997–2014 (production ended; succeeded by Discovery Sport)"
+        "value": "1997-2014 (production ended; succeeded by Discovery Sport)"
       },
       {
         "metric": "Engine Codes Tracked",
@@ -333,11 +333,11 @@
       },
       {
         "metric": "Typical Replacement Cost",
-        "value": "£800–£2,000 used / £2,800–£4,500 recon [PLACEHOLDER - confirm vs Table A]"
+        "value": "£800-£2,000 used / £2,800-£4,500 recon [PLACEHOLDER - confirm vs Table A]"
       },
       {
         "metric": "Typical Host Value",
-        "value": "£500–£2,500 (FL1) • £2,000–£7,000 (FL2)"
+        "value": "£500-£2,500 (FL1) • £2,000-£7,000 (FL2)"
       },
       {
         "metric": "Overall Rating",
@@ -352,7 +352,7 @@
       {
         "title": "Freelander 1",
         "badge": "",
-        "meta": "1997–2006 • 1.8 K-series, 2.0 Di (L-series), Td4 (BMW <a href='https://landroverengine.uk/engine/m47'>M47</a>), 2.5 KV6",
+        "meta": "1997-2006 • 1.8 K-series, 2.0 Di (L-series), Td4 (BMW <a href='https://landroverengine.uk/engine/m47'>M47</a>), 2.5 KV6",
         "rating": "⭐⭐½",
         "verdict": "Britain's best-selling 4x4 of its day, undone by the 1.8 petrol's head gasket. The BMW-engined Td4 diesel is the one to have - the rest are now labour-of-love territory.",
         "cta": {
@@ -363,7 +363,7 @@
       {
         "title": "Freelander 2 (L359)",
         "badge": "🔥 Most Enquired - 279 enquiries (2025) [EM-VERIFIED]",
-        "meta": "2006–2014 • 2.2 TD4/SD4 (224DT), 3.2 i6 (<a href='https://landroverengine.uk/engine/volvo-si6'>SI6</a>), 2.0 <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> GTDi",
+        "meta": "2006-2014 • 2.2 TD4/SD4 (224DT), 3.2 i6 (<a href='https://landroverengine.uk/engine/volvo-si6'>SI6</a>), 2.0 <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> GTDi",
         "rating": "⭐⭐⭐⭐☆",
         "verdict": "A quietly excellent car - the 2.2 diesel is one of the most dependable engines Land Rover ever fitted. The buying risk is the car's age and value, not the engine.",
         "cta": {
@@ -380,7 +380,7 @@
           "label": "",
           "href": "#"
         },
-        "meta": "The Freelander 1 is now a sub-£2,500 car where almost any engine failure is an economic write-off - our advice is head-gasket prevention (K-series) or a good used engine, never a full recon. The Freelander 2 is the last truly affordable dependable Land Rover: values of £3,000–£7,000 can still justify engine work, but only just. Read the maths before the mechanicals."
+        "meta": "The Freelander 1 is now a sub-£2,500 car where almost any engine failure is an economic write-off - our advice is head-gasket prevention (K-series) or a good used engine, never a full recon. The Freelander 2 is the last truly affordable dependable Land Rover: values of £3,000-£7,000 can still justify engine work, but only just. Read the maths before the mechanicals."
       }
     ],
     "rangeTable": {
@@ -415,11 +415,11 @@
         "fuel": "Petrol",
         "displacement": "1.8L",
         "power": "117 bhp",
-        "years": "1997–2006",
+        "years": "1997-2006",
         "model": "FL1",
         "reliability": "★★☆☆☆",
         "enquiries": "- (pattern data)",
-        "avgRebuildCost": "£1,500–£2,500 [PLACEHOLDER - confirm vs Table A]"
+        "avgRebuildCost": "£1,500-£2,500 [PLACEHOLDER - confirm vs Table A]"
       },
       {
         "engineCode": "2.0 Di (L-series)",
@@ -427,11 +427,11 @@
         "fuel": "Diesel",
         "displacement": "2.0L",
         "power": "97 bhp",
-        "years": "1997–2000",
+        "years": "1997-2000",
         "model": "FL1",
         "reliability": "★★★★☆",
         "enquiries": "- (pattern data)",
-        "avgRebuildCost": "£1,800–£3,000 [PLACEHOLDER]"
+        "avgRebuildCost": "£1,800-£3,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "Td4 (M47R)",
@@ -439,11 +439,11 @@
         "fuel": "Diesel",
         "displacement": "2.0L",
         "power": "110 bhp",
-        "years": "2000–2006",
+        "years": "2000-2006",
         "model": "FL1",
         "reliability": "★★★★☆",
         "enquiries": "- (pattern data)",
-        "avgRebuildCost": "£2,000–£3,500 [PLACEHOLDER]"
+        "avgRebuildCost": "£2,000-£3,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "2.5 KV6",
@@ -451,23 +451,23 @@
         "fuel": "Petrol",
         "displacement": "2.5L",
         "power": "175 bhp",
-        "years": "2000–2006",
+        "years": "2000-2006",
         "model": "FL1",
         "reliability": "★★☆☆☆",
         "enquiries": "- (pattern data)",
-        "avgRebuildCost": "£2,000–£3,500 [PLACEHOLDER]"
+        "avgRebuildCost": "£2,000-£3,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "224DT (TD4/SD4)",
         "family": "Ford Duratorq",
         "fuel": "Diesel",
         "displacement": "2.2L",
-        "power": "150–190 bhp",
-        "years": "2006–2014",
+        "power": "150-190 bhp",
+        "years": "2006-2014",
         "model": "FL2",
         "reliability": "★★★★☆",
         "enquiries": "279 L359 model-level [EM-VERIFIED]",
-        "avgRebuildCost": "£2,800–£4,500 [PLACEHOLDER - confirm vs Table A]"
+        "avgRebuildCost": "£2,800-£4,500 [PLACEHOLDER - confirm vs Table A]"
       },
       {
         "engineCode": "SI6 3.2",
@@ -475,11 +475,11 @@
         "fuel": "Petrol",
         "displacement": "3.2L",
         "power": "230 bhp",
-        "years": "2006–2011",
+        "years": "2006-2011",
         "model": "FL2",
         "reliability": "★★★★☆",
         "enquiries": "- (pattern data)",
-        "avgRebuildCost": "£2,500–£4,000 [PLACEHOLDER]"
+        "avgRebuildCost": "£2,500-£4,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "Si4 GTDi",
@@ -487,11 +487,11 @@
         "fuel": "Petrol",
         "displacement": "2.0L",
         "power": "240 bhp",
-        "years": "2012–2014",
+        "years": "2012-2014",
         "model": "FL2",
         "reliability": "★★★☆☆",
         "enquiries": "- (pattern data)",
-        "avgRebuildCost": "£2,800–£4,500 [PLACEHOLDER]"
+        "avgRebuildCost": "£2,800-£4,500 [PLACEHOLDER]"
       }
     ],
     "confidenceScore": {
@@ -654,7 +654,7 @@
     "subHeadline": "Real UK pricing - with the used-engine route given equal billing, because on this model it's usually the right answer.",
     "tables": [
       {
-        "title": "Freelander 1 - 1997–2006",
+        "title": "Freelander 1 - 1997-2006",
         "columns": [
           "Variant",
           "Engine Code",
@@ -667,39 +667,39 @@
           {
             "model": "1.8 Petrol",
             "engineCode": "K-series",
-            "usedSupply": "£400–£900",
-            "reconditionedSupply": "£1,500–£2,500",
-            "rebuiltSupply": "£2,200–£3,200",
-            "labourHours": "8–12 hrs"
+            "usedSupply": "£400-£900",
+            "reconditionedSupply": "£1,500-£2,500",
+            "rebuiltSupply": "£2,200-£3,200",
+            "labourHours": "8-12 hrs"
           },
           {
             "model": "2.0 Di",
             "engineCode": "L-series",
-            "usedSupply": "£500–£1,000",
-            "reconditionedSupply": "£1,800–£3,000",
-            "rebuiltSupply": "£2,500–£3,800",
-            "labourHours": "8–12 hrs"
+            "usedSupply": "£500-£1,000",
+            "reconditionedSupply": "£1,800-£3,000",
+            "rebuiltSupply": "£2,500-£3,800",
+            "labourHours": "8-12 hrs"
           },
           {
             "model": "Td4",
             "engineCode": "M47R",
-            "usedSupply": "£600–£1,200",
-            "reconditionedSupply": "£2,000–£3,500",
-            "rebuiltSupply": "£2,800–£4,200",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£600-£1,200",
+            "reconditionedSupply": "£2,000-£3,500",
+            "rebuiltSupply": "£2,800-£4,200",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "2.5 KV6",
             "engineCode": "KV6",
-            "usedSupply": "£500–£1,100",
-            "reconditionedSupply": "£2,000–£3,500",
-            "rebuiltSupply": "£2,800–£4,200",
-            "labourHours": "12–16 hrs"
+            "usedSupply": "£500-£1,100",
+            "reconditionedSupply": "£2,000-£3,500",
+            "rebuiltSupply": "£2,800-£4,200",
+            "labourHours": "12-16 hrs"
           }
         ]
       },
       {
-        "title": "Freelander 2 (L359) - 2006–2014",
+        "title": "Freelander 2 (L359) - 2006-2014",
         "columns": [
           "Variant",
           "Engine Code",
@@ -712,32 +712,32 @@
           {
             "model": "TD4/SD4 2.2",
             "engineCode": "224DT",
-            "usedSupply": "£800–£2,000",
-            "reconditionedSupply": "£2,800–£4,500",
-            "rebuiltSupply": "£4,000–£5,800",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£800-£2,000",
+            "reconditionedSupply": "£2,800-£4,500",
+            "rebuiltSupply": "£4,000-£5,800",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "3.2 i6",
             "engineCode": "SI6",
-            "usedSupply": "£700–£1,500",
-            "reconditionedSupply": "£2,500–£4,000",
-            "rebuiltSupply": "£3,500–£5,000",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£700-£1,500",
+            "reconditionedSupply": "£2,500-£4,000",
+            "rebuiltSupply": "£3,500-£5,000",
+            "labourHours": "10-14 hrs"
           },
           {
             "model": "Si4 2.0",
             "engineCode": "Si4 GTDi",
-            "usedSupply": "£800–£1,600",
-            "reconditionedSupply": "£2,800–£4,500",
-            "rebuiltSupply": "£4,000–£5,800",
-            "labourHours": "10–14 hrs"
+            "usedSupply": "£800-£1,600",
+            "reconditionedSupply": "£2,800-£4,500",
+            "rebuiltSupply": "£4,000-£5,800",
+            "labourHours": "10-14 hrs"
           }
         ]
       }
     ],
     "figuresNote": "All figures [PLACEHOLDER - confirm vs Table A; Freelander rows were not in the original cost sheet].",
-    "labourEstimate": "Fitting a Freelander engine typically takes 8–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "labourEstimate": "Fitting a Freelander engine typically takes 8-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM-QUOTE].",
     "economicsBox": {
       "title": "The Freelander rule - the inverse of the Defender",
       "text": "On most Freelanders, a full recon fails our 60% scrap-threshold rule: £3,500 of engine in a £4,000 car is not a repair, it's a donation. The honest hierarchy on this model is (1) repair the fault, (2) fit a good used engine, (3) recon only on the best late SD4s, (4) walk away with our blessing. We'll tell you which applies to yours - for free."
@@ -756,21 +756,21 @@
     "eras": [
       {
         "era": "Rover era",
-        "years": "1997–2000",
+        "years": "1997-2000",
         "keyEngines": "1.8 K-series, 2.0 Di L-series",
         "whyBmwChanged": "The Freelander was built from the Rover Group parts bin - light, cheap, and the K-series' cooling margins didn't survive 4x4 duty",
         "worthKnowing": "The L-series diesel is the forgotten good engine of early Freelanders"
       },
       {
         "era": "BMW era",
-        "years": "2000–2006",
+        "years": "2000-2006",
         "keyEngines": "Td4 (M47R), 2.5 KV6",
         "whyBmwChanged": "BMW ownership brought a properly engineered diesel - the M47 transformed the Freelander's credibility",
         "worthKnowing": "The Td4 is the only Freelander 1 we'd still recommend today"
       },
       {
         "era": "Ford era",
-        "years": "2006–2014",
+        "years": "2006-2014",
         "keyEngines": "224DT, SI6 3.2, Si4 GTDi",
         "whyBmwChanged": "Ford ownership rebuilt the Freelander from scratch on the EUCD platform - Duratorq diesel, Volvo straight-six petrol",
         "worthKnowing": "The 2.2 Duratorq went on to power the Evoque and launch-era Discovery Sport - its parts network is enormous"
@@ -865,7 +865,7 @@
       {
         "id": 1,
         "question": "How much does a Freelander engine replacement cost in the UK?",
-        "answer": "A used engine typically costs £400–£2,000 supply only; reconditioned units run £1,500–£4,500 depending on engine [PLACEHOLDER - confirm vs Table A]. Fitting adds £520–£1,300. On most Freelanders, the used route is the economically sensible one. Use our calculator for a personalised verdict."
+        "answer": "A used engine typically costs £400-£2,000 supply only; reconditioned units run £1,500-£4,500 depending on engine [PLACEHOLDER - confirm vs Table A]. Fitting adds £520-£1,300. On most Freelanders, the used route is the economically sensible one. Use our calculator for a personalised verdict."
       },
       {
         "id": 2,
@@ -880,17 +880,17 @@
       {
         "id": 4,
         "question": "Is the Freelander head gasket problem fixable?",
-        "answer": "Yes, permanently - a quality MLS gasket, revised oil rail and proper coolant bleeding resolve it for good. At £600–£1,200 it's the one big-ticket repair on a Freelander 1 that can still make sense. Prevention beats replacement on this engine."
+        "answer": "Yes, permanently - a quality MLS gasket, revised oil rail and proper coolant bleeding resolve it for good. At £600-£1,200 it's the one big-ticket repair on a Freelander 1 that can still make sense. Prevention beats replacement on this engine."
       },
       {
         "id": 5,
         "question": "Is it worth replacing a Freelander engine?",
-        "answer": "Honestly: often not with a full recon. Most Freelanders fail our 60% scrap-threshold rule for reconditioned engines - but a good used 2.2 at £800–£2,000 in a solid late Freelander 2 is a sound decision. Use the Ownership Decision Tool for your car."
+        "answer": "Honestly: often not with a full recon. Most Freelanders fail our 60% scrap-threshold rule for reconditioned engines - but a good used 2.2 at £800-£2,000 in a solid late Freelander 2 is a sound decision. Use the Ownership Decision Tool for your car."
       },
       {
         "id": 6,
         "question": "Which Freelander should I buy?",
-        "answer": "A 2011–2014 Freelander 2 SD4 with history - facelift car, strongest engine, last of the line. Among Freelander 1s, only the Td4 diesel, and only cheap."
+        "answer": "A 2011-2014 Freelander 2 SD4 with history - facelift car, strongest engine, last of the line. Among Freelander 1s, only the Td4 diesel, and only cheap."
       },
       {
         "id": 7,

@@ -6,7 +6,7 @@ import { H2_MODEL, SANS, prose } from "@/components/models/modelKit";
 import { localHtml } from "@/components/models/generationsFaqLinks";
 
 // Generation page section 10 - FAQ, built to the approved Defender L316 reference: the eyebrow,
-// "FAQ — <generation>" headline with a short rule and a one-line intro; the questions as numbered
+// "FAQ - <generation>" headline with a short rule and a one-line intro; the questions as numbered
 // cards in two columns (1–5 on the left, 6–10 on the right), each with its chevron toggle.
 // Laptops open every answer, as in the reference; phones and tablets open the first and let the
 // rest expand on tap, so the page stays short on mobile. The open state is set by CSS until the
@@ -74,10 +74,10 @@ export default function FAQAccordion({ data, name = "" }) {
     <section id="faq" className={`scroll-mt-16 bg-lr-band py-6 text-lr-head md:scroll-mt-20 md:py-7 xl:py-8 ${SANS}`}>
       <div className={CONTAINER}>
         <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">Questions &amp; Answers</p>
-        <h2 className={`${H2_MODEL} mt-3.5 text-balance text-lr-head md:mt-4`}>{name ? `FAQ — ${name}` : "FAQ"}</h2>
+        <h2 className={`${H2_MODEL} mt-3.5 text-balance text-lr-head md:mt-4`}>{name ? `FAQ - ${name}` : "FAQ"}</h2>
         <span className="mt-4 block h-[3px] w-12 rounded-full bg-lr-ink md:mt-5 dark:bg-lr-green" aria-hidden="true" />
         <p className="mt-4 max-w-[40em] text-[15px] leading-[1.6] text-lr-body md:mt-5 md:text-[16px] xl:text-[17px]">
-          Everything you need to know about {short || "these"} engines, reliability, replacement costs and common issues — answered by UK specialists.
+          Everything you need to know about {short || "these"} engines, reliability, replacement costs and common issues - answered by UK specialists.
         </p>
 
         <div className="mt-6 grid gap-3 md:mt-8 lg:grid-cols-2 lg:items-start lg:gap-4 xl:gap-5">

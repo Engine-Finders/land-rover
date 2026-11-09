@@ -9,7 +9,7 @@ function Arrow({ className = "h-5 w-5" }) {
 }
 
 /**
- * Compact mid-section quote CTA — text + button, no plate (hero only).
+ * Compact mid-section quote CTA - text + button, no plate (hero only).
  * Links to /quote (optionally with ?reg= if passed).
  */
 export default function SectionQuoteCta({

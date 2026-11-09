@@ -71,30 +71,30 @@ Rebuilt S&F
 Used S&F
 Main Dealer Est.
 Ingenium Timing Chain
-£3,500–£5,800
-£2,800–£4,500
-£2,000–£3,500
-£6,000–£10,000
+£3,500-£5,800
+£2,800-£4,500
+£2,000-£3,500
+£6,000-£10,000
 TDV6/SDV6 Crankshaft
-£6,500–£9,500
-£5,500–£7,000
-£3,500–£5,500
-£12,000–£18,000
+£6,500-£9,500
+£5,500-£7,000
+£3,500-£5,500
+£12,000-£18,000
 TDV8 Timing Chain
-£5,500–£8,000
-£4,500–£6,500
-£3,000–£4,800
-£10,000–£15,000
+£5,500-£8,000
+£4,500-£6,500
+£3,000-£4,800
+£10,000-£15,000
 4.4 V8 Oil Cooler
-£6,000–£9,000
-£5,000–£7,000
-£3,500–£5,500
-£12,000–£18,000
+£6,000-£9,000
+£5,000-£7,000
+£3,500-£5,500
+£12,000-£18,000
 Duratorq Injector Seal
-£2,000–£3,500
-£1,500–£2,800
-£1,000–£2,000
-£4,000–£7,000
+£2,000-£3,500
+£1,500-£2,800
+£1,000-£2,000
+£4,000-£7,000
 
 
 H3: Why Trust This Diagnosis?
@@ -132,11 +132,11 @@ Genuinely capable when the oil-interval history is proven - the discipline matte
 ✅ Safe
 Most Expensive Failure
 306DT (TDV6/SDV6) Crank Failure
-Catastrophic bearing failure, £6,500–£9,500 full recon, and largely unrepairable once it starts.
+Catastrophic bearing failure, £6,500-£9,500 full recon, and largely unrepairable once it starts.
 🔴 Avoid
 Safest Range Rover to Buy
-L405 (2012–2021)
-Typical values of £14,000–£55,000 against £6,500–£12,000 recon cost - comfortably safe across almost every example.
+L405 (2012-2021)
+Typical values of £14,000-£55,000 against £6,500-£12,000 recon cost - comfortably safe across almost every example.
 ✅ Safe
 Highest Risk Purchase
 Early Evoque L538 (pre-2019, 204DTD)
@@ -165,7 +165,7 @@ Severity
 Link
 1
 TDV6 Crankshaft Failure
-The 306DT's defining weak point - cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon.
+The 306DT's defining weak point - cold-start knock is the early warning. Catastrophic bearing failure, £6,500-£9,500 recon.
 🔴 Catastrophic
 Read more →
 2
@@ -175,7 +175,7 @@ Often kills the engine outright before any other symptom appears. The 2.7 TDV6's
 Read more →
 3
 Ingenium Timing Chain Failure
-Pre-2019 204DTD tensioner wear, significantly improved from 2019 onward. £1,200–£2,500 repair cost.
+Pre-2019 204DTD tensioner wear, significantly improved from 2019 onward. £1,200-£2,500 repair cost.
 🟡 Monitor
 Read more →
 4
@@ -198,12 +198,12 @@ The most common air suspension complaint across Range Rover and Discovery. Burno
 Read more →
 2
 Height Sensor Faults
-Trigger warning lights and uneven ride height well before a full system failure. £200–£500 repair cost.
+Trigger warning lights and uneven ride height well before a full system failure. £200-£500 repair cost.
 🟢 Low
 Read more →
 3
 Valve Block & Air Spring Leaks
-Slow leaks that are often mistaken for compressor failure. £300–£800 repair cost.
+Slow leaks that are often mistaken for compressor failure. £300-£800 repair cost.
 🟢 Low
 Read more →
 
@@ -221,12 +221,12 @@ Loss of drive or grinding noises on 4x4 engagement. ATC300/400 chain stretch is 
 Read more →
 2
 Differential Wear
-Front and rear diff whine, most common on high-mileage Discovery and Defender. £800–£1,500 repair.
+Front and rear diff whine, most common on high-mileage Discovery and Defender. £800-£1,500 repair.
 🟡 Monitor
 Read more →
 3
 Propshaft & UJ Failures
-Vibration under load, a common MOT advisory across the range. £200–£500 repair.
+Vibration under load, a common MOT advisory across the range. £200-£500 repair.
 🟢 Low
 Read more →
 
@@ -352,29 +352,29 @@ Typical Vehicle Value
 Replacement Cost
 Verdict
 Discovery 4 SDV6
-£6,000–£18,000
-£6,500–£9,500
+£6,000-£18,000
+£6,500-£9,500
 ⚠️ Watch - sub-£10k examples approach the threshold
 Freelander 2 (204DTD)
-£2,500–£7,000
-£3,500–£5,800
+£2,500-£7,000
+£3,500-£5,800
 🔴 Scrap threshold - recon cost frequently exceeds car value
 Range Rover Sport L494
-£12,000–£55,000
-£5,000–£12,000
+£12,000-£55,000
+£5,000-£12,000
 ✅ Safe - replacement viable across most examples
 Range Rover L405
-£14,000–£55,000
-£6,500–£12,000
+£14,000-£55,000
+£6,500-£12,000
 ✅ Safe - well within value even at upper recon cost
 Defender L663
-£35,000–£90,000
-£3,500–£9,500
+£35,000-£90,000
+£3,500-£9,500
 ✅ Safe - very safe across all variants
 Range Rover Sport L320 (368DT)
-£5,000–£15,000
-£5,500–£8,000
-⚠️ Watch - older examples sit at 40–60% of vehicle value
+£5,000-£15,000
+£5,500-£8,000
+⚠️ Watch - older examples sit at 40-60% of vehicle value
 
 
 The Rule of Thumb
@@ -400,7 +400,7 @@ The top 5 repairs and what they cost
 Cheapest Land Rovers to Own →
 Which models offer the best value for money
 
-Data Note: Vehicle value bands from AutoTrader, Motors.co.uk 2024–2025 [THIRD-PARTY]. Replacement costs from Table A - Engine Replacement Economics [EM-QUOTE]. Verdict flags derived from the R-to-V flag system.
+Data Note: Vehicle value bands from AutoTrader, Motors.co.uk 2024-2025 [THIRD-PARTY]. Replacement costs from Table A - Engine Replacement Economics [EM-QUOTE]. Verdict flags derived from the R-to-V flag system.
 
 SECTION 9: MARKET INTELLIGENCE
 H2: Land Rover & Range Rover Market Intelligence
@@ -465,15 +465,15 @@ Replacement Cost Index (Reconditioned, Supply-Only)
 Engine Code
 Cost Range
 204DTD
-£3,500–£5,800
+£3,500-£5,800
 306DT TDV6/SDV6
-£6,500–£9,500
+£6,500-£9,500
 276DT
-£5,000–£7,500
+£5,000-£7,500
 368DT
-£5,500–£8,000
+£5,500-£8,000
 508PS
-£8,000–£12,000
+£8,000-£12,000
 
 
 Highest-Risk Failures
@@ -606,7 +606,7 @@ Q5: How do I know if my Land Rover is worth repairing?
 Compare your realistic vehicle value against the full replacement quote, not just the repair estimate. As a rule, if replacement cost sits above roughly 60% of what the car is worth, it's worth getting a scrap valuation before committing. Use our Ownership Decision Tool for a personalised assessment.
 
 Q6: Which is the safest Range Rover to buy used?
-The L405 (2012–2021) offers the widest margin between typical resale value and replacement cost of any generation, which is why it tops our safest-to-buy ranking. The newer L460 is even safer on paper, but at a significantly higher entry price. See our full Range Rover Rankings for details.
+The L405 (2012-2021) offers the widest margin between typical resale value and replacement cost of any generation, which is why it tops our safest-to-buy ranking. The newer L460 is even safer on paper, but at a significantly higher entry price. See our full Range Rover Rankings for details.
 
 SECTION 12: FINAL CTA
 H2: Not Sure Where to Start?
@@ -1051,7 +1051,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Most Expensive Failure",
-            "description": "306DT (TDV6/SDV6) Crank Failure - catastrophic bearing failure, £6,500–£9,500 full recon, largely unrepairable once it starts."
+            "description": "306DT (TDV6/SDV6) Crank Failure - catastrophic bearing failure, £6,500-£9,500 full recon, largely unrepairable once it starts."
           }
         },
         {
@@ -1060,7 +1060,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Safest Range Rover to Buy",
-            "description": "L405 (2012–2021) - typical values £14,000–£55,000 against £6,500–£12,000 recon cost; comfortably safe across almost every example."
+            "description": "L405 (2012-2021) - typical values £14,000-£55,000 against £6,500-£12,000 recon cost; comfortably safe across almost every example."
           }
         },
         {
@@ -1122,7 +1122,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "item": {
             "@type": "Thing",
             "name": "Ingenium Timing Chain Failure (Pre-2019)",
-            "description": "204DTD tensioner wear - significantly improved from 2019 onward. £1,200–£2,500 repair cost."
+            "description": "204DTD tensioner wear - significantly improved from 2019 onward. £1,200-£2,500 repair cost."
           }
         },
         {
@@ -1315,7 +1315,7 @@ Sub-headline: Search by model to see the full reliability picture, run the owner
           "name": "Which is the safest Range Rover to buy used?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The L405 (2012–2021) offers the widest margin between typical resale value and replacement cost of any generation, which is why it tops our safest-to-buy ranking. The newer L460 is even safer on paper, but at a significantly higher entry price. See our full Range Rover Rankings for details."
+            "text": "The L405 (2012-2021) offers the widest margin between typical resale value and replacement cost of any generation, which is why it tops our safest-to-buy ranking. The newer L460 is even safer on paper, but at a significantly higher entry price. See our full Range Rover Rankings for details."
           }
         }
       ]

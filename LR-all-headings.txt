@@ -21,7 +21,7 @@ H1: Diagnose Your Land Rover or Range Rover Problem
 H2: Land Rover & Range Rover Ownership Rankings
 
 --- homeCompare.json ---
-H2: Comparison Hub – Head-to-Head Verdicts
+H2: Comparison Hub - Head-to-Head Verdicts
 
 --- homeEconomics.json ---
 H2: The Ownership Economics Centre

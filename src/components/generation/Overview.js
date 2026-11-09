@@ -8,7 +8,7 @@ import { genCar, genCode } from "./genKit";
 // Generation page section 3 - the overview, built to the approved Defender L316 reference: on the
 // left the Highland hillside full-bleed (the loch at its edge, the green-and-gold stripe in the
 // top-left corner, the generation code as a large watermark) with the generation's own car on the
-// rocky ground, fading into the page; on the right the eyebrow, the "… — / Overview" headline, a
+// rocky ground, fading into the page; on the right the eyebrow, the "… - / Overview" headline, a
 // split green-and-gold rule and the intro in two paragraphs. Across the photo's foot a four-column
 // key-facts card (platform, predecessor, successor, sibling body styles), then the dark market band:
 // the enquiry figure in gold, the market line and a rising bar motif.
@@ -193,7 +193,7 @@ export default function Overview({ data, hero = null, model = "" }) {
               {lead}
               {accent && (
                 <>
-                  {" "}—<br />
+                  {" "}-<br />
                   <span className="text-lr-ink dark:text-lr-green">{accent}</span>
                 </>
               )}

@@ -26,8 +26,8 @@ const BADGES = [
 
 // "Velar (L560) - 2017–2020 (pre-facelift)" -> { name: "Velar (L560)", years: "2017–2020", note: "(pre-facelift)" }
 function splitGenTitle(title = "") {
-  const t = String(title).replace(/\s+[-–—]\s+/, " — ");
-  const i = t.indexOf(" — ");
+  const t = String(title).replace(/\s+[-–-]\s+/, " - ");
+  const i = t.indexOf(" - ");
   const name = i === -1 ? t : t.slice(0, i);
   const rest = i === -1 ? "" : t.slice(i + 3);
   const m = rest.match(/^(.*?)\s*(\([^)]*\))\s*$/);
@@ -71,7 +71,7 @@ const CHIP = {
   "❌": ["bg-lr-bad/12 text-lr-bad", '<path d="m8.5 8.5 7 7m0-7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>'],
 };
 function verdictChips(html = "") {
-  return html.replace(/(✅|⚠️|⚠|❌)\s*([^,.;:)—<]+?)(?=[,.;:)]|\s—\s|<|$)/gu, (_, mark, phrase) => {
+  return html.replace(/(✅|⚠️|⚠|❌)\s*([^,.;:)-<]+?)(?=[,.;:)]|\s-\s|<|$)/gu, (_, mark, phrase) => {
     const key = mark === "⚠" ? "⚠️" : mark;
     const [tone, glyph] = CHIP[key];
     const words = phrase.trim().split(/\s+/);
@@ -123,7 +123,7 @@ function GenerationCard({ table, slug }) {
           {name}
           {years && (
             <>
-              {" "}—<br />
+              {" "}-<br />
               {years}
             </>
           )}
@@ -248,7 +248,7 @@ export default function ReplacementCosts({ data, slug = "" }) {
   return (
     <section id="replacement-costs" className={`${BAND_SOFT} text-lr-head ${SANS}`}>
       <div className={`${CONTAINER} ${SECTION_Y}`}>
-        {/* the heading gets the full width (two lines: "… Engine Replacement Costs —" / "By Generation"); the
+        {/* the heading gets the full width (two lines: "… Engine Replacement Costs -" / "By Generation"); the
             intro runs on one line beside the trust tiles from 1500px, the tiles under it below that */}
         <Eyebrow>Replacement Costs</Eyebrow>
         <SectionTitle h2={data.h2} className="mt-3 md:mt-4" />

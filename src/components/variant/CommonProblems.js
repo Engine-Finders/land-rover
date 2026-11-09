@@ -31,7 +31,7 @@ const problemIcon = (title = "") => {
   return topicIcon(title);
 };
 
-const dash = (t = "") => String(t).replace(/ - /g, " — ");
+const dash = (t = "") => String(t).replace(/ - /g, " - ");
 // "Timing Belt Failure (Rubber Belt Deterioration)" -> ["Timing Belt Failure", "(Rubber Belt Deterioration)"]
 function splitTitle(title = "") {
   const i = title.indexOf(" (");
@@ -79,7 +79,7 @@ function ProblemCard({ p, n }) {
           {p.urgency?.label && (
             <Row icon="genuine-failure-data" label="Urgency">
               <span className={`font-semibold ${u.text}`}>{p.urgency.label}</span>
-              {p.urgency.text && <> — <span dangerouslySetInnerHTML={{ __html: p.urgency.text }} /></>}
+              {p.urgency.text && <> - <span dangerouslySetInnerHTML={{ __html: p.urgency.text }} /></>}
             </Row>
           )}
           {p.recommendation && (

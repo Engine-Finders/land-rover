@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "L663 P500 (508PS AJ133, 2023–present)",
+              "name": "L663 P500 (508PS AJ133, 2023-present)",
               "url": "https://landroverengine.uk/defender/l663"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Defender P500 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 5.0 V8 AJ133 engine typically costs £6,000–£10,000 supply only, with fitting adding £1,600–£2,200. Use our calculator for a figure specific to your Defender."
+                "text": "A reconditioned 5.0 V8 AJ133 engine typically costs £6,000-£10,000 supply only, with fitting adding £1,600-£2,200. Use our calculator for a figure specific to your Defender."
               }
             },
             {
@@ -100,7 +100,7 @@
               "name": "What are the common problems with the Defender P500 engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Timing chain tensioner wear (preventable with 5,000–7,500-mile oil changes), coolant crossover pipe failure, and supercharger coupler wear."
+                "text": "Timing chain tensioner wear (preventable with 5,000-7,500-mile oil changes), coolant crossover pipe failure, and supercharger coupler wear."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Defender P500 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. A well-specced P500 Defender is a £70,000–£100,000 vehicle - an £8,000 recon is only 8–11% of the car's value, making replacement a clear decision. This is well within our 60% Land Rover threshold."
+                "text": "Depends on vehicle value. A well-specced P500 Defender is a £70,000-£100,000 vehicle - an £8,000 recon is only 8-11% of the car's value, making replacement a clear decision. This is well within our 60% Land Rover threshold."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair the timing chain on a P500, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative timing chain and tensioner replacement (£2,000–£4,000) is far cheaper than a catastrophic chain snap (engine replacement at £6,000–£12,000). At the first sign of cold-start rattle, book an inspection immediately."
+                "text": "Yes - if caught early. A preventative timing chain and tensioner replacement (£2,000-£4,000) is far cheaper than a catastrophic chain snap (engine replacement at £6,000-£12,000). At the first sign of cold-start rattle, book an inspection immediately."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Defender P500 • 2023–present • 508PS AJ133 V8",
+    "tagPill": "Land Rover Defender P500 • 2023-present • 508PS AJ133 V8",
     "h1": "Land Rover Defender P500 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The 5.0-litre supercharged V8 brings 500 PS of Jaguar-Land Rover AJ133 power to the Defender range - a flagship petrol option for the L663 generation. Get quotes from trusted UK specialists today.",
     "trustBadges": [
@@ -231,35 +231,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£4,000–£6,500",
-        "fittedIndie": "£5,400–£8,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£4,000-£6,500",
+        "fittedIndie": "£5,400-£8,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£6,000–£10,000",
-        "fittedIndie": "£7,600–£11,800",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£10,000",
+        "fittedIndie": "£7,600-£11,800",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£9,600–£13,800",
-        "warranty": "12–24 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£9,600-£13,800",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£12,000–£18,000",
-        "fittedIndie": "£13,800–£20,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£12,000-£18,000",
+        "fittedIndie": "£13,800-£20,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "Figures above reflect the current AJ133 supercharged V8 generation.",
-    "labourEstimate": "Fitting a Defender P500 V8 engine typically takes 16–22 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting a Defender P500 V8 engine typically takes 16-22 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare Defender P500 engine prices from UK specialists",
       "href": "#"
@@ -271,15 +271,15 @@
         "id": 1,
         "title": "Timing Chain Tensioner Wear",
         "symptoms": "Rattling noise on cold start, metallic ticking from the front of the engine, engine warning light.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£2,000–£4,000 (chain and tensioner replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£2,000-£4,000 (chain and tensioner replacement) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only (if caught before catastrophic failure)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "if you hear rattle, book an inspection today"
         },
-        "recommendation": "The AJ133's timing chain tensioner wear is the single most documented issue on this engine. The good news: it's preventable. Shorten oil change intervals to 5,000–7,500 miles and use the correct 5W20 oil (STJLR.03.5004 spec). At the first sign of cold-start rattle, have the tensioners inspected immediately - catching it early saves you a £4,000+ repair bill.",
+        "recommendation": "The AJ133's timing chain tensioner wear is the single most documented issue on this engine. The good news: it's preventable. Shorten oil change intervals to 5,000-7,500 miles and use the correct 5W20 oil (STJLR.03.5004 spec). At the first sign of cold-start rattle, have the tensioners inspected immediately - catching it early saves you a £4,000+ repair bill.",
         "failureLink": {
           "label": "",
           "href": "/failures/timing-chain-tensioner-failure/"
@@ -289,15 +289,15 @@
         "id": 2,
         "title": "Coolant Crossover Pipe Failure",
         "symptoms": "Coolant loss with no visible external leak, low coolant warning light, occasional burning smell, overheating.",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£800–£1,500 (pipe replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£800-£1,500 (pipe replacement) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if coolant levels drop"
         },
-        "recommendation": "The plastic coolant crossover pipes on the AJ133 are a known weak point - they deteriorate every 4–5 years. If you notice coolant loss or a sweet smell from the engine bay, have the crossover pipes inspected. Replacing them preventatively is far cheaper than the overheating damage they can cause if they fail completely.",
+        "recommendation": "The plastic coolant crossover pipes on the AJ133 are a known weak point - they deteriorate every 4-5 years. If you notice coolant loss or a sweet smell from the engine bay, have the crossover pipes inspected. Replacing them preventatively is far cheaper than the overheating damage they can cause if they fail completely.",
         "failureLink": {
           "label": "",
           "href": "/failures/coolant-leak/"
@@ -307,9 +307,9 @@
         "id": 3,
         "title": "Supercharger Coupler Wear",
         "symptoms": "Rattling or knocking noise from the supercharger, particularly at idle, loss of supercharger efficiency.",
-        "typicalMileage": "70,000–120,000 miles",
-        "repairCost": "£500–£1,200 (coupler replacement) [PLACEHOLDER - confirm vs cost sheet]",
-        "replacementCost": "£1,500–£3,000 (complete supercharger) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "70,000-120,000 miles",
+        "repairCost": "£500-£1,200 (coupler replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "replacementCost": "£1,500-£3,000 (complete supercharger) [PLACEHOLDER - confirm vs cost sheet]",
         "urgency": {
           "icon": "🟡",
           "label": "Monitor",
@@ -345,19 +345,19 @@
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£2,000–£4,000",
+          "typicalCost": "£2,000-£4,000",
           "whenItMakesSense": "Preventative - catch it before chain skips"
         },
         {
           "problem": "Coolant crossover pipe failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,500",
-          "whenItMakesSense": "Straightforward fix - do preventatively every 4–5 years"
+          "typicalCost": "£800-£1,500",
+          "whenItMakesSense": "Straightforward fix - do preventatively every 4-5 years"
         },
         {
           "problem": "Supercharger coupler wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Routine maintenance - replace when noisy"
         },
         {
@@ -369,7 +369,7 @@
         {
           "problem": "Supercharger failure (internal)",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£1,500–£5,000",
+          "typicalCost": "£1,500-£5,000",
           "whenItMakesSense": "Viable on lower-mileage examples; assess overall engine condition"
         }
       ]
@@ -377,7 +377,7 @@
     "buyingChecks": {
       "title": "Buying This Defender P500? Check These First",
       "buyIf": [
-        "* Documented oil change history with 5,000–7,500-mile intervals (not 15,000-mile factory schedule)",
+        "* Documented oil change history with 5,000-7,500-mile intervals (not 15,000-mile factory schedule)",
         "* Coolant crossover pipes replaced preventatively",
         "* No cold-start rattle or supercharger noise",
         "* Full JLR service history with correct 5W20 oil (STJLR.03.5004 spec)"
@@ -399,13 +399,13 @@
     "intro": "Before you buy a used Land Rover Defender P500 (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for rattling or ticking; timing chain tensioner wear is the main concern on this engine",
-      "* Service History - including engine era (AJ133 V8) and confirmed 5,000–7,500-mile oil change intervals",
+      "* Service History - including engine era (AJ133 V8) and confirmed 5,000-7,500-mile oil change intervals",
       "* Coolant Level - Check for low coolant; crossover pipe failure is common",
       "* Supercharger Noise - Listen for rattling or knocking at idle - coupler wear indicator",
       "* Oil Consumption - AJ133 V8s can consume oil; monitor levels between services",
       "* Engine Warning Light - Have codes been read? Any unresolved issues?",
       "* MOT History - Check for emissions-related failures",
-      "* Fuel Economy - Expect 19–20 mpg combined; heavy consumption may indicate issues"
+      "* Fuel Economy - Expect 19-20 mpg combined; heavy consumption may indicate issues"
     ]
   },
   "engineCodes": {
@@ -419,10 +419,10 @@
     "rows": [
       {
         "engineCode": "508PS (AJ133) 5.0 Supercharged V8",
-        "years": "2023–present",
-        "power": "500 PS (493 bhp) @ 6,000–6,500 rpm; 610 Nm @ 2,500–5,000 rpm",
+        "years": "2023-present",
+        "power": "500 PS (493 bhp) @ 6,000-6,500 rpm; 610 Nm @ 2,500-5,000 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER]"
+        "avgReconCost": "£6,000-£10,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -489,7 +489,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Defender P500 engine replacement cost in the UK?",
-        "answer": "A reconditioned 5.0 V8 AJ133 engine typically costs £6,000–£10,000 supply only, with fitting adding £1,600–£2,200. Use our calculator for a figure specific to your Defender."
+        "answer": "A reconditioned 5.0 V8 AJ133 engine typically costs £6,000-£10,000 supply only, with fitting adding £1,600-£2,200. Use our calculator for a figure specific to your Defender."
       },
       {
         "id": 2,
@@ -499,12 +499,12 @@
       {
         "id": 3,
         "question": "What are the common problems with the Defender P500 engine?",
-        "answer": "Timing chain tensioner wear (preventable with 5,000–7,500-mile oil changes), coolant crossover pipe failure, and supercharger coupler wear."
+        "answer": "Timing chain tensioner wear (preventable with 5,000-7,500-mile oil changes), coolant crossover pipe failure, and supercharger coupler wear."
       },
       {
         "id": 4,
         "question": "Is it worth replacing a Defender P500 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. A well-specced P500 Defender is a £70,000–£100,000 vehicle - an £8,000 recon is only 8–11% of the car's value, making replacement a clear decision. This is well within our 60% Land Rover threshold."
+        "answer": "Depends on vehicle value. A well-specced P500 Defender is a £70,000-£100,000 vehicle - an £8,000 recon is only 8-11% of the car's value, making replacement a clear decision. This is well within our 60% Land Rover threshold."
       },
       {
         "id": 5,
@@ -514,7 +514,7 @@
       {
         "id": 6,
         "question": "Can I repair the timing chain on a P500, or does it need replacement?",
-        "answer": "Yes - if caught early. A preventative timing chain and tensioner replacement (£2,000–£4,000) is far cheaper than a catastrophic chain snap (engine replacement at £6,000–£12,000). At the first sign of cold-start rattle, book an inspection immediately."
+        "answer": "Yes - if caught early. A preventative timing chain and tensioner replacement (£2,000-£4,000) is far cheaper than a catastrophic chain snap (engine replacement at £6,000-£12,000). At the first sign of cold-start rattle, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

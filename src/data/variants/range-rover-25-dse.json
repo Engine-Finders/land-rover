@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "P38A 2.5 DSE (BMW M51, 1996–2002)",
+              "name": "P38A 2.5 DSE (BMW M51, 1996-2002)",
               "url": "https://landroverengine.uk/range-rover/p38a"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Range Rover 2.5 DSE engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned M51 engine typically costs £2,000–£3,200 supply only, with fitting adding £1,000–£1,400. Use our calculator for a figure specific to your Range Rover."
+                "text": "A reconditioned M51 engine typically costs £2,000-£3,200 supply only, with fitting adding £1,000-£1,400. Use our calculator for a figure specific to your Range Rover."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Range Rover 2.5 DSE engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. A P38A Range Rover is a £2,000–£8,000 vehicle - a £2,600 recon is 33–130% of the car's value. For lower-value examples (sub-£4,000), replacement may exceed our 60% Land Rover scrap threshold. Evaluate carefully - a well-maintained, low-mileage example may justify replacement; a tired one may not. Body condition and overall vehicle health are also significant factors."
+                "text": "Depends on vehicle value. A P38A Range Rover is a £2,000-£8,000 vehicle - a £2,600 recon is 33-130% of the car's value. For lower-value examples (sub-£4,000), replacement may exceed our 60% Land Rover scrap threshold. Evaluate carefully - a well-maintained, low-mileage example may justify replacement; a tired one may not. Body condition and overall vehicle health are also significant factors."
               }
             },
             {
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover 2.5 DSE • 1996–2002 • BMW <a href='https://landroverengine.uk/engine/m51'>M51</a>",
+    "tagPill": "Land Rover Range Rover 2.5 DSE • 1996-2002 • BMW <a href='https://landroverengine.uk/engine/m51'>M51</a>",
     "h1": "Land Rover Range Rover 2.5 DSE Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The BMW-sourced 2.5-litre straight-six diesel powered the P38A Range Rover - a smooth, durable engine with a well-earned reputation for longevity. Get quotes from trusted UK specialists today.",
     "trustBadges": [
@@ -231,23 +231,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£900–£1,800",
-        "fittedIndie": "£1,700–£2,800",
-        "warranty": "1–6 months",
+        "supplyOnly": "£900-£1,800",
+        "fittedIndie": "£1,700-£2,800",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; vehicle under £2,500"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,000–£3,200",
-        "fittedIndie": "£2,900–£4,300",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,000-£3,200",
+        "fittedIndie": "£2,900-£4,300",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£2,500–£3,500",
-        "fittedIndie": "£3,500–£4,700",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,500-£3,500",
+        "fittedIndie": "£3,500-£4,700",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
@@ -259,7 +259,7 @@
       }
     ],
     "figuresNote": "Figures above reflect the current M51 2.5 DSE generation.",
-    "labourEstimate": "Fitting a Range Rover 2.5 DSE engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting a Range Rover 2.5 DSE engine typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare Range Rover 2.5 DSE engine prices from UK specialists",
       "href": "#"
@@ -271,8 +271,8 @@
         "id": 1,
         "title": "Injector Seal Failure (\"Black Death\")",
         "symptoms": "Ticking or chuffing noise from the injector area, black carbon buildup around injectors, rough idle, loss of power, diesel smell in the cabin.",
-        "typicalMileage": "80,000–150,000 miles",
-        "repairCost": "£200–£600 (injector seal replacement, plus cleaning) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "80,000-150,000 miles",
+        "repairCost": "£200-£600 (injector seal replacement, plus cleaning) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -289,15 +289,15 @@
         "id": 2,
         "title": "Injection Pump Wear (Bosch VP)",
         "symptoms": "Poor starting, rough idle, loss of power, hesitation on acceleration, stalling.",
-        "typicalMileage": "100,000–180,000 miles",
-        "repairCost": "£500–£1,200 (pump rebuild or replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "100,000-180,000 miles",
+        "repairCost": "£500-£1,200 (pump rebuild or replacement) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
           "label": "Monitor",
           "text": "book inspection soon"
         },
-        "recommendation": "The Bosch VP injection pump on the M51 has a finite life - typically 100,000–180,000 miles. Regular fuel filter changes and using high-quality diesel can extend its life. If you experience poor starting or hesitation, have the pump tested - rebuilding it is far cheaper than a complete replacement.",
+        "recommendation": "The Bosch VP injection pump on the M51 has a finite life - typically 100,000-180,000 miles. Regular fuel filter changes and using high-quality diesel can extend its life. If you experience poor starting or hesitation, have the pump tested - rebuilding it is far cheaper than a complete replacement.",
         "failureLink": {
           "label": "",
           "href": "/failures/injection-pump-failure/"
@@ -307,8 +307,8 @@
         "id": 3,
         "title": "Cooling System Issues (Thermostat, Water Pump, Radiator)",
         "symptoms": "Slow warm-up, temperature gauge fluctuations, coolant loss, overheating, heater not working properly.",
-        "typicalMileage": "60,000–120,000 miles",
-        "repairCost": "£200–£800 (thermostat, water pump, or radiator replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "60,000-120,000 miles",
+        "repairCost": "£200-£800 (thermostat, water pump, or radiator replacement) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -345,25 +345,25 @@
         {
           "problem": "Injector seal failure (\"Black Death\")",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£600",
+          "typicalCost": "£200-£600",
           "whenItMakesSense": "Catch it early - before it damages the cylinder head"
         },
         {
           "problem": "Injection pump wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Straightforward rebuild or replacement"
         },
         {
           "problem": "Cooling system issues",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£800",
+          "typicalCost": "£200-£800",
           "whenItMakesSense": "Routine maintenance - do preventatively"
         },
         {
           "problem": "Head gasket failure",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£800–£1,500",
+          "typicalCost": "£800-£1,500",
           "whenItMakesSense": "Viable on lower-mileage examples; assess overall condition"
         },
         {
@@ -419,10 +419,10 @@
     "rows": [
       {
         "engineCode": "BMW M51 (2.5-litre 24v straight-six turbo-diesel)",
-        "years": "1996–2002",
+        "years": "1996-2002",
         "power": "136 PS (134 bhp) @ 4,400 rpm; 280 Nm @ 2,200 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,000–£3,200 [PLACEHOLDER]"
+        "avgReconCost": "£2,000-£3,200 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -489,7 +489,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Range Rover 2.5 DSE engine replacement cost in the UK?",
-        "answer": "A reconditioned M51 engine typically costs £2,000–£3,200 supply only, with fitting adding £1,000–£1,400. Use our calculator for a figure specific to your Range Rover."
+        "answer": "A reconditioned M51 engine typically costs £2,000-£3,200 supply only, with fitting adding £1,000-£1,400. Use our calculator for a figure specific to your Range Rover."
       },
       {
         "id": 2,
@@ -504,7 +504,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Range Rover 2.5 DSE engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. A P38A Range Rover is a £2,000–£8,000 vehicle - a £2,600 recon is 33–130% of the car's value. For lower-value examples (sub-£4,000), replacement may exceed our 60% Land Rover scrap threshold. Evaluate carefully - a well-maintained, low-mileage example may justify replacement; a tired one may not. Body condition and overall vehicle health are also significant factors."
+        "answer": "Depends on vehicle value. A P38A Range Rover is a £2,000-£8,000 vehicle - a £2,600 recon is 33-130% of the car's value. For lower-value examples (sub-£4,000), replacement may exceed our 60% Land Rover scrap threshold. Evaluate carefully - a well-maintained, low-mileage example may justify replacement; a tired one may not. Body condition and overall vehicle health are also significant factors."
       },
       {
         "id": 5,
@@ -539,7 +539,7 @@
       {
         "id": 5,
         "question": "Production Note: Write the internal note confirming all the checks: why AggregateRating was omitted, where the price range came from, confirmation of Organization usage, and the crucial Authority Model consistency check (confirming the reliability rating source and cost figure sources).",
-        "answer": "The assistant's thinking would also involve checking all the small details from the document, like character limits for meta tags, exact schema types (Organization, not LocalBusiness), and ensuring the engine code in the schema matches the one in the Era Map (BMW M51). The user's deep need here is for a complete, ready-to-publish variant page that follows all the rigorous rules of their content production system, maintaining authority, consistency, and SEO best practices. The assistant seems to be generating this efficiently, pulling the needed data from Part 1 (like the specific problem cards, FAQ questions, costs) and slotting it into the Part 2 template. The tone is professional and systematic, just like the previous Part 2 responses in the history. BRAND-VARIANT-PAGE-PART-2 OUTPUT Based on Part 1 for Land Rover • Range Rover • 2.5 DSE (P38A, 1996–2002, BMW M51)"
+        "answer": "The assistant's thinking would also involve checking all the small details from the document, like character limits for meta tags, exact schema types (Organization, not LocalBusiness), and ensuring the engine code in the schema matches the one in the Era Map (BMW M51). The user's deep need here is for a complete, ready-to-publish variant page that follows all the rigorous rules of their content production system, maintaining authority, consistency, and SEO best practices. The assistant seems to be generating this efficiently, pulling the needed data from Part 1 (like the specific problem cards, FAQ questions, costs) and slotting it into the Part 2 template. The tone is professional and systematic, just like the previous Part 2 responses in the history. BRAND-VARIANT-PAGE-PART-2 OUTPUT Based on Part 1 for Land Rover • Range Rover • 2.5 DSE (P38A, 1996-2002, BMW M51)"
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

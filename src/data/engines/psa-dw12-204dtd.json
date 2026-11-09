@@ -82,7 +82,7 @@
               "name": "How much does an Ingenium 2.0 diesel engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Ingenium 2.0 diesel typically costs £3,500–£5,800 supply only, varying by power output and specific sub-variant. Fitting adds £900–£1,700 depending on labour rates and vehicle model."
+                "text": "A reconditioned Ingenium 2.0 diesel typically costs £3,500-£5,800 supply only, varying by power output and specific sub-variant. Fitting adds £900-£1,700 depending on labour rates and vehicle model."
               }
             },
             {
@@ -106,7 +106,7 @@
               "name": "Which Land Rover models use the Ingenium 2.0 diesel?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) - spanning 150–240 hp outputs."
+                "text": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) - spanning 150-240 hp outputs."
               }
             },
             {
@@ -190,7 +190,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover • Ingenium 2.0 D (204DTD/224DT) • Diesel • 2.0L I4 Turbo • 2015–present",
+    "tagPill": "Land Rover • Ingenium 2.0 D (204DTD/224DT) • Diesel • 2.0L I4 Turbo • 2015-present",
     "h1": "Land Rover <a href='https://landroverengine.uk/engine/ingenium-20-diesel'>Ingenium 2.0 Diesel</a> Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Ingenium 2.0 diesel is JLR's modern four-cylinder workhorse - pre‑2019 timing chain tensioners are the defining risk. Backed by 1,500+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -232,11 +232,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "150–240 hp [THIRD-PARTY]"
+        "value": "150-240 hp [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "2015–present"
+        "value": "2015-present"
       },
       {
         "metric": "Models Fitted (Land Rover only)",
@@ -268,7 +268,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £3,500–£5,800 → £4,650 midpoint → falls in £3,000–£4,999 bracket → 16)"
+          "score": "16 (Midpoint of Reconditioned (Supply Only) range: £3,500-£5,800 → £4,650 midpoint → falls in £3,000-£4,999 bracket → 16)"
         },
         {
           "dimension": "Repairability",
@@ -280,7 +280,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "12 (Reconditioned cost (£4,650 midpoint) as % of lowest typical vehicle value (Discovery Sport ~£8,000–£12,000) = 39–58% → falls in 45–59% bracket → 12)"
+          "score": "12 (Reconditioned cost (£4,650 midpoint) as % of lowest typical vehicle value (Discovery Sport ~£8,000-£12,000) = 39-58% → falls in 45-59% bracket → 12)"
         },
         {
           "dimension": "Total",
@@ -304,25 +304,25 @@
         "model": "Land Rover Discovery Sport",
         "generation": "L550",
         "variantBadge": "D150 / D180 / D240 (204DTD)",
-        "years": "2015–present"
+        "years": "2015-present"
       },
       {
         "model": "Land Rover Evoque",
         "generation": "L551",
         "variantBadge": "D150 / D180 / D240 (204DTD)",
-        "years": "2019–present"
+        "years": "2019-present"
       },
       {
         "model": "Land Rover Velar",
         "generation": "L560",
         "variantBadge": "D180 / D240 (204DTD)",
-        "years": "2017–present"
+        "years": "2017-present"
       },
       {
         "model": "Land Rover Defender",
         "generation": "L663",
         "variantBadge": "D200 / D240 (204DTD)",
-        "years": "2020–present"
+        "years": "2020-present"
       }
     ],
     "crossBrandNote": "Also powers the Jaguar XE, XF, F‑Pace and E‑Pace → [Jaguar Ingenium 2.0 Diesel page]."
@@ -337,24 +337,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£2,000–£3,500",
-        "fittedIndie": "£2,900–£4,900",
+        "supplyOnly": "£2,000-£3,500",
+        "fittedIndie": "£2,900-£4,900",
         "warranty": "Varies by supplier"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£3,500–£5,800",
-        "fittedIndie": "£4,500–£7,300",
+        "supplyOnly": "£3,500-£5,800",
+        "fittedIndie": "£4,500-£7,300",
         "warranty": "12 months typical"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£4,800–£7,000",
-        "fittedIndie": "£5,800–£8,500",
-        "warranty": "12–24 months typical"
+        "supplyOnly": "£4,800-£7,000",
+        "fittedIndie": "£5,800-£8,500",
+        "warranty": "12-24 months typical"
       }
     ],
-    "labourEstimate": "Fitting an Ingenium 2.0 diesel typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "labourEstimate": "Fitting an Ingenium 2.0 diesel typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM-QUOTE].",
     "sharedCostNote": "Parts cost is identical across Land Rover and Jaguar applications; labour time varies slightly by engine bay access and model‑specific subframe removal.",
     "cta": {
       "label": "→ Compare Ingenium 2.0 Diesel engine prices from UK specialists",
@@ -366,7 +366,7 @@
       {
         "id": 1,
         "question": "How much does an Ingenium 2.0 diesel engine replacement cost?",
-        "answer": "A reconditioned Ingenium 2.0 diesel typically costs £3,500–£5,800 supply only, varying by power output and specific sub‑variant. Fitting adds £900–£1,700 depending on labour rates and vehicle model."
+        "answer": "A reconditioned Ingenium 2.0 diesel typically costs £3,500-£5,800 supply only, varying by power output and specific sub‑variant. Fitting adds £900-£1,700 depending on labour rates and vehicle model."
       },
       {
         "id": 2,
@@ -381,7 +381,7 @@
       {
         "id": 4,
         "question": "Which Land Rover models use the Ingenium 2.0 diesel?",
-        "answer": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) - spanning 150–240 hp outputs."
+        "answer": "It powers the Discovery Sport (L550), Evoque (L551), Velar (L560), and Defender (L663) - spanning 150-240 hp outputs."
       },
       {
         "id": 5,

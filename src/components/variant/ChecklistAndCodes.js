@@ -21,7 +21,7 @@ const SANS = "font-[family-name:var(--font-instrument-sans)]";
 const LABEL = "text-[13px] font-semibold uppercase tracking-[0.08em] text-lr-gold md:text-[14px] xl:text-[15px]";
 const TITLE = `${H2} text-lr-head`;
 const CARD = "rounded-lg border border-lr-line bg-lr-card shadow-[0_14px_30px_-26px_var(--lr-shadow)]";
-const dash = (t = "") => String(t).replace(/ - /g, " — ");
+const dash = (t = "") => String(t).replace(/ - /g, " - ");
 
 // studio backdrop: concrete wall with window light from the right, a floor with a soft horizon
 const GRAIN =
@@ -57,7 +57,7 @@ function CheckIcon({ label }) {
 // "* 2. Cold Start - Listen for ..." -> { label: "Cold Start", text: "Listen for ..." }
 function splitItem(item = "") {
   const clean = stripBullet(item).replace(/^\d+\.\s*/, "");
-  const i = clean.search(/\s[-–—:]\s/);
+  const i = clean.search(/\s[---:]\s/);
   return i === -1 ? { label: clean, text: "" } : { label: clean.slice(0, i).trim(), text: clean.slice(i + 3).trim() };
 }
 
@@ -109,24 +109,24 @@ function BuySmart({ id, engineName, className = "" }) {
 
 /* ---------- engine codes ---------- */
 const DEFAULT_COLUMNS = ["Engine Code", "Years", "Power", "2025 Enquiries", "Avg. Recon Cost"];
-// "107 bhp @ 4,000rpm" -> "107 bhp" / "@ 4,000rpm"; "- (pattern data)" -> "—" / "(pattern data)"
+// "107 bhp @ 4,000rpm" -> "107 bhp" / "@ 4,000rpm"; "- (pattern data)" -> "-" / "(pattern data)"
 function TwoLine({ value = "" }) {
-  const v = String(value || "—").trim();
+  const v = String(value || "-").trim();
   let m = v.match(/^(.*?)\s+(@.*)$/);
   if (m) return <><span className="block">{m[1]}</span><span className="block">{m[2]}</span></>;
-  m = v.match(/^[-–—]\s*(\(.*\))$/);
-  if (m) return <><span className="block">—</span><span className="block">{m[1]}</span></>;
+  m = v.match(/^[---]\s*(\(.*\))$/);
+  if (m) return <><span className="block">-</span><span className="block">{m[1]}</span></>;
   return <Tagged value={v} />;
 }
 function Cost({ value = "" }) {
-  const m = String(value || "—").match(/^(.*?)\s*(\[[^\]]+\])\s*$/);
+  const m = String(value || "-").match(/^(.*?)\s*(\[[^\]]+\])\s*$/);
   return m ? (
     <>
       <span className="block whitespace-nowrap">{m[1]}</span>
       <span className="mt-0.5 block text-[13px] text-lr-ink dark:text-lr-green xl:text-[15px]">{m[2]}</span>
     </>
   ) : (
-    <span className="whitespace-nowrap">{value || "—"}</span>
+    <span className="whitespace-nowrap">{value || "-"}</span>
   );
 }
 function specIcon(label = "") {

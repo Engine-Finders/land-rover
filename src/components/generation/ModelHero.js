@@ -26,7 +26,7 @@ const WASH = {
 
 // "Land Rover Defender L316 Engines - The Complete UK Guide" -> lead / accent
 function splitH1(h1 = "") {
-  const m = String(h1).match(/^([\s\S]*?)\s+[-–—]\s+([\s\S]+)$/);
+  const m = String(h1).match(/^([\s\S]*?)\s+[-–-]\s+([\s\S]+)$/);
   return m ? { lead: m[1], accent: m[2] } : { lead: h1, accent: "" };
 }
 
@@ -205,7 +205,7 @@ export default function ModelHero({ data, model = "" }) {
             {lead}
             {accent && (
               <>
-                {" "}—{" "}
+                {" "}-{" "}
                 <span className="text-lr-ink dark:text-lr-green">{accent}</span>
               </>
             )}

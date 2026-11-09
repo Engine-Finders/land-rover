@@ -10,7 +10,7 @@ import { localHtml } from "@/components/models/generationsFaqLinks";
 import { engineDbCar, genCode } from "./genKit";
 
 // Generation page section 2 - the engine database, built to the approved Defender L316 references
-// (day + night): the green eyebrow, the serif "… Engine Codes — / The Complete Database" headline
+// (day + night): the green eyebrow, the serif "… Engine Codes - / The Complete Database" headline
 // and a two-line intro; on the right the Highland glen (a soft fade by day, a diagonal gold-edged cut
 // at night, the green-and-gold stripe at the right edge by day) with the generation's own car
 // standing on it; the ten-column engine table overlapping the photo's foot (fuel icon, stars with
@@ -46,7 +46,7 @@ function splitFuel(raw = "") {
 }
 
 function Fuel({ value, stacked = true }) {
-  if (!value) return <span className="text-lr-muted">—</span>;
+  if (!value) return <span className="text-lr-muted">-</span>;
   const f = splitFuel(value);
   const tone = f.kind === "diesel" ? "text-lr-green" : "text-lr-warn";
   return (
@@ -63,30 +63,30 @@ function Fuel({ value, stacked = true }) {
 // "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]" -> stars + "PROVISIONAL"
 function Rating({ value, inline = false }) {
   const r = parseRating(value);
-  if (!r.stars) return <span className="text-lr-muted">—</span>;
+  if (!r.stars) return <span className="text-lr-muted">-</span>;
   const tag = (r.rest.match(/\[([^\]]+)\]/)?.[1] || stripHtml(r.rest)).trim();
-  const label = tag.split(/\s+[-–—]\s+/)[0];
+  const label = tag.split(/\s+[-–-]\s+/)[0];
   return (
     <span className={`inline-flex ${inline ? "flex-wrap items-center gap-x-2.5 gap-y-1" : "flex-col items-center gap-1"}`} title={tag || undefined}>
       <Stars full={r.full} half={r.half} empty={r.empty} size="h-4 w-4 xl:h-[17px] xl:w-[17px]" className="gap-0.5 dark:text-lr-gold!" />
       {label && <span className="text-[11.5px] font-medium uppercase leading-none tracking-[0.08em] text-lr-body dark:text-lr-muted">{label}</span>}
-      {tag !== label && <span className="sr-only">{tag.slice(label.length).replace(/^\s*[-–—]\s*/, "")}</span>}
+      {tag !== label && <span className="sr-only">{tag.slice(label.length).replace(/^\s*[-–-]\s*/, "")}</span>}
     </span>
   );
 }
 
-// "700 (JLR-wide) [EM-VERIFIED]" -> "700" over "(JLR-wide) [EM-VERIFIED]"; "- (pattern data)" -> "—" over "(pattern data)"
+// "700 (JLR-wide) [EM-VERIFIED]" -> "700" over "(JLR-wide) [EM-VERIFIED]"; "- (pattern data)" -> "-" over "(pattern data)"
 function Enquiries({ value }) {
   const raw = String(value || "").trim();
-  if (!raw) return <span className="text-lr-muted">—</span>;
+  if (!raw) return <span className="text-lr-muted">-</span>;
   const { main, tags } = splitTags(raw.replace(/^\[PATTERN DATA\]$/i, "- (pattern data)"));
   const text = main.replace(/\s+/g, " ").trim();
-  const m = text.match(/^(—|[\d,]+\+?)\s*(.*)$/);
+  const m = text.match(/^(-|[\d,]+\+?)\s*(.*)$/);
   const figure = m ? m[1] : text;
   const sub = m ? m[2] : "";
   return (
     <span className="inline-flex flex-col items-center gap-0.5 leading-snug">
-      <span className={figure === "—" ? "text-lr-muted" : "font-semibold text-lr-head"} dangerouslySetInnerHTML={{ __html: figure }} />
+      <span className={figure === "-" ? "text-lr-muted" : "font-semibold text-lr-head"} dangerouslySetInnerHTML={{ __html: figure }} />
       {(sub || tags.length > 0) && (
         <span className="text-[12.5px] text-lr-muted xl:text-[13px]">
           {sub && <span dangerouslySetInnerHTML={{ __html: sub }} />}
@@ -101,7 +101,7 @@ function Enquiries({ value }) {
 
 function Cost({ value }) {
   const { main, tags } = splitTags(value || "");
-  if (!main && !tags.length) return <span className="text-lr-muted">—</span>;
+  if (!main && !tags.length) return <span className="text-lr-muted">-</span>;
   return (
     <span className="inline-flex flex-col items-center gap-0.5 leading-snug">
       {main && <span className="whitespace-nowrap font-semibold text-lr-head" dangerouslySetInnerHTML={{ __html: main }} />}
@@ -114,7 +114,7 @@ function Cost({ value }) {
 
 function Plain({ value, className = "" }) {
   const v = html(value);
-  return v ? <span className={`${LINKS} ${className}`} dangerouslySetInnerHTML={{ __html: v }} /> : <span className="text-lr-muted">—</span>;
+  return v ? <span className={`${LINKS} ${className}`} dangerouslySetInnerHTML={{ __html: v }} /> : <span className="text-lr-muted">-</span>;
 }
 
 function Cell({ field, engine }) {
@@ -136,7 +136,7 @@ function EngineCard({ engine, labels, className = "" }) {
     <li className={`min-w-0 rounded-xl border border-lr-line bg-lr-card p-4 shadow-[0_18px_44px_-36px_var(--lr-shadow)] md:p-5 ${className}`}>
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <h3 className={`text-[17px] font-semibold leading-snug text-lr-head md:text-[18px] ${CODE_LINKS}`} dangerouslySetInnerHTML={{ __html: html(engine.engineCode) || "—" }} />
+          <h3 className={`text-[17px] font-semibold leading-snug text-lr-head md:text-[18px] ${CODE_LINKS}`} dangerouslySetInnerHTML={{ __html: html(engine.engineCode) || "-" }} />
           {(engine.family || fuelSub) && (
             <p className={`mt-0.5 text-[14px] leading-snug text-lr-body ${LINKS}`}>
               {engine.family && <span dangerouslySetInnerHTML={{ __html: html(engine.family) }} />}
@@ -157,7 +157,7 @@ function EngineCard({ engine, labels, className = "" }) {
         {["displacement", "power", "years", "variants"].map((f) => (
           <div key={f} className="min-w-0">
             <dt className="text-[13px] leading-snug text-lr-muted">{label(f)}</dt>
-            <dd className={`mt-0.5 text-[14px] font-medium leading-snug text-lr-head ${LINKS}`} dangerouslySetInnerHTML={{ __html: html(engine[f]) || "—" }} />
+            <dd className={`mt-0.5 text-[14px] font-medium leading-snug text-lr-head ${LINKS}`} dangerouslySetInnerHTML={{ __html: html(engine[f]) || "-" }} />
           </div>
         ))}
       </dl>
@@ -425,7 +425,7 @@ export default function EngineDatabase({ data, hero = null, model = "" }) {
   const { lead, accent } = splitHeading(prose(data.h2 || ""));
   const [accentFirst, ...accentRest] = accent.split(" ");
   const intro = prose(localHtml(data.subHeadline || ""));
-  const introCut = intro.indexOf(" — ");
+  const introCut = intro.indexOf(" - ");
   const code = genCode(`${hero?.h1 || ""} ${hero?.tagPill || ""} ${data.h2 || ""}`);
   const car = engineDbCar(hero || { h1: data.h2 }, model);
 
@@ -451,7 +451,7 @@ export default function EngineDatabase({ data, hero = null, model = "" }) {
               {lead}
               {accent && (
                 <>
-                  {" "}—<br />
+                  {" "}-<br />
                   <span className="dark:text-lr-green">{accentFirst}</span>
                   {accentRest.length > 0 && <span className="text-lr-green"> {accentRest.join(" ")}</span>}
                 </>
@@ -461,7 +461,7 @@ export default function EngineDatabase({ data, hero = null, model = "" }) {
               <p className={`${INTRO} md:mt-5 lg:mt-4 lg:max-w-[min(40em,calc(57vw_-_56px))] xl:max-w-[min(40em,calc(57vw_-_max(48px,50vw_-_752px)_-_16px))] ${LINKS}`}>
                 {introCut > 0 ? (
                   <>
-                    <span dangerouslySetInnerHTML={{ __html: `${intro.slice(0, introCut)} —` }} />
+                    <span dangerouslySetInnerHTML={{ __html: `${intro.slice(0, introCut)} -` }} />
                     <span className="lg:block" dangerouslySetInnerHTML={{ __html: ` ${intro.slice(introCut + 3)}` }} />
                   </>
                 ) : (

@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "L460 P530 (S68, 2022–present)",
+              "name": "L460 P530 (S68, 2022-present)",
               "url": "https://landroverengine.uk/range-rover/l460"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Range Rover P530 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned S68 engine typically costs £10,000–£16,000 supply only. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £35,000. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned S68 engine typically costs £10,000-£16,000 supply only. Fitting adds £1,500-£2,500. Main dealer new engines can exceed £35,000. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Range Rover P530 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Against a £80,000–£120,000+ Range Rover P530, a £10,000–£16,000 recon engine is a manageable 10–15% of the vehicle's value - well worth it. Given the L460's strong retained values, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+                "text": "Against a £80,000-£120,000+ Range Rover P530, a £10,000-£16,000 recon engine is a manageable 10-15% of the vehicle's value - well worth it. Given the L460's strong retained values, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
               }
             },
             {
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover P530 • 2022–present • 4.4 V8 (BMW S68)",
+    "tagPill": "Land Rover Range Rover P530 • 2022-present • 4.4 V8 (BMW S68)",
     "h1": "Land Rover Range Rover P530 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Range Rover P530 specialists. Compare reconditioned, rebuilt and used 4.4 V8 engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "L460",
-        "years": "2022–present",
+        "years": "2022-present",
         "engineCode": "S68 (4.4 TT V8, BMW-derived)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£10,000–£16,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£10,000-£16,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "BMW's latest hot-vee V8 - high power density; watch for oil leaks from hot-vee gaskets and coolant system vulnerabilities."
       }
     ],
@@ -240,35 +240,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£9,500–£14,000",
-        "warranty": "3–6 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£9,500-£14,000",
+        "warranty": "3-6 months",
         "bestFor": "Budget priority; vehicle under £30,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£10,000–£14,000",
-        "fittedIndie": "£11,500–£16,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£10,000-£14,000",
+        "fittedIndie": "£11,500-£16,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£12,000–£16,000",
-        "fittedIndie": "£13,500–£18,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£12,000-£16,000",
+        "fittedIndie": "£13,500-£18,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£25,000–£35,000",
-        "fittedIndie": "£28,000–£40,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£25,000-£35,000",
+        "fittedIndie": "£28,000-£40,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims; dealer costs can exceed £35,000"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting a Range Rover P530 engine typically takes 18–24 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting a Range Rover P530 engine typically takes 18-24 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "",
       "href": "#"
@@ -299,25 +299,25 @@
         {
           "problem": "Hot-vee oil leaks (S68)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Straightforward gasket replacement; catch it before electrical damage"
         },
         {
           "problem": "Coolant crossover pipe failure (S68)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Replace plastic pipes as a preventative measure at 50,000 miles"
         },
         {
           "problem": "PCV valve/oil separator issues (S68)",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Straightforward replacement; don't let oil consumption worsen"
         },
         {
           "problem": "Water pump failure (S68)",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,200",
+          "typicalCost": "£600-£1,200",
           "whenItMakesSense": "Replace as a preventative item at 60,000 miles"
         },
         {
@@ -329,7 +329,7 @@
         {
           "problem": "Turbocharger failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£3,000–£6,000",
+          "typicalCost": "£3,000-£6,000",
           "whenItMakesSense": "Repairable by specialists; do not drive with boost issues"
         }
       ]
@@ -379,10 +379,10 @@
     "rows": [
       {
         "engineCode": "S68",
-        "years": "2022–present",
+        "years": "2022-present",
         "power": "530 bhp / 750 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£10,000–£16,000 [PLACEHOLDER]"
+        "avgReconCost": "£10,000-£16,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "",
@@ -449,7 +449,7 @@
       {
         "id": 1,
         "question": "How much does a Range Rover P530 engine replacement cost in the UK?",
-        "answer": "A reconditioned S68 engine typically costs £10,000–£16,000 supply only. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £35,000. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned S68 engine typically costs £10,000-£16,000 supply only. Fitting adds £1,500-£2,500. Main dealer new engines can exceed £35,000. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -464,7 +464,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Range Rover P530 engine, or should I scrap the car?",
-        "answer": "Against a £80,000–£120,000+ Range Rover P530, a £10,000–£16,000 recon engine is a manageable 10–15% of the vehicle's value - well worth it. Given the L460's strong retained values, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
+        "answer": "Against a £80,000-£120,000+ Range Rover P530, a £10,000-£16,000 recon engine is a manageable 10-15% of the vehicle's value - well worth it. Given the L460's strong retained values, replacement is almost always viable. Scrap only if the vehicle has suffered catastrophic damage well beyond the engine."
       },
       {
         "id": 5,

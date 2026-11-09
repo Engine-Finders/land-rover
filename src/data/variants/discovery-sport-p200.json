@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "L550 P200 (204PT, 2019–present)",
+              "name": "L550 P200 (204PT, 2019-present)",
               "url": "https://landroverengine.uk/discovery-sport/l550"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Discovery Sport P200 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 204PT engine typically costs £3,000–£5,000 supply only, with the same engine used across the Discovery Sport, Evoque L551, and E-Pace. Fitting adds £650–£1,100. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned 204PT engine typically costs £3,000-£5,000 supply only, with the same engine used across the Discovery Sport, Evoque L551, and E-Pace. Fitting adds £650-£1,100. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair the 204PT's water pump, or does it need a new engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - the water pump is a straightforward repair costing £400–£800. The 204PT's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
+                "text": "Yes - the water pump is a straightforward repair costing £400-£800. The 204PT's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Discovery Sport P200 • 2019–present • 2.0 204PT",
+    "tagPill": "Land Rover Discovery Sport P200 • 2019-present • 2.0 204PT",
     "h1": "Land Rover Discovery Sport P200 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover Discovery Sport P200 specialists. Compare reconditioned, rebuilt and used 204PT engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "L550 (facelift)",
-        "years": "2019–present",
+        "years": "2019-present",
         "engineCode": "204PT (2.0 Ingenium petrol)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,000–£5,000 [EM-QUOTE]",
+        "reconCost": "£3,000-£5,000 [EM-QUOTE]",
         "eraNote": "Petrol Ingenium - more reliable than diesel, but cooling system is the main watchpoint."
       }
     ],
@@ -240,35 +240,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,500–£2,800",
-        "fittedIndie": "£2,200–£3,700",
-        "warranty": "3–6 months",
+        "supplyOnly": "£1,500-£2,800",
+        "fittedIndie": "£2,200-£3,700",
+        "warranty": "3-6 months",
         "bestFor": "Budget priority; vehicle under £8,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,000–£5,000",
-        "fittedIndie": "£4,000–£6,100",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,000-£5,000",
+        "fittedIndie": "£4,000-£6,100",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,200–£6,500",
-        "fittedIndie": "£5,200–£7,600",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,200-£6,500",
+        "fittedIndie": "£5,200-£7,600",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£7,000–£9,500",
-        "fittedIndie": "£8,500–£11,500",
-        "warranty": "24–36 months",
+        "supplyOnly": "£7,000-£9,500",
+        "fittedIndie": "£8,500-£11,500",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting a Discovery Sport P200 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting a Discovery Sport P200 engine typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "",
       "href": "#"
@@ -299,25 +299,25 @@
         {
           "problem": "Water pump failure (204PT)",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Preventative - replace the pump before it fails; far cheaper than overheating damage"
         },
         {
           "problem": "Timing chain tensioner wear (204PT)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£2,500",
+          "typicalCost": "£1,500-£2,500",
           "whenItMakesSense": "If caught early; don't drive with a rattling chain"
         },
         {
           "problem": "Coolant crossover pipe leak (204PT)",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£500",
+          "typicalCost": "£200-£500",
           "whenItMakesSense": "Straightforward part replacement; book at next service"
         },
         {
           "problem": "Overheating damage from coolant loss",
           "repairable": "⚠️ Depends",
-          "typicalCost": "£1,500–£5,000",
+          "typicalCost": "£1,500-£5,000",
           "whenItMakesSense": "If head gasket or block damage has occurred, replacement may be cheaper"
         },
         {
@@ -373,10 +373,10 @@
     "rows": [
       {
         "engineCode": "204PT",
-        "years": "2019–present",
+        "years": "2019-present",
         "power": "200 bhp / 320 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,000 [EM-QUOTE]"
+        "avgReconCost": "£3,000-£5,000 [EM-QUOTE]"
       }
     ],
     "matchNote": "",
@@ -443,7 +443,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Discovery Sport P200 engine replacement cost in the UK?",
-        "answer": "A reconditioned 204PT engine typically costs £3,000–£5,000 supply only, with the same engine used across the Discovery Sport, Evoque L551, and E-Pace. Fitting adds £650–£1,100. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned 204PT engine typically costs £3,000-£5,000 supply only, with the same engine used across the Discovery Sport, Evoque L551, and E-Pace. Fitting adds £650-£1,100. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -468,7 +468,7 @@
       {
         "id": 6,
         "question": "Can I repair the 204PT's water pump, or does it need a new engine?",
-        "answer": "Yes - the water pump is a straightforward repair costing £400–£800. The 204PT's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
+        "answer": "Yes - the water pump is a straightforward repair costing £400-£800. The 204PT's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

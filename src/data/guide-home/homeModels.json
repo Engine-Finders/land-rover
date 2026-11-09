@@ -1,6 +1,6 @@
 {
   "h2": "Every Model.|Every Generation.|Honestly Rated.",
-  "subhead": "Not a navigation grid – a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers six questions: which generation is best, which engines to avoid, which engines are most reliable, what replacement actually costs, what fails most often, and whether ownership still makes financial sense.",
+  "subhead": "Not a navigation grid - a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers six questions: which generation is best, which engines to avoid, which engines are most reliable, what replacement actually costs, what fails most often, and whether ownership still makes financial sense.",
   "image": "/home/models/lineup-wide.webp",
   "mobileImage": "/home/models/lineup-m.webp",
   "imageAlt": "Defender, Discovery, Range Rover and Evoque lined up in front of mountains",
@@ -104,7 +104,7 @@
     }
   ],
   "example": {
-    "eyebrow": "Example Verdict – Land Rover",
+    "eyebrow": "Example Verdict - Land Rover",
     "title": "Discovery",
     "href": "/discovery",
     "image": "/home/models/discovery-portrait.webp",
@@ -124,7 +124,7 @@
       {
         "icon": "check-circle",
         "title": "Most Reliable Engine Across the Range",
-        "text": "The 4.4 SDV8 – high replacement cost, but a genuinely low failure rate."
+        "text": "The 4.4 SDV8 - high replacement cost, but a genuinely low failure rate."
       },
       {
         "icon": "alert",
@@ -134,7 +134,7 @@
       {
         "icon": "thumbs-up",
         "title": "Best Used Buy",
-        "text": "A Discovery 4 SDV6 with full service history and proven oil-interval discipline – anything without that history is a gamble."
+        "text": "A Discovery 4 SDV6 with full service history and proven oil-interval discipline - anything without that history is a gamble."
       }
     ]
   },

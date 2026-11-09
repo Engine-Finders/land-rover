@@ -6,7 +6,7 @@ import { localHtml } from "@/components/models/generationsFaqLinks";
 import { engineDbCar } from "./genKit";
 
 // Generation page section 5 - ownership economics, built to the approved Defender L316 references
-// (day + night): the eyebrow, the "… — / Ownership Economics" headline with "Economics" in green and a
+// (day + night): the eyebrow, the "… - / Ownership Economics" headline with "Economics" in green and a
 // split rule; on the right the Highland hillside with the generation's car and the green-and-gold
 // stripe at the screen's edge, standing on the table's top edge. The six-column table (icons in the
 // head, the engine in green, the verdict with its own icon - check, star, thumbs-up, warning,
@@ -55,7 +55,7 @@ const VERDICTS = [
 ];
 function splitVerdict(raw = "") {
   const text = String(raw).trim();
-  const m = text.match(/^(.*?)\s+[-–—]\s+(.*)$/);
+  const m = text.match(/^(.*?)\s+[-–-]\s+(.*)$/);
   const label = m ? m[1] : text;
   return { label, rest: m ? m[2] : "", kind: VERDICTS.find(([re]) => re.test(label))?.[1] || "check" };
 }
@@ -101,7 +101,7 @@ function Verdict({ value }) {
       <VerdictIcon kind={v.kind} className="h-7 w-7" />
       <span className="min-w-0 leading-snug">
         <strong className="font-semibold text-lr-head" dangerouslySetInnerHTML={{ __html: html(v.label) }} />
-        {v.rest && <span className="text-lr-body" dangerouslySetInnerHTML={{ __html: ` — ${html(v.rest)}` }} />}
+        {v.rest && <span className="text-lr-body" dangerouslySetInnerHTML={{ __html: ` - ${html(v.rest)}` }} />}
       </span>
     </span>
   );
@@ -207,7 +207,7 @@ export default function OwnershipEconomics({ data, hero = null, model = "" }) {
               {lead}
               {accent && (
                 <>
-                  {"\u00a0"}—<br />
+                  {"\u00a0"}-<br />
                   {accentWords.length > 0 && `${accentWords.join(" ")} `}
                   <span className="text-lr-ink dark:text-lr-green">{accentLast}</span>
                 </>
@@ -244,7 +244,7 @@ export default function OwnershipEconomics({ data, hero = null, model = "" }) {
                     {[1, 3, 4, 2].map((k) => (
                       <div key={k} className={`min-w-0 ${k === 2 ? "col-span-2" : ""}`}>
                         <dt className="text-[13px] leading-snug text-lr-muted">{columns[k]}</dt>
-                        <dd className={`mt-0.5 text-[14px] leading-snug text-lr-head ${k === 2 ? "" : "font-medium"} ${LINKS}`} dangerouslySetInnerHTML={{ __html: html(r[KEYS[k]]) || "—" }} />
+                        <dd className={`mt-0.5 text-[14px] leading-snug text-lr-head ${k === 2 ? "" : "font-medium"} ${LINKS}`} dangerouslySetInnerHTML={{ __html: html(r[KEYS[k]]) || "-" }} />
                       </div>
                     ))}
                   </dl>
@@ -289,7 +289,7 @@ export default function OwnershipEconomics({ data, hero = null, model = "" }) {
                                   : "text-[16px] text-lr-head min-[1440px]:text-[17px]"
                           } ${LINKS}`}
                         >
-                          {i === 5 ? <Verdict value={r[k]} /> : <span dangerouslySetInnerHTML={{ __html: html(r[k]) || "—" }} />}
+                          {i === 5 ? <Verdict value={r[k]} /> : <span dangerouslySetInnerHTML={{ __html: html(r[k]) || "-" }} />}
                         </td>
                       ))}
                     </tr>

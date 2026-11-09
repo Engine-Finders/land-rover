@@ -64,7 +64,7 @@
               "name": "How much does a K-Series 1.8/2.3 engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned K-Series 1.8/2.3 typically costs £900–£1,800 supply only, with used units from £500–£900. Fitting adds £600–£1,000 depending on labour rates and vehicle access. Specialist K-Series rebuilds may cost more."
+                "text": "A reconditioned K-Series 1.8/2.3 typically costs £900-£1,800 supply only, with used units from £500-£900. Fitting adds £600-£1,000 depending on labour rates and vehicle access. Specialist K-Series rebuilds may cost more."
               }
             },
             {
@@ -96,7 +96,7 @@
               "name": "How long does the K-Series 1.8/2.3 last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "With the original elastomer head gasket and stretch bolts, many K-Series engines failed before 80,000 miles. However, correctly rebuilt engines using the later metal MLS head gasket and upgraded bolts often exceed 150,000–200,000 miles when properly maintained."
+                "text": "With the original elastomer head gasket and stretch bolts, many K-Series engines failed before 80,000 miles. However, correctly rebuilt engines using the later metal MLS head gasket and upgraded bolts often exceed 150,000-200,000 miles when properly maintained."
               }
             }
           ]
@@ -172,7 +172,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover • K-Series (1.8/2.3) • Petrol • 1.8L/2.3L I4 • 1997–2006",
+    "tagPill": "Land Rover • K-Series (1.8/2.3) • Petrol • 1.8L/2.3L I4 • 1997-2006",
     "h1": "Land Rover K-Series 1.8/2.3 Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The K-Series is Rover's lightweight all-alloy four-cylinder - brilliant when right, but the head gasket is the defining weak point. Backed by real UK enquiries in 2025 [ESTIMATED].",
     "trustStrip": [
@@ -214,11 +214,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "120–177 hp [THIRD-PARTY]"
+        "value": "120-177 hp [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "1997–2006"
+        "value": "1997-2006"
       },
       {
         "metric": "Models Fitted (Land Rover only)",
@@ -250,7 +250,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "12 (Midpoint of Reconditioned (Supply Only) range: £900–£1,800 → £1,350 midpoint → falls in under £3,000 bracket → 20)"
+          "score": "12 (Midpoint of Reconditioned (Supply Only) range: £900-£1,800 → £1,350 midpoint → falls in under £3,000 bracket → 20)"
         },
         {
           "dimension": "Repairability",
@@ -262,7 +262,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "10 (Reconditioned cost (£1,350 midpoint) as % of lowest typical vehicle value (Freelander 1 ~£1,500–£3,000) = 45–90% → falls in 45–59% bracket → 12)"
+          "score": "10 (Reconditioned cost (£1,350 midpoint) as % of lowest typical vehicle value (Freelander 1 ~£1,500-£3,000) = 45-90% → falls in 45-59% bracket → 12)"
         },
         {
           "dimension": "Total",
@@ -286,7 +286,7 @@
         "model": "Land Rover Freelander",
         "generation": "Series 1 (L314)",
         "variantBadge": "1.8 K-Series (18K4F) / 2.3 K-Series (23K4F)",
-        "years": "1997–2006"
+        "years": "1997-2006"
       }
     ],
     "crossBrandNote": "Exclusive to Land Rover in this ecosystem - while the K-Series was used in Rover, MG, and Lotus vehicles, those fitments are not covered on this site."
@@ -301,24 +301,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£500–£900",
-        "fittedIndie": "£900–£1,800",
+        "supplyOnly": "£500-£900",
+        "fittedIndie": "£900-£1,800",
         "warranty": "Varies by supplier"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£900–£1,800",
-        "fittedIndie": "£1,500–£2,700",
+        "supplyOnly": "£900-£1,800",
+        "fittedIndie": "£1,500-£2,700",
         "warranty": "12 months typical"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£1,500–£2,800",
-        "fittedIndie": "£2,100–£3,700",
-        "warranty": "12–24 months typical"
+        "supplyOnly": "£1,500-£2,800",
+        "fittedIndie": "£2,100-£3,700",
+        "warranty": "12-24 months typical"
       }
     ],
-    "labourEstimate": "Fitting a K-Series 1.8/2.3 typically takes 8–10 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
+    "labourEstimate": "Fitting a K-Series 1.8/2.3 typically takes 8-10 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
     "sharedCostNote": "Omitted - engine is exclusive to Land Rover in this ecosystem.",
     "cta": {
       "label": "→ Compare K-Series 1.8/2.3 engine prices from UK specialists",
@@ -330,7 +330,7 @@
       {
         "id": 1,
         "question": "How much does a K-Series 1.8/2.3 engine replacement cost?",
-        "answer": "A reconditioned K-Series 1.8/2.3 typically costs £900–£1,800 supply only, with used units from £500–£900. Fitting adds £600–£1,000 depending on labour rates and vehicle access. Specialist K-Series rebuilds may cost more."
+        "answer": "A reconditioned K-Series 1.8/2.3 typically costs £900-£1,800 supply only, with used units from £500-£900. Fitting adds £600-£1,000 depending on labour rates and vehicle access. Specialist K-Series rebuilds may cost more."
       },
       {
         "id": 2,
@@ -350,7 +350,7 @@
       {
         "id": 5,
         "question": "How long does the K-Series 1.8/2.3 last?",
-        "answer": "With the original elastomer head gasket and stretch bolts, many K-Series engines failed before 80,000 miles. However, correctly rebuilt engines using the later metal MLS (Multi-Layer Steel) head gasket and upgraded bolts often exceed 150,000–200,000 miles when properly maintained with the correct coolant."
+        "answer": "With the original elastomer head gasket and stretch bolts, many K-Series engines failed before 80,000 miles. However, correctly rebuilt engines using the later metal MLS (Multi-Layer Steel) head gasket and upgraded bolts often exceed 150,000-200,000 miles when properly maintained with the correct coolant."
       }
     ]
   },

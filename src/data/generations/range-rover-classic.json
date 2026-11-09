@@ -111,7 +111,7 @@
               "name": "How much does a Land Rover Range Rover Classic engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Classic engine typically costs £2,500–£8,000 supply only, depending on engine - the 3.9 V8 sits at £4,000–£7,000, while the 300Tdi runs £2,800–£5,000. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+                "text": "A reconditioned Classic engine typically costs £2,500-£8,000 supply only, depending on engine - the 3.9 V8 sits at £4,000-£7,000, while the 300Tdi runs £2,800-£5,000. Fitting adds £650-£1,500. Use our calculator for a personalised figure."
               }
             },
             {
@@ -119,7 +119,7 @@
               "name": "Which Range Rover Classic engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The 300Tdi (1994–1996) - a mechanically injected, indirect-injection turbo-diesel with no ECU, no DPF, no EGR. It's the last of the truly bulletproof Land Rover diesels and is universally considered the best diesel option for the Classic."
+                "text": "The 300Tdi (1994-1996) - a mechanically injected, indirect-injection turbo-diesel with no ECU, no DPF, no EGR. It's the last of the truly bulletproof Land Rover diesels and is universally considered the best diesel option for the Classic."
               }
             },
             {
@@ -143,7 +143,7 @@
               "name": "Which Range Rover Classic engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The VM turbodiesel (1986–1992) - its individual-cylinder-head design is complex, parts are harder to source, and head gasket failure is a well-documented weakness. Unless you're a collector seeking originality, buy a Tdi or V8 instead."
+                "text": "The VM turbodiesel (1986-1992) - its individual-cylinder-head design is complex, parts are harder to source, and head gasket failure is a well-documented weakness. Unless you're a collector seeking originality, buy a Tdi or V8 instead."
               }
             },
             {
@@ -175,7 +175,7 @@
               "name": "What is the difference between the Range Rover Classic and the P38A?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The Classic (1970–1996) is the first-generation Range Rover with a ladder‑frame chassis, live axles and a simple, utilitarian interior. The P38A (1994–2002) is the second generation with a more modern unibody‑style construction, independent front suspension, and significantly more electronics. Costs and repair approaches are not interchangeable - see the P38A Generation Page for that model."
+                "text": "The Classic (1970-1996) is the first-generation Range Rover with a ladder‑frame chassis, live axles and a simple, utilitarian interior. The P38A (1994-2002) is the second generation with a more modern unibody‑style construction, independent front suspension, and significantly more electronics. Costs and repair approaches are not interchangeable - see the P38A Generation Page for that model."
               }
             },
             {
@@ -250,7 +250,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover Classic • Off-Roader • 1970–1996",
+    "tagPill": "Land Rover Range Rover Classic • Off-Roader • 1970-1996",
     "h1": "Land Rover Range Rover Classic Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the original Range Rover Classic - from the 3.5-litre Rover V8 to the <a href='https://landroverengine.uk/engine/200-300tdi'>200Tdi</a> and 300Tdi diesels that defined its final years. Real UK replacement costs, honest failure data, and the VM diesel detour most buyers overlook. Backed by 284+ real UK Classic enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -298,24 +298,24 @@
         "family": "3.5 V8 (Carb / EFi)",
         "fuel": "Petrol",
         "displacement": "3.5L",
-        "power": "127–165 bhp",
-        "years": "1970–1990",
+        "power": "127-165 bhp",
+        "years": "1970-1990",
         "variants": "All models",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£6,500 [EM-QUOTE]"
+        "avgReconCost": "£3,500-£6,500 [EM-QUOTE]"
       },
       {
         "engineCode": "36D, 37D, 38D",
         "family": "3.9 V8 EFi",
         "fuel": "Petrol",
         "displacement": "3.9L",
-        "power": "178–185 bhp",
-        "years": "1989–1996",
+        "power": "178-185 bhp",
+        "years": "1989-1996",
         "variants": "All models",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,000–£7,000 [EM-QUOTE]"
+        "avgReconCost": "£4,000-£7,000 [EM-QUOTE]"
       },
       {
         "engineCode": "42D (approx.)",
@@ -323,35 +323,35 @@
         "fuel": "Petrol",
         "displacement": "4.2L",
         "power": "200 bhp",
-        "years": "1992–1996",
+        "years": "1992-1996",
         "variants": "LSE (long wheelbase)",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£8,000 [EM-QUOTE]"
+        "avgReconCost": "£4,500-£8,000 [EM-QUOTE]"
       },
       {
         "engineCode": "11A (2.4) / 95A (2.5)",
         "family": "VM Turbodiesel",
         "fuel": "Diesel",
-        "displacement": "2.4–2.5L",
-        "power": "106–119 bhp",
-        "years": "1986–1992",
+        "displacement": "2.4-2.5L",
+        "power": "106-119 bhp",
+        "years": "1986-1992",
         "variants": "Turbo D",
         "reliability": "★★☆☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£4,500 [EM-QUOTE]"
+        "avgReconCost": "£2,500-£4,500 [EM-QUOTE]"
       },
       {
         "engineCode": "11L, 12L, 14L",
         "family": "200Tdi",
         "fuel": "Diesel, turbo",
         "displacement": "2.5L",
-        "power": "111–125 bhp",
-        "years": "1992–1994",
+        "power": "111-125 bhp",
+        "years": "1992-1994",
         "variants": "All models",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£4,500 [EM-QUOTE]"
+        "avgReconCost": "£2,500-£4,500 [EM-QUOTE]"
       },
       {
         "engineCode": "16L, 20L, 21L, 22L, 23L, 24L",
@@ -359,11 +359,11 @@
         "fuel": "Diesel, turbo",
         "displacement": "2.5L",
         "power": "111 bhp",
-        "years": "1994–1996",
+        "years": "1994-1996",
         "variants": "",
         "reliability": "",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,800–£5,000 [EM-QUOTE]"
+        "avgReconCost": "£2,800-£5,000 [EM-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -374,46 +374,46 @@
   },
   "overview": {
     "h2": "Land Rover Range Rover Classic - Overview",
-    "intro": "The Range Rover Classic is the first-generation Range Rover, produced from 1970 to 1996 and retrospectively named \"Classic\" after the P38A launched in 1994. It pioneered the luxury 4x4 segment with coil-spring suspension, permanent four-wheel drive, and a car-like interior. A 1986 update brought electronic fuel injection to the V8 and introduced the Italian VM turbodiesel, while the 1992–1996 period saw the VM replaced by the far more dependable 200Tdi and 300Tdi Land Rover diesel units.",
-    "keyFacts": "Platform: Land Rover Classic (coil-spring, live axles, ladder-frame chassis) • Predecessor: None (Range Rover was a new model line) • Successor: Range Rover P38A (1994–2002) • Sibling body styles in this generation: Two-door (1970–1981), Four-door (1981–1996), LSE long-wheelbase (1992–1996)",
+    "intro": "The Range Rover Classic is the first-generation Range Rover, produced from 1970 to 1996 and retrospectively named \"Classic\" after the P38A launched in 1994. It pioneered the luxury 4x4 segment with coil-spring suspension, permanent four-wheel drive, and a car-like interior. A 1986 update brought electronic fuel injection to the V8 and introduced the Italian VM turbodiesel, while the 1992-1996 period saw the VM replaced by the far more dependable 200Tdi and 300Tdi Land Rover diesel units.",
+    "keyFacts": "Platform: Land Rover Classic (coil-spring, live axles, ladder-frame chassis) • Predecessor: None (Range Rover was a new model line) • Successor: Range Rover P38A (1994-2002) • Sibling body styles in this generation: Two-door (1970-1981), Four-door (1981-1996), LSE long-wheelbase (1992-1996)",
     "marketIntelligenceLine": "The Range Rover Classic generated 284 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 3.9 V8 EFi and the 200Tdi/300Tdi diesel units as these classics continue to be restored and maintained."
   },
   "bestWorstEngines": {
     "items": [
       {
         "slot": "Best Diesel Overall",
-        "engine": "300Tdi (16L / 20L / 21L / 22L / 23L / 24L, 1994–1996)",
+        "engine": "300Tdi (16L / 20L / 21L / 22L / 23L / 24L, 1994-1996)",
         "quote": "The 300Tdi is the culmination of Land Rover's mechanical diesel development - no electronics, no DPF, no EGR, just a tough, proven 2.5-litre turbo-diesel that will outlast the chassis. It's the diesel to have in a late Classic.",
         "whoItsFor": "Buyers who want the last and best of the mechanical Land Rover diesels."
       },
       {
         "slot": "Best Petrol Overall",
-        "engine": "3.9 V8 EFi (36D / 37D / 38D, 1989–1996)",
-        "quote": "The 3.9-litre Rover V8 with Lucas electronic fuel injection delivers 178–185 bhp - the sweet spot between the 3.5's modest output and the 4.2's rarity. It sounds glorious, and the EFi system is well understood by specialists.",
+        "engine": "3.9 V8 EFi (36D / 37D / 38D, 1989-1996)",
+        "quote": "The 3.9-litre Rover V8 with Lucas electronic fuel injection delivers 178-185 bhp - the sweet spot between the 3.5's modest output and the 4.2's rarity. It sounds glorious, and the EFi system is well understood by specialists.",
         "whoItsFor": "Enthusiasts who want Classic V8 character with modern-ish fuel injection."
       },
       {
         "slot": "Highest Risk",
-        "engine": "2.4 VM Turbodiesel (11A, 1986–1990)",
+        "engine": "2.4 VM Turbodiesel (11A, 1986-1990)",
         "quote": "The Italian VM Motori diesel has an unusual individual-cylinder-head design that makes it complex to work on. Cylinder head gaskets are a known weak point, and parts are harder to source than the Land Rover Tdi units. It's the Classic's least dependable engine.",
         "whoItsFor": "Collectors who want a rare factory diesel Classic and are prepared for specialist maintenance."
       },
       {
         "slot": "Most Expensive Failure",
-        "engine": "4.2 V8 EFi (LSE, 1992–1996)",
+        "engine": "4.2 V8 EFi (LSE, 1992-1996)",
         "quote": "The 4.2-litre V8 is the rarest and most powerful Classic petrol engine at 200 bhp. But it's exclusive to the long-wheelbase LSE model, shares the 3.9's cooling system weaknesses, and parts are harder to find than the 3.5 or 3.9.",
         "whoItsFor": "LSE buyers who want the ultimate Classic V8 and have the budget to maintain it."
       },
       {
         "slot": "Best Value",
-        "engine": "3.5 V8 EFi (22D / 23D / 31D, 1986–1990)",
+        "engine": "3.5 V8 EFi (22D / 23D / 31D, 1986-1990)",
         "quote": "The 3.5 EFi offers 165 bhp - a genuine step up from the carburettor cars - without the 3.9/4.2's cooling system stress. It's the most affordable V8 Classic to run and the easiest to find parts for.",
         "whoItsFor": "Buyers who want V8 presence without V8 running costs."
       },
       {
         "slot": "Most Overlooked",
-        "engine": "200Tdi (11L / 12L / 14L, 1992–1994)",
-        "quote": "The 200Tdi is often overshadowed by the 300Tdi that followed, but it's every bit as tough - a 2.5-litre turbo-diesel with 111–125 bhp, mechanical injection, and no emissions complexity. It's the Tdi that saved Land Rover's diesel reputation.",
+        "engine": "200Tdi (11L / 12L / 14L, 1992-1994)",
+        "quote": "The 200Tdi is often overshadowed by the 300Tdi that followed, but it's every bit as tough - a 2.5-litre turbo-diesel with 111-125 bhp, mechanical injection, and no emissions complexity. It's the Tdi that saved Land Rover's diesel reputation.",
         "whoItsFor": "Buyers who want Tdi reliability at a lower purchase price than the 300Tdi cars."
       }
     ]
@@ -431,56 +431,56 @@
     "rows": [
       {
         "engine": "3.5 V8 (Carb / EFi)",
-        "typicalMileage": "80k–150k+",
+        "typicalMileage": "80k-150k+",
         "commonMajorFailure": "Cooling system, carb/injection issues",
-        "repairCostSpecialist": "£400–£1,200",
-        "replacementCostRecon": "£3,500–£6,500",
+        "repairCostSpecialist": "£400-£1,200",
+        "replacementCostRecon": "£3,500-£6,500",
         "ownershipVerdict": "Solid Choice - characterful, parts widely available"
       },
       {
         "engine": "3.9 V8 EFi",
-        "typicalMileage": "80k–150k",
+        "typicalMileage": "80k-150k",
         "commonMajorFailure": "Cooling system, head gasket",
-        "repairCostSpecialist": "£500–£1,500",
-        "replacementCostRecon": "£4,000–£7,000",
+        "repairCostSpecialist": "£500-£1,500",
+        "replacementCostRecon": "£4,000-£7,000",
         "ownershipVerdict": "Best Petrol - power and refinement, well-understood"
       },
       {
         "engine": "4.2 V8 EFi",
-        "typicalMileage": "80k–150k",
+        "typicalMileage": "80k-150k",
         "commonMajorFailure": "Cooling system, head gasket, parts scarcity",
-        "repairCostSpecialist": "£600–£1,800",
-        "replacementCostRecon": "£4,500–£8,000",
+        "repairCostSpecialist": "£600-£1,800",
+        "replacementCostRecon": "£4,500-£8,000",
         "ownershipVerdict": "Enthusiast Only - rare, powerful, costly to maintain"
       },
       {
         "engine": "VM Turbodiesel (2.4 / 2.5)",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Head gasket, injection pump",
-        "repairCostSpecialist": "£600–£1,500",
-        "replacementCostRecon": "£2,500–£4,500",
+        "repairCostSpecialist": "£600-£1,500",
+        "replacementCostRecon": "£2,500-£4,500",
         "ownershipVerdict": "Highest Risk - complex, parts harder to find"
       },
       {
         "engine": "200Tdi",
-        "typicalMileage": "100k–200k+",
+        "typicalMileage": "100k-200k+",
         "commonMajorFailure": "Injection pump, turbo wear",
-        "repairCostSpecialist": "£500–£1,200",
-        "replacementCostRecon": "£2,500–£4,500",
+        "repairCostSpecialist": "£500-£1,200",
+        "replacementCostRecon": "£2,500-£4,500",
         "ownershipVerdict": "Best Value - mechanical diesel at its best"
       },
       {
         "engine": "300Tdi",
-        "typicalMileage": "100k–200k+",
+        "typicalMileage": "100k-200k+",
         "commonMajorFailure": "Injection pump, turbo wear",
-        "repairCostSpecialist": "£500–£1,200",
-        "replacementCostRecon": "£2,800–£5,000",
+        "repairCostSpecialist": "£500-£1,200",
+        "replacementCostRecon": "£2,800-£5,000",
         "ownershipVerdict": "Best Diesel - the ultimate Classic diesel"
       }
     ],
     "economicsRule": {
       "title": "The Classic rule",
-      "text": "A £3,500–£6,500 V8 recon against a £10,000–£30,000 Classic sits at 12–65% of the car's value - a repair decision, not a financial one. Against a sub-£8,000 example with significant body rot, the same recon brushes our 60% Land Rover threshold - walk away and assess the bodywork first. Value the body and chassis before the engine."
+      "text": "A £3,500-£6,500 V8 recon against a £10,000-£30,000 Classic sits at 12-65% of the car's value - a repair decision, not a financial one. Against a sub-£8,000 example with significant body rot, the same recon brushes our 60% Land Rover threshold - walk away and assess the bodywork first. Value the body and chassis before the engine."
     },
     "keyTakeaways": [
       {
@@ -503,7 +503,7 @@
         "id": 1,
         "title": "Rover V8 Cooling System Failures",
         "affectedModels": "All V8-engined Range Rover Classics (3.5, 3.9, 4.2).",
-        "typicalFailureMileage": "80,000–120,000 miles.",
+        "typicalFailureMileage": "80,000-120,000 miles.",
         "rootCause": "The Rover V8's cooling system is its Achilles heel - the radiator, water pump, and heater matrix all age poorly, and the engine's aluminium block and iron liners are intolerant of overheating. A failed head gasket or cracked liner is often the result of a neglected cooling system.",
         "tieredCosts": [
           {
@@ -521,7 +521,7 @@
             "note": ""
           }
         ],
-        "recommendation": "Replace the water pump and thermostat proactively at 80,000 miles, and flush the cooling system every two years. A £250–£550 preventative service is dramatically cheaper than the £2,500+ rebuild that follows an overheat.",
+        "recommendation": "Replace the water pump and thermostat proactively at 80,000 miles, and flush the cooling system every two years. A £250-£550 preventative service is dramatically cheaper than the £2,500+ rebuild that follows an overheat.",
         "cta": {
           "label": "Compare V8 engine prices for your Range Rover Classic →",
           "href": "#"
@@ -530,8 +530,8 @@
       {
         "id": 2,
         "title": "VM Turbodiesel Head Gasket Failure",
-        "affectedModels": "Range Rover Classic VM Turbodiesel (2.4 / 2.5, 1986–1992).",
-        "typicalFailureMileage": "60,000–100,000 miles.",
+        "affectedModels": "Range Rover Classic VM Turbodiesel (2.4 / 2.5, 1986-1992).",
+        "typicalFailureMileage": "60,000-100,000 miles.",
         "rootCause": "The Italian VM Motori diesel uses individual cylinder heads for each cylinder, a design that's complex and prone to head gasket failure. The gaskets can fail between cylinders or to the cooling system, causing loss of compression, overheating, and pressurisation of the cooling system.",
         "tieredCosts": [
           {
@@ -549,7 +549,7 @@
             "note": ""
           }
         ],
-        "recommendation": "If your VM diesel pressurises the cooling system or runs hot, have the head gaskets inspected immediately. A £500–£900 replacement is far cheaper than the £1,800+ replacement that follows catastrophic failure.",
+        "recommendation": "If your VM diesel pressurises the cooling system or runs hot, have the head gaskets inspected immediately. A £500-£900 replacement is far cheaper than the £1,800+ replacement that follows catastrophic failure.",
         "cta": {
           "label": "Compare VM diesel engine prices for your Range Rover Classic →",
           "href": "#"
@@ -558,8 +558,8 @@
       {
         "id": 3,
         "title": "200Tdi / 300Tdi Injection Pump Wear",
-        "affectedModels": "Range Rover Classic 200Tdi and 300Tdi (1992–1996).",
-        "typicalFailureMileage": "100,000–180,000 miles.",
+        "affectedModels": "Range Rover Classic 200Tdi and 300Tdi (1992-1996).",
+        "typicalFailureMileage": "100,000-180,000 miles.",
         "rootCause": "The Bosch VE mechanical injection pump wears internally over high mileage, leading to poor starting, reduced power, and eventually complete pump failure. The 300Tdi's electronic fuel shut-off solenoid can also fail.",
         "tieredCosts": [
           {
@@ -577,7 +577,7 @@
             "note": ""
           }
         ],
-        "recommendation": "If your Tdi is hard to start when hot or feels down on power, have the injection pump timing and delivery checked immediately - a £300–£600 rebuild is far cheaper than the £700+ replacement that follows total failure.",
+        "recommendation": "If your Tdi is hard to start when hot or feels down on power, have the injection pump timing and delivery checked immediately - a £300-£600 rebuild is far cheaper than the £700+ replacement that follows total failure.",
         "cta": {
           "label": "Compare Tdi engine prices for your Range Rover Classic →",
           "href": "#"
@@ -586,7 +586,7 @@
       {
         "id": 4,
         "title": "Range Rover Classic Body Rot",
-        "affectedModels": "All Range Rover Classics, particularly 1970–1980s examples.",
+        "affectedModels": "All Range Rover Classics, particularly 1970-1980s examples.",
         "typicalFailureMileage": "Not mileage-dependent - age and exposure.",
         "rootCause": "Not an engine failure, but the single biggest reason Classics fail MOTs and get written off. The body structure rots at the A-posts, B-posts, door shuts, rear tailgate, rear load floor, sills, inner wings and underbody.",
         "tieredCosts": [
@@ -605,7 +605,7 @@
             "note": ""
           }
         ],
-        "recommendation": "Have the body structure inspected on any Classic over 20 years old - it's the single most common reason an otherwise sound Classic is written off. A £300–£1,000 preventative treatment is trivial against the £2,500+ restoration that follows neglect.",
+        "recommendation": "Have the body structure inspected on any Classic over 20 years old - it's the single most common reason an otherwise sound Classic is written off. A £300-£1,000 preventative treatment is trivial against the £2,500+ restoration that follows neglect.",
         "cta": {
           "label": "Compare Classic body repair quotes →",
           "href": "#"
@@ -627,66 +627,66 @@
       {
         "variant": "3.5 V8 (Carb)",
         "engineCode": "11D, 15D, 16D, 17D, 19D, 20D, 21D",
-        "usedSupply": "£800–£2,000",
-        "reconditionedSupply": "£3,500–£5,500",
-        "rebuiltSupply": "£5,000–£8,000",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£800-£2,000",
+        "reconditionedSupply": "£3,500-£5,500",
+        "rebuiltSupply": "£5,000-£8,000",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "3.5 V8 EFi",
         "engineCode": "22D, 23D, 31D",
-        "usedSupply": "£1,000–£2,500",
-        "reconditionedSupply": "£3,800–£6,000",
-        "rebuiltSupply": "£5,500–£8,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£1,000-£2,500",
+        "reconditionedSupply": "£3,800-£6,000",
+        "rebuiltSupply": "£5,500-£8,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "3.9 V8 EFi",
         "engineCode": "36D, 37D, 38D",
-        "usedSupply": "£1,500–£3,000",
-        "reconditionedSupply": "£4,000–£7,000",
-        "rebuiltSupply": "£6,000–£9,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£1,500-£3,000",
+        "reconditionedSupply": "£4,000-£7,000",
+        "rebuiltSupply": "£6,000-£9,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "4.2 V8 EFi",
         "engineCode": "42D (approx.)",
-        "usedSupply": "£2,000–£3,500",
-        "reconditionedSupply": "£4,500–£8,000",
-        "rebuiltSupply": "£7,000–£11,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£2,000-£3,500",
+        "reconditionedSupply": "£4,500-£8,000",
+        "rebuiltSupply": "£7,000-£11,000",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "2.4 VM Turbodiesel",
         "engineCode": "11A",
-        "usedSupply": "£800–£1,800",
-        "reconditionedSupply": "£2,500–£4,000",
-        "rebuiltSupply": "£3,500–£5,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£800-£1,800",
+        "reconditionedSupply": "£2,500-£4,000",
+        "rebuiltSupply": "£3,500-£5,500",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "2.5 VM Turbodiesel",
         "engineCode": "95A",
-        "usedSupply": "£900–£2,000",
-        "reconditionedSupply": "£2,800–£4,500",
-        "rebuiltSupply": "£4,000–£6,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£900-£2,000",
+        "reconditionedSupply": "£2,800-£4,500",
+        "rebuiltSupply": "£4,000-£6,000",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "200Tdi",
         "engineCode": "11L, 12L, 14L",
-        "usedSupply": "£800–£1,800",
-        "reconditionedSupply": "£2,500–£4,500",
-        "rebuiltSupply": "£4,000–£6,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£800-£1,800",
+        "reconditionedSupply": "£2,500-£4,500",
+        "rebuiltSupply": "£4,000-£6,500",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "300Tdi",
         "engineCode": "16L, 20L, 21L, 22L, 23L, 24L",
-        "usedSupply": "£1,000–£2,200",
-        "reconditionedSupply": "£2,800–£5,000",
-        "rebuiltSupply": "£4,500–£7,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£1,000-£2,200",
+        "reconditionedSupply": "£2,800-£5,000",
+        "rebuiltSupply": "£4,500-£7,000",
+        "labourHours": "10-14 hrs"
       }
     ],
     "note": ""
@@ -712,20 +712,20 @@
         "url": "https://landroverengine.uk/range-rover/rover-v8-classic"
       }
     ],
-    "scopeNote": "All variants listed are first-generation Range Rover (1970–1996), retrospectively known as \"Classic\". Two-door models were produced from 1970 to 1981; four-door from 1981 onwards; LSE long-wheelbase from 1992 to 1996."
+    "scopeNote": "All variants listed are first-generation Range Rover (1970-1996), retrospectively known as \"Classic\". Two-door models were produced from 1970 to 1981; four-door from 1981 onwards; LSE long-wheelbase from 1992 to 1996."
   },
   "marketIntelligence": {
     "mostRequestedEngines": [
-      "1. 3.9 V8 EFi (1989–1996)",
-      "2. 300Tdi (1994–1996)",
-      "3. 3.5 V8 EFi (1986–1990) - based on UK specialist enquiry patterns [PATTERN DATA]"
+      "1. 3.9 V8 EFi (1989-1996)",
+      "2. 300Tdi (1994-1996)",
+      "3. 3.5 V8 EFi (1986-1990) - based on UK specialist enquiry patterns [PATTERN DATA]"
     ],
     "mostRequestedVariants": [
-      "1. Range Rover Classic 4-door (1981–1996)",
-      "2. Range Rover Classic LSE (1992–1996)",
-      "3. Range Rover Classic 2-door (1970–1981) - based on model-level request data [EM‑VERIFIED]"
+      "1. Range Rover Classic 4-door (1981-1996)",
+      "2. Range Rover Classic LSE (1992-1996)",
+      "3. Range Rover Classic 2-door (1970-1981) - based on model-level request data [EM‑VERIFIED]"
     ],
-    "averageReplacementCost": "£2,500–£8,000 reconditioned, supply only [EM‑QUOTE]",
+    "averageReplacementCost": "£2,500-£8,000 reconditioned, supply only [EM‑QUOTE]",
     "mostCommonFailures": [
       "1. V8 cooling system failures (radiator, water pump, head gaskets)",
       "2. VM diesel head gasket failure",
@@ -760,12 +760,12 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Range Rover Classic engine replacement cost in the UK?",
-        "answer": "A reconditioned Classic engine typically costs £2,500–£8,000 supply only [EM‑QUOTE], depending on engine - the 3.9 V8 sits at £4,000–£7,000, while the 300Tdi runs £2,800–£5,000. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+        "answer": "A reconditioned Classic engine typically costs £2,500-£8,000 supply only [EM‑QUOTE], depending on engine - the 3.9 V8 sits at £4,000-£7,000, while the 300Tdi runs £2,800-£5,000. Fitting adds £650-£1,500. Use our calculator for a personalised figure."
       },
       {
         "id": 2,
         "question": "Which Range Rover Classic engine is the most reliable?",
-        "answer": "The 300Tdi (1994–1996) - a mechanically injected, indirect-injection turbo-diesel with no ECU, no DPF, no EGR. It's the last of the truly bulletproof Land Rover diesels and is universally considered the best diesel option for the Classic."
+        "answer": "The 300Tdi (1994-1996) - a mechanically injected, indirect-injection turbo-diesel with no ECU, no DPF, no EGR. It's the last of the truly bulletproof Land Rover diesels and is universally considered the best diesel option for the Classic."
       },
       {
         "id": 3,
@@ -780,7 +780,7 @@
       {
         "id": 5,
         "question": "Which Range Rover Classic engine should I avoid?",
-        "answer": "The VM turbodiesel (1986–1992) - its individual-cylinder-head design is complex, parts are harder to source, and head gasket failure is a well-documented weakness. Unless you're a collector seeking originality, buy a Tdi or V8 instead."
+        "answer": "The VM turbodiesel (1986-1992) - its individual-cylinder-head design is complex, parts are harder to source, and head gasket failure is a well-documented weakness. Unless you're a collector seeking originality, buy a Tdi or V8 instead."
       },
       {
         "id": 6,
@@ -800,7 +800,7 @@
       {
         "id": 9,
         "question": "What is the difference between the Range Rover Classic and the P38A?",
-        "answer": "The Classic (1970–1996) is the first-generation Range Rover with a ladder‑frame chassis, live axles and a simple, utilitarian interior. The P38A (1994–2002) is the second generation with a more modern unibody‑style construction, independent front suspension, and significantly more electronics. Costs and repair approaches are not interchangeable - see the P38A Generation Page for that model."
+        "answer": "The Classic (1970-1996) is the first-generation Range Rover with a ladder‑frame chassis, live axles and a simple, utilitarian interior. The P38A (1994-2002) is the second generation with a more modern unibody‑style construction, independent front suspension, and significantly more electronics. Costs and repair approaches are not interchangeable - see the P38A Generation Page for that model."
       },
       {
         "id": 10,

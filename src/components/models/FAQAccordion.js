@@ -68,7 +68,7 @@ export default function FAQAccordion({ data }) {
 
   // the head-to-head bar: the FAQ's own "A vs B" question
   const vsItem = items.find((item) => /\svs\.?\s/i.test(item.question));
-  const pair = vsItem ? vsItem.question.split(/\s+[-–—]\s+/)[0].trim() : "";
+  const pair = vsItem ? vsItem.question.split(/\s+[-–-]\s+/)[0].trim() : "";
   const guide = vsItem ? comparePage(vsItem.question) : null;
   const showAnswer = () => {
     if (!vsItem) return;

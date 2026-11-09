@@ -59,13 +59,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "L405 Range Rover P400e (AJ20P6 + 105kW e-motor, 2019–2021)",
+              "name": "L405 Range Rover P400e (AJ20P6 + 105kW e-motor, 2019-2021)",
               "url": "https://landroverengine.uk/range-rover/l405"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "L460 Range Rover P400e (AJ20P6 + 105kW e-motor, 2022–present)",
+              "name": "L460 Range Rover P400e (AJ20P6 + 105kW e-motor, 2022-present)",
               "url": "https://landroverengine.uk/range-rover/l460"
             }
           ]
@@ -90,7 +90,7 @@
               "name": "How much does a Range Rover P400e engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Range Rover P400e engine typically costs £6,500–£11,000 supply only. Fitting adds around £1,500–£2,500 depending on location and workshop rates. A brand-new OEM engine costs approximately £20,000–£22,000 installed. Hybrid battery replacement is a separate cost - typically £6,000–£10,000+ from a main dealer."
+                "text": "A reconditioned Range Rover P400e engine typically costs £6,500-£11,000 supply only. Fitting adds around £1,500-£2,500 depending on location and workshop rates. A brand-new OEM engine costs approximately £20,000-£22,000 installed. Hybrid battery replacement is a separate cost - typically £6,000-£10,000+ from a main dealer."
               }
             },
             {
@@ -114,7 +114,7 @@
               "name": "Is it worth replacing a Range Rover P400e engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £40,000–£70,000 Range Rover P400e, a £6,500–£11,000 recon is around 10–30% of the car's value - worth it given Range Rover values remain strong. However, if the hybrid battery also needs replacement (£6,000–£10,000+), evaluate total repair costs against the vehicle's value."
+                "text": "Depends on vehicle value and condition. Against a well-kept £40,000-£70,000 Range Rover P400e, a £6,500-£11,000 recon is around 10-30% of the car's value - worth it given Range Rover values remain strong. However, if the hybrid battery also needs replacement (£6,000-£10,000+), evaluate total repair costs against the vehicle's value."
               }
             },
             {
@@ -130,7 +130,7 @@
               "name": "Can I repair the P400e coolant leak, or does it need engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - coolant leaks on the P400e are almost always repairable without engine replacement. The most common fix is charge air cooler replacement (£800–£1,500). The key is catching the leak early - ignored coolant loss can lead to overheating and catastrophic engine damage. Regular coolant level checks are essential."
+                "text": "Yes - coolant leaks on the P400e are almost always repairable without engine replacement. The most common fix is charge air cooler replacement (£800-£1,500). The key is catching the leak early - ignored coolant loss can lead to overheating and catastrophic engine damage. Regular coolant level checks are essential."
               }
             }
           ]
@@ -191,7 +191,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover P400e • 2019–present • 1 Powertrain Generation",
+    "tagPill": "Land Rover Range Rover P400e • 2019-present • 1 Powertrain Generation",
     "h1": "Land Rover Range Rover P400e Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Range Rover P400e specialists. The 2.0-litre Ingenium petrol plug-in hybrid (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>) delivers 404 bhp - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -224,18 +224,18 @@
     "rows": [
       {
         "generation": "L405",
-        "years": "2019–2021",
+        "years": "2019-2021",
         "engineCode": "AJ20P6 (PT204) + 105kW e-motor",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£6,500–£11,000 [EM-QUOTE]",
+        "reconCost": "£6,500-£11,000 [EM-QUOTE]",
         "eraNote": "2.0-litre four-cylinder Ingenium petrol PHEV - 404 bhp, 640 Nm. Charge air cooler coolant leaks reported"
       },
       {
         "generation": "L460",
-        "years": "2022–present",
+        "years": "2022-present",
         "engineCode": "AJ20P6 (PT204) + 105kW e-motor",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£6,500–£11,000 [EM-QUOTE]",
+        "reconCost": "£6,500-£11,000 [EM-QUOTE]",
         "eraNote": "Revised L460 model - same powertrain, similar risk profile. Thermostat and CVVL system issues documented"
       }
     ],
@@ -254,35 +254,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,000–£5,000",
-        "fittedIndie": "£4,500–£7,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,000-£5,000",
+        "fittedIndie": "£4,500-£7,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£6,500–£11,000",
-        "fittedIndie": "£8,500–£13,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,500-£11,000",
+        "fittedIndie": "£8,500-£13,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£10,000–£14,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£10,000-£14,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£20,000–£22,000+",
-        "fittedIndie": "£22,000–£24,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£20,000-£22,000+",
+        "fittedIndie": "£22,000-£24,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting a Range Rover P400e engine typically takes 15–25 hours at £65–£95/hr (independent). Hybrid system calibration and ECU programming add additional labour.",
+    "labourEstimate": "Fitting a Range Rover P400e engine typically takes 15-25 hours at £65-£95/hr (independent). Hybrid system calibration and ECU programming add additional labour.",
     "cta": {
       "label": "→ Compare Range Rover P400e engine prices from UK specialists",
       "href": "#"
@@ -295,14 +295,14 @@
         "title": "Charge Air Cooler Coolant Leak",
         "symptoms": "Low coolant warning light, coolant level dropping with no visible external leak, no white smoke from exhaust despite significant coolant loss, coolant loss more pronounced at high revs",
         "typicalMileage": "Any mileage - reported across low and high-mileage examples",
-        "repairCost": "£800–£1,500 (charge air cooler replacement)",
+        "repairCost": "£800-£1,500 (charge air cooler replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if coolant level drops frequently"
         },
-        "recommendation": "JLR is investigating coolant level low complaints on Ingenium I4 2.0L petrol engines. The root cause is often an internal leak in the Charge Air Cooler (CAC). Coolant escapes at high revs, burns off through the exhaust without noticeable smoke, and the expansion tank level drops. The leak can be identified by pressurising the Charge Air Cooler component specifically. If you're topping up coolant regularly, book a pressure test immediately. A £800–£1,500 charge air cooler replacement is far cheaper than the overheating damage that follows if ignored.",
+        "recommendation": "JLR is investigating coolant level low complaints on Ingenium I4 2.0L petrol engines. The root cause is often an internal leak in the Charge Air Cooler (CAC). Coolant escapes at high revs, burns off through the exhaust without noticeable smoke, and the expansion tank level drops. The leak can be identified by pressurising the Charge Air Cooler component specifically. If you're topping up coolant regularly, book a pressure test immediately. A £800-£1,500 charge air cooler replacement is far cheaper than the overheating damage that follows if ignored.",
         "failureLink": {
           "label": "Read the full coolant leak guide → /failures/charge-air-cooler-coolant-leak/ [NEW FAILURE PAGE NEEDED]",
           "href": "#"
@@ -313,7 +313,7 @@
         "title": "Engine Misfire / Hesitation & Rough Idle",
         "symptoms": "Check Engine Light (MIL) illuminated, engine running rough, hesitation when accelerating, engine speed instability at low RPM, rough idle, vehicle may stall and restart on next ignition cycle",
         "typicalMileage": "Any mileage - reported on 2019 MY-onward vehicles",
-        "repairCost": "£200–£800 (diagnosis + software update / CVVL unit replacement)",
+        "repairCost": "£200-£800 (diagnosis + software update / CVVL unit replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟡",
@@ -331,7 +331,7 @@
         "title": "Thermostat Performance Issue (DTC P0128-00)",
         "symptoms": "Check Engine Light, thermostat range performance issue flagged, potential cold-start running problems",
         "typicalMileage": "Any mileage - documented on AJ20P6-equipped vehicles",
-        "repairCost": "£300–£600 (thermostat assembly replacement)",
+        "repairCost": "£300-£600 (thermostat assembly replacement)",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -368,31 +368,31 @@
         {
           "problem": "Charge air cooler coolant leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,500",
+          "typicalCost": "£800-£1,500",
           "whenItMakesSense": "Component replacement - straightforward fix"
         },
         {
           "problem": "Misfire / hesitation (software)",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£400",
+          "typicalCost": "£200-£400",
           "whenItMakesSense": "PCM/TCM calibration update"
         },
         {
           "problem": "Misfire / hesitation (CVVL)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£800",
+          "typicalCost": "£500-£800",
           "whenItMakesSense": "CVVL unit replacement"
         },
         {
           "problem": "Thermostat performance issue",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£600",
+          "typicalCost": "£300-£600",
           "whenItMakesSense": "Thermostat assembly replacement"
         },
         {
           "problem": "Hybrid battery failure",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£6,000–£10,000+",
+          "typicalCost": "£6,000-£10,000+",
           "whenItMakesSense": "Often warranty-covered; assess cost vs vehicle value"
         }
       ]
@@ -442,10 +442,10 @@
     "rows": [
       {
         "engineCode": "AJ20P6 (PT204) + 105kW e-motor",
-        "years": "2019–present",
+        "years": "2019-present",
         "power": "404 PS (297 kW) / 640 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£6,500–£11,000 [EM-QUOTE]"
+        "avgReconCost": "£6,500-£11,000 [EM-QUOTE]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -519,11 +519,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "30,000–60,000 miles【PATTERN DATA】"
+        "value": "30,000-60,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£6,500–£11,000 reconditioned【EM-QUOTE】"
+        "value": "£6,500-£11,000 reconditioned【EM-QUOTE】"
       },
       {
         "label": "Most Requested Engine Code",
@@ -544,7 +544,7 @@
       {
         "id": 1,
         "question": "How much does a Range Rover P400e engine replacement cost in the UK?",
-        "answer": "A reconditioned Range Rover P400e engine typically costs £6,500–£11,000 supply only. Fitting adds around £1,500–£2,500 depending on location and workshop rates. A brand-new OEM engine costs approximately £20,000–£22,000 installed. Hybrid battery replacement is a separate cost - typically £6,000–£10,000+ from a main dealer."
+        "answer": "A reconditioned Range Rover P400e engine typically costs £6,500-£11,000 supply only. Fitting adds around £1,500-£2,500 depending on location and workshop rates. A brand-new OEM engine costs approximately £20,000-£22,000 installed. Hybrid battery replacement is a separate cost - typically £6,000-£10,000+ from a main dealer."
       },
       {
         "id": 2,
@@ -559,7 +559,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Range Rover P400e engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £40,000–£70,000 Range Rover P400e, a £6,500–£11,000 recon is around 10–30% of the car's value - worth it given Range Rover values remain strong. However, if the hybrid battery also needs replacement (£6,000–£10,000+), evaluate total repair costs against the vehicle's value."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £40,000-£70,000 Range Rover P400e, a £6,500-£11,000 recon is around 10-30% of the car's value - worth it given Range Rover values remain strong. However, if the hybrid battery also needs replacement (£6,000-£10,000+), evaluate total repair costs against the vehicle's value."
       },
       {
         "id": 5,
@@ -569,7 +569,7 @@
       {
         "id": 6,
         "question": "Can I repair the P400e coolant leak, or does it need engine replacement?",
-        "answer": "Yes - coolant leaks on the P400e are almost always repairable without engine replacement. The most common fix is charge air cooler replacement (£800–£1,500). The key is catching the leak early - ignored coolant loss can lead to overheating and catastrophic engine damage. Regular coolant level checks are essential."
+        "answer": "Yes - coolant leaks on the P400e are almost always repairable without engine replacement. The most common fix is charge air cooler replacement (£800-£1,500). The key is catching the leak early - ignored coolant loss can lead to overheating and catastrophic engine damage. Regular coolant level checks are essential."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

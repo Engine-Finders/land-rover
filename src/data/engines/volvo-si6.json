@@ -64,7 +64,7 @@
               "name": "How much does an SI6 (B6324S) engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned SI6 3.2 typically costs £2,200–£3,500 supply only, with used units from £800–£1,600. Fitting adds £800–£1,500 depending on labour rates and vehicle access."
+                "text": "A reconditioned SI6 3.2 typically costs £2,200-£3,500 supply only, with used units from £800-£1,600. Fitting adds £800-£1,500 depending on labour rates and vehicle access."
               }
             },
             {
@@ -72,7 +72,7 @@
               "name": "Is the Volvo SI6 (B6324S) a reliable engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - the SI6 is considered a reliable and refined petrol engine (4.0★). Its smooth inline-six design offers excellent power delivery and durability. However, early examples (2006–2009) have reported timing chain tensioner issues, so service history is critical."
+                "text": "Yes - the SI6 is considered a reliable and refined petrol engine (4.0★). Its smooth inline-six design offers excellent power delivery and durability. However, early examples (2006-2009) have reported timing chain tensioner issues, so service history is critical."
               }
             },
             {
@@ -80,7 +80,7 @@
               "name": "What is the most common SI6 failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Timing chain tensioner failure is the most critical - particularly on early engines (2006–2009) where the tensioner design was prone to failure, causing chain stretch and catastrophic valve/piston interference. Oil consumption and leaks from the timing cover are also reported."
+                "text": "Timing chain tensioner failure is the most critical - particularly on early engines (2006-2009) where the tensioner design was prone to failure, causing chain stretch and catastrophic valve/piston interference. Oil consumption and leaks from the timing cover are also reported."
               }
             },
             {
@@ -96,7 +96,7 @@
               "name": "How long does the SI6 (B6324S) last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "With proper maintenance and early timing chain tensioner replacement where needed, SI6 engines routinely exceed 150,000–200,000 miles. Regular oil changes and chain inspections are key to achieving this lifespan, particularly on pre-2010 examples."
+                "text": "With proper maintenance and early timing chain tensioner replacement where needed, SI6 engines routinely exceed 150,000-200,000 miles. Regular oil changes and chain inspections are key to achieving this lifespan, particularly on pre-2010 examples."
               }
             }
           ]
@@ -172,7 +172,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover • Volvo SI6 (B6324S) • Petrol • 3.2L I6 • 2006–2014",
+    "tagPill": "Land Rover • Volvo SI6 (B6324S) • Petrol • 3.2L I6 • 2006-2014",
     "h1": "Land Rover Volvo SI6 (B6324S) 3.2 Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The SI6 is a smooth, powerful straight‑six - a gem of an engine, but early timing chain issues need watching. Backed by real UK enquiries in 2025 [ESTIMATED].",
     "trustStrip": [
@@ -214,11 +214,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "230–240 hp [THIRD-PARTY]"
+        "value": "230-240 hp [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "2006–2014"
+        "value": "2006-2014"
       },
       {
         "metric": "Models Fitted (Land Rover only)",
@@ -250,7 +250,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "12 (Midpoint of Reconditioned (Supply Only) range: £2,200–£3,500 → £2,850 midpoint → falls in under £3,000 bracket → 20)"
+          "score": "12 (Midpoint of Reconditioned (Supply Only) range: £2,200-£3,500 → £2,850 midpoint → falls in under £3,000 bracket → 20)"
         },
         {
           "dimension": "Repairability",
@@ -262,7 +262,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "12 (Reconditioned cost (£2,850 midpoint) as % of lowest typical vehicle value (Freelander 2 ~£3,000–£6,000) = 48–95% → falls in 45–59% bracket → 12)"
+          "score": "12 (Reconditioned cost (£2,850 midpoint) as % of lowest typical vehicle value (Freelander 2 ~£3,000-£6,000) = 48-95% → falls in 45-59% bracket → 12)"
         },
         {
           "dimension": "Total",
@@ -286,7 +286,7 @@
         "model": "Land Rover Freelander",
         "generation": "Series 2 (L359)",
         "variantBadge": "3.2 i6 (B6324S)",
-        "years": "2006–2014"
+        "years": "2006-2014"
       }
     ],
     "crossBrandNote": "Exclusive to Land Rover in this ecosystem - while the SI6 was used in Volvo vehicles (XC60, XC90, S80, V70), those fitments are not covered on this site."
@@ -301,24 +301,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£800–£1,600",
-        "fittedIndie": "£1,400–£2,600",
+        "supplyOnly": "£800-£1,600",
+        "fittedIndie": "£1,400-£2,600",
         "warranty": "Varies by supplier"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£2,200–£3,500",
-        "fittedIndie": "£3,000–£4,500",
+        "supplyOnly": "£2,200-£3,500",
+        "fittedIndie": "£3,000-£4,500",
         "warranty": "12 months typical"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£3,200–£5,000",
-        "fittedIndie": "£4,000–£6,000",
-        "warranty": "12–24 months typical"
+        "supplyOnly": "£3,200-£5,000",
+        "fittedIndie": "£4,000-£6,000",
+        "warranty": "12-24 months typical"
       }
     ],
-    "labourEstimate": "Fitting an SI6 (B6324S) typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
+    "labourEstimate": "Fitting an SI6 (B6324S) typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [INDUSTRY ESTIMATE].",
     "sharedCostNote": "Omitted - engine is exclusive to Land Rover in this ecosystem.",
     "cta": {
       "label": "→ Compare SI6 (B6324S) engine prices from UK specialists",
@@ -330,17 +330,17 @@
       {
         "id": 1,
         "question": "How much does an SI6 (B6324S) engine replacement cost?",
-        "answer": "A reconditioned SI6 3.2 typically costs £2,200–£3,500 supply only, with used units from £800–£1,600. Fitting adds £800–£1,500 depending on labour rates and vehicle access."
+        "answer": "A reconditioned SI6 3.2 typically costs £2,200-£3,500 supply only, with used units from £800-£1,600. Fitting adds £800-£1,500 depending on labour rates and vehicle access."
       },
       {
         "id": 2,
         "question": "Is the Volvo SI6 (B6324S) a reliable engine?",
-        "answer": "Yes - the SI6 is considered a reliable and refined petrol engine (4.0★). Its smooth inline‑six design offers excellent power delivery and durability. However, early examples (2006–2009) have reported timing chain tensioner issues, so service history is critical."
+        "answer": "Yes - the SI6 is considered a reliable and refined petrol engine (4.0★). Its smooth inline‑six design offers excellent power delivery and durability. However, early examples (2006-2009) have reported timing chain tensioner issues, so service history is critical."
       },
       {
         "id": 3,
         "question": "What is the most common SI6 failure?",
-        "answer": "Timing chain tensioner failure is the most critical - particularly on early engines (2006–2009) where the tensioner design was prone to failure, causing chain stretch and catastrophic valve/piston interference. Oil consumption and oil leaks from the timing cover are also reported."
+        "answer": "Timing chain tensioner failure is the most critical - particularly on early engines (2006-2009) where the tensioner design was prone to failure, causing chain stretch and catastrophic valve/piston interference. Oil consumption and oil leaks from the timing cover are also reported."
       },
       {
         "id": 4,
@@ -350,7 +350,7 @@
       {
         "id": 5,
         "question": "How long does the SI6 (B6324S) last?",
-        "answer": "With proper maintenance and early timing chain tensioner replacement where needed, SI6 engines routinely exceed 150,000–200,000 miles. Regular oil changes and chain inspections are key to achieving this lifespan, particularly on pre‑2010 examples."
+        "answer": "With proper maintenance and early timing chain tensioner replacement where needed, SI6 engines routinely exceed 150,000-200,000 miles. Regular oil changes and chain inspections are key to achieving this lifespan, particularly on pre‑2010 examples."
       }
     ]
   },

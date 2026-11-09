@@ -71,7 +71,7 @@ export default function TrustBlock({ data, slug = "" }) {
                       <strong className="font-semibold text-lr-ink dark:text-lr-green">{s.title}</strong>
                       {s.text && (
                         <>
-                          {" — "}
+                          {" - "}
                           <span dangerouslySetInnerHTML={{ __html: prose(s.text) }} />
                         </>
                       )}

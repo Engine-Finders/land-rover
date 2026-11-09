@@ -42,24 +42,24 @@ export const modelName = (slug = "") => MODEL_NAMES[slug] || "";
 // ------------------------------------------------------------------ text
 
 const TAG_RE = /\[((?:EM-|PLACEHOLDER)[^\]]*)\]/g;
-// short tags ("[EM-QUOTE]") never break; long ones ("[PLACEHOLDER — confirm vs Table A; …]") may
+// short tags ("[EM-QUOTE]") never break; long ones ("[PLACEHOLDER - confirm vs Table A; …]") may
 // wrap, so they can't push a phone layout sideways
 const tag = (t) =>
   `<span class="${t.length > 18 ? "[overflow-wrap:anywhere]" : "whitespace-nowrap"} font-medium text-lr-green">[${t}]</span>`;
 
-// Copy from the JSON, made typographic: " - " -> " — ", straight double quotes -> curly (text only;
+// Copy from the JSON, made typographic: " - " -> " - ", straight double quotes -> curly (text only;
 // the data's attributes use single quotes), and the [EM-…] / [PLACEHOLDER…] data tags in green.
 export function prose(html = "") {
   return String(html)
-    .replace(/\s+-\s+/g, " — ")
+    .replace(/\s+-\s+/g, " - ")
     .replace(/"([^"<>]+)"/g, "“$1”")
     .replace(TAG_RE, (_, t) => tag(t));
 }
 
 // "Velar Engine Codes - The Complete Database" -> { lead: "Velar Engine Codes", accent: "The Complete Database" }
 export function splitHeading(h2 = "") {
-  const clean = String(h2).replace(/\s+[-–—]\s+/, " — ");
-  const i = clean.indexOf(" — ");
+  const clean = String(h2).replace(/\s+[-–-]\s+/, " - ");
+  const i = clean.indexOf(" - ");
   return i === -1 ? { lead: clean, accent: "" } : { lead: clean.slice(0, i), accent: clean.slice(i + 3) };
 }
 
@@ -85,7 +85,7 @@ export function EyebrowPill({ icon, children, className = "" }) {
 // a phrase inside the heading to set in green ("Velar?", "275 UK Owners"); `breakAfterDash` false
 // keeps a dashed heading on one flowing line.
 export function SectionTitle({ h2, accent, breakAfterDash = true, className = "", as: Tag = "h2" }) {
-  const text = String(h2 || "").replace(/\s+[-–—]\s+/, " — ");
+  const text = String(h2 || "").replace(/\s+[-–-]\s+/, " - ");
   let body;
   if (accent) {
     const i = text.indexOf(accent);
@@ -104,7 +104,7 @@ export function SectionTitle({ h2, accent, breakAfterDash = true, className = ""
     body = tail ? (
       <>
         {lead}
-        {" "}—{breakAfterDash ? <br /> : " "}
+        {" "}-{breakAfterDash ? <br /> : " "}
         <span className="text-lr-ink dark:text-lr-green">{tail}</span>
       </>
     ) : (

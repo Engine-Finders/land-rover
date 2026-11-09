@@ -28,7 +28,7 @@ function parsePoint(point = "") {
   return i === -1 ? { title: point, text: "" } : { title: point.slice(0, i).trim(), text: point.slice(i + 1).trim() };
 }
 
-const dash = (t = "") => t.replace(/ - /g, " — ");
+const dash = (t = "") => t.replace(/ - /g, " - ");
 
 // "Find the best ... rely on. Compare real prices ... and get back on the road with confidence."
 function splitFinal(text = "") {

@@ -10,7 +10,7 @@
         {
           "id": "01",
           "title": "TDV6 Crankshaft Failure",
-          "description": "The 306DT's defining weak point - cold-start knock is the early warning. Catastrophic bearing failure, £6,500–£9,500 recon.",
+          "description": "The 306DT's defining weak point - cold-start knock is the early warning. Catastrophic bearing failure, £6,500-£9,500 recon.",
           "severity": { "label": "Catastrophic", "type": "catastrophic" },
           "image": { "src": "/engine.webp", "alt": "TDV6 crankshaft failure" },
           "href": "#"
@@ -26,7 +26,7 @@
         {
           "id": "03",
           "title": "Ingenium Timing Chain Failure",
-          "description": "Pre-2019 204DTD tensioner wear, significantly improved from 2019 onward. £1,200–£2,500 repair cost.",
+          "description": "Pre-2019 204DTD tensioner wear, significantly improved from 2019 onward. £1,200-£2,500 repair cost.",
           "severity": { "label": "Monitor", "type": "monitor" },
           "image": { "src": "/engine.webp", "alt": "Ingenium timing chain failure" },
           "href": "#"
@@ -57,7 +57,7 @@
         {
           "id": "02",
           "title": "Height Sensor Faults",
-          "description": "Trigger warning lights and uneven ride height well before a full system failure. £200–£500 repair cost.",
+          "description": "Trigger warning lights and uneven ride height well before a full system failure. £200-£500 repair cost.",
           "severity": { "label": "Low", "type": "low" },
           "image": { "src": "/engine.webp", "alt": "Height sensor faults" },
           "href": "#"
@@ -65,7 +65,7 @@
         {
           "id": "03",
           "title": "Valve Block & Air Spring Leaks",
-          "description": "Slow leaks that are often mistaken for compressor failure. £300–£800 repair cost.",
+          "description": "Slow leaks that are often mistaken for compressor failure. £300-£800 repair cost.",
           "severity": { "label": "Low", "type": "low" },
           "image": { "src": "/engine.webp", "alt": "Valve block and air spring leaks" },
           "href": "#"
@@ -88,7 +88,7 @@
         {
           "id": "02",
           "title": "Differential Wear",
-          "description": "Front and rear diff whine, most common on high-mileage Discovery and Defender. £800–£1,500 repair.",
+          "description": "Front and rear diff whine, most common on high-mileage Discovery and Defender. £800-£1,500 repair.",
           "severity": { "label": "Monitor", "type": "monitor" },
           "image": { "src": "/engine.webp", "alt": "Differential wear" },
           "href": "#"
@@ -96,7 +96,7 @@
         {
           "id": "03",
           "title": "Propshaft & UJ Failures",
-          "description": "Vibration under load, a common MOT advisory across the range. £200–£500 repair.",
+          "description": "Vibration under load, a common MOT advisory across the range. £200-£500 repair.",
           "severity": { "label": "Low", "type": "low" },
           "image": { "src": "/engine.webp", "alt": "Propshaft and UJ failures" },
           "href": "#"

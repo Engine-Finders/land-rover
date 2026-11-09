@@ -127,8 +127,8 @@
           <label for="mileageSelect" style="display:block; font-size:13px; text-transform:uppercase; letter-spacing:0.1em; color:var(--lr-ink-mid); margin-bottom:4px;">Mileage</label>
           <select id="mileageSelect" style="width:100%; padding:10px 12px; border:1px solid var(--lr-cream-2); border-radius:4px; background:var(--lr-white); font-size:16px;">
             <option value="low">Under 60,000</option>
-            <option value="mid" selected>60,000 – 100,000</option>
-            <option value="high">100,000 – 150,000</option>
+            <option value="mid" selected>60,000 - 100,000</option>
+            <option value="high">100,000 - 150,000</option>
             <option value="vhigh">Over 150,000</option>
           </select>
         </div>
@@ -189,7 +189,7 @@
     <h2>Frequently Asked Questions About Engine Value</h2>
     <details class="faq-item" open><summary>Is the engine value checker free?</summary><p>Yes, completely free with no email required to see your result.</p></details>
     <details class="faq-item"><summary>How accurate is the value estimate?</summary><p>Very high for the most common Land Rover engine codes - our estimates are based on real 2025 supplier quotes and enquiry data. For less common codes, we provide a market‑informed range using the same methodology. Always get a professional quote before selling.</p></details>
-    <details class="faq-item"><summary>What factors affect my engine's value most?</summary><p>Condition is the biggest factor - a seized engine is worth 30–50% of a running unit. Mileage matters too: engines under 60,000 miles command a premium, while those over 150,000 see a significant discount. The specific engine code also drives value - high‑demand codes like 306DT and 204DTD retain more value.</p></details>
+    <details class="faq-item"><summary>What factors affect my engine's value most?</summary><p>Condition is the biggest factor - a seized engine is worth 30-50% of a running unit. Mileage matters too: engines under 60,000 miles command a premium, while those over 150,000 see a significant discount. The specific engine code also drives value - high‑demand codes like 306DT and 204DTD retain more value.</p></details>
     <details class="faq-item"><summary>Where can I sell my Land Rover engine?</summary><p>Specialist breakers, recon engine suppliers, and independent Land Rover workshops are the main buyers. Our network of <a href="/about/specialist-vetting">12 vetted JLR specialists</a> can also provide quotes - use the <a href="/tools/registration-lookup">registration lookup</a> to get matched with the right specialist for your engine.</p></details>
     <details class="faq-item"><summary>How does the 60% scrap threshold work?</summary><p>The 60% threshold comes from our <a href="/economics/repair-replace-scrap-framework">Decision Framework</a>: if the cost of a reconditioned engine exceeds 60% of your vehicle's current market value, scrapping the vehicle often makes more financial sense than repairing. This tool applies the same logic to your engine's value.</p></details>
   </div>
@@ -284,8 +284,8 @@
 
   var mileageLabels = {
     "low": "Under 60,000",
-    "mid": "60,000 – 100,000",
-    "high": "100,000 – 150,000",
+    "mid": "60,000 - 100,000",
+    "high": "100,000 - 150,000",
     "vhigh": "Over 150,000"
   };
 
@@ -348,7 +348,7 @@
       verdict = "✅ Sell as‑is - your engine has strong used value (≥70% of recon)";
       verdictClass = "safe";
     } else if (ratio >= 50) {
-      verdict = "⚠️ Consider both - your engine's used value is moderate (50–69% of recon)";
+      verdict = "⚠️ Consider both - your engine's used value is moderate (50-69% of recon)";
       verdictClass = "watch";
     } else {
       verdict = "🔴 Scrap or part‑out - used value is low (<50% of recon)";
@@ -360,8 +360,8 @@
     document.getElementById('resEngine').textContent = engine.label + " (" + engine.requestVolume + " quote requests [EM‑VERIFIED])";
     document.getElementById('resCondition').textContent = conditionLabels[condition] || condition;
     document.getElementById('resMileage').textContent = mileageLabels[mileage] || mileage;
-    document.getElementById('resUsed').textContent = "£" + usedLow.toLocaleString() + " – £" + usedHigh.toLocaleString();
-    document.getElementById('resRecon').textContent = "£" + reconLow.toLocaleString() + " – £" + reconHigh.toLocaleString();
+    document.getElementById('resUsed').textContent = "£" + usedLow.toLocaleString() + " - £" + usedHigh.toLocaleString();
+    document.getElementById('resRecon').textContent = "£" + reconLow.toLocaleString() + " - £" + reconHigh.toLocaleString();
     document.getElementById('resVerdict').innerHTML = verdict;
     document.getElementById('resLinks').innerHTML = "See the full <a href=\"/economics/replacement-cost-by-engine-code\">replacement cost by engine code</a> or <a href=\"/economics/repair-replace-scrap-framework\">Decision Framework</a> for more detail.";
 

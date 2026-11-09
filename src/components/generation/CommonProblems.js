@@ -10,7 +10,7 @@ import { generationCtaCopy } from "@/lib/ctaCopy";
 import { genCode, genName } from "./genKit";
 
 // Generation page section 6 - common problems, built to the approved Defender L316 reference: the
-// eyebrow, "<generation> — Common Problems" headline, a one-line intro and a split rule; one card per
+// eyebrow, "<generation> - Common Problems" headline, a one-line intro and a split rule; one card per
 // problem - its number, the engine over the fault, an engine shot in the corner, affected models,
 // typical failure mileage and root cause with icons, the tiered cost table (preventative repair:
 // dealer / specialist / the work), the catastrophic tier as a coloured box, our recommendation and a
@@ -273,9 +273,9 @@ export default function CommonProblems({ data, page = null }) {
     <section className={`bg-lr-band py-6 text-lr-head md:py-7 xl:py-8 ${SANS}`}>
       <div className={CONTAINER}>
         <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">Common Problems</p>
-        <h2 className={`${H2_MODEL} mt-3.5 text-balance text-lr-head md:mt-4`}>{name ? `${name} — Common Problems` : "Common Problems"}</h2>
+        <h2 className={`${H2_MODEL} mt-3.5 text-balance text-lr-head md:mt-4`}>{name ? `${name} - Common Problems` : "Common Problems"}</h2>
         <p className="mt-3 max-w-[50em] text-[15px] leading-[1.6] text-lr-body md:mt-4 md:text-[16px] xl:text-[17px]">
-          Real-world issues {owners} owners face most — with symptoms, causes, costs and our honest recommendations based on UK specialist experience.
+          Real-world issues {owners} owners face most - with symptoms, causes, costs and our honest recommendations based on UK specialist experience.
         </p>
         <span className="mt-4 flex h-[3px] w-20 overflow-hidden rounded-full md:mt-5" aria-hidden="true">
           <span className="w-[60%] bg-lr-ink dark:bg-lr-green" />

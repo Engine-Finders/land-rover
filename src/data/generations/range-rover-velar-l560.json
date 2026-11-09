@@ -141,7 +141,7 @@
               "name": "How much does a Range Rover Velar L560 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Velar engine typically costs £3,000–£9,500 supply only [EM-QUOTE], depending on the engine - the four-cylinder Ingeniums sit at £3,000–£5,800, the D300 V6 diesel at £6,500–£9,500, and the SVAutobiography V8 at £5,500–£9,000. Fitting adds £650–£1,300. Use our calculator for a personalised figure."
+                "text": "A reconditioned Velar engine typically costs £3,000-£9,500 supply only [EM-QUOTE], depending on the engine - the four-cylinder Ingeniums sit at £3,000-£5,800, the D300 V6 diesel at £6,500-£9,500, and the SVAutobiography V8 at £5,500-£9,000. Fitting adds £650-£1,300. Use our calculator for a personalised figure."
               }
             },
             {
@@ -189,7 +189,7 @@
               "name": "Is it worth replacing a Velar L560 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a £20,000 D300, a £6,500–£9,500 recon is 33–48% of the car's value - well within our 60% Land Rover threshold. Against a high-mileage £15,000 example, the same recon is 43–63% - borderline. For a P400 at £35,000, a £4,500–£7,500 recon is 13–21% - a straightforward repair decision. Value the car first; if it's a pre-2019 diesel without chain history, evaluate carefully."
+                "text": "Depends on the car's value. Against a £20,000 D300, a £6,500-£9,500 recon is 33-48% of the car's value - well within our 60% Land Rover threshold. Against a high-mileage £15,000 example, the same recon is 43-63% - borderline. For a P400 at £35,000, a £4,500-£7,500 recon is 13-21% - a straightforward repair decision. Value the car first; if it's a pre-2019 diesel without chain history, evaluate carefully."
               }
             },
             {
@@ -280,7 +280,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Range Rover Velar L560 • SUV • 2017–present",
+    "tagPill": "Range Rover Velar L560 • SUV • 2017-present",
     "h1": "Range Rover Velar L560 Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the Velar L560 - from the four-cylinder Ingenium diesel and petrol to the six-cylinder D300 and the 550bhp supercharged V8 in the SVAutobiography. Real UK replacement costs and honest reliability data for Range Rover's most design-led SUV. Backed by 155+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -328,24 +328,24 @@
         "family": "Ingenium D",
         "fuel": "Diesel",
         "displacement": "2.0L (1999cc)",
-        "power": "148–177 bhp",
-        "years": "2017–present",
+        "power": "148-177 bhp",
+        "years": "2017-present",
         "variants": "D180, D240",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£5,800 [EM-QUOTE]"
+        "avgReconCost": "£3,500-£5,800 [EM-QUOTE]"
       },
       {
         "engineCode": "204PT",
         "family": "Ingenium P",
         "fuel": "Petrol",
         "displacement": "2.0L (1999cc)",
-        "power": "247–296 bhp",
-        "years": "2017–present",
+        "power": "247-296 bhp",
+        "years": "2017-present",
         "variants": "P250, P300",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,000 [EM-QUOTE]"
+        "avgReconCost": "£3,000-£5,000 [EM-QUOTE]"
       },
       {
         "engineCode": "306DT",
@@ -353,23 +353,23 @@
         "fuel": "Diesel",
         "displacement": "3.0L (2993cc)",
         "power": "296 bhp",
-        "years": "2017–present",
+        "years": "2017-present",
         "variants": "D300",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "120 [EM-VERIFIED]",
-        "avgReconCost": "£6,500–£9,500 [EM-QUOTE]"
+        "avgReconCost": "£6,500-£9,500 [EM-QUOTE]"
       },
       {
         "engineCode": "AJ126 / 306PS",
         "family": "AJ126/Jaguar V6",
         "fuel": "Petrol",
         "displacement": "3.0L (2995cc)",
-        "power": "335–375 bhp",
-        "years": "2017–2020 (pre-facelift)",
+        "power": "335-375 bhp",
+        "years": "2017-2020 (pre-facelift)",
         "variants": "P340, P380",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,500 [EM-QUOTE]"
+        "avgReconCost": "£4,500-£7,500 [EM-QUOTE]"
       },
       {
         "engineCode": "AJ133 / 508PS",
@@ -377,11 +377,11 @@
         "fuel": "Petrol",
         "displacement": "5.0L (5000cc)",
         "power": "550 bhp",
-        "years": "2018–present",
+        "years": "2018-present",
         "variants": "SVAutobiography",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,500–£9,000 [EM-QUOTE]"
+        "avgReconCost": "£5,500-£9,000 [EM-QUOTE]"
       },
       {
         "engineCode": "- (early P250)",
@@ -389,11 +389,11 @@
         "fuel": "Petrol",
         "displacement": "2.0L (1999cc)",
         "power": "247 bhp",
-        "years": "2017–2019",
+        "years": "2017-2019",
         "variants": "P250 (early)",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "85 [EM-VERIFIED] (early variant)",
-        "avgReconCost": "£3,000–£5,000 [EM-QUOTE]"
+        "avgReconCost": "£3,000-£5,000 [EM-QUOTE]"
       },
       {
         "engineCode": "- (306PS P400)",
@@ -401,11 +401,11 @@
         "fuel": "Petrol",
         "displacement": "3.0L (2996cc)",
         "power": "394 bhp",
-        "years": "2020–present",
+        "years": "2020-present",
         "variants": "P400",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,500 [EM-QUOTE]"
+        "avgReconCost": "£4,500-£7,500 [EM-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -473,56 +473,56 @@
     "rows": [
       {
         "engine": "204DTD (2.0 D)",
-        "typicalMileage": "60k–100k",
+        "typicalMileage": "60k-100k",
         "commonMajorFailure": "Timing chain tensioner",
-        "repairCostSpecialist": "£1,200–£2,500",
-        "replacementCostRecon": "£3,500–£5,800",
+        "repairCostSpecialist": "£1,200-£2,500",
+        "replacementCostRecon": "£3,500-£5,800",
         "ownershipVerdict": "Pre-2019 Risk - budget for chain history"
       },
       {
         "engine": "204PT (2.0 P)",
-        "typicalMileage": "60k–100k",
+        "typicalMileage": "60k-100k",
         "commonMajorFailure": "Water pump, cooling system",
-        "repairCostSpecialist": "£400–£800",
-        "replacementCostRecon": "£3,000–£5,000",
+        "repairCostSpecialist": "£400-£800",
+        "replacementCostRecon": "£3,000-£5,000",
         "ownershipVerdict": "Best Petrol 4-Cyl - reliable and affordable"
       },
       {
         "engine": "306DT (3.0 D300)",
-        "typicalMileage": "80k–120k",
+        "typicalMileage": "80k-120k",
         "commonMajorFailure": "Crankshaft bearing wear",
-        "repairCostSpecialist": "£5,500–£7,000",
-        "replacementCostRecon": "£6,500–£9,500",
+        "repairCostSpecialist": "£5,500-£7,000",
+        "replacementCostRecon": "£6,500-£9,500",
         "ownershipVerdict": "High Power, High Risk - 5k oil intervals essential"
       },
       {
         "engine": "AJ126 (3.0 P380)",
-        "typicalMileage": "60k–100k",
+        "typicalMileage": "60k-100k",
         "commonMajorFailure": "Water pump, cooling system",
-        "repairCostSpecialist": "£600–£1,200",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£600-£1,200",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Pre-Facelift Petrol - sounds great, watch cooling"
       },
       {
         "engine": "306PS (3.0 P400)",
-        "typicalMileage": "40k–80k",
+        "typicalMileage": "40k-80k",
         "commonMajorFailure": "Generally robust",
-        "repairCostSpecialist": "£300–£600",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£300-£600",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Best Petrol V6 - the one to buy"
       },
       {
         "engine": "AJ133 (5.0 V8 SV)",
-        "typicalMileage": "40k–80k",
+        "typicalMileage": "40k-80k",
         "commonMajorFailure": "Timing chain, supercharger",
-        "repairCostSpecialist": "£2,500–£4,500",
-        "replacementCostRecon": "£5,500–£9,000",
+        "repairCostSpecialist": "£2,500-£4,500",
+        "replacementCostRecon": "£5,500-£9,000",
         "ownershipVerdict": "Rare & Costly - for collectors and enthusiasts"
       }
     ],
     "economicsRule": {
       "title": "The L560 rule",
-      "text": "A £6,500–£9,500 D300 recon against a £20,000–£55,000 Velar sits at 12–48% of the car's value - well within our 60% Land Rover scrap threshold. Against a high-mileage £18,000 D300, the same recon is 36–53% - still viable but at the upper end. Value the car first; if the D300 has no documented oil history, walk away. The P400 recon at £4,500–£7,500 against a £35,000 car is 13–21% - a repair decision, not a scrap question."
+      "text": "A £6,500-£9,500 D300 recon against a £20,000-£55,000 Velar sits at 12-48% of the car's value - well within our 60% Land Rover scrap threshold. Against a high-mileage £18,000 D300, the same recon is 36-53% - still viable but at the upper end. Value the car first; if the D300 has no documented oil history, walk away. The P400 recon at £4,500-£7,500 against a £35,000 car is 13-21% - a repair decision, not a scrap question."
     },
     "keyTakeaways": [
       {
@@ -548,7 +548,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "At the first sign of cold-start rattle, get the chain inspected immediately - a £1,200–£2,500 preventative repair is dramatically cheaper than the £3,500–£5,800 replacement that follows if ignored. On a Velar worth under £18,000, this decision alone determines whether the car stays economically viable.",
+        "recommendation": "At the first sign of cold-start rattle, get the chain inspected immediately - a £1,200-£2,500 preventative repair is dramatically cheaper than the £3,500-£5,800 replacement that follows if ignored. On a Velar worth under £18,000, this decision alone determines whether the car stays economically viable.",
         "cta": {
           "label": "",
           "href": "#"
@@ -561,7 +561,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "If your D300 shows any sign of cold-start knock, investigate immediately - £5,500–£7,000 for a bottom-end rebuild is cheaper than the £6,500–£9,500 replacement that follows a catastrophic failure. On a Velar worth under £20,000, evaluate the car's overall condition carefully before committing.",
+        "recommendation": "If your D300 shows any sign of cold-start knock, investigate immediately - £5,500-£7,000 for a bottom-end rebuild is cheaper than the £6,500-£9,500 replacement that follows a catastrophic failure. On a Velar worth under £20,000, evaluate the car's overall condition carefully before committing.",
         "cta": {
           "label": "",
           "href": "#"
@@ -574,7 +574,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "Have the cooling system inspected at every service - a £600–£1,200 preventative water pump and crossover pipe replacement is far cheaper than the £4,500+ replacement that follows an overheat. On a Velar worth over £25,000, this is a straightforward repair decision.",
+        "recommendation": "Have the cooling system inspected at every service - a £600-£1,200 preventative water pump and crossover pipe replacement is far cheaper than the £4,500+ replacement that follows an overheat. On a Velar worth over £25,000, this is a straightforward repair decision.",
         "cta": {
           "label": "",
           "href": "#"
@@ -587,7 +587,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "If you're buying a Velar SVAutobiography, look for documented chain tensioner history - a £2,500–£4,500 preventative job is cheaper than the £5,500+ replacement that follows a failure. On a £40,000+ example, this is a manageable cost of ownership.",
+        "recommendation": "If you're buying a Velar SVAutobiography, look for documented chain tensioner history - a £2,500-£4,500 preventative job is cheaper than the £5,500+ replacement that follows a failure. On a £40,000+ example, this is a manageable cost of ownership.",
         "cta": {
           "label": "",
           "href": "#"
@@ -609,50 +609,50 @@
       {
         "variant": "D180 / D240",
         "engineCode": "204DTD",
-        "usedSupply": "£2,000–£3,500",
-        "reconditionedSupply": "£3,500–£5,800",
-        "rebuiltSupply": "£4,800–£7,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£2,000-£3,500",
+        "reconditionedSupply": "£3,500-£5,800",
+        "rebuiltSupply": "£4,800-£7,000",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "P250 / P300",
         "engineCode": "204PT",
-        "usedSupply": "£1,500–£2,800",
-        "reconditionedSupply": "£3,000–£5,000",
-        "rebuiltSupply": "£4,200–£6,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£1,500-£2,800",
+        "reconditionedSupply": "£3,000-£5,000",
+        "rebuiltSupply": "£4,200-£6,500",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "D300",
         "engineCode": "306DT",
-        "usedSupply": "£3,500–£5,500",
-        "reconditionedSupply": "£6,500–£9,500",
-        "rebuiltSupply": "£7,500–£11,000",
-        "labourHours": "15–20 hrs"
+        "usedSupply": "£3,500-£5,500",
+        "reconditionedSupply": "£6,500-£9,500",
+        "rebuiltSupply": "£7,500-£11,000",
+        "labourHours": "15-20 hrs"
       },
       {
         "variant": "P340 / P380 (pre-facelift)",
         "engineCode": "AJ126",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,000–£9,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,000-£9,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "P400 (facelift)",
         "engineCode": "306PS",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,500–£10,000",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,500-£10,000",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "SVAutobiography 5.0 V8",
         "engineCode": "AJ133 / 508PS",
-        "usedSupply": "£3,500–£6,000",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£8,000–£12,000",
-        "labourHours": "16–20 hrs"
+        "usedSupply": "£3,500-£6,000",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£8,000-£12,000",
+        "labourHours": "16-20 hrs"
       }
     ],
     "note": ""
@@ -710,7 +710,7 @@
         "url": "https://landroverengine.uk/velar/p550"
       }
     ],
-    "scopeNote": "All variants listed are Velar L560 only. The P400 uses the later Ingenium-based 3.0 with mild hybrid (2020–present), while the P340/P380 use the earlier AJ126 V6 (2017–2020). The SVAutobiography uses the supercharged 5.0 AJ133 V8."
+    "scopeNote": "All variants listed are Velar L560 only. The P400 uses the later Ingenium-based 3.0 with mild hybrid (2020-present), while the P340/P380 use the earlier AJ126 V6 (2017-2020). The SVAutobiography uses the supercharged 5.0 AJ133 V8."
   },
   "marketIntelligence": {
     "mostRequestedEngines": [
@@ -723,7 +723,7 @@
       "2. D240",
       "3. P300"
     ],
-    "averageReplacementCost": "£4,500–£7,500 (reconditioned, supply only) [EM-QUOTE]",
+    "averageReplacementCost": "£4,500-£7,500 (reconditioned, supply only) [EM-QUOTE]",
     "mostCommonFailures": [
       "1. 204DTD Ingenium timing chain (pre-2019)",
       "2. 306DT D300 crankshaft bearing",
@@ -758,7 +758,7 @@
       {
         "id": 1,
         "question": "How much does a Range Rover Velar L560 engine replacement cost in the UK?",
-        "answer": "A reconditioned Velar engine typically costs £3,000–£9,500 supply only [EM-QUOTE], depending on the engine - the four-cylinder Ingeniums sit at £3,000–£5,800, the D300 V6 diesel at £6,500–£9,500, and the SVAutobiography V8 at £5,500–£9,000. Fitting adds £650–£1,300. Use our calculator for a personalised figure."
+        "answer": "A reconditioned Velar engine typically costs £3,000-£9,500 supply only [EM-QUOTE], depending on the engine - the four-cylinder Ingeniums sit at £3,000-£5,800, the D300 V6 diesel at £6,500-£9,500, and the SVAutobiography V8 at £5,500-£9,000. Fitting adds £650-£1,300. Use our calculator for a personalised figure."
       },
       {
         "id": 2,
@@ -788,7 +788,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing a Velar L560 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a £20,000 D300, a £6,500–£9,500 recon is 33–48% of the car's value - well within our 60% Land Rover threshold. Against a high-mileage £15,000 example, the same recon is 43–63% - borderline. For a P400 at £35,000, a £4,500–£7,500 recon is 13–21% - a straightforward repair decision. Value the car first; if it's a pre-2019 diesel without chain history, evaluate carefully."
+        "answer": "Depends on the car's value. Against a £20,000 D300, a £6,500-£9,500 recon is 33-48% of the car's value - well within our 60% Land Rover threshold. Against a high-mileage £15,000 example, the same recon is 43-63% - borderline. For a P400 at £35,000, a £4,500-£7,500 recon is 13-21% - a straightforward repair decision. Value the car first; if it's a pre-2019 diesel without chain history, evaluate carefully."
       },
       {
         "id": 8,

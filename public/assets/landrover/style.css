@@ -352,7 +352,7 @@ table { border-collapse: collapse; width: 100%; }
 .faq-item summary { font-weight: 700; font-size: 16.5px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; }
 .faq-item summary::-webkit-details-marker { display: none; }
 .faq-item summary::after { content: "+"; color: var(--lr-gold); font-size: 20px; }
-.faq-item[open] summary::after { content: "–"; }
+.faq-item[open] summary::after { content: "-"; }
 .faq-item p { margin: 12px 0 0; color: var(--lr-ink-mid); font-size: 15px; }
 
 /* ---------- TRUST STRIP ---------- */

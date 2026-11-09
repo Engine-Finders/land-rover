@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "L663 D300 (AJ20D6, 2020–present)",
+              "name": "L663 D300 (AJ20D6, 2020-present)",
               "url": "https://landroverengine.uk/defender/l663"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Defender D300 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ20D6 engine typically costs £5,000–£7,500 supply only, with the same engine used across the L663 Defender and modern Range Rover / Discovery ranges. Fitting adds £1,100–£1,900. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned AJ20D6 engine typically costs £5,000-£7,500 supply only, with the same engine used across the L663 Defender and modern Range Rover / Discovery ranges. Fitting adds £1,100-£1,900. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair the AJ20D6's AdBlue system, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - most AdBlue system issues on the AJ20D6 are repairable. NOx sensors and the AdBlue injector are the usual culprits, with repairs typically costing £500–£1,500. If your countdown has started, do not ignore it - get it inspected immediately."
+                "text": "Yes - most AdBlue system issues on the AJ20D6 are repairable. NOx sensors and the AdBlue injector are the usual culprits, with repairs typically costing £500-£1,500. If your countdown has started, do not ignore it - get it inspected immediately."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Defender D300 • 2020–present • 3.0 <a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a>",
+    "tagPill": "Land Rover Defender D300 • 2020-present • 3.0 <a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a>",
     "h1": "Land Rover Defender D300 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover Defender D300 specialists. Compare reconditioned, rebuilt and used AJ20D6 engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "L663",
-        "years": "2020–present",
+        "years": "2020-present",
         "engineCode": "AJ20D6 (3.0 6-cylinder Ingenium diesel)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,500–£7,500 [EM-QUOTE]",
+        "reconCost": "£4,500-£7,500 [EM-QUOTE]",
         "eraNote": "JLR's 3.0 straight-six Ingenium diesel - the D300's sole engine, replacing the earlier 306DT V6 in the L663."
       }
     ],
@@ -240,35 +240,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£4,500–£6,500",
-        "fittedIndie": "£5,400–£7,800",
-        "warranty": "3–6 months",
+        "supplyOnly": "£4,500-£6,500",
+        "fittedIndie": "£5,400-£7,800",
+        "warranty": "3-6 months",
         "bestFor": "Budget priority; vehicle under £15,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£5,000–£7,500",
-        "fittedIndie": "£6,100–£8,900",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,000-£7,500",
+        "fittedIndie": "£6,100-£8,900",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£6,000–£8,000",
-        "fittedIndie": "£7,100–£9,400",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£8,000",
+        "fittedIndie": "£7,100-£9,400",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£9,000–£13,000",
-        "fittedIndie": "£10,500–£15,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£9,000-£13,000",
+        "fittedIndie": "£10,500-£15,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting a Defender D300 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting a Defender D300 engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "",
       "href": "#"
@@ -299,19 +299,19 @@
         {
           "problem": "DPF/EGR clogging (AJ20D6)",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200",
+          "typicalCost": "£400-£1,200",
           "whenItMakesSense": "Preventative - catches the issue before turbo/injector damage occurs"
         },
         {
           "problem": "AdBlue system failure (AJ20D6)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,500",
+          "typicalCost": "£500-£1,500",
           "whenItMakesSense": "Straightforward sensor/pump replacement if caught early"
         },
         {
           "problem": "Oil dilution from failed DPF regen",
           "repairable": "⚠️ Depends",
-          "typicalCost": "£100–£300",
+          "typicalCost": "£100-£300",
           "whenItMakesSense": "If caught before bearing damage; if not, engine replacement required"
         },
         {
@@ -323,7 +323,7 @@
         {
           "problem": "Turbocharger failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Repairable by specialists; do not drive with boost issues"
         }
       ]
@@ -373,10 +373,10 @@
     "rows": [
       {
         "engineCode": "AJ20D6",
-        "years": "2020–present",
+        "years": "2020-present",
         "power": "300 bhp / 650 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,000–£7,500 [EM-QUOTE]"
+        "avgReconCost": "£5,000-£7,500 [EM-QUOTE]"
       }
     ],
     "matchNote": "",
@@ -443,7 +443,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Defender D300 engine replacement cost in the UK?",
-        "answer": "A reconditioned AJ20D6 engine typically costs £5,000–£7,500 supply only, with the same engine used across the L663 Defender and modern Range Rover / Discovery ranges. Fitting adds £1,100–£1,900. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned AJ20D6 engine typically costs £5,000-£7,500 supply only, with the same engine used across the L663 Defender and modern Range Rover / Discovery ranges. Fitting adds £1,100-£1,900. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -468,7 +468,7 @@
       {
         "id": 6,
         "question": "Can I repair the AJ20D6's AdBlue system, or does it need replacement?",
-        "answer": "Yes - most AdBlue system issues on the AJ20D6 are repairable. NOx sensors and the AdBlue injector are the usual culprits, with repairs typically costing £500–£1,500. If your countdown has started, do not ignore it - get it inspected immediately."
+        "answer": "Yes - most AdBlue system issues on the AJ20D6 are repairable. NOx sensors and the AdBlue injector are the usual culprits, with repairs typically costing £500-£1,500. If your countdown has started, do not ignore it - get it inspected immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

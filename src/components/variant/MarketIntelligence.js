@@ -56,7 +56,7 @@ function parseRegionalDemand(value = "") {
   const tag = tagMatch ? tagMatch[1] : "";
   let clean = tagMatch ? value.slice(0, tagMatch.index) : value;
   // Drop trailing prose after the last share, e.g. "- premium SUV strongholds"
-  clean = clean.replace(/\s+[-–-].*$/, "").trim();
+  clean = clean.replace(/\s+[---].*$/, "").trim();
   const regions = clean
     .split(",")
     .map((part) => {
@@ -72,8 +72,8 @@ function parseMetric(value = "") {
   const tag = tagMatch ? tagMatch[1] : "";
   const clean = (tagMatch ? value.slice(0, tagMatch.index) : value).trim();
 
-  // a figure or range: "120,000–150,000", "£3,500–£4,500", "65%", "£1.2k"
-  const numberLead = /^(?:approximately\s+)?(£?[\d][\d,.]*k?(?:\s*[–-]\s*£?[\d][\d,.]*k?)?%?)\s*(.*)$/i;
+  // a figure or range: "120,000-150,000", "£3,500-£4,500", "65%", "£1.2k"
+  const numberLead = /^(?:approximately\s+)?(£?[\d][\d,.]*k?(?:\s*[--]\s*£?[\d][\d,.]*k?)?%?)\s*(.*)$/i;
   // an engine code with its note: "11L (Defender-spec 200Tdi)" -> "11L" + "(Defender-spec 200Tdi)"
   const code = clean.match(/^([A-Z0-9][A-Z0-9/]{1,9})\s+(\(.+\))$/);
   if (code && /\d/.test(code[1])) return { title: "", stat: code[1], subtext: code[2], tag };
@@ -114,7 +114,7 @@ function CardIcon({ label = "", title = "" }) {
     : /mileage|miles/.test(t) ? "meter" : /code|engine/.test(t) ? "engine" : /region/.test(t) ? "real-inquiries" : "real-inquiries";
   return <span className={disc}><LrIcon name={name} tone="current" className={ICON_MD} /></span>;
 }
-const dash = (v = "") => String(v).replace(/ - /g, " — ");
+const dash = (v = "") => String(v).replace(/ - /g, " - ");
 
 function StatCard({ label, title, stat, subtext, tag }) {
   // a failure / text-only card: the name in the serif and its note, no big figure
@@ -129,7 +129,7 @@ function StatCard({ label, title, stat, subtext, tag }) {
       </div>
       {head && <p className={`${SERIF} mt-2.5 text-[16px] leading-snug text-lr-head md:mt-3 md:text-[18px]`}>{dash(head)}</p>}
       {figure && (
-        <p className={`${SERIF} mt-2.5 text-[21px] leading-[1.12] tracking-[-0.01em] text-lr-ink min-[400px]:text-[23px] md:mt-3 md:text-[26px] lg:text-[23px] xl:text-[28px] min-[1400px]:text-[31px] dark:text-lr-green`} dangerouslySetInnerHTML={{ __html: figure.replace(/([–\-/])/, "$1<wbr>") }} />
+        <p className={`${SERIF} mt-2.5 text-[21px] leading-[1.12] tracking-[-0.01em] text-lr-ink min-[400px]:text-[23px] md:mt-3 md:text-[26px] lg:text-[23px] xl:text-[28px] min-[1400px]:text-[31px] dark:text-lr-green`} dangerouslySetInnerHTML={{ __html: figure.replace(/([-\-/])/, "$1<wbr>") }} />
       )}
       {subtext && <p className="mt-2 text-[13.5px] leading-snug text-lr-body md:text-[14.5px] xl:text-[15px]">{dash(subtext)}</p>}
       {tag && <p className={`${TAG} mt-auto pt-3`}>[{tag}]</p>}

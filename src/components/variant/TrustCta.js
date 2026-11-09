@@ -17,7 +17,7 @@ const SERIF = "font-[family-name:var(--font-serif-display)]";
 const SANS = "font-[family-name:var(--font-instrument-sans)]";
 const CARD = "rounded-lg border border-lr-line bg-lr-card shadow-[0_14px_30px_-26px_var(--lr-shadow)]";
 const DISC = "flex shrink-0 items-center justify-center rounded-full bg-lr-brand text-white dark:border-[1.5px] dark:border-lr-gold-line/70 dark:bg-transparent dark:text-lr-gold";
-const dash = (t = "") => String(t).replace(/ - /g, " — ");
+const dash = (t = "") => String(t).replace(/ - /g, " - ");
 
 const POINT_ICONS = ["genuine-failure-data", "scale", "uk-wide-delivery"];
 const TRUST = [

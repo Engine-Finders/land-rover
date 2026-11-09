@@ -38,7 +38,7 @@ export function engineDbCar(hero = {}, model = "") {
 // the generation's display name, from the overview heading ("Land Rover Defender L316 - Overview")
 export function genName(page = {}) {
   return String(page?.overview?.h2 || page?.hero?.h1 || "")
-    .split(/\s+[-–—]\s+/)[0]
+    .split(/\s+[-–-]\s+/)[0]
     .replace(/\s+Engines?$/i, "")
     .trim();
 }

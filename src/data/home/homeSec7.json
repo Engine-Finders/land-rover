@@ -17,7 +17,7 @@
       "spec": "2.0L Diesel (Ingenium)",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2015–Present",
+      "years": "2015-Present",
       "enquiries": "1,150 enquiries",
       "sourceTag": "[EM-VERIFIED]",
       "verdict": {
@@ -33,13 +33,13 @@
       "spec": "3.0L V6 Diesel (TDV6/SDV6)",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2004–2020",
+      "years": "2004-2020",
       "enquiries": "980 enquiries",
       "sourceTag": "[EM-VERIFIED]",
       "verdict": {
         "icon": "🔴",
         "label": "Avoid",
-        "text": "catastrophic crankshaft bearing failure; largely unrepairable once it starts. £6,500–£9,500 recon.",
+        "text": "catastrophic crankshaft bearing failure; largely unrepairable once it starts. £6,500-£9,500 recon.",
         "type": "avoid"
       },
       "href": "#"
@@ -49,7 +49,7 @@
       "spec": "2.7L V6 Diesel (TDV6)",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2004–2010",
+      "years": "2004-2010",
       "enquiries": "700 enquiries",
       "sourceTag": "[EM-VERIFIED]",
       "verdict": {
@@ -65,7 +65,7 @@
       "spec": "3.6L V8 Diesel (TDV8)",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2006–2012",
+      "years": "2006-2012",
       "enquiries": "650 enquiries",
       "sourceTag": "[EM-VERIFIED]",
       "verdict": {
@@ -81,7 +81,7 @@
       "spec": "4.4L V8 Diesel (SDV8)",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2012–2021",
+      "years": "2012-2021",
       "enquiries": "620 enquiries",
       "sourceTag": "[EM-VERIFIED]",
       "verdict": {
@@ -97,7 +97,7 @@
       "spec": "2.0L Petrol (Ingenium)",
       "fuel": "Petrol",
       "fuelIcon": "⛽",
-      "years": "2015–Present",
+      "years": "2015-Present",
       "enquiries": "480 enquiries",
       "sourceTag": "[EM-VERIFIED]",
       "verdict": {

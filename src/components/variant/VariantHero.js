@@ -34,7 +34,7 @@ function parseBadge(badge = "") {
 
 function splitPriceAnchor(priceAnchor = "") {
   const [headline, ...rest] = priceAnchor.split(" · ");
-  const m = headline.match(/^(.*?)\s*[-–—]\s*from\s+(.+)$/i);
+  const m = headline.match(/^(.*?)\s*[---]\s*from\s+(.+)$/i);
   return { headline, lead: m ? m[1] : headline, range: m ? m[2] : "", note: rest.join(" · ") };
 }
 
@@ -80,7 +80,7 @@ export default function VariantHero({ data, car = null, parent = "" }) {
   const price = splitPriceAnchor(data.priceAnchor);
   const note = splitNote(price.note);
   const ticker = (data.ticker || "").replace(/^●\s*/, "").split(" · ").filter(Boolean);
-  const sub = (data.subHeadline || "").replace(/ - /g, " — ");
+  const sub = (data.subHeadline || "").replace(/ - /g, " - ");
   const cta = variantCtaCopy(variantDisplayName(data, parent));
 
   return (
@@ -106,7 +106,7 @@ export default function VariantHero({ data, car = null, parent = "" }) {
 
           <div className="relative z-10 lg:max-w-[50%] xl:max-w-[52%]">
             <h1 className={`${HERO_H1} mt-5 text-lr-head md:mt-7 lg:mt-9`}>
-              <span dangerouslySetInnerHTML={{ __html: accent ? `${lead} — ` : lead }} />
+              <span dangerouslySetInnerHTML={{ __html: accent ? `${lead} - ` : lead }} />
               {accent && <span className="text-lr-ink dark:text-lr-green" dangerouslySetInnerHTML={{ __html: accent }} />}
             </h1>
             {sub && (
@@ -162,7 +162,7 @@ export default function VariantHero({ data, car = null, parent = "" }) {
                 <p className="text-[15px] font-semibold leading-snug text-lr-head md:text-[16px] lg:text-[17px]">
                   {price.range ? (
                     <>
-                      {price.lead} —<br />
+                      {price.lead} -<br />
                       <span className="font-normal">from </span>
                       <span className="whitespace-nowrap font-semibold text-lr-ink dark:text-lr-green">{price.range}</span>
                     </>

@@ -29,8 +29,8 @@ import {
   yearSpan,
 } from "@/components/models/engineSections";
 
-// Model page section 5 — the engine codes database, built to the approved Velar reference: the
-// eyebrow and "… Engine Codes — / The Complete Database" headline with four stat cards (all derived
+// Model page section 5 - the engine codes database, built to the approved Velar reference: the
+// eyebrow and "… Engine Codes - / The Complete Database" headline with four stat cards (all derived
 // from the page data), the engine table (sortable, info tooltips on the rated columns, stars for
 // reliability, data tags in green), a "View all" toggle past eight engines, the rating legend, and
 // the confidence / data-note / method cards. Below 1280px the table becomes one card per engine.
@@ -63,7 +63,7 @@ const WIDTHS = {
 
 const INFO = {
   reliability: "Rated out of five from our 2025 enquiry data and documented failure patterns. How confident we are in each rating is explained below the table.",
-  enquiries: "UK engine enquiries in 2025. “JLR-wide” counts every model that uses the engine; “—” means too few enquiries for a figure, so the rating rests on documented patterns.",
+  enquiries: "UK engine enquiries in 2025. “JLR-wide” counts every model that uses the engine; “-” means too few enquiries for a figure, so the rating rests on documented patterns.",
   avgRebuildCost: "Typical price of a reconditioned engine, supply only. Fitting is extra.",
 };
 
@@ -161,7 +161,7 @@ function Reliability({ value, size = "h-4 w-4 xl:h-[17px] xl:w-[17px]" }) {
 // figure on the first line, its data tags (green) underneath
 function Tagged({ value, mainClass = "", tagClass = "" }) {
   const { main, tags } = splitTags(value);
-  const none = /^—/.test(stripHtml(main));
+  const none = /^-/.test(stripHtml(main));
   return (
     <span className="flex flex-col gap-0.5">
       {main && <Html html={main} className={`${LINKS} ${none ? "font-normal text-lr-muted" : mainClass}`} />}
@@ -302,7 +302,7 @@ function confidenceParts(text = "") {
   if (at === -1) return { main: labelledParagraphs(text), note: [] };
   const note = text
     .slice(at)
-    .replace(/^Data note \(internal\)\s*(?:[-–—:]\s*)?:?\s*/i, "")
+    .replace(/^Data note \(internal\)\s*(?:[-–-:]\s*)?:?\s*/i, "")
     .trim();
   return { main: labelledParagraphs(text.slice(0, at)), note: labelledParagraphs(note, true) };
 }
@@ -331,7 +331,7 @@ function WarnIcon({ className = "" }) {
 
 function correctionText(c) {
   if (typeof c === "string") return c;
-  if (c && typeof c === "object") return Object.values(c).filter((v) => typeof v === "string").join(" — ");
+  if (c && typeof c === "object") return Object.values(c).filter((v) => typeof v === "string").join(" - ");
   return "";
 }
 
@@ -388,7 +388,7 @@ export default function EngineDatabase({ data, page }) {
         <div className="grid gap-6 md:gap-8 min-[1440px]:grid-cols-[minmax(0,0.7fr)_minmax(0,1fr)] min-[1440px]:items-start min-[1440px]:gap-8">
           <div className="min-w-0">
             <EyebrowPill icon="database">Engine Codes</EyebrowPill>
-            {/* 46px beside the stats from 1440px, so "… — / The Complete Database" holds two lines */}
+            {/* 46px beside the stats from 1440px, so "… - / The Complete Database" holds two lines */}
             <SectionTitle h2={data.h2} className="mt-3 md:mt-4" />
             {data.subHeadline && (
               <p
@@ -449,7 +449,7 @@ export default function EngineDatabase({ data, page }) {
                   {mobileFields.map((f) => (
                     <div key={f} className={`min-w-0 ${f === "family" ? "col-span-2" : ""}`}>
                       <dt className="text-[13px] leading-snug text-lr-muted">{labelOf(f)}</dt>
-                      <dd className={`mt-0.5 text-[14px] font-medium leading-snug text-lr-head ${LINKS}`} dangerouslySetInnerHTML={{ __html: cellHtml(e[f]) || "—" }} />
+                      <dd className={`mt-0.5 text-[14px] font-medium leading-snug text-lr-head ${LINKS}`} dangerouslySetInnerHTML={{ __html: cellHtml(e[f]) || "-" }} />
                     </div>
                   ))}
                 </dl>

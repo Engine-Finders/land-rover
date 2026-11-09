@@ -47,9 +47,9 @@ function splitPill(tagPill = "") {
 }
 
 // "275+ Enquiries (2025) [EM-VERIFIED] - #1 Most-Enquired Velar Model"
-//   -> { value: "275+", label: "Enquiries (2025) [EM-VERIFIED] — #1 Most-Enquired Velar Model" }
+//   -> { value: "275+", label: "Enquiries (2025) [EM-VERIFIED] - #1 Most-Enquired Velar Model" }
 function splitStat(text = "") {
-  const clean = text.replace(/\s+-\s+/g, " — ");
+  const clean = text.replace(/\s+-\s+/g, " - ");
   const m = clean.match(/^([\d,.]+\+?)\s+(.+)$/);
   // short labels break after their comma, as in the reference ("Generation," / "8 Powertrains")
   const label = (s) => (s.length < 40 ? s.replace(/, /, ",<br>") : s);
@@ -97,15 +97,15 @@ export default function ModelHero({ data, slug = "" }) {
 
   const pill = splitPill(data.tagPill);
   const [firstEngine, ...restEngines] = pill.engines.split(" ");
-  const dash = (data.h1 || "").search(/\s[-–—]\s/);
+  const dash = (data.h1 || "").search(/\s[-–-]\s/);
   const lead = dash === -1 ? data.h1 : data.h1.slice(0, dash);
   const tail = dash === -1 ? "" : data.h1.slice(dash + 3);
   const accentAt = tail.search(/UK Guide$/);
-  // long model names ("Range Rover Sport Engines —") step down to 54px on desktop so the headline
+  // long model names ("Range Rover Sport Engines -") step down to 54px on desktop so the headline
   // stays at three lines and the line-up panel beside it keeps its proportions
   const longLead = lead.length > 20;
   const cta = modelCtaCopy(slug);
-  const sub = (data.subHeadline || "").replace(/\s+-\s+/g, " — ");
+  const sub = (data.subHeadline || "").replace(/\s+-\s+/g, " - ");
 
   const lineup = LINEUPS.has(slug) ? slug : "";
   const art = lineup && {
@@ -176,7 +176,7 @@ export default function ModelHero({ data, slug = "" }) {
             <h1 className={`${H1} mt-6 text-balance text-lr-head sm:mt-8 lg:mt-11 xl:mt-12 xl:max-w-[63%] ${longLead ? "xl:text-[54px]!" : ""}`}>
               {tail ? (
                 <>
-                  {lead}{"\u00a0"}—{!longLead && <br className="max-xl:hidden" />}{" "}
+                  {lead}{"\u00a0"}-{!longLead && <br className="max-xl:hidden" />}{" "}
                   {accentAt > 0 ? (
                     <>
                       {tail.slice(0, accentAt)}

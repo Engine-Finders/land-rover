@@ -19,7 +19,7 @@ import {
 } from "@/components/models/modelKit";
 import { modelCtaCopy } from "@/lib/ctaCopy";
 
-// Model page section 11, built to the approved reference: "Can I Repair My Velar Engine — / or Should
+// Model page section 11, built to the approved reference: "Can I Repair My Velar Engine - / or Should
 // I Replace It?" with the question line and "The smarter way to decide" callout beside the model's car,
 // the two PATH cards (know your engine -> the calculator with the model pre-selected; not sure ->
 // identify the engine first) and the dark "Stop guessing" banner. Phones stack it in that order.
@@ -29,7 +29,7 @@ const SERIF_TITLE = `${SERIF} font-normal tracking-[-0.01em]`;
 
 // "Path 1 - Know your engine? Launch with Velar pre-selected" -> { n, title, body }
 function parsePath(label = "") {
-  const m = label.match(/^Path\s*(\d+)\s*[-–—:]\s*([\s\S]*)$/i);
+  const m = label.match(/^Path\s*(\d+)\s*[-–-:]\s*([\s\S]*)$/i);
   const rest = (m ? m[2] : label).trim();
   const q = rest.indexOf("?");
   const title = q === -1 ? rest : rest.slice(0, q + 1);
@@ -153,12 +153,12 @@ export default function CalculatorCTA({ data, slug = "" }) {
         <div className="grid items-start gap-6 md:gap-8 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] xl:gap-14">
           <div className="min-w-0">
             <EyebrowPill>Repair or Replace</EyebrowPill>
-            {/* 38-50px from xl so "Can I Repair My … Engine — / or Should I Replace It?" holds two lines beside the car */}
+            {/* 38-50px from xl so "Can I Repair My … Engine - / or Should I Replace It?" holds two lines beside the car */}
             <h2 className={`${H2_MODEL} mt-3 text-balance text-lr-head md:mt-4`}>
               {accent ? (
                 <>
                   {lead}
-                  {" "}—<br />
+                  {" "}-<br />
                   {or ? (
                     <>
                       {or[1]}

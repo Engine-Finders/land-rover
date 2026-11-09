@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Range Rover Velar D180 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Velar D180 engine (204DTD) typically costs £4,000–£5,500 supply only. Fitting adds £1,200–£1,800. A used engine may cost around £3,000–£5,000 including installation, while a full‑service replacement can be priced at approximately £7,000. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned Velar D180 engine (204DTD) typically costs £4,000-£5,500 supply only. Fitting adds £1,200-£1,800. A used engine may cost around £3,000-£5,000 including installation, while a full‑service replacement can be priced at approximately £7,000. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -100,7 +100,7 @@
               "name": "What are the common problems with the Range Rover Velar D180?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The most serious issue is timing chain stretch – the chain, guides, and tensioners wear prematurely, causing chain stretch. If it stretches too far, it can 'jump' a tooth or snap, causing catastrophic engine damage. Other common problems include DPF blockage, EGR valve failure, and balancer bearing wear on early production engines."
+                "text": "The most serious issue is timing chain stretch - the chain, guides, and tensioners wear prematurely, causing chain stretch. If it stretches too far, it can 'jump' a tooth or snap, causing catastrophic engine damage. Other common problems include DPF blockage, EGR valve failure, and balancer bearing wear on early production engines."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Velar D180 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Given the Velar's retained value (typically £15,000–£30,000+), a £4,000–£5,500 reconditioned engine is a significant but often justifiable expense. If the timing chain has snapped and caused valve damage, a full engine replacement at £4,000–£8,000 may be necessary. Get a full diagnostic assessment before committing – if the rest of the vehicle is in good condition, replacement is usually the better option."
+                "text": "Given the Velar's retained value (typically £15,000-£30,000+), a £4,000-£5,500 reconditioned engine is a significant but often justifiable expense. If the timing chain has snapped and caused valve damage, a full engine replacement at £4,000-£8,000 may be necessary. Get a full diagnostic assessment before committing - if the rest of the vehicle is in good condition, replacement is usually the better option."
               }
             },
             {
@@ -116,7 +116,7 @@
               "name": "How do I find my Velar's engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The Velar D180 uses the 204DTD (also AJ20D4) 2.0‑litre Ingenium diesel. This is stamped on the engine block and listed on your V5C. The D180 badge itself confirms the engine – it's the 180 PS 2.0‑litre diesel offered in the L560 Velar from 2017‑2020."
+                "text": "The Velar D180 uses the 204DTD (also AJ20D4) 2.0‑litre Ingenium diesel. This is stamped on the engine block and listed on your V5C. The D180 badge itself confirms the engine - it's the 180 PS 2.0‑litre diesel offered in the L560 Velar from 2017‑2020."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair a Velar D180 engine issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most issues – DPF blockage, EGR valve problems, balancer bearing wear – are repairable. However, if the timing chain has stretched significantly or snapped, the engine is an interference design – pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild."
+                "text": "Most issues - DPF blockage, EGR valve problems, balancer bearing wear - are repairable. However, if the timing chain has stretched significantly or snapped, the engine is an interference design - pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Range Rover Velar D180 • 2017–2020 • 2.0L Turbo Diesel (<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a>)",
+    "tagPill": "Land Rover Range Rover Velar D180 • 2017-2020 • 2.0L Turbo Diesel (<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>204DTD</a>)",
     "h1": "Land Rover Range Rover Velar D180 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover specialists. Compare reconditioned, rebuilt and used 204DTD 2.0‑litre turbo diesel engines for the Velar D180 - the efficient and torquey Ingenium diesel that powered the original L560 Velar. Supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "L560",
-        "years": "2017–2020",
+        "years": "2017-2020",
         "engineCode": "204DTD (AJ20D4)",
         "reliability": "★★½☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,000–£6,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£4,000-£6,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "180 PS, 430 Nm - rear‑mounted timing chain is the defining weakness"
       }
     ],
@@ -240,30 +240,30 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,500–£4,500",
-        "fittedIndie": "£3,500–£5,800",
-        "warranty": "1–6 months",
+        "supplyOnly": "£2,500-£4,500",
+        "fittedIndie": "£3,500-£5,800",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower‑mileage salvage units"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£4,000–£5,500",
-        "fittedIndie": "£5,200–£7,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,000-£5,500",
+        "fittedIndie": "£5,200-£7,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£5,500–£7,000",
-        "fittedIndie": "£6,800–£8,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,500-£7,000",
+        "fittedIndie": "£6,800-£8,500",
+        "warranty": "12-24 months",
         "bestFor": "Long‑term ownership; maximum reliability"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£7,000–£9,500",
-        "fittedIndie": "£8,500–£11,500",
-        "warranty": "24–36 months",
+        "supplyOnly": "£7,000-£9,500",
+        "fittedIndie": "£8,500-£11,500",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs; warranty claims; full provenance"
       }
     ],
@@ -281,8 +281,8 @@
         "title": "Timing Chain Stretch / Failure (The Defining Weakness)",
         "symptoms": "Metallic rattle on cold start lasting 2‑5 seconds, rattle persisting when warm, engine warning light (P0016/P0341), rough idle, loss of power, eventual catastrophic failure.",
         "typicalMileage": "60,000‑120,000 miles - often less than 150,000 km.",
-        "repairCost": "£1,800–£4,500+ (chain replacement).",
-        "replacementCost": "£4,000–£8,000+ (if chain snaps and damages the engine).",
+        "repairCost": "£1,800-£4,500+ (chain replacement).",
+        "replacementCost": "£4,000-£8,000+ (if chain snaps and damages the engine).",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -299,7 +299,7 @@
         "title": "DPF Blockage (Urban Driving)",
         "symptoms": "Reduced power, increased fuel consumption, engine warning light, DPF warning message, failed emissions test.",
         "typicalMileage": "30,000‑80,000 miles (depends on driving patterns).",
-        "repairCost": "£400–£1,200 [PLACEHOLDER] (DPF cleaning or replacement).",
+        "repairCost": "£400-£1,200 [PLACEHOLDER] (DPF cleaning or replacement).",
         "replacementCost": "N/A - repair only (if caught early).",
         "urgency": {
           "icon": "🟡",
@@ -317,7 +317,7 @@
         "title": "Balancer Bearing Wear (Early Production)",
         "symptoms": "Unusual buzzing or humming noise from the engine, particularly at idle or low RPM.",
         "typicalMileage": "40,000‑80,000 miles.",
-        "repairCost": "£800–£2,000 [PLACEHOLDER] (balancer bearing replacement).",
+        "repairCost": "£800-£2,000 [PLACEHOLDER] (balancer bearing replacement).",
         "replacementCost": "N/A - repair only (if caught early; ignored wear can lead to more extensive damage).",
         "urgency": {
           "icon": "🟠",
@@ -354,31 +354,31 @@
         {
           "problem": "Timing chain stretch (early)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,800–£4,500+ [11†L6]",
+          "typicalCost": "£1,800-£4,500+ [11†L6]",
           "whenItMakesSense": "Catch it early - cheaper than engine replacement"
         },
         {
           "problem": "Timing chain snapped",
           "repairable": "❌ Usually No",
-          "typicalCost": "£4,000–£8,000+ [11†L7]",
+          "typicalCost": "£4,000-£8,000+ [11†L7]",
           "whenItMakesSense": "Full engine replacement - valve damage is almost certain"
         },
         {
           "problem": "DPF blockage",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200 [PLACEHOLDER]",
+          "typicalCost": "£400-£1,200 [PLACEHOLDER]",
           "whenItMakesSense": "Routine maintenance - always worth doing"
         },
         {
           "problem": "Balancer bearing wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,000 [PLACEHOLDER]",
+          "typicalCost": "£800-£2,000 [PLACEHOLDER]",
           "whenItMakesSense": "Worth fixing on any Velar worth keeping"
         },
         {
           "problem": "EGR valve failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800 [PLACEHOLDER]",
+          "typicalCost": "£300-£800 [PLACEHOLDER]",
           "whenItMakesSense": "Straightforward fix - always worth doing"
         }
       ]
@@ -428,10 +428,10 @@
     "rows": [
       {
         "engineCode": "204DTD (AJ20D4)",
-        "years": "2017–2020",
+        "years": "2017-2020",
         "power": "180 PS (132 kW) / 430 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,000–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£4,000-£5,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",

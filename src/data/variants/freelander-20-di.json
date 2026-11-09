@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Freelander I 2.0 Di (Rover L-series, 1998–2001)",
+              "name": "Freelander I 2.0 Di (Rover L-series, 1998-2001)",
               "url": "https://landroverengine.uk/freelander/freelander-i"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Land Rover Freelander 2.0 Di engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Freelander 2.0 Di (L-series) engine typically costs £1,800–£2,900 supply only. Fitting adds £800–£1,300 depending on location and workshop rates. Used engines start from £700–£1,200 supply only."
+                "text": "A reconditioned Freelander 2.0 Di (L-series) engine typically costs £1,800-£2,900 supply only. Fitting adds £800-£1,300 depending on location and workshop rates. Used engines start from £700-£1,200 supply only."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Freelander 2.0 Di engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £2,000–£4,000 Freelander, a £2,500–£3,500 recon is 60–175% of the car's value. For a clean example with good body and chassis, replacement may be worthwhile given the L-series engine's longevity. However, if the vehicle has significant corrosion, evaluate restoration costs before committing. For most examples under £2,000, the replacement cost may exceed our 60% Land Rover scrap threshold."
+                "text": "Depends on vehicle value and condition. Against a well-kept £2,000-£4,000 Freelander, a £2,500-£3,500 recon is 60-175% of the car's value. For a clean example with good body and chassis, replacement may be worthwhile given the L-series engine's longevity. However, if the vehicle has significant corrosion, evaluate restoration costs before committing. For most examples under £2,000, the replacement cost may exceed our 60% Land Rover scrap threshold."
               }
             },
             {
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Land Rover Freelander 2.0 Di • 1998–2001 • 1 Engine Generation",
+    "tagPill": "Land Rover Freelander 2.0 Di • 1998-2001 • 1 Engine Generation",
     "h1": "Land Rover Freelander 2.0 Di Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Land Rover Freelander specialists. The 2.0-litre Rover L-series diesel powered the earliest Freelanders - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "Freelander I (L314)",
-        "years": "1998–2001",
+        "years": "1998-2001",
         "engineCode": "Rover L-series (20T2N)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£1,800–£3,500 [PLACEHOLDER]",
+        "reconCost": "£1,800-£3,500 [PLACEHOLDER]",
         "eraNote": "Rover's first in-house direct-injection diesel - simple mechanical injection, famously durable if maintained"
       }
     ],
@@ -240,23 +240,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£700–£1,200",
-        "fittedIndie": "£1,500–£2,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£700-£1,200",
+        "fittedIndie": "£1,500-£2,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; vehicle under £2,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£1,800–£2,900",
-        "fittedIndie": "£3,000–£4,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£1,800-£2,900",
+        "fittedIndie": "£3,000-£4,200",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£2,500–£3,500",
-        "fittedIndie": "£4,000–£5,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,500-£3,500",
+        "fittedIndie": "£4,000-£5,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
@@ -268,7 +268,7 @@
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting a Freelander 2.0 Di engine typically takes 8–10 hours at £65–£95/hr (independent).",
+    "labourEstimate": "Fitting a Freelander 2.0 Di engine typically takes 8-10 hours at £65-£95/hr (independent).",
     "cta": {
       "label": "→ Compare Freelander 2.0 Di engine prices from UK specialists",
       "href": "#"
@@ -281,8 +281,8 @@
         "title": "Timing Belt Replacement (Critical Maintenance)",
         "symptoms": "No symptoms before failure - belt snaps without warning, causing catastrophic engine damage",
         "typicalMileage": "48,000 miles (recommended replacement interval)",
-        "repairCost": "£300–£600 (preventative belt kit replacement including cam belt, injection pump belt and tensioner)",
-        "replacementCost": "£2,500–£4,200 (if belt snaps - full engine replacement)",
+        "repairCost": "£300-£600 (preventative belt kit replacement including cam belt, injection pump belt and tensioner)",
+        "replacementCost": "£2,500-£4,200 (if belt snaps - full engine replacement)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -298,8 +298,8 @@
         "id": 2,
         "title": "Cylinder Head Cracking",
         "symptoms": "Coolant loss with no visible leak, white smoke from exhaust, oil contamination (mayonnaise-like residue on oil filler cap), overheating",
-        "typicalMileage": "80,000–150,000 miles",
-        "repairCost": "£800–£1,500 (cylinder head replacement)",
+        "typicalMileage": "80,000-150,000 miles",
+        "repairCost": "£800-£1,500 (cylinder head replacement)",
         "replacementCost": "N/A - repair only (does not typically progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟠",
@@ -316,8 +316,8 @@
         "id": 3,
         "title": "Injector and Fuel System Issues",
         "symptoms": "Rough idle, loss of power, stuttering above 2,700 rpm, poor fuel economy, engine warning light",
-        "typicalMileage": "80,000–150,000 miles",
-        "repairCost": "£200–£600 (injector cleaning, replacement or fuel system diagnostics)",
+        "typicalMileage": "80,000-150,000 miles",
+        "repairCost": "£200-£600 (injector cleaning, replacement or fuel system diagnostics)",
         "replacementCost": "N/A - repair only (does not typically progress to engine replacement)",
         "urgency": {
           "icon": "🟡",
@@ -354,7 +354,7 @@
         {
           "problem": "Timing belt (preventative)",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£600",
+          "typicalCost": "£300-£600",
           "whenItMakesSense": "Essential maintenance - do it on schedule"
         },
         {
@@ -366,19 +366,19 @@
         {
           "problem": "Cylinder head cracked",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,500",
+          "typicalCost": "£800-£1,500",
           "whenItMakesSense": "Viable if the rest of the engine is sound"
         },
         {
           "problem": "Injector issues",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£600",
+          "typicalCost": "£200-£600",
           "whenItMakesSense": "Straightforward repair on a simple mechanical system"
         },
         {
           "problem": "Head gasket failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,200",
+          "typicalCost": "£600-£1,200",
           "whenItMakesSense": "Viable on well-maintained examples"
         }
       ]
@@ -428,10 +428,10 @@
     "rows": [
       {
         "engineCode": "Rover L-series (20T2N)",
-        "years": "1998–2001",
+        "years": "1998-2001",
         "power": "98 bhp (72 kW) / 210 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£1,800–£3,500 [PLACEHOLDER]"
+        "avgReconCost": "£1,800-£3,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -501,7 +501,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "80,000–120,000 miles【PATTERN DATA】"
+        "value": "80,000-120,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -526,7 +526,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Freelander 2.0 Di engine replacement cost in the UK?",
-        "answer": "A reconditioned Freelander 2.0 Di (L-series) engine typically costs £1,800–£2,900 supply only. Fitting adds £800–£1,300 depending on location and workshop rates. Used engines start from £700–£1,200 supply only."
+        "answer": "A reconditioned Freelander 2.0 Di (L-series) engine typically costs £1,800-£2,900 supply only. Fitting adds £800-£1,300 depending on location and workshop rates. Used engines start from £700-£1,200 supply only."
       },
       {
         "id": 2,
@@ -541,7 +541,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Freelander 2.0 Di engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £2,000–£4,000 Freelander, a £2,500–£3,500 recon is 60–175% of the car's value. For a clean example with good body and chassis, replacement may be worthwhile given the L-series engine's longevity. However, if the vehicle has significant corrosion, evaluate restoration costs before committing. For most examples under £2,000, the replacement cost may exceed our 60% Land Rover scrap threshold."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £2,000-£4,000 Freelander, a £2,500-£3,500 recon is 60-175% of the car's value. For a clean example with good body and chassis, replacement may be worthwhile given the L-series engine's longevity. However, if the vehicle has significant corrosion, evaluate restoration costs before committing. For most examples under £2,000, the replacement cost may exceed our 60% Land Rover scrap threshold."
       },
       {
         "id": 5,

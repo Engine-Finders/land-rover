@@ -99,7 +99,7 @@
               "name": "How much does a Land Rover Defender L663 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned L663 engine typically costs £3,000–£12,000 supply only, depending on engine - the 2.0-litre diesel sits at £3,500–£5,800, while the 5.0 V8 can reach £6,000–£12,000. Fitting adds £650–£1,430. Use our calculator for a personalised figure."
+                "text": "A reconditioned L663 engine typically costs £3,000-£12,000 supply only, depending on engine - the 2.0-litre diesel sits at £3,500-£5,800, while the 5.0 V8 can reach £6,000-£12,000. Fitting adds £650-£1,430. Use our calculator for a personalised figure."
               }
             },
             {
@@ -123,7 +123,7 @@
               "name": "Is the Land Rover Defender L663 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Reliability is mixed. The 3.0-litre Ingenium engines - both diesel and petrol - have shown fewer major issues than the 2.0-litre four-cylinder diesel, which has a documented timing chain tensioner risk. Early L663 units (2019–2020) are more problematic than later production."
+                "text": "Reliability is mixed. The 3.0-litre Ingenium engines - both diesel and petrol - have shown fewer major issues than the 2.0-litre four-cylinder diesel, which has a documented timing chain tensioner risk. Early L663 units (2019-2020) are more problematic than later production."
               }
             },
             {
@@ -147,7 +147,7 @@
               "name": "Is it worth replacing a Land Rover Defender L663 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a £40,000 L663, a £5,000 AJ20D6 recon is 12.5% of the car's value - safe. Against a low-value high-mileage example, the same recon may approach 20–30% - still well within our 60% Land Rover threshold. On an L663, replacement almost always makes sense."
+                "text": "Depends on the car's value. Against a £40,000 L663, a £5,000 AJ20D6 recon is 12.5% of the car's value - safe. Against a low-value high-mileage example, the same recon may approach 20-30% - still well within our 60% Land Rover threshold. On an L663, replacement almost always makes sense."
               }
             },
             {
@@ -155,7 +155,7 @@
               "name": "How long do Land Rover Defender L663 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The 3.0-litre Ingenium diesels can exceed 150,000–200,000 miles with proper servicing. The 2.0-litre diesel's limiting factor is the timing chain - addressed proactively, it can also reach high mileage. The 5.0 V8 is similarly durable but requires specialist maintenance for the supercharger."
+                "text": "The 3.0-litre Ingenium diesels can exceed 150,000-200,000 miles with proper servicing. The 2.0-litre diesel's limiting factor is the timing chain - addressed proactively, it can also reach high mileage. The 5.0 V8 is similarly durable but requires specialist maintenance for the supercharger."
               }
             },
             {
@@ -163,7 +163,7 @@
               "name": "What is the difference between the Defender 90, 110 and 130?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "All three share the L663 platform and most engines. The Defender 90 is the 3-door short-wheelbase (2019–present), the 110 is the 5-door standard-wheelbase (2019–present), and the 130 is the extended 5-door (2022–present). Costs vary slightly by body style due to labour access - see each generation's own page for specifics."
+                "text": "All three share the L663 platform and most engines. The Defender 90 is the 3-door short-wheelbase (2019-present), the 110 is the 5-door standard-wheelbase (2019-present), and the 130 is the extended 5-door (2022-present). Costs vary slightly by body style due to labour access - see each generation's own page for specifics."
               }
             },
             {
@@ -238,7 +238,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Land Rover Defender L663 • SUV • 2019–present",
+    "tagPill": "Land Rover Defender L663 • SUV • 2019-present",
     "h1": "Land Rover Defender L663 Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the new-generation Defender L663 - from the four-cylinder diesel to the 400bhp six-cylinder petrol. Real UK costs, honest failure data, and the Ingenium tensioner risk that still haunts early units. Backed by 292+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
@@ -286,24 +286,24 @@
         "family": "2.0 Ingenium",
         "fuel": "Diesel",
         "displacement": "2.0L (1999cc)",
-        "power": "200–241 bhp",
-        "years": "2019–present",
+        "power": "200-241 bhp",
+        "years": "2019-present",
         "variants": "D200, D240",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£5,800 [EM-QUOTE]"
+        "avgReconCost": "£3,500-£5,800 [EM-QUOTE]"
       },
       {
         "engineCode": "<a href='https://landroverengine.uk/engine/aj20d6'>AJ20D6</a> / DT306",
         "family": "3.0 Ingenium",
         "fuel": "Diesel, MHEV",
         "displacement": "3.0L (2997cc)",
-        "power": "200–351 bhp",
-        "years": "2020–present",
+        "power": "200-351 bhp",
+        "years": "2020-present",
         "variants": "D200, D250, D300, D350",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,500 [EM-QUOTE]"
+        "avgReconCost": "£4,500-£7,500 [EM-QUOTE]"
       },
       {
         "engineCode": "<a href='https://landroverengine.uk/engine/ford-si4-pt204'>PT204</a> (AJ20P4)",
@@ -311,11 +311,11 @@
         "fuel": "Petrol",
         "displacement": "2.0L (1997cc)",
         "power": "300 bhp",
-        "years": "2019–present",
+        "years": "2019-present",
         "variants": "P300",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,000 [EM-QUOTE]"
+        "avgReconCost": "£3,000-£5,000 [EM-QUOTE]"
       },
       {
         "engineCode": "PT204 (PHEV)",
@@ -323,11 +323,11 @@
         "fuel": "Petrol PHEV",
         "displacement": "2.0L (1997cc)",
         "power": "404 bhp (combined)",
-        "years": "2020–present",
+        "years": "2020-present",
         "variants": "P400e",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£5,800 [EM-QUOTE]"
+        "avgReconCost": "£3,500-£5,800 [EM-QUOTE]"
       },
       {
         "engineCode": "PT306 (<a href='https://landroverengine.uk/engine/aj20p6'>AJ20P6</a>)",
@@ -335,23 +335,23 @@
         "fuel": "Petrol, MHEV",
         "displacement": "3.0L (2996cc)",
         "power": "400 bhp",
-        "years": "2019–present",
+        "years": "2019-present",
         "variants": "P400",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,500 [EM-QUOTE]"
+        "avgReconCost": "£4,500-£7,500 [EM-QUOTE]"
       },
       {
         "engineCode": "508PS (AJ133)",
         "family": "5.0 V8",
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L (5000cc)",
-        "power": "425–525 bhp",
-        "years": "2021–present",
+        "power": "425-525 bhp",
+        "years": "2021-present",
         "variants": "P425, P500, P525",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£6,000–£12,000 [EM-QUOTE]"
+        "avgReconCost": "£6,000-£12,000 [EM-QUOTE]"
       },
       {
         "engineCode": "4.4L Twin-Turbo V8",
@@ -359,11 +359,11 @@
         "fuel": "Petrol",
         "displacement": "4.4L (4395cc)",
         "power": "635 bhp",
-        "years": "2024–present",
+        "years": "2024-present",
         "variants": "P635 OCTA",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£9,000–£15,000 [EM-QUOTE]"
+        "avgReconCost": "£9,000-£15,000 [EM-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -382,13 +382,13 @@
     "items": [
       {
         "slot": "Best Diesel Overall",
-        "engine": "AJ20D6 3.0 D300 (2020–present)",
+        "engine": "AJ20D6 3.0 D300 (2020-present)",
         "quote": "The six-cylinder Ingenium diesel is genuinely more refined and responsive than the four-cylinder, with early reliability surveys suggesting it is more dependable than previous Land Rover diesel engines",
         "whoItsFor": "Buyers who need towing capability without the four-cylinder's risk profile."
       },
       {
         "slot": "Best Petrol Overall",
-        "engine": "PT306 3.0 P400 MHEV (2019–present)",
+        "engine": "PT306 3.0 P400 MHEV (2019-present)",
         "quote": "The mild-hybrid straight-six delivers 400bhp with smooth, linear power and the 48-volt electric supercharger virtually eliminates lag",
         "whoItsFor": "Buyers who want effortless performance and the most polished driving experience in the range."
       },
@@ -406,13 +406,13 @@
       },
       {
         "slot": "Best Value",
-        "engine": "AJ20D6 3.0 D250 (2020–present)",
+        "engine": "AJ20D6 3.0 D250 (2020-present)",
         "quote": "The entry-level six-cylinder diesel offers the refinement of the D300 with slightly lower output, making it the sweet spot for most UK buyers who want six-cylinder torque without the highest purchase price.",
         "whoItsFor": "Buyers who prioritise refinement and reliability over outright power."
       },
       {
         "slot": "Most Overlooked",
-        "engine": "PT204 2.0 P300 (2019–present)",
+        "engine": "PT204 2.0 P300 (2019-present)",
         "quote": "The four-cylinder petrol Ingenium is often dismissed in favour of the six-cylinder P400, but it delivers 300bhp from a 2.0-litre and avoids the diesel emissions complexity entirely",
         "whoItsFor": "Buyers who want petrol reliability without the V8's running costs."
       }
@@ -431,48 +431,48 @@
     "rows": [
       {
         "engine": "204DT 2.0 D200/D240",
-        "typicalMileage": "40k–80k",
+        "typicalMileage": "40k-80k",
         "commonMajorFailure": "Timing chain tensioner",
-        "repairCostSpecialist": "£800–£1,800",
-        "replacementCostRecon": "£3,500–£5,800",
+        "repairCostSpecialist": "£800-£1,800",
+        "replacementCostRecon": "£3,500-£5,800",
         "ownershipVerdict": "Risk vs Reward - chain history essential"
       },
       {
         "engine": "AJ20D6 3.0 D250/D300",
-        "typicalMileage": "40k–80k",
+        "typicalMileage": "40k-80k",
         "commonMajorFailure": "Turbocharger wear, emissions system",
-        "repairCostSpecialist": "£1,200–£2,500",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£1,200-£2,500",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Best Diesel - the L663's most dependable engine option"
       },
       {
         "engine": "PT204 2.0 P300",
-        "typicalMileage": "40k–80k",
+        "typicalMileage": "40k-80k",
         "commonMajorFailure": "CVVL system faults, cooling system",
-        "repairCostSpecialist": "£600–£1,500",
-        "replacementCostRecon": "£3,000–£5,000",
+        "repairCostSpecialist": "£600-£1,500",
+        "replacementCostRecon": "£3,000-£5,000",
         "ownershipVerdict": "Solid Choice - simpler than diesels, fewer emissions components"
       },
       {
         "engine": "PT306 3.0 P400 MHEV",
-        "typicalMileage": "40k–80k",
+        "typicalMileage": "40k-80k",
         "commonMajorFailure": "BISG/accessory belt, cooling fan",
-        "repairCostSpecialist": "£800–£2,000",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£800-£2,000",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Best Petrol - refined, powerful, well-supported"
       },
       {
         "engine": "508PS 5.0 V8",
-        "typicalMileage": "30k–70k",
+        "typicalMileage": "30k-70k",
         "commonMajorFailure": "Timing chain tensioner, supercharger",
-        "repairCostSpecialist": "£2,500–£5,000",
-        "replacementCostRecon": "£6,000–£12,000",
+        "repairCostSpecialist": "£2,500-£5,000",
+        "replacementCostRecon": "£6,000-£12,000",
         "ownershipVerdict": "Most Expensive - outstanding performance, outstanding running costs"
       }
     ],
     "economicsRule": {
       "title": "The L663 rule",
-      "text": "A £4,500–£7,500 D300 recon against a £40,000 L663 sits at 11–19% of the car's value - well within our 60% Land Rover threshold. Against a £70,000 example, the same recon drops to 6–11% - a routine maintenance decision, not a financial one. Value the car first, but on an L663, replacement almost always makes sense."
+      "text": "A £4,500-£7,500 D300 recon against a £40,000 L663 sits at 11-19% of the car's value - well within our 60% Land Rover threshold. Against a £70,000 example, the same recon drops to 6-11% - a routine maintenance decision, not a financial one. Value the car first, but on an L663, replacement almost always makes sense."
     },
     "keyTakeaways": [
       {
@@ -494,11 +494,11 @@
       {
         "id": 1,
         "title": "204DT 2.0 Ingenium Diesel Timing Chain Tensioner",
-        "affectedModels": "L663 Defender D200, D240 (2019–present, pre-2020 units highest risk).",
-        "typicalFailureMileage": "40,000–80,000 miles.",
+        "affectedModels": "L663 Defender D200, D240 (2019-present, pre-2020 units highest risk).",
+        "typicalFailureMileage": "40,000-80,000 miles.",
         "rootCause": "The 2.0-litre Ingenium diesel's timing chain tensioner can fail prematurely, allowing chain slack that leads to rattling on cold start. If ignored, the chain can skip teeth or snap, causing catastrophic piston-to-valve contact.",
         "tieredCosts": [],
-        "recommendation": "At the first sign of cold-start rattle on a 2.0-litre diesel L663, get the timing system inspected immediately. An £800–£1,800 preventative repair is dramatically cheaper than the £3,500–£5,800 replacement that follows if ignored. On an L663, the vehicle value easily justifies the repair.",
+        "recommendation": "At the first sign of cold-start rattle on a 2.0-litre diesel L663, get the timing system inspected immediately. An £800-£1,800 preventative repair is dramatically cheaper than the £3,500-£5,800 replacement that follows if ignored. On an L663, the vehicle value easily justifies the repair.",
         "cta": {
           "label": "Compare 204DT engine prices for your Defender L663 →",
           "href": "#"
@@ -507,8 +507,8 @@
       {
         "id": 2,
         "title": "AJ20D6 3.0 Diesel Turbocharger & Emissions System",
-        "affectedModels": "L663 Defender D250, D300, D350 (2020–present).",
-        "typicalFailureMileage": "40,000–80,000 miles.",
+        "affectedModels": "L663 Defender D250, D300, D350 (2020-present).",
+        "typicalFailureMileage": "40,000-80,000 miles.",
         "rootCause": "The twin-turbo setup on the 3.0-litre diesel places considerable stress on both turbo units, with some owners reporting turbo failure as early as 33,000 miles. The complex emissions system - including DPF, EGR, and AdBlue - is also prone to clogging on vehicles used primarily for short journeys.",
         "tieredCosts": [],
         "recommendation": "If your 3.0-litre diesel L663 is used primarily for short urban journeys, budget for regular DPF regeneration and consider an extended motorway run every few weeks. Watch for whistling noises under acceleration or reduced power - these are early turbo warning signs.",
@@ -520,8 +520,8 @@
       {
         "id": 3,
         "title": "PT306 3.0 P400 MHEV Belt & Cooling System",
-        "affectedModels": "L663 Defender P400 (2019–present).",
-        "typicalFailureMileage": "40,000–80,000 miles.",
+        "affectedModels": "L663 Defender P400 (2019-present).",
+        "typicalFailureMileage": "40,000-80,000 miles.",
         "rootCause": "The Belt-Integrated Starter Generator (BISG) and accessory drive belt can fail, with JLR investigating reports of belt shredding and tensioner failure. The cooling fan may also fail intermittently, potentially causing engine overheating.",
         "tieredCosts": [],
         "recommendation": "Have the BISG belt and cooling fan checked at every major service. Listen for unusual noises from the accessory drive and monitor the temperature gauge - if the fan fails, the engine can overheat quickly.",
@@ -546,58 +546,58 @@
       {
         "variant": "D200 / D240",
         "engineCode": "204DT",
-        "usedSupply": "£1,800–£3,200",
-        "reconditionedSupply": "£3,500–£5,800",
-        "rebuiltSupply": "£4,800–£7,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£1,800-£3,200",
+        "reconditionedSupply": "£3,500-£5,800",
+        "rebuiltSupply": "£4,800-£7,000",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "D250 / D300 / D350",
         "engineCode": "AJ20D6 / DT306",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,000–£9,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,000-£9,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "P300",
         "engineCode": "PT204 (AJ20P4)",
-        "usedSupply": "£1,500–£2,800",
-        "reconditionedSupply": "£3,000–£5,000",
-        "rebuiltSupply": "£4,200–£6,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£1,500-£2,800",
+        "reconditionedSupply": "£3,000-£5,000",
+        "rebuiltSupply": "£4,200-£6,500",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "P400e",
         "engineCode": "PT204 (PHEV)",
-        "usedSupply": "£2,000–£3,500",
-        "reconditionedSupply": "£3,500–£5,800",
-        "rebuiltSupply": "£4,800–£7,000",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,000-£3,500",
+        "reconditionedSupply": "£3,500-£5,800",
+        "rebuiltSupply": "£4,800-£7,000",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "P400",
         "engineCode": "PT306 (AJ20P6)",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,000–£9,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,000-£9,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "P425 / P500 / P525",
         "engineCode": "508PS (AJ133)",
-        "usedSupply": "£3,500–£6,000",
-        "reconditionedSupply": "£6,000–£12,000",
-        "rebuiltSupply": "£8,000–£14,000",
-        "labourHours": "16–20 hrs"
+        "usedSupply": "£3,500-£6,000",
+        "reconditionedSupply": "£6,000-£12,000",
+        "rebuiltSupply": "£8,000-£14,000",
+        "labourHours": "16-20 hrs"
       },
       {
         "variant": "P635 OCTA",
         "engineCode": "4.4L Twin-Turbo V8",
-        "usedSupply": "£5,000–£8,000",
-        "reconditionedSupply": "£9,000–£15,000",
-        "rebuiltSupply": "£12,000–£18,000",
-        "labourHours": "16–22 hrs"
+        "usedSupply": "£5,000-£8,000",
+        "reconditionedSupply": "£9,000-£15,000",
+        "rebuiltSupply": "£12,000-£18,000",
+        "labourHours": "16-22 hrs"
       }
     ],
     "note": ""
@@ -667,7 +667,7 @@
         "url": "https://landroverengine.uk/defender/v8"
       }
     ],
-    "scopeNote": "All variants listed are L663-generation Defender only (2019–present). Body styles (90, 110, 130) share these engines but are covered on their own body-style pages where fitment and labour access vary."
+    "scopeNote": "All variants listed are L663-generation Defender only (2019-present). Body styles (90, 110, 130) share these engines but are covered on their own body-style pages where fitment and labour access vary."
   },
   "marketIntelligence": {
     "mostRequestedEngines": [
@@ -680,7 +680,7 @@
       "2. Defender 110 P400",
       "3. Defender 90 D250"
     ],
-    "averageReplacementCost": "£3,500–£7,500 [EM-QUOTE]",
+    "averageReplacementCost": "£3,500-£7,500 [EM-QUOTE]",
     "mostCommonFailures": [
       "1. 204DT timing chain tensioner",
       "2. AJ20D6 turbocharger wear",
@@ -715,7 +715,7 @@
       {
         "id": 1,
         "question": "How much does a Land Rover Defender L663 engine replacement cost in the UK?",
-        "answer": "A reconditioned L663 engine typically costs £3,000–£12,000 supply only [EM-QUOTE], depending on engine - the 2.0-litre diesel sits at £3,500–£5,800, while the 5.0 V8 can reach £6,000–£12,000. Fitting adds £650–£1,430. Use our calculator for a personalised figure."
+        "answer": "A reconditioned L663 engine typically costs £3,000-£12,000 supply only [EM-QUOTE], depending on engine - the 2.0-litre diesel sits at £3,500-£5,800, while the 5.0 V8 can reach £6,000-£12,000. Fitting adds £650-£1,430. Use our calculator for a personalised figure."
       },
       {
         "id": 2,
@@ -730,7 +730,7 @@
       {
         "id": 4,
         "question": "Is the Land Rover Defender L663 reliable?",
-        "answer": "Reliability is mixed. The 3.0-litre Ingenium engines - both diesel and petrol - have shown fewer major issues than the 2.0-litre four-cylinder diesel, which has a documented timing chain tensioner risk. Early L663 units (2019–2020) are more problematic than later production."
+        "answer": "Reliability is mixed. The 3.0-litre Ingenium engines - both diesel and petrol - have shown fewer major issues than the 2.0-litre four-cylinder diesel, which has a documented timing chain tensioner risk. Early L663 units (2019-2020) are more problematic than later production."
       },
       {
         "id": 5,
@@ -745,17 +745,17 @@
       {
         "id": 7,
         "question": "Is it worth replacing a Land Rover Defender L663 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a £40,000 L663, a £5,000 AJ20D6 recon is 12.5% of the car's value - safe. Against a low-value high-mileage example, the same recon may approach 20–30% - still well within our 60% Land Rover threshold. On an L663, replacement almost always makes sense."
+        "answer": "Depends on the car's value. Against a £40,000 L663, a £5,000 AJ20D6 recon is 12.5% of the car's value - safe. Against a low-value high-mileage example, the same recon may approach 20-30% - still well within our 60% Land Rover threshold. On an L663, replacement almost always makes sense."
       },
       {
         "id": 8,
         "question": "How long do Land Rover Defender L663 engines last?",
-        "answer": "The 3.0-litre Ingenium diesels can exceed 150,000–200,000 miles with proper servicing. The 2.0-litre diesel's limiting factor is the timing chain - addressed proactively, it can also reach high mileage. The 5.0 V8 is similarly durable but requires specialist maintenance for the supercharger."
+        "answer": "The 3.0-litre Ingenium diesels can exceed 150,000-200,000 miles with proper servicing. The 2.0-litre diesel's limiting factor is the timing chain - addressed proactively, it can also reach high mileage. The 5.0 V8 is similarly durable but requires specialist maintenance for the supercharger."
       },
       {
         "id": 9,
         "question": "What is the difference between the Defender 90, 110 and 130?",
-        "answer": "All three share the L663 platform and most engines. The Defender 90 is the 3-door short-wheelbase (2019–present), the 110 is the 5-door standard-wheelbase (2019–present), and the 130 is the extended 5-door (2022–present). Costs vary slightly by body style due to labour access - see each generation's own page for specifics."
+        "answer": "All three share the L663 platform and most engines. The Defender 90 is the 3-door short-wheelbase (2019-present), the 110 is the 5-door standard-wheelbase (2019-present), and the 130 is the extended 5-door (2022-present). Costs vary slightly by body style due to labour access - see each generation's own page for specifics."
       },
       {
         "id": 10,

@@ -7,8 +7,8 @@ import { BAND_PAGE, CARD, EyebrowPill, SANS, SECTION_Y, SectionTitle, TABLE_HEAD
 import { cellHtml, engineFamilies, eraCar, heroEnquiries, keyEngines, stripHtml, yearSpan } from "@/components/models/engineSections";
 import EngineSlider from "@/components/models/EngineSlider";
 
-// Model page section 9 — how the model's engine range evolved, built to the approved Velar
-// reference: the eyebrow and "How the … Engine Range Evolved — 2017 to Today" headline with a
+// Model page section 9 - how the model's engine range evolved, built to the approved Velar
+// reference: the eyebrow and "How the … Engine Range Evolved - 2017 to Today" headline with a
 // four-stat card (all derived from the page data), then the era table: the era with the
 // generation's car, its years, the key engines as photos with their codes (linked to the engine
 // pages that exist), why Land Rover changed, and what's worth knowing. Below xl the table becomes
@@ -62,7 +62,7 @@ function EraTitle({ era, as: Tag = "span", className = "", taglineClass = "" }) 
         <span dangerouslySetInnerHTML={{ __html: cellHtml(era.era) }} />
         {era.tagline && (
           <>
-            {" "}—<br />
+            {" "}-<br />
             <span className={taglineClass} dangerouslySetInnerHTML={{ __html: noBreakHyphen(cellHtml(era.tagline)) }} />
           </>
         )}
@@ -187,7 +187,7 @@ export default function EngineEvolution({ data, slug = "", page = null }) {
                         ))}
                       </EngineSlider>
                     ) : (
-                      <p className="text-center text-[15px] text-lr-muted">—</p>
+                      <p className="text-center text-[15px] text-lr-muted">-</p>
                     )}
                   </td>
                   <td className={`border-r border-lr-line px-5 py-4 align-middle text-[15px] leading-[1.6] text-lr-body ${LINKS}`} dangerouslySetInnerHTML={{ __html: cellHtml(e.whyBmwChanged) }} />
@@ -235,7 +235,7 @@ export default function EngineEvolution({ data, slug = "", page = null }) {
                     </EngineSlider>
                   </div>
                 ) : (
-                  <p className="mt-2 text-[15px] text-lr-muted">—</p>
+                  <p className="mt-2 text-[15px] text-lr-muted">-</p>
                 )}
                 <p className={`${LABEL} mt-5 text-lr-muted`}>{cols[3]}</p>
                 <p className={`mt-1.5 text-[15px] leading-[1.6] text-lr-body md:text-[16px] ${LINKS}`} dangerouslySetInnerHTML={{ __html: cellHtml(e.whyBmwChanged) }} />

@@ -21,8 +21,8 @@ function splitTags(text = "") {
     .replace(/\s{2,}/g, " ")
     .replace(/\s+([.,;:])/g, "$1")
     .trim()
-    .replace(/^[-–—]\s*/, "")
-    .replace(/\s*[-–—]$/, "");
+    .replace(/^[-–-]\s*/, "")
+    .replace(/\s*[-–-]$/, "");
   return { main, tags };
 }
 
@@ -94,7 +94,7 @@ function headlineFigure(data, page) {
     return { value: m[1], label: `Total Enquiries${year ? ` in ${year}` : ""}`, verified };
   }
   const hero = String(page?.hero?.trustStrip?.[0]?.label || "");
-  const hm = hero.match(/^(\d[\d,]*\+?)\s+([^[\-–—]+?)\s*(?:\[|[-–—]|$)/);
+  const hm = hero.match(/^(\d[\d,]*\+?)\s+([^[\-–-]+?)\s*(?:\[|[-–-]|$)/);
   if (!hm) return null;
   const label = hm[2].trim().replace(/\((20\d\d)\)/, "in $1");
   return { value: hm[1], label, verified: /\[EM-VERIFIED/.test(hero) };
@@ -108,7 +108,7 @@ function Title({ h2 }) {
       {lead}
       {tail && (
         <>
-          {" "}—<br />
+          {" "}-<br />
           {m ? (
             <>
               {tail.slice(0, m.index)}

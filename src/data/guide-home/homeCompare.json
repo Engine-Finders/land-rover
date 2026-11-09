@@ -1,6 +1,6 @@
 {
-  "h2": "Comparison Hub –|Head-to-Head|Verdicts",
-  "subhead": "The comparisons Land Rover buyers actually want – generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
+  "h2": "Comparison Hub -|Head-to-Head|Verdicts",
+  "subhead": "The comparisons Land Rover buyers actually want - generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
   "columns": [
     "#",
     "Comparison",
@@ -13,7 +13,7 @@
       "title": "Discovery 4 vs Discovery 5",
       "image": "/home/compare/ref/disco4-vs-disco5.webp",
       "icon": "scale",
-      "text": "Which generation to buy – the verdict on reliability, running costs, and long-term value.",
+      "text": "Which generation to buy - the verdict on reliability, running costs, and long-term value.",
       "href": "/discovery",
       "mobileImage": "/home/compare/ref/disco4-vs-disco5-m.webp"
     },
@@ -45,7 +45,7 @@
       "title": "Defender vs Discovery",
       "image": "/home/compare/ref/defender-vs-discovery.webp",
       "icon": "mountain",
-      "text": "The practical ownership comparison – space, capability, running costs, and everyday usability.",
+      "text": "The practical ownership comparison - space, capability, running costs, and everyday usability.",
       "href": "/defender",
       "mobileImage": "/home/compare/ref/defender-vs-discovery-m.webp"
     },
@@ -53,7 +53,7 @@
       "title": "Range Rover Sport vs Discovery",
       "image": "/home/compare/ref/rrs-vs-discovery.webp",
       "icon": "pie",
-      "text": "Ownership costs compared – which SUV offers better value for money over 3–5 years?",
+      "text": "Ownership costs compared - which SUV offers better value for money over 3-5 years?",
       "href": "/range-rover-sport",
       "mobileImage": "/home/compare/ref/rrs-vs-discovery-m.webp"
     }

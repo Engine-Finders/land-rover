@@ -1,10 +1,10 @@
-import Link from "next/link";
 import Image from "next/image";
 import GroundedCar from "@/components/variant/GroundedCar";
 import Tagged from "@/components/variant/Tagged";
 import VIcon from "@/components/variant/VariantIcons";
 import { stripArrow, stripBullet, topicIcon } from "@/components/variant/variantText";
 import LrIcon from "@/components/shared/LrIcon";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { CONTAINER, H2, H5, H6, ICON_SM, ICON_XL } from "@/lib/typeScale";
 
 // Variant sections 5 + 6, built to the approved reference as one two-column band:
@@ -241,7 +241,7 @@ function Specs({ specs, specTag }) {
 function CompareCard({ cta, engine }) {
   if (!cta?.label) return null;
   return (
-    <Link href="/quote" className="group relative isolate flex min-h-[124px] items-center gap-4 overflow-hidden rounded-lg bg-lr-brand px-5 py-5 text-lr-on-brand no-underline shadow-[0_18px_40px_-22px_var(--lr-shadow)] md:gap-5 md:px-7 dark:bg-[#123d2a]">
+    <OpenQuoteButton className="group relative isolate flex min-h-[124px] w-full items-center gap-4 overflow-hidden rounded-lg bg-lr-brand px-5 py-5 text-left text-lr-on-brand no-underline shadow-[0_18px_40px_-22px_var(--lr-shadow)] md:gap-5 md:px-7 dark:bg-[#123d2a]">
       <span className="pointer-events-none absolute inset-y-0 right-0 -z-10 w-[48%] max-w-[320px] [mask-image:linear-gradient(to_right,transparent,#000_45%)]" aria-hidden="true">
         <Image src={engine} alt="" fill sizes="320px" className="object-cover object-left opacity-55" />
       </span>
@@ -252,7 +252,7 @@ function CompareCard({ cta, engine }) {
         <span className={`${H5} block`}>{stripArrow(cta.label)}</span>
         <span className={`${SANS} mt-1.5 block text-[14px] font-normal leading-snug text-lr-on-brand/90 md:text-[15px]`}>Get quotes from trusted UK specialists in minutes.</span>
       </span>
-    </Link>
+    </OpenQuoteButton>
   );
 }
 

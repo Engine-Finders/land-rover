@@ -125,7 +125,7 @@ const NOW = new Date().getFullYear();
 // "2017–2020" -> [2017, 2020]; "2019.5–present" -> [2019, NOW]; "2014→" -> [2014, NOW]; "2015" -> [2015, 2015]
 export function yearSpan(text = "") {
   const t = stripHtml(text);
-  const m = t.match(/(\d{4})(?:\.\d)?\s*(?:[–--]\s*(\d{4}|present|today)|(→))?/i);
+  const m = t.match(/(\d{4})(?:\.\d)?\s*(?:[-–]\s*(\d{4}|present|today)|(→))?/i);
   if (!m) return null;
   const start = Number(m[1]);
   const end = m[3] || /present|today/i.test(m[2] || "") ? NOW : m[2] ? Number(m[2]) : start;

@@ -1,4 +1,5 @@
 import LrIcon from "@/components/shared/LrIcon";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { BODY, BODY_SM, CONTAINER } from "@/lib/typeScale";
 import {
   Arrow,
@@ -17,6 +18,7 @@ import {
   H2_MODEL,
   INTRO,
 } from "@/components/models/modelKit";
+import { isQuoteHref } from "@/lib/quoteModal";
 import { modelCtaCopy } from "@/lib/ctaCopy";
 
 // Model page section 11, built to the approved reference: "Can I Repair My Velar Engine - / or Should
@@ -29,7 +31,7 @@ const SERIF_TITLE = `${SERIF} font-normal tracking-[-0.01em]`;
 
 // "Path 1 - Know your engine? Launch with Velar pre-selected" -> { n, title, body }
 function parsePath(label = "") {
-  const m = label.match(/^Path\s*(\d+)\s*[-–-:]\s*([\s\S]*)$/i);
+  const m = label.match(/^Path\s*(\d+)\s*[-–:]\s*([\s\S]*)$/i);
   const rest = (m ? m[2] : label).trim();
   const q = rest.indexOf("?");
   const title = q === -1 ? rest : rest.slice(0, q + 1);
@@ -79,7 +81,14 @@ function PathCard({ path, href, index, model, buttonLabel, buttonSub }) {
   const button = primary
     ? { icon: "calculator", label: buttonLabel || `Start ${model} Diagnosis`, sub: buttonSub || "Engine pre-selected" }
     : { icon: "engine", label: buttonLabel || `Identify ${model} Engine Code`, sub: buttonSub || "Then start diagnosis" };
-  const Tag = href ? "a" : "span";
+  const quote = isQuoteHref(href);
+  const Tag = quote ? OpenQuoteButton : href ? "a" : "span";
+  const tagProps = quote ? {} : href ? { href } : {};
+  const btnClass = `group flex w-full items-center gap-3.5 rounded-xl px-4 py-3.5 text-left no-underline transition-colors sm:gap-4 sm:px-5 xl:px-6 xl:py-5 ${
+    primary
+      ? "bg-lr-brand text-lr-on-brand shadow-[0_16px_30px_-20px_rgba(18,61,42,0.9)] hover:bg-lr-brand-hover"
+      : "border-[1.5px] border-lr-ink/70 bg-lr-card text-lr-head hover:bg-lr-chip dark:border-lr-green/60"
+  }`;
 
   return (
     <article className={`${CARD} relative flex flex-col p-5 sm:p-7 xl:p-8`}>
@@ -94,14 +103,7 @@ function PathCard({ path, href, index, model, buttonLabel, buttonSub }) {
       {body && <p className={`${BODY} mt-2.5 max-w-[26em] text-lr-body sm:pr-28 xl:pr-36`} dangerouslySetInnerHTML={{ __html: prose(body) }} />}
 
       <div className="mt-6 flex flex-1 flex-col justify-end xl:mt-8">
-        <Tag
-          {...(href ? { href } : {})}
-          className={`group flex items-center gap-3.5 rounded-xl px-4 py-3.5 no-underline transition-colors sm:gap-4 sm:px-5 xl:px-6 xl:py-5 ${
-            primary
-              ? "bg-lr-brand text-lr-on-brand shadow-[0_16px_30px_-20px_rgba(18,61,42,0.9)] hover:bg-lr-brand-hover"
-              : "border-[1.5px] border-lr-ink/70 bg-lr-card text-lr-head hover:bg-lr-chip dark:border-lr-green/60"
-          }`}
-        >
+        <Tag {...tagProps} className={btnClass}>
           <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg xl:h-[52px] xl:w-[52px] ${primary ? "border border-white/25 bg-white/5" : "bg-lr-chip"}`}>
             <LrIcon name={button.icon} tone={primary ? "skin" : "current"} className={`h-6 w-6 xl:h-7 xl:w-7 ${primary ? "" : "text-lr-ink dark:text-lr-green"}`} />
           </span>

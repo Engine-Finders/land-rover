@@ -302,7 +302,7 @@ function confidenceParts(text = "") {
   if (at === -1) return { main: labelledParagraphs(text), note: [] };
   const note = text
     .slice(at)
-    .replace(/^Data note \(internal\)\s*(?:[-–-:]\s*)?:?\s*/i, "")
+    .replace(/^Data note \(internal\)\s*(?:[-–:]\s*)?:?\s*/i, "")
     .trim();
   return { main: labelledParagraphs(text.slice(0, at)), note: labelledParagraphs(note, true) };
 }

@@ -1,10 +1,10 @@
-import Link from "next/link";
 import Image from "next/image";
 import GroundedCar from "@/components/variant/GroundedCar";
 import { LochBand, LochBanner } from "@/components/variant/PhotoScene";
 import VIcon from "@/components/variant/VariantIcons";
 import { stripArrow, stripBullet, topicIcon } from "@/components/variant/variantText";
 import LrIcon from "@/components/shared/LrIcon";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { CONTAINER, H2, H5, ICON_LG, ICON_MD, ICON_SM } from "@/lib/typeScale";
 
 // Variant sections 4-5: "Repair, Buy, or Replace?", built to the approved reference (day + night):
@@ -312,13 +312,12 @@ export default function RepairBuyOrReplace({ data, car = null, engine = "/varian
                     Don&apos;t guess. Get the right engine at the right price.
                   </h3>
                 </div>
-                <Link
-                  href="/quote"
+                <OpenQuoteButton
                   className="group mt-5 flex items-center gap-3.5 rounded-md border border-lr-brand bg-lr-brand px-4 py-3.5 text-[15px] font-medium leading-snug text-lr-on-brand shadow-[0_10px_30px_-14px_rgba(31,112,73,0.7)] transition-colors hover:bg-lr-brand-hover md:mt-6 md:px-5 md:text-[16px] xl:text-[17px] dark:border-lr-green/55 dark:bg-lr-brand/15 dark:text-lr-head dark:shadow-none dark:hover:bg-lr-brand/30"
                 >
                   <VIcon name="arrow" className="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-1" />
                   {stripArrow(data.cta.label)}
-                </Link>
+                </OpenQuoteButton>
               </div>
             </div>
           )}

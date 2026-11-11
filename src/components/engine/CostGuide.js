@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { CONTAINER, INK, SANS } from "@/components/engine/engineTheme";
 import LrIcon from "@/components/shared/LrIcon";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { engineCtaCopy } from "@/lib/ctaCopy";
 import { BODY, BODY_SM, H2, H5, ICON_MD, ICON_SM, ICON_XL, LABEL as EYEBROW, STAT } from "@/lib/typeScale";
 
@@ -34,8 +34,8 @@ const ICON_BY_CONDITION = [
 const richText = (t = "") =>
   t
     .replace(/ - /g, " - ")
-    .replace(/(\d+[–-]\d+)(?= hours)/g, "<strong>$1</strong>")
-    .replace(/(£\d+[–-]£\d+\/hr)/g, "<strong>$1</strong>")
+    .replace(/(\d+[-–]\d+)(?= hours)/g, "<strong>$1</strong>")
+    .replace(/(£\d+[-–]£\d+\/hr)/g, "<strong>$1</strong>")
     .replace(/(\[[A-Z][A-Z -]*\]\.?)/g, `<span class="text-lr-green">$1</span>`);
 
 const CARD = "relative rounded-xl border border-lr-line bg-lr-card shadow-[0_14px_30px_-26px_var(--lr-shadow)]";
@@ -139,14 +139,13 @@ export default function CostGuide({ data, engineName = "" }) {
               <p className={H5}>Compare Prices from UK specialists</p>
               <p className={`mt-2 ${BODY_SM} text-white/85 xl:mt-[8px]`}>Get live pricing from trusted engine suppliers across the UK.</p>
             </div>
-            <Link
-              href="/quote"
+            <OpenQuoteButton
               className="group mt-5 flex items-center justify-center gap-2 whitespace-nowrap rounded-md bg-white px-4 py-3 text-[14px] font-medium tracking-[0.02em] transition-colors hover:bg-[#f3efe4] md:mt-0 md:shrink-0 lg:mt-auto xl:min-h-[44px] xl:py-2 xl:text-[15px]"
               style={{ color: INK }}
             >
               {costsLabel}
               <Svg name="arrow" className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1 xl:h-[18px] xl:w-[18px]" />
-            </Link>
+            </OpenQuoteButton>
           </aside>
         </div>
       </div>

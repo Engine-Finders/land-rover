@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import UkPlateInput from "@/components/shared/UkPlateInput";
+import { openQuoteModal } from "@/lib/quoteModal";
 
 function Arrow({ className = "h-5 w-5" }) {
   return (
@@ -13,8 +13,7 @@ function Arrow({ className = "h-5 w-5" }) {
 }
 
 /**
- * Hero-only registration → /quote?reg=… journey.
- * Layout: yellow UK plate + primary CTA (stacks on small screens).
+ * Hero-only registration → opens sticky quote modal and looks up the vehicle.
  */
 export default function HeroRegCta({
   buttonLabel = "Explore Engine Replacement Options",
@@ -24,17 +23,16 @@ export default function HeroRegCta({
   buttonClassName = "",
   plateClassName = "sm:min-w-[260px] sm:flex-[1.35]",
 }) {
-  const router = useRouter();
   const [reg, setReg] = useState("");
 
-  function goToQuote(event) {
+  function openWithReg(event) {
     event.preventDefault();
     const cleaned = reg.replace(/\s+/g, "").toUpperCase();
-    router.push(cleaned ? `/quote?reg=${encodeURIComponent(cleaned)}` : "/quote");
+    openQuoteModal(cleaned ? { reg: cleaned, lookup: true } : {});
   }
 
   return (
-    <form onSubmit={goToQuote} className={`w-full max-w-[640px] ${className}`}>
+    <form onSubmit={openWithReg} className={`w-full max-w-[640px] ${className}`}>
       {supportText ? (
         <p className="mb-2.5 text-[13px] leading-snug text-lr-body sm:text-[14px]">{supportText}</p>
       ) : null}

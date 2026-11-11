@@ -1,6 +1,6 @@
-import Link from "next/link";
 import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { CONTAINER } from "@/lib/typeScale";
 import { Arrow, H2_MODEL, SANS, prose } from "@/components/models/modelKit";
 import { localHtml } from "@/components/models/generationsFaqLinks";
@@ -49,7 +49,6 @@ export default function TrustCta({ data, page = null, model = "" }) {
     generation: code || meta.short,
   });
   const label = ctaCopy.trustButton;
-  const href = "/quote";
   const support = ctaCopy.trustSupport;
 
   return (
@@ -118,13 +117,12 @@ export default function TrustCta({ data, page = null, model = "" }) {
               {support && <p className="mt-2 text-[14px] leading-snug text-lr-body md:text-[15px]">{support}</p>}
             </div>
             {label && (
-              <Link
-                href={href}
+              <OpenQuoteButton
                 className="flex min-h-14 shrink-0 items-center justify-center gap-3 rounded-lg bg-lr-brand px-6 py-3.5 text-center text-[16px] font-semibold leading-snug text-lr-on-brand no-underline shadow-[0_14px_30px_-18px_rgba(18,61,42,0.8)] transition-colors hover:bg-lr-brand-hover lg:max-w-[440px] xl:px-8 xl:text-[19px]"
               >
                 <span>{label}</span>
                 <Arrow className="h-5 w-5 shrink-0" />
-              </Link>
+              </OpenQuoteButton>
             )}
           </div>
         )}

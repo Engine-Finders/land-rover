@@ -1,4 +1,6 @@
-import Link from "next/link";
+"use client";
+
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 
 function Arrow({ className = "h-5 w-5" }) {
   return (
@@ -9,13 +11,11 @@ function Arrow({ className = "h-5 w-5" }) {
 }
 
 /**
- * Compact mid-section quote CTA - text + button, no plate (hero only).
- * Links to /quote (optionally with ?reg= if passed).
+ * Compact mid-section quote CTA — opens the sticky FreeQuote form modal.
  */
 export default function SectionQuoteCta({
   label = "Get an Engine Replacement Quote",
   supportText = "",
-  href = "/quote",
   className = "",
   tone = "default",
 }) {
@@ -23,8 +23,7 @@ export default function SectionQuoteCta({
     tone === "on-dark"
       ? "border-white/15 bg-white/5 text-white"
       : "border-lr-line bg-lr-card/90 text-lr-head shadow-[0_12px_28px_-20px_var(--lr-shadow)]";
-  const support =
-    tone === "on-dark" ? "text-white/75" : "text-lr-body";
+  const support = tone === "on-dark" ? "text-white/75" : "text-lr-body";
   const btn =
     tone === "on-dark"
       ? "bg-lr-green text-white hover:brightness-110"
@@ -37,13 +36,12 @@ export default function SectionQuoteCta({
           <p className={`text-[14px] leading-snug sm:text-[15px] ${support}`}>{supportText}</p>
         ) : null}
       </div>
-      <Link
-        href={href}
-        className={`mt-3 inline-flex min-h-12 w-full shrink-0 items-center justify-center gap-2.5 rounded-md px-4 text-[14px] font-semibold no-underline transition-colors sm:min-h-[3.25rem] sm:text-[15px] md:mt-0 md:w-auto md:min-w-[240px] md:px-5 ${btn}`}
+      <OpenQuoteButton
+        className={`mt-3 inline-flex min-h-12 w-full shrink-0 items-center justify-center gap-2.5 rounded-md px-4 text-[14px] font-semibold transition-colors sm:min-h-[3.25rem] sm:text-[15px] md:mt-0 md:w-auto md:min-w-[240px] md:px-5 ${btn}`}
       >
         <span className="text-balance text-center leading-snug">{label}</span>
         <Arrow className="h-4 w-4 shrink-0" />
-      </Link>
+      </OpenQuoteButton>
     </div>
   );
 }

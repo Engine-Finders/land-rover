@@ -5,6 +5,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import LrIcon from "@/components/shared/LrIcon";
 import { buildQuoteLeadPayload } from "@/app/api/lead/crm";
 import { DEFAULT_VEHICLE_IMAGE, matchVehicleImage } from "@/lib/matchVehicleImage";
+import { QUOTE_MODAL_EVENT } from "@/lib/quoteModal";
 
 const HEADER_BG = "/sec2-bg.webp";
 
@@ -235,32 +236,14 @@ export default function FreeQuoteSticky() {
     setOpen(false);
   }
 
-  useEffect(() => {
-    if (!open) return undefined;
-
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    closeRef.current?.focus();
-
-    function onKeyDown(event) {
-      if (event.key === "Escape") closeModal();
-    }
-
-    document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      document.removeEventListener("keydown", onKeyDown);
-    };
-  }, [open]);
-
-  async function lookupVehicle(event) {
-    event?.preventDefault?.();
-    const reg = regInput.replace(/\s+/g, "").toUpperCase();
+  async function lookupByReg(rawReg) {
+    const reg = String(rawReg || "").replace(/\s+/g, "").toUpperCase();
     if (!reg) {
       setLookupError("Enter a registration number first.");
       return;
     }
 
+    setRegInput(reg);
     setLookupLoading(true);
     setLookupError("");
     setSubmitted(false);
@@ -283,6 +266,54 @@ export default function FreeQuoteSticky() {
       setLookupLoading(false);
     }
   }
+
+  async function lookupVehicle(event) {
+    event?.preventDefault?.();
+    await lookupByReg(regInput);
+  }
+
+  useEffect(() => {
+    function onOpenQuote(event) {
+      const detail = event?.detail || {};
+      resetForm();
+      setOpen(true);
+
+      if (detail.vehicle?.vrm) {
+        setVehicle(detail.vehicle);
+        setRegInput(String(detail.vehicle.vrm).replace(/\s+/g, "").toUpperCase());
+        return;
+      }
+
+      const reg = String(detail.reg || "").replace(/\s+/g, "").toUpperCase();
+      if (reg) {
+        setRegInput(reg);
+        if (detail.lookup !== false) {
+          void lookupByReg(reg);
+        }
+      }
+    }
+
+    window.addEventListener(QUOTE_MODAL_EVENT, onOpenQuote);
+    return () => window.removeEventListener(QUOTE_MODAL_EVENT, onOpenQuote);
+  }, []);
+
+  useEffect(() => {
+    if (!open) return undefined;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    closeRef.current?.focus();
+
+    function onKeyDown(event) {
+      if (event.key === "Escape") closeModal();
+    }
+
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
 
   async function handleSubmit(event) {
     event.preventDefault();

@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { CONTAINER, SANS } from "@/components/engine/engineTheme";
 import LrIcon from "@/components/shared/LrIcon";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { engineCtaCopy } from "@/lib/ctaCopy";
 import { BODY_SM, H2, H5, H6, ICON_MD, ICON_XL, LABEL } from "@/lib/typeScale";
 
@@ -91,15 +91,14 @@ export default function TrustCta({ data }) {
                 )}
               </div>
             </div>
-            <Link
-              href="/quote"
+            <OpenQuoteButton
               className="group relative mt-4 flex items-center justify-center gap-2.5 rounded-lg border border-lr-brand bg-lr-brand px-5 py-3.5 text-center text-[15px] font-medium leading-snug text-lr-on-brand shadow-[0_10px_26px_-14px_rgba(31,112,73,0.8)] transition-colors hover:bg-lr-brand-hover md:mt-5 md:w-fit md:px-7 xl:mt-0 xl:shrink-0 xl:px-[17px] xl:py-[14px] xl:text-[17px]"
             >
               {label}
               <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M4 12h16M14 6l6 6-6 6" />
               </svg>
-            </Link>
+            </OpenQuoteButton>
           </div>
         )}
       </div>

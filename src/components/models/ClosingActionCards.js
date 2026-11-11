@@ -1,8 +1,10 @@
 import LrIcon from "@/components/shared/LrIcon";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { BODY_SM, CONTAINER, H5 } from "@/lib/typeScale";
 import { Arrow, BACKDROP, BAND_SOFT, CAR_ART, CAR_ART_RATIO, EyebrowPill, SANS, SECTION_Y, modelArt, prose, H2_MODEL, INTRO } from "@/components/models/modelKit";
 import { generationLinks, resolveHref } from "@/components/models/ClosingActionLinks";
 import { UkPinMap } from "@/components/models/TrustBlockArt";
+import { isQuoteHref } from "@/lib/quoteModal";
 
 // Model page section 14, built to the approved reference: "Ready to Make / a Decision?" with a short
 // rule, the model's car on the loch-side backdrop (feathered into the band), then the three action
@@ -142,7 +144,12 @@ function ActionCard({ card, index, slug, gens }) {
         {text && <p className={`${BODY_SM} mt-3 text-lr-body`} dangerouslySetInnerHTML={{ __html: prose(text) }} />}
 
         <div className="mt-auto pt-5">
-          {href ? (
+          {href && isQuoteHref(href) ? (
+            <OpenQuoteButton className={`group inline-flex items-center gap-3 text-[16px] font-semibold no-underline xl:text-[17px] ${linkColor}`}>
+              {LINK_LABEL[kind]}
+              <Arrow className="h-5 w-5 transition-transform group-hover:translate-x-0.5" />
+            </OpenQuoteButton>
+          ) : href ? (
             <a href={href} className={`group inline-flex items-center gap-3 text-[16px] font-semibold no-underline xl:text-[17px] ${linkColor}`}>
               {LINK_LABEL[kind]}
               <Arrow className="h-5 w-5 transition-transform group-hover:translate-x-0.5" />

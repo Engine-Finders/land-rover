@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import LrIcon from "@/components/shared/LrIcon";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 import { CONTAINER } from "@/lib/typeScale";
 import { Arrow, H2_MODEL, SANS, prose } from "@/components/models/modelKit";
 import { keyEngines, stripHtml } from "@/components/models/engineSections";
 import { localHref, localHtml } from "@/components/models/generationsFaqLinks";
-import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { isQuoteHref } from "@/lib/quoteModal";
 import { generationCtaCopy } from "@/lib/ctaCopy";
 import { genCode, genName } from "./genKit";
 
@@ -21,7 +23,7 @@ import { genCode, genName } from "./genKit";
 
 const html = (raw) => localHtml(prose(raw || ""));
 const capital = (t = "") => String(t).trim().replace(/^[a-z]/, (c) => c.toUpperCase());
-const MONEY = "£[\\d,]+(?:\\s?[–-]\\s?£[\\d,]+)?\\+?";
+const MONEY = "£[\\d,]+(?:\\s?[-–]\\s?£[\\d,]+)?\\+?";
 
 // ------------------------------------------------------------------ title
 
@@ -217,13 +219,20 @@ function ProblemCard({ problem, index, shot }) {
       )}
 
       <div className="mt-auto pt-5">
-        <Link
-          href={href}
-          className="flex min-h-11 items-center justify-center gap-2 rounded-md bg-lr-brand px-4 py-2.5 text-center text-[14px] font-semibold leading-snug text-lr-on-brand no-underline transition-colors hover:bg-lr-brand-hover"
-        >
-          <span>{label}</span>
-          <Arrow className="h-4 w-4 shrink-0" />
-        </Link>
+        {isQuoteHref(href) ? (
+          <OpenQuoteButton className="flex min-h-11 w-full items-center justify-center gap-2 rounded-md bg-lr-brand px-4 py-2.5 text-center text-[14px] font-semibold leading-snug text-lr-on-brand no-underline transition-colors hover:bg-lr-brand-hover">
+            <span>{label}</span>
+            <Arrow className="h-4 w-4 shrink-0" />
+          </OpenQuoteButton>
+        ) : (
+          <Link
+            href={href}
+            className="flex min-h-11 items-center justify-center gap-2 rounded-md bg-lr-brand px-4 py-2.5 text-center text-[14px] font-semibold leading-snug text-lr-on-brand no-underline transition-colors hover:bg-lr-brand-hover"
+          >
+            <span>{label}</span>
+            <Arrow className="h-4 w-4 shrink-0" />
+          </Link>
+        )}
       </div>
     </li>
   );

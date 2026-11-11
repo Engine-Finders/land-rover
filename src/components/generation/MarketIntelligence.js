@@ -45,7 +45,7 @@ function parseCost(raw = "") {
   const text = String(raw).trim().replace(/\.$/, "");
   const t = text.match(TAG);
   const clean = text.replace(TAG, "").trim();
-  const m = clean.match(/^(£[\d,]+(?:\s?[–-]\s?£[\d,]+)?)\s*(.*)$/);
+  const m = clean.match(/^(£[\d,]+(?:\s?[-–]\s?£[\d,]+)?)\s*(.*)$/);
   return { figure: m ? m[1] : clean, rest: m ? m[2].replace(/^\(|\)$/g, "").trim() : "", tag: t ? `[${t[1].replace("‑", "-")}]` : "" };
 }
 

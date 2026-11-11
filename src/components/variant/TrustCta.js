@@ -1,8 +1,8 @@
-import Link from "next/link";
 import Image from "next/image";
 import GroundedCar from "@/components/variant/GroundedCar";
 import { LOCH_BG } from "@/components/variant/PhotoScene";
 import LrIcon from "@/components/shared/LrIcon";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { variantCtaCopy } from "@/lib/ctaCopy";
 import { carRatio } from "@/lib/carGeometry";
 import { CONTAINER, H2, H5, H6, ICON_LG, ICON_MD } from "@/lib/typeScale";
@@ -94,15 +94,14 @@ export default function TrustCta({ data, car = null, engine = "/variant/sec10_en
               <div className="relative px-4 pb-5 pt-3 md:flex md:flex-col md:justify-center md:py-7 md:pl-2 md:pr-6 lg:pr-4">
                 {heading && <h3 className={`${H5} text-lr-head`} dangerouslySetInnerHTML={{ __html: heading }} />}
                 {rest && <p className="mt-2.5 text-[14.5px] leading-[1.6] text-lr-body xl:text-[15.5px]" dangerouslySetInnerHTML={{ __html: rest }} />}
-                <Link
-                  href="/quote"
+                <OpenQuoteButton
                   className="group mt-4 flex w-full items-center justify-center gap-2.5 rounded-md bg-lr-brand px-4 py-3.5 text-[15px] font-medium leading-snug text-lr-on-brand shadow-[0_10px_30px_-14px_rgba(31,112,73,0.7)] transition-colors hover:bg-lr-brand-hover sm:w-fit sm:px-6 md:text-[16px] dark:border dark:border-lr-green/55 dark:bg-lr-brand/15 dark:text-lr-head dark:shadow-none dark:hover:bg-lr-brand/30"
                 >
                   <span className="text-balance text-center">{label}</span>
                   <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M4 12h16M14 6l6 6-6 6" />
                   </svg>
-                </Link>
+                </OpenQuoteButton>
               </div>
 
               <div className="relative hidden lg:block" aria-hidden="true">

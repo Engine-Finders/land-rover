@@ -38,9 +38,8 @@ function Stat({ s }) {
 // emphasised card (a design variant, not the theme): brand green by day, a deep chip green with a gold
 // hairline at night; the other card is a plain card in either theme.
 function ActionCard({ dark, icon, eyebrow, title, href, label }) {
-  const Tag = href.startsWith("#") ? QuoteLink : "a";
   return (
-    <Tag
+    <QuoteLink
       href={href}
       aria-label={label}
       className={`group flex items-center gap-3.5 rounded-lg px-4 py-5 font-normal shadow-[0_14px_30px_-18px_var(--lr-shadow)] transition-transform hover:-translate-y-0.5 sm:gap-6 sm:px-7 sm:py-7 lg:px-9 ${
@@ -69,7 +68,7 @@ function ActionCard({ dark, icon, eyebrow, title, href, label }) {
       >
         <Arrow className="h-5 w-5 sm:h-6 sm:w-6" />
       </span>
-    </Tag>
+    </QuoteLink>
   );
 }
 

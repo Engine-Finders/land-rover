@@ -1,8 +1,8 @@
-import Link from "next/link";
 import GroundedCar from "@/components/variant/GroundedCar";
 import { LochBand, LochBanner } from "@/components/variant/PhotoScene";
 import VIcon from "@/components/variant/VariantIcons";
 import { CHIP } from "@/components/variant/ReplacementCosts";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { CONTAINER, H2, H5 } from "@/lib/typeScale";
 
 // Variant section: "Ready to Compare?" - the variant's car standing on the Highland loch-side hillside
@@ -51,14 +51,13 @@ export default function QuotesCta({ data, car = null }) {
             {data.supportingLine && (
               <p className="mt-3 max-w-[30em] font-[family-name:var(--font-instrument-sans)] text-[15px] leading-relaxed text-lr-body md:text-[16px] lg:text-[17px]" dangerouslySetInnerHTML={{ __html: data.supportingLine }} />
             )}
-            <Link
-              href="/quote"
+            <OpenQuoteButton
               className="group mt-5 flex w-full items-center justify-center gap-2.5 rounded-lg border border-lr-brand bg-lr-brand px-5 py-3.5 text-[15px] font-medium text-lr-on-brand shadow-[0_10px_30px_-12px_rgba(31,112,73,0.7)] transition-colors hover:border-lr-brand-hover hover:bg-lr-brand-hover sm:w-fit sm:justify-start md:text-[16px]"
             >
               <span className="lg:hidden">Get My Free Quotes Now</span>
               <span className="hidden lg:inline">{label}</span>
               <VIcon name="arrow" className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
-            </Link>
+            </OpenQuoteButton>
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ function configNote(config = "", fuel = "", power = "") {
 
 function yearsNote(years = "") {
   if (/present/i.test(years)) return "Still in production and fitted to current Land Rover models.";
-  const m = years.match(/(\d{4})\s*[–-]\s*(\d{4})/);
+  const m = years.match(/(\d{4})\s*[-–]\s*(\d{4})/);
   if (!m) return "";
   const prefix = /land rover fitment/i.test(years) ? "Land Rover fitment" : "In production";
   return `${prefix} for ${m[2] - m[1]} years, from ${m[1]} to ${m[2]}.`;

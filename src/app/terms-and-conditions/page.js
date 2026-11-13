@@ -17,6 +17,11 @@ export default function TermsAndConditionsPage() {
 
       <h2>1. About this site</h2>
       <p>
+        This website is operated by <strong>PRESTIGE AUTO ENGINEERING LTD</strong>, Unit A5
+        Windsor Road Commercial Estate, Ramsden Heath, Billericay, United Kingdom, CM11 1QE.
+        Company number 17406830.
+      </p>
+      <p>
         This site provides independent editorial information about Land Rover and Range Rover ownership,
         engines, reliability, and related costs. It is not affiliated with Jaguar Land Rover.
       </p>
@@ -55,7 +60,10 @@ export default function TermsAndConditionsPage() {
       </p>
 
       <h2>7. Contact</h2>
-      <p>Questions about these terms can be sent via the contact options on this website.</p>
+      <p>
+        Questions about these terms can be sent via the contact options on this website, or in writing
+        to PRESTIGE AUTO ENGINEERING LTD at the address above.
+      </p>
     </LegalPage>
   );
 }

@@ -75,7 +75,14 @@ export default function PrivacyPolicyPage() {
         .
       </p>
 
-      <h2>7. Contact</h2>
+      <h2>7. Who we are</h2>
+      <p>
+        This website is operated by <strong>PRESTIGE AUTO ENGINEERING LTD</strong>, Unit A5
+        Windsor Road Commercial Estate, Ramsden Heath, Billericay, United Kingdom, CM11 1QE.
+        Company number 17406830.
+      </p>
+
+      <h2>8. Contact</h2>
       <p>For privacy questions, use the contact options on this website.</p>
     </LegalPage>
   );

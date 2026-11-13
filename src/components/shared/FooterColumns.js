@@ -60,7 +60,10 @@ export const footerColumns = [
 ];
 
 export const footerLegal = {
-  copyright: "© 2026 Land Rover Reliability Guide, part of the Engine Finders network.",
+  copyright: "© 2026 Land Rover Reliability Guide.",
+  company: "PRESTIGE AUTO ENGINEERING LTD",
+  address: "Unit A5 Windsor Road Commercial Estate, Ramsden Heath, Billericay, United Kingdom, CM11 1QE",
+  companyNumber: "17406830",
   disclaimer: "Independent editorial content; not affiliated with Jaguar Land Rover.",
   links: [
     { label: "Terms and Conditions", href: "/terms-and-conditions" },
@@ -118,6 +121,9 @@ export default function FooterColumns() {
 
       <div className="mt-6 border-t border-[var(--color-border)] pt-4">
         <p className={`text-xs ${softTextClass}`}>{footerLegal.copyright}</p>
+        <p className={`mt-1 text-xs font-semibold ${softTextClass}`}>{footerLegal.company}</p>
+        <p className={`mt-0.5 text-xs ${softerTextClass}`}>{footerLegal.address}</p>
+        <p className={`mt-0.5 text-xs ${softerTextClass}`}>Company number {footerLegal.companyNumber}</p>
         <p className={`mt-1 text-xs ${softerTextClass}`}>{footerLegal.disclaimer}</p>
         <ul className={`mt-2 flex flex-wrap gap-x-2 gap-y-1 text-xs ${softTextClass}`}>
           {footerLegal.links.map((link, index) => (

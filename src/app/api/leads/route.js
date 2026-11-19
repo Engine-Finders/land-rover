@@ -1,15 +1,21 @@
-import { LEAD_SOURCE, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/app/api/lead/constants";
+import { getSupabaseConfig, LEAD_SOURCE } from "@/app/api/lead/constants";
 
 /**
- * GET /api/leads - list leads for this website only (source = landroverengines.uk).
+ * GET /api/leads?db=1|2 - list leads for this website only (source = landroverengines.uk).
  */
-export async function GET() {
+export async function GET(request) {
   try {
-    if (!SUPABASE_ANON_KEY) {
-      return Response.json({ error: "SUPABASE_ANON_KEY is not configured" }, { status: 500 });
+    const db = new URL(request.url).searchParams.get("db") === "2" ? "2" : "1";
+    const config = getSupabaseConfig(db);
+
+    if (!config.anonKey) {
+      return Response.json(
+        { error: `${config.label} anon key is not configured` },
+        { status: 500 },
+      );
     }
 
-    const url = new URL(`${SUPABASE_URL}/rest/v1/leads`);
+    const url = new URL(`${config.url}/rest/v1/leads`);
     url.searchParams.set("source", `eq.${LEAD_SOURCE}`);
     url.searchParams.set("order", "createdAt.desc");
     url.searchParams.set("select", "*");
@@ -17,8 +23,8 @@ export async function GET() {
     const response = await fetch(url.toString(), {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-        apikey: SUPABASE_ANON_KEY,
+        Authorization: `Bearer ${config.anonKey}`,
+        apikey: config.anonKey,
         Accept: "application/json",
       },
       cache: "no-store",
@@ -39,15 +45,17 @@ export async function GET() {
         data?.hint ||
         text ||
         `Failed to fetch leads (${response.status})`;
-      console.error("fetch leads failed", message);
+      console.error(`fetch leads failed (${config.label})`, message);
       return Response.json(
-        { error: typeof message === "string" ? message : "Failed to fetch leads" },
+        { error: typeof message === "string" ? message : "Failed to fetch leads", db: config.db },
         { status: response.status },
       );
     }
 
     return Response.json({
       success: true,
+      db: config.db,
+      label: config.label,
       source: LEAD_SOURCE,
       count: Array.isArray(data) ? data.length : 0,
       leads: Array.isArray(data) ? data : [],

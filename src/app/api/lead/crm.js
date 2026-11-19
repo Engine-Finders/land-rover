@@ -1,4 +1,10 @@
-import { LEAD_SOURCE, SUPABASE_ANON_KEY, SUPABASE_WEBHOOK_URL } from "@/app/api/lead/constants";
+import {
+  LEAD_SOURCE,
+  SUPABASE_ANON_KEY,
+  SUPABASE_ANON_KEY_2,
+  SUPABASE_WEBHOOK_URL,
+  SUPABASE_WEBHOOK_URL_2,
+} from "@/app/api/lead/constants";
 
 function normalizeCapacity(raw) {
   if (!raw) return "";
@@ -87,22 +93,22 @@ export const CRM_LEAD_FIELDS = [
   { key: "page_url", label: "Page URL" },
 ];
 
-/**
- * Send lead to central Supabase Edge Function.
- */
-export async function sendLeadToCRM(payload) {
-  if (!SUPABASE_ANON_KEY) {
-    throw new Error("SUPABASE_ANON_KEY is not configured");
+async function postLeadWebhook(webhookUrl, anonKey, payload, label) {
+  if (!anonKey) {
+    throw new Error(`${label} anon key is not configured`);
+  }
+  if (!webhookUrl) {
+    throw new Error(`${label} webhook URL is not configured`);
   }
 
-  console.log("Sending lead to Supabase...", SUPABASE_WEBHOOK_URL);
+  console.log(`Sending lead to Supabase (${label})...`, webhookUrl);
 
-  const response = await fetch(SUPABASE_WEBHOOK_URL, {
+  const response = await fetch(webhookUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-      apikey: SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${anonKey}`,
+      apikey: anonKey,
     },
     body: JSON.stringify(payload),
   });
@@ -122,15 +128,45 @@ export async function sendLeadToCRM(payload) {
       data?.message ||
       data?.raw ||
       `Lead send failed (${response.status})`;
-    console.error("lead CRM failed", message);
+    console.error(`lead CRM failed (${label})`, message);
     throw new Error(typeof message === "string" ? message : "Lead send failed");
   }
 
   if (data?.error) {
-    console.error("lead CRM failed", data.error.message || data.error);
+    console.error(`lead CRM failed (${label})`, data.error.message || data.error);
     throw new Error(data.error.message || "Lead send failed");
   }
 
-  console.log("lead sent to Supabase.");
+  console.log(`lead sent to Supabase (${label}).`);
   return data?.success ?? data;
+}
+
+/**
+ * Send lead to both Supabase Edge Functions (DB1 + DB2) in parallel.
+ * DB1 failure still fails the request (same as before). DB2 errors are logged.
+ */
+export async function sendLeadToCRM(payload) {
+  if (!SUPABASE_ANON_KEY) {
+    throw new Error("SUPABASE_ANON_KEY is not configured");
+  }
+
+  const [db1, db2] = await Promise.allSettled([
+    postLeadWebhook(SUPABASE_WEBHOOK_URL, SUPABASE_ANON_KEY, payload, "DB1"),
+    SUPABASE_WEBHOOK_URL_2 && SUPABASE_ANON_KEY_2
+      ? postLeadWebhook(SUPABASE_WEBHOOK_URL_2, SUPABASE_ANON_KEY_2, payload, "DB2")
+      : Promise.resolve({ skipped: true }),
+  ]);
+
+  if (db2.status === "rejected") {
+    console.error("lead CRM failed (DB2)", db2.reason);
+  }
+
+  if (db1.status === "rejected") {
+    throw db1.reason instanceof Error ? db1.reason : new Error("Lead send failed");
+  }
+
+  return {
+    db1: db1.value,
+    db2: db2.status === "fulfilled" ? db2.value : { error: db2.reason?.message || "DB2 failed" },
+  };
 }

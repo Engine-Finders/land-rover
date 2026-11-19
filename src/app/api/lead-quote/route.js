@@ -11,6 +11,12 @@ const SUPABASE_WEBHOOK_URL =
 const SUPABASE_ANON_KEY =
   process.env.SUPABASE_ANON_KEY ||
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImludmZocWFxanl2Y3R0cHBueWdzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI4NTQ1NzAsImV4cCI6MjEwODQzMDU3MH0.GhZh0SG555phXYSdaP7bXPoxWN_QBhMusNJyQyDA-Rs";
+const SUPABASE_WEBHOOK_URL_2 =
+  process.env.SUPABASE_WEBHOOK_URL_2 ||
+  "https://ommfysqqlewadjqtbigk.supabase.co/functions/v1/receive-lead";
+const SUPABASE_ANON_KEY_2 =
+  process.env.SUPABASE_ANON_KEY_2 ||
+  "sb_publishable_iSReiPMDrICyL2GXD_sQ3g_ITSi3hLF";
 
 const resend = new Resend(RESEND_API_KEY);
 
@@ -102,35 +108,44 @@ export async function POST(req) {
       emailStatus = `Resend Exception: ${resendErr.message}`;
     }
 
-    // 2. Optional Supabase / Webhook forwarding
-    const supabaseWebhookUrl = process.env.SUPABASE_WEBHOOK_URL;
-    const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
-    if (supabaseWebhookUrl) {
-      try {
-        await fetch(supabaseWebhookUrl, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            ...(supabaseAnonKey ? { Authorization: `Bearer ${supabaseAnonKey}` } : {}),
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            number: phone,
-            postcode: postal,
-            vehicle_reg: VRM,
-            vehicle_brand: vehicle_make,
-            vehicle_model: vehicle_model,
-            vehicle_year: vehicle_year,
-            fuel_type: vehicle_fuel,
-            engine_capacity: vehicle_fuel_capacity,
-            description: note,
-            source: siteName,
-            source_page: pageUrl,
-          }),
-        });
-      } catch {}
-    }
+    // 2. Optional Supabase / Webhook forwarding (DB1 + DB2)
+    const leadBody = {
+      name,
+      email,
+      number: phone,
+      postcode: postal,
+      vehicle_reg: VRM,
+      vehicle_brand: vehicle_make,
+      vehicle_model: vehicle_model,
+      vehicle_year: vehicle_year,
+      fuel_type: vehicle_fuel,
+      engine_capacity: vehicle_fuel_capacity,
+      description: note,
+      source: siteName,
+      source_page: pageUrl,
+    };
+    const webhookTargets = [
+      { url: process.env.SUPABASE_WEBHOOK_URL || SUPABASE_WEBHOOK_URL, key: process.env.SUPABASE_ANON_KEY || SUPABASE_ANON_KEY },
+      { url: process.env.SUPABASE_WEBHOOK_URL_2 || SUPABASE_WEBHOOK_URL_2, key: process.env.SUPABASE_ANON_KEY_2 || SUPABASE_ANON_KEY_2 },
+    ];
+    await Promise.all(
+      webhookTargets
+        .filter((t) => t.url)
+        .map(async (t) => {
+          try {
+            await fetch(t.url, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                ...(t.key
+                  ? { Authorization: `Bearer ${t.key}`, apikey: t.key }
+                  : {}),
+              },
+              body: JSON.stringify(leadBody),
+            });
+          } catch {}
+        })
+    );
 
     return Response.json({
       success: true,

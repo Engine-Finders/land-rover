@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { CRM_LEAD_FIELDS } from "@/app/api/lead/crm";
-import { LEAD_SOURCE, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/app/api/lead/constants";
+import { getSupabaseConfig, LEAD_SOURCE } from "@/app/api/lead/constants";
 
 export const metadata = {
   title: "Leads",
@@ -8,12 +9,14 @@ export const metadata = {
 
 export const dynamic = "force-dynamic";
 
-async function fetchLeads() {
-  if (!SUPABASE_ANON_KEY) {
-    return { leads: [], error: "SUPABASE_ANON_KEY is not configured" };
+async function fetchLeads(db = "1") {
+  const config = getSupabaseConfig(db);
+
+  if (!config.anonKey) {
+    return { leads: [], error: `${config.label} anon key is not configured`, config };
   }
 
-  const url = new URL(`${SUPABASE_URL}/rest/v1/leads`);
+  const url = new URL(`${config.url}/rest/v1/leads`);
   url.searchParams.set("source", `eq.${LEAD_SOURCE}`);
   url.searchParams.set("order", "createdAt.desc");
   url.searchParams.set("select", "*");
@@ -21,8 +24,8 @@ async function fetchLeads() {
   const response = await fetch(url.toString(), {
     method: "GET",
     headers: {
-      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-      apikey: SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${config.anonKey}`,
+      apikey: config.anonKey,
       Accept: "application/json",
     },
     cache: "no-store",
@@ -39,10 +42,14 @@ async function fetchLeads() {
   if (!response.ok) {
     const message =
       data?.message || data?.error || data?.hint || text || `Failed to fetch leads (${response.status})`;
-    return { leads: [], error: typeof message === "string" ? message : "Failed to fetch leads" };
+    return {
+      leads: [],
+      error: typeof message === "string" ? message : "Failed to fetch leads",
+      config,
+    };
   }
 
-  return { leads: Array.isArray(data) ? data : [], error: null };
+  return { leads: Array.isArray(data) ? data : [], error: null, config };
 }
 
 function cell(value) {
@@ -51,13 +58,20 @@ function cell(value) {
   return String(value);
 }
 
-export default async function LeadsPage() {
-  const { leads, error } = await fetchLeads();
+export default async function LeadsPage(props) {
+  const searchParams = await props.searchParams;
+  const db = searchParams?.db === "2" ? "2" : "1";
+  const { leads, error, config } = await fetchLeads(db);
 
   const columns = [
     { key: "createdAt", label: "Created" },
     ...CRM_LEAD_FIELDS,
   ];
+
+  const btnBase =
+    "inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-bold no-underline transition-colors";
+  const btnActive = `${btnBase} bg-[var(--color-primary)] text-white`;
+  const btnIdle = `${btnBase} border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)] hover:border-[var(--color-primary)]`;
 
   return (
     <main className="mx-auto w-full max-w-8xl px-3 py-6 text-[var(--color-text)] md:px-6 md:py-8">
@@ -66,9 +80,18 @@ export default async function LeadsPage() {
           <p className="text-xs font-bold uppercase tracking-wide text-[var(--color-primary)]">Leads</p>
           <h1 className="mt-1 text-2xl font-bold md:text-3xl">Website leads</h1>
           <p className="mt-1 text-sm text-[var(--color-text-muted)]">
-            Source filter: <strong>{LEAD_SOURCE}</strong>
+            Viewing <strong>{config.label}</strong> · Source filter: <strong>{LEAD_SOURCE}</strong>
             {leads.length ? ` · ${leads.length} row${leads.length === 1 ? "" : "s"}` : null}
           </p>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <Link href="/leads?db=1" className={db === "1" ? btnActive : btnIdle}>
+            DB1
+          </Link>
+          <Link href="/leads?db=2" className={db === "2" ? btnActive : btnIdle}>
+            DB2
+          </Link>
         </div>
       </div>
 
@@ -80,7 +103,7 @@ export default async function LeadsPage() {
 
       {!error && leads.length === 0 ? (
         <div className="mt-5 rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-8 text-center text-sm text-[var(--color-text-muted)]">
-          No leads found for <strong>{LEAD_SOURCE}</strong> yet.
+          No leads found for <strong>{LEAD_SOURCE}</strong> on {config.label} yet.
         </div>
       ) : null}
 

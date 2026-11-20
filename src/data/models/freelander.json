@@ -231,7 +231,7 @@
   },
   "hero": {
     "tagPill": "Freelander • 1997-2014 • 2 Generations • K-series, Td4, Duratorq",
-    "h1": "Freelander Engines - The Complete UK Guide",
+    "h1": "Land Rover Freelander Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every generation. Every engine code. Every known failure. Every replacement cost - including the honest answer about when replacement no longer makes sense. Backed by 279+ real UK Freelander 2 enquiries [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -257,7 +257,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "Freelander - The Ownership Verdict",
+    "h2": "Land Rover Freelander Engine Reliability & Ownership Verdict",
     "subHeadline": "Two generations. Dozens of engine codes. One clear truth: the Freelander is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
@@ -300,7 +300,7 @@
     "oneLineVerdict": "The Freelander is the one Land Rover where our job is often to talk you out of a full engine replacement - the 2.2 diesel is worth saving, but on this model the maths matters more than the mechanicals."
   },
   "atAGlance": {
-    "h2": "Freelander at a Glance",
+    "h2": "Land Rover Freelander at a Glance",
     "subHeadline": "All the key facts about the Freelander in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
@@ -346,7 +346,7 @@
     ]
   },
   "generations": {
-    "h2": "Freelander Generations - Find Your Vehicle",
+    "h2": "Land Rover Freelander Generations: Compare Engine Options",
     "subHeadline": "Two generations with almost nothing in common under the bonnet. Select yours.",
     "cards": [
       {
@@ -394,7 +394,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "Freelander Engine Codes - The Complete Database",
+    "h2": "Land Rover Freelander Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine ever fitted to a Freelander - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
@@ -501,7 +501,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common Freelander Engine Problems",
+    "h2": "Land Rover Freelander Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The six most common failure patterns across the Freelander range - symptoms, costs and urgency.",
     "columns": [
       "#",
@@ -620,7 +620,9 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "Freelander Market Intelligence - What 279 UK Owners Told Us in 2025",
+    "h2": "Land Rover Freelander Engine Market Intelligence: UK Enquiry Trends",
+    "headlineFigure": "279",
+    "headlineYear": "2025",
     "signals": [
       {
         "signal": "Freelander 2 (L359) enquiries",
@@ -650,7 +652,7 @@
     "quote": "If you own a Freelander 2 with a tired engine, price a good used 2.2 before you price a recon - on this model the maths usually points there. And if you own a 1.8 Freelander 1 that hasn't had the head gasket done properly: do it before it does you."
   },
   "replacementCosts": {
-    "h2": "Freelander Engine Replacement Costs - By Generation",
+    "h2": "Land Rover Freelander Engine Replacement Costs - By Generation",
     "subHeadline": "Real UK pricing - with the used-engine route given equal billing, because on this model it's usually the right answer.",
     "tables": [
       {
@@ -744,7 +746,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the Freelander Engine Range Evolved - 1997 to 2014",
+    "h2": "How the Land Rover Freelander Engine Range Evolved - 1997 to 2014",
     "subHeadline": "From the original 1997 line-up to the last 2014 cars, see how engineering, emissions and performance shaped every generation of Freelander engines.",
     "columns": [
       "Era",
@@ -785,7 +787,7 @@
     ]
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy a Freelander?",
+    "h2": "Which Land Rover Freelander Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Freelander is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
@@ -821,7 +823,7 @@
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My Freelander Engine - or Should I Replace It?",
+    "h2": "Land Rover Freelander Engine Repair vs Replacement: Costs & Options",
     "intro": "On this model, this is the question - and the answer is maths, not mechanics. Get a personalised repair / used-engine / recon / walk-away verdict using real UK cost data.",
     "paths": [
       {
@@ -835,7 +837,7 @@
     ]
   },
   "trustBlock": {
-    "h2": "Why Freelander Owners Trust LandRoverEngine.uk",
+    "h2": "Why Land Rover Freelander Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -860,7 +862,7 @@
     ]
   },
   "faq": {
-    "h2": "Freelander Frequently Asked Questions",
+    "h2": "Land Rover Freelander Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -905,7 +907,7 @@
     ]
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Land Rover Freelander Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {

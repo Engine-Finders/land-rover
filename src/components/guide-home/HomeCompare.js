@@ -70,9 +70,8 @@ export default function HomeCompare({ data }) {
     <section className="relative bg-lr-page text-lr-head">
       <div className={`${CONTAINER} pb-6 pt-6 lg:pb-7 lg:pt-6`}>
         <h2 className={`${H2} text-balance`}>
-          {h1}
-          <br />
-          {h2} <span className="text-lr-green">{h3}</span>
+          {h1} {h2}
+          <br className="hidden xl:block" /> <span className="text-lr-green">{h3}</span>
         </h2>
         <p className={`${BODY} mt-3 max-w-[640px] text-lr-body lg:max-w-[800px]`}>{data.subhead}</p>
 

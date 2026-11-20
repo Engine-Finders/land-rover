@@ -24,10 +24,11 @@ const WASH = {
     "linear-gradient(90deg, var(--lr-page) 0px, color-mix(in srgb, var(--lr-page) 94%, transparent) calc(max(0px, 50vw - 800px) + 520px), color-mix(in srgb, var(--lr-page) 62%, transparent) calc(max(0px, 50vw - 800px) + 760px), transparent calc(max(0px, 50vw - 800px) + 1040px))",
 };
 
-// "Land Rover Defender L316 Engines - The Complete UK Guide" -> lead / accent
+// "Land Rover Defender L316 Engines - The Complete UK Guide" -> lead / " -" / accent;
+// "Land Rover Defender L316 Engine Replacement: UK Prices, Engine Codes & Options" -> lead / ":" / accent
 function splitH1(h1 = "") {
-  const m = String(h1).match(/^([\s\S]*?)\s+[-–-]\s+([\s\S]+)$/);
-  return m ? { lead: m[1], accent: m[2] } : { lead: h1, accent: "" };
+  const m = String(h1).match(/^([\s\S]*?)(\s+[-–-]|:)\s+([\s\S]+)$/);
+  return m ? { lead: m[1], joint: m[2].trim() === ":" ? ":" : " -", accent: m[3] } : { lead: h1, joint: "", accent: "" };
 }
 
 // "Land Rover Defender L316 • Off-Roader • 1990–2016"
@@ -162,7 +163,7 @@ function Stripe({ className = "" }) {
 export default function ModelHero({ data, model = "" }) {
   if (!data) return null;
 
-  const { lead, accent } = splitH1(data.h1);
+  const { lead, joint, accent } = splitH1(data.h1);
   const pill = splitPill(data.tagPill);
   const code = genCode(`${data.h1} ${data.tagPill}`);
   const car = genCar(data, model);
@@ -205,7 +206,7 @@ export default function ModelHero({ data, model = "" }) {
             {lead}
             {accent && (
               <>
-                {" "}-{" "}
+                {joint === ":" ? ":" : <>{"\u00a0"}-</>}{" "}
                 <span className="text-lr-ink dark:text-lr-green">{accent}</span>
               </>
             )}

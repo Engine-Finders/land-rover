@@ -149,7 +149,7 @@ function Tagged({ item }) {
 }
 
 export default function HomeEconomics({ data }) {
-  const [h1, h2] = data.h2.split("|");
+  const [h1, h2, h3] = data.h2.split("|");
 
   return (
     <section lang="en-GB" className="relative overflow-hidden bg-lr-band text-lr-head">
@@ -180,10 +180,13 @@ export default function HomeEconomics({ data }) {
             <Image src={data.mobileImage} alt="" fill quality={90} className="object-cover dark:brightness-[0.82]" sizes="60vw" />
           </div>
 
+          {/* desktop: three short lines, left of the Range Rover photo */}
           <h2 className={`${H2} relative text-balance`}>
-            {h1}
-            <br />
-            <span className="text-lr-ink">{h2}</span>
+            {h1} <br className="hidden xl:block" />
+            <span className="text-lr-ink">
+              {h2} <br className="hidden xl:block" />
+              {h3}
+            </span>
           </h2>
 
           <p className={`${BODY} relative mt-3 w-[52%] text-lr-body min-[480px]:w-[48%] sm:w-[44%] lg:mt-5 xl:w-auto xl:max-w-[560px]`}>

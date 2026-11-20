@@ -303,7 +303,7 @@
   },
   "hero": {
     "tagPill": "Range Rover • 1970-Present • 5 Generations • TDV6, TDV8, SDV8, V8, Ingenium",
-    "h1": "Range Rover Engines - The Complete UK Guide",
+    "h1": "Range Rover Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every generation. Every engine code. Every known failure. Every replacement cost. From the original V8 to the L460's twin-turbo flagship - backed by 468+ real UK Range Rover enquiries [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -329,7 +329,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "Range Rover - The Ownership Verdict",
+    "h2": "Range Rover Engine Reliability & Ownership Verdict",
     "subHeadline": "Five generations. Dozens of engine codes. One clear truth: the Range Rover is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
@@ -422,7 +422,7 @@
     ]
   },
   "generations": {
-    "h2": "Range Rover Generations - Find Your Vehicle",
+    "h2": "Range Rover Generations: Compare Engine Options",
     "subHeadline": "Fifty-plus years, five generations, and five completely different ownership propositions.",
     "cards": [
       {
@@ -492,7 +492,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "Range Rover Engine Codes - The Complete Database",
+    "h2": "Range Rover Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine ever fitted to a Range Rover - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
@@ -707,7 +707,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common Range Rover Engine Problems",
+    "h2": "Range Rover Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The six most common failure patterns across the Range Rover range - symptoms, costs and urgency.",
     "columns": [
       "#",
@@ -826,7 +826,8 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "Range Rover Market Intelligence - What UK Owners Told Us in 2025",
+    "h2": "Range Rover Engine Market Intelligence: UK Enquiry Trends",
+    "headlineYear": "2025",
     "signals": [
       {
         "signal": "Range Rover L405 enquiries",
@@ -1114,7 +1115,7 @@
     ]
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy a Range Rover?",
+    "h2": "Which Range Rover Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Range Rover is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
@@ -1150,7 +1151,7 @@
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My Range Rover Engine - or Should I Replace It?",
+    "h2": "Range Rover Engine Repair vs Replacement: Costs & Options",
     "intro": "Cold-start knock on an SDV6? Chain noise on a TDV8? On this model the answer swings on your car's value - get a personalised verdict using real UK cost data.",
     "paths": [
       {
@@ -1164,7 +1165,7 @@
     ]
   },
   "trustBlock": {
-    "h2": "Why Range Rover Owners Trust landroverengine.uk",
+    "h2": "Why Range Rover Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -1234,7 +1235,7 @@
     ]
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Range Rover Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {

@@ -251,7 +251,7 @@
   },
   "hero": {
     "tagPill": "Range Rover Sport L461 • SUV • 2022-present",
-    "h1": "Range Rover Sport L461 Engines - The Complete UK Guide",
+    "h1": "Range Rover Sport L461 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Range Rover Sport L461 - from the 3.0‑litre Ingenium six‑cylinder diesel and petrol to the BMW‑sourced 4.4‑litre V8 and the P440e plug‑in hybrid. Real UK replacement costs, honest reliability data, and the cooling‑system quirks that define this new generation. Backed by 175+ real UK L461 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -278,7 +278,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Range Rover Sport L461 Engine Codes - The Complete Database",
+    "h2": "Range Rover Sport L461 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the L461 - from the six‑cylinder Ingenium range to the BMW V8 and PHEV - with power outputs and fitment years.",
     "columns": [
       "Engine Code",
@@ -373,12 +373,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Range Rover Sport L461 - Overview",
+    "h2": "Range Rover Sport L461 Overview: Engine Range, Design & Key Facts",
     "intro": "The Range Rover Sport L461, launched in 2022 as the third generation of Land Rover's performance‑oriented SUV, sits on the JLR MLA‑Flex platform shared with the full‑size Range Rover. It introduces a more luxurious interior, a revised suspension, and a powertrain lineup that includes both JLR's Ingenium six‑cylinder units and BMW‑sourced V8s - a significant departure from the previous SDV6 and TDV8 engines. A mild‑hybrid system is standard across all non‑PHEV variants.",
     "keyFacts": "Platform: JLR MLA‑Flex (2022-present) • Predecessor: Range Rover Sport L494 • Successor: Still in production (L461 continues) • Sibling body styles in this generation: None (L461 is the sole Range Rover Sport body code)",
     "marketIntelligenceLine": "The L461 generated 175 real UK engine enquiries in 2025 [EM-VERIFIED], with the V8 variants attracting significant interest from high‑performance buyers while the six‑cylinder diesels remain the fleet favourite."
   },
   "bestWorstEngines": {
+    "h2": "Range Rover Sport L461 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -419,7 +420,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Range Rover Sport L461 - Ownership Economics",
+    "h2": "Range Rover Sport L461 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -498,6 +499,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Range Rover Sport L461 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -614,7 +616,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L461 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Range Rover Sport L461 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -668,6 +670,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Range Rover Sport L461 Petrol, Diesel & Hybrid Engine Variants",
     "dieselVariants": [
       {
         "name": "D300",
@@ -703,6 +706,7 @@
     "scopeNote": "All variants listed are L461 only. The full‑size Range Rover L460 shares most of these engines but is covered on its own Generation Page, since fitment and power outputs may differ slightly."
   },
   "marketIntelligence": {
+    "h2": "Range Rover Sport L461 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 306DT (Ingenium 3.0 Diesel) - 980 platform‑wide enquiries [EM‑VERIFIED], with D300 and D350 variants",
       "2. N63B44 (BMW V8) - 440 platform‑wide enquiries [EM‑VERIFIED] (P530)",
@@ -744,6 +748,7 @@
     ]
   },
   "faq": {
+    "h2": "Range Rover Sport L461 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -798,7 +803,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Range Rover Sport L461 Owners Trust LandRoverEngine.uk",
+    "h2": "Range Rover Sport L461 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L461 Engine Suppliers",

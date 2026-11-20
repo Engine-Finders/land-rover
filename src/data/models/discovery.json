@@ -279,7 +279,7 @@
   },
   "hero": {
     "tagPill": "Discovery • 1989-Present • 5 Generations • Tdi, <a href='https://landroverengine.uk/engine/td5'>TD5</a>, TDV6, SDV6, Ingenium",
-    "h1": "Discovery Engines - The Complete UK Guide",
+    "h1": "Land Rover Discovery Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every generation. Every engine code. Every known failure. Every replacement cost. From the <a href='https://landroverengine.uk/engine/200-300tdi'>200Tdi</a> original to the Ingenium-six D300 - backed by 2,800+ real UK enquiries across Discovery-fitted engines [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -305,7 +305,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "Discovery - The Ownership Verdict",
+    "h2": "Land Rover Discovery Engine Reliability & Ownership Verdict",
     "subHeadline": "Five generations. Dozens of engine codes. One clear truth: the Discovery is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
@@ -352,7 +352,7 @@
     "oneLineVerdict": "The Discovery is the best family Land Rover ever made and the model where engine choice matters most - the difference between the right and wrong engine is the difference between a £500 service bill and a £9,500 crankshaft."
   },
   "atAGlance": {
-    "h2": "Discovery at a Glance",
+    "h2": "Land Rover Discovery at a Glance",
     "subHeadline": "All the key facts about the Discovery in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
@@ -398,7 +398,7 @@
     ]
   },
   "generations": {
-    "h2": "Discovery Generations - Find Your Vehicle",
+    "h2": "Land Rover Discovery Generations: Compare Engine Options",
     "subHeadline": "Five generations, five very different ownership propositions. Select yours to explore engines, problems, and costs.",
     "cards": [
       {
@@ -467,7 +467,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "Discovery Engine Codes - The Complete Database",
+    "h2": "Land Rover Discovery Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine fitted to the UK Discovery, with reliability ratings, real enquiry volumes, and replacement costs.",
     "columns": [
       "Engine Code",
@@ -634,7 +634,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common Discovery Engine Problems",
+    "h2": "Land Rover Discovery Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The failures Discovery owners actually report - with symptoms, costs, and urgency levels.",
     "columns": [
       "#",
@@ -753,7 +753,8 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "Discovery Market Intelligence - What UK Owners Told Us in 2025",
+    "h2": "Land Rover Discovery Engine Market Intelligence: UK Enquiry Trends",
+    "headlineYear": "2025",
     "signals": [
       {
         "signal": "204DTD Ingenium enquiries (JLR-wide)",
@@ -783,7 +784,7 @@
     "quote": "If you buy one Discovery based on this page, buy a 2021+ Discovery 5 D300 - or a Discovery 4 SDV6 whose oil-change invoices you can hold in your hand. On this model, paperwork is worth more than mileage."
   },
   "replacementCosts": {
-    "h2": "Discovery Engine Replacement Costs - By Generation",
+    "h2": "Land Rover Discovery Engine Replacement Costs - By Generation",
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
@@ -972,7 +973,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the Discovery Engine Range Evolved - 1989 to Today",
+    "h2": "How the Land Rover Discovery Engine Range Evolved - 1989 to Today",
     "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Discovery engines.",
     "columns": [
       "Era",
@@ -1020,7 +1021,7 @@
     ]
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy a Discovery?",
+    "h2": "Which Land Rover Discovery Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Discovery is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
@@ -1056,7 +1057,7 @@
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My Discovery Engine - or Should I Replace It?",
+    "h2": "Land Rover Discovery Engine Repair vs Replacement: Costs & Options",
     "intro": "Cold-start knock on an SDV6? Chain rattle on an early Ingenium? Get a personalised repair-vs-replace verdict using real UK cost data.",
     "paths": [
       {
@@ -1070,7 +1071,7 @@
     ]
   },
   "trustBlock": {
-    "h2": "Why Discovery Owners Trust LandRoverEngine.uk",
+    "h2": "Why Land Rover Discovery Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -1095,7 +1096,7 @@
     ]
   },
   "faq": {
-    "h2": "Discovery Frequently Asked Questions",
+    "h2": "Land Rover Discovery Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -1140,7 +1141,7 @@
     ]
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Land Rover Discovery Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {

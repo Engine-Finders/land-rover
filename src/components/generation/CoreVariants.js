@@ -3,7 +3,7 @@ import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
 import variantPages from "@/data/registery/variants/pages.json";
 import { CONTAINER } from "@/lib/typeScale";
-import { H2_MODEL, SANS, prose } from "@/components/models/modelKit";
+import { H2_MODEL, SANS, SectionTitle, prose } from "@/components/models/modelKit";
 import { stripHtml } from "@/components/models/engineSections";
 import { localHref, localHtml } from "@/components/models/generationsFaqLinks";
 import { engineDbCar, genCode } from "./genKit";
@@ -93,7 +93,7 @@ export default function CoreVariants({ data, page = null, model = "" }) {
       <div className={`${CONTAINER} relative`}>
         <div className="lg:max-w-[calc(52vw_-_56px)] xl:max-w-[calc(52vw_-_max(48px,50vw_-_752px)_-_8px)]">
           <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">{code ? `${code} body code` : "Variants"}</p>
-          <h2 className={`${H2_MODEL} mt-3.5 text-lr-head md:mt-4`}>Core Variants</h2>
+          <SectionTitle h2={data?.h2 || "Core Variants"} className="mt-3.5 md:mt-4" />
           <span className="mt-4 flex h-[3px] w-20 overflow-hidden rounded-full md:mt-5" aria-hidden="true">
             <span className="w-[60%] bg-lr-ink dark:bg-lr-green" />
             <span className="flex-1 bg-lr-gold-line" />

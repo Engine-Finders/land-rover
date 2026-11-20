@@ -257,7 +257,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Range Rover Evoque L551 • SUV • 2019-Present",
-    "h1": "Land Rover Range Rover Evoque L551 Engines - The Complete UK Guide",
+    "h1": "Range Rover Evoque L551 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the second-generation Evoque L551 - from the 2.0-litre Ingenium diesel to the 300PS petrol MHEV. Real UK replacement costs, honest failure data, and the timing-chain risk that still haunts early Ingenium units. Backed by 349+ real UK L551 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -284,7 +284,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Range Rover Evoque L551 Engine Codes - The Complete Database",
+    "h2": "Range Rover Evoque L551 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every Ingenium petrol and diesel engine fitted to the second-generation Evoque L551 - from the D150 entry diesel to the P300 performance petrol.",
     "columns": [
       "Engine Code",
@@ -355,12 +355,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Range Rover Evoque L551 - Overview",
+    "h2": "Evoque L551 Overview: Engine Range, Design & Key Facts",
     "intro": "The L551 is the second-generation Range Rover Evoque, launched in late 2018 and on sale from early 2019. It succeeded the hugely popular L538 (2011-2018) with a more premium interior, improved refinement, and a switch to JLR's all-new Ingenium engine family. All 2.0-litre petrol and diesel variants feature mild-hybrid technology (MHEV) with a belt-integrated starter generator and 48V battery, while a 1.5-litre three-cylinder petrol MHEV and a plug-in hybrid (PHEV) variant joined the range later.",
     "keyFacts": "Platform: Land Rover D8 (steel monocoque, heavily revised from L538) • Predecessor: Range Rover Evoque L538 (2011-2018) • Successor: Currently in production (no successor announced) • Sibling body styles in this generation: Five-door SUV only (no convertible variant)",
     "marketIntelligenceLine": "The L551 Evoque generated 349 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 2.0-litre Ingenium diesel (D150/D180) as these units exit warranty and timing-chain issues become a major concern."
   },
   "bestWorstEngines": {
+    "h2": "Range Rover Evoque L551 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -401,7 +402,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Range Rover Evoque L551 - Ownership Economics",
+    "h2": "Range Rover Evoque L551 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -464,6 +465,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Range Rover Evoque L551 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -580,7 +582,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L551 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Range Rover Evoque L551 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -626,6 +628,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Evoque L551 Petrol, Diesel & Hybrid Engine Variants",
     "dieselVariants": [
       {
         "name": "D150",
@@ -669,6 +672,7 @@
     "scopeNote": "All variants listed are L551 body code only - the second-generation Evoque produced from late 2018 onwards. The first-generation L538 (2011-2018) is covered on its own Generation Page."
   },
   "marketIntelligence": {
+    "h2": "Range Rover Evoque L551 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. D180 (2.0-litre diesel, 180 bhp)",
       "2. D150 (2.0-litre diesel, 150 bhp)",
@@ -710,6 +714,7 @@
     ]
   },
   "faq": {
+    "h2": "Evoque L551 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -769,7 +774,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Range Rover Evoque L551 Owners Trust LandRoverEngine.uk",
+    "h2": "Range Rover Evoque L551 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L551 Engine Suppliers",

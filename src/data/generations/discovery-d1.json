@@ -252,7 +252,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Discovery 1 • D1 • 1989-1998",
-    "h1": "Land Rover Discovery 1 D1 Engines - The Complete UK Guide",
+    "h1": "Land Rover Discovery 1 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Discovery Series I - from the legendary 200TDi and 300TDi diesels to the Rover V8 petrols and the rare 2.0-litre MPi. Real UK costs and honest reliability data for the 4x4 that defined an era. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -279,7 +279,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Discovery 1 Engine Codes - The Complete Database",
+    "h2": "Land Rover Discovery 1 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Discovery Series I (D1) specifically - from the 1989 launch to the 1998 end of production.",
     "columns": [
       "Engine Code",
@@ -374,12 +374,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Discovery 1 - Overview",
+    "h2": "Discovery 1 Overview: Engine Range, Design & Key Facts",
     "intro": "The Discovery Series I - universally known as the D1 - was launched at the 1989 Frankfurt Motor Show as a more affordable, accessible alternative to the Range Rover, sharing its chassis, suspension and four‑wheel‑drive system. It pioneered the seven‑seat SUV format and quickly became a global icon. Under the bonnet, the D1 offered a choice of the legendary 200TDi and 300TDi turbodiesels - both capable of exceeding 200,000 miles with proper maintenance - alongside Rover V8 petrols and the rare 2.0‑litre MPi. Production ran from 1989 to 1998, when the all‑new Discovery 2 replaced it.",
     "keyFacts": "Platform: Range Rover Classic (coil‑spring live axles) • Predecessor: None (first generation) • Successor: Discovery 2 (L318) • Sibling body styles in this generation: 3‑door, 5‑door, commercial van variants.",
     "marketIntelligenceLine": "The Discovery 1 generates consistent UK enquiries [PATTERN DATA], concentrated on 200TDi and 300TDi diesel variants as these classics enter collector and overland‑prep territory."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Discovery 1 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -390,7 +391,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Discovery 1 - Ownership Economics",
+    "h2": "Land Rover Discovery 1 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -456,6 +457,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Land Rover Discovery 1 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -525,7 +527,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "Discovery 1 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Discovery 1 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -587,6 +589,7 @@
     "note": "No Generation variance from the Model Page's baseline figures - Discovery 1 shares identical engine‑bay access across all body styles, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [EM-QUOTE] from Table A - Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Discovery 1 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "200TDi",
@@ -641,6 +644,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Discovery 1 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -695,7 +699,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Discovery 1 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Discovery 1 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted D1 Engine Suppliers",

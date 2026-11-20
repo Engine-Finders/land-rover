@@ -23,7 +23,7 @@
   },
   "hero": {
     "tagPill": "Evoque • 2011-Present • 2 Generations • Ingenium, Duratorq, PHEV",
-    "h1": "Evoque Engines - The Complete UK Guide",
+    "h1": "Range Rover Evoque Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every generation. Every engine. Every known failure. Every replacement cost - including the timing-chain question that hangs over the used market, answered honestly. Backed by 741+ real UK Evoque enquiries [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -49,7 +49,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "Evoque - The Ownership Verdict",
+    "h2": "Range Rover Evoque Engine Reliability & Ownership Verdict",
     "subHeadline": "Two generations. Dozens of engine codes. One clear truth: the Evoque is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
@@ -96,7 +96,7 @@
     "oneLineVerdict": "The Evoque is most people's first Range Rover - which is exactly why we're blunt about it: the difference between a great first Range Rover and a cautionary tale is one facelift year and one £250 chain inspection."
   },
   "atAGlance": {
-    "h2": "Evoque at a Glance",
+    "h2": "Range Rover Evoque at a Glance",
     "subHeadline": "All the key facts about the Evoque in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
@@ -142,7 +142,7 @@
     ]
   },
   "generations": {
-    "h2": "Evoque Generations - Find Your Vehicle",
+    "h2": "Range Rover Evoque Generations: Compare Engine Options",
     "subHeadline": "Two generations - and inside the first one, two very different engine eras. Select yours.",
     "cards": [
       {
@@ -190,7 +190,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "Evoque Engine Codes - The Complete Database",
+    "h2": "Range Rover Evoque Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine ever fitted to a Range Rover Evoque - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
@@ -297,7 +297,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common Evoque Engine Problems",
+    "h2": "Range Rover Evoque Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The six most common failure patterns across the Evoque range - symptoms, costs and urgency.",
     "columns": [
       "#",
@@ -416,7 +416,9 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "Evoque Market Intelligence - What 741 UK Owners Told Us in 2025",
+    "h2": "Range Rover Evoque Engine Market Intelligence: UK Enquiry Trends",
+    "headlineFigure": "741",
+    "headlineYear": "2025",
     "signals": [
       {
         "signal": "Evoque family total",
@@ -451,7 +453,7 @@
     "quote": "If you buy one Evoque based on this page, buy a 2020+ L551. And if the budget says 2015-2018 diesel, spend £250 on a chain inspection before you spend £13,000 on the car - it's the best-value insurance in this entire segment."
   },
   "replacementCosts": {
-    "h2": "Evoque Engine Replacement Costs - By Generation",
+    "h2": "Range Rover Evoque Engine Replacement Costs - By Generation",
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
@@ -545,7 +547,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the Evoque Engine Range Evolved - 2011 to Today",
+    "h2": "How the Range Rover Evoque Engine Range Evolved - 2011 to Today",
     "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Evoque engines.",
     "columns": [
       "Era",
@@ -579,7 +581,7 @@
     ]
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy an Evoque?",
+    "h2": "Which Range Rover Evoque Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Evoque is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
@@ -615,7 +617,7 @@
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My Evoque Engine - or Should I Replace It?",
+    "h2": "Range Rover Evoque Engine Repair vs Replacement: Costs & Options",
     "intro": "Cold-start rattle? Oil level creeping up the dipstick? Get a personalised repair-vs-replace verdict using real UK cost data.",
     "paths": [
       {
@@ -629,7 +631,7 @@
     ]
   },
   "trustBlock": {
-    "h2": "Why Evoque Owners Trust landroverengine.uk",
+    "h2": "Why Range Rover Evoque Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -654,7 +656,7 @@
     ]
   },
   "faq": {
-    "h2": "Evoque Frequently Asked Questions",
+    "h2": "Range Rover Evoque Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -699,7 +701,7 @@
     ]
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Range Rover Evoque Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {

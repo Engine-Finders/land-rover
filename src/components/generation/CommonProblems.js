@@ -4,7 +4,7 @@ import LrIcon from "@/components/shared/LrIcon";
 import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 import { CONTAINER } from "@/lib/typeScale";
-import { Arrow, H2_MODEL, SANS, prose } from "@/components/models/modelKit";
+import { Arrow, H2_MODEL, SANS, SectionTitle, prose } from "@/components/models/modelKit";
 import { keyEngines, stripHtml } from "@/components/models/engineSections";
 import { localHref, localHtml } from "@/components/models/generationsFaqLinks";
 import { isQuoteHref } from "@/lib/quoteModal";
@@ -282,7 +282,7 @@ export default function CommonProblems({ data, page = null }) {
     <section className={`bg-lr-band py-6 text-lr-head md:py-7 xl:py-8 ${SANS}`}>
       <div className={CONTAINER}>
         <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">Common Problems</p>
-        <h2 className={`${H2_MODEL} mt-3.5 text-balance text-lr-head md:mt-4`}>{name ? `${name} - Common Problems` : "Common Problems"}</h2>
+        <SectionTitle h2={data?.h2 || (name ? `${name} - Common Problems` : "Common Problems")} className="mt-3.5 md:mt-4" />
         <p className="mt-3 max-w-[50em] text-[15px] leading-[1.6] text-lr-body md:mt-4 md:text-[16px] xl:text-[17px]">
           Real-world issues {owners} owners face most - with symptoms, causes, costs and our honest recommendations based on UK specialist experience.
         </p>

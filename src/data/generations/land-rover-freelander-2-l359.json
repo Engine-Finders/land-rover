@@ -239,7 +239,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Freelander 2 L359 • SUV • 2006-2014",
-    "h1": "Land Rover Freelander 2 L359 Engines - The Complete UK Guide",
+    "h1": "Land Rover Freelander 2 L359 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Freelander 2 L359 - from the 2.2-litre TD4 diesel to the 3.2-litre <a href='https://landroverengine.uk/engine/volvo-si6'>Si6</a> petrol six and the later <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> turbo. Real UK costs, honest failure data, and the Ford-PSA diesel that made this one of Land Rover's most dependable powertrains. Backed by 144+ real UK L359 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -266,7 +266,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Freelander 2 L359 Engine Codes - The Complete Database",
+    "h2": "Land Rover Freelander 2 L359 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Freelander 2 L359 specifically - including the TD4 diesel, the Si6 petrol six, and the later Si4 turbocharged petrol.",
     "columns": [
       "Engine Code",
@@ -325,12 +325,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Freelander 2 L359 - Overview",
+    "h2": "Freelander 2 Overview: Engine Range, Design & Key Facts",
     "intro": "The Freelander 2 (codename L359) debuted in 2006 as the second generation of Land Rover's compact SUV. Built at Halewood, it was the first Land Rover not assembled at Solihull. The engine range initially comprised a 2.2-litre turbodiesel from the Ford-PSA DW12 family and a 3.2-litre straight-six petrol from Ford's SI6 series. A 2.0-litre turbocharged petrol (Si4) joined the range from 2011, and a frugal 2.2 eD4 two-wheel-drive variant arrived in 2010. The L359 is widely regarded as one of Land Rover's most reliable models.",
     "keyFacts": "Platform: Ford EUCD / Land Rover • Predecessor: Freelander 1 (L314) • Successor: Discovery Sport (L550) • Sibling body styles in this generation: N/A - L359 is the sole body style.",
     "marketIntelligenceLine": "The Freelander 2 L359 generated 144 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 2.2 TD4 diesel as these vehicles enter the high-mileage phase of their ownership cycle."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Freelander 2 L359 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -371,7 +372,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Freelander 2 L359 - Ownership Economics",
+    "h2": "Land Rover Freelander 2 L359 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -413,6 +414,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Land Rover Freelander 2 L359 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -501,7 +503,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L359 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Freelander 2 L359 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -539,6 +541,7 @@
     "note": "No Generation variance from the Engine Page baseline - no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10-14 hours for all L359 engines due to transverse mounting and Halewood production access."
   },
   "coreVariants": {
+    "h2": "Freelander 2 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "2.2 eD4",
@@ -570,6 +573,7 @@
     "scopeNote": "All variants listed are Freelander 2 L359 only. The eD4 is a two-wheel-drive variant introduced in 2010; TD4 and SD4 are all-wheel-drive."
   },
   "marketIntelligence": {
+    "h2": "Land Rover Freelander 2 L359 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 224DT 2.2 TD4 - 350 requests [EM-VERIFIED]",
       "2. 204PT 2.0 Si4 - 480 requests [EM-VERIFIED]",
@@ -611,6 +615,7 @@
     ]
   },
   "faq": {
+    "h2": "Freelander 2 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -665,7 +670,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Freelander 2 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Freelander 2 L359 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L359 Engine Suppliers",

@@ -251,7 +251,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Range Rover Classic • Off-Roader • 1970-1996",
-    "h1": "Land Rover Range Rover Classic Engines - The Complete UK Guide",
+    "h1": "Range Rover Classic Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the original Range Rover Classic - from the 3.5-litre Rover V8 to the <a href='https://landroverengine.uk/engine/200-300tdi'>200Tdi</a> and 300Tdi diesels that defined its final years. Real UK replacement costs, honest failure data, and the VM diesel detour most buyers overlook. Backed by 284+ real UK Classic enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -278,7 +278,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Range Rover Classic Engine Codes - The Complete Database",
+    "h2": "Range Rover Classic Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every petrol and diesel engine fitted to the original Range Rover Classic - from the carburettor V8 to the Tdi units that replaced the Italian VM diesels.",
     "columns": [
       "Engine Code",
@@ -373,12 +373,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Range Rover Classic - Overview",
+    "h2": "Range Rover Classic Overview: Engine Range, Design & Key Facts",
     "intro": "The Range Rover Classic is the first-generation Range Rover, produced from 1970 to 1996 and retrospectively named \"Classic\" after the P38A launched in 1994. It pioneered the luxury 4x4 segment with coil-spring suspension, permanent four-wheel drive, and a car-like interior. A 1986 update brought electronic fuel injection to the V8 and introduced the Italian VM turbodiesel, while the 1992-1996 period saw the VM replaced by the far more dependable 200Tdi and 300Tdi Land Rover diesel units.",
     "keyFacts": "Platform: Land Rover Classic (coil-spring, live axles, ladder-frame chassis) • Predecessor: None (Range Rover was a new model line) • Successor: Range Rover P38A (1994-2002) • Sibling body styles in this generation: Two-door (1970-1981), Four-door (1981-1996), LSE long-wheelbase (1992-1996)",
     "marketIntelligenceLine": "The Range Rover Classic generated 284 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 3.9 V8 EFi and the 200Tdi/300Tdi diesel units as these classics continue to be restored and maintained."
   },
   "bestWorstEngines": {
+    "h2": "Range Rover Classic Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -419,7 +420,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Range Rover Classic - Ownership Economics",
+    "h2": "Range Rover Classic Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -498,6 +499,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Range Rover Classic Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -614,7 +616,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "Classic Engine Replacement Costs - By Engine and Condition",
+    "h2": "Range Rover Classic Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -692,6 +694,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Range Rover Classic Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "VM Diesel",
@@ -715,6 +718,7 @@
     "scopeNote": "All variants listed are first-generation Range Rover (1970-1996), retrospectively known as \"Classic\". Two-door models were produced from 1970 to 1981; four-door from 1981 onwards; LSE long-wheelbase from 1992 to 1996."
   },
   "marketIntelligence": {
+    "h2": "Range Rover Classic Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 3.9 V8 EFi (1989-1996)",
       "2. 300Tdi (1994-1996)",
@@ -756,6 +760,7 @@
     ]
   },
   "faq": {
+    "h2": "Range Rover Classic Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -810,7 +815,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Range Rover Classic Owners Trust LandRoverEngine.uk",
+    "h2": "Range Rover Classic Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted Classic Engine Suppliers",

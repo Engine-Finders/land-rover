@@ -252,7 +252,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Freelander 1 L314 • SUV • 1997-2006",
-    "h1": "Land Rover Freelander 1 L314 Engines - The Complete UK Guide",
+    "h1": "Land Rover Freelander 1 L314 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Freelander 1 L314 - from the K‑Series 1.8 petrol and L‑Series diesel to the BMW‑sourced TD4 and the thirstier KV6 V6. Real UK replacement costs and honest reliability data for Land Rover's first monocoque 4x4. Backed by real UK enquiries [EM‑VERIFIED].",
     "trustStrip": [
       {
@@ -279,7 +279,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Freelander 1 L314 Engine Codes - The Complete Database",
+    "h2": "Land Rover Freelander 1 L314 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Freelander 1 L314 specifically - including the L‑Series diesel, the BMW‑sourced TD4 that transformed this generation, and the K‑Series and KV6 petrol options.",
     "columns": [
       "Engine Code",
@@ -350,16 +350,17 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Freelander 1 L314 - Overview",
+    "h2": "Freelander 1 Overview: Engine Range, Design & Key Facts",
     "intro": "The Freelander 1 (L314) was Land Rover's first monocoque 4x4, launched in October 1997 as a departure from the brand's traditional body‑on‑frame vehicles. It was an instant hit, becoming the biggest‑selling four‑wheel‑drive model in Europe with over 540,000 units sold. The engine line‑up evolved significantly during production: the original Rover 1.8 K‑Series petrol and 2.0 L‑Series diesel were joined by a BMW‑sourced 2.0 TD4 diesel in 2000 and a 2.5 KV6 V6 petrol shortly after. A 2003 facelift brought revised styling and improved build quality.",
     "keyFacts": "Platform: Land Rover L314 (monocoque, transverse engine, four‑wheel drive) • Predecessor: None - Freelander was Land Rover's first compact SUV • Successor: Freelander 2 (L359) • Sibling body styles in this generation: Three‑door Softback, three‑door Hardback, five‑door estate",
     "marketIntelligenceLine": "The Freelander nameplate generated significant UK engine enquiries in 2025 [EM‑VERIFIED], with the TD4 diesel accounting for the majority of Freelander 1‑related demand based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Freelander 1 L314 Engine Reliability: Best Choices & Known Risks",
     "items": []
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Freelander 1 L314 - Ownership Economics",
+    "h2": "Land Rover Freelander 1 L314 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -422,6 +423,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Land Rover Freelander 1 L314 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -465,7 +467,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L314 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Freelander 1 L314 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -511,6 +513,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Freelander 1 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "Di",
@@ -557,6 +560,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Freelander 1 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -611,7 +615,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Freelander 1 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Freelander 1 L314 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted Freelander Engine Suppliers",

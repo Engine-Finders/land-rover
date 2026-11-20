@@ -114,7 +114,7 @@ function Trustpilot({ tp }) {
 
 export default function HomeFinal({ data }) {
   const [d1, d2] = data.h2.split("|");
-  const [m1, m2, m3, m4] = data.mobileH2.split("|");
+  const [m1, m2] = data.mobileH2.split("|");
   const [s1, s2] = data.subhead.split("|");
 
   return (
@@ -125,42 +125,38 @@ export default function HomeFinal({ data }) {
       </div>
 
       <div className={`${CONTAINER} relative pb-6 pt-6 lg:pb-7 lg:pt-8`}>
-        {/* tablets: heading on the left, the car beside it on the right (car never under text). Phones: the
-            heading needs the full width at its size, so the car follows as a band bleeding off the right edge */}
+        {/* phones / tablets: the heading at full width (each part balanced on its own, "&" kept with the
+            word before it). Phones: the paragraph, then the car as a band bleeding off the right edge;
+            tablets: the car beside the paragraph on the right (car never under text) */}
         <div className="relative lg:hidden">
-          <div className="relative z-10 sm:w-[44%]">
-            <h2 className={H2}>
-              {m1}
-              <br className="hidden sm:block" />{" "}
-              {m2}
-              <br />
-              <span className="text-lr-ink">
-                {m3}
-                <br className="hidden sm:block" />{" "}
-                {m4}
-              </span>
-            </h2>
-            <p className={`${BODY} mt-3 text-lr-body`}>
+          <h2 className={`${H2} relative z-10`}>
+            <span className="block text-balance">{m1.replace(/ & /g, "\u00a0& ")}</span>{" "}
+            <span className="block text-balance text-lr-ink">{m2.replace(/ & /g, "\u00a0& ")}</span>
+          </h2>
+          {/* tablets: tall enough for the car beside the paragraph (58% wide, 660:524) */}
+          <div className="relative sm:min-h-[calc((100vw-48px)*0.46)] md:min-h-[calc((100vw-80px)*0.46)]">
+            <p className={`${BODY} relative z-10 mt-3 text-lr-body sm:w-[44%]`}>
               {s1}
-              <br />
+              <br />{" "}
               {s2}
             </p>
-          </div>
-          {/* phones: full-width band under the text (car centred, larger); tablets: beside the heading */}
-          <div
-            className={`pointer-events-none relative -mx-5 mt-1 aspect-[1320/960] sm:absolute sm:-right-4 sm:-top-2 sm:mx-0 sm:mt-0 sm:aspect-[660/524] sm:w-[58%] md:-right-8 ${FADE_MOBILE} ${FADE_PHONE}`}
-            aria-hidden="true"
-          >
-            <Image src={data.mobileImage} alt="" fill quality={90} className="object-cover object-[50%_40%] dark:brightness-[0.85] sm:object-center" sizes="(min-width: 640px) 58vw, 100vw" />
+            {/* phones: full-width band under the text (car centred, larger); tablets: beside the paragraph */}
+            <div
+              className={`pointer-events-none relative -mx-5 mt-1 aspect-[1320/960] sm:absolute sm:-right-4 sm:top-0 sm:mx-0 sm:mt-0 sm:aspect-[660/524] sm:w-[58%] md:-right-8 ${FADE_MOBILE} ${FADE_PHONE}`}
+              aria-hidden="true"
+            >
+              <Image src={data.mobileImage} alt="" fill quality={90} className="object-cover object-[50%_40%] dark:brightness-[0.85] sm:object-center" sizes="(min-width: 640px) 58vw, 100vw" />
+            </div>
           </div>
         </div>
 
         {/* desktop heading */}
         <div className="hidden lg:block lg:max-w-[52%]">
+          {/* each part balanced on its own, so neither ends on a lone word; "&" stays with the word
+              before it, so a line never starts with it */}
           <h2 className={H2}>
-            {d1}
-            <br />
-            <span className="text-lr-ink">{d2}</span>
+            <span className="block text-balance">{d1.replace(/ & /g, " & ")}</span>{" "}
+            <span className="block text-balance text-lr-ink">{d2.replace(/ & /g, " & ")}</span>
           </h2>
           <p className={`${BODY} mt-5 text-lr-body`}>
             {s1} {s2}

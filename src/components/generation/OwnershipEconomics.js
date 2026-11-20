@@ -1,7 +1,7 @@
 import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER } from "@/lib/typeScale";
-import { H2_MODEL, SANS, prose, splitHeading } from "@/components/models/modelKit";
+import { H2_MODEL, Joint, SANS, prose, splitHeading } from "@/components/models/modelKit";
 import { localHtml } from "@/components/models/generationsFaqLinks";
 import { engineDbCar } from "./genKit";
 
@@ -207,7 +207,8 @@ export default function OwnershipEconomics({ data, hero = null, model = "" }) {
               {lead}
               {accent && (
                 <>
-                  {"\u00a0"}-<br />
+                  <Joint h2={data.h2} />
+                  <br />{" "}
                   {accentWords.length > 0 && `${accentWords.join(" ")} `}
                   <span className="text-lr-ink dark:text-lr-green">{accentLast}</span>
                 </>

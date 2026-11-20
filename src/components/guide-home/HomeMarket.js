@@ -258,7 +258,7 @@ function Insights({ data }) {
 }
 
 export default function HomeMarket({ data }) {
-  const [a, b, c] = data.h2.split("|");
+  const [a, b, c, d] = data.h2.split("|");
 
   return (
     <section lang="en-GB" className={`relative overflow-hidden bg-(--mi-bg) text-(--mi-text) ${THEME}`}>
@@ -278,8 +278,13 @@ export default function HomeMarket({ data }) {
           <h2 className={`${H2} relative text-balance`}>
             {a} <br className="xl:hidden" />
             {b}
-            <br />
+            <br />{" "}
             <span className="text-(--mi-accent)">{c}</span>
+            {d && (
+              <>
+                <br className="hidden xl:block" /> {d}
+              </>
+            )}
           </h2>
           <p className={`${BODY} relative mt-3 text-(--mi-muted) sm:max-w-[620px] lg:mt-4 xl:max-w-[560px]`}>
             {data.subhead}

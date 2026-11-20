@@ -2,7 +2,7 @@ import Link from "next/link";
 import LrIcon from "@/components/shared/LrIcon";
 import EditorialPullQuote from "@/components/models/EditorialPullQuote";
 import { CONTAINER, H2, SMALL } from "@/lib/typeScale";
-import { Arrow, BAND_PAGE, CARD, Eyebrow, SANS, SECTION_Y, SoftTile, TABLE_HEAD, prose, splitHeading, H2_MODEL } from "@/components/models/modelKit";
+import { Arrow, BAND_PAGE, CARD, Eyebrow, SANS, SECTION_Y, SoftTile, TABLE_HEAD, prose, splitHeading, Joint, H2_MODEL } from "@/components/models/modelKit";
 
 // Model page section 7, built to the approved "Velar Market Intelligence" reference: the eyebrow and
 // the serif headline (the "275 UK Owners" phrase in green) beside the headline-figure card, the
@@ -82,12 +82,14 @@ function Tags({ tags }) {
   );
 }
 
-// headline figure for the card beside the title: the number in the H2 ("What 275 UK Owners …"),
-// else the hero's first stat; [EM-VERIFIED] only when the source carries it
+// headline figure for the card beside the title: the section's enquiry total and year (data
+// "headlineFigure" / "headlineYear" - the figures the earlier H2 carried, "What 275 UK Owners Told Us
+// in 2025"), else the number in the H2, else the hero's first stat; [EM-VERIFIED] only when the
+// source carries it
 function headlineFigure(data, page) {
   const h2 = String(data.h2 || "");
-  const year = (h2.match(/\b(20\d\d)\b/) || [])[1] || "";
-  const m = h2.match(/(\d[\d,]*\+?)\s+UK Owners/i);
+  const year = data.headlineYear || (h2.match(/\b(20\d\d)\b/) || [])[1] || "";
+  const m = data.headlineFigure ? [null, String(data.headlineFigure)] : h2.match(/(\d[\d,]*\+?)\s+UK Owners/i);
   if (m) {
     const n = m[1].replace(/\+$/, "");
     const verified = (data.signals || []).some((s) => String(s.data || "").includes(n) && /\[EM-VERIFIED/.test(s.data || ""));
@@ -108,7 +110,8 @@ function Title({ h2 }) {
       {lead}
       {tail && (
         <>
-          {" "}-<br />
+          <Joint h2={h2} />
+          <br />{" "}
           {m ? (
             <>
               {tail.slice(0, m.index)}
@@ -116,7 +119,7 @@ function Title({ h2 }) {
               {tail.slice(m.index + m[0].length)}
             </>
           ) : (
-            tail
+            <span className="text-lr-ink dark:text-lr-green">{tail}</span>
           )}
         </>
       )}
@@ -299,7 +302,7 @@ function Insights({ insights }) {
 export default function MarketIntelligence({ data, quoteData, slug = "", page }) {
   if (!data) return null;
 
-  const year = (String(data.h2 || "").match(/\b(20\d\d)\b/) || [])[1] || "2025";
+  const year = data.headlineYear || (String(data.h2 || "").match(/\b(20\d\d)\b/) || [])[1] || "2025";
   const figure = headlineFigure(data, page);
 
   return (

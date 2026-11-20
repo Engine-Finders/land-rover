@@ -216,7 +216,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Discovery 2 D2 • SUV • 1998-2004",
-    "h1": "Land Rover Discovery 2 D2 Engines - The Complete UK Guide",
+    "h1": "Land Rover Discovery 2 D2 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Discovery 2 - from the five-cylinder <a href='https://landroverengine.uk/engine/td5'>Td5</a> turbo-diesel to the 4.0 and 4.6-litre Rover V8s. Real UK replacement costs, honest failure data, and the coolant and liner issues that define this generation's ownership story. Backed by real UK enquiry data [PATTERN DATA].",
     "trustStrip": [
       {
@@ -243,7 +243,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Discovery 2 D2 Engine Codes - The Complete Database",
+    "h2": "Land Rover Discovery 2 D2 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Discovery 2 specifically - including the mid-cycle 4.6-litre V8 upgrade that arrived for the 2003 model year.",
     "columns": [
       "Engine Code",
@@ -302,12 +302,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Discovery 2 D2 - Overview",
+    "h2": "Discovery 2 Overview: Engine Range, Design & Key Facts",
     "intro": "The Discovery 2 - often referred to as the Series II - was launched in 1998 as the successor to the original Discovery. Though it retained the 100-inch wheelbase and live-axle chassis of its predecessor, Land Rover claimed 85% of the vehicle was new. It introduced the all-new Td5 five-cylinder diesel engine - a significant step up from the 300 Tdi - alongside the familiar Rover V8 petrol. A 2003 facelift brought a 4.6-litre V8 upgrade, restyled lights, and the return of the centre-diff lock as an option. Production ended in May 2004.",
     "keyFacts": "Platform: Discovery 2 / L318 (live axle, 100-inch wheelbase) • Predecessor: Discovery 1 • Successor: Discovery 3 / LR3 • Sibling body styles in this generation: none - D2 is a single body style.",
     "marketIntelligenceLine": "The Discovery 2 remains a popular choice among UK off-road enthusiasts, with Td5 diesel variants commanding the strongest demand [PATTERN DATA]."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Discovery 2 D2 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -318,7 +319,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Discovery 2 D2 - Ownership Economics",
+    "h2": "Land Rover Discovery 2 D2 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -373,6 +374,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Land Rover Discovery 2 D2 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -461,7 +463,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "D2 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Discovery 2 D2 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -499,6 +501,7 @@
     "note": "No Generation variance note required - no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [EM-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Discovery 2 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "Td5",
@@ -537,6 +540,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Discovery 2 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -591,7 +595,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Discovery 2 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Discovery 2 D2 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted D2 Engine Suppliers",

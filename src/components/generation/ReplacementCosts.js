@@ -1,7 +1,7 @@
 import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER } from "@/lib/typeScale";
-import { H2_MODEL, SANS, prose, splitHeading } from "@/components/models/modelKit";
+import { H2_MODEL, Joint, SANS, prose, splitHeading } from "@/components/models/modelKit";
 import { localHtml } from "@/components/models/generationsFaqLinks";
 import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 import { generationCtaCopy, modelMeta } from "@/lib/ctaCopy";
@@ -143,7 +143,8 @@ export default function ReplacementCosts({ data, page = null, model = "" }) {
               {lead}
               {accent && (
                 <>
-                  {"\u00a0"}-<br />
+                  <Joint h2={data.h2} />
+                  <br />{" "}
                   {words.length > 0 && `${words.join(" ")} `}
                   <span className="text-lr-ink dark:text-lr-green">{last}</span>
                 </>

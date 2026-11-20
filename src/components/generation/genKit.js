@@ -35,8 +35,11 @@ export function engineDbCar(hero = {}, model = "") {
   return DB_CARS[genCode(`${hero?.h1 || ""} ${hero?.tagPill || ""}`)] || genCar(hero, model);
 }
 
-// the generation's display name, from the overview heading ("Land Rover Defender L316 - Overview")
+// the generation's display name, from the hero's model pill ("Land Rover Defender L316 • Off-Roader •
+// 1990-2016"); pages without a pill fall back to the overview heading ("Land Rover Defender L316 - Overview")
 export function genName(page = {}) {
+  const pill = String(page?.hero?.tagPill || "").split(/\s+•\s+/)[0].trim();
+  if (pill) return pill;
   return String(page?.overview?.h2 || page?.hero?.h1 || "")
     .split(/\s+[-–-]\s+/)[0]
     .replace(/\s+Engines?$/i, "")

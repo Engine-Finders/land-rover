@@ -26,7 +26,8 @@ const WASH = {
 };
 
 export default function HomeSec1({ hero }) {
-  const [line1, line2, line3] = hero.h1.split("|");
+  // "Land Rover & Range Rover|Engine Reliability,|Replacement Costs &|Specialist Quotes" - one line each
+  const [line1, line2, line3, line4] = hero.h1.split("|");
   const [h2a, h2b] = hero.trust.h2.split("|");
   const [mh2a, mh2b] = hero.trust.mobileH2.split("|");
 
@@ -53,12 +54,13 @@ export default function HomeSec1({ hero }) {
               <span className="h-px flex-1 bg-linear-to-l from-transparent to-lr-gold-line/70" />
             </div>
 
-            {/* phones: three lines as in the reference - the size follows the screen width so the longest
-                line ("Land Rover & Range Rover") always fits on one line */}
+            {/* phones: one line per part - the size follows the screen width so the longest line
+                ("Land Rover & Range Rover") always fits on one line */}
             <h1 className={`${H1} mt-3 text-balance max-sm:text-[min(34px,calc(7.7vw-3px))]! max-sm:leading-[1.12]`}>
-              <span className="text-lr-head max-sm:block max-sm:whitespace-nowrap sm:block">{line1}</span>{" "}
-              <span className="text-lr-head max-sm:block max-sm:whitespace-nowrap sm:block">{line2}</span>
-              <span className="block text-lr-green">{line3}</span>
+              <span className="block text-lr-head max-sm:whitespace-nowrap">{line1}</span>{" "}
+              <span className="block text-lr-head">{line2}</span>{" "}
+              <span className="block text-lr-head">{line3}</span>{" "}
+              <span className="block text-lr-green">{line4}</span>
             </h1>
 
             <p className={`${BODY} mx-auto mt-3 max-w-120 text-lr-body`}>{hero.subhead}</p>
@@ -149,7 +151,8 @@ export default function HomeSec1({ hero }) {
           </div>
 
           <div className={`${CONTAINER} relative pt-12`}>
-            <div className="max-w-[660px]">
+            {/* wide enough for the H1's longest line ("Land Rover & Range Rover" is ~757px at 60px) */}
+            <div className="max-w-[780px]">
               <p className={`${LABEL} text-lr-gold`}>{hero.eyebrow}</p>
               <div className="mt-2 flex h-px w-[370px]">
                 <span className="w-[120px] bg-lr-gold-line" />
@@ -158,16 +161,16 @@ export default function HomeSec1({ hero }) {
               </div>
 
               <h1 className={`${H1} mt-6 whitespace-nowrap text-lr-head`}>
-                {line1.replace(" Trusted", "")}
-                <br />
-                Trusted {line2.split(" & ")[0]}{" "}&amp;
-                <br />
-                {line2.split(" & ")[1]}
-                <br />
-                <span className="text-lr-green">{line3}</span>
+                {line1}
+                <br />{" "}
+                {line2}
+                <br />{" "}
+                {line3}
+                <br />{" "}
+                <span className="text-lr-green">{line4}</span>
               </h1>
 
-              <p className={`${BODY} mt-5 max-w-[440px] text-lr-body`}>{hero.subhead}</p>
+              <p className={`${BODY} mt-5 max-w-[540px] text-lr-body`}>{hero.subhead}</p>
 
               <HeroRegCta
                 className="mt-6 max-w-[640px]"

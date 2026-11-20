@@ -2,7 +2,7 @@ import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
 import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { CONTAINER } from "@/lib/typeScale";
-import { Arrow, H2_MODEL, SANS, prose } from "@/components/models/modelKit";
+import { Arrow, H2_MODEL, SANS, prose, splitHeadingAtEngine } from "@/components/models/modelKit";
 import { localHtml } from "@/components/models/generationsFaqLinks";
 import { generationCtaCopy, modelMeta } from "@/lib/ctaCopy";
 import { engineDbCar, genCode, genName } from "./genKit";
@@ -19,10 +19,13 @@ const ICONS = ["genuine-failure-data", "scale", "commercial"];
 const html = (raw) => localHtml(prose(raw || ""));
 const capital = (t = "") => String(t).trim().replace(/^[a-z]/, (c) => c.toUpperCase());
 
-// "Why UK … Owners Trust LandRoverEngine.uk" -> lead / site
+// "Why UK … Owners Trust LandRoverEngine.uk" -> lead / site;
+// "Land Rover Defender L316 Engine Suppliers & Specialist Quote Options" -> "Land Rover Defender L316" / "Engine Suppliers & …"
 function splitHeading(h2 = "") {
   const m = String(h2).match(/^(.*?)\s+((?:[\w-]+\.)+(?:uk|com|co\.uk))\s*$/i);
-  return m ? { lead: m[1], site: m[2] } : { lead: h2, site: "" };
+  if (m) return { lead: m[1], site: m[2] };
+  const { lead, accent } = splitHeadingAtEngine(h2);
+  return { lead, site: accent };
 }
 
 function Rosette({ className = "" }) {

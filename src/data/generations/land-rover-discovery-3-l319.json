@@ -227,7 +227,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Discovery 3 L319 • Off-Roader • 2004-2009",
-    "h1": "Land Rover Discovery 3 L319 Engines - The Complete UK Guide",
+    "h1": "Land Rover Discovery 3 L319 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Discovery 3 L319 - from the 2.7-litre TDV6 diesel to the 4.4-litre V8 petrol. Real UK costs and honest failure data for the crankshaft-bearing risk that defines this generation. Backed by 120+ real UK L319 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -254,7 +254,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Discovery 3 L319 Engine Codes - The Complete Database",
+    "h2": "Land Rover Discovery 3 L319 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Discovery 3 L319 specifically - three engines, one defining diesel risk.",
     "columns": [
       "Engine Code",
@@ -313,16 +313,17 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Discovery 3 L319 - Overview",
+    "h2": "Discovery 3 Overview: Engine Range, Design & Key Facts",
     "intro": "The L319 is the third-generation Discovery, launched in April 2005 as a ground-up redesign of the iconic off-roader. Built on an Integrated Body Frame (IBF) combining monocoque construction with a ladder-frame chassis, it introduced independent double-wishbone suspension and, on SE/HSE models, cross-linked air suspension. The engine line-up offered three choices: a 2.7-litre TDV6 diesel, a 4.0-litre Cologne V6 petrol, and a 4.4-litre AJ-V8 petrol - but the TDV6's crankshaft-bearing vulnerability defines this generation's ownership story.",
     "keyFacts": "Platform: Land Rover L319 (Integrated Body Frame) • Predecessor: Discovery 2 (L318) • Successor: Discovery 4 (L319, 2009-2016) • Sibling body styles in this generation: L319 commercial van (2007-2009).",
     "marketIntelligenceLine": "The L319 Discovery 3 generated 120+ real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 276DT TDV6 diesel as owners confront the crankshaft-bearing failure risk."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Discovery 3 L319 Engine Reliability: Best Choices & Known Risks",
     "items": []
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Discovery 3 L319 - Ownership Economics",
+    "h2": "Land Rover Discovery 3 L319 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -377,6 +378,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Land Rover Discovery 3 L319 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -465,7 +467,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L319 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Discovery 3 L319 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -503,6 +505,7 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures - L319 Discovery 3 shares the same engine-bay access as the Discovery 4 (also L319), so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Discovery 3 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "TDV6",
@@ -529,6 +532,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Discovery 3 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -583,7 +587,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Discovery 3 L319 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Discovery 3 L319 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L319 Engine Suppliers",

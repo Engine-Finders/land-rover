@@ -1,7 +1,7 @@
 import Image from "next/image";
 import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER } from "@/lib/typeScale";
-import { H2_MODEL, SANS, prose } from "@/components/models/modelKit";
+import { H2_MODEL, SANS, SectionTitle, prose } from "@/components/models/modelKit";
 import { localHtml } from "@/components/models/generationsFaqLinks";
 import { genCar, genCode } from "./genKit";
 import { TrustStrip } from "./ReplacementCosts";
@@ -228,7 +228,7 @@ export default function MarketIntelligence({ data, page = null, model = "" }) {
     <section className={`bg-lr-page pb-6 pt-2 text-lr-head md:pb-7 xl:pb-8 ${SANS}`}>
       <div className={CONTAINER}>
         <p className="text-[13px] font-semibold uppercase leading-none tracking-[0.06em] text-lr-ink md:text-[14px] xl:text-[16px] dark:text-lr-green">{code ? `${code} enquiry data` : "Enquiry data"}</p>
-        <h2 className={`${H2_MODEL} mt-3.5 text-lr-head md:mt-4`}>Market Intelligence</h2>
+        <SectionTitle h2={data?.h2 || "Market Intelligence"} className="mt-3.5 md:mt-4" />
         <span className="mt-4 flex h-[3px] w-20 overflow-hidden rounded-full md:mt-5" aria-hidden="true">
           <span className="w-[60%] bg-lr-ink dark:bg-lr-green" />
           <span className="flex-1 bg-lr-gold-line" />

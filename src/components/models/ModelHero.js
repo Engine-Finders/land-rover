@@ -2,6 +2,7 @@ import LrIcon from "@/components/shared/LrIcon";
 import HeroRegCta from "@/components/shared/HeroRegCta";
 import { modelCtaCopy } from "@/lib/ctaCopy";
 import { CONTAINER, H1, ICON_MD, ICON_SM, ICON_XL } from "@/lib/typeScale";
+import { modelName } from "@/components/models/modelKit";
 
 // Model page hero (section 1), built to the approved Velar reference: a rounded card holding the
 // model pill, the serif headline ("UK Guide" in green), the sub-headline and the Explore button on
@@ -100,10 +101,14 @@ export default function ModelHero({ data, slug = "" }) {
   const dash = (data.h1 || "").search(/\s[-–-]\s/);
   const lead = dash === -1 ? data.h1 : data.h1.slice(0, dash);
   const tail = dash === -1 ? "" : data.h1.slice(dash + 3);
-  const accentAt = tail.search(/UK Guide$/);
+  // the closing phrase in green: "… The Complete UK Guide" (before) / "… Problems & Replacement Costs"
+  const accentAt = tail.search(/(UK Guide|Replacement Costs)$/);
   // long model names ("Range Rover Sport Engines -") step down to 54px on desktop so the headline
   // stays at three lines and the line-up panel beside it keeps its proportions
   const longLead = lead.length > 20;
+  // a two-word model name ("Discovery Sport", "Range Rover Sport") never breaks across lines
+  const name = modelName(slug);
+  const leadText = name.includes(" ") ? lead.replace(name, name.replace(/ /g, "\u00a0")) : lead;
   const cta = modelCtaCopy(slug);
   const sub = (data.subHeadline || "").replace(/\s+-\s+/g, " - ");
 
@@ -176,10 +181,11 @@ export default function ModelHero({ data, slug = "" }) {
             <h1 className={`${H1} mt-6 text-balance text-lr-head sm:mt-8 lg:mt-11 xl:mt-12 xl:max-w-[63%] ${longLead ? "xl:text-[54px]!" : ""}`}>
               {tail ? (
                 <>
-                  {lead}{"\u00a0"}-{!longLead && <br className="max-xl:hidden" />}{" "}
+                  {leadText}{"\u00a0"}-{!longLead && <br className="max-xl:hidden" />}{" "}
                   {accentAt > 0 ? (
                     <>
-                      {tail.slice(0, accentAt)}
+                      {/* "&" stays with the word before it, so no line starts with it */}
+                      {tail.slice(0, accentAt).replace(/ & $/, "\u00a0& ")}
                       <span className="whitespace-nowrap text-lr-ink dark:text-lr-green">{tail.slice(accentAt)}</span>
                     </>
                   ) : (

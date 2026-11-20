@@ -123,7 +123,7 @@ function Example({ ex }) {
 }
 
 export default function HomeModels({ data }) {
-  const [h1, h2, h3] = data.h2.split("|");
+  const [h1, h2, h3, h4] = data.h2.split("|");
   const { note } = data;
 
   return (
@@ -135,11 +135,15 @@ export default function HomeModels({ data }) {
       </div>
 
       <div className={`${CONTAINER} relative pb-6 pt-6 lg:pb-7 lg:pt-6`}>
-        <h2 className={`${H2} relative`}>
-          {h1} <br className="sm:hidden" />
+        {/* desktop: four short lines, so the heading stays on the sky left of the line-up */}
+        <h2 className={`${H2} relative text-balance`}>
+          {h1} <br className="hidden xl:block" />
           {h2}
-          <br />
-          <span className="text-lr-ink">{h3}</span>
+          <br />{" "}
+          <span className="text-lr-ink">
+            {h3} <br className="hidden xl:block" />
+            {h4}
+          </span>
         </h2>
         <p className={`${BODY} relative mt-3 text-lr-body sm:max-w-[640px] xl:mt-4 xl:max-w-[min(540px,calc(40vw-72px))]`}>
           {data.subhead}

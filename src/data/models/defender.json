@@ -243,7 +243,7 @@
   },
   "hero": {
     "tagPill": "Defender • 1990-Present • 2 Generations • 200Tdi, 300Tdi, TD5, TDCi, Ingenium",
-    "h1": "Defender Engines - The Complete UK Guide",
+    "h1": "Land Rover Defender Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every generation. Every engine code. Every known failure. Every replacement cost. From the 200Tdi that built the legend to the Ingenium engines powering the L663 - backed by 292+ real UK enquiries [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -269,7 +269,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "Defender - The Ownership Verdict",
+    "h2": "Land Rover Defender Engine Reliability & Ownership Verdict",
     "subHeadline": "Two generations. Dozens of engine codes. One clear truth: the Defender is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
@@ -316,7 +316,7 @@
     "oneLineVerdict": "The Defender is the only Land Rover where engine replacement is financially safe at almost any spec - the question is never \"is it worth it?\", only \"which engine do I have and what does it cost?\""
   },
   "atAGlance": {
-    "h2": "Defender at a Glance",
+    "h2": "Land Rover Defender at a Glance",
     "subHeadline": "All the key facts about the Defender in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
@@ -362,7 +362,7 @@
     ]
   },
   "generations": {
-    "h2": "Defender Generations - Classic or L663?",
+    "h2": "Land Rover Defender Generations: Compare Engine Options",
     "subHeadline": "Two Defenders, two completely different ownership propositions. Select yours to explore engines, problems, and costs.",
     "cards": [
       {
@@ -410,7 +410,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "Defender Engine Codes - The Complete Database",
+    "h2": "Land Rover Defender Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine fitted to the UK Defender, with reliability ratings, real enquiry volumes, and replacement costs.",
     "columns": [
       "Engine Code",
@@ -541,7 +541,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common Defender Engine Problems",
+    "h2": "Land Rover Defender Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The failures Defender owners actually report - with symptoms, costs, and urgency levels.",
     "columns": [
       "#",
@@ -660,7 +660,9 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "Defender Market Intelligence - What 292 UK Owners Told Us in 2025",
+    "h2": "Land Rover Defender Engine Market Intelligence: UK Enquiry Trends",
+    "headlineFigure": "292",
+    "headlineYear": "2025",
     "signals": [
       {
         "signal": "Defender L663 enquiries",
@@ -695,7 +697,7 @@
     "quote": ""
   },
   "replacementCosts": {
-    "h2": "Defender Engine Replacement Costs - By Generation",
+    "h2": "Land Rover Defender Engine Replacement Costs - By Generation",
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
@@ -797,7 +799,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the Defender Engine Range Evolved - 1990 to Today",
+    "h2": "How the Land Rover Defender Engine Range Evolved - 1990 to Today",
     "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Defender engines.",
     "columns": [
       "Era",
@@ -852,7 +854,7 @@
     ]
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy a Defender?",
+    "h2": "Which Land Rover Defender Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Defender is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
@@ -888,7 +890,7 @@
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My Defender Engine - or Should I Replace It?",
+    "h2": "Land Rover Defender Engine Repair vs Replacement: Costs & Options",
     "intro": "Cold-start rattle on an early L663? Injector fault on a Puma? Get a personalised repair-vs-replace verdict using real UK cost data - with Defender already pre-selected.",
     "paths": [
       {
@@ -902,7 +904,7 @@
     ]
   },
   "trustBlock": {
-    "h2": "Why Defender Owners Trust LandRoverEngine.uk",
+    "h2": "Why Land Rover Defender Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -927,7 +929,7 @@
     ]
   },
   "faq": {
-    "h2": "Defender Frequently Asked Questions",
+    "h2": "Land Rover Defender Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -972,7 +974,7 @@
     ]
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Land Rover Defender Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {

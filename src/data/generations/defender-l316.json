@@ -251,7 +251,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Defender L316 • Off-Roader • 1990-2016",
-    "h1": "Land Rover Defender L316 Engines - The Complete UK Guide",
+    "h1": "Land Rover Defender L316 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the original Defender L316 - from the 2.5-litre <a href='https://landroverengine.uk/engine/200-300tdi'>200Tdi</a> to the Puma-era 2.4 and 2.2 Td4 units. Real UK replacement costs, honest failure data, and the <a href='https://landroverengine.uk/engine/td5'>Td5</a>-to-Puma switch that defined this generation's final decade. Backed by 292+ real UK L316 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -278,7 +278,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Defender L316 Engine Codes - The Complete Database",
+    "h2": "Land Rover Defender L316 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every diesel and petrol engine fitted to the original Defender L316 - from the indirect-injection 2.5-litre to the Puma-era common-rail Td4 units.",
     "columns": [
       "Engine Code",
@@ -385,12 +385,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Defender L316 - Overview",
+    "h2": "Defender L316 Overview: Engine Range, Design & Key Facts",
     "intro": "The L316 is the original coil-spring Defender, produced from 1983 to 2016 and officially branded as the \"Defender\" from 1990 onwards. It succeeded the leaf-sprung Series III and introduced a longer wheelbase, coil-spring suspension, and - across its 33-year production run - a succession of diesel engines from the 2.5-litre naturally aspirated unit through the 200Tdi, 300Tdi, Td5 and finally the Puma-era 2.4 and 2.2 Td4 common-rail diesels. A significant 2007 update brought the Ford-sourced 2.4-litre Puma engine, quieter interior and redesigned dashboard, splitting this generation into two distinct mechanical eras.",
     "keyFacts": "Platform: Land Rover L316 (coil-spring, ladder-frame chassis) • Predecessor: Land Rover Series III (leaf-sprung) • Successor: Land Rover Defender L663 (2019-present) • Sibling body styles in this generation: Defender 90 (short wheelbase), Defender 110 (long wheelbase), Defender 130 (extended)",
     "marketIntelligenceLine": "The L316 Defender generated 292 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the Td5 and Puma-era diesel units as the original Defender parc ages out of daily use."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Defender L316 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -431,7 +432,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Defender L316 - Ownership Economics",
+    "h2": "Land Rover Defender L316 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -510,6 +511,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Land Rover Defender L316 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -626,7 +628,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L316 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Defender L316 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -696,6 +698,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Defender L316 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "200TDi",
@@ -726,6 +729,7 @@
     "scopeNote": "All variants listed are L316 body code only - the original coil-spring Defender (90/110/130) produced from 1983 to 2016. The new L663 Defender (2019-present) is covered on its own Generation Page."
   },
   "marketIntelligence": {
+    "h2": "Land Rover Defender L316 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. Td5 (5-cylinder, 1998-2006)",
       "2. 300Tdi (mechanical injection, 1990-1998)",
@@ -767,6 +771,7 @@
     ]
   },
   "faq": {
+    "h2": "Defender L316 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -821,7 +826,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Defender L316 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Defender L316 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L316 Engine Suppliers",

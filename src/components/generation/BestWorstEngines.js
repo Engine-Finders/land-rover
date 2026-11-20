@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { CONTAINER } from "@/lib/typeScale";
-import { H2_MODEL, SANS, prose } from "@/components/models/modelKit";
+import { H2_MODEL, SANS, SectionTitle, prose } from "@/components/models/modelKit";
 import { keyEngines, stripHtml } from "@/components/models/engineSections";
 import { localHtml } from "@/components/models/generationsFaqLinks";
 
@@ -254,7 +254,7 @@ export default function BestWorstEngines({ data }) {
           <span className="h-px w-6 bg-current" aria-hidden="true" />
           Best &amp; Worst Engines
         </p>
-        <h2 className={`${H2_MODEL} mt-3.5 text-lr-head md:mt-4`}>Best &amp; Worst Engines</h2>
+        <SectionTitle h2={data?.h2 || "Best & Worst Engines"} className="mt-3.5 md:mt-4" />
 
         {cards.length > 0 && (
           <div className="relative mt-6 md:mt-8 xl:mt-9">

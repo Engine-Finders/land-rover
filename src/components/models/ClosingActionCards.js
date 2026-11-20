@@ -1,7 +1,7 @@
 import LrIcon from "@/components/shared/LrIcon";
 import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { BODY_SM, CONTAINER, H5 } from "@/lib/typeScale";
-import { Arrow, BACKDROP, BAND_SOFT, CAR_ART, CAR_ART_RATIO, EyebrowPill, SANS, SECTION_Y, modelArt, prose, H2_MODEL, INTRO } from "@/components/models/modelKit";
+import { Arrow, BACKDROP, BAND_SOFT, CAR_ART, CAR_ART_RATIO, EyebrowPill, SANS, SECTION_Y, modelArt, prose, splitHeadingAtEngine, H2_MODEL, INTRO } from "@/components/models/modelKit";
 import { generationLinks, resolveHref } from "@/components/models/ClosingActionLinks";
 import { UkPinMap } from "@/components/models/TrustBlockArt";
 import { isQuoteHref } from "@/lib/quoteModal";
@@ -174,10 +174,11 @@ function ActionCard({ card, index, slug, gens }) {
   );
 }
 
-// "Ready to Make a Decision?" -> "Ready to Make" / "a Decision?" (accent)
+// "Ready to Make a Decision?" -> "Ready to Make" / "a Decision?" (accent);
+// "Range Rover Velar Engine Guidance & Specialist Quotes" -> "Range Rover Velar" / "Engine Guidance & Specialist Quotes"
 function splitDecision(h2 = "") {
   const m = h2.match(/^([\s\S]*\S)\s+(a\s+\S+)$/i);
-  return m ? { lead: m[1], accent: m[2] } : { lead: h2, accent: "" };
+  return m ? { lead: m[1], accent: m[2] } : splitHeadingAtEngine(h2);
 }
 
 export default function ClosingActionCards({ data, slug = "", page }) {
@@ -205,7 +206,7 @@ export default function ClosingActionCards({ data, slug = "", page }) {
               {lead}
               {accent && (
                 <>
-                  <br />
+                  <br />{" "}
                   <span className="text-lr-ink dark:text-lr-green">{accent}</span>
                 </>
               )}

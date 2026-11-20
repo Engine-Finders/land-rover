@@ -75,7 +75,7 @@ export default function HomeFindVehicle({ data }) {
       <div className="pointer-events-none absolute -right-40 -top-40 h-[520px] w-[520px] rounded-full bg-lr-green/[0.06] blur-[120px] dark:bg-lr-brand/25" aria-hidden="true" />
 
       <div className={`${CONTAINER} relative pb-6 pt-6 lg:pb-8 lg:pt-6`}>
-        <h2 className={`${H2} text-lr-head`}>
+        <h2 className={`${H2} text-balance text-lr-head`}>
           {h2a} <span className="text-lr-green">{h2b}</span>
         </h2>
         <p className={`${BODY} mt-3 max-w-[640px] text-lr-body`}>{data.subhead}</p>

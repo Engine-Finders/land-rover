@@ -281,7 +281,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Discovery 5 L462 • SUV • 2016-present",
-    "h1": "Land Rover Discovery 5 L462 Engines - The Complete UK Guide",
+    "h1": "Land Rover Discovery 5 L462 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Discovery 5 L462 - from the Ingenium 2.0-litre diesel four to the 3.0-litre supercharged V6 and the limited-run 5.0-litre SVX V8. Real UK costs, honest failure data, and the Ingenium timing-chain question that defines this generation's ownership experience. Backed by 292+ real UK Discovery 5 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -308,7 +308,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Discovery 5 L462 Engine Codes - The Complete Database",
+    "h2": "Land Rover Discovery 5 L462 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Discovery 5 specifically - from launch in 2016 through the 2020 facelift and current mild-hybrid models.",
     "columns": [
       "Engine Code",
@@ -427,12 +427,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Discovery 5 L462 - Overview",
+    "h2": "Discovery 5 Overview: Engine Range, Design & Key Facts",
     "intro": "The Discovery 5 L462 is the fifth generation of Land Rover's family SUV, launched in December 2016. It abandoned the body-on-frame construction of the Discovery 3 and 4 for an aluminium unitary platform shared with the Range Rover L405 and Range Rover Sport L494, delivering a significantly lighter, more road-focused vehicle while retaining genuine off-road capability. The engine line-up spans 2.0-litre Ingenium four-cylinder diesels, a 3.0-litre V6 diesel, 2.0-litre and 3.0-litre petrol options, and a limited-run 5.0-litre supercharged V8 in the SVX. A 2020 facelift introduced mild-hybrid six-cylinder petrol engines (P360, P400).",
     "keyFacts": "Platform: Aluminium D7u (shared with Range Rover L405, Range Rover Sport L494) • Predecessor: Discovery 4 (L319) • Successor: Current model - on sale • Sibling body styles: None - L462 is sole Discovery 5 body style",
     "marketIntelligenceLine": "The Discovery 5 L462 generated real UK engine enquiries in 2025, with the Ingenium 2.0-litre diesel (204DTD/204DTA) accounting for the largest share of the 1,150 JLR-wide figure, followed by the 3.0-litre V6 diesel (<a href='https://landroverengine.uk/engine/306dt'>306DT</a>) at 980 enquiries."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Discovery 5 L462 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -473,7 +474,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Discovery 5 L462 - Ownership Economics",
+    "h2": "Land Rover Discovery 5 L462 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -552,6 +553,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Land Rover Discovery 5 L462 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -640,7 +642,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L462 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Discovery 5 L462 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -702,6 +704,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Discovery 5 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "D200",
@@ -765,6 +768,7 @@
     "scopeNote": "All variants listed are L462 Discovery 5 only. Engine fitment varies by year - the 2020 facelift introduced P360 and P400 mild-hybrid six-cylinder petrol units (PT306/306PS), while the SVX (AJ133 V8) was a limited-run model."
   },
   "marketIntelligence": {
+    "h2": "Land Rover Discovery 5 L462 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 204DTD/204DTA 2.0 Ingenium Diesel (1,150 JLR-wide enquiries)",
       "2. 306DT 3.0 V6 Diesel (980)",
@@ -806,6 +810,7 @@
     ]
   },
   "faq": {
+    "h2": "Discovery 5 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -860,7 +865,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Discovery 5 L462 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Discovery 5 L462 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L462 Engine Suppliers",

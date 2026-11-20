@@ -1,6 +1,6 @@
 import LrIcon from "@/components/shared/LrIcon";
 import { BODY_SM, CONTAINER, ICON_SM } from "@/lib/typeScale";
-import { Eyebrow, prose, Stars as KitStars, H2_MODEL, INTRO } from "@/components/models/modelKit";
+import { Eyebrow, Joint, prose, splitHeadingAtEngine, Stars as KitStars, H2_MODEL, INTRO } from "@/components/models/modelKit";
 
 // Model page section 2, built to the approved Velar reference: on the left the eyebrow, the serif
 // "Velar - / The Ownership Verdict" headline, the model's newest car standing in the Highland
@@ -256,10 +256,8 @@ export default function OwnershipVerdict({ data, slug = "", hero }) {
   if (!data) return null;
   const stats = deriveStats(data, hero);
 
-  const h2 = (data.h2 || "").replace(/\s+-\s+/, " - ");
-  const dash = h2.indexOf(" - ");
-  const lead = dash === -1 ? h2 : h2.slice(0, dash);
-  const accent = dash === -1 ? "" : h2.slice(dash + 3);
+  const h2 = String(data.h2 || "");
+  const { lead, accent } = splitHeadingAtEngine(h2);
   const car = CARS.has(slug) ? slug : "";
   const art = car && {
     "--car-day": `url(/model/hero/${car}-car-day.webp)`,
@@ -275,12 +273,13 @@ export default function OwnershipVerdict({ data, slug = "", hero }) {
       <div className={`relative ${CONTAINER} grid gap-5 py-6 md:gap-7 md:py-7 xl:grid-cols-[minmax(0,0.76fr)_minmax(0,1fr)] xl:items-start xl:gap-x-6 xl:gap-y-6 xl:py-8`}>
         <div className="flex min-w-0 flex-col xl:self-stretch">
           <Eyebrow>Ownership Verdict</Eyebrow>
-          {/* 44-48px beside the table so "… - / The Ownership Verdict" holds two lines, as in the reference */}
+          {/* 44-48px beside the table: the model name, then "Engine Reliability & Ownership Verdict" in green */}
           <h2 className={`${H2_MODEL} mt-3 text-lr-head md:mt-4`}>
             {lead}
             {accent && (
               <>
-                {" "}-<br />
+                <Joint h2={h2} />
+                <br />{" "}
                 <span className="text-lr-ink dark:text-lr-green">{accent}</span>
               </>
             )}

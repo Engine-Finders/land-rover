@@ -48,8 +48,9 @@ export default function HomeKnowledge({ data }) {
   return (
     <section className="relative bg-lr-band text-lr-head">
       <div className={`${CONTAINER} pb-6 pt-6 lg:pb-6 lg:pt-6`}>
-        <h2 className={H2}>
-          {h1} <span className="text-lr-green">{h2}</span>
+        <h2 className={`${H2} text-balance`}>
+          {h1} <br className="hidden xl:block" />
+          <span className="text-lr-green">{h2}</span>
         </h2>
         <p className={`${BODY} mt-3 max-w-[760px] text-lr-body lg:mt-3 lg:max-w-[900px] xl:max-w-[960px]`}>{data.subhead}</p>
 

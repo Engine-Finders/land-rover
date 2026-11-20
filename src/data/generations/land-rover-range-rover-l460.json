@@ -269,7 +269,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Range Rover L460 • Full-Size Luxury SUV • 2022-present",
-    "h1": "Land Rover Range Rover L460 Engines - The Complete UK Guide",
+    "h1": "Range Rover L460 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the fifth-generation Range Rover L460 - from the 3.0-litre six-cylinder diesel to the BMW-sourced 4.4-litre twin-turbo V8, plus the 75-mile-range PHEVs that redefined luxury SUV efficiency. Real UK costs and honest reliability data for the most technologically advanced Range Rover ever built. Backed by 184+ real UK L460 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -296,7 +296,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Range Rover L460 Engine Codes - The Complete Database",
+    "h2": "Range Rover L460 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the fifth-generation Range Rover L460 - diesels, petrols, mild hybrids, and plug-in hybrids with up to 75 miles of electric range.",
     "columns": [],
     "engines": [],
@@ -307,12 +307,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Range Rover L460 - Overview",
+    "h2": "Range Rover L460 Overview: Engine Range, Design & Key Facts",
     "intro": "The L460 is the fifth generation of the Range Rover, launched in 2022 as a ground-up redesign on JLR's new MLA-Flex platform. It introduced mild-hybrid and plug-in hybrid powertrains across the range, with the BMW-sourced 4.4-litre twin-turbo V8 replacing the outgoing 5.0-litre supercharged V8. The PHEV variants - P460e and P550e - offer up to 75 miles of electric-only range, making the L460 the most efficient Range Rover ever built. A significant 2024 model-year update brought more powerful electric motors to the PHEVs and mild-hybrid electrification to the V8.",
     "keyFacts": "Platform: JLR MLA-Flex (longitudinal, straight-six/V8) • Predecessor: L405 (fourth-generation Range Rover) • Successor: None (current generation) • Sibling body styles in this generation: Range Rover Sport L461 (2022-present).",
     "marketIntelligenceLine": "The L460 Range Rover generated 184 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the Ingenium I6 diesel and petrol variants as the range reaches the used market."
   },
   "bestWorstEngines": {
+    "h2": "Range Rover L460 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -353,7 +354,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Range Rover L460 - Ownership Economics",
+    "h2": "Range Rover L460 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -416,6 +417,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Range Rover L460 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -532,7 +534,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L460 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Range Rover L460 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -594,6 +596,7 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures - L460 is a new generation with no direct predecessor cost comparison. Costs are derived from Table A - Engine Replacement Economics, with PHEV and V8 costs marked [PLACEHOLDER] pending further verification."
   },
   "coreVariants": {
+    "h2": "Range Rover L460 Petrol, Diesel & Hybrid Engine Variants",
     "dieselVariants": [
       {
         "name": "D300",
@@ -629,6 +632,7 @@
     "scopeNote": "All variants listed are Range Rover L460 only. Range Rover Sport L461 (2022-present) shares the MLA-Flex platform and many of these engines but is covered on its own Generation Page. P460e and P550e are plug-in hybrid variants; P530 and P615 are V8 petrol variants (P615 exclusive to Range Rover SV)."
   },
   "marketIntelligence": {
+    "h2": "Range Rover L460 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. D300/D350 (largest share of 184 enquiries)",
       "2. P400",
@@ -670,6 +674,7 @@
     ]
   },
   "faq": {
+    "h2": "Range Rover L460 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -724,7 +729,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Range Rover L460 Owners Trust LandRoverEngine.uk",
+    "h2": "Range Rover L460 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L460 Engine Suppliers",

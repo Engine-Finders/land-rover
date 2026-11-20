@@ -237,7 +237,7 @@
   },
   "hero": {
     "tagPill": "Velar • 2017-Present • 1 Generation (L560) • Ingenium, SDV6, PHEV",
-    "h1": "Velar Engines - The Complete UK Guide",
+    "h1": "Range Rover Velar Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every engine. Every known failure. Every replacement cost - including why \"D300\" means two different engines on this car. Backed by 275+ real UK Velar enquiries [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -263,7 +263,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "Velar - The Ownership Verdict",
+    "h2": "Range Rover Velar Engine Reliability & Ownership Verdict",
     "subHeadline": "Seven generations. Dozens of engine codes. One clear truth: the Velar is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
@@ -310,7 +310,7 @@
     "oneLineVerdict": "The Velar is the Range Rover people choose with their eyes - our job is to make sure the engine choice is made with the data, because under one body sit eight powertrains ranging from near-faultless to fully caveated."
   },
   "atAGlance": {
-    "h2": "Velar at a Glance",
+    "h2": "Range Rover Velar at a Glance",
     "subHeadline": "All the key facts about the Velar in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
@@ -356,7 +356,7 @@
     ]
   },
   "generations": {
-    "h2": "Velar - One Generation, Eight Powertrains",
+    "h2": "Range Rover Velar Engine Variants & Powertrains",
     "subHeadline": "Every Velar is an L560. The decision that matters isn't which generation - it's which engine.",
     "cards": [
       {
@@ -439,7 +439,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "Velar Engine Codes - The Complete Database",
+    "h2": "Range Rover Velar Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine ever fitted to a Range Rover Velar - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
@@ -557,7 +557,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common Velar Engine Problems",
+    "h2": "Range Rover Velar Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The six most common failure patterns across the Velar range - symptoms, costs and urgency.",
     "columns": [
       "#",
@@ -676,7 +676,9 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "Velar Market Intelligence - What 275 UK Owners Told Us in 2025",
+    "h2": "Range Rover Velar Engine Market Intelligence: UK Enquiry Trends",
+    "headlineFigure": "275",
+    "headlineYear": "2025",
     "signals": [
       {
         "signal": "Velar (L560) enquiries",
@@ -706,7 +708,7 @@
     "quote": "If you buy one Velar based on this page, buy a 2021-or-later car - and remember that 'D300' means two different engines on this model. The one with the crankshaft question retired in 2020; make sure the listing you're reading knows that too."
   },
   "replacementCosts": {
-    "h2": "Velar Engine Replacement Costs - By Generation",
+    "h2": "Range Rover Velar Engine Replacement Costs - By Engine",
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
@@ -824,7 +826,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the Velar Engine Range Evolved - 2017 to Today",
+    "h2": "How the Range Rover Velar Engine Range Evolved - 2017 to Today",
     "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Velar engines.",
     "columns": [
       "Era",
@@ -864,7 +866,7 @@
     ]
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy a Velar?",
+    "h2": "Which Range Rover Velar Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Velar is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
@@ -900,7 +902,7 @@
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My Velar Engine - or Should I Replace It?",
+    "h2": "Range Rover Velar Engine Repair vs Replacement: Costs & Options",
     "intro": "Cold-start knock on a D300? Chain rattle on an early D180? Get a personalised repair-vs-replace verdict using real UK cost data.",
     "context": "On the Velar, the answer swings on your car's value - an early D180 at £15,000 and a D300 at £30,000 face very different economics.",
     "paths": [
@@ -915,7 +917,7 @@
     ]
   },
   "trustBlock": {
-    "h2": "Why Velar Owners Trust landroverengine.uk",
+    "h2": "Why Range Rover Velar Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -940,7 +942,7 @@
     ]
   },
   "faq": {
-    "h2": "Velar Frequently Asked Questions",
+    "h2": "Range Rover Velar Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -985,7 +987,7 @@
     ]
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Range Rover Velar Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {

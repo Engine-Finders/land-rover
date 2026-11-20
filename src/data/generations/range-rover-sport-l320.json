@@ -257,7 +257,7 @@
   },
   "hero": {
     "tagPill": "Range Rover Sport L320 • SUV • 2005-2013",
-    "h1": "Range Rover Sport L320 Engines - The Complete UK Guide",
+    "h1": "Range Rover Sport L320 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the first-generation Range Rover Sport L320 - from the 2.7 TDV6 that defined the early years, to the 3.6 TDV8 that transformed its reputation, and the supercharged 5.0 V8 that turned it into a genuine performance SUV. Real UK costs, honest failure data, and the 2009 facelift engine refresh that most buyers overlook. Backed by 228+ real UK L320 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -284,7 +284,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Range Rover Sport L320 Engine Codes - The Complete Database",
+    "h2": "Range Rover Sport L320 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Range Rover Sport L320 - including the short-lived 4.4 V8, the 2009 facelift engine refresh, and the mid-life 3.0 TDV6-to-SDV6 upgrade.",
     "columns": [
       "Engine Code",
@@ -391,12 +391,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Range Rover Sport L320 - Overview",
+    "h2": "Range Rover Sport L320 Overview: Engine Range, Design & Key Facts",
     "intro": "The Range Rover Sport L320 is the first generation of Land Rover's sportier SUV, launched in May 2005 as a more dynamic alternative to the full-size Range Rover. Built on a shortened Discovery 3 platform (14cm shorter), it combined the off-road capability of the Discovery with the style and prestige of the Range Rover. A significant 2009 facelift brought a comprehensive engine refresh: the 2.7 TDV6 was replaced by a 3.0-litre unit, the 4.2 and 4.4 petrol V8s made way for the 5.0-litre AJ133 V8 in both naturally aspirated and supercharged forms, while the 3.6 TDV8 carried on unchanged. For 2011, the 3.0 TDV6 was upgraded to SDV6 specification with 256 bhp.",
     "keyFacts": "Platform: Land Rover L319 (Discovery 3-based, shortened) • Predecessor: None (new model line) • Successor: Range Rover Sport L494 • Sibling body styles in this generation: None (SUV only).",
     "marketIntelligenceLine": "The Range Rover Sport L320 generated 228 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 306DT SDV6 diesel as the parc ages and crankshaft-bearing concerns come to the fore."
   },
   "bestWorstEngines": {
+    "h2": "Range Rover Sport L320 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -437,7 +438,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Range Rover Sport L320 - Ownership Economics",
+    "h2": "Range Rover Sport L320 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -511,6 +512,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Range Rover Sport L320 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -627,7 +629,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L320 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Range Rover Sport L320 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -697,6 +699,7 @@
     "note": "No Generation variance from the Model Page's baseline figures - L320 Range Rover Sport shares its underpinnings with the Discovery 3/4 and engine-bay access is broadly similar, so costs are inherited directly per the Authority Model, with no divergence note required. The 508PS cost band (£9,000-£14,000) reflects the significantly higher cost of the supercharged 5.0 V8, carried forward from the EM_Proprietary_Data Table A for \"BMW S63B44\" - adjusted for Land Rover AJ133 SC compatibility."
   },
   "coreVariants": {
+    "h2": "Range Rover Sport L320 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "TDV6",
@@ -728,6 +731,7 @@
     "scopeNote": "All variants listed are Range Rover Sport L320 SUV only. The 4.4 V8 (448PN/AJ41) was offered from launch in 2005 but was quietly dropped due to poor UK sales. The 3.0 TDV6 (155kW) was offered from the 2009 facelift until 2010, when it was upgraded to SDV6 (188kW) specification. The 3.6 TDV8 (368DT) ran throughout the entire 2006-2013 production period. The 5.0 V8 (508PN) and 5.0 Supercharged (508PS) replaced the 4.4 V8 and 4.2 Supercharged at the 2009 facelift."
   },
   "marketIntelligence": {
+    "h2": "Range Rover Sport L320 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 306DT SDV6 (980 JLR‑wide enquiries [EM‑VERIFIED])",
       "2. 276DT TDV6 (700 JLR‑wide [EM‑VERIFIED])",
@@ -769,6 +773,7 @@
     ]
   },
   "faq": {
+    "h2": "Range Rover Sport L320 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -823,7 +828,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Range Rover Sport L320 Owners Trust LandRoverEngine.uk",
+    "h2": "Range Rover Sport L320 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L320 Engine Suppliers",

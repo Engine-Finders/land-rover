@@ -56,11 +56,38 @@ export function prose(html = "") {
     .replace(TAG_RE, (_, t) => tag(t));
 }
 
-// "Velar Engine Codes - The Complete Database" -> { lead: "Velar Engine Codes", accent: "The Complete Database" }
+// A heading's lead and its accent (the part set on its own line in green), split at the first
+// " - ", ": " or "? ". `joint` is the mark that closes the lead (" -", ":" or "?"):
+// "Velar Engine Codes - The Complete Database" -> { lead: "Velar Engine Codes", joint: " -", accent: "The Complete Database" }
+// "Range Rover Velar Engine Codes: Specifications & Reliability" -> { lead: "… Engine Codes", joint: ":", accent: "Specifications & Reliability" }
+// "Which Range Rover Velar Should You Buy? Engine & Ownership Considerations" -> joint "?"
 export function splitHeading(h2 = "") {
   const clean = String(h2).replace(/\s+[-–-]\s+/, " - ");
-  const i = clean.indexOf(" - ");
-  return i === -1 ? { lead: clean, accent: "" } : { lead: clean.slice(0, i), accent: clean.slice(i + 3) };
+  const m = clean.match(/ - |: |\? /);
+  if (!m) return { lead: clean, joint: "", accent: "" };
+  return {
+    lead: clean.slice(0, m.index),
+    joint: m[0] === " - " ? " -" : m[0].trim(),
+    accent: clean.slice(m.index + m[0].length),
+  };
+}
+
+// The shared split, else the model name / the rest from "Engine" on, for headings with no dash,
+// colon or question mark:
+// "Land Rover Defender Engine Reliability & Ownership Verdict" -> { lead: "Land Rover Defender", accent: "Engine Reliability & Ownership Verdict" }
+export function splitHeadingAtEngine(h2 = "") {
+  const text = String(h2);
+  const split = splitHeading(text);
+  if (split.accent) return split;
+  const i = text.indexOf(" Engine ");
+  return i > 0 ? { lead: text.slice(0, i), joint: "", accent: text.slice(i + 1) } : split;
+}
+
+// The mark between a heading's lead and its accent, as rendered: "\u00a0-" for a dash (a non-breaking
+// space, so the dash never starts a line), or the colon / question mark itself
+export function Joint({ h2 = "" }) {
+  const { joint } = splitHeading(h2);
+  return joint === " -" ? <>{"\u00a0"}-</> : joint;
 }
 
 // Gold "/ LABEL /" eyebrow above every H2 (no "SECTION n" labels on the site)
@@ -81,9 +108,9 @@ export function EyebrowPill({ icon, children, className = "" }) {
   );
 }
 
-// The section H2: serif, the part after the dash on its own line in green. `accent` instead names
-// a phrase inside the heading to set in green ("Velar?", "275 UK Owners"); `breakAfterDash` false
-// keeps a dashed heading on one flowing line.
+// The section H2: serif, the part after the dash (or colon / question mark) on its own line in
+// green. `accent` instead names a phrase inside the heading to set in green ("Frequently Asked
+// Questions"); `breakAfterDash` false keeps a split heading on one flowing line.
 export function SectionTitle({ h2, accent, breakAfterDash = true, className = "", as: Tag = "h2" }) {
   const text = String(h2 || "").replace(/\s+[-–-]\s+/, " - ");
   let body;
@@ -104,7 +131,8 @@ export function SectionTitle({ h2, accent, breakAfterDash = true, className = ""
     body = tail ? (
       <>
         {lead}
-        {" "}-{breakAfterDash ? <br /> : " "}
+        <Joint h2={text} />
+        {breakAfterDash && <br />}{" "}
         <span className="text-lr-ink dark:text-lr-green">{tail}</span>
       </>
     ) : (

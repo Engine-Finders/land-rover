@@ -29,15 +29,18 @@ function SignalTile({ emoji }) {
   );
 }
 
-// "Why Velar Owners Trust landroverengine.uk" -> the domain on its own line, in green
+// "Why Velar Owners Trust landroverengine.uk" -> the domain on its own line, in green;
+// "Why Range Rover Velar Owners Trust Our Engine Data & Specialist Guidance" -> "… Trust" / "Our Engine Data & …"
 function TrustHeading({ h2 = "" }) {
-  const m = h2.match(/^([\s\S]*?)\s*\b([\w-]+\.(?:co\.uk|uk|com))\b([\s\S]*)$/i);
+  const m =
+    h2.match(/^([\s\S]*?)\s*\b([\w-]+\.(?:co\.uk|uk|com))\b([\s\S]*)$/i) ||
+    h2.match(/^([\s\S]*?\bTrust)\s+(Our\b[\s\S]*)()$/);
   return (
     <h2 className={`${H2_MODEL} mt-3 text-balance text-lr-head md:mt-4`}>
       {m ? (
         <>
           {m[1]}
-          <br />
+          <br />{" "}
           <span className="text-lr-ink dark:text-lr-green">{m[2]}</span>
           {m[3]}
         </>

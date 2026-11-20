@@ -92,11 +92,13 @@ export default function HomeRankings({ data }) {
       </div>
 
       <div className={`${CONTAINER} relative pb-6 pt-6 lg:pb-6 lg:pt-6`}>
+        {/* desktop: three lines, so the heading stays left of the Defender photo */}
         <h2 className={`${H2} text-balance text-lr-head`}>
           {h1} <br className="xl:hidden" />
           {h2}
-          <br />
-          <span className="text-lr-green">{h3}</span> {h4}
+          <br />{" "}
+          {h3}
+          <br className="hidden xl:block" /> <span className="text-lr-green">{h4}</span>
         </h2>
 
         <div className="relative mt-3 min-h-[40vw] sm:min-h-[37vw] xl:min-h-0">

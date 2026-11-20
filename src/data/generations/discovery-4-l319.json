@@ -245,7 +245,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Discovery 4 L319 • SUV • 2009-2018",
-    "h1": "Land Rover Discovery 4 L319 Engines - The Complete UK Guide",
+    "h1": "Land Rover Discovery 4 L319 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Discovery 4 L319 - from the 2.7-litre TDV6 that carried over from the Discovery 3, to the 3.0-litre SDV6 that defined this generation, and the 5.0-litre V8 that gave it genuine pace. Real UK costs, honest failure data, and the crankshaft-bearing question that still haunts early SDV6 units. Backed by 120+ real UK L319 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -272,7 +272,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Discovery 4 L319 Engine Codes - The Complete Database",
+    "h2": "Land Rover Discovery 4 L319 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Discovery 4 L319 specifically - including the mid-life switch from the 5.0 V8 to the supercharged 3.0 V6 that most guides miss.",
     "columns": [
       "Engine Code",
@@ -379,12 +379,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Discovery 4 L319 - Overview",
+    "h2": "Discovery 4 Overview: Engine Range, Design & Key Facts",
     "intro": "The Discovery 4 L319 is the fourth generation of Land Rover’s iconic family SUV, launched in October 2009 as the successor to the Discovery 3. Built in Solihull, UK, it introduced the 3.0-litre SDV6 diesel - a significant upgrade over the 2.7-litre TDV6 carried over from its predecessor - and offered the 5.0-litre AJ133 V8 petrol for those who wanted genuine pace. A 2013 facelift (Series II) brought an eight-speed ZF 8HP70 automatic transmission, and a 2014 update (Series III) replaced the 5.0 V8 with a 3.0-litre supercharged V6.",
     "keyFacts": "Platform: Land Rover L319 (shared with Discovery 3) • Predecessor: Discovery 3 L319 • Successor: Discovery 5 L462 • Sibling body styles in this generation: None (Discovery 4 was SUV/wagon only - no commercial variant in most markets; the L319 van variant existed but is covered separately).",
     "marketIntelligenceLine": "The Discovery 4 L319 generated 120 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 306DT SDV6 diesel as the parc ages out of warranty and crankshaft-bearing concerns come to the fore."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Discovery 4 L319 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -425,7 +426,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Discovery 4 L319 - Ownership Economics",
+    "h2": "Land Rover Discovery 4 L319 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -499,6 +500,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Land Rover Discovery 4 L319 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -615,7 +617,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L319 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Discovery 4 L319 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -685,6 +687,7 @@
     "note": "No Generation variance from the Model Page’s baseline figures - L319 Discovery 4 shares identical engine-bay access with its Discovery 3 predecessor, so costs are inherited directly per the Authority Model, with no divergence note required. The 306DT cost band (£6,500-£9,500) is carried forward from the EM_Proprietary_Data Table A for “Land Rover 306DT TDV6/SDV6”."
   },
   "coreVariants": {
+    "h2": "Discovery 4 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "TDV6",
@@ -724,6 +727,7 @@
     "scopeNote": "All variants listed are Discovery 4 L319 SUV only. The 406PN (4.0 V6) was a Discovery 3 carryover fitted only to very early (2009) Discovery 4 examples. The 3.0-litre supercharged V6 (AJ126) replaced the 5.0 V8 from early 2014. The 2.7 TDV6 (276DT) and 3.0 SDV6 (306DT) ran throughout the entire 2009-2018 production run."
   },
   "marketIntelligence": {
+    "h2": "Land Rover Discovery 4 L319 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 306DT SDV6 (980 JLR‑wide enquiries [EM‑VERIFIED])",
       "2. 276DT TDV6 (700 JLR‑wide [EM‑VERIFIED])",
@@ -765,6 +769,7 @@
     ]
   },
   "faq": {
+    "h2": "Discovery 4 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -819,7 +824,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Discovery 4 L319 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Discovery 4 L319 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L319 Engine Suppliers",

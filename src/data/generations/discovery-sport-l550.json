@@ -281,7 +281,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Discovery Sport L550 • SUV • 2014-present",
-    "h1": "Land Rover Discovery Sport L550 Engines - The Complete UK Guide",
+    "h1": "Land Rover Discovery Sport L550 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Discovery Sport L550 - from the Ford-sourced 2.2-litre diesel to the Ingenium 2.0-litre four-cylinder family, both diesel and petrol. Real UK replacement costs, honest failure data, and the timing chain tensioner weakness that still haunts early Ingenium units. Backed by 362+ real UK L550 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -308,7 +308,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Discovery Sport L550 Engine Codes - The Complete Database",
+    "h2": "Land Rover Discovery Sport L550 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Discovery Sport L550 - from the early Ford-sourced units to the full Ingenium family, diesel, petrol and PHEV.",
     "columns": [
       "Engine Code",
@@ -403,12 +403,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Discovery Sport L550 - Overview",
+    "h2": "Discovery Sport L550 Overview: Engine Range, Design & Key Facts",
     "intro": "The Discovery Sport L550, launched in late 2014 as the Freelander's replacement, is Land Rover's compact luxury crossover SUV built on the LR-MS (D8) platform. It introduced the Discovery name to a new segment, offering five or seven seats and a transverse-engine layout that maximised interior space. A significant 2019 facelift moved the L550 to the JLR PTA platform and introduced mild-hybrid technology across the Ingenium range.",
     "keyFacts": "Platform: JLR D8 (2014-2019) / JLR PTA (2019-present) • Predecessor: Freelander 2 (L359) • Successor: Still in production (L550 continues) • Sibling body styles in this generation: None (L550 is the sole Discovery Sport body code)",
     "marketIntelligenceLine": "The L550 generated 362 real UK engine enquiries in 2025 [EM-VERIFIED], with the 2.0-litre Ingenium diesel accounting for the majority of demand as these vehicles exit manufacturer warranty."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Discovery Sport L550 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -449,7 +450,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Discovery Sport L550 - Ownership Economics",
+    "h2": "Land Rover Discovery Sport L550 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -536,6 +537,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Land Rover Discovery Sport L550 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -652,7 +654,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L550 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Discovery Sport L550 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -714,6 +716,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Discovery Sport L550 Petrol, Diesel & Hybrid Engine Variants",
     "dieselVariants": [
       {
         "name": "D150",
@@ -785,6 +788,7 @@
     "scopeNote": "All variants listed are L550 only. The Range Rover Evoque (L538/L551), Velar (L560) and Discovery 5 (L462) share most of these engines but are covered on their own Generation Pages, since fitment and specific power outputs vary by model."
   },
   "marketIntelligence": {
+    "h2": "Land Rover Discovery Sport L550 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 204DTD (<a href='https://landroverengine.uk/engine/ingenium-20-diesel'>Ingenium 2.0 Diesel</a>) - 1,150 platform-wide enquiries [EM-VERIFIED], the dominant L550 diesel",
       "2. 204PT (<a href='https://landroverengine.uk/engine/ingenium-20-petrol'>Ingenium 2.0 Petrol</a>) - 480 platform-wide enquiries [EM-VERIFIED]",
@@ -826,6 +830,7 @@
     ]
   },
   "faq": {
+    "h2": "Discovery Sport L550 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -880,7 +885,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Discovery Sport L550 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Discovery Sport L550 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L550 Engine Suppliers",

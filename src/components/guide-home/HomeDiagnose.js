@@ -191,7 +191,8 @@ function WhyTrust({ trust }) {
 }
 
 export default function HomeDiagnose({ data }) {
-  const [l1, l2, l3] = data.h1.split("|");
+  // "Diagnose … Engine Problems|& Compare Repair or Replacement Costs" (the second part in green)
+  const [l1, l2] = data.h1.split("|");
 
   return (
     <section className="relative overflow-hidden bg-lr-page text-lr-head">
@@ -206,10 +207,9 @@ export default function HomeDiagnose({ data }) {
           <p className={`${LABEL} text-lr-ink`}>{data.eyebrow}</p>
           <span className="mt-2 block h-[2px] w-8 bg-lr-gold-line lg:w-9" />
 
-          <h2 className={`${H2} mt-3 text-balance text-lr-head`}>
-            {l1}
-            <br />
-            {l2} <span className="text-lr-green">{l3}</span>
+          {/* desktop: held to the left of the Defender photo */}
+          <h2 className={`${H2} mt-3 text-balance text-lr-head xl:max-w-[min(680px,46vw)]`}>
+            {l1} <span className="text-lr-green">{l2}</span>
           </h2>
 
           <div className="relative mt-3 sm:min-h-[40vw] lg:mt-5 xl:min-h-0">

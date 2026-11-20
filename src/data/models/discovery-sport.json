@@ -219,7 +219,7 @@
   },
   "hero": {
     "tagPill": "Discovery Sport • 2015-Present • 1 Generation (L550) • Ingenium, Duratorq",
-    "h1": "Discovery Sport Engines - The Complete UK Guide",
+    "h1": "Land Rover Discovery Sport Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every engine. Every known failure. Every replacement cost. The most-enquired Land Rover in our entire dataset - backed by 362+ real UK Discovery Sport enquiries [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -245,7 +245,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "Discovery Sport - The Ownership Verdict",
+    "h2": "Land Rover Discovery Sport Engine Reliability & Ownership Verdict",
     "subHeadline": "One generation. Dozens of engine codes. One clear truth: the Discovery Sport is brilliant - when you know which engine you’re buying, and which you’re not.",
     "metrics": [
       {
@@ -292,7 +292,7 @@
     "oneLineVerdict": "The Discovery Sport is Britain's default family Land Rover and the single most-enquired model in our data - not because it's the worst engine, but because there are so many of them and the pre-2019 timing chain question hangs over every used listing."
   },
   "atAGlance": {
-    "h2": "Discovery Sport at a Glance",
+    "h2": "Land Rover Discovery Sport at a Glance",
     "subHeadline": "All the key facts about the Discovery Sport in one place. The essentials, so you can understand the car before you compare the engines.",
     "rows": [
       {
@@ -338,7 +338,7 @@
     ]
   },
   "generations": {
-    "h2": "Discovery Sport - One Generation, Two Lives",
+    "h2": "Land Rover Discovery Sport Engine Variants & Powertrains",
     "subHeadline": "Every Discovery Sport is an L550 - but a 2016 and a 2021 car are very different ownership propositions.",
     "cards": [
       {
@@ -401,7 +401,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "Discovery Sport Engine Codes - The Complete Database",
+    "h2": "Land Rover Discovery Sport Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine ever fitted to a Discovery Sport - verified codes, specifications and real UK ownership data.",
     "columns": [
       "Engine Code",
@@ -483,7 +483,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common Discovery Sport Engine Problems",
+    "h2": "Land Rover Discovery Sport Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The six most common failure patterns across the Discovery Sport range - symptoms, costs and urgency.",
     "columns": [
       "#",
@@ -602,7 +602,9 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "Discovery Sport Market Intelligence - What 362 UK Owners Told Us in 2025",
+    "h2": "Land Rover Discovery Sport Engine Market Intelligence: UK Enquiry Trends",
+    "headlineFigure": "362",
+    "headlineYear": "2025",
     "signals": [
       {
         "signal": "Discovery Sport (L550) enquiries",
@@ -632,7 +634,7 @@
     "quote": "If you buy one Discovery Sport based on this page, buy a 2020-or-later car. The 2019.5 facelift is the dividing line between this model's two reliability lives - and on a pre-facelift diesel, a documented timing-chain inspection is worth more than any service stamp."
   },
   "replacementCosts": {
-    "h2": "Discovery Sport Engine Replacement Costs - By Generation",
+    "h2": "Land Rover Discovery Sport Engine Replacement Costs - By Engine",
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
     "tables": [
       {
@@ -718,7 +720,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the Discovery Sport Engine Range Evolved - 2015 to Today",
+    "h2": "How the Land Rover Discovery Sport Engine Range Evolved - 2015 to Today",
     "subHeadline": "From the original launch line-up to today's advanced powertrains, see how engineering, emissions and performance shaped every generation of Discovery Sport engines.",
     "columns": [
       "Era",
@@ -752,7 +754,7 @@
     ]
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy a Discovery Sport?",
+    "h2": "Which Land Rover Discovery Sport Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the Discovery Sport is perfect for - and who should think twice.",
     "columns": [
       "Buyer Profile",
@@ -788,7 +790,7 @@
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My Discovery Sport Engine - or Should I Replace It?",
+    "h2": "Land Rover Discovery Sport Engine Repair vs Replacement: Costs & Options",
     "intro": "Cold-start rattle? Oil level rising on the dipstick? Get a personalised repair-vs-replace verdict using real UK cost data.",
     "paths": [
       {
@@ -802,7 +804,7 @@
     ]
   },
   "trustBlock": {
-    "h2": "Why Discovery Sport Owners Trust LandRoverEngine.uk",
+    "h2": "Why Land Rover Discovery Sport Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -827,7 +829,7 @@
     ]
   },
   "faq": {
-    "h2": "Discovery Sport Frequently Asked Questions",
+    "h2": "Land Rover Discovery Sport Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -872,7 +874,7 @@
     ]
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Land Rover Discovery Sport Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence. Data. Honesty. Specialists. All in one place.",
     "cards": [
       {

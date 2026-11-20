@@ -232,7 +232,7 @@ export default function AtAGlance({ data, slug = "" }) {
               {lead}
               {accent && (
                 <>
-                  <br />
+                  <br />{" "}
                   <span className="text-lr-ink dark:text-lr-green">{accent}</span>
                 </>
               )}

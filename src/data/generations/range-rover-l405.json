@@ -263,7 +263,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Range Rover L405 • SUV • 2012-2021",
-    "h1": "Land Rover Range Rover L405 Engines - The Complete UK Guide",
+    "h1": "Range Rover L405 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the fourth-generation Range Rover - from the 3.0 TDV6 diesel to the 5.0-litre supercharged V8. Real UK replacement costs, honest failure data, and the crankshaft and timing chain risks that define this generation's ownership story. Backed by 284+ real UK L405 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -290,7 +290,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Range Rover L405 Engine Codes - The Complete Database",
+    "h2": "Range Rover L405 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the L405 Range Rover - from the 2012 launch to the 2021 phase-out, including the 2018 facelift updates.",
     "columns": [
       "Engine Code",
@@ -397,12 +397,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Range Rover L405 - Overview",
+    "h2": "Range Rover L405 Overview: Engine Range, Design & Key Facts",
     "intro": "The L405 is the fourth generation of the full-size Range Rover, launched in 2012 and produced until 2021. It was the first SUV to feature an all-aluminium monocoque chassis, shedding up to 420kg compared to its predecessor, the L322. The engine lineup spanned the 3.0-litre TDV6 and SDV6 diesels, the 4.4-litre SDV8 diesel, the 3.0-litre supercharged V6 petrol, and the 5.0-litre supercharged V8 petrol, plus a diesel hybrid from 2015 and a plug-in hybrid (P400e) from 2018. A 2018 facelift brought revised styling, updated infotainment, and the P400e hybrid.",
     "keyFacts": "Platform: JLR D7u aluminium monocoque • Predecessor: L322 • Successor: L460 • Sibling body styles in this generation: none - L405 is the full-size Range Rover; Range Rover Sport L494 is a separate model.",
     "marketIntelligenceLine": "The L405 generated 284 real UK engine enquiries in 2025 [EM-VERIFIED], with strong demand for both the 4.4 SDV8 and the 3.0 diesel variants."
   },
   "bestWorstEngines": {
+    "h2": "Range Rover L405 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -443,7 +444,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Range Rover L405 - Ownership Economics",
+    "h2": "Range Rover L405 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -522,6 +523,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Range Rover L405 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -638,7 +640,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L405 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Range Rover L405 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -708,6 +710,7 @@
     "note": "No Generation variance note required - no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [EM-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Range Rover L405 Petrol, Diesel & Hybrid Engine Variants",
     "dieselVariants": [
       {
         "name": "TDV6",
@@ -751,6 +754,7 @@
     "scopeNote": "All variants listed are Range Rover L405 only. The Range Rover Sport L494 and the later L460 are separate models with different engine availability and are covered on their own pages."
   },
   "marketIntelligence": {
+    "h2": "Range Rover L405 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 4.4 SDV8 (largest share of 320 JLR‑wide figure)",
       "2. 3.0 TDV6 (largest share of 980 JLR‑wide figure)",
@@ -792,6 +796,7 @@
     ]
   },
   "faq": {
+    "h2": "Range Rover L405 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -846,7 +851,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Range Rover L405 Owners Trust LandRoverEngine.uk",
+    "h2": "Range Rover L405 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L405 Engine Suppliers",

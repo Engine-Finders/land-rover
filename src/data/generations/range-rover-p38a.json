@@ -239,7 +239,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Range Rover P38A • SUV • 1994-2002",
-    "h1": "Land Rover Range Rover P38A Engines - The Complete UK Guide",
+    "h1": "Range Rover P38A Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the second-generation Range Rover P38A - from the Rover V8s to the BMW-sourced <a href='https://landroverengine.uk/engine/m51'>M51</a> turbodiesel. Real UK replacement costs, honest failure data, and the V8 liner-drop risk that defines this generation.",
     "trustStrip": [
       {
@@ -266,7 +266,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Range Rover P38A Engine Codes - The Complete Database",
+    "h2": "Range Rover P38A Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the P38A - from the 4.0-litre and 4.6-litre Rover V8s to the BMW 2.5-litre six-cylinder turbodiesel.",
     "columns": [
       "Engine Code",
@@ -349,12 +349,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Range Rover P38A - Overview",
+    "h2": "Range Rover P38A Overview: Engine Range, Design & Key Facts",
     "intro": "The P38A is the second-generation Range Rover, launched on 28 September 1994 as the successor to the original Range Rover Classic. Built on a new semi-monocoque chassis with air suspension, it introduced a BMW-sourced 2.5-litre turbodiesel alongside updated versions of the Rover V8. Production ran until 2001-2002, with over 167,000 units built.",
     "keyFacts": "Platform: P38A semi-monocoque • Predecessor: Range Rover Classic • Successor: Range Rover L322 • Sibling body styles in this generation: 5-door SUV only",
     "marketIntelligenceLine": "As a classic model now over 20 years old, the P38A is a niche enthusiast vehicle - enquiry patterns are sparse, but the Rover V8s remain the most discussed engines in owner communities."
   },
   "bestWorstEngines": {
+    "h2": "Range Rover P38A Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -365,7 +366,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Range Rover P38A - Ownership Economics",
+    "h2": "Range Rover P38A Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -420,6 +421,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Range Rover P38A Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -463,7 +465,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "P38A Engine Replacement Costs - By Engine and Condition",
+    "h2": "Range Rover P38A Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -501,6 +503,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Range Rover P38A Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "2.5 TD",
@@ -531,6 +534,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Range Rover P38A Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -585,7 +589,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Range Rover P38A Owners Trust LandRoverEngine.uk",
+    "h2": "Range Rover P38A Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted P38A Engine Suppliers",

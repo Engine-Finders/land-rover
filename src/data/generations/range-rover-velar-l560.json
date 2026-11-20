@@ -281,7 +281,7 @@
   },
   "hero": {
     "tagPill": "Range Rover Velar L560 • SUV • 2017-present",
-    "h1": "Range Rover Velar L560 Engines - The Complete UK Guide",
+    "h1": "Range Rover Velar L560 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Velar L560 - from the four-cylinder Ingenium diesel and petrol to the six-cylinder D300 and the 550bhp supercharged V8 in the SVAutobiography. Real UK replacement costs and honest reliability data for Range Rover's most design-led SUV. Backed by 155+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -308,7 +308,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Range Rover Velar L560 Engine Codes - The Complete Database",
+    "h2": "Range Rover Velar L560 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Velar L560 - including the Ingenium fours, the V6 diesel and petrol units, and the supercharged V8 that tops the range.",
     "columns": [
       "Engine Code",
@@ -415,12 +415,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Range Rover Velar L560 - Overview",
+    "h2": "Velar L560 Overview: Engine Range, Design & Key Facts",
     "intro": "The Velar L560 was launched in 2017 as Range Rover's fourth model line, designed to fill the gap between the Evoque and the Range Rover Sport. Named after the original Range Rover prototypes from 1969, it brought a new design language - hidden door handles, a minimalist cabin, and a sweeping roofline - to the brand. Built on JLR's D7a aluminium-intensive platform, the Velar shares its engines with the F-Pace and Discovery Sport, including four-cylinder Ingenium diesels and petrols, V6 diesels, and - for the SVAutobiography - a supercharged 5.0-litre V8. A 2020 facelift introduced the mild-hybrid 3.0 P400 petrol.",
     "keyFacts": "Platform: JLR D7a (aluminium-intensive, longitudinal engine, four-wheel drive) • Predecessor: None - Velar is a new model line • Successor: None (L560 is the current generation) • Sibling body styles in this generation: Single body style (five-door SUV)",
     "marketIntelligenceLine": "The Velar L560 generated 155 real UK engine enquiries in 2025 [EM-VERIFIED], with the D300 V6 diesel accounting for 120 of those - the majority of Velar demand is for the six-cylinder diesel."
   },
   "bestWorstEngines": {
+    "h2": "Range Rover Velar L560 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -461,7 +462,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Range Rover Velar L560 - Ownership Economics",
+    "h2": "Range Rover Velar L560 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -540,6 +541,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Range Rover Velar L560 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -596,7 +598,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "Velar L560 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Range Rover Velar L560 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -658,6 +660,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Velar L560 Petrol, Diesel & Hybrid Engine Variants",
     "dieselVariants": [
       {
         "name": "D180",
@@ -713,6 +716,7 @@
     "scopeNote": "All variants listed are Velar L560 only. The P400 uses the later Ingenium-based 3.0 with mild hybrid (2020-present), while the P340/P380 use the earlier AJ126 V6 (2017-2020). The SVAutobiography uses the supercharged 5.0 AJ133 V8."
   },
   "marketIntelligence": {
+    "h2": "Range Rover Velar L560 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 306DT D300 (120 enquiries [EM-VERIFIED])",
       "2. 204DTD D240 (pattern data)",
@@ -754,6 +758,7 @@
     ]
   },
   "faq": {
+    "h2": "Velar L560 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -808,7 +813,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Range Rover Velar L560 Owners Trust LandRoverEngine.uk",
+    "h2": "Range Rover Velar L560 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted Velar Engine Suppliers",

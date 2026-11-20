@@ -4,7 +4,7 @@ import { useId, useState } from "react";
 import GroundedCar from "@/components/variant/GroundedCar";
 import LrIcon from "@/components/shared/LrIcon";
 import { CONTAINER } from "@/lib/typeScale";
-import { Chevron, H2_MODEL, INTRO, SANS, Stars, parseRating, prose, splitHeading } from "@/components/models/modelKit";
+import { Chevron, H2_MODEL, INTRO, SANS, Stars, parseRating, prose, splitHeading, Joint } from "@/components/models/modelKit";
 import { cellHtml, splitTags, stripHtml } from "@/components/models/engineSections";
 import { localHtml } from "@/components/models/generationsFaqLinks";
 import { engineDbCar, genCode } from "./genKit";
@@ -451,7 +451,8 @@ export default function EngineDatabase({ data, hero = null, model = "" }) {
               {lead}
               {accent && (
                 <>
-                  {" "}-<br />
+                  <Joint h2={data.h2} />
+                  <br />{" "}
                   <span className="dark:text-lr-green">{accentFirst}</span>
                   {accentRest.length > 0 && <span className="text-lr-green"> {accentRest.join(" ")}</span>}
                 </>

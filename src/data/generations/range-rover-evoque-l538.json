@@ -257,7 +257,7 @@
   },
   "hero": {
     "tagPill": "Range Rover Evoque L538 • SUV • 2011-2018",
-    "h1": "Range Rover Evoque L538 Engines - The Complete UK Guide",
+    "h1": "Range Rover Evoque L538 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the first-generation Evoque L538 - from the 2.2-litre TD4 diesel to the 2.0-litre <a href='https://landroverengine.uk/engine/ford-si4-pt204'>Si4</a> petrol and the later Ingenium diesel that arrived with the 2015 facelift. Real UK costs, honest failure data, and a style icon's engine story. Backed by 244+ real UK L538 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -284,7 +284,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Range Rover Evoque L538 Engine Codes - The Complete Database",
+    "h2": "Range Rover Evoque L538 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Evoque L538 specifically - including the Ford-<a href='https://landroverengine.uk/engine/psa-dw12-204dtd'>PSA DW12</a> diesel, the EcoBoost-derived Si4 petrol, and the later Ingenium diesel that arrived with the 2015 facelift.",
     "columns": [
       "Engine Code",
@@ -367,12 +367,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Range Rover Evoque L538 - Overview",
+    "h2": "Evoque L538 Overview: Engine Range, Design & Key Facts",
     "intro": "The first-generation Range Rover Evoque (codename L538) debuted in July 2011 as Land Rover's entry into the compact luxury crossover segment. Built at Halewood alongside the Freelander 2, it was based on a modified Ford EUCD platform (codenamed D8). The engine range initially comprised a 2.2-litre turbodiesel from the Ford-PSA DW12 family and a 2.0-litre turbocharged petrol from Ford's EcoBoost family. A significant 2015 facelift brought Land Rover's new Ingenium engine family to the range - 2.0-litre diesels and petrols replacing the older Ford-sourced units. The L538 was offered in three-door coupé, five-door, and from 2016, two-door convertible body styles.",
     "keyFacts": "Platform: Ford EUCD (D8 platform) • Predecessor: Freelander (spiritual) • Successor: Evoque L551 (2018-present) • Sibling body styles in this generation: 3-door Coupé, 5-door SUV, 2-door Convertible.",
     "marketIntelligenceLine": "The Evoque L538 generated 244 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 2.2 TD4 diesel and 2.0 Si4 petrol as these stylish crossovers enter the higher-mileage phase of their ownership cycle."
   },
   "bestWorstEngines": {
+    "h2": "Range Rover Evoque L538 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -413,7 +414,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Range Rover Evoque L538 - Ownership Economics",
+    "h2": "Range Rover Evoque L538 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -463,6 +464,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Range Rover Evoque L538 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -551,7 +553,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L538 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Range Rover Evoque L538 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -605,6 +607,7 @@
     "note": "No Generation variance from the Engine Page baseline - no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10-14 hours for all L538 engines due to transverse mounting and Halewood production access."
   },
   "coreVariants": {
+    "h2": "Evoque L538 Petrol & Diesel Engine Variants",
     "dieselVariants": [
       {
         "name": "2.2 eD4",
@@ -640,6 +643,7 @@
     "scopeNote": "All variants listed are first-generation Evoque L538 only. The eD4 is a two-wheel-drive variant introduced in 2012; TD4 and SD4 are all-wheel-drive. The 2.0-litre diesel and petrol variants arrived with the 2015 facelift. Cabriolet variants (2016-2018) share the same engine range."
   },
   "marketIntelligence": {
+    "h2": "Range Rover Evoque L538 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 204PT 2.0 Si4 - 480 requests [EM-VERIFIED]",
       "2. 224DT 2.2 TD4 - 350 requests [EM-VERIFIED]",
@@ -681,6 +685,7 @@
     ]
   },
   "faq": {
+    "h2": "Evoque L538 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -735,7 +740,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Range Rover Evoque Owners Trust LandRoverEngine.uk",
+    "h2": "Range Rover Evoque L538 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L538 Engine Suppliers",

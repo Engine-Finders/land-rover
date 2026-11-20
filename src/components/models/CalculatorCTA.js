@@ -8,6 +8,7 @@ import {
   CAR_ART_RATIO,
   CARD,
   EyebrowPill,
+  Joint,
   SANS,
   SECTION_Y,
   SERIF,
@@ -155,12 +156,13 @@ export default function CalculatorCTA({ data, slug = "" }) {
         <div className="grid items-start gap-6 md:gap-8 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] xl:gap-14">
           <div className="min-w-0">
             <EyebrowPill>Repair or Replace</EyebrowPill>
-            {/* 38-50px from xl so "Can I Repair My … Engine - / or Should I Replace It?" holds two lines beside the car */}
+            {/* 38-50px from xl so "… Engine Repair vs Replacement: / Costs & Options" holds two lines beside the car */}
             <h2 className={`${H2_MODEL} mt-3 text-balance text-lr-head md:mt-4`}>
               {accent ? (
                 <>
                   {lead}
-                  {" "}-<br />
+                  <Joint h2={data.h2} />
+                  <br />{" "}
                   {or ? (
                     <>
                       {or[1]}

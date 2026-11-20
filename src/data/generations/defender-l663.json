@@ -239,7 +239,7 @@
   },
   "hero": {
     "tagPill": "Land Rover Defender L663 • SUV • 2019-present",
-    "h1": "Land Rover Defender L663 Engines - The Complete UK Guide",
+    "h1": "Land Rover Defender L663 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the new-generation Defender L663 - from the four-cylinder diesel to the 400bhp six-cylinder petrol. Real UK costs, honest failure data, and the Ingenium tensioner risk that still haunts early units. Backed by 292+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -266,7 +266,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Land Rover Defender L663 Engine Codes - The Complete Database",
+    "h2": "Land Rover Defender L663 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the new Defender - from the 2.0-litre four-cylinder Ingenium units to the 5.0-litre supercharged V8 and the new 4.4-litre twin-turbo V8.",
     "columns": [
       "Engine Code",
@@ -373,12 +373,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Land Rover Defender L663 - Overview",
+    "h2": "Defender L663 Overview: Engine Range, Design & Key Facts",
     "intro": "The L663 is the second generation of the modern Defender, launched in 2019 as a radical departure from the traditional body-on-frame design. Built on Jaguar Land Rover's D7x aluminium monocoque architecture, it introduced independent suspension, advanced electronics, and a full range of Ingenium petrol and diesel engines - marking the first time a Defender offered V8 power since the original.",
     "keyFacts": "Platform: JLR D7x aluminium monocoque • Predecessor: Land Rover Defender (L316) - original \"old\" Defender • Successor: Current model - no successor announced • Sibling body styles in this generation: Defender 90 (3-door), Defender 110 (5-door), Defender 130 (extended 5-door)",
     "marketIntelligenceLine": "The L663 Defender generated 292 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 3.0-litre diesel six-cylinder as these vehicles exit manufacturer warranty."
   },
   "bestWorstEngines": {
+    "h2": "Land Rover Defender L663 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -419,7 +420,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Land Rover Defender L663 - Ownership Economics",
+    "h2": "Land Rover Defender L663 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -490,6 +491,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Land Rover Defender L663 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -533,7 +535,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "L663 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Land Rover Defender L663 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -603,6 +605,7 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Defender L663 Petrol, Diesel & Hybrid Engine Variants",
     "dieselVariants": [
       {
         "name": "D200",
@@ -670,6 +673,7 @@
     "scopeNote": "All variants listed are L663-generation Defender only (2019-present). Body styles (90, 110, 130) share these engines but are covered on their own body-style pages where fitment and labour access vary."
   },
   "marketIntelligence": {
+    "h2": "Land Rover Defender L663 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. AJ20D6 3.0 D300",
       "2. PT306 3.0 P400 MHEV",
@@ -711,6 +715,7 @@
     ]
   },
   "faq": {
+    "h2": "Defender L663 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -765,7 +770,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Land Rover Defender L663 Owners Trust LandRoverEngine.uk",
+    "h2": "Land Rover Defender L663 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted L663 Engine Suppliers",

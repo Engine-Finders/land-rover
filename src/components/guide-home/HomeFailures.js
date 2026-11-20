@@ -247,7 +247,7 @@ function DesktopDatabase({ categories }) {
 }
 
 export default function HomeFailures({ data }) {
-  const [l1, l2] = data.h2.split("|");
+  const [l1, l2, l3] = data.h2.split("|");
   const [first, ...more] = String(data.note.text).split(/(?<=\.)\s+/);
   const rest = more.join(" ");
 
@@ -260,11 +260,16 @@ export default function HomeFailures({ data }) {
           <span className="h-px w-12 bg-lr-gold-line sm:w-16" />
         </div>
 
-        {/* phones: two lines ("The Land Rover & Range Rover" / "Failure Database") - the size follows the
-            screen width so the first line always fits */}
+        {/* phones: "Land Rover & Range Rover" / "Failure Database:" / "Symptoms, Causes & Repair Costs" - the
+            size follows the screen width so the first line always fits; desktop: two lines */}
         <h2 className={`${H2} mt-2.5 text-balance text-center max-sm:text-[min(30px,calc(6.6vw-2.7px))]!`}>
           <span className="max-sm:whitespace-nowrap">{l1}</span> <br className="xl:hidden" />
           <span className="whitespace-nowrap text-lr-green">{l2}</span>
+          {l3 && (
+            <>
+              <br /> {l3}
+            </>
+          )}
         </h2>
         <p className={`${BODY} mx-auto mt-3 max-w-[760px] text-center text-lr-body`}>{data.subhead}</p>
 
